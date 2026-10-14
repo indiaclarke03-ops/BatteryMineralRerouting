@@ -121,6 +121,49 @@
     { selector: ".hidden", style: { display: "none" } },
   ];
 
+  PT.nodePanel = function (d, e, members, caseId) {
+    const edges = d.edges.items.filter((x) => x.source === e.id || x.target === e.id);
+    const ids = Object.entries(e.identifiers || {}).map(([k, v]) => `<dt>${PT.esc(k.toUpperCase())}</dt><dd class="id">${PT.esc(v)}</dd>`).join("");
+    return `
+      <span class="eyebrow">${PT.esc(PT.ROLE[(caseId && e.case_roles && e.case_roles[caseId]) || e.role] || e.role || "")}${e.type === "person" ? " · person" : ""}</span>
+      <h3>${PT.esc(e.name)}</h3>
+      <p>${PT.esc(e.summary)}</p>
+      ${members && members.length > 1 ? `<div class="callout" style="margin-bottom:var(--s-3)"><strong>${members.length} Sayari records merged here</strong> (judged to be the same company):<ul style="margin:4px 0 0">${members.map((m) => `<li><a href="${PT.esc((d.entityById.get(m) || {}).sayari_url || "#")}" rel="noopener">${PT.esc(d.entityById.get(m).name)}</a></li>`).join("")}</ul></div>` : ""}
+      ${e.case_summaries ? Object.entries(e.case_summaries).map(([cid, t]) => `<p class="muted" style="font-size:var(--fs-1)"><strong>${PT.esc((PT._data.caseById.get(cid) || {}).title || cid)}:</strong> ${PT.esc(t)}</p>`).join("") : ""}
+      <p style="font-size:var(--fs-1)">Appears in: ${(e.case_ids || []).map((cid) => `<a href="cases.html#${cid}">${PT.esc((PT._data.caseById.get(cid) || {}).title || cid)}</a>`).join(" · ")}</p>
+      <dl>
+        <dt>Country</dt><dd>${PT.esc(PT.country(e.country))}</dd>
+        ${ids}
+        <dt>Sayari ID</dt><dd class="id">${e.sayari_url ? `<a href="${PT.esc(e.sayari_url)}" rel="noopener">${PT.esc(e.id)}</a>` : `None: not in Sayari (placeholder ${PT.esc(e.id)})`}</dd>
+        <dt>Links</dt><dd>${edges.length}</dd>
+      </dl>
+      ${e.risk_flags.length ? `<div><strong>Sayari risk flags</strong> <small class="muted">(context; most describe neighbours, not this entity. See <a href="about.html#flags">how to read flags</a>)</small><div class="flags">${e.risk_flags.map((f) => `<span class="flag-chip">${RISKY.test(f) ? "⚑ " : ""}${PT.esc(f)}</span>`).join("")}</div></div>` : `<p class="muted">No risk flags beyond country indices.</p>`}
+      <p><strong>How we know:</strong> ${PT.receipts(e.source_call_ids)}</p>
+      ${edges.length ? `<p style="margin-bottom:4px"><strong>Links</strong> <span class="muted" style="font-size:var(--fs-0)">(click one for details)</span></p>` : ""}
+      <ul>${edges.map((x) => `<li><a href="#edge-${x.id}" data-edge="${x.id}">${PT.esc(PT.edgeSentence(x, d))}</a></li>`).join("")}</ul>`;
+  };
+
+  PT.edgePanel = function (d, e, ids) {
+    if (ids && ids.length > 1) {
+      return `<span class="eyebrow">${ids.length} links combined</span><h3>${PT.esc(PT.edgeSentence(e, d))}</h3>
+        <p class="muted" style="font-size:var(--fs-1)">These come from different records of the same companies.</p>` +
+        PT.edgeListHTML(d, ids.map((i) => d.edgeById.get(i)));
+    }
+    return `
+      <span class="eyebrow">Link ${PT.esc(e.id)}</span>
+      <h3>${PT.esc(PT.edgeSentence(e, d))}</h3>
+      <div class="case-meta">${PT.etypeTag(e.edge_type)} ${PT.confBadge(e.confidence)}</div>
+      <p>${PT.esc(e.evidence)}</p>
+      ${PT.whyHTML(e)}
+      <dl>
+        ${e.hs_codes.length ? `<dt>HS codes</dt><dd>${e.hs_codes.map((h) => `<span class="hs">${PT.esc(h)}</span>`).join(" ")}</dd>` : ""}
+        ${e.first_seen ? `<dt>Dates</dt><dd>${PT.fmtDate(e.first_seen)}${e.last_seen && e.last_seen !== e.first_seen ? ` – ${PT.fmtDate(e.last_seen)}` : ""}</dd>` : ""}
+        ${e.shipment_count ? `<dt>Rows</dt><dd>${e.shipment_count}</dd>` : ""}
+      </dl>
+      <p><strong>How we know:</strong> ${PT.receipts(e.source_call_ids)}</p>`;
+  };
+
+
   PT.Graph = function (container, d, opts = {}) {
     if (typeof cytoscape === "undefined") {
       container.innerHTML = `<p class="graph-fallback">The graph library didn't load. The list view shows the same links.</p>`;
@@ -133,6 +176,7 @@
     const cy = cytoscape({
       container, elements: built.els, style: STYLE,
       wheelSensitivity: 0.2, minZoom: 0.2, maxZoom: 2.5, boxSelectionEnabled: false,
+      autoungrabify: true, // nodes can't be dragged; clicking only opens details
     });
     const layout = () => cy.layout({ name: "dagre", rankDir: "LR", nodeSep: 24, rankSep: 120, edgeSep: 12, padding: 30, animate: false }).run();
     const MIN = opts.minZoom || 0.75;
@@ -182,11 +226,34 @@
       tip.style.top = (p.y + 16) + "px";
     });
 
-    if (opts.onSelect) {
-      cy.on("tap", "node", (ev) => opts.onSelect({ kind: "node", id: ev.target.id(), members: ev.target.data("members") }));
-      cy.on("tap", "edge", (ev) => opts.onSelect({ kind: "edge", id: ev.target.data("ids")[0], ids: ev.target.data("ids") }));
-      cy.on("tap", (ev) => { if (ev.target === cy) opts.onSelect(null); });
-    }
+    // Details drawer: clicking a company or a line shows what we know about it.
+    const drawer = document.createElement("aside");
+    drawer.className = "side-panel card drawer";
+    drawer.setAttribute("aria-live", "polite");
+    drawer.hidden = true;
+    frame.appendChild(drawer);
+    const close = () => { drawer.hidden = true; cy.elements().unselect(); };
+    const openNode = (id, members) => {
+      const e = d.entityById.get(id); if (!e) return;
+      drawer.innerHTML = `<button type="button" class="drawer-close" aria-label="Close details">×</button>` + PT.nodePanel(d, e, members || [id], caseId);
+      drawer.hidden = false; drawer.scrollTop = 0;
+    };
+    const openEdge = (id, ids) => {
+      const e = d.edgeById.get(id); if (!e) return;
+      drawer.innerHTML = `<button type="button" class="drawer-close" aria-label="Close details">×</button>` + PT.edgePanel(d, e, ids);
+      drawer.hidden = false; drawer.scrollTop = 0;
+    };
+    drawer.addEventListener("click", (ev) => {
+      if (ev.target.closest(".drawer-close")) { close(); return; }
+      const a = ev.target.closest("[data-edge]");
+      if (a) { ev.preventDefault(); const el = elOfEdge(a.dataset.edge); if (el && el.nonempty()) { cy.elements().unselect(); el.select(); openEdge(el.data("ids")[0], el.data("ids")); } else openEdge(a.dataset.edge); }
+    });
+    document.addEventListener("keydown", (ev) => { if (ev.key === "Escape" && !drawer.hidden) close(); });
+    cy.on("tap", "node", (ev) => { const n = ev.target; openNode(n.id(), n.data("members")); if (opts.onSelect) opts.onSelect({ kind: "node", id: n.id() }); });
+    cy.on("tap", "edge", (ev) => { const e = ev.target; openEdge(e.data("ids")[0], e.data("ids")); if (opts.onSelect) opts.onSelect({ kind: "edge", id: e.data("ids")[0] }); });
+    cy.on("tap", (ev) => { if (ev.target === cy) close(); });
+    cy.on("mouseover", "node, edge", () => { container.style.cursor = "pointer"; });
+    cy.on("mouseout", "node, edge", () => { container.style.cursor = ""; });
 
     const elOfEdge = (id) => { const m = built.origToEl.get(id); return m ? cy.getElementById(m) : cy.collection(); };
     const elOfNode = (id) => cy.getElementById(built.rep.get(id) || id);
@@ -197,6 +264,7 @@
       setCase(id) { caseId = id; api.rebuild(); },
       setMerge(on) { merge = on; api.rebuild(); },
       rebuild() {
+        drawer.hidden = true;
         built = build(d, caseId, merge);
         locked = false;
         cy.elements().remove(); cy.add(built.els); layout(); fitReadable();
@@ -232,6 +300,11 @@
         });
         if (keepEdges.size) cy.fit(cy.elements().not(".hidden"), 30);
       },
+      showDetails(id) {
+        api.select(id);
+        if (d.edgeById.has(id)) { const el = elOfEdge(id); openEdge(id, el && el.nonempty() ? el.data("ids") : [id]); }
+        else { const n = elOfNode(id); openNode(n.nonempty() ? n.id() : id, n.nonempty() ? n.data("members") : [id]); }
+      },
       select(id) {
         cy.elements().unselect();
         const el = d.edgeById.has(id) ? elOfEdge(id) : elOfNode(id);
@@ -239,6 +312,7 @@
       },
     };
     window.addEventListener("resize", () => cy.resize());
+    (PT._graphs = PT._graphs || []).push(api);
     return api;
   };
 

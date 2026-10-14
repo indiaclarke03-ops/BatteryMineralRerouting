@@ -334,7 +334,7 @@
 .keynum { border: 1px solid var(--rule); border-radius: var(--radius); padding: var(--s-3); background: var(--paper); }
 .keynum strong { display: block; font-family: var(--serif); font-size: 1.8rem; color: var(--teal); line-height: 1.1; }
 .keynum span { font-size: var(--fs-0); color: var(--ink-2); }
-.mini-graph { height: 380px; }
+.mini-graph { height: 480px; }
 .section-intro { max-width: 46rem; color: var(--ink-2); font-size: 1.05rem; }
 
 .result-absent { color: var(--ok); font-weight: 600; }
