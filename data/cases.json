@@ -1,0 +1,313 @@
+{
+  "as_of": "2026-10-14",
+  "generated_by": "investigation/build_data.py",
+  "items": [
+    {
+      "id": "case-1",
+      "title": "BTR's Indonesian anode plant",
+      "subtitle": "PT Indonesia BTR New Energy Material · Morowali and Kendal, Indonesia",
+      "question": "Could Sayari detect Chinese graphite anode material reaching US battery plants through BTR's plant in Indonesia?",
+      "overall_confidence": "corroborated",
+      "headline": "Yes for the trade, no for the ownership. Sayari shows dated HS 3801.10 shipments from the Indonesian plant to five US battery and auto makers, and Chinese artificial graphite flowing into the same plant. It does not show who owns the plant. That link comes only from open sources.",
+      "steps": [
+        {
+          "title": "The corridor",
+          "kicker": "Step 1",
+          "text": "Since January 2024, about 47,000 shipments of artificial graphite (HS 3801.10) have reached the US. Spain, China, India, Germany and Morocco lead. Indonesia isn't in the top ten, so a single plant's trail is easy to miss in aggregate data.",
+          "edge_ids": [],
+          "node_ids": [
+            "rvgklT24qqqfH2rnlVlyBg",
+            "kCTEQjRAGcFo6AM_PGW2bw",
+            "aoeSqNICt_VUP-o-F-84Yg",
+            "1iZm5WHKh2xwHvW9-qFunQ",
+            "4fqrWAcyrgtWw2RdV6qZsg",
+            "xWhz7CFJV3lxsgg8fHMGHA"
+          ],
+          "call_ids": [
+            "s024"
+          ]
+        },
+        {
+          "title": "The plant: five records, one site",
+          "kicker": "Step 2 · Inferred",
+          "text": "Sayari holds five separate records for the Indonesian plant. Four share the same Kendal street address and a version of the same name. One has only a Jakarta district and is kept as a lead. We treat them as one plant, labelled Inferred, because no identifier links them.",
+          "edge_ids": [
+            "e001",
+            "e002",
+            "e003",
+            "e004"
+          ],
+          "node_ids": [
+            "2omCekb1pDRKjhFOAqCNSw",
+            "dH3rqoht5wahpKLPJih3gA",
+            "ekoH1fr8BGvHc7UqYCY_YA",
+            "0pb5Arj9l_g5eJtqVBozsQ",
+            "xbEAXBfl7YhUMRWA8PJqoQ"
+          ],
+          "call_ids": [
+            "s005",
+            "s006",
+            "s007",
+            "s022",
+            "s023"
+          ]
+        },
+        {
+          "title": "The owner: not in the registry",
+          "kicker": "Step 3 · Contractual",
+          "text": "Sayari returns no shareholders for the plant, and its shortest path to BTR in China is a trade link. Sayari does show BTR owning a different Indonesian company (Liyuan), so the gap is specific to this plant. BTR's own press release calls the plant its Indonesian facility, so the ownership edge is shown with that source, not Sayari's.",
+          "edge_ids": [
+            "e010",
+            "e011",
+            "e012"
+          ],
+          "node_ids": [
+            "jeHf5QJt0JXowTiCA8JiIQ",
+            "2omCekb1pDRKjhFOAqCNSw",
+            "ebomNaL2BFXiZYYk0Y8Scg",
+            "O-QDv6jXInkdMYQI92mrXA"
+          ],
+          "call_ids": [
+            "s009",
+            "s019",
+            "s020",
+            "t012"
+          ]
+        },
+        {
+          "title": "Same product in, same product out",
+          "kicker": "Step 4 · Transactional",
+          "text": "Artificial graphite (HS 3801) arrives from BTR and from a trader registered in the BTR Building in Shenzhen. Artificial graphite (HS 3801.10) leaves for Ultium Cells, SK Battery America, StarPlus Energy, GM and Tesla, Dec 2024 to Aug 2025. Natural graphite also arrives from Mozambique, Madagascar and the UAE.",
+          "edge_ids": [
+            "e020",
+            "e021",
+            "e005",
+            "e023",
+            "e024",
+            "e025",
+            "e030",
+            "e031",
+            "e032",
+            "e033",
+            "e034",
+            "e035",
+            "e036",
+            "e037",
+            "e038"
+          ],
+          "node_ids": [],
+          "call_ids": [
+            "s013",
+            "s014",
+            "s017"
+          ]
+        },
+        {
+          "title": "Where the trail goes dark",
+          "kicker": "Step 5 · Gap",
+          "text": "Trade records can't show which input went into which export, so Chinese-origin content can't be measured. Supplier rollups by HS code returned 0, and two name filters were silently ignored. Battery-maker shipments in our results stop after Aug 2025; later rows go to industrial buyers. We haven't tested why.",
+          "edge_ids": [
+            "e039",
+            "e040"
+          ],
+          "node_ids": [
+            "oJvmXc2fb6aBRkCDyxOLig",
+            "BoJ05H9uciX3VySWmVmq8g"
+          ],
+          "call_ids": [
+            "s010",
+            "s015",
+            "s016",
+            "s021"
+          ]
+        }
+      ],
+      "verdict": {
+        "detected": [
+          {
+            "text": "Dated HS 3801.10 shipments from the Indonesian plant to Ultium Cells (Warren and Spring Hill), SK Battery America, StarPlus Energy, GM and Tesla, Dec 2024 – Aug 2025.",
+            "call_ids": [
+              "s017",
+              "s011",
+              "s018"
+            ]
+          },
+          {
+            "text": "Artificial graphite (HS 3801) shipped into the plant from China by BTR and by a trader registered in the BTR Building, Dec 2023 – Jun 2026.",
+            "call_ids": [
+              "s013",
+              "s014"
+            ]
+          },
+          {
+            "text": "Five fragmented Sayari records for one plant, four of them tied by a shared street address.",
+            "call_ids": [
+              "s005",
+              "s006",
+              "s007",
+              "s022",
+              "s023"
+            ]
+          }
+        ],
+        "suggested": [
+          {
+            "text": "Chinese parent ownership: the parent's name, a trade link and BTR's own press release point the same way, but Sayari has no registry record of it.",
+            "call_ids": [
+              "s009",
+              "s019",
+              "t012"
+            ]
+          },
+          {
+            "text": "A same-group trading arm: Shenzhen Ruiqing shares the BTR Building address and is the plant's busiest graphite shipper.",
+            "call_ids": [
+              "s013"
+            ]
+          },
+          {
+            "text": "Forced-labor exposure: sub-tier flags on the plant come through 'possibly the same as' paths; the parent is named in Sheffield Hallam forced-labor reports (per Sayari).",
+            "call_ids": [
+              "s003",
+              "s005",
+              "s019"
+            ]
+          }
+        ],
+        "not_visible": [
+          {
+            "text": "Who owns the plant, and in what shares (the PFE test turns on this).",
+            "call_ids": [
+              "s009"
+            ]
+          },
+          {
+            "text": "How much Chinese-origin graphite is inside any US-bound shipment. Trade data has no lot-level tracing.",
+            "call_ids": [
+              "s014"
+            ]
+          },
+          {
+            "text": "Why battery-maker shipments in our results stop after Aug 2025: data lag, a policy response or a change of route are all possible.",
+            "call_ids": [
+              "s017"
+            ]
+          }
+        ]
+      },
+      "passport": [
+        {
+          "field": "Place of manufacture",
+          "guidance_no": "8",
+          "declared": "The cell plant's location, e.g. USA.",
+          "paper_trail": "Anode material shipped from Kendal and Morowali, Indonesia (HS 3801.10).",
+          "gap": true,
+          "note": "The field covers the battery, not its anode."
+        },
+        {
+          "field": "Detailed composition (anode)",
+          "guidance_no": "45",
+          "declared": "'Graphite' as the anode active material.",
+          "paper_trail": "Artificial graphite from BTR Indonesia, whose inputs include HS 3801 from China and natural flake from Mozambique and Madagascar.",
+          "gap": true,
+          "note": "Composition says what, not where from."
+        },
+        {
+          "field": "Critical raw materials > 0.1%",
+          "guidance_no": "15",
+          "declared": "Natural graphite listed if present.",
+          "paper_trail": "Both natural (HS 2504) and artificial (HS 3801) graphite in the plant's inputs.",
+          "gap": false,
+          "note": "Consistent, if declared."
+        },
+        {
+          "field": "Responsible-sourcing (due-diligence) report",
+          "guidance_no": "19",
+          "declared": "Deferred under the EU Battery Regulation.",
+          "paper_trail": "Sub-tier forced-labor flags on the plant; the parent is named in Sheffield Hallam reports.",
+          "gap": true,
+          "note": "The flags exist before the report does."
+        },
+        {
+          "field": "Ownership of upstream suppliers",
+          "guidance_no": "—",
+          "declared": "No such field in the EU passport.",
+          "paper_trail": "Parent is China's BTR (open sources); not visible in Sayari's registry data.",
+          "gap": true,
+          "note": "The US PFE rules ask exactly this question."
+        }
+      ],
+      "red_flags": [
+        {
+          "flag": "Chinese parent ownership of the transit plant",
+          "signal": "contractual",
+          "severity": "High",
+          "result": "suggested",
+          "note": "Open sources plus trade and name; no registry record."
+        },
+        {
+          "flag": "Same HS imported from China and exported to the US",
+          "signal": "transactional",
+          "severity": "High",
+          "result": "detected",
+          "note": "HS 3801 in from China; HS 3801.10 out to US cell plants."
+        },
+        {
+          "flag": "Recent incorporation vs. first export date",
+          "signal": "contractual",
+          "severity": "Medium",
+          "result": "not_visible",
+          "note": "Sayari had no incorporation date for any of the five records."
+        },
+        {
+          "flag": "Volume spike after a policy date",
+          "signal": "transactional",
+          "severity": "Medium",
+          "result": "not_visible",
+          "note": "Too few rows to test; battery-maker rows cluster Mar–Aug 2025."
+        },
+        {
+          "flag": "Shared address or officer with a flagged entity",
+          "signal": "inferred",
+          "severity": "Medium",
+          "result": "detected",
+          "note": "Ruiqing trades from the BTR Building; BTR is in Sheffield Hallam reports."
+        },
+        {
+          "flag": "Entity-resolution fragmentation",
+          "signal": "inferred",
+          "severity": "Low (disclose)",
+          "result": "detected",
+          "note": "Five records for one plant."
+        },
+        {
+          "flag": "Forced-labor / UFLPA sub-tier flags",
+          "signal": "inferred",
+          "severity": "Medium",
+          "result": "detected",
+          "note": "Through 'possibly the same as' paths; context, not a finding."
+        }
+      ],
+      "caveats": [
+        "Processing Chinese inputs in a third country is legal and common. Nothing here shows wrongdoing by any company named.",
+        "The US buyers are named because they appear in customs records; this says nothing about their compliance.",
+        "Entity-resolution links are our judgment and could be wrong.",
+        "HS 3801.10 also covers non-battery graphite (electrodes, refractories). Grain-size wording on some rows suggests industrial use.",
+        "Trade data has gaps: Indonesian export coverage is partial and dates may lag."
+      ]
+    }
+  ],
+  "leads": [
+    {
+      "id": "case-2",
+      "title": "Morocco: the next corridor (lead)",
+      "subtitle": "Iteration 2",
+      "question": "BTR is building a 60,000 t/yr anode plant in Tangier. Morocco already sends 3,088 HS 3801.10 shipments to the US. Is any of it Chinese-owned anode material?",
+      "status": "lead",
+      "call_ids": [
+        "s024",
+        "t013"
+      ]
+    }
+  ]
+}

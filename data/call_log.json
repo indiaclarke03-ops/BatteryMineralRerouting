@@ -1,0 +1,769 @@
+{
+  "as_of": "2026-10-14",
+  "generated_by": "investigation/build_data.py",
+  "items": [
+    {
+      "id": "t001",
+      "timestamp": "2026-10-14T18:36:00Z",
+      "server": "tavily",
+      "tool": "tavily_search",
+      "params": {
+        "query": "MOFCOM GACC announcement 2023 No. 39 graphite export control December 1 2023",
+        "max_results": 5
+      },
+      "question": "When did China's 2023 graphite export licensing take effect, and under which announcement number?",
+      "purpose": "policy verification",
+      "result_summary": "IEA, Mayer Brown and Hogan Lovells describe Joint Announcement No. 39 of 2023, issued 20 Oct 2023 and effective 1 Dec 2023. It adds sensitive synthetic and natural flake graphite items to formal export control. Other results covered the Oct 2025 No. 58 battery/anode controls and their suspension under No. 70.",
+      "interpretation": "Claim 1 holds. The announcement date (20 Oct) differs from the effective date (1 Dec).",
+      "scorecard": "worked",
+      "entity_ids": [],
+      "step": "policy"
+    },
+    {
+      "id": "t002",
+      "timestamp": "2026-10-14T18:36:05Z",
+      "server": "tavily",
+      "tool": "tavily_search",
+      "params": {
+        "query": "active anode material China final determination antidumping countervailing Federal Register February 2026",
+        "max_results": 6
+      },
+      "question": "What are the Federal Register citations and dates for Commerce's final AD/CVD determinations on Chinese active anode material?",
+      "purpose": "policy verification",
+      "result_summary": "Federal Register pages list 91 FR 7247 (AD, A-570-194, FR Doc 2026-02998) and 91 FR 7261 (CVD, C-570-195, FR Doc 2026-02999), both published and applicable 17 Feb 2026. trade.gov says Commerce announced the decisions on 11 Feb 2026.",
+      "interpretation": "The citations are correct, but the FR publication date is 17 Feb, not ~11 Feb. The 11 Feb date is the announcement.",
+      "scorecard": "worked",
+      "entity_ids": [],
+      "step": "policy"
+    },
+    {
+      "id": "t003",
+      "timestamp": "2026-10-14T18:36:10Z",
+      "server": "tavily",
+      "tool": "tavily_search",
+      "params": {
+        "query": "IRS Notice 2026-15 prohibited foreign entity material assistance",
+        "max_results": 5
+      },
+      "question": "Was IRS Notice 2026-15 issued on 12 Feb 2026 as the first PFE material-assistance guidance?",
+      "purpose": "policy verification",
+      "result_summary": "The IRS notice PDF, the regulations.gov docket and several law firms confirm that Treasury and the IRS released Notice 2026-15 on 12 Feb 2026. It gives interim MACR guidance and safe harbors under 45X, 45Y and 48E, citing Pub. L. 119-21 of 4 Jul 2025.",
+      "interpretation": "Claim 4 holds, and the primary text also confirms the OBBBA enactment date.",
+      "scorecard": "worked",
+      "entity_ids": [],
+      "step": "policy"
+    },
+    {
+      "id": "t004",
+      "timestamp": "2026-10-14T18:36:15Z",
+      "server": "tavily",
+      "tool": "tavily_search",
+      "params": {
+        "query": "USITC vote active anode material China injury determination 2026",
+        "max_results": 5
+      },
+      "question": "What did the USITC decide on active anode material from China, and when?",
+      "purpose": "policy verification",
+      "result_summary": "A USITC release and the calendar show a notational vote on 12 Mar 2026 with a negative outcome, framed as 'material retardation' of a US industry. USITC Publication 5719 confirms the FR citations and notes that the final scope excludes AAM in lithium-ion battery products.",
+      "interpretation": "Claim 5 holds on the date and outcome. The legal basis was material retardation, not injury.",
+      "scorecard": "worked",
+      "entity_ids": [],
+      "step": "policy"
+    },
+    {
+      "id": "t005",
+      "timestamp": "2026-10-14T18:37:00Z",
+      "server": "tavily",
+      "tool": "tavily_extract",
+      "params": {
+        "urls": [
+          "https://www.trade.gov/final-affirmative-determinations-antidumping-and-countervailing-duty-investigations-active-anode"
+        ],
+        "query": "final dumping margins China-wide rate countervailing subsidy rates all others"
+      },
+      "question": "What exact AD and CVD rates did Commerce set?",
+      "purpose": "policy verification",
+      "result_summary": "The ITA fact sheet lists a 93.50% dumping margin for separate-rate exporter/producer pairs (BTR, Shanshan and Zhongke Shinzoom entities among them) and 102.72% for the China-wide entity. Subsidy rates are 66.82% (AFA respondents) and 66.86% (Panasonic Global Procurement China and All Others).",
+      "interpretation": "The AD range of 93.5-102.7% is confirmed. The CVD rate should read 66.82-66.86%. BTR and Zhongke Shinzoom were named respondents/producers.",
+      "scorecard": "worked",
+      "entity_ids": [],
+      "step": "policy"
+    },
+    {
+      "id": "t006",
+      "timestamp": "2026-10-14T18:37:05Z",
+      "server": "tavily",
+      "tool": "tavily_extract",
+      "params": {
+        "urls": [
+          "https://www.usitc.gov/press_room/news_release/2026/er0312_68281.htm"
+        ],
+        "query": "determination date vote materially retard"
+      },
+      "question": "What is the exact wording and vote of the USITC final determination?",
+      "purpose": "policy verification",
+      "result_summary": "The Commission found that the subject imports have not materially retarded the establishment of a US industry. Karpel and Johanson voted negative and Kearns affirmative, so Commerce will issue no AD or CVD orders.",
+      "interpretation": "No duty orders exist. The project should describe this as a negative material-retardation finding (2-1).",
+      "scorecard": "worked",
+      "entity_ids": [],
+      "step": "policy"
+    },
+    {
+      "id": "t007",
+      "timestamp": "2026-10-14T18:38:00Z",
+      "server": "tavily",
+      "tool": "tavily_search",
+      "params": {
+        "query": "Public Law 119-21 One Big Beautiful Bill Act signed July 4 2025 prohibited foreign entity material assistance 45X",
+        "max_results": 5
+      },
+      "question": "Was the OBBBA signed on 4 Jul 2025, and did it add PFE material-assistance limits to 45X/45Y/48E?",
+      "purpose": "policy verification",
+      "result_summary": "The IRS newsroom, EY and K&L Gates confirm that P.L. 119-21 was signed 4 Jul 2025 and added PFE restrictions and a material-assistance test (IRC 7701(a)(51)-(52)) to 45X, 45Y and 48E. Entity-level restrictions also reach other credits.",
+      "interpretation": "Claim 2 holds.",
+      "scorecard": "worked",
+      "entity_ids": [],
+      "step": "policy"
+    },
+    {
+      "id": "t008",
+      "timestamp": "2026-10-14T18:38:05Z",
+      "server": "tavily",
+      "tool": "tavily_search",
+      "params": {
+        "query": "MOFCOM Announcement No. 58 2025 artificial graphite anode export control suspended Announcement 70 November 10 2026",
+        "max_results": 6
+      },
+      "question": "What did China do on graphite anode export controls in 2025, and are they in force?",
+      "purpose": "policy verification",
+      "result_summary": "No. 58 of 2025 (9 Oct 2025) would have controlled lithium-battery, cathode and artificial-graphite-anode items from 8 Nov 2025. No. 70 (7 Nov 2025) suspended it with Nos. 55-57, 61 and 62 until 10 Nov 2026. Pillsbury notes that No. 72 separately suspends the stricter US end-use review for dual-use graphite until 27 Nov 2026. One trade site claims an extension to 10 Jan 2027.",
+      "interpretation": "This is an important newer action. The anode-level controls are announced but paused, and the 2023 graphite licensing still applies.",
+      "scorecard": "worked",
+      "entity_ids": [],
+      "step": "policy"
+    },
+    {
+      "id": "t009",
+      "timestamp": "2026-10-14T18:38:10Z",
+      "server": "tavily",
+      "tool": "tavily_search",
+      "params": {
+        "query": "Treasury IRS prohibited foreign entity guidance proposed regulations specified foreign entity foreign-influenced entity 2026",
+        "max_results": 6,
+        "start_date": "2026-03-01"
+      },
+      "question": "Has Treasury issued PFE guidance beyond Notice 2026-15?",
+      "purpose": "policy verification",
+      "result_summary": "All results were commentary on Notice 2026-15 (Nelson Mullins, K&L Gates, Pillsbury, A&O Shearman, McGuireWoods, IRB 2026-11). They note that proposed regulations and statutory safe-harbor tables are due by 31 Dec 2026, with comments closing 30 Mar 2026.",
+      "interpretation": "No newer PFE guidance surfaced, and the definition of effective control is still open.",
+      "scorecard": "partial",
+      "entity_ids": [],
+      "step": "policy"
+    },
+    {
+      "id": "t010",
+      "timestamp": "2026-10-14T18:40:00Z",
+      "server": "tavily",
+      "tool": "tavily_search",
+      "params": {
+        "query": "China extends suspension export controls lithium battery graphite anode MOFCOM announcement 2026",
+        "max_results": 6,
+        "start_date": "2026-08-01"
+      },
+      "question": "Has China extended the suspension of its Oct 2025 battery and anode export controls beyond 10 Nov 2026?",
+      "purpose": "policy verification",
+      "result_summary": "Sources from Aug-Oct 2026 still describe the suspension as running to 10 Nov 2026. TIMEWELL says MOFCOM describes the arrangement as running to 10 Jan 2027 but found no formal announcement extending No. 70. CFR notes that the controls would activate in Nov 2026 without an extension.",
+      "interpretation": "The extension is unverified. The project should flag 10 Nov 2026 as a live deadline.",
+      "scorecard": "partial",
+      "entity_ids": [],
+      "step": "policy"
+    },
+    {
+      "id": "t011",
+      "timestamp": "2026-10-14T18:40:05Z",
+      "server": "tavily",
+      "tool": "tavily_search",
+      "params": {
+        "query": "Treasury proposed regulations prohibited foreign entity effective control material assistance safe harbor tables notice",
+        "max_results": 6,
+        "start_date": "2026-05-01"
+      },
+      "question": "Were PFE proposed regulations or safe-harbor tables published after May 2026?",
+      "purpose": "policy verification",
+      "result_summary": "The results were off-topic: section 892 regulations, OFAC, a DOE FEOC page and OMB. Nothing on PFE proposed regulations or tables appeared.",
+      "interpretation": "Newer PFE guidance could not be confirmed either way, so it is marked unverified.",
+      "scorecard": "failed",
+      "entity_ids": [],
+      "step": "policy"
+    },
+    {
+      "id": "t012",
+      "timestamp": "2026-10-14T18:41:00Z",
+      "server": "tavily",
+      "tool": "tavily_search",
+      "params": {
+        "query": "PT Indonesia BTR New Energy Material anode plant Morowali IMIP Kendal capacity",
+        "max_results": 6
+      },
+      "question": "Where is BTR's Indonesian anode plant, and what is its capacity and status?",
+      "purpose": "company context",
+      "result_summary": "A BTR press release (Aug 2024) and Petromindo say PT Indonesia BTR New Energy Material operates at IMIP (Morowali, Central Sulawesi) and the Kendal Industrial Park (Central Java). Phase 1 is 80,000 tpa ($478M), and Phase 2 adds 80,000 tpa ($299M) for 160,000 tpa, expected in late 2025.",
+      "interpretation": "This is BTR's main non-China anode source and a plausible third-country route for Chinese-owned anode capacity. Battery-Tech Network reports a 70/30 BTR/Stellar Investment ownership split, which is not primary-verified.",
+      "scorecard": "worked",
+      "entity_ids": [],
+      "step": "context"
+    },
+    {
+      "id": "t013",
+      "timestamp": "2026-10-14T18:41:05Z",
+      "server": "tavily",
+      "tool": "tavily_search",
+      "params": {
+        "query": "BTR New Material Morocco anode material plant Tangier investment",
+        "max_results": 5
+      },
+      "question": "What is BTR's Morocco anode plant, and where is it?",
+      "purpose": "company context",
+      "result_summary": "In Aug 2024 BTR announced a 60,000 tpa integrated anode project in Tangier Tech City through BTR Mediterranean New Material Technology, with investment of no more than $366M and about two years of construction. A separate 50,000 tpa cathode project is also in Tangier.",
+      "interpretation": "Morocco has a US free-trade agreement, which may explain the siting. Its current operating status in 2026 is not confirmed.",
+      "scorecard": "worked",
+      "entity_ids": [],
+      "step": "context"
+    },
+    {
+      "id": "t014",
+      "timestamp": "2026-10-14T18:41:10Z",
+      "server": "tavily",
+      "tool": "tavily_search",
+      "params": {
+        "query": "Zhongke Electric Oman lithium battery anode material project Sohar",
+        "max_results": 5
+      },
+      "question": "What is Zhongke Electric's Oman anode project?",
+      "purpose": "company context",
+      "result_summary": "Gulf News and ChemAnalyst report a Sohar Freezone anode plant of up to 200,000 tpa in three phases, at roughly $1-1.1bn. GraphiteHub says it broke ground on 8 May 2026, targets 2027 production and that Zhongke cancelled planned anode projects including one in Morocco in June 2026.",
+      "interpretation": "Oman is an emerging third-country anode hub for a respondent group in the AD case (Zhongke Shinzoom). The groundbreaking date and the Morocco cancellation come from a single trade site.",
+      "scorecard": "worked",
+      "entity_ids": [],
+      "step": "context"
+    },
+    {
+      "id": "s001",
+      "timestamp": "2026-10-14T18:46:10Z",
+      "server": "sayari",
+      "tool": "get_investigation_guidance",
+      "params": {
+        "query": "Chinese battery anode graphite producer operating plants in Indonesia; detect rerouting through third-country plants into US supply chains",
+        "investigation_type": "supply_chain",
+        "limit": 5
+      },
+      "question": "What does Sayari's own tradecraft say about tracing a supply chain like this?",
+      "purpose": "Build the rubric (INV-1)",
+      "result_summary": "Five guidance entries came back: supply-chain pitfalls and data gaps, free-zone opacity red flags, a trade-based investigation workflow, a tool-selection guide and a bearer-share protocol.",
+      "interpretation": "Three rules shaped the method: resolve the entity before anything else, keep freight forwarders out of supplier lists, and treat missing trade data as a gap, not a negative.",
+      "scorecard": "worked",
+      "entity_ids": [],
+      "step": "method"
+    },
+    {
+      "id": "s002",
+      "timestamp": "2026-10-14T18:46:20Z",
+      "server": "sayari",
+      "tool": "get_investigation_guidance",
+      "params": {
+        "query": "Same company appears as several fragmented records with different addresses (Morowali IMIP, Kendal, Jakarta Barat) in Indonesia",
+        "investigation_type": "entity_resolution",
+        "countries": [
+          "IDN"
+        ],
+        "limit": 5
+      },
+      "question": "Is there Indonesia-specific guidance on merging fragmented company records?",
+      "purpose": "Entity-resolution rules (INV-1)",
+      "result_summary": "No entries. The country filter plus entity-resolution type returned 0 results.",
+      "interpretation": "The guidance library is thin for Indonesia. We dropped the country filter and asked again (s004).",
+      "scorecard": "failed",
+      "entity_ids": [],
+      "step": "method"
+    },
+    {
+      "id": "s003",
+      "timestamp": "2026-10-14T18:46:30Z",
+      "server": "sayari",
+      "tool": "lookup_risk_factors",
+      "params": {
+        "ids": [
+          "chinese_soe_adjacent",
+          "forced_labor_uflpa_origin_subtier",
+          "psa_imports_from_usa_bis_entity",
+          "soe_adjacent",
+          "export_controls_adjacent",
+          "sanctioned_adjacent"
+        ]
+      },
+      "question": "What exactly do the risk flags on the seed records mean?",
+      "purpose": "Read flag definitions before using them (INV-6)",
+      "result_summary": "Definitions for six flags. '_adjacent' means one hop from a flagged entity through any relationship. 'psa_' means the path runs through a 'Possibly the Same As' link. 'forced_labor_uflpa_origin_subtier' means a UFLPA-listed entity appears in tier 2 or 3 of the supplier network in the last 730 days.",
+      "interpretation": "None of these flags says the plant itself is listed. They describe neighbours. We show them as context, never as findings about the company.",
+      "scorecard": "worked",
+      "entity_ids": [],
+      "step": "method"
+    },
+    {
+      "id": "s004",
+      "timestamp": "2026-10-14T18:46:45Z",
+      "server": "sayari",
+      "tool": "get_investigation_guidance",
+      "params": {
+        "query": "fragmented entity records same company multiple records how to decide same legal entity",
+        "investigation_type": "entity_resolution",
+        "limit": 3
+      },
+      "question": "How should we decide whether several sparse records are one legal entity?",
+      "purpose": "Entity-resolution rules (INV-1)",
+      "result_summary": "Returned Sayari's 'Entity Resolution Quality Reasoning' entry: anchor on identifiers, registry IDs and structured addresses; same group or similar name is not enough; merge only when evidence supports one legal entity.",
+      "interpretation": "Became our merge rule: a matching street address plus matching name stem gives an Inferred 'possibly same as' link; a name match alone stays a Lead.",
+      "scorecard": "worked",
+      "entity_ids": [],
+      "step": "method"
+    },
+    {
+      "id": "s005",
+      "timestamp": "2026-10-14T18:47:00Z",
+      "server": "sayari",
+      "tool": "get_entity_summary",
+      "params": {
+        "entity_id": "2omCekb1pDRKjhFOAqCNSw"
+      },
+      "question": "Who is the main Indonesian record, and what identifies it?",
+      "purpose": "Entity resolution (INV-2)",
+      "result_summary": "PT. Indonesia BTR New Energy Material. Addresses in both IMIP Morowali (Central Sulawesi) and Kendal Industrial Estate (Central Java). Indonesian tax ID, LEI 254900G3L2Z0HNRV7W43. Sources: UK, Japan, South Korea and China trade data plus the LEI registry. 78 shipments sent, 4,083 received. Flags include chinese_soe_adjacent and several forced-labor sub-tier and PSA flags.",
+      "interpretation": "This is the anchor record: the only one with registry-grade identifiers. It receives far more than it sends, which fits a processing plant that imports raw material.",
+      "scorecard": "worked",
+      "entity_ids": [
+        "2omCekb1pDRKjhFOAqCNSw"
+      ],
+      "step": "plant"
+    },
+    {
+      "id": "s006",
+      "timestamp": "2026-10-14T18:47:05Z",
+      "server": "sayari",
+      "tool": "get_entity_summary",
+      "params": {
+        "entity_id": "dH3rqoht5wahpKLPJih3gA"
+      },
+      "question": "Is the Kendal-only record the same company?",
+      "purpose": "Entity resolution (INV-2)",
+      "result_summary": "'PT Indonesia BTR New Energy Materi' (name cut off). Address: Jl. Indraprasta No. 8, Kendal Industrial Estate. Only source: USA Imports (2021 to present). 37 shipments sent, none received. No identifiers.",
+      "interpretation": "Same street address as the anchor and a truncated version of its name. It exists only because US customs records spelled the shipper differently. That makes it the US-facing view of the same plant.",
+      "scorecard": "worked",
+      "entity_ids": [
+        "dH3rqoht5wahpKLPJih3gA"
+      ],
+      "step": "plant"
+    },
+    {
+      "id": "s007",
+      "timestamp": "2026-10-14T18:47:10Z",
+      "server": "sayari",
+      "tool": "get_entity_summary",
+      "params": {
+        "entity_id": "ekoH1fr8BGvHc7UqYCY_YA"
+      },
+      "question": "Is the Jakarta Barat record the same company?",
+      "purpose": "Entity resolution (INV-2)",
+      "result_summary": "Exact legal name, but the only address is 'Jakarta Barat'. Only source: Indonesia Berita Negara company gazette. No trade, no identifiers.",
+      "interpretation": "Probably the registry filing for the same PT (Jakarta is a common registered-office location), but nothing ties it to the plant except the name. Kept as a Lead.",
+      "scorecard": "worked",
+      "entity_ids": [
+        "ekoH1fr8BGvHc7UqYCY_YA"
+      ],
+      "step": "plant"
+    },
+    {
+      "id": "s008",
+      "timestamp": "2026-10-14T18:47:30Z",
+      "server": "sayari",
+      "tool": "get_entity_profile",
+      "params": {
+        "entity_id": "2omCekb1pDRKjhFOAqCNSw",
+        "relationships_limit": 40
+      },
+      "question": "Who does the plant trade with, and does Sayari hold any ownership links for it?",
+      "purpose": "Ownership and counterparties (INV-3)",
+      "result_summary": "No shareholder or parent relationships at all. Trade relationships only: ships_to 23, receives_from 90. Named ships_to partners include Ultium Cells Warren (USA), Ultium Cells Spring Hill (USA), Samsung SDI, Aminco Resources LLC, BTR New Material Group Co., Ltd., FBKorea and Ferrolux GmbH.",
+      "interpretation": "The first sign of a US trail: two Ultium Cells plants appear as buyers. The parent's name appears only as a trade partner, not as an owner.",
+      "scorecard": "worked",
+      "entity_ids": [
+        "2omCekb1pDRKjhFOAqCNSw",
+        "rvgklT24qqqfH2rnlVlyBg",
+        "kCTEQjRAGcFo6AM_PGW2bw",
+        "jeHf5QJt0JXowTiCA8JiIQ",
+        "oJvmXc2fb6aBRkCDyxOLig"
+      ],
+      "step": "owner"
+    },
+    {
+      "id": "s009",
+      "timestamp": "2026-10-14T18:47:40Z",
+      "server": "sayari",
+      "tool": "find_beneficial_owners",
+      "params": {
+        "entity_id": "2omCekb1pDRKjhFOAqCNSw",
+        "max_depth": 4,
+        "limit": 15
+      },
+      "question": "Who owns the Indonesian plant?",
+      "purpose": "Ownership (INV-3)",
+      "result_summary": "0 results.",
+      "interpretation": "Sayari holds no shareholder data for this PT. Ownership has to come from open sources and is labelled that way. This is the central blind spot of the case.",
+      "scorecard": "failed",
+      "entity_ids": [
+        "2omCekb1pDRKjhFOAqCNSw"
+      ],
+      "step": "owner"
+    },
+    {
+      "id": "s010",
+      "timestamp": "2026-10-14T18:47:55Z",
+      "server": "sayari",
+      "tool": "search_shipments",
+      "params": {
+        "query": "graphite",
+        "shipper_name": "INDONESIA BTR NEW ENERGY",
+        "arrival_country": "USA",
+        "limit": 25,
+        "response_mode": "compact"
+      },
+      "question": "What has the plant shipped to the US?",
+      "purpose": "Downstream (INV-5)",
+      "result_summary": "Returned 10,000 unrelated US-bound shipments (photo paper, auto parts, Brazilian flake graphite). The shipper_name filter was not applied.",
+      "interpretation": "Same failure seen in our earlier project: name filters can silently drop. Every result has to be re-checked against the supplier field before it counts.",
+      "scorecard": "failed",
+      "entity_ids": [],
+      "step": "out"
+    },
+    {
+      "id": "s011",
+      "timestamp": "2026-10-14T18:48:10Z",
+      "server": "sayari",
+      "tool": "get_entity_profile",
+      "params": {
+        "entity_id": "dH3rqoht5wahpKLPJih3gA",
+        "relationships_limit": 30
+      },
+      "question": "Who did the US-import record ship to?",
+      "purpose": "Downstream (INV-5)",
+      "result_summary": "ships_to: Tesla Inc, Ultium Cells Warren, General Motors. Source: USA Imports only.",
+      "interpretation": "US customs data links this record to three US buyers, one of them shared with the anchor record (Ultium Cells Warren). Shared buyers are extra evidence that the two records are one plant.",
+      "scorecard": "worked",
+      "entity_ids": [
+        "dH3rqoht5wahpKLPJih3gA",
+        "xWhz7CFJV3lxsgg8fHMGHA",
+        "rvgklT24qqqfH2rnlVlyBg",
+        "4fqrWAcyrgtWw2RdV6qZsg"
+      ],
+      "step": "out"
+    },
+    {
+      "id": "s012",
+      "timestamp": "2026-10-14T18:48:25Z",
+      "server": "sayari",
+      "tool": "search_shipments",
+      "params": {
+        "query": "anode",
+        "receiver_name": "ULTIUM CELLS",
+        "departure_country": "IDN",
+        "limit": 25,
+        "response_mode": "compact"
+      },
+      "question": "Can we see the Indonesia → Ultium shipments directly?",
+      "purpose": "Downstream (INV-5)",
+      "result_summary": "The receiver filter was ignored: results were palm oil to ADM, electronics and similar. One relevant row: 'carbon anode materials, HS 3801.90' from Indonesia to a Tesla warehouse in Santa Clara (Aug 2026), with no supplier named.",
+      "interpretation": "Partial. It shows anode material does leave Indonesia for the US, but an unnamed shipper can't be tied to the plant.",
+      "scorecard": "partial",
+      "entity_ids": [],
+      "step": "out"
+    },
+    {
+      "id": "s013",
+      "timestamp": "2026-10-14T18:48:40Z",
+      "server": "sayari",
+      "tool": "traverse_network",
+      "params": {
+        "entity_id": "2omCekb1pDRKjhFOAqCNSw",
+        "relationships": [
+          "receives_from"
+        ],
+        "max_depth": 1,
+        "limit": 25
+      },
+      "question": "Who supplies the plant?",
+      "purpose": "Upstream (INV-4)",
+      "result_summary": "90 suppliers: 65 in China, then Mozambique (4), Madagascar (3), Hong Kong (3), USA (5) and others. They include BTR New Material Group Co., Ltd., BTR New Material Group Sales Co., Ltd., and Shenzhen Ruiqing New Energy Technology, whose registered address is 'Room 1108, BTR Building, No. 8 Guangyuan 4th Road, Guangming District, Shenzhen'.",
+      "interpretation": "Most of the plant's inputs come from China, including from the parent group and a trader registered in the parent group's own building.",
+      "scorecard": "worked",
+      "entity_ids": [
+        "2omCekb1pDRKjhFOAqCNSw",
+        "jeHf5QJt0JXowTiCA8JiIQ",
+        "5_cayB1m7XahAhz_Hrrpng",
+        "9pKXMU4m6GbuXl_McP8jag"
+      ],
+      "step": "in"
+    },
+    {
+      "id": "s014",
+      "timestamp": "2026-10-14T18:49:00Z",
+      "server": "sayari",
+      "tool": "get_upstream_supply_chain",
+      "params": {
+        "entity_id": "2omCekb1pDRKjhFOAqCNSw",
+        "product": [
+          "3801",
+          "2504"
+        ],
+        "max_depth": 2,
+        "limit": 20
+      },
+      "question": "Does the plant import the same product (graphite) that it exports?",
+      "purpose": "Upstream (INV-4)",
+      "result_summary": "HS 3801 (artificial graphite) China → Indonesia from BTR New Material Group (Dec 2025) and Shenzhen Ruiqing (Dec 2023 to Jun 2026). HS 2504 (natural graphite) from Mozambique (Twigg Exploration & Mining), Madagascar (ERG Madagascar, others), the UAE (Syrah Global DMCC) and China. HS 2713 (petroleum coke, an anode precursor) from China, Japan, Germany and Switzerland.",
+      "interpretation": "Yes. Artificial graphite comes in from China and artificial graphite goes out to the US. But the plant also buys non-Chinese natural graphite and coke, so trade data alone can't say which input ended up in which export.",
+      "scorecard": "worked",
+      "entity_ids": [
+        "2omCekb1pDRKjhFOAqCNSw",
+        "jeHf5QJt0JXowTiCA8JiIQ",
+        "9pKXMU4m6GbuXl_McP8jag",
+        "ffPlxyHu42G892jPO7tpbA",
+        "uZISesDqcaxQ8aVgsyvurw",
+        "I0E-2fRqFflDTESrsMh2ZA"
+      ],
+      "step": "in"
+    },
+    {
+      "id": "s015",
+      "timestamp": "2026-10-14T18:49:20Z",
+      "server": "sayari",
+      "tool": "search_trade_facets",
+      "params": {
+        "scope": "suppliers",
+        "query": "anode",
+        "departure_country": "IDN",
+        "arrival_country": "USA",
+        "hs_code": "3801"
+      },
+      "question": "Using HS code filters only, how many Indonesian suppliers send anode material to the US?",
+      "purpose": "Downstream (INV-5)",
+      "result_summary": "0.",
+      "interpretation": "A query that looks correct returns nothing. The free-text word 'anode' doesn't match records described as 'artificial graphite'. This is how a trail goes dark.",
+      "scorecard": "failed",
+      "entity_ids": [],
+      "step": "out"
+    },
+    {
+      "id": "s016",
+      "timestamp": "2026-10-14T18:49:30Z",
+      "server": "sayari",
+      "tool": "search_suppliers",
+      "params": {
+        "query": "graphite anode",
+        "departure_country": "IDN",
+        "arrival_country": "USA",
+        "hs_code": "3801",
+        "limit": 10
+      },
+      "question": "Same question as a supplier rollup.",
+      "purpose": "Downstream (INV-5)",
+      "result_summary": "0.",
+      "interpretation": "Confirms the feasibility-probe result. Rollups are blind here; the shipment search by name (s017) is what works.",
+      "scorecard": "failed",
+      "entity_ids": [],
+      "step": "out"
+    },
+    {
+      "id": "s017",
+      "timestamp": "2026-10-14T18:49:50Z",
+      "server": "sayari",
+      "tool": "search_shipments",
+      "params": {
+        "query": "\"INDONESIA BTR\"",
+        "departure_country": "IDN",
+        "arrival_country": "USA",
+        "limit": 25,
+        "response_mode": "compact"
+      },
+      "question": "Put the plant's name in the free-text query instead of the filter. What reached the US?",
+      "purpose": "Downstream (INV-5)",
+      "result_summary": "19 shipment rows, all from BTR Indonesia records. HS 3801.10 artificial graphite to Ultium Cells Warren (Jun–Aug 2025, 3 rows), Ultium Cells Spring Hill (Aug 2025, 2), SK Battery America (Aug 2025, 1), StarPlus Energy (Mar–Apr 2025, 3), General Motors (Aug 2025, 1; plus HS 3801.90 in Dec 2024, 1), Tesla (Aug 2025, 1), Aminco Resources (Sep 2025, 3) and Larpen Metallurgical Service (Jun 2026, 2). Two rows to StarPlus carry a cosmetics HS code.",
+      "interpretation": "The key transactional evidence: dated, HS-coded shipments from the Indonesian plant to five US battery or auto makers. Two of the shippers are separate Sayari records (fragments 4 and 5).",
+      "scorecard": "worked",
+      "entity_ids": [
+        "2omCekb1pDRKjhFOAqCNSw",
+        "0pb5Arj9l_g5eJtqVBozsQ",
+        "xbEAXBfl7YhUMRWA8PJqoQ",
+        "rvgklT24qqqfH2rnlVlyBg",
+        "kCTEQjRAGcFo6AM_PGW2bw",
+        "aoeSqNICt_VUP-o-F-84Yg",
+        "1iZm5WHKh2xwHvW9-qFunQ",
+        "4fqrWAcyrgtWw2RdV6qZsg",
+        "xWhz7CFJV3lxsgg8fHMGHA",
+        "oJvmXc2fb6aBRkCDyxOLig",
+        "BoJ05H9uciX3VySWmVmq8g"
+      ],
+      "step": "out"
+    },
+    {
+      "id": "s018",
+      "timestamp": "2026-10-14T18:50:05Z",
+      "server": "sayari",
+      "tool": "traverse_network",
+      "params": {
+        "entity_id": "dH3rqoht5wahpKLPJih3gA",
+        "relationships": [
+          "ships_to"
+        ],
+        "max_depth": 1,
+        "limit": 10,
+        "response_mode": "full"
+      },
+      "question": "Confirm the US-import record's buyers in the graph.",
+      "purpose": "Downstream (INV-5)",
+      "result_summary": "Three ships_to links: Ultium Cells Warren (Warren, Ohio), General Motors and Tesla Inc.",
+      "interpretation": "Matches s011. The same three US buyers appear whether you start from the US-import record or from the shipment search.",
+      "scorecard": "worked",
+      "entity_ids": [
+        "dH3rqoht5wahpKLPJih3gA",
+        "rvgklT24qqqfH2rnlVlyBg",
+        "4fqrWAcyrgtWw2RdV6qZsg",
+        "xWhz7CFJV3lxsgg8fHMGHA"
+      ],
+      "step": "out"
+    },
+    {
+      "id": "s019",
+      "timestamp": "2026-10-14T18:50:20Z",
+      "server": "sayari",
+      "tool": "find_shortest_path",
+      "params": {
+        "source_entity_id": "2omCekb1pDRKjhFOAqCNSw",
+        "target_entity_id": "jeHf5QJt0JXowTiCA8JiIQ"
+      },
+      "question": "What is the shortest link between the Indonesian plant and BTR in China?",
+      "purpose": "Inferred links (INV-6)",
+      "result_summary": "One hop: a ships_to trade link. No ownership path.",
+      "interpretation": "In Sayari, the plant and its reported parent are connected by trade, not by any registry record.",
+      "scorecard": "partial",
+      "entity_ids": [
+        "2omCekb1pDRKjhFOAqCNSw",
+        "jeHf5QJt0JXowTiCA8JiIQ"
+      ],
+      "step": "owner"
+    },
+    {
+      "id": "s020",
+      "timestamp": "2026-10-14T18:50:35Z",
+      "server": "sayari",
+      "tool": "find_downstream_entities",
+      "params": {
+        "entity_id": "jeHf5QJt0JXowTiCA8JiIQ",
+        "countries": [
+          "IDN",
+          "MAR"
+        ],
+        "max_depth": 3,
+        "limit": 15
+      },
+      "question": "Which Indonesian or Moroccan companies does BTR own, according to registry data?",
+      "purpose": "Ownership (INV-3)",
+      "result_summary": "One path: BTR → Changzhou Liyuan New Energy Technology (China) → Liyuan (Indonesia) New Energy Co. Both links are shareholder_of. The anode plant is not in the list.",
+      "interpretation": "Sayari can see BTR's registry links in general, so the missing link to the anode plant is a coverage gap for this PT, not a tool failure.",
+      "scorecard": "partial",
+      "entity_ids": [
+        "jeHf5QJt0JXowTiCA8JiIQ",
+        "ebomNaL2BFXiZYYk0Y8Scg",
+        "O-QDv6jXInkdMYQI92mrXA"
+      ],
+      "step": "owner"
+    },
+    {
+      "id": "s021",
+      "timestamp": "2026-10-14T18:50:50Z",
+      "server": "sayari",
+      "tool": "check_watchlist",
+      "params": {
+        "entity_id": "2omCekb1pDRKjhFOAqCNSw",
+        "max_depth": 3,
+        "limit": 10,
+        "response_mode": "compact"
+      },
+      "question": "Is the plant connected to sanctioned or watch-listed parties?",
+      "purpose": "Screening (INV-6)",
+      "result_summary": "No direct hit. Ten sanctioned parties two hops away, every path through a logistics firm or trader (e.g. Sinotrans Central China, Sky Fortune Freight, Mitsubishi Corporation) to an unrelated Russian, Sudanese or Turkish company.",
+      "interpretation": "Noise from shared freight forwarders, exactly what the guidance warned about. Not a finding about the plant.",
+      "scorecard": "partial",
+      "entity_ids": [
+        "2omCekb1pDRKjhFOAqCNSw"
+      ],
+      "step": "gap"
+    },
+    {
+      "id": "s022",
+      "timestamp": "2026-10-14T18:51:05Z",
+      "server": "sayari",
+      "tool": "get_entity_summary",
+      "params": {
+        "entity_id": "0pb5Arj9l_g5eJtqVBozsQ"
+      },
+      "question": "Who is the 'PT Indonesia BTR New Energy' shipper that sent graphite to GM?",
+      "purpose": "Entity resolution (INV-2)",
+      "result_summary": "A fourth record. Its address field starts with 'MATERIAL. Jl. Indraprasta No. 8 Kwsn Ind Kendal', meaning the end of the company name spilled into the address. Sources: China, Indonesia, Malaysia and US trade data.",
+      "interpretation": "Same street address and the missing word of the name. Possibly the same as the anchor (Inferred).",
+      "scorecard": "worked",
+      "entity_ids": [
+        "0pb5Arj9l_g5eJtqVBozsQ"
+      ],
+      "step": "plant"
+    },
+    {
+      "id": "s023",
+      "timestamp": "2026-10-14T18:51:10Z",
+      "server": "sayari",
+      "tool": "get_entity_summary",
+      "params": {
+        "entity_id": "xbEAXBfl7YhUMRWA8PJqoQ"
+      },
+      "question": "Who is the 'PT Indonesia BTR' shipper that sent graphite to Tesla and GM?",
+      "purpose": "Entity resolution (INV-2)",
+      "result_summary": "A fifth record. Same Kendal address (Jl. Indraprasta No. 8). Sources: Indonesia, Japan and South Korea trade data. 12 shipments sent.",
+      "interpretation": "Same street address, shortened name. Possibly the same as the anchor (Inferred). Five Sayari records describe what is most likely one plant.",
+      "scorecard": "worked",
+      "entity_ids": [
+        "xbEAXBfl7YhUMRWA8PJqoQ"
+      ],
+      "step": "plant"
+    },
+    {
+      "id": "s024",
+      "timestamp": "2026-10-14T18:51:30Z",
+      "server": "sayari",
+      "tool": "search_trade_facets",
+      "params": {
+        "scope": "shipments",
+        "query": "artificial graphite",
+        "hs_code": "380110",
+        "arrival_country": "USA",
+        "date_from": "2024-01-01"
+      },
+      "question": "Where does US-bound artificial graphite come from?",
+      "purpose": "Corridor context (INV-8 preview)",
+      "result_summary": "About 47,000 HS 3801.10 shipments to the US since Jan 2024. Top departure countries: Spain 8,862, China 5,244, India 3,661, Germany 3,535, Morocco 3,088, Netherlands 2,993, Mexico 2,939, Belgium 2,385. General Motors is among the top ten buyers.",
+      "interpretation": "Indonesia is a small corridor by count, so the BTR trail would be easy to miss in aggregate data. Morocco, where BTR is building a second plant, is already a large corridor and is the natural Case 2.",
+      "scorecard": "worked",
+      "entity_ids": [
+        "4fqrWAcyrgtWw2RdV6qZsg"
+      ],
+      "step": "corridor"
+    }
+  ]
+}

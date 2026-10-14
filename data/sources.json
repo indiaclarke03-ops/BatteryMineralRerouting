@@ -1,0 +1,69 @@
+{
+  "as_of": "2026-10-14",
+  "generated_by": "investigation/build_data.py",
+  "items": [
+    {
+      "id": "sayari",
+      "name": "Sayari Graph via Sayari MCP",
+      "type": "commercial data (licensed)",
+      "url": "https://graph.sayari.com/",
+      "used_for": "Entities, relationships, trade records, risk flags. Published here as our own summaries only."
+    },
+    {
+      "id": "tavily",
+      "name": "Tavily MCP (web search and extract)",
+      "type": "search tool",
+      "url": "https://tavily.com/",
+      "used_for": "Policy dates and company context, re-checked against primary sources where possible."
+    },
+    {
+      "id": "fr",
+      "name": "Federal Register",
+      "type": "primary (US government)",
+      "url": "https://www.federalregister.gov/",
+      "used_for": "Commerce AD/CVD final determinations, 91 FR 7247 and 91 FR 7261."
+    },
+    {
+      "id": "irs",
+      "name": "IRS Notice 2026-15",
+      "type": "primary (US government)",
+      "url": "https://www.irs.gov/pub/irs-drop/n-26-15.pdf",
+      "used_for": "PFE material-assistance guidance."
+    },
+    {
+      "id": "usitc",
+      "name": "USITC news release, 12 Mar 2026",
+      "type": "primary (US government)",
+      "url": "https://www.usitc.gov/press_room/news_release/2026/er0312_68281.htm",
+      "used_for": "Negative final determination on active anode material."
+    },
+    {
+      "id": "trade_gov",
+      "name": "ITA fact sheet (trade.gov)",
+      "type": "primary (US government)",
+      "url": "https://www.trade.gov/final-affirmative-determinations-antidumping-and-countervailing-duty-investigations-active-anode",
+      "used_for": "AD/CVD rates."
+    },
+    {
+      "id": "btr",
+      "name": "BTR press releases",
+      "type": "company self-declaration",
+      "url": "https://www.btrchina.com/en/News/info.aspx?itemid=1243",
+      "used_for": "Indonesian and Moroccan plant details."
+    },
+    {
+      "id": "opensanctions",
+      "name": "OpenSanctions",
+      "type": "open data (planned cross-check)",
+      "url": "https://www.opensanctions.org/",
+      "used_for": "Iteration 2 cross-check; not yet used."
+    },
+    {
+      "id": "comtrade",
+      "name": "UN Comtrade",
+      "type": "open data (planned baseline)",
+      "url": "https://comtradeplus.un.org/",
+      "used_for": "Iteration 2 corridor baselines; not yet used."
+    }
+  ]
+}

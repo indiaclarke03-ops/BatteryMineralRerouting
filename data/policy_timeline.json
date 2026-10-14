@@ -1,0 +1,111 @@
+{
+  "as_of": "2026-10-14",
+  "generated_by": "investigation/build_data.py",
+  "items": [
+    {
+      "date": "2023-12-01",
+      "measure": "China export licensing for certain graphite items (MOFCOM/GACC Announcement No. 39 of 2023)",
+      "relevance": "Licensing on high-purity/high-strength/high-density synthetic graphite and natural flake graphite products gives Beijing visibility and leverage over graphite leaving China, an incentive to process in third countries.",
+      "source_url": "https://www.iea.org/policies/17933-announcement-on-the-optimisation-and-adjustment-of-temporary-export-control-measures-for-graphite-items",
+      "source_name": "IEA Policies database (summarising MOFCOM/GACC announcement); corroborated by Mayer Brown and Hogan Lovells (JDSupra)",
+      "verified": true,
+      "note": "Announced 20 Oct 2023, effective 1 Dec 2023. Claim's 'Dec 2023' is the effective date; the announcement date is 20 Oct 2023. No MOFCOM primary page retrieved; secondary sources (IEA, law firms) agree on number, dates and scope.",
+      "source_call_ids": [
+        "t001"
+      ]
+    },
+    {
+      "date": "2025-07-04",
+      "measure": "One Big Beautiful Bill Act (Pub. L. 119-21) signed; PFE / material-assistance limits added to 45X, 45Y, 48E",
+      "relevance": "Creates the tax-credit test that makes the ownership and origin of anode material inside US-made batteries financially material, which is what makes rerouting through third-country plants relevant.",
+      "source_url": "https://www.irs.gov/pub/irs-drop/n-26-15.pdf",
+      "source_name": "IRS Notice 2026-15 (cites Pub. L. 119-21, 139 Stat. 72, July 4, 2025); IRS newsroom; EY Tax News",
+      "verified": true,
+      "note": "Confirmed via IRS primary text. PFE is defined in IRC 7701(a)(51) and material assistance in 7701(a)(52). For 45Y/48E the material-assistance test applies to facilities beginning construction after 31 Dec 2025; for 45X it applies to components sold in tax years beginning after enactment.",
+      "source_call_ids": [
+        "t003",
+        "t007",
+        "t009"
+      ]
+    },
+    {
+      "date": "2025-10-09",
+      "measure": "China announces export controls on lithium-battery and artificial graphite anode items (MOFCOM/GACC Announcement No. 58 of 2025)",
+      "relevance": "Would have extended Chinese licensing from graphite feedstock to anode materials, cells and anode-making equipment and technology, the inputs that third-country anode plants depend on.",
+      "source_url": "https://www.fredgao.com/p/china-implements-new-export-controls",
+      "source_name": "Fred Gao (translation of MOFCOM/GACC No. 58/2025); CIRS Group; Global Times",
+      "verified": true,
+      "note": "Issued 9 Oct 2025 with a scheduled effective date of 8 Nov 2025, but suspended before that date (see the 2025-11-07 entry). Not a claim in the original list; added as a newer action.",
+      "source_call_ids": [
+        "t001",
+        "t008"
+      ]
+    },
+    {
+      "date": "2025-11-07",
+      "measure": "China suspends Announcements No. 55-58, 61, 62 of 2025 until 10 Nov 2026 (MOFCOM/GACC Announcement No. 70 of 2025)",
+      "relevance": "The October 2025 anode/battery controls are paused under the US-China truce; the 2023 graphite licensing (No. 39) stays in force.",
+      "source_url": "https://www.cirs-group.com/en/chemicals/china-temporarily-suspends-export-controls-on-key-raw-materials-including-rare-earths-lithium-batteries-and-diamond",
+      "source_name": "CIRS Group; Global Times; Pillsbury; chemradar",
+      "verified": true,
+      "note": "Separately, MOFCOM Announcement No. 72 (9 Nov 2025) suspends the stricter end-use review for dual-use graphite exports to the US (Article 2 of No. 46 of 2024) until 27 Nov 2026 (Pillsbury). One trade-press site (ljyenergy.com) says the No. 70 suspension was extended to 10 Jan 2027 in late Sept 2026; TIMEWELL (Oct 2026) reports MOFCOM describes the arrangement as running to 10 Jan 2027 but found no formal announcement extending No. 70. The extension is UNVERIFIED from a primary source.",
+      "source_call_ids": [
+        "t008",
+        "t010"
+      ]
+    },
+    {
+      "date": "2026-02-11",
+      "measure": "Commerce final affirmative AD/CVD determinations on active anode material from China (A-570-194, C-570-195)",
+      "relevance": "Shows Commerce found Chinese anode material dumped and subsidised at very high rates, which raises the incentive to ship via non-Chinese plants.",
+      "source_url": "https://www.trade.gov/final-affirmative-determinations-antidumping-and-countervailing-duty-investigations-active-anode",
+      "source_name": "ITA (trade.gov) fact sheet; Federal Register 91 FR 7247 (AD, FR Doc. 2026-02998) and 91 FR 7261 (CVD, FR Doc. 2026-02999)",
+      "verified": true,
+      "note": "CORRECTED: announced 11 Feb 2026 but published in the Federal Register on 17 Feb 2026 (both notices 'applicable February 17, 2026'), not around 11 Feb. AD: 93.50% for the separate-rate exporters/producers (including BTR, Shanshan, Zhongke Shinzoom combinations); China-wide entity 102.72%. CVD: 66.82% (Huzhou Kaijin; AFA) and 66.86% (Panasonic Global Procurement China and All Others), so '~66.8%' should read 66.82-66.86%. The final scope excludes AAM incorporated into lithium-ion battery products (per USITC report).",
+      "source_call_ids": [
+        "t002",
+        "t005"
+      ]
+    },
+    {
+      "date": "2026-02-12",
+      "measure": "IRS Notice 2026-15: interim guidance on material assistance from prohibited foreign entities",
+      "relevance": "Gives the material assistance cost ratio (MACR) method and safe harbors that battery makers use to show their anode inputs are not PFE-sourced. This is where supplier certification of non-Chinese anode origin matters.",
+      "source_url": "https://www.irs.gov/newsroom/treasury-irs-provide-guidance-for-certain-energy-tax-credits-regarding-material-assistance-provided-by-prohibited-foreign-entities-under-the-one-big-beautiful-bill",
+      "source_name": "IRS newsroom; Notice PDF https://www.irs.gov/pub/irs-drop/n-26-15.pdf; IRB 2026-11",
+      "verified": true,
+      "note": "Confirmed. The notice says little on who counts as a PFE or on effective control; proposed regulations are promised. Comments were due 30 Mar 2026. The statute requires PFE safe-harbor tables by 31 Dec 2026 (per McGuireWoods).",
+      "source_call_ids": [
+        "t003",
+        "t009"
+      ]
+    },
+    {
+      "date": "2026-03-12",
+      "measure": "USITC negative final determinations on active anode material from China (701-TA-752, 731-TA-1730)",
+      "relevance": "Because the Commission voted no, no AD/CVD orders were issued. Chinese anode material avoids those duties, so routing around duties no longer matters, while the PFE tax-credit test still does.",
+      "source_url": "https://www.usitc.gov/press_room/news_release/2026/er0312_68281.htm",
+      "source_name": "USITC news release; USITC Publication 5719",
+      "verified": true,
+      "note": "CORRECTED wording: the finding was that imports have NOT 'materially retarded the establishment of an industry in the United States', not a standard 'no material injury' finding. Vote was 2-1 (Karpel and Johanson negative; Kearns affirmative). Commerce will not issue AD or CVD orders. The FR notice of the determinations was published 3 Apr 2026 (per the FR document list).",
+      "source_call_ids": [
+        "t002",
+        "t004",
+        "t006"
+      ]
+    },
+    {
+      "date": "2026-10-14",
+      "measure": "Status check: further PFE guidance (proposed regs / safe-harbor tables)",
+      "relevance": "Who counts as a PFE, and the effective-control rules, would determine whether Chinese-owned plants in Indonesia, Morocco or Oman are PFEs.",
+      "source_url": "https://www.mcguirewoods.com/client-resources/alerts/2026/3/irs-releases-initial-feoc-guidance-answers-key-questions-leaves-others-unanswered",
+      "source_name": "McGuireWoods",
+      "verified": false,
+      "note": "A search limited to results after 1 May 2026 found no proposed PFE regulations or new IRS notice. Absence is not confirmed; check irs.gov and the Federal Register directly before stating that none exist.",
+      "source_call_ids": [
+        "t009",
+        "t011"
+      ]
+    }
+  ]
+}

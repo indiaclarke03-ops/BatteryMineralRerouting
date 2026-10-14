@@ -1,0 +1,351 @@
+{
+  "as_of": "2026-10-14",
+  "generated_by": "investigation/build_data.py",
+  "items": [
+    {
+      "id": "jeHf5QJt0JXowTiCA8JiIQ",
+      "name": "BTR New Material Group Co., Ltd.",
+      "country": "CHN",
+      "type": "company",
+      "role": "parent",
+      "risk_flags": [
+        "sheffield_hallam_university_forced_labor_entity",
+        "owner_of_forced_labor_xinjiang_entity",
+        "soe_adjacent"
+      ],
+      "identifiers": {
+        "cn_uscc": "914403007230429091"
+      },
+      "summary": "Shenzhen-based anode producer named in the US AD case. Sayari shows it shipping artificial graphite and coke to the Indonesian plant, but no ownership link to it.",
+      "source_call_ids": [
+        "s008",
+        "s013",
+        "s014",
+        "s019",
+        "s020"
+      ],
+      "sayari_url": "https://graph.sayari.com/resource/entity/jeHf5QJt0JXowTiCA8JiIQ"
+    },
+    {
+      "id": "5_cayB1m7XahAhz_Hrrpng",
+      "name": "BTR New Material Group Sales Co., Ltd.",
+      "country": "CHN",
+      "type": "company",
+      "role": "trader",
+      "risk_flags": [
+        "forced_labor_sheffield_hallam_university_reports_origin_subtier"
+      ],
+      "identifiers": {},
+      "summary": "BTR's sales company at No. 8 Guangyuan 4th Road, Shenzhen. Listed as a supplier to the plant; HS detail not pulled.",
+      "source_call_ids": [
+        "s013"
+      ],
+      "sayari_url": "https://graph.sayari.com/resource/entity/5_cayB1m7XahAhz_Hrrpng"
+    },
+    {
+      "id": "9pKXMU4m6GbuXl_McP8jag",
+      "name": "Shenzhen Ruiqing New Energy Technology Co., Ltd.",
+      "country": "CHN",
+      "type": "company",
+      "role": "trader",
+      "risk_flags": [
+        "psa_owned_by_chinese_soe"
+      ],
+      "identifiers": {},
+      "summary": "Trader registered in Room 1108 of the 'BTR Building', No. 8 Guangyuan 4th Road. The largest single shipper of graphite and coke to the plant (Dec 2023 – Jun 2026). Appears as three Sayari records.",
+      "source_call_ids": [
+        "s013",
+        "s014"
+      ],
+      "sayari_url": "https://graph.sayari.com/resource/entity/9pKXMU4m6GbuXl_McP8jag"
+    },
+    {
+      "id": "ffPlxyHu42G892jPO7tpbA",
+      "name": "Twigg Exploration & Mining, Lda",
+      "country": "MOZ",
+      "type": "company",
+      "role": "producer",
+      "risk_flags": [],
+      "identifiers": {},
+      "summary": "Mozambique graphite miner that shipped natural graphite (HS 2504) to the plant in 2024–2025. Appears as three Sayari records.",
+      "source_call_ids": [
+        "s013",
+        "s014"
+      ],
+      "sayari_url": "https://graph.sayari.com/resource/entity/ffPlxyHu42G892jPO7tpbA"
+    },
+    {
+      "id": "uZISesDqcaxQ8aVgsyvurw",
+      "name": "Syrah Global DMCC",
+      "country": "ARE",
+      "type": "company",
+      "role": "trader",
+      "risk_flags": [],
+      "identifiers": {},
+      "summary": "Dubai trading company that shipped natural graphite (HS 2504) to the plant, Jan–Apr 2026.",
+      "source_call_ids": [
+        "s013",
+        "s014"
+      ],
+      "sayari_url": "https://graph.sayari.com/resource/entity/uZISesDqcaxQ8aVgsyvurw"
+    },
+    {
+      "id": "I0E-2fRqFflDTESrsMh2ZA",
+      "name": "ERG Madagascar",
+      "country": "MDG",
+      "type": "company",
+      "role": "producer",
+      "risk_flags": [],
+      "identifiers": {},
+      "summary": "Madagascar graphite producer that shipped natural graphite (HS 2504) to the plant, 2025–2026.",
+      "source_call_ids": [
+        "s013",
+        "s014"
+      ],
+      "sayari_url": "https://graph.sayari.com/resource/entity/I0E-2fRqFflDTESrsMh2ZA"
+    },
+    {
+      "id": "2omCekb1pDRKjhFOAqCNSw",
+      "name": "PT Indonesia BTR New Energy Material",
+      "country": "IDN",
+      "type": "company",
+      "role": "transit_plant",
+      "risk_flags": [
+        "chinese_soe_adjacent",
+        "forced_labor_uflpa_origin_subtier",
+        "psa_imports_from_usa_bis_entity"
+      ],
+      "identifiers": {
+        "lei": "254900G3L2Z0HNRV7W43",
+        "idn_tax_id": "0625540349086000"
+      },
+      "summary": "Anode plant with sites at IMIP Morowali and Kendal. The anchor record: tax ID, LEI and the most trade history (78 sent, 4,083 received).",
+      "source_call_ids": [
+        "s005",
+        "s008",
+        "s009",
+        "s013",
+        "s014",
+        "s017",
+        "s019",
+        "s021"
+      ],
+      "sayari_url": "https://graph.sayari.com/resource/entity/2omCekb1pDRKjhFOAqCNSw",
+      "records": 5
+    },
+    {
+      "id": "dH3rqoht5wahpKLPJih3gA",
+      "name": "PT Indonesia BTR New Energy Materi (record 2)",
+      "country": "IDN",
+      "type": "company",
+      "role": "transit_plant",
+      "risk_flags": [
+        "psa_imports_from_usa_bis_entity"
+      ],
+      "identifiers": {},
+      "summary": "Kendal-only record built from US import data. Same street address as the anchor, name cut off. 37 shipments sent.",
+      "source_call_ids": [
+        "s006",
+        "s011",
+        "s018"
+      ],
+      "sayari_url": "https://graph.sayari.com/resource/entity/dH3rqoht5wahpKLPJih3gA"
+    },
+    {
+      "id": "ekoH1fr8BGvHc7UqYCY_YA",
+      "name": "PT Indonesia BTR New Energy Material (record 3)",
+      "country": "IDN",
+      "type": "company",
+      "role": "transit_plant",
+      "risk_flags": [],
+      "identifiers": {},
+      "summary": "Company-gazette record with only 'Jakarta Barat' as an address. No trade, no identifiers.",
+      "source_call_ids": [
+        "s007"
+      ],
+      "sayari_url": "https://graph.sayari.com/resource/entity/ekoH1fr8BGvHc7UqYCY_YA"
+    },
+    {
+      "id": "0pb5Arj9l_g5eJtqVBozsQ",
+      "name": "PT Indonesia BTR New Energy (record 4)",
+      "country": "IDN",
+      "type": "company",
+      "role": "transit_plant",
+      "risk_flags": [],
+      "identifiers": {},
+      "summary": "Trade-data record whose name lost the word 'Material' into the address field. Same Kendal street address.",
+      "source_call_ids": [
+        "s017",
+        "s022"
+      ],
+      "sayari_url": "https://graph.sayari.com/resource/entity/0pb5Arj9l_g5eJtqVBozsQ"
+    },
+    {
+      "id": "xbEAXBfl7YhUMRWA8PJqoQ",
+      "name": "PT Indonesia BTR (record 5)",
+      "country": "IDN",
+      "type": "company",
+      "role": "transit_plant",
+      "risk_flags": [],
+      "identifiers": {},
+      "summary": "Trade-data record with a shortened name and the same Kendal street address. 12 shipments sent.",
+      "source_call_ids": [
+        "s017",
+        "s023"
+      ],
+      "sayari_url": "https://graph.sayari.com/resource/entity/xbEAXBfl7YhUMRWA8PJqoQ"
+    },
+    {
+      "id": "rvgklT24qqqfH2rnlVlyBg",
+      "name": "Ultium Cells Warren",
+      "country": "USA",
+      "type": "company",
+      "role": "us_buyer",
+      "risk_flags": [],
+      "identifiers": {},
+      "summary": "GM–LG Energy Solution cell plant in Warren, Ohio. Received HS 3801.10 from the plant, Jun–Aug 2025.",
+      "source_call_ids": [
+        "s008",
+        "s011",
+        "s017",
+        "s018"
+      ],
+      "sayari_url": "https://graph.sayari.com/resource/entity/rvgklT24qqqfH2rnlVlyBg"
+    },
+    {
+      "id": "kCTEQjRAGcFo6AM_PGW2bw",
+      "name": "Ultium Cells Spring Hill",
+      "country": "USA",
+      "type": "company",
+      "role": "us_buyer",
+      "risk_flags": [],
+      "identifiers": {},
+      "summary": "GM–LG Energy Solution cell plant in Spring Hill, Tennessee. Received HS 3801.10, Aug 2025.",
+      "source_call_ids": [
+        "s008",
+        "s017"
+      ],
+      "sayari_url": "https://graph.sayari.com/resource/entity/kCTEQjRAGcFo6AM_PGW2bw"
+    },
+    {
+      "id": "aoeSqNICt_VUP-o-F-84Yg",
+      "name": "SK Battery America",
+      "country": "USA",
+      "type": "company",
+      "role": "us_buyer",
+      "risk_flags": [],
+      "identifiers": {},
+      "summary": "SK On cell plant in Georgia. Received HS 3801.10, Aug 2025.",
+      "source_call_ids": [
+        "s017"
+      ],
+      "sayari_url": "https://graph.sayari.com/resource/entity/aoeSqNICt_VUP-o-F-84Yg"
+    },
+    {
+      "id": "1iZm5WHKh2xwHvW9-qFunQ",
+      "name": "StarPlus Energy, LLC",
+      "country": "USA",
+      "type": "company",
+      "role": "us_buyer",
+      "risk_flags": [],
+      "identifiers": {},
+      "summary": "Stellantis–Samsung SDI cell joint venture in Indiana. Received HS 3801.10, Mar–Apr 2025.",
+      "source_call_ids": [
+        "s017"
+      ],
+      "sayari_url": "https://graph.sayari.com/resource/entity/1iZm5WHKh2xwHvW9-qFunQ"
+    },
+    {
+      "id": "4fqrWAcyrgtWw2RdV6qZsg",
+      "name": "General Motors",
+      "country": "USA",
+      "type": "company",
+      "role": "us_buyer",
+      "risk_flags": [],
+      "identifiers": {},
+      "summary": "Received HS 3801.10 (Aug 2025) and HS 3801.90 (Dec 2024) from BTR Indonesia records. A top-ten US buyer of HS 3801.10 overall.",
+      "source_call_ids": [
+        "s011",
+        "s017",
+        "s018",
+        "s024"
+      ],
+      "sayari_url": "https://graph.sayari.com/resource/entity/4fqrWAcyrgtWw2RdV6qZsg"
+    },
+    {
+      "id": "xWhz7CFJV3lxsgg8fHMGHA",
+      "name": "Tesla, Inc.",
+      "country": "USA",
+      "type": "company",
+      "role": "us_buyer",
+      "risk_flags": [],
+      "identifiers": {},
+      "summary": "Received HS 3801.10 from a BTR Indonesia record, Aug 2025.",
+      "source_call_ids": [
+        "s011",
+        "s017",
+        "s018"
+      ],
+      "sayari_url": "https://graph.sayari.com/resource/entity/xWhz7CFJV3lxsgg8fHMGHA"
+    },
+    {
+      "id": "oJvmXc2fb6aBRkCDyxOLig",
+      "name": "Aminco Resources LLC",
+      "country": "USA",
+      "type": "company",
+      "role": "trader",
+      "risk_flags": [
+        "mass_address_usage"
+      ],
+      "identifiers": {},
+      "summary": "US trading company. Received artificial graphite in 0.2–8 mm grades, Sep 2025. Grain sizes suggest industrial rather than battery use (our reading).",
+      "source_call_ids": [
+        "s008",
+        "s017"
+      ],
+      "sayari_url": "https://graph.sayari.com/resource/entity/oJvmXc2fb6aBRkCDyxOLig"
+    },
+    {
+      "id": "BoJ05H9uciX3VySWmVmq8g",
+      "name": "Larpen Metallurgical Service",
+      "country": "USA",
+      "type": "company",
+      "role": "trader",
+      "risk_flags": [],
+      "identifiers": {},
+      "summary": "Metallurgical service company. Received artificial graphite in 1–10 mm grades, Jun 2026: likely not battery use (our reading).",
+      "source_call_ids": [
+        "s017"
+      ],
+      "sayari_url": "https://graph.sayari.com/resource/entity/BoJ05H9uciX3VySWmVmq8g"
+    },
+    {
+      "id": "ebomNaL2BFXiZYYk0Y8Scg",
+      "name": "Changzhou Liyuan New Energy Technology Co., Ltd.",
+      "country": "CHN",
+      "type": "company",
+      "role": "contrast",
+      "risk_flags": [],
+      "identifiers": {},
+      "summary": "Chinese company in which Sayari's registry data shows BTR as a shareholder.",
+      "source_call_ids": [
+        "s020"
+      ],
+      "sayari_url": "https://graph.sayari.com/resource/entity/ebomNaL2BFXiZYYk0Y8Scg"
+    },
+    {
+      "id": "O-QDv6jXInkdMYQI92mrXA",
+      "name": "Liyuan (Indonesia) New Energy Co., Ltd.",
+      "country": "IDN",
+      "type": "company",
+      "role": "contrast",
+      "risk_flags": [],
+      "identifiers": {},
+      "summary": "Indonesian company held through Changzhou Liyuan. Shows Sayari can see some of BTR's Indonesian holdings, just not the anode plant.",
+      "source_call_ids": [
+        "s020"
+      ],
+      "sayari_url": "https://graph.sayari.com/resource/entity/O-QDv6jXInkdMYQI92mrXA"
+    }
+  ]
+}

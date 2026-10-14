@@ -1,0 +1,468 @@
+{
+  "as_of": "2026-10-14",
+  "generated_by": "investigation/build_data.py",
+  "items": [
+    {
+      "id": "e001",
+      "source": "dH3rqoht5wahpKLPJih3gA",
+      "target": "2omCekb1pDRKjhFOAqCNSw",
+      "relation": "possibly_same_as",
+      "edge_type": "inferred",
+      "confidence": "inferred",
+      "hs_codes": [],
+      "first_seen": null,
+      "last_seen": null,
+      "shipment_count": null,
+      "evidence": "Same street address (Jl. Indraprasta No. 8, Kendal Industrial Estate), truncated name, and a shared US buyer (Ultium Cells Warren). No shared identifier.",
+      "source_call_ids": [
+        "s005",
+        "s006",
+        "s011"
+      ]
+    },
+    {
+      "id": "e002",
+      "source": "0pb5Arj9l_g5eJtqVBozsQ",
+      "target": "2omCekb1pDRKjhFOAqCNSw",
+      "relation": "possibly_same_as",
+      "edge_type": "inferred",
+      "confidence": "inferred",
+      "hs_codes": [],
+      "first_seen": null,
+      "last_seen": null,
+      "shipment_count": null,
+      "evidence": "Same Kendal street address; the missing word 'Material' sits at the start of the address field.",
+      "source_call_ids": [
+        "s005",
+        "s022"
+      ]
+    },
+    {
+      "id": "e003",
+      "source": "xbEAXBfl7YhUMRWA8PJqoQ",
+      "target": "2omCekb1pDRKjhFOAqCNSw",
+      "relation": "possibly_same_as",
+      "edge_type": "inferred",
+      "confidence": "inferred",
+      "hs_codes": [],
+      "first_seen": null,
+      "last_seen": null,
+      "shipment_count": null,
+      "evidence": "Same Kendal street address; shortened name. No shared identifier.",
+      "source_call_ids": [
+        "s005",
+        "s023"
+      ]
+    },
+    {
+      "id": "e004",
+      "source": "ekoH1fr8BGvHc7UqYCY_YA",
+      "target": "2omCekb1pDRKjhFOAqCNSw",
+      "relation": "possibly_same_as",
+      "edge_type": "inferred",
+      "confidence": "lead",
+      "hs_codes": [],
+      "first_seen": null,
+      "last_seen": null,
+      "shipment_count": null,
+      "evidence": "Exact legal name, but the only address is 'Jakarta Barat' and there are no identifiers. Name alone is not enough to merge.",
+      "source_call_ids": [
+        "s005",
+        "s007",
+        "s004"
+      ]
+    },
+    {
+      "id": "e005",
+      "source": "9pKXMU4m6GbuXl_McP8jag",
+      "target": "5_cayB1m7XahAhz_Hrrpng",
+      "relation": "shares_address",
+      "edge_type": "inferred",
+      "confidence": "inferred",
+      "hs_codes": [],
+      "first_seen": null,
+      "last_seen": null,
+      "shipment_count": null,
+      "evidence": "Both registered at No. 8 Guangyuan 4th Road, Guangming District, Shenzhen. Ruiqing's address names the 'BTR Building', room 1108.",
+      "source_call_ids": [
+        "s013"
+      ]
+    },
+    {
+      "id": "e006",
+      "source": "5_cayB1m7XahAhz_Hrrpng",
+      "target": "jeHf5QJt0JXowTiCA8JiIQ",
+      "relation": "group_name_match",
+      "edge_type": "inferred",
+      "confidence": "lead",
+      "hs_codes": [],
+      "first_seen": null,
+      "last_seen": null,
+      "shipment_count": null,
+      "evidence": "Name and district match the parent group. No registry link was pulled.",
+      "source_call_ids": [
+        "s013"
+      ]
+    },
+    {
+      "id": "e010",
+      "source": "jeHf5QJt0JXowTiCA8JiIQ",
+      "target": "2omCekb1pDRKjhFOAqCNSw",
+      "relation": "owns",
+      "edge_type": "contractual",
+      "confidence": "corroborated",
+      "hs_codes": [],
+      "first_seen": null,
+      "last_seen": null,
+      "shipment_count": null,
+      "evidence": "Not in Sayari (find_beneficial_owners returned 0; shortest path is trade only). BTR's own press release calls the plant its Indonesian facility; one trade directory gives 70% BTR, 30% Stellar Investment (single source).",
+      "source_call_ids": [
+        "s009",
+        "s019",
+        "t012"
+      ]
+    },
+    {
+      "id": "e011",
+      "source": "jeHf5QJt0JXowTiCA8JiIQ",
+      "target": "ebomNaL2BFXiZYYk0Y8Scg",
+      "relation": "owns",
+      "edge_type": "contractual",
+      "confidence": "documented",
+      "hs_codes": [],
+      "first_seen": null,
+      "last_seen": null,
+      "shipment_count": null,
+      "evidence": "Registry shareholder_of link in Sayari.",
+      "source_call_ids": [
+        "s020"
+      ]
+    },
+    {
+      "id": "e012",
+      "source": "ebomNaL2BFXiZYYk0Y8Scg",
+      "target": "O-QDv6jXInkdMYQI92mrXA",
+      "relation": "owns",
+      "edge_type": "contractual",
+      "confidence": "documented",
+      "hs_codes": [],
+      "first_seen": null,
+      "last_seen": null,
+      "shipment_count": null,
+      "evidence": "Registry shareholder_of link in Sayari.",
+      "source_call_ids": [
+        "s020"
+      ]
+    },
+    {
+      "id": "e020",
+      "source": "jeHf5QJt0JXowTiCA8JiIQ",
+      "target": "2omCekb1pDRKjhFOAqCNSw",
+      "relation": "ships_to",
+      "edge_type": "transactional",
+      "confidence": "documented",
+      "hs_codes": [
+        "3801",
+        "2713",
+        "2803"
+      ],
+      "first_seen": "2025-12-02",
+      "last_seen": "2026-06-30",
+      "shipment_count": null,
+      "evidence": "Artificial graphite (HS 3801) in Dec 2025; also petroleum coke (HS 2713, Feb–Jun 2026) and carbon (HS 2803).",
+      "source_call_ids": [
+        "s008",
+        "s014"
+      ]
+    },
+    {
+      "id": "e021",
+      "source": "9pKXMU4m6GbuXl_McP8jag",
+      "target": "2omCekb1pDRKjhFOAqCNSw",
+      "relation": "ships_to",
+      "edge_type": "transactional",
+      "confidence": "documented",
+      "hs_codes": [
+        "3801",
+        "2504",
+        "2713"
+      ],
+      "first_seen": "2023-12-19",
+      "last_seen": "2026-06-23",
+      "shipment_count": null,
+      "evidence": "Artificial graphite (HS 3801) Dec 2023 – Jun 2026, natural graphite (HS 2504) Oct 2024 – Jun 2026, plus coke, clays and carbon electrodes.",
+      "source_call_ids": [
+        "s013",
+        "s014"
+      ]
+    },
+    {
+      "id": "e022",
+      "source": "5_cayB1m7XahAhz_Hrrpng",
+      "target": "2omCekb1pDRKjhFOAqCNSw",
+      "relation": "ships_to",
+      "edge_type": "transactional",
+      "confidence": "lead",
+      "hs_codes": [],
+      "first_seen": null,
+      "last_seen": null,
+      "shipment_count": null,
+      "evidence": "Listed among the plant's 90 suppliers. HS and dates not pulled.",
+      "source_call_ids": [
+        "s013"
+      ]
+    },
+    {
+      "id": "e023",
+      "source": "ffPlxyHu42G892jPO7tpbA",
+      "target": "2omCekb1pDRKjhFOAqCNSw",
+      "relation": "ships_to",
+      "edge_type": "transactional",
+      "confidence": "documented",
+      "hs_codes": [
+        "2504"
+      ],
+      "first_seen": "2024-04-05",
+      "last_seen": "2025-12-11",
+      "shipment_count": null,
+      "evidence": "Natural graphite (HS 2504) from Mozambique, Apr 2024 – Dec 2025.",
+      "source_call_ids": [
+        "s014"
+      ]
+    },
+    {
+      "id": "e024",
+      "source": "uZISesDqcaxQ8aVgsyvurw",
+      "target": "2omCekb1pDRKjhFOAqCNSw",
+      "relation": "ships_to",
+      "edge_type": "transactional",
+      "confidence": "documented",
+      "hs_codes": [
+        "2504"
+      ],
+      "first_seen": "2026-01-23",
+      "last_seen": "2026-04-13",
+      "shipment_count": null,
+      "evidence": "Natural graphite (HS 2504) shipped from the UAE, Jan–Apr 2026.",
+      "source_call_ids": [
+        "s014"
+      ]
+    },
+    {
+      "id": "e025",
+      "source": "I0E-2fRqFflDTESrsMh2ZA",
+      "target": "2omCekb1pDRKjhFOAqCNSw",
+      "relation": "ships_to",
+      "edge_type": "transactional",
+      "confidence": "documented",
+      "hs_codes": [
+        "2504"
+      ],
+      "first_seen": "2025-06-17",
+      "last_seen": "2026-03-27",
+      "shipment_count": null,
+      "evidence": "Natural graphite (HS 2504) from Madagascar, Jun 2025 – Mar 2026.",
+      "source_call_ids": [
+        "s014"
+      ]
+    },
+    {
+      "id": "e030",
+      "source": "2omCekb1pDRKjhFOAqCNSw",
+      "target": "rvgklT24qqqfH2rnlVlyBg",
+      "relation": "ships_to",
+      "edge_type": "transactional",
+      "confidence": "documented",
+      "hs_codes": [
+        "380110"
+      ],
+      "first_seen": "2025-06-26",
+      "last_seen": "2025-08-12",
+      "shipment_count": 3,
+      "evidence": "Artificial graphite (HS 3801.10). 3 shipment rows, departures 26 Jun – 12 Aug 2025. Also in the US-import record's graph links.",
+      "source_call_ids": [
+        "s008",
+        "s017"
+      ]
+    },
+    {
+      "id": "e031",
+      "source": "2omCekb1pDRKjhFOAqCNSw",
+      "target": "kCTEQjRAGcFo6AM_PGW2bw",
+      "relation": "ships_to",
+      "edge_type": "transactional",
+      "confidence": "documented",
+      "hs_codes": [
+        "380110"
+      ],
+      "first_seen": "2025-08-11",
+      "last_seen": "2025-08-12",
+      "shipment_count": 2,
+      "evidence": "Artificial graphite (HS 3801.10). 2 rows, 11–12 Aug 2025.",
+      "source_call_ids": [
+        "s008",
+        "s017"
+      ]
+    },
+    {
+      "id": "e032",
+      "source": "2omCekb1pDRKjhFOAqCNSw",
+      "target": "aoeSqNICt_VUP-o-F-84Yg",
+      "relation": "ships_to",
+      "edge_type": "transactional",
+      "confidence": "documented",
+      "hs_codes": [
+        "380110"
+      ],
+      "first_seen": "2025-08-12",
+      "last_seen": "2025-08-12",
+      "shipment_count": 1,
+      "evidence": "Artificial graphite (HS 3801.10). 1 row, 12 Aug 2025.",
+      "source_call_ids": [
+        "s017"
+      ]
+    },
+    {
+      "id": "e033",
+      "source": "2omCekb1pDRKjhFOAqCNSw",
+      "target": "1iZm5WHKh2xwHvW9-qFunQ",
+      "relation": "ships_to",
+      "edge_type": "transactional",
+      "confidence": "documented",
+      "hs_codes": [
+        "380110"
+      ],
+      "first_seen": "2025-03-09",
+      "last_seen": "2025-04-12",
+      "shipment_count": 3,
+      "evidence": "Artificial graphite (HS 3801.10). 3 rows, 9 Mar – 12 Apr 2025. Two more rows on the same pair carry a cosmetics code (HS 3304.91), most likely a classification error.",
+      "source_call_ids": [
+        "s017"
+      ]
+    },
+    {
+      "id": "e034",
+      "source": "0pb5Arj9l_g5eJtqVBozsQ",
+      "target": "4fqrWAcyrgtWw2RdV6qZsg",
+      "relation": "ships_to",
+      "edge_type": "transactional",
+      "confidence": "documented",
+      "hs_codes": [
+        "380110"
+      ],
+      "first_seen": "2025-08-08",
+      "last_seen": "2025-08-08",
+      "shipment_count": 1,
+      "evidence": "Artificial graphite (HS 3801.10). 1 row, 8 Aug 2025.",
+      "source_call_ids": [
+        "s017"
+      ]
+    },
+    {
+      "id": "e035",
+      "source": "xbEAXBfl7YhUMRWA8PJqoQ",
+      "target": "4fqrWAcyrgtWw2RdV6qZsg",
+      "relation": "ships_to",
+      "edge_type": "transactional",
+      "confidence": "documented",
+      "hs_codes": [
+        "380190"
+      ],
+      "first_seen": "2024-12-02",
+      "last_seen": "2024-12-02",
+      "shipment_count": 1,
+      "evidence": "Graphite preparations (HS 3801.90). 1 row, 2 Dec 2024. The earliest US-bound row in the result.",
+      "source_call_ids": [
+        "s017"
+      ]
+    },
+    {
+      "id": "e036",
+      "source": "xbEAXBfl7YhUMRWA8PJqoQ",
+      "target": "xWhz7CFJV3lxsgg8fHMGHA",
+      "relation": "ships_to",
+      "edge_type": "transactional",
+      "confidence": "documented",
+      "hs_codes": [
+        "380110"
+      ],
+      "first_seen": "2025-08-02",
+      "last_seen": "2025-08-02",
+      "shipment_count": 1,
+      "evidence": "Artificial graphite (HS 3801.10). 1 row, 2 Aug 2025.",
+      "source_call_ids": [
+        "s017"
+      ]
+    },
+    {
+      "id": "e037",
+      "source": "dH3rqoht5wahpKLPJih3gA",
+      "target": "xWhz7CFJV3lxsgg8fHMGHA",
+      "relation": "ships_to",
+      "edge_type": "transactional",
+      "confidence": "corroborated",
+      "hs_codes": [],
+      "first_seen": null,
+      "last_seen": null,
+      "shipment_count": null,
+      "evidence": "Graph link from US import data; shipment rows seen under record 5 (e036).",
+      "source_call_ids": [
+        "s011",
+        "s018"
+      ]
+    },
+    {
+      "id": "e038",
+      "source": "dH3rqoht5wahpKLPJih3gA",
+      "target": "4fqrWAcyrgtWw2RdV6qZsg",
+      "relation": "ships_to",
+      "edge_type": "transactional",
+      "confidence": "corroborated",
+      "hs_codes": [],
+      "first_seen": null,
+      "last_seen": null,
+      "shipment_count": null,
+      "evidence": "Graph link from US import data; shipment rows seen under records 4 and 5 (e034, e035).",
+      "source_call_ids": [
+        "s011",
+        "s018"
+      ]
+    },
+    {
+      "id": "e039",
+      "source": "2omCekb1pDRKjhFOAqCNSw",
+      "target": "oJvmXc2fb6aBRkCDyxOLig",
+      "relation": "ships_to",
+      "edge_type": "transactional",
+      "confidence": "documented",
+      "hs_codes": [
+        "380110"
+      ],
+      "first_seen": "2025-09-30",
+      "last_seen": "2025-09-30",
+      "shipment_count": 3,
+      "evidence": "Artificial graphite in 0.2–8 mm grades (HS 3801.10). 3 rows, 30 Sep 2025. Grades suggest non-battery use.",
+      "source_call_ids": [
+        "s017"
+      ]
+    },
+    {
+      "id": "e040",
+      "source": "2omCekb1pDRKjhFOAqCNSw",
+      "target": "BoJ05H9uciX3VySWmVmq8g",
+      "relation": "ships_to",
+      "edge_type": "transactional",
+      "confidence": "documented",
+      "hs_codes": [
+        "380110"
+      ],
+      "first_seen": "2026-06-10",
+      "last_seen": "2026-06-10",
+      "shipment_count": 2,
+      "evidence": "Artificial graphite in 1–10 mm grades (HS 3801.10). 2 rows, 10 Jun 2026. Grades suggest metallurgical use.",
+      "source_call_ids": [
+        "s017"
+      ]
+    }
+  ]
+}

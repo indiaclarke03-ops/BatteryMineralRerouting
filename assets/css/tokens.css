@@ -1,0 +1,71 @@
+/* Paper Trail design tokens: "investigator's case file".
+   Distinct from Battery Passport Audit (Inter, slate/blue). */
+:root {
+  /* Paper and ink */
+  --paper: #FAFAF7;
+  --paper-2: #F2F1EB;
+  --card: #FFFFFF;
+  --ink: #1A1A1A;
+  --ink-2: #4A4A45;
+  --ink-3: #6E6D66;
+  --rule: #DCDAD0;
+  --rule-strong: #B9B6A8;
+  --grid: rgba(26, 26, 26, 0.045);
+
+  /* Accent */
+  --teal: #0F5E5C;
+  --teal-2: #0B4846;
+  --teal-tint: #E3EFEE;
+
+  /* Edge types (color + line style; never color alone) */
+  --tx: #1F5FBF;        /* transactional: solid blue */
+  --tx-tint: #E6EEFA;
+  --ct: #6B3FA0;        /* contractual: dashed purple */
+  --ct-tint: #F0EAF7;
+  --inf: #A86A12;       /* inferred: dotted amber */
+  --inf-tint: #FBF1E0;
+
+  /* Risk: used sparingly */
+  --risk: #B42318;
+  --risk-tint: #FDECEA;
+
+  /* Confidence scale */
+  --c-documented: #0F5E5C;
+  --c-corroborated: #1F5FBF;
+  --c-inferred: #A86A12;
+  --c-lead: #6E6D66;
+
+  /* Scorecard */
+  --ok: #1E7A46;
+  --ok-tint: #E5F3EA;
+  --part: #A86A12;
+  --part-tint: #FBF1E0;
+  --fail: #B42318;
+  --fail-tint: #FDECEA;
+
+  /* Type */
+  --serif: "Source Serif 4", Georgia, "Times New Roman", serif;
+  --sans: "IBM Plex Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --mono: "IBM Plex Mono", ui-monospace, "SFMono-Regular", Menlo, monospace;
+
+  --fs-0: 0.8125rem;
+  --fs-1: 0.9375rem;
+  --fs-2: 1.0625rem;
+  --fs-3: 1.25rem;
+  --fs-4: 1.625rem;
+  --fs-5: clamp(1.9rem, 1.3rem + 2.4vw, 2.9rem);
+
+  /* Space and shape */
+  --s-1: 0.25rem;
+  --s-2: 0.5rem;
+  --s-3: 0.75rem;
+  --s-4: 1rem;
+  --s-5: 1.5rem;
+  --s-6: 2rem;
+  --s-7: 3rem;
+  --s-8: 4.5rem;
+  --radius: 4px;
+  --maxw: 72rem;
+  --shadow: 0 1px 0 rgba(26, 26, 26, 0.04), 0 2px 8px rgba(26, 26, 26, 0.05);
+  --focus: 0 0 0 3px #FFD166, 0 0 0 5px var(--ink);
+}
