@@ -1002,7 +1002,7 @@
       },
       "question": "Who owns and runs BTR Mediterranean New Material Technology?",
       "purpose": "Ownership (INV-3)",
-      "result_summary": "SASU registered 2023-10-09. 100% shareholder and beneficial owner: BNUO International Holding Pte. Ltd (Singapore). Its general manager is the same executive who appears at the Singapore and Jiangsu companies. Trade count 0 sent, 0 received.",
+      "result_summary": "SASU registered 2023-10-09. 100% shareholder and beneficial owner: BNUO International Holding Pte. Ltd (Singapore). General manager Shunyi Yang; board member Pingzhou Yang. Trade count 0 sent, 0 received.",
       "interpretation": "Unlike Case 1, the registry data names a shareholder. The registry record itself has no trade.",
       "scorecard": "worked",
       "entity_ids": [
@@ -1250,7 +1250,7 @@
       "question": "Who is behind BNUO International Holding in Singapore?",
       "purpose": "Ownership (INV-3)",
       "result_summary": "UEN 202332562W, registered 2023-08-14, holding company at Duo Tower, Fraser Street. 100% shareholder BTR (Jiangsu). Its CEO is also general manager of the Moroccan company (an individual, named in Sayari). Also owns Envolvic International Holding. Mass-address and nominee-director flags.",
-      "interpretation": "The Singapore step is a corporate-services shell, but its shareholder is a BTR subsidiary. The same executive also runs the Moroccan company, which supports the 'possibly same as' link.",
+      "interpretation": "The Singapore step is a corporate-services shell, but its shareholder is a BTR subsidiary. Yang Shunyi also runs the Moroccan company, which supports the 'possibly same as' link.",
       "scorecard": "worked",
       "entity_ids": [
         "NKDYreiU9nvqyC4RRZQDfA",
@@ -1375,8 +1375,8 @@
       },
       "question": "Is BTR (Jiangsu) wholly owned by BTR?",
       "purpose": "Ownership (INV-3)",
-      "result_summary": "BTR (Jiangsu) New Material Technology, Changzhou, USCC 91320413MA1NAU5H7M, registered 2017-01-16. 100% shareholder BTR New Material Group. Holds 100% of BNUO. Its chairman is the same executive.",
-      "interpretation": "Every step is 100%. The same executive's name appears at the Jiangsu, Singapore and Moroccan companies (a cross-script name match).",
+      "result_summary": "BTR (Jiangsu) New Material Technology, Changzhou, USCC 91320413MA1NAU5H7M, registered 2017-01-16. 100% shareholder BTR New Material Group. Holds 100% of BNUO. Chairman Yang Shunyi.",
+      "interpretation": "Every step is 100%. Yang Shunyi's name appears at the Jiangsu, Singapore and Moroccan companies (a cross-script name match).",
       "scorecard": "worked",
       "entity_ids": [
         "zduDdSDoWzRJWKUinb7e0w",
@@ -2460,7 +2460,7 @@
       },
       "question": "Does EVE Energy Malaysia ship to the US?",
       "purpose": "Baseline trade",
-      "result_summary": "27 rows of lithium-ion cells (mostly INR21700, HS 8507.60/8506.50), 2025–2026. Buyers: EVE Energy North America (7; six departing Indonesia), Briggs & Stratton (3 + 2 across two records), Milwaukee Tool, TTI Consumer Power Tools, ProTechnologies, Energizer Battery Co, Stanley Black & Decker, ABM Tucker GA, Oregon International Air Freight, plus 7 undated rows.",
+      "result_summary": "27 rows of lithium-ion cells (mostly INR21700, HS 8507.60/8506.50), 2025–2026. Buyers: EVE Energy North America (7; six list the port 'Pinang', which Sayari codes as Indonesia but is most likely Penang, Malaysia), Briggs & Stratton (3 + 2 across two records), Milwaukee Tool, TTI Consumer Power Tools, ProTechnologies, Energizer Battery Co, Stanley Black & Decker, ABM Tucker GA, Oregon International Air Freight, plus 7 undated rows.",
       "interpretation": "This is the second indirect route: Zhongke anode material → a Malaysian cell plant → US buyers, as cells. Some rows left from Indonesia, China or Singapore, so the exporter's name alone doesn't fix the origin.",
       "scorecard": "worked",
       "entity_ids": [
@@ -2999,7 +2999,7 @@
       },
       "question": "Who owns and runs Zichen Malaysia, and does it trade?",
       "purpose": "Plant registry profile",
-      "result_summary": "Registered 23 Sep 2025, Sdn Bhd, office at Menara BHL, George Town, Penang. Purpose: production and sale of advanced battery materials and carbon-based products; import/export. Shareholder: Putailai (Singapore) Pte. Ltd., 100%. Directors: director B, director A, Ho Pui Hold. Trade count: 0 sent, 0 received.",
+      "result_summary": "Registered 23 Sep 2025, Sdn Bhd, office at Menara BHL, George Town, Penang. Purpose: production and sale of advanced battery materials and carbon-based products; import/export. Shareholder: Putailai (Singapore) Pte. Ltd., 100%. Directors: Liu Fang, Han Zhongwei, Ho Pui Hold. Trade count: 0 sent, 0 received.",
       "interpretation": "Ownership is in the registry. There is no trade yet.",
       "scorecard": "worked",
       "entity_ids": [
@@ -3022,7 +3022,7 @@
       },
       "question": "Does the chain reach the Chinese parent?",
       "purpose": "Trace ownership upstream",
-      "result_summary": "50 owner paths returned (output saved and parsed with Python). Path: Zichen Malaysia ← Putailai (Singapore) ← 上海璞泰来新能源科技集团股份有限公司 ← Chinese individuals (including shareholder A and shareholder B), funds, banks and the national social security fund.",
+      "result_summary": "50 owner paths returned (output saved and parsed with Python). Path: Zichen Malaysia ← Putailai (Singapore) ← 上海璞泰来新能源科技集团股份有限公司 ← Chinese individuals (including 韩钟伟 and 刘芳), funds, banks and the national social security fund.",
       "interpretation": "Registry-backed chain from the plant to the Chinese listed parent. Percentages above the Singapore level are not shown.",
       "scorecard": "worked",
       "entity_ids": [
@@ -3120,6 +3120,2045 @@
       ],
       "step": "plant",
       "case_id": "case-5"
+    },
+    {
+      "id": "s529",
+      "timestamp": "2026-10-14T19:43:40Z",
+      "server": "sayari",
+      "tool": "get_entity_summary",
+      "params": {
+        "entity_id": "LwA4a_LwLoGPjHr6RDiArg"
+      },
+      "question": "Who is the first director of Zichen Malaysia?",
+      "purpose": "Officers linking the plant to its parent",
+      "result_summary": "Han Zhongwei, with addresses in Pudong, Shanghai (the second is a Zhangjiang industrial address). Sources: Malaysian and Singapore shareholder profiles.",
+      "interpretation": "The director is Shanghai-based. Putailai is a Shanghai company.",
+      "scorecard": "worked",
+      "entity_ids": [
+        "LwA4a_LwLoGPjHr6RDiArg"
+      ],
+      "step": "owner",
+      "case_id": "case-5"
+    },
+    {
+      "id": "s530",
+      "timestamp": "2026-10-14T19:43:50Z",
+      "server": "sayari",
+      "tool": "get_entity_summary",
+      "params": {
+        "entity_id": "M5aejkK4bjb5FsPDBPoVIA"
+      },
+      "question": "Who is the Putailai-group shareholder with the same name?",
+      "purpose": "Officers linking the plant to its parent",
+      "result_summary": "韩钟伟 (Han Zhongwei). Sources: China CNinfo stock-exchange data, China SAIC and company directories. No address.",
+      "interpretation": "Same name, and the stock-exchange source fits a listed-company shareholder, but there's no shared identifier, so it stays a lead.",
+      "scorecard": "worked",
+      "entity_ids": [
+        "M5aejkK4bjb5FsPDBPoVIA"
+      ],
+      "step": "owner",
+      "case_id": "case-5"
+    },
+    {
+      "id": "s531",
+      "timestamp": "2026-10-14T19:44:00Z",
+      "server": "sayari",
+      "tool": "get_entity_summary",
+      "params": {
+        "entity_id": "eKMO9SjyO_k4HmOLY8o_7A"
+      },
+      "question": "Who is the second director of Zichen Malaysia?",
+      "purpose": "Officers linking the plant to its parent",
+      "result_summary": "Liu Fang, with an address in Pudong, Shanghai. Source: Malaysian shareholder profiles.",
+      "interpretation": "A second Shanghai-based director. It is a very common name, so the match to the Putailai shareholder stays weak.",
+      "scorecard": "worked",
+      "entity_ids": [
+        "eKMO9SjyO_k4HmOLY8o_7A"
+      ],
+      "step": "owner",
+      "case_id": "case-5"
+    },
+    {
+      "id": "s218",
+      "timestamp": "2026-10-14T19:44:10Z",
+      "server": "sayari",
+      "tool": "traverse_network",
+      "params": {
+        "entity_id": "El_6QFk0rVRdYJanrqEtAA",
+        "entity_types": [
+          "person"
+        ],
+        "max_depth": 1,
+        "limit": 10,
+        "response_mode": "compact"
+      },
+      "question": "Which people run BTR's Moroccan company?",
+      "purpose": "Officers linking the plant to its parent",
+      "result_summary": "Two people: Shunyi Yang (manager) and Pingzhou Yang (member of the board), both from Singapore-sourced records.",
+      "interpretation": "The Moroccan company's manager can be checked against the officers of its Singapore parent.",
+      "scorecard": "worked",
+      "entity_ids": [
+        "El_6QFk0rVRdYJanrqEtAA",
+        "vp3lsfhJ6D_sTyektFUPuQ",
+        "zZEQrNyl9vLzaUmXFhOg1g"
+      ],
+      "step": "owner",
+      "case_id": "case-2"
+    },
+    {
+      "id": "s219",
+      "timestamp": "2026-10-14T19:44:25Z",
+      "server": "sayari",
+      "tool": "traverse_network",
+      "params": {
+        "entity_id": "NKDYreiU9nvqyC4RRZQDfA",
+        "entity_types": [
+          "person"
+        ],
+        "max_depth": 1,
+        "limit": 10,
+        "response_mode": "compact"
+      },
+      "question": "Who are the directors of the Singapore holding company (BNUO)?",
+      "purpose": "Officers linking the plant to its parent",
+      "result_summary": "Seven officers. Three are local nominee or registered-agent directors flagged for mass business registration, and one is the auditor. Three directors have Chinese addresses: Yang Shunyi (Guangming District, Shenzhen, the district where BTR is headquartered), Huang Youyuan (Beijing) and Huang Aimin (Nanshan District, Shenzhen).",
+      "interpretation": "Yang Shunyi directs the Singapore holding company and manages the Moroccan plant company. The person links the two companies, alongside the 100% shareholding.",
+      "scorecard": "worked",
+      "entity_ids": [
+        "NKDYreiU9nvqyC4RRZQDfA",
+        "6liqAI84qhN4EnrJZYQYGQ"
+      ],
+      "step": "owner",
+      "case_id": "case-2"
+    },
+    {
+      "id": "s701",
+      "timestamp": "2026-10-14T19:45:55Z",
+      "server": "sayari",
+      "tool": "search_entities",
+      "params": {
+        "query": "\"Gotion\" United States",
+        "limit": 25
+      },
+      "question": "Does a quoted-name search with a country word find the US Gotion companies?",
+      "purpose": "Resolve the US entities",
+      "result_summary": "0 results.",
+      "interpretation": "Adding a country word to a quoted name returned nothing. A search-syntax limit, not a gap in the data.",
+      "scorecard": "failed",
+      "entity_ids": [],
+      "step": "method",
+      "case_id": "case-7"
+    },
+    {
+      "id": "s702",
+      "timestamp": "2026-10-14T19:46:00Z",
+      "server": "sayari",
+      "tool": "search_entity_facets",
+      "params": {
+        "query": "Gotion"
+      },
+      "question": "How many Gotion records exist, and where?",
+      "purpose": "Shape of the entity search",
+      "result_summary": "231 records: 82 China, 39 US, 21 India, 12 Indonesia, 10 Hong Kong, 10 Singapore. 135 come from trade data and 172 from company data.",
+      "interpretation": "Gotion is heavily fragmented. Many US records to sort.",
+      "scorecard": "worked",
+      "entity_ids": [],
+      "step": "method",
+      "case_id": "case-7"
+    },
+    {
+      "id": "s801",
+      "timestamp": "2026-10-14T19:46:00Z",
+      "server": "sayari",
+      "tool": "search_entities",
+      "params": {
+        "query": "\"Syrah Technologies\"",
+        "limit": 10
+      },
+      "question": "Which Sayari records describe the Vidalia anode plant?",
+      "purpose": "Resolve the plant",
+      "result_summary": "5 records. The main one, SYRAH TECHNOLOGIES LLC (NvC-a4BgmoxO63ubVyUiUQ), carries a Louisiana SOS ID (42632807Q), a SAM UEI and the Vidalia address 2001 D.A. Biglane Road. Two EPA facility records (the '10 KTA active anode material facility' and a 'graphite qualification facility') and a trade-only 'SYRAH TECHNOLOGIES' share that street address. A fifth is a Delaware file-number record.",
+      "interpretation": "One plant, several records. The address ties four of them together; the main record holds the identifiers.",
+      "scorecard": "worked",
+      "entity_ids": [
+        "NvC-a4BgmoxO63ubVyUiUQ",
+        "azVXA4lXaKfU8wYdoluS_g",
+        "a90PVh7ryN5atf1qpDbDDw"
+      ],
+      "step": "plant",
+      "case_id": "case-8"
+    },
+    {
+      "id": "s601",
+      "timestamp": "2026-10-14T19:46:05Z",
+      "server": "sayari",
+      "tool": "get_entity_profile",
+      "params": {
+        "entity_id": "_WCNtC_iMCzef8u8s0uKyQ",
+        "relationships_limit": 80
+      },
+      "question": "What does Sayari hold on EVE Energy Malaysia?",
+      "purpose": "Resolve the plant",
+      "result_summary": "Company record EVE ENERGY MALAYSIA SDN BHD, registered 30 Aug 2022, company number 1477909M, business purpose 'manufacturing and sales of batteries'. Address 154-B & 155-A, Kedah EVE Industrial Park, Padang Serai/Padang Meha, Kedah. Trade count: 3,602 received, 137 sent. Relationship summary: 1 shareholder, 6 directors, 4 officers, 43 ships_to, 337 receives_from. Sources include Malaysia SSM shareholder profiles and US, China, Japan and Korea trade data.",
+      "interpretation": "This is the plant. It has a registry-style record (SSM data) and heavy trade, so both ownership and trade can be tested.",
+      "scorecard": "worked",
+      "entity_ids": [
+        "_WCNtC_iMCzef8u8s0uKyQ"
+      ],
+      "step": "plant",
+      "case_id": "case-6"
+    },
+    {
+      "id": "s602",
+      "timestamp": "2026-10-14T19:46:05Z",
+      "server": "sayari",
+      "tool": "search_entities",
+      "params": {
+        "query": "\"EVE Energy Malaysia\"",
+        "limit": 20
+      },
+      "question": "Are there other records for the same plant?",
+      "purpose": "Resolve the plant",
+      "result_summary": "6 results. The main record (_WCNtC_iMCzef8u8s0uKyQ); 'EVE ENERGY MALAYSIA' typed as a person (7JpFf6qgrAqSEzysj0htYQ) and 'EVE ENERGY MALAYSIA SDN BHDSUZHOU' (hArgs6TnyvOe7IuSrmHuBg), both carrying number 1477909M and the Kedah EVE Industrial Park address; plus a facility-services firm and two individuals whose trade addresses say 'c/o EVE Energy Malaysia'.",
+      "interpretation": "The plant is split across at least three records that share one company number. We use the main record for trade counts.",
+      "scorecard": "worked",
+      "entity_ids": [
+        "_WCNtC_iMCzef8u8s0uKyQ",
+        "hArgs6TnyvOe7IuSrmHuBg"
+      ],
+      "step": "plant",
+      "case_id": "case-6"
+    },
+    {
+      "id": "s703",
+      "timestamp": "2026-10-14T19:46:05Z",
+      "server": "sayari",
+      "tool": "search_entities",
+      "params": {
+        "query": "Gotion USA",
+        "limit": 40,
+        "response_mode": "compact"
+      },
+      "question": "Does 'Gotion USA' find the US companies?",
+      "purpose": "Resolve the US entities",
+      "result_summary": "0 results.",
+      "interpretation": "Same as s701: an extra word kills the match.",
+      "scorecard": "failed",
+      "entity_ids": [],
+      "step": "method",
+      "case_id": "case-7"
+    },
+    {
+      "id": "s802",
+      "timestamp": "2026-10-14T19:46:05Z",
+      "server": "sayari",
+      "tool": "search_entities",
+      "params": {
+        "query": "\"Syrah Resources\"",
+        "limit": 10
+      },
+      "question": "Which Sayari record is the Australian parent?",
+      "purpose": "Resolve the parent",
+      "result_summary": "Syrah Resources Limited (ex1GaqYc9OHlM2KgDrK-5w) with LEI 254900ZS2VP83B6L6Y30, ABN 77125242284 and SEC CIK 0001639151, Melbourne addresses. Also Syrah Resources (KSA), Syrah Resources Group Holdings and three 'Syrah Resources and Trading DMCC' records in Dubai, one at '1004-B Indigo Icon'.",
+      "interpretation": "The parent resolves cleanly on hard identifiers.",
+      "scorecard": "worked",
+      "entity_ids": [
+        "ex1GaqYc9OHlM2KgDrK-5w"
+      ],
+      "step": "owner",
+      "case_id": "case-8"
+    },
+    {
+      "id": "s704",
+      "timestamp": "2026-10-14T19:46:10Z",
+      "server": "sayari",
+      "tool": "search_entities",
+      "params": {
+        "query": "Gotion",
+        "limit": 50,
+        "response_mode": "compact"
+      },
+      "question": "Which records are the US Gotion companies and the Chinese parent?",
+      "purpose": "Resolve the US entities",
+      "result_summary": "50 of 231 rows. US: GOTION, INC. (California corp. no. 03655947), Gotion, Inc. (SAM UEI EKWPJTF2FM43, CAGE 7Z4Q1), GOTION INC. (trade record, Fremont), GOTION ILLINOIS NEW ENERGY INC (SAM UEI SZESYXG93LF8), Gotion Illinois New Energy (trade record typed as a person), GOTION,INC. China: Gotion High tech Co Ltd (USCC 91320600138346792B, LEI 300300J1NKV8ZBF0KN15), 国轩高科股份有限公司 (same USCC), several Hefei Gotion trade records. No Michigan record in the first 50.",
+      "interpretation": "The US group splits into a Fremont HQ cluster and a Manteno cluster. The parent has two registry records sharing one USCC.",
+      "scorecard": "worked",
+      "entity_ids": [
+        "jtptt0xXwDPrAN8CN-po4g",
+        "88rCtmTg8g2LPVqmzM7Nhw",
+        "L1HhW3HMqcvXRKoHOQdS2g",
+        "TeFCWTgdDF-tAyfunxgqXw",
+        "c3D62Of8RTLeBCM9wnuCvw",
+        "Ba3SkSLr0jnGdVR7sWcnWQ",
+        "cqrsueiPWsIEIMOtO6v_Pg"
+      ],
+      "step": "plant",
+      "case_id": "case-7"
+    },
+    {
+      "id": "s803",
+      "timestamp": "2026-10-14T19:46:10Z",
+      "server": "sayari",
+      "tool": "get_entity_profile",
+      "params": {
+        "entity_id": "ffPlxyHu42G892jPO7tpbA"
+      },
+      "question": "What does Sayari hold on Twigg, the Balama mine company?",
+      "purpose": "Profile the mine operator",
+      "result_summary": "TWIGG EXPLORATION & MINING LIMITADA, Mozambique, with a Maputo address at Av. Vladimir Lenine 174, Millennium Park Building Block B, 5th floor. No shareholders or officers. 27 ships_to partners; trade count 180 sent, 25 received. Flags: export_controls_adjacent, sanctioned_adjacent.",
+      "interpretation": "A trade-only record: lots of exports, no ownership data. The 'adjacent' flags come from its buyers, not from Twigg itself.",
+      "scorecard": "partial",
+      "entity_ids": [
+        "ffPlxyHu42G892jPO7tpbA"
+      ],
+      "step": "owner",
+      "case_id": "case-8"
+    },
+    {
+      "id": "s705",
+      "timestamp": "2026-10-14T19:46:15Z",
+      "server": "sayari",
+      "tool": "get_entity_profile",
+      "params": {
+        "entity_id": "jtptt0xXwDPrAN8CN-po4g",
+        "relationships_limit": 50
+      },
+      "question": "What does the California registry say about Gotion, Inc.?",
+      "purpose": "Registry record of the US company",
+      "result_summary": "Active; registered 12 Mar 2014; 48660 Kato Rd, Fremont CA. Directors Lei Guang, Chen Li and Steven Cai; secretary Meimei Fu. No shareholders listed. No trade.",
+      "interpretation": "California does not publish shareholders, so the registry can't show the Chinese parent directly. The director Steven Cai is the useful thread.",
+      "scorecard": "worked",
+      "entity_ids": [
+        "jtptt0xXwDPrAN8CN-po4g",
+        "S-yRq5dFMQKTkiXrPaKPGQ"
+      ],
+      "step": "owner",
+      "case_id": "case-7"
+    },
+    {
+      "id": "s804",
+      "timestamp": "2026-10-14T19:46:15Z",
+      "server": "sayari",
+      "tool": "find_beneficial_owners",
+      "params": {
+        "entity_id": "NvC-a4BgmoxO63ubVyUiUQ"
+      },
+      "question": "Who owns Syrah Technologies LLC, per Sayari's ownership traversal?",
+      "purpose": "Ownership of the plant",
+      "result_summary": "0 results.",
+      "interpretation": "The ownership tool finds nothing, even though the profile (s819) lists an Australian member. Same tool gap as Case 1.",
+      "scorecard": "failed",
+      "entity_ids": [
+        "NvC-a4BgmoxO63ubVyUiUQ"
+      ],
+      "step": "owner",
+      "case_id": "case-8"
+    },
+    {
+      "id": "s805",
+      "timestamp": "2026-10-14T19:46:18Z",
+      "server": "sayari",
+      "tool": "find_beneficial_owners",
+      "params": {
+        "entity_id": "ffPlxyHu42G892jPO7tpbA"
+      },
+      "question": "Who owns Twigg, per Sayari?",
+      "purpose": "Ownership of the mine",
+      "result_summary": "0 results.",
+      "interpretation": "No registry link from the mine to Syrah in Sayari.",
+      "scorecard": "failed",
+      "entity_ids": [
+        "ffPlxyHu42G892jPO7tpbA"
+      ],
+      "step": "owner",
+      "case_id": "case-8"
+    },
+    {
+      "id": "s706",
+      "timestamp": "2026-10-14T19:46:20Z",
+      "server": "sayari",
+      "tool": "find_beneficial_owners",
+      "params": {
+        "entity_id": "88rCtmTg8g2LPVqmzM7Nhw"
+      },
+      "question": "Who owns Gotion, Inc. per Sayari's ownership graph?",
+      "purpose": "Ownership chain",
+      "result_summary": "0 owners returned.",
+      "interpretation": "No upstream ownership on the US side, as in Case 1. Had to work down from the parent instead.",
+      "scorecard": "failed",
+      "entity_ids": [
+        "88rCtmTg8g2LPVqmzM7Nhw"
+      ],
+      "step": "owner",
+      "case_id": "case-7"
+    },
+    {
+      "id": "s707",
+      "timestamp": "2026-10-14T19:46:25Z",
+      "server": "sayari",
+      "tool": "get_entity_profile",
+      "params": {
+        "entity_id": "L1HhW3HMqcvXRKoHOQdS2g",
+        "relationships_limit": 50
+      },
+      "question": "What does the main trade record for Gotion Inc. show?",
+      "purpose": "Trade footprint of the US company",
+      "result_summary": "Addresses 48660 and 46850 Kato Road, Fremont. 17,138 shipments sent and 978 received; 52 suppliers, 12 buyers. Ships to Livguard Energy Technologies (India), Dat Bike and VinES (Vietnam) and a Vietnamese renewables firm. Sources are Vietnam, Korea, India, China and Mexico customs. Flags include chinese_soe_adjacent and sub-tier forced-labor 'product blueprint' flags.",
+      "interpretation": "Same street as the California registry record. The 'sent' count reflects Gotion Inc. named as seller on goods leaving China, not exports from Fremont.",
+      "scorecard": "worked",
+      "entity_ids": [
+        "L1HhW3HMqcvXRKoHOQdS2g",
+        "z5PIbfNlNWbM_PtzLkUvbg",
+        "kqhzX49SUGOaae-QwH0Cvw"
+      ],
+      "step": "plant",
+      "case_id": "case-7"
+    },
+    {
+      "id": "s806",
+      "timestamp": "2026-10-14T19:46:25Z",
+      "server": "sayari",
+      "tool": "traverse_network",
+      "params": {
+        "entity_id": "ffPlxyHu42G892jPO7tpbA",
+        "relationships": [
+          "ships_to"
+        ],
+        "max_depth": 1,
+        "limit": 30
+      },
+      "question": "Who buys from the Balama mine?",
+      "purpose": "Map the mine's customers",
+      "result_summary": "27 buyers. US: Syrah Technologies LLC (Vidalia) and Hiller Carbon. China: Qingdao Nanshu Graphite, Qingdao Luowei New Materials, Qingdao Heshengkai Carbon Material, AW-Lin Jiangsu Supply Chain, Dinur (Yingkou) Refractory, ASK Resources. Indonesia: PT Indonesia BTR New Energy Material. Korea: POSCO Chemical (Future M), Elves Graphite, Chosun Refractories. Europe: RHI Magnesita and affiliates, Vesuvius Belgium, Grafitbergbau Kaisersberg, Dominik Georg Luh Technografit, CS Additive, ArcelorMittal Refractories and others. India: Himadri Speciality Chemical. Russia: Kombinat Magnezit (sanctioned) and Luzhsky Abrasive Plant.",
+      "interpretation": "One mine, many chains: the US anode plant, a Chinese-owned anode plant in Indonesia, Chinese graphite processors and a long list of refractory makers.",
+      "scorecard": "worked",
+      "entity_ids": [
+        "ffPlxyHu42G892jPO7tpbA",
+        "NvC-a4BgmoxO63ubVyUiUQ",
+        "2omCekb1pDRKjhFOAqCNSw",
+        "BoVP8I5lJH1lrNb61GphCw",
+        "zy4DoUY7ohIzHq9qDUJf2A",
+        "Ifk4vKyw2nqI1j7MwBLmDw",
+        "7Obb1Gbggua5WYBZQOkxpA",
+        "Gp-9bI-j3Pd_Jz64bkBo1w",
+        "OPeO2tiJlzLBJWywXkZesw",
+        "GVihyKDTwtnC-IaJstpPCw",
+        "4dfmhQ3NPjXLdVT7-GSJDQ",
+        "MzUxHPmuO6dwS8pO1hCNUQ",
+        "Q1iA8Rfci2znN6C_9bhKZQ"
+      ],
+      "step": "out",
+      "case_id": "case-8"
+    },
+    {
+      "id": "s603",
+      "timestamp": "2026-10-14T19:46:30Z",
+      "server": "sayari",
+      "tool": "find_beneficial_owners",
+      "params": {
+        "entity_id": "_WCNtC_iMCzef8u8s0uKyQ",
+        "max_depth": 4,
+        "response_mode": "full"
+      },
+      "question": "Who owns EVE Energy Malaysia, up to the top?",
+      "purpose": "Map ownership",
+      "result_summary": "25 paths came back (output saved to file and parsed). Every path runs: EVE Energy Malaysia <- shareholder EVE ASIA CO., LIMITED (PWXDv26t09Ou97YYpdEkjg) <- 'possibly same as' 亿纬亚洲有限公司 (Q44xfE6o9nOXO5IvLfsxeg) <- EVE ENERGY CO., LTD (3SmT6FoOENV0ruoiIfFr8g) <- individual shareholders of the listed parent, including 刘金成 (Liu Jincheng).",
+      "interpretation": "Sayari reaches the Huizhou parent in three hops. One hop is a 'possibly same as' link between a Malaysian-data record and the Hong Kong registry record of EVE Asia.",
+      "scorecard": "worked",
+      "entity_ids": [
+        "_WCNtC_iMCzef8u8s0uKyQ",
+        "PWXDv26t09Ou97YYpdEkjg",
+        "Q44xfE6o9nOXO5IvLfsxeg",
+        "3SmT6FoOENV0ruoiIfFr8g"
+      ],
+      "step": "owner",
+      "case_id": "case-6"
+    },
+    {
+      "id": "s604",
+      "timestamp": "2026-10-14T19:46:30Z",
+      "server": "sayari",
+      "tool": "traverse_network",
+      "params": {
+        "entity_id": "_WCNtC_iMCzef8u8s0uKyQ",
+        "relationships": [
+          "has_shareholder",
+          "has_director",
+          "has_officer"
+        ],
+        "max_depth": 1,
+        "limit": 20,
+        "response_mode": "full"
+      },
+      "question": "Who are the plant's shareholder and directors?",
+      "purpose": "Map ownership",
+      "result_summary": "11 links. Shareholder: EVE ASIA CO., LIMITED (no percentage given). Directors include LIU, JINCHENG (address No. 38 Huifeng 7th Road, Zhongkai Hi-Tech Zone, Huizhou), QIAO, FUJUN and CHEN, XINGYU (Huizhou addresses), HE, YINGSHEN and CHAN TSUN MING (Kedah addresses), plus a Penang-based director. Four officers are Malaysian company-secretary type appointments.",
+      "interpretation": "Several directors give Huizhou addresses, one of them the parent's own street address. That ties the board to the Chinese parent.",
+      "scorecard": "worked",
+      "entity_ids": [
+        "_WCNtC_iMCzef8u8s0uKyQ",
+        "PWXDv26t09Ou97YYpdEkjg",
+        "fBtbugU95onwFEyZjMr0ZA",
+        "Kt36ERFryxs9jBFjnhCyaQ"
+      ],
+      "step": "owner",
+      "case_id": "case-6"
+    },
+    {
+      "id": "s708",
+      "timestamp": "2026-10-14T19:46:30Z",
+      "server": "sayari",
+      "tool": "traverse_network",
+      "params": {
+        "entity_id": "L1HhW3HMqcvXRKoHOQdS2g",
+        "relationships": [
+          "receives_from"
+        ],
+        "max_depth": 1,
+        "limit": 60,
+        "response_mode": "compact"
+      },
+      "question": "Who supplies Gotion Inc.?",
+      "purpose": "Supplier list",
+      "result_summary": "50 suppliers returned (saved to file, parsed). Mostly Gotion group plants: several Hefei Gotion High-Tech Power Energy records, Tongcheng Guoxuan/Gotion New Energy, Shanghai Gotion New Energy, Shanghai Xuanyi. Also Maanshan Wanma Machine Building, Green Innovation International (Taiwan), Deserves Trading, Martin Bencher (project logistics), Sinotrans Central China, SZ Envicool, Suzhou Tsing Standard, VinFast. No graphite or anode maker by name.",
+      "interpretation": "The US company buys mainly from its own Chinese group. No independent anode supplier appears.",
+      "scorecard": "worked",
+      "entity_ids": [
+        "L1HhW3HMqcvXRKoHOQdS2g",
+        "L2r51cgdgK63Sk516U52Jg",
+        "EJwFUVeWPX6ErSnqA4dxgw",
+        "KL5fNOIkqdQV8ZW_4a0wqw",
+        "Ctq4KZl1vI__Cm_ocAMNsg"
+      ],
+      "step": "in",
+      "case_id": "case-7"
+    },
+    {
+      "id": "s709",
+      "timestamp": "2026-10-14T19:46:35Z",
+      "server": "sayari",
+      "tool": "search_trade_facets",
+      "params": {
+        "scope": "shipments",
+        "query": "\"GOTION\"",
+        "arrival_country": "USA",
+        "bucket_limit": 15
+      },
+      "question": "What Gotion-related shipments arrive in the US?",
+      "purpose": "Inbound trade shape",
+      "result_summary": "1,398 rows, Aug 2021 to 20 Sep 2026. Departures: China 1,109, Korea 94, Hong Kong 14, Mexico 11, Jamaica 10. Top HS: 850760 lithium-ion batteries (136), 847989 machinery (90), 847910 (42). Top buyer Gotion Inc. (975 rows), then 1st Choice Freight (186) and Gotion Illinois (47). No graphite HS code in the top 15.",
+      "interpretation": "The US arm imports cells, packs and factory machinery. Graphite is not a main inbound line.",
+      "scorecard": "worked",
+      "entity_ids": [
+        "L1HhW3HMqcvXRKoHOQdS2g",
+        "mFuYdHo30dU4r8kU_11y7w",
+        "c3D62Of8RTLeBCM9wnuCvw"
+      ],
+      "step": "in",
+      "case_id": "case-7"
+    },
+    {
+      "id": "s710",
+      "timestamp": "2026-10-14T19:46:40Z",
+      "server": "sayari",
+      "tool": "get_upstream_supply_chain",
+      "params": {
+        "entity_id": "L1HhW3HMqcvXRKoHOQdS2g",
+        "product": [
+          "3801",
+          "2504",
+          "2713",
+          "8507"
+        ],
+        "max_depth": 1,
+        "limit": 40
+      },
+      "question": "Which suppliers send graphite, coke or batteries to Gotion Inc., and when?",
+      "purpose": "Inbound HS and dates",
+      "result_summary": "14 rows. HS 3801 from Hefei Gotion via Korea to the US on 23 Dec 2025. HS 8507 from Hefei Gotion (Apr 2024 to Sep 2026), Tongcheng Guoxuan (Jan to Apr 2025; Jul 2026), Shanghai Gotion New Energy (Mar 2023, Apr 2024), Green Innovation (Dec 2024). No HS 2504 (natural graphite) or 2713 (petroleum coke).",
+      "interpretation": "One artificial-graphite flow and a steady battery flow, all from the Gotion group.",
+      "scorecard": "worked",
+      "entity_ids": [
+        "KL5fNOIkqdQV8ZW_4a0wqw",
+        "L2r51cgdgK63Sk516U52Jg",
+        "TaBSgpeUmzA9s0BQ5KKBIQ",
+        "Ctq4KZl1vI__Cm_ocAMNsg",
+        "sfUxx_TMvkJFG13vTnqbwQ",
+        "Z11UJc572QejZgJJ1RVEKw"
+      ],
+      "step": "in",
+      "case_id": "case-7"
+    },
+    {
+      "id": "s807",
+      "timestamp": "2026-10-14T19:46:40Z",
+      "server": "sayari",
+      "tool": "search_shipments",
+      "params": {
+        "query": "\"SYRAH TECHNOLOGIES\"",
+        "arrival_country": "USA",
+        "limit": 50
+      },
+      "question": "What arrives at the Vidalia plant, and from whom?",
+      "purpose": "Plant inputs",
+      "result_summary": "73 rows, Dec 2022 – Jul 2026. Graphite: 7 rows of natural graphite (HS 2504.10) from Twigg, Nacala to New Orleans, Sep 2023 – Jan 2024 (about 2,507 t; recorded in Korean transshipment data); 26 more rows described as natural flake graphite (HS 2504.10) with no supplier named, Sep 2023 – Nov 2024 (about 9,739 t), loaded at Busan (8), Shanghai (5), Veracruz (4) and six other ports; one 20 t row of 'spherical graphite' (HS 3801.90) from Qingdao Mien New Material, Oct 2023; one 4.8 t HS 2504 row from Neuman & Esser, Dec 2022. Other inputs: petroleum pitch from Rain Carbon Germany (4 rows, Oct 2023 – Jun 2024). Equipment from China: carbonisation furnaces and parts from Jiangsu Qianjin Furnace (12 rows, Dec 2022 – Jan 2026), mills and baghouses from Zhejiang Leap Pulverization, a mixer from Shuanglong Group, valves from Mountop Group (China Metallurgical Equipment Nanjing, flagged state-owned), plus heating elements, valves and furnace parts from Shanghai with no shipper named (Nov 2025 – Jul 2026).",
+      "interpretation": "The graphite feed is Mozambican where a supplier is named. The plant also took one small lot of Chinese spherical graphite and much of its processing kit from China. The five Shanghai-loaded flake rows name no supplier; a port of loading is not proof of origin.",
+      "scorecard": "worked",
+      "entity_ids": [
+        "NvC-a4BgmoxO63ubVyUiUQ",
+        "azVXA4lXaKfU8wYdoluS_g",
+        "ffPlxyHu42G892jPO7tpbA",
+        "GPHj9pMb5DnKZlUepMQM-A",
+        "ljXszsmI8EtP_3Q4fuC6ZA",
+        "aJmC3CSdJYMV1r_o0qrccQ",
+        "NJIf-8zhf7-nyk3EU-l1bA",
+        "UtRPmQpVsJMOv32rLaTkaQ",
+        "nSreKiv3fC-4IKRi87Datw",
+        "YHQlP0uNchhfl5OnsjIWNw"
+      ],
+      "step": "in",
+      "case_id": "case-8"
+    },
+    {
+      "id": "s711",
+      "timestamp": "2026-10-14T19:46:45Z",
+      "server": "sayari",
+      "tool": "search_shipments",
+      "params": {
+        "query": "\"GOTION\" graphite",
+        "arrival_country": "USA",
+        "limit": 25,
+        "response_mode": "compact"
+      },
+      "question": "Do any US-bound Gotion rows mention graphite in free text?",
+      "purpose": "Graphite inputs",
+      "result_summary": "0 rows.",
+      "interpretation": "The free-text word 'graphite' with the quoted name returned nothing, though s712 found rows by HS code. Search by HS code, not keyword.",
+      "scorecard": "failed",
+      "entity_ids": [],
+      "step": "method",
+      "case_id": "case-7"
+    },
+    {
+      "id": "s605",
+      "timestamp": "2026-10-14T19:46:50Z",
+      "server": "sayari",
+      "tool": "get_entity_profile",
+      "params": {
+        "entity_id": "3SmT6FoOENV0ruoiIfFr8g",
+        "relationships_limit": 30
+      },
+      "question": "Is the top of the chain EVE Energy Co., Ltd. of Huizhou?",
+      "purpose": "Map ownership",
+      "result_summary": "EVE ENERGY CO., LTD, also named 惠州亿纬锂能股份有限公司 / Huizhou EVE Energy Co., Ltd.; USCC 91441300734122111K, LEI 300300FTCIO530XV7T38, registered 24 Dec 2001; addresses No. 36/38 Huifeng 7th Road, Huizhou. Risk flags include 'usa_section_1260h' and 'regulatory_action'. 293 owner_of and 65 shareholder_of links; 2,546 shipments sent.",
+      "interpretation": "This is the listed Chinese parent. Sayari flags it as named on the US Section 1260H list.",
+      "scorecard": "worked",
+      "entity_ids": [
+        "3SmT6FoOENV0ruoiIfFr8g"
+      ],
+      "step": "owner",
+      "case_id": "case-6"
+    },
+    {
+      "id": "s606",
+      "timestamp": "2026-10-14T19:46:50Z",
+      "server": "sayari",
+      "tool": "get_entity_profile",
+      "params": {
+        "entity_id": "Q44xfE6o9nOXO5IvLfsxeg",
+        "relationships_limit": 30
+      },
+      "question": "What does the Hong Kong registry say about EVE Asia?",
+      "purpose": "Map ownership",
+      "result_summary": "亿纬亚洲有限公司 / EVE ASIA CO., LIMITED, HK CR 60832851, registered 4 Jan 2013, active; address The Millennity, 98 How Ming Street, Kwun Tong. Shareholder: EVE ENERGY CO., LTD at 100%. Directors: LIU, JIN CHENG; YIU, TSZ FUNG; CHAN, TSUN MING. It holds 24% of 常州市贝特瑞新材料科技有限公司, 4.2% of 惠州亿纬集能有限公司 and 3.19% of 曲靖亿纬锂能有限公司. No trade.",
+      "interpretation": "The Hong Kong holding company is 100% owned by EVE Energy. It also co-owns a BTR anode company in Changzhou, so EVE has an equity stake in one of its anode suppliers' group companies.",
+      "scorecard": "worked",
+      "entity_ids": [
+        "Q44xfE6o9nOXO5IvLfsxeg",
+        "3SmT6FoOENV0ruoiIfFr8g",
+        "n0dJdcdnREfjLA1CGlrbAA",
+        "UFe7Aumy-EiUMfoUMC0m4Q",
+        "93jnn0D2673-eRKVnxig2A"
+      ],
+      "step": "owner",
+      "case_id": "case-6"
+    },
+    {
+      "id": "s607",
+      "timestamp": "2026-10-14T19:46:50Z",
+      "server": "sayari",
+      "tool": "get_entity_summary",
+      "params": {
+        "entity_id": "PWXDv26t09Ou97YYpdEkjg"
+      },
+      "question": "Is the shareholder record the same company as the Hong Kong registry record?",
+      "purpose": "Map ownership",
+      "result_summary": "EVE ASIA CO., LIMITED (trade-style record, identifier XLZ00241046). Addresses include Flat/Rm 8, Blk 1, 22/F, The Millennity, 98 How Ming Street, Kwun Tong, and Unit D, 20/F, COS Centre, Kwun Tong. 4,358 shipments sent, 42 received. Flag 'psa_owned_by_usa_section_1260h_entity'.",
+      "interpretation": "Same name and same building (The Millennity, 98 How Ming Street) as the registry record. It is an active trading arm: it also ships to the Malaysian plant (64 rows in s611).",
+      "scorecard": "worked",
+      "entity_ids": [
+        "PWXDv26t09Ou97YYpdEkjg"
+      ],
+      "step": "owner",
+      "case_id": "case-6"
+    },
+    {
+      "id": "s712",
+      "timestamp": "2026-10-14T19:46:50Z",
+      "server": "sayari",
+      "tool": "search_shipments",
+      "params": {
+        "query": "\"GOTION\"",
+        "arrival_country": "USA",
+        "hs_code": "3801",
+        "limit": 25,
+        "response_mode": "full"
+      },
+      "question": "What are the artificial-graphite shipments into Gotion Inc.?",
+      "purpose": "Graphite inputs",
+      "result_summary": "2 rows. Shipper Hefei Gotion High-Tech Power Energy (Xinzhan High-Tech District, Hefei). Receiver Gotion Inc., 48660 Kato Road, Fremont. HS 380110 'artificial graphite'. Departed Busan, Korea, 23 Dec 2025, to Tacoma. Source: Korean trade data.",
+      "interpretation": "Chinese artificial graphite reaches the US Gotion company from its own parent group, routed through Korea. The description has no grain size, so grade is unknown.",
+      "scorecard": "worked",
+      "entity_ids": [
+        "KL5fNOIkqdQV8ZW_4a0wqw",
+        "L1HhW3HMqcvXRKoHOQdS2g"
+      ],
+      "step": "in",
+      "case_id": "case-7"
+    },
+    {
+      "id": "s713",
+      "timestamp": "2026-10-14T19:46:55Z",
+      "server": "sayari",
+      "tool": "search_shipments",
+      "params": {
+        "query": "\"GOTION\"",
+        "arrival_country": "USA",
+        "hs_code": "8507",
+        "limit": 40,
+        "response_mode": "compact"
+      },
+      "question": "Who ships batteries (HS 8507) to the US Gotion entities, and when?",
+      "purpose": "Battery inputs",
+      "result_summary": "145 rows; 40 read, all 2026. Tongcheng Guoxuan New Energy to Gotion Inc.: 15 rows, 14–21 Jul 2026. Hefei Gotion records to Gotion Inc.: Li-ion cells and modules, Jul–Sep 2026, some via Jamaica. Hefei Guoxuan Hi-Tech Power Energy to Gotion Inc. (3 and 10 Aug 2026) and to 1st Choice Freight Service (3 rows, 23 Aug 2026, via Jamaica).",
+      "interpretation": "Chinese-made cells flow steadily into the US Gotion company from group plants in Hefei and Tongcheng.",
+      "scorecard": "worked",
+      "entity_ids": [
+        "KL5fNOIkqdQV8ZW_4a0wqw",
+        "L2r51cgdgK63Sk516U52Jg",
+        "sfUxx_TMvkJFG13vTnqbwQ",
+        "Ctq4KZl1vI__Cm_ocAMNsg",
+        "L1HhW3HMqcvXRKoHOQdS2g",
+        "mFuYdHo30dU4r8kU_11y7w"
+      ],
+      "step": "in",
+      "case_id": "case-7"
+    },
+    {
+      "id": "s714",
+      "timestamp": "2026-10-14T19:47:00Z",
+      "server": "sayari",
+      "tool": "get_entity_profile",
+      "params": {
+        "entity_id": "c3D62Of8RTLeBCM9wnuCvw",
+        "relationships_limit": 30
+      },
+      "question": "What is the 'Gotion Illinois New Energy' trade record?",
+      "purpose": "Manteno plant",
+      "result_summary": "Typed as a person (a data error). Address 333 South Spruce St, Manteno IL. 47 shipments received. Suppliers: Autosmart International (Taiwan), Tongcheng Guoxuan, Green Innovation, Maanshan Wanma Machine Building, Hefei Gotion. Sources: Korean trade data and US imports.",
+      "interpretation": "The Manteno plant as an importer. The 'person' type is a classification error, not a person.",
+      "scorecard": "worked",
+      "entity_ids": [
+        "c3D62Of8RTLeBCM9wnuCvw",
+        "aXSAK32rB7828zLgi_C4zA",
+        "EJwFUVeWPX6ErSnqA4dxgw",
+        "KL5fNOIkqdQV8ZW_4a0wqw"
+      ],
+      "step": "plant",
+      "case_id": "case-7"
+    },
+    {
+      "id": "s808",
+      "timestamp": "2026-10-14T19:47:00Z",
+      "server": "sayari",
+      "tool": "search_shipments",
+      "params": {
+        "query": "\"SYRAH TECHNOLOGIES\"",
+        "departure_country": "USA",
+        "limit": 50,
+        "response_mode": "compact"
+      },
+      "question": "Does Vidalia ship anode material to anyone that customs data can see?",
+      "purpose": "Plant outputs",
+      "result_summary": "1 row: a 50 kg lot described as natural graphite '95' (HS 3801.90) to TOV Zavallia Graphite (Zavallivskyi Hrafit), Ukraine, 26 Dec 2024.",
+      "interpretation": "No sales to US cell makers appear. Domestic US sales are not recorded in customs data, so this is a blind spot, not evidence of no sales.",
+      "scorecard": "partial",
+      "entity_ids": [
+        "NvC-a4BgmoxO63ubVyUiUQ",
+        "d1CI2lYdfm1YotbgCaS84Q"
+      ],
+      "step": "out",
+      "case_id": "case-8"
+    },
+    {
+      "id": "s715",
+      "timestamp": "2026-10-14T19:47:05Z",
+      "server": "sayari",
+      "tool": "get_entity_profile",
+      "params": {
+        "entity_id": "TeFCWTgdDF-tAyfunxgqXw",
+        "relationships_limit": 30
+      },
+      "question": "What does the registered Gotion Illinois record show?",
+      "purpose": "Manteno plant",
+      "result_summary": "GOTION ILLINOIS NEW ENERGY INC, 333 South Spruce St, Manteno. CAGE 18RZ0, SAM UEI SZESYXG93LF8, SAM registration date 29 Jan 2026. 11 shipments received, from Hefei Gotion (two records), Zhejiang Huaray Technology and a Vietnamese racking maker. No shareholders.",
+      "interpretation": "Same address as the trade record. SAM lists no parent.",
+      "scorecard": "worked",
+      "entity_ids": [
+        "TeFCWTgdDF-tAyfunxgqXw",
+        "sfUxx_TMvkJFG13vTnqbwQ",
+        "KL5fNOIkqdQV8ZW_4a0wqw"
+      ],
+      "step": "plant",
+      "case_id": "case-7"
+    },
+    {
+      "id": "s608",
+      "timestamp": "2026-10-14T19:47:10Z",
+      "server": "sayari",
+      "tool": "get_upstream_supply_chain",
+      "params": {
+        "entity_id": "_WCNtC_iMCzef8u8s0uKyQ",
+        "product": [
+          "3801",
+          "2504",
+          "2713"
+        ],
+        "max_depth": 1,
+        "limit": 50,
+        "response_mode": "full"
+      },
+      "question": "Which suppliers send graphite and carbon inputs to the plant?",
+      "purpose": "Map inputs",
+      "result_summary": "20 supplier paths. HS 3801 (artificial graphite) from Hunan Zhongke Shinzoom, Qingdao Taidongrui New Energy, BTR New Material Group Sales (two records), Shanghai Shanshan New Material, Guizhou Zhongke Xingcheng Graphite, Hebei Kuntian New Energy, and two PT Indonesia BTR records (from Indonesia and China). HS 2504 (natural graphite) from BTR Sales. HS 2803 (carbon black) from Jiangsu Cnano, EVE Power, Orion Engineered Carbons and others. No HS 2713 rows.",
+      "interpretation": "The plant draws anode-grade graphite from at least five Chinese anode groups, plus BTR's Indonesian plant from Case 1.",
+      "scorecard": "worked",
+      "entity_ids": [
+        "_WCNtC_iMCzef8u8s0uKyQ",
+        "RpVysafWvaXbqy0N4a5qvw",
+        "3is9-drJvSE-XYuDK2vGTw",
+        "5_cayB1m7XahAhz_Hrrpng",
+        "VINGgWWDonST1Zm4nI8QOA",
+        "Lz1tqelhtyNnBxvG140gqA",
+        "Etd_ARUNj9lHbX9vIMUWbQ",
+        "_BZj4VJyZsFo7k-IHp-DrQ",
+        "0pb5Arj9l_g5eJtqVBozsQ",
+        "Lv60RfghzhQ-9oSF_kW0wA"
+      ],
+      "step": "in",
+      "case_id": "case-6"
+    },
+    {
+      "id": "s609",
+      "timestamp": "2026-10-14T19:47:10Z",
+      "server": "sayari",
+      "tool": "search_shipments",
+      "params": {
+        "query": "\"EVE ENERGY MALAYSIA\"",
+        "arrival_country": "USA",
+        "limit": 100,
+        "response_mode": "full"
+      },
+      "question": "Which US buyers receive cells from the plant, when, and from which port?",
+      "purpose": "Map outputs",
+      "result_summary": "27 rows (output saved to file and parsed), all with EVE Energy Malaysia as shipper. Briggs & Stratton, LLC 3 and Briggs and Stratton Corp 2 (INR21700/50E cells, Jul–Sep 2026, departing Singapore, Yantian (China) and Pusan); EVE Energy North America 7 (Jan–Jun 2026; six list port 'Pinang', geocoded to Indonesia, one Penang; HS 8507.60 and one HS 8506.50); TTI Consumer Power Tools 2 (Oct 2025, Jan 2026); Milwaukee Tool 1 (Feb 2026); Stanley Black & Decker 1 (Dec 2025); Energizer Battery Co 1 (Dec 2025, CR123A primary lithium); ProTechnologies 1 (Jan 2026, CR123A); ABM Tucker GA 1 (Dec 2025); Oregon International Air Freight 1 (Nov 2025); 7 rows with no buyer name and no date (HS 8507.60, to Norfolk, VA).",
+      "interpretation": "Finished cells leave the Chinese-owned plant for named US tool, engine and consumer-battery companies. After June 2026 the dated rows leave from Singapore, China or Korea rather than Penang.",
+      "scorecard": "worked",
+      "entity_ids": [
+        "_WCNtC_iMCzef8u8s0uKyQ",
+        "33X8P9vU58v1EcigvWeD-Q",
+        "TrQHururSYl_Fqbbewp1cA",
+        "gRBpjYP97b53gA7TkExdpQ",
+        "z7L-XcWZt2KVLzSUBkP7BQ",
+        "Wnywbj_-4pXcDUV6p0aSzQ",
+        "2Rvh_WaZCmF-SvM2tzBHUQ",
+        "1kOQxrwnyAG2-nF4M_CVSA",
+        "IYgYRg8qmwkPgPYFBaWAcQ",
+        "eyRTfPmql9CpETmfR2Igvw",
+        "bEMD87uBc5enuWc_w0BT3w"
+      ],
+      "step": "out",
+      "case_id": "case-6"
+    },
+    {
+      "id": "s716",
+      "timestamp": "2026-10-14T19:47:10Z",
+      "server": "sayari",
+      "tool": "search_shipments",
+      "params": {
+        "query": "\"GOTION ILLINOIS\"",
+        "arrival_country": "USA",
+        "limit": 60,
+        "response_mode": "compact"
+      },
+      "question": "What goes into the Manteno plant, and from whom?",
+      "purpose": "Manteno inputs",
+      "result_summary": "120 rows; 60 read. Tongcheng Guoxuan to Gotion Inc.: 29 rows of 'lithium ion rechargeable pack' (HTS 8507600020), 5–27 Aug 2026. Hefei Gotion to Gotion Inc.: dummy cells, structural adhesive, insulation board, Jan–Sep 2026. Green Innovation International: ESS accessories and coolant (Jul 2025), cables (Sep 2026) to Gotion Inc.; pack covers to Gotion Illinois (Jul 2025). Hefei Guoxuan: a box marked 'deliver to Gotion Illinois New Energy, 333 South Spruce Street, Manteno' (16 Aug 2025) and a high-voltage box to 'Gotion Illinois' (27 Dec 2025). Anhui Ruineng: bags to Gotion Illinois (28 Jan 2026). Rack parts (Oct–Nov 2025).",
+      "interpretation": "Manteno assembles packs and storage systems from Chinese cells and parts. Many rows name Gotion Inc. as consignee with Manteno as delivery point, which ties the two US companies together. No graphite rows.",
+      "scorecard": "worked",
+      "entity_ids": [
+        "L2r51cgdgK63Sk516U52Jg",
+        "KL5fNOIkqdQV8ZW_4a0wqw",
+        "EJwFUVeWPX6ErSnqA4dxgw",
+        "sfUxx_TMvkJFG13vTnqbwQ",
+        "a2CIEyP-znrNrpln9qssYA",
+        "TeFCWTgdDF-tAyfunxgqXw",
+        "c3D62Of8RTLeBCM9wnuCvw",
+        "eRITWZG5dyfFu5tqu8tv-g",
+        "1BgMpq8w5wTTnMw6iGmvRg",
+        "B05sLBwEdWm0q5W3J1VaMQ",
+        "Ctq4KZl1vI__Cm_ocAMNsg"
+      ],
+      "step": "in",
+      "case_id": "case-7"
+    },
+    {
+      "id": "s809",
+      "timestamp": "2026-10-14T19:47:10Z",
+      "server": "sayari",
+      "tool": "search_shipments",
+      "params": {
+        "query": "\"TWIGG EXPLORATION\"",
+        "arrival_country": "CHN",
+        "limit": 50,
+        "response_mode": "compact"
+      },
+      "question": "Does the Balama mine ship to China?",
+      "purpose": "Same mine, Chinese buyers",
+      "result_summary": "89 rows in total; first page of 50: natural graphite (HS 2504.10) from Mozambique to Qingdao Nanshu Graphite (3 here), Qingdao Luowei New Materials (25), Qingdao Heshengkai Carbon Material (15), AW-Lin Jiangsu Supply Chain (5) and Dinur (Yingkou) Refractory (2). Arrivals Aug – Nov 2022.",
+      "interpretation": "Yes. The mine that feeds Vidalia also fed Chinese graphite processors.",
+      "scorecard": "worked",
+      "entity_ids": [
+        "ffPlxyHu42G892jPO7tpbA",
+        "BoVP8I5lJH1lrNb61GphCw",
+        "zy4DoUY7ohIzHq9qDUJf2A",
+        "Ifk4vKyw2nqI1j7MwBLmDw",
+        "7Obb1Gbggua5WYBZQOkxpA",
+        "Gp-9bI-j3Pd_Jz64bkBo1w"
+      ],
+      "step": "out",
+      "case_id": "case-8"
+    },
+    {
+      "id": "s717",
+      "timestamp": "2026-10-14T19:47:15Z",
+      "server": "sayari",
+      "tool": "find_downstream_entities",
+      "params": {
+        "entity_id": "cqrsueiPWsIEIMOtO6v_Pg",
+        "countries": [
+          "USA"
+        ],
+        "limit": 25,
+        "response_mode": "compact"
+      },
+      "question": "Does the current-name parent record own any US company?",
+      "purpose": "Ownership chain",
+      "result_summary": "0 results.",
+      "interpretation": "This record of the parent carries no subsidiaries. Ownership sits on the other record.",
+      "scorecard": "failed",
+      "entity_ids": [
+        "cqrsueiPWsIEIMOtO6v_Pg"
+      ],
+      "step": "owner",
+      "case_id": "case-7"
+    },
+    {
+      "id": "s718",
+      "timestamp": "2026-10-14T19:47:20Z",
+      "server": "sayari",
+      "tool": "find_downstream_entities",
+      "params": {
+        "entity_id": "Ba3SkSLr0jnGdVR7sWcnWQ",
+        "countries": [
+          "USA"
+        ],
+        "limit": 25,
+        "response_mode": "compact"
+      },
+      "question": "Does the former-name parent record reach a US company?",
+      "purpose": "Ownership chain",
+      "result_summary": "21 US-linked results (parsed from file). Key path: Gotion High-Tech → Hefei Gotion High-Tech Power Energy (合肥国轩高科动力能源) → 国轩高科（美国）有限公司 ('Gotion High-Tech (USA) Co.'). Other hits are Hefei Gotion's investments in Chery, BAIC and others, not Gotion's US operations.",
+      "interpretation": "The registry chain reaches a US company two levels down, but under a Chinese-language name, not 'Gotion, Inc.'",
+      "scorecard": "worked",
+      "entity_ids": [
+        "Ba3SkSLr0jnGdVR7sWcnWQ",
+        "sfUxx_TMvkJFG13vTnqbwQ",
+        "azdv0UO5gpHsKUJso_CA_Q"
+      ],
+      "step": "owner",
+      "case_id": "case-7"
+    },
+    {
+      "id": "s810",
+      "timestamp": "2026-10-14T19:47:20Z",
+      "server": "sayari",
+      "tool": "search_shipments",
+      "params": {
+        "query": "\"TWIGG EXPLORATION\"",
+        "arrival_country": "CHN",
+        "limit": 50,
+        "response_mode": "compact",
+        "page_token": "(token from s809)"
+      },
+      "question": "Second page of Twigg's China rows.",
+      "purpose": "Paging",
+      "result_summary": "Error: limit cannot be used together with page_token.",
+      "interpretation": "Tool quirk: a page token must be sent without limit.",
+      "scorecard": "failed",
+      "entity_ids": [],
+      "step": "method",
+      "case_id": "case-8"
+    },
+    {
+      "id": "s719",
+      "timestamp": "2026-10-14T19:47:25Z",
+      "server": "sayari",
+      "tool": "get_entity_profile",
+      "params": {
+        "entity_id": "azdv0UO5gpHsKUJso_CA_Q",
+        "relationships_limit": 30
+      },
+      "question": "What is 国轩高科（美国）有限公司?",
+      "purpose": "Ownership chain",
+      "result_summary": "Countries CHN/USA. Shareholder and parent: Hefei Gotion High-Tech Power Energy. Sources: China MOFCOM Overseas Investment Database and MOFCOM Foreign Investment Directory. No address, no US identifier, no trade.",
+      "interpretation": "China's outbound-investment filing records a US subsidiary of Hefei Gotion. It is not linked to the California record, so the match to Gotion, Inc. rests on the name.",
+      "scorecard": "worked",
+      "entity_ids": [
+        "azdv0UO5gpHsKUJso_CA_Q",
+        "sfUxx_TMvkJFG13vTnqbwQ"
+      ],
+      "step": "owner",
+      "case_id": "case-7"
+    },
+    {
+      "id": "s811",
+      "timestamp": "2026-10-14T19:47:25Z",
+      "server": "sayari",
+      "tool": "search_shipments",
+      "params": {
+        "query": "\"TWIGG EXPLORATION\"",
+        "arrival_country": "CHN",
+        "response_mode": "compact",
+        "page_token": "(token from s809)"
+      },
+      "question": "Second page of Twigg's China rows.",
+      "purpose": "Paging",
+      "result_summary": "Error: response_mode cannot be used together with page_token.",
+      "interpretation": "Tool quirk: a page token must be sent with only the original filters.",
+      "scorecard": "failed",
+      "entity_ids": [],
+      "step": "method",
+      "case_id": "case-8"
+    },
+    {
+      "id": "s610",
+      "timestamp": "2026-10-14T19:47:30Z",
+      "server": "sayari",
+      "tool": "search_shipments",
+      "params": {
+        "query": "\"EVE ENERGY MALAYSIA\"",
+        "arrival_country": "MYS",
+        "hs_code": "3801",
+        "limit": 300,
+        "response_mode": "export"
+      },
+      "question": "How many graphite rows reach the plant, from whom?",
+      "purpose": "Map inputs",
+      "result_summary": "59 rows, Apr 2025 to Apr 2026: Qingdao Taidongrui 19 ('negative electrode material LD07-204-02', HS 3801.90); Hunan Zhongke Shinzoom 18 (artificial graphite, some via Hong Kong); BTR New Material Group Sales 8 + 3 under a second record ('BTR carbon anode materials', grade codes LD04-008-01 and LD07-008-03); PT Indonesia BTR New Energy 4 + 1 under a second record (from Indonesia, one from China); Shanghai Shanshan 4 (one 'spheroidized graphite by surface treatment'); Hebei Kuntian 1; Guizhou Zhongke Xingcheng 1.",
+      "interpretation": "Descriptions say 'negative electrode material', 'anode materials' and 'spheroidized graphite', so this is battery-grade anode material. The LD grade codes look like the plant's own part numbers.",
+      "scorecard": "worked",
+      "entity_ids": [
+        "_WCNtC_iMCzef8u8s0uKyQ",
+        "3is9-drJvSE-XYuDK2vGTw",
+        "RpVysafWvaXbqy0N4a5qvw",
+        "5_cayB1m7XahAhz_Hrrpng",
+        "VINGgWWDonST1Zm4nI8QOA",
+        "0pb5Arj9l_g5eJtqVBozsQ",
+        "Lv60RfghzhQ-9oSF_kW0wA",
+        "Lz1tqelhtyNnBxvG140gqA",
+        "_BZj4VJyZsFo7k-IHp-DrQ",
+        "Etd_ARUNj9lHbX9vIMUWbQ"
+      ],
+      "step": "in",
+      "case_id": "case-6"
+    },
+    {
+      "id": "s611",
+      "timestamp": "2026-10-14T19:47:30Z",
+      "server": "sayari",
+      "tool": "search_trade_facets",
+      "params": {
+        "scope": "shipments",
+        "query": "\"EVE ENERGY MALAYSIA\"",
+        "arrival_country": "MYS",
+        "bucket_limit": 20
+      },
+      "question": "What share of all the plant's inputs come from China, and what are they?",
+      "purpose": "Map inputs",
+      "result_summary": "3,608 inbound rows, 3 Jan 2025 to 26 Apr 2026. Departure: China 3,285, Hong Kong 161, Korea 78, Japan 21, Indonesia 14, France 13. Product origin China 3,074. Top HS: machinery (8479.90, 8479.89), battery parts (8507.90, 153), inorganic salts (2842.90, 121), aluminium foil (7607.11, 76), chemical preparations (3824.99, 53), graphite preparations (3801.90, 48). EVE Asia (HK) is among the top ten suppliers (64 rows).",
+      "interpretation": "About nine in ten inbound rows leave from China. The plant imports its equipment and most cell materials from China, not just graphite.",
+      "scorecard": "worked",
+      "entity_ids": [
+        "_WCNtC_iMCzef8u8s0uKyQ",
+        "PWXDv26t09Ou97YYpdEkjg"
+      ],
+      "step": "in",
+      "case_id": "case-6"
+    },
+    {
+      "id": "s720",
+      "timestamp": "2026-10-14T19:47:30Z",
+      "server": "sayari",
+      "tool": "get_entity_profile",
+      "params": {
+        "entity_id": "Ba3SkSLr0jnGdVR7sWcnWQ",
+        "relationships_limit": 20
+      },
+      "question": "What does the parent's registry record show?",
+      "purpose": "Parent profile",
+      "result_summary": "Names include Gotion High-tech, 国轩高科股份有限公司 and the former name Jiangsu Dongyuan Electrical Group. USCC 91320600138346792B; LEI 300300J1NKV8ZBF0KN15. Business scope includes graphene batteries, battery modules and power batteries. Lists 243 shareholders; shown: Nanjing Gotion Holding Group 10.59%, Qiu Weidong 1.018%, an employee share plan 0.52%, and Hefei Gotion High-Tech Power Energy 99.8182%. The same record also lists Hefei Gotion as its subsidiary at 99.8182%. Directors include Steven Cai (deputy general manager, non-independent director). Flags: chinese_soe_adjacent, owner_of_soe, owned_by_regulatory_action_entity.",
+      "interpretation": "Hefei Gotion appears as both owner and subsidiary at the same 99.8182%. That is a loop, a data artefact. We use the subsidiary direction. The SOE flags sit on this stale former-name record and are adjacency flags, not a finding.",
+      "scorecard": "worked",
+      "entity_ids": [
+        "Ba3SkSLr0jnGdVR7sWcnWQ",
+        "yO_m3IE68dktKtJnqx7OtQ",
+        "sfUxx_TMvkJFG13vTnqbwQ",
+        "ru0HQoZ0MqsV_E41dQ5qEQ"
+      ],
+      "step": "owner",
+      "case_id": "case-7"
+    },
+    {
+      "id": "s812",
+      "timestamp": "2026-10-14T19:47:30Z",
+      "server": "sayari",
+      "tool": "search_shipments",
+      "params": {
+        "query": "\"TWIGG EXPLORATION\"",
+        "arrival_country": "CHN",
+        "page_token": "(token from s809)"
+      },
+      "question": "Second page of Twigg's China rows.",
+      "purpose": "Same mine, Chinese buyers",
+      "result_summary": "Remaining 39 rows: Qingdao Nanshu Graphite (22 more, Aug 2022), ASK Resources (15, Aug 2022), and two Apr 2022 rows from a second Twigg record (KlxHzKnR1jHcjm4PRp-6eQ) to Qingdao Huateng Graphite Technology (青岛华腾石墨科技有限公司) and Qingdao Himalaya Special Glass.",
+      "interpretation": "All 89 China rows fall in Apr – Nov 2022. Eight Chinese buyers in total.",
+      "scorecard": "worked",
+      "entity_ids": [
+        "BoVP8I5lJH1lrNb61GphCw",
+        "OPeO2tiJlzLBJWywXkZesw",
+        "Csu21BM3zBbYfSB8ChoVGQ",
+        "NvSjRSdi_6HQ29UwUh5iIA",
+        "KlxHzKnR1jHcjm4PRp-6eQ"
+      ],
+      "step": "out",
+      "case_id": "case-8"
+    },
+    {
+      "id": "s721",
+      "timestamp": "2026-10-14T19:47:35Z",
+      "server": "sayari",
+      "tool": "traverse_network",
+      "params": {
+        "entity_id": "Ba3SkSLr0jnGdVR7sWcnWQ",
+        "relationships": [
+          "has_shareholder"
+        ],
+        "max_depth": 1,
+        "limit": 100,
+        "response_mode": "compact"
+      },
+      "question": "Is Volkswagen among the parent's listed shareholders?",
+      "purpose": "Check the VW stake",
+      "result_summary": "50 of 243 shareholders returned (more pages exist). All are individuals and funds; Li Zhen appears. No Volkswagen entity in these 50.",
+      "interpretation": "Not conclusive alone. Checked with a path search instead (s725).",
+      "scorecard": "partial",
+      "entity_ids": [
+        "Ba3SkSLr0jnGdVR7sWcnWQ"
+      ],
+      "step": "owner",
+      "case_id": "case-7"
+    },
+    {
+      "id": "s722",
+      "timestamp": "2026-10-14T19:47:40Z",
+      "server": "sayari",
+      "tool": "find_shortest_path",
+      "params": {
+        "source_entity_id": "jtptt0xXwDPrAN8CN-po4g",
+        "target_entity_id": "Ba3SkSLr0jnGdVR7sWcnWQ"
+      },
+      "question": "How does Sayari connect the California Gotion, Inc. to the Chinese parent?",
+      "purpose": "Ownership chain",
+      "result_summary": "Path found: California record → 'possibly same as' SAM record → 'possibly same as' trade record → receives goods from Hefei Gotion → Gotion High-Tech.",
+      "interpretation": "The shortest link runs through name matches and a trade link, not through shareholding. Sayari can't show the Fremont company is owned by Gotion High-Tech from the US side.",
+      "scorecard": "worked",
+      "entity_ids": [
+        "jtptt0xXwDPrAN8CN-po4g",
+        "88rCtmTg8g2LPVqmzM7Nhw",
+        "L1HhW3HMqcvXRKoHOQdS2g",
+        "sfUxx_TMvkJFG13vTnqbwQ",
+        "Ba3SkSLr0jnGdVR7sWcnWQ"
+      ],
+      "step": "owner",
+      "case_id": "case-7"
+    },
+    {
+      "id": "s813",
+      "timestamp": "2026-10-14T19:47:40Z",
+      "server": "sayari",
+      "tool": "search_shipments",
+      "params": {
+        "query": "\"TWIGG EXPLORATION\"",
+        "arrival_country": "IDN",
+        "limit": 50,
+        "response_mode": "compact"
+      },
+      "question": "Does the mine ship to BTR's Chinese-owned plant in Indonesia?",
+      "purpose": "Same mine, Chinese-owned anode plant",
+      "result_summary": "3 rows of natural flake graphite (HS 2504.10) to PT Indonesia BTR New Energy Material: 5 Apr 2024 (product number 'SYRFIN10095') and 25 Apr 2024 from the main Twigg record; 22 Aug 2025 from a second record, 'TWIGG EXPLORATION AND MINING, LDA'.",
+      "interpretation": "Yes. The same mine sells to the Chinese-owned anode plant from Case 1. The 'SYR' product code points to Syrah's own product range.",
+      "scorecard": "worked",
+      "entity_ids": [
+        "ffPlxyHu42G892jPO7tpbA",
+        "wL21QEyuYMG1Gsp17Nx-1Q",
+        "2omCekb1pDRKjhFOAqCNSw"
+      ],
+      "step": "out",
+      "case_id": "case-8"
+    },
+    {
+      "id": "s723",
+      "timestamp": "2026-10-14T19:47:45Z",
+      "server": "sayari",
+      "tool": "lookup_risk_factors",
+      "params": {
+        "ids": [
+          "chinese_soe_adjacent",
+          "owner_of_soe",
+          "owned_by_regulatory_action_entity",
+          "soe_adjacent"
+        ]
+      },
+      "question": "What do the SOE flags on the Gotion records mean?",
+      "purpose": "Read flag definitions",
+      "result_summary": "chinese_soe_adjacent / soe_adjacent: 1 hop from a state-owned enterprise, any relationship type. owner_of_soe: possibly owns an SOE up to 3 hops away (10%+). owned_by_regulatory_action_entity: possibly owned, up to 3 hops, by an entity under regulatory action.",
+      "interpretation": "None of these says Gotion is state-owned. They describe neighbours. On Gotion Inc. the SOE flag is one hop through any link, trade included.",
+      "scorecard": "worked",
+      "entity_ids": [],
+      "step": "context",
+      "case_id": "case-7"
+    },
+    {
+      "id": "s612",
+      "timestamp": "2026-10-14T19:47:50Z",
+      "server": "sayari",
+      "tool": "search_suppliers",
+      "params": {
+        "query": "\"EVE ENERGY MALAYSIA\"",
+        "arrival_country": "MYS",
+        "hs_code": "2842",
+        "limit": 15,
+        "response_mode": "compact"
+      },
+      "question": "Who supplies the HS 2842.90 salts (the code used for cathode powders such as lithium iron phosphate)?",
+      "purpose": "Map inputs",
+      "result_summary": "11 supplier records: Hunan Yuneng Shunxing Sales (40 rows, plus 11 under a Taiwan-tagged record), Hunan Changyuan Lico New Energy (30), Gold Shine Energy Material (13), Chengdu BM Science & Technology (11 + 9), Tianjin Guoan Mengguli New Material (2), Easpring Technology (Changzhou) (2 + 1), Mazut International HK (1), Hunan Sixi Youfu Trading (1). Latest row 9 Mar 2026.",
+      "interpretation": "All named suppliers are Chinese. The rollup worked here, unlike some Case 1 rollups. We did not read product descriptions, so the cathode label is our reading of the HS code and supplier names.",
+      "scorecard": "worked",
+      "entity_ids": [
+        "7went_fozXpmz1wkETLo5g",
+        "Z9_ErKGul94kPbXTFJPGuw",
+        "_zGX5KXGx6UYKX85fi7ujg"
+      ],
+      "step": "in",
+      "case_id": "case-6"
+    },
+    {
+      "id": "s613",
+      "timestamp": "2026-10-14T19:47:50Z",
+      "server": "sayari",
+      "tool": "search_shipments",
+      "params": {
+        "query": "\"EVE ENERGY MALAYSIA\"",
+        "arrival_country": "MYS",
+        "hs_code": "2504",
+        "limit": 100,
+        "response_mode": "export"
+      },
+      "question": "Does natural graphite also reach the plant?",
+      "purpose": "Map inputs",
+      "result_summary": "4 rows, all from BTR New Material Group Sales, China to Malaysia, 20 May to 2 Dec 2025, described as 'flake graphite LD04-008-01' (HS 2504.10).",
+      "interpretation": "The same grade code LD04-008-01 also appears on BTR rows declared as artificial graphite (HS 3801.10). One product, two HS codes: the HS code alone can't tell natural from artificial here.",
+      "scorecard": "worked",
+      "entity_ids": [
+        "5_cayB1m7XahAhz_Hrrpng",
+        "_WCNtC_iMCzef8u8s0uKyQ"
+      ],
+      "step": "in",
+      "case_id": "case-6"
+    },
+    {
+      "id": "s724",
+      "timestamp": "2026-10-14T19:47:50Z",
+      "server": "sayari",
+      "tool": "search_entities",
+      "params": {
+        "query": "\"大众汽车（中国）投资有限公司\"",
+        "limit": 5,
+        "response_mode": "compact"
+      },
+      "question": "Which record is Volkswagen (China) Investment?",
+      "purpose": "Check the VW stake",
+      "result_summary": "Volkswagen (China) Investment Co., Ltd., USCC 911100007109204855 (CHN/DEU); two branches; also a same-name record typed as a person.",
+      "interpretation": "Resolved the VW entity for a path test.",
+      "scorecard": "worked",
+      "entity_ids": [
+        "0TsZzKZdA9j4qq_JfBakUQ",
+        "vgw3SB-m3bqnH1Sv8jCjZg"
+      ],
+      "step": "owner",
+      "case_id": "case-7"
+    },
+    {
+      "id": "s814",
+      "timestamp": "2026-10-14T19:47:50Z",
+      "server": "sayari",
+      "tool": "find_downstream_entities",
+      "params": {
+        "entity_id": "ex1GaqYc9OHlM2KgDrK-5w",
+        "limit": 40,
+        "response_mode": "compact"
+      },
+      "question": "What does Syrah Resources own, per Sayari?",
+      "purpose": "Ownership from the top",
+      "result_summary": "5 Australian subsidiaries, all one hop: Syrah US Holdings Pty Ltd, Syrah US Holdings No. 2 Pty Ltd, Syrah Resources Group Holdings Pty Ltd, Syrah Resources (KSA) Pty Ltd and Jacana Resources. No US, Mozambican or UAE entity.",
+      "interpretation": "Registry data reach the Australian holding layer and stop there.",
+      "scorecard": "partial",
+      "entity_ids": [
+        "ex1GaqYc9OHlM2KgDrK-5w",
+        "sEVYNIMWKfM6vuWml4FNlw"
+      ],
+      "step": "owner",
+      "case_id": "case-8"
+    },
+    {
+      "id": "s725",
+      "timestamp": "2026-10-14T19:47:55Z",
+      "server": "sayari",
+      "tool": "find_shortest_path",
+      "params": {
+        "source_entity_id": "0TsZzKZdA9j4qq_JfBakUQ",
+        "target_entity_id": "Ba3SkSLr0jnGdVR7sWcnWQ"
+      },
+      "question": "Does the registry link Volkswagen (China) to Gotion High-Tech?",
+      "purpose": "Check the VW stake",
+      "result_summary": "Path length 2: Volkswagen (China) Investment is 'shareholder_of' Gotion High-Tech. No percentage given.",
+      "interpretation": "Registry data shows the VW shareholding, but not its size.",
+      "scorecard": "worked",
+      "entity_ids": [
+        "0TsZzKZdA9j4qq_JfBakUQ",
+        "Ba3SkSLr0jnGdVR7sWcnWQ"
+      ],
+      "step": "owner",
+      "case_id": "case-7"
+    },
+    {
+      "id": "s614",
+      "timestamp": "2026-10-14T19:48:00Z",
+      "server": "sayari",
+      "tool": "traverse_network",
+      "params": {
+        "entity_id": "ySemfyJJesFbfxEgW2SgCg",
+        "relationships": [
+          "has_shareholder",
+          "has_director",
+          "has_officer"
+        ],
+        "max_depth": 1,
+        "limit": 20,
+        "response_mode": "compact"
+      },
+      "question": "Who owns Linergy Power?",
+      "purpose": "Map ownership (Linergy)",
+      "result_summary": "5 links. Shareholder: AMPACE TECHNOLOGY LIMITED (Hong Kong, CR 3177026; flags include 'owned_by_usa_section_1260h_entity'). Directors include two with Shanghai and Nanjing addresses and one Malaysian; one Malaysian officer.",
+      "interpretation": "Linergy is held by a Hong Kong company in the Ampace group.",
+      "scorecard": "worked",
+      "entity_ids": [
+        "ySemfyJJesFbfxEgW2SgCg",
+        "TcV1qONXBV-YSjtqMe-yFQ"
+      ],
+      "step": "owner",
+      "case_id": "case-6"
+    },
+    {
+      "id": "s615",
+      "timestamp": "2026-10-14T19:48:00Z",
+      "server": "sayari",
+      "tool": "get_entity_summary",
+      "params": {
+        "entity_id": "ySemfyJJesFbfxEgW2SgCg"
+      },
+      "question": "When was Linergy registered, and what does it do?",
+      "purpose": "Resolve Linergy",
+      "result_summary": "LINERGY POWER SDN BHD, registered 19 Dec 2024, company number 1599895M; Serendah plant, Bandar Industri Bernilai Tinggi, Selangor. Purpose: manufacture, import and export of batteries. 2,759 shipments received, 78 sent.",
+      "interpretation": "A young plant: about 11 months from incorporation to its first US cell row (Nov 2025).",
+      "scorecard": "worked",
+      "entity_ids": [
+        "ySemfyJJesFbfxEgW2SgCg"
+      ],
+      "step": "plant",
+      "case_id": "case-6"
+    },
+    {
+      "id": "s726",
+      "timestamp": "2026-10-14T19:48:00Z",
+      "server": "sayari",
+      "tool": "find_shortest_path",
+      "params": {
+        "source_entity_id": "vgw3SB-m3bqnH1Sv8jCjZg",
+        "target_entity_id": "Ba3SkSLr0jnGdVR7sWcnWQ"
+      },
+      "question": "Is the person-typed VW record a second shareholder link?",
+      "purpose": "Check the VW stake",
+      "result_summary": "Path of 4 through Shanghai Volkswagen Powertrain and Volkswagen (China) Investment; no direct link.",
+      "interpretation": "The person-typed record is a stray. The direct link is the one in s725.",
+      "scorecard": "partial",
+      "entity_ids": [
+        "vgw3SB-m3bqnH1Sv8jCjZg"
+      ],
+      "step": "owner",
+      "case_id": "case-7"
+    },
+    {
+      "id": "s815",
+      "timestamp": "2026-10-14T19:48:00Z",
+      "server": "sayari",
+      "tool": "find_shortest_path",
+      "params": {
+        "source_entity_id": "NvC-a4BgmoxO63ubVyUiUQ",
+        "target_entity_id": "ex1GaqYc9OHlM2KgDrK-5w"
+      },
+      "question": "How is the plant connected to the parent?",
+      "purpose": "Ownership path",
+      "result_summary": "Sayari API error (HTTP 408, timeout).",
+      "interpretation": "Not answered.",
+      "scorecard": "failed",
+      "entity_ids": [],
+      "step": "owner",
+      "case_id": "case-8"
+    },
+    {
+      "id": "s816",
+      "timestamp": "2026-10-14T19:48:00Z",
+      "server": "sayari",
+      "tool": "find_shortest_path",
+      "params": {
+        "source_entity_id": "ffPlxyHu42G892jPO7tpbA",
+        "target_entity_id": "ex1GaqYc9OHlM2KgDrK-5w"
+      },
+      "question": "How is the mine connected to the parent?",
+      "purpose": "Ownership path",
+      "result_summary": "Sayari API error (HTTP 408, timeout).",
+      "interpretation": "Not answered.",
+      "scorecard": "failed",
+      "entity_ids": [],
+      "step": "owner",
+      "case_id": "case-8"
+    },
+    {
+      "id": "s727",
+      "timestamp": "2026-10-14T19:48:05Z",
+      "server": "sayari",
+      "tool": "search_buyers",
+      "params": {
+        "query": "\"GOTION\"",
+        "arrival_country": "USA",
+        "limit": 15,
+        "response_mode": "compact"
+      },
+      "question": "Who in the US receives Gotion-named goods?",
+      "purpose": "Customers",
+      "result_summary": "52 buyers. Gotion Inc. (975 shipments, to 20 Sep 2026); 1st Choice Freight Service (186, to 23 Aug 2026); Gotion Illinois (47, to Jul 2025); Moxion Power (28, HS 850760, to 21 Feb 2024); 1Energy Systems (15, to Oct 2025); Amazon.com Services (14, 2022); Gotion Illinois New Energy Inc (11, to Jan 2026); Energport (10, 2022); GOTION,INC. (9, to Feb 2026); Bluered New Energy (7, 2022); Caban Systems (5, to Oct 2025); 'Department of Supply Chain Gotion' (4, Mar 2025).",
+      "interpretation": "These are US buyers of Gotion goods shipped from abroad, not customers of the US plants. The rollup doesn't name the shipper per buyer, so non-Gotion matches are possible.",
+      "scorecard": "partial",
+      "entity_ids": [
+        "mFuYdHo30dU4r8kU_11y7w",
+        "1uN_EFYSidIznJZMZxptlw",
+        "x-d_uxTn-TE8ay6FKmZZAA",
+        "hycXzh23OxAAkCsQbnw6uQ"
+      ],
+      "step": "out",
+      "case_id": "case-7"
+    },
+    {
+      "id": "s616",
+      "timestamp": "2026-10-14T19:48:10Z",
+      "server": "sayari",
+      "tool": "find_beneficial_owners",
+      "params": {
+        "entity_id": "TcV1qONXBV-YSjtqMe-yFQ",
+        "max_depth": 2,
+        "entity_types": [
+          "company"
+        ],
+        "limit": 10,
+        "response_mode": "compact"
+      },
+      "question": "Who is above Ampace Technology Limited?",
+      "purpose": "Map ownership (Linergy)",
+      "result_summary": "7 owners. Parent: 厦门新能安科技有限公司 (Xiamen Ampace, USCC 91350200MA8TJ86R2M). Its shareholders include CONTEMPORARY AMPEREX TECHNOLOGY CO., LIMITED (CATL; flagged 'usa_section_1260h'), 厦门新能和科技有限公司 and four Xiamen investment partnerships. No percentages returned.",
+      "interpretation": "Linergy's chain runs to a Xiamen company that CATL co-owns. Sayari doesn't give CATL's share in this pull.",
+      "scorecard": "partial",
+      "entity_ids": [
+        "TcV1qONXBV-YSjtqMe-yFQ",
+        "sXzqumDIg-3LZrua0Pt_PA",
+        "Hknigg_iWcgcpp_dkWgQvA"
+      ],
+      "step": "owner",
+      "case_id": "case-6"
+    },
+    {
+      "id": "s617",
+      "timestamp": "2026-10-14T19:48:10Z",
+      "server": "sayari",
+      "tool": "search_shipments",
+      "params": {
+        "query": "\"LINERGY POWER\"",
+        "arrival_country": "MYS",
+        "hs_code": "3801",
+        "limit": 200,
+        "response_mode": "export"
+      },
+      "question": "Who sends graphite to Linergy?",
+      "purpose": "Map inputs (Linergy)",
+      "result_summary": "17 rows of artificial graphite (HS 3801.10), China to Malaysia: Hunan Zhongke Shinzoom 14 (10 Sep 2025 to 5 Feb 2026), Shanghai Shanshan 3 (Nov 2025, Jan 2026).",
+      "interpretation": "Linergy draws anode graphite from two Chinese anode groups.",
+      "scorecard": "worked",
+      "entity_ids": [
+        "ySemfyJJesFbfxEgW2SgCg",
+        "RpVysafWvaXbqy0N4a5qvw",
+        "Lz1tqelhtyNnBxvG140gqA"
+      ],
+      "step": "in",
+      "case_id": "case-6"
+    },
+    {
+      "id": "s728",
+      "timestamp": "2026-10-14T19:48:10Z",
+      "server": "sayari",
+      "tool": "search_entities",
+      "params": {
+        "query": "Gotion Michigan Big Rapids",
+        "limit": 10,
+        "response_mode": "compact"
+      },
+      "question": "Is there a Sayari record for the Big Rapids, Michigan project?",
+      "purpose": "Big Rapids",
+      "result_summary": "0 results.",
+      "interpretation": "No Michigan Gotion entity found by this search. The project left no trade trail.",
+      "scorecard": "failed",
+      "entity_ids": [],
+      "step": "plant",
+      "case_id": "case-7"
+    },
+    {
+      "id": "s817",
+      "timestamp": "2026-10-14T19:48:10Z",
+      "server": "sayari",
+      "tool": "find_downstream_entities",
+      "params": {
+        "entity_id": "sEVYNIMWKfM6vuWml4FNlw",
+        "limit": 25,
+        "response_mode": "compact"
+      },
+      "question": "Does Syrah US Holdings own the Vidalia company, per Sayari?",
+      "purpose": "Ownership path",
+      "result_summary": "0 results.",
+      "interpretation": "The Australian record does not link down to the US LLC.",
+      "scorecard": "failed",
+      "entity_ids": [
+        "sEVYNIMWKfM6vuWml4FNlw"
+      ],
+      "step": "owner",
+      "case_id": "case-8"
+    },
+    {
+      "id": "s818",
+      "timestamp": "2026-10-14T19:48:12Z",
+      "server": "sayari",
+      "tool": "find_downstream_entities",
+      "params": {
+        "entity_id": "csviE8BCoyS5aDIFz5NvkA",
+        "limit": 25,
+        "response_mode": "compact"
+      },
+      "question": "Does Syrah Resources Group Holdings own Twigg, per Sayari?",
+      "purpose": "Ownership path",
+      "result_summary": "0 results.",
+      "interpretation": "No route from the parent to the mine in registry data.",
+      "scorecard": "failed",
+      "entity_ids": [],
+      "step": "owner",
+      "case_id": "case-8"
+    },
+    {
+      "id": "s729",
+      "timestamp": "2026-10-14T19:48:15Z",
+      "server": "sayari",
+      "tool": "search_shipments",
+      "params": {
+        "query": "\"GOTION\" + (\"MOXION\" | \"1ENERGY\" | \"CABAN\")",
+        "arrival_country": "USA",
+        "limit": 20,
+        "response_mode": "compact"
+      },
+      "question": "Can the buyer rollup be checked row by row?",
+      "purpose": "Customers",
+      "result_summary": "0 rows.",
+      "interpretation": "Boolean syntax returned nothing.",
+      "scorecard": "failed",
+      "entity_ids": [],
+      "step": "method",
+      "case_id": "case-7"
+    },
+    {
+      "id": "s730",
+      "timestamp": "2026-10-14T19:48:20Z",
+      "server": "sayari",
+      "tool": "search_shipments",
+      "params": {
+        "query": "\"GOTION\" \"MOXION POWER\"",
+        "arrival_country": "USA",
+        "limit": 10,
+        "response_mode": "compact"
+      },
+      "question": "Do shipment rows link Gotion and Moxion?",
+      "purpose": "Customers",
+      "result_summary": "0 rows.",
+      "interpretation": "Two quoted names together returned nothing, though the rollup and graph show the link. Another search-syntax limit.",
+      "scorecard": "failed",
+      "entity_ids": [],
+      "step": "method",
+      "case_id": "case-7"
+    },
+    {
+      "id": "s819",
+      "timestamp": "2026-10-14T19:48:20Z",
+      "server": "sayari",
+      "tool": "get_entity_profile",
+      "params": {
+        "entity_id": "NvC-a4BgmoxO63ubVyUiUQ",
+        "relationships_limit": 60
+      },
+      "question": "What does the plant's own record say about who controls it?",
+      "purpose": "Ownership of the plant",
+      "result_summary": "Registered 2017, LLC, active as of 23 Jul 2025, business 'ground or treated mineral and earth manufacturing'. Addresses in Vidalia, Baton Rouge, Dover (Delaware agent) and Syrah's two Melbourne offices. Member: 'SYRAH US HOLDINGS PTY UTD, AN AUSTRALIAN PROPIETARY COMPANY' (05zob51QQdW-1mL-7WJSGA); a former member who is a person. Registered agent NRAI Services. 11 suppliers, 1 buyer. Flag chinese_soe_adjacent.",
+      "interpretation": "The registry does name the owner: an Australian Syrah holding company. That record is a separate node from the one Syrah Resources owns, which is why the traversal tools miss it. The SOE flag comes from one Chinese state-owned equipment supplier (Mountop), not from ownership.",
+      "scorecard": "worked",
+      "entity_ids": [
+        "NvC-a4BgmoxO63ubVyUiUQ",
+        "05zob51QQdW-1mL-7WJSGA",
+        "d1CI2lYdfm1YotbgCaS84Q"
+      ],
+      "step": "owner",
+      "case_id": "case-8"
+    },
+    {
+      "id": "s731",
+      "timestamp": "2026-10-14T19:48:25Z",
+      "server": "sayari",
+      "tool": "traverse_network",
+      "params": {
+        "entity_id": "1uN_EFYSidIznJZMZxptlw",
+        "relationships": [
+          "receives_from"
+        ],
+        "max_depth": 1,
+        "limit": 25,
+        "response_mode": "compact"
+      },
+      "question": "Who supplies Moxion Power?",
+      "purpose": "Customers",
+      "result_summary": "19 suppliers, including Hefei Gotion High-Tech Power Energy (four records, all at 599 Daihe Road, Hefei) alongside Amphenol, Boyd and others.",
+      "interpretation": "Confirms a direct trade link from the Gotion group in China to a US buyer. It also confirms the Hefei trade records share one address.",
+      "scorecard": "worked",
+      "entity_ids": [
+        "1uN_EFYSidIznJZMZxptlw",
+        "KL5fNOIkqdQV8ZW_4a0wqw",
+        "Ctq4KZl1vI__Cm_ocAMNsg",
+        "sfUxx_TMvkJFG13vTnqbwQ"
+      ],
+      "step": "out",
+      "case_id": "case-7"
+    },
+    {
+      "id": "s618",
+      "timestamp": "2026-10-14T19:48:30Z",
+      "server": "sayari",
+      "tool": "search_shipments",
+      "params": {
+        "query": "\"LINERGY POWER\"",
+        "arrival_country": "USA",
+        "limit": 50,
+        "response_mode": "full"
+      },
+      "question": "Which US buyers receive Linergy's cells?",
+      "purpose": "Map outputs (Linergy)",
+      "result_summary": "17 rows (saved to file and parsed), Nov 2025 to Sep 2026: Eaton Corporation 5 + 1 under a second Eaton record (lithium-ion battery systems, Aug–Sep 2026, departing Tawau); Ampace Technology Limited 6 (18650/21700 cells, Feb 2026); Milwaukee Tool 2 + 1 under a second record (Jan–Feb 2026); Stanley Black & Decker 1 ('cell sample', Dec 2025); Techtronic Product Development 1 (Nov 2025).",
+      "interpretation": "Same pattern as EVE: Chinese anode material in, cells out to US tool and power-equipment makers. Six rows go to Linergy's own Hong Kong shareholder as consignee.",
+      "scorecard": "worked",
+      "entity_ids": [
+        "ySemfyJJesFbfxEgW2SgCg",
+        "BuQm2NSnUlkUMb83_BJxog",
+        "VsOcgTRnMskYDFTjvGl9Lg",
+        "TcV1qONXBV-YSjtqMe-yFQ",
+        "7v82EsEljCQ4PkCcnyMTBA",
+        "XZmnm7ViWgrVw_gAfFPVgQ",
+        "5ETwnZflxje1vTTjeNyT6w",
+        "DoTF8asU1jM35geCp8Dg6Q"
+      ],
+      "step": "out",
+      "case_id": "case-6"
+    },
+    {
+      "id": "t701",
+      "timestamp": "2026-10-14T19:48:30Z",
+      "server": "tavily",
+      "tool": "tavily_search",
+      "params": {
+        "query": "Gotion Manteno Illinois plant production status 2026",
+        "max_results": 6,
+        "search_depth": "advanced",
+        "start_date": "2025-06-01"
+      },
+      "question": "Is the Manteno plant producing in 2025–2026?",
+      "purpose": "Plant status",
+      "result_summary": "Shaw Local (10 Oct and 18 Nov 2025): plant operating five lines, about 300 staff, aiming for 450 by end-2025 and 1,400 in 2026; makes commercial energy-storage units, EV packs and mobile chargers. S&P AutoTechInsight: energy-storage lines started spring 2025, EV battery production from Sep 2025; Illinois incentives of $536m. Richardson Electronics release (13 May 2026): BESS partnership with Gotion Inc. using product from the Manteno plant. URLs: shawlocal.com/daily-journal/2025/10/10/gotion-expects-to-add-450-jobs-by-end-of-2025; shawlocal.com/daily-journal/2025/11/18/gotion-gives-updates-on-manteno-plant; autotechinsight.spglobal.com/news/5283484; rell.com/press-news/richardson-electronics-ltd-announces-technology-partnership-with-gotion-to-deliver-u-s-manufactured-battery-energy-storage-systems",
+      "interpretation": "Manteno is producing, but it assembles packs and storage systems. That fits the trade data: cells come in from China. Nothing says it makes cells or anode material.",
+      "scorecard": "worked",
+      "entity_ids": [
+        "TeFCWTgdDF-tAyfunxgqXw",
+        "case7-richardson-electronics"
+      ],
+      "step": "context",
+      "case_id": "case-7"
+    },
+    {
+      "id": "s820",
+      "timestamp": "2026-10-14T19:48:30Z",
+      "server": "sayari",
+      "tool": "search_entities",
+      "params": {
+        "query": "\"Twigg Exploration\"",
+        "limit": 15,
+        "response_mode": "compact"
+      },
+      "question": "How many records does Sayari hold for Twigg?",
+      "purpose": "Entity resolution",
+      "result_summary": "9 records: three trade records with Maputo addresses, one with a US SAM UEI (J36EVFFLFJH1), a second trade record ('AND MINING, LDA'), two from the Mozambique Boletim da República and others with addresses stuck in the name field.",
+      "interpretation": "Heavy fragmentation. A user searching one record would miss rows held under the others.",
+      "scorecard": "worked",
+      "entity_ids": [
+        "ffPlxyHu42G892jPO7tpbA",
+        "wL21QEyuYMG1Gsp17Nx-1Q",
+        "KlxHzKnR1jHcjm4PRp-6eQ",
+        "CwgolVNduI83FRuDgMwK1w"
+      ],
+      "step": "plant",
+      "case_id": "case-8"
+    },
+    {
+      "id": "t702",
+      "timestamp": "2026-10-14T19:48:35Z",
+      "server": "tavily",
+      "tool": "tavily_search",
+      "params": {
+        "query": "Gotion Big Rapids Michigan battery plant 2026 status lawsuit abandoned",
+        "max_results": 6,
+        "search_depth": "advanced",
+        "start_date": "2025-06-01"
+      },
+      "question": "What happened to the Big Rapids project?",
+      "purpose": "Plant status",
+      "result_summary": "Michigan Strategic Fund letter of 17 Sep 2025 declared Gotion in default for 'voluntary abandonment' (120 days with no eligible work); the $175m grant was pulled. Gotion replied on 15 Oct 2025 that it was 'shocked'. Bridge Michigan: state says project is dead. Attorney General demanded repayment of $23.7m for land on 30 Jan 2026 (mlive). Gotion amended its federal suit against Green Charter Township in Jun 2026 seeking damages (mlive); Reuters, 1 Jul 2026: Gotion sues the township for damages. URLs: bridgemi.com/business-watch/michigan-gotion-battery-plant-plan-is-dead-after-years-of-controversy; mlive.com/news/grand-rapids/2026/01/michigan-demands-gotion-repay-237-million-for-halted-ev-battery-plant.html; mlive.com/news/grand-rapids/2026/06/gotion-seeks-millions-from-michigan-township-after-ev-battery-plant-sunk.html; reuters.com/legal/government/chinese-battery-maker-gotion-sues-michigan-town-millions-damages-over-plant-2026-07-01; fox17online.com/news/local-news/michigan/mecosta/michigan-moves-to-pull-public-funding-for-gotion-battery-plant-near-big-rapids",
+      "interpretation": "Big Rapids was never built. It is now a legal dispute, so there is no trade trail to find.",
+      "scorecard": "worked",
+      "entity_ids": [
+        "case7-big-rapids-project",
+        "jtptt0xXwDPrAN8CN-po4g"
+      ],
+      "step": "context",
+      "case_id": "case-7"
+    },
+    {
+      "id": "s821",
+      "timestamp": "2026-10-14T19:48:35Z",
+      "server": "sayari",
+      "tool": "get_entity_profile",
+      "params": {
+        "entity_id": "CwgolVNduI83FRuDgMwK1w",
+        "relationships_limit": 30
+      },
+      "question": "Does Twigg's Mozambique gazette record list shareholders?",
+      "purpose": "Ownership of the mine",
+      "result_summary": "Source: Mozambique Boletim da República. Name, country, type LTD. No relationships.",
+      "interpretation": "A registry record exists but carries no owners.",
+      "scorecard": "partial",
+      "entity_ids": [
+        "CwgolVNduI83FRuDgMwK1w"
+      ],
+      "step": "owner",
+      "case_id": "case-8"
+    },
+    {
+      "id": "s822",
+      "timestamp": "2026-10-14T19:48:38Z",
+      "server": "sayari",
+      "tool": "get_entity_profile",
+      "params": {
+        "entity_id": "pINZVxJgOaXpyrNkPgaeBQ",
+        "relationships_limit": 30
+      },
+      "question": "Does the second gazette record list shareholders?",
+      "purpose": "Ownership of the mine",
+      "result_summary": "Source: Mozambique Boletim da República. No relationships.",
+      "interpretation": "Same gap.",
+      "scorecard": "failed",
+      "entity_ids": [],
+      "step": "owner",
+      "case_id": "case-8"
+    },
+    {
+      "id": "t601",
+      "timestamp": "2026-10-14T19:48:40Z",
+      "server": "tavily",
+      "tool": "tavily_search",
+      "params": {
+        "query": "EVE Energy added Section 1260H Chinese military companies list Pentagon",
+        "max_results": 6
+      },
+      "question": "Is EVE Energy really on the Section 1260H list, and since when?",
+      "purpose": "Check the 1260H flag",
+      "result_summary": "WilmerHale, Dentons, Holland & Knight and the DoD's own list (media.defense.gov) say the 8 June 2026 update added EVE Energy Co., Ltd. The DoD entry says EVE is 'directly and indirectly affiliated with SASAC' and calls it a military-civil fusion contributor.",
+      "interpretation": "Sayari's 'usa_section_1260h' flag on the parent is confirmed by the primary list. The listing came after the plant started shipping to the US.",
+      "scorecard": "worked",
+      "entity_ids": [
+        "3SmT6FoOENV0ruoiIfFr8g"
+      ],
+      "step": "context",
+      "case_id": "case-6"
+    },
+    {
+      "id": "t602",
+      "timestamp": "2026-10-14T19:48:45Z",
+      "server": "tavily",
+      "tool": "tavily_search",
+      "params": {
+        "query": "EVE Energy Malaysia Kedah Kulim cylindrical battery plant production EVE Asia",
+        "max_results": 5
+      },
+      "question": "What is the plant, and when did it start producing?",
+      "purpose": "Plant context",
+      "result_summary": "EVE's own sites (evebattery.com, evebatteryusa.com), Battery-News and EnergyTrend: EVE's 53rd factory and first outside China, in Kulim, Kedah. Construction began Aug 2023; first cell off the line Feb 2025; 680 million cylindrical (21700) cells a year for power tools and two-wheelers; up to USD 422.3 million invested. A Phase II energy-storage plant was completed in Feb 2026.",
+      "interpretation": "The company's own statements confirm the plant belongs to EVE Energy. Production began Feb 2025, which fits the first graphite rows (Apr 2025).",
+      "scorecard": "worked",
+      "entity_ids": [
+        "_WCNtC_iMCzef8u8s0uKyQ",
+        "3SmT6FoOENV0ruoiIfFr8g"
+      ],
+      "step": "context",
+      "case_id": "case-6"
+    },
+    {
+      "id": "s823",
+      "timestamp": "2026-10-14T19:48:45Z",
+      "server": "sayari",
+      "tool": "get_entity_profile",
+      "params": {
+        "entity_id": "uZISesDqcaxQ8aVgsyvurw",
+        "relationships_limit": 30
+      },
+      "question": "Who is Syrah Global DMCC, the Dubai seller to BTR Indonesia in Case 1?",
+      "purpose": "Check the Case 1 trader",
+      "result_summary": "SYRAH GLOBAL DMCC, Office 1004, Indigo Icon Tower, Cluster F, Jumeirah Lake Towers, Dubai. No owners listed. Ships to 24 partners (336 rows sent). Receives from Lindi Jumbo (Tanzania), ERG Madagascar and Wogen Pacific.",
+      "interpretation": "Sayari gives no owner, but the address matches the Dubai office in Syrah's annual report (t803). It also buys graphite from other African miners, so not everything it sells need be from Balama.",
+      "scorecard": "partial",
+      "entity_ids": [
+        "uZISesDqcaxQ8aVgsyvurw"
+      ],
+      "step": "owner",
+      "case_id": "case-8"
+    },
+    {
+      "id": "t603",
+      "timestamp": "2026-10-14T19:48:55Z",
+      "server": "tavily",
+      "tool": "tavily_search",
+      "params": {
+        "query": "45X prohibited foreign entity specified foreign entity 1260H list foreign-influenced entity 25% battery cells components material assistance cost ratio threshold battery components",
+        "max_results": 6,
+        "search_depth": "advanced"
+      },
+      "question": "How do the PFE rules treat a cell from a 1260H-linked maker, compared with anode material?",
+      "purpose": "Policy context",
+      "result_summary": "IRS Notice 2026-15 quotes §7701(a)(51): a 'specified foreign entity' includes an entity identified under Section 1260H. Law-firm summaries: a 'foreign-influenced entity' includes one where a single specified foreign entity owns more than 25%. For §45X, the material-assistance cost ratio compares direct material costs not made by a PFE with all direct material costs; the required non-PFE share for battery components is 60% for components sold in 2026, rising to 85% by 2030 (critical minerals 0% in 2026, 25% in 2030). IRS safe-harbor tables are due by 31 Dec 2026.",
+      "interpretation": "Cells and anode material sit at different points in the test. A US company buying finished cells counts the cell as one input, and what matters is who made the cell. Anode material is an input of the cell maker. We give no view on how the rules apply to any company here.",
+      "scorecard": "worked",
+      "entity_ids": [],
+      "step": "context",
+      "case_id": "case-6"
+    },
+    {
+      "id": "t801",
+      "timestamp": "2026-10-14T19:49:00Z",
+      "server": "tavily",
+      "tool": "tavily_search",
+      "params": {
+        "query": "Syrah Resources Vidalia active anode material 2026 production update",
+        "max_results": 6,
+        "start_date": "2025-06-01"
+      },
+      "question": "What is the status of the Vidalia plant in 2025–2026?",
+      "purpose": "Context: plant status",
+      "result_summary": "A LinkedIn summary of Syrah's June 2026 quarterly says Vidalia produced 150 t for customer qualification. Kalkine gives capacity of 11,250 tpa. Manufacturing Digital (29 Jun 2026) says Tesla withdrew its termination notice once Vidalia began delivering conforming material. DFC announced a plan to take a strategic equity interest in Syrah (dfc.gov). The Kleinman Center (UPenn) notes the USITC's March 2026 negative vote on Chinese anode duties.",
+      "interpretation": "Vidalia is operating at qualification scale, not commercial volume. Small output fits the absence of US sales in trade data.",
+      "scorecard": "worked",
+      "entity_ids": [
+        "NvC-a4BgmoxO63ubVyUiUQ",
+        "ex1GaqYc9OHlM2KgDrK-5w"
+      ],
+      "step": "context",
+      "case_id": "case-8"
+    },
+    {
+      "id": "t802",
+      "timestamp": "2026-10-14T19:49:05Z",
+      "server": "tavily",
+      "tool": "tavily_search",
+      "params": {
+        "query": "Syrah Tesla offtake agreement Vidalia default notice qualification 2025",
+        "max_results": 6,
+        "start_date": "2025-01-01"
+      },
+      "question": "What is the status of Tesla's offtake from Vidalia?",
+      "purpose": "Context: the US buyer",
+      "result_summary": "Syrah's 2025 annual report: Tesla served a default notice in July 2025 over non-conforming AAM samples; cure date extended to 1 June 2026. Reuters (31 May 2026), electrive (1 Jun 2026) and Yahoo Finance: Tesla withdrew its termination notice after accepting conforming samples, but kept the right to terminate if final qualification fails. The 2021 deal covers 8,000 t over four years. ION Analytics cites the 23 Dec 2021 stock-exchange announcement of the deal, a separate Lucid offtake (7 ktpa, Feb 2025) and a DOE loan under forbearance tied to the Tesla deal.",
+      "interpretation": "The Tesla link is a contract, not yet a flow of goods. It survives but depends on final qualification.",
+      "scorecard": "worked",
+      "entity_ids": [
+        "xWhz7CFJV3lxsgg8fHMGHA",
+        "NvC-a4BgmoxO63ubVyUiUQ"
+      ],
+      "step": "context",
+      "case_id": "case-8"
+    },
+    {
+      "id": "s824",
+      "timestamp": "2026-10-14T19:49:20Z",
+      "server": "sayari",
+      "tool": "search_trade_facets",
+      "params": {
+        "scope": "shipments",
+        "query": "\"TWIGG EXPLORATION\"",
+        "departure_country": "MOZ",
+        "bucket_limit": 15
+      },
+      "question": "Where does the Balama mine's graphite go, by country?",
+      "purpose": "Mine's export mix",
+      "result_summary": "190 rows, 5 Feb 2022 – 1 Mar 2026. Arrival: China 89, Belgium 37, Slovenia 31, Netherlands 9, USA 7, Korea 4, UK 3, Indonesia 3, Poland 3, Russia 2, Spain 1, India 1. Top buyers: Dominik Georg Luh Technografit 29, Qingdao Nanshu 25, Qingdao Luowei 25, Grafitbergbau Kaisersberg 19, Qingdao Heshengkai 15, ASK Resources 15, CS Additive 10, Vesuvius Belgium 7, Syrah Technologies 6, AW-Lin 5. HS: 2504.10 162, 3801.10 17.",
+      "interpretation": "China is the biggest single destination (47% of rows). The US plant is a small share of the mine's visible exports.",
+      "scorecard": "worked",
+      "entity_ids": [
+        "ffPlxyHu42G892jPO7tpbA",
+        "MzUxHPmuO6dwS8pO1hCNUQ",
+        "Q1iA8Rfci2znN6C_9bhKZQ",
+        "NvC-a4BgmoxO63ubVyUiUQ"
+      ],
+      "step": "out",
+      "case_id": "case-8"
+    },
+    {
+      "id": "s825",
+      "timestamp": "2026-10-14T19:49:30Z",
+      "server": "sayari",
+      "tool": "search_shipments",
+      "params": {
+        "query": "\"TWIGG EXPLORATION\"",
+        "departure_country": "MOZ",
+        "arrival_country": "RUS",
+        "response_mode": "compact"
+      },
+      "question": "Why does Twigg carry a 'sanctioned_adjacent' flag?",
+      "purpose": "Explain a flag",
+      "result_summary": "2 rows: natural graphite to PJSC Kombinat Magnezit (a refractory maker now on a sanctions list in Sayari), 16 Feb 2022, and crucible-grade graphite for refractories to Luzhsky Abrasive Plant, 5 Feb 2022.",
+      "interpretation": "The flag comes from two refractory sales in early February 2022, before Russia's full invasion of Ukraine. Context, not a finding.",
+      "scorecard": "worked",
+      "entity_ids": [
+        "GVihyKDTwtnC-IaJstpPCw",
+        "4dfmhQ3NPjXLdVT7-GSJDQ"
+      ],
+      "step": "context",
+      "case_id": "case-8"
+    },
+    {
+      "id": "t803",
+      "timestamp": "2026-10-14T19:49:45Z",
+      "server": "tavily",
+      "tool": "tavily_extract",
+      "params": {
+        "urls": [
+          "https://www.datocms-assets.com/65260/1774572803-syr_2025_annual_report.pdf"
+        ],
+        "query": "Twigg Exploration and Mining Limitada subsidiary ownership interest Syrah Technologies LLC",
+        "format": "text"
+      },
+      "question": "What does Syrah's own annual report say about ownership of the mine, the plant and the Dubai trader?",
+      "purpose": "Ownership from the company's filing",
+      "result_summary": "Syrah Resources Annual Report 2025, Note 20 and the entity list: Twigg Exploration and Mining Limitada, Mozambique, 95% (2025 and 2024); Syrah Technologies LLC, USA, 100%; Syrah Global DMCC, UAE, 100%; Syrah Resources and Trading DMCC, UAE, 100%; Syrah Plus LLC, USA, 100%. Office list: Syrah Global DMCC at Office 1004, Indigo Icon Tower, JLT, Dubai; Twigg at Millennium Park Building, Av. Vladimir Lenine 174, Block B, Maputo; Syrah Technologies at 2001 D.A. Biglane Road, Vidalia.",
+      "interpretation": "The company's own filing fills the registry gap. Every address matches a Sayari record, so the two sources cross-check each other.",
+      "scorecard": "worked",
+      "entity_ids": [
+        "ex1GaqYc9OHlM2KgDrK-5w",
+        "ffPlxyHu42G892jPO7tpbA",
+        "NvC-a4BgmoxO63ubVyUiUQ",
+        "uZISesDqcaxQ8aVgsyvurw"
+      ],
+      "step": "owner",
+      "case_id": "case-8"
+    },
+    {
+      "id": "s826",
+      "timestamp": "2026-10-14T19:50:00Z",
+      "server": "sayari",
+      "tool": "search_shipments",
+      "params": {
+        "query": "\"SYRAH GLOBAL\"",
+        "arrival_country": "IDN",
+        "response_mode": "compact",
+        "limit": 50
+      },
+      "question": "Does Syrah's Dubai arm sell to BTR Indonesia?",
+      "purpose": "Same group, Chinese-owned buyer",
+      "result_summary": "4 rows of 'natural crystalline flake graphite' (HS 2504.10) from Syrah Global DMCC (declared departure UAE) to PT Indonesia BTR New Energy Material, 23 Jan – 13 Apr 2026.",
+      "interpretation": "Syrah's own marketing arm was still selling flake to BTR's Indonesian anode plant in 2026. The rows do not say which mine the flake came from.",
+      "scorecard": "worked",
+      "entity_ids": [
+        "uZISesDqcaxQ8aVgsyvurw",
+        "2omCekb1pDRKjhFOAqCNSw"
+      ],
+      "step": "out",
+      "case_id": "case-8"
     }
   ]
 }

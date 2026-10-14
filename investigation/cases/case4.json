@@ -6,7 +6,7 @@
   "subtitle": "POSCO Future M Co., Ltd. · Sejong and Pohang, South Korea",
   "country": "KOR",
   "plant_status": "operating",
-  "question": "Could Sayari tell a non-Chinese-owned anode supplier that uses Chinese graphite apart from a Chinese-owned one?",
+  "question": "Can Sayari tell a Korean-owned anode maker that uses Chinese graphite apart from a Chinese-owned one?",
   "headline": "Yes on ownership, partly on inputs. Sayari's Korean registry data shows POSCO Holdings owns 58.2% of POSCO Future M, with no Chinese owner anywhere up the chain. It also shows Chinese natural graphite going in (to Dec 2023) and 95 anode shipments going out to GM, SK Battery America, Tesla, Panasonic and XALT (Dec 2021 – Jul 2026). It cannot show how much Chinese graphite ends up in any US-bound shipment, and its Chinese input trail stops in Dec 2023, while the company says it still uses Chinese spherical graphite.",
   "summary_for_non_experts": "POSCO Future M is the battery-materials arm of Korea's POSCO steel group. It is the largest anode maker outside China and sells to US battery and car plants. This is our contrast case: the owner is Korean, but the company has relied on China for spherical graphite, the rounded, purified graphite that natural-graphite anode is made from. Sayari shows the Korean owner clearly, unlike BTR's Indonesian plant in Case 1, and it shows Chinese graphite going in and anode going out to the US. What it cannot show is how much Chinese material is inside the anode that reaches the US.",
   "key_numbers": [
@@ -330,7 +330,10 @@
    "HS 3801 also covers non-battery graphite. POSCO's sister steel company imports Chinese 'recarburizer' under HS 3801.10, a steelmaking additive; we excluded it.",
    "Chinese input rows come from Chinese export data and stop in Dec 2023 for this buyer. Korea's own import records are not in our results, so later inputs may be missing.",
    "Several product rows are miscoded (e.g. anode material under textile or photo-film HS codes); we counted them only where the text says anode material."
-  ]
+  ],
+  "answer_label": "Yes",
+  "answer": "Yes on ownership: POSCO Holdings owns 58.2% of POSCO Future M, with no Chinese owner in the chain. Partly on inputs: Chinese graphite flowed in until Dec 2023. It ships to the same US buyers as BTR Indonesia.",
+  "why_it_matters": "The US rules treat a Chinese-owned supplier very differently from a non-Chinese supplier that buys some Chinese inputs. Trade records alone make the two look alike, and ownership data is what separates them."
  },
  "entities": [
   {
@@ -338,7 +341,7 @@
    "name": "POSCO Future M Co., Ltd. (formerly POSCO Chemical)",
    "country": "KOR",
    "type": "company",
-   "role": "contrast",
+   "role": "transit_plant",
    "risk_flags": [
     "esg_score_medium",
     "sheffield_hallam_university_forced_labor_reports_entity_adjacent"
@@ -373,7 +376,7 @@
    "name": "POSCO FUTURE M CO. (record 2)",
    "country": "KOR",
    "type": "company",
-   "role": "contrast",
+   "role": "transit_plant",
    "risk_flags": [],
    "identifiers": {},
    "summary": "Trade-name record with the same Pohang and Gwangyang street addresses as the main record.",
@@ -390,7 +393,7 @@
    "name": "POSCO FUTURE M CO LTD 110 Sinhang-ro (record 3)",
    "country": "KOR",
    "type": "company",
-   "role": "contrast",
+   "role": "transit_plant",
    "risk_flags": [],
    "identifiers": {},
    "summary": "Trade-name record with the Pohang head-office address run into the name.",
@@ -494,7 +497,7 @@
    "name": "POSCO FUTURE M CO., LTD. / Y.T Japan (record 6)",
    "country": "KOR",
    "type": "company",
-   "role": "contrast",
+   "role": "transit_plant",
    "risk_flags": [],
    "identifiers": {},
    "summary": "Record that joins POSCO Future M with a Japanese co-party, Sejong address. One spherical-graphite shipment, Aug 2023.",

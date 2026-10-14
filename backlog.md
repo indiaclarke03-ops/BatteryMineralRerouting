@@ -86,6 +86,12 @@ Work P0 top to bottom. Status values: `todo` / `doing` / `done`.
 | FB-4 | P0 | Name all companies, including US buyers | done (individuals withheld) |
 | FB-5 | P0 | Do Morocco and Zhongke; aim for 5 solid cases | done |
 
+| FB-6 | P0 | Name individuals where relevant, with their roles | done |
+| FB-7 | P0 | Clearer, nicer, more interactive network graph | done |
+| FB-8 | P0 | For each case, make the question, the answer and why it matters clear | done |
+| FB-9 | P0 | More case studies | done (8 cases) |
+| FB-10 | P0 | Remove the feedback box from the home page | done |
+
 ## Parking lot
 - Zhongke Electric's Oman anode project as a forward-looking case (production targeted for 2027).
 - Downstream view: which US OEMs sit below a flagged plant (`find_downstream_entities`).

@@ -1,0 +1,2293 @@
+{
+ "case": {
+  "id": "case-8",
+  "slug": "syrah-vidalia",
+  "title": "Syrah's Mozambique-to-Louisiana anode chain",
+  "subtitle": "Syrah Technologies LLC · Vidalia, Louisiana, USA (graphite from Balama, Mozambique)",
+  "country": "USA",
+  "plant_status": "operating",
+  "question": "Could Sayari trace a graphite anode chain with no Chinese owner, from mine to US plant, and show whether the same mine also feeds Chinese-owned plants?",
+  "answer_label": "Partly",
+  "answer": "Yes for the mine-to-plant leg and the mine's other buyers: dated rows show Balama graphite reaching Vidalia and also going to Chinese graphite firms and BTR's Chinese-owned Indonesian plant. No for the last leg: no Vidalia sales to US buyers are visible, and ownership needed the company's own annual report.",
+  "why_it_matters": "Under the post-July 2025 tax-credit rules, the question is who owns each supplier. Here the owners are Australian at every step, so this is what a chain that passes that test looks like on paper. But the same mine sells to Chinese-owned plants, so 'Mozambican graphite' on its own says nothing about who processed it.",
+  "headline": "A clean chain looks almost the same as a risky one in trade data. Sayari shows Syrah's Balama mine shipping natural graphite to its Louisiana anode plant and to Chinese graphite firms and BTR's Indonesian plant. What tells them apart is ownership, and that came mostly from Syrah's annual report, not the registry.",
+  "summary_for_non_experts": "Syrah Resources, an Australian company, mines graphite at Balama in Mozambique and turns it into battery anode material at Vidalia, Louisiana. Tesla has a contract to buy that material. In Sayari we found the mine's shipments to Vidalia, and also its shipments to eight Chinese buyers and to BTR's Chinese-owned plant in Indonesia. Vidalia itself is still at qualification scale and its US sales don't show up in customs data. So the chain is Australian-owned from start to finish, but it shares a mine with the chains this site questions.",
+  "key_numbers": [
+   {
+    "value": "7",
+    "label": "dated shipments from the Balama mine to Vidalia, Sep 2023 – Jan 2024 (about 2,500 t)",
+    "call_ids": [
+     "s807",
+     "s824"
+    ]
+   },
+   {
+    "value": "89",
+    "label": "shipments from the same mine to eight Chinese buyers, 2022",
+    "call_ids": [
+     "s809",
+     "s812",
+     "s824"
+    ]
+   },
+   {
+    "value": "47%",
+    "label": "share of the mine's 190 visible export rows that went to China",
+    "call_ids": [
+     "s824"
+    ]
+   },
+   {
+    "value": "7",
+    "label": "shipments of Balama flake to BTR's Chinese-owned Indonesian plant, 2024–2026 (3 from Twigg, 4 from Syrah's Dubai arm)",
+    "call_ids": [
+     "s813",
+     "s826"
+    ]
+   },
+   {
+    "value": "0",
+    "label": "Vidalia sales to US buyers visible in customs data",
+    "call_ids": [
+     "s808"
+    ]
+   },
+   {
+    "value": "95% / 100%",
+    "label": "Syrah's stake in the mine company / the Vidalia company, per its annual report",
+    "call_ids": [
+     "t803"
+    ]
+   }
+  ],
+  "overall_confidence": "corroborated",
+  "pattern": "contrast-legitimate",
+  "steps": [
+   {
+    "title": "Who owns the chain",
+    "kicker": "Step 1 · Contractual",
+    "text": "Syrah's 2025 annual report says it owns 95% of Twigg, the mine company, 100% of Syrah Technologies in Vidalia and 100% of Syrah Global DMCC in Dubai. Sayari's registry data show part of this: Syrah owns an Australian holding company, and a holding company of the same name is the Vidalia company's member. Sayari has no owners for the mine, and its ownership tools returned nothing for either company.",
+    "edge_ids": [
+     "e801",
+     "e802",
+     "e803",
+     "e804",
+     "e805",
+     "e806",
+     "e834",
+     "e835"
+    ],
+    "node_ids": [
+     "ex1GaqYc9OHlM2KgDrK-5w",
+     "sEVYNIMWKfM6vuWml4FNlw",
+     "05zob51QQdW-1mL-7WJSGA",
+     "NvC-a4BgmoxO63ubVyUiUQ",
+     "ffPlxyHu42G892jPO7tpbA",
+     "uZISesDqcaxQ8aVgsyvurw",
+     "CwgolVNduI83FRuDgMwK1w"
+    ],
+    "call_ids": [
+     "s804",
+     "s805",
+     "s814",
+     "s817",
+     "s819",
+     "s821",
+     "t803"
+    ]
+   },
+   {
+    "title": "Mine to plant: Mozambique to Louisiana",
+    "kicker": "Step 2 · Transactional",
+    "text": "Seven dated rows show natural graphite (HS 2504.10, flake mined from the ground) going from Twigg at Nacala to Vidalia via New Orleans, Sep 2023 to Jan 2024. Another 26 rows of natural flake reached Vidalia through ports such as Busan, Veracruz and Shanghai, Sep 2023 to Nov 2024, with no supplier named. Their sizes match Twigg's lots, but no record says so.",
+    "edge_ids": [
+     "e807",
+     "e833"
+    ],
+    "node_ids": [
+     "ffPlxyHu42G892jPO7tpbA",
+     "NvC-a4BgmoxO63ubVyUiUQ",
+     "azVXA4lXaKfU8wYdoluS_g"
+    ],
+    "call_ids": [
+     "s807",
+     "s824"
+    ]
+   },
+   {
+    "title": "What else goes into a 'clean' plant",
+    "kicker": "Step 3 · Transactional",
+    "text": "Vidalia's carbonisation furnaces, mills and mixers came from Chinese makers, one of them state-owned. That is why Sayari flags the plant 'chinese_soe_adjacent'. One 20-tonne lot of Chinese spherical graphite (HS 3801.90) arrived in Oct 2023. Coating pitch came from Rain Carbon in Germany. Equipment doesn't count toward the ownership test, but it shows how hard it is to avoid China completely.",
+    "edge_ids": [
+     "e827",
+     "e828",
+     "e829",
+     "e830",
+     "e831",
+     "e832"
+    ],
+    "node_ids": [
+     "GPHj9pMb5DnKZlUepMQM-A",
+     "ljXszsmI8EtP_3Q4fuC6ZA",
+     "aJmC3CSdJYMV1r_o0qrccQ",
+     "NJIf-8zhf7-nyk3EU-l1bA",
+     "UtRPmQpVsJMOv32rLaTkaQ",
+     "nSreKiv3fC-4IKRi87Datw"
+    ],
+    "call_ids": [
+     "s807",
+     "s819"
+    ]
+   },
+   {
+    "title": "Same mine, Chinese buyers",
+    "kicker": "Step 4 · Transactional",
+    "text": "The mine's 190 visible export rows go mostly to China (89) and to European refractory and graphite firms. The China rows, all in 2022, went to Qingdao graphite companies, traders and a refractory maker. Twigg also shipped flake to BTR's Chinese-owned plant in Indonesia in 2024 and 2025, and Syrah's Dubai arm sold it more in 2026. Two Qingdao buyers share names with suppliers to POSCO in Case 4.",
+    "edge_ids": [
+     "e808",
+     "e809",
+     "e810",
+     "e811",
+     "e812",
+     "e813",
+     "e814",
+     "e815",
+     "e816",
+     "e817",
+     "e818",
+     "e819",
+     "e820",
+     "e821",
+     "e822",
+     "e823",
+     "e824",
+     "e825",
+     "e826"
+    ],
+    "node_ids": [
+     "2omCekb1pDRKjhFOAqCNSw",
+     "uZISesDqcaxQ8aVgsyvurw",
+     "BoVP8I5lJH1lrNb61GphCw",
+     "zy4DoUY7ohIzHq9qDUJf2A",
+     "Ifk4vKyw2nqI1j7MwBLmDw",
+     "OPeO2tiJlzLBJWywXkZesw",
+     "7Obb1Gbggua5WYBZQOkxpA",
+     "Gp-9bI-j3Pd_Jz64bkBo1w",
+     "Csu21BM3zBbYfSB8ChoVGQ",
+     "NvSjRSdi_6HQ29UwUh5iIA"
+    ],
+    "call_ids": [
+     "s806",
+     "s809",
+     "s812",
+     "s813",
+     "s824",
+     "s826"
+    ]
+   },
+   {
+    "title": "Where the trail goes dark: the US sale",
+    "kicker": "Step 5 · Gap",
+    "text": "Sayari shows only one Vidalia export: a 50 kg lot to a Ukrainian graphite miner in Dec 2024. Sales to US buyers would be domestic and never appear in customs data. Tesla's 2021 offtake survives: Tesla withdrew a termination notice in mid-2026 but can still end the deal if final qualification fails. The plant made about 150 t for qualification in the June 2026 quarter.",
+    "edge_ids": [
+     "e836",
+     "e837"
+    ],
+    "node_ids": [
+     "d1CI2lYdfm1YotbgCaS84Q",
+     "xWhz7CFJV3lxsgg8fHMGHA"
+    ],
+    "call_ids": [
+     "s808",
+     "t801",
+     "t802"
+    ]
+   }
+  ],
+  "verdict": {
+   "detected": [
+    {
+     "text": "Dated HS 2504.10 shipments from Syrah's Mozambique mine company (Twigg) to the Vidalia plant, Sep 2023 – Jan 2024.",
+     "call_ids": [
+      "s807"
+     ]
+    },
+    {
+     "text": "The same mine shipping natural graphite to eight Chinese buyers (89 rows, 2022) and to BTR's Chinese-owned Indonesian plant (2024–2025).",
+     "call_ids": [
+      "s809",
+      "s812",
+      "s813"
+     ]
+    },
+    {
+     "text": "Syrah's own Dubai marketing arm selling flake to BTR Indonesia, Jan – Apr 2026.",
+     "call_ids": [
+      "s826",
+      "t803"
+     ]
+    },
+    {
+     "text": "A registry link naming an Australian Syrah holding company as the Vidalia company's member.",
+     "call_ids": [
+      "s819"
+     ]
+    },
+    {
+     "text": "Chinese furnaces, mills and one 20 t lot of Chinese spherical graphite going into Vidalia.",
+     "call_ids": [
+      "s807"
+     ]
+    }
+   ],
+   "suggested": [
+    {
+     "text": "The 26 unnamed-supplier flake rows into Vidalia are probably Balama graphite: lot sizes and routes match Twigg's, but no supplier is named.",
+     "call_ids": [
+      "s807"
+     ]
+    },
+    {
+     "text": "Full ownership of the mine and the plant by Syrah: the annual report states it and the addresses match Sayari, but Sayari's registry chain is incomplete.",
+     "call_ids": [
+      "t803",
+      "s814",
+      "s819"
+     ]
+    }
+   ],
+   "not_visible": [
+    {
+     "text": "Any sale of Vidalia anode material to a US cell or car maker. Domestic sales are outside customs data.",
+     "call_ids": [
+      "s808"
+     ]
+    },
+    {
+     "text": "Who owns Twigg, from registry data. The Mozambique gazette records carry no shareholders.",
+     "call_ids": [
+      "s805",
+      "s821",
+      "s822"
+     ]
+    },
+    {
+     "text": "Twigg's shipments to China after 2022, if any. The rows we found end in Nov 2022; this may be a data-coverage limit.",
+     "call_ids": [
+      "s809",
+      "s812"
+     ]
+    },
+    {
+     "text": "Which mine Syrah Global's 2026 flake to BTR came from; it also buys from other African miners.",
+     "call_ids": [
+      "s823",
+      "s826"
+     ]
+    }
+   ]
+  },
+  "passport": [
+   {
+    "field": "Place of manufacture",
+    "guidance_no": "8",
+    "declared": "The cell plant's location, e.g. USA.",
+    "paper_trail": "Anode material made at Vidalia, Louisiana, from Mozambican natural graphite.",
+    "gap": false,
+    "note": "Here the anode is made in the US, so the field doesn't hide a third country."
+   },
+   {
+    "field": "Detailed composition (anode)",
+    "guidance_no": "45",
+    "declared": "'Natural graphite' as the anode active material.",
+    "paper_trail": "Natural flake (HS 2504.10) from Balama; one small Chinese spherical graphite lot in 2023; pitch from Germany.",
+    "gap": true,
+    "note": "Composition says what, not where from."
+   },
+   {
+    "field": "Critical raw materials > 0.1%",
+    "guidance_no": "15",
+    "declared": "Natural graphite listed.",
+    "paper_trail": "Natural graphite from Mozambique, dated rows into Vidalia.",
+    "gap": false,
+    "note": "Consistent, if declared."
+   },
+   {
+    "field": "Responsible-sourcing (due-diligence) report",
+    "guidance_no": "19",
+    "declared": "Deferred under the EU Battery Regulation.",
+    "paper_trail": "Mine-to-plant trade visible; the mine's 'sanctioned_adjacent' flag traces to two Feb 2022 refractory sales to Russia.",
+    "gap": true,
+    "note": "The flag needs explaining before a report exists to explain it."
+   },
+   {
+    "field": "Ownership of upstream suppliers",
+    "guidance_no": "—",
+    "declared": "No such field in the EU passport.",
+    "paper_trail": "Australian parent at every step (annual report); Sayari's registry shows only part of the chain.",
+    "gap": true,
+    "note": "The US PFE rules ask exactly this question. Here the answer is clean, but it came from the company's own filing."
+   }
+  ],
+  "red_flags": [
+   {
+    "flag": "Chinese parent ownership of the transit plant",
+    "signal": "contractual",
+    "severity": "High",
+    "result": "not_visible",
+    "note": "None found. Australian parent per registry data and annual report."
+   },
+   {
+    "flag": "Same HS imported from China and exported to the US",
+    "signal": "transactional",
+    "severity": "High",
+    "result": "not_visible",
+    "note": "One 20 t Chinese spherical graphite lot in 2023; no US exports visible at all."
+   },
+   {
+    "flag": "Recent incorporation vs. first export date",
+    "signal": "contractual",
+    "severity": "Medium",
+    "result": "not_visible",
+    "note": "Registered 2017; first imports Dec 2022. No sign."
+   },
+   {
+    "flag": "Volume spike after a policy date",
+    "signal": "transactional",
+    "severity": "Medium",
+    "result": "not_visible",
+    "note": "Graphite inflows in our results end Nov 2024; output is qualification-scale."
+   },
+   {
+    "flag": "Shared address or officer with a flagged entity",
+    "signal": "inferred",
+    "severity": "Medium",
+    "result": "not_visible",
+    "note": "Only a Delaware registered-agent address ('mass_address_usage'). The SOE flag comes from an equipment supplier."
+   },
+   {
+    "flag": "Entity-resolution fragmentation",
+    "signal": "inferred",
+    "severity": "Low (disclose)",
+    "result": "detected",
+    "note": "Five records for the plant, nine for the mine company."
+   },
+   {
+    "flag": "Forced-labor / UFLPA sub-tier flags",
+    "signal": "inferred",
+    "severity": "Medium",
+    "result": "suggested",
+    "note": "Only 'possibly the same as' ILAB import flags on the plant; context, not a finding."
+   }
+  ],
+  "caveats": [
+   "Selling Mozambican graphite to Chinese buyers is legal and common. Nothing here shows wrongdoing by any company named.",
+   "Buyers are named because they appear in customs records; this says nothing about their compliance.",
+   "Twigg's Vidalia rows come from Korean transshipment data, and US import data hold rows loaded at Busan. Some may be the same cargo seen twice, so we don't add the two counts.",
+   "A port of loading (e.g. Shanghai) is not a country of origin. The Shanghai-loaded flake rows name no supplier.",
+   "All China rows we found are from 2022. Later trade may exist outside Sayari's coverage.",
+   "Plant status and the Tesla offtake come from the company and the press (Tavily), not from Sayari.",
+   "Entity-resolution links are our judgment and could be wrong."
+  ]
+ },
+ "entities": [
+  {
+   "id": "ex1GaqYc9OHlM2KgDrK-5w",
+   "name": "Syrah Resources Limited",
+   "country": "AUS",
+   "type": "company",
+   "role": "parent",
+   "risk_flags": [
+    "controlled_by_mass_business_registration",
+    "pep_adjacent"
+   ],
+   "identifiers": {
+    "lei": "254900ZS2VP83B6L6Y30",
+    "aus_abn": "77125242284",
+    "usa_sec_cik": "0001639151"
+   },
+   "summary": "ASX-listed Melbourne parent. Its 2025 annual report lists Twigg (95%), Syrah Technologies (100%) and Syrah Global DMCC (100%). Sayari's registry data reach only its Australian holding companies.",
+   "source_call_ids": [
+    "s802",
+    "s814",
+    "t801",
+    "t803"
+   ],
+   "sayari_url": "https://graph.sayari.com/resource/entity/ex1GaqYc9OHlM2KgDrK-5w"
+  },
+  {
+   "id": "sEVYNIMWKfM6vuWml4FNlw",
+   "name": "Syrah US Holdings Pty Ltd",
+   "country": "AUS",
+   "type": "company",
+   "role": "parent",
+   "risk_flags": [],
+   "identifiers": {
+    "aus_company_number": "617399603",
+    "cage": "Z1GD1"
+   },
+   "summary": "Australian holding company owned by Syrah Resources, per Australian registry data in Sayari.",
+   "source_call_ids": [
+    "s814",
+    "s817"
+   ],
+   "sayari_url": "https://graph.sayari.com/resource/entity/sEVYNIMWKfM6vuWml4FNlw"
+  },
+  {
+   "id": "05zob51QQdW-1mL-7WJSGA",
+   "name": "Syrah US Holdings Pty Utd (member record in the US LLC's filing)",
+   "country": "AUS",
+   "type": "company",
+   "role": "parent",
+   "risk_flags": [],
+   "identifiers": {},
+   "summary": "Listed as the member (owner) of Syrah Technologies LLC. The name is misspelled ('Utd', 'Propietary') and the record isn't joined to the Australian one.",
+   "source_call_ids": [
+    "s819"
+   ],
+   "sayari_url": "https://graph.sayari.com/resource/entity/05zob51QQdW-1mL-7WJSGA"
+  },
+  {
+   "id": "NvC-a4BgmoxO63ubVyUiUQ",
+   "name": "Syrah Technologies LLC",
+   "country": "USA",
+   "type": "company",
+   "role": "transit_plant",
+   "risk_flags": [
+    "chinese_soe_adjacent",
+    "mass_address_usage"
+   ],
+   "identifiers": {
+    "usa_la_sos_id": "42632807Q",
+    "usa_sam_uei": "MTVGPRKRPVP4",
+    "cage": "99XZ3"
+   },
+   "summary": "The Vidalia, Louisiana active anode material plant. Registered 2017; Louisiana SOS ID and SAM UEI. Takes natural graphite from Syrah's Balama mine in Mozambique. Sayari shows no anode sales to US buyers, which is expected: domestic sales don't appear in customs data.",
+   "source_call_ids": [
+    "s801",
+    "s804",
+    "s806",
+    "s807",
+    "s808",
+    "s819",
+    "t801",
+    "t802",
+    "t803"
+   ],
+   "sayari_url": "https://graph.sayari.com/resource/entity/NvC-a4BgmoxO63ubVyUiUQ"
+  },
+  {
+   "id": "azVXA4lXaKfU8wYdoluS_g",
+   "name": "Syrah Technologies (trade record)",
+   "country": "USA",
+   "type": "company",
+   "role": "transit_plant",
+   "risk_flags": [],
+   "identifiers": {},
+   "summary": "Trade-only record at 2001 D A Biglane Rd, Vidalia. Received one small HS 2504 lot from Neuman & Esser, Dec 2022.",
+   "source_call_ids": [
+    "s801",
+    "s807"
+   ],
+   "sayari_url": "https://graph.sayari.com/resource/entity/azVXA4lXaKfU8wYdoluS_g"
+  },
+  {
+   "id": "a90PVh7ryN5atf1qpDbDDw",
+   "name": "Syrah Technologies LLC – Vidalia 10 ktpa Active Anode Material Facility (EPA record)",
+   "country": "USA",
+   "type": "company",
+   "role": "transit_plant",
+   "risk_flags": [],
+   "identifiers": {
+    "usa_frs_id": "110071238026",
+    "usa_npdes_id": "LAR10O745"
+   },
+   "summary": "US EPA facility record for the plant, same Vidalia street address.",
+   "source_call_ids": [
+    "s801"
+   ],
+   "sayari_url": "https://graph.sayari.com/resource/entity/a90PVh7ryN5atf1qpDbDDw"
+  },
+  {
+   "id": "ffPlxyHu42G892jPO7tpbA",
+   "name": "Twigg Exploration & Mining, Lda",
+   "country": "MOZ",
+   "type": "company",
+   "role": "producer",
+   "risk_flags": [
+    "export_controls_adjacent",
+    "sanctioned_adjacent"
+   ],
+   "identifiers": {},
+   "summary": "Operator of the Balama natural graphite mine, 95% owned by Syrah per its annual report. Sayari has no owners for it. Its 190 visible export rows (2022–2026) go to China (89), Europe, the US plant (7), Korea and BTR Indonesia.",
+   "source_call_ids": [
+    "s803",
+    "s805",
+    "s806",
+    "s807",
+    "s809",
+    "s813",
+    "s820",
+    "s824",
+    "s825",
+    "t803"
+   ],
+   "sayari_url": "https://graph.sayari.com/resource/entity/ffPlxyHu42G892jPO7tpbA"
+  },
+  {
+   "id": "wL21QEyuYMG1Gsp17Nx-1Q",
+   "name": "Twigg Exploration and Mining, Lda (record 2)",
+   "country": "MOZ",
+   "type": "company",
+   "role": "producer",
+   "risk_flags": [],
+   "identifiers": {},
+   "summary": "Second trade record for Twigg. Shipped flake graphite to BTR Indonesia in Aug 2025.",
+   "source_call_ids": [
+    "s813",
+    "s820",
+    "s824"
+   ],
+   "sayari_url": "https://graph.sayari.com/resource/entity/wL21QEyuYMG1Gsp17Nx-1Q"
+  },
+  {
+   "id": "KlxHzKnR1jHcjm4PRp-6eQ",
+   "name": "Twigg Exploration & Mining, Limitad (record 3)",
+   "country": "MOZ",
+   "type": "company",
+   "role": "producer",
+   "risk_flags": [],
+   "identifiers": {},
+   "summary": "Third trade record, no country attached. Shipped natural flake to two Qingdao buyers in Apr 2022.",
+   "source_call_ids": [
+    "s812",
+    "s820",
+    "s824"
+   ],
+   "sayari_url": "https://graph.sayari.com/resource/entity/KlxHzKnR1jHcjm4PRp-6eQ"
+  },
+  {
+   "id": "CwgolVNduI83FRuDgMwK1w",
+   "name": "Twigg Exploration & Mining, Limitada (Mozambique gazette record)",
+   "country": "MOZ",
+   "type": "company",
+   "role": "producer",
+   "risk_flags": [],
+   "identifiers": {},
+   "summary": "Registry record from Mozambique's Boletim da República. No shareholders or officers attached.",
+   "source_call_ids": [
+    "s820",
+    "s821"
+   ],
+   "sayari_url": "https://graph.sayari.com/resource/entity/CwgolVNduI83FRuDgMwK1w"
+  },
+  {
+   "id": "uZISesDqcaxQ8aVgsyvurw",
+   "name": "Syrah Global DMCC",
+   "country": "ARE",
+   "type": "company",
+   "role": "trader",
+   "risk_flags": [],
+   "identifiers": {},
+   "summary": "Syrah's Dubai marketing company (100% owned, per its annual report; same Office 1004, Indigo Icon Tower address). Sold flake graphite to BTR Indonesia, Jan–Apr 2026. Also buys graphite from Lindi Jumbo, ERG Madagascar and Wogen Pacific.",
+   "source_call_ids": [
+    "s823",
+    "s826",
+    "t803"
+   ],
+   "sayari_url": "https://graph.sayari.com/resource/entity/uZISesDqcaxQ8aVgsyvurw"
+  },
+  {
+   "id": "2omCekb1pDRKjhFOAqCNSw",
+   "name": "PT Indonesia BTR New Energy Material",
+   "country": "IDN",
+   "type": "company",
+   "role": "buyer",
+   "risk_flags": [
+    "chinese_soe_adjacent",
+    "forced_labor_uflpa_origin_subtier"
+   ],
+   "identifiers": {
+    "lei": "254900G3L2Z0HNRV7W43"
+   },
+   "summary": "BTR's Chinese-owned anode plant in Indonesia (Case 1). Buys Balama flake from Twigg (2024–2025) and from Syrah Global DMCC (2026).",
+   "source_call_ids": [
+    "s806",
+    "s813",
+    "s826"
+   ],
+   "sayari_url": "https://graph.sayari.com/resource/entity/2omCekb1pDRKjhFOAqCNSw"
+  },
+  {
+   "id": "BoVP8I5lJH1lrNb61GphCw",
+   "name": "Qingdao Nanshu Graphite Co., Ltd.",
+   "country": "CHN",
+   "type": "company",
+   "role": "buyer",
+   "risk_flags": [],
+   "identifiers": {},
+   "summary": "Qingdao graphite company. 25 rows of Balama natural graphite, Aug 2022. Sayari doesn't show what it makes with it.",
+   "source_call_ids": [
+    "s806",
+    "s809",
+    "s812",
+    "s824"
+   ],
+   "sayari_url": "https://graph.sayari.com/resource/entity/BoVP8I5lJH1lrNb61GphCw"
+  },
+  {
+   "id": "zy4DoUY7ohIzHq9qDUJf2A",
+   "name": "Qingdao Luowei New Materials Co.",
+   "country": "CHN",
+   "type": "company",
+   "role": "buyer",
+   "risk_flags": [],
+   "identifiers": {},
+   "summary": "Qingdao buyer of 25 rows of Balama natural graphite, Oct 2022. Possibly the same company as a Case 4 supplier to POSCO Future M (name match only).",
+   "source_call_ids": [
+    "s806",
+    "s809",
+    "s824"
+   ],
+   "sayari_url": "https://graph.sayari.com/resource/entity/zy4DoUY7ohIzHq9qDUJf2A"
+  },
+  {
+   "id": "-E5VEQtbiDlJDhmMR7GywQ",
+   "name": "Qingdao Luowei New Material Co., Ltd. (青岛洛唯新材料)",
+   "country": "CHN",
+   "type": "company",
+   "role": "producer",
+   "risk_flags": [
+    "sheffield_hallam_university_forced_labor_reports_entity_adjacent"
+   ],
+   "identifiers": {},
+   "summary": "Case 4 record: a Laixi graphite-cluster supplier to POSCO Future M. Linked here by name only.",
+   "source_call_ids": [
+    "s809"
+   ],
+   "sayari_url": "https://graph.sayari.com/resource/entity/-E5VEQtbiDlJDhmMR7GywQ"
+  },
+  {
+   "id": "Ifk4vKyw2nqI1j7MwBLmDw",
+   "name": "Qingdao Heshengkai Carbon Material",
+   "country": "CHN",
+   "type": "company",
+   "role": "buyer",
+   "risk_flags": [],
+   "identifiers": {},
+   "summary": "Qingdao carbon company. 15 rows of Balama natural graphite, Aug 2022.",
+   "source_call_ids": [
+    "s806",
+    "s809",
+    "s824"
+   ],
+   "sayari_url": "https://graph.sayari.com/resource/entity/Ifk4vKyw2nqI1j7MwBLmDw"
+  },
+  {
+   "id": "OPeO2tiJlzLBJWywXkZesw",
+   "name": "ASK Resources Ltd",
+   "country": "CHN",
+   "type": "company",
+   "role": "trader",
+   "risk_flags": [],
+   "identifiers": {
+    "lei": "2138004BKU68OW2Q5C97"
+   },
+   "summary": "Shanghai/Hong Kong trader. 15 rows of Balama natural graphite into China, Aug 2022.",
+   "source_call_ids": [
+    "s806",
+    "s812",
+    "s824"
+   ],
+   "sayari_url": "https://graph.sayari.com/resource/entity/OPeO2tiJlzLBJWywXkZesw"
+  },
+  {
+   "id": "7Obb1Gbggua5WYBZQOkxpA",
+   "name": "AW-Lin Jiangsu Supply Chain",
+   "country": "CHN",
+   "type": "company",
+   "role": "trader",
+   "risk_flags": [],
+   "identifiers": {},
+   "summary": "Jiangsu logistics/supply-chain company. 5 rows of Balama natural graphite, Oct 2022.",
+   "source_call_ids": [
+    "s806",
+    "s809",
+    "s824"
+   ],
+   "sayari_url": "https://graph.sayari.com/resource/entity/7Obb1Gbggua5WYBZQOkxpA"
+  },
+  {
+   "id": "Gp-9bI-j3Pd_Jz64bkBo1w",
+   "name": "Dinur (Yingkou) Refractory",
+   "country": "CHN",
+   "type": "company",
+   "role": "buyer",
+   "risk_flags": [],
+   "identifiers": {},
+   "summary": "Refractory maker in Liaoning. 2 rows of Balama natural graphite, Nov 2022. Industrial, not battery, use.",
+   "source_call_ids": [
+    "s806",
+    "s809"
+   ],
+   "sayari_url": "https://graph.sayari.com/resource/entity/Gp-9bI-j3Pd_Jz64bkBo1w"
+  },
+  {
+   "id": "Csu21BM3zBbYfSB8ChoVGQ",
+   "name": "Qingdao Huateng Graphite Technology Co., Ltd. (青岛华腾石墨科技有限公司)",
+   "country": "CHN",
+   "type": "company",
+   "role": "buyer",
+   "risk_flags": [],
+   "identifiers": {},
+   "summary": "One row of Balama natural flake, Apr 2022. Possibly the same company as a Case 4 supplier to POSCO Future M (name match only).",
+   "source_call_ids": [
+    "s812"
+   ],
+   "sayari_url": "https://graph.sayari.com/resource/entity/Csu21BM3zBbYfSB8ChoVGQ"
+  },
+  {
+   "id": "v1QB9w2AdIcXcohuVJZHyw",
+   "name": "Qingdao Huateng Graphite Technology Co.",
+   "country": "CHN",
+   "type": "company",
+   "role": "producer",
+   "risk_flags": [],
+   "identifiers": {},
+   "summary": "Case 4 record: Laixi supplier to POSCO Future M. Linked here by name only.",
+   "source_call_ids": [
+    "s812"
+   ],
+   "sayari_url": "https://graph.sayari.com/resource/entity/v1QB9w2AdIcXcohuVJZHyw"
+  },
+  {
+   "id": "NvSjRSdi_6HQ29UwUh5iIA",
+   "name": "Qingdao Himalaya Special Glass Co.",
+   "country": "CHN",
+   "type": "company",
+   "role": "buyer",
+   "risk_flags": [],
+   "identifiers": {},
+   "summary": "One row of Balama natural flake, Apr 2022. A glass maker: industrial use.",
+   "source_call_ids": [
+    "s812"
+   ],
+   "sayari_url": "https://graph.sayari.com/resource/entity/NvSjRSdi_6HQ29UwUh5iIA"
+  },
+  {
+   "id": "MzUxHPmuO6dwS8pO1hCNUQ",
+   "name": "Dominik Georg Luh Technografit GmbH",
+   "country": "DEU",
+   "type": "company",
+   "role": "buyer",
+   "risk_flags": [
+    "soe_adjacent"
+   ],
+   "identifiers": {
+    "lei": "529900XAMP1N5OH8ZB81"
+   },
+   "summary": "German graphite processor; the mine's largest single buyer by row count (29).",
+   "source_call_ids": [
+    "s806",
+    "s824"
+   ],
+   "sayari_url": "https://graph.sayari.com/resource/entity/MzUxHPmuO6dwS8pO1hCNUQ"
+  },
+  {
+   "id": "Q1iA8Rfci2znN6C_9bhKZQ",
+   "name": "Grafitbergbau Kaisersberg GmbH",
+   "country": "AUT",
+   "type": "company",
+   "role": "buyer",
+   "risk_flags": [],
+   "identifiers": {},
+   "summary": "Austrian graphite company; 19 rows from the mine.",
+   "source_call_ids": [
+    "s806",
+    "s824"
+   ],
+   "sayari_url": "https://graph.sayari.com/resource/entity/Q1iA8Rfci2znN6C_9bhKZQ"
+  },
+  {
+   "id": "GVihyKDTwtnC-IaJstpPCw",
+   "name": "PJSC Kombinat Magnezit",
+   "country": "RUS",
+   "type": "company",
+   "role": "buyer",
+   "risk_flags": [
+    "sanctioned"
+   ],
+   "identifiers": {},
+   "summary": "Russian refractory maker, sanctioned per Sayari. One row of Balama graphite, 16 Feb 2022. This is the source of Twigg's 'sanctioned_adjacent' flag.",
+   "source_call_ids": [
+    "s806",
+    "s825"
+   ],
+   "sayari_url": "https://graph.sayari.com/resource/entity/GVihyKDTwtnC-IaJstpPCw"
+  },
+  {
+   "id": "4dfmhQ3NPjXLdVT7-GSJDQ",
+   "name": "OAO Luzhsky Abrasive Plant",
+   "country": "RUS",
+   "type": "company",
+   "role": "buyer",
+   "risk_flags": [
+    "export_controls_adjacent",
+    "sanctioned_adjacent"
+   ],
+   "identifiers": {},
+   "summary": "Russian abrasives maker. One row of crucible-grade graphite for refractories, 5 Feb 2022.",
+   "source_call_ids": [
+    "s806",
+    "s825"
+   ],
+   "sayari_url": "https://graph.sayari.com/resource/entity/4dfmhQ3NPjXLdVT7-GSJDQ"
+  },
+  {
+   "id": "GPHj9pMb5DnKZlUepMQM-A",
+   "name": "Qingdao Mien New Material Co., Ltd.",
+   "country": "CHN",
+   "type": "company",
+   "role": "producer",
+   "risk_flags": [],
+   "identifiers": {},
+   "summary": "Chinese supplier of one 20 t lot of 'spherical graphite' (HS 3801.90) to Vidalia, Oct 2023, loaded in Korea. The only Chinese graphite seen entering the plant.",
+   "source_call_ids": [
+    "s807"
+   ],
+   "sayari_url": "https://graph.sayari.com/resource/entity/GPHj9pMb5DnKZlUepMQM-A"
+  },
+  {
+   "id": "ljXszsmI8EtP_3Q4fuC6ZA",
+   "name": "Rain Carbon Germany GmbH",
+   "country": "DEU",
+   "type": "company",
+   "role": "producer",
+   "risk_flags": [
+    "export_to_soe",
+    "sanctioned_adjacent",
+    "soe_adjacent"
+   ],
+   "identifiers": {},
+   "summary": "Petroleum pitch, granulated (a coating input), to Vidalia from the Netherlands: 4 rows, Oct 2023 – Jun 2024. Also a POSCO supplier in Case 4.",
+   "source_call_ids": [
+    "s807"
+   ],
+   "sayari_url": "https://graph.sayari.com/resource/entity/ljXszsmI8EtP_3Q4fuC6ZA"
+  },
+  {
+   "id": "aJmC3CSdJYMV1r_o0qrccQ",
+   "name": "Jiangsu Qianjin Furnace Industry Equipment Co., Ltd.",
+   "country": "CHN",
+   "type": "company",
+   "role": "producer",
+   "risk_flags": [],
+   "identifiers": {},
+   "summary": "Chinese equipment maker. Carbonisation furnaces and parts to Vidalia: 12 rows, Dec 2022 – Jan 2026.",
+   "source_call_ids": [
+    "s807"
+   ],
+   "sayari_url": "https://graph.sayari.com/resource/entity/aJmC3CSdJYMV1r_o0qrccQ"
+  },
+  {
+   "id": "NJIf-8zhf7-nyk3EU-l1bA",
+   "name": "Zhejiang Leap Pulverization Equipment Co., Ltd.",
+   "country": "CHN",
+   "type": "company",
+   "role": "producer",
+   "risk_flags": [],
+   "identifiers": {},
+   "summary": "Chinese mill maker. Baghouses, rotary valves and mill spares to Vidalia: 3 rows, Jan 2023 – Jul 2025.",
+   "source_call_ids": [
+    "s807"
+   ],
+   "sayari_url": "https://graph.sayari.com/resource/entity/NJIf-8zhf7-nyk3EU-l1bA"
+  },
+  {
+   "id": "UtRPmQpVsJMOv32rLaTkaQ",
+   "name": "Shuanglong Group Co., Ltd. (双龙集团)",
+   "country": "CHN",
+   "type": "company",
+   "role": "producer",
+   "risk_flags": [
+    "imports_ilab_forced_labor"
+   ],
+   "identifiers": {},
+   "summary": "Shanghai mixer maker. One oversize equipment shipment to Vidalia, Jan 2023.",
+   "source_call_ids": [
+    "s807"
+   ],
+   "sayari_url": "https://graph.sayari.com/resource/entity/UtRPmQpVsJMOv32rLaTkaQ"
+  },
+  {
+   "id": "nSreKiv3fC-4IKRi87Datw",
+   "name": "Mountop Group / China Metallurgical Equipment Nanjing (大峘集团)",
+   "country": "CHN",
+   "type": "company",
+   "role": "producer",
+   "risk_flags": [
+    "chinese_state_owned"
+   ],
+   "identifiers": {},
+   "summary": "Flagged Chinese state-owned in Sayari. Valves and baghouse housings to Vidalia, Dec 2022 and May 2023. This is why the plant carries 'chinese_soe_adjacent'.",
+   "source_call_ids": [
+    "s807"
+   ],
+   "sayari_url": "https://graph.sayari.com/resource/entity/nSreKiv3fC-4IKRi87Datw"
+  },
+  {
+   "id": "YHQlP0uNchhfl5OnsjIWNw",
+   "name": "Neuman & Esser GmbH & Co KG",
+   "country": "DEU",
+   "type": "company",
+   "role": "producer",
+   "risk_flags": [
+    "soe_adjacent"
+   ],
+   "identifiers": {},
+   "summary": "German process-equipment maker. Shipped 4.8 t of natural graphite (HS 2504) from the Netherlands to Vidalia, Dec 2022, likely for equipment trials (our reading).",
+   "source_call_ids": [
+    "s807"
+   ],
+   "sayari_url": "https://graph.sayari.com/resource/entity/YHQlP0uNchhfl5OnsjIWNw"
+  },
+  {
+   "id": "d1CI2lYdfm1YotbgCaS84Q",
+   "name": "TOV Zavallia Graphite (Zavallivskyi Hrafit)",
+   "country": "UKR",
+   "type": "company",
+   "role": "buyer",
+   "risk_flags": [
+    "sheffield_hallam_university_forced_labor_reports_entity_adjacent"
+   ],
+   "identifiers": {},
+   "summary": "Ukrainian graphite miner. The only buyer of a Vidalia export in Sayari: a 50 kg lot, Dec 2024.",
+   "source_call_ids": [
+    "s808",
+    "s819"
+   ],
+   "sayari_url": "https://graph.sayari.com/resource/entity/d1CI2lYdfm1YotbgCaS84Q"
+  },
+  {
+   "id": "xWhz7CFJV3lxsgg8fHMGHA",
+   "name": "Tesla, Inc.",
+   "country": "USA",
+   "type": "company",
+   "role": "us_buyer",
+   "risk_flags": [],
+   "identifiers": {},
+   "summary": "Offtake customer for 8,000 t of Vidalia anode material over four years (2021 deal). Served a default notice in July 2025, withdrew it by June 2026, keeps a right to terminate if final qualification fails. No Vidalia-to-Tesla shipment can appear in customs data.",
+   "source_call_ids": [
+    "t802"
+   ],
+   "sayari_url": "https://graph.sayari.com/resource/entity/xWhz7CFJV3lxsgg8fHMGHA"
+  }
+ ],
+ "edges": [
+  {
+   "id": "e801",
+   "source": "ex1GaqYc9OHlM2KgDrK-5w",
+   "target": "sEVYNIMWKfM6vuWml4FNlw",
+   "relation": "owns",
+   "edge_type": "contractual",
+   "confidence": "documented",
+   "hs_codes": [],
+   "first_seen": null,
+   "last_seen": null,
+   "shipment_count": null,
+   "evidence": "Australian registry data in Sayari show Syrah Resources as owner of Syrah US Holdings Pty Ltd.",
+   "source_call_ids": [
+    "s814"
+   ],
+   "confidence_reason": "A registry-sourced ownership link returned by Sayari."
+  },
+  {
+   "id": "e802",
+   "source": "05zob51QQdW-1mL-7WJSGA",
+   "target": "sEVYNIMWKfM6vuWml4FNlw",
+   "relation": "possibly_same_as",
+   "edge_type": "inferred",
+   "confidence": "inferred",
+   "hs_codes": [],
+   "first_seen": null,
+   "last_seen": null,
+   "shipment_count": null,
+   "evidence": "Same name with a typo ('Pty Utd'), described as an Australian proprietary company; no shared identifier.",
+   "source_call_ids": [
+    "s814",
+    "s819"
+   ],
+   "confidence_reason": "Name and jurisdiction match, but no identifier links the two records."
+  },
+  {
+   "id": "e803",
+   "source": "05zob51QQdW-1mL-7WJSGA",
+   "target": "NvC-a4BgmoxO63ubVyUiUQ",
+   "relation": "owns",
+   "edge_type": "contractual",
+   "confidence": "documented",
+   "hs_codes": [],
+   "first_seen": null,
+   "last_seen": null,
+   "shipment_count": null,
+   "evidence": "Listed as 'Member' of Syrah Technologies LLC (the owner of a US LLC).",
+   "source_call_ids": [
+    "s819"
+   ],
+   "confidence_reason": "A registry record names this holding company as the LLC's member."
+  },
+  {
+   "id": "e804",
+   "source": "ex1GaqYc9OHlM2KgDrK-5w",
+   "target": "NvC-a4BgmoxO63ubVyUiUQ",
+   "relation": "owns",
+   "edge_type": "contractual",
+   "confidence": "corroborated",
+   "hs_codes": [],
+   "first_seen": null,
+   "last_seen": null,
+   "shipment_count": null,
+   "evidence": "100% per Syrah's 2025 annual report; Sayari shows the chain parent → Syrah US Holdings → member of the LLC, with one inferred join.",
+   "source_call_ids": [
+    "t803",
+    "s814",
+    "s819"
+   ],
+   "confidence_reason": "The company's filing and Sayari's registry chain agree, though Sayari's own path has one name-matched link."
+  },
+  {
+   "id": "e805",
+   "source": "ex1GaqYc9OHlM2KgDrK-5w",
+   "target": "ffPlxyHu42G892jPO7tpbA",
+   "relation": "owns",
+   "edge_type": "contractual",
+   "confidence": "corroborated",
+   "hs_codes": [],
+   "first_seen": null,
+   "last_seen": null,
+   "shipment_count": null,
+   "evidence": "95% per Syrah's 2025 annual report. The report's Maputo address matches Sayari's Twigg record, and a Twigg shipment carries the product code 'SYRFIN10095'.",
+   "source_call_ids": [
+    "t803",
+    "s803",
+    "s813"
+   ],
+   "confidence_reason": "The annual report states it and two Sayari details agree; Sayari itself has no registry link."
+  },
+  {
+   "id": "e806",
+   "source": "ex1GaqYc9OHlM2KgDrK-5w",
+   "target": "uZISesDqcaxQ8aVgsyvurw",
+   "relation": "owns",
+   "edge_type": "contractual",
+   "confidence": "corroborated",
+   "hs_codes": [],
+   "first_seen": null,
+   "last_seen": null,
+   "shipment_count": null,
+   "evidence": "100% per Syrah's 2025 annual report, which gives the same Office 1004, Indigo Icon Tower address as Sayari's record.",
+   "source_call_ids": [
+    "t803",
+    "s823"
+   ],
+   "confidence_reason": "The company's filing and Sayari's address agree; Sayari has no ownership link."
+  },
+  {
+   "id": "e807",
+   "source": "ffPlxyHu42G892jPO7tpbA",
+   "target": "NvC-a4BgmoxO63ubVyUiUQ",
+   "relation": "ships_to",
+   "edge_type": "transactional",
+   "confidence": "documented",
+   "hs_codes": [
+    "2504.10"
+   ],
+   "first_seen": "2023-09-09",
+   "last_seen": "2024-01-24",
+   "shipment_count": 7,
+   "evidence": "Natural graphite, Nacala to New Orleans, 7 rows (one undated), about 2,507 t, recorded in Korean transshipment data.",
+   "source_call_ids": [
+    "s807",
+    "s824"
+   ],
+   "confidence_reason": "Dated, HS-coded trade rows naming both parties."
+  },
+  {
+   "id": "e808",
+   "source": "ffPlxyHu42G892jPO7tpbA",
+   "target": "2omCekb1pDRKjhFOAqCNSw",
+   "relation": "ships_to",
+   "edge_type": "transactional",
+   "confidence": "documented",
+   "hs_codes": [
+    "2504.10"
+   ],
+   "first_seen": "2024-04-05",
+   "last_seen": "2024-04-25",
+   "shipment_count": 2,
+   "evidence": "Natural flake graphite, product number SYRFIN10095, Mozambique to Indonesia.",
+   "source_call_ids": [
+    "s813"
+   ],
+   "confidence_reason": "Dated, HS-coded trade rows naming both parties."
+  },
+  {
+   "id": "e809",
+   "source": "wL21QEyuYMG1Gsp17Nx-1Q",
+   "target": "2omCekb1pDRKjhFOAqCNSw",
+   "relation": "ships_to",
+   "edge_type": "transactional",
+   "confidence": "documented",
+   "hs_codes": [
+    "2504.10"
+   ],
+   "first_seen": "2025-08-22",
+   "last_seen": "2025-08-22",
+   "shipment_count": 1,
+   "evidence": "Natural crystalline flake graphite, Mozambique to Indonesia.",
+   "source_call_ids": [
+    "s813"
+   ],
+   "confidence_reason": "A dated, HS-coded trade row naming both parties."
+  },
+  {
+   "id": "e810",
+   "source": "wL21QEyuYMG1Gsp17Nx-1Q",
+   "target": "ffPlxyHu42G892jPO7tpbA",
+   "relation": "possibly_same_as",
+   "edge_type": "inferred",
+   "confidence": "inferred",
+   "hs_codes": [],
+   "first_seen": null,
+   "last_seen": null,
+   "shipment_count": null,
+   "evidence": "Same name stem, Mozambique, same buyer (BTR Indonesia), same product wording; listed by Sayari among Twigg's Mozambique suppliers.",
+   "source_call_ids": [
+    "s813",
+    "s820",
+    "s824"
+   ],
+   "confidence_reason": "Several matching attributes but no shared identifier or address."
+  },
+  {
+   "id": "e811",
+   "source": "uZISesDqcaxQ8aVgsyvurw",
+   "target": "2omCekb1pDRKjhFOAqCNSw",
+   "relation": "ships_to",
+   "edge_type": "transactional",
+   "confidence": "documented",
+   "hs_codes": [
+    "2504.10"
+   ],
+   "first_seen": "2026-01-23",
+   "last_seen": "2026-04-13",
+   "shipment_count": 4,
+   "evidence": "Natural crystalline flake graphite, declared from the UAE. Mine of origin not stated.",
+   "source_call_ids": [
+    "s826"
+   ],
+   "confidence_reason": "Dated, HS-coded trade rows naming both parties."
+  },
+  {
+   "id": "e812",
+   "source": "ffPlxyHu42G892jPO7tpbA",
+   "target": "BoVP8I5lJH1lrNb61GphCw",
+   "relation": "ships_to",
+   "edge_type": "transactional",
+   "confidence": "documented",
+   "hs_codes": [
+    "2504.10"
+   ],
+   "first_seen": "2022-08-13",
+   "last_seen": "2022-08-13",
+   "shipment_count": 25,
+   "evidence": "Natural graphite, Mozambique to China.",
+   "source_call_ids": [
+    "s809",
+    "s812"
+   ],
+   "confidence_reason": "Dated, HS-coded trade rows naming both parties."
+  },
+  {
+   "id": "e813",
+   "source": "ffPlxyHu42G892jPO7tpbA",
+   "target": "zy4DoUY7ohIzHq9qDUJf2A",
+   "relation": "ships_to",
+   "edge_type": "transactional",
+   "confidence": "documented",
+   "hs_codes": [
+    "2504.10"
+   ],
+   "first_seen": "2022-10-15",
+   "last_seen": "2022-10-15",
+   "shipment_count": 25,
+   "evidence": "Natural graphite, Mozambique to China.",
+   "source_call_ids": [
+    "s809"
+   ],
+   "confidence_reason": "Dated, HS-coded trade rows naming both parties."
+  },
+  {
+   "id": "e814",
+   "source": "ffPlxyHu42G892jPO7tpbA",
+   "target": "Ifk4vKyw2nqI1j7MwBLmDw",
+   "relation": "ships_to",
+   "edge_type": "transactional",
+   "confidence": "documented",
+   "hs_codes": [
+    "2504.10"
+   ],
+   "first_seen": "2022-08-15",
+   "last_seen": "2022-08-15",
+   "shipment_count": 15,
+   "evidence": "Natural graphite, Mozambique to China.",
+   "source_call_ids": [
+    "s809"
+   ],
+   "confidence_reason": "Dated, HS-coded trade rows naming both parties."
+  },
+  {
+   "id": "e815",
+   "source": "ffPlxyHu42G892jPO7tpbA",
+   "target": "OPeO2tiJlzLBJWywXkZesw",
+   "relation": "ships_to",
+   "edge_type": "transactional",
+   "confidence": "documented",
+   "hs_codes": [
+    "2504.10"
+   ],
+   "first_seen": "2022-08-13",
+   "last_seen": "2022-08-13",
+   "shipment_count": 15,
+   "evidence": "Natural graphite, Mozambique to China.",
+   "source_call_ids": [
+    "s812"
+   ],
+   "confidence_reason": "Dated, HS-coded trade rows naming both parties."
+  },
+  {
+   "id": "e816",
+   "source": "ffPlxyHu42G892jPO7tpbA",
+   "target": "7Obb1Gbggua5WYBZQOkxpA",
+   "relation": "ships_to",
+   "edge_type": "transactional",
+   "confidence": "documented",
+   "hs_codes": [
+    "2504.10"
+   ],
+   "first_seen": "2022-10-11",
+   "last_seen": "2022-10-11",
+   "shipment_count": 5,
+   "evidence": "Natural graphite, Mozambique to China.",
+   "source_call_ids": [
+    "s809"
+   ],
+   "confidence_reason": "Dated, HS-coded trade rows naming both parties."
+  },
+  {
+   "id": "e817",
+   "source": "ffPlxyHu42G892jPO7tpbA",
+   "target": "Gp-9bI-j3Pd_Jz64bkBo1w",
+   "relation": "ships_to",
+   "edge_type": "transactional",
+   "confidence": "documented",
+   "hs_codes": [
+    "2504.10"
+   ],
+   "first_seen": "2022-11-04",
+   "last_seen": "2022-11-04",
+   "shipment_count": 2,
+   "evidence": "Natural graphite, Mozambique to China, for a refractory maker.",
+   "source_call_ids": [
+    "s809"
+   ],
+   "confidence_reason": "Dated, HS-coded trade rows naming both parties."
+  },
+  {
+   "id": "e818",
+   "source": "KlxHzKnR1jHcjm4PRp-6eQ",
+   "target": "Csu21BM3zBbYfSB8ChoVGQ",
+   "relation": "ships_to",
+   "edge_type": "transactional",
+   "confidence": "documented",
+   "hs_codes": [
+    "2504.10"
+   ],
+   "first_seen": "2022-04-11",
+   "last_seen": "2022-04-11",
+   "shipment_count": 1,
+   "evidence": "Natural flake graphite, Mozambique to China.",
+   "source_call_ids": [
+    "s812"
+   ],
+   "confidence_reason": "A dated, HS-coded trade row naming both parties."
+  },
+  {
+   "id": "e819",
+   "source": "KlxHzKnR1jHcjm4PRp-6eQ",
+   "target": "NvSjRSdi_6HQ29UwUh5iIA",
+   "relation": "ships_to",
+   "edge_type": "transactional",
+   "confidence": "documented",
+   "hs_codes": [
+    "2504.10"
+   ],
+   "first_seen": "2022-04-11",
+   "last_seen": "2022-04-11",
+   "shipment_count": 1,
+   "evidence": "Natural flake graphite, Mozambique to China, for a glass maker.",
+   "source_call_ids": [
+    "s812"
+   ],
+   "confidence_reason": "A dated, HS-coded trade row naming both parties."
+  },
+  {
+   "id": "e820",
+   "source": "KlxHzKnR1jHcjm4PRp-6eQ",
+   "target": "ffPlxyHu42G892jPO7tpbA",
+   "relation": "possibly_same_as",
+   "edge_type": "inferred",
+   "confidence": "inferred",
+   "hs_codes": [],
+   "first_seen": null,
+   "last_seen": null,
+   "shipment_count": null,
+   "evidence": "Same name (truncated), same product, same Qingdao market; Sayari groups it with Twigg's Mozambique exports.",
+   "source_call_ids": [
+    "s812",
+    "s820",
+    "s824"
+   ],
+   "confidence_reason": "Name and trade pattern match; no identifier or address links them."
+  },
+  {
+   "id": "e821",
+   "source": "zy4DoUY7ohIzHq9qDUJf2A",
+   "target": "-E5VEQtbiDlJDhmMR7GywQ",
+   "relation": "possibly_same_as",
+   "edge_type": "inferred",
+   "confidence": "lead",
+   "hs_codes": [],
+   "first_seen": null,
+   "last_seen": null,
+   "shipment_count": null,
+   "evidence": "Same name (Qingdao Luowei New Material[s]); the Case 4 record supplied POSCO Future M.",
+   "source_call_ids": [
+    "s809"
+   ],
+   "confidence_reason": "Name match only."
+  },
+  {
+   "id": "e822",
+   "source": "Csu21BM3zBbYfSB8ChoVGQ",
+   "target": "v1QB9w2AdIcXcohuVJZHyw",
+   "relation": "possibly_same_as",
+   "edge_type": "inferred",
+   "confidence": "lead",
+   "hs_codes": [],
+   "first_seen": null,
+   "last_seen": null,
+   "shipment_count": null,
+   "evidence": "Same name (Qingdao Huateng Graphite Technology); the Case 4 record supplied POSCO Future M.",
+   "source_call_ids": [
+    "s812"
+   ],
+   "confidence_reason": "Name match only."
+  },
+  {
+   "id": "e823",
+   "source": "ffPlxyHu42G892jPO7tpbA",
+   "target": "MzUxHPmuO6dwS8pO1hCNUQ",
+   "relation": "ships_to",
+   "edge_type": "transactional",
+   "confidence": "corroborated",
+   "hs_codes": [
+    "2504"
+   ],
+   "first_seen": null,
+   "last_seen": null,
+   "shipment_count": 29,
+   "evidence": "Largest buyer by row count from Mozambique; dates not pulled.",
+   "source_call_ids": [
+    "s806",
+    "s824"
+   ],
+   "confidence_reason": "Sayari's graph and its trade facets both show the link, but we did not pull dated rows."
+  },
+  {
+   "id": "e824",
+   "source": "ffPlxyHu42G892jPO7tpbA",
+   "target": "Q1iA8Rfci2znN6C_9bhKZQ",
+   "relation": "ships_to",
+   "edge_type": "transactional",
+   "confidence": "corroborated",
+   "hs_codes": [
+    "2504"
+   ],
+   "first_seen": null,
+   "last_seen": null,
+   "shipment_count": 19,
+   "evidence": "19 rows from Mozambique; dates not pulled.",
+   "source_call_ids": [
+    "s806",
+    "s824"
+   ],
+   "confidence_reason": "Sayari's graph and its trade facets both show the link, but we did not pull dated rows."
+  },
+  {
+   "id": "e825",
+   "source": "ffPlxyHu42G892jPO7tpbA",
+   "target": "GVihyKDTwtnC-IaJstpPCw",
+   "relation": "ships_to",
+   "edge_type": "transactional",
+   "confidence": "documented",
+   "hs_codes": [
+    "2504.10"
+   ],
+   "first_seen": "2022-02-16",
+   "last_seen": "2022-02-16",
+   "shipment_count": 1,
+   "evidence": "Natural graphite in big bags, Mozambique to Russia.",
+   "source_call_ids": [
+    "s825"
+   ],
+   "confidence_reason": "A dated, HS-coded trade row naming both parties."
+  },
+  {
+   "id": "e826",
+   "source": "ffPlxyHu42G892jPO7tpbA",
+   "target": "4dfmhQ3NPjXLdVT7-GSJDQ",
+   "relation": "ships_to",
+   "edge_type": "transactional",
+   "confidence": "documented",
+   "hs_codes": [
+    "2504.10"
+   ],
+   "first_seen": "2022-02-05",
+   "last_seen": "2022-02-05",
+   "shipment_count": 1,
+   "evidence": "Crucible-grade natural graphite for refractories, Mozambique to Russia.",
+   "source_call_ids": [
+    "s825"
+   ],
+   "confidence_reason": "A dated, HS-coded trade row naming both parties."
+  },
+  {
+   "id": "e827",
+   "source": "GPHj9pMb5DnKZlUepMQM-A",
+   "target": "NvC-a4BgmoxO63ubVyUiUQ",
+   "relation": "ships_to",
+   "edge_type": "transactional",
+   "confidence": "documented",
+   "hs_codes": [
+    "3801.90"
+   ],
+   "first_seen": "2023-10-10",
+   "last_seen": "2023-10-10",
+   "shipment_count": 1,
+   "evidence": "20 t 'spherical graphite', loaded in Korea.",
+   "source_call_ids": [
+    "s807"
+   ],
+   "confidence_reason": "A dated trade row naming both parties."
+  },
+  {
+   "id": "e828",
+   "source": "ljXszsmI8EtP_3Q4fuC6ZA",
+   "target": "NvC-a4BgmoxO63ubVyUiUQ",
+   "relation": "ships_to",
+   "edge_type": "transactional",
+   "confidence": "documented",
+   "hs_codes": [
+    "2708.10",
+    "2707.50"
+   ],
+   "first_seen": "2023-10-04",
+   "last_seen": "2024-06-29",
+   "shipment_count": 4,
+   "evidence": "Granulated petroleum pitch and aromatic hydrocarbons from the Netherlands.",
+   "source_call_ids": [
+    "s807"
+   ],
+   "confidence_reason": "Dated trade rows naming both parties."
+  },
+  {
+   "id": "e829",
+   "source": "aJmC3CSdJYMV1r_o0qrccQ",
+   "target": "NvC-a4BgmoxO63ubVyUiUQ",
+   "relation": "ships_to",
+   "edge_type": "transactional",
+   "confidence": "documented",
+   "hs_codes": [],
+   "first_seen": "2022-12-01",
+   "last_seen": "2026-01-16",
+   "shipment_count": 12,
+   "evidence": "Carbonisation furnaces, refractory insulation and spare heating elements from China.",
+   "source_call_ids": [
+    "s807"
+   ],
+   "confidence_reason": "Dated trade rows naming both parties."
+  },
+  {
+   "id": "e830",
+   "source": "NJIf-8zhf7-nyk3EU-l1bA",
+   "target": "NvC-a4BgmoxO63ubVyUiUQ",
+   "relation": "ships_to",
+   "edge_type": "transactional",
+   "confidence": "documented",
+   "hs_codes": [],
+   "first_seen": "2023-01-20",
+   "last_seen": "2025-07-17",
+   "shipment_count": 3,
+   "evidence": "Baghouses, rotary valves, liners and hammers from China.",
+   "source_call_ids": [
+    "s807"
+   ],
+   "confidence_reason": "Dated trade rows naming both parties."
+  },
+  {
+   "id": "e831",
+   "source": "nSreKiv3fC-4IKRi87Datw",
+   "target": "NvC-a4BgmoxO63ubVyUiUQ",
+   "relation": "ships_to",
+   "edge_type": "transactional",
+   "confidence": "documented",
+   "hs_codes": [],
+   "first_seen": "2022-12-06",
+   "last_seen": "2023-05-10",
+   "shipment_count": 2,
+   "evidence": "Baghouse housings and valves.",
+   "source_call_ids": [
+    "s807"
+   ],
+   "confidence_reason": "Dated trade rows naming both parties."
+  },
+  {
+   "id": "e832",
+   "source": "UtRPmQpVsJMOv32rLaTkaQ",
+   "target": "NvC-a4BgmoxO63ubVyUiUQ",
+   "relation": "ships_to",
+   "edge_type": "transactional",
+   "confidence": "documented",
+   "hs_codes": [],
+   "first_seen": "2023-01-22",
+   "last_seen": "2023-01-22",
+   "shipment_count": 1,
+   "evidence": "Oversize equipment from China.",
+   "source_call_ids": [
+    "s807"
+   ],
+   "confidence_reason": "A dated trade row naming both parties."
+  },
+  {
+   "id": "e833",
+   "source": "YHQlP0uNchhfl5OnsjIWNw",
+   "target": "azVXA4lXaKfU8wYdoluS_g",
+   "relation": "ships_to",
+   "edge_type": "transactional",
+   "confidence": "documented",
+   "hs_codes": [
+    "2504"
+   ],
+   "first_seen": "2022-12-29",
+   "last_seen": "2022-12-29",
+   "shipment_count": 1,
+   "evidence": "4.8 t natural graphite from the Netherlands.",
+   "source_call_ids": [
+    "s807"
+   ],
+   "confidence_reason": "A dated, HS-coded trade row naming both parties."
+  },
+  {
+   "id": "e834",
+   "source": "azVXA4lXaKfU8wYdoluS_g",
+   "target": "NvC-a4BgmoxO63ubVyUiUQ",
+   "relation": "possibly_same_as",
+   "edge_type": "inferred",
+   "confidence": "inferred",
+   "hs_codes": [],
+   "first_seen": null,
+   "last_seen": null,
+   "shipment_count": null,
+   "evidence": "Same Vidalia street address (2001 D A Biglane Rd) and name stem.",
+   "source_call_ids": [
+    "s801"
+   ],
+   "confidence_reason": "Shared street address and name, no shared identifier."
+  },
+  {
+   "id": "e835",
+   "source": "a90PVh7ryN5atf1qpDbDDw",
+   "target": "NvC-a4BgmoxO63ubVyUiUQ",
+   "relation": "possibly_same_as",
+   "edge_type": "inferred",
+   "confidence": "inferred",
+   "hs_codes": [],
+   "first_seen": null,
+   "last_seen": null,
+   "shipment_count": null,
+   "evidence": "EPA facility record for the same company name at the same street address.",
+   "source_call_ids": [
+    "s801"
+   ],
+   "confidence_reason": "Shared street address and name; the EPA ID is not linked to the company record."
+  },
+  {
+   "id": "e836",
+   "source": "NvC-a4BgmoxO63ubVyUiUQ",
+   "target": "d1CI2lYdfm1YotbgCaS84Q",
+   "relation": "ships_to",
+   "edge_type": "transactional",
+   "confidence": "documented",
+   "hs_codes": [
+    "3801.90"
+   ],
+   "first_seen": "2024-12-26",
+   "last_seen": "2024-12-26",
+   "shipment_count": 1,
+   "evidence": "A 50 kg lot described as natural graphite '95', USA to Ukraine.",
+   "source_call_ids": [
+    "s808"
+   ],
+   "confidence_reason": "A dated, HS-coded trade row naming both parties."
+  },
+  {
+   "id": "e837",
+   "source": "NvC-a4BgmoxO63ubVyUiUQ",
+   "target": "xWhz7CFJV3lxsgg8fHMGHA",
+   "relation": "ships_to",
+   "edge_type": "contractual",
+   "confidence": "corroborated",
+   "hs_codes": [],
+   "first_seen": "2021-12-23",
+   "last_seen": null,
+   "shipment_count": null,
+   "evidence": "2021 offtake for 8,000 t of Vidalia anode material over four years. Default notice July 2025; termination notice withdrawn by 1 June 2026; final qualification pending. No shipments visible.",
+   "source_call_ids": [
+    "t802"
+   ],
+   "confidence_reason": "Syrah's annual report and independent press (Reuters, electrive) agree; Sayari has no record of it."
+  }
+ ],
+ "calls": [
+  {
+   "id": "s801",
+   "timestamp": "2026-10-14T19:46:00Z",
+   "server": "sayari",
+   "tool": "search_entities",
+   "params": {
+    "query": "\"Syrah Technologies\"",
+    "limit": 10
+   },
+   "question": "Which Sayari records describe the Vidalia anode plant?",
+   "purpose": "Resolve the plant",
+   "result_summary": "5 records. The main one, SYRAH TECHNOLOGIES LLC (NvC-a4BgmoxO63ubVyUiUQ), carries a Louisiana SOS ID (42632807Q), a SAM UEI and the Vidalia address 2001 D.A. Biglane Road. Two EPA facility records (the '10 KTA active anode material facility' and a 'graphite qualification facility') and a trade-only 'SYRAH TECHNOLOGIES' share that street address. A fifth is a Delaware file-number record.",
+   "interpretation": "One plant, several records. The address ties four of them together; the main record holds the identifiers.",
+   "scorecard": "worked",
+   "entity_ids": [
+    "NvC-a4BgmoxO63ubVyUiUQ",
+    "azVXA4lXaKfU8wYdoluS_g",
+    "a90PVh7ryN5atf1qpDbDDw"
+   ],
+   "step": "plant"
+  },
+  {
+   "id": "s802",
+   "timestamp": "2026-10-14T19:46:05Z",
+   "server": "sayari",
+   "tool": "search_entities",
+   "params": {
+    "query": "\"Syrah Resources\"",
+    "limit": 10
+   },
+   "question": "Which Sayari record is the Australian parent?",
+   "purpose": "Resolve the parent",
+   "result_summary": "Syrah Resources Limited (ex1GaqYc9OHlM2KgDrK-5w) with LEI 254900ZS2VP83B6L6Y30, ABN 77125242284 and SEC CIK 0001639151, Melbourne addresses. Also Syrah Resources (KSA), Syrah Resources Group Holdings and three 'Syrah Resources and Trading DMCC' records in Dubai, one at '1004-B Indigo Icon'.",
+   "interpretation": "The parent resolves cleanly on hard identifiers.",
+   "scorecard": "worked",
+   "entity_ids": [
+    "ex1GaqYc9OHlM2KgDrK-5w"
+   ],
+   "step": "owner"
+  },
+  {
+   "id": "s803",
+   "timestamp": "2026-10-14T19:46:10Z",
+   "server": "sayari",
+   "tool": "get_entity_profile",
+   "params": {
+    "entity_id": "ffPlxyHu42G892jPO7tpbA"
+   },
+   "question": "What does Sayari hold on Twigg, the Balama mine company?",
+   "purpose": "Profile the mine operator",
+   "result_summary": "TWIGG EXPLORATION & MINING LIMITADA, Mozambique, with a Maputo address at Av. Vladimir Lenine 174, Millennium Park Building Block B, 5th floor. No shareholders or officers. 27 ships_to partners; trade count 180 sent, 25 received. Flags: export_controls_adjacent, sanctioned_adjacent.",
+   "interpretation": "A trade-only record: lots of exports, no ownership data. The 'adjacent' flags come from its buyers, not from Twigg itself.",
+   "scorecard": "partial",
+   "entity_ids": [
+    "ffPlxyHu42G892jPO7tpbA"
+   ],
+   "step": "owner"
+  },
+  {
+   "id": "s804",
+   "timestamp": "2026-10-14T19:46:15Z",
+   "server": "sayari",
+   "tool": "find_beneficial_owners",
+   "params": {
+    "entity_id": "NvC-a4BgmoxO63ubVyUiUQ"
+   },
+   "question": "Who owns Syrah Technologies LLC, per Sayari's ownership traversal?",
+   "purpose": "Ownership of the plant",
+   "result_summary": "0 results.",
+   "interpretation": "The ownership tool finds nothing, even though the profile (s819) lists an Australian member. Same tool gap as Case 1.",
+   "scorecard": "failed",
+   "entity_ids": [
+    "NvC-a4BgmoxO63ubVyUiUQ"
+   ],
+   "step": "owner"
+  },
+  {
+   "id": "s805",
+   "timestamp": "2026-10-14T19:46:18Z",
+   "server": "sayari",
+   "tool": "find_beneficial_owners",
+   "params": {
+    "entity_id": "ffPlxyHu42G892jPO7tpbA"
+   },
+   "question": "Who owns Twigg, per Sayari?",
+   "purpose": "Ownership of the mine",
+   "result_summary": "0 results.",
+   "interpretation": "No registry link from the mine to Syrah in Sayari.",
+   "scorecard": "failed",
+   "entity_ids": [
+    "ffPlxyHu42G892jPO7tpbA"
+   ],
+   "step": "owner"
+  },
+  {
+   "id": "s806",
+   "timestamp": "2026-10-14T19:46:25Z",
+   "server": "sayari",
+   "tool": "traverse_network",
+   "params": {
+    "entity_id": "ffPlxyHu42G892jPO7tpbA",
+    "relationships": [
+     "ships_to"
+    ],
+    "max_depth": 1,
+    "limit": 30
+   },
+   "question": "Who buys from the Balama mine?",
+   "purpose": "Map the mine's customers",
+   "result_summary": "27 buyers. US: Syrah Technologies LLC (Vidalia) and Hiller Carbon. China: Qingdao Nanshu Graphite, Qingdao Luowei New Materials, Qingdao Heshengkai Carbon Material, AW-Lin Jiangsu Supply Chain, Dinur (Yingkou) Refractory, ASK Resources. Indonesia: PT Indonesia BTR New Energy Material. Korea: POSCO Chemical (Future M), Elves Graphite, Chosun Refractories. Europe: RHI Magnesita and affiliates, Vesuvius Belgium, Grafitbergbau Kaisersberg, Dominik Georg Luh Technografit, CS Additive, ArcelorMittal Refractories and others. India: Himadri Speciality Chemical. Russia: Kombinat Magnezit (sanctioned) and Luzhsky Abrasive Plant.",
+   "interpretation": "One mine, many chains: the US anode plant, a Chinese-owned anode plant in Indonesia, Chinese graphite processors and a long list of refractory makers.",
+   "scorecard": "worked",
+   "entity_ids": [
+    "ffPlxyHu42G892jPO7tpbA",
+    "NvC-a4BgmoxO63ubVyUiUQ",
+    "2omCekb1pDRKjhFOAqCNSw",
+    "BoVP8I5lJH1lrNb61GphCw",
+    "zy4DoUY7ohIzHq9qDUJf2A",
+    "Ifk4vKyw2nqI1j7MwBLmDw",
+    "7Obb1Gbggua5WYBZQOkxpA",
+    "Gp-9bI-j3Pd_Jz64bkBo1w",
+    "OPeO2tiJlzLBJWywXkZesw",
+    "GVihyKDTwtnC-IaJstpPCw",
+    "4dfmhQ3NPjXLdVT7-GSJDQ",
+    "MzUxHPmuO6dwS8pO1hCNUQ",
+    "Q1iA8Rfci2znN6C_9bhKZQ"
+   ],
+   "step": "out"
+  },
+  {
+   "id": "s807",
+   "timestamp": "2026-10-14T19:46:40Z",
+   "server": "sayari",
+   "tool": "search_shipments",
+   "params": {
+    "query": "\"SYRAH TECHNOLOGIES\"",
+    "arrival_country": "USA",
+    "limit": 50
+   },
+   "question": "What arrives at the Vidalia plant, and from whom?",
+   "purpose": "Plant inputs",
+   "result_summary": "73 rows, Dec 2022 – Jul 2026. Graphite: 7 rows of natural graphite (HS 2504.10) from Twigg, Nacala to New Orleans, Sep 2023 – Jan 2024 (about 2,507 t; recorded in Korean transshipment data); 26 more rows described as natural flake graphite (HS 2504.10) with no supplier named, Sep 2023 – Nov 2024 (about 9,739 t), loaded at Busan (8), Shanghai (5), Veracruz (4) and six other ports; one 20 t row of 'spherical graphite' (HS 3801.90) from Qingdao Mien New Material, Oct 2023; one 4.8 t HS 2504 row from Neuman & Esser, Dec 2022. Other inputs: petroleum pitch from Rain Carbon Germany (4 rows, Oct 2023 – Jun 2024). Equipment from China: carbonisation furnaces and parts from Jiangsu Qianjin Furnace (12 rows, Dec 2022 – Jan 2026), mills and baghouses from Zhejiang Leap Pulverization, a mixer from Shuanglong Group, valves from Mountop Group (China Metallurgical Equipment Nanjing, flagged state-owned), plus heating elements, valves and furnace parts from Shanghai with no shipper named (Nov 2025 – Jul 2026).",
+   "interpretation": "The graphite feed is Mozambican where a supplier is named. The plant also took one small lot of Chinese spherical graphite and much of its processing kit from China. The five Shanghai-loaded flake rows name no supplier; a port of loading is not proof of origin.",
+   "scorecard": "worked",
+   "entity_ids": [
+    "NvC-a4BgmoxO63ubVyUiUQ",
+    "azVXA4lXaKfU8wYdoluS_g",
+    "ffPlxyHu42G892jPO7tpbA",
+    "GPHj9pMb5DnKZlUepMQM-A",
+    "ljXszsmI8EtP_3Q4fuC6ZA",
+    "aJmC3CSdJYMV1r_o0qrccQ",
+    "NJIf-8zhf7-nyk3EU-l1bA",
+    "UtRPmQpVsJMOv32rLaTkaQ",
+    "nSreKiv3fC-4IKRi87Datw",
+    "YHQlP0uNchhfl5OnsjIWNw"
+   ],
+   "step": "in"
+  },
+  {
+   "id": "s808",
+   "timestamp": "2026-10-14T19:47:00Z",
+   "server": "sayari",
+   "tool": "search_shipments",
+   "params": {
+    "query": "\"SYRAH TECHNOLOGIES\"",
+    "departure_country": "USA",
+    "limit": 50,
+    "response_mode": "compact"
+   },
+   "question": "Does Vidalia ship anode material to anyone that customs data can see?",
+   "purpose": "Plant outputs",
+   "result_summary": "1 row: a 50 kg lot described as natural graphite '95' (HS 3801.90) to TOV Zavallia Graphite (Zavallivskyi Hrafit), Ukraine, 26 Dec 2024.",
+   "interpretation": "No sales to US cell makers appear. Domestic US sales are not recorded in customs data, so this is a blind spot, not evidence of no sales.",
+   "scorecard": "partial",
+   "entity_ids": [
+    "NvC-a4BgmoxO63ubVyUiUQ",
+    "d1CI2lYdfm1YotbgCaS84Q"
+   ],
+   "step": "out"
+  },
+  {
+   "id": "s809",
+   "timestamp": "2026-10-14T19:47:10Z",
+   "server": "sayari",
+   "tool": "search_shipments",
+   "params": {
+    "query": "\"TWIGG EXPLORATION\"",
+    "arrival_country": "CHN",
+    "limit": 50,
+    "response_mode": "compact"
+   },
+   "question": "Does the Balama mine ship to China?",
+   "purpose": "Same mine, Chinese buyers",
+   "result_summary": "89 rows in total; first page of 50: natural graphite (HS 2504.10) from Mozambique to Qingdao Nanshu Graphite (3 here), Qingdao Luowei New Materials (25), Qingdao Heshengkai Carbon Material (15), AW-Lin Jiangsu Supply Chain (5) and Dinur (Yingkou) Refractory (2). Arrivals Aug – Nov 2022.",
+   "interpretation": "Yes. The mine that feeds Vidalia also fed Chinese graphite processors.",
+   "scorecard": "worked",
+   "entity_ids": [
+    "ffPlxyHu42G892jPO7tpbA",
+    "BoVP8I5lJH1lrNb61GphCw",
+    "zy4DoUY7ohIzHq9qDUJf2A",
+    "Ifk4vKyw2nqI1j7MwBLmDw",
+    "7Obb1Gbggua5WYBZQOkxpA",
+    "Gp-9bI-j3Pd_Jz64bkBo1w"
+   ],
+   "step": "out"
+  },
+  {
+   "id": "s810",
+   "timestamp": "2026-10-14T19:47:20Z",
+   "server": "sayari",
+   "tool": "search_shipments",
+   "params": {
+    "query": "\"TWIGG EXPLORATION\"",
+    "arrival_country": "CHN",
+    "limit": 50,
+    "response_mode": "compact",
+    "page_token": "(token from s809)"
+   },
+   "question": "Second page of Twigg's China rows.",
+   "purpose": "Paging",
+   "result_summary": "Error: limit cannot be used together with page_token.",
+   "interpretation": "Tool quirk: a page token must be sent without limit.",
+   "scorecard": "failed",
+   "entity_ids": [],
+   "step": "method"
+  },
+  {
+   "id": "s811",
+   "timestamp": "2026-10-14T19:47:25Z",
+   "server": "sayari",
+   "tool": "search_shipments",
+   "params": {
+    "query": "\"TWIGG EXPLORATION\"",
+    "arrival_country": "CHN",
+    "response_mode": "compact",
+    "page_token": "(token from s809)"
+   },
+   "question": "Second page of Twigg's China rows.",
+   "purpose": "Paging",
+   "result_summary": "Error: response_mode cannot be used together with page_token.",
+   "interpretation": "Tool quirk: a page token must be sent with only the original filters.",
+   "scorecard": "failed",
+   "entity_ids": [],
+   "step": "method"
+  },
+  {
+   "id": "s812",
+   "timestamp": "2026-10-14T19:47:30Z",
+   "server": "sayari",
+   "tool": "search_shipments",
+   "params": {
+    "query": "\"TWIGG EXPLORATION\"",
+    "arrival_country": "CHN",
+    "page_token": "(token from s809)"
+   },
+   "question": "Second page of Twigg's China rows.",
+   "purpose": "Same mine, Chinese buyers",
+   "result_summary": "Remaining 39 rows: Qingdao Nanshu Graphite (22 more, Aug 2022), ASK Resources (15, Aug 2022), and two Apr 2022 rows from a second Twigg record (KlxHzKnR1jHcjm4PRp-6eQ) to Qingdao Huateng Graphite Technology (青岛华腾石墨科技有限公司) and Qingdao Himalaya Special Glass.",
+   "interpretation": "All 89 China rows fall in Apr – Nov 2022. Eight Chinese buyers in total.",
+   "scorecard": "worked",
+   "entity_ids": [
+    "BoVP8I5lJH1lrNb61GphCw",
+    "OPeO2tiJlzLBJWywXkZesw",
+    "Csu21BM3zBbYfSB8ChoVGQ",
+    "NvSjRSdi_6HQ29UwUh5iIA",
+    "KlxHzKnR1jHcjm4PRp-6eQ"
+   ],
+   "step": "out"
+  },
+  {
+   "id": "s813",
+   "timestamp": "2026-10-14T19:47:40Z",
+   "server": "sayari",
+   "tool": "search_shipments",
+   "params": {
+    "query": "\"TWIGG EXPLORATION\"",
+    "arrival_country": "IDN",
+    "limit": 50,
+    "response_mode": "compact"
+   },
+   "question": "Does the mine ship to BTR's Chinese-owned plant in Indonesia?",
+   "purpose": "Same mine, Chinese-owned anode plant",
+   "result_summary": "3 rows of natural flake graphite (HS 2504.10) to PT Indonesia BTR New Energy Material: 5 Apr 2024 (product number 'SYRFIN10095') and 25 Apr 2024 from the main Twigg record; 22 Aug 2025 from a second record, 'TWIGG EXPLORATION AND MINING, LDA'.",
+   "interpretation": "Yes. The same mine sells to the Chinese-owned anode plant from Case 1. The 'SYR' product code points to Syrah's own product range.",
+   "scorecard": "worked",
+   "entity_ids": [
+    "ffPlxyHu42G892jPO7tpbA",
+    "wL21QEyuYMG1Gsp17Nx-1Q",
+    "2omCekb1pDRKjhFOAqCNSw"
+   ],
+   "step": "out"
+  },
+  {
+   "id": "s814",
+   "timestamp": "2026-10-14T19:47:50Z",
+   "server": "sayari",
+   "tool": "find_downstream_entities",
+   "params": {
+    "entity_id": "ex1GaqYc9OHlM2KgDrK-5w",
+    "limit": 40,
+    "response_mode": "compact"
+   },
+   "question": "What does Syrah Resources own, per Sayari?",
+   "purpose": "Ownership from the top",
+   "result_summary": "5 Australian subsidiaries, all one hop: Syrah US Holdings Pty Ltd, Syrah US Holdings No. 2 Pty Ltd, Syrah Resources Group Holdings Pty Ltd, Syrah Resources (KSA) Pty Ltd and Jacana Resources. No US, Mozambican or UAE entity.",
+   "interpretation": "Registry data reach the Australian holding layer and stop there.",
+   "scorecard": "partial",
+   "entity_ids": [
+    "ex1GaqYc9OHlM2KgDrK-5w",
+    "sEVYNIMWKfM6vuWml4FNlw"
+   ],
+   "step": "owner"
+  },
+  {
+   "id": "s815",
+   "timestamp": "2026-10-14T19:48:00Z",
+   "server": "sayari",
+   "tool": "find_shortest_path",
+   "params": {
+    "source_entity_id": "NvC-a4BgmoxO63ubVyUiUQ",
+    "target_entity_id": "ex1GaqYc9OHlM2KgDrK-5w"
+   },
+   "question": "How is the plant connected to the parent?",
+   "purpose": "Ownership path",
+   "result_summary": "Sayari API error (HTTP 408, timeout).",
+   "interpretation": "Not answered.",
+   "scorecard": "failed",
+   "entity_ids": [],
+   "step": "owner"
+  },
+  {
+   "id": "s816",
+   "timestamp": "2026-10-14T19:48:00Z",
+   "server": "sayari",
+   "tool": "find_shortest_path",
+   "params": {
+    "source_entity_id": "ffPlxyHu42G892jPO7tpbA",
+    "target_entity_id": "ex1GaqYc9OHlM2KgDrK-5w"
+   },
+   "question": "How is the mine connected to the parent?",
+   "purpose": "Ownership path",
+   "result_summary": "Sayari API error (HTTP 408, timeout).",
+   "interpretation": "Not answered.",
+   "scorecard": "failed",
+   "entity_ids": [],
+   "step": "owner"
+  },
+  {
+   "id": "s817",
+   "timestamp": "2026-10-14T19:48:10Z",
+   "server": "sayari",
+   "tool": "find_downstream_entities",
+   "params": {
+    "entity_id": "sEVYNIMWKfM6vuWml4FNlw",
+    "limit": 25,
+    "response_mode": "compact"
+   },
+   "question": "Does Syrah US Holdings own the Vidalia company, per Sayari?",
+   "purpose": "Ownership path",
+   "result_summary": "0 results.",
+   "interpretation": "The Australian record does not link down to the US LLC.",
+   "scorecard": "failed",
+   "entity_ids": [
+    "sEVYNIMWKfM6vuWml4FNlw"
+   ],
+   "step": "owner"
+  },
+  {
+   "id": "s818",
+   "timestamp": "2026-10-14T19:48:12Z",
+   "server": "sayari",
+   "tool": "find_downstream_entities",
+   "params": {
+    "entity_id": "csviE8BCoyS5aDIFz5NvkA",
+    "limit": 25,
+    "response_mode": "compact"
+   },
+   "question": "Does Syrah Resources Group Holdings own Twigg, per Sayari?",
+   "purpose": "Ownership path",
+   "result_summary": "0 results.",
+   "interpretation": "No route from the parent to the mine in registry data.",
+   "scorecard": "failed",
+   "entity_ids": [],
+   "step": "owner"
+  },
+  {
+   "id": "s819",
+   "timestamp": "2026-10-14T19:48:20Z",
+   "server": "sayari",
+   "tool": "get_entity_profile",
+   "params": {
+    "entity_id": "NvC-a4BgmoxO63ubVyUiUQ",
+    "relationships_limit": 60
+   },
+   "question": "What does the plant's own record say about who controls it?",
+   "purpose": "Ownership of the plant",
+   "result_summary": "Registered 2017, LLC, active as of 23 Jul 2025, business 'ground or treated mineral and earth manufacturing'. Addresses in Vidalia, Baton Rouge, Dover (Delaware agent) and Syrah's two Melbourne offices. Member: 'SYRAH US HOLDINGS PTY UTD, AN AUSTRALIAN PROPIETARY COMPANY' (05zob51QQdW-1mL-7WJSGA); a former member who is a person. Registered agent NRAI Services. 11 suppliers, 1 buyer. Flag chinese_soe_adjacent.",
+   "interpretation": "The registry does name the owner: an Australian Syrah holding company. That record is a separate node from the one Syrah Resources owns, which is why the traversal tools miss it. The SOE flag comes from one Chinese state-owned equipment supplier (Mountop), not from ownership.",
+   "scorecard": "worked",
+   "entity_ids": [
+    "NvC-a4BgmoxO63ubVyUiUQ",
+    "05zob51QQdW-1mL-7WJSGA",
+    "d1CI2lYdfm1YotbgCaS84Q"
+   ],
+   "step": "owner"
+  },
+  {
+   "id": "s820",
+   "timestamp": "2026-10-14T19:48:30Z",
+   "server": "sayari",
+   "tool": "search_entities",
+   "params": {
+    "query": "\"Twigg Exploration\"",
+    "limit": 15,
+    "response_mode": "compact"
+   },
+   "question": "How many records does Sayari hold for Twigg?",
+   "purpose": "Entity resolution",
+   "result_summary": "9 records: three trade records with Maputo addresses, one with a US SAM UEI (J36EVFFLFJH1), a second trade record ('AND MINING, LDA'), two from the Mozambique Boletim da República and others with addresses stuck in the name field.",
+   "interpretation": "Heavy fragmentation. A user searching one record would miss rows held under the others.",
+   "scorecard": "worked",
+   "entity_ids": [
+    "ffPlxyHu42G892jPO7tpbA",
+    "wL21QEyuYMG1Gsp17Nx-1Q",
+    "KlxHzKnR1jHcjm4PRp-6eQ",
+    "CwgolVNduI83FRuDgMwK1w"
+   ],
+   "step": "plant"
+  },
+  {
+   "id": "s821",
+   "timestamp": "2026-10-14T19:48:35Z",
+   "server": "sayari",
+   "tool": "get_entity_profile",
+   "params": {
+    "entity_id": "CwgolVNduI83FRuDgMwK1w",
+    "relationships_limit": 30
+   },
+   "question": "Does Twigg's Mozambique gazette record list shareholders?",
+   "purpose": "Ownership of the mine",
+   "result_summary": "Source: Mozambique Boletim da República. Name, country, type LTD. No relationships.",
+   "interpretation": "A registry record exists but carries no owners.",
+   "scorecard": "partial",
+   "entity_ids": [
+    "CwgolVNduI83FRuDgMwK1w"
+   ],
+   "step": "owner"
+  },
+  {
+   "id": "s822",
+   "timestamp": "2026-10-14T19:48:38Z",
+   "server": "sayari",
+   "tool": "get_entity_profile",
+   "params": {
+    "entity_id": "pINZVxJgOaXpyrNkPgaeBQ",
+    "relationships_limit": 30
+   },
+   "question": "Does the second gazette record list shareholders?",
+   "purpose": "Ownership of the mine",
+   "result_summary": "Source: Mozambique Boletim da República. No relationships.",
+   "interpretation": "Same gap.",
+   "scorecard": "failed",
+   "entity_ids": [],
+   "step": "owner"
+  },
+  {
+   "id": "s823",
+   "timestamp": "2026-10-14T19:48:45Z",
+   "server": "sayari",
+   "tool": "get_entity_profile",
+   "params": {
+    "entity_id": "uZISesDqcaxQ8aVgsyvurw",
+    "relationships_limit": 30
+   },
+   "question": "Who is Syrah Global DMCC, the Dubai seller to BTR Indonesia in Case 1?",
+   "purpose": "Check the Case 1 trader",
+   "result_summary": "SYRAH GLOBAL DMCC, Office 1004, Indigo Icon Tower, Cluster F, Jumeirah Lake Towers, Dubai. No owners listed. Ships to 24 partners (336 rows sent). Receives from Lindi Jumbo (Tanzania), ERG Madagascar and Wogen Pacific.",
+   "interpretation": "Sayari gives no owner, but the address matches the Dubai office in Syrah's annual report (t803). It also buys graphite from other African miners, so not everything it sells need be from Balama.",
+   "scorecard": "partial",
+   "entity_ids": [
+    "uZISesDqcaxQ8aVgsyvurw"
+   ],
+   "step": "owner"
+  },
+  {
+   "id": "t801",
+   "timestamp": "2026-10-14T19:49:00Z",
+   "server": "tavily",
+   "tool": "tavily_search",
+   "params": {
+    "query": "Syrah Resources Vidalia active anode material 2026 production update",
+    "max_results": 6,
+    "start_date": "2025-06-01"
+   },
+   "question": "What is the status of the Vidalia plant in 2025–2026?",
+   "purpose": "Context: plant status",
+   "result_summary": "A LinkedIn summary of Syrah's June 2026 quarterly says Vidalia produced 150 t for customer qualification. Kalkine gives capacity of 11,250 tpa. Manufacturing Digital (29 Jun 2026) says Tesla withdrew its termination notice once Vidalia began delivering conforming material. DFC announced a plan to take a strategic equity interest in Syrah (dfc.gov). The Kleinman Center (UPenn) notes the USITC's March 2026 negative vote on Chinese anode duties.",
+   "interpretation": "Vidalia is operating at qualification scale, not commercial volume. Small output fits the absence of US sales in trade data.",
+   "scorecard": "worked",
+   "entity_ids": [
+    "NvC-a4BgmoxO63ubVyUiUQ",
+    "ex1GaqYc9OHlM2KgDrK-5w"
+   ],
+   "step": "context"
+  },
+  {
+   "id": "t802",
+   "timestamp": "2026-10-14T19:49:05Z",
+   "server": "tavily",
+   "tool": "tavily_search",
+   "params": {
+    "query": "Syrah Tesla offtake agreement Vidalia default notice qualification 2025",
+    "max_results": 6,
+    "start_date": "2025-01-01"
+   },
+   "question": "What is the status of Tesla's offtake from Vidalia?",
+   "purpose": "Context: the US buyer",
+   "result_summary": "Syrah's 2025 annual report: Tesla served a default notice in July 2025 over non-conforming AAM samples; cure date extended to 1 June 2026. Reuters (31 May 2026), electrive (1 Jun 2026) and Yahoo Finance: Tesla withdrew its termination notice after accepting conforming samples, but kept the right to terminate if final qualification fails. The 2021 deal covers 8,000 t over four years. ION Analytics cites the 23 Dec 2021 stock-exchange announcement of the deal, a separate Lucid offtake (7 ktpa, Feb 2025) and a DOE loan under forbearance tied to the Tesla deal.",
+   "interpretation": "The Tesla link is a contract, not yet a flow of goods. It survives but depends on final qualification.",
+   "scorecard": "worked",
+   "entity_ids": [
+    "xWhz7CFJV3lxsgg8fHMGHA",
+    "NvC-a4BgmoxO63ubVyUiUQ"
+   ],
+   "step": "context"
+  },
+  {
+   "id": "s824",
+   "timestamp": "2026-10-14T19:49:20Z",
+   "server": "sayari",
+   "tool": "search_trade_facets",
+   "params": {
+    "scope": "shipments",
+    "query": "\"TWIGG EXPLORATION\"",
+    "departure_country": "MOZ",
+    "bucket_limit": 15
+   },
+   "question": "Where does the Balama mine's graphite go, by country?",
+   "purpose": "Mine's export mix",
+   "result_summary": "190 rows, 5 Feb 2022 – 1 Mar 2026. Arrival: China 89, Belgium 37, Slovenia 31, Netherlands 9, USA 7, Korea 4, UK 3, Indonesia 3, Poland 3, Russia 2, Spain 1, India 1. Top buyers: Dominik Georg Luh Technografit 29, Qingdao Nanshu 25, Qingdao Luowei 25, Grafitbergbau Kaisersberg 19, Qingdao Heshengkai 15, ASK Resources 15, CS Additive 10, Vesuvius Belgium 7, Syrah Technologies 6, AW-Lin 5. HS: 2504.10 162, 3801.10 17.",
+   "interpretation": "China is the biggest single destination (47% of rows). The US plant is a small share of the mine's visible exports.",
+   "scorecard": "worked",
+   "entity_ids": [
+    "ffPlxyHu42G892jPO7tpbA",
+    "MzUxHPmuO6dwS8pO1hCNUQ",
+    "Q1iA8Rfci2znN6C_9bhKZQ",
+    "NvC-a4BgmoxO63ubVyUiUQ"
+   ],
+   "step": "out"
+  },
+  {
+   "id": "s825",
+   "timestamp": "2026-10-14T19:49:30Z",
+   "server": "sayari",
+   "tool": "search_shipments",
+   "params": {
+    "query": "\"TWIGG EXPLORATION\"",
+    "departure_country": "MOZ",
+    "arrival_country": "RUS",
+    "response_mode": "compact"
+   },
+   "question": "Why does Twigg carry a 'sanctioned_adjacent' flag?",
+   "purpose": "Explain a flag",
+   "result_summary": "2 rows: natural graphite to PJSC Kombinat Magnezit (a refractory maker now on a sanctions list in Sayari), 16 Feb 2022, and crucible-grade graphite for refractories to Luzhsky Abrasive Plant, 5 Feb 2022.",
+   "interpretation": "The flag comes from two refractory sales in early February 2022, before Russia's full invasion of Ukraine. Context, not a finding.",
+   "scorecard": "worked",
+   "entity_ids": [
+    "GVihyKDTwtnC-IaJstpPCw",
+    "4dfmhQ3NPjXLdVT7-GSJDQ"
+   ],
+   "step": "context"
+  },
+  {
+   "id": "t803",
+   "timestamp": "2026-10-14T19:49:45Z",
+   "server": "tavily",
+   "tool": "tavily_extract",
+   "params": {
+    "urls": [
+     "https://www.datocms-assets.com/65260/1774572803-syr_2025_annual_report.pdf"
+    ],
+    "query": "Twigg Exploration and Mining Limitada subsidiary ownership interest Syrah Technologies LLC",
+    "format": "text"
+   },
+   "question": "What does Syrah's own annual report say about ownership of the mine, the plant and the Dubai trader?",
+   "purpose": "Ownership from the company's filing",
+   "result_summary": "Syrah Resources Annual Report 2025, Note 20 and the entity list: Twigg Exploration and Mining Limitada, Mozambique, 95% (2025 and 2024); Syrah Technologies LLC, USA, 100%; Syrah Global DMCC, UAE, 100%; Syrah Resources and Trading DMCC, UAE, 100%; Syrah Plus LLC, USA, 100%. Office list: Syrah Global DMCC at Office 1004, Indigo Icon Tower, JLT, Dubai; Twigg at Millennium Park Building, Av. Vladimir Lenine 174, Block B, Maputo; Syrah Technologies at 2001 D.A. Biglane Road, Vidalia.",
+   "interpretation": "The company's own filing fills the registry gap. Every address matches a Sayari record, so the two sources cross-check each other.",
+   "scorecard": "worked",
+   "entity_ids": [
+    "ex1GaqYc9OHlM2KgDrK-5w",
+    "ffPlxyHu42G892jPO7tpbA",
+    "NvC-a4BgmoxO63ubVyUiUQ",
+    "uZISesDqcaxQ8aVgsyvurw"
+   ],
+   "step": "owner"
+  },
+  {
+   "id": "s826",
+   "timestamp": "2026-10-14T19:50:00Z",
+   "server": "sayari",
+   "tool": "search_shipments",
+   "params": {
+    "query": "\"SYRAH GLOBAL\"",
+    "arrival_country": "IDN",
+    "response_mode": "compact",
+    "limit": 50
+   },
+   "question": "Does Syrah's Dubai arm sell to BTR Indonesia?",
+   "purpose": "Same group, Chinese-owned buyer",
+   "result_summary": "4 rows of 'natural crystalline flake graphite' (HS 2504.10) from Syrah Global DMCC (declared departure UAE) to PT Indonesia BTR New Energy Material, 23 Jan – 13 Apr 2026.",
+   "interpretation": "Syrah's own marketing arm was still selling flake to BTR's Indonesian anode plant in 2026. The rows do not say which mine the flake came from.",
+   "scorecard": "worked",
+   "entity_ids": [
+    "uZISesDqcaxQ8aVgsyvurw",
+    "2omCekb1pDRKjhFOAqCNSw"
+   ],
+   "step": "out"
+  }
+ ]
+}

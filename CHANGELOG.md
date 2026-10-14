@@ -1,5 +1,15 @@
 # Changelog
 
+## Iteration 1.2 · 14 Oct 2026 (before class, second review)
+- Three more cases:
+  - EVE Energy Malaysia, rerouting at the cell level
+  - Gotion's plants inside the US
+  - Syrah Mozambique → Louisiana, a non-Chinese benchmark
+- Graph redesign: duplicate records merged, colour by role, hover focus with tooltips, line width by shipment count, zoom controls, a details drawer.
+- Every case opens with the question, the answer and why it matters.
+- Relevant individuals are named with their roles; nominee directors are not.
+- Removed the feedback box from the home page.
+
 ## Iteration 1.1 · 14 Oct 2026 (before class, after India's first review)
 - Expanded from one plant to five cases: BTR Indonesia, BTR Morocco, Zhongke Oman, a Korean contrast case, and Putailai Malaysia (picked by corridor scan).
 - New plain-language home page:

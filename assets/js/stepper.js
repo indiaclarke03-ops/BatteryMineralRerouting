@@ -39,8 +39,9 @@
       return `<a class="case-card p-${PT.esc(c.pattern)}" href="cases.html#${PT.esc(c.id)}">
         <div class="cc-top"><span>Case ${i + 1} · ${PT.esc(PT.country(c.country))}</span><span>${PT.esc(c.plant_status || "")}</span></div>
         <h3>${PT.esc(c.title)}</h3>
+        <p class="cc-q">${PT.esc(c.question)}</p>
+        <p>${PT.pill(c.answer_label)} ${PT.esc(short(c.answer || c.headline))}</p>
         <span class="pattern ${PT.esc(c.pattern)}">${PT.esc(PT.PATTERN[c.pattern] || c.pattern)}</span>
-        <p>${PT.esc(short(c.headline))}</p>
         ${k ? `<div class="cc-num"><strong>${PT.esc(k.value)}</strong><span>${PT.esc(k.label)}</span></div>` : ""}
         <span class="cc-go">Open case file →</span>
       </a>`;
@@ -68,6 +69,7 @@
     const tabs = document.getElementById("case-tabs");
     tabs.innerHTML = cases.map((c, i) => `<button type="button" role="tab" data-case="${c.id}" aria-selected="${i === 0}">${i + 1}. ${PT.esc(c.title)}</button>`).join("");
     const graph = PT.Graph(document.getElementById("trace-graph"), d, { caseId: cases[0].id });
+    PT.graphChrome(document.getElementById("trace-graph").parentElement, graph);
     const body = document.getElementById("step-body");
     const dots = document.getElementById("step-dots");
     const prev = document.getElementById("step-prev");
@@ -92,7 +94,9 @@
     function showAll() {
       cur = -1;
       body.innerHTML = `<span class="kicker">Case overview</span><h3>${PT.esc(c.title)}</h3>
-        <p>${PT.esc(c.summary_for_non_experts || c.headline)}</p>
+        <p><strong>Question:</strong> ${PT.esc(c.question)}</p>
+        <p>${PT.pill(c.answer_label)} ${PT.esc(c.answer || c.headline)}</p>
+        <p style="font-size:1rem;color:var(--ink-2)"><strong>Why it matters:</strong> ${PT.esc(c.why_it_matters || "")}</p>
         <p class="muted" style="font-size:var(--fs-1)">${c.steps.length} steps. Press <strong>Next</strong> or <span class="kbd">→</span> to start.</p>`;
       dots.querySelectorAll("button").forEach((b) => b.removeAttribute("aria-current"));
       prev.disabled = true; next.disabled = false;

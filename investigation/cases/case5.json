@@ -6,7 +6,7 @@
   "subtitle": "Zichen Malaysia Sdn. Bhd. · Gurun, Kedah, Malaysia",
   "country": "MYS",
   "plant_status": "under construction",
-  "question": "Could corridor scans of US graphite imports from Vietnam, Malaysia, Thailand, Mexico and Korea find a Chinese-owned anode plant shipping to the US?",
+  "question": "Scanning five export corridors, can Sayari find a Chinese-owned anode maker shipping to the US from a third country?",
   "headline": "Not yet. In five corridors we found no Chinese-owned anode maker shipping artificial graphite to the US. The rows were electrode makers, machined graphite parts, forwarders and mislabelled chemicals. The one Chinese-owned anode plant in these countries, Putailai's Zichen Malaysia, is clear in the registry: 100% owned through Singapore by Shanghai Putailai. But it is still being built and has no trade.",
   "summary_for_non_experts": "We scanned US import records of artificial graphite from five countries where Chinese anode makers might set up. None showed a Chinese-owned anode producer selling to US battery plants. The only Chinese-owned anode plant in those countries is Putailai's 50,000-tonne plant in Kedah, Malaysia, which broke ground in June 2026. Unlike Case 1, the registry shows exactly who owns it, so if it ever ships to the US, the ownership question that decides US tax credits will already be answered.",
   "key_numbers": [
@@ -341,7 +341,10 @@
    "Facet scans count suppliers, not tonnes. A corridor with few suppliers can still carry large volumes.",
    "Sayari's Malaysian ownership data comes from a third-party shareholder source; stake percentages above the Singapore level were not returned.",
    "Name matches between directors and parent shareholders are leads only."
-  ]
+  ],
+  "answer_label": "Not yet",
+  "answer": "No. The rows from Vietnam, Malaysia, Thailand, Mexico and Korea were electrode makers, machined parts, forwarders or mislabelled chemicals. The one Chinese-owned anode plant found, Putailai's Zichen Malaysia, is 100% Chinese-owned on paper but still under construction.",
+  "why_it_matters": "This sets a baseline: as of Oct 2026, the big third-country Chinese anode plants aren't yet shipping to the US. It also shows that country-level trade totals can mislead, so buyers need plant-level checks."
  },
  "entities": [
   {
@@ -437,55 +440,58 @@
   },
   {
    "id": "LwA4a_LwLoGPjHr6RDiArg",
-   "name": "Director A of Zichen Malaysia (name withheld)",
+   "name": "Han Zhongwei",
    "country": "CHN",
    "type": "person",
-   "role": "parent",
+   "role": "officer",
    "risk_flags": [],
    "identifiers": {},
-   "summary": "Director of Zichen Malaysia. The record lists China, Singapore and Malaysia.",
+   "summary": "Director of Zichen Malaysia; Shanghai (Pudong) address.",
    "source_call_ids": [
-    "s526"
+    "s526",
+    "s529"
    ],
    "sayari_url": "https://graph.sayari.com/resource/entity/LwA4a_LwLoGPjHr6RDiArg"
   },
   {
    "id": "M5aejkK4bjb5FsPDBPoVIA",
-   "name": "Putailai shareholder A (name withheld)",
+   "name": "韩钟伟 (Han Zhongwei)",
    "country": "CHN",
    "type": "person",
-   "role": "parent",
+   "role": "officer",
    "risk_flags": [],
    "identifiers": {},
-   "summary": "Listed by Sayari among the shareholders of the Putailai group in China.",
+   "summary": "Listed by Sayari among Putailai group shareholders (stock-exchange data). Same name as the Zichen Malaysia director.",
    "source_call_ids": [
-    "s527"
+    "s527",
+    "s530"
    ],
    "sayari_url": "https://graph.sayari.com/resource/entity/M5aejkK4bjb5FsPDBPoVIA"
   },
   {
    "id": "eKMO9SjyO_k4HmOLY8o_7A",
-   "name": "Director B of Zichen Malaysia (name withheld)",
+   "name": "Liu Fang",
    "country": "CHN",
    "type": "person",
-   "role": "parent",
+   "role": "officer",
    "risk_flags": [],
    "identifiers": {},
-   "summary": "Director of Zichen Malaysia. The record lists China and Malaysia.",
+   "summary": "Director of Zichen Malaysia; Shanghai (Pudong) address.",
    "source_call_ids": [
-    "s526"
+    "s526",
+    "s531"
    ],
    "sayari_url": "https://graph.sayari.com/resource/entity/eKMO9SjyO_k4HmOLY8o_7A"
   },
   {
    "id": "So9o4udTCQcP19p-UGkyig",
-   "name": "Putailai shareholder B (name withheld)",
+   "name": "刘芳 (Liu Fang)",
    "country": "CHN",
    "type": "person",
-   "role": "parent",
+   "role": "officer",
    "risk_flags": [],
    "identifiers": {},
-   "summary": "Listed by Sayari among the shareholders of the Putailai group in China. A common name, so the match to the Malaysian director is weak.",
+   "summary": "Listed by Sayari among Putailai group shareholders. A very common name, so the match to the Malaysian director is weak.",
    "source_call_ids": [
     "s527"
    ],
@@ -824,7 +830,7 @@
    "first_seen": null,
    "last_seen": null,
    "shipment_count": null,
-   "evidence": "Malaysian director 'director A' vs. Putailai group shareholder shareholder A.",
+   "evidence": "Malaysian director 'Han Zhongwei' vs. Putailai group shareholder 韩钟伟.",
    "source_call_ids": [
     "s526",
     "s527"
@@ -842,12 +848,12 @@
    "first_seen": null,
    "last_seen": null,
    "shipment_count": null,
-   "evidence": "Malaysian director 'director B' vs. Putailai group shareholder shareholder B.",
+   "evidence": "Malaysian director 'Liu Fang' vs. Putailai group shareholder 刘芳.",
    "source_call_ids": [
     "s526",
     "s527"
    ],
-   "confidence_reason": "Name match only, and director B is a common name."
+   "confidence_reason": "Name match only, and Liu Fang is a common name."
   },
   {
    "id": "e510",
@@ -1507,7 +1513,7 @@
    },
    "question": "Who owns and runs Zichen Malaysia, and does it trade?",
    "purpose": "Plant registry profile",
-   "result_summary": "Registered 23 Sep 2025, Sdn Bhd, office at Menara BHL, George Town, Penang. Purpose: production and sale of advanced battery materials and carbon-based products; import/export. Shareholder: Putailai (Singapore) Pte. Ltd., 100%. Directors: director B, director A, Ho Pui Hold. Trade count: 0 sent, 0 received.",
+   "result_summary": "Registered 23 Sep 2025, Sdn Bhd, office at Menara BHL, George Town, Penang. Purpose: production and sale of advanced battery materials and carbon-based products; import/export. Shareholder: Putailai (Singapore) Pte. Ltd., 100%. Directors: Liu Fang, Han Zhongwei, Ho Pui Hold. Trade count: 0 sent, 0 received.",
    "interpretation": "Ownership is in the registry. There is no trade yet.",
    "scorecard": "worked",
    "entity_ids": [
@@ -1529,7 +1535,7 @@
    },
    "question": "Does the chain reach the Chinese parent?",
    "purpose": "Trace ownership upstream",
-   "result_summary": "50 owner paths returned (output saved and parsed with Python). Path: Zichen Malaysia ← Putailai (Singapore) ← 上海璞泰来新能源科技集团股份有限公司 ← Chinese individuals (including shareholder A and shareholder B), funds, banks and the national social security fund.",
+   "result_summary": "50 owner paths returned (output saved and parsed with Python). Path: Zichen Malaysia ← Putailai (Singapore) ← 上海璞泰来新能源科技集团股份有限公司 ← Chinese individuals (including 韩钟伟 and 刘芳), funds, banks and the national social security fund.",
    "interpretation": "Registry-backed chain from the plant to the Chinese listed parent. Percentages above the Singapore level are not shown.",
    "scorecard": "worked",
    "entity_ids": [
@@ -1581,6 +1587,60 @@
     "5rQqO0uMqEvtMvK_oQGcYA"
    ],
    "step": "plant"
+  },
+  {
+   "id": "s529",
+   "timestamp": "2026-10-14T19:43:40Z",
+   "server": "sayari",
+   "tool": "get_entity_summary",
+   "params": {
+    "entity_id": "LwA4a_LwLoGPjHr6RDiArg"
+   },
+   "question": "Who is the first director of Zichen Malaysia?",
+   "purpose": "Officers linking the plant to its parent",
+   "result_summary": "Han Zhongwei, with addresses in Pudong, Shanghai (the second is a Zhangjiang industrial address). Sources: Malaysian and Singapore shareholder profiles.",
+   "interpretation": "The director is Shanghai-based. Putailai is a Shanghai company.",
+   "scorecard": "worked",
+   "entity_ids": [
+    "LwA4a_LwLoGPjHr6RDiArg"
+   ],
+   "step": "owner"
+  },
+  {
+   "id": "s530",
+   "timestamp": "2026-10-14T19:43:50Z",
+   "server": "sayari",
+   "tool": "get_entity_summary",
+   "params": {
+    "entity_id": "M5aejkK4bjb5FsPDBPoVIA"
+   },
+   "question": "Who is the Putailai-group shareholder with the same name?",
+   "purpose": "Officers linking the plant to its parent",
+   "result_summary": "韩钟伟 (Han Zhongwei). Sources: China CNinfo stock-exchange data, China SAIC and company directories. No address.",
+   "interpretation": "Same name, and the stock-exchange source fits a listed-company shareholder, but there's no shared identifier, so it stays a lead.",
+   "scorecard": "worked",
+   "entity_ids": [
+    "M5aejkK4bjb5FsPDBPoVIA"
+   ],
+   "step": "owner"
+  },
+  {
+   "id": "s531",
+   "timestamp": "2026-10-14T19:44:00Z",
+   "server": "sayari",
+   "tool": "get_entity_summary",
+   "params": {
+    "entity_id": "eKMO9SjyO_k4HmOLY8o_7A"
+   },
+   "question": "Who is the second director of Zichen Malaysia?",
+   "purpose": "Officers linking the plant to its parent",
+   "result_summary": "Liu Fang, with an address in Pudong, Shanghai. Source: Malaysian shareholder profiles.",
+   "interpretation": "A second Shanghai-based director. It is a very common name, so the match to the Putailai shareholder stays weak.",
+   "scorecard": "worked",
+   "entity_ids": [
+    "eKMO9SjyO_k4HmOLY8o_7A"
+   ],
+   "step": "owner"
   }
  ]
 }

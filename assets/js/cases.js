@@ -45,10 +45,12 @@
           <span class="muted" style="font-size:var(--fs-0)">${nEdges} links · ${nCalls} logged calls · plant ${PT.esc(c.plant_status || "")}</span>
           <a href="index.html?case=${PT.esc(c.id)}#trace" class="btn" style="margin-left:auto">Walk through it →</a>
         </div>
-        <p class="headline">${PT.esc(c.headline)}</p>
-        ${c.summary_for_non_experts ? `<p style="max-width:52rem">${PT.esc(c.summary_for_non_experts)}</p>` : ""}
+        ${PT.qaHTML(c)}
+        <details style="margin-bottom:var(--s-3)"><summary>The full answer in plain English</summary>
+          <p style="max-width:52rem;margin-top:var(--s-2)">${PT.esc(c.summary_for_non_experts || "")}</p>
+          <p style="max-width:52rem" class="muted">${PT.esc(c.headline)}</p>
+        </details>
         <div class="keynums">${(c.key_numbers || []).map((k) => `<div class="keynum"><strong>${PT.esc(k.value)}</strong><span>${PT.esc(k.label)}</span> ${PT.receipts(k.call_ids)}</div>`).join("")}</div>
-        <p><strong>Question.</strong> ${PT.esc(c.question)}</p>
 
         <div class="graph-frame" style="margin:var(--s-4) 0">
           <div class="graph mini-graph" id="g-${PT.esc(c.id)}" role="img" aria-label="Network for ${PT.esc(c.title)}; the same links are listed in each step below."></div>
@@ -88,10 +90,10 @@
       entries.forEach((en) => {
         if (!en.isIntersecting || en.target.dataset.done) return;
         en.target.dataset.done = "1";
-        PT.Graph(en.target, d, { caseId: en.target.id.slice(2) });
+        PT.graphChrome(en.target.parentElement, PT.Graph(en.target, d, { caseId: en.target.id.slice(2) }));
       });
     }, { rootMargin: "200px" }) : null;
-    document.querySelectorAll(".mini-graph").forEach((el) => { if (io) io.observe(el); else PT.Graph(el, d, { caseId: el.id.slice(2) }); });
+    document.querySelectorAll(".mini-graph").forEach((el) => { if (io) io.observe(el); else PT.graphChrome(el.parentElement, PT.Graph(el, d, { caseId: el.id.slice(2) })); });
 
     if (location.hash) { const el = document.getElementById(location.hash.slice(1)); if (el) el.scrollIntoView(); }
   }

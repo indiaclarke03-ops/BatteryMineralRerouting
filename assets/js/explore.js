@@ -2,13 +2,14 @@
 (function (PT) {
   const RISKY = /forced_labor|sheffield|uflpa|sanction|export_control|bis_entity/;
 
-  function nodePanel(d, e) {
+  function nodePanel(d, e, members) {
     const edges = d.edges.items.filter((x) => x.source === e.id || x.target === e.id);
     const ids = Object.entries(e.identifiers || {}).map(([k, v]) => `<dt>${PT.esc(k.toUpperCase())}</dt><dd class="id">${PT.esc(v)}</dd>`).join("");
     return `
       <span class="eyebrow">${PT.esc(PT.ROLE[e.role] || e.role)}</span>
       <h3>${PT.esc(e.name)}</h3>
       <p>${PT.esc(e.summary)}</p>
+      ${members && members.length > 1 ? `<div class="callout" style="margin-bottom:var(--s-3)"><strong>${members.length} Sayari records merged here</strong> (judged to be the same company):<ul style="margin:4px 0 0">${members.map((m) => `<li><a href="${PT.esc((d.entityById.get(m) || {}).sayari_url || "#")}" rel="noopener">${PT.esc(d.entityById.get(m).name)}</a></li>`).join("")}</ul></div>` : ""}
       ${e.case_summaries ? Object.entries(e.case_summaries).map(([cid, t]) => `<p class="muted" style="font-size:var(--fs-1)"><strong>${PT.esc((PT._data.caseById.get(cid) || {}).title || cid)}:</strong> ${PT.esc(t)}</p>`).join("") : ""}
       <p style="font-size:var(--fs-1)">Appears in: ${(e.case_ids || []).map((cid) => `<a href="cases.html#${cid}">${PT.esc((PT._data.caseById.get(cid) || {}).title || cid)}</a>`).join(" · ")}</p>
       <dl>
@@ -22,7 +23,12 @@
       <ul>${edges.map((x) => `<li><a href="#edge-${x.id}" data-edge="${x.id}">${PT.esc(PT.edgeSentence(x, d))}</a></li>`).join("")}</ul>`;
   }
 
-  function edgePanel(d, e) {
+  function edgePanel(d, e, ids) {
+    if (ids && ids.length > 1) {
+      return `<span class="eyebrow">${ids.length} links combined</span><h3>${PT.esc(PT.edgeSentence(e, d))}</h3>
+        <p class="muted" style="font-size:var(--fs-1)">These come from different records of the same companies.</p>` +
+        PT.edgeListHTML(d, ids.map((i) => d.edgeById.get(i)));
+    }
     return `
       <span class="eyebrow">Link ${PT.esc(e.id)}</span>
       <h3>${PT.esc(PT.edgeSentence(e, d))}</h3>
@@ -41,24 +47,31 @@
     const panel = document.getElementById("panel");
     let d;
     try { d = await PT.load(); } catch (e) { PT.fail(panel, e); return; }
+    const qc0 = new URLSearchParams(location.search).get("case");
+    const startCase = qc0 && d.caseById.has(qc0) ? qc0 : d.cases.items[0].id;
 
     const countries = [...new Set(d.entities.items.map((e) => e.country))].sort((a, b) => PT.country(a).localeCompare(PT.country(b)));
     const csel = document.getElementById("f-case");
     csel.insertAdjacentHTML("beforeend", d.cases.items.map((c, i) => `<option value="${c.id}">${i + 1}. ${PT.esc(c.title)}</option>`).join(""));
+    csel.value = startCase;
+    csel.addEventListener("change", () => { if (graph) graph.setCase(csel.value || undefined); });
     const sel = document.getElementById("f-country");
     sel.insertAdjacentHTML("beforeend", countries.map((c) => `<option value="${c}">${PT.esc(PT.country(c))}</option>`).join(""));
 
     const graph = PT.Graph(document.getElementById("graph"), d, {
+      caseId: startCase,
       onSelect(s) {
-        if (!s) { panel.innerHTML = `<h3>Select something</h3><p class="muted">Click a company or a link in the graph.</p>`; return; }
-        panel.innerHTML = s.kind === "node" ? nodePanel(d, d.entityById.get(s.id)) : edgePanel(d, d.edgeById.get(s.id));
+        if (!s) { panel.hidden = true; return; }
+        panel.hidden = false;
+        panel.innerHTML = `<button type="button" class="drawer-close" aria-label="Close details">×</button>` + s.kind === "node" ? nodePanel(d, d.entityById.get(s.id), s.members) : edgePanel(d, d.edgeById.get(s.id), s.ids);
       },
     });
-    if (graph) document.querySelector("#graph").insertAdjacentHTML("afterend", PT.graphLegendHTML());
+    PT.graphChrome(document.querySelector("#graph").parentElement, graph, { toggles: true, onRebuild: () => apply() });
 
     panel.addEventListener("click", (ev) => {
+      if (ev.target.closest(".drawer-close")) { panel.hidden = true; return; }
       const a = ev.target.closest("[data-edge]");
-      if (a && graph) { ev.preventDefault(); graph.select(a.dataset.edge); panel.innerHTML = edgePanel(d, d.edgeById.get(a.dataset.edge)); }
+      if (a && graph) { ev.preventDefault(); graph.select(a.dataset.edge); panel.innerHTML = `<button type="button" class="drawer-close" aria-label="Close details">×</button>` + edgePanel(d, d.edgeById.get(a.dataset.edge)); }
     });
 
     const form = document.getElementById("filters");
@@ -85,17 +98,13 @@
     }
     form.addEventListener("change", apply);
     form.addEventListener("reset", () => setTimeout(() => { apply(); if (graph) graph.fit(); }, 0));
-    document.getElementById("g-fit").addEventListener("click", () => graph && graph.fit());
-    document.getElementById("g-layout").addEventListener("click", () => graph && graph.relayout());
     apply();
 
-    const qc = new URLSearchParams(location.search).get("case");
-    if (qc && d.caseById.has(qc)) { csel.value = qc; apply(); }
     // Deep link: explore.html#<entity or edge id>
     const h = decodeURIComponent(location.hash.slice(1));
     if (h && graph) {
-      if (d.entityById.has(h)) { graph.select(h); panel.innerHTML = nodePanel(d, d.entityById.get(h)); }
-      else if (d.edgeById.has(h)) { graph.select(h); panel.innerHTML = edgePanel(d, d.edgeById.get(h)); }
+      if (d.entityById.has(h)) { graph.select(h); panel.hidden = false; panel.innerHTML = nodePanel(d, d.entityById.get(h)); }
+      else if (d.edgeById.has(h)) { graph.select(h); panel.hidden = false; panel.innerHTML = edgePanel(d, d.edgeById.get(h)); }
     }
   }
   document.addEventListener("DOMContentLoaded", init);

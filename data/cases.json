@@ -6,7 +6,7 @@
       "id": "case-1",
       "title": "BTR's Indonesian anode plant",
       "subtitle": "PT Indonesia BTR New Energy Material · Morowali and Kendal, Indonesia",
-      "question": "Could Sayari detect Chinese graphite anode material reaching US battery plants through BTR's plant in Indonesia?",
+      "question": "Can Sayari show Chinese graphite being processed in BTR's Indonesian plant and shipped on to US battery makers, and who owns the plant?",
       "overall_confidence": "corroborated",
       "headline": "Yes for the trade, no for the ownership. Sayari shows dated HS 3801.10 shipments from the Indonesian plant to five US battery and auto makers, and Chinese artificial graphite flowing into the same plant. It does not show who owns the plant. That link comes only from open sources.",
       "steps": [
@@ -296,6 +296,9 @@
         "Trade data has gaps: Indonesian export coverage is partial and dates may lag."
       ],
       "slug": "btr-indonesia",
+      "answer_label": "Partly",
+      "answer": "The trade, yes: Chinese artificial graphite goes in, and graphite goes out to Ultium Cells, SK Battery America, StarPlus Energy, GM and Tesla. The ownership, no: Sayari has no registry record of BTR owning the plant, so that link rests on BTR's own statements.",
+      "why_it_matters": "This is the pattern US tax-credit rules target: a Chinese company's plant in a third country supplying US battery makers. A buyer that only checks the country of origin sees 'Indonesia'. Only the ownership check shows 'BTR', and that is the part Sayari couldn't confirm.",
       "country": "IDN",
       "plant_status": "operating",
       "pattern": "rerouting-pattern",
@@ -342,7 +345,7 @@
       "subtitle": "BTR Mediterranean New Material Technology · Tanger Tech City, Morocco",
       "country": "MAR",
       "plant_status": "under construction",
-      "question": "Could Sayari detect Chinese graphite anode material reaching the US through BTR's new plant in Morocco, or through the Morocco–US graphite corridor?",
+      "question": "Can Sayari show who owns BTR's new Moroccan anode plant, and whether it already ships graphite to the US?",
       "headline": "The reverse of Case 1: ownership is visible, trade is not. Sayari traces BTR's Moroccan subsidiary to BTR in China through a Singapore holding company, 100% at each step. The plant has no graphite trade yet, and the 3,088 'graphite' shipments from Morocco to the US are mostly mislabelled fertilizers and chemicals, plus a little European industrial graphite.",
       "summary_for_non_experts": "BTR, the world's biggest maker of graphite for battery anodes, is building a 60,000-tonne-a-year anode plant near Tangier through a local subsidiary. Morocco has a US free-trade agreement, so a plant there could one day supply US battery makers. Sayari's company records show that the plant belongs to BTR, via Singapore and a BTR subsidiary in Jiangsu. So far the plant has only imported building materials and machinery from China. None of the large Morocco-to-US 'graphite' trade is battery material.",
       "key_numbers": [
@@ -416,7 +419,7 @@
         {
           "title": "The owner: visible this time",
           "kicker": "Step 2 · Contractual",
-          "text": "Moroccan records name a Singapore holding company, BNUO International, as 100% owner. Singapore records show BNUO is 100% owned by BTR (Jiangsu), and Chinese records show BTR owns all of BTR (Jiangsu). One step is a 'possibly same as' link between two BNUO records, backed by a shared officer. BTR's own release confirms the subsidiary.",
+          "text": "Moroccan records name a Singapore holding company, BNUO International, as 100% owner. Singapore records show BNUO is 100% owned by BTR (Jiangsu), and Chinese records show BTR owns all of BTR (Jiangsu). One step is a 'possibly same as' link between two BNUO records, backed by a shared officer, Yang Shunyi. BTR's own release confirms the subsidiary. The same person, Yang Shunyi, is director of the Singapore holding company and manager of the Moroccan plant company, with an address in BTR's home district of Shenzhen.",
           "edge_ids": [
             "e201",
             "e202",
@@ -426,7 +429,11 @@
             "e206",
             "e207",
             "e208",
-            "e209"
+            "e209",
+            "e227",
+            "e228",
+            "e229",
+            "e230"
           ],
           "node_ids": [
             "b1W3iE__07Zz0BOvA-8s7g",
@@ -443,7 +450,9 @@
             "s207",
             "s208",
             "s209",
-            "t201"
+            "t201",
+            "s218",
+            "s219"
           ]
         },
         {
@@ -563,7 +572,7 @@
         ],
         "suggested": [
           {
-            "text": "One executive appears to run the Moroccan company, the Singapore holding company and BTR (Jiangsu). This is a name match across English and Chinese records.",
+            "text": "Yang Shunyi appears to run the Moroccan company, the Singapore holding company and BTR (Jiangsu). This is a name match across English and Chinese records.",
             "call_ids": [
               "s203",
               "s208",
@@ -651,7 +660,7 @@
           "signal": "contractual",
           "severity": "High",
           "result": "detected",
-          "note": "100% registry chain via Singapore; one 'possibly same as' step, backed by a shared officer."
+          "note": "100% registry chain via Singapore; one 'possibly same as' step, backed by a shared officer, Yang Shunyi."
         },
         {
           "flag": "Same HS imported from China and exported to the US",
@@ -679,7 +688,7 @@
           "signal": "inferred",
           "severity": "Medium",
           "result": "suggested",
-          "note": "One executive appears at the Moroccan, Singapore and Jiangsu companies; BNUO sits at a mass-registration address."
+          "note": "Yang Shunyi appears at the Moroccan, Singapore and Jiangsu companies; BNUO sits at a mass-registration address."
         },
         {
           "flag": "Entity-resolution fragmentation",
@@ -701,9 +710,12 @@
         "The fertilizer, chemical and graphite companies are named because they appear in the HS 3801.10 bucket. Most appear only because of an apparent coding error in one trade data source.",
         "We read about 90 of the 3,088 corridor rows (ranked results), not all of them. A small battery-grade flow could still be hidden in the rest.",
         "'Departure Morocco' probably often means transshipment through Tanger Med; the European graphite rows likely did not originate in Morocco.",
-        "Entity-resolution links are our judgment and could be wrong. The shared-executive match is across scripts (English and Chinese records).",
+        "Entity-resolution links are our judgment and could be wrong. The Yang Shunyi match is across records with reversed name order.",
         "Sayari free-text queries rank rows but do not filter them; counts after a quoted query are not counts of matches."
-      ]
+      ],
+      "answer_label": "Partly",
+      "answer": "Ownership: yes. Registry data shows BTR owning the Tangier company 100% through a Singapore holding company, and the same executive runs both. Shipments: not yet. The plant is still being built and has no graphite trade.",
+      "why_it_matters": "Morocco has a US free-trade agreement, and BTR's plant is meant to supply Western carmakers. Because ownership is already on record, US buyers can tell the plant is Chinese-owned before its first shipment, which is exactly what the tax-credit rules ask them to check."
     },
     {
       "id": "case-3",
@@ -712,7 +724,7 @@
       "subtitle": "Zhongke Electric / Zhongke Shinzoom · Sohar Freezone, Oman",
       "country": "OMN",
       "plant_status": "under construction",
-      "question": "Could Sayari detect Chinese anode material reaching US buyers through Zhongke Electric's new plant in Oman, before and after it starts producing?",
+      "question": "Can Sayari see Zhongke Electric's planned Oman anode plant, and how does Zhongke graphite reach the US today?",
       "headline": "Not yet: the trail hasn't started. Sayari has no record of the Sohar plant and no shipments into or out of it. The ownership chain is half visible. Sayari's Chinese registry shows Zhongke Electric owning the anode producer, and the company's own filing names the Hong Kong subsidiary that is building the plant. Today Zhongke graphite reaches the US mostly indirectly, through Malaysian cell plants, and only rarely direct from China.",
       "summary_for_non_experts": "Zhongke Electric is a Chinese company and one of China's top three anode makers. It is building a 200,000-tonne-a-year anode plant in Oman. Ground was broken on 8 May 2026, and first output is due in 2027. Because no anode leaves the plant yet, there is nothing to trace, but we mapped who owns it and how the company's anode material reaches the US now. Sayari shows China's registry chain and the Hong Kong company's existence. It does not show the Hong Kong-to-Oman link, which comes from the company's own stock-exchange filing.",
       "key_numbers": [
@@ -1049,7 +1061,10 @@
         "Malaysian cell exports can't be tied to Zhongke graphite at the lot level.",
         "Oman→US HS 3801.10 data is dominated by relayed Indian cargo and likely miscoding. Don't read the corridor as anode trade.",
         "The US anti-dumping case named Zhongke Shinzoom entities at 93.50%, but the USITC's negative vote (Mar 2026) means no order took effect."
-      ]
+      ],
+      "answer_label": "Not yet",
+      "answer": "The Oman plant isn't in Sayari yet. Ownership is visible inside China's registry and in the company's own filing. Today Zhongke graphite reaches the US mostly indirectly, as artificial graphite shipped to two Malaysian battery-cell plants.",
+      "why_it_matters": "At up to 200,000 t/yr, Sohar would be one of the largest anode plants outside China. Recording its ownership now gives buyers a baseline before any 'Made in Oman' anode material appears."
     },
     {
       "id": "case-4",
@@ -1058,7 +1073,7 @@
       "subtitle": "POSCO Future M Co., Ltd. · Sejong and Pohang, South Korea",
       "country": "KOR",
       "plant_status": "operating",
-      "question": "Could Sayari tell a non-Chinese-owned anode supplier that uses Chinese graphite apart from a Chinese-owned one?",
+      "question": "Can Sayari tell a Korean-owned anode maker that uses Chinese graphite apart from a Chinese-owned one?",
       "headline": "Yes on ownership, partly on inputs. Sayari's Korean registry data shows POSCO Holdings owns 58.2% of POSCO Future M, with no Chinese owner anywhere up the chain. It also shows Chinese natural graphite going in (to Dec 2023) and 95 anode shipments going out to GM, SK Battery America, Tesla, Panasonic and XALT (Dec 2021 – Jul 2026). It cannot show how much Chinese graphite ends up in any US-bound shipment, and its Chinese input trail stops in Dec 2023, while the company says it still uses Chinese spherical graphite.",
       "summary_for_non_experts": "POSCO Future M is the battery-materials arm of Korea's POSCO steel group. It is the largest anode maker outside China and sells to US battery and car plants. This is our contrast case: the owner is Korean, but the company has relied on China for spherical graphite, the rounded, purified graphite that natural-graphite anode is made from. Sayari shows the Korean owner clearly, unlike BTR's Indonesian plant in Case 1, and it shows Chinese graphite going in and anode going out to the US. What it cannot show is how much Chinese material is inside the anode that reaches the US.",
       "key_numbers": [
@@ -1382,7 +1397,10 @@
         "HS 3801 also covers non-battery graphite. POSCO's sister steel company imports Chinese 'recarburizer' under HS 3801.10, a steelmaking additive; we excluded it.",
         "Chinese input rows come from Chinese export data and stop in Dec 2023 for this buyer. Korea's own import records are not in our results, so later inputs may be missing.",
         "Several product rows are miscoded (e.g. anode material under textile or photo-film HS codes); we counted them only where the text says anode material."
-      ]
+      ],
+      "answer_label": "Yes",
+      "answer": "Yes on ownership: POSCO Holdings owns 58.2% of POSCO Future M, with no Chinese owner in the chain. Partly on inputs: Chinese graphite flowed in until Dec 2023. It ships to the same US buyers as BTR Indonesia.",
+      "why_it_matters": "The US rules treat a Chinese-owned supplier very differently from a non-Chinese supplier that buys some Chinese inputs. Trade records alone make the two look alike, and ownership data is what separates them."
     },
     {
       "id": "case-5",
@@ -1391,7 +1409,7 @@
       "subtitle": "Zichen Malaysia Sdn. Bhd. · Gurun, Kedah, Malaysia",
       "country": "MYS",
       "plant_status": "under construction",
-      "question": "Could corridor scans of US graphite imports from Vietnam, Malaysia, Thailand, Mexico and Korea find a Chinese-owned anode plant shipping to the US?",
+      "question": "Scanning five export corridors, can Sayari find a Chinese-owned anode maker shipping to the US from a third country?",
       "headline": "Not yet. In five corridors we found no Chinese-owned anode maker shipping artificial graphite to the US. The rows were electrode makers, machined graphite parts, forwarders and mislabelled chemicals. The one Chinese-owned anode plant in these countries, Putailai's Zichen Malaysia, is clear in the registry: 100% owned through Singapore by Shanghai Putailai. But it is still being built and has no trade.",
       "summary_for_non_experts": "We scanned US import records of artificial graphite from five countries where Chinese anode makers might set up. None showed a Chinese-owned anode producer selling to US battery plants. The only Chinese-owned anode plant in those countries is Putailai's 50,000-tonne plant in Kedah, Malaysia, which broke ground in June 2026. Unlike Case 1, the registry shows exactly who owns it, so if it ever ships to the US, the ownership question that decides US tax credits will already be answered.",
       "key_numbers": [
@@ -1726,6 +1744,1167 @@
         "Facet scans count suppliers, not tonnes. A corridor with few suppliers can still carry large volumes.",
         "Sayari's Malaysian ownership data comes from a third-party shareholder source; stake percentages above the Singapore level were not returned.",
         "Name matches between directors and parent shareholders are leads only."
+      ],
+      "answer_label": "Not yet",
+      "answer": "No. The rows from Vietnam, Malaysia, Thailand, Mexico and Korea were electrode makers, machined parts, forwarders or mislabelled chemicals. The one Chinese-owned anode plant found, Putailai's Zichen Malaysia, is 100% Chinese-owned on paper but still under construction.",
+      "why_it_matters": "This sets a baseline: as of Oct 2026, the big third-country Chinese anode plants aren't yet shipping to the US. It also shows that country-level trade totals can mislead, so buyers need plant-level checks."
+    },
+    {
+      "id": "case-6",
+      "slug": "eve-malaysia",
+      "title": "EVE's Malaysian cell plant",
+      "subtitle": "EVE Energy Malaysia Sdn Bhd · Kulim, Kedah, Malaysia",
+      "country": "MYS",
+      "plant_status": "operating",
+      "question": "Could Sayari show Chinese anode material going into a Chinese-owned battery cell plant in Malaysia, and finished cells coming out to US buyers?",
+      "answer_label": "Yes",
+      "answer": "Yes. Sayari shows 59 rows of anode graphite from Chinese anode makers going into EVE Energy Malaysia, an ownership chain from the plant to EVE Energy in Huizhou, and 27 rows of cells going to US buyers. What it can't show is which graphite ended up in which cells.",
+      "why_it_matters": "Rerouting at the cell level doesn't need anode material to cross a US border at all. The graphite stays in Malaysia and reaches the US inside a finished cell. For a US company using these cells, the tax-credit question is likely to centre on who made the cell, here a Chinese-owned company that was added to the US Section 1260H list on 8 June 2026, rather than on the graphite inside. We don't make a legal call.",
+      "headline": "Chinese anode material goes in and finished cells come out, and Sayari shows both, plus who owns the plant. EVE Energy Malaysia took 59 rows of anode graphite from seven named suppliers, among them Zhongke, BTR (including BTR's Indonesian plant), Shanshan and Qingdao Taidongrui. It shipped 27 rows of cells to the US for buyers including Briggs & Stratton, Milwaukee Tool, Stanley Black & Decker, TTI and EVE's own US arm. Its owner, EVE Energy, was added to the US 1260H list in June 2026.",
+      "summary_for_non_experts": "EVE Energy is a big Chinese battery maker. In February 2025 it opened its first factory outside China, in Kedah, Malaysia, making small cylindrical cells for power tools and garden equipment. Trade data shows the factory buying graphite anode material, cathode powders and machinery, mostly from China, and selling finished cells to US companies. Registry data links the factory to EVE through a Hong Kong holding company and two shared directors. A second Malaysian plant, Linergy Power, follows the same pattern under a group CATL co-owns.",
+      "key_numbers": [
+        {
+          "value": "59",
+          "label": "rows of anode graphite (HS 3801) into EVE Energy Malaysia from 7 named suppliers, Apr 2025–Apr 2026",
+          "call_ids": [
+            "s610"
+          ]
+        },
+        {
+          "value": "27",
+          "label": "rows of cells from the plant to the US, Oct 2025–Sep 2026 (20 with a named buyer)",
+          "call_ids": [
+            "s609"
+          ]
+        },
+        {
+          "value": "91%",
+          "label": "of the plant's 3,608 inbound rows left from China (3,285)",
+          "call_ids": [
+            "s611"
+          ]
+        },
+        {
+          "value": "100%",
+          "label": "EVE Energy's stake in EVE Asia (Hong Kong), the plant's shareholder",
+          "call_ids": [
+            "s606"
+          ]
+        },
+        {
+          "value": "8 Jun 2026",
+          "label": "EVE Energy added to the US Section 1260H list",
+          "call_ids": [
+            "t601"
+          ]
+        }
+      ],
+      "overall_confidence": "corroborated",
+      "pattern": "complete-trail",
+      "steps": [
+        {
+          "title": "The plant and its owner",
+          "kicker": "Step 1 · Contractual",
+          "text": "Malaysian company data names EVE Asia Co., Limited as the plant's only shareholder. Hong Kong registry data shows EVE Energy Co., Ltd. of Huizhou owning 100% of EVE Asia. Two people, Liu Jincheng and Chan Tsun Ming, sit on both boards, and one Malaysian director record gives EVE's own Huizhou street address. EVE's website calls the plant its 53rd factory.",
+          "edge_ids": [
+            "e601",
+            "e602",
+            "e603",
+            "e605",
+            "e606",
+            "e607",
+            "e608",
+            "e609",
+            "e610"
+          ],
+          "node_ids": [
+            "_WCNtC_iMCzef8u8s0uKyQ",
+            "PWXDv26t09Ou97YYpdEkjg",
+            "Q44xfE6o9nOXO5IvLfsxeg",
+            "3SmT6FoOENV0ruoiIfFr8g",
+            "fBtbugU95onwFEyZjMr0ZA",
+            "Kt36ERFryxs9jBFjnhCyaQ"
+          ],
+          "call_ids": [
+            "s601",
+            "s603",
+            "s604",
+            "s606",
+            "s607",
+            "t602"
+          ]
+        },
+        {
+          "title": "Chinese anode material goes in",
+          "kicker": "Step 2 · Transactional",
+          "text": "Between Apr 2025 and Apr 2026 the plant received 59 rows of graphite (HS 3801, artificial graphite and graphite preparations) described as 'negative electrode material', 'anode materials' or 'spheroidized graphite'. That is battery grade. Suppliers: Qingdao Taidongrui 19, Zhongke Shinzoom 18 plus 1 from its Guizhou unit, BTR's sales arm 11, BTR's Indonesian plant 5, Shanshan 4 and Hebei Kuntian 1. BTR also sent 4 rows coded as natural flake graphite (HS 2504). EVE's Hong Kong arm co-owns 24% of a BTR company in Changzhou.",
+          "edge_ids": [
+            "e604",
+            "e612",
+            "e613",
+            "e614",
+            "e615",
+            "e616",
+            "e617",
+            "e618",
+            "e619",
+            "e620"
+          ],
+          "node_ids": [
+            "3is9-drJvSE-XYuDK2vGTw",
+            "RpVysafWvaXbqy0N4a5qvw",
+            "5_cayB1m7XahAhz_Hrrpng",
+            "0pb5Arj9l_g5eJtqVBozsQ",
+            "Lz1tqelhtyNnBxvG140gqA",
+            "93jnn0D2673-eRKVnxig2A"
+          ],
+          "call_ids": [
+            "s606",
+            "s608",
+            "s610",
+            "s613"
+          ]
+        },
+        {
+          "title": "The rest of the cell comes from China too",
+          "kicker": "Step 3 · Transactional",
+          "text": "Of 3,608 inbound rows, 3,285 left from China. Besides graphite, the plant imports HS 2842.90 salts (the code commonly used for cathode powders) from Hunan Yuneng, Hunan Changyuan Lico and Easpring, plus aluminium foil, battery parts, chemicals and machinery. EVE Asia, the plant's own shareholder, is also one of its top ten suppliers.",
+          "edge_ids": [
+            "e621",
+            "e622",
+            "e623",
+            "e624"
+          ],
+          "node_ids": [
+            "7went_fozXpmz1wkETLo5g",
+            "Z9_ErKGul94kPbXTFJPGuw",
+            "_zGX5KXGx6UYKX85fi7ujg",
+            "PWXDv26t09Ou97YYpdEkjg"
+          ],
+          "call_ids": [
+            "s611",
+            "s612"
+          ]
+        },
+        {
+          "title": "Finished cells go to US buyers",
+          "kicker": "Step 4 · Transactional",
+          "text": "27 rows of cells went to the US, Oct 2025 to Sep 2026. The named buyers: EVE Energy North America 7, Briggs & Stratton 5 (two records), TTI Consumer Power Tools 2, and one each for Milwaukee Tool, Stanley Black & Decker, Energizer, ProTechnologies, ABM Tucker GA and a freight forwarder. Seven rows name no buyer. Most are rechargeable 21700 or 18650 cells (HS 8507.60); Energizer's and ProTechnologies' are non-rechargeable CR123A cells. After June 2026 every dated row lists Singapore, Yantian (China) or Pusan as the departure port, not Penang.",
+          "edge_ids": [
+            "e625",
+            "e626",
+            "e627",
+            "e628",
+            "e629",
+            "e630",
+            "e631",
+            "e632",
+            "e633",
+            "e634"
+          ],
+          "node_ids": [
+            "gRBpjYP97b53gA7TkExdpQ",
+            "33X8P9vU58v1EcigvWeD-Q",
+            "TrQHururSYl_Fqbbewp1cA",
+            "z7L-XcWZt2KVLzSUBkP7BQ",
+            "Wnywbj_-4pXcDUV6p0aSzQ",
+            "2Rvh_WaZCmF-SvM2tzBHUQ",
+            "1kOQxrwnyAG2-nF4M_CVSA",
+            "IYgYRg8qmwkPgPYFBaWAcQ",
+            "eyRTfPmql9CpETmfR2Igvw"
+          ],
+          "call_ids": [
+            "s609"
+          ]
+        },
+        {
+          "title": "A second plant, same shape: Linergy Power",
+          "kicker": "Step 5 · Corridor",
+          "text": "Linergy Power in Selangor was registered in Dec 2024. Its shareholder is Ampace Technology (Hong Kong), whose Xiamen parent counts CATL among its shareholders. It took 17 rows of artificial graphite from Zhongke Shinzoom and Shanshan, and shipped 17 rows of cells and battery systems to the US: Eaton 6, Ampace itself 6, Milwaukee Tool 3, Stanley Black & Decker 1 and Techtronic Product Development 1.",
+          "edge_ids": [
+            "e635",
+            "e636",
+            "e637",
+            "e638",
+            "e639",
+            "e640",
+            "e641",
+            "e642",
+            "e643",
+            "e644",
+            "e645",
+            "e646"
+          ],
+          "node_ids": [
+            "ySemfyJJesFbfxEgW2SgCg",
+            "TcV1qONXBV-YSjtqMe-yFQ",
+            "sXzqumDIg-3LZrua0Pt_PA",
+            "Hknigg_iWcgcpp_dkWgQvA",
+            "BuQm2NSnUlkUMb83_BJxog"
+          ],
+          "call_ids": [
+            "s614",
+            "s615",
+            "s616",
+            "s617",
+            "s618"
+          ]
+        }
+      ],
+      "verdict": {
+        "detected": [
+          {
+            "text": "Ownership: plant ← EVE Asia (Hong Kong) ← 100% EVE Energy Co., Ltd., with two directors shared between the plant and EVE Asia.",
+            "call_ids": [
+              "s603",
+              "s604",
+              "s606"
+            ]
+          },
+          {
+            "text": "59 rows of battery-grade graphite into the plant from seven named suppliers, Apr 2025 to Apr 2026, including BTR's Indonesian plant from Case 1.",
+            "call_ids": [
+              "s608",
+              "s610"
+            ]
+          },
+          {
+            "text": "27 rows of cells from the plant to the US, with ten named buyer records, Oct 2025 to Sep 2026.",
+            "call_ids": [
+              "s609"
+            ]
+          },
+          {
+            "text": "The parent carries a Section 1260H flag, confirmed by the DoD's 8 June 2026 list.",
+            "call_ids": [
+              "s605",
+              "t601"
+            ]
+          },
+          {
+            "text": "Linergy Power repeats the pattern: Zhongke and Shanshan graphite in, cells to Eaton, Milwaukee Tool and others out.",
+            "call_ids": [
+              "s617",
+              "s618"
+            ]
+          }
+        ],
+        "suggested": [
+          {
+            "text": "The Malaysian shareholder record and the Hong Kong registry company are the same EVE Asia (name, building and directors match).",
+            "call_ids": [
+              "s606",
+              "s607"
+            ]
+          },
+          {
+            "text": "HS 2842.90 imports from Hunan Yuneng, Changyuan Lico and Easpring are cathode powder. The HS code and names fit, but we didn't read the product text.",
+            "call_ids": [
+              "s612"
+            ]
+          },
+          {
+            "text": "Since June 2026, cells under EVE Malaysia's name have left from Singapore, Yantian and Pusan. That could be transshipment, or cells loaded outside Malaysia; the data doesn't say which, and it warrants due diligence.",
+            "call_ids": [
+              "s609",
+              "t601"
+            ]
+          },
+          {
+            "text": "The 'Pinang' port on six EVE North America rows is probably Penang, Malaysia, not Indonesia as Sayari geocodes it.",
+            "call_ids": [
+              "s609"
+            ]
+          }
+        ],
+        "not_visible": [
+          {
+            "text": "Which supplier's graphite is inside which exported cell. Trade data stops at the factory gate.",
+            "call_ids": [
+              "s609",
+              "s610"
+            ]
+          },
+          {
+            "text": "EVE Asia's percentage in the Malaysian plant, and CATL's percentage in Xiamen Ampace.",
+            "call_ids": [
+              "s604",
+              "s616"
+            ]
+          },
+          {
+            "text": "Whether any of these US buyers claims the §45X credit, and how the PFE rules would apply to them.",
+            "call_ids": [
+              "t603"
+            ]
+          }
+        ]
+      },
+      "passport": [
+        {
+          "field": "Place of manufacture",
+          "guidance_no": "8",
+          "declared": "Malaysia (Kulim, Kedah).",
+          "paper_trail": "Cells made in Malaysia, but some US rows since June 2026 depart Yantian (China), Singapore or Pusan.",
+          "gap": true,
+          "note": "A Malaysian label is accurate for the cell plant but says nothing about who owns it or where the anode came from."
+        },
+        {
+          "field": "Detailed composition (anode)",
+          "guidance_no": "45",
+          "declared": "Graphite anode.",
+          "paper_trail": "Artificial graphite from Taidongrui, Zhongke, BTR (China and Indonesia), Shanshan and Kuntian; some natural flake graphite from BTR.",
+          "gap": true,
+          "note": "The plant mixes at least six anode sources; no lot-level link to a given cell."
+        },
+        {
+          "field": "Critical raw materials > 0.1%",
+          "guidance_no": "15",
+          "declared": "Natural graphite listed if present.",
+          "paper_trail": "4 rows of natural flake graphite (HS 2504.10) from BTR; the same grade code also appears as artificial graphite.",
+          "gap": true,
+          "note": "Inconsistent HS coding makes natural vs artificial hard to confirm from trade data."
+        },
+        {
+          "field": "Responsible-sourcing (due-diligence) report",
+          "guidance_no": "19",
+          "declared": "Deferred under the EU Battery Regulation.",
+          "paper_trail": "The plant carries a Sheffield Hallam 'origin direct' flag via its suppliers; BTR's sales arm carries labour-risk flags.",
+          "gap": true,
+          "note": "Flags come from suppliers and lists, not findings about the plant."
+        },
+        {
+          "field": "Ownership of upstream suppliers",
+          "guidance_no": "—",
+          "declared": "No such field in the EU passport.",
+          "paper_trail": "Plant → EVE Asia (HK) → EVE Energy (Huizhou), listed under 1260H since 8 June 2026. Linergy → Ampace (HK) → Xiamen Ampace → CATL among shareholders.",
+          "gap": true,
+          "note": "For a US cell buyer, the cell maker's owner is what the PFE test looks at; Sayari shows it."
+        }
+      ],
+      "red_flags": [
+        {
+          "flag": "Chinese parent ownership of the transit plant",
+          "signal": "contractual",
+          "severity": "High",
+          "result": "detected",
+          "note": "Registry chain to EVE Energy (100% of the HK holding company) plus shared directors."
+        },
+        {
+          "flag": "Same HS imported from China and exported to the US",
+          "signal": "transactional",
+          "severity": "High",
+          "result": "not_visible",
+          "note": "Not this pattern: graphite (HS 3801) goes in and cells (HS 8507.60) come out. Real manufacturing happens in Malaysia."
+        },
+        {
+          "flag": "Recent incorporation vs. first export date",
+          "signal": "contractual",
+          "severity": "Medium",
+          "result": "suggested",
+          "note": "EVE Malaysia was formed Aug 2022 and made its first US shipment Oct 2025, normal for a new factory. Linergy took 11 months (Dec 2024 to Nov 2025)."
+        },
+        {
+          "flag": "Volume spike after a policy date",
+          "signal": "transactional",
+          "severity": "Medium",
+          "result": "suggested",
+          "note": "No spike, but after the June 2026 1260H listing the US rows depart Singapore, Yantian and Pusan instead of Penang."
+        },
+        {
+          "flag": "Shared address or officer with a flagged entity",
+          "signal": "inferred",
+          "severity": "Medium",
+          "result": "detected",
+          "note": "Directors shared with EVE Asia; one gives the address of the 1260H-listed parent."
+        },
+        {
+          "flag": "Entity-resolution fragmentation",
+          "signal": "inferred",
+          "severity": "Low (disclose)",
+          "result": "detected",
+          "note": "Three plant records (one typed as a person), two EVE Asia records, two Briggs, Eaton and Milwaukee records each."
+        },
+        {
+          "flag": "Forced-labor / UFLPA sub-tier flags",
+          "signal": "inferred",
+          "severity": "Medium",
+          "result": "detected",
+          "note": "The plant has a Sheffield Hallam 'origin direct' flag via its suppliers. This is context, not a finding."
+        }
+      ],
+      "caveats": [
+        "Making cells in Malaysia from Chinese materials is legal and common. Nothing here shows wrongdoing by any company named.",
+        "Buyers are named because they appear in customs records. That says nothing about their compliance, or whether they claim any US tax credit.",
+        "PFE rules work differently for cells and for anode material. For a US company claiming §45X on a product it makes, a bought-in cell counts as one input, and what matters is who made the cell. The anode material is an input of the cell maker, one step further back. We give no view on how the rules apply to any company here.",
+        "Trade data can't tie a given cell to a given graphite shipment.",
+        "The 1260H listing (8 June 2026) came after most of the trade shown here.",
+        "HS 2842.90 is read as cathode powder from the code and supplier names only.",
+        "Ownership percentages are missing for EVE Asia → EVE Malaysia and for CATL → Xiamen Ampace.",
+        "Departure ports such as 'Pinang' and 'Hongkong' appear with mismatched countries in some rows. Treat the route details with care."
+      ]
+    },
+    {
+      "id": "case-7",
+      "slug": "gotion-us",
+      "title": "Gotion's battery plants inside the US",
+      "subtitle": "Gotion, Inc. and Gotion Illinois New Energy · Fremont, California and Manteno, Illinois, USA",
+      "country": "USA",
+      "plant_status": "operating",
+      "question": "When a Chinese-owned battery company builds its plant inside the US, can Sayari show both who owns it and the Chinese inputs going into it?",
+      "answer_label": "Partly",
+      "answer": "Inputs, yes: Sayari shows dated shipments of Chinese cells, packs and one lot of artificial graphite from Gotion's own Chinese plants into its US companies. Ownership only in part: Chinese registry data traces Gotion High-Tech down to a US subsidiary, but no US record shows who owns the Fremont or Manteno companies.",
+      "why_it_matters": "Since July 2025, US clean-energy tax credits depend on whether a company is owned or controlled by a 'prohibited foreign entity'. Here no third country is involved: the Chinese-owned plant is in Illinois, and its inputs come straight from the parent's factories in China. The paper trail is short, but the key ownership link sits in Chinese filings, not US ones.",
+      "headline": "Partly. The trade side is clear: Gotion's Chinese plants ship cells, packs, parts and, once, artificial graphite to Gotion Inc. and its Manteno plant, Dec 2025 to Sep 2026. The ownership side is incomplete. Chinese records show Gotion High-Tech owning a US subsidiary through Hefei Gotion, but US registries list no shareholder, so the last link rests on name and press.",
+      "summary_for_non_experts": "Gotion High-Tech is a Chinese battery maker based in Hefei. Its US arm, Gotion, Inc., is in Fremont, California, and runs a plant in Manteno, Illinois that assembles energy-storage systems and EV battery packs. US customs records show the inputs coming almost entirely from Gotion's own factories in China, including one lot of artificial graphite routed through Korea. Chinese filings show the parent owning a US subsidiary, but US registries don't say who owns the plant, and Gotion's planned Michigan plant was never built.",
+      "key_numbers": [
+        {
+          "value": "1,398",
+          "label": "US-bound shipment rows naming Gotion, Aug 2021 – Sep 2026",
+          "call_ids": [
+            "s709"
+          ]
+        },
+        {
+          "value": "145",
+          "label": "of them lithium-ion battery or part rows (HS 8507)",
+          "call_ids": [
+            "s713"
+          ]
+        },
+        {
+          "value": "2",
+          "label": "artificial graphite rows (HS 3801.10), Hefei to Fremont via Busan, 23 Dec 2025",
+          "call_ids": [
+            "s712"
+          ]
+        },
+        {
+          "value": "99.8%",
+          "label": "of Hefei Gotion owned by Gotion High-Tech, per Chinese registry data",
+          "call_ids": [
+            "s720"
+          ]
+        },
+        {
+          "value": "0",
+          "label": "shareholders shown for Gotion, Inc. in US records",
+          "call_ids": [
+            "s705",
+            "s706"
+          ]
+        }
+      ],
+      "overall_confidence": "corroborated",
+      "pattern": "complete-trail",
+      "steps": [
+        {
+          "title": "The US companies: one name, many records",
+          "kicker": "Step 1 · Inferred",
+          "text": "Gotion, Inc. appears as a California registry record, a federal SAM record and several trade records at 48660 Kato Road, Fremont. The SAM record carries the California company number, so those two are one company. The Manteno plant has a SAM record and two trade records at 333 South Spruce Street. One trade record is wrongly typed as a person.",
+          "edge_ids": [
+            "e706",
+            "e707",
+            "e708",
+            "e709",
+            "e710",
+            "e711"
+          ],
+          "node_ids": [
+            "jtptt0xXwDPrAN8CN-po4g",
+            "88rCtmTg8g2LPVqmzM7Nhw",
+            "L1HhW3HMqcvXRKoHOQdS2g",
+            "eRITWZG5dyfFu5tqu8tv-g",
+            "TeFCWTgdDF-tAyfunxgqXw",
+            "c3D62Of8RTLeBCM9wnuCvw",
+            "a2CIEyP-znrNrpln9qssYA"
+          ],
+          "call_ids": [
+            "s702",
+            "s704",
+            "s705",
+            "s707",
+            "s714",
+            "s715",
+            "s716"
+          ]
+        },
+        {
+          "title": "The owner: visible from China, not from the US",
+          "kicker": "Step 2 · Contractual",
+          "text": "Chinese registry data shows Gotion High-Tech owning 99.8% of Hefei Gotion, which owns a 'Gotion High-Tech (USA)' company in China's outbound-investment filings. California lists no shareholders, and Sayari found no owners for Gotion, Inc. A director, Steven Cai, shares a name with a Gotion High-Tech director. Registry data also lists Volkswagen (China) Investment as a shareholder of the parent, with no percentage.",
+          "edge_ids": [
+            "e701",
+            "e702",
+            "e703",
+            "e704",
+            "e705",
+            "e716",
+            "e717",
+            "e718",
+            "e719",
+            "e720"
+          ],
+          "node_ids": [
+            "Ba3SkSLr0jnGdVR7sWcnWQ",
+            "cqrsueiPWsIEIMOtO6v_Pg",
+            "sfUxx_TMvkJFG13vTnqbwQ",
+            "azdv0UO5gpHsKUJso_CA_Q",
+            "S-yRq5dFMQKTkiXrPaKPGQ",
+            "ru0HQoZ0MqsV_E41dQ5qEQ",
+            "0TsZzKZdA9j4qq_JfBakUQ",
+            "yO_m3IE68dktKtJnqx7OtQ"
+          ],
+          "call_ids": [
+            "s705",
+            "s706",
+            "s717",
+            "s718",
+            "s719",
+            "s720",
+            "s722",
+            "s725"
+          ]
+        },
+        {
+          "title": "Inputs: straight from the parent's factories",
+          "kicker": "Step 3 · Transactional",
+          "text": "Two rows of artificial graphite (HS 3801.10) went from Hefei Gotion to Gotion Inc. in Fremont, shipped from Busan on 23 Dec 2025. Lithium-ion cells and packs (HS 8507) arrive from Hefei Gotion and the group's Tongcheng plant, some via Jamaica. That includes 29 rows of packs bound for Manteno in Aug 2026. A Taiwan trader, Green Innovation International, sends pack covers and storage-system parts. No natural graphite (HS 2504) or petroleum coke appears.",
+          "edge_ids": [
+            "e721",
+            "e722",
+            "e723",
+            "e724",
+            "e725",
+            "e726",
+            "e727",
+            "e728",
+            "e729",
+            "e730",
+            "e731",
+            "e712",
+            "e713",
+            "e714"
+          ],
+          "node_ids": [
+            "KL5fNOIkqdQV8ZW_4a0wqw",
+            "Ctq4KZl1vI__Cm_ocAMNsg",
+            "L2r51cgdgK63Sk516U52Jg",
+            "EJwFUVeWPX6ErSnqA4dxgw",
+            "mFuYdHo30dU4r8kU_11y7w"
+          ],
+          "call_ids": [
+            "s709",
+            "s710",
+            "s712",
+            "s713",
+            "s716"
+          ]
+        },
+        {
+          "title": "Customers and status",
+          "kicker": "Step 4 · Gap",
+          "text": "US records don't show who buys from the Manteno plant; US export and domestic sales aren't in customs data. A press release names Richardson Electronics as a storage partner. Sayari does show US firms buying Gotion batteries straight from China, such as Moxion Power, up to Feb 2024. Manteno is operating, with five lines and about 300 staff by Nov 2025. Big Rapids, Michigan, was declared abandoned by the state in Sep 2025 and is now in court.",
+          "edge_ids": [
+            "e732",
+            "e733",
+            "e734",
+            "e735",
+            "e736"
+          ],
+          "node_ids": [
+            "1uN_EFYSidIznJZMZxptlw",
+            "x-d_uxTn-TE8ay6FKmZZAA",
+            "hycXzh23OxAAkCsQbnw6uQ",
+            "z5PIbfNlNWbM_PtzLkUvbg",
+            "kqhzX49SUGOaae-QwH0Cvw",
+            "case7-richardson-electronics",
+            "case7-big-rapids-project"
+          ],
+          "call_ids": [
+            "s727",
+            "s728",
+            "s731",
+            "t701",
+            "t702"
+          ]
+        }
+      ],
+      "verdict": {
+        "detected": [
+          {
+            "text": "Artificial graphite (HS 3801.10) shipped by Hefei Gotion to Gotion Inc., Fremont, via Busan on 23 Dec 2025 (2 rows).",
+            "call_ids": [
+              "s710",
+              "s712"
+            ]
+          },
+          {
+            "text": "Lithium-ion cells, packs and parts (HS 8507) from Gotion group plants in Hefei and Tongcheng to Gotion Inc. and the Manteno plant, 2024 – Sep 2026, including 29 Manteno-bound pack rows in Aug 2026.",
+            "call_ids": [
+              "s713",
+              "s716"
+            ]
+          },
+          {
+            "text": "Chinese registry ownership: Gotion High-Tech owns 99.8% of Hefei Gotion, which owns a US subsidiary per China's outbound-investment filings.",
+            "call_ids": [
+              "s718",
+              "s719",
+              "s720"
+            ]
+          },
+          {
+            "text": "Volkswagen (China) Investment is listed as a shareholder of Gotion High-Tech in registry data (no percentage).",
+            "call_ids": [
+              "s725"
+            ]
+          }
+        ],
+        "suggested": [
+          {
+            "text": "That the MOFCOM 'Gotion High-Tech (USA)' is the Fremont Gotion, Inc.: name, a shared director name (Steven Cai) and press agree, but no US record states it.",
+            "call_ids": [
+              "s705",
+              "s719",
+              "s720",
+              "t702"
+            ]
+          },
+          {
+            "text": "Gotion, Inc. controls the Manteno plant: shipments consigned to Gotion, Inc. are delivered to Gotion Illinois.",
+            "call_ids": [
+              "s716"
+            ]
+          },
+          {
+            "text": "US buyers of Gotion cells shipped direct from China: Moxion Power (graph and rollup agree); 1Energy Systems and Caban Systems appear in a rollup only.",
+            "call_ids": [
+              "s727",
+              "s731"
+            ]
+          }
+        ],
+        "not_visible": [
+          {
+            "text": "Who owns Gotion, Inc. and Gotion Illinois, from any US record. California and SAM list no shareholders.",
+            "call_ids": [
+              "s705",
+              "s706",
+              "s715"
+            ]
+          },
+          {
+            "text": "Who buys Manteno's output. US domestic sales don't appear in import data.",
+            "call_ids": [
+              "s727"
+            ]
+          },
+          {
+            "text": "Where the anode graphite inside the imported cells came from. Cells arrive finished; their graphite is upstream in China.",
+            "call_ids": [
+              "s710"
+            ]
+          },
+          {
+            "text": "The size of Volkswagen's stake.",
+            "call_ids": [
+              "s725"
+            ]
+          }
+        ]
+      },
+      "passport": [
+        {
+          "field": "Place of manufacture",
+          "guidance_no": "8",
+          "declared": "Manteno, Illinois, USA (pack and storage-system assembly).",
+          "paper_trail": "Cells and packs made by Gotion plants in Hefei and Tongcheng, China, then imported.",
+          "gap": true,
+          "note": "A US 'place of manufacture' can hide Chinese cells."
+        },
+        {
+          "field": "Detailed composition (anode)",
+          "guidance_no": "45",
+          "declared": "'Graphite' as anode material, if declared.",
+          "paper_trail": "Finished cells arrive from China; one lot of artificial graphite (HS 3801.10) went to Fremont in Dec 2025.",
+          "gap": true,
+          "note": "The anode is made inside the imported cell, so its source is out of sight."
+        },
+        {
+          "field": "Critical raw materials > 0.1%",
+          "guidance_no": "15",
+          "declared": "Natural graphite listed if present.",
+          "paper_trail": "No natural graphite (HS 2504) seen; artificial graphite only.",
+          "gap": false,
+          "note": "Consistent, if declared."
+        },
+        {
+          "field": "Responsible-sourcing (due-diligence) report",
+          "guidance_no": "19",
+          "declared": "Deferred under the EU Battery Regulation; no US equivalent.",
+          "paper_trail": "Sub-tier forced-labor 'product blueprint' flags on the Gotion Inc. trade record.",
+          "gap": true,
+          "note": "Flags describe suppliers two to four tiers up, not Gotion itself."
+        },
+        {
+          "field": "Ownership of upstream suppliers",
+          "guidance_no": "—",
+          "declared": "No such field in the EU passport.",
+          "paper_trail": "Suppliers are the parent's own plants: Hefei Gotion, 99.8% owned by Gotion High-Tech.",
+          "gap": true,
+          "note": "Here the supplier and the owner are the same Chinese group."
+        }
+      ],
+      "red_flags": [
+        {
+          "flag": "Chinese parent ownership of the transit plant",
+          "signal": "contractual",
+          "severity": "High",
+          "result": "detected",
+          "note": "Chinese registry chain to a US subsidiary; the last link to Fremont rests on name and press."
+        },
+        {
+          "flag": "Same HS imported from China and exported to the US",
+          "signal": "transactional",
+          "severity": "High",
+          "result": "not_visible",
+          "note": "The plant is in the US: inputs arrive from China, but no onward export to test."
+        },
+        {
+          "flag": "Recent incorporation vs. first export date",
+          "signal": "contractual",
+          "severity": "Medium",
+          "result": "not_visible",
+          "note": "Gotion, Inc. registered 2014; Gotion Illinois' SAM date (Jan 2026) is after its first imports (Jul 2025), but that is a federal-contractor date, not incorporation."
+        },
+        {
+          "flag": "Volume spike after a policy date",
+          "signal": "transactional",
+          "severity": "Medium",
+          "result": "not_visible",
+          "note": "Rows cluster Jul–Sep 2026, but we read only a sample and can't separate a ramp-up from a policy effect."
+        },
+        {
+          "flag": "Shared address or officer with a flagged entity",
+          "signal": "inferred",
+          "severity": "Medium",
+          "result": "suggested",
+          "note": "A director name shared with the parent; the parent's flags are adjacency flags on a stale record."
+        },
+        {
+          "flag": "Entity-resolution fragmentation",
+          "signal": "inferred",
+          "severity": "Low (disclose)",
+          "result": "detected",
+          "note": "Seven US records, two parent records, a person-typed company and an ownership loop."
+        },
+        {
+          "flag": "Forced-labor / UFLPA sub-tier flags",
+          "signal": "inferred",
+          "severity": "Medium",
+          "result": "detected",
+          "note": "Sub-tier 'product blueprint' flags on the Gotion Inc. trade record; context, not a finding."
+        }
+      ],
+      "caveats": [
+        "Gotion's US plants are legal businesses. Nothing here shows wrongdoing by any company named.",
+        "The parent's 'SOE' flags mean one hop from, or possibly owning, a state-owned enterprise. They sit on a stale former-name record and are not evidence that Gotion is state-owned.",
+        "The parent record lists Hefei Gotion as both owner and subsidiary at 99.8182%. That loop is a data artefact; we use the subsidiary direction only.",
+        "The two graphite rows have no grain size or 'anode' wording. HS 3801.10 also covers industrial graphite, so the grade is unknown.",
+        "Buyer names come from customs records and rollups; they say nothing about any buyer's compliance. 1Energy Systems and Caban Systems were not checked row by row.",
+        "Plant status comes from press and a partner's press release, not from Sayari."
+      ]
+    },
+    {
+      "id": "case-8",
+      "slug": "syrah-vidalia",
+      "title": "Syrah's Mozambique-to-Louisiana anode chain",
+      "subtitle": "Syrah Technologies LLC · Vidalia, Louisiana, USA (graphite from Balama, Mozambique)",
+      "country": "USA",
+      "plant_status": "operating",
+      "question": "Could Sayari trace a graphite anode chain with no Chinese owner, from mine to US plant, and show whether the same mine also feeds Chinese-owned plants?",
+      "answer_label": "Partly",
+      "answer": "Yes for the mine-to-plant leg and the mine's other buyers: dated rows show Balama graphite reaching Vidalia and also going to Chinese graphite firms and BTR's Chinese-owned Indonesian plant. No for the last leg: no Vidalia sales to US buyers are visible, and ownership needed the company's own annual report.",
+      "why_it_matters": "Under the post-July 2025 tax-credit rules, the question is who owns each supplier. Here the owners are Australian at every step, so this is what a chain that passes that test looks like on paper. But the same mine sells to Chinese-owned plants, so 'Mozambican graphite' on its own says nothing about who processed it.",
+      "headline": "A clean chain looks almost the same as a risky one in trade data. Sayari shows Syrah's Balama mine shipping natural graphite to its Louisiana anode plant and to Chinese graphite firms and BTR's Indonesian plant. What tells them apart is ownership, and that came mostly from Syrah's annual report, not the registry.",
+      "summary_for_non_experts": "Syrah Resources, an Australian company, mines graphite at Balama in Mozambique and turns it into battery anode material at Vidalia, Louisiana. Tesla has a contract to buy that material. In Sayari we found the mine's shipments to Vidalia, and also its shipments to eight Chinese buyers and to BTR's Chinese-owned plant in Indonesia. Vidalia itself is still at qualification scale and its US sales don't show up in customs data. So the chain is Australian-owned from start to finish, but it shares a mine with the chains this site questions.",
+      "key_numbers": [
+        {
+          "value": "7",
+          "label": "dated shipments from the Balama mine to Vidalia, Sep 2023 – Jan 2024 (about 2,500 t)",
+          "call_ids": [
+            "s807",
+            "s824"
+          ]
+        },
+        {
+          "value": "89",
+          "label": "shipments from the same mine to eight Chinese buyers, 2022",
+          "call_ids": [
+            "s809",
+            "s812",
+            "s824"
+          ]
+        },
+        {
+          "value": "47%",
+          "label": "share of the mine's 190 visible export rows that went to China",
+          "call_ids": [
+            "s824"
+          ]
+        },
+        {
+          "value": "7",
+          "label": "shipments of Balama flake to BTR's Chinese-owned Indonesian plant, 2024–2026 (3 from Twigg, 4 from Syrah's Dubai arm)",
+          "call_ids": [
+            "s813",
+            "s826"
+          ]
+        },
+        {
+          "value": "0",
+          "label": "Vidalia sales to US buyers visible in customs data",
+          "call_ids": [
+            "s808"
+          ]
+        },
+        {
+          "value": "95% / 100%",
+          "label": "Syrah's stake in the mine company / the Vidalia company, per its annual report",
+          "call_ids": [
+            "t803"
+          ]
+        }
+      ],
+      "overall_confidence": "corroborated",
+      "pattern": "contrast-legitimate",
+      "steps": [
+        {
+          "title": "Who owns the chain",
+          "kicker": "Step 1 · Contractual",
+          "text": "Syrah's 2025 annual report says it owns 95% of Twigg, the mine company, 100% of Syrah Technologies in Vidalia and 100% of Syrah Global DMCC in Dubai. Sayari's registry data show part of this: Syrah owns an Australian holding company, and a holding company of the same name is the Vidalia company's member. Sayari has no owners for the mine, and its ownership tools returned nothing for either company.",
+          "edge_ids": [
+            "e801",
+            "e802",
+            "e803",
+            "e804",
+            "e805",
+            "e806",
+            "e834",
+            "e835"
+          ],
+          "node_ids": [
+            "ex1GaqYc9OHlM2KgDrK-5w",
+            "sEVYNIMWKfM6vuWml4FNlw",
+            "05zob51QQdW-1mL-7WJSGA",
+            "NvC-a4BgmoxO63ubVyUiUQ",
+            "ffPlxyHu42G892jPO7tpbA",
+            "uZISesDqcaxQ8aVgsyvurw",
+            "CwgolVNduI83FRuDgMwK1w"
+          ],
+          "call_ids": [
+            "s804",
+            "s805",
+            "s814",
+            "s817",
+            "s819",
+            "s821",
+            "t803"
+          ]
+        },
+        {
+          "title": "Mine to plant: Mozambique to Louisiana",
+          "kicker": "Step 2 · Transactional",
+          "text": "Seven dated rows show natural graphite (HS 2504.10, flake mined from the ground) going from Twigg at Nacala to Vidalia via New Orleans, Sep 2023 to Jan 2024. Another 26 rows of natural flake reached Vidalia through ports such as Busan, Veracruz and Shanghai, Sep 2023 to Nov 2024, with no supplier named. Their sizes match Twigg's lots, but no record says so.",
+          "edge_ids": [
+            "e807",
+            "e833"
+          ],
+          "node_ids": [
+            "ffPlxyHu42G892jPO7tpbA",
+            "NvC-a4BgmoxO63ubVyUiUQ",
+            "azVXA4lXaKfU8wYdoluS_g"
+          ],
+          "call_ids": [
+            "s807",
+            "s824"
+          ]
+        },
+        {
+          "title": "What else goes into a 'clean' plant",
+          "kicker": "Step 3 · Transactional",
+          "text": "Vidalia's carbonisation furnaces, mills and mixers came from Chinese makers, one of them state-owned. That is why Sayari flags the plant 'chinese_soe_adjacent'. One 20-tonne lot of Chinese spherical graphite (HS 3801.90) arrived in Oct 2023. Coating pitch came from Rain Carbon in Germany. Equipment doesn't count toward the ownership test, but it shows how hard it is to avoid China completely.",
+          "edge_ids": [
+            "e827",
+            "e828",
+            "e829",
+            "e830",
+            "e831",
+            "e832"
+          ],
+          "node_ids": [
+            "GPHj9pMb5DnKZlUepMQM-A",
+            "ljXszsmI8EtP_3Q4fuC6ZA",
+            "aJmC3CSdJYMV1r_o0qrccQ",
+            "NJIf-8zhf7-nyk3EU-l1bA",
+            "UtRPmQpVsJMOv32rLaTkaQ",
+            "nSreKiv3fC-4IKRi87Datw"
+          ],
+          "call_ids": [
+            "s807",
+            "s819"
+          ]
+        },
+        {
+          "title": "Same mine, Chinese buyers",
+          "kicker": "Step 4 · Transactional",
+          "text": "The mine's 190 visible export rows go mostly to China (89) and to European refractory and graphite firms. The China rows, all in 2022, went to Qingdao graphite companies, traders and a refractory maker. Twigg also shipped flake to BTR's Chinese-owned plant in Indonesia in 2024 and 2025, and Syrah's Dubai arm sold it more in 2026. Two Qingdao buyers share names with suppliers to POSCO in Case 4.",
+          "edge_ids": [
+            "e808",
+            "e809",
+            "e810",
+            "e811",
+            "e812",
+            "e813",
+            "e814",
+            "e815",
+            "e816",
+            "e817",
+            "e818",
+            "e819",
+            "e820",
+            "e821",
+            "e822",
+            "e823",
+            "e824",
+            "e825",
+            "e826"
+          ],
+          "node_ids": [
+            "2omCekb1pDRKjhFOAqCNSw",
+            "uZISesDqcaxQ8aVgsyvurw",
+            "BoVP8I5lJH1lrNb61GphCw",
+            "zy4DoUY7ohIzHq9qDUJf2A",
+            "Ifk4vKyw2nqI1j7MwBLmDw",
+            "OPeO2tiJlzLBJWywXkZesw",
+            "7Obb1Gbggua5WYBZQOkxpA",
+            "Gp-9bI-j3Pd_Jz64bkBo1w",
+            "Csu21BM3zBbYfSB8ChoVGQ",
+            "NvSjRSdi_6HQ29UwUh5iIA"
+          ],
+          "call_ids": [
+            "s806",
+            "s809",
+            "s812",
+            "s813",
+            "s824",
+            "s826"
+          ]
+        },
+        {
+          "title": "Where the trail goes dark: the US sale",
+          "kicker": "Step 5 · Gap",
+          "text": "Sayari shows only one Vidalia export: a 50 kg lot to a Ukrainian graphite miner in Dec 2024. Sales to US buyers would be domestic and never appear in customs data. Tesla's 2021 offtake survives: Tesla withdrew a termination notice in mid-2026 but can still end the deal if final qualification fails. The plant made about 150 t for qualification in the June 2026 quarter.",
+          "edge_ids": [
+            "e836",
+            "e837"
+          ],
+          "node_ids": [
+            "d1CI2lYdfm1YotbgCaS84Q",
+            "xWhz7CFJV3lxsgg8fHMGHA"
+          ],
+          "call_ids": [
+            "s808",
+            "t801",
+            "t802"
+          ]
+        }
+      ],
+      "verdict": {
+        "detected": [
+          {
+            "text": "Dated HS 2504.10 shipments from Syrah's Mozambique mine company (Twigg) to the Vidalia plant, Sep 2023 – Jan 2024.",
+            "call_ids": [
+              "s807"
+            ]
+          },
+          {
+            "text": "The same mine shipping natural graphite to eight Chinese buyers (89 rows, 2022) and to BTR's Chinese-owned Indonesian plant (2024–2025).",
+            "call_ids": [
+              "s809",
+              "s812",
+              "s813"
+            ]
+          },
+          {
+            "text": "Syrah's own Dubai marketing arm selling flake to BTR Indonesia, Jan – Apr 2026.",
+            "call_ids": [
+              "s826",
+              "t803"
+            ]
+          },
+          {
+            "text": "A registry link naming an Australian Syrah holding company as the Vidalia company's member.",
+            "call_ids": [
+              "s819"
+            ]
+          },
+          {
+            "text": "Chinese furnaces, mills and one 20 t lot of Chinese spherical graphite going into Vidalia.",
+            "call_ids": [
+              "s807"
+            ]
+          }
+        ],
+        "suggested": [
+          {
+            "text": "The 26 unnamed-supplier flake rows into Vidalia are probably Balama graphite: lot sizes and routes match Twigg's, but no supplier is named.",
+            "call_ids": [
+              "s807"
+            ]
+          },
+          {
+            "text": "Full ownership of the mine and the plant by Syrah: the annual report states it and the addresses match Sayari, but Sayari's registry chain is incomplete.",
+            "call_ids": [
+              "t803",
+              "s814",
+              "s819"
+            ]
+          }
+        ],
+        "not_visible": [
+          {
+            "text": "Any sale of Vidalia anode material to a US cell or car maker. Domestic sales are outside customs data.",
+            "call_ids": [
+              "s808"
+            ]
+          },
+          {
+            "text": "Who owns Twigg, from registry data. The Mozambique gazette records carry no shareholders.",
+            "call_ids": [
+              "s805",
+              "s821",
+              "s822"
+            ]
+          },
+          {
+            "text": "Twigg's shipments to China after 2022, if any. The rows we found end in Nov 2022; this may be a data-coverage limit.",
+            "call_ids": [
+              "s809",
+              "s812"
+            ]
+          },
+          {
+            "text": "Which mine Syrah Global's 2026 flake to BTR came from; it also buys from other African miners.",
+            "call_ids": [
+              "s823",
+              "s826"
+            ]
+          }
+        ]
+      },
+      "passport": [
+        {
+          "field": "Place of manufacture",
+          "guidance_no": "8",
+          "declared": "The cell plant's location, e.g. USA.",
+          "paper_trail": "Anode material made at Vidalia, Louisiana, from Mozambican natural graphite.",
+          "gap": false,
+          "note": "Here the anode is made in the US, so the field doesn't hide a third country."
+        },
+        {
+          "field": "Detailed composition (anode)",
+          "guidance_no": "45",
+          "declared": "'Natural graphite' as the anode active material.",
+          "paper_trail": "Natural flake (HS 2504.10) from Balama; one small Chinese spherical graphite lot in 2023; pitch from Germany.",
+          "gap": true,
+          "note": "Composition says what, not where from."
+        },
+        {
+          "field": "Critical raw materials > 0.1%",
+          "guidance_no": "15",
+          "declared": "Natural graphite listed.",
+          "paper_trail": "Natural graphite from Mozambique, dated rows into Vidalia.",
+          "gap": false,
+          "note": "Consistent, if declared."
+        },
+        {
+          "field": "Responsible-sourcing (due-diligence) report",
+          "guidance_no": "19",
+          "declared": "Deferred under the EU Battery Regulation.",
+          "paper_trail": "Mine-to-plant trade visible; the mine's 'sanctioned_adjacent' flag traces to two Feb 2022 refractory sales to Russia.",
+          "gap": true,
+          "note": "The flag needs explaining before a report exists to explain it."
+        },
+        {
+          "field": "Ownership of upstream suppliers",
+          "guidance_no": "—",
+          "declared": "No such field in the EU passport.",
+          "paper_trail": "Australian parent at every step (annual report); Sayari's registry shows only part of the chain.",
+          "gap": true,
+          "note": "The US PFE rules ask exactly this question. Here the answer is clean, but it came from the company's own filing."
+        }
+      ],
+      "red_flags": [
+        {
+          "flag": "Chinese parent ownership of the transit plant",
+          "signal": "contractual",
+          "severity": "High",
+          "result": "not_visible",
+          "note": "None found. Australian parent per registry data and annual report."
+        },
+        {
+          "flag": "Same HS imported from China and exported to the US",
+          "signal": "transactional",
+          "severity": "High",
+          "result": "not_visible",
+          "note": "One 20 t Chinese spherical graphite lot in 2023; no US exports visible at all."
+        },
+        {
+          "flag": "Recent incorporation vs. first export date",
+          "signal": "contractual",
+          "severity": "Medium",
+          "result": "not_visible",
+          "note": "Registered 2017; first imports Dec 2022. No sign."
+        },
+        {
+          "flag": "Volume spike after a policy date",
+          "signal": "transactional",
+          "severity": "Medium",
+          "result": "not_visible",
+          "note": "Graphite inflows in our results end Nov 2024; output is qualification-scale."
+        },
+        {
+          "flag": "Shared address or officer with a flagged entity",
+          "signal": "inferred",
+          "severity": "Medium",
+          "result": "not_visible",
+          "note": "Only a Delaware registered-agent address ('mass_address_usage'). The SOE flag comes from an equipment supplier."
+        },
+        {
+          "flag": "Entity-resolution fragmentation",
+          "signal": "inferred",
+          "severity": "Low (disclose)",
+          "result": "detected",
+          "note": "Five records for the plant, nine for the mine company."
+        },
+        {
+          "flag": "Forced-labor / UFLPA sub-tier flags",
+          "signal": "inferred",
+          "severity": "Medium",
+          "result": "suggested",
+          "note": "Only 'possibly the same as' ILAB import flags on the plant; context, not a finding."
+        }
+      ],
+      "caveats": [
+        "Selling Mozambican graphite to Chinese buyers is legal and common. Nothing here shows wrongdoing by any company named.",
+        "Buyers are named because they appear in customs records; this says nothing about their compliance.",
+        "Twigg's Vidalia rows come from Korean transshipment data, and US import data hold rows loaded at Busan. Some may be the same cargo seen twice, so we don't add the two counts.",
+        "A port of loading (e.g. Shanghai) is not a country of origin. The Shanghai-loaded flake rows name no supplier.",
+        "All China rows we found are from 2022. Later trade may exist outside Sayari's coverage.",
+        "Plant status and the Tesla offtake come from the company and the press (Tavily), not from Sayari.",
+        "Entity-resolution links are our judgment and could be wrong."
       ]
     }
   ]

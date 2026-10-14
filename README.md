@@ -7,7 +7,7 @@
 
 > Can trade and corporate-registry data reveal Chinese battery materials, especially graphite anode material, being rerouted through third-country plants before they reach US battery supply chains?
 
-Iteration 1 traces **five plants** end to end:
+Iteration 1 traces **eight cases** end to end:
 
 | # | Case | What Sayari showed |
 |---|---|---|
@@ -16,6 +16,9 @@ Iteration 1 traces **five plants** end to end:
 | 3 | Zhongke Electric's plant, Sohar, Oman | Not in Sayari yet. Ownership is visible in China's registry and the company's filing; today Zhongke graphite reaches the US mostly via Malaysian cell plants |
 | 4 | POSCO Future M, Korea (contrast) | Korean-owned (POSCO Holdings 58.2%, registry); Chinese graphite in until Dec 2023; 95 anode shipments to GM, SK Battery America, Tesla, Panasonic and XALT. Same buyers as Case 1, different owner |
 | 5 | Putailai's Zichen plant, Malaysia | Five corridor scans found no Chinese-owned anode maker shipping to the US. The one Chinese-owned plant is registered 100% via Singapore but isn't trading yet |
+| 6 | EVE Energy's cell plant, Malaysia | Full trail at the cell level: Chinese anode graphite (BTR, Zhongke, Shanshan) in; cells out to EVE North America, Briggs & Stratton, Milwaukee Tool and others. EVE added to the 1260H list in June 2026 |
+| 7 | Gotion's plants inside the US | Chinese cells, packs and graphite shipped from Gotion's Chinese plants to Fremont and Manteno. Ownership visible from the Chinese side only |
+| 8 | Syrah, Mozambique → Louisiana (benchmark) | A non-Chinese chain: Balama graphite to Vidalia, with Australian ownership (annual report). The same mine also sells to Chinese buyers and to BTR Indonesia |
 
 Every link on the site carries an edge type, a confidence badge and the IDs of the calls that produced it.
 
@@ -27,14 +30,14 @@ Built for GLOB1-GC 2620 *Beyond the Brand: Harnessing Emerging Tech in Ethical S
 |---|---|
 | `index.html`: The Trace | The question, policy timeline, a 5-step walkthrough on the graph (← → keys), the verdict and feedback asks |
 | `explore.html`: Explore | Cytoscape network with filters (link type, confidence, country, HS code, risk), a side panel and a list view |
-| `cases.html`: Case Files | All five cases: key numbers, mini graph, steps, verdict, Passport vs. Paper Trail card, red flags, caveats |
+| `cases.html`: Case Files | All eight cases, each with question, answer and why it matters: key numbers, mini graph, steps, verdict, Passport vs. Paper Trail card, red flags, caveats |
 | `method.html`: Method | Investigation replay of every Sayari call (grouped by case), capability scorecard, red-flag rubric, searchable call log |
 | `about.html`: About this tool | Purpose, how to read it, data sources, credits, limitations and ethics, changelog |
 
 ## How it works
 
 - Static site with no build step: vanilla HTML/CSS/JS plus pinned CDN libraries.
-- **No keys in the browser.** Sayari and Tavily were queried through MCP in VS Code (Claude Code). Case 1 is summarised in `investigation/build_data.py`; cases 2–5 are in `investigation/cases/case*.json`. The builder merges them, checks every cross-reference, and writes the curated JSON in `/data`. The site only reads that JSON.
+- **No keys in the browser.** Sayari and Tavily were queried through MCP in VS Code (Claude Code). Case 1 is summarised in `investigation/build_data.py`; cases 2–8 are in `investigation/cases/case*.json`. The builder merges them, checks every cross-reference, and writes the curated JSON in `/data`. The site only reads that JSON.
 - **Derived data only.** Sayari data is licensed, so we publish our own summaries (names, link types, dates, HS codes, counts, flags) and link each entity to Sayari Graph. No raw record dumps.
 
 ```

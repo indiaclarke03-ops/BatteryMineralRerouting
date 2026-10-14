@@ -45,6 +45,7 @@
           <div class="callout"><strong>Free text ranks; it doesn't filter.</strong> A quoted name in <code>query</code> puts matching rows first, but totals still count everything. Read the rows and don't trust the count (Case 2).</div>
           <div class="callout"><strong>Corridor buckets can be mislabelled.</strong> 3,088 Morocco → US "artificial graphite" rows were mostly fertilizer and chemicals, and 917 Oman → US rows were mostly Indian cargo relayed through Omani ports (Cases 2 and 3).</div>
           <div class="callout"><strong>Registry coverage depends on the country.</strong> Ownership was visible for plants held through Singapore (Morocco, Malaysia) and in China's registry, but not for the Indonesian PT (Cases 1, 2, 3 and 5).</div>
+          <div class="callout"><strong>Query syntax matters.</strong> Adding a country word to a quoted name, or putting two quoted names in one query, returned 0. A page token can't be combined with <code>limit</code>, and long shortest-path searches can time out (Cases 7 and 8).</div>
           <div class="callout teal"><strong>What worked well:</strong> profiles (<code>ships_to</code> lists), upstream mapping by HS code, and free-text shipment search gave a dated, HS-coded trail from China to five US cell plants.</div>
         </div>
       </section>

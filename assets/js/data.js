@@ -81,6 +81,14 @@ window.PT = window.PT || {};
   PT.whyHTML = function (e) {
     return e.confidence_reason ? `<div class="why">Why ${PT.esc((PT.CONF[e.confidence] || {}).label || e.confidence)}: ${PT.esc(e.confidence_reason)} <a href="about.html#confidence">How we rate</a></div>` : "";
   };
+  PT.pill = (lbl) => lbl ? `<span class="answer-pill ${PT.esc(String(lbl).replace(/\s+/g, "-"))}">${PT.esc(lbl)}</span>` : "";
+  PT.qaHTML = function (c) {
+    return `<div class="qa">
+      <div class="q"><span class="qa-label">The question</span>${PT.esc(c.question)}</div>
+      <div class="a"><span class="qa-label">What we found</span>${PT.pill(c.answer_label)}<div>${PT.esc(c.answer || c.headline)}</div></div>
+      <div class="w"><span class="qa-label">Why it matters</span>${PT.esc(c.why_it_matters || "")}</div>
+    </div>`;
+  };
   PT.receipts = function (ids) {
     if (!ids || !ids.length) return "";
     return `<span class="receipts">${ids.map((id) => `<a href="method.html#${PT.esc(id)}" title="Open call ${PT.esc(id)} in the call log">${PT.esc(id)}</a>`).join("")}</span>`;

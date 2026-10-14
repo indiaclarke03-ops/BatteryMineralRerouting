@@ -234,7 +234,7 @@ ENTITIES = [
         "Mozambique graphite miner that shipped natural graphite (HS 2504) to the plant in 2024–2025. Appears as three Sayari records.",
         ["s013", "s014"]),
     ent(SYRAH, "Syrah Global DMCC", "ARE", "trader",
-        "Dubai trading company that shipped natural graphite (HS 2504) to the plant, Jan–Apr 2026.",
+        "Syrah Resources' Dubai trading arm (100% owned, per Syrah's annual report; see Case 8). Shipped natural graphite (HS 2504) to BTR's Indonesian plant, Jan–Apr 2026.",
         ["s013", "s014"]),
     ent(ERG, "ERG Madagascar", "MDG", "producer",
         "Madagascar graphite producer that shipped natural graphite (HS 2504) to the plant, 2025–2026.",
@@ -472,6 +472,10 @@ CASE1 = {
 
 CASE1.update({
     "slug": "btr-indonesia",
+    "question": "Can Sayari show Chinese graphite being processed in BTR's Indonesian plant and shipped on to US battery makers, and who owns the plant?",
+    "answer_label": "Partly",
+    "answer": "The trade, yes: Chinese artificial graphite goes in, and graphite goes out to Ultium Cells, SK Battery America, StarPlus Energy, GM and Tesla. The ownership, no: Sayari has no registry record of BTR owning the plant, so that link rests on BTR's own statements.",
+    "why_it_matters": "This is the pattern US tax-credit rules target: a Chinese company's plant in a third country supplying US battery makers. A buyer that only checks the country of origin sees 'Indonesia'. Only the ownership check shows 'BTR', and that is the part Sayari couldn't confirm.",
     "country": "IDN",
     "plant_status": "operating",
     "pattern": "rerouting-pattern",
@@ -583,6 +587,7 @@ def main():
 
     for e in ENTITIES:
         e["case_ids"] = ["case-1"]
+        e["case_roles"] = {"case-1": e["role"]}
     for e in EDGES:
         e["case_ids"] = ["case-1"]
         e["confidence_reason"] = CONF_REASON_C1[e["id"]]
@@ -607,8 +612,10 @@ def main():
                 cur["source_call_ids"] = sorted(set(cur["source_call_ids"]) | set(e.get("source_call_ids", [])))
                 cur["case_ids"] = sorted(set(cur["case_ids"]) | {cid})
                 cur.setdefault("case_summaries", {})[cid] = e.get("summary", "")
+                cur.setdefault("case_roles", {})[cid] = e.get("role", cur["role"])
             else:
                 e["case_ids"] = [cid]
+                e["case_roles"] = {cid: e.get("role", "contrast")}
                 entities[e["id"]] = e
         for e in bundle["edges"]:
             missing = REQUIRED_EDGE - set(e)

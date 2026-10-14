@@ -6,7 +6,7 @@
   "subtitle": "BTR Mediterranean New Material Technology · Tanger Tech City, Morocco",
   "country": "MAR",
   "plant_status": "under construction",
-  "question": "Could Sayari detect Chinese graphite anode material reaching the US through BTR's new plant in Morocco, or through the Morocco–US graphite corridor?",
+  "question": "Can Sayari show who owns BTR's new Moroccan anode plant, and whether it already ships graphite to the US?",
   "headline": "The reverse of Case 1: ownership is visible, trade is not. Sayari traces BTR's Moroccan subsidiary to BTR in China through a Singapore holding company, 100% at each step. The plant has no graphite trade yet, and the 3,088 'graphite' shipments from Morocco to the US are mostly mislabelled fertilizers and chemicals, plus a little European industrial graphite.",
   "summary_for_non_experts": "BTR, the world's biggest maker of graphite for battery anodes, is building a 60,000-tonne-a-year anode plant near Tangier through a local subsidiary. Morocco has a US free-trade agreement, so a plant there could one day supply US battery makers. Sayari's company records show that the plant belongs to BTR, via Singapore and a BTR subsidiary in Jiangsu. So far the plant has only imported building materials and machinery from China. None of the large Morocco-to-US 'graphite' trade is battery material.",
   "key_numbers": [
@@ -80,7 +80,7 @@
    {
     "title": "The owner: visible this time",
     "kicker": "Step 2 · Contractual",
-    "text": "Moroccan records name a Singapore holding company, BNUO International, as 100% owner. Singapore records show BNUO is 100% owned by BTR (Jiangsu), and Chinese records show BTR owns all of BTR (Jiangsu). One step is a 'possibly same as' link between two BNUO records, backed by a shared officer. BTR's own release confirms the subsidiary.",
+    "text": "Moroccan records name a Singapore holding company, BNUO International, as 100% owner. Singapore records show BNUO is 100% owned by BTR (Jiangsu), and Chinese records show BTR owns all of BTR (Jiangsu). One step is a 'possibly same as' link between two BNUO records, backed by a shared officer, Yang Shunyi. BTR's own release confirms the subsidiary. The same person, Yang Shunyi, is director of the Singapore holding company and manager of the Moroccan plant company, with an address in BTR's home district of Shenzhen.",
     "edge_ids": [
      "e201",
      "e202",
@@ -90,7 +90,11 @@
      "e206",
      "e207",
      "e208",
-     "e209"
+     "e209",
+     "e227",
+     "e228",
+     "e229",
+     "e230"
     ],
     "node_ids": [
      "b1W3iE__07Zz0BOvA-8s7g",
@@ -107,7 +111,9 @@
      "s207",
      "s208",
      "s209",
-     "t201"
+     "t201",
+     "s218",
+     "s219"
     ]
    },
    {
@@ -227,7 +233,7 @@
    ],
    "suggested": [
     {
-     "text": "One executive appears to run the Moroccan company, the Singapore holding company and BTR (Jiangsu). This is a name match across English and Chinese records.",
+     "text": "Yang Shunyi appears to run the Moroccan company, the Singapore holding company and BTR (Jiangsu). This is a name match across English and Chinese records.",
      "call_ids": [
       "s203",
       "s208",
@@ -315,7 +321,7 @@
     "signal": "contractual",
     "severity": "High",
     "result": "detected",
-    "note": "100% registry chain via Singapore; one 'possibly same as' step, backed by a shared officer."
+    "note": "100% registry chain via Singapore; one 'possibly same as' step, backed by a shared officer, Yang Shunyi."
    },
    {
     "flag": "Same HS imported from China and exported to the US",
@@ -343,7 +349,7 @@
     "signal": "inferred",
     "severity": "Medium",
     "result": "suggested",
-    "note": "One executive appears at the Moroccan, Singapore and Jiangsu companies; BNUO sits at a mass-registration address."
+    "note": "Yang Shunyi appears at the Moroccan, Singapore and Jiangsu companies; BNUO sits at a mass-registration address."
    },
    {
     "flag": "Entity-resolution fragmentation",
@@ -365,9 +371,12 @@
    "The fertilizer, chemical and graphite companies are named because they appear in the HS 3801.10 bucket. Most appear only because of an apparent coding error in one trade data source.",
    "We read about 90 of the 3,088 corridor rows (ranked results), not all of them. A small battery-grade flow could still be hidden in the rest.",
    "'Departure Morocco' probably often means transshipment through Tanger Med; the European graphite rows likely did not originate in Morocco.",
-   "Entity-resolution links are our judgment and could be wrong. The shared-executive match is across scripts (English and Chinese records).",
+   "Entity-resolution links are our judgment and could be wrong. The Yang Shunyi match is across records with reversed name order.",
    "Sayari free-text queries rank rows but do not filter them; counts after a quoted query are not counts of matches."
-  ]
+  ],
+  "answer_label": "Partly",
+  "answer": "Ownership: yes. Registry data shows BTR owning the Tangier company 100% through a Singapore holding company, and the same executive runs both. Shipments: not yet. The plant is still being built and has no graphite trade.",
+  "why_it_matters": "Morocco has a US free-trade agreement, and BTR's plant is meant to supply Western carmakers. Because ownership is already on record, US buyers can tell the plant is Chinese-owned before its first shipment, which is exactly what the tax-credit rules ask them to check."
  },
  "entities": [
   {
@@ -512,7 +521,7 @@
    "identifiers": {
     "sg_uen": "202332562W"
    },
-   "summary": "Singapore holding company registered 14 Aug 2023 at a corporate-services address in Duo Tower. Singapore registry data: 100% owned by BTR (Jiangsu) New Material Technology. Its CEO also runs the Moroccan company.",
+   "summary": "Singapore holding company registered 14 Aug 2023 at a corporate-services address in Duo Tower. Singapore registry data: 100% owned by BTR (Jiangsu) New Material Technology. CEO Yang Shunyi also manages the Moroccan company.",
    "source_call_ids": [
     "s205",
     "s207",
@@ -961,6 +970,45 @@
     "s213"
    ],
    "sayari_url": "https://graph.sayari.com/resource/entity/oWaiMIhKLQJp4ywu8WsKSQ"
+  },
+  {
+   "id": "6liqAI84qhN4EnrJZYQYGQ",
+   "name": "Yang Shunyi",
+   "country": "CHN",
+   "type": "person",
+   "role": "officer",
+   "risk_flags": [],
+   "identifiers": {},
+   "summary": "Director of BNUO International Holding (Singapore), the 100% owner of BTR's Moroccan company. Address in Guangming District, Shenzhen, where BTR is headquartered.",
+   "source_call_ids": [
+    "s219"
+   ]
+  },
+  {
+   "id": "vp3lsfhJ6D_sTyektFUPuQ",
+   "name": "Shunyi Yang (Moroccan record)",
+   "country": "SGP",
+   "type": "person",
+   "role": "officer",
+   "risk_flags": [],
+   "identifiers": {},
+   "summary": "Manager of BTR Mediterranean New Material Technology, the Tangier plant company. Most likely the same person as the BNUO director (name order reversed).",
+   "source_call_ids": [
+    "s218"
+   ]
+  },
+  {
+   "id": "zZEQrNyl9vLzaUmXFhOg1g",
+   "name": "Pingzhou Yang",
+   "country": "SGP",
+   "type": "person",
+   "role": "officer",
+   "risk_flags": [],
+   "identifiers": {},
+   "summary": "Member of the board of BTR Mediterranean New Material Technology.",
+   "source_call_ids": [
+    "s218"
+   ]
   }
  ],
  "edges": [
@@ -993,7 +1041,7 @@
    "first_seen": null,
    "last_seen": null,
    "shipment_count": null,
-   "evidence": "Same name; Sayari links them as 'possibly the same as'. The same executive is general manager of the Moroccan company and CEO of the Singapore company.",
+   "evidence": "Same name; Sayari links them as 'possibly the same as'. Yang Shunyi is general manager of the Moroccan company and CEO of the Singapore company.",
    "confidence_reason": "Name plus a shared officer, but no shared identifier.",
    "source_call_ids": [
     "s203",
@@ -1447,6 +1495,75 @@
    "source_call_ids": [
     "s213"
    ]
+  },
+  {
+   "id": "e227",
+   "source": "6liqAI84qhN4EnrJZYQYGQ",
+   "target": "NKDYreiU9nvqyC4RRZQDfA",
+   "relation": "director_of",
+   "edge_type": "contractual",
+   "confidence": "documented",
+   "hs_codes": [],
+   "first_seen": null,
+   "last_seen": null,
+   "shipment_count": null,
+   "evidence": "Yang Shunyi is a director of BNUO International Holding (Singapore).",
+   "confidence_reason": "Singapore registry officer record in Sayari.",
+   "source_call_ids": [
+    "s219"
+   ]
+  },
+  {
+   "id": "e228",
+   "source": "vp3lsfhJ6D_sTyektFUPuQ",
+   "target": "El_6QFk0rVRdYJanrqEtAA",
+   "relation": "officer_of",
+   "edge_type": "contractual",
+   "confidence": "documented",
+   "hs_codes": [],
+   "first_seen": null,
+   "last_seen": null,
+   "shipment_count": null,
+   "evidence": "Shunyi Yang is manager of BTR Mediterranean New Material Technology.",
+   "confidence_reason": "Officer record in Sayari.",
+   "source_call_ids": [
+    "s218"
+   ]
+  },
+  {
+   "id": "e229",
+   "source": "zZEQrNyl9vLzaUmXFhOg1g",
+   "target": "El_6QFk0rVRdYJanrqEtAA",
+   "relation": "director_of",
+   "edge_type": "contractual",
+   "confidence": "documented",
+   "hs_codes": [],
+   "first_seen": null,
+   "last_seen": null,
+   "shipment_count": null,
+   "evidence": "Pingzhou Yang is on the board of BTR Mediterranean New Material Technology.",
+   "confidence_reason": "Officer record in Sayari.",
+   "source_call_ids": [
+    "s218"
+   ]
+  },
+  {
+   "id": "e230",
+   "source": "vp3lsfhJ6D_sTyektFUPuQ",
+   "target": "6liqAI84qhN4EnrJZYQYGQ",
+   "relation": "possibly_same_as",
+   "edge_type": "inferred",
+   "confidence": "inferred",
+   "hs_codes": [],
+   "first_seen": null,
+   "last_seen": null,
+   "shipment_count": null,
+   "evidence": "Same name with family and given names in reverse order; both records come from Singapore-sourced data and both hold office in the BTR chain.",
+   "confidence_reason": "Matching name and matching role context, but no shared identifier.",
+   "source_call_ids": [
+    "s218",
+    "s219"
+   ]
   }
  ],
  "calls": [
@@ -1507,7 +1624,7 @@
    },
    "question": "Who owns and runs BTR Mediterranean New Material Technology?",
    "purpose": "Ownership (INV-3)",
-   "result_summary": "SASU registered 2023-10-09. 100% shareholder and beneficial owner: BNUO International Holding Pte. Ltd (Singapore). Its general manager is the same executive who appears at the Singapore and Jiangsu companies. Trade count 0 sent, 0 received.",
+   "result_summary": "SASU registered 2023-10-09. 100% shareholder and beneficial owner: BNUO International Holding Pte. Ltd (Singapore). General manager Shunyi Yang; board member Pingzhou Yang. Trade count 0 sent, 0 received.",
    "interpretation": "Unlike Case 1, the registry data names a shareholder. The registry record itself has no trade.",
    "scorecard": "worked",
    "entity_ids": [
@@ -1617,7 +1734,7 @@
    "question": "Who is behind BNUO International Holding in Singapore?",
    "purpose": "Ownership (INV-3)",
    "result_summary": "UEN 202332562W, registered 2023-08-14, holding company at Duo Tower, Fraser Street. 100% shareholder BTR (Jiangsu). Its CEO is also general manager of the Moroccan company (an individual, named in Sayari). Also owns Envolvic International Holding. Mass-address and nominee-director flags.",
-   "interpretation": "The Singapore step is a corporate-services shell, but its shareholder is a BTR subsidiary. The same executive also runs the Moroccan company, which supports the 'possibly same as' link.",
+   "interpretation": "The Singapore step is a corporate-services shell, but its shareholder is a BTR subsidiary. Yang Shunyi also runs the Moroccan company, which supports the 'possibly same as' link.",
    "scorecard": "worked",
    "entity_ids": [
     "NKDYreiU9nvqyC4RRZQDfA",
@@ -1636,8 +1753,8 @@
    },
    "question": "Is BTR (Jiangsu) wholly owned by BTR?",
    "purpose": "Ownership (INV-3)",
-   "result_summary": "BTR (Jiangsu) New Material Technology, Changzhou, USCC 91320413MA1NAU5H7M, registered 2017-01-16. 100% shareholder BTR New Material Group. Holds 100% of BNUO. Its chairman is the same executive.",
-   "interpretation": "Every step is 100%. The same executive's name appears at the Jiangsu, Singapore and Moroccan companies (a cross-script name match).",
+   "result_summary": "BTR (Jiangsu) New Material Technology, Changzhou, USCC 91320413MA1NAU5H7M, registered 2017-01-16. 100% shareholder BTR New Material Group. Holds 100% of BNUO. Chairman Yang Shunyi.",
+   "interpretation": "Every step is 100%. Yang Shunyi's name appears at the Jiangsu, Singapore and Moroccan companies (a cross-script name match).",
    "scorecard": "worked",
    "entity_ids": [
     "zduDdSDoWzRJWKUinb7e0w",
@@ -1880,6 +1997,57 @@
     "uCtlsbaFXTco2UkaXMhPNg"
    ],
    "step": "context"
+  },
+  {
+   "id": "s218",
+   "timestamp": "2026-10-14T19:44:10Z",
+   "server": "sayari",
+   "tool": "traverse_network",
+   "params": {
+    "entity_id": "El_6QFk0rVRdYJanrqEtAA",
+    "entity_types": [
+     "person"
+    ],
+    "max_depth": 1,
+    "limit": 10,
+    "response_mode": "compact"
+   },
+   "question": "Which people run BTR's Moroccan company?",
+   "purpose": "Officers linking the plant to its parent",
+   "result_summary": "Two people: Shunyi Yang (manager) and Pingzhou Yang (member of the board), both from Singapore-sourced records.",
+   "interpretation": "The Moroccan company's manager can be checked against the officers of its Singapore parent.",
+   "scorecard": "worked",
+   "entity_ids": [
+    "El_6QFk0rVRdYJanrqEtAA",
+    "vp3lsfhJ6D_sTyektFUPuQ",
+    "zZEQrNyl9vLzaUmXFhOg1g"
+   ],
+   "step": "owner"
+  },
+  {
+   "id": "s219",
+   "timestamp": "2026-10-14T19:44:25Z",
+   "server": "sayari",
+   "tool": "traverse_network",
+   "params": {
+    "entity_id": "NKDYreiU9nvqyC4RRZQDfA",
+    "entity_types": [
+     "person"
+    ],
+    "max_depth": 1,
+    "limit": 10,
+    "response_mode": "compact"
+   },
+   "question": "Who are the directors of the Singapore holding company (BNUO)?",
+   "purpose": "Officers linking the plant to its parent",
+   "result_summary": "Seven officers. Three are local nominee or registered-agent directors flagged for mass business registration, and one is the auditor. Three directors have Chinese addresses: Yang Shunyi (Guangming District, Shenzhen, the district where BTR is headquartered), Huang Youyuan (Beijing) and Huang Aimin (Nanshan District, Shenzhen).",
+   "interpretation": "Yang Shunyi directs the Singapore holding company and manages the Moroccan plant company. The person links the two companies, alongside the 100% shareholding.",
+   "scorecard": "worked",
+   "entity_ids": [
+    "NKDYreiU9nvqyC4RRZQDfA",
+    "6liqAI84qhN4EnrJZYQYGQ"
+   ],
+   "step": "owner"
   }
  ]
 }

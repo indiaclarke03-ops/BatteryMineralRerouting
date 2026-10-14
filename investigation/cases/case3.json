@@ -6,7 +6,7 @@
   "subtitle": "Zhongke Electric / Zhongke Shinzoom · Sohar Freezone, Oman",
   "country": "OMN",
   "plant_status": "under construction",
-  "question": "Could Sayari detect Chinese anode material reaching US buyers through Zhongke Electric's new plant in Oman, before and after it starts producing?",
+  "question": "Can Sayari see Zhongke Electric's planned Oman anode plant, and how does Zhongke graphite reach the US today?",
   "headline": "Not yet: the trail hasn't started. Sayari has no record of the Sohar plant and no shipments into or out of it. The ownership chain is half visible. Sayari's Chinese registry shows Zhongke Electric owning the anode producer, and the company's own filing names the Hong Kong subsidiary that is building the plant. Today Zhongke graphite reaches the US mostly indirectly, through Malaysian cell plants, and only rarely direct from China.",
   "summary_for_non_experts": "Zhongke Electric is a Chinese company and one of China's top three anode makers. It is building a 200,000-tonne-a-year anode plant in Oman. Ground was broken on 8 May 2026, and first output is due in 2027. Because no anode leaves the plant yet, there is nothing to trace, but we mapped who owns it and how the company's anode material reaches the US now. Sayari shows China's registry chain and the Hong Kong company's existence. It does not show the Hong Kong-to-Oman link, which comes from the company's own stock-exchange filing.",
   "key_numbers": [
@@ -343,7 +343,10 @@
    "Malaysian cell exports can't be tied to Zhongke graphite at the lot level.",
    "Oman→US HS 3801.10 data is dominated by relayed Indian cargo and likely miscoding. Don't read the corridor as anode trade.",
    "The US anti-dumping case named Zhongke Shinzoom entities at 93.50%, but the USITC's negative vote (Mar 2026) means no order took effect."
-  ]
+  ],
+  "answer_label": "Not yet",
+  "answer": "The Oman plant isn't in Sayari yet. Ownership is visible inside China's registry and in the company's own filing. Today Zhongke graphite reaches the US mostly indirectly, as artificial graphite shipped to two Malaysian battery-cell plants.",
+  "why_it_matters": "At up to 200,000 t/yr, Sohar would be one of the largest anode plants outside China. Recording its ownership now gives buyers a baseline before any 'Made in Oman' anode material appears."
  },
  "entities": [
   {
@@ -1580,7 +1583,7 @@
    },
    "question": "Does EVE Energy Malaysia ship to the US?",
    "purpose": "Baseline trade",
-   "result_summary": "27 rows of lithium-ion cells (mostly INR21700, HS 8507.60/8506.50), 2025–2026. Buyers: EVE Energy North America (7; six departing Indonesia), Briggs & Stratton (3 + 2 across two records), Milwaukee Tool, TTI Consumer Power Tools, ProTechnologies, Energizer Battery Co, Stanley Black & Decker, ABM Tucker GA, Oregon International Air Freight, plus 7 undated rows.",
+   "result_summary": "27 rows of lithium-ion cells (mostly INR21700, HS 8507.60/8506.50), 2025–2026. Buyers: EVE Energy North America (7; six list the port 'Pinang', which Sayari codes as Indonesia but is most likely Penang, Malaysia), Briggs & Stratton (3 + 2 across two records), Milwaukee Tool, TTI Consumer Power Tools, ProTechnologies, Energizer Battery Co, Stanley Black & Decker, ABM Tucker GA, Oregon International Air Freight, plus 7 undated rows.",
    "interpretation": "This is the second indirect route: Zhongke anode material → a Malaysian cell plant → US buyers, as cells. Some rows left from Indonesia, China or Singapore, so the exporter's name alone doesn't fix the origin.",
    "scorecard": "worked",
    "entity_ids": [

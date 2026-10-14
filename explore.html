@@ -21,14 +21,14 @@
       <div class="page-head">
         <span class="eyebrow">Explore</span>
         <h1>The network</h1>
-        <p class="lede">Every company and link from all five cases. Filter by link type, country, HS code or risk flag. Click a node or a line to see what we know and which call it came from.</p>
+        <p class="lede">Every company and link we traced, one case at a time. Filter by link type, country, HS code or risk flag. Click a node or a line to see what we know and which call it came from.</p>
       </div>
 
       <div class="explore">
         <form class="filters card" id="filters" aria-label="Filters">
           <fieldset>
             <legend><label for="f-case" style="padding:0">Case</label></legend>
-            <select id="f-case" name="case"><option value="">All cases</option></select>
+            <select id="f-case" name="case"><option value="">All cases (dense)</option></select>
           </fieldset>
           <fieldset>
             <legend>Link type</legend><div class="ff-check">
@@ -68,19 +68,13 @@
 
         <div>
           <div class="graph-frame">
-            <div class="graph tall" id="graph" role="img" aria-label="Network graph. A text list of the same links follows."></div>
-            <div class="graph-tools">
-              <button type="button" id="g-fit" title="Fit to screen" aria-label="Fit graph to screen">⤢</button>
-              <button type="button" id="g-layout" title="Re-run layout" aria-label="Re-run layout">↻</button>
-            </div>
+            <aside class="side-panel card drawer" id="panel" aria-live="polite" hidden></aside>
+            <div class="graph xtall" id="graph" role="img" aria-label="Network graph. A text list of the same links follows."></div>
           </div>
-          <p class="muted" style="font-size:var(--fs-0);margin-top:var(--s-2)">Scroll to zoom, drag to pan. Faint lines are Leads. <a href="about.html#read">How to read the graph</a></p>
+          <p class="muted" style="font-size:var(--fs-0);margin-top:var(--s-2)">Hover to focus on a company's links. Click for details. Scroll or use + − to zoom; drag to pan. Faint lines are Leads. <a href="about.html#read">How to read the graph</a></p>
         </div>
 
-        <aside class="side-panel card" id="panel" aria-live="polite">
-          <h3>Select something</h3>
-          <p class="muted">Click a company or a link in the graph. Its summary, flags, confidence and the calls behind it will appear here.</p>
-        </aside>
+
       </div>
 
       <section aria-labelledby="list-h">
