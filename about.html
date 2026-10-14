@@ -21,9 +21,9 @@
       <div class="page-head">
         <span class="eyebrow">About this tool</span>
         <h1>About Paper Trail</h1>
-        <p class="lede">Paper Trail tests whether trade and corporate-registry data can detect Chinese battery materials being routed through third-country plants before they reach US battery supply chains. It uses the Sayari knowledge graph through Sayari's MCP server.</p>
+        <p class="lede">Paper Trail tests whether trade and corporate-registry data can detect Chinese battery materials being routed through factories in other countries before they reach US battery supply chains. It traces five factories. It uses the Sayari knowledge graph through Sayari's MCP server.</p>
         <ul class="toc">
-          <li><a href="#purpose">Purpose</a> ·</li><li><a href="#read">How to read it</a> ·</li><li><a href="#flags">Risk flags</a> ·</li>
+          <li><a href="#purpose">Purpose</a> ·</li><li><a href="#read">How to read it</a> ·</li><li><a href="#confidence">How we rate confidence</a> ·</li><li><a href="#flags">Risk flags</a> ·</li><li><a href="#naming">Naming companies</a> ·</li>
           <li><a href="#sources">Data sources</a> ·</li><li><a href="#credits">Credits</a> ·</li><li><a href="#limits">Limitations and ethics</a> ·</li>
           <li><a href="#course">Course context</a> ·</li><li><a href="#changelog">Changelog</a></li>
         </ul>
@@ -43,9 +43,42 @@
 
       <section id="read" aria-labelledby="read-h">
         <h2 id="read-h">How to read it</h2>
-        <p>Every link between two companies has an <strong>edge type</strong>, shown by both colour and line style, and a <strong>confidence</strong> badge. Click any receipt such as <span class="receipts"><a href="method.html#s017">s017</a></span> to see the call that produced it.</p>
+        <p>Every link between two companies has an <strong>edge type</strong>, shown by both colour and line style, and a <strong>confidence</strong> badge (<a href="#confidence">how we rate it</a>). Click any receipt such as <span class="receipts"><a href="method.html#s017">s017</a></span> to see the call that produced it.</p>
         <div class="card" data-legend></div>
         <p style="margin-top:var(--s-4)">The <strong>verdict</strong> on the home page sorts findings into what Sayari <em>detected</em> (a record shows it), <em>suggested</em> (signals point to it without a record) and <em>couldn't see</em>.</p>
+      </section>
+
+
+      <section id="confidence" aria-labelledby="conf-h">
+        <h2 id="conf-h">How we rate confidence</h2>
+        <p>Every link on the site gets one of four ratings. The rating describes <strong>the evidence</strong>, not how suspicious the link is. A <em>Documented</em> shipment can be completely ordinary, and a <em>Lead</em> can still turn out to matter. Each link also shows a one-line "Why" explaining its rating.</p>
+        <div class="table-scroll card" style="padding:0"><table class="conf-table">
+          <thead><tr><th>Rating</th><th>What it takes</th><th>Why this threshold</th><th>Example from Case 1</th></tr></thead>
+          <tbody>
+            <tr><td><span class="badge c-documented">Documented</span></td>
+              <td>A single record states the link: a dated customs row naming both companies with a product (HS) code, or a company-registry shareholder entry.</td>
+              <td>The record itself is the evidence. Anyone with Sayari access can open the same record and check it.</td>
+              <td>BTR Indonesia → Ultium Cells Warren: 3 shipment rows of artificial graphite, Jun–Aug 2025 (<a href="method.html#s017">s017</a>).</td></tr>
+            <tr><td><span class="badge c-corroborated">Cross-checked</span></td>
+              <td>No single record states it in full, but two independent sources agree. One of them can be the company's own statement (a press release or filing) if a second source backs it.</td>
+              <td>Companies rarely lie about owning their own factories, but a claim from one source can be out of date or wrong. A second source guards against that.</td>
+              <td>BTR owns the Indonesian plant: BTR's press release plus a trade directory, consistent with the trade link and name. Sayari's registry has no record (<a href="method.html#s009">s009</a>, <a href="method.html#t012">t012</a>).</td></tr>
+            <tr><td><span class="badge c-inferred">Inferred</span></td>
+              <td>Our judgment from matching details, such as the same street address, a variant of the same name, or shared buyers. No source states the link.</td>
+              <td>Matching details make a link likely but not certain. Two companies can share a building, and names get truncated. So we show the reasoning and let the reader judge.</td>
+              <td>Five Sayari records are one plant: four share Jl. Indraprasta No. 8, Kendal (<a href="method.html#s006">s006</a>, <a href="method.html#s022">s022</a>, <a href="method.html#s023">s023</a>).</td></tr>
+            <tr><td><span class="badge c-lead">Lead</span></td>
+              <td>One weak signal, usually a name match alone or a link we saw but didn't pull records for.</td>
+              <td>Shown for transparency so others can follow up. It should never be relied on by itself.</td>
+              <td>The Jakarta Barat gazette record has the exact name but no address or identifiers (<a href="method.html#s007">s007</a>).</td></tr>
+          </tbody></table></div>
+        <p style="margin-top:var(--s-4)"><strong>Rules we apply:</strong></p>
+        <ul>
+          <li>Ratings only go up with more independent evidence. A second Sayari tool restating the same underlying record doesn't count twice.</li>
+          <li>A Sayari risk flag on its own never raises a rating; flags describe neighbours.</li>
+          <li>Each case also has an overall rating: the rating of the weakest link the case's main conclusion depends on.</li>
+          <li>The <em>edge type</em> (shipment, ownership, inferred) says what kind of link it is; the <em>confidence</em> says how well we know it. They're separate on purpose.</li>
+        </ul>
       </section>
 
       <section id="flags" aria-labelledby="flags-h">
@@ -56,6 +89,13 @@
           <li><code>*_origin_subtier</code>: a listed entity appears in tier 2 or 3 of the supplier network in the past 730 days, based on trade data.</li>
           <li>We show flags as context and mark risky ones with ⚑. We never present a flag as a finding about the company itself. Definitions come from <a href="method.html#s003">s003</a>.</li>
         </ul>
+      </section>
+
+
+      <section id="naming" aria-labelledby="naming-h">
+        <h2 id="naming-h">Naming companies</h2>
+        <p>We name every company the records show: parents, traders, factories and buyers. The aim is full transparency, so anyone can follow each link back to its source. Being named here means a company appears in trade or registry data. It doesn't mean it broke any rule. US battery makers buying from a Chinese-owned plant abroad may be fully compliant; the PFE rules turn on cost shares and legal tests we don't assess.</p>
+        <p>Individuals (directors, officers, managers) aren't named, even when a registry lists them. Where a shared executive links two companies, we describe the role, and the name can be checked in Sayari.</p>
       </section>
 
       <section id="sources" aria-labelledby="sources-h">
@@ -79,7 +119,7 @@
         <h2 id="limits-h">Limitations and ethics</h2>
         <ul>
           <li><strong>This is not an accusation tool.</strong> We write "pattern consistent with" or "warrants due diligence", never that a company is evading anything.</li>
-          <li>Most third-country processing of Chinese inputs is legal and commercially normal. The US buyers are named only because customs records name them. That says nothing about their compliance.</li>
+          <li>Most third-country processing of Chinese inputs is legal and commercially normal. Companies are named for transparency (<a href="#naming">see above</a>), not as a finding of wrongdoing.</li>
           <li>Trade data has gaps: some countries aren't covered, product descriptions are vague, dates lag, and HS 3801.10 also covers non-battery graphite.</li>
           <li>Trade records can't show which input went into which export, so the Chinese-origin share of any shipment is unknown.</li>
           <li>Entity resolution can merge or split companies wrongly. Every "possibly the same as" link is labelled Inferred, with the reasoning shown.</li>
@@ -98,6 +138,7 @@
       <section id="changelog" aria-labelledby="changelog-h">
         <h2 id="changelog-h">Changelog</h2>
         <ul>
+          <li><strong>Iteration 1.1, 14 Oct 2026 (before class).</strong> Expanded from one plant to five cases. New plain-language home page with key numbers, a rerouting diagram and a glossary. "Corroborated" renamed to "Cross-checked", with a full explanation of the confidence ratings and a "Why" line on every link. All companies named.</li>
           <li><strong>Iteration 1, 14 Oct 2026.</strong> Case 1 (BTR Indonesia) traced with 24 Sayari calls. Policy timeline verified with 14 Tavily calls; three dates or rates corrected. Pages: The Trace, Explore, Case Files, Method, About. Case 2 (Morocco) logged as a lead.</li>
           <li><em>Iteration 2: after class feedback.</em></li>
         </ul>

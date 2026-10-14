@@ -7,11 +7,15 @@
 
 > Can trade and corporate-registry data reveal Chinese battery materials, especially graphite anode material, being rerouted through third-country plants before they reach US battery supply chains?
 
-Iteration 1 traces one plant end to end: **BTR's anode plant in Indonesia** (PT Indonesia BTR New Energy Material).
+Iteration 1 traces **five plants** end to end:
 
-- **Transactional:** Sayari shows dated HS 3801.10 shipments from the plant to Ultium Cells (Warren and Spring Hill), SK Battery America, StarPlus Energy, GM and Tesla, Dec 2024 – Aug 2025. It also shows Chinese artificial graphite (HS 3801) arriving at the same plant from BTR and from a trader registered in the BTR Building in Shenzhen.
-- **Contractual:** Sayari has **no registry ownership record** for the plant. The BTR ownership link comes from open sources and is labelled that way.
-- **Inferred:** five fragmented Sayari records for one plant, tied together by a shared street address.
+| # | Case | What Sayari showed |
+|---|---|---|
+| 1 | BTR's anode plant, Indonesia | Chinese graphite in; HS 3801.10 out to Ultium Cells, SK Battery America, StarPlus, GM and Tesla. No registry ownership: the BTR link comes from open sources |
+| 2 | BTR's anode plant, Tangier, Morocco | The reverse: 100% BTR ownership is visible through Singapore, but there's no graphite trade yet. The 3,088-row "Morocco → US graphite" corridor is mostly mislabelled fertilizer |
+| 3 | Zhongke Electric's plant, Sohar, Oman | Not in Sayari yet. Ownership is visible in China's registry and the company's filing; today Zhongke graphite reaches the US mostly via Malaysian cell plants |
+| 4 | POSCO Future M, Korea (contrast) | Korean-owned (POSCO Holdings 58.2%, registry); Chinese graphite in until Dec 2023; 95 anode shipments to GM, SK Battery America, Tesla, Panasonic and XALT. Same buyers as Case 1, different owner |
+| 5 | Putailai's Zichen plant, Malaysia | Five corridor scans found no Chinese-owned anode maker shipping to the US. The one Chinese-owned plant is registered 100% via Singapore but isn't trading yet |
 
 Every link on the site carries an edge type, a confidence badge and the IDs of the calls that produced it.
 
@@ -23,14 +27,14 @@ Built for GLOB1-GC 2620 *Beyond the Brand: Harnessing Emerging Tech in Ethical S
 |---|---|
 | `index.html`: The Trace | The question, policy timeline, a 5-step walkthrough on the graph (← → keys), the verdict and feedback asks |
 | `explore.html`: Explore | Cytoscape network with filters (link type, confidence, country, HS code, risk), a side panel and a list view |
-| `cases.html`: Case Files | Case 1 narrative, the Passport vs. Paper Trail card, red flags and caveats; Case 2 lead (Morocco) |
-| `method.html`: Method | Investigation replay of all 24 Sayari calls, capability scorecard, red-flag rubric, searchable log of 38 calls |
+| `cases.html`: Case Files | All five cases: key numbers, mini graph, steps, verdict, Passport vs. Paper Trail card, red flags, caveats |
+| `method.html`: Method | Investigation replay of every Sayari call (grouped by case), capability scorecard, red-flag rubric, searchable call log |
 | `about.html`: About this tool | Purpose, how to read it, data sources, credits, limitations and ethics, changelog |
 
 ## How it works
 
 - Static site with no build step: vanilla HTML/CSS/JS plus pinned CDN libraries.
-- **No keys in the browser.** Sayari and Tavily were queried through MCP in VS Code (Claude Code). Results were summarised by hand into `investigation/build_data.py`, which writes the curated JSON in `/data`. The site only reads that JSON.
+- **No keys in the browser.** Sayari and Tavily were queried through MCP in VS Code (Claude Code). Case 1 is summarised in `investigation/build_data.py`; cases 2–5 are in `investigation/cases/case*.json`. The builder merges them, checks every cross-reference, and writes the curated JSON in `/data`. The site only reads that JSON.
 - **Derived data only.** Sayari data is licensed, so we publish our own summaries (names, link types, dates, HS codes, counts, flags) and link each entity to Sayari Graph. No raw record dumps.
 
 ```

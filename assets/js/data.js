@@ -2,7 +2,7 @@
 window.PT = window.PT || {};
 
 (function (PT) {
-  const FILES = ["entities", "edges", "cases", "call_log", "policy_timeline", "sources"];
+  const FILES = ["entities", "edges", "cases", "call_log", "policy_timeline", "sources", "overview"];
 
   PT.load = async function () {
     if (PT._data) return PT._data;
@@ -18,6 +18,7 @@ window.PT = window.PT || {};
     d.entityById = new Map(d.entities.items.map((e) => [e.id, e]));
     d.edgeById = new Map(d.edges.items.map((e) => [e.id, e]));
     d.callById = new Map(d.call_log.items.map((c) => [c.id, c]));
+    d.caseById = new Map(d.cases.items.map((c) => [c.id, c]));
     PT._data = d;
     return d;
   };
@@ -27,15 +28,22 @@ window.PT = window.PT || {};
   };
 
   PT.CONF = {
-    documented: { label: "Documented", help: "Sayari returned dated, HS-coded shipment rows or a registry record for this link." },
-    corroborated: { label: "Corroborated", help: "Seen in Sayari's graph and supported by a second, independent signal (another tool or an open source)." },
-    inferred: { label: "Inferred", help: "Our judgment from matching attributes (address, name, shared buyer). Not stated in any record." },
-    lead: { label: "Lead", help: "A single weak signal. Needs checking before anyone relies on it." },
+    documented: { label: "Documented", help: "A record shows it: Sayari returned dated shipment rows or a company-registry entry for this exact link." },
+    corroborated: { label: "Cross-checked", help: "Two independent sources agree, for example a Sayari link plus a company statement or filing. No single record states it in full." },
+    inferred: { label: "Inferred", help: "Our judgment from matching details (same street address, same name, same buyers). No record states it." },
+    lead: { label: "Lead", help: "One weak signal, such as a name match. Worth checking; don't rely on it." },
+  };
+  PT.PATTERN = {
+    "rerouting-pattern": "Pattern found: Chinese inputs in, US shipments out",
+    "complete-trail": "Full trail visible",
+    "trail-not-started": "Not producing yet: baseline set",
+    "contrast-legitimate": "Contrast: non-Chinese owner",
+    "trail-goes-dark": "Trail goes dark",
   };
   PT.ETYPE = {
-    transactional: { label: "Transactional", cls: "tx", help: "Goods moved: a customs or bill-of-lading record with HS code and dates." },
-    contractual: { label: "Contractual / corporate", cls: "ct", help: "A registry or filing link: owns, subsidiary of, director of." },
-    inferred: { label: "Inferred", cls: "inf", help: "Derived rather than stated: possibly-same-as matches, shared addresses, risk adjacency." },
+    transactional: { label: "Shipment (transactional)", cls: "tx", help: "Goods moved: a customs or bill-of-lading record with product code (HS) and dates." },
+    contractual: { label: "Ownership (contractual)", cls: "ct", help: "A company-registry or filing link: owns, subsidiary of, director of." },
+    inferred: { label: "Inferred link", cls: "inf", help: "Worked out rather than stated: probable duplicate records, shared addresses, risk links." },
   };
   PT.ROLE = {
     parent: "Chinese parent / producer",
@@ -44,14 +52,19 @@ window.PT = window.PT || {};
     transit_plant: "Third-country plant",
     us_buyer: "US buyer",
     contrast: "Registry contrast",
+    buyer: "Buyer",
   };
   PT.COUNTRY = {
     CHN: "China", IDN: "Indonesia", USA: "United States", MOZ: "Mozambique", MDG: "Madagascar",
-    ARE: "United Arab Emirates", KOR: "South Korea", MAR: "Morocco",
+    ARE: "United Arab Emirates", KOR: "South Korea", MAR: "Morocco", OMN: "Oman", JPN: "Japan",
+    VNM: "Vietnam", MYS: "Malaysia", THA: "Thailand", MEX: "Mexico", HKG: "Hong Kong", SGP: "Singapore",
+    DEU: "Germany", ESP: "Spain", IND: "India", CAN: "Canada", GBR: "United Kingdom", AUS: "Australia", BRA: "Brazil",
   };
   PT.RELATION = {
     ships_to: "ships to", owns: "owns", possibly_same_as: "possibly the same as",
     shares_address: "shares an address with", group_name_match: "name matches group of",
+    subsidiary_of: "is a subsidiary of", director_of: "is a director of", risk_adjacent: "is one hop from",
+    shareholder_of: "owns a stake in", receives_from: "receives from",
   };
 
   PT.confBadge = function (c) {
@@ -64,6 +77,9 @@ window.PT = window.PT || {};
   };
   PT.scoreBadge = function (s) {
     return `<span class="badge sc-${PT.esc(s)}">${PT.esc(s)}</span>`;
+  };
+  PT.whyHTML = function (e) {
+    return e.confidence_reason ? `<div class="why">Why ${PT.esc((PT.CONF[e.confidence] || {}).label || e.confidence)}: ${PT.esc(e.confidence_reason)} <a href="about.html#confidence">How we rate</a></div>` : "";
   };
   PT.receipts = function (ids) {
     if (!ids || !ids.length) return "";

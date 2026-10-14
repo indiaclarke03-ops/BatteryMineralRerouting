@@ -1,0 +1,1586 @@
+{
+ "case": {
+  "id": "case-5",
+  "slug": "corridor-scan",
+  "title": "Putailai's Zichen anode plant in Malaysia",
+  "subtitle": "Zichen Malaysia Sdn. Bhd. · Gurun, Kedah, Malaysia",
+  "country": "MYS",
+  "plant_status": "under construction",
+  "question": "Could corridor scans of US graphite imports from Vietnam, Malaysia, Thailand, Mexico and Korea find a Chinese-owned anode plant shipping to the US?",
+  "headline": "Not yet. In five corridors we found no Chinese-owned anode maker shipping artificial graphite to the US. The rows were electrode makers, machined graphite parts, forwarders and mislabelled chemicals. The one Chinese-owned anode plant in these countries, Putailai's Zichen Malaysia, is clear in the registry: 100% owned through Singapore by Shanghai Putailai. But it is still being built and has no trade.",
+  "summary_for_non_experts": "We scanned US import records of artificial graphite from five countries where Chinese anode makers might set up. None showed a Chinese-owned anode producer selling to US battery plants. The only Chinese-owned anode plant in those countries is Putailai's 50,000-tonne plant in Kedah, Malaysia, which broke ground in June 2026. Unlike Case 1, the registry shows exactly who owns it, so if it ever ships to the US, the ownership question that decides US tax credits will already be answered.",
+  "key_numbers": [
+   {
+    "value": "5",
+    "label": "corridors scanned (Vietnam, Malaysia, Thailand, Mexico, Korea)",
+    "call_ids": [
+     "s501",
+     "s502",
+     "s503",
+     "s504",
+     "s505"
+    ]
+   },
+   {
+    "value": "0",
+    "label": "Chinese-owned anode producers found shipping to the US from them",
+    "call_ids": [
+     "s506",
+     "s507",
+     "s508",
+     "s509",
+     "s514"
+    ]
+   },
+   {
+    "value": "100%",
+    "label": "Zichen Malaysia stake held by Putailai (Singapore), per registry data",
+    "call_ids": [
+     "s526"
+    ]
+   },
+   {
+    "value": "0",
+    "label": "trade records for Zichen Malaysia",
+    "call_ids": [
+     "s526"
+    ]
+   },
+   {
+    "value": "56",
+    "label": "US-bound 'anode' rows from Singapore since 2024; the 25 we read name no producer",
+    "call_ids": [
+     "s518",
+     "s519"
+    ]
+   }
+  ],
+  "overall_confidence": "corroborated",
+  "pattern": "trail-not-started",
+  "steps": [
+   {
+    "title": "Five corridors, no Chinese anode maker",
+    "kicker": "Step 1 · Corridor",
+    "text": "Since January 2024, US imports of artificial graphite (HS 3801.10) came from 347 suppliers in Mexico, 107 in Korea, 8 in Thailand, 5 in Vietnam and 2 in Malaysia. Mexico's leaders are electrode makers and chemical firms. Korea's are POSCO and Japanese-owned carbon makers. Vietnam's top shipper sends machined graphite jigs. Thailand's are mostly forwarders.",
+    "edge_ids": [
+     "e510",
+     "e511",
+     "e512"
+    ],
+    "node_ids": [
+     "ib6a_v_imoUoFRPQiwEjPA",
+     "eX51gPEUQ-MpkznB5_ICaQ",
+     "oXMFQqYBSVg9LN8JdsZXRg",
+     "f0O9Dwn-kAeZ-BAH5Cz-tg",
+     "PrF3X58WIkceHRwbwvvUvg",
+     "Fj3vtxDroFyjyPsLgsnm2A"
+    ],
+    "call_ids": [
+     "s501",
+     "s502",
+     "s503",
+     "s504",
+     "s505",
+     "s506",
+     "s507",
+     "s508",
+     "s509",
+     "s511",
+     "s512",
+     "s513",
+     "s514",
+     "s515",
+     "s516",
+     "s521",
+     "s522"
+    ]
+   },
+   {
+    "title": "Where 'anode' does show up",
+    "kicker": "Step 2 · Transactional",
+    "text": "Searching row descriptions for 'anode' found 398 US-bound rows, none from Vietnam, Malaysia or Thailand. Mexico's and Oman's 'anode' rows are mislabelled chemicals. Singapore is different: 'carbon anode materials' reached General Motors, L-H Battery and NextStar Energy in Aug–Sep 2026 with no producer named. The only named shipper was an Indonesian forwarder.",
+    "edge_ids": [
+     "e513"
+    ],
+    "node_ids": [
+     "4fqrWAcyrgtWw2RdV6qZsg",
+     "VqJzPhi60R4c846F7xW2TQ",
+     "KlHlMaPK_F6s27YQ8ug2UA",
+     "VhO8XHL4mZCMTDCLkVzAYQ",
+     "Wfde8TXwHX3DkOQwj2XmTA"
+    ],
+    "call_ids": [
+     "s518",
+     "s519",
+     "s520",
+     "s523"
+    ]
+   },
+   {
+    "title": "The plant: registered, not yet shipping",
+    "kicker": "Step 3 · Plant",
+    "text": "Zichen Malaysia Sdn. Bhd. was registered on 23 Sep 2025 to make battery materials and carbon products. Press reports put its 50,000-tonne anode plant in Gurun, Kedah, with ground broken on 1 June 2026 and about two years of building ahead. Sayari shows no trade in or out.",
+    "edge_ids": [],
+    "node_ids": [
+     "WG1hrSwGRdoLMIt997Z5-w"
+    ],
+    "call_ids": [
+     "s524",
+     "s526",
+     "t501",
+     "t502"
+    ]
+   },
+   {
+    "title": "The owner: in the registry this time",
+    "kicker": "Step 4 · Contractual",
+    "text": "Malaysian shareholder data lists Putailai (Singapore) as owning 100% of Zichen Malaysia. Sayari's ownership graph links that company to the Shanghai-listed Putailai group, and Putailai's own announcement calls Zichen Malaysia a wholly owned subsidiary. Two directors share names with group shareholders. That is a lead, not a link.",
+    "edge_ids": [
+     "e501",
+     "e502",
+     "e503",
+     "e504",
+     "e505",
+     "e506",
+     "e507",
+     "e508",
+     "e509"
+    ],
+    "node_ids": [
+     "04tgJV8tHRLxXnFybfSbOg",
+     "Q_Z4Q6TSyW_gNl0L5pPyeQ",
+     "5rQqO0uMqEvtMvK_oQGcYA",
+     "Zb9HwzswdGPKn62ayKTnIQ",
+     "LwA4a_LwLoGPjHr6RDiArg",
+     "eKMO9SjyO_k4HmOLY8o_7A",
+     "M5aejkK4bjb5FsPDBPoVIA",
+     "So9o4udTCQcP19p-UGkyig"
+    ],
+    "call_ids": [
+     "s525",
+     "s526",
+     "s527",
+     "t502"
+    ]
+   },
+   {
+    "title": "A trail that hasn't started",
+    "kicker": "Step 5 · Gap",
+    "text": "With no trade, we can't show inputs from China or buyers in the US. A name search for the group's existing exports returned only unrelated 'Zichen' firms. Two boolean searches returned nothing. The plant is a watch item: its first export rows will show whether its graphite reaches US cell plants.",
+    "edge_ids": [],
+    "node_ids": [
+     "WG1hrSwGRdoLMIt997Z5-w"
+    ],
+    "call_ids": [
+     "s510",
+     "s517",
+     "s528"
+    ]
+   }
+  ],
+  "verdict": {
+   "detected": [
+    {
+     "text": "Registry ownership chain: Zichen Malaysia is 100% held by Putailai (Singapore), which links to the Shanghai-listed Putailai group.",
+     "call_ids": [
+      "s526",
+      "s527"
+     ]
+    },
+    {
+     "text": "No Chinese-owned anode producer ships HS 3801.10 to the US from Vietnam, Malaysia, Thailand, Mexico or Korea in this data since 2024.",
+     "call_ids": [
+      "s506",
+      "s507",
+      "s508",
+      "s509",
+      "s514",
+      "s518"
+     ]
+    },
+    {
+     "text": "'Carbon anode materials' reached General Motors, L-H Battery and NextStar Energy via Singapore in Aug–Sep 2026, with no producer named.",
+     "call_ids": [
+      "s519"
+     ]
+    }
+   ],
+   "suggested": [
+    {
+     "text": "The Singapore anode rows may be Indonesian cargo: the one named shipper is an Indonesian forwarder. Which plant made them is not shown.",
+     "call_ids": [
+      "s519"
+     ]
+    },
+    {
+     "text": "Two Zichen Malaysia directors share names with Putailai group shareholders.",
+     "call_ids": [
+      "s526",
+      "s527"
+     ]
+    }
+   ],
+   "not_visible": [
+    {
+     "text": "Any input or output trade for the Malaysian plant: it is not built yet.",
+     "call_ids": [
+      "s526"
+     ]
+    },
+    {
+     "text": "Stake percentages above the Singapore holding company.",
+     "call_ids": [
+      "s527"
+     ]
+    },
+    {
+     "text": "Putailai's current China-to-US anode exports; a name search returned only unrelated firms.",
+     "call_ids": [
+      "s528"
+     ]
+    }
+   ]
+  },
+  "passport": [
+   {
+    "field": "Place of manufacture",
+    "guidance_no": "8",
+    "declared": "The cell plant's location, e.g. USA.",
+    "paper_trail": "Planned: Gurun, Kedah, Malaysia. No exports yet.",
+    "gap": true,
+    "note": "The field covers the battery, not where its anode was made."
+   },
+   {
+    "field": "Detailed composition (anode)",
+    "guidance_no": "45",
+    "declared": "'Graphite' as the anode active material.",
+    "paper_trail": "Planned artificial graphite anode, with on-site crushing, graphitization and carbonization (press).",
+    "gap": true,
+    "note": "Nothing to compare until the plant ships."
+   },
+   {
+    "field": "Critical raw materials > 0.1%",
+    "guidance_no": "15",
+    "declared": "Natural graphite listed if present.",
+    "paper_trail": "No input trade yet; feedstock (coke, needle coke or Chinese graphite) unknown.",
+    "gap": true,
+    "note": "The first import rows will tell."
+   },
+   {
+    "field": "Responsible-sourcing (due-diligence) report",
+    "guidance_no": "19",
+    "declared": "Deferred under the EU Battery Regulation.",
+    "paper_trail": "No forced-labor flags on the plant or its Singapore holder in the records we pulled.",
+    "gap": false,
+    "note": "Clean so far, but there is no supply chain yet to flag."
+   },
+   {
+    "field": "Ownership of upstream suppliers",
+    "guidance_no": "—",
+    "declared": "No such field in the EU passport.",
+    "paper_trail": "100% Putailai (Singapore), linked to Shanghai Putailai group (registry + company statement).",
+    "gap": true,
+    "note": "Answerable here, unlike Case 1. The US PFE rules ask exactly this."
+   }
+  ],
+  "red_flags": [
+   {
+    "flag": "Chinese parent ownership of the transit plant",
+    "signal": "contractual",
+    "severity": "High",
+    "result": "detected",
+    "note": "Registry: 100% via Putailai (Singapore) to the Shanghai group."
+   },
+   {
+    "flag": "Same HS imported from China and exported to the US",
+    "signal": "transactional",
+    "severity": "High",
+    "result": "not_visible",
+    "note": "The plant has no trade yet."
+   },
+   {
+    "flag": "Recent incorporation vs. first export date",
+    "signal": "contractual",
+    "severity": "Medium",
+    "result": "not_visible",
+    "note": "Registered 23 Sep 2025; no export yet to compare with."
+   },
+   {
+    "flag": "Volume spike after a policy date",
+    "signal": "transactional",
+    "severity": "Medium",
+    "result": "not_visible",
+    "note": "No volumes yet."
+   },
+   {
+    "flag": "Shared address or officer with a flagged entity",
+    "signal": "inferred",
+    "severity": "Medium",
+    "result": "not_visible",
+    "note": "No flagged neighbours. The company secretary is a mass registrar, which is normal for new Malaysian firms."
+   },
+   {
+    "flag": "Entity-resolution fragmentation",
+    "signal": "inferred",
+    "severity": "Low (disclose)",
+    "result": "detected",
+    "note": "The Singapore holder appears twice, once typed as a person; the parent has two records."
+   },
+   {
+    "flag": "Forced-labor / UFLPA sub-tier flags",
+    "signal": "inferred",
+    "severity": "Medium",
+    "result": "not_visible",
+    "note": "None on the plant or holding records."
+   }
+  ],
+  "caveats": [
+   "Building a plant abroad is legal and common. Nothing here shows wrongdoing by any company named.",
+   "US buyers and corridor shippers are named because they appear in customs records; this says nothing about their compliance.",
+   "HS 3801.10 is noisy: many corridor rows are mis-coded chemicals, electrodes or machined parts. Supplier counts overstate battery trade.",
+   "Facet scans count suppliers, not tonnes. A corridor with few suppliers can still carry large volumes.",
+   "Sayari's Malaysian ownership data comes from a third-party shareholder source; stake percentages above the Singapore level were not returned.",
+   "Name matches between directors and parent shareholders are leads only."
+  ]
+ },
+ "entities": [
+  {
+   "id": "WG1hrSwGRdoLMIt997Z5-w",
+   "name": "Zichen Malaysia Sdn. Bhd.",
+   "country": "MYS",
+   "type": "company",
+   "role": "transit_plant",
+   "risk_flags": [
+    "controlled_by_mass_business_registration"
+   ],
+   "identifiers": {
+    "mys_company_reg_no": "202501044592"
+   },
+   "summary": "Putailai's Malaysian anode company. Registered 23 Sep 2025 with a Penang office address; its stated business is producing battery materials and carbon products. Sayari shows no trade at all. Press names it as the company building the 50,000-tonne anode plant in Gurun, Kedah.",
+   "source_call_ids": [
+    "s524",
+    "s526",
+    "s527",
+    "t501",
+    "t502"
+   ],
+   "sayari_url": "https://graph.sayari.com/resource/entity/WG1hrSwGRdoLMIt997Z5-w"
+  },
+  {
+   "id": "04tgJV8tHRLxXnFybfSbOg",
+   "name": "Putailai (Singapore) Pte. Ltd.",
+   "country": "SGP",
+   "type": "company",
+   "role": "parent",
+   "risk_flags": [],
+   "identifiers": {},
+   "summary": "Singapore holding company. The Malaysian registry data lists it as the 100% shareholder of Zichen Malaysia.",
+   "source_call_ids": [
+    "s526",
+    "s527"
+   ],
+   "sayari_url": "https://graph.sayari.com/resource/entity/04tgJV8tHRLxXnFybfSbOg"
+  },
+  {
+   "id": "Q_Z4Q6TSyW_gNl0L5pPyeQ",
+   "name": "PUTAILAI (SINGAPORE) PTE. LTD (record typed as a person)",
+   "country": "MYS",
+   "type": "person",
+   "role": "parent",
+   "risk_flags": [],
+   "identifiers": {
+    "unknown_passport": "XLZ00250663"
+   },
+   "summary": "A second record for the Singapore holding company, wrongly typed as a person. It is listed as a former 100% shareholder of Zichen Malaysia. Kept as a duplicate of the company record.",
+   "source_call_ids": [
+    "s526",
+    "s527"
+   ],
+   "sayari_url": "https://graph.sayari.com/resource/entity/Q_Z4Q6TSyW_gNl0L5pPyeQ"
+  },
+  {
+   "id": "5rQqO0uMqEvtMvK_oQGcYA",
+   "name": "Shanghai Putailai New Energy Technology Group Co., Ltd. (上海璞泰来新能源科技集团股份有限公司)",
+   "country": "CHN",
+   "type": "company",
+   "role": "parent",
+   "risk_flags": [
+    "controlled_by_mass_business_registration"
+   ],
+   "identifiers": {
+    "cn_uscc": "91310000055944463E"
+   },
+   "summary": "Shanghai-listed battery materials group (artificial graphite anode, separators, PVDF). Sayari shows it as shareholder of Putailai (Singapore). Its own shareholders are Chinese individuals, funds and banks.",
+   "source_call_ids": [
+    "s525",
+    "s527",
+    "t501",
+    "t502"
+   ],
+   "sayari_url": "https://graph.sayari.com/resource/entity/5rQqO0uMqEvtMvK_oQGcYA"
+  },
+  {
+   "id": "Zb9HwzswdGPKn62ayKTnIQ",
+   "name": "Shanghai Putailai New Energy Technology Co Ltd",
+   "country": "CHN",
+   "type": "company",
+   "role": "parent",
+   "risk_flags": [],
+   "identifiers": {
+    "xxx_edi_global_issuer_id": "194910"
+   },
+   "summary": "A securities-data record with the group's English name. No identifier links it to the registry record, so it is kept as a lead.",
+   "source_call_ids": [
+    "s525"
+   ],
+   "sayari_url": "https://graph.sayari.com/resource/entity/Zb9HwzswdGPKn62ayKTnIQ"
+  },
+  {
+   "id": "LwA4a_LwLoGPjHr6RDiArg",
+   "name": "Director A of Zichen Malaysia (name withheld)",
+   "country": "CHN",
+   "type": "person",
+   "role": "parent",
+   "risk_flags": [],
+   "identifiers": {},
+   "summary": "Director of Zichen Malaysia. The record lists China, Singapore and Malaysia.",
+   "source_call_ids": [
+    "s526"
+   ],
+   "sayari_url": "https://graph.sayari.com/resource/entity/LwA4a_LwLoGPjHr6RDiArg"
+  },
+  {
+   "id": "M5aejkK4bjb5FsPDBPoVIA",
+   "name": "Putailai shareholder A (name withheld)",
+   "country": "CHN",
+   "type": "person",
+   "role": "parent",
+   "risk_flags": [],
+   "identifiers": {},
+   "summary": "Listed by Sayari among the shareholders of the Putailai group in China.",
+   "source_call_ids": [
+    "s527"
+   ],
+   "sayari_url": "https://graph.sayari.com/resource/entity/M5aejkK4bjb5FsPDBPoVIA"
+  },
+  {
+   "id": "eKMO9SjyO_k4HmOLY8o_7A",
+   "name": "Director B of Zichen Malaysia (name withheld)",
+   "country": "CHN",
+   "type": "person",
+   "role": "parent",
+   "risk_flags": [],
+   "identifiers": {},
+   "summary": "Director of Zichen Malaysia. The record lists China and Malaysia.",
+   "source_call_ids": [
+    "s526"
+   ],
+   "sayari_url": "https://graph.sayari.com/resource/entity/eKMO9SjyO_k4HmOLY8o_7A"
+  },
+  {
+   "id": "So9o4udTCQcP19p-UGkyig",
+   "name": "Putailai shareholder B (name withheld)",
+   "country": "CHN",
+   "type": "person",
+   "role": "parent",
+   "risk_flags": [],
+   "identifiers": {},
+   "summary": "Listed by Sayari among the shareholders of the Putailai group in China. A common name, so the match to the Malaysian director is weak.",
+   "source_call_ids": [
+    "s527"
+   ],
+   "sayari_url": "https://graph.sayari.com/resource/entity/So9o4udTCQcP19p-UGkyig"
+  },
+  {
+   "id": "ib6a_v_imoUoFRPQiwEjPA",
+   "name": "Minh Thinh Loi Production and Trading Co., Ltd. (Công Ty TNHH Sản Xuất Và Thương Mại Minh Thịnh Lợi)",
+   "country": "VNM",
+   "type": "company",
+   "role": "contrast",
+   "risk_flags": [
+    "forced_labor_sheffield_hallam_university_reports_origin_subtier_product_blueprint",
+    "forced_labor_uflpa_origin_subtier_product_blueprint",
+    "forced_labor_xinjiang_origin_subtier_product_blueprint"
+   ],
+   "identifiers": {
+    "vnm_enterprise_code": "0400575066"
+   },
+   "summary": "Da Nang company registered in 2007, with a Vietnamese legal representative. It is the largest Vietnam-to-US shipper under HS 3801.10, but the goods are machined graphite jigs, not anode powder. The forced-labor flags are 'product blueprint' sub-tier flags, not findings about this company.",
+   "source_call_ids": [
+    "s506",
+    "s511",
+    "s513",
+    "s516"
+   ],
+   "sayari_url": "https://graph.sayari.com/resource/entity/ib6a_v_imoUoFRPQiwEjPA"
+  },
+  {
+   "id": "eX51gPEUQ-MpkznB5_ICaQ",
+   "name": "LTD Material, LLC",
+   "country": "USA",
+   "type": "company",
+   "role": "buyer",
+   "risk_flags": [],
+   "identifiers": {},
+   "summary": "US buyer of the graphite jigs from Minh Thinh Loi.",
+   "source_call_ids": [
+    "s511",
+    "s516"
+   ],
+   "sayari_url": "https://graph.sayari.com/resource/entity/eX51gPEUQ-MpkznB5_ICaQ"
+  },
+  {
+   "id": "oXMFQqYBSVg9LN8JdsZXRg",
+   "name": "China Highwin (Thailand) Co., Ltd.",
+   "country": "THA",
+   "type": "company",
+   "role": "trader",
+   "risk_flags": [],
+   "identifiers": {},
+   "summary": "The only Chinese-named shipper in the Thailand scan. One HS 3801.10 row (Nov 2024) to a US logistics company. A sister record carries a US freight-forwarder (OTI) licence number, so we treat it as a forwarder, not a producer.",
+   "source_call_ids": [
+    "s507",
+    "s515",
+    "s521",
+    "s522"
+   ],
+   "sayari_url": "https://graph.sayari.com/resource/entity/oXMFQqYBSVg9LN8JdsZXRg"
+  },
+  {
+   "id": "f0O9Dwn-kAeZ-BAH5Cz-tg",
+   "name": "China Highwin (Thailand) Limited",
+   "country": "THA",
+   "type": "company",
+   "role": "trader",
+   "risk_flags": [],
+   "identifiers": {
+    "tha_registration_no": "0745560004379",
+    "usa_oti_id": "029257"
+   },
+   "summary": "Thai-registered record of the same name with a US Ocean Transportation Intermediary (freight forwarder) number.",
+   "source_call_ids": [
+    "s522"
+   ],
+   "sayari_url": "https://graph.sayari.com/resource/entity/f0O9Dwn-kAeZ-BAH5Cz-tg"
+  },
+  {
+   "id": "WADCr_igZO7cgkrG2KW0zQ",
+   "name": "Brilliant Group Logistics Corp.",
+   "country": "USA",
+   "type": "company",
+   "role": "buyer",
+   "risk_flags": [],
+   "identifiers": {},
+   "summary": "US logistics company that received China Highwin's one graphite row.",
+   "source_call_ids": [
+    "s515",
+    "s521"
+   ],
+   "sayari_url": "https://graph.sayari.com/resource/entity/WADCr_igZO7cgkrG2KW0zQ"
+  },
+  {
+   "id": "4fqrWAcyrgtWw2RdV6qZsg",
+   "name": "General Motors",
+   "country": "USA",
+   "type": "company",
+   "role": "us_buyer",
+   "risk_flags": [],
+   "identifiers": {},
+   "summary": "Receives artificial graphite from Korea (among top buyers in the Korea scan) and 20 rows of 'carbon anode materials' via Singapore in Aug–Sep 2026 with no shipper named.",
+   "source_call_ids": [
+    "s512",
+    "s518",
+    "s519"
+   ],
+   "sayari_url": "https://graph.sayari.com/resource/entity/4fqrWAcyrgtWw2RdV6qZsg"
+  },
+  {
+   "id": "VqJzPhi60R4c846F7xW2TQ",
+   "name": "NextStar Energy Inc",
+   "country": "CAN",
+   "type": "company",
+   "role": "us_buyer",
+   "risk_flags": [],
+   "identifiers": {},
+   "summary": "Cell maker (Canada/US) receiving 'carbon anode materials' via Singapore in Sep 2026; no shipper named on the row.",
+   "source_call_ids": [
+    "s519"
+   ],
+   "sayari_url": "https://graph.sayari.com/resource/entity/VqJzPhi60R4c846F7xW2TQ"
+  },
+  {
+   "id": "KlHlMaPK_F6s27YQ8ug2UA",
+   "name": "L-H Battery Company, Inc.",
+   "country": "USA",
+   "type": "company",
+   "role": "us_buyer",
+   "risk_flags": [],
+   "identifiers": {},
+   "summary": "US battery company receiving 'carbon anode materials' via Singapore in Aug 2026; no shipper named on the rows.",
+   "source_call_ids": [
+    "s519"
+   ],
+   "sayari_url": "https://graph.sayari.com/resource/entity/KlHlMaPK_F6s27YQ8ug2UA"
+  },
+  {
+   "id": "VhO8XHL4mZCMTDCLkVzAYQ",
+   "name": "PT. OEC Freight Indonesia",
+   "country": "IDN",
+   "type": "company",
+   "role": "trader",
+   "risk_flags": [],
+   "identifiers": {},
+   "summary": "Indonesian freight forwarder. The only named shipper on the Singapore 'carbon anode materials' rows we pulled, which suggests Indonesian cargo moving through Singapore.",
+   "source_call_ids": [
+    "s519"
+   ],
+   "sayari_url": "https://graph.sayari.com/resource/entity/VhO8XHL4mZCMTDCLkVzAYQ"
+  },
+  {
+   "id": "Wfde8TXwHX3DkOQwj2XmTA",
+   "name": "OEC Freight (NY) Inc.",
+   "country": "USA",
+   "type": "company",
+   "role": "buyer",
+   "risk_flags": [],
+   "identifiers": {},
+   "summary": "US arm of the same forwarding group; consignee on the forwarder-to-forwarder anode rows.",
+   "source_call_ids": [
+    "s518",
+    "s519"
+   ],
+   "sayari_url": "https://graph.sayari.com/resource/entity/Wfde8TXwHX3DkOQwj2XmTA"
+  },
+  {
+   "id": "Fj3vtxDroFyjyPsLgsnm2A",
+   "name": "POSCO Chemical (POSCO Future M)",
+   "country": "KOR",
+   "type": "company",
+   "role": "contrast",
+   "risk_flags": [
+    "sheffield_hallam_university_forced_labor_reports_entity_adjacent"
+   ],
+   "identifiers": {},
+   "summary": "Korean anode maker and the top 'anode' shipper to the US in our keyword scan. Korean-owned, so a contrast case.",
+   "source_call_ids": [
+    "s514",
+    "s518"
+   ],
+   "sayari_url": "https://graph.sayari.com/resource/entity/Fj3vtxDroFyjyPsLgsnm2A"
+  },
+  {
+   "id": "PrF3X58WIkceHRwbwvvUvg",
+   "name": "GrafTech Mexico SA de CV",
+   "country": "MEX",
+   "type": "company",
+   "role": "contrast",
+   "risk_flags": [
+    "forced_labor_aspi_origin_subtier",
+    "forced_labor_xinjiang_origin_subtier"
+   ],
+   "identifiers": {
+    "mx_rfc_company": "UCM910417AU9"
+   },
+   "summary": "US-group electrode maker in Monterrey; a top Mexico-to-US HS 3801.10 shipper. Its goods include furnace electrodes (HS 8545), i.e. industrial graphite, not battery anode.",
+   "source_call_ids": [
+    "s509"
+   ],
+   "sayari_url": "https://graph.sayari.com/resource/entity/PrF3X58WIkceHRwbwvvUvg"
+  }
+ ],
+ "edges": [
+  {
+   "id": "e501",
+   "source": "04tgJV8tHRLxXnFybfSbOg",
+   "target": "WG1hrSwGRdoLMIt997Z5-w",
+   "relation": "owns",
+   "edge_type": "contractual",
+   "confidence": "documented",
+   "hs_codes": [],
+   "first_seen": null,
+   "last_seen": null,
+   "shipment_count": null,
+   "evidence": "100% shareholder per Malaysia SSM shareholder data (3rd-party source in Sayari).",
+   "source_call_ids": [
+    "s526",
+    "s527"
+   ],
+   "confidence_reason": "Sayari's Malaysian shareholder data lists Putailai (Singapore) as holding 100% of Zichen Malaysia."
+  },
+  {
+   "id": "e502",
+   "source": "5rQqO0uMqEvtMvK_oQGcYA",
+   "target": "04tgJV8tHRLxXnFybfSbOg",
+   "relation": "owns",
+   "edge_type": "contractual",
+   "confidence": "corroborated",
+   "hs_codes": [],
+   "first_seen": null,
+   "last_seen": null,
+   "shipment_count": null,
+   "evidence": "Shareholder link in Sayari's beneficial-owner path; stake percentage not shown.",
+   "source_call_ids": [
+    "s527",
+    "t502"
+   ],
+   "confidence_reason": "Sayari's ownership graph shows the group as shareholder of the Singapore company, and Putailai's announcement (via press) calls Zichen Malaysia a wholly owned overseas subsidiary."
+  },
+  {
+   "id": "e503",
+   "source": "5rQqO0uMqEvtMvK_oQGcYA",
+   "target": "WG1hrSwGRdoLMIt997Z5-w",
+   "relation": "owns",
+   "edge_type": "contractual",
+   "confidence": "corroborated",
+   "hs_codes": [],
+   "first_seen": null,
+   "last_seen": null,
+   "shipment_count": null,
+   "evidence": "Indirect, through Putailai (Singapore). Press: 'wholly-owned overseas subsidiary, Zichen Malaysia Sdn. Bhd.'",
+   "source_call_ids": [
+    "s527",
+    "t501",
+    "t502"
+   ],
+   "confidence_reason": "Indirect ownership: the registry chain (e501 + e502) and Putailai's own March 2026 announcement agree."
+  },
+  {
+   "id": "e504",
+   "source": "Q_Z4Q6TSyW_gNl0L5pPyeQ",
+   "target": "04tgJV8tHRLxXnFybfSbOg",
+   "relation": "possibly_same_as",
+   "edge_type": "inferred",
+   "confidence": "inferred",
+   "hs_codes": [],
+   "first_seen": null,
+   "last_seen": null,
+   "shipment_count": null,
+   "evidence": "Duplicate record of the Singapore holding company, listed as a former 100% shareholder.",
+   "source_call_ids": [
+    "s526",
+    "s527"
+   ],
+   "confidence_reason": "Same name and the same 100% stake in the same company; one record is mistyped as a person. No shared identifier."
+  },
+  {
+   "id": "e505",
+   "source": "Zb9HwzswdGPKn62ayKTnIQ",
+   "target": "5rQqO0uMqEvtMvK_oQGcYA",
+   "relation": "possibly_same_as",
+   "edge_type": "inferred",
+   "confidence": "lead",
+   "hs_codes": [],
+   "first_seen": null,
+   "last_seen": null,
+   "shipment_count": null,
+   "evidence": "English-name securities record vs. Chinese registry record.",
+   "source_call_ids": [
+    "s525"
+   ],
+   "confidence_reason": "Name match only; the securities-data record has no Chinese registry identifier."
+  },
+  {
+   "id": "e506",
+   "source": "LwA4a_LwLoGPjHr6RDiArg",
+   "target": "WG1hrSwGRdoLMIt997Z5-w",
+   "relation": "director_of",
+   "edge_type": "contractual",
+   "confidence": "documented",
+   "hs_codes": [],
+   "first_seen": null,
+   "last_seen": null,
+   "shipment_count": null,
+   "evidence": "Director of Zichen Malaysia.",
+   "source_call_ids": [
+    "s526"
+   ],
+   "confidence_reason": "Listed as a current director in the Malaysian company data Sayari holds."
+  },
+  {
+   "id": "e507",
+   "source": "eKMO9SjyO_k4HmOLY8o_7A",
+   "target": "WG1hrSwGRdoLMIt997Z5-w",
+   "relation": "director_of",
+   "edge_type": "contractual",
+   "confidence": "documented",
+   "hs_codes": [],
+   "first_seen": null,
+   "last_seen": null,
+   "shipment_count": null,
+   "evidence": "Director of Zichen Malaysia.",
+   "source_call_ids": [
+    "s526"
+   ],
+   "confidence_reason": "Listed as a current director in the Malaysian company data Sayari holds."
+  },
+  {
+   "id": "e508",
+   "source": "LwA4a_LwLoGPjHr6RDiArg",
+   "target": "M5aejkK4bjb5FsPDBPoVIA",
+   "relation": "possibly_same_as",
+   "edge_type": "inferred",
+   "confidence": "lead",
+   "hs_codes": [],
+   "first_seen": null,
+   "last_seen": null,
+   "shipment_count": null,
+   "evidence": "Malaysian director 'director A' vs. Putailai group shareholder shareholder A.",
+   "source_call_ids": [
+    "s526",
+    "s527"
+   ],
+   "confidence_reason": "Name match only (romanised vs. Chinese characters); no shared identifier."
+  },
+  {
+   "id": "e509",
+   "source": "eKMO9SjyO_k4HmOLY8o_7A",
+   "target": "So9o4udTCQcP19p-UGkyig",
+   "relation": "possibly_same_as",
+   "edge_type": "inferred",
+   "confidence": "lead",
+   "hs_codes": [],
+   "first_seen": null,
+   "last_seen": null,
+   "shipment_count": null,
+   "evidence": "Malaysian director 'director B' vs. Putailai group shareholder shareholder B.",
+   "source_call_ids": [
+    "s526",
+    "s527"
+   ],
+   "confidence_reason": "Name match only, and director B is a common name."
+  },
+  {
+   "id": "e510",
+   "source": "ib6a_v_imoUoFRPQiwEjPA",
+   "target": "eX51gPEUQ-MpkznB5_ICaQ",
+   "relation": "ships_to",
+   "edge_type": "transactional",
+   "confidence": "documented",
+   "hs_codes": [
+    "380110"
+   ],
+   "first_seen": null,
+   "last_seen": "2025-01-24",
+   "shipment_count": 30,
+   "evidence": "30 HS 3801.10 rows since Jan 2024. Descriptions read 'Jig ... made of artificial Graphite': machined parts, not battery material.",
+   "source_call_ids": [
+    "s511",
+    "s516"
+   ],
+   "confidence_reason": "Dated Vietnamese export rows name both parties."
+  },
+  {
+   "id": "e511",
+   "source": "oXMFQqYBSVg9LN8JdsZXRg",
+   "target": "WADCr_igZO7cgkrG2KW0zQ",
+   "relation": "ships_to",
+   "edge_type": "transactional",
+   "confidence": "documented",
+   "hs_codes": [
+    "380110"
+   ],
+   "first_seen": "2024-11-22",
+   "last_seen": "2024-11-22",
+   "shipment_count": 1,
+   "evidence": "One HS 3801.10 row, generic description; consignee is a logistics firm.",
+   "source_call_ids": [
+    "s515",
+    "s521"
+   ],
+   "confidence_reason": "One dated US import row names both parties."
+  },
+  {
+   "id": "e512",
+   "source": "oXMFQqYBSVg9LN8JdsZXRg",
+   "target": "f0O9Dwn-kAeZ-BAH5Cz-tg",
+   "relation": "possibly_same_as",
+   "edge_type": "inferred",
+   "confidence": "lead",
+   "hs_codes": [],
+   "first_seen": null,
+   "last_seen": null,
+   "shipment_count": null,
+   "evidence": "The sister record carries a US freight-forwarder (OTI) number.",
+   "source_call_ids": [
+    "s522"
+   ],
+   "confidence_reason": "Name match only; the trade record has no address match or identifier."
+  },
+  {
+   "id": "e513",
+   "source": "VhO8XHL4mZCMTDCLkVzAYQ",
+   "target": "Wfde8TXwHX3DkOQwj2XmTA",
+   "relation": "ships_to",
+   "edge_type": "transactional",
+   "confidence": "documented",
+   "hs_codes": [
+    "380110"
+   ],
+   "first_seen": "2026-09-12",
+   "last_seen": "2026-09-12",
+   "shipment_count": 1,
+   "evidence": "'Carbon anode materials', departing Singapore. Forwarder to forwarder; the producer is not named.",
+   "source_call_ids": [
+    "s519"
+   ],
+   "confidence_reason": "A dated US import row names both parties."
+  }
+ ],
+ "calls": [
+  {
+   "id": "s501",
+   "timestamp": "2026-10-14T19:26:25Z",
+   "server": "sayari",
+   "tool": "search_trade_facets",
+   "params": {
+    "scope": "suppliers",
+    "query": "graphite",
+    "hs_code": "380110",
+    "departure_country": "VNM",
+    "arrival_country": "USA",
+    "date_from": "2024-01-01"
+   },
+   "question": "How many suppliers ship artificial graphite (HS 3801.10) from Vietnam to the US since 2024?",
+   "purpose": "Corridor scan: Vietnam",
+   "result_summary": "5 suppliers. Facets do not name them; supplier-country buckets include KOR, CHN and others because they list every country a supplier is linked to.",
+   "interpretation": "A thin corridor. Five names is few enough to check one by one.",
+   "scorecard": "worked",
+   "entity_ids": [],
+   "step": "corridor"
+  },
+  {
+   "id": "s502",
+   "timestamp": "2026-10-14T19:26:25Z",
+   "server": "sayari",
+   "tool": "search_trade_facets",
+   "params": {
+    "scope": "suppliers",
+    "query": "graphite",
+    "hs_code": "380110",
+    "departure_country": "MYS",
+    "arrival_country": "USA",
+    "date_from": "2024-01-01"
+   },
+   "question": "How many suppliers ship HS 3801.10 from Malaysia to the US since 2024?",
+   "purpose": "Corridor scan: Malaysia",
+   "result_summary": "2 suppliers.",
+   "interpretation": "The thinnest corridor of the five.",
+   "scorecard": "worked",
+   "entity_ids": [],
+   "step": "corridor"
+  },
+  {
+   "id": "s503",
+   "timestamp": "2026-10-14T19:26:25Z",
+   "server": "sayari",
+   "tool": "search_trade_facets",
+   "params": {
+    "scope": "suppliers",
+    "query": "graphite",
+    "hs_code": "380110",
+    "departure_country": "THA",
+    "arrival_country": "USA",
+    "date_from": "2024-01-01"
+   },
+   "question": "How many suppliers ship HS 3801.10 from Thailand to the US since 2024?",
+   "purpose": "Corridor scan: Thailand",
+   "result_summary": "8 suppliers.",
+   "interpretation": "Thin; worth listing every name.",
+   "scorecard": "worked",
+   "entity_ids": [],
+   "step": "corridor"
+  },
+  {
+   "id": "s504",
+   "timestamp": "2026-10-14T19:26:25Z",
+   "server": "sayari",
+   "tool": "search_trade_facets",
+   "params": {
+    "scope": "suppliers",
+    "query": "graphite",
+    "hs_code": "380110",
+    "departure_country": "MEX",
+    "arrival_country": "USA",
+    "date_from": "2024-01-01"
+   },
+   "question": "How many suppliers ship HS 3801.10 from Mexico to the US since 2024?",
+   "purpose": "Corridor scan: Mexico",
+   "result_summary": "347 suppliers; buyer-country buckets led by USA (555). Many supplier risk flags are 'psa_' or sub-tier flags.",
+   "interpretation": "By far the biggest corridor, but size alone says nothing about battery content.",
+   "scorecard": "worked",
+   "entity_ids": [],
+   "step": "corridor"
+  },
+  {
+   "id": "s505",
+   "timestamp": "2026-10-14T19:26:25Z",
+   "server": "sayari",
+   "tool": "search_trade_facets",
+   "params": {
+    "scope": "suppliers",
+    "query": "graphite",
+    "hs_code": "380110",
+    "departure_country": "KOR",
+    "arrival_country": "USA",
+    "date_from": "2024-01-01"
+   },
+   "question": "How many suppliers ship HS 3801.10 from Korea to the US since 2024?",
+   "purpose": "Corridor scan: Korea",
+   "result_summary": "107 suppliers.",
+   "interpretation": "Second-largest corridor; Korea has its own anode industry.",
+   "scorecard": "worked",
+   "entity_ids": [],
+   "step": "corridor"
+  },
+  {
+   "id": "s506",
+   "timestamp": "2026-10-14T19:26:35Z",
+   "server": "sayari",
+   "tool": "search_suppliers",
+   "params": {
+    "query": "graphite",
+    "hs_code": "380110",
+    "departure_country": "VNM",
+    "arrival_country": "USA",
+    "date_from": "2024-01-01",
+    "limit": 10
+   },
+   "question": "Who are the five Vietnam suppliers?",
+   "purpose": "Corridor scan: name the suppliers",
+   "result_summary": "Minh Thinh Loi (Da Nang, 30 shipments, latest 24 Jan 2025), HS Hyosung Global Logistics Vina (2), Hyosung TNC (1), Graphite India (1), Samsung Electronics Vietnam Thai Nguyen (1, 2019).",
+   "interpretation": "No Chinese-owned anode maker. One local parts maker, Korean groups and a logistics firm.",
+   "scorecard": "worked",
+   "entity_ids": [
+    "ib6a_v_imoUoFRPQiwEjPA"
+   ],
+   "step": "corridor"
+  },
+  {
+   "id": "s507",
+   "timestamp": "2026-10-14T19:26:35Z",
+   "server": "sayari",
+   "tool": "search_suppliers",
+   "params": {
+    "query": "graphite",
+    "hs_code": "380110",
+    "departure_country": "THA",
+    "arrival_country": "USA",
+    "date_from": "2024-01-01",
+    "limit": 10
+   },
+   "question": "Who are the eight Thailand suppliers?",
+   "purpose": "Corridor scan: name the suppliers",
+   "result_summary": "Shanghai Supreme International Freight Forwarding, T.C. Pharmaceutical (three records), ECU Worldwide (Thailand), AC Container Line, China Highwin (Thailand), Topasia International Logistics.",
+   "interpretation": "Forwarders and a drinks maker. China Highwin is the only Chinese-named one; checked further.",
+   "scorecard": "worked",
+   "entity_ids": [
+    "oXMFQqYBSVg9LN8JdsZXRg"
+   ],
+   "step": "corridor"
+  },
+  {
+   "id": "s508",
+   "timestamp": "2026-10-14T19:26:35Z",
+   "server": "sayari",
+   "tool": "search_suppliers",
+   "params": {
+    "query": "graphite",
+    "hs_code": "380110",
+    "departure_country": "MYS",
+    "arrival_country": "USA",
+    "date_from": "2024-01-01",
+    "limit": 10
+   },
+   "question": "Who are the two Malaysia suppliers?",
+   "purpose": "Corridor scan: name the suppliers",
+   "result_summary": "Graphite India Limited (1 shipment) and PAC Worldwide Corp (1, Apr 2025).",
+   "interpretation": "No Malaysian producer ships HS 3801.10 to the US in this data.",
+   "scorecard": "worked",
+   "entity_ids": [],
+   "step": "corridor"
+  },
+  {
+   "id": "s509",
+   "timestamp": "2026-10-14T19:26:46Z",
+   "server": "sayari",
+   "tool": "search_suppliers",
+   "params": {
+    "query": "graphite",
+    "hs_code": "380110",
+    "departure_country": "MEX",
+    "arrival_country": "USA",
+    "date_from": "2024-01-01",
+    "limit": 25,
+    "response_mode": "compact"
+   },
+   "question": "Who leads the Mexico corridor?",
+   "purpose": "Corridor scan: name the suppliers",
+   "result_summary": "Top 25 of 347: Carbograf Industrial (220), Syngenta Agro (168), GrafTech Mexico (147), Viakem (94), Carbones Industriales Mexicanos (73), then Dow, Nouryon, Polaquimia, PPG, Mersen and other chemical or consumer firms.",
+   "interpretation": "Electrode and industrial-carbon makers plus many chemical firms whose rows are probably mis-coded. No Chinese-owned anode maker in the top 25.",
+   "scorecard": "partial",
+   "entity_ids": [
+    "PrF3X58WIkceHRwbwvvUvg"
+   ],
+   "step": "corridor"
+  },
+  {
+   "id": "t501",
+   "timestamp": "2026-10-14T19:30:01Z",
+   "server": "tavily",
+   "tool": "tavily_search",
+   "params": {
+    "query": "Chinese anode material graphite plant Vietnam OR Malaysia OR Thailand OR Mexico Shanshan Putailai Kaijin Shinzoom Shangtai overseas factory",
+    "max_results": 8,
+    "search_depth": "advanced"
+   },
+   "question": "Which Chinese anode makers have plants in the corridor countries?",
+   "purpose": "Candidate list for the corridor",
+   "result_summary": "GraphiteHub, Jiemian, Yicai/SSE and Scandasia report Putailai's US$297m, 50,000 t/yr anode plant in Gurun, Kedah, Malaysia: announced 11 Mar 2026, ground broken 1 Jun 2026, about 24 months to build. Shinzoom's planned plant is in Morocco. No Vietnam, Thailand or Mexico anode plant by these firms appeared.",
+   "interpretation": "Putailai's Malaysia plant is the one Chinese-owned anode plant in the five corridors, and it is not yet built.",
+   "scorecard": "worked",
+   "entity_ids": [],
+   "step": "context"
+  },
+  {
+   "id": "s510",
+   "timestamp": "2026-10-14T19:30:10Z",
+   "server": "sayari",
+   "tool": "search_trade_facets",
+   "params": {
+    "scope": "shipments",
+    "query": "anode OR \"spherical graphite\" OR \"negative electrode\"",
+    "hs_code": "3801",
+    "arrival_country": "USA",
+    "date_from": "2024-01-01",
+    "bucket_limit": 20
+   },
+   "question": "Do any US-bound HS 3801 rows describe battery anode material?",
+   "purpose": "Find battery-grade rows by description",
+   "result_summary": "0 results.",
+   "interpretation": "The boolean query or the 4-digit HS filter returned nothing. A single word worked later (s518). A finding about the tool.",
+   "scorecard": "failed",
+   "entity_ids": [],
+   "step": "method"
+  },
+  {
+   "id": "s511",
+   "timestamp": "2026-10-14T19:30:18Z",
+   "server": "sayari",
+   "tool": "search_trade_facets",
+   "params": {
+    "scope": "shipments",
+    "query": "graphite",
+    "hs_code": "380110",
+    "departure_country": "VNM",
+    "arrival_country": "USA",
+    "date_from": "2024-01-01"
+   },
+   "question": "How many Vietnam-to-US shipment rows are there, and who dominates?",
+   "purpose": "Corridor scan: shipment count",
+   "result_summary": "35 rows. Minh Thinh Loi sent 30, all to LTD Material LLC. Latest row 25 Aug 2025.",
+   "interpretation": "One supplier-buyer pair is the whole corridor.",
+   "scorecard": "worked",
+   "entity_ids": [
+    "ib6a_v_imoUoFRPQiwEjPA",
+    "eX51gPEUQ-MpkznB5_ICaQ"
+   ],
+   "step": "corridor"
+  },
+  {
+   "id": "s512",
+   "timestamp": "2026-10-14T19:30:18Z",
+   "server": "sayari",
+   "tool": "search_trade_facets",
+   "params": {
+    "scope": "shipments",
+    "query": "graphite",
+    "hs_code": "380110",
+    "departure_country": "KOR",
+    "arrival_country": "USA",
+    "date_from": "2024-01-01"
+   },
+   "question": "How many Korea-to-US shipment rows are there, and who buys?",
+   "purpose": "Corridor scan: shipment count",
+   "result_summary": "717 rows, latest 13 Jul 2026. General Motors is among the top buyers (35 rows). Top supplier ID n1lmY6idUXLOGTBCIVO09Q has 129 rows.",
+   "interpretation": "Korea is a real battery corridor into US plants.",
+   "scorecard": "worked",
+   "entity_ids": [
+    "4fqrWAcyrgtWw2RdV6qZsg"
+   ],
+   "step": "corridor"
+  },
+  {
+   "id": "s513",
+   "timestamp": "2026-10-14T19:30:26Z",
+   "server": "sayari",
+   "tool": "get_entity_profile",
+   "params": {
+    "entity_id": "ib6a_v_imoUoFRPQiwEjPA",
+    "relationships_limit": 40
+   },
+   "question": "Who is Minh Thinh Loi, and who owns it?",
+   "purpose": "Check the top Vietnam supplier",
+   "result_summary": "Da Nang LLC registered 23 May 2007. Legal representative and chairman: Võ Văn Lợi. 23 ships-to and 16 receives-from partners. No shareholder listed.",
+   "interpretation": "Vietnamese-run parts maker. No Chinese ownership signal.",
+   "scorecard": "worked",
+   "entity_ids": [
+    "ib6a_v_imoUoFRPQiwEjPA"
+   ],
+   "step": "corridor"
+  },
+  {
+   "id": "s514",
+   "timestamp": "2026-10-14T19:30:26Z",
+   "server": "sayari",
+   "tool": "search_suppliers",
+   "params": {
+    "query": "graphite",
+    "hs_code": "380110",
+    "departure_country": "KOR",
+    "arrival_country": "USA",
+    "date_from": "2024-01-01",
+    "limit": 12,
+    "response_mode": "compact"
+   },
+   "question": "Who leads the Korea corridor?",
+   "purpose": "Corridor scan: name the suppliers",
+   "result_summary": "NUC Electronics (129), POSCO Chemical (48), Ibiden Graphite Korea (45), Tokai Carbon Korea (38), LX Pantos (32), Cimilre (32), OEC Global Korea, Futronic, then forwarders.",
+   "interpretation": "Korean and Japanese producers plus logistics firms. No Chinese-owned producer in the top 12.",
+   "scorecard": "worked",
+   "entity_ids": [
+    "Fj3vtxDroFyjyPsLgsnm2A"
+   ],
+   "step": "corridor"
+  },
+  {
+   "id": "s515",
+   "timestamp": "2026-10-14T19:30:35Z",
+   "server": "sayari",
+   "tool": "search_shipments",
+   "params": {
+    "query": "graphite",
+    "hs_code": "380110",
+    "departure_country": "THA",
+    "arrival_country": "USA",
+    "date_from": "2024-01-01",
+    "limit": 15,
+    "response_mode": "compact"
+   },
+   "question": "What do the Thailand rows actually contain?",
+   "purpose": "Read product descriptions",
+   "result_summary": "9 rows. Descriptions include methylsiloxanes, epoxy resin and fruit flavouring. China Highwin (Thailand) has one row on 22 Nov 2024 to Brilliant Group Logistics, described only as 'Graphite; artificial'.",
+   "interpretation": "Most rows are mis-coded chemicals. Nothing battery-related.",
+   "scorecard": "worked",
+   "entity_ids": [
+    "oXMFQqYBSVg9LN8JdsZXRg",
+    "WADCr_igZO7cgkrG2KW0zQ"
+   ],
+   "step": "corridor"
+  },
+  {
+   "id": "s516",
+   "timestamp": "2026-10-14T19:30:35Z",
+   "server": "sayari",
+   "tool": "search_shipments",
+   "params": {
+    "query": "graphite",
+    "hs_code": "380110",
+    "departure_country": "VNM",
+    "arrival_country": "USA",
+    "date_from": "2024-01-01",
+    "limit": 15,
+    "response_mode": "compact"
+   },
+   "question": "What do the Vietnam rows actually contain?",
+   "purpose": "Read product descriptions",
+   "result_summary": "Minh Thinh Loi rows (24 Jan 2025) are 'Jig ... made of artificial Graphite' to LTD Material LLC. Hyosung rows are PTMEG polymer. Graphite India sent one row to Antora Energy (25 Aug 2025).",
+   "interpretation": "Machined graphite parts and mis-coded polymer. Not anode material.",
+   "scorecard": "worked",
+   "entity_ids": [
+    "ib6a_v_imoUoFRPQiwEjPA",
+    "eX51gPEUQ-MpkznB5_ICaQ"
+   ],
+   "step": "corridor"
+  },
+  {
+   "id": "s517",
+   "timestamp": "2026-10-14T19:30:46Z",
+   "server": "sayari",
+   "tool": "search_entity_facets",
+   "params": {
+    "query": "\"anode material\" OR \"new energy material\" OR \"graphite technology\"",
+    "bucket_limit": 15
+   },
+   "question": "Which companies have anode-type names, and where?",
+   "purpose": "Find candidate plants by name",
+   "result_summary": "0 results.",
+   "interpretation": "Boolean OR phrases are not handled here. A finding about the tool.",
+   "scorecard": "failed",
+   "entity_ids": [],
+   "step": "method"
+  },
+  {
+   "id": "s518",
+   "timestamp": "2026-10-14T19:30:54Z",
+   "server": "sayari",
+   "tool": "search_trade_facets",
+   "params": {
+    "scope": "shipments",
+    "query": "anode",
+    "hs_code": "380110",
+    "arrival_country": "USA",
+    "date_from": "2024-01-01",
+    "bucket_limit": 15
+   },
+   "question": "Where do US-bound HS 3801.10 rows that mention 'anode' come from?",
+   "purpose": "Corridor scan by description",
+   "result_summary": "398 rows. Departures: Germany 68, Singapore 56, Korea 52, China 18, India 11, Bahamas 9, Oman 4, Belgium 3, Mexico 3. None from Vietnam, Malaysia or Thailand. Top buyers include General Motors (78) and Tesla (20); top supplier is POSCO Chemical (86).",
+   "interpretation": "No battery-anode rows in three of our five corridors. Singapore stands out as a hub.",
+   "scorecard": "worked",
+   "entity_ids": [
+    "4fqrWAcyrgtWw2RdV6qZsg",
+    "Fj3vtxDroFyjyPsLgsnm2A",
+    "Wfde8TXwHX3DkOQwj2XmTA"
+   ],
+   "step": "corridor"
+  },
+  {
+   "id": "s519",
+   "timestamp": "2026-10-14T19:31:02Z",
+   "server": "sayari",
+   "tool": "search_shipments",
+   "params": {
+    "query": "anode",
+    "hs_code": "380110",
+    "departure_country": "SGP",
+    "arrival_country": "USA",
+    "date_from": "2024-01-01",
+    "limit": 25,
+    "response_mode": "compact"
+   },
+   "question": "Who ships 'anode' material from Singapore to the US?",
+   "purpose": "Follow the Singapore bucket",
+   "result_summary": "Of 56 rows, 25 returned. 'Carbon anode materials' went to General Motors (20 rows, 2 Aug – 12 Sep 2026), L-H Battery Company (2 rows, Aug 2026) and NextStar Energy (1 row, 12 Sep 2026), with no shipper named. One row (12 Sep 2026) was shipped by PT. OEC Freight Indonesia to OEC Freight (NY).",
+   "interpretation": "Battery-grade anode is reaching US plants through Singapore, but the producer is hidden. The one named shipper is an Indonesian forwarder.",
+   "scorecard": "partial",
+   "entity_ids": [
+    "4fqrWAcyrgtWw2RdV6qZsg",
+    "VqJzPhi60R4c846F7xW2TQ",
+    "KlHlMaPK_F6s27YQ8ug2UA",
+    "VhO8XHL4mZCMTDCLkVzAYQ",
+    "Wfde8TXwHX3DkOQwj2XmTA"
+   ],
+   "step": "gap"
+  },
+  {
+   "id": "s520",
+   "timestamp": "2026-10-14T19:31:02Z",
+   "server": "sayari",
+   "tool": "search_shipments",
+   "params": {
+    "query": "anode",
+    "hs_code": "380110",
+    "departure_country": "MEX",
+    "arrival_country": "USA",
+    "date_from": "2024-01-01",
+    "limit": 10,
+    "response_mode": "compact"
+   },
+   "question": "What are the three Mexico 'anode' rows?",
+   "purpose": "Read product descriptions",
+   "result_summary": "Acrylic polymer to Harris Paints (Apr 2025), polyethyleneamines to Complex Chemical (Jul 2024), surfactant to Nouryon (Jan 2023).",
+   "interpretation": "All mis-coded chemicals. Mexico has no anode trail in this data.",
+   "scorecard": "worked",
+   "entity_ids": [],
+   "step": "corridor"
+  },
+  {
+   "id": "s521",
+   "timestamp": "2026-10-14T19:31:14Z",
+   "server": "sayari",
+   "tool": "get_entity_profile",
+   "params": {
+    "entity_id": "oXMFQqYBSVg9LN8JdsZXRg"
+   },
+   "question": "Is China Highwin (Thailand) a producer?",
+   "purpose": "Check the only Chinese-named Thai shipper",
+   "result_summary": "Only source is US import data. One trade partner: Brilliant Group Logistics. 2 shipments sent in total. No owners or officers.",
+   "interpretation": "No sign of a plant.",
+   "scorecard": "worked",
+   "entity_ids": [
+    "oXMFQqYBSVg9LN8JdsZXRg",
+    "WADCr_igZO7cgkrG2KW0zQ"
+   ],
+   "step": "corridor"
+  },
+  {
+   "id": "s522",
+   "timestamp": "2026-10-14T19:31:14Z",
+   "server": "sayari",
+   "tool": "search_entities",
+   "params": {
+    "query": "Highwin Thailand",
+    "limit": 10,
+    "response_mode": "compact"
+   },
+   "question": "Are there other China Highwin records?",
+   "purpose": "Resolve the Thai shipper",
+   "result_summary": "13 records. The main one (Thai reg. 0745560004379) carries a US OTI number, 029257, which is issued to ocean freight intermediaries.",
+   "interpretation": "China Highwin is a freight forwarder. Excluded as a candidate plant.",
+   "scorecard": "worked",
+   "entity_ids": [
+    "f0O9Dwn-kAeZ-BAH5Cz-tg",
+    "oXMFQqYBSVg9LN8JdsZXRg"
+   ],
+   "step": "corridor"
+  },
+  {
+   "id": "s523",
+   "timestamp": "2026-10-14T19:31:23Z",
+   "server": "sayari",
+   "tool": "search_shipments",
+   "params": {
+    "query": "anode",
+    "hs_code": "380110",
+    "departure_country": "OMN",
+    "arrival_country": "USA",
+    "date_from": "2024-01-01",
+    "limit": 10,
+    "response_mode": "full"
+   },
+   "question": "Are the Oman 'anode' rows a Chinese anode plant?",
+   "purpose": "Check an unexpected bucket",
+   "result_summary": "4 rows, Oct–Nov 2024, from B P Refineries (India) to PMC Biogenix, Memphis: erucic acid and fatty acids in ISO tanks.",
+   "interpretation": "Mis-coded chemicals. Shows how noisy HS 3801.10 is.",
+   "scorecard": "worked",
+   "entity_ids": [],
+   "step": "corridor"
+  },
+  {
+   "id": "s524",
+   "timestamp": "2026-10-14T19:31:36Z",
+   "server": "sayari",
+   "tool": "search_entities",
+   "params": {
+    "query": "Zichen Malaysia",
+    "limit": 10,
+    "response_mode": "compact"
+   },
+   "question": "Does Sayari hold Putailai's Malaysian company?",
+   "purpose": "Resolve the plant",
+   "result_summary": "Zichen Malaysia Sdn. Bhd., Malaysian reg. no. 202501044592. Other hits were unrelated Chinese sole traders.",
+   "interpretation": "One clean record for the plant company.",
+   "scorecard": "worked",
+   "entity_ids": [
+    "WG1hrSwGRdoLMIt997Z5-w"
+   ],
+   "step": "plant"
+  },
+  {
+   "id": "s525",
+   "timestamp": "2026-10-14T19:31:36Z",
+   "server": "sayari",
+   "tool": "search_entities",
+   "params": {
+    "query": "Shanghai Putailai New Energy Technology",
+    "limit": 5,
+    "response_mode": "compact"
+   },
+   "question": "Which record is the Chinese parent?",
+   "purpose": "Resolve the parent",
+   "result_summary": "Registry record 上海璞泰来新能源科技集团股份有限公司 (USCC 91310000055944463E; countries CHN, SGP, HKG), an English securities record, and smaller group records.",
+   "interpretation": "The registry record is the parent; the English one is kept as a lead.",
+   "scorecard": "worked",
+   "entity_ids": [
+    "5rQqO0uMqEvtMvK_oQGcYA",
+    "Zb9HwzswdGPKn62ayKTnIQ"
+   ],
+   "step": "owner"
+  },
+  {
+   "id": "s526",
+   "timestamp": "2026-10-14T19:31:42Z",
+   "server": "sayari",
+   "tool": "get_entity_profile",
+   "params": {
+    "entity_id": "WG1hrSwGRdoLMIt997Z5-w"
+   },
+   "question": "Who owns and runs Zichen Malaysia, and does it trade?",
+   "purpose": "Plant registry profile",
+   "result_summary": "Registered 23 Sep 2025, Sdn Bhd, office at Menara BHL, George Town, Penang. Purpose: production and sale of advanced battery materials and carbon-based products; import/export. Shareholder: Putailai (Singapore) Pte. Ltd., 100%. Directors: director B, director A, Ho Pui Hold. Trade count: 0 sent, 0 received.",
+   "interpretation": "Ownership is in the registry. There is no trade yet.",
+   "scorecard": "worked",
+   "entity_ids": [
+    "WG1hrSwGRdoLMIt997Z5-w",
+    "04tgJV8tHRLxXnFybfSbOg",
+    "Q_Z4Q6TSyW_gNl0L5pPyeQ",
+    "LwA4a_LwLoGPjHr6RDiArg",
+    "eKMO9SjyO_k4HmOLY8o_7A"
+   ],
+   "step": "plant"
+  },
+  {
+   "id": "s527",
+   "timestamp": "2026-10-14T19:31:42Z",
+   "server": "sayari",
+   "tool": "find_beneficial_owners",
+   "params": {
+    "entity_id": "WG1hrSwGRdoLMIt997Z5-w"
+   },
+   "question": "Does the chain reach the Chinese parent?",
+   "purpose": "Trace ownership upstream",
+   "result_summary": "50 owner paths returned (output saved and parsed with Python). Path: Zichen Malaysia ← Putailai (Singapore) ← 上海璞泰来新能源科技集团股份有限公司 ← Chinese individuals (including shareholder A and shareholder B), funds, banks and the national social security fund.",
+   "interpretation": "Registry-backed chain from the plant to the Chinese listed parent. Percentages above the Singapore level are not shown.",
+   "scorecard": "worked",
+   "entity_ids": [
+    "WG1hrSwGRdoLMIt997Z5-w",
+    "04tgJV8tHRLxXnFybfSbOg",
+    "5rQqO0uMqEvtMvK_oQGcYA",
+    "M5aejkK4bjb5FsPDBPoVIA",
+    "So9o4udTCQcP19p-UGkyig"
+   ],
+   "step": "owner"
+  },
+  {
+   "id": "s528",
+   "timestamp": "2026-10-14T19:32:06Z",
+   "server": "sayari",
+   "tool": "search_shipments",
+   "params": {
+    "query": "\"ZICHEN\"",
+    "arrival_country": "USA",
+    "date_from": "2024-01-01",
+    "limit": 15,
+    "response_mode": "compact"
+   },
+   "question": "Does any Putailai/Zichen company already ship to the US?",
+   "purpose": "Look for the group's existing US trail",
+   "result_summary": "2,987 rows, all for unrelated firms that share the word Zichen (phone cases, brake rotors, hair clips).",
+   "interpretation": "A name-only query without HS filter is useless here. We could not see the group's China-to-US anode trail.",
+   "scorecard": "failed",
+   "entity_ids": [],
+   "step": "gap"
+  },
+  {
+   "id": "t502",
+   "timestamp": "2026-10-14T19:32:11Z",
+   "server": "tavily",
+   "tool": "tavily_search",
+   "params": {
+    "query": "\"Zichen Malaysia\" Putailai Gurun Kedah anode 50,000 tonnes",
+    "max_results": 5,
+    "search_depth": "advanced"
+   },
+   "question": "Is Zichen Malaysia the company building the plant?",
+   "purpose": "Cross-check the registry entity with the company's announcement",
+   "result_summary": "SMM and Mysteel report that the project is 'undertaken by Zichen Malaysia Sdn. Bhd.'; a post quoting the announcement calls it Putailai's 'wholly-owned overseas subsidiary'. Yicai places the plant in Gurun Heavy Industrial Park, Kedah. The groundbreaking notice lists raw material crushing, granulation, graphitization and carbonization workshops.",
+   "interpretation": "Registry record and company statement agree. The plant is designed to do the full process, not just finish imported graphite.",
+   "scorecard": "worked",
+   "entity_ids": [
+    "WG1hrSwGRdoLMIt997Z5-w",
+    "5rQqO0uMqEvtMvK_oQGcYA"
+   ],
+   "step": "plant"
+  }
+ ]
+}

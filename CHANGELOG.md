@@ -1,5 +1,18 @@
 # Changelog
 
+## Iteration 1.1 · 14 Oct 2026 (before class, after India's first review)
+- Expanded from one plant to five cases: BTR Indonesia, BTR Morocco, Zhongke Oman, a Korean contrast case, and Putailai Malaysia (picked by corridor scan).
+- New plain-language home page:
+  - key-number tiles with sources
+  - a "why this matters" explainer
+  - a rerouting diagram
+  - case cards with an answer type
+  - a per-case walkthrough
+  - a glossary
+- "Corroborated" renamed "Cross-checked". About now has a "How we rate confidence" section with thresholds and reasoning, and every link shows a "Why" line.
+- All companies named. Individuals (directors, officers) are not.
+- Method: replay and scorecard grouped by case; four new lessons about the tool.
+
 ## Iteration 1 · 14 Oct 2026
 - Case 1 traced: PT Indonesia BTR New Energy Material, using 24 logged Sayari MCP calls.
   - Transactional: HS 3801.10 from the plant to five US cell or auto makers (Dec 2024 – Aug 2025); HS 3801 into the plant from China.

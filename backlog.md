@@ -36,7 +36,7 @@ Work P0 top to bottom. Status values: `todo` / `doing` / `done`.
 | INV-6b | P0 | Transactional fallback | ≥1 real shipment edge in the demo | not needed (Case 1 has shipment edges) |
 | INV-7 | P0 | Score with the rubric; write Case 1 in `cases.json` | Case renders | done |
 | INV-7b | P0 | Fill `question`, `interpretation` and `scorecard` on every call-log entry | Replay and scorecard render from data | done |
-| INV-8 | P1 | Corridor scans: HS 3801 → USA by departure KOR/VNM/MAR/MYS/THA/MEX; pick Case 2 | `cases.json` has 2 cases | doing (Morocco lead: 3,088 shipments, s024) |
+| INV-8 | P1 | Corridor scans: HS 3801 → USA by departure KOR/VNM/MAR/MYS/THA/MEX; pick Case 2 | `cases.json` has 2 cases | done: five cases (Case 5 from the scans) |
 | INV-9 | P1 | Contrast case: a flagged-looking supplier with a legitimate explanation | Case written | todo |
 | INV-10 | P2 | Unit-price anomaly check where value data exists | Flag per edge | todo |
 | INV-11 | P2 | Cross-check entities against OpenSanctions; baseline corridors with UN Comtrade | Noted in `sources.json` | todo |
@@ -76,6 +76,15 @@ Work P0 top to bottom. Status values: `todo` / `doing` / `done`.
 | DEMO-2 | P0 | Submit the repo URL and Pages URL | Submitted | todo (India) |
 | DEMO-3 | P1 | Log class feedback; convert into `FB-*` items | Items added | todo |
 | DEMO-4 | P1 | CHANGELOG plus About-page changelog for Iteration 2 | Visible | todo |
+
+## FEEDBACK (India, 14 Oct, before class)
+| ID | P | Story | Status |
+|---|---|---|---|
+| FB-1 | P0 | Clearer for non-experts: visual intro, overview, key numbers | done |
+| FB-2 | P0 | Look at more than one plant | done (5 cases) |
+| FB-3 | P0 | Rename "Corroborated" and explain and justify the confidence ratings on the site | done ("Cross-checked"; About → How we rate confidence) |
+| FB-4 | P0 | Name all companies, including US buyers | done (individuals withheld) |
+| FB-5 | P0 | Do Morocco and Zhongke; aim for 5 solid cases | done |
 
 ## Parking lot
 - Zhongke Electric's Oman anode project as a forward-looking case (production targeted for 2027).

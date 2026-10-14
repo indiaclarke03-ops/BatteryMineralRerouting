@@ -1,0 +1,1885 @@
+{
+ "case": {
+  "id": "case-2",
+  "slug": "btr-morocco",
+  "title": "BTR's Tangier anode plant",
+  "subtitle": "BTR Mediterranean New Material Technology · Tanger Tech City, Morocco",
+  "country": "MAR",
+  "plant_status": "under construction",
+  "question": "Could Sayari detect Chinese graphite anode material reaching the US through BTR's new plant in Morocco, or through the Morocco–US graphite corridor?",
+  "headline": "The reverse of Case 1: ownership is visible, trade is not. Sayari traces BTR's Moroccan subsidiary to BTR in China through a Singapore holding company, 100% at each step. The plant has no graphite trade yet, and the 3,088 'graphite' shipments from Morocco to the US are mostly mislabelled fertilizers and chemicals, plus a little European industrial graphite.",
+  "summary_for_non_experts": "BTR, the world's biggest maker of graphite for battery anodes, is building a 60,000-tonne-a-year anode plant near Tangier through a local subsidiary. Morocco has a US free-trade agreement, so a plant there could one day supply US battery makers. Sayari's company records show that the plant belongs to BTR, via Singapore and a BTR subsidiary in Jiangsu. So far the plant has only imported building materials and machinery from China. None of the large Morocco-to-US 'graphite' trade is battery material.",
+  "key_numbers": [
+   {
+    "value": "100%",
+    "label": "BTR's indirect stake in BTR Mediterranean, at each of three registry steps (Morocco → Singapore → Jiangsu → BTR)",
+    "call_ids": [
+     "s203",
+     "s207",
+     "s208",
+     "s209"
+    ]
+   },
+   {
+    "value": "0",
+    "label": "graphite shipments in or out of the Moroccan plant's six Sayari records",
+    "call_ids": [
+     "s210"
+    ]
+   },
+   {
+    "value": "3,088",
+    "label": "Morocco → US rows coded as artificial graphite (HS 3801.10) since Jan 2024",
+    "call_ids": [
+     "s211"
+    ]
+   },
+   {
+    "value": "42 of 50",
+    "label": "sampled corridor rows that are really fertilizer, pesticide or chemicals",
+    "call_ids": [
+     "s212"
+    ]
+   },
+   {
+    "value": "20",
+    "label": "real graphite rows found, all industrial (SGL Carbon, GrafTech, Resonac)",
+    "call_ids": [
+     "s217"
+    ]
+   }
+  ],
+  "overall_confidence": "corroborated",
+  "pattern": "trail-not-started",
+  "steps": [
+   {
+    "title": "The plant: two companies, six records",
+    "kicker": "Step 1 · Inferred",
+    "text": "Sayari holds two Moroccan BTR companies, registered in Oct 2023 and May 2024, and four customs-data fragments. One fragment shares the registry address (Lot 25, Tanger Tech), so we merge it as Inferred. The other three match by name only and stay leads.",
+    "edge_ids": [
+     "e210",
+     "e211",
+     "e212",
+     "e213"
+    ],
+    "node_ids": [
+     "El_6QFk0rVRdYJanrqEtAA",
+     "Z57YvgOYL2TdoaWYgXFZ9Q",
+     "Fky8oAxiQS_tuT-0pi3wQA",
+     "dilh_xCSnTZQ_dZDy_pZwQ",
+     "hmnBuu6vz31_-lqNazNviw",
+     "1CjF5vzVgFFxVomroaYyaA"
+    ],
+    "call_ids": [
+     "s202",
+     "s203",
+     "s204",
+     "s210"
+    ]
+   },
+   {
+    "title": "The owner: visible this time",
+    "kicker": "Step 2 · Contractual",
+    "text": "Moroccan records name a Singapore holding company, BNUO International, as 100% owner. Singapore records show BNUO is 100% owned by BTR (Jiangsu), and Chinese records show BTR owns all of BTR (Jiangsu). One step is a 'possibly same as' link between two BNUO records, backed by a shared officer. BTR's own release confirms the subsidiary.",
+    "edge_ids": [
+     "e201",
+     "e202",
+     "e203",
+     "e204",
+     "e205",
+     "e206",
+     "e207",
+     "e208",
+     "e209"
+    ],
+    "node_ids": [
+     "b1W3iE__07Zz0BOvA-8s7g",
+     "NKDYreiU9nvqyC4RRZQDfA",
+     "zduDdSDoWzRJWKUinb7e0w",
+     "jeHf5QJt0JXowTiCA8JiIQ",
+     "uio2rrOWJmLIgiAKlcpdww",
+     "vATXxodFI2jKKDVrQ-ELOw",
+     "ewAw-3mKhSQX-N4we26Zyg"
+    ],
+    "call_ids": [
+     "s205",
+     "s206",
+     "s207",
+     "s208",
+     "s209",
+     "t201"
+    ]
+   },
+   {
+    "title": "Inputs: steel and machinery, not graphite",
+    "kicker": "Step 3 · Transactional",
+    "text": "All 10 shipment rows for the plant are inbound from China, Nov 2025 – Jun 2026: pipes, racks, machinery and goods from a construction contractor. There is no graphite in and nothing out. The plant is still being built.",
+    "edge_ids": [
+     "e214",
+     "e215",
+     "e216",
+     "e217",
+     "e218"
+    ],
+    "node_ids": [
+     "9YkmymiyFPtNKUELqJc27g",
+     "pbv1TWixpVNb8MsE_zRHYQ",
+     "30kEauryyUlKCcOmp2hJjQ",
+     "xU9hzwrivrkHb9uqEII7Ew",
+     "vgDVfKlcdVw1l_-WTSushw"
+    ],
+    "call_ids": [
+     "s210",
+     "t201"
+    ]
+   },
+   {
+    "title": "The corridor: a mislabelled bucket",
+    "kicker": "Step 4 · Transactional",
+    "text": "The 3,088 Morocco-to-US artificial graphite rows are led by fertilizer, pesticide and oil firms such as Haifa Negev, Coromandel, Gandhar, Rotem Amfert and ADAMA. The main buyers are in Colombia, Mexico and Ecuador. Most rows describe fertilizer bags or chemical drums, and many share the same few arrival dates. This looks like a data error, not graphite trade.",
+    "edge_ids": [
+     "e223",
+     "e224",
+     "e225"
+    ],
+    "node_ids": [
+     "P_M9e-2M49LOSq5_rgBjHA",
+     "ZFnylQOY6YlfxXz6_8ySGA",
+     "buiKsXiwKnUTCRKBasr6Gw",
+     "fsElZe8XUXmps2GtECr1VQ",
+     "PVBuK_uEm4Ag4mP2AQ1Euw",
+     "lnxv3guxz0fcOzR1f52Pbw",
+     "pgH9bMsoljU5T39W-tFfjw",
+     "eZ3aFZlfdkLKXB4E8snZLA",
+     "6o_3QDj9uPQPX_tvVCBBpA"
+    ],
+    "call_ids": [
+     "s201",
+     "s211",
+     "s212",
+     "s214",
+     "s215",
+     "s216"
+    ]
+   },
+   {
+    "title": "The real graphite is industrial",
+    "kicker": "Step 5 · Contrast",
+    "text": "The real graphite on the route is European electrode and rod stock: SGL Carbon (France to its US arm), GrafTech (Switzerland to GrafTech USA) and one Resonac electrode to a Mexican steelmaker. Sizes are in millimetres and inches, so it is industrial grade, not anode powder. Sayari shows no Morocco-to-US shipments from BTR, Gotion, CNGR/COBCO, Hailiang or Shinzoom.",
+    "edge_ids": [
+     "e219",
+     "e220",
+     "e221",
+     "e222",
+     "e226"
+    ],
+    "node_ids": [
+     "9lcqZ7Jk-n91ZNrYnbZKkQ",
+     "XL7kqgRa7AB0VXF9aN4TvQ",
+     "iUZRg27ESc8EcIuPn3A41w",
+     "ZhR1A0VWHf7oRyGfZOxKtg",
+     "kv_CDofj0IDnI7OZ56ogow",
+     "zLuWa9w8u4PRGbs7ixL49g",
+     "Q93ZzWJznSouEH2e8sePaQ",
+     "uCtlsbaFXTco2UkaXMhPNg",
+     "oWaiMIhKLQJp4ywu8WsKSQ"
+    ],
+    "call_ids": [
+     "s213",
+     "s217",
+     "t202"
+    ]
+   }
+  ],
+  "verdict": {
+   "detected": [
+    {
+     "text": "A registry ownership chain from BTR New Material Group to BTR Mediterranean New Material Technology: BTR → BTR (Jiangsu) → BNUO International Holding (Singapore) → the Moroccan company, 100% at each step.",
+     "call_ids": [
+      "s203",
+      "s205",
+      "s207",
+      "s208",
+      "s209"
+     ]
+    },
+    {
+     "text": "A second Moroccan company, BTR Mediterranean Anode New Material Technology, 100% owned by Rian International Holding (Singapore), whose shareholder is a Singapore record of BTR.",
+     "call_ids": [
+      "s204",
+      "s206"
+     ]
+    },
+    {
+     "text": "Construction-stage imports from China to the plant (pipes, racks, machinery), Nov 2025 – Jun 2026.",
+     "call_ids": [
+      "s210"
+     ]
+    },
+    {
+     "text": "The Morocco-to-US HS 3801.10 bucket is dominated by mislabelled fertilizer, pesticide and chemical cargo for Latin American buyers. The real graphite in it is industrial (SGL Carbon, GrafTech, Resonac).",
+     "call_ids": [
+      "s211",
+      "s212",
+      "s217"
+     ]
+    }
+   ],
+   "suggested": [
+    {
+     "text": "One executive appears to run the Moroccan company, the Singapore holding company and BTR (Jiangsu). This is a name match across English and Chinese records.",
+     "call_ids": [
+      "s203",
+      "s208",
+      "s209"
+     ]
+    },
+    {
+     "text": "The four trade fragments belong to the two registry companies; one by shared address, three by name only.",
+     "call_ids": [
+      "s202",
+      "s210"
+     ]
+    }
+   ],
+   "not_visible": [
+    {
+     "text": "Any graphite going into or out of the Moroccan plant. It has not started production, so there is no trail yet.",
+     "call_ids": [
+      "s210",
+      "t201"
+     ]
+    },
+    {
+     "text": "Which of the two Moroccan companies will run the anode line and which the cathode line.",
+     "call_ids": [
+      "s203",
+      "s204",
+      "t201"
+     ]
+    },
+    {
+     "text": "Any Chinese-owned battery-material exporter on the Morocco-to-US route.",
+     "call_ids": [
+      "s213",
+      "s217"
+     ]
+    }
+   ]
+  },
+  "passport": [
+   {
+    "field": "Place of manufacture",
+    "guidance_no": "8",
+    "declared": "The cell plant's location.",
+    "paper_trail": "No anode shipments from Morocco yet. Anode material from Tangier would appear as HS 3801.10 from MAR.",
+    "gap": true,
+    "note": "The Morocco HS 3801.10 bucket is so noisy that a future anode flow would be hard to spot without naming the shipper."
+   },
+   {
+    "field": "Detailed composition (anode)",
+    "guidance_no": "45",
+    "declared": "'Graphite' as the anode active material.",
+    "paper_trail": "Not yet observable: the plant has no graphite inputs or outputs in Sayari.",
+    "gap": true,
+    "note": "The feedstock source (Chinese coke or graphite, or another source) is unknown until imports start."
+   },
+   {
+    "field": "Critical raw materials > 0.1%",
+    "guidance_no": "15",
+    "declared": "Natural graphite listed if present.",
+    "paper_trail": "No graphite inputs recorded.",
+    "gap": true,
+    "note": "Trail not started."
+   },
+   {
+    "field": "Responsible-sourcing (due-diligence) report",
+    "guidance_no": "19",
+    "declared": "Deferred under the EU Battery Regulation.",
+    "paper_trail": "Both Moroccan companies carry 'possibly owned by a Sheffield Hallam-named entity' flags, through BTR.",
+    "gap": true,
+    "note": "Ownership-based flags exist before any product does."
+   },
+   {
+    "field": "Ownership of upstream suppliers",
+    "guidance_no": "—",
+    "declared": "No such field in the EU passport.",
+    "paper_trail": "Registry chain: BTR (China) → BTR (Jiangsu) → BNUO (Singapore) → BTR Mediterranean (Morocco), 100% at each step.",
+    "gap": false,
+    "note": "Here the PFE ownership question can be answered from registry data, unlike Case 1."
+   }
+  ],
+  "red_flags": [
+   {
+    "flag": "Chinese parent ownership of the transit plant",
+    "signal": "contractual",
+    "severity": "High",
+    "result": "detected",
+    "note": "100% registry chain via Singapore; one 'possibly same as' step, backed by a shared officer."
+   },
+   {
+    "flag": "Same HS imported from China and exported to the US",
+    "signal": "transactional",
+    "severity": "High",
+    "result": "not_visible",
+    "note": "No graphite in or out yet; the plant is under construction."
+   },
+   {
+    "flag": "Recent incorporation vs. first export date",
+    "signal": "contractual",
+    "severity": "Medium",
+    "result": "not_visible",
+    "note": "Incorporated Oct 2023 and May 2024; no exports to compare."
+   },
+   {
+    "flag": "Volume spike after a policy date",
+    "signal": "transactional",
+    "severity": "Medium",
+    "result": "not_visible",
+    "note": "Corridor date clusters (Jun–Jul 2025) come from mislabelled rows, not graphite."
+   },
+   {
+    "flag": "Shared address or officer with a flagged entity",
+    "signal": "inferred",
+    "severity": "Medium",
+    "result": "suggested",
+    "note": "One executive appears at the Moroccan, Singapore and Jiangsu companies; BNUO sits at a mass-registration address."
+   },
+   {
+    "flag": "Entity-resolution fragmentation",
+    "signal": "inferred",
+    "severity": "Low (disclose)",
+    "result": "detected",
+    "note": "Two legal entities plus four trade fragments; BTR also has a separate Singapore record."
+   },
+   {
+    "flag": "Forced-labor / UFLPA sub-tier flags",
+    "signal": "inferred",
+    "severity": "Medium",
+    "result": "detected",
+    "note": "Ownership-path flags via BTR (Sheffield Hallam); context, not a finding."
+   }
+  ],
+  "caveats": [
+   "Building a plant in Morocco with Chinese ownership is legal and common. Nothing here shows wrongdoing by any company named.",
+   "The fertilizer, chemical and graphite companies are named because they appear in the HS 3801.10 bucket. Most appear only because of an apparent coding error in one trade data source.",
+   "We read about 90 of the 3,088 corridor rows (ranked results), not all of them. A small battery-grade flow could still be hidden in the rest.",
+   "'Departure Morocco' probably often means transshipment through Tanger Med; the European graphite rows likely did not originate in Morocco.",
+   "Entity-resolution links are our judgment and could be wrong. The shared-executive match is across scripts (English and Chinese records).",
+   "Sayari free-text queries rank rows but do not filter them; counts after a quoted query are not counts of matches."
+  ]
+ },
+ "entities": [
+  {
+   "id": "El_6QFk0rVRdYJanrqEtAA",
+   "name": "BTR Mediterranean New Material Technology (SASU)",
+   "country": "MAR",
+   "type": "company",
+   "role": "transit_plant",
+   "risk_flags": [
+    "psa_owned_by_sheffield_hallam_university_reports_forced_labor_entity",
+    "eu_high_risk_third"
+   ],
+   "identifiers": {
+    "ma_commercial_register": "142409",
+    "lei": "8945002T04JUT1ZWQG56",
+    "cedar_rose_uid": "MAC235776238"
+   },
+   "summary": "The subsidiary BTR named for its Tangier anode project. Registered 9 Oct 2023 at Lot 25, Tanger Tech free zone. Sayari's Moroccan registry data names one 100% shareholder, BNUO International Holding of Singapore. No trade under this record.",
+   "source_call_ids": [
+    "s202",
+    "s203",
+    "s205",
+    "s207"
+   ],
+   "sayari_url": "https://graph.sayari.com/resource/entity/El_6QFk0rVRdYJanrqEtAA"
+  },
+  {
+   "id": "Z57YvgOYL2TdoaWYgXFZ9Q",
+   "name": "BTR Mediterranean Anode New Material Technology",
+   "country": "MAR",
+   "type": "company",
+   "role": "transit_plant",
+   "risk_flags": [
+    "psa_owned_by_sheffield_hallam_university_reports_forced_labor_entity",
+    "eu_high_risk_third"
+   ],
+   "identifiers": {
+    "ma_commercial_register": "149725",
+    "cedar_rose_uid": "MAC242748550"
+   },
+   "summary": "A second Moroccan BTR company, registered 3 May 2024 in Tangier. 100% owned by Rian International Holding of Singapore. Which of the two companies runs the anode line and which the cathode line is not stated in Sayari.",
+   "source_call_ids": [
+    "s202",
+    "s204",
+    "s206"
+   ],
+   "sayari_url": "https://graph.sayari.com/resource/entity/Z57YvgOYL2TdoaWYgXFZ9Q"
+  },
+  {
+   "id": "Fky8oAxiQS_tuT-0pi3wQA",
+   "name": "BTR Mediterranean New Material (trade record)",
+   "country": "MAR",
+   "type": "company",
+   "role": "transit_plant",
+   "risk_flags": [],
+   "identifiers": {},
+   "summary": "Customs-data record with the same Lot 25 Tanger Tech address as the registry record. Received steel pipe from China in 2026.",
+   "source_call_ids": [
+    "s202",
+    "s210"
+   ],
+   "sayari_url": "https://graph.sayari.com/resource/entity/Fky8oAxiQS_tuT-0pi3wQA"
+  },
+  {
+   "id": "dilh_xCSnTZQ_dZDy_pZwQ",
+   "name": "BTR Mediterranean New Material Techn (trade record)",
+   "country": "MAR",
+   "type": "company",
+   "role": "transit_plant",
+   "risk_flags": [
+    "chinese_soe_adjacent"
+   ],
+   "identifiers": {},
+   "summary": "Truncated-name customs record with no address. Received machinery and unspecified goods from Sinotrans forwarders in early 2026. Its SOE flag comes from those forwarders.",
+   "source_call_ids": [
+    "s202",
+    "s210"
+   ],
+   "sayari_url": "https://graph.sayari.com/resource/entity/dilh_xCSnTZQ_dZDy_pZwQ"
+  },
+  {
+   "id": "hmnBuu6vz31_-lqNazNviw",
+   "name": "BTR Mediterranean Anode New Material (trade record)",
+   "country": "MAR",
+   "type": "company",
+   "role": "transit_plant",
+   "risk_flags": [],
+   "identifiers": {},
+   "summary": "Customs record with address '1 & 2 Tangier Tech Free Zone'. Received racks and pipelines from China in mid-2026.",
+   "source_call_ids": [
+    "s202",
+    "s210"
+   ],
+   "sayari_url": "https://graph.sayari.com/resource/entity/hmnBuu6vz31_-lqNazNviw"
+  },
+  {
+   "id": "1CjF5vzVgFFxVomroaYyaA",
+   "name": "BTR Mediterranean Anode New Material Technology (trade record)",
+   "country": "MAR",
+   "type": "company",
+   "role": "transit_plant",
+   "risk_flags": [],
+   "identifiers": {},
+   "summary": "Customs record with the anode company's exact name and no address. One inbound row from a Chinese construction contractor in late 2025.",
+   "source_call_ids": [
+    "s202",
+    "s210"
+   ],
+   "sayari_url": "https://graph.sayari.com/resource/entity/1CjF5vzVgFFxVomroaYyaA"
+  },
+  {
+   "id": "b1W3iE__07Zz0BOvA-8s7g",
+   "name": "BNUO International Holding Pte. Ltd (Moroccan registry record)",
+   "country": "SGP",
+   "type": "company",
+   "role": "parent",
+   "risk_flags": [
+    "psa_owned_by_sheffield_hallam_university_reports_forced_labor_entity"
+   ],
+   "identifiers": {
+    "cedar_rose_uid": "SGC227106735"
+   },
+   "summary": "The 100% shareholder of BTR Mediterranean New Material Technology, as named in Moroccan company data.",
+   "source_call_ids": [
+    "s203",
+    "s205",
+    "s207"
+   ],
+   "sayari_url": "https://graph.sayari.com/resource/entity/b1W3iE__07Zz0BOvA-8s7g"
+  },
+  {
+   "id": "NKDYreiU9nvqyC4RRZQDfA",
+   "name": "BNUO International Holding Pte. Ltd.",
+   "country": "SGP",
+   "type": "company",
+   "role": "parent",
+   "risk_flags": [
+    "owned_by_sheffield_hallam_university_reports_forced_labor_entity",
+    "mass_address_usage",
+    "controlled_by_mass_business_registration"
+   ],
+   "identifiers": {
+    "sg_uen": "202332562W"
+   },
+   "summary": "Singapore holding company registered 14 Aug 2023 at a corporate-services address in Duo Tower. Singapore registry data: 100% owned by BTR (Jiangsu) New Material Technology. Its CEO also runs the Moroccan company.",
+   "source_call_ids": [
+    "s205",
+    "s207",
+    "s208"
+   ],
+   "sayari_url": "https://graph.sayari.com/resource/entity/NKDYreiU9nvqyC4RRZQDfA"
+  },
+  {
+   "id": "zduDdSDoWzRJWKUinb7e0w",
+   "name": "BTR (Jiangsu) New Material Technology Co., Ltd. (贝特瑞（江苏）新材料科技有限公司)",
+   "country": "CHN",
+   "type": "company",
+   "role": "parent",
+   "risk_flags": [
+    "owned_by_sheffield_hallam_university_reports_forced_labor_entity",
+    "owner_of_forced_labor_xinjiang_entity"
+   ],
+   "identifiers": {
+    "cn_uscc": "91320413MA1NAU5H7M",
+    "sg_uen": "T23UF7557A"
+   },
+   "summary": "BTR's Changzhou subsidiary for anode and cathode materials, 100% owned by BTR New Material Group (China SAIC data). Owns 100% of BNUO International Holding.",
+   "source_call_ids": [
+    "s207",
+    "s209"
+   ],
+   "sayari_url": "https://graph.sayari.com/resource/entity/zduDdSDoWzRJWKUinb7e0w"
+  },
+  {
+   "id": "jeHf5QJt0JXowTiCA8JiIQ",
+   "name": "BTR New Material Group Co., Ltd.",
+   "country": "CHN",
+   "type": "company",
+   "role": "parent",
+   "risk_flags": [
+    "sheffield_hallam_university_forced_labor_entity",
+    "owner_of_forced_labor_xinjiang_entity",
+    "soe_adjacent"
+   ],
+   "identifiers": {
+    "cn_uscc": "914403007230429091"
+   },
+   "summary": "Shenzhen anode maker and the parent named in BTR's Morocco announcement. Unlike Case 1, Sayari reaches it from the Moroccan subsidiary through registry links: Morocco, then Singapore, then Jiangsu, then BTR.",
+   "source_call_ids": [
+    "s205",
+    "s207",
+    "s209",
+    "t201"
+   ],
+   "sayari_url": "https://graph.sayari.com/resource/entity/jeHf5QJt0JXowTiCA8JiIQ"
+  },
+  {
+   "id": "uio2rrOWJmLIgiAKlcpdww",
+   "name": "Rian International Holding Pte. Ltd (Moroccan registry record)",
+   "country": "SGP",
+   "type": "company",
+   "role": "parent",
+   "risk_flags": [
+    "psa_owned_by_sheffield_hallam_university_reports_forced_labor_entity"
+   ],
+   "identifiers": {
+    "cedar_rose_uid": "SGC227219896"
+   },
+   "summary": "100% shareholder of BTR Mediterranean Anode New Material Technology, as named in Moroccan company data.",
+   "source_call_ids": [
+    "s204",
+    "s206"
+   ],
+   "sayari_url": "https://graph.sayari.com/resource/entity/uio2rrOWJmLIgiAKlcpdww"
+  },
+  {
+   "id": "vATXxodFI2jKKDVrQ-ELOw",
+   "name": "Rian International Holding Pte. Ltd.",
+   "country": "SGP",
+   "type": "company",
+   "role": "parent",
+   "risk_flags": [
+    "psa_owned_by_sheffield_hallam_university_reports_forced_labor_entity",
+    "mass_address_usage",
+    "controlled_by_mass_business_registration"
+   ],
+   "identifiers": {},
+   "summary": "Singapore registry record that Sayari marks as possibly the same as Rian (Moroccan record). Its shareholder is a Singapore filing record for BTR New Material Group.",
+   "source_call_ids": [
+    "s206"
+   ],
+   "sayari_url": "https://graph.sayari.com/resource/entity/vATXxodFI2jKKDVrQ-ELOw"
+  },
+  {
+   "id": "ewAw-3mKhSQX-N4we26Zyg",
+   "name": "BTR New Material Group Co., Ltd. (Singapore foreign-shareholder record)",
+   "country": "SGP",
+   "type": "company",
+   "role": "parent",
+   "risk_flags": [
+    "psa_sheffield_hallam_university_forced_labor_entity"
+   ],
+   "identifiers": {
+    "sg_uen": "T23UF7645F"
+   },
+   "summary": "Singapore filing record for BTR, with a Guangming District, Shenzhen address. Not merged by Sayari with the main BTR record.",
+   "source_call_ids": [
+    "s206"
+   ],
+   "sayari_url": "https://graph.sayari.com/resource/entity/ewAw-3mKhSQX-N4we26Zyg"
+  },
+  {
+   "id": "9YkmymiyFPtNKUELqJc27g",
+   "name": "Master Union Logistics",
+   "country": "CHN",
+   "type": "company",
+   "role": "trader",
+   "risk_flags": [],
+   "identifiers": {},
+   "summary": "Forwarder that shipped racks and pipelines from China to the Moroccan anode company record in May 2026.",
+   "source_call_ids": [
+    "s210"
+   ],
+   "sayari_url": "https://graph.sayari.com/resource/entity/9YkmymiyFPtNKUELqJc27g"
+  },
+  {
+   "id": "pbv1TWixpVNb8MsE_zRHYQ",
+   "name": "Shenzhen Haizhuolian Energy",
+   "country": "CHN",
+   "type": "company",
+   "role": "trader",
+   "risk_flags": [],
+   "identifiers": {},
+   "summary": "Shipped steel tubes and pipes (HS 7305) from China to BTR Mediterranean in March 2026.",
+   "source_call_ids": [
+    "s210"
+   ],
+   "sayari_url": "https://graph.sayari.com/resource/entity/pbv1TWixpVNb8MsE_zRHYQ"
+  },
+  {
+   "id": "30kEauryyUlKCcOmp2hJjQ",
+   "name": "Sinotrans Eastern Co Ltd Shipping",
+   "country": "CHN",
+   "type": "company",
+   "role": "trader",
+   "risk_flags": [],
+   "identifiers": {},
+   "summary": "Chinese state-linked forwarder; one row of unspecified goods (HS 99) to a BTR Mediterranean record, Feb 2026.",
+   "source_call_ids": [
+    "s210"
+   ],
+   "sayari_url": "https://graph.sayari.com/resource/entity/30kEauryyUlKCcOmp2hJjQ"
+  },
+  {
+   "id": "xU9hzwrivrkHb9uqEII7Ew",
+   "name": "Sinotrans Central China Co Ltd",
+   "country": "CHN",
+   "type": "company",
+   "role": "trader",
+   "risk_flags": [],
+   "identifiers": {},
+   "summary": "Chinese forwarder; one row of construction machinery (HS 8479.10) to a BTR Mediterranean record, Jan 2026.",
+   "source_call_ids": [
+    "s210"
+   ],
+   "sayari_url": "https://graph.sayari.com/resource/entity/xU9hzwrivrkHb9uqEII7Ew"
+  },
+  {
+   "id": "vgDVfKlcdVw1l_-WTSushw",
+   "name": "China Construction Yangtze International Engineering Co. Ltd",
+   "country": "CHN",
+   "type": "company",
+   "role": "trader",
+   "risk_flags": [],
+   "identifiers": {},
+   "summary": "Chinese construction contractor. One row to the anode company record in Nov 2025, coded as sports footwear. Press says CSCEC builds the plant.",
+   "source_call_ids": [
+    "s210",
+    "t201"
+   ],
+   "sayari_url": "https://graph.sayari.com/resource/entity/vgDVfKlcdVw1l_-WTSushw"
+  },
+  {
+   "id": "9lcqZ7Jk-n91ZNrYnbZKkQ",
+   "name": "SGL Carbon SAS",
+   "country": "FRA",
+   "type": "company",
+   "role": "contrast",
+   "risk_flags": [],
+   "identifiers": {},
+   "summary": "French unit of Germany's SGL Carbon. Shipped graphite rods, blocks and tubes (mm sizes, industrial grade) to SGL Carbon LLC via Morocco, Oct 2025 – Jul 2026.",
+   "source_call_ids": [
+    "s212",
+    "s217"
+   ],
+   "sayari_url": "https://graph.sayari.com/resource/entity/9lcqZ7Jk-n91ZNrYnbZKkQ"
+  },
+  {
+   "id": "XL7kqgRa7AB0VXF9aN4TvQ",
+   "name": "SGL Carbon, LLC",
+   "country": "USA",
+   "type": "company",
+   "role": "us_buyer",
+   "risk_flags": [],
+   "identifiers": {},
+   "summary": "US arm of SGL Carbon; buyer of the industrial graphite rods.",
+   "source_call_ids": [
+    "s212",
+    "s217"
+   ],
+   "sayari_url": "https://graph.sayari.com/resource/entity/XL7kqgRa7AB0VXF9aN4TvQ"
+  },
+  {
+   "id": "iUZRg27ESc8EcIuPn3A41w",
+   "name": "GrafTech Switzerland S.A.",
+   "country": "CHE",
+   "type": "company",
+   "role": "contrast",
+   "risk_flags": [],
+   "identifiers": {},
+   "summary": "Trading arm of US electrode maker GrafTech. Shipped 'artificial graphite bar' (AGX grade) to GrafTech USA via Morocco, Aug 2025 – May 2026.",
+   "source_call_ids": [
+    "s212",
+    "s217"
+   ],
+   "sayari_url": "https://graph.sayari.com/resource/entity/iUZRg27ESc8EcIuPn3A41w"
+  },
+  {
+   "id": "ZhR1A0VWHf7oRyGfZOxKtg",
+   "name": "GrafTech USA LLC",
+   "country": "USA",
+   "type": "company",
+   "role": "us_buyer",
+   "risk_flags": [],
+   "identifiers": {},
+   "summary": "US unit of GrafTech; receiver of artificial graphite bars.",
+   "source_call_ids": [
+    "s212",
+    "s217"
+   ],
+   "sayari_url": "https://graph.sayari.com/resource/entity/ZhR1A0VWHf7oRyGfZOxKtg"
+  },
+  {
+   "id": "kv_CDofj0IDnI7OZ56ogow",
+   "name": "GrafTech International Holdings Inc",
+   "country": "USA",
+   "type": "company",
+   "role": "us_buyer",
+   "risk_flags": [],
+   "identifiers": {},
+   "summary": "GrafTech holding company; one artificial graphite bar shipment, Sep 2025.",
+   "source_call_ids": [
+    "s217"
+   ],
+   "sayari_url": "https://graph.sayari.com/resource/entity/kv_CDofj0IDnI7OZ56ogow"
+  },
+  {
+   "id": "zLuWa9w8u4PRGbs7ixL49g",
+   "name": "Resonac Graphite Spain SAU",
+   "country": "ESP",
+   "type": "company",
+   "role": "contrast",
+   "risk_flags": [],
+   "identifiers": {},
+   "summary": "Spanish electrode plant of Japan's Resonac. One graphite electrode (24 x 96 inch) row to a Mexican steelmaker, Jul 2025.",
+   "source_call_ids": [
+    "s217"
+   ],
+   "sayari_url": "https://graph.sayari.com/resource/entity/zLuWa9w8u4PRGbs7ixL49g"
+  },
+  {
+   "id": "Q93ZzWJznSouEH2e8sePaQ",
+   "name": "Grupo Acerero SA de CV",
+   "country": "MEX",
+   "type": "company",
+   "role": "buyer",
+   "risk_flags": [],
+   "identifiers": {},
+   "summary": "Mexican steelmaker; buyer of the Resonac electrode.",
+   "source_call_ids": [
+    "s217"
+   ],
+   "sayari_url": "https://graph.sayari.com/resource/entity/Q93ZzWJznSouEH2e8sePaQ"
+  },
+  {
+   "id": "P_M9e-2M49LOSq5_rgBjHA",
+   "name": "Haifa Negev Technologies Ltd",
+   "country": "ISR",
+   "type": "company",
+   "role": "contrast",
+   "risk_flags": [],
+   "identifiers": {},
+   "summary": "Israeli fertilizer maker. The top 'shipper' in the Morocco–US HS 3801.10 bucket (302 rows), but its rows describe fertilizer bags (e.g. MKP 0-52-34) for Latin American buyers.",
+   "source_call_ids": [
+    "s211",
+    "s212"
+   ],
+   "sayari_url": "https://graph.sayari.com/resource/entity/P_M9e-2M49LOSq5_rgBjHA"
+  },
+  {
+   "id": "eZ3aFZlfdkLKXB4E8snZLA",
+   "name": "Haifa Colombia SAS",
+   "country": "COL",
+   "type": "company",
+   "role": "buyer",
+   "risk_flags": [],
+   "identifiers": {},
+   "summary": "Colombian fertilizer importer; 77 rows in the bucket.",
+   "source_call_ids": [
+    "s211",
+    "s212"
+   ],
+   "sayari_url": "https://graph.sayari.com/resource/entity/eZ3aFZlfdkLKXB4E8snZLA"
+  },
+  {
+   "id": "pgH9bMsoljU5T39W-tFfjw",
+   "name": "Haifa Mexico SA de CV",
+   "country": "MEX",
+   "type": "company",
+   "role": "buyer",
+   "risk_flags": [],
+   "identifiers": {},
+   "summary": "Mexican fertilizer importer; 96 rows in the bucket.",
+   "source_call_ids": [
+    "s211",
+    "s212"
+   ],
+   "sayari_url": "https://graph.sayari.com/resource/entity/pgH9bMsoljU5T39W-tFfjw"
+  },
+  {
+   "id": "ZFnylQOY6YlfxXz6_8ySGA",
+   "name": "Coromandel International Limited",
+   "country": "IND",
+   "type": "company",
+   "role": "contrast",
+   "risk_flags": [],
+   "identifiers": {},
+   "summary": "Indian agrochemical maker; 147 rows in the bucket, describing pesticide (mancozeb) drums.",
+   "source_call_ids": [
+    "s211",
+    "s212"
+   ],
+   "sayari_url": "https://graph.sayari.com/resource/entity/ZFnylQOY6YlfxXz6_8ySGA"
+  },
+  {
+   "id": "6o_3QDj9uPQPX_tvVCBBpA",
+   "name": "Interoc S.A.",
+   "country": "ECU",
+   "type": "company",
+   "role": "buyer",
+   "risk_flags": [],
+   "identifiers": {},
+   "summary": "Ecuadorian agrochemical importer; 65 rows in the bucket.",
+   "source_call_ids": [
+    "s211",
+    "s212"
+   ],
+   "sayari_url": "https://graph.sayari.com/resource/entity/6o_3QDj9uPQPX_tvVCBBpA"
+  },
+  {
+   "id": "buiKsXiwKnUTCRKBasr6Gw",
+   "name": "Gandhar Oil Refinery (India) Limited",
+   "country": "IND",
+   "type": "company",
+   "role": "contrast",
+   "risk_flags": [],
+   "identifiers": {
+    "in_pan": "AAACG3996J"
+   },
+   "summary": "Indian lubricant and white-oil maker; third-largest shipper in the bucket (135 rows). Not a graphite producer.",
+   "source_call_ids": [
+    "s211",
+    "s214"
+   ],
+   "sayari_url": "https://graph.sayari.com/resource/entity/buiKsXiwKnUTCRKBasr6Gw"
+  },
+  {
+   "id": "fsElZe8XUXmps2GtECr1VQ",
+   "name": "ADAMA Agricultural Solutions Ltd.",
+   "country": "ISR",
+   "type": "company",
+   "role": "contrast",
+   "risk_flags": [],
+   "identifiers": {
+    "lei": "213800ZBG59IY3LXB683"
+   },
+   "summary": "Israeli crop-protection company; fifth-largest shipper in the bucket (114 rows). Not a graphite producer.",
+   "source_call_ids": [
+    "s211",
+    "s215"
+   ],
+   "sayari_url": "https://graph.sayari.com/resource/entity/fsElZe8XUXmps2GtECr1VQ"
+  },
+  {
+   "id": "PVBuK_uEm4Ag4mP2AQ1Euw",
+   "name": "Rotem Amfert Negev Ltd",
+   "country": "ISR",
+   "type": "company",
+   "role": "contrast",
+   "risk_flags": [],
+   "identifiers": {},
+   "summary": "Israeli phosphate-fertilizer maker; 117 rows in the bucket (e.g. MKP fertilizer to Mexico).",
+   "source_call_ids": [
+    "s211",
+    "s212"
+   ],
+   "sayari_url": "https://graph.sayari.com/resource/entity/PVBuK_uEm4Ag4mP2AQ1Euw"
+  },
+  {
+   "id": "lnxv3guxz0fcOzR1f52Pbw",
+   "name": "Uniphos Colombia Plant Limited",
+   "country": "COL",
+   "type": "company",
+   "role": "buyer",
+   "risk_flags": [],
+   "identifiers": {
+    "col_nit": "900361697"
+   },
+   "summary": "Barranquilla pesticide maker; the largest buyer in the bucket (111 rows).",
+   "source_call_ids": [
+    "s211",
+    "s216"
+   ],
+   "sayari_url": "https://graph.sayari.com/resource/entity/lnxv3guxz0fcOzR1f52Pbw"
+  },
+  {
+   "id": "uCtlsbaFXTco2UkaXMhPNg",
+   "name": "COBCO",
+   "country": "MAR",
+   "type": "company",
+   "role": "contrast",
+   "risk_flags": [],
+   "identifiers": {},
+   "summary": "Jorf Lasfar joint venture of Al Mada and China's CNGR making cathode precursor. One row of inorganic compounds (HS 2853.90) to China, May 2025. No US-bound rows found.",
+   "source_call_ids": [
+    "s213",
+    "t202"
+   ],
+   "sayari_url": "https://graph.sayari.com/resource/entity/uCtlsbaFXTco2UkaXMhPNg"
+  },
+  {
+   "id": "oWaiMIhKLQJp4ywu8WsKSQ",
+   "name": "Jiangmen Umicore Chang Xin New Material",
+   "country": "CHN",
+   "type": "company",
+   "role": "buyer",
+   "risk_flags": [],
+   "identifiers": {},
+   "summary": "Chinese cathode-materials plant; buyer of COBCO's one row.",
+   "source_call_ids": [
+    "s213"
+   ],
+   "sayari_url": "https://graph.sayari.com/resource/entity/oWaiMIhKLQJp4ywu8WsKSQ"
+  }
+ ],
+ "edges": [
+  {
+   "id": "e201",
+   "source": "b1W3iE__07Zz0BOvA-8s7g",
+   "target": "El_6QFk0rVRdYJanrqEtAA",
+   "relation": "owns",
+   "edge_type": "contractual",
+   "confidence": "documented",
+   "hs_codes": [],
+   "first_seen": null,
+   "last_seen": null,
+   "shipment_count": null,
+   "evidence": "Moroccan company data (Cedar Rose) lists BNUO International Holding as 100% shareholder and beneficial owner.",
+   "confidence_reason": "A registry-derived shareholder record states the link and the share.",
+   "source_call_ids": [
+    "s203",
+    "s205"
+   ]
+  },
+  {
+   "id": "e202",
+   "source": "b1W3iE__07Zz0BOvA-8s7g",
+   "target": "NKDYreiU9nvqyC4RRZQDfA",
+   "relation": "possibly_same_as",
+   "edge_type": "inferred",
+   "confidence": "inferred",
+   "hs_codes": [],
+   "first_seen": null,
+   "last_seen": null,
+   "shipment_count": null,
+   "evidence": "Same name; Sayari links them as 'possibly the same as'. The same executive is general manager of the Moroccan company and CEO of the Singapore company.",
+   "confidence_reason": "Name plus a shared officer, but no shared identifier.",
+   "source_call_ids": [
+    "s203",
+    "s205",
+    "s208"
+   ]
+  },
+  {
+   "id": "e203",
+   "source": "zduDdSDoWzRJWKUinb7e0w",
+   "target": "NKDYreiU9nvqyC4RRZQDfA",
+   "relation": "owns",
+   "edge_type": "contractual",
+   "confidence": "documented",
+   "hs_codes": [],
+   "first_seen": null,
+   "last_seen": null,
+   "shipment_count": null,
+   "evidence": "Singapore registry data: BTR (Jiangsu) holds 100% of BNUO International Holding.",
+   "confidence_reason": "Registry shareholder record with a stated share.",
+   "source_call_ids": [
+    "s207",
+    "s208",
+    "s209"
+   ]
+  },
+  {
+   "id": "e204",
+   "source": "jeHf5QJt0JXowTiCA8JiIQ",
+   "target": "zduDdSDoWzRJWKUinb7e0w",
+   "relation": "owns",
+   "edge_type": "contractual",
+   "confidence": "documented",
+   "hs_codes": [],
+   "first_seen": null,
+   "last_seen": null,
+   "shipment_count": null,
+   "evidence": "China SAIC data: BTR New Material Group holds 100% of BTR (Jiangsu).",
+   "confidence_reason": "Registry shareholder record with a stated share.",
+   "source_call_ids": [
+    "s207",
+    "s209"
+   ]
+  },
+  {
+   "id": "e205",
+   "source": "jeHf5QJt0JXowTiCA8JiIQ",
+   "target": "El_6QFk0rVRdYJanrqEtAA",
+   "relation": "owns",
+   "edge_type": "contractual",
+   "confidence": "corroborated",
+   "hs_codes": [],
+   "first_seen": null,
+   "last_seen": null,
+   "shipment_count": null,
+   "evidence": "Indirect, 100% at every step: BTR → BTR (Jiangsu) → BNUO (Singapore) → BTR Mediterranean. BTR's own release names BTR Mediterranean as its subsidiary for the project.",
+   "confidence_reason": "Sayari's ownership path and BTR's own announcement agree; one step relies on a 'possibly same as' link.",
+   "source_call_ids": [
+    "s205",
+    "s207",
+    "t201"
+   ]
+  },
+  {
+   "id": "e206",
+   "source": "uio2rrOWJmLIgiAKlcpdww",
+   "target": "Z57YvgOYL2TdoaWYgXFZ9Q",
+   "relation": "owns",
+   "edge_type": "contractual",
+   "confidence": "documented",
+   "hs_codes": [],
+   "first_seen": null,
+   "last_seen": null,
+   "shipment_count": null,
+   "evidence": "Moroccan company data lists Rian International Holding as 100% shareholder.",
+   "confidence_reason": "Registry-derived shareholder record with a stated share.",
+   "source_call_ids": [
+    "s204",
+    "s206"
+   ]
+  },
+  {
+   "id": "e207",
+   "source": "uio2rrOWJmLIgiAKlcpdww",
+   "target": "vATXxodFI2jKKDVrQ-ELOw",
+   "relation": "possibly_same_as",
+   "edge_type": "inferred",
+   "confidence": "lead",
+   "hs_codes": [],
+   "first_seen": null,
+   "last_seen": null,
+   "shipment_count": null,
+   "evidence": "Same company name; Sayari marks them 'possibly the same as'.",
+   "confidence_reason": "Name match only.",
+   "source_call_ids": [
+    "s206"
+   ]
+  },
+  {
+   "id": "e208",
+   "source": "ewAw-3mKhSQX-N4we26Zyg",
+   "target": "vATXxodFI2jKKDVrQ-ELOw",
+   "relation": "owns",
+   "edge_type": "contractual",
+   "confidence": "documented",
+   "hs_codes": [],
+   "first_seen": null,
+   "last_seen": null,
+   "shipment_count": null,
+   "evidence": "Sayari's ownership path shows a BTR New Material Group record (Singapore UEN T23UF7645F) as shareholder of Rian International Holding.",
+   "confidence_reason": "A registry shareholder link appears in Sayari's ownership path.",
+   "source_call_ids": [
+    "s206"
+   ]
+  },
+  {
+   "id": "e209",
+   "source": "ewAw-3mKhSQX-N4we26Zyg",
+   "target": "jeHf5QJt0JXowTiCA8JiIQ",
+   "relation": "possibly_same_as",
+   "edge_type": "inferred",
+   "confidence": "inferred",
+   "hs_codes": [],
+   "first_seen": null,
+   "last_seen": null,
+   "shipment_count": null,
+   "evidence": "Same name; both records give a high-tech industrial park address in Xitian, Guangming District, Shenzhen.",
+   "confidence_reason": "Name plus address match, no shared identifier.",
+   "source_call_ids": [
+    "s205",
+    "s206"
+   ]
+  },
+  {
+   "id": "e210",
+   "source": "Fky8oAxiQS_tuT-0pi3wQA",
+   "target": "El_6QFk0rVRdYJanrqEtAA",
+   "relation": "possibly_same_as",
+   "edge_type": "inferred",
+   "confidence": "inferred",
+   "hs_codes": [],
+   "first_seen": null,
+   "last_seen": null,
+   "shipment_count": null,
+   "evidence": "Same address (Lot 25, first core of the Tanger Tech free export zone, Aouama) and the same name stem; the trade record adds 'SASU'.",
+   "confidence_reason": "Address plus name match, no shared identifier.",
+   "source_call_ids": [
+    "s202",
+    "s210"
+   ]
+  },
+  {
+   "id": "e211",
+   "source": "dilh_xCSnTZQ_dZDy_pZwQ",
+   "target": "El_6QFk0rVRdYJanrqEtAA",
+   "relation": "possibly_same_as",
+   "edge_type": "inferred",
+   "confidence": "lead",
+   "hs_codes": [],
+   "first_seen": null,
+   "last_seen": null,
+   "shipment_count": null,
+   "evidence": "Truncated name only; no country or address.",
+   "confidence_reason": "Name only.",
+   "source_call_ids": [
+    "s202",
+    "s210"
+   ]
+  },
+  {
+   "id": "e212",
+   "source": "hmnBuu6vz31_-lqNazNviw",
+   "target": "Z57YvgOYL2TdoaWYgXFZ9Q",
+   "relation": "possibly_same_as",
+   "edge_type": "inferred",
+   "confidence": "lead",
+   "hs_codes": [],
+   "first_seen": null,
+   "last_seen": null,
+   "shipment_count": null,
+   "evidence": "Shortened name; address says only 'Tangier Tech Free Zone'.",
+   "confidence_reason": "Name plus a zone-level address, too weak for a merge.",
+   "source_call_ids": [
+    "s202",
+    "s210"
+   ]
+  },
+  {
+   "id": "e213",
+   "source": "1CjF5vzVgFFxVomroaYyaA",
+   "target": "Z57YvgOYL2TdoaWYgXFZ9Q",
+   "relation": "possibly_same_as",
+   "edge_type": "inferred",
+   "confidence": "lead",
+   "hs_codes": [],
+   "first_seen": null,
+   "last_seen": null,
+   "shipment_count": null,
+   "evidence": "Exact name match; no address or identifier on the trade record.",
+   "confidence_reason": "Name only.",
+   "source_call_ids": [
+    "s202",
+    "s210"
+   ]
+  },
+  {
+   "id": "e214",
+   "source": "9YkmymiyFPtNKUELqJc27g",
+   "target": "hmnBuu6vz31_-lqNazNviw",
+   "relation": "ships_to",
+   "edge_type": "transactional",
+   "confidence": "documented",
+   "hs_codes": [],
+   "first_seen": "2026-05-04",
+   "last_seen": "2026-05-10",
+   "shipment_count": 3,
+   "evidence": "Racks and pipelines, China to Morocco, departed May 2026 (arrived June).",
+   "confidence_reason": "Dated shipment rows.",
+   "source_call_ids": [
+    "s210"
+   ]
+  },
+  {
+   "id": "e215",
+   "source": "pbv1TWixpVNb8MsE_zRHYQ",
+   "target": "Fky8oAxiQS_tuT-0pi3wQA",
+   "relation": "ships_to",
+   "edge_type": "transactional",
+   "confidence": "documented",
+   "hs_codes": [
+    "730590"
+   ],
+   "first_seen": "2026-03-19",
+   "last_seen": "2026-03-19",
+   "shipment_count": 4,
+   "evidence": "Steel tubes and pipes, China to Morocco.",
+   "confidence_reason": "Dated shipment rows.",
+   "source_call_ids": [
+    "s210"
+   ]
+  },
+  {
+   "id": "e216",
+   "source": "30kEauryyUlKCcOmp2hJjQ",
+   "target": "dilh_xCSnTZQ_dZDy_pZwQ",
+   "relation": "ships_to",
+   "edge_type": "transactional",
+   "confidence": "documented",
+   "hs_codes": [
+    "99"
+   ],
+   "first_seen": "2026-02-18",
+   "last_seen": "2026-02-18",
+   "shipment_count": 1,
+   "evidence": "Unspecified goods, China to Morocco.",
+   "confidence_reason": "Dated shipment row.",
+   "source_call_ids": [
+    "s210"
+   ]
+  },
+  {
+   "id": "e217",
+   "source": "xU9hzwrivrkHb9uqEII7Ew",
+   "target": "dilh_xCSnTZQ_dZDy_pZwQ",
+   "relation": "ships_to",
+   "edge_type": "transactional",
+   "confidence": "documented",
+   "hs_codes": [
+    "847910"
+   ],
+   "first_seen": "2026-01-04",
+   "last_seen": "2026-01-04",
+   "shipment_count": 1,
+   "evidence": "Construction machinery, China to Morocco.",
+   "confidence_reason": "Dated shipment row.",
+   "source_call_ids": [
+    "s210"
+   ]
+  },
+  {
+   "id": "e218",
+   "source": "vgDVfKlcdVw1l_-WTSushw",
+   "target": "1CjF5vzVgFFxVomroaYyaA",
+   "relation": "ships_to",
+   "edge_type": "transactional",
+   "confidence": "documented",
+   "hs_codes": [
+    "640411"
+   ],
+   "first_seen": "2025-11-02",
+   "last_seen": "2025-11-02",
+   "shipment_count": 1,
+   "evidence": "One row coded as sports footwear from the construction contractor; the code may be wrong.",
+   "confidence_reason": "Dated shipment row, though its product code looks unreliable.",
+   "source_call_ids": [
+    "s210"
+   ]
+  },
+  {
+   "id": "e219",
+   "source": "9lcqZ7Jk-n91ZNrYnbZKkQ",
+   "target": "XL7kqgRa7AB0VXF9aN4TvQ",
+   "relation": "ships_to",
+   "edge_type": "transactional",
+   "confidence": "documented",
+   "hs_codes": [
+    "380110",
+    "8545"
+   ],
+   "first_seen": "2025-10-31",
+   "last_seen": "2026-07-19",
+   "shipment_count": 7,
+   "evidence": "Graphite rods, blocks and tubes (SIGRAFINE grades, sizes in mm). Industrial graphite, not battery anode. Dates are arrival dates.",
+   "confidence_reason": "Dated shipment rows with clear product descriptions.",
+   "source_call_ids": [
+    "s212",
+    "s217"
+   ]
+  },
+  {
+   "id": "e220",
+   "source": "iUZRg27ESc8EcIuPn3A41w",
+   "target": "ZhR1A0VWHf7oRyGfZOxKtg",
+   "relation": "ships_to",
+   "edge_type": "transactional",
+   "confidence": "documented",
+   "hs_codes": [
+    "380110"
+   ],
+   "first_seen": "2025-08-14",
+   "last_seen": "2026-05-15",
+   "shipment_count": 11,
+   "evidence": "'Artificial graphite bar', AGX grade, e.g. 600 x 2400 mm. Industrial graphite (electrode stock). Dates are arrival dates.",
+   "confidence_reason": "Dated shipment rows with clear product descriptions.",
+   "source_call_ids": [
+    "s212",
+    "s217"
+   ]
+  },
+  {
+   "id": "e221",
+   "source": "iUZRg27ESc8EcIuPn3A41w",
+   "target": "kv_CDofj0IDnI7OZ56ogow",
+   "relation": "ships_to",
+   "edge_type": "transactional",
+   "confidence": "documented",
+   "hs_codes": [],
+   "first_seen": "2025-09-17",
+   "last_seen": "2025-09-17",
+   "shipment_count": 1,
+   "evidence": "Artificial graphite bar.",
+   "confidence_reason": "Dated shipment row.",
+   "source_call_ids": [
+    "s217"
+   ]
+  },
+  {
+   "id": "e222",
+   "source": "zLuWa9w8u4PRGbs7ixL49g",
+   "target": "Q93ZzWJznSouEH2e8sePaQ",
+   "relation": "ships_to",
+   "edge_type": "transactional",
+   "confidence": "documented",
+   "hs_codes": [
+    "85"
+   ],
+   "first_seen": "2025-07-19",
+   "last_seen": "2025-07-19",
+   "shipment_count": 1,
+   "evidence": "Graphite electrode 24 x 96 inch with connecting pin, for steelmaking. Listed as arriving in the US; the buyer is Mexican.",
+   "confidence_reason": "Dated shipment row.",
+   "source_call_ids": [
+    "s217"
+   ]
+  },
+  {
+   "id": "e223",
+   "source": "P_M9e-2M49LOSq5_rgBjHA",
+   "target": "eZ3aFZlfdkLKXB4E8snZLA",
+   "relation": "ships_to",
+   "edge_type": "transactional",
+   "confidence": "documented",
+   "hs_codes": [
+    "380110"
+   ],
+   "first_seen": "2025-07-05",
+   "last_seen": "2025-07-05",
+   "shipment_count": null,
+   "evidence": "Tagged HS 3801.10 but described as '960 bags of Haifa MKP 0-52-34', a fertilizer. The graphite code appears to be a data error.",
+   "confidence_reason": "The shipment row exists; its HS code does not match its description.",
+   "source_call_ids": [
+    "s211",
+    "s212"
+   ]
+  },
+  {
+   "id": "e224",
+   "source": "P_M9e-2M49LOSq5_rgBjHA",
+   "target": "pgH9bMsoljU5T39W-tFfjw",
+   "relation": "ships_to",
+   "edge_type": "transactional",
+   "confidence": "documented",
+   "hs_codes": [
+    "380110"
+   ],
+   "first_seen": "2025-07-05",
+   "last_seen": "2025-07-05",
+   "shipment_count": null,
+   "evidence": "Tagged HS 3801.10 but described as Poly-Feed fertilizer.",
+   "confidence_reason": "The shipment row exists; its HS code does not match its description.",
+   "source_call_ids": [
+    "s211",
+    "s212"
+   ]
+  },
+  {
+   "id": "e225",
+   "source": "ZFnylQOY6YlfxXz6_8ySGA",
+   "target": "6o_3QDj9uPQPX_tvVCBBpA",
+   "relation": "ships_to",
+   "edge_type": "transactional",
+   "confidence": "documented",
+   "hs_codes": [
+    "380110"
+   ],
+   "first_seen": "2025-07-05",
+   "last_seen": "2025-07-05",
+   "shipment_count": null,
+   "evidence": "Tagged HS 3801.10 but described as mancozeb pesticide in drums.",
+   "confidence_reason": "The shipment row exists; its HS code does not match its description.",
+   "source_call_ids": [
+    "s211",
+    "s212"
+   ]
+  },
+  {
+   "id": "e226",
+   "source": "uCtlsbaFXTco2UkaXMhPNg",
+   "target": "oWaiMIhKLQJp4ywu8WsKSQ",
+   "relation": "ships_to",
+   "edge_type": "transactional",
+   "confidence": "documented",
+   "hs_codes": [
+    "285390"
+   ],
+   "first_seen": "2025-05-12",
+   "last_seen": "2025-05-12",
+   "shipment_count": 1,
+   "evidence": "Inorganic compounds, Morocco to China. The only Chinese-linked battery-material shipper out of Morocco in our results.",
+   "confidence_reason": "Dated shipment row.",
+   "source_call_ids": [
+    "s213"
+   ]
+  }
+ ],
+ "calls": [
+  {
+   "id": "s201",
+   "timestamp": "2026-10-14T19:26:16Z",
+   "server": "sayari",
+   "tool": "search_trade_facets",
+   "params": {
+    "scope": "suppliers",
+    "query": "graphite",
+    "departure_country": "MAR",
+    "arrival_country": "USA",
+    "hs_code": "380110",
+    "date_from": "2024-01-01",
+    "bucket_limit": 15
+   },
+   "question": "Who ships artificial graphite (HS 3801.10) from Morocco to the US?",
+   "purpose": "Corridor (INV-8)",
+   "result_summary": "646 suppliers, but only country buckets came back (India 261, USA 203, China 194, Spain 186...). No supplier names. Buyer countries include Colombia, Mexico, Ecuador and Guatemala, which is odd for a US-arrival filter.",
+   "interpretation": "The supplier-scope facet can't name shippers. Non-US buyer countries were a first hint that the bucket is not what it seems.",
+   "scorecard": "partial",
+   "entity_ids": [],
+   "step": "corridor"
+  },
+  {
+   "id": "s202",
+   "timestamp": "2026-10-14T19:26:16Z",
+   "server": "sayari",
+   "tool": "search_entities",
+   "params": {
+    "query": "\"BTR Mediterranean\"",
+    "limit": 15
+   },
+   "question": "What records does Sayari hold for BTR's Moroccan subsidiary?",
+   "purpose": "Plant (INV-2)",
+   "result_summary": "6 records: two registry companies in Morocco (BTR Mediterranean New Material Technology, RC 142409 with an LEI; BTR Mediterranean Anode New Material Technology, RC 149725) and four customs-data fragments with no country.",
+   "interpretation": "Two separate legal entities plus four trade fragments. One fragment shares the registry address (Lot 25, Tanger Tech).",
+   "scorecard": "worked",
+   "entity_ids": [
+    "El_6QFk0rVRdYJanrqEtAA",
+    "Z57YvgOYL2TdoaWYgXFZ9Q",
+    "Fky8oAxiQS_tuT-0pi3wQA",
+    "dilh_xCSnTZQ_dZDy_pZwQ",
+    "hmnBuu6vz31_-lqNazNviw",
+    "1CjF5vzVgFFxVomroaYyaA"
+   ],
+   "step": "plant"
+  },
+  {
+   "id": "s203",
+   "timestamp": "2026-10-14T19:26:22Z",
+   "server": "sayari",
+   "tool": "get_entity_profile",
+   "params": {
+    "entity_id": "El_6QFk0rVRdYJanrqEtAA",
+    "relationships_limit": 40
+   },
+   "question": "Who owns and runs BTR Mediterranean New Material Technology?",
+   "purpose": "Ownership (INV-3)",
+   "result_summary": "SASU registered 2023-10-09. 100% shareholder and beneficial owner: BNUO International Holding Pte. Ltd (Singapore). Its general manager is the same executive who appears at the Singapore and Jiangsu companies. Trade count 0 sent, 0 received.",
+   "interpretation": "Unlike Case 1, the registry data names a shareholder. The registry record itself has no trade.",
+   "scorecard": "worked",
+   "entity_ids": [
+    "El_6QFk0rVRdYJanrqEtAA",
+    "b1W3iE__07Zz0BOvA-8s7g"
+   ],
+   "step": "owner"
+  },
+  {
+   "id": "s204",
+   "timestamp": "2026-10-14T19:26:22Z",
+   "server": "sayari",
+   "tool": "get_entity_profile",
+   "params": {
+    "entity_id": "Z57YvgOYL2TdoaWYgXFZ9Q",
+    "relationships_limit": 40
+   },
+   "question": "Who owns BTR Mediterranean Anode New Material Technology?",
+   "purpose": "Ownership (INV-3)",
+   "result_summary": "Registered 2024-05-03 in Tangier. 100% shareholder: Rian International Holding Pte. Ltd (Singapore). Director Zerui Fang. No trade.",
+   "interpretation": "A second BTR company in Tangier, held through a different Singapore holding company.",
+   "scorecard": "worked",
+   "entity_ids": [
+    "Z57YvgOYL2TdoaWYgXFZ9Q",
+    "uio2rrOWJmLIgiAKlcpdww"
+   ],
+   "step": "owner"
+  },
+  {
+   "id": "s205",
+   "timestamp": "2026-10-14T19:26:26Z",
+   "server": "sayari",
+   "tool": "find_beneficial_owners",
+   "params": {
+    "entity_id": "El_6QFk0rVRdYJanrqEtAA",
+    "max_depth": 4,
+    "limit": 15
+   },
+   "question": "Does the ownership chain reach BTR in China?",
+   "purpose": "Ownership (INV-3)",
+   "result_summary": "2 owners: BNUO International Holding (1 hop) and BTR New Material Group (jeHf5QJt0JXowTiCA8JiIQ) at path length 4, via a 'possibly same as' Singapore registry record of BNUO.",
+   "interpretation": "Yes. BTR New Material Group is visible as the ultimate owner, with one 'possibly same as' step.",
+   "scorecard": "worked",
+   "entity_ids": [
+    "El_6QFk0rVRdYJanrqEtAA",
+    "b1W3iE__07Zz0BOvA-8s7g",
+    "NKDYreiU9nvqyC4RRZQDfA",
+    "jeHf5QJt0JXowTiCA8JiIQ"
+   ],
+   "step": "owner"
+  },
+  {
+   "id": "s206",
+   "timestamp": "2026-10-14T19:26:26Z",
+   "server": "sayari",
+   "tool": "find_beneficial_owners",
+   "params": {
+    "entity_id": "Z57YvgOYL2TdoaWYgXFZ9Q",
+    "max_depth": 4,
+    "limit": 15
+   },
+   "question": "Does the second company's chain reach BTR?",
+   "purpose": "Ownership (INV-3)",
+   "result_summary": "2 owners: Rian International Holding (1 hop) and a Singapore record of 'BTR New Material Group Co., Ltd.' (UEN T23UF7645F) at path length 3, via a 'possibly same as' Rian record.",
+   "interpretation": "This chain also ends at BTR, but at a Singapore filing record that Sayari has not merged with the main BTR entity.",
+   "scorecard": "worked",
+   "entity_ids": [
+    "Z57YvgOYL2TdoaWYgXFZ9Q",
+    "uio2rrOWJmLIgiAKlcpdww",
+    "vATXxodFI2jKKDVrQ-ELOw",
+    "ewAw-3mKhSQX-N4we26Zyg"
+   ],
+   "step": "owner"
+  },
+  {
+   "id": "s207",
+   "timestamp": "2026-10-14T19:26:35Z",
+   "server": "sayari",
+   "tool": "find_shortest_path",
+   "params": {
+    "source_entity_id": "El_6QFk0rVRdYJanrqEtAA",
+    "target_entity_id": "jeHf5QJt0JXowTiCA8JiIQ"
+   },
+   "question": "What exactly links the Moroccan plant to BTR?",
+   "purpose": "Ownership (INV-3)",
+   "result_summary": "Path: BTR Mediterranean ← BNUO (Moroccan record) ~ BNUO Pte. Ltd. (Singapore registry, possibly same as) ← BTR (Jiangsu) New Material Technology ← BTR New Material Group.",
+   "interpretation": "An ownership path, not a trade link. Compare Case 1, where the shortest path was a shipment.",
+   "scorecard": "worked",
+   "entity_ids": [
+    "El_6QFk0rVRdYJanrqEtAA",
+    "b1W3iE__07Zz0BOvA-8s7g",
+    "NKDYreiU9nvqyC4RRZQDfA",
+    "zduDdSDoWzRJWKUinb7e0w",
+    "jeHf5QJt0JXowTiCA8JiIQ"
+   ],
+   "step": "owner"
+  },
+  {
+   "id": "s208",
+   "timestamp": "2026-10-14T19:26:35Z",
+   "server": "sayari",
+   "tool": "get_entity_profile",
+   "params": {
+    "entity_id": "NKDYreiU9nvqyC4RRZQDfA",
+    "relationships_limit": 30
+   },
+   "question": "Who is behind BNUO International Holding in Singapore?",
+   "purpose": "Ownership (INV-3)",
+   "result_summary": "UEN 202332562W, registered 2023-08-14, holding company at Duo Tower, Fraser Street. 100% shareholder BTR (Jiangsu). Its CEO is also general manager of the Moroccan company (an individual, named in Sayari). Also owns Envolvic International Holding. Mass-address and nominee-director flags.",
+   "interpretation": "The Singapore step is a corporate-services shell, but its shareholder is a BTR subsidiary. The same executive also runs the Moroccan company, which supports the 'possibly same as' link.",
+   "scorecard": "worked",
+   "entity_ids": [
+    "NKDYreiU9nvqyC4RRZQDfA",
+    "zduDdSDoWzRJWKUinb7e0w"
+   ],
+   "step": "owner"
+  },
+  {
+   "id": "s209",
+   "timestamp": "2026-10-14T19:26:42Z",
+   "server": "sayari",
+   "tool": "get_entity_profile",
+   "params": {
+    "entity_id": "zduDdSDoWzRJWKUinb7e0w",
+    "relationships_limit": 20
+   },
+   "question": "Is BTR (Jiangsu) wholly owned by BTR?",
+   "purpose": "Ownership (INV-3)",
+   "result_summary": "BTR (Jiangsu) New Material Technology, Changzhou, USCC 91320413MA1NAU5H7M, registered 2017-01-16. 100% shareholder BTR New Material Group. Holds 100% of BNUO. Its chairman is the same executive.",
+   "interpretation": "Every step is 100%. The same executive's name appears at the Jiangsu, Singapore and Moroccan companies (a cross-script name match).",
+   "scorecard": "worked",
+   "entity_ids": [
+    "zduDdSDoWzRJWKUinb7e0w",
+    "jeHf5QJt0JXowTiCA8JiIQ",
+    "NKDYreiU9nvqyC4RRZQDfA"
+   ],
+   "step": "owner"
+  },
+  {
+   "id": "s210",
+   "timestamp": "2026-10-14T19:26:42Z",
+   "server": "sayari",
+   "tool": "search_shipments",
+   "params": {
+    "query": "\"BTR MEDITERRANEAN\"",
+    "limit": 25,
+    "response_mode": "compact"
+   },
+   "question": "What has the Moroccan plant shipped or received?",
+   "purpose": "Inputs / outputs (INV-4/5)",
+   "result_summary": "10 rows, all inbound from China to Morocco, Nov 2025 – Jun 2026: racks and pipelines (Master Union Logistics, 3), steel pipes (Shenzhen Haizhuolian Energy, 4), machinery and unspecified goods (Sinotrans, 2), one row from China Construction Yangtze International Engineering. No graphite, no exports.",
+   "interpretation": "Construction-stage inputs only. The trail from this plant has not started.",
+   "scorecard": "worked",
+   "entity_ids": [
+    "hmnBuu6vz31_-lqNazNviw",
+    "Fky8oAxiQS_tuT-0pi3wQA",
+    "dilh_xCSnTZQ_dZDy_pZwQ",
+    "1CjF5vzVgFFxVomroaYyaA",
+    "9YkmymiyFPtNKUELqJc27g",
+    "pbv1TWixpVNb8MsE_zRHYQ",
+    "30kEauryyUlKCcOmp2hJjQ",
+    "xU9hzwrivrkHb9uqEII7Ew",
+    "vgDVfKlcdVw1l_-WTSushw"
+   ],
+   "step": "in"
+  },
+  {
+   "id": "s211",
+   "timestamp": "2026-10-14T19:26:47Z",
+   "server": "sayari",
+   "tool": "search_trade_facets",
+   "params": {
+    "scope": "shipments",
+    "query": "graphite",
+    "departure_country": "MAR",
+    "arrival_country": "USA",
+    "hs_code": "380110",
+    "date_from": "2024-01-01",
+    "bucket_limit": 15
+   },
+   "question": "Who are the top shippers and buyers in the 3,088 Morocco-to-US HS 3801.10 rows?",
+   "purpose": "Corridor (INV-8)",
+   "result_summary": "3,088 rows, all from one data source. Top suppliers by ID: Haifa Negev Technologies 302, Coromandel 147, Gandhar Oil Refinery 135, Rotem Amfert 117, ADAMA 114. Top buyers: Uniphos Colombia 111, Haifa Mexico 96, Haifa Colombia 77, Interoc 65. Earliest date bucket 2021 despite the 2024 filter.",
+   "interpretation": "The biggest 'graphite' shippers are fertilizer, pesticide and oil companies, and the biggest buyers are in Latin America.",
+   "scorecard": "worked",
+   "entity_ids": [
+    "P_M9e-2M49LOSq5_rgBjHA",
+    "ZFnylQOY6YlfxXz6_8ySGA",
+    "buiKsXiwKnUTCRKBasr6Gw",
+    "PVBuK_uEm4Ag4mP2AQ1Euw",
+    "fsElZe8XUXmps2GtECr1VQ",
+    "lnxv3guxz0fcOzR1f52Pbw",
+    "pgH9bMsoljU5T39W-tFfjw",
+    "eZ3aFZlfdkLKXB4E8snZLA",
+    "6o_3QDj9uPQPX_tvVCBBpA"
+   ],
+   "step": "corridor"
+  },
+  {
+   "id": "s212",
+   "timestamp": "2026-10-14T19:29:56Z",
+   "server": "sayari",
+   "tool": "search_shipments",
+   "params": {
+    "query": "graphite",
+    "departure_country": "MAR",
+    "arrival_country": "USA",
+    "hs_code": "380110",
+    "date_from": "2024-01-01",
+    "limit": 50,
+    "response_mode": "compact"
+   },
+   "question": "What do the corridor rows actually describe?",
+   "purpose": "Corridor (INV-8)",
+   "result_summary": "50 rows read. 8 are graphite: SGL Carbon SAS → SGL Carbon LLC (graphite rods, mm sizes) and GrafTech Switzerland → GrafTech USA (artificial graphite). The other 42 are fertilizers, pesticides, acids, solvents and plastics, mostly to Latin America. 41 of the 50 arrive on just three dates (27 Jun, 29 Jun, 5 Jul 2025).",
+   "interpretation": "The bucket is mostly mislabelled. These look like Latin America-bound cargo moving through Tanger Med and a US transit point, all given a graphite code. Real graphite in it is industrial.",
+   "scorecard": "worked",
+   "entity_ids": [
+    "9lcqZ7Jk-n91ZNrYnbZKkQ",
+    "XL7kqgRa7AB0VXF9aN4TvQ",
+    "iUZRg27ESc8EcIuPn3A41w",
+    "ZhR1A0VWHf7oRyGfZOxKtg",
+    "P_M9e-2M49LOSq5_rgBjHA",
+    "ZFnylQOY6YlfxXz6_8ySGA",
+    "PVBuK_uEm4Ag4mP2AQ1Euw"
+   ],
+   "step": "corridor"
+  },
+  {
+   "id": "s213",
+   "timestamp": "2026-10-14T19:30:18Z",
+   "server": "sayari",
+   "tool": "search_shipments",
+   "params": {
+    "query": "\"SHINZOOM\" | \"GOTION\" | \"CNGR\" | \"HAILIANG\" | \"COBCO\" | \"BTR\"",
+    "departure_country": "MAR",
+    "date_from": "2024-01-01",
+    "limit": 40,
+    "response_mode": "compact"
+   },
+   "question": "Do any Chinese-linked battery plants in Morocco ship anything out?",
+   "purpose": "Corridor (INV-8)",
+   "result_summary": "8 rows. One real hit: COBCO → Jiangmen Umicore Chang Xin (China), inorganic compounds, May 2025. The rest are false matches: timber described as '2&BTR' grade and one asphalt row.",
+   "interpretation": "No Gotion, CNGR, Hailiang, Shinzoom or BTR exports from Morocco to the US in Sayari.",
+   "scorecard": "worked",
+   "entity_ids": [
+    "uCtlsbaFXTco2UkaXMhPNg",
+    "oWaiMIhKLQJp4ywu8WsKSQ"
+   ],
+   "step": "corridor"
+  },
+  {
+   "id": "s214",
+   "timestamp": "2026-10-14T19:30:25Z",
+   "server": "sayari",
+   "tool": "get_entity_summary",
+   "params": {
+    "entity_id": "buiKsXiwKnUTCRKBasr6Gw"
+   },
+   "question": "Who is the third-largest supplier ID in the bucket?",
+   "purpose": "Corridor (INV-8)",
+   "result_summary": "Gandhar Oil Refinery (India) Ltd, a maker of lubricants and refined petroleum products.",
+   "interpretation": "Not a graphite producer.",
+   "scorecard": "worked",
+   "entity_ids": [
+    "buiKsXiwKnUTCRKBasr6Gw"
+   ],
+   "step": "corridor"
+  },
+  {
+   "id": "s215",
+   "timestamp": "2026-10-14T19:30:25Z",
+   "server": "sayari",
+   "tool": "get_entity_summary",
+   "params": {
+    "entity_id": "fsElZe8XUXmps2GtECr1VQ"
+   },
+   "question": "Who is the fifth-largest supplier ID in the bucket?",
+   "purpose": "Corridor (INV-8)",
+   "result_summary": "ADAMA Agricultural Solutions Ltd., an Israeli crop-protection company.",
+   "interpretation": "Not a graphite producer.",
+   "scorecard": "worked",
+   "entity_ids": [
+    "fsElZe8XUXmps2GtECr1VQ"
+   ],
+   "step": "corridor"
+  },
+  {
+   "id": "s216",
+   "timestamp": "2026-10-14T19:30:25Z",
+   "server": "sayari",
+   "tool": "get_entity_summary",
+   "params": {
+    "entity_id": "lnxv3guxz0fcOzR1f52Pbw"
+   },
+   "question": "Who is the largest buyer ID in the bucket?",
+   "purpose": "Corridor (INV-8)",
+   "result_summary": "Uniphos Colombia Plant Limited, a pesticide maker in Barranquilla, Colombia.",
+   "interpretation": "The largest 'US-bound graphite' buyer is a Colombian agrochemical plant.",
+   "scorecard": "worked",
+   "entity_ids": [
+    "lnxv3guxz0fcOzR1f52Pbw"
+   ],
+   "step": "corridor"
+  },
+  {
+   "id": "s217",
+   "timestamp": "2026-10-14T19:30:31Z",
+   "server": "sayari",
+   "tool": "search_shipments",
+   "params": {
+    "query": "\"GRAPHITE ROD\" | \"GRAPHITE ELECTRODE\" | \"ANODE MATERIAL\" | \"SPHERICAL GRAPHITE\" | \"Graphite; artificial\"",
+    "departure_country": "MAR",
+    "arrival_country": "USA",
+    "date_from": "2024-01-01",
+    "limit": 40,
+    "response_mode": "compact"
+   },
+   "question": "Is there any real graphite, battery grade or not, on this route?",
+   "purpose": "Corridor (INV-8)",
+   "result_summary": "Total 3,104 (the quoted phrases rank rows but don't filter them). The top 20 rows are graphite: SGL Carbon (7), GrafTech to GrafTech USA (11) and GrafTech International Holdings (1), and a Resonac Graphite Spain electrode to Grupo Acerero, Mexico (1). None mention anode material or spherical graphite. The rest are the same mislabelled chemicals.",
+   "interpretation": "The real graphite on the route is European industrial graphite (electrodes, rods) owned by Western and Japanese firms. Nothing battery grade.",
+   "scorecard": "worked",
+   "entity_ids": [
+    "9lcqZ7Jk-n91ZNrYnbZKkQ",
+    "XL7kqgRa7AB0VXF9aN4TvQ",
+    "iUZRg27ESc8EcIuPn3A41w",
+    "ZhR1A0VWHf7oRyGfZOxKtg",
+    "kv_CDofj0IDnI7OZ56ogow",
+    "zLuWa9w8u4PRGbs7ixL49g",
+    "Q93ZzWJznSouEH2e8sePaQ"
+   ],
+   "step": "corridor"
+  },
+  {
+   "id": "t201",
+   "timestamp": "2026-10-14T19:30:50Z",
+   "server": "tavily",
+   "tool": "tavily_search",
+   "params": {
+    "query": "BTR Morocco Tangier anode plant 60,000 tonnes production start 2026",
+    "max_results": 6
+   },
+   "question": "What is the plant's status, and does BTR call it a subsidiary?",
+   "purpose": "Context",
+   "result_summary": "BTR's own release names BTR Mediterranean New Material Technology as the subsidiary for a 60,000 t/yr anode project (up to $366m) in Tangier Tech City. CSCEC (14 Jul 2026) says it is building the factory, with production in phases from 2026. The project has two bases: 60,000 t anode and 50,000 t cathode.",
+   "interpretation": "The plant is under construction, which fits the construction-only imports. BTR's statement independently supports the ownership chain.",
+   "scorecard": "worked",
+   "entity_ids": [
+    "El_6QFk0rVRdYJanrqEtAA",
+    "jeHf5QJt0JXowTiCA8JiIQ"
+   ],
+   "step": "context"
+  },
+  {
+   "id": "t202",
+   "timestamp": "2026-10-14T19:30:50Z",
+   "server": "tavily",
+   "tool": "tavily_search",
+   "params": {
+    "query": "Chinese battery material plants Morocco Gotion CNGR COBCO Hailiang Shinzoom status 2026",
+    "max_results": 6
+   },
+   "question": "Which other Chinese battery-material plants in Morocco could ship graphite?",
+   "purpose": "Context",
+   "result_summary": "COBCO (Al Mada and CNGR) began making cathode precursor in Jorf Lasfar in June 2025. Gotion's Kenitra gigafactory targets Q3 2026. Hailiang plans copper foil. Shinzoom's parent postponed its anode project in June 2025 and ended it in June 2026 (Ecofin).",
+   "interpretation": "None of these is an operating graphite anode exporter, which fits finding no Chinese-owned graphite shipper on the route.",
+   "scorecard": "worked",
+   "entity_ids": [
+    "uCtlsbaFXTco2UkaXMhPNg"
+   ],
+   "step": "context"
+  }
+ ]
+}

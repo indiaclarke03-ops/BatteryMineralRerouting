@@ -22,9 +22,20 @@
         "s013",
         "s014",
         "s019",
-        "s020"
+        "s020",
+        "s205",
+        "s207",
+        "s209",
+        "t201"
       ],
-      "sayari_url": "https://graph.sayari.com/resource/entity/jeHf5QJt0JXowTiCA8JiIQ"
+      "sayari_url": "https://graph.sayari.com/resource/entity/jeHf5QJt0JXowTiCA8JiIQ",
+      "case_ids": [
+        "case-1",
+        "case-2"
+      ],
+      "case_summaries": {
+        "case-2": "Shenzhen anode maker and the parent named in BTR's Morocco announcement. Unlike Case 1, Sayari reaches it from the Moroccan subsidiary through registry links: Morocco, then Singapore, then Jiangsu, then BTR."
+      }
     },
     {
       "id": "5_cayB1m7XahAhz_Hrrpng",
@@ -40,7 +51,10 @@
       "source_call_ids": [
         "s013"
       ],
-      "sayari_url": "https://graph.sayari.com/resource/entity/5_cayB1m7XahAhz_Hrrpng"
+      "sayari_url": "https://graph.sayari.com/resource/entity/5_cayB1m7XahAhz_Hrrpng",
+      "case_ids": [
+        "case-1"
+      ]
     },
     {
       "id": "9pKXMU4m6GbuXl_McP8jag",
@@ -57,7 +71,10 @@
         "s013",
         "s014"
       ],
-      "sayari_url": "https://graph.sayari.com/resource/entity/9pKXMU4m6GbuXl_McP8jag"
+      "sayari_url": "https://graph.sayari.com/resource/entity/9pKXMU4m6GbuXl_McP8jag",
+      "case_ids": [
+        "case-1"
+      ]
     },
     {
       "id": "ffPlxyHu42G892jPO7tpbA",
@@ -70,9 +87,17 @@
       "summary": "Mozambique graphite miner that shipped natural graphite (HS 2504) to the plant in 2024–2025. Appears as three Sayari records.",
       "source_call_ids": [
         "s013",
-        "s014"
+        "s014",
+        "s404"
       ],
-      "sayari_url": "https://graph.sayari.com/resource/entity/ffPlxyHu42G892jPO7tpbA"
+      "sayari_url": "https://graph.sayari.com/resource/entity/ffPlxyHu42G892jPO7tpbA",
+      "case_ids": [
+        "case-1",
+        "case-4"
+      ],
+      "case_summaries": {
+        "case-4": "Mozambique natural graphite. One HS 2504 shipment to POSCO Future M, Jun 2022."
+      }
     },
     {
       "id": "uZISesDqcaxQ8aVgsyvurw",
@@ -87,7 +112,10 @@
         "s013",
         "s014"
       ],
-      "sayari_url": "https://graph.sayari.com/resource/entity/uZISesDqcaxQ8aVgsyvurw"
+      "sayari_url": "https://graph.sayari.com/resource/entity/uZISesDqcaxQ8aVgsyvurw",
+      "case_ids": [
+        "case-1"
+      ]
     },
     {
       "id": "I0E-2fRqFflDTESrsMh2ZA",
@@ -102,7 +130,10 @@
         "s013",
         "s014"
       ],
-      "sayari_url": "https://graph.sayari.com/resource/entity/I0E-2fRqFflDTESrsMh2ZA"
+      "sayari_url": "https://graph.sayari.com/resource/entity/I0E-2fRqFflDTESrsMh2ZA",
+      "case_ids": [
+        "case-1"
+      ]
     },
     {
       "id": "2omCekb1pDRKjhFOAqCNSw",
@@ -131,7 +162,10 @@
         "s021"
       ],
       "sayari_url": "https://graph.sayari.com/resource/entity/2omCekb1pDRKjhFOAqCNSw",
-      "records": 5
+      "records": 5,
+      "case_ids": [
+        "case-1"
+      ]
     },
     {
       "id": "dH3rqoht5wahpKLPJih3gA",
@@ -149,7 +183,10 @@
         "s011",
         "s018"
       ],
-      "sayari_url": "https://graph.sayari.com/resource/entity/dH3rqoht5wahpKLPJih3gA"
+      "sayari_url": "https://graph.sayari.com/resource/entity/dH3rqoht5wahpKLPJih3gA",
+      "case_ids": [
+        "case-1"
+      ]
     },
     {
       "id": "ekoH1fr8BGvHc7UqYCY_YA",
@@ -163,7 +200,10 @@
       "source_call_ids": [
         "s007"
       ],
-      "sayari_url": "https://graph.sayari.com/resource/entity/ekoH1fr8BGvHc7UqYCY_YA"
+      "sayari_url": "https://graph.sayari.com/resource/entity/ekoH1fr8BGvHc7UqYCY_YA",
+      "case_ids": [
+        "case-1"
+      ]
     },
     {
       "id": "0pb5Arj9l_g5eJtqVBozsQ",
@@ -178,7 +218,10 @@
         "s017",
         "s022"
       ],
-      "sayari_url": "https://graph.sayari.com/resource/entity/0pb5Arj9l_g5eJtqVBozsQ"
+      "sayari_url": "https://graph.sayari.com/resource/entity/0pb5Arj9l_g5eJtqVBozsQ",
+      "case_ids": [
+        "case-1"
+      ]
     },
     {
       "id": "xbEAXBfl7YhUMRWA8PJqoQ",
@@ -193,7 +236,10 @@
         "s017",
         "s023"
       ],
-      "sayari_url": "https://graph.sayari.com/resource/entity/xbEAXBfl7YhUMRWA8PJqoQ"
+      "sayari_url": "https://graph.sayari.com/resource/entity/xbEAXBfl7YhUMRWA8PJqoQ",
+      "case_ids": [
+        "case-1"
+      ]
     },
     {
       "id": "rvgklT24qqqfH2rnlVlyBg",
@@ -208,9 +254,17 @@
         "s008",
         "s011",
         "s017",
-        "s018"
+        "s018",
+        "t402"
       ],
-      "sayari_url": "https://graph.sayari.com/resource/entity/rvgklT24qqqfH2rnlVlyBg"
+      "sayari_url": "https://graph.sayari.com/resource/entity/rvgklT24qqqfH2rnlVlyBg",
+      "case_ids": [
+        "case-1",
+        "case-4"
+      ],
+      "case_summaries": {
+        "case-4": "GM–LG Energy Solution cell plant. POSCO Future M announced a six-year artificial-graphite anode deal with Ultium Cells. In Sayari's POSCO rows the consignee is GM, not Ultium."
+      }
     },
     {
       "id": "kCTEQjRAGcFo6AM_PGW2bw",
@@ -225,7 +279,10 @@
         "s008",
         "s017"
       ],
-      "sayari_url": "https://graph.sayari.com/resource/entity/kCTEQjRAGcFo6AM_PGW2bw"
+      "sayari_url": "https://graph.sayari.com/resource/entity/kCTEQjRAGcFo6AM_PGW2bw",
+      "case_ids": [
+        "case-1"
+      ]
     },
     {
       "id": "aoeSqNICt_VUP-o-F-84Yg",
@@ -237,9 +294,23 @@
       "identifiers": {},
       "summary": "SK On cell plant in Georgia. Received HS 3801.10, Aug 2025.",
       "source_call_ids": [
-        "s017"
+        "s017",
+        "s308",
+        "s317",
+        "s318",
+        "s408",
+        "s411"
       ],
-      "sayari_url": "https://graph.sayari.com/resource/entity/aoeSqNICt_VUP-o-F-84Yg"
+      "sayari_url": "https://graph.sayari.com/resource/entity/aoeSqNICt_VUP-o-F-84Yg",
+      "case_ids": [
+        "case-1",
+        "case-3",
+        "case-4"
+      ],
+      "case_summaries": {
+        "case-3": "SK On's US cell plant in Georgia. Seven rows of artificial graphite from Hunan Zhongke Shinzoom, Aug 2021 to May 2022.",
+        "case-4": "SK On cell plant in Georgia. Received 32 rows of 'Graphite PAS-CP3K' (HS 3801.90) from POSCO Future M, May 2024 – Jun 2025. Also a buyer from BTR Indonesia in Case 1."
+      }
     },
     {
       "id": "1iZm5WHKh2xwHvW9-qFunQ",
@@ -253,7 +324,10 @@
       "source_call_ids": [
         "s017"
       ],
-      "sayari_url": "https://graph.sayari.com/resource/entity/1iZm5WHKh2xwHvW9-qFunQ"
+      "sayari_url": "https://graph.sayari.com/resource/entity/1iZm5WHKh2xwHvW9-qFunQ",
+      "case_ids": [
+        "case-1"
+      ]
     },
     {
       "id": "4fqrWAcyrgtWw2RdV6qZsg",
@@ -268,9 +342,28 @@
         "s011",
         "s017",
         "s018",
-        "s024"
+        "s024",
+        "s308",
+        "s317",
+        "s318",
+        "s411",
+        "s412",
+        "s512",
+        "s518",
+        "s519"
       ],
-      "sayari_url": "https://graph.sayari.com/resource/entity/4fqrWAcyrgtWw2RdV6qZsg"
+      "sayari_url": "https://graph.sayari.com/resource/entity/4fqrWAcyrgtWw2RdV6qZsg",
+      "case_ids": [
+        "case-1",
+        "case-3",
+        "case-4",
+        "case-5"
+      ],
+      "case_summaries": {
+        "case-3": "One row of artificial graphite (HS 3801.10) from Hunan Zhongke Shinzoom, arriving 2 Mar 2025. This is the most recent battery-maker row in our results.",
+        "case-4": "Received 36 rows of 'anode material graphite PAS-C3B' (HS 3801.10/3801.90) from POSCO Future M, Jan 2023 – Jun 2024. Also a buyer from BTR Indonesia in Case 1.",
+        "case-5": "Receives artificial graphite from Korea (among top buyers in the Korea scan) and 20 rows of 'carbon anode materials' via Singapore in Aug–Sep 2026 with no shipper named."
+      }
     },
     {
       "id": "xWhz7CFJV3lxsgg8fHMGHA",
@@ -284,9 +377,18 @@
       "source_call_ids": [
         "s011",
         "s017",
-        "s018"
+        "s018",
+        "s402",
+        "s408"
       ],
-      "sayari_url": "https://graph.sayari.com/resource/entity/xWhz7CFJV3lxsgg8fHMGHA"
+      "sayari_url": "https://graph.sayari.com/resource/entity/xWhz7CFJV3lxsgg8fHMGHA",
+      "case_ids": [
+        "case-1",
+        "case-4"
+      ],
+      "case_summaries": {
+        "case-4": "Received 12 rows of artificial graphite 'anode active material' (HS 3801.10) from POSCO Future M, Jan–Feb 2026, plus one row in Aug 2023. Also a buyer from BTR Indonesia in Case 1."
+      }
     },
     {
       "id": "oJvmXc2fb6aBRkCDyxOLig",
@@ -303,7 +405,10 @@
         "s008",
         "s017"
       ],
-      "sayari_url": "https://graph.sayari.com/resource/entity/oJvmXc2fb6aBRkCDyxOLig"
+      "sayari_url": "https://graph.sayari.com/resource/entity/oJvmXc2fb6aBRkCDyxOLig",
+      "case_ids": [
+        "case-1"
+      ]
     },
     {
       "id": "BoJ05H9uciX3VySWmVmq8g",
@@ -317,7 +422,10 @@
       "source_call_ids": [
         "s017"
       ],
-      "sayari_url": "https://graph.sayari.com/resource/entity/BoJ05H9uciX3VySWmVmq8g"
+      "sayari_url": "https://graph.sayari.com/resource/entity/BoJ05H9uciX3VySWmVmq8g",
+      "case_ids": [
+        "case-1"
+      ]
     },
     {
       "id": "ebomNaL2BFXiZYYk0Y8Scg",
@@ -331,7 +439,10 @@
       "source_call_ids": [
         "s020"
       ],
-      "sayari_url": "https://graph.sayari.com/resource/entity/ebomNaL2BFXiZYYk0Y8Scg"
+      "sayari_url": "https://graph.sayari.com/resource/entity/ebomNaL2BFXiZYYk0Y8Scg",
+      "case_ids": [
+        "case-1"
+      ]
     },
     {
       "id": "O-QDv6jXInkdMYQI92mrXA",
@@ -345,7 +456,1965 @@
       "source_call_ids": [
         "s020"
       ],
-      "sayari_url": "https://graph.sayari.com/resource/entity/O-QDv6jXInkdMYQI92mrXA"
+      "sayari_url": "https://graph.sayari.com/resource/entity/O-QDv6jXInkdMYQI92mrXA",
+      "case_ids": [
+        "case-1"
+      ]
+    },
+    {
+      "id": "El_6QFk0rVRdYJanrqEtAA",
+      "name": "BTR Mediterranean New Material Technology (SASU)",
+      "country": "MAR",
+      "type": "company",
+      "role": "transit_plant",
+      "risk_flags": [
+        "psa_owned_by_sheffield_hallam_university_reports_forced_labor_entity",
+        "eu_high_risk_third"
+      ],
+      "identifiers": {
+        "ma_commercial_register": "142409",
+        "lei": "8945002T04JUT1ZWQG56",
+        "cedar_rose_uid": "MAC235776238"
+      },
+      "summary": "The subsidiary BTR named for its Tangier anode project. Registered 9 Oct 2023 at Lot 25, Tanger Tech free zone. Sayari's Moroccan registry data names one 100% shareholder, BNUO International Holding of Singapore. No trade under this record.",
+      "source_call_ids": [
+        "s202",
+        "s203",
+        "s205",
+        "s207"
+      ],
+      "sayari_url": "https://graph.sayari.com/resource/entity/El_6QFk0rVRdYJanrqEtAA",
+      "case_ids": [
+        "case-2"
+      ]
+    },
+    {
+      "id": "Z57YvgOYL2TdoaWYgXFZ9Q",
+      "name": "BTR Mediterranean Anode New Material Technology",
+      "country": "MAR",
+      "type": "company",
+      "role": "transit_plant",
+      "risk_flags": [
+        "psa_owned_by_sheffield_hallam_university_reports_forced_labor_entity",
+        "eu_high_risk_third"
+      ],
+      "identifiers": {
+        "ma_commercial_register": "149725",
+        "cedar_rose_uid": "MAC242748550"
+      },
+      "summary": "A second Moroccan BTR company, registered 3 May 2024 in Tangier. 100% owned by Rian International Holding of Singapore. Which of the two companies runs the anode line and which the cathode line is not stated in Sayari.",
+      "source_call_ids": [
+        "s202",
+        "s204",
+        "s206"
+      ],
+      "sayari_url": "https://graph.sayari.com/resource/entity/Z57YvgOYL2TdoaWYgXFZ9Q",
+      "case_ids": [
+        "case-2"
+      ]
+    },
+    {
+      "id": "Fky8oAxiQS_tuT-0pi3wQA",
+      "name": "BTR Mediterranean New Material (trade record)",
+      "country": "MAR",
+      "type": "company",
+      "role": "transit_plant",
+      "risk_flags": [],
+      "identifiers": {},
+      "summary": "Customs-data record with the same Lot 25 Tanger Tech address as the registry record. Received steel pipe from China in 2026.",
+      "source_call_ids": [
+        "s202",
+        "s210"
+      ],
+      "sayari_url": "https://graph.sayari.com/resource/entity/Fky8oAxiQS_tuT-0pi3wQA",
+      "case_ids": [
+        "case-2"
+      ]
+    },
+    {
+      "id": "dilh_xCSnTZQ_dZDy_pZwQ",
+      "name": "BTR Mediterranean New Material Techn (trade record)",
+      "country": "MAR",
+      "type": "company",
+      "role": "transit_plant",
+      "risk_flags": [
+        "chinese_soe_adjacent"
+      ],
+      "identifiers": {},
+      "summary": "Truncated-name customs record with no address. Received machinery and unspecified goods from Sinotrans forwarders in early 2026. Its SOE flag comes from those forwarders.",
+      "source_call_ids": [
+        "s202",
+        "s210"
+      ],
+      "sayari_url": "https://graph.sayari.com/resource/entity/dilh_xCSnTZQ_dZDy_pZwQ",
+      "case_ids": [
+        "case-2"
+      ]
+    },
+    {
+      "id": "hmnBuu6vz31_-lqNazNviw",
+      "name": "BTR Mediterranean Anode New Material (trade record)",
+      "country": "MAR",
+      "type": "company",
+      "role": "transit_plant",
+      "risk_flags": [],
+      "identifiers": {},
+      "summary": "Customs record with address '1 & 2 Tangier Tech Free Zone'. Received racks and pipelines from China in mid-2026.",
+      "source_call_ids": [
+        "s202",
+        "s210"
+      ],
+      "sayari_url": "https://graph.sayari.com/resource/entity/hmnBuu6vz31_-lqNazNviw",
+      "case_ids": [
+        "case-2"
+      ]
+    },
+    {
+      "id": "1CjF5vzVgFFxVomroaYyaA",
+      "name": "BTR Mediterranean Anode New Material Technology (trade record)",
+      "country": "MAR",
+      "type": "company",
+      "role": "transit_plant",
+      "risk_flags": [],
+      "identifiers": {},
+      "summary": "Customs record with the anode company's exact name and no address. One inbound row from a Chinese construction contractor in late 2025.",
+      "source_call_ids": [
+        "s202",
+        "s210"
+      ],
+      "sayari_url": "https://graph.sayari.com/resource/entity/1CjF5vzVgFFxVomroaYyaA",
+      "case_ids": [
+        "case-2"
+      ]
+    },
+    {
+      "id": "b1W3iE__07Zz0BOvA-8s7g",
+      "name": "BNUO International Holding Pte. Ltd (Moroccan registry record)",
+      "country": "SGP",
+      "type": "company",
+      "role": "parent",
+      "risk_flags": [
+        "psa_owned_by_sheffield_hallam_university_reports_forced_labor_entity"
+      ],
+      "identifiers": {
+        "cedar_rose_uid": "SGC227106735"
+      },
+      "summary": "The 100% shareholder of BTR Mediterranean New Material Technology, as named in Moroccan company data.",
+      "source_call_ids": [
+        "s203",
+        "s205",
+        "s207"
+      ],
+      "sayari_url": "https://graph.sayari.com/resource/entity/b1W3iE__07Zz0BOvA-8s7g",
+      "case_ids": [
+        "case-2"
+      ]
+    },
+    {
+      "id": "NKDYreiU9nvqyC4RRZQDfA",
+      "name": "BNUO International Holding Pte. Ltd.",
+      "country": "SGP",
+      "type": "company",
+      "role": "parent",
+      "risk_flags": [
+        "owned_by_sheffield_hallam_university_reports_forced_labor_entity",
+        "mass_address_usage",
+        "controlled_by_mass_business_registration"
+      ],
+      "identifiers": {
+        "sg_uen": "202332562W"
+      },
+      "summary": "Singapore holding company registered 14 Aug 2023 at a corporate-services address in Duo Tower. Singapore registry data: 100% owned by BTR (Jiangsu) New Material Technology. Its CEO also runs the Moroccan company.",
+      "source_call_ids": [
+        "s205",
+        "s207",
+        "s208"
+      ],
+      "sayari_url": "https://graph.sayari.com/resource/entity/NKDYreiU9nvqyC4RRZQDfA",
+      "case_ids": [
+        "case-2"
+      ]
+    },
+    {
+      "id": "zduDdSDoWzRJWKUinb7e0w",
+      "name": "BTR (Jiangsu) New Material Technology Co., Ltd. (贝特瑞（江苏）新材料科技有限公司)",
+      "country": "CHN",
+      "type": "company",
+      "role": "parent",
+      "risk_flags": [
+        "owned_by_sheffield_hallam_university_reports_forced_labor_entity",
+        "owner_of_forced_labor_xinjiang_entity"
+      ],
+      "identifiers": {
+        "cn_uscc": "91320413MA1NAU5H7M",
+        "sg_uen": "T23UF7557A"
+      },
+      "summary": "BTR's Changzhou subsidiary for anode and cathode materials, 100% owned by BTR New Material Group (China SAIC data). Owns 100% of BNUO International Holding.",
+      "source_call_ids": [
+        "s207",
+        "s209"
+      ],
+      "sayari_url": "https://graph.sayari.com/resource/entity/zduDdSDoWzRJWKUinb7e0w",
+      "case_ids": [
+        "case-2"
+      ]
+    },
+    {
+      "id": "uio2rrOWJmLIgiAKlcpdww",
+      "name": "Rian International Holding Pte. Ltd (Moroccan registry record)",
+      "country": "SGP",
+      "type": "company",
+      "role": "parent",
+      "risk_flags": [
+        "psa_owned_by_sheffield_hallam_university_reports_forced_labor_entity"
+      ],
+      "identifiers": {
+        "cedar_rose_uid": "SGC227219896"
+      },
+      "summary": "100% shareholder of BTR Mediterranean Anode New Material Technology, as named in Moroccan company data.",
+      "source_call_ids": [
+        "s204",
+        "s206"
+      ],
+      "sayari_url": "https://graph.sayari.com/resource/entity/uio2rrOWJmLIgiAKlcpdww",
+      "case_ids": [
+        "case-2"
+      ]
+    },
+    {
+      "id": "vATXxodFI2jKKDVrQ-ELOw",
+      "name": "Rian International Holding Pte. Ltd.",
+      "country": "SGP",
+      "type": "company",
+      "role": "parent",
+      "risk_flags": [
+        "psa_owned_by_sheffield_hallam_university_reports_forced_labor_entity",
+        "mass_address_usage",
+        "controlled_by_mass_business_registration"
+      ],
+      "identifiers": {},
+      "summary": "Singapore registry record that Sayari marks as possibly the same as Rian (Moroccan record). Its shareholder is a Singapore filing record for BTR New Material Group.",
+      "source_call_ids": [
+        "s206"
+      ],
+      "sayari_url": "https://graph.sayari.com/resource/entity/vATXxodFI2jKKDVrQ-ELOw",
+      "case_ids": [
+        "case-2"
+      ]
+    },
+    {
+      "id": "ewAw-3mKhSQX-N4we26Zyg",
+      "name": "BTR New Material Group Co., Ltd. (Singapore foreign-shareholder record)",
+      "country": "SGP",
+      "type": "company",
+      "role": "parent",
+      "risk_flags": [
+        "psa_sheffield_hallam_university_forced_labor_entity"
+      ],
+      "identifiers": {
+        "sg_uen": "T23UF7645F"
+      },
+      "summary": "Singapore filing record for BTR, with a Guangming District, Shenzhen address. Not merged by Sayari with the main BTR record.",
+      "source_call_ids": [
+        "s206"
+      ],
+      "sayari_url": "https://graph.sayari.com/resource/entity/ewAw-3mKhSQX-N4we26Zyg",
+      "case_ids": [
+        "case-2"
+      ]
+    },
+    {
+      "id": "9YkmymiyFPtNKUELqJc27g",
+      "name": "Master Union Logistics",
+      "country": "CHN",
+      "type": "company",
+      "role": "trader",
+      "risk_flags": [],
+      "identifiers": {},
+      "summary": "Forwarder that shipped racks and pipelines from China to the Moroccan anode company record in May 2026.",
+      "source_call_ids": [
+        "s210"
+      ],
+      "sayari_url": "https://graph.sayari.com/resource/entity/9YkmymiyFPtNKUELqJc27g",
+      "case_ids": [
+        "case-2"
+      ]
+    },
+    {
+      "id": "pbv1TWixpVNb8MsE_zRHYQ",
+      "name": "Shenzhen Haizhuolian Energy",
+      "country": "CHN",
+      "type": "company",
+      "role": "trader",
+      "risk_flags": [],
+      "identifiers": {},
+      "summary": "Shipped steel tubes and pipes (HS 7305) from China to BTR Mediterranean in March 2026.",
+      "source_call_ids": [
+        "s210"
+      ],
+      "sayari_url": "https://graph.sayari.com/resource/entity/pbv1TWixpVNb8MsE_zRHYQ",
+      "case_ids": [
+        "case-2"
+      ]
+    },
+    {
+      "id": "30kEauryyUlKCcOmp2hJjQ",
+      "name": "Sinotrans Eastern Co Ltd Shipping",
+      "country": "CHN",
+      "type": "company",
+      "role": "trader",
+      "risk_flags": [],
+      "identifiers": {},
+      "summary": "Chinese state-linked forwarder; one row of unspecified goods (HS 99) to a BTR Mediterranean record, Feb 2026.",
+      "source_call_ids": [
+        "s210"
+      ],
+      "sayari_url": "https://graph.sayari.com/resource/entity/30kEauryyUlKCcOmp2hJjQ",
+      "case_ids": [
+        "case-2"
+      ]
+    },
+    {
+      "id": "xU9hzwrivrkHb9uqEII7Ew",
+      "name": "Sinotrans Central China Co Ltd",
+      "country": "CHN",
+      "type": "company",
+      "role": "trader",
+      "risk_flags": [],
+      "identifiers": {},
+      "summary": "Chinese forwarder; one row of construction machinery (HS 8479.10) to a BTR Mediterranean record, Jan 2026.",
+      "source_call_ids": [
+        "s210"
+      ],
+      "sayari_url": "https://graph.sayari.com/resource/entity/xU9hzwrivrkHb9uqEII7Ew",
+      "case_ids": [
+        "case-2"
+      ]
+    },
+    {
+      "id": "vgDVfKlcdVw1l_-WTSushw",
+      "name": "China Construction Yangtze International Engineering Co. Ltd",
+      "country": "CHN",
+      "type": "company",
+      "role": "trader",
+      "risk_flags": [],
+      "identifiers": {},
+      "summary": "Chinese construction contractor. One row to the anode company record in Nov 2025, coded as sports footwear. Press says CSCEC builds the plant.",
+      "source_call_ids": [
+        "s210",
+        "t201"
+      ],
+      "sayari_url": "https://graph.sayari.com/resource/entity/vgDVfKlcdVw1l_-WTSushw",
+      "case_ids": [
+        "case-2"
+      ]
+    },
+    {
+      "id": "9lcqZ7Jk-n91ZNrYnbZKkQ",
+      "name": "SGL Carbon SAS",
+      "country": "FRA",
+      "type": "company",
+      "role": "contrast",
+      "risk_flags": [],
+      "identifiers": {},
+      "summary": "French unit of Germany's SGL Carbon. Shipped graphite rods, blocks and tubes (mm sizes, industrial grade) to SGL Carbon LLC via Morocco, Oct 2025 – Jul 2026.",
+      "source_call_ids": [
+        "s212",
+        "s217"
+      ],
+      "sayari_url": "https://graph.sayari.com/resource/entity/9lcqZ7Jk-n91ZNrYnbZKkQ",
+      "case_ids": [
+        "case-2"
+      ]
+    },
+    {
+      "id": "XL7kqgRa7AB0VXF9aN4TvQ",
+      "name": "SGL Carbon, LLC",
+      "country": "USA",
+      "type": "company",
+      "role": "us_buyer",
+      "risk_flags": [],
+      "identifiers": {},
+      "summary": "US arm of SGL Carbon; buyer of the industrial graphite rods.",
+      "source_call_ids": [
+        "s212",
+        "s217"
+      ],
+      "sayari_url": "https://graph.sayari.com/resource/entity/XL7kqgRa7AB0VXF9aN4TvQ",
+      "case_ids": [
+        "case-2"
+      ]
+    },
+    {
+      "id": "iUZRg27ESc8EcIuPn3A41w",
+      "name": "GrafTech Switzerland S.A.",
+      "country": "CHE",
+      "type": "company",
+      "role": "contrast",
+      "risk_flags": [],
+      "identifiers": {},
+      "summary": "Trading arm of US electrode maker GrafTech. Shipped 'artificial graphite bar' (AGX grade) to GrafTech USA via Morocco, Aug 2025 – May 2026.",
+      "source_call_ids": [
+        "s212",
+        "s217"
+      ],
+      "sayari_url": "https://graph.sayari.com/resource/entity/iUZRg27ESc8EcIuPn3A41w",
+      "case_ids": [
+        "case-2"
+      ]
+    },
+    {
+      "id": "ZhR1A0VWHf7oRyGfZOxKtg",
+      "name": "GrafTech USA LLC",
+      "country": "USA",
+      "type": "company",
+      "role": "us_buyer",
+      "risk_flags": [],
+      "identifiers": {},
+      "summary": "US unit of GrafTech; receiver of artificial graphite bars.",
+      "source_call_ids": [
+        "s212",
+        "s217",
+        "s412"
+      ],
+      "sayari_url": "https://graph.sayari.com/resource/entity/ZhR1A0VWHf7oRyGfZOxKtg",
+      "case_ids": [
+        "case-2",
+        "case-4"
+      ],
+      "case_summaries": {
+        "case-4": "Graphite electrode maker. One HS 3801.90 row with no product text, Jul 2023. Likely industrial, not battery use."
+      }
+    },
+    {
+      "id": "kv_CDofj0IDnI7OZ56ogow",
+      "name": "GrafTech International Holdings Inc",
+      "country": "USA",
+      "type": "company",
+      "role": "us_buyer",
+      "risk_flags": [],
+      "identifiers": {},
+      "summary": "GrafTech holding company; one artificial graphite bar shipment, Sep 2025.",
+      "source_call_ids": [
+        "s217"
+      ],
+      "sayari_url": "https://graph.sayari.com/resource/entity/kv_CDofj0IDnI7OZ56ogow",
+      "case_ids": [
+        "case-2"
+      ]
+    },
+    {
+      "id": "zLuWa9w8u4PRGbs7ixL49g",
+      "name": "Resonac Graphite Spain SAU",
+      "country": "ESP",
+      "type": "company",
+      "role": "contrast",
+      "risk_flags": [],
+      "identifiers": {},
+      "summary": "Spanish electrode plant of Japan's Resonac. One graphite electrode (24 x 96 inch) row to a Mexican steelmaker, Jul 2025.",
+      "source_call_ids": [
+        "s217"
+      ],
+      "sayari_url": "https://graph.sayari.com/resource/entity/zLuWa9w8u4PRGbs7ixL49g",
+      "case_ids": [
+        "case-2"
+      ]
+    },
+    {
+      "id": "Q93ZzWJznSouEH2e8sePaQ",
+      "name": "Grupo Acerero SA de CV",
+      "country": "MEX",
+      "type": "company",
+      "role": "buyer",
+      "risk_flags": [],
+      "identifiers": {},
+      "summary": "Mexican steelmaker; buyer of the Resonac electrode.",
+      "source_call_ids": [
+        "s217"
+      ],
+      "sayari_url": "https://graph.sayari.com/resource/entity/Q93ZzWJznSouEH2e8sePaQ",
+      "case_ids": [
+        "case-2"
+      ]
+    },
+    {
+      "id": "P_M9e-2M49LOSq5_rgBjHA",
+      "name": "Haifa Negev Technologies Ltd",
+      "country": "ISR",
+      "type": "company",
+      "role": "contrast",
+      "risk_flags": [],
+      "identifiers": {},
+      "summary": "Israeli fertilizer maker. The top 'shipper' in the Morocco–US HS 3801.10 bucket (302 rows), but its rows describe fertilizer bags (e.g. MKP 0-52-34) for Latin American buyers.",
+      "source_call_ids": [
+        "s211",
+        "s212"
+      ],
+      "sayari_url": "https://graph.sayari.com/resource/entity/P_M9e-2M49LOSq5_rgBjHA",
+      "case_ids": [
+        "case-2"
+      ]
+    },
+    {
+      "id": "eZ3aFZlfdkLKXB4E8snZLA",
+      "name": "Haifa Colombia SAS",
+      "country": "COL",
+      "type": "company",
+      "role": "buyer",
+      "risk_flags": [],
+      "identifiers": {},
+      "summary": "Colombian fertilizer importer; 77 rows in the bucket.",
+      "source_call_ids": [
+        "s211",
+        "s212"
+      ],
+      "sayari_url": "https://graph.sayari.com/resource/entity/eZ3aFZlfdkLKXB4E8snZLA",
+      "case_ids": [
+        "case-2"
+      ]
+    },
+    {
+      "id": "pgH9bMsoljU5T39W-tFfjw",
+      "name": "Haifa Mexico SA de CV",
+      "country": "MEX",
+      "type": "company",
+      "role": "buyer",
+      "risk_flags": [],
+      "identifiers": {},
+      "summary": "Mexican fertilizer importer; 96 rows in the bucket.",
+      "source_call_ids": [
+        "s211",
+        "s212"
+      ],
+      "sayari_url": "https://graph.sayari.com/resource/entity/pgH9bMsoljU5T39W-tFfjw",
+      "case_ids": [
+        "case-2"
+      ]
+    },
+    {
+      "id": "ZFnylQOY6YlfxXz6_8ySGA",
+      "name": "Coromandel International Limited",
+      "country": "IND",
+      "type": "company",
+      "role": "contrast",
+      "risk_flags": [],
+      "identifiers": {},
+      "summary": "Indian agrochemical maker; 147 rows in the bucket, describing pesticide (mancozeb) drums.",
+      "source_call_ids": [
+        "s211",
+        "s212"
+      ],
+      "sayari_url": "https://graph.sayari.com/resource/entity/ZFnylQOY6YlfxXz6_8ySGA",
+      "case_ids": [
+        "case-2"
+      ]
+    },
+    {
+      "id": "6o_3QDj9uPQPX_tvVCBBpA",
+      "name": "Interoc S.A.",
+      "country": "ECU",
+      "type": "company",
+      "role": "buyer",
+      "risk_flags": [],
+      "identifiers": {},
+      "summary": "Ecuadorian agrochemical importer; 65 rows in the bucket.",
+      "source_call_ids": [
+        "s211",
+        "s212"
+      ],
+      "sayari_url": "https://graph.sayari.com/resource/entity/6o_3QDj9uPQPX_tvVCBBpA",
+      "case_ids": [
+        "case-2"
+      ]
+    },
+    {
+      "id": "buiKsXiwKnUTCRKBasr6Gw",
+      "name": "Gandhar Oil Refinery (India) Limited",
+      "country": "IND",
+      "type": "company",
+      "role": "contrast",
+      "risk_flags": [],
+      "identifiers": {
+        "in_pan": "AAACG3996J"
+      },
+      "summary": "Indian lubricant and white-oil maker; third-largest shipper in the bucket (135 rows). Not a graphite producer.",
+      "source_call_ids": [
+        "s211",
+        "s214"
+      ],
+      "sayari_url": "https://graph.sayari.com/resource/entity/buiKsXiwKnUTCRKBasr6Gw",
+      "case_ids": [
+        "case-2"
+      ]
+    },
+    {
+      "id": "fsElZe8XUXmps2GtECr1VQ",
+      "name": "ADAMA Agricultural Solutions Ltd.",
+      "country": "ISR",
+      "type": "company",
+      "role": "contrast",
+      "risk_flags": [],
+      "identifiers": {
+        "lei": "213800ZBG59IY3LXB683"
+      },
+      "summary": "Israeli crop-protection company; fifth-largest shipper in the bucket (114 rows). Not a graphite producer.",
+      "source_call_ids": [
+        "s211",
+        "s215"
+      ],
+      "sayari_url": "https://graph.sayari.com/resource/entity/fsElZe8XUXmps2GtECr1VQ",
+      "case_ids": [
+        "case-2"
+      ]
+    },
+    {
+      "id": "PVBuK_uEm4Ag4mP2AQ1Euw",
+      "name": "Rotem Amfert Negev Ltd",
+      "country": "ISR",
+      "type": "company",
+      "role": "contrast",
+      "risk_flags": [],
+      "identifiers": {},
+      "summary": "Israeli phosphate-fertilizer maker; 117 rows in the bucket (e.g. MKP fertilizer to Mexico).",
+      "source_call_ids": [
+        "s211",
+        "s212"
+      ],
+      "sayari_url": "https://graph.sayari.com/resource/entity/PVBuK_uEm4Ag4mP2AQ1Euw",
+      "case_ids": [
+        "case-2"
+      ]
+    },
+    {
+      "id": "lnxv3guxz0fcOzR1f52Pbw",
+      "name": "Uniphos Colombia Plant Limited",
+      "country": "COL",
+      "type": "company",
+      "role": "buyer",
+      "risk_flags": [],
+      "identifiers": {
+        "col_nit": "900361697"
+      },
+      "summary": "Barranquilla pesticide maker; the largest buyer in the bucket (111 rows).",
+      "source_call_ids": [
+        "s211",
+        "s216"
+      ],
+      "sayari_url": "https://graph.sayari.com/resource/entity/lnxv3guxz0fcOzR1f52Pbw",
+      "case_ids": [
+        "case-2"
+      ]
+    },
+    {
+      "id": "uCtlsbaFXTco2UkaXMhPNg",
+      "name": "COBCO",
+      "country": "MAR",
+      "type": "company",
+      "role": "contrast",
+      "risk_flags": [],
+      "identifiers": {},
+      "summary": "Jorf Lasfar joint venture of Al Mada and China's CNGR making cathode precursor. One row of inorganic compounds (HS 2853.90) to China, May 2025. No US-bound rows found.",
+      "source_call_ids": [
+        "s213",
+        "t202"
+      ],
+      "sayari_url": "https://graph.sayari.com/resource/entity/uCtlsbaFXTco2UkaXMhPNg",
+      "case_ids": [
+        "case-2"
+      ]
+    },
+    {
+      "id": "oWaiMIhKLQJp4ywu8WsKSQ",
+      "name": "Jiangmen Umicore Chang Xin New Material",
+      "country": "CHN",
+      "type": "company",
+      "role": "buyer",
+      "risk_flags": [],
+      "identifiers": {},
+      "summary": "Chinese cathode-materials plant; buyer of COBCO's one row.",
+      "source_call_ids": [
+        "s213"
+      ],
+      "sayari_url": "https://graph.sayari.com/resource/entity/oWaiMIhKLQJp4ywu8WsKSQ",
+      "case_ids": [
+        "case-2"
+      ]
+    },
+    {
+      "id": "-jDI6N9q1MWnPT0ujf-8iw",
+      "name": "Hunan Zhongke Electric Co., Ltd. (湖南中科电气股份有限公司)",
+      "country": "CHN",
+      "type": "company",
+      "role": "parent",
+      "risk_flags": [
+        "psa_exports_bis_high_priority_items_direct"
+      ],
+      "identifiers": {
+        "cn_uscc": "914306007607108300",
+        "lei": "65560006WDZK75ECJB29",
+        "cn_registration_number": "430600000010207"
+      },
+      "summary": "Shenzhen-listed group (stock 300035) that started in electromagnetic equipment and now makes anode material. Sayari's registry shows it owning 100% of the holding company above its anode producer. It records no trade itself.",
+      "source_call_ids": [
+        "s302",
+        "s304",
+        "s307",
+        "s325"
+      ],
+      "sayari_url": "https://graph.sayari.com/resource/entity/-jDI6N9q1MWnPT0ujf-8iw",
+      "case_ids": [
+        "case-3"
+      ]
+    },
+    {
+      "id": "xdHWWBfC-uTqowtR0Rzdtg",
+      "name": "湖南中科星城科技有限公司 (Zhongke Xingcheng holding company)",
+      "country": "CHN",
+      "type": "company",
+      "role": "parent",
+      "risk_flags": [],
+      "identifiers": {},
+      "summary": "Intermediate holding company. Sayari shows it 100% owned by Zhongke Electric and holding 99.998% of the anode producer Hunan Zhongke Star City Graphite. The English label is ours.",
+      "source_call_ids": [
+        "s304",
+        "s307",
+        "s316"
+      ],
+      "sayari_url": "https://graph.sayari.com/resource/entity/xdHWWBfC-uTqowtR0Rzdtg",
+      "case_ids": [
+        "case-3"
+      ]
+    },
+    {
+      "id": "7M3Jhg6trAddkVbwtzSdZA",
+      "name": "Hunan Zhongke Star City Graphite Co., Ltd. (湖南中科星城石墨有限公司)",
+      "country": "CHN",
+      "type": "company",
+      "role": "producer",
+      "risk_flags": [],
+      "identifiers": {
+        "cn_uscc": "9143010072796955X1",
+        "cn_registration_number": "430122000007737"
+      },
+      "summary": "The group's main anode producer in Ningxiang, Changsha; registered 2001. The company's 2025 filing names it as the 100% owner of the Hong Kong company that is building the Oman plant. Its registry record holds no trade; exports appear under the 'Hunan Zhongke Shinzoom' trade record.",
+      "source_call_ids": [
+        "s307",
+        "s316",
+        "t302"
+      ],
+      "sayari_url": "https://graph.sayari.com/resource/entity/7M3Jhg6trAddkVbwtzSdZA",
+      "case_ids": [
+        "case-3"
+      ]
+    },
+    {
+      "id": "Etd_ARUNj9lHbX9vIMUWbQ",
+      "name": "贵州中科星城石墨有限公司 (Guizhou Zhongke Xingcheng Graphite)",
+      "country": "CHN",
+      "type": "company",
+      "role": "producer",
+      "risk_flags": [],
+      "identifiers": {
+        "cn_uscc": "91520690MA6DMHPEXR"
+      },
+      "summary": "A Guizhou anode subsidiary held directly by Zhongke Electric (share not shown in our pull). 'Guizhou Zhongke Shinzoom' entities were named in the US anti-dumping case. No trade pulled.",
+      "source_call_ids": [
+        "s307"
+      ],
+      "sayari_url": "https://graph.sayari.com/resource/entity/Etd_ARUNj9lHbX9vIMUWbQ",
+      "case_ids": [
+        "case-3"
+      ]
+    },
+    {
+      "id": "RpVysafWvaXbqy0N4a5qvw",
+      "name": "HUNAN ZHONGKE SHINZOOM CO., LTD (trade record)",
+      "country": "CHN",
+      "type": "company",
+      "role": "producer",
+      "risk_flags": [],
+      "identifiers": {},
+      "summary": "A trade-data record with no registry identifiers. Its two Changsha addresses match the group's registry addresses (No. 118 Quanzhou North Road, Ningxiang, and Building 3, Yida Smart Technology Park). It ships artificial graphite to SK Battery America, GM, two Malaysian cell makers and SK On Hungary. 62 shipment rows, 2021 to 2026.",
+      "source_call_ids": [
+        "s305",
+        "s308",
+        "s317",
+        "s318"
+      ],
+      "sayari_url": "https://graph.sayari.com/resource/entity/RpVysafWvaXbqy0N4a5qvw",
+      "case_ids": [
+        "case-3"
+      ]
+    },
+    {
+      "id": "aWkEICLnf2fzW78geuH5Ag",
+      "name": "Zhongke Shinzoom (HK) Holdings Co., Limited (中科星城(香港)控股有限公司)",
+      "country": "HKG",
+      "type": "company",
+      "role": "parent",
+      "risk_flags": [],
+      "identifiers": {},
+      "summary": "Hong Kong company incorporated 8 Nov 2024 and active, per Sayari's Hong Kong registry data. The company's filing says it is wholly owned by Hunan Zhongke Star City Graphite and is the direct investor in the Oman project. Sayari holds no owner or subsidiary for it, and finds no path to Zhongke Electric.",
+      "source_call_ids": [
+        "s305",
+        "s314",
+        "s324",
+        "t302"
+      ],
+      "sayari_url": "https://graph.sayari.com/resource/entity/aWkEICLnf2fzW78geuH5Ag",
+      "case_ids": [
+        "case-3"
+      ]
+    },
+    {
+      "id": "5Rb8mSrQ1oKnsToAIDba8w",
+      "name": "ZHONGKE SHINZOOM (HK) HOLDINGS CO LIMITED (trade record)",
+      "country": "HKG",
+      "type": "company",
+      "role": "trader",
+      "risk_flags": [],
+      "identifiers": {},
+      "summary": "A US-import record with no country or identifiers. Its address (Room 1406A, 14/F, Belgian Bank Building, 721-725 Nathan Road, Kowloon) is the one given for the Hong Kong holding company in Zhongke's filing. It shipped artificial graphite from China to Chemico LLC in Oct 2025.",
+      "source_call_ids": [
+        "s305",
+        "s313",
+        "s317",
+        "t302"
+      ],
+      "sayari_url": "https://graph.sayari.com/resource/entity/5Rb8mSrQ1oKnsToAIDba8w",
+      "case_ids": [
+        "case-3"
+      ]
+    },
+    {
+      "id": "KgkxLJt2omf21G3k-AFbiw",
+      "name": "Zhongke Shinzoom (HK) Co., Limited (closed, 2017)",
+      "country": "HKG",
+      "type": "company",
+      "role": "trader",
+      "risk_flags": [],
+      "identifiers": {
+        "hk_cr_number": "2574460"
+      },
+      "summary": "An older Hong Kong company with a near-identical name, registered 5 Sep 2017 and now inactive. Sayari has no relationships or trade for it. Kept separate so it isn't confused with the 2024 holding company.",
+      "source_call_ids": [
+        "s305",
+        "s310"
+      ],
+      "sayari_url": "https://graph.sayari.com/resource/entity/KgkxLJt2omf21G3k-AFbiw",
+      "case_ids": [
+        "case-3"
+      ]
+    },
+    {
+      "id": "case3-oman-sohar-project-co",
+      "name": "Zhongke Xingcheng Sohar New Material Technology Co., Ltd. (中科星城苏哈尔新材料科技有限公司) — not in Sayari",
+      "country": "OMN",
+      "type": "company",
+      "role": "transit_plant",
+      "risk_flags": [],
+      "identifiers": {},
+      "summary": "The Oman project company named in Zhongke's June 2025 filing. It is building a 200,000 t/yr anode base on Plot 3751 in Sohar Freezone, with ground broken on 8 May 2026 and first output due in 2027. Sayari has no record of it under any name we tried, so this node has no Sayari ID. The English name is our translation.",
+      "source_call_ids": [
+        "s301",
+        "s312",
+        "s315",
+        "s319",
+        "t301",
+        "t302"
+      ],
+      "sayari_url": null,
+      "case_ids": [
+        "case-3"
+      ]
+    },
+    {
+      "id": "XtUNxc54aQijxNuFzwkjxg",
+      "name": "Chemico LLC",
+      "country": "USA",
+      "type": "company",
+      "role": "us_buyer",
+      "risk_flags": [],
+      "identifiers": {},
+      "summary": "US importer. One row of artificial graphite from Zhongke Shinzoom (HK) Holdings, shipped from China and arriving 15 Oct 2025. The data doesn't show the end use.",
+      "source_call_ids": [
+        "s313",
+        "s317",
+        "s318"
+      ],
+      "sayari_url": "https://graph.sayari.com/resource/entity/XtUNxc54aQijxNuFzwkjxg",
+      "case_ids": [
+        "case-3"
+      ]
+    },
+    {
+      "id": "_WCNtC_iMCzef8u8s0uKyQ",
+      "name": "EVE Energy Malaysia Sdn Bhd",
+      "country": "MYS",
+      "type": "company",
+      "role": "buyer",
+      "risk_flags": [
+        "exports_to_usa_section_1260h_entity",
+        "forced_labor_sheffield_hallam_university_reports_origin_direct"
+      ],
+      "identifiers": {},
+      "summary": "Malaysian cell plant. It received 18 rows of artificial graphite (HS 3801.10/3801.90) from Hunan Zhongke Shinzoom, Apr 2025 to Apr 2026. It ships lithium-ion cells to US buyers, including EVE Energy North America, Briggs & Stratton, Milwaukee Tool, TTI Consumer Power Tools, Stanley Black & Decker, Energizer Battery Co, ProTechnologies and ABM Tucker GA.",
+      "source_call_ids": [
+        "s308",
+        "s318",
+        "s322"
+      ],
+      "sayari_url": "https://graph.sayari.com/resource/entity/_WCNtC_iMCzef8u8s0uKyQ",
+      "case_ids": [
+        "case-3"
+      ]
+    },
+    {
+      "id": "ySemfyJJesFbfxEgW2SgCg",
+      "name": "Linergy Power Sdn Bhd",
+      "country": "MYS",
+      "type": "company",
+      "role": "buyer",
+      "risk_flags": [],
+      "identifiers": {},
+      "summary": "Malaysian cell maker. It received 14 rows of artificial graphite (HS 3801.10) from Hunan Zhongke Shinzoom, Sep 2025 to Feb 2026. It ships 18650/21700 lithium-ion cells and battery systems to US buyers: Eaton, Milwaukee Tool, Ampace Technology, Stanley Black & Decker and Techtronic Product Development.",
+      "source_call_ids": [
+        "s308",
+        "s318",
+        "s321"
+      ],
+      "sayari_url": "https://graph.sayari.com/resource/entity/ySemfyJJesFbfxEgW2SgCg",
+      "case_ids": [
+        "case-3"
+      ]
+    },
+    {
+      "id": "t2HmaexxvTE5WgGtj3BMxg",
+      "name": "SK On Hungary Kft",
+      "country": "HUN",
+      "type": "company",
+      "role": "buyer",
+      "risk_flags": [],
+      "identifiers": {},
+      "summary": "SK On's Hungarian cell plant. One row of artificial graphite (HS 3801.10) from Hunan Zhongke Shinzoom, arriving at a Slovenian port in Mar 2023.",
+      "source_call_ids": [
+        "s308",
+        "s318"
+      ],
+      "sayari_url": "https://graph.sayari.com/resource/entity/t2HmaexxvTE5WgGtj3BMxg",
+      "case_ids": [
+        "case-3"
+      ]
+    },
+    {
+      "id": "q4uVT7bM-GusYLonMicJ_Q",
+      "name": "Samsung SDI Co., Ltd.",
+      "country": "KOR",
+      "type": "company",
+      "role": "buyer",
+      "risk_flags": [],
+      "identifiers": {},
+      "summary": "Korean cell maker. Two rows from Hunan Zhongke Shinzoom in Dec 2021 and Jan 2022, coded HS 8543 (electrical apparatus), which looks like a coding error for anode material.",
+      "source_call_ids": [
+        "s308",
+        "s318"
+      ],
+      "sayari_url": "https://graph.sayari.com/resource/entity/q4uVT7bM-GusYLonMicJ_Q",
+      "case_ids": [
+        "case-3"
+      ]
+    },
+    {
+      "id": "-3h_vhYQa9eIl2-txBW36Q",
+      "name": "Uni-Trans Line Co., Ltd.",
+      "country": "KOR",
+      "type": "company",
+      "role": "trader",
+      "risk_flags": [],
+      "identifiers": {},
+      "summary": "Korean freight forwarder. It is consignee on 18 Shinzoom rows to Korea, 2022–2023, under mixed HS codes (one row describes artificial graphite). We treat it as logistics, not as an end buyer.",
+      "source_call_ids": [
+        "s308",
+        "s318"
+      ],
+      "sayari_url": "https://graph.sayari.com/resource/entity/-3h_vhYQa9eIl2-txBW36Q",
+      "case_ids": [
+        "case-3"
+      ]
+    },
+    {
+      "id": "BuQm2NSnUlkUMb83_BJxog",
+      "name": "Eaton Corporation",
+      "country": "USA",
+      "type": "company",
+      "role": "us_buyer",
+      "risk_flags": [],
+      "identifiers": {},
+      "summary": "US buyer of lithium-ion battery systems (HS 8507.60) from Linergy Power in Malaysia: 5 rows, Aug to Sep 2026. A second Eaton record (importer number 34-0196300SK) has one more row.",
+      "source_call_ids": [
+        "s321"
+      ],
+      "sayari_url": "https://graph.sayari.com/resource/entity/BuQm2NSnUlkUMb83_BJxog",
+      "case_ids": [
+        "case-3"
+      ]
+    },
+    {
+      "id": "gRBpjYP97b53gA7TkExdpQ",
+      "name": "EVE Energy North America Corp",
+      "country": "USA",
+      "type": "company",
+      "role": "us_buyer",
+      "risk_flags": [],
+      "identifiers": {},
+      "summary": "US arm of EVE Energy. It received 7 rows of lithium-ion cells from EVE Energy Malaysia, Jan to Jun 2026. Six of those rows left from Indonesia, not Malaysia.",
+      "source_call_ids": [
+        "s322"
+      ],
+      "sayari_url": "https://graph.sayari.com/resource/entity/gRBpjYP97b53gA7TkExdpQ",
+      "case_ids": [
+        "case-3"
+      ]
+    },
+    {
+      "id": "33X8P9vU58v1EcigvWeD-Q",
+      "name": "Briggs & Stratton, LLC",
+      "country": "USA",
+      "type": "company",
+      "role": "us_buyer",
+      "risk_flags": [],
+      "identifiers": {},
+      "summary": "US buyer of INR21700 lithium-ion cells from EVE Energy Malaysia: 3 rows, Jul to Sep 2026. Of the two dated departures, one left from Singapore and one from China.",
+      "source_call_ids": [
+        "s322"
+      ],
+      "sayari_url": "https://graph.sayari.com/resource/entity/33X8P9vU58v1EcigvWeD-Q",
+      "case_ids": [
+        "case-3"
+      ]
+    },
+    {
+      "id": "Fj3vtxDroFyjyPsLgsnm2A",
+      "name": "POSCO Future M Co., Ltd. (formerly POSCO Chemical)",
+      "country": "KOR",
+      "type": "company",
+      "role": "contrast",
+      "risk_flags": [
+        "esg_score_medium",
+        "sheffield_hallam_university_forced_labor_reports_entity_adjacent"
+      ],
+      "identifiers": {
+        "dart_cik": "00155276"
+      },
+      "summary": "Korean maker of natural-graphite anode (Sejong), artificial-graphite anode (Pohang), cathode and refractories. 58.2% owned by POSCO Holdings. Ships anode material to GM, SK Battery America, Tesla and Panasonic Energy in the US.",
+      "source_call_ids": [
+        "s401",
+        "s402",
+        "s403",
+        "s404",
+        "s407",
+        "s408",
+        "s411",
+        "s412",
+        "s413",
+        "s419",
+        "s421",
+        "s514",
+        "s518",
+        "t401",
+        "t402"
+      ],
+      "sayari_url": "https://graph.sayari.com/resource/entity/Fj3vtxDroFyjyPsLgsnm2A",
+      "case_ids": [
+        "case-4",
+        "case-5"
+      ],
+      "records": 7,
+      "case_summaries": {
+        "case-5": "Korean anode maker and the top 'anode' shipper to the US in our keyword scan. Korean-owned, so a contrast case."
+      }
+    },
+    {
+      "id": "lGXvcBkItOrZkkvnvjxu9g",
+      "name": "POSCO FUTURE M CO. (record 2)",
+      "country": "KOR",
+      "type": "company",
+      "role": "contrast",
+      "risk_flags": [],
+      "identifiers": {},
+      "summary": "Trade-name record with the same Pohang and Gwangyang street addresses as the main record.",
+      "source_call_ids": [
+        "s401"
+      ],
+      "sayari_url": "https://graph.sayari.com/resource/entity/lGXvcBkItOrZkkvnvjxu9g",
+      "case_ids": [
+        "case-4"
+      ]
+    },
+    {
+      "id": "YSRMGUz3xWtyXZWZlMTCBg",
+      "name": "POSCO FUTURE M CO LTD 110 Sinhang-ro (record 3)",
+      "country": "KOR",
+      "type": "company",
+      "role": "contrast",
+      "risk_flags": [],
+      "identifiers": {},
+      "summary": "Trade-name record with the Pohang head-office address run into the name.",
+      "source_call_ids": [
+        "s401"
+      ],
+      "sayari_url": "https://graph.sayari.com/resource/entity/YSRMGUz3xWtyXZWZlMTCBg",
+      "case_ids": [
+        "case-4"
+      ]
+    },
+    {
+      "id": "M6ta2xQZjgwEaQFF7t6dZA",
+      "name": "POSCO CHEMICAL COMPANY LTD. 110 SINH (record 4)",
+      "country": "KOR",
+      "type": "company",
+      "role": "contrast",
+      "risk_flags": [],
+      "identifiers": {},
+      "summary": "Old-name record with a truncated Pohang address; buyer of Chinese spherical graphite (14 shipments, latest Sep 2022).",
+      "source_call_ids": [
+        "s419"
+      ],
+      "sayari_url": "https://graph.sayari.com/resource/entity/M6ta2xQZjgwEaQFF7t6dZA",
+      "case_ids": [
+        "case-4"
+      ]
+    },
+    {
+      "id": "UCbyt8Y_8GmNUrzHG5riPw",
+      "name": "POSCOCHEMICAL CO.,LTD. (record 5)",
+      "country": "KOR",
+      "type": "company",
+      "role": "contrast",
+      "risk_flags": [],
+      "identifiers": {},
+      "summary": "Old-name record with no address; buyer of Chinese spherical graphite (15 shipments, latest Jan 2023). Name only.",
+      "source_call_ids": [
+        "s419"
+      ],
+      "sayari_url": "https://graph.sayari.com/resource/entity/UCbyt8Y_8GmNUrzHG5riPw",
+      "case_ids": [
+        "case-4"
+      ]
+    },
+    {
+      "id": "xhmHh99vEgdFz19iRON8yA",
+      "name": "POSCO Holdings Inc. (포스코홀딩스)",
+      "country": "KOR",
+      "type": "company",
+      "role": "parent",
+      "risk_flags": [],
+      "identifiers": {},
+      "summary": "Korean holding company of the POSCO group. Holds 58.2% of POSCO Future M per Korea's DART disclosures.",
+      "source_call_ids": [
+        "s402",
+        "s403",
+        "s420"
+      ],
+      "sayari_url": "https://graph.sayari.com/resource/entity/xhmHh99vEgdFz19iRON8yA",
+      "case_ids": [
+        "case-4"
+      ]
+    },
+    {
+      "id": "H3F05G33f9ITSmHNhahweg",
+      "name": "POSCO Holdings Inc. (English-name record)",
+      "country": "KOR",
+      "type": "company",
+      "role": "parent",
+      "risk_flags": [],
+      "identifiers": {},
+      "summary": "English-name record of the same holding company, listed as a shareholder of POSCO Future M.",
+      "source_call_ids": [
+        "s403"
+      ],
+      "sayari_url": "https://graph.sayari.com/resource/entity/H3F05G33f9ITSmHNhahweg",
+      "case_ids": [
+        "case-4"
+      ]
+    },
+    {
+      "id": "dhu2OleybGzMUQwDgEBymg",
+      "name": "National Pension Service (국민연금공단)",
+      "country": "KOR",
+      "type": "company",
+      "role": "parent",
+      "risk_flags": [],
+      "identifiers": {},
+      "summary": "Korea's state pension fund, listed as a shareholder of POSCO Future M (no percentage returned).",
+      "source_call_ids": [
+        "s403"
+      ],
+      "sayari_url": "https://graph.sayari.com/resource/entity/dhu2OleybGzMUQwDgEBymg",
+      "case_ids": [
+        "case-4"
+      ]
+    },
+    {
+      "id": "mdDF1uxfPSghv7Q25eoc2g",
+      "name": "POSCO FUTURE M CO., LTD. / Y.T Japan (record 6)",
+      "country": "KOR",
+      "type": "company",
+      "role": "contrast",
+      "risk_flags": [],
+      "identifiers": {},
+      "summary": "Record that joins POSCO Future M with a Japanese co-party, Sejong address. One spherical-graphite shipment, Aug 2023.",
+      "source_call_ids": [
+        "s401",
+        "s419"
+      ],
+      "sayari_url": "https://graph.sayari.com/resource/entity/mdDF1uxfPSghv7Q25eoc2g",
+      "case_ids": [
+        "case-4"
+      ]
+    },
+    {
+      "id": "y4MWluNMSgkSaHoCAptQfA",
+      "name": "POSCO Matériaux du Futur Canada Inc.",
+      "country": "CAN",
+      "type": "company",
+      "role": "producer",
+      "risk_flags": [],
+      "identifiers": {
+        "quebec_enterprise_number": "1177692192"
+      },
+      "summary": "Québec subsidiary (Bécancour) owned by POSCO Future M, per the Quebec enterprise register.",
+      "source_call_ids": [
+        "s401",
+        "s402"
+      ],
+      "sayari_url": "https://graph.sayari.com/resource/entity/y4MWluNMSgkSaHoCAptQfA",
+      "case_ids": [
+        "case-4"
+      ]
+    },
+    {
+      "id": "2ZpM8WWpqajK6jBIXAbTYQ",
+      "name": "Zhanjiang Juxin New Energy Co., Ltd.",
+      "country": "CHN",
+      "type": "company",
+      "role": "producer",
+      "risk_flags": [],
+      "identifiers": {},
+      "summary": "Guangdong graphite processor. Shipped natural graphite (HS 2504) to POSCO Future M, Jul–Dec 2023, and carbon (HS 2803) from Dec 2022.",
+      "source_call_ids": [
+        "s404",
+        "s406",
+        "s407"
+      ],
+      "sayari_url": "https://graph.sayari.com/resource/entity/2ZpM8WWpqajK6jBIXAbTYQ",
+      "case_ids": [
+        "case-4"
+      ]
+    },
+    {
+      "id": "AyicfnT87hRIGEH7FmYfvA",
+      "name": "Zhanjiang Juxin New Energy (record 2)",
+      "country": "CHN",
+      "type": "company",
+      "role": "producer",
+      "risk_flags": [],
+      "identifiers": {},
+      "summary": "Second record for the same supplier, no address. Natural graphite to POSCO Future M, Jul–Dec 2023.",
+      "source_call_ids": [
+        "s404"
+      ],
+      "sayari_url": "https://graph.sayari.com/resource/entity/AyicfnT87hRIGEH7FmYfvA",
+      "case_ids": [
+        "case-4"
+      ]
+    },
+    {
+      "id": "YeY_0foWAdFxn5HCX58QGQ",
+      "name": "Qingdao Haida New Energy Materials Co., Ltd.",
+      "country": "CHN",
+      "type": "company",
+      "role": "producer",
+      "risk_flags": [],
+      "identifiers": {},
+      "summary": "Shipped natural graphite (HS 2504) to POSCO Future M, Jun–Sep 2023.",
+      "source_call_ids": [
+        "s404"
+      ],
+      "sayari_url": "https://graph.sayari.com/resource/entity/YeY_0foWAdFxn5HCX58QGQ",
+      "case_ids": [
+        "case-4"
+      ]
+    },
+    {
+      "id": "mNl1NLitXD_XdCQLg1DGlA",
+      "name": "Qingdao Zhongshuo New Energy Technology Co.",
+      "country": "CHN",
+      "type": "company",
+      "role": "producer",
+      "risk_flags": [],
+      "identifiers": {},
+      "summary": "Shipped natural graphite (HS 2504) to POSCO Future M, Aug 2023.",
+      "source_call_ids": [
+        "s404"
+      ],
+      "sayari_url": "https://graph.sayari.com/resource/entity/mNl1NLitXD_XdCQLg1DGlA",
+      "case_ids": [
+        "case-4"
+      ]
+    },
+    {
+      "id": "goOR9J6dEj2sQuo-snuJ6A",
+      "name": "Qingdao Kuntuo New Material Co., Ltd.",
+      "country": "CHN",
+      "type": "company",
+      "role": "producer",
+      "risk_flags": [],
+      "identifiers": {},
+      "summary": "Nanshu Town, Laixi (Shandong graphite cluster). Natural (HS 2504) and artificial (HS 3801) graphite to POSCO Future M, May–Sep 2023.",
+      "source_call_ids": [
+        "s404",
+        "s407"
+      ],
+      "sayari_url": "https://graph.sayari.com/resource/entity/goOR9J6dEj2sQuo-snuJ6A",
+      "case_ids": [
+        "case-4"
+      ]
+    },
+    {
+      "id": "on87w5_QYqQaQl1FQXC7cw",
+      "name": "Qingdao Qingbei Carbon Products Co., Ltd. (青岛青北碳素制品)",
+      "country": "CHN",
+      "type": "company",
+      "role": "producer",
+      "risk_flags": [],
+      "identifiers": {},
+      "summary": "Laixi graphite cluster. Artificial graphite (HS 3801) to POSCO Future M, Oct 2021 – Jul 2022.",
+      "source_call_ids": [
+        "s404",
+        "s407"
+      ],
+      "sayari_url": "https://graph.sayari.com/resource/entity/on87w5_QYqQaQl1FQXC7cw",
+      "case_ids": [
+        "case-4"
+      ]
+    },
+    {
+      "id": "v1QB9w2AdIcXcohuVJZHyw",
+      "name": "Qingdao Huateng Graphite Technology Co.",
+      "country": "CHN",
+      "type": "company",
+      "role": "producer",
+      "risk_flags": [],
+      "identifiers": {},
+      "summary": "Nanshu Town, Laixi. Listed as a supplier to POSCO Future M; HS detail not pulled.",
+      "source_call_ids": [
+        "s407"
+      ],
+      "sayari_url": "https://graph.sayari.com/resource/entity/v1QB9w2AdIcXcohuVJZHyw",
+      "case_ids": [
+        "case-4"
+      ]
+    },
+    {
+      "id": "GglryO0mCnl2PA1AOlB2JA",
+      "name": "Qingdao GR-Taida Carbon Co., Ltd.",
+      "country": "CHN",
+      "type": "company",
+      "role": "producer",
+      "risk_flags": [],
+      "identifiers": {},
+      "summary": "Pingdu, Shandong. Listed as a supplier to POSCO Future M; HS detail not pulled.",
+      "source_call_ids": [
+        "s407"
+      ],
+      "sayari_url": "https://graph.sayari.com/resource/entity/GglryO0mCnl2PA1AOlB2JA",
+      "case_ids": [
+        "case-4"
+      ]
+    },
+    {
+      "id": "-E5VEQtbiDlJDhmMR7GywQ",
+      "name": "Qingdao Luowei New Material Co., Ltd. (青岛洛唯新材料)",
+      "country": "CHN",
+      "type": "company",
+      "role": "producer",
+      "risk_flags": [
+        "sheffield_hallam_university_forced_labor_reports_entity_adjacent"
+      ],
+      "identifiers": {},
+      "summary": "In the Graphite New Material Cluster Area, Laixi. Listed as a supplier to POSCO Future M; HS detail not pulled.",
+      "source_call_ids": [
+        "s407"
+      ],
+      "sayari_url": "https://graph.sayari.com/resource/entity/-E5VEQtbiDlJDhmMR7GywQ",
+      "case_ids": [
+        "case-4"
+      ]
+    },
+    {
+      "id": "ljXszsmI8EtP_3Q4fuC6ZA",
+      "name": "Rain Carbon Germany GmbH",
+      "country": "DEU",
+      "type": "company",
+      "role": "producer",
+      "risk_flags": [
+        "export_to_soe",
+        "psa_export_to_soe"
+      ],
+      "identifiers": {},
+      "summary": "Coal-tar pitch and oils (HS 2706, 2708) to POSCO Future M via Belgium and the Netherlands, Nov 2021 – Jan 2024. A non-Chinese carbon input.",
+      "source_call_ids": [
+        "s404",
+        "s413"
+      ],
+      "sayari_url": "https://graph.sayari.com/resource/entity/ljXszsmI8EtP_3Q4fuC6ZA",
+      "case_ids": [
+        "case-4"
+      ]
+    },
+    {
+      "id": "Bkp4ORhM634Fg0vFJk_YaA",
+      "name": "China EPT Co., Ltd.",
+      "country": "CHN",
+      "type": "company",
+      "role": "trader",
+      "risk_flags": [],
+      "identifiers": {},
+      "summary": "Beijing. One petroleum coke shipment (HS 2713) to POSCO Future M, Jul 2022.",
+      "source_call_ids": [
+        "s404"
+      ],
+      "sayari_url": "https://graph.sayari.com/resource/entity/Bkp4ORhM634Fg0vFJk_YaA",
+      "case_ids": [
+        "case-4"
+      ]
+    },
+    {
+      "id": "WLUn_1F-Zz5cShfohEF7BA",
+      "name": "General Motors LLC (record 2)",
+      "country": "USA",
+      "type": "company",
+      "role": "us_buyer",
+      "risk_flags": [],
+      "identifiers": {},
+      "summary": "One row of 'anode active material' (HS 3801.10), arrival Dec 2021.",
+      "source_call_ids": [
+        "s408"
+      ],
+      "sayari_url": "https://graph.sayari.com/resource/entity/WLUn_1F-Zz5cShfohEF7BA",
+      "case_ids": [
+        "case-4"
+      ]
+    },
+    {
+      "id": "wxnxnhKanOt7EorBjIZsxQ",
+      "name": "Panasonic Energy Corporation",
+      "country": "USA",
+      "type": "company",
+      "role": "us_buyer",
+      "risk_flags": [],
+      "identifiers": {},
+      "summary": "Received 9 rows of 'anode active material' (HS 3801.90 and 3801.10) from POSCO Future M, May–Jul 2026.",
+      "source_call_ids": [
+        "s408"
+      ],
+      "sayari_url": "https://graph.sayari.com/resource/entity/wxnxnhKanOt7EorBjIZsxQ",
+      "case_ids": [
+        "case-4"
+      ]
+    },
+    {
+      "id": "BZPBOZcD6M_QtBtOWWtYUg",
+      "name": "Panasonic Procurement Corporation of America",
+      "country": "USA",
+      "type": "company",
+      "role": "us_buyer",
+      "risk_flags": [],
+      "identifiers": {},
+      "summary": "Named with Tesla on one Aug 2023 row of anode active material.",
+      "source_call_ids": [
+        "s408"
+      ],
+      "sayari_url": "https://graph.sayari.com/resource/entity/BZPBOZcD6M_QtBtOWWtYUg",
+      "case_ids": [
+        "case-4"
+      ]
+    },
+    {
+      "id": "qAjZISyxppsZ-LjTrCmJTw",
+      "name": "XALT Energy Alicia",
+      "country": "USA",
+      "type": "company",
+      "role": "us_buyer",
+      "risk_flags": [],
+      "identifiers": {},
+      "summary": "Battery maker's site. 3 rows of artificial graphite / 'active anode material PAS-A1' (HS 3801.10), Feb 2023 – May 2024.",
+      "source_call_ids": [
+        "s411",
+        "s412"
+      ],
+      "sayari_url": "https://graph.sayari.com/resource/entity/qAjZISyxppsZ-LjTrCmJTw",
+      "case_ids": [
+        "case-4"
+      ]
+    },
+    {
+      "id": "1nxhfvO5sMgXkfCrTho9Vw",
+      "name": "XALT Energy LLC",
+      "country": "USA",
+      "type": "company",
+      "role": "us_buyer",
+      "risk_flags": [],
+      "identifiers": {},
+      "summary": "One row of artificial graphite (HS 3801.10), Mar 2023.",
+      "source_call_ids": [
+        "s412"
+      ],
+      "sayari_url": "https://graph.sayari.com/resource/entity/1nxhfvO5sMgXkfCrTho9Vw",
+      "case_ids": [
+        "case-4"
+      ]
+    },
+    {
+      "id": "5qJ3A4FHw2rTjNrnGOrHQQ",
+      "name": "Scan Global Logistics DTW",
+      "country": "USA",
+      "type": "company",
+      "role": "buyer",
+      "risk_flags": [],
+      "identifiers": {},
+      "summary": "Freight forwarder (Detroit). 8 rows, 2023, some described as 'active anode material'. The end customer is not named.",
+      "source_call_ids": [
+        "s408"
+      ],
+      "sayari_url": "https://graph.sayari.com/resource/entity/5qJ3A4FHw2rTjNrnGOrHQQ",
+      "case_ids": [
+        "case-4"
+      ]
+    },
+    {
+      "id": "FWd2q_iBgH2ER9aw1Gph_g",
+      "name": "FNS, Inc. (Chicago)",
+      "country": "USA",
+      "type": "company",
+      "role": "buyer",
+      "risk_flags": [],
+      "identifiers": {},
+      "summary": "Freight forwarder. One 'anode material' row, Aug 2023.",
+      "source_call_ids": [
+        "s408"
+      ],
+      "sayari_url": "https://graph.sayari.com/resource/entity/FWd2q_iBgH2ER9aw1Gph_g",
+      "case_ids": [
+        "case-4"
+      ]
+    },
+    {
+      "id": "rimS2-LaCZMi2HMJqtwW5w",
+      "name": "POSCO Co., Ltd. (steel, Pohang)",
+      "country": "KOR",
+      "type": "company",
+      "role": "buyer",
+      "risk_flags": [
+        "forced_labor_uflpa_origin_subtier",
+        "forced_labor_sheffield_hallam_university_reports_origin_subtier"
+      ],
+      "identifiers": {},
+      "summary": "POSCO group steelmaker. Imported recarburizer (HS 3801.10) from China in May 2026: steelmaking additive, not battery material.",
+      "source_call_ids": [
+        "s415",
+        "s416"
+      ],
+      "sayari_url": "https://graph.sayari.com/resource/entity/rimS2-LaCZMi2HMJqtwW5w",
+      "case_ids": [
+        "case-4"
+      ]
+    },
+    {
+      "id": "QTGe48MKdBHh2Dkbxh_ifw",
+      "name": "Tianjin Eboxline International Transport",
+      "country": "CHN",
+      "type": "company",
+      "role": "trader",
+      "risk_flags": [],
+      "identifiers": {},
+      "summary": "Chinese forwarder that shipped the recarburizer to POSCO's steelworks for POSCO (Beijing) Trading, May 2026.",
+      "source_call_ids": [
+        "s415",
+        "s416"
+      ],
+      "sayari_url": "https://graph.sayari.com/resource/entity/QTGe48MKdBHh2Dkbxh_ifw",
+      "case_ids": [
+        "case-4"
+      ]
+    },
+    {
+      "id": "WG1hrSwGRdoLMIt997Z5-w",
+      "name": "Zichen Malaysia Sdn. Bhd.",
+      "country": "MYS",
+      "type": "company",
+      "role": "transit_plant",
+      "risk_flags": [
+        "controlled_by_mass_business_registration"
+      ],
+      "identifiers": {
+        "mys_company_reg_no": "202501044592"
+      },
+      "summary": "Putailai's Malaysian anode company. Registered 23 Sep 2025 with a Penang office address; its stated business is producing battery materials and carbon products. Sayari shows no trade at all. Press names it as the company building the 50,000-tonne anode plant in Gurun, Kedah.",
+      "source_call_ids": [
+        "s524",
+        "s526",
+        "s527",
+        "t501",
+        "t502"
+      ],
+      "sayari_url": "https://graph.sayari.com/resource/entity/WG1hrSwGRdoLMIt997Z5-w",
+      "case_ids": [
+        "case-5"
+      ]
+    },
+    {
+      "id": "04tgJV8tHRLxXnFybfSbOg",
+      "name": "Putailai (Singapore) Pte. Ltd.",
+      "country": "SGP",
+      "type": "company",
+      "role": "parent",
+      "risk_flags": [],
+      "identifiers": {},
+      "summary": "Singapore holding company. The Malaysian registry data lists it as the 100% shareholder of Zichen Malaysia.",
+      "source_call_ids": [
+        "s526",
+        "s527"
+      ],
+      "sayari_url": "https://graph.sayari.com/resource/entity/04tgJV8tHRLxXnFybfSbOg",
+      "case_ids": [
+        "case-5"
+      ]
+    },
+    {
+      "id": "Q_Z4Q6TSyW_gNl0L5pPyeQ",
+      "name": "PUTAILAI (SINGAPORE) PTE. LTD (record typed as a person)",
+      "country": "MYS",
+      "type": "person",
+      "role": "parent",
+      "risk_flags": [],
+      "identifiers": {
+        "unknown_passport": "XLZ00250663"
+      },
+      "summary": "A second record for the Singapore holding company, wrongly typed as a person. It is listed as a former 100% shareholder of Zichen Malaysia. Kept as a duplicate of the company record.",
+      "source_call_ids": [
+        "s526",
+        "s527"
+      ],
+      "sayari_url": "https://graph.sayari.com/resource/entity/Q_Z4Q6TSyW_gNl0L5pPyeQ",
+      "case_ids": [
+        "case-5"
+      ]
+    },
+    {
+      "id": "5rQqO0uMqEvtMvK_oQGcYA",
+      "name": "Shanghai Putailai New Energy Technology Group Co., Ltd. (上海璞泰来新能源科技集团股份有限公司)",
+      "country": "CHN",
+      "type": "company",
+      "role": "parent",
+      "risk_flags": [
+        "controlled_by_mass_business_registration"
+      ],
+      "identifiers": {
+        "cn_uscc": "91310000055944463E"
+      },
+      "summary": "Shanghai-listed battery materials group (artificial graphite anode, separators, PVDF). Sayari shows it as shareholder of Putailai (Singapore). Its own shareholders are Chinese individuals, funds and banks.",
+      "source_call_ids": [
+        "s525",
+        "s527",
+        "t501",
+        "t502"
+      ],
+      "sayari_url": "https://graph.sayari.com/resource/entity/5rQqO0uMqEvtMvK_oQGcYA",
+      "case_ids": [
+        "case-5"
+      ]
+    },
+    {
+      "id": "Zb9HwzswdGPKn62ayKTnIQ",
+      "name": "Shanghai Putailai New Energy Technology Co Ltd",
+      "country": "CHN",
+      "type": "company",
+      "role": "parent",
+      "risk_flags": [],
+      "identifiers": {
+        "xxx_edi_global_issuer_id": "194910"
+      },
+      "summary": "A securities-data record with the group's English name. No identifier links it to the registry record, so it is kept as a lead.",
+      "source_call_ids": [
+        "s525"
+      ],
+      "sayari_url": "https://graph.sayari.com/resource/entity/Zb9HwzswdGPKn62ayKTnIQ",
+      "case_ids": [
+        "case-5"
+      ]
+    },
+    {
+      "id": "LwA4a_LwLoGPjHr6RDiArg",
+      "name": "Director A of Zichen Malaysia (name withheld)",
+      "country": "CHN",
+      "type": "person",
+      "role": "parent",
+      "risk_flags": [],
+      "identifiers": {},
+      "summary": "Director of Zichen Malaysia. The record lists China, Singapore and Malaysia.",
+      "source_call_ids": [
+        "s526"
+      ],
+      "sayari_url": "https://graph.sayari.com/resource/entity/LwA4a_LwLoGPjHr6RDiArg",
+      "case_ids": [
+        "case-5"
+      ]
+    },
+    {
+      "id": "M5aejkK4bjb5FsPDBPoVIA",
+      "name": "Putailai shareholder A (name withheld)",
+      "country": "CHN",
+      "type": "person",
+      "role": "parent",
+      "risk_flags": [],
+      "identifiers": {},
+      "summary": "Listed by Sayari among the shareholders of the Putailai group in China.",
+      "source_call_ids": [
+        "s527"
+      ],
+      "sayari_url": "https://graph.sayari.com/resource/entity/M5aejkK4bjb5FsPDBPoVIA",
+      "case_ids": [
+        "case-5"
+      ]
+    },
+    {
+      "id": "eKMO9SjyO_k4HmOLY8o_7A",
+      "name": "Director B of Zichen Malaysia (name withheld)",
+      "country": "CHN",
+      "type": "person",
+      "role": "parent",
+      "risk_flags": [],
+      "identifiers": {},
+      "summary": "Director of Zichen Malaysia. The record lists China and Malaysia.",
+      "source_call_ids": [
+        "s526"
+      ],
+      "sayari_url": "https://graph.sayari.com/resource/entity/eKMO9SjyO_k4HmOLY8o_7A",
+      "case_ids": [
+        "case-5"
+      ]
+    },
+    {
+      "id": "So9o4udTCQcP19p-UGkyig",
+      "name": "Putailai shareholder B (name withheld)",
+      "country": "CHN",
+      "type": "person",
+      "role": "parent",
+      "risk_flags": [],
+      "identifiers": {},
+      "summary": "Listed by Sayari among the shareholders of the Putailai group in China. A common name, so the match to the Malaysian director is weak.",
+      "source_call_ids": [
+        "s527"
+      ],
+      "sayari_url": "https://graph.sayari.com/resource/entity/So9o4udTCQcP19p-UGkyig",
+      "case_ids": [
+        "case-5"
+      ]
+    },
+    {
+      "id": "ib6a_v_imoUoFRPQiwEjPA",
+      "name": "Minh Thinh Loi Production and Trading Co., Ltd. (Công Ty TNHH Sản Xuất Và Thương Mại Minh Thịnh Lợi)",
+      "country": "VNM",
+      "type": "company",
+      "role": "contrast",
+      "risk_flags": [
+        "forced_labor_sheffield_hallam_university_reports_origin_subtier_product_blueprint",
+        "forced_labor_uflpa_origin_subtier_product_blueprint",
+        "forced_labor_xinjiang_origin_subtier_product_blueprint"
+      ],
+      "identifiers": {
+        "vnm_enterprise_code": "0400575066"
+      },
+      "summary": "Da Nang company registered in 2007, with a Vietnamese legal representative. It is the largest Vietnam-to-US shipper under HS 3801.10, but the goods are machined graphite jigs, not anode powder. The forced-labor flags are 'product blueprint' sub-tier flags, not findings about this company.",
+      "source_call_ids": [
+        "s506",
+        "s511",
+        "s513",
+        "s516"
+      ],
+      "sayari_url": "https://graph.sayari.com/resource/entity/ib6a_v_imoUoFRPQiwEjPA",
+      "case_ids": [
+        "case-5"
+      ]
+    },
+    {
+      "id": "eX51gPEUQ-MpkznB5_ICaQ",
+      "name": "LTD Material, LLC",
+      "country": "USA",
+      "type": "company",
+      "role": "buyer",
+      "risk_flags": [],
+      "identifiers": {},
+      "summary": "US buyer of the graphite jigs from Minh Thinh Loi.",
+      "source_call_ids": [
+        "s511",
+        "s516"
+      ],
+      "sayari_url": "https://graph.sayari.com/resource/entity/eX51gPEUQ-MpkznB5_ICaQ",
+      "case_ids": [
+        "case-5"
+      ]
+    },
+    {
+      "id": "oXMFQqYBSVg9LN8JdsZXRg",
+      "name": "China Highwin (Thailand) Co., Ltd.",
+      "country": "THA",
+      "type": "company",
+      "role": "trader",
+      "risk_flags": [],
+      "identifiers": {},
+      "summary": "The only Chinese-named shipper in the Thailand scan. One HS 3801.10 row (Nov 2024) to a US logistics company. A sister record carries a US freight-forwarder (OTI) licence number, so we treat it as a forwarder, not a producer.",
+      "source_call_ids": [
+        "s507",
+        "s515",
+        "s521",
+        "s522"
+      ],
+      "sayari_url": "https://graph.sayari.com/resource/entity/oXMFQqYBSVg9LN8JdsZXRg",
+      "case_ids": [
+        "case-5"
+      ]
+    },
+    {
+      "id": "f0O9Dwn-kAeZ-BAH5Cz-tg",
+      "name": "China Highwin (Thailand) Limited",
+      "country": "THA",
+      "type": "company",
+      "role": "trader",
+      "risk_flags": [],
+      "identifiers": {
+        "tha_registration_no": "0745560004379",
+        "usa_oti_id": "029257"
+      },
+      "summary": "Thai-registered record of the same name with a US Ocean Transportation Intermediary (freight forwarder) number.",
+      "source_call_ids": [
+        "s522"
+      ],
+      "sayari_url": "https://graph.sayari.com/resource/entity/f0O9Dwn-kAeZ-BAH5Cz-tg",
+      "case_ids": [
+        "case-5"
+      ]
+    },
+    {
+      "id": "WADCr_igZO7cgkrG2KW0zQ",
+      "name": "Brilliant Group Logistics Corp.",
+      "country": "USA",
+      "type": "company",
+      "role": "buyer",
+      "risk_flags": [],
+      "identifiers": {},
+      "summary": "US logistics company that received China Highwin's one graphite row.",
+      "source_call_ids": [
+        "s515",
+        "s521"
+      ],
+      "sayari_url": "https://graph.sayari.com/resource/entity/WADCr_igZO7cgkrG2KW0zQ",
+      "case_ids": [
+        "case-5"
+      ]
+    },
+    {
+      "id": "VqJzPhi60R4c846F7xW2TQ",
+      "name": "NextStar Energy Inc",
+      "country": "CAN",
+      "type": "company",
+      "role": "us_buyer",
+      "risk_flags": [],
+      "identifiers": {},
+      "summary": "Cell maker (Canada/US) receiving 'carbon anode materials' via Singapore in Sep 2026; no shipper named on the row.",
+      "source_call_ids": [
+        "s519"
+      ],
+      "sayari_url": "https://graph.sayari.com/resource/entity/VqJzPhi60R4c846F7xW2TQ",
+      "case_ids": [
+        "case-5"
+      ]
+    },
+    {
+      "id": "KlHlMaPK_F6s27YQ8ug2UA",
+      "name": "L-H Battery Company, Inc.",
+      "country": "USA",
+      "type": "company",
+      "role": "us_buyer",
+      "risk_flags": [],
+      "identifiers": {},
+      "summary": "US battery company receiving 'carbon anode materials' via Singapore in Aug 2026; no shipper named on the rows.",
+      "source_call_ids": [
+        "s519"
+      ],
+      "sayari_url": "https://graph.sayari.com/resource/entity/KlHlMaPK_F6s27YQ8ug2UA",
+      "case_ids": [
+        "case-5"
+      ]
+    },
+    {
+      "id": "VhO8XHL4mZCMTDCLkVzAYQ",
+      "name": "PT. OEC Freight Indonesia",
+      "country": "IDN",
+      "type": "company",
+      "role": "trader",
+      "risk_flags": [],
+      "identifiers": {},
+      "summary": "Indonesian freight forwarder. The only named shipper on the Singapore 'carbon anode materials' rows we pulled, which suggests Indonesian cargo moving through Singapore.",
+      "source_call_ids": [
+        "s519"
+      ],
+      "sayari_url": "https://graph.sayari.com/resource/entity/VhO8XHL4mZCMTDCLkVzAYQ",
+      "case_ids": [
+        "case-5"
+      ]
+    },
+    {
+      "id": "Wfde8TXwHX3DkOQwj2XmTA",
+      "name": "OEC Freight (NY) Inc.",
+      "country": "USA",
+      "type": "company",
+      "role": "buyer",
+      "risk_flags": [],
+      "identifiers": {},
+      "summary": "US arm of the same forwarding group; consignee on the forwarder-to-forwarder anode rows.",
+      "source_call_ids": [
+        "s518",
+        "s519"
+      ],
+      "sayari_url": "https://graph.sayari.com/resource/entity/Wfde8TXwHX3DkOQwj2XmTA",
+      "case_ids": [
+        "case-5"
+      ]
+    },
+    {
+      "id": "PrF3X58WIkceHRwbwvvUvg",
+      "name": "GrafTech Mexico SA de CV",
+      "country": "MEX",
+      "type": "company",
+      "role": "contrast",
+      "risk_flags": [
+        "forced_labor_aspi_origin_subtier",
+        "forced_labor_xinjiang_origin_subtier"
+      ],
+      "identifiers": {
+        "mx_rfc_company": "UCM910417AU9"
+      },
+      "summary": "US-group electrode maker in Monterrey; a top Mexico-to-US HS 3801.10 shipper. Its goods include furnace electrodes (HS 8545), i.e. industrial graphite, not battery anode.",
+      "source_call_ids": [
+        "s509"
+      ],
+      "sayari_url": "https://graph.sayari.com/resource/entity/PrF3X58WIkceHRwbwvvUvg",
+      "case_ids": [
+        "case-5"
+      ]
     }
   ]
 }

@@ -9,10 +9,12 @@
       <span class="eyebrow">${PT.esc(PT.ROLE[e.role] || e.role)}</span>
       <h3>${PT.esc(e.name)}</h3>
       <p>${PT.esc(e.summary)}</p>
+      ${e.case_summaries ? Object.entries(e.case_summaries).map(([cid, t]) => `<p class="muted" style="font-size:var(--fs-1)"><strong>${PT.esc((PT._data.caseById.get(cid) || {}).title || cid)}:</strong> ${PT.esc(t)}</p>`).join("") : ""}
+      <p style="font-size:var(--fs-1)">Appears in: ${(e.case_ids || []).map((cid) => `<a href="cases.html#${cid}">${PT.esc((PT._data.caseById.get(cid) || {}).title || cid)}</a>`).join(" · ")}</p>
       <dl>
         <dt>Country</dt><dd>${PT.esc(PT.country(e.country))}</dd>
         ${ids}
-        <dt>Sayari ID</dt><dd class="id"><a href="${PT.esc(e.sayari_url)}" rel="noopener">${PT.esc(e.id)}</a></dd>
+        <dt>Sayari ID</dt><dd class="id">${e.sayari_url ? `<a href="${PT.esc(e.sayari_url)}" rel="noopener">${PT.esc(e.id)}</a>` : `None: not in Sayari (placeholder ${PT.esc(e.id)})`}</dd>
         <dt>Links</dt><dd>${edges.length}</dd>
       </dl>
       ${e.risk_flags.length ? `<div><strong>Sayari risk flags</strong> <small class="muted">(context; most describe neighbours, not this entity. See <a href="about.html#flags">how to read flags</a>)</small><div class="flags">${e.risk_flags.map((f) => `<span class="flag-chip">${RISKY.test(f) ? "⚑ " : ""}${PT.esc(f)}</span>`).join("")}</div></div>` : `<p class="muted">No risk flags beyond country indices.</p>`}
@@ -26,6 +28,7 @@
       <h3>${PT.esc(PT.edgeSentence(e, d))}</h3>
       <div class="case-meta">${PT.etypeTag(e.edge_type)} ${PT.confBadge(e.confidence)}</div>
       <p>${PT.esc(e.evidence)}</p>
+      ${PT.whyHTML(e)}
       <dl>
         ${e.hs_codes.length ? `<dt>HS codes</dt><dd>${e.hs_codes.map((h) => `<span class="hs">${PT.esc(h)}</span>`).join(" ")}</dd>` : ""}
         ${e.first_seen ? `<dt>Dates</dt><dd>${PT.fmtDate(e.first_seen)}${e.last_seen && e.last_seen !== e.first_seen ? ` – ${PT.fmtDate(e.last_seen)}` : ""}</dd>` : ""}
@@ -40,6 +43,8 @@
     try { d = await PT.load(); } catch (e) { PT.fail(panel, e); return; }
 
     const countries = [...new Set(d.entities.items.map((e) => e.country))].sort((a, b) => PT.country(a).localeCompare(PT.country(b)));
+    const csel = document.getElementById("f-case");
+    csel.insertAdjacentHTML("beforeend", d.cases.items.map((c, i) => `<option value="${c.id}">${i + 1}. ${PT.esc(c.title)}</option>`).join(""));
     const sel = document.getElementById("f-country");
     sel.insertAdjacentHTML("beforeend", countries.map((c) => `<option value="${c}">${PT.esc(PT.country(c))}</option>`).join(""));
 
@@ -62,11 +67,13 @@
       const etypes = new Set(fd.getAll("etype"));
       const confs = new Set(fd.getAll("conf"));
       const country = fd.get("country");
+      const kase = fd.get("case");
       const hs = fd.get("hs");
       const risk = document.getElementById("f-risk").checked;
       const flagged = (id) => { const e = d.entityById.get(id); return e && e.risk_flags.some((f) => RISKY.test(f)); };
       const edgePred = (e) =>
         etypes.has(e.edge_type) && confs.has(e.confidence) &&
+        (!kase || e.case_ids.includes(kase)) &&
         (!hs || e.hs_codes.some((h) => h.startsWith(hs))) &&
         (!country || d.entityById.get(e.source).country === country || d.entityById.get(e.target).country === country) &&
         (!risk || flagged(e.source) || flagged(e.target));
@@ -82,6 +89,8 @@
     document.getElementById("g-layout").addEventListener("click", () => graph && graph.relayout());
     apply();
 
+    const qc = new URLSearchParams(location.search).get("case");
+    if (qc && d.caseById.has(qc)) { csel.value = qc; apply(); }
     // Deep link: explore.html#<entity or edge id>
     const h = decodeURIComponent(location.hash.slice(1));
     if (h && graph) {

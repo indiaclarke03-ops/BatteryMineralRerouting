@@ -1,0 +1,2325 @@
+{
+ "case": {
+  "id": "case-4",
+  "slug": "posco-future-m-contrast",
+  "title": "POSCO Future M: Korean owner, Chinese graphite",
+  "subtitle": "POSCO Future M Co., Ltd. · Sejong and Pohang, South Korea",
+  "country": "KOR",
+  "plant_status": "operating",
+  "question": "Could Sayari tell a non-Chinese-owned anode supplier that uses Chinese graphite apart from a Chinese-owned one?",
+  "headline": "Yes on ownership, partly on inputs. Sayari's Korean registry data shows POSCO Holdings owns 58.2% of POSCO Future M, with no Chinese owner anywhere up the chain. It also shows Chinese natural graphite going in (to Dec 2023) and 95 anode shipments going out to GM, SK Battery America, Tesla, Panasonic and XALT (Dec 2021 – Jul 2026). It cannot show how much Chinese graphite ends up in any US-bound shipment, and its Chinese input trail stops in Dec 2023, while the company says it still uses Chinese spherical graphite.",
+  "summary_for_non_experts": "POSCO Future M is the battery-materials arm of Korea's POSCO steel group. It is the largest anode maker outside China and sells to US battery and car plants. This is our contrast case: the owner is Korean, but the company has relied on China for spherical graphite, the rounded, purified graphite that natural-graphite anode is made from. Sayari shows the Korean owner clearly, unlike BTR's Indonesian plant in Case 1, and it shows Chinese graphite going in and anode going out to the US. What it cannot show is how much Chinese material is inside the anode that reaches the US.",
+  "key_numbers": [
+   {
+    "value": "58.2%",
+    "label": "stake held by POSCO Holdings (Korean registry record)",
+    "call_ids": [
+     "s402"
+    ]
+   },
+   {
+    "value": "0",
+    "label": "Chinese owners among 50 ownership paths",
+    "call_ids": [
+     "s403"
+    ]
+   },
+   {
+    "value": "95",
+    "label": "shipment rows of anode material to US battery and car makers, Dec 2021 – Jul 2026",
+    "call_ids": [
+     "s408",
+     "s411",
+     "s412"
+    ]
+   },
+   {
+    "value": "167",
+    "label": "China → Korea 'spherical graphite' shipments with POSCO Future M as buyer; latest 8 Dec 2023",
+    "call_ids": [
+     "s419"
+    ]
+   }
+  ],
+  "overall_confidence": "documented",
+  "pattern": "contrast-legitimate",
+  "steps": [
+   {
+    "title": "One company, one registry anchor",
+    "kicker": "Step 1 · Inferred",
+    "text": "Sayari holds about a dozen records for POSCO Future M under its old and new names. The main one carries Korea's DART disclosure ID, so the anchor is solid. Other records share its Pohang or Gwangyang street address; two are name-only and kept as leads.",
+    "edge_ids": [
+     "e404",
+     "e405",
+     "e406",
+     "e407",
+     "e409"
+    ],
+    "node_ids": [
+     "Fj3vtxDroFyjyPsLgsnm2A",
+     "lGXvcBkItOrZkkvnvjxu9g",
+     "YSRMGUz3xWtyXZWZlMTCBg",
+     "M6ta2xQZjgwEaQFF7t6dZA",
+     "UCbyt8Y_8GmNUrzHG5riPw",
+     "mdDF1uxfPSghv7Q25eoc2g"
+    ],
+    "call_ids": [
+     "s401",
+     "s419"
+    ]
+   },
+   {
+    "title": "The owner is in the registry",
+    "kicker": "Step 2 · Contractual",
+    "text": "Korea's disclosure data, as held by Sayari, names POSCO Holdings as owner of 58.2%. Every other shareholder is Korean, including the National Pension Service. This is the question the US PFE rules ask first, and here Sayari answers it directly. In Case 1 it could not.",
+    "edge_ids": [
+     "e401",
+     "e402",
+     "e403",
+     "e423"
+    ],
+    "node_ids": [
+     "xhmHh99vEgdFz19iRON8yA",
+     "H3F05G33f9ITSmHNhahweg",
+     "dhu2OleybGzMUQwDgEBymg",
+     "Fj3vtxDroFyjyPsLgsnm2A"
+    ],
+    "call_ids": [
+     "s402",
+     "s403",
+     "s420"
+    ]
+   },
+   {
+    "title": "Chinese graphite in",
+    "kicker": "Step 3 · Transactional",
+    "text": "Natural graphite (HS 2504) arrived from Zhanjiang Juxin and three Qingdao suppliers in 2023, and artificial graphite (HS 3801) from Qingdao Kuntuo and Qingdao Qingbei Carbon. POSCO Future M is the top Korean buyer of Chinese 'spherical graphite' in Sayari, with 167 shipments. Smaller inputs came from Mozambique, Germany and the UK.",
+    "edge_ids": [
+     "e410",
+     "e411",
+     "e412",
+     "e413",
+     "e414",
+     "e415",
+     "e416",
+     "e417",
+     "e418",
+     "e419",
+     "e420",
+     "e421"
+    ],
+    "node_ids": [],
+    "call_ids": [
+     "s404",
+     "s407",
+     "s419",
+     "t401"
+    ]
+   },
+   {
+    "title": "Anode out to US plants",
+    "kicker": "Step 4 · Transactional",
+    "text": "105 shipment rows of HS 3801 left Korea for the US. 95 went to battery or car makers: GM (37), SK Battery America (32), Tesla (13), Panasonic Energy (9) and XALT Energy (4). The rest went to freight forwarders and one electrode maker. The company has also announced an anode deal with Ultium Cells, but Sayari's rows name GM as the consignee.",
+    "edge_ids": [
+     "e430",
+     "e431",
+     "e433",
+     "e434",
+     "e435",
+     "e436",
+     "e437",
+     "e438",
+     "e439",
+     "e440",
+     "e441",
+     "e442"
+    ],
+    "node_ids": [],
+    "call_ids": [
+     "s408",
+     "s411",
+     "s412",
+     "t402"
+    ]
+   },
+   {
+    "title": "What the data can't separate",
+    "kicker": "Step 5 · Gap",
+    "text": "Trade rows can't link a Chinese input to a US-bound export, or tell Sejong's natural-graphite anode from Pohang's artificial-graphite anode. Chinese graphite rows to POSCO Future M stop on 8 Dec 2023, a week after China's export licensing began. The company says it still uses Chinese spherical graphite, so the gap is in coverage. Several name-and-HS searches returned 0 even though the graph holds the flows.",
+    "edge_ids": [
+     "e443"
+    ],
+    "node_ids": [
+     "rimS2-LaCZMi2HMJqtwW5w",
+     "QTGe48MKdBHh2Dkbxh_ifw"
+    ],
+    "call_ids": [
+     "s405",
+     "s406",
+     "s413",
+     "s414",
+     "s416",
+     "s417"
+    ]
+   }
+  ],
+  "verdict": {
+   "detected": [
+    {
+     "text": "Korean ownership: POSCO Holdings holds 58.2% (registry record); no Chinese owner on any of 50 ownership paths.",
+     "call_ids": [
+      "s402",
+      "s403",
+      "s420"
+     ]
+    },
+    {
+     "text": "Chinese natural and artificial graphite shipped into POSCO Future M by named Chinese suppliers, Oct 2021 – Dec 2023.",
+     "call_ids": [
+      "s404",
+      "s419"
+     ]
+    },
+    {
+     "text": "95 dated rows of anode material to GM, SK Battery America, Tesla, Panasonic Energy and XALT Energy, Dec 2021 – Jul 2026.",
+     "call_ids": [
+      "s408",
+      "s411",
+      "s412"
+     ]
+    }
+   ],
+   "suggested": [
+    {
+     "text": "Continued dependence on Chinese spherical graphite after 2023: stated by the company in the press, not visible in Sayari after 8 Dec 2023.",
+     "call_ids": [
+      "s413",
+      "s419",
+      "t401"
+     ]
+    },
+    {
+     "text": "Anode supply to Ultium Cells: announced by the company; Sayari shows the shipments under GM's name.",
+     "call_ids": [
+      "t402",
+      "s411",
+      "s412"
+     ]
+    }
+   ],
+   "not_visible": [
+    {
+     "text": "How much Chinese-origin graphite is inside any US-bound shipment. This is the 'material assistance' share the PFE rules weigh, separately from ownership.",
+     "call_ids": [
+      "s404",
+      "s408"
+     ]
+    },
+    {
+     "text": "Which plant (Sejong natural, Pohang artificial) made each US shipment. Product codes such as PAS-C3B and PAS-CP3K are not explained in the data.",
+     "call_ids": [
+      "s411",
+      "s412"
+     ]
+    },
+    {
+     "text": "Who the Chinese graphite suppliers are owned by. We did not trace them; under the PFE rules that could matter more than POSCO's own ownership.",
+     "call_ids": [
+      "s407"
+     ]
+    }
+   ]
+  },
+  "passport": [
+   {
+    "field": "Place of manufacture",
+    "guidance_no": "8",
+    "declared": "The cell plant's location, e.g. USA.",
+    "paper_trail": "Anode material shipped from Korea (Pohang/Sejong) to US cell plants (HS 3801).",
+    "gap": true,
+    "note": "The field covers the battery, not its anode."
+   },
+   {
+    "field": "Detailed composition (anode)",
+    "guidance_no": "45",
+    "declared": "'Graphite' as the anode active material.",
+    "paper_trail": "Natural-graphite anode from Chinese spherical graphite (Sejong) or artificial-graphite anode from Korean coke (Pohang); the rows don't say which.",
+    "gap": true,
+    "note": "Two very different input chains look the same here."
+   },
+   {
+    "field": "Critical raw materials > 0.1%",
+    "guidance_no": "15",
+    "declared": "Natural graphite listed if present.",
+    "paper_trail": "Natural graphite (HS 2504) from China and Mozambique among the inputs.",
+    "gap": false,
+    "note": "Consistent, if declared."
+   },
+   {
+    "field": "Responsible-sourcing (due-diligence) report",
+    "guidance_no": "19",
+    "declared": "Deferred under the EU Battery Regulation.",
+    "paper_trail": "Sub-tier suppliers in the Laixi graphite cluster; one carries a forced-labor-adjacent flag.",
+    "gap": true,
+    "note": "The upstream suppliers are visible; their own sourcing is not."
+   },
+   {
+    "field": "Ownership of upstream suppliers",
+    "guidance_no": "—",
+    "declared": "No such field in the EU passport.",
+    "paper_trail": "The anode maker is Korean-owned (registry). Its graphite suppliers are Chinese companies whose owners we did not trace.",
+    "gap": true,
+    "note": "The PFE test looks at both levels."
+   }
+  ],
+  "red_flags": [
+   {
+    "flag": "Chinese parent ownership of the transit plant",
+    "signal": "contractual",
+    "severity": "High",
+    "result": "absent",
+    "note": "Checked and absent: the registry shows a Korean parent (POSCO Holdings, 58.2%)."
+   },
+   {
+    "flag": "Same HS imported from China and exported to the US",
+    "signal": "transactional",
+    "severity": "High",
+    "result": "detected",
+    "note": "HS 3801 in from Qingdao suppliers (2021–2023); HS 3801 out to US cell plants. Normal for a processor; the main input is natural graphite (HS 2504)."
+   },
+   {
+    "flag": "Recent incorporation vs. first export date",
+    "signal": "contractual",
+    "severity": "Medium",
+    "result": "absent",
+    "note": "Checked and absent: registered 1971, decades before its first anode exports."
+   },
+   {
+    "flag": "Volume spike after a policy date",
+    "signal": "transactional",
+    "severity": "Medium",
+    "result": "not_visible",
+    "note": "No spike in our rows. The buyer mix shifts: GM to Jun 2024, SK Battery America to Jun 2025, Tesla and Panasonic in 2026."
+   },
+   {
+    "flag": "Shared address or officer with a flagged entity",
+    "signal": "inferred",
+    "severity": "Medium",
+    "result": "absent",
+    "note": "None found. Watchlist hits are two hops out through big trading partners (noise)."
+   },
+   {
+    "flag": "Entity-resolution fragmentation",
+    "signal": "inferred",
+    "severity": "Low (disclose)",
+    "result": "detected",
+    "note": "About a dozen records under two company names; anchored by a DART ID."
+   },
+   {
+    "flag": "Forced-labor / UFLPA sub-tier flags",
+    "signal": "inferred",
+    "severity": "Medium",
+    "result": "suggested",
+    "note": "Main record is 'adjacent' to a Sheffield Hallam-named entity; one Laixi supplier carries the same flag. Context, not a finding."
+   }
+  ],
+  "caveats": [
+   "Using Chinese graphite in Korea is legal and common. Nothing here shows wrongdoing by any company named.",
+   "The US buyers are named because they appear in customs records; this says nothing about their compliance.",
+   "Entity-resolution links are our judgment and could be wrong.",
+   "HS 3801 also covers non-battery graphite. POSCO's sister steel company imports Chinese 'recarburizer' under HS 3801.10, a steelmaking additive; we excluded it.",
+   "Chinese input rows come from Chinese export data and stop in Dec 2023 for this buyer. Korea's own import records are not in our results, so later inputs may be missing.",
+   "Several product rows are miscoded (e.g. anode material under textile or photo-film HS codes); we counted them only where the text says anode material."
+  ]
+ },
+ "entities": [
+  {
+   "id": "Fj3vtxDroFyjyPsLgsnm2A",
+   "name": "POSCO Future M Co., Ltd. (formerly POSCO Chemical)",
+   "country": "KOR",
+   "type": "company",
+   "role": "contrast",
+   "risk_flags": [
+    "esg_score_medium",
+    "sheffield_hallam_university_forced_labor_reports_entity_adjacent"
+   ],
+   "identifiers": {
+    "dart_cik": "00155276"
+   },
+   "summary": "Korean maker of natural-graphite anode (Sejong), artificial-graphite anode (Pohang), cathode and refractories. 58.2% owned by POSCO Holdings. Ships anode material to GM, SK Battery America, Tesla and Panasonic Energy in the US.",
+   "source_call_ids": [
+    "s401",
+    "s402",
+    "s403",
+    "s404",
+    "s407",
+    "s408",
+    "s411",
+    "s412",
+    "s413",
+    "s419",
+    "s421",
+    "t401",
+    "t402"
+   ],
+   "sayari_url": "https://graph.sayari.com/resource/entity/Fj3vtxDroFyjyPsLgsnm2A",
+   "case_ids": [
+    "case-4"
+   ],
+   "records": 7
+  },
+  {
+   "id": "lGXvcBkItOrZkkvnvjxu9g",
+   "name": "POSCO FUTURE M CO. (record 2)",
+   "country": "KOR",
+   "type": "company",
+   "role": "contrast",
+   "risk_flags": [],
+   "identifiers": {},
+   "summary": "Trade-name record with the same Pohang and Gwangyang street addresses as the main record.",
+   "source_call_ids": [
+    "s401"
+   ],
+   "sayari_url": "https://graph.sayari.com/resource/entity/lGXvcBkItOrZkkvnvjxu9g",
+   "case_ids": [
+    "case-4"
+   ]
+  },
+  {
+   "id": "YSRMGUz3xWtyXZWZlMTCBg",
+   "name": "POSCO FUTURE M CO LTD 110 Sinhang-ro (record 3)",
+   "country": "KOR",
+   "type": "company",
+   "role": "contrast",
+   "risk_flags": [],
+   "identifiers": {},
+   "summary": "Trade-name record with the Pohang head-office address run into the name.",
+   "source_call_ids": [
+    "s401"
+   ],
+   "sayari_url": "https://graph.sayari.com/resource/entity/YSRMGUz3xWtyXZWZlMTCBg",
+   "case_ids": [
+    "case-4"
+   ]
+  },
+  {
+   "id": "M6ta2xQZjgwEaQFF7t6dZA",
+   "name": "POSCO CHEMICAL COMPANY LTD. 110 SINH (record 4)",
+   "country": "KOR",
+   "type": "company",
+   "role": "contrast",
+   "risk_flags": [],
+   "identifiers": {},
+   "summary": "Old-name record with a truncated Pohang address; buyer of Chinese spherical graphite (14 shipments, latest Sep 2022).",
+   "source_call_ids": [
+    "s419"
+   ],
+   "sayari_url": "https://graph.sayari.com/resource/entity/M6ta2xQZjgwEaQFF7t6dZA",
+   "case_ids": [
+    "case-4"
+   ]
+  },
+  {
+   "id": "UCbyt8Y_8GmNUrzHG5riPw",
+   "name": "POSCOCHEMICAL CO.,LTD. (record 5)",
+   "country": "KOR",
+   "type": "company",
+   "role": "contrast",
+   "risk_flags": [],
+   "identifiers": {},
+   "summary": "Old-name record with no address; buyer of Chinese spherical graphite (15 shipments, latest Jan 2023). Name only.",
+   "source_call_ids": [
+    "s419"
+   ],
+   "sayari_url": "https://graph.sayari.com/resource/entity/UCbyt8Y_8GmNUrzHG5riPw",
+   "case_ids": [
+    "case-4"
+   ]
+  },
+  {
+   "id": "xhmHh99vEgdFz19iRON8yA",
+   "name": "POSCO Holdings Inc. (포스코홀딩스)",
+   "country": "KOR",
+   "type": "company",
+   "role": "parent",
+   "risk_flags": [],
+   "identifiers": {},
+   "summary": "Korean holding company of the POSCO group. Holds 58.2% of POSCO Future M per Korea's DART disclosures.",
+   "source_call_ids": [
+    "s402",
+    "s403",
+    "s420"
+   ],
+   "sayari_url": "https://graph.sayari.com/resource/entity/xhmHh99vEgdFz19iRON8yA",
+   "case_ids": [
+    "case-4"
+   ]
+  },
+  {
+   "id": "H3F05G33f9ITSmHNhahweg",
+   "name": "POSCO Holdings Inc. (English-name record)",
+   "country": "KOR",
+   "type": "company",
+   "role": "parent",
+   "risk_flags": [],
+   "identifiers": {},
+   "summary": "English-name record of the same holding company, listed as a shareholder of POSCO Future M.",
+   "source_call_ids": [
+    "s403"
+   ],
+   "sayari_url": "https://graph.sayari.com/resource/entity/H3F05G33f9ITSmHNhahweg",
+   "case_ids": [
+    "case-4"
+   ]
+  },
+  {
+   "id": "dhu2OleybGzMUQwDgEBymg",
+   "name": "National Pension Service (국민연금공단)",
+   "country": "KOR",
+   "type": "company",
+   "role": "parent",
+   "risk_flags": [],
+   "identifiers": {},
+   "summary": "Korea's state pension fund, listed as a shareholder of POSCO Future M (no percentage returned).",
+   "source_call_ids": [
+    "s403"
+   ],
+   "sayari_url": "https://graph.sayari.com/resource/entity/dhu2OleybGzMUQwDgEBymg",
+   "case_ids": [
+    "case-4"
+   ]
+  },
+  {
+   "id": "mdDF1uxfPSghv7Q25eoc2g",
+   "name": "POSCO FUTURE M CO., LTD. / Y.T Japan (record 6)",
+   "country": "KOR",
+   "type": "company",
+   "role": "contrast",
+   "risk_flags": [],
+   "identifiers": {},
+   "summary": "Record that joins POSCO Future M with a Japanese co-party, Sejong address. One spherical-graphite shipment, Aug 2023.",
+   "source_call_ids": [
+    "s401",
+    "s419"
+   ],
+   "sayari_url": "https://graph.sayari.com/resource/entity/mdDF1uxfPSghv7Q25eoc2g",
+   "case_ids": [
+    "case-4"
+   ]
+  },
+  {
+   "id": "y4MWluNMSgkSaHoCAptQfA",
+   "name": "POSCO Matériaux du Futur Canada Inc.",
+   "country": "CAN",
+   "type": "company",
+   "role": "producer",
+   "risk_flags": [],
+   "identifiers": {
+    "quebec_enterprise_number": "1177692192"
+   },
+   "summary": "Québec subsidiary (Bécancour) owned by POSCO Future M, per the Quebec enterprise register.",
+   "source_call_ids": [
+    "s401",
+    "s402"
+   ],
+   "sayari_url": "https://graph.sayari.com/resource/entity/y4MWluNMSgkSaHoCAptQfA",
+   "case_ids": [
+    "case-4"
+   ]
+  },
+  {
+   "id": "2ZpM8WWpqajK6jBIXAbTYQ",
+   "name": "Zhanjiang Juxin New Energy Co., Ltd.",
+   "country": "CHN",
+   "type": "company",
+   "role": "producer",
+   "risk_flags": [],
+   "identifiers": {},
+   "summary": "Guangdong graphite processor. Shipped natural graphite (HS 2504) to POSCO Future M, Jul–Dec 2023, and carbon (HS 2803) from Dec 2022.",
+   "source_call_ids": [
+    "s404",
+    "s406",
+    "s407"
+   ],
+   "sayari_url": "https://graph.sayari.com/resource/entity/2ZpM8WWpqajK6jBIXAbTYQ",
+   "case_ids": [
+    "case-4"
+   ]
+  },
+  {
+   "id": "AyicfnT87hRIGEH7FmYfvA",
+   "name": "Zhanjiang Juxin New Energy (record 2)",
+   "country": "CHN",
+   "type": "company",
+   "role": "producer",
+   "risk_flags": [],
+   "identifiers": {},
+   "summary": "Second record for the same supplier, no address. Natural graphite to POSCO Future M, Jul–Dec 2023.",
+   "source_call_ids": [
+    "s404"
+   ],
+   "sayari_url": "https://graph.sayari.com/resource/entity/AyicfnT87hRIGEH7FmYfvA",
+   "case_ids": [
+    "case-4"
+   ]
+  },
+  {
+   "id": "YeY_0foWAdFxn5HCX58QGQ",
+   "name": "Qingdao Haida New Energy Materials Co., Ltd.",
+   "country": "CHN",
+   "type": "company",
+   "role": "producer",
+   "risk_flags": [],
+   "identifiers": {},
+   "summary": "Shipped natural graphite (HS 2504) to POSCO Future M, Jun–Sep 2023.",
+   "source_call_ids": [
+    "s404"
+   ],
+   "sayari_url": "https://graph.sayari.com/resource/entity/YeY_0foWAdFxn5HCX58QGQ",
+   "case_ids": [
+    "case-4"
+   ]
+  },
+  {
+   "id": "mNl1NLitXD_XdCQLg1DGlA",
+   "name": "Qingdao Zhongshuo New Energy Technology Co.",
+   "country": "CHN",
+   "type": "company",
+   "role": "producer",
+   "risk_flags": [],
+   "identifiers": {},
+   "summary": "Shipped natural graphite (HS 2504) to POSCO Future M, Aug 2023.",
+   "source_call_ids": [
+    "s404"
+   ],
+   "sayari_url": "https://graph.sayari.com/resource/entity/mNl1NLitXD_XdCQLg1DGlA",
+   "case_ids": [
+    "case-4"
+   ]
+  },
+  {
+   "id": "goOR9J6dEj2sQuo-snuJ6A",
+   "name": "Qingdao Kuntuo New Material Co., Ltd.",
+   "country": "CHN",
+   "type": "company",
+   "role": "producer",
+   "risk_flags": [],
+   "identifiers": {},
+   "summary": "Nanshu Town, Laixi (Shandong graphite cluster). Natural (HS 2504) and artificial (HS 3801) graphite to POSCO Future M, May–Sep 2023.",
+   "source_call_ids": [
+    "s404",
+    "s407"
+   ],
+   "sayari_url": "https://graph.sayari.com/resource/entity/goOR9J6dEj2sQuo-snuJ6A",
+   "case_ids": [
+    "case-4"
+   ]
+  },
+  {
+   "id": "on87w5_QYqQaQl1FQXC7cw",
+   "name": "Qingdao Qingbei Carbon Products Co., Ltd. (青岛青北碳素制品)",
+   "country": "CHN",
+   "type": "company",
+   "role": "producer",
+   "risk_flags": [],
+   "identifiers": {},
+   "summary": "Laixi graphite cluster. Artificial graphite (HS 3801) to POSCO Future M, Oct 2021 – Jul 2022.",
+   "source_call_ids": [
+    "s404",
+    "s407"
+   ],
+   "sayari_url": "https://graph.sayari.com/resource/entity/on87w5_QYqQaQl1FQXC7cw",
+   "case_ids": [
+    "case-4"
+   ]
+  },
+  {
+   "id": "v1QB9w2AdIcXcohuVJZHyw",
+   "name": "Qingdao Huateng Graphite Technology Co.",
+   "country": "CHN",
+   "type": "company",
+   "role": "producer",
+   "risk_flags": [],
+   "identifiers": {},
+   "summary": "Nanshu Town, Laixi. Listed as a supplier to POSCO Future M; HS detail not pulled.",
+   "source_call_ids": [
+    "s407"
+   ],
+   "sayari_url": "https://graph.sayari.com/resource/entity/v1QB9w2AdIcXcohuVJZHyw",
+   "case_ids": [
+    "case-4"
+   ]
+  },
+  {
+   "id": "GglryO0mCnl2PA1AOlB2JA",
+   "name": "Qingdao GR-Taida Carbon Co., Ltd.",
+   "country": "CHN",
+   "type": "company",
+   "role": "producer",
+   "risk_flags": [],
+   "identifiers": {},
+   "summary": "Pingdu, Shandong. Listed as a supplier to POSCO Future M; HS detail not pulled.",
+   "source_call_ids": [
+    "s407"
+   ],
+   "sayari_url": "https://graph.sayari.com/resource/entity/GglryO0mCnl2PA1AOlB2JA",
+   "case_ids": [
+    "case-4"
+   ]
+  },
+  {
+   "id": "-E5VEQtbiDlJDhmMR7GywQ",
+   "name": "Qingdao Luowei New Material Co., Ltd. (青岛洛唯新材料)",
+   "country": "CHN",
+   "type": "company",
+   "role": "producer",
+   "risk_flags": [
+    "sheffield_hallam_university_forced_labor_reports_entity_adjacent"
+   ],
+   "identifiers": {},
+   "summary": "In the Graphite New Material Cluster Area, Laixi. Listed as a supplier to POSCO Future M; HS detail not pulled.",
+   "source_call_ids": [
+    "s407"
+   ],
+   "sayari_url": "https://graph.sayari.com/resource/entity/-E5VEQtbiDlJDhmMR7GywQ",
+   "case_ids": [
+    "case-4"
+   ]
+  },
+  {
+   "id": "ffPlxyHu42G892jPO7tpbA",
+   "name": "Twigg Exploration & Mining Limitada",
+   "country": "MOZ",
+   "type": "company",
+   "role": "producer",
+   "risk_flags": [],
+   "identifiers": {},
+   "summary": "Mozambique natural graphite. One HS 2504 shipment to POSCO Future M, Jun 2022.",
+   "source_call_ids": [
+    "s404"
+   ],
+   "sayari_url": "https://graph.sayari.com/resource/entity/ffPlxyHu42G892jPO7tpbA",
+   "case_ids": [
+    "case-4"
+   ]
+  },
+  {
+   "id": "ljXszsmI8EtP_3Q4fuC6ZA",
+   "name": "Rain Carbon Germany GmbH",
+   "country": "DEU",
+   "type": "company",
+   "role": "producer",
+   "risk_flags": [
+    "export_to_soe",
+    "psa_export_to_soe"
+   ],
+   "identifiers": {},
+   "summary": "Coal-tar pitch and oils (HS 2706, 2708) to POSCO Future M via Belgium and the Netherlands, Nov 2021 – Jan 2024. A non-Chinese carbon input.",
+   "source_call_ids": [
+    "s404",
+    "s413"
+   ],
+   "sayari_url": "https://graph.sayari.com/resource/entity/ljXszsmI8EtP_3Q4fuC6ZA",
+   "case_ids": [
+    "case-4"
+   ]
+  },
+  {
+   "id": "Bkp4ORhM634Fg0vFJk_YaA",
+   "name": "China EPT Co., Ltd.",
+   "country": "CHN",
+   "type": "company",
+   "role": "trader",
+   "risk_flags": [],
+   "identifiers": {},
+   "summary": "Beijing. One petroleum coke shipment (HS 2713) to POSCO Future M, Jul 2022.",
+   "source_call_ids": [
+    "s404"
+   ],
+   "sayari_url": "https://graph.sayari.com/resource/entity/Bkp4ORhM634Fg0vFJk_YaA",
+   "case_ids": [
+    "case-4"
+   ]
+  },
+  {
+   "id": "4fqrWAcyrgtWw2RdV6qZsg",
+   "name": "General Motors",
+   "country": "USA",
+   "type": "company",
+   "role": "us_buyer",
+   "risk_flags": [],
+   "identifiers": {},
+   "summary": "Received 36 rows of 'anode material graphite PAS-C3B' (HS 3801.10/3801.90) from POSCO Future M, Jan 2023 – Jun 2024. Also a buyer from BTR Indonesia in Case 1.",
+   "source_call_ids": [
+    "s411",
+    "s412"
+   ],
+   "sayari_url": "https://graph.sayari.com/resource/entity/4fqrWAcyrgtWw2RdV6qZsg",
+   "case_ids": [
+    "case-4"
+   ]
+  },
+  {
+   "id": "WLUn_1F-Zz5cShfohEF7BA",
+   "name": "General Motors LLC (record 2)",
+   "country": "USA",
+   "type": "company",
+   "role": "us_buyer",
+   "risk_flags": [],
+   "identifiers": {},
+   "summary": "One row of 'anode active material' (HS 3801.10), arrival Dec 2021.",
+   "source_call_ids": [
+    "s408"
+   ],
+   "sayari_url": "https://graph.sayari.com/resource/entity/WLUn_1F-Zz5cShfohEF7BA",
+   "case_ids": [
+    "case-4"
+   ]
+  },
+  {
+   "id": "aoeSqNICt_VUP-o-F-84Yg",
+   "name": "SK Battery America",
+   "country": "USA",
+   "type": "company",
+   "role": "us_buyer",
+   "risk_flags": [],
+   "identifiers": {},
+   "summary": "SK On cell plant in Georgia. Received 32 rows of 'Graphite PAS-CP3K' (HS 3801.90) from POSCO Future M, May 2024 – Jun 2025. Also a buyer from BTR Indonesia in Case 1.",
+   "source_call_ids": [
+    "s408",
+    "s411"
+   ],
+   "sayari_url": "https://graph.sayari.com/resource/entity/aoeSqNICt_VUP-o-F-84Yg",
+   "case_ids": [
+    "case-4"
+   ]
+  },
+  {
+   "id": "xWhz7CFJV3lxsgg8fHMGHA",
+   "name": "Tesla, Inc.",
+   "country": "USA",
+   "type": "company",
+   "role": "us_buyer",
+   "risk_flags": [],
+   "identifiers": {},
+   "summary": "Received 12 rows of artificial graphite 'anode active material' (HS 3801.10) from POSCO Future M, Jan–Feb 2026, plus one row in Aug 2023. Also a buyer from BTR Indonesia in Case 1.",
+   "source_call_ids": [
+    "s402",
+    "s408"
+   ],
+   "sayari_url": "https://graph.sayari.com/resource/entity/xWhz7CFJV3lxsgg8fHMGHA",
+   "case_ids": [
+    "case-4"
+   ]
+  },
+  {
+   "id": "wxnxnhKanOt7EorBjIZsxQ",
+   "name": "Panasonic Energy Corporation",
+   "country": "USA",
+   "type": "company",
+   "role": "us_buyer",
+   "risk_flags": [],
+   "identifiers": {},
+   "summary": "Received 9 rows of 'anode active material' (HS 3801.90 and 3801.10) from POSCO Future M, May–Jul 2026.",
+   "source_call_ids": [
+    "s408"
+   ],
+   "sayari_url": "https://graph.sayari.com/resource/entity/wxnxnhKanOt7EorBjIZsxQ",
+   "case_ids": [
+    "case-4"
+   ]
+  },
+  {
+   "id": "BZPBOZcD6M_QtBtOWWtYUg",
+   "name": "Panasonic Procurement Corporation of America",
+   "country": "USA",
+   "type": "company",
+   "role": "us_buyer",
+   "risk_flags": [],
+   "identifiers": {},
+   "summary": "Named with Tesla on one Aug 2023 row of anode active material.",
+   "source_call_ids": [
+    "s408"
+   ],
+   "sayari_url": "https://graph.sayari.com/resource/entity/BZPBOZcD6M_QtBtOWWtYUg",
+   "case_ids": [
+    "case-4"
+   ]
+  },
+  {
+   "id": "qAjZISyxppsZ-LjTrCmJTw",
+   "name": "XALT Energy Alicia",
+   "country": "USA",
+   "type": "company",
+   "role": "us_buyer",
+   "risk_flags": [],
+   "identifiers": {},
+   "summary": "Battery maker's site. 3 rows of artificial graphite / 'active anode material PAS-A1' (HS 3801.10), Feb 2023 – May 2024.",
+   "source_call_ids": [
+    "s411",
+    "s412"
+   ],
+   "sayari_url": "https://graph.sayari.com/resource/entity/qAjZISyxppsZ-LjTrCmJTw",
+   "case_ids": [
+    "case-4"
+   ]
+  },
+  {
+   "id": "1nxhfvO5sMgXkfCrTho9Vw",
+   "name": "XALT Energy LLC",
+   "country": "USA",
+   "type": "company",
+   "role": "us_buyer",
+   "risk_flags": [],
+   "identifiers": {},
+   "summary": "One row of artificial graphite (HS 3801.10), Mar 2023.",
+   "source_call_ids": [
+    "s412"
+   ],
+   "sayari_url": "https://graph.sayari.com/resource/entity/1nxhfvO5sMgXkfCrTho9Vw",
+   "case_ids": [
+    "case-4"
+   ]
+  },
+  {
+   "id": "ZhR1A0VWHf7oRyGfZOxKtg",
+   "name": "GrafTech USA LLC",
+   "country": "USA",
+   "type": "company",
+   "role": "buyer",
+   "risk_flags": [],
+   "identifiers": {},
+   "summary": "Graphite electrode maker. One HS 3801.90 row with no product text, Jul 2023. Likely industrial, not battery use.",
+   "source_call_ids": [
+    "s412"
+   ],
+   "sayari_url": "https://graph.sayari.com/resource/entity/ZhR1A0VWHf7oRyGfZOxKtg",
+   "case_ids": [
+    "case-4"
+   ]
+  },
+  {
+   "id": "5qJ3A4FHw2rTjNrnGOrHQQ",
+   "name": "Scan Global Logistics DTW",
+   "country": "USA",
+   "type": "company",
+   "role": "buyer",
+   "risk_flags": [],
+   "identifiers": {},
+   "summary": "Freight forwarder (Detroit). 8 rows, 2023, some described as 'active anode material'. The end customer is not named.",
+   "source_call_ids": [
+    "s408"
+   ],
+   "sayari_url": "https://graph.sayari.com/resource/entity/5qJ3A4FHw2rTjNrnGOrHQQ",
+   "case_ids": [
+    "case-4"
+   ]
+  },
+  {
+   "id": "FWd2q_iBgH2ER9aw1Gph_g",
+   "name": "FNS, Inc. (Chicago)",
+   "country": "USA",
+   "type": "company",
+   "role": "buyer",
+   "risk_flags": [],
+   "identifiers": {},
+   "summary": "Freight forwarder. One 'anode material' row, Aug 2023.",
+   "source_call_ids": [
+    "s408"
+   ],
+   "sayari_url": "https://graph.sayari.com/resource/entity/FWd2q_iBgH2ER9aw1Gph_g",
+   "case_ids": [
+    "case-4"
+   ]
+  },
+  {
+   "id": "rvgklT24qqqfH2rnlVlyBg",
+   "name": "Ultium Cells Warren",
+   "country": "USA",
+   "type": "company",
+   "role": "us_buyer",
+   "risk_flags": [],
+   "identifiers": {},
+   "summary": "GM–LG Energy Solution cell plant. POSCO Future M announced a six-year artificial-graphite anode deal with Ultium Cells. In Sayari's POSCO rows the consignee is GM, not Ultium.",
+   "source_call_ids": [
+    "t402"
+   ],
+   "sayari_url": "https://graph.sayari.com/resource/entity/rvgklT24qqqfH2rnlVlyBg",
+   "case_ids": [
+    "case-4"
+   ]
+  },
+  {
+   "id": "rimS2-LaCZMi2HMJqtwW5w",
+   "name": "POSCO Co., Ltd. (steel, Pohang)",
+   "country": "KOR",
+   "type": "company",
+   "role": "buyer",
+   "risk_flags": [
+    "forced_labor_uflpa_origin_subtier",
+    "forced_labor_sheffield_hallam_university_reports_origin_subtier"
+   ],
+   "identifiers": {},
+   "summary": "POSCO group steelmaker. Imported recarburizer (HS 3801.10) from China in May 2026: steelmaking additive, not battery material.",
+   "source_call_ids": [
+    "s415",
+    "s416"
+   ],
+   "sayari_url": "https://graph.sayari.com/resource/entity/rimS2-LaCZMi2HMJqtwW5w",
+   "case_ids": [
+    "case-4"
+   ]
+  },
+  {
+   "id": "QTGe48MKdBHh2Dkbxh_ifw",
+   "name": "Tianjin Eboxline International Transport",
+   "country": "CHN",
+   "type": "company",
+   "role": "trader",
+   "risk_flags": [],
+   "identifiers": {},
+   "summary": "Chinese forwarder that shipped the recarburizer to POSCO's steelworks for POSCO (Beijing) Trading, May 2026.",
+   "source_call_ids": [
+    "s415",
+    "s416"
+   ],
+   "sayari_url": "https://graph.sayari.com/resource/entity/QTGe48MKdBHh2Dkbxh_ifw",
+   "case_ids": [
+    "case-4"
+   ]
+  }
+ ],
+ "edges": [
+  {
+   "id": "e401",
+   "source": "xhmHh99vEgdFz19iRON8yA",
+   "target": "Fj3vtxDroFyjyPsLgsnm2A",
+   "relation": "owns",
+   "edge_type": "contractual",
+   "confidence": "documented",
+   "hs_codes": [],
+   "first_seen": null,
+   "last_seen": null,
+   "shipment_count": null,
+   "evidence": "Shareholder of record with 58.2%, from Korea's DART disclosures.",
+   "source_call_ids": [
+    "s402",
+    "s403",
+    "s420"
+   ],
+   "case_ids": [
+    "case-4"
+   ],
+   "confidence_reason": "Registry shareholder record with a percentage."
+  },
+  {
+   "id": "e402",
+   "source": "dhu2OleybGzMUQwDgEBymg",
+   "target": "Fj3vtxDroFyjyPsLgsnm2A",
+   "relation": "owns",
+   "edge_type": "contractual",
+   "confidence": "documented",
+   "hs_codes": [],
+   "first_seen": null,
+   "last_seen": null,
+   "shipment_count": null,
+   "evidence": "Listed shareholder in DART-sourced data; no percentage returned.",
+   "source_call_ids": [
+    "s403"
+   ],
+   "case_ids": [
+    "case-4"
+   ],
+   "confidence_reason": "Registry shareholder record, though without a stake size."
+  },
+  {
+   "id": "e403",
+   "source": "H3F05G33f9ITSmHNhahweg",
+   "target": "xhmHh99vEgdFz19iRON8yA",
+   "relation": "possibly_same_as",
+   "edge_type": "inferred",
+   "confidence": "lead",
+   "hs_codes": [],
+   "first_seen": null,
+   "last_seen": null,
+   "shipment_count": null,
+   "evidence": "English and Korean names of the same holding company; both listed as shareholders. No shared identifier returned.",
+   "source_call_ids": [
+    "s403"
+   ],
+   "case_ids": [
+    "case-4"
+   ],
+   "confidence_reason": "Name translation only."
+  },
+  {
+   "id": "e404",
+   "source": "lGXvcBkItOrZkkvnvjxu9g",
+   "target": "Fj3vtxDroFyjyPsLgsnm2A",
+   "relation": "possibly_same_as",
+   "edge_type": "inferred",
+   "confidence": "inferred",
+   "hs_codes": [],
+   "first_seen": null,
+   "last_seen": null,
+   "shipment_count": null,
+   "evidence": "Same two street addresses (110 Sinhang-ro, Pohang; 45 Yulchonsandan 8-ro, Gwangyang) and same name.",
+   "source_call_ids": [
+    "s401"
+   ],
+   "case_ids": [
+    "case-4"
+   ],
+   "confidence_reason": "Shared street addresses plus name; no shared identifier."
+  },
+  {
+   "id": "e405",
+   "source": "YSRMGUz3xWtyXZWZlMTCBg",
+   "target": "Fj3vtxDroFyjyPsLgsnm2A",
+   "relation": "possibly_same_as",
+   "edge_type": "inferred",
+   "confidence": "inferred",
+   "hs_codes": [],
+   "first_seen": null,
+   "last_seen": null,
+   "shipment_count": null,
+   "evidence": "Name field includes the 110 Sinhang-ro Pohang address of the main record.",
+   "source_call_ids": [
+    "s401"
+   ],
+   "case_ids": [
+    "case-4"
+   ],
+   "confidence_reason": "Shared street address plus name; no shared identifier."
+  },
+  {
+   "id": "e406",
+   "source": "M6ta2xQZjgwEaQFF7t6dZA",
+   "target": "Fj3vtxDroFyjyPsLgsnm2A",
+   "relation": "possibly_same_as",
+   "edge_type": "inferred",
+   "confidence": "inferred",
+   "hs_codes": [],
+   "first_seen": null,
+   "last_seen": null,
+   "shipment_count": null,
+   "evidence": "Former name (POSCO Chemical) with a truncated '110 Sinh…' address; buys the same product from the same corridor.",
+   "source_call_ids": [
+    "s419"
+   ],
+   "case_ids": [
+    "case-4"
+   ],
+   "confidence_reason": "Partial address, former name and same product; no identifier."
+  },
+  {
+   "id": "e407",
+   "source": "UCbyt8Y_8GmNUrzHG5riPw",
+   "target": "Fj3vtxDroFyjyPsLgsnm2A",
+   "relation": "possibly_same_as",
+   "edge_type": "inferred",
+   "confidence": "lead",
+   "hs_codes": [],
+   "first_seen": null,
+   "last_seen": null,
+   "shipment_count": null,
+   "evidence": "Former name only, no address; buys spherical graphite from China.",
+   "source_call_ids": [
+    "s419"
+   ],
+   "case_ids": [
+    "case-4"
+   ],
+   "confidence_reason": "Name only."
+  },
+  {
+   "id": "e408",
+   "source": "AyicfnT87hRIGEH7FmYfvA",
+   "target": "2ZpM8WWpqajK6jBIXAbTYQ",
+   "relation": "possibly_same_as",
+   "edge_type": "inferred",
+   "confidence": "lead",
+   "hs_codes": [],
+   "first_seen": null,
+   "last_seen": null,
+   "shipment_count": null,
+   "evidence": "Same name stem; the second record has no address. Both ship HS 2504 to POSCO Future M in the same months.",
+   "source_call_ids": [
+    "s404"
+   ],
+   "case_ids": [
+    "case-4"
+   ],
+   "confidence_reason": "Name and matching trade timing; no address or identifier."
+  },
+  {
+   "id": "e409",
+   "source": "mdDF1uxfPSghv7Q25eoc2g",
+   "target": "Fj3vtxDroFyjyPsLgsnm2A",
+   "relation": "possibly_same_as",
+   "edge_type": "inferred",
+   "confidence": "inferred",
+   "hs_codes": [],
+   "first_seen": null,
+   "last_seen": null,
+   "shipment_count": null,
+   "evidence": "Name includes POSCO Future M; address is in Sejong, where the main record also has an address; buys the same product from the same corridor.",
+   "source_call_ids": [
+    "s401",
+    "s419"
+   ],
+   "case_ids": [
+    "case-4"
+   ],
+   "confidence_reason": "Name, same city and same trade pattern; no identifier."
+  },
+  {
+   "id": "e423",
+   "source": "Fj3vtxDroFyjyPsLgsnm2A",
+   "target": "y4MWluNMSgkSaHoCAptQfA",
+   "relation": "owns",
+   "edge_type": "contractual",
+   "confidence": "documented",
+   "hs_codes": [],
+   "first_seen": null,
+   "last_seen": null,
+   "shipment_count": null,
+   "evidence": "POSCO Future M is listed as shareholder of the Canadian subsidiary.",
+   "source_call_ids": [
+    "s402"
+   ],
+   "case_ids": [
+    "case-4"
+   ],
+   "confidence_reason": "Registry shareholder record (Quebec enterprise register)."
+  },
+  {
+   "id": "e410",
+   "source": "2ZpM8WWpqajK6jBIXAbTYQ",
+   "target": "Fj3vtxDroFyjyPsLgsnm2A",
+   "relation": "ships_to",
+   "edge_type": "transactional",
+   "confidence": "documented",
+   "hs_codes": [
+    "2504",
+    "2803"
+   ],
+   "first_seen": "2022-12-04",
+   "last_seen": "2023-12-03",
+   "shipment_count": null,
+   "evidence": "Natural graphite (HS 2504), Jul–Dec 2023; carbon (HS 2803), Dec 2022 – May 2023. China → Korea.",
+   "source_call_ids": [
+    "s404",
+    "s407"
+   ],
+   "case_ids": [
+    "case-4"
+   ],
+   "confidence_reason": "Dated, HS-coded trade components naming both parties."
+  },
+  {
+   "id": "e411",
+   "source": "AyicfnT87hRIGEH7FmYfvA",
+   "target": "Fj3vtxDroFyjyPsLgsnm2A",
+   "relation": "ships_to",
+   "edge_type": "transactional",
+   "confidence": "documented",
+   "hs_codes": [
+    "2504"
+   ],
+   "first_seen": "2023-07-11",
+   "last_seen": "2023-12-08",
+   "shipment_count": null,
+   "evidence": "Natural graphite (HS 2504), China → Korea.",
+   "source_call_ids": [
+    "s404"
+   ],
+   "case_ids": [
+    "case-4"
+   ],
+   "confidence_reason": "Dated, HS-coded trade components naming both parties."
+  },
+  {
+   "id": "e412",
+   "source": "YeY_0foWAdFxn5HCX58QGQ",
+   "target": "Fj3vtxDroFyjyPsLgsnm2A",
+   "relation": "ships_to",
+   "edge_type": "transactional",
+   "confidence": "documented",
+   "hs_codes": [
+    "2504",
+    "2803"
+   ],
+   "first_seen": "2023-05-02",
+   "last_seen": "2023-09-12",
+   "shipment_count": null,
+   "evidence": "Natural graphite (HS 2504) Jun–Sep 2023; carbon (HS 2803) May 2023.",
+   "source_call_ids": [
+    "s404"
+   ],
+   "case_ids": [
+    "case-4"
+   ],
+   "confidence_reason": "Dated, HS-coded trade components naming both parties."
+  },
+  {
+   "id": "e413",
+   "source": "mNl1NLitXD_XdCQLg1DGlA",
+   "target": "Fj3vtxDroFyjyPsLgsnm2A",
+   "relation": "ships_to",
+   "edge_type": "transactional",
+   "confidence": "documented",
+   "hs_codes": [
+    "2504",
+    "2803"
+   ],
+   "first_seen": "2023-05-02",
+   "last_seen": "2023-08-29",
+   "shipment_count": null,
+   "evidence": "Natural graphite (HS 2504) Aug 2023; carbon (HS 2803) May 2023.",
+   "source_call_ids": [
+    "s404"
+   ],
+   "case_ids": [
+    "case-4"
+   ],
+   "confidence_reason": "Dated, HS-coded trade components naming both parties."
+  },
+  {
+   "id": "e414",
+   "source": "goOR9J6dEj2sQuo-snuJ6A",
+   "target": "Fj3vtxDroFyjyPsLgsnm2A",
+   "relation": "ships_to",
+   "edge_type": "transactional",
+   "confidence": "documented",
+   "hs_codes": [
+    "3801",
+    "2504",
+    "2803"
+   ],
+   "first_seen": "2023-05-09",
+   "last_seen": "2023-09-24",
+   "shipment_count": null,
+   "evidence": "Artificial graphite (HS 3801) Sep 2023; natural graphite (HS 2504) Jul–Sep 2023; carbon (HS 2803) May 2023.",
+   "source_call_ids": [
+    "s404",
+    "s407"
+   ],
+   "case_ids": [
+    "case-4"
+   ],
+   "confidence_reason": "Dated, HS-coded trade components naming both parties."
+  },
+  {
+   "id": "e415",
+   "source": "on87w5_QYqQaQl1FQXC7cw",
+   "target": "Fj3vtxDroFyjyPsLgsnm2A",
+   "relation": "ships_to",
+   "edge_type": "transactional",
+   "confidence": "documented",
+   "hs_codes": [
+    "3801",
+    "2803"
+   ],
+   "first_seen": "2021-10-22",
+   "last_seen": "2022-07-03",
+   "shipment_count": null,
+   "evidence": "Artificial graphite (HS 3801) and carbon (HS 2803), Oct 2021 – Jul 2022.",
+   "source_call_ids": [
+    "s404",
+    "s407"
+   ],
+   "case_ids": [
+    "case-4"
+   ],
+   "confidence_reason": "Dated, HS-coded trade components naming both parties."
+  },
+  {
+   "id": "e416",
+   "source": "ffPlxyHu42G892jPO7tpbA",
+   "target": "Fj3vtxDroFyjyPsLgsnm2A",
+   "relation": "ships_to",
+   "edge_type": "transactional",
+   "confidence": "documented",
+   "hs_codes": [
+    "2504"
+   ],
+   "first_seen": "2022-06-04",
+   "last_seen": "2022-06-04",
+   "shipment_count": null,
+   "evidence": "Natural graphite (HS 2504), Mozambique → Korea, one date.",
+   "source_call_ids": [
+    "s404"
+   ],
+   "case_ids": [
+    "case-4"
+   ],
+   "confidence_reason": "Dated, HS-coded trade component naming both parties."
+  },
+  {
+   "id": "e417",
+   "source": "ljXszsmI8EtP_3Q4fuC6ZA",
+   "target": "Fj3vtxDroFyjyPsLgsnm2A",
+   "relation": "ships_to",
+   "edge_type": "transactional",
+   "confidence": "documented",
+   "hs_codes": [
+    "2708",
+    "2706"
+   ],
+   "first_seen": "2021-11-03",
+   "last_seen": "2024-01-24",
+   "shipment_count": null,
+   "evidence": "Coal-tar oils and pitch (HS 2708, 2706), Belgium/Netherlands → Korea.",
+   "source_call_ids": [
+    "s404",
+    "s413"
+   ],
+   "case_ids": [
+    "case-4"
+   ],
+   "confidence_reason": "Dated, HS-coded trade components naming both parties."
+  },
+  {
+   "id": "e418",
+   "source": "Bkp4ORhM634Fg0vFJk_YaA",
+   "target": "Fj3vtxDroFyjyPsLgsnm2A",
+   "relation": "ships_to",
+   "edge_type": "transactional",
+   "confidence": "documented",
+   "hs_codes": [
+    "2713"
+   ],
+   "first_seen": "2022-07-26",
+   "last_seen": "2022-07-26",
+   "shipment_count": null,
+   "evidence": "Petroleum coke (HS 2713), China → Korea, one date.",
+   "source_call_ids": [
+    "s404"
+   ],
+   "case_ids": [
+    "case-4"
+   ],
+   "confidence_reason": "Dated, HS-coded trade component naming both parties."
+  },
+  {
+   "id": "e419",
+   "source": "v1QB9w2AdIcXcohuVJZHyw",
+   "target": "Fj3vtxDroFyjyPsLgsnm2A",
+   "relation": "ships_to",
+   "edge_type": "transactional",
+   "confidence": "lead",
+   "hs_codes": [],
+   "first_seen": null,
+   "last_seen": null,
+   "shipment_count": null,
+   "evidence": "Sayari lists this company as a supplier (receives_from link). Products and dates not pulled.",
+   "source_call_ids": [
+    "s407"
+   ],
+   "case_ids": [
+    "case-4"
+   ],
+   "confidence_reason": "A single graph link with no rows checked."
+  },
+  {
+   "id": "e420",
+   "source": "GglryO0mCnl2PA1AOlB2JA",
+   "target": "Fj3vtxDroFyjyPsLgsnm2A",
+   "relation": "ships_to",
+   "edge_type": "transactional",
+   "confidence": "lead",
+   "hs_codes": [],
+   "first_seen": null,
+   "last_seen": null,
+   "shipment_count": null,
+   "evidence": "Sayari lists this company as a supplier (receives_from link). Products and dates not pulled.",
+   "source_call_ids": [
+    "s407"
+   ],
+   "case_ids": [
+    "case-4"
+   ],
+   "confidence_reason": "A single graph link with no rows checked."
+  },
+  {
+   "id": "e421",
+   "source": "-E5VEQtbiDlJDhmMR7GywQ",
+   "target": "Fj3vtxDroFyjyPsLgsnm2A",
+   "relation": "ships_to",
+   "edge_type": "transactional",
+   "confidence": "lead",
+   "hs_codes": [],
+   "first_seen": null,
+   "last_seen": null,
+   "shipment_count": null,
+   "evidence": "Sayari lists this company as a supplier (receives_from link). Products and dates not pulled.",
+   "source_call_ids": [
+    "s407"
+   ],
+   "case_ids": [
+    "case-4"
+   ],
+   "confidence_reason": "A single graph link with no rows checked."
+  },
+  {
+   "id": "e430",
+   "source": "Fj3vtxDroFyjyPsLgsnm2A",
+   "target": "4fqrWAcyrgtWw2RdV6qZsg",
+   "relation": "ships_to",
+   "edge_type": "transactional",
+   "confidence": "documented",
+   "hs_codes": [
+    "380110",
+    "380190"
+   ],
+   "first_seen": "2023-01-02",
+   "last_seen": "2024-06-28",
+   "shipment_count": 36,
+   "evidence": "'Anode material graphite PAS-C3B', 36 rows, departures 2 Jan 2023 – 28 Jun 2024.",
+   "source_call_ids": [
+    "s411",
+    "s412"
+   ],
+   "case_ids": [
+    "case-4"
+   ],
+   "confidence_reason": "Dated shipment rows (HS 3801.10/3801.90) naming both parties."
+  },
+  {
+   "id": "e431",
+   "source": "Fj3vtxDroFyjyPsLgsnm2A",
+   "target": "WLUn_1F-Zz5cShfohEF7BA",
+   "relation": "ships_to",
+   "edge_type": "transactional",
+   "confidence": "documented",
+   "hs_codes": [
+    "380110"
+   ],
+   "first_seen": "2021-12-06",
+   "last_seen": "2021-12-06",
+   "shipment_count": 1,
+   "evidence": "'Anode active material', 1 row, arrival 6 Dec 2021.",
+   "source_call_ids": [
+    "s408"
+   ],
+   "case_ids": [
+    "case-4"
+   ],
+   "confidence_reason": "Dated shipment row (HS 3801.10) naming both parties."
+  },
+  {
+   "id": "e432",
+   "source": "WLUn_1F-Zz5cShfohEF7BA",
+   "target": "4fqrWAcyrgtWw2RdV6qZsg",
+   "relation": "possibly_same_as",
+   "edge_type": "inferred",
+   "confidence": "lead",
+   "hs_codes": [],
+   "first_seen": null,
+   "last_seen": null,
+   "shipment_count": null,
+   "evidence": "Two General Motors records in US import data.",
+   "source_call_ids": [
+    "s408",
+    "s411"
+   ],
+   "case_ids": [
+    "case-4"
+   ],
+   "confidence_reason": "Name only."
+  },
+  {
+   "id": "e433",
+   "source": "Fj3vtxDroFyjyPsLgsnm2A",
+   "target": "aoeSqNICt_VUP-o-F-84Yg",
+   "relation": "ships_to",
+   "edge_type": "transactional",
+   "confidence": "documented",
+   "hs_codes": [
+    "380190"
+   ],
+   "first_seen": "2024-05-27",
+   "last_seen": "2025-06-19",
+   "shipment_count": 32,
+   "evidence": "'Graphite PAS-CP3K', 32 rows, departures 27 May 2024 – 19 Jun 2025.",
+   "source_call_ids": [
+    "s408",
+    "s411"
+   ],
+   "case_ids": [
+    "case-4"
+   ],
+   "confidence_reason": "Dated shipment rows (HS 3801.90) naming both parties."
+  },
+  {
+   "id": "e434",
+   "source": "Fj3vtxDroFyjyPsLgsnm2A",
+   "target": "xWhz7CFJV3lxsgg8fHMGHA",
+   "relation": "ships_to",
+   "edge_type": "transactional",
+   "confidence": "documented",
+   "hs_codes": [
+    "380110",
+    "380190"
+   ],
+   "first_seen": "2023-08-16",
+   "last_seen": "2026-02-21",
+   "shipment_count": 13,
+   "evidence": "Artificial graphite 'anode active material', 12 rows Jan–Feb 2026; plus 1 row (HS 3801.90) in Aug 2023 shared with Panasonic Procurement.",
+   "source_call_ids": [
+    "s402",
+    "s408"
+   ],
+   "case_ids": [
+    "case-4"
+   ],
+   "confidence_reason": "Dated shipment rows (HS 3801.10/3801.90) naming both parties; also a ships_to link in the profile."
+  },
+  {
+   "id": "e435",
+   "source": "Fj3vtxDroFyjyPsLgsnm2A",
+   "target": "wxnxnhKanOt7EorBjIZsxQ",
+   "relation": "ships_to",
+   "edge_type": "transactional",
+   "confidence": "documented",
+   "hs_codes": [
+    "380190",
+    "380110"
+   ],
+   "first_seen": "2026-05-06",
+   "last_seen": "2026-07-28",
+   "shipment_count": 9,
+   "evidence": "'Anode active material' / artificial graphite, 9 rows, departures 6 May – 28 Jul 2026.",
+   "source_call_ids": [
+    "s408"
+   ],
+   "case_ids": [
+    "case-4"
+   ],
+   "confidence_reason": "Dated shipment rows (HS 3801.90/3801.10) naming both parties."
+  },
+  {
+   "id": "e436",
+   "source": "Fj3vtxDroFyjyPsLgsnm2A",
+   "target": "BZPBOZcD6M_QtBtOWWtYUg",
+   "relation": "ships_to",
+   "edge_type": "transactional",
+   "confidence": "documented",
+   "hs_codes": [
+    "380190"
+   ],
+   "first_seen": "2023-08-16",
+   "last_seen": "2023-08-16",
+   "shipment_count": 1,
+   "evidence": "'Anode active material', 1 row, Aug 2023, co-named with Tesla.",
+   "source_call_ids": [
+    "s408"
+   ],
+   "case_ids": [
+    "case-4"
+   ],
+   "confidence_reason": "Dated shipment row naming both parties."
+  },
+  {
+   "id": "e437",
+   "source": "Fj3vtxDroFyjyPsLgsnm2A",
+   "target": "qAjZISyxppsZ-LjTrCmJTw",
+   "relation": "ships_to",
+   "edge_type": "transactional",
+   "confidence": "documented",
+   "hs_codes": [
+    "380110"
+   ],
+   "first_seen": "2023-02-27",
+   "last_seen": "2024-05-29",
+   "shipment_count": 3,
+   "evidence": "Artificial graphite / 'active anode material PAS-A1', 3 rows.",
+   "source_call_ids": [
+    "s411",
+    "s412"
+   ],
+   "case_ids": [
+    "case-4"
+   ],
+   "confidence_reason": "Dated shipment rows (HS 3801.10) naming both parties."
+  },
+  {
+   "id": "e438",
+   "source": "Fj3vtxDroFyjyPsLgsnm2A",
+   "target": "1nxhfvO5sMgXkfCrTho9Vw",
+   "relation": "ships_to",
+   "edge_type": "transactional",
+   "confidence": "documented",
+   "hs_codes": [
+    "380110"
+   ],
+   "first_seen": "2023-03-24",
+   "last_seen": "2023-03-24",
+   "shipment_count": 1,
+   "evidence": "Artificial graphite, 1 row.",
+   "source_call_ids": [
+    "s412"
+   ],
+   "case_ids": [
+    "case-4"
+   ],
+   "confidence_reason": "Dated shipment row (HS 3801.10) naming both parties."
+  },
+  {
+   "id": "e439",
+   "source": "Fj3vtxDroFyjyPsLgsnm2A",
+   "target": "ZhR1A0VWHf7oRyGfZOxKtg",
+   "relation": "ships_to",
+   "edge_type": "transactional",
+   "confidence": "documented",
+   "hs_codes": [
+    "380190"
+   ],
+   "first_seen": "2023-07-04",
+   "last_seen": "2023-07-04",
+   "shipment_count": 1,
+   "evidence": "HS 3801.90 with no product text, 1 row. Electrode maker: likely industrial use.",
+   "source_call_ids": [
+    "s412"
+   ],
+   "case_ids": [
+    "case-4"
+   ],
+   "confidence_reason": "Dated shipment row naming both parties."
+  },
+  {
+   "id": "e440",
+   "source": "Fj3vtxDroFyjyPsLgsnm2A",
+   "target": "5qJ3A4FHw2rTjNrnGOrHQQ",
+   "relation": "ships_to",
+   "edge_type": "transactional",
+   "confidence": "documented",
+   "hs_codes": [
+    "380110",
+    "6307"
+   ],
+   "first_seen": "2023-04-16",
+   "last_seen": "2023-11-11",
+   "shipment_count": 8,
+   "evidence": "8 rows to a freight forwarder, some 'active anode material' (one coded HS 3801.10, others miscoded as textiles). End customer not named.",
+   "source_call_ids": [
+    "s408"
+   ],
+   "case_ids": [
+    "case-4"
+   ],
+   "confidence_reason": "Dated shipment rows naming both parties; the consignee is a forwarder."
+  },
+  {
+   "id": "e441",
+   "source": "Fj3vtxDroFyjyPsLgsnm2A",
+   "target": "FWd2q_iBgH2ER9aw1Gph_g",
+   "relation": "ships_to",
+   "edge_type": "transactional",
+   "confidence": "documented",
+   "hs_codes": [
+    "370120"
+   ],
+   "first_seen": "2023-08-16",
+   "last_seen": "2023-08-16",
+   "shipment_count": 1,
+   "evidence": "1 'anode material' row (miscoded HS 3701.20) to a freight forwarder.",
+   "source_call_ids": [
+    "s408"
+   ],
+   "case_ids": [
+    "case-4"
+   ],
+   "confidence_reason": "Dated shipment row naming both parties; the consignee is a forwarder."
+  },
+  {
+   "id": "e442",
+   "source": "Fj3vtxDroFyjyPsLgsnm2A",
+   "target": "rvgklT24qqqfH2rnlVlyBg",
+   "relation": "ships_to",
+   "edge_type": "contractual",
+   "confidence": "corroborated",
+   "hs_codes": [],
+   "first_seen": null,
+   "last_seen": null,
+   "shipment_count": null,
+   "evidence": "POSCO Future M announced a binding six-year, KRW 939.3 bn deal to supply Pohang artificial-graphite anode to Ultium Cells (repeated by Businesskorea). Sayari rows name GM, Ultium's co-owner, as consignee for anode material in the same period.",
+   "source_call_ids": [
+    "t402",
+    "s411",
+    "s412"
+   ],
+   "case_ids": [
+    "case-4"
+   ],
+   "confidence_reason": "The company's own release and Sayari's GM shipments point the same way, but no Sayari row names Ultium Cells."
+  },
+  {
+   "id": "e443",
+   "source": "QTGe48MKdBHh2Dkbxh_ifw",
+   "target": "rimS2-LaCZMi2HMJqtwW5w",
+   "relation": "ships_to",
+   "edge_type": "transactional",
+   "confidence": "documented",
+   "hs_codes": [
+    "380110",
+    "271312"
+   ],
+   "first_seen": "2026-05-16",
+   "last_seen": "2026-05-16",
+   "shipment_count": 10,
+   "evidence": "Recarburizer (HS 3801.10), 9 rows, and graphite petroleum coke (HS 2713.12), 1 row; Xingang → Busan for POSCO (Beijing) Trading. Steelmaking input, not anode.",
+   "source_call_ids": [
+    "s415",
+    "s416"
+   ],
+   "case_ids": [
+    "case-4"
+   ],
+   "confidence_reason": "Dated shipment rows naming both parties."
+  }
+ ],
+ "calls": [
+  {
+   "id": "s401",
+   "timestamp": "2026-10-14T19:26:15Z",
+   "server": "sayari",
+   "tool": "search_entities",
+   "params": {
+    "query": "\"POSCO Future M\"",
+    "limit": 15
+   },
+   "question": "Which Sayari records are POSCO Future M?",
+   "purpose": "Resolve the company and its fragments",
+   "result_summary": "19 records. The main one (株式会社POSCO CHEMICAL, DART CIK 00155276) carries both the old and new names and addresses in Pohang, Gwangyang and Sejong. At least ten more records use the POSCO Future M or POSCO Chemical name, several with the same Pohang (110 Sinhang-ro) or Gwangyang (45 Yulchonsandan 8-ro) street addresses. Two records name the freight forwarder LX Pantos acting for POSCO Future M; one is the Canadian subsidiary in Bécancour.",
+   "interpretation": "Unlike Case 1, the main record has a registry identifier (Korea's DART disclosure ID), so the anchor is solid. Same-address fragments are treated as 'possibly the same as'.",
+   "scorecard": "worked",
+   "entity_ids": [
+    "Fj3vtxDroFyjyPsLgsnm2A",
+    "lGXvcBkItOrZkkvnvjxu9g",
+    "YSRMGUz3xWtyXZWZlMTCBg",
+    "y4MWluNMSgkSaHoCAptQfA"
+   ],
+   "step": "plant"
+  },
+  {
+   "id": "s402",
+   "timestamp": "2026-10-14T19:26:20Z",
+   "server": "sayari",
+   "tool": "get_entity_profile",
+   "params": {
+    "entity_id": "Fj3vtxDroFyjyPsLgsnm2A",
+    "relationships_limit": 60
+   },
+   "question": "Who owns POSCO Future M, and who does it trade with?",
+   "purpose": "Ownership and trade partners of the main record",
+   "result_summary": "Registered 1971-05-13. Business purpose includes refractories and secondary-battery manufacturing. Shareholder: 포스코홀딩스(주) (POSCO Holdings) with 58.2%, from Korea's DART disclosure database. Owns the Canadian subsidiary. Trade counts: 10,199 sent, 1,788 received. Ships to Tesla, VinFast and a Polish logistics agent; receives from Huayou New Energy (Quzhou) and a Shanghai supply-chain firm.",
+   "interpretation": "Ownership is a registry record with a percentage. The parent is Korean. This is the opposite of Case 1, where Sayari had no owner for BTR's plant.",
+   "scorecard": "worked",
+   "entity_ids": [
+    "Fj3vtxDroFyjyPsLgsnm2A",
+    "xhmHh99vEgdFz19iRON8yA",
+    "xWhz7CFJV3lxsgg8fHMGHA"
+   ],
+   "step": "owner"
+  },
+  {
+   "id": "s403",
+   "timestamp": "2026-10-14T19:26:27Z",
+   "server": "sayari",
+   "tool": "find_beneficial_owners",
+   "params": {
+    "entity_id": "Fj3vtxDroFyjyPsLgsnm2A",
+    "limit": 15
+   },
+   "question": "Is there any Chinese owner anywhere up the chain?",
+   "purpose": "Ownership tracing",
+   "result_summary": "50 owner paths returned, all one hop and all Korean: POSCO Holdings (three records under Korean and English names), POSCO (주)포스코, the National Pension Service (국민연금공단), Pohang University of Science and Technology, and about 40 named Korean individuals (DART shareholding filings by officers).",
+   "interpretation": "No Chinese owner appears at any level. The individual names are officers who report small holdings; they are not controlling owners.",
+   "scorecard": "worked",
+   "entity_ids": [
+    "Fj3vtxDroFyjyPsLgsnm2A",
+    "xhmHh99vEgdFz19iRON8yA",
+    "H3F05G33f9ITSmHNhahweg",
+    "dhu2OleybGzMUQwDgEBymg"
+   ],
+   "step": "owner"
+  },
+  {
+   "id": "s404",
+   "timestamp": "2026-10-14T19:26:40Z",
+   "server": "sayari",
+   "tool": "get_upstream_supply_chain",
+   "params": {
+    "entity_id": "Fj3vtxDroFyjyPsLgsnm2A",
+    "product": [
+     "3801",
+     "2504",
+     "2713"
+    ],
+    "max_depth": 1,
+    "limit": 40
+   },
+   "question": "Where do POSCO Future M's graphite and carbon inputs come from?",
+   "purpose": "Inbound graphite by origin country",
+   "result_summary": "18 supplier rows. Natural graphite (HS 2504) from China: Zhanjiang Juxin New Energy (two records, Jul–Dec 2023), Qingdao Haida New Energy Materials (Jun–Sep 2023), Qingdao Zhongshuo New Energy (Aug 2023), Qingdao Kuntuo New Material (Jul–Sep 2023). Artificial graphite (HS 3801) from China: Qingdao Kuntuo (Sep 2023) and Qingdao Qingbei Carbon Products (Oct 2021 – Jul 2022). Natural graphite from Twigg Exploration & Mining, Mozambique (Jun 2022). Petroleum coke (HS 2713) from China EPT (Jul 2022) and P66 Ltd, UK (Mar 2022). Coal-tar pitch and oils from Rain Carbon Germany via Belgium and the Netherlands (Nov 2021 – Jan 2024). Carbon black (HS 2803) from several of the Qingdao and Zhanjiang suppliers.",
+   "interpretation": "Chinese natural graphite does flow into this Korean-owned producer. Every Chinese graphite row is dated 2023 or earlier.",
+   "scorecard": "worked",
+   "entity_ids": [
+    "Fj3vtxDroFyjyPsLgsnm2A",
+    "2ZpM8WWpqajK6jBIXAbTYQ",
+    "AyicfnT87hRIGEH7FmYfvA",
+    "YeY_0foWAdFxn5HCX58QGQ",
+    "mNl1NLitXD_XdCQLg1DGlA",
+    "goOR9J6dEj2sQuo-snuJ6A",
+    "on87w5_QYqQaQl1FQXC7cw",
+    "ffPlxyHu42G892jPO7tpbA",
+    "ljXszsmI8EtP_3Q4fuC6ZA",
+    "Bkp4ORhM634Fg0vFJk_YaA"
+   ],
+   "step": "in"
+  },
+  {
+   "id": "s405",
+   "timestamp": "2026-10-14T19:26:46Z",
+   "server": "sayari",
+   "tool": "search_shipments",
+   "params": {
+    "query": "\"POSCO FUTURE M\" OR \"POSCO CHEMICAL\"",
+    "departure_country": "CHN",
+    "arrival_country": "KOR",
+    "hs_code": "2504",
+    "limit": 30,
+    "response_mode": "compact"
+   },
+   "question": "Can we pull the dated natural-graphite rows behind s404?",
+   "purpose": "Inbound shipment rows",
+   "result_summary": "0 rows.",
+   "interpretation": "The same flows s404 found are not reachable by name plus HS plus corridor. Shipment search and the supply-chain graph disagree. Recorded as a tool finding.",
+   "scorecard": "failed",
+   "entity_ids": [
+    "Fj3vtxDroFyjyPsLgsnm2A"
+   ],
+   "step": "gap"
+  },
+  {
+   "id": "s406",
+   "timestamp": "2026-10-14T19:29:53Z",
+   "server": "sayari",
+   "tool": "search_shipments",
+   "params": {
+    "query": "\"ZHANJIANG JUXIN\" graphite",
+    "departure_country": "CHN",
+    "arrival_country": "KOR",
+    "limit": 30,
+    "response_mode": "compact"
+   },
+   "question": "Do the supplier's own rows show product descriptions (e.g. 'spherical')?",
+   "purpose": "Product grade of inbound graphite",
+   "result_summary": "0 rows.",
+   "interpretation": "Supplier-name search also misses rows the graph holds. We can't read the grade of these inputs from Sayari row text.",
+   "scorecard": "failed",
+   "entity_ids": [
+    "2ZpM8WWpqajK6jBIXAbTYQ"
+   ],
+   "step": "gap"
+  },
+  {
+   "id": "s407",
+   "timestamp": "2026-10-14T19:29:58Z",
+   "server": "sayari",
+   "tool": "traverse_network",
+   "params": {
+    "entity_id": "Fj3vtxDroFyjyPsLgsnm2A",
+    "relationships": [
+     "receives_from"
+    ],
+    "max_depth": 1,
+    "countries": [
+     "CHN"
+    ],
+    "limit": 50
+   },
+   "question": "Who are all of POSCO Future M's Chinese suppliers in the graph?",
+   "purpose": "Supplier list with addresses",
+   "result_summary": "44 China-linked suppliers. Graphite-related names include Zhanjiang Juxin New Energy (Guandu Industrial Park, Zhanjiang), Qingdao Huateng Graphite Technology (Nanshu Town, Laixi), Qingdao GR-Taida Carbon (Pingdu), Qingdao Luowei New Material (Graphite New Material Cluster Area, Nanshu, Laixi), Qingdao Qingbei Carbon Products (same Laixi graphite cluster), Qingdao Kuntuo New Material (Nanshu, Laixi), Hunan Zoomwe Zhengyuan Advanced Material Trade (four records) and Nantong Jintong Energy Storage. Others supply cathode inputs (Huayou New Energy Quzhou in several records, Zhejiang POSCO Huayou ESM, Ganfeng Lithium, Tianqi Lithium, Yibin Tianyi Lithium), refractories (Zibo Luzhong, Yingkou Zhonghe, RHI Asia Pacific) or are freight forwarders (Kuehne + Nagel, Shanghai Speedy, Global Expedition Logistics).",
+   "interpretation": "Several graphite suppliers sit in the Nanshu/Laixi natural-graphite cluster in Shandong. The list mixes battery, cathode and steel-refractory inputs, because the company also makes refractories.",
+   "scorecard": "worked",
+   "entity_ids": [
+    "Fj3vtxDroFyjyPsLgsnm2A",
+    "2ZpM8WWpqajK6jBIXAbTYQ",
+    "v1QB9w2AdIcXcohuVJZHyw",
+    "GglryO0mCnl2PA1AOlB2JA",
+    "-E5VEQtbiDlJDhmMR7GywQ",
+    "on87w5_QYqQaQl1FQXC7cw",
+    "goOR9J6dEj2sQuo-snuJ6A"
+   ],
+   "step": "in"
+  },
+  {
+   "id": "s408",
+   "timestamp": "2026-10-14T19:30:13Z",
+   "server": "sayari",
+   "tool": "search_shipments",
+   "params": {
+    "query": "\"POSCO FUTURE M\"",
+    "departure_country": "KOR",
+    "arrival_country": "USA",
+    "hs_code": "3801",
+    "limit": 40,
+    "response_mode": "compact"
+   },
+   "question": "Does POSCO Future M ship anode material to US battery makers?",
+   "purpose": "Outbound HS 3801 Korea → USA (page 1 of 3)",
+   "result_summary": "105 rows in total; this page has 40. Supplier is the main POSCO Future M record on every row. Buyers on this page: Tesla (12 rows of artificial graphite HS 3801.10, 'anode active material', Jan–Feb 2026), Panasonic Energy Corporation (9 rows, HS 3801.90 and 3801.10, 'anode active material', May–Jul 2026), SK Battery America (8 rows, 'Graphite PAS-CP3K', May–Jun 2025), General Motors LLC (1 row HS 3801.10, Dec 2021), Tesla with Panasonic Procurement Corporation of America (1 row, Aug 2023), and two freight forwarders, Scan Global Logistics DTW (8 rows, 2023) and FNS Inc. Chicago (1 row, 2023).",
+   "interpretation": "The query-text method from Case 1 works: every row's supplier is the right company, and product text says 'anode active material'.",
+   "scorecard": "worked",
+   "entity_ids": [
+    "Fj3vtxDroFyjyPsLgsnm2A",
+    "xWhz7CFJV3lxsgg8fHMGHA",
+    "wxnxnhKanOt7EorBjIZsxQ",
+    "aoeSqNICt_VUP-o-F-84Yg",
+    "WLUn_1F-Zz5cShfohEF7BA",
+    "BZPBOZcD6M_QtBtOWWtYUg",
+    "5qJ3A4FHw2rTjNrnGOrHQQ",
+    "FWd2q_iBgH2ER9aw1Gph_g"
+   ],
+   "step": "out"
+  },
+  {
+   "id": "s409",
+   "timestamp": "2026-10-14T19:30:20Z",
+   "server": "sayari",
+   "tool": "search_shipments",
+   "params": {
+    "query": "\"POSCO FUTURE M\"",
+    "departure_country": "KOR",
+    "arrival_country": "USA",
+    "hs_code": "3801",
+    "page_token": "eyJmcCI6Ijg1OGJmZTUyNzFjN2Y3OTcxZTljNzU0ZjhiMzEwYTU2ZDc0YjRkZTM0NTk2MzJkNTJlY2I3N2NjNDdlYWZiMzAiLCJsaW1pdCI6NDAsIm1vZGUiOiJjb21wYWN0Iiwib2Zmc2V0Ijo0MCwic3RyYXRlZ3kiOiJtYW51YWwiLCJ0b29sIjoic2VhcmNoX3NoaXBtZW50cyIsInYiOjF9",
+    "limit": 70,
+    "response_mode": "compact"
+   },
+   "question": "Page 2 of the outbound rows.",
+   "purpose": "Pagination",
+   "result_summary": "Error: 'limit cannot be used together with page_token.'",
+   "interpretation": "Parameter clash. Retried without limit.",
+   "scorecard": "failed",
+   "entity_ids": [],
+   "step": "method"
+  },
+  {
+   "id": "s410",
+   "timestamp": "2026-10-14T19:30:21Z",
+   "server": "sayari",
+   "tool": "search_shipments",
+   "params": {
+    "query": "\"POSCO FUTURE M\"",
+    "departure_country": "KOR",
+    "arrival_country": "USA",
+    "hs_code": "3801",
+    "page_token": "eyJmcCI6Ijg1OGJmZTUyNzFjN2Y3OTcxZTljNzU0ZjhiMzEwYTU2ZDc0YjRkZTM0NTk2MzJkNTJlY2I3N2NjNDdlYWZiMzAiLCJsaW1pdCI6NDAsIm1vZGUiOiJjb21wYWN0Iiwib2Zmc2V0Ijo0MCwic3RyYXRlZ3kiOiJtYW51YWwiLCJ0b29sIjoic2VhcmNoX3NoaXBtZW50cyIsInYiOjF9",
+    "response_mode": "compact"
+   },
+   "question": "Page 2 of the outbound rows.",
+   "purpose": "Pagination",
+   "result_summary": "Error: 'response_mode cannot be used together with page_token.'",
+   "interpretation": "Second parameter clash: a page token carries its own settings. Retried with the token alone.",
+   "scorecard": "failed",
+   "entity_ids": [],
+   "step": "method"
+  },
+  {
+   "id": "s411",
+   "timestamp": "2026-10-14T19:30:23Z",
+   "server": "sayari",
+   "tool": "search_shipments",
+   "params": {
+    "query": "\"POSCO FUTURE M\"",
+    "departure_country": "KOR",
+    "arrival_country": "USA",
+    "hs_code": "3801",
+    "page_token": "eyJmcCI6Ijg1OGJmZTUyNzFjN2Y3OTcxZTljNzU0ZjhiMzEwYTU2ZDc0YjRkZTM0NTk2MzJkNTJlY2I3N2NjNDdlYWZiMzAiLCJsaW1pdCI6NDAsIm1vZGUiOiJjb21wYWN0Iiwib2Zmc2V0Ijo0MCwic3RyYXRlZ3kiOiJtYW51YWwiLCJ0b29sIjoic2VhcmNoX3NoaXBtZW50cyIsInYiOjF9"
+   },
+   "question": "Page 2 of the outbound rows.",
+   "purpose": "Outbound HS 3801 Korea → USA (page 2 of 3)",
+   "result_summary": "40 rows. SK Battery America: 24 rows of 'Graphite PAS-CP3K' (HS 3801.90), May 2024 – May 2025. General Motors: 15 rows, HS 3801.10 'anode material graphite PAS-C3B' and 'graphite; artificial', Nov 2023 – Jun 2024. XALT Energy Alicia: 1 row 'active anode material graphite PAS-A1', HS 3801.10, May 2024.",
+   "interpretation": "SK Battery America is the steadiest buyer; GM's rows end in Jun 2024 in our results.",
+   "scorecard": "worked",
+   "entity_ids": [
+    "Fj3vtxDroFyjyPsLgsnm2A",
+    "aoeSqNICt_VUP-o-F-84Yg",
+    "4fqrWAcyrgtWw2RdV6qZsg",
+    "qAjZISyxppsZ-LjTrCmJTw"
+   ],
+   "step": "out"
+  },
+  {
+   "id": "s412",
+   "timestamp": "2026-10-14T19:30:25Z",
+   "server": "sayari",
+   "tool": "search_shipments",
+   "params": {
+    "query": "\"POSCO FUTURE M\"",
+    "departure_country": "KOR",
+    "arrival_country": "USA",
+    "hs_code": "3801",
+    "page_token": "eyJmcCI6Ijg1OGJmZTUyNzFjN2Y3OTcxZTljNzU0ZjhiMzEwYTU2ZDc0YjRkZTM0NTk2MzJkNTJlY2I3N2NjNDdlYWZiMzAiLCJsaW1pdCI6NDAsIm1vZGUiOiJjb21wYWN0Iiwib2Zmc2V0Ijo4MCwic3RyYXRlZ3kiOiJtYW51YWwiLCJ0b29sIjoic2VhcmNoX3NoaXBtZW50cyIsInYiOjF9"
+   },
+   "question": "Page 3 of the outbound rows.",
+   "purpose": "Outbound HS 3801 Korea → USA (page 3 of 3)",
+   "result_summary": "25 rows. General Motors: 21 rows of 'anode material graphite PAS-C3B', HS 3801.10 and 3801.90, Jan–Nov 2023. XALT Energy Alicia: 2 rows of artificial graphite, Feb–Mar 2023. XALT Energy LLC: 1 row, Mar 2023. GrafTech USA LLC: 1 row of HS 3801.90 with no product text, Jul 2023.",
+   "interpretation": "All 105 rows are now read. 95 go to battery or car makers, 9 to freight forwarders and 1 to GrafTech, an electrode maker (likely industrial use).",
+   "scorecard": "worked",
+   "entity_ids": [
+    "Fj3vtxDroFyjyPsLgsnm2A",
+    "4fqrWAcyrgtWw2RdV6qZsg",
+    "qAjZISyxppsZ-LjTrCmJTw",
+    "1nxhfvO5sMgXkfCrTho9Vw",
+    "ZhR1A0VWHf7oRyGfZOxKtg"
+   ],
+   "step": "out"
+  },
+  {
+   "id": "s413",
+   "timestamp": "2026-10-14T19:30:46Z",
+   "server": "sayari",
+   "tool": "get_upstream_supply_chain",
+   "params": {
+    "entity_id": "Fj3vtxDroFyjyPsLgsnm2A",
+    "product": [
+     "3801",
+     "2504"
+    ],
+    "max_depth": 1,
+    "min_date": "2024-01-01",
+    "limit": 40,
+    "response_mode": "compact"
+   },
+   "question": "Did Chinese graphite keep arriving after 2023?",
+   "purpose": "Inbound graphite after China's Dec 2023 export licensing",
+   "result_summary": "1 supplier: Rain Carbon Germany (pitch and coal-tar products). No Chinese graphite supplier from 2024 onwards.",
+   "interpretation": "In Sayari, Chinese graphite inflows to POSCO Future M stop at the end of 2023. Open sources (t401) say the company still processes Chinese spherical graphite, so this is most likely a data gap, not a real stop.",
+   "scorecard": "partial",
+   "entity_ids": [
+    "Fj3vtxDroFyjyPsLgsnm2A",
+    "ljXszsmI8EtP_3Q4fuC6ZA"
+   ],
+   "step": "gap"
+  },
+  {
+   "id": "s414",
+   "timestamp": "2026-10-14T19:30:52Z",
+   "server": "sayari",
+   "tool": "search_trade_facets",
+   "params": {
+    "scope": "shipments",
+    "query": "\"POSCO FUTURE M\" OR \"POSCO CHEMICAL\"",
+    "arrival_country": "KOR",
+    "hs_code": "2504",
+    "bucket_limit": 15
+   },
+   "question": "Count natural-graphite shipments into POSCO Future M by origin.",
+   "purpose": "Inbound graphite by origin country",
+   "result_summary": "0 shipments in every bucket.",
+   "interpretation": "Same blind spot as s405: the HS + name rollup returns nothing although the graph holds the flows.",
+   "scorecard": "failed",
+   "entity_ids": [
+    "Fj3vtxDroFyjyPsLgsnm2A"
+   ],
+   "step": "gap"
+  },
+  {
+   "id": "s415",
+   "timestamp": "2026-10-14T19:30:58Z",
+   "server": "sayari",
+   "tool": "search_trade_facets",
+   "params": {
+    "scope": "shipments",
+    "query": "POSCO graphite",
+    "departure_country": "CHN",
+    "bucket_limit": 15
+   },
+   "question": "Is any POSCO company importing graphite from China recently?",
+   "purpose": "Recent China → Korea graphite tied to POSCO",
+   "result_summary": "10 shipments, all 16–18 May 2026, China → Korea; 9 are HS 3801.10, 1 is HS 2713.12 (calcined petroleum coke). One supplier, one buyer.",
+   "interpretation": "A recent flow exists, but the facet gives only IDs. Pulled the rows in s416.",
+   "scorecard": "worked",
+   "entity_ids": [
+    "QTGe48MKdBHh2Dkbxh_ifw",
+    "rimS2-LaCZMi2HMJqtwW5w"
+   ],
+   "step": "in"
+  },
+  {
+   "id": "s416",
+   "timestamp": "2026-10-14T19:31:02Z",
+   "server": "sayari",
+   "tool": "search_shipments",
+   "params": {
+    "query": "POSCO graphite",
+    "departure_country": "CHN",
+    "arrival_country": "KOR",
+    "limit": 10,
+    "response_mode": "full"
+   },
+   "question": "What are those May 2026 rows?",
+   "purpose": "Check product text before counting it as anode input",
+   "result_summary": "Shipper: Tianjin Eboxline International Transport. Buyer: 'POSCO CO LTD' at 6261 Donghaean-ro (the Pohang steelworks). Product: 'recarburizer' (9 rows, HS 3801.10, about 20 t each) and 'graphite petroleum coke' (1 row), shipped on behalf of POSCO (Beijing) Trading. Source: China Imports & Exports.",
+   "interpretation": "This is steelmaking additive for the sister steel company, not battery material. It is a clear example of HS 3801.10 covering non-battery graphite. Not counted as an input to POSCO Future M.",
+   "scorecard": "worked",
+   "entity_ids": [
+    "QTGe48MKdBHh2Dkbxh_ifw",
+    "rimS2-LaCZMi2HMJqtwW5w"
+   ],
+   "step": "context"
+  },
+  {
+   "id": "s417",
+   "timestamp": "2026-10-14T19:31:08Z",
+   "server": "sayari",
+   "tool": "search_shipments",
+   "params": {
+    "query": "\"POSCO CHEMICAL\" spherical graphite",
+    "hs_code": "2504",
+    "limit": 25,
+    "response_mode": "compact"
+   },
+   "question": "Are there rows naming spherical graphite sold to POSCO Chemical?",
+   "purpose": "Product grade of inbound graphite",
+   "result_summary": "0 rows.",
+   "interpretation": "Free text plus HS filter misses again. Switched to a buyer rollup on the product phrase alone (s418, s419).",
+   "scorecard": "failed",
+   "entity_ids": [
+    "Fj3vtxDroFyjyPsLgsnm2A"
+   ],
+   "step": "gap"
+  },
+  {
+   "id": "s418",
+   "timestamp": "2026-10-14T19:31:12Z",
+   "server": "sayari",
+   "tool": "search_trade_facets",
+   "params": {
+    "scope": "buyers",
+    "query": "\"spherical graphite\"",
+    "departure_country": "CHN",
+    "arrival_country": "KOR",
+    "bucket_limit": 15
+   },
+   "question": "Who buys Chinese spherical graphite in Korea?",
+   "purpose": "Spherical graphite corridor",
+   "result_summary": "23 buyers. Buyer facets give countries and risk flags only, not names. One buyer carries the same risk-flag set as POSCO Future M.",
+   "interpretation": "Need the named list: pulled in s419.",
+   "scorecard": "partial",
+   "entity_ids": [],
+   "step": "in"
+  },
+  {
+   "id": "s419",
+   "timestamp": "2026-10-14T19:31:17Z",
+   "server": "sayari",
+   "tool": "search_buyers",
+   "params": {
+    "query": "\"spherical graphite\"",
+    "departure_country": "CHN",
+    "arrival_country": "KOR",
+    "limit": 25,
+    "response_mode": "compact"
+   },
+   "question": "Is POSCO Future M among the Korean buyers of Chinese spherical graphite?",
+   "purpose": "Spherical graphite corridor (named)",
+   "result_summary": "23 buyers. The main POSCO Future M record is first, with 167 matching shipments and the latest dated 2023-12-08; its HS list includes natural graphite powder/flake (HS 2504.10). Three more POSCO Chemical / Future M records appear (15, 14 and 1 shipments; latest 2023-01-01, 2022-09-09 and 2023-08-11). Most other buyers are Korean freight forwarders, e.g. Pax Logistics (65 shipments, latest 2025-09-09), GTG Logistics, Awards Shipping Agency (Korea).",
+   "interpretation": "This is the strongest Sayari evidence that POSCO Future M depends on Chinese spherical graphite. The trail ends on 8 Dec 2023, a week after China's export licensing for graphite took effect. Forwarders keep receiving the product later, but no row names their end customer.",
+   "scorecard": "worked",
+   "entity_ids": [
+    "Fj3vtxDroFyjyPsLgsnm2A",
+    "UCbyt8Y_8GmNUrzHG5riPw",
+    "M6ta2xQZjgwEaQFF7t6dZA",
+    "mdDF1uxfPSghv7Q25eoc2g"
+   ],
+   "step": "in"
+  },
+  {
+   "id": "s420",
+   "timestamp": "2026-10-14T19:31:32Z",
+   "server": "sayari",
+   "tool": "get_entity_summary",
+   "params": {
+    "entity_id": "xhmHh99vEgdFz19iRON8yA"
+   },
+   "question": "What is the 58.2% shareholder?",
+   "purpose": "Verify the parent",
+   "result_summary": "포스코홀딩스(주) (POSCO Holdings), a Korean CO LTD. Source: South Korea DART disclosures. Not sanctioned, no PEP flag, no trade.",
+   "interpretation": "The parent is a Korean listed holding company. No Chinese link at the parent level.",
+   "scorecard": "worked",
+   "entity_ids": [
+    "xhmHh99vEgdFz19iRON8yA"
+   ],
+   "step": "owner"
+  },
+  {
+   "id": "s421",
+   "timestamp": "2026-10-14T19:31:33Z",
+   "server": "sayari",
+   "tool": "check_watchlist",
+   "params": {
+    "entity_id": "Fj3vtxDroFyjyPsLgsnm2A",
+    "max_depth": 2,
+    "limit": 10,
+    "response_mode": "compact"
+   },
+   "question": "Is POSCO Future M near any sanctioned party?",
+   "purpose": "Screening",
+   "result_summary": "10 hits, all two hops out and all through large trading partners (EVE Energy, JSW Steel, General Motors, Mitsubishi Corporation) to Russian, Emirati or Chinese sanctioned firms. No direct hit.",
+   "interpretation": "Noise: these are customers of customers. Not a finding about POSCO Future M.",
+   "scorecard": "worked",
+   "entity_ids": [
+    "Fj3vtxDroFyjyPsLgsnm2A"
+   ],
+   "step": "context"
+  },
+  {
+   "id": "t401",
+   "timestamp": "2026-10-14T19:31:43Z",
+   "server": "tavily",
+   "tool": "tavily_search",
+   "params": {
+    "query": "POSCO Future M spherical graphite China dependence natural graphite anode Sejong plant",
+    "max_results": 6,
+    "search_depth": "advanced"
+   },
+   "question": "Does POSCO Future M say it uses Chinese spherical graphite?",
+   "purpose": "Company context for inputs",
+   "result_summary": "KED Global: Korea relies entirely on Chinese imports for natural and spherical graphite; POSCO Future M plans to make spherical graphite at home. Korea Herald: the Sejong plant 'currently reprocesses spherical graphite … imported from China' and aims to phase out Chinese intermediates by 2027; a new Saemangeum plant (subsidiary Future Graph) will use African graphite. POSCO E&C: Sejong makes natural-graphite anode. POSCO newsroom: same Africa → Saemangeum → Sejong plan.",
+   "interpretation": "The company itself confirms the Chinese spherical-graphite dependence that Sayari shows up to Dec 2023, and says it continues. So the Sayari stop after 2023 is a coverage gap.",
+   "scorecard": "worked",
+   "entity_ids": [
+    "Fj3vtxDroFyjyPsLgsnm2A"
+   ],
+   "step": "context"
+  },
+  {
+   "id": "t402",
+   "timestamp": "2026-10-14T19:31:52Z",
+   "server": "tavily",
+   "tool": "tavily_search",
+   "params": {
+    "query": "POSCO Future M anode supply GM Ultium Cells Tesla artificial graphite Pohang FEOC prohibited foreign entity",
+    "max_results": 6,
+    "search_depth": "advanced"
+   },
+   "question": "Which US customers has POSCO Future M announced, and what does the Pohang plant use?",
+   "purpose": "Company context for outputs",
+   "result_summary": "POSCO Future M newsroom: a binding six-year, KRW 939.3 billion deal to supply Ultium Cells (GM–LG Energy Solution) with artificial graphite anode from the Pohang plant; an earlier deal to supply Sejong anode to Ultium. Pohang artificial graphite uses needle coke from PMC Tech, a group carbon subsidiary. Businesskorea repeats the Ultium deal. Korea Herald (t401) says the Pohang synthetic graphite uses coke by-products from POSCO steelmaking. One aggregator site (energy-solutions.co) gives unsourced percentages; we did not use it.",
+   "interpretation": "Two product lines with different input risks: natural-graphite anode (Sejong) relies on Chinese spherical graphite; artificial-graphite anode (Pohang) is presented as Korean feedstock. Sayari rows can't say which plant made a given shipment.",
+   "scorecard": "worked",
+   "entity_ids": [
+    "Fj3vtxDroFyjyPsLgsnm2A",
+    "rvgklT24qqqfH2rnlVlyBg"
+   ],
+   "step": "context"
+  }
+ ]
+}

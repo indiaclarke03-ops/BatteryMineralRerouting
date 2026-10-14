@@ -18,7 +18,11 @@
         "s005",
         "s006",
         "s011"
-      ]
+      ],
+      "case_ids": [
+        "case-1"
+      ],
+      "confidence_reason": "Shared street address and a shared US buyer, but no shared identifier, so it's our judgment, not a record."
     },
     {
       "id": "e002",
@@ -35,7 +39,11 @@
       "source_call_ids": [
         "s005",
         "s022"
-      ]
+      ],
+      "case_ids": [
+        "case-1"
+      ],
+      "confidence_reason": "Shared street address and the missing word of the name; no identifier links them."
     },
     {
       "id": "e003",
@@ -52,7 +60,11 @@
       "source_call_ids": [
         "s005",
         "s023"
-      ]
+      ],
+      "case_ids": [
+        "case-1"
+      ],
+      "confidence_reason": "Shared street address and a shortened name; no identifier links them."
     },
     {
       "id": "e004",
@@ -70,7 +82,11 @@
         "s005",
         "s007",
         "s004"
-      ]
+      ],
+      "case_ids": [
+        "case-1"
+      ],
+      "confidence_reason": "Name match only; the address is just a district. One weak signal."
     },
     {
       "id": "e005",
@@ -86,7 +102,11 @@
       "evidence": "Both registered at No. 8 Guangyuan 4th Road, Guangming District, Shenzhen. Ruiqing's address names the 'BTR Building', room 1108.",
       "source_call_ids": [
         "s013"
-      ]
+      ],
+      "case_ids": [
+        "case-1"
+      ],
+      "confidence_reason": "Both addresses name No. 8 Guangyuan 4th Road; matching attributes, no record of a relationship."
     },
     {
       "id": "e006",
@@ -102,7 +122,11 @@
       "evidence": "Name and district match the parent group. No registry link was pulled.",
       "source_call_ids": [
         "s013"
-      ]
+      ],
+      "case_ids": [
+        "case-1"
+      ],
+      "confidence_reason": "Name and district only. One weak signal."
     },
     {
       "id": "e010",
@@ -120,7 +144,11 @@
         "s009",
         "s019",
         "t012"
-      ]
+      ],
+      "case_ids": [
+        "case-1"
+      ],
+      "confidence_reason": "Two sources agree: BTR's own press release and a trade directory, backed by the trade link and the plant's name. Sayari's registry has no record."
     },
     {
       "id": "e011",
@@ -136,7 +164,11 @@
       "evidence": "Registry shareholder_of link in Sayari.",
       "source_call_ids": [
         "s020"
-      ]
+      ],
+      "case_ids": [
+        "case-1"
+      ],
+      "confidence_reason": "Registry shareholder record in Sayari."
     },
     {
       "id": "e012",
@@ -152,7 +184,11 @@
       "evidence": "Registry shareholder_of link in Sayari.",
       "source_call_ids": [
         "s020"
-      ]
+      ],
+      "case_ids": [
+        "case-1"
+      ],
+      "confidence_reason": "Registry shareholder record in Sayari."
     },
     {
       "id": "e020",
@@ -173,7 +209,11 @@
       "source_call_ids": [
         "s008",
         "s014"
-      ]
+      ],
+      "case_ids": [
+        "case-1"
+      ],
+      "confidence_reason": "Sayari returned HS-coded trade records with dates."
     },
     {
       "id": "e021",
@@ -194,7 +234,11 @@
       "source_call_ids": [
         "s013",
         "s014"
-      ]
+      ],
+      "case_ids": [
+        "case-1"
+      ],
+      "confidence_reason": "Sayari returned HS-coded trade records with dates."
     },
     {
       "id": "e022",
@@ -210,7 +254,11 @@
       "evidence": "Listed among the plant's 90 suppliers. HS and dates not pulled.",
       "source_call_ids": [
         "s013"
-      ]
+      ],
+      "case_ids": [
+        "case-1"
+      ],
+      "confidence_reason": "Listed as a supplier in Sayari's graph, but we didn't pull the shipment records."
     },
     {
       "id": "e023",
@@ -228,7 +276,11 @@
       "evidence": "Natural graphite (HS 2504) from Mozambique, Apr 2024 – Dec 2025.",
       "source_call_ids": [
         "s014"
-      ]
+      ],
+      "case_ids": [
+        "case-1"
+      ],
+      "confidence_reason": "Sayari returned HS-coded trade records with dates."
     },
     {
       "id": "e024",
@@ -246,7 +298,11 @@
       "evidence": "Natural graphite (HS 2504) shipped from the UAE, Jan–Apr 2026.",
       "source_call_ids": [
         "s014"
-      ]
+      ],
+      "case_ids": [
+        "case-1"
+      ],
+      "confidence_reason": "Sayari returned HS-coded trade records with dates."
     },
     {
       "id": "e025",
@@ -264,7 +320,11 @@
       "evidence": "Natural graphite (HS 2504) from Madagascar, Jun 2025 – Mar 2026.",
       "source_call_ids": [
         "s014"
-      ]
+      ],
+      "case_ids": [
+        "case-1"
+      ],
+      "confidence_reason": "Sayari returned HS-coded trade records with dates."
     },
     {
       "id": "e030",
@@ -283,7 +343,11 @@
       "source_call_ids": [
         "s008",
         "s017"
-      ]
+      ],
+      "case_ids": [
+        "case-1"
+      ],
+      "confidence_reason": "Dated shipment rows (HS 3801.10) naming both parties."
     },
     {
       "id": "e031",
@@ -302,7 +366,11 @@
       "source_call_ids": [
         "s008",
         "s017"
-      ]
+      ],
+      "case_ids": [
+        "case-1"
+      ],
+      "confidence_reason": "Dated shipment rows (HS 3801.10) naming both parties."
     },
     {
       "id": "e032",
@@ -320,7 +388,11 @@
       "evidence": "Artificial graphite (HS 3801.10). 1 row, 12 Aug 2025.",
       "source_call_ids": [
         "s017"
-      ]
+      ],
+      "case_ids": [
+        "case-1"
+      ],
+      "confidence_reason": "Dated shipment row (HS 3801.10) naming both parties."
     },
     {
       "id": "e033",
@@ -338,7 +410,11 @@
       "evidence": "Artificial graphite (HS 3801.10). 3 rows, 9 Mar – 12 Apr 2025. Two more rows on the same pair carry a cosmetics code (HS 3304.91), most likely a classification error.",
       "source_call_ids": [
         "s017"
-      ]
+      ],
+      "case_ids": [
+        "case-1"
+      ],
+      "confidence_reason": "Dated shipment rows (HS 3801.10) naming both parties."
     },
     {
       "id": "e034",
@@ -356,7 +432,11 @@
       "evidence": "Artificial graphite (HS 3801.10). 1 row, 8 Aug 2025.",
       "source_call_ids": [
         "s017"
-      ]
+      ],
+      "case_ids": [
+        "case-1"
+      ],
+      "confidence_reason": "Dated shipment row (HS 3801.10) naming both parties."
     },
     {
       "id": "e035",
@@ -374,7 +454,11 @@
       "evidence": "Graphite preparations (HS 3801.90). 1 row, 2 Dec 2024. The earliest US-bound row in the result.",
       "source_call_ids": [
         "s017"
-      ]
+      ],
+      "case_ids": [
+        "case-1"
+      ],
+      "confidence_reason": "Dated shipment row (HS 3801.90) naming both parties."
     },
     {
       "id": "e036",
@@ -392,7 +476,11 @@
       "evidence": "Artificial graphite (HS 3801.10). 1 row, 2 Aug 2025.",
       "source_call_ids": [
         "s017"
-      ]
+      ],
+      "case_ids": [
+        "case-1"
+      ],
+      "confidence_reason": "Dated shipment row (HS 3801.10) naming both parties."
     },
     {
       "id": "e037",
@@ -409,7 +497,11 @@
       "source_call_ids": [
         "s011",
         "s018"
-      ]
+      ],
+      "case_ids": [
+        "case-1"
+      ],
+      "confidence_reason": "Two signals: a graph link in US import data, plus shipment rows under a sibling record."
     },
     {
       "id": "e038",
@@ -426,7 +518,11 @@
       "source_call_ids": [
         "s011",
         "s018"
-      ]
+      ],
+      "case_ids": [
+        "case-1"
+      ],
+      "confidence_reason": "Two signals: a graph link in US import data, plus shipment rows under sibling records."
     },
     {
       "id": "e039",
@@ -444,7 +540,11 @@
       "evidence": "Artificial graphite in 0.2–8 mm grades (HS 3801.10). 3 rows, 30 Sep 2025. Grades suggest non-battery use.",
       "source_call_ids": [
         "s017"
-      ]
+      ],
+      "case_ids": [
+        "case-1"
+      ],
+      "confidence_reason": "Dated shipment rows (HS 3801.10) naming both parties."
     },
     {
       "id": "e040",
@@ -462,6 +562,2030 @@
       "evidence": "Artificial graphite in 1–10 mm grades (HS 3801.10). 2 rows, 10 Jun 2026. Grades suggest metallurgical use.",
       "source_call_ids": [
         "s017"
+      ],
+      "case_ids": [
+        "case-1"
+      ],
+      "confidence_reason": "Dated shipment rows (HS 3801.10) naming both parties."
+    },
+    {
+      "id": "e201",
+      "source": "b1W3iE__07Zz0BOvA-8s7g",
+      "target": "El_6QFk0rVRdYJanrqEtAA",
+      "relation": "owns",
+      "edge_type": "contractual",
+      "confidence": "documented",
+      "hs_codes": [],
+      "first_seen": null,
+      "last_seen": null,
+      "shipment_count": null,
+      "evidence": "Moroccan company data (Cedar Rose) lists BNUO International Holding as 100% shareholder and beneficial owner.",
+      "confidence_reason": "A registry-derived shareholder record states the link and the share.",
+      "source_call_ids": [
+        "s203",
+        "s205"
+      ],
+      "case_ids": [
+        "case-2"
+      ]
+    },
+    {
+      "id": "e202",
+      "source": "b1W3iE__07Zz0BOvA-8s7g",
+      "target": "NKDYreiU9nvqyC4RRZQDfA",
+      "relation": "possibly_same_as",
+      "edge_type": "inferred",
+      "confidence": "inferred",
+      "hs_codes": [],
+      "first_seen": null,
+      "last_seen": null,
+      "shipment_count": null,
+      "evidence": "Same name; Sayari links them as 'possibly the same as'. The same executive is general manager of the Moroccan company and CEO of the Singapore company.",
+      "confidence_reason": "Name plus a shared officer, but no shared identifier.",
+      "source_call_ids": [
+        "s203",
+        "s205",
+        "s208"
+      ],
+      "case_ids": [
+        "case-2"
+      ]
+    },
+    {
+      "id": "e203",
+      "source": "zduDdSDoWzRJWKUinb7e0w",
+      "target": "NKDYreiU9nvqyC4RRZQDfA",
+      "relation": "owns",
+      "edge_type": "contractual",
+      "confidence": "documented",
+      "hs_codes": [],
+      "first_seen": null,
+      "last_seen": null,
+      "shipment_count": null,
+      "evidence": "Singapore registry data: BTR (Jiangsu) holds 100% of BNUO International Holding.",
+      "confidence_reason": "Registry shareholder record with a stated share.",
+      "source_call_ids": [
+        "s207",
+        "s208",
+        "s209"
+      ],
+      "case_ids": [
+        "case-2"
+      ]
+    },
+    {
+      "id": "e204",
+      "source": "jeHf5QJt0JXowTiCA8JiIQ",
+      "target": "zduDdSDoWzRJWKUinb7e0w",
+      "relation": "owns",
+      "edge_type": "contractual",
+      "confidence": "documented",
+      "hs_codes": [],
+      "first_seen": null,
+      "last_seen": null,
+      "shipment_count": null,
+      "evidence": "China SAIC data: BTR New Material Group holds 100% of BTR (Jiangsu).",
+      "confidence_reason": "Registry shareholder record with a stated share.",
+      "source_call_ids": [
+        "s207",
+        "s209"
+      ],
+      "case_ids": [
+        "case-2"
+      ]
+    },
+    {
+      "id": "e205",
+      "source": "jeHf5QJt0JXowTiCA8JiIQ",
+      "target": "El_6QFk0rVRdYJanrqEtAA",
+      "relation": "owns",
+      "edge_type": "contractual",
+      "confidence": "corroborated",
+      "hs_codes": [],
+      "first_seen": null,
+      "last_seen": null,
+      "shipment_count": null,
+      "evidence": "Indirect, 100% at every step: BTR → BTR (Jiangsu) → BNUO (Singapore) → BTR Mediterranean. BTR's own release names BTR Mediterranean as its subsidiary for the project.",
+      "confidence_reason": "Sayari's ownership path and BTR's own announcement agree; one step relies on a 'possibly same as' link.",
+      "source_call_ids": [
+        "s205",
+        "s207",
+        "t201"
+      ],
+      "case_ids": [
+        "case-2"
+      ]
+    },
+    {
+      "id": "e206",
+      "source": "uio2rrOWJmLIgiAKlcpdww",
+      "target": "Z57YvgOYL2TdoaWYgXFZ9Q",
+      "relation": "owns",
+      "edge_type": "contractual",
+      "confidence": "documented",
+      "hs_codes": [],
+      "first_seen": null,
+      "last_seen": null,
+      "shipment_count": null,
+      "evidence": "Moroccan company data lists Rian International Holding as 100% shareholder.",
+      "confidence_reason": "Registry-derived shareholder record with a stated share.",
+      "source_call_ids": [
+        "s204",
+        "s206"
+      ],
+      "case_ids": [
+        "case-2"
+      ]
+    },
+    {
+      "id": "e207",
+      "source": "uio2rrOWJmLIgiAKlcpdww",
+      "target": "vATXxodFI2jKKDVrQ-ELOw",
+      "relation": "possibly_same_as",
+      "edge_type": "inferred",
+      "confidence": "lead",
+      "hs_codes": [],
+      "first_seen": null,
+      "last_seen": null,
+      "shipment_count": null,
+      "evidence": "Same company name; Sayari marks them 'possibly the same as'.",
+      "confidence_reason": "Name match only.",
+      "source_call_ids": [
+        "s206"
+      ],
+      "case_ids": [
+        "case-2"
+      ]
+    },
+    {
+      "id": "e208",
+      "source": "ewAw-3mKhSQX-N4we26Zyg",
+      "target": "vATXxodFI2jKKDVrQ-ELOw",
+      "relation": "owns",
+      "edge_type": "contractual",
+      "confidence": "documented",
+      "hs_codes": [],
+      "first_seen": null,
+      "last_seen": null,
+      "shipment_count": null,
+      "evidence": "Sayari's ownership path shows a BTR New Material Group record (Singapore UEN T23UF7645F) as shareholder of Rian International Holding.",
+      "confidence_reason": "A registry shareholder link appears in Sayari's ownership path.",
+      "source_call_ids": [
+        "s206"
+      ],
+      "case_ids": [
+        "case-2"
+      ]
+    },
+    {
+      "id": "e209",
+      "source": "ewAw-3mKhSQX-N4we26Zyg",
+      "target": "jeHf5QJt0JXowTiCA8JiIQ",
+      "relation": "possibly_same_as",
+      "edge_type": "inferred",
+      "confidence": "inferred",
+      "hs_codes": [],
+      "first_seen": null,
+      "last_seen": null,
+      "shipment_count": null,
+      "evidence": "Same name; both records give a high-tech industrial park address in Xitian, Guangming District, Shenzhen.",
+      "confidence_reason": "Name plus address match, no shared identifier.",
+      "source_call_ids": [
+        "s205",
+        "s206"
+      ],
+      "case_ids": [
+        "case-2"
+      ]
+    },
+    {
+      "id": "e210",
+      "source": "Fky8oAxiQS_tuT-0pi3wQA",
+      "target": "El_6QFk0rVRdYJanrqEtAA",
+      "relation": "possibly_same_as",
+      "edge_type": "inferred",
+      "confidence": "inferred",
+      "hs_codes": [],
+      "first_seen": null,
+      "last_seen": null,
+      "shipment_count": null,
+      "evidence": "Same address (Lot 25, first core of the Tanger Tech free export zone, Aouama) and the same name stem; the trade record adds 'SASU'.",
+      "confidence_reason": "Address plus name match, no shared identifier.",
+      "source_call_ids": [
+        "s202",
+        "s210"
+      ],
+      "case_ids": [
+        "case-2"
+      ]
+    },
+    {
+      "id": "e211",
+      "source": "dilh_xCSnTZQ_dZDy_pZwQ",
+      "target": "El_6QFk0rVRdYJanrqEtAA",
+      "relation": "possibly_same_as",
+      "edge_type": "inferred",
+      "confidence": "lead",
+      "hs_codes": [],
+      "first_seen": null,
+      "last_seen": null,
+      "shipment_count": null,
+      "evidence": "Truncated name only; no country or address.",
+      "confidence_reason": "Name only.",
+      "source_call_ids": [
+        "s202",
+        "s210"
+      ],
+      "case_ids": [
+        "case-2"
+      ]
+    },
+    {
+      "id": "e212",
+      "source": "hmnBuu6vz31_-lqNazNviw",
+      "target": "Z57YvgOYL2TdoaWYgXFZ9Q",
+      "relation": "possibly_same_as",
+      "edge_type": "inferred",
+      "confidence": "lead",
+      "hs_codes": [],
+      "first_seen": null,
+      "last_seen": null,
+      "shipment_count": null,
+      "evidence": "Shortened name; address says only 'Tangier Tech Free Zone'.",
+      "confidence_reason": "Name plus a zone-level address, too weak for a merge.",
+      "source_call_ids": [
+        "s202",
+        "s210"
+      ],
+      "case_ids": [
+        "case-2"
+      ]
+    },
+    {
+      "id": "e213",
+      "source": "1CjF5vzVgFFxVomroaYyaA",
+      "target": "Z57YvgOYL2TdoaWYgXFZ9Q",
+      "relation": "possibly_same_as",
+      "edge_type": "inferred",
+      "confidence": "lead",
+      "hs_codes": [],
+      "first_seen": null,
+      "last_seen": null,
+      "shipment_count": null,
+      "evidence": "Exact name match; no address or identifier on the trade record.",
+      "confidence_reason": "Name only.",
+      "source_call_ids": [
+        "s202",
+        "s210"
+      ],
+      "case_ids": [
+        "case-2"
+      ]
+    },
+    {
+      "id": "e214",
+      "source": "9YkmymiyFPtNKUELqJc27g",
+      "target": "hmnBuu6vz31_-lqNazNviw",
+      "relation": "ships_to",
+      "edge_type": "transactional",
+      "confidence": "documented",
+      "hs_codes": [],
+      "first_seen": "2026-05-04",
+      "last_seen": "2026-05-10",
+      "shipment_count": 3,
+      "evidence": "Racks and pipelines, China to Morocco, departed May 2026 (arrived June).",
+      "confidence_reason": "Dated shipment rows.",
+      "source_call_ids": [
+        "s210"
+      ],
+      "case_ids": [
+        "case-2"
+      ]
+    },
+    {
+      "id": "e215",
+      "source": "pbv1TWixpVNb8MsE_zRHYQ",
+      "target": "Fky8oAxiQS_tuT-0pi3wQA",
+      "relation": "ships_to",
+      "edge_type": "transactional",
+      "confidence": "documented",
+      "hs_codes": [
+        "730590"
+      ],
+      "first_seen": "2026-03-19",
+      "last_seen": "2026-03-19",
+      "shipment_count": 4,
+      "evidence": "Steel tubes and pipes, China to Morocco.",
+      "confidence_reason": "Dated shipment rows.",
+      "source_call_ids": [
+        "s210"
+      ],
+      "case_ids": [
+        "case-2"
+      ]
+    },
+    {
+      "id": "e216",
+      "source": "30kEauryyUlKCcOmp2hJjQ",
+      "target": "dilh_xCSnTZQ_dZDy_pZwQ",
+      "relation": "ships_to",
+      "edge_type": "transactional",
+      "confidence": "documented",
+      "hs_codes": [
+        "99"
+      ],
+      "first_seen": "2026-02-18",
+      "last_seen": "2026-02-18",
+      "shipment_count": 1,
+      "evidence": "Unspecified goods, China to Morocco.",
+      "confidence_reason": "Dated shipment row.",
+      "source_call_ids": [
+        "s210"
+      ],
+      "case_ids": [
+        "case-2"
+      ]
+    },
+    {
+      "id": "e217",
+      "source": "xU9hzwrivrkHb9uqEII7Ew",
+      "target": "dilh_xCSnTZQ_dZDy_pZwQ",
+      "relation": "ships_to",
+      "edge_type": "transactional",
+      "confidence": "documented",
+      "hs_codes": [
+        "847910"
+      ],
+      "first_seen": "2026-01-04",
+      "last_seen": "2026-01-04",
+      "shipment_count": 1,
+      "evidence": "Construction machinery, China to Morocco.",
+      "confidence_reason": "Dated shipment row.",
+      "source_call_ids": [
+        "s210"
+      ],
+      "case_ids": [
+        "case-2"
+      ]
+    },
+    {
+      "id": "e218",
+      "source": "vgDVfKlcdVw1l_-WTSushw",
+      "target": "1CjF5vzVgFFxVomroaYyaA",
+      "relation": "ships_to",
+      "edge_type": "transactional",
+      "confidence": "documented",
+      "hs_codes": [
+        "640411"
+      ],
+      "first_seen": "2025-11-02",
+      "last_seen": "2025-11-02",
+      "shipment_count": 1,
+      "evidence": "One row coded as sports footwear from the construction contractor; the code may be wrong.",
+      "confidence_reason": "Dated shipment row, though its product code looks unreliable.",
+      "source_call_ids": [
+        "s210"
+      ],
+      "case_ids": [
+        "case-2"
+      ]
+    },
+    {
+      "id": "e219",
+      "source": "9lcqZ7Jk-n91ZNrYnbZKkQ",
+      "target": "XL7kqgRa7AB0VXF9aN4TvQ",
+      "relation": "ships_to",
+      "edge_type": "transactional",
+      "confidence": "documented",
+      "hs_codes": [
+        "380110",
+        "8545"
+      ],
+      "first_seen": "2025-10-31",
+      "last_seen": "2026-07-19",
+      "shipment_count": 7,
+      "evidence": "Graphite rods, blocks and tubes (SIGRAFINE grades, sizes in mm). Industrial graphite, not battery anode. Dates are arrival dates.",
+      "confidence_reason": "Dated shipment rows with clear product descriptions.",
+      "source_call_ids": [
+        "s212",
+        "s217"
+      ],
+      "case_ids": [
+        "case-2"
+      ]
+    },
+    {
+      "id": "e220",
+      "source": "iUZRg27ESc8EcIuPn3A41w",
+      "target": "ZhR1A0VWHf7oRyGfZOxKtg",
+      "relation": "ships_to",
+      "edge_type": "transactional",
+      "confidence": "documented",
+      "hs_codes": [
+        "380110"
+      ],
+      "first_seen": "2025-08-14",
+      "last_seen": "2026-05-15",
+      "shipment_count": 11,
+      "evidence": "'Artificial graphite bar', AGX grade, e.g. 600 x 2400 mm. Industrial graphite (electrode stock). Dates are arrival dates.",
+      "confidence_reason": "Dated shipment rows with clear product descriptions.",
+      "source_call_ids": [
+        "s212",
+        "s217"
+      ],
+      "case_ids": [
+        "case-2"
+      ]
+    },
+    {
+      "id": "e221",
+      "source": "iUZRg27ESc8EcIuPn3A41w",
+      "target": "kv_CDofj0IDnI7OZ56ogow",
+      "relation": "ships_to",
+      "edge_type": "transactional",
+      "confidence": "documented",
+      "hs_codes": [],
+      "first_seen": "2025-09-17",
+      "last_seen": "2025-09-17",
+      "shipment_count": 1,
+      "evidence": "Artificial graphite bar.",
+      "confidence_reason": "Dated shipment row.",
+      "source_call_ids": [
+        "s217"
+      ],
+      "case_ids": [
+        "case-2"
+      ]
+    },
+    {
+      "id": "e222",
+      "source": "zLuWa9w8u4PRGbs7ixL49g",
+      "target": "Q93ZzWJznSouEH2e8sePaQ",
+      "relation": "ships_to",
+      "edge_type": "transactional",
+      "confidence": "documented",
+      "hs_codes": [
+        "85"
+      ],
+      "first_seen": "2025-07-19",
+      "last_seen": "2025-07-19",
+      "shipment_count": 1,
+      "evidence": "Graphite electrode 24 x 96 inch with connecting pin, for steelmaking. Listed as arriving in the US; the buyer is Mexican.",
+      "confidence_reason": "Dated shipment row.",
+      "source_call_ids": [
+        "s217"
+      ],
+      "case_ids": [
+        "case-2"
+      ]
+    },
+    {
+      "id": "e223",
+      "source": "P_M9e-2M49LOSq5_rgBjHA",
+      "target": "eZ3aFZlfdkLKXB4E8snZLA",
+      "relation": "ships_to",
+      "edge_type": "transactional",
+      "confidence": "documented",
+      "hs_codes": [
+        "380110"
+      ],
+      "first_seen": "2025-07-05",
+      "last_seen": "2025-07-05",
+      "shipment_count": null,
+      "evidence": "Tagged HS 3801.10 but described as '960 bags of Haifa MKP 0-52-34', a fertilizer. The graphite code appears to be a data error.",
+      "confidence_reason": "The shipment row exists; its HS code does not match its description.",
+      "source_call_ids": [
+        "s211",
+        "s212"
+      ],
+      "case_ids": [
+        "case-2"
+      ]
+    },
+    {
+      "id": "e224",
+      "source": "P_M9e-2M49LOSq5_rgBjHA",
+      "target": "pgH9bMsoljU5T39W-tFfjw",
+      "relation": "ships_to",
+      "edge_type": "transactional",
+      "confidence": "documented",
+      "hs_codes": [
+        "380110"
+      ],
+      "first_seen": "2025-07-05",
+      "last_seen": "2025-07-05",
+      "shipment_count": null,
+      "evidence": "Tagged HS 3801.10 but described as Poly-Feed fertilizer.",
+      "confidence_reason": "The shipment row exists; its HS code does not match its description.",
+      "source_call_ids": [
+        "s211",
+        "s212"
+      ],
+      "case_ids": [
+        "case-2"
+      ]
+    },
+    {
+      "id": "e225",
+      "source": "ZFnylQOY6YlfxXz6_8ySGA",
+      "target": "6o_3QDj9uPQPX_tvVCBBpA",
+      "relation": "ships_to",
+      "edge_type": "transactional",
+      "confidence": "documented",
+      "hs_codes": [
+        "380110"
+      ],
+      "first_seen": "2025-07-05",
+      "last_seen": "2025-07-05",
+      "shipment_count": null,
+      "evidence": "Tagged HS 3801.10 but described as mancozeb pesticide in drums.",
+      "confidence_reason": "The shipment row exists; its HS code does not match its description.",
+      "source_call_ids": [
+        "s211",
+        "s212"
+      ],
+      "case_ids": [
+        "case-2"
+      ]
+    },
+    {
+      "id": "e226",
+      "source": "uCtlsbaFXTco2UkaXMhPNg",
+      "target": "oWaiMIhKLQJp4ywu8WsKSQ",
+      "relation": "ships_to",
+      "edge_type": "transactional",
+      "confidence": "documented",
+      "hs_codes": [
+        "285390"
+      ],
+      "first_seen": "2025-05-12",
+      "last_seen": "2025-05-12",
+      "shipment_count": 1,
+      "evidence": "Inorganic compounds, Morocco to China. The only Chinese-linked battery-material shipper out of Morocco in our results.",
+      "confidence_reason": "Dated shipment row.",
+      "source_call_ids": [
+        "s213"
+      ],
+      "case_ids": [
+        "case-2"
+      ]
+    },
+    {
+      "id": "e301",
+      "source": "-jDI6N9q1MWnPT0ujf-8iw",
+      "target": "xdHWWBfC-uTqowtR0Rzdtg",
+      "relation": "owns",
+      "edge_type": "contractual",
+      "confidence": "documented",
+      "hs_codes": [],
+      "first_seen": null,
+      "last_seen": null,
+      "shipment_count": null,
+      "evidence": "Sayari registry data shows Zhongke Electric holding 100% of the Zhongke Xingcheng holding company.",
+      "source_call_ids": [
+        "s304",
+        "s307"
+      ],
+      "case_ids": [
+        "case-3"
+      ],
+      "confidence_reason": "A registry shareholder record in Sayari, with a percentage."
+    },
+    {
+      "id": "e302",
+      "source": "xdHWWBfC-uTqowtR0Rzdtg",
+      "target": "7M3Jhg6trAddkVbwtzSdZA",
+      "relation": "owns",
+      "edge_type": "contractual",
+      "confidence": "documented",
+      "hs_codes": [],
+      "first_seen": null,
+      "last_seen": null,
+      "shipment_count": null,
+      "evidence": "Registry shows the holding company with 99.998% of Hunan Zhongke Star City Graphite. Zhongke Electric is listed as a former holder of the same share.",
+      "source_call_ids": [
+        "s316",
+        "s307"
+      ],
+      "case_ids": [
+        "case-3"
+      ],
+      "confidence_reason": "A registry shareholder record in Sayari, with a percentage."
+    },
+    {
+      "id": "e303",
+      "source": "-jDI6N9q1MWnPT0ujf-8iw",
+      "target": "Etd_ARUNj9lHbX9vIMUWbQ",
+      "relation": "owns",
+      "edge_type": "contractual",
+      "confidence": "documented",
+      "hs_codes": [],
+      "first_seen": null,
+      "last_seen": null,
+      "shipment_count": null,
+      "evidence": "Registry shareholder_of link from Zhongke Electric to its Guizhou anode subsidiary. We didn't pull the percentage.",
+      "source_call_ids": [
+        "s307"
+      ],
+      "case_ids": [
+        "case-3"
+      ],
+      "confidence_reason": "A registry shareholder record in Sayari."
+    },
+    {
+      "id": "e304",
+      "source": "7M3Jhg6trAddkVbwtzSdZA",
+      "target": "aWkEICLnf2fzW78geuH5Ag",
+      "relation": "owns",
+      "edge_type": "contractual",
+      "confidence": "corroborated",
+      "hs_codes": [],
+      "first_seen": null,
+      "last_seen": null,
+      "shipment_count": null,
+      "evidence": "Zhongke's June 2025 exchange filing says Hunan Zhongke Star City Graphite holds 100% of Zhongke Shinzoom (HK) Holdings. Securities Times and an Arab-China research site report the same structure. Sayari has the Hong Kong company (incorporated Nov 2024) but no shareholder for it, and no path to Zhongke Electric.",
+      "source_call_ids": [
+        "t302",
+        "s314",
+        "s324"
+      ],
+      "case_ids": [
+        "case-3"
+      ],
+      "confidence_reason": "The company's own filing plus independent press coverage agree, and Sayari confirms the Hong Kong company exists. No registry record states the shareholding."
+    },
+    {
+      "id": "e305",
+      "source": "aWkEICLnf2fzW78geuH5Ag",
+      "target": "case3-oman-sohar-project-co",
+      "relation": "owns",
+      "edge_type": "contractual",
+      "confidence": "corroborated",
+      "hs_codes": [],
+      "first_seen": null,
+      "last_seen": null,
+      "shipment_count": null,
+      "evidence": "The filing says the Hong Kong company set up the Oman project company to build the plant. Gulf News and the company's website say Zhongke Electric broke ground 'through its subsidiary Zhongke Xingcheng (Hong Kong)'. Neither company appears in Sayari's Oman data.",
+      "source_call_ids": [
+        "t301",
+        "t302",
+        "s301",
+        "s315"
+      ],
+      "case_ids": [
+        "case-3"
+      ],
+      "confidence_reason": "The company filing and separate Omani and Gulf press agree. No registry record in Sayari."
+    },
+    {
+      "id": "e306",
+      "source": "5Rb8mSrQ1oKnsToAIDba8w",
+      "target": "aWkEICLnf2fzW78geuH5Ag",
+      "relation": "possibly_same_as",
+      "edge_type": "inferred",
+      "confidence": "inferred",
+      "hs_codes": [],
+      "first_seen": null,
+      "last_seen": null,
+      "shipment_count": null,
+      "evidence": "Same name. The trade record's address (Room 1406A, Belgian Bank Building, 721-725 Nathan Road) matches the address Zhongke's filing gives for the Hong Kong holding company. Sayari doesn't link the two records.",
+      "source_call_ids": [
+        "s313",
+        "s314",
+        "t302"
+      ],
+      "case_ids": [
+        "case-3"
+      ],
+      "confidence_reason": "Name and street address match across a trade record and a filing. No shared identifier."
+    },
+    {
+      "id": "e307",
+      "source": "RpVysafWvaXbqy0N4a5qvw",
+      "target": "7M3Jhg6trAddkVbwtzSdZA",
+      "relation": "possibly_same_as",
+      "edge_type": "inferred",
+      "confidence": "inferred",
+      "hs_codes": [],
+      "first_seen": null,
+      "last_seen": null,
+      "shipment_count": null,
+      "evidence": "The 'Hunan Zhongke Shinzoom' trade record uses No. 118 Quanzhou North Road, Jinzhou New Area, Ningxiang. That is the registry address of Hunan Zhongke Star City Graphite. Its other address (Building 3, Yida Smart Technology Park, Quanshui Road) matches Zhongke Electric's registry address. 'Shinzoom' is the group's romanisation of 星城 (Xingcheng).",
+      "source_call_ids": [
+        "s308",
+        "s316",
+        "s304"
+      ],
+      "case_ids": [
+        "case-3"
+      ],
+      "confidence_reason": "Street addresses and name stem match. The trade record has no identifier to confirm it."
+    },
+    {
+      "id": "e310",
+      "source": "RpVysafWvaXbqy0N4a5qvw",
+      "target": "aoeSqNICt_VUP-o-F-84Yg",
+      "relation": "ships_to",
+      "edge_type": "transactional",
+      "confidence": "documented",
+      "hs_codes": [],
+      "first_seen": "2021-08-05",
+      "last_seen": "2022-05-26",
+      "shipment_count": 7,
+      "evidence": "Seven rows China→US described as artificial graphite or graphite (no HS code on the rows).",
+      "source_call_ids": [
+        "s317",
+        "s318"
+      ],
+      "case_ids": [
+        "case-3"
+      ],
+      "confidence_reason": "Dated shipment rows in Sayari."
+    },
+    {
+      "id": "e311",
+      "source": "RpVysafWvaXbqy0N4a5qvw",
+      "target": "4fqrWAcyrgtWw2RdV6qZsg",
+      "relation": "ships_to",
+      "edge_type": "transactional",
+      "confidence": "documented",
+      "hs_codes": [
+        "380110"
+      ],
+      "first_seen": "2025-03-02",
+      "last_seen": "2025-03-02",
+      "shipment_count": 1,
+      "evidence": "One row China→US, artificial graphite (HS 3801.10).",
+      "source_call_ids": [
+        "s317",
+        "s318"
+      ],
+      "case_ids": [
+        "case-3"
+      ],
+      "confidence_reason": "A dated, HS-coded shipment row in Sayari."
+    },
+    {
+      "id": "e312",
+      "source": "5Rb8mSrQ1oKnsToAIDba8w",
+      "target": "XtUNxc54aQijxNuFzwkjxg",
+      "relation": "ships_to",
+      "edge_type": "transactional",
+      "confidence": "documented",
+      "hs_codes": [],
+      "first_seen": "2025-10-15",
+      "last_seen": "2025-10-15",
+      "shipment_count": 1,
+      "evidence": "One row, artificial graphite, shipped from China to the US with the Hong Kong holding company as shipper.",
+      "source_call_ids": [
+        "s313",
+        "s317"
+      ],
+      "case_ids": [
+        "case-3"
+      ],
+      "confidence_reason": "A dated shipment row in Sayari."
+    },
+    {
+      "id": "e313",
+      "source": "RpVysafWvaXbqy0N4a5qvw",
+      "target": "_WCNtC_iMCzef8u8s0uKyQ",
+      "relation": "ships_to",
+      "edge_type": "transactional",
+      "confidence": "documented",
+      "hs_codes": [
+        "380190",
+        "380110"
+      ],
+      "first_seen": "2025-04-17",
+      "last_seen": "2026-04-07",
+      "shipment_count": 18,
+      "evidence": "18 rows of artificial graphite to Malaysia (HS 3801.90 for most, 3801.10 for some), some departing Hong Kong. One description carries a grade code (LD07-120-05).",
+      "source_call_ids": [
+        "s318"
+      ],
+      "case_ids": [
+        "case-3"
+      ],
+      "confidence_reason": "Dated, HS-coded shipment rows in Sayari."
+    },
+    {
+      "id": "e314",
+      "source": "RpVysafWvaXbqy0N4a5qvw",
+      "target": "ySemfyJJesFbfxEgW2SgCg",
+      "relation": "ships_to",
+      "edge_type": "transactional",
+      "confidence": "documented",
+      "hs_codes": [
+        "380110"
+      ],
+      "first_seen": "2025-09-10",
+      "last_seen": "2026-02-05",
+      "shipment_count": 14,
+      "evidence": "14 rows of artificial graphite (HS 3801.10) China→Malaysia.",
+      "source_call_ids": [
+        "s318"
+      ],
+      "case_ids": [
+        "case-3"
+      ],
+      "confidence_reason": "Dated, HS-coded shipment rows in Sayari."
+    },
+    {
+      "id": "e315",
+      "source": "RpVysafWvaXbqy0N4a5qvw",
+      "target": "t2HmaexxvTE5WgGtj3BMxg",
+      "relation": "ships_to",
+      "edge_type": "transactional",
+      "confidence": "documented",
+      "hs_codes": [
+        "380110"
+      ],
+      "first_seen": "2023-03-12",
+      "last_seen": "2023-03-12",
+      "shipment_count": 1,
+      "evidence": "One row of artificial graphite (HS 3801.10), arriving in Slovenia for SK On Hungary.",
+      "source_call_ids": [
+        "s318"
+      ],
+      "case_ids": [
+        "case-3"
+      ],
+      "confidence_reason": "A dated, HS-coded shipment row in Sayari."
+    },
+    {
+      "id": "e316",
+      "source": "RpVysafWvaXbqy0N4a5qvw",
+      "target": "q4uVT7bM-GusYLonMicJ_Q",
+      "relation": "ships_to",
+      "edge_type": "transactional",
+      "confidence": "documented",
+      "hs_codes": [
+        "8543"
+      ],
+      "first_seen": "2021-12-27",
+      "last_seen": "2022-01-12",
+      "shipment_count": 2,
+      "evidence": "Two rows China→Korea coded HS 8543. The goods are probably anode material, but the rows don't say so.",
+      "source_call_ids": [
+        "s318"
+      ],
+      "case_ids": [
+        "case-3"
+      ],
+      "confidence_reason": "Dated shipment rows in Sayari. The product is unclear."
+    },
+    {
+      "id": "e317",
+      "source": "RpVysafWvaXbqy0N4a5qvw",
+      "target": "-3h_vhYQa9eIl2-txBW36Q",
+      "relation": "ships_to",
+      "edge_type": "transactional",
+      "confidence": "documented",
+      "hs_codes": [
+        "6815",
+        "8543",
+        "4203"
+      ],
+      "first_seen": "2022-04-16",
+      "last_seen": "2023-04-29",
+      "shipment_count": 18,
+      "evidence": "18 rows to a Korean forwarder under HS 6815, 8543 and 4203. One row describes artificial graphite; the leather-goods code is likely a coding error.",
+      "source_call_ids": [
+        "s318"
+      ],
+      "case_ids": [
+        "case-3"
+      ],
+      "confidence_reason": "Dated shipment rows, but the consignee is a forwarder and the HS codes are inconsistent."
+    },
+    {
+      "id": "e318",
+      "source": "ySemfyJJesFbfxEgW2SgCg",
+      "target": "BuQm2NSnUlkUMb83_BJxog",
+      "relation": "ships_to",
+      "edge_type": "transactional",
+      "confidence": "documented",
+      "hs_codes": [
+        "850760"
+      ],
+      "first_seen": "2026-08-21",
+      "last_seen": "2026-09-13",
+      "shipment_count": 5,
+      "evidence": "Five rows of rechargeable lithium-ion battery systems (HS 8507.60) Malaysia→US.",
+      "source_call_ids": [
+        "s321"
+      ],
+      "case_ids": [
+        "case-3"
+      ],
+      "confidence_reason": "Dated, HS-coded shipment rows in Sayari."
+    },
+    {
+      "id": "e319",
+      "source": "_WCNtC_iMCzef8u8s0uKyQ",
+      "target": "gRBpjYP97b53gA7TkExdpQ",
+      "relation": "ships_to",
+      "edge_type": "transactional",
+      "confidence": "documented",
+      "hs_codes": [
+        "850760",
+        "850650"
+      ],
+      "first_seen": "2026-01-28",
+      "last_seen": "2026-06-19",
+      "shipment_count": 7,
+      "evidence": "Seven rows of lithium-ion cells (INR21700) to the US. One left from Malaysia; six left from Indonesia.",
+      "source_call_ids": [
+        "s322"
+      ],
+      "case_ids": [
+        "case-3"
+      ],
+      "confidence_reason": "Dated, HS-coded shipment rows in Sayari."
+    },
+    {
+      "id": "e320",
+      "source": "_WCNtC_iMCzef8u8s0uKyQ",
+      "target": "33X8P9vU58v1EcigvWeD-Q",
+      "relation": "ships_to",
+      "edge_type": "transactional",
+      "confidence": "documented",
+      "hs_codes": [],
+      "first_seen": "2026-07-01",
+      "last_seen": "2026-09-22",
+      "shipment_count": 3,
+      "evidence": "Three rows of INR21700 lithium-ion cells to the US. Of the two dated departures, one was Singapore and one China.",
+      "source_call_ids": [
+        "s322"
+      ],
+      "case_ids": [
+        "case-3"
+      ],
+      "confidence_reason": "Dated shipment rows in Sayari."
+    },
+    {
+      "id": "e401",
+      "source": "xhmHh99vEgdFz19iRON8yA",
+      "target": "Fj3vtxDroFyjyPsLgsnm2A",
+      "relation": "owns",
+      "edge_type": "contractual",
+      "confidence": "documented",
+      "hs_codes": [],
+      "first_seen": null,
+      "last_seen": null,
+      "shipment_count": null,
+      "evidence": "Shareholder of record with 58.2%, from Korea's DART disclosures.",
+      "source_call_ids": [
+        "s402",
+        "s403",
+        "s420"
+      ],
+      "case_ids": [
+        "case-4"
+      ],
+      "confidence_reason": "Registry shareholder record with a percentage."
+    },
+    {
+      "id": "e402",
+      "source": "dhu2OleybGzMUQwDgEBymg",
+      "target": "Fj3vtxDroFyjyPsLgsnm2A",
+      "relation": "owns",
+      "edge_type": "contractual",
+      "confidence": "documented",
+      "hs_codes": [],
+      "first_seen": null,
+      "last_seen": null,
+      "shipment_count": null,
+      "evidence": "Listed shareholder in DART-sourced data; no percentage returned.",
+      "source_call_ids": [
+        "s403"
+      ],
+      "case_ids": [
+        "case-4"
+      ],
+      "confidence_reason": "Registry shareholder record, though without a stake size."
+    },
+    {
+      "id": "e403",
+      "source": "H3F05G33f9ITSmHNhahweg",
+      "target": "xhmHh99vEgdFz19iRON8yA",
+      "relation": "possibly_same_as",
+      "edge_type": "inferred",
+      "confidence": "lead",
+      "hs_codes": [],
+      "first_seen": null,
+      "last_seen": null,
+      "shipment_count": null,
+      "evidence": "English and Korean names of the same holding company; both listed as shareholders. No shared identifier returned.",
+      "source_call_ids": [
+        "s403"
+      ],
+      "case_ids": [
+        "case-4"
+      ],
+      "confidence_reason": "Name translation only."
+    },
+    {
+      "id": "e404",
+      "source": "lGXvcBkItOrZkkvnvjxu9g",
+      "target": "Fj3vtxDroFyjyPsLgsnm2A",
+      "relation": "possibly_same_as",
+      "edge_type": "inferred",
+      "confidence": "inferred",
+      "hs_codes": [],
+      "first_seen": null,
+      "last_seen": null,
+      "shipment_count": null,
+      "evidence": "Same two street addresses (110 Sinhang-ro, Pohang; 45 Yulchonsandan 8-ro, Gwangyang) and same name.",
+      "source_call_ids": [
+        "s401"
+      ],
+      "case_ids": [
+        "case-4"
+      ],
+      "confidence_reason": "Shared street addresses plus name; no shared identifier."
+    },
+    {
+      "id": "e405",
+      "source": "YSRMGUz3xWtyXZWZlMTCBg",
+      "target": "Fj3vtxDroFyjyPsLgsnm2A",
+      "relation": "possibly_same_as",
+      "edge_type": "inferred",
+      "confidence": "inferred",
+      "hs_codes": [],
+      "first_seen": null,
+      "last_seen": null,
+      "shipment_count": null,
+      "evidence": "Name field includes the 110 Sinhang-ro Pohang address of the main record.",
+      "source_call_ids": [
+        "s401"
+      ],
+      "case_ids": [
+        "case-4"
+      ],
+      "confidence_reason": "Shared street address plus name; no shared identifier."
+    },
+    {
+      "id": "e406",
+      "source": "M6ta2xQZjgwEaQFF7t6dZA",
+      "target": "Fj3vtxDroFyjyPsLgsnm2A",
+      "relation": "possibly_same_as",
+      "edge_type": "inferred",
+      "confidence": "inferred",
+      "hs_codes": [],
+      "first_seen": null,
+      "last_seen": null,
+      "shipment_count": null,
+      "evidence": "Former name (POSCO Chemical) with a truncated '110 Sinh…' address; buys the same product from the same corridor.",
+      "source_call_ids": [
+        "s419"
+      ],
+      "case_ids": [
+        "case-4"
+      ],
+      "confidence_reason": "Partial address, former name and same product; no identifier."
+    },
+    {
+      "id": "e407",
+      "source": "UCbyt8Y_8GmNUrzHG5riPw",
+      "target": "Fj3vtxDroFyjyPsLgsnm2A",
+      "relation": "possibly_same_as",
+      "edge_type": "inferred",
+      "confidence": "lead",
+      "hs_codes": [],
+      "first_seen": null,
+      "last_seen": null,
+      "shipment_count": null,
+      "evidence": "Former name only, no address; buys spherical graphite from China.",
+      "source_call_ids": [
+        "s419"
+      ],
+      "case_ids": [
+        "case-4"
+      ],
+      "confidence_reason": "Name only."
+    },
+    {
+      "id": "e408",
+      "source": "AyicfnT87hRIGEH7FmYfvA",
+      "target": "2ZpM8WWpqajK6jBIXAbTYQ",
+      "relation": "possibly_same_as",
+      "edge_type": "inferred",
+      "confidence": "lead",
+      "hs_codes": [],
+      "first_seen": null,
+      "last_seen": null,
+      "shipment_count": null,
+      "evidence": "Same name stem; the second record has no address. Both ship HS 2504 to POSCO Future M in the same months.",
+      "source_call_ids": [
+        "s404"
+      ],
+      "case_ids": [
+        "case-4"
+      ],
+      "confidence_reason": "Name and matching trade timing; no address or identifier."
+    },
+    {
+      "id": "e409",
+      "source": "mdDF1uxfPSghv7Q25eoc2g",
+      "target": "Fj3vtxDroFyjyPsLgsnm2A",
+      "relation": "possibly_same_as",
+      "edge_type": "inferred",
+      "confidence": "inferred",
+      "hs_codes": [],
+      "first_seen": null,
+      "last_seen": null,
+      "shipment_count": null,
+      "evidence": "Name includes POSCO Future M; address is in Sejong, where the main record also has an address; buys the same product from the same corridor.",
+      "source_call_ids": [
+        "s401",
+        "s419"
+      ],
+      "case_ids": [
+        "case-4"
+      ],
+      "confidence_reason": "Name, same city and same trade pattern; no identifier."
+    },
+    {
+      "id": "e423",
+      "source": "Fj3vtxDroFyjyPsLgsnm2A",
+      "target": "y4MWluNMSgkSaHoCAptQfA",
+      "relation": "owns",
+      "edge_type": "contractual",
+      "confidence": "documented",
+      "hs_codes": [],
+      "first_seen": null,
+      "last_seen": null,
+      "shipment_count": null,
+      "evidence": "POSCO Future M is listed as shareholder of the Canadian subsidiary.",
+      "source_call_ids": [
+        "s402"
+      ],
+      "case_ids": [
+        "case-4"
+      ],
+      "confidence_reason": "Registry shareholder record (Quebec enterprise register)."
+    },
+    {
+      "id": "e410",
+      "source": "2ZpM8WWpqajK6jBIXAbTYQ",
+      "target": "Fj3vtxDroFyjyPsLgsnm2A",
+      "relation": "ships_to",
+      "edge_type": "transactional",
+      "confidence": "documented",
+      "hs_codes": [
+        "2504",
+        "2803"
+      ],
+      "first_seen": "2022-12-04",
+      "last_seen": "2023-12-03",
+      "shipment_count": null,
+      "evidence": "Natural graphite (HS 2504), Jul–Dec 2023; carbon (HS 2803), Dec 2022 – May 2023. China → Korea.",
+      "source_call_ids": [
+        "s404",
+        "s407"
+      ],
+      "case_ids": [
+        "case-4"
+      ],
+      "confidence_reason": "Dated, HS-coded trade components naming both parties."
+    },
+    {
+      "id": "e411",
+      "source": "AyicfnT87hRIGEH7FmYfvA",
+      "target": "Fj3vtxDroFyjyPsLgsnm2A",
+      "relation": "ships_to",
+      "edge_type": "transactional",
+      "confidence": "documented",
+      "hs_codes": [
+        "2504"
+      ],
+      "first_seen": "2023-07-11",
+      "last_seen": "2023-12-08",
+      "shipment_count": null,
+      "evidence": "Natural graphite (HS 2504), China → Korea.",
+      "source_call_ids": [
+        "s404"
+      ],
+      "case_ids": [
+        "case-4"
+      ],
+      "confidence_reason": "Dated, HS-coded trade components naming both parties."
+    },
+    {
+      "id": "e412",
+      "source": "YeY_0foWAdFxn5HCX58QGQ",
+      "target": "Fj3vtxDroFyjyPsLgsnm2A",
+      "relation": "ships_to",
+      "edge_type": "transactional",
+      "confidence": "documented",
+      "hs_codes": [
+        "2504",
+        "2803"
+      ],
+      "first_seen": "2023-05-02",
+      "last_seen": "2023-09-12",
+      "shipment_count": null,
+      "evidence": "Natural graphite (HS 2504) Jun–Sep 2023; carbon (HS 2803) May 2023.",
+      "source_call_ids": [
+        "s404"
+      ],
+      "case_ids": [
+        "case-4"
+      ],
+      "confidence_reason": "Dated, HS-coded trade components naming both parties."
+    },
+    {
+      "id": "e413",
+      "source": "mNl1NLitXD_XdCQLg1DGlA",
+      "target": "Fj3vtxDroFyjyPsLgsnm2A",
+      "relation": "ships_to",
+      "edge_type": "transactional",
+      "confidence": "documented",
+      "hs_codes": [
+        "2504",
+        "2803"
+      ],
+      "first_seen": "2023-05-02",
+      "last_seen": "2023-08-29",
+      "shipment_count": null,
+      "evidence": "Natural graphite (HS 2504) Aug 2023; carbon (HS 2803) May 2023.",
+      "source_call_ids": [
+        "s404"
+      ],
+      "case_ids": [
+        "case-4"
+      ],
+      "confidence_reason": "Dated, HS-coded trade components naming both parties."
+    },
+    {
+      "id": "e414",
+      "source": "goOR9J6dEj2sQuo-snuJ6A",
+      "target": "Fj3vtxDroFyjyPsLgsnm2A",
+      "relation": "ships_to",
+      "edge_type": "transactional",
+      "confidence": "documented",
+      "hs_codes": [
+        "3801",
+        "2504",
+        "2803"
+      ],
+      "first_seen": "2023-05-09",
+      "last_seen": "2023-09-24",
+      "shipment_count": null,
+      "evidence": "Artificial graphite (HS 3801) Sep 2023; natural graphite (HS 2504) Jul–Sep 2023; carbon (HS 2803) May 2023.",
+      "source_call_ids": [
+        "s404",
+        "s407"
+      ],
+      "case_ids": [
+        "case-4"
+      ],
+      "confidence_reason": "Dated, HS-coded trade components naming both parties."
+    },
+    {
+      "id": "e415",
+      "source": "on87w5_QYqQaQl1FQXC7cw",
+      "target": "Fj3vtxDroFyjyPsLgsnm2A",
+      "relation": "ships_to",
+      "edge_type": "transactional",
+      "confidence": "documented",
+      "hs_codes": [
+        "3801",
+        "2803"
+      ],
+      "first_seen": "2021-10-22",
+      "last_seen": "2022-07-03",
+      "shipment_count": null,
+      "evidence": "Artificial graphite (HS 3801) and carbon (HS 2803), Oct 2021 – Jul 2022.",
+      "source_call_ids": [
+        "s404",
+        "s407"
+      ],
+      "case_ids": [
+        "case-4"
+      ],
+      "confidence_reason": "Dated, HS-coded trade components naming both parties."
+    },
+    {
+      "id": "e416",
+      "source": "ffPlxyHu42G892jPO7tpbA",
+      "target": "Fj3vtxDroFyjyPsLgsnm2A",
+      "relation": "ships_to",
+      "edge_type": "transactional",
+      "confidence": "documented",
+      "hs_codes": [
+        "2504"
+      ],
+      "first_seen": "2022-06-04",
+      "last_seen": "2022-06-04",
+      "shipment_count": null,
+      "evidence": "Natural graphite (HS 2504), Mozambique → Korea, one date.",
+      "source_call_ids": [
+        "s404"
+      ],
+      "case_ids": [
+        "case-4"
+      ],
+      "confidence_reason": "Dated, HS-coded trade component naming both parties."
+    },
+    {
+      "id": "e417",
+      "source": "ljXszsmI8EtP_3Q4fuC6ZA",
+      "target": "Fj3vtxDroFyjyPsLgsnm2A",
+      "relation": "ships_to",
+      "edge_type": "transactional",
+      "confidence": "documented",
+      "hs_codes": [
+        "2708",
+        "2706"
+      ],
+      "first_seen": "2021-11-03",
+      "last_seen": "2024-01-24",
+      "shipment_count": null,
+      "evidence": "Coal-tar oils and pitch (HS 2708, 2706), Belgium/Netherlands → Korea.",
+      "source_call_ids": [
+        "s404",
+        "s413"
+      ],
+      "case_ids": [
+        "case-4"
+      ],
+      "confidence_reason": "Dated, HS-coded trade components naming both parties."
+    },
+    {
+      "id": "e418",
+      "source": "Bkp4ORhM634Fg0vFJk_YaA",
+      "target": "Fj3vtxDroFyjyPsLgsnm2A",
+      "relation": "ships_to",
+      "edge_type": "transactional",
+      "confidence": "documented",
+      "hs_codes": [
+        "2713"
+      ],
+      "first_seen": "2022-07-26",
+      "last_seen": "2022-07-26",
+      "shipment_count": null,
+      "evidence": "Petroleum coke (HS 2713), China → Korea, one date.",
+      "source_call_ids": [
+        "s404"
+      ],
+      "case_ids": [
+        "case-4"
+      ],
+      "confidence_reason": "Dated, HS-coded trade component naming both parties."
+    },
+    {
+      "id": "e419",
+      "source": "v1QB9w2AdIcXcohuVJZHyw",
+      "target": "Fj3vtxDroFyjyPsLgsnm2A",
+      "relation": "ships_to",
+      "edge_type": "transactional",
+      "confidence": "lead",
+      "hs_codes": [],
+      "first_seen": null,
+      "last_seen": null,
+      "shipment_count": null,
+      "evidence": "Sayari lists this company as a supplier (receives_from link). Products and dates not pulled.",
+      "source_call_ids": [
+        "s407"
+      ],
+      "case_ids": [
+        "case-4"
+      ],
+      "confidence_reason": "A single graph link with no rows checked."
+    },
+    {
+      "id": "e420",
+      "source": "GglryO0mCnl2PA1AOlB2JA",
+      "target": "Fj3vtxDroFyjyPsLgsnm2A",
+      "relation": "ships_to",
+      "edge_type": "transactional",
+      "confidence": "lead",
+      "hs_codes": [],
+      "first_seen": null,
+      "last_seen": null,
+      "shipment_count": null,
+      "evidence": "Sayari lists this company as a supplier (receives_from link). Products and dates not pulled.",
+      "source_call_ids": [
+        "s407"
+      ],
+      "case_ids": [
+        "case-4"
+      ],
+      "confidence_reason": "A single graph link with no rows checked."
+    },
+    {
+      "id": "e421",
+      "source": "-E5VEQtbiDlJDhmMR7GywQ",
+      "target": "Fj3vtxDroFyjyPsLgsnm2A",
+      "relation": "ships_to",
+      "edge_type": "transactional",
+      "confidence": "lead",
+      "hs_codes": [],
+      "first_seen": null,
+      "last_seen": null,
+      "shipment_count": null,
+      "evidence": "Sayari lists this company as a supplier (receives_from link). Products and dates not pulled.",
+      "source_call_ids": [
+        "s407"
+      ],
+      "case_ids": [
+        "case-4"
+      ],
+      "confidence_reason": "A single graph link with no rows checked."
+    },
+    {
+      "id": "e430",
+      "source": "Fj3vtxDroFyjyPsLgsnm2A",
+      "target": "4fqrWAcyrgtWw2RdV6qZsg",
+      "relation": "ships_to",
+      "edge_type": "transactional",
+      "confidence": "documented",
+      "hs_codes": [
+        "380110",
+        "380190"
+      ],
+      "first_seen": "2023-01-02",
+      "last_seen": "2024-06-28",
+      "shipment_count": 36,
+      "evidence": "'Anode material graphite PAS-C3B', 36 rows, departures 2 Jan 2023 – 28 Jun 2024.",
+      "source_call_ids": [
+        "s411",
+        "s412"
+      ],
+      "case_ids": [
+        "case-4"
+      ],
+      "confidence_reason": "Dated shipment rows (HS 3801.10/3801.90) naming both parties."
+    },
+    {
+      "id": "e431",
+      "source": "Fj3vtxDroFyjyPsLgsnm2A",
+      "target": "WLUn_1F-Zz5cShfohEF7BA",
+      "relation": "ships_to",
+      "edge_type": "transactional",
+      "confidence": "documented",
+      "hs_codes": [
+        "380110"
+      ],
+      "first_seen": "2021-12-06",
+      "last_seen": "2021-12-06",
+      "shipment_count": 1,
+      "evidence": "'Anode active material', 1 row, arrival 6 Dec 2021.",
+      "source_call_ids": [
+        "s408"
+      ],
+      "case_ids": [
+        "case-4"
+      ],
+      "confidence_reason": "Dated shipment row (HS 3801.10) naming both parties."
+    },
+    {
+      "id": "e432",
+      "source": "WLUn_1F-Zz5cShfohEF7BA",
+      "target": "4fqrWAcyrgtWw2RdV6qZsg",
+      "relation": "possibly_same_as",
+      "edge_type": "inferred",
+      "confidence": "lead",
+      "hs_codes": [],
+      "first_seen": null,
+      "last_seen": null,
+      "shipment_count": null,
+      "evidence": "Two General Motors records in US import data.",
+      "source_call_ids": [
+        "s408",
+        "s411"
+      ],
+      "case_ids": [
+        "case-4"
+      ],
+      "confidence_reason": "Name only."
+    },
+    {
+      "id": "e433",
+      "source": "Fj3vtxDroFyjyPsLgsnm2A",
+      "target": "aoeSqNICt_VUP-o-F-84Yg",
+      "relation": "ships_to",
+      "edge_type": "transactional",
+      "confidence": "documented",
+      "hs_codes": [
+        "380190"
+      ],
+      "first_seen": "2024-05-27",
+      "last_seen": "2025-06-19",
+      "shipment_count": 32,
+      "evidence": "'Graphite PAS-CP3K', 32 rows, departures 27 May 2024 – 19 Jun 2025.",
+      "source_call_ids": [
+        "s408",
+        "s411"
+      ],
+      "case_ids": [
+        "case-4"
+      ],
+      "confidence_reason": "Dated shipment rows (HS 3801.90) naming both parties."
+    },
+    {
+      "id": "e434",
+      "source": "Fj3vtxDroFyjyPsLgsnm2A",
+      "target": "xWhz7CFJV3lxsgg8fHMGHA",
+      "relation": "ships_to",
+      "edge_type": "transactional",
+      "confidence": "documented",
+      "hs_codes": [
+        "380110",
+        "380190"
+      ],
+      "first_seen": "2023-08-16",
+      "last_seen": "2026-02-21",
+      "shipment_count": 13,
+      "evidence": "Artificial graphite 'anode active material', 12 rows Jan–Feb 2026; plus 1 row (HS 3801.90) in Aug 2023 shared with Panasonic Procurement.",
+      "source_call_ids": [
+        "s402",
+        "s408"
+      ],
+      "case_ids": [
+        "case-4"
+      ],
+      "confidence_reason": "Dated shipment rows (HS 3801.10/3801.90) naming both parties; also a ships_to link in the profile."
+    },
+    {
+      "id": "e435",
+      "source": "Fj3vtxDroFyjyPsLgsnm2A",
+      "target": "wxnxnhKanOt7EorBjIZsxQ",
+      "relation": "ships_to",
+      "edge_type": "transactional",
+      "confidence": "documented",
+      "hs_codes": [
+        "380190",
+        "380110"
+      ],
+      "first_seen": "2026-05-06",
+      "last_seen": "2026-07-28",
+      "shipment_count": 9,
+      "evidence": "'Anode active material' / artificial graphite, 9 rows, departures 6 May – 28 Jul 2026.",
+      "source_call_ids": [
+        "s408"
+      ],
+      "case_ids": [
+        "case-4"
+      ],
+      "confidence_reason": "Dated shipment rows (HS 3801.90/3801.10) naming both parties."
+    },
+    {
+      "id": "e436",
+      "source": "Fj3vtxDroFyjyPsLgsnm2A",
+      "target": "BZPBOZcD6M_QtBtOWWtYUg",
+      "relation": "ships_to",
+      "edge_type": "transactional",
+      "confidence": "documented",
+      "hs_codes": [
+        "380190"
+      ],
+      "first_seen": "2023-08-16",
+      "last_seen": "2023-08-16",
+      "shipment_count": 1,
+      "evidence": "'Anode active material', 1 row, Aug 2023, co-named with Tesla.",
+      "source_call_ids": [
+        "s408"
+      ],
+      "case_ids": [
+        "case-4"
+      ],
+      "confidence_reason": "Dated shipment row naming both parties."
+    },
+    {
+      "id": "e437",
+      "source": "Fj3vtxDroFyjyPsLgsnm2A",
+      "target": "qAjZISyxppsZ-LjTrCmJTw",
+      "relation": "ships_to",
+      "edge_type": "transactional",
+      "confidence": "documented",
+      "hs_codes": [
+        "380110"
+      ],
+      "first_seen": "2023-02-27",
+      "last_seen": "2024-05-29",
+      "shipment_count": 3,
+      "evidence": "Artificial graphite / 'active anode material PAS-A1', 3 rows.",
+      "source_call_ids": [
+        "s411",
+        "s412"
+      ],
+      "case_ids": [
+        "case-4"
+      ],
+      "confidence_reason": "Dated shipment rows (HS 3801.10) naming both parties."
+    },
+    {
+      "id": "e438",
+      "source": "Fj3vtxDroFyjyPsLgsnm2A",
+      "target": "1nxhfvO5sMgXkfCrTho9Vw",
+      "relation": "ships_to",
+      "edge_type": "transactional",
+      "confidence": "documented",
+      "hs_codes": [
+        "380110"
+      ],
+      "first_seen": "2023-03-24",
+      "last_seen": "2023-03-24",
+      "shipment_count": 1,
+      "evidence": "Artificial graphite, 1 row.",
+      "source_call_ids": [
+        "s412"
+      ],
+      "case_ids": [
+        "case-4"
+      ],
+      "confidence_reason": "Dated shipment row (HS 3801.10) naming both parties."
+    },
+    {
+      "id": "e439",
+      "source": "Fj3vtxDroFyjyPsLgsnm2A",
+      "target": "ZhR1A0VWHf7oRyGfZOxKtg",
+      "relation": "ships_to",
+      "edge_type": "transactional",
+      "confidence": "documented",
+      "hs_codes": [
+        "380190"
+      ],
+      "first_seen": "2023-07-04",
+      "last_seen": "2023-07-04",
+      "shipment_count": 1,
+      "evidence": "HS 3801.90 with no product text, 1 row. Electrode maker: likely industrial use.",
+      "source_call_ids": [
+        "s412"
+      ],
+      "case_ids": [
+        "case-4"
+      ],
+      "confidence_reason": "Dated shipment row naming both parties."
+    },
+    {
+      "id": "e440",
+      "source": "Fj3vtxDroFyjyPsLgsnm2A",
+      "target": "5qJ3A4FHw2rTjNrnGOrHQQ",
+      "relation": "ships_to",
+      "edge_type": "transactional",
+      "confidence": "documented",
+      "hs_codes": [
+        "380110",
+        "6307"
+      ],
+      "first_seen": "2023-04-16",
+      "last_seen": "2023-11-11",
+      "shipment_count": 8,
+      "evidence": "8 rows to a freight forwarder, some 'active anode material' (one coded HS 3801.10, others miscoded as textiles). End customer not named.",
+      "source_call_ids": [
+        "s408"
+      ],
+      "case_ids": [
+        "case-4"
+      ],
+      "confidence_reason": "Dated shipment rows naming both parties; the consignee is a forwarder."
+    },
+    {
+      "id": "e441",
+      "source": "Fj3vtxDroFyjyPsLgsnm2A",
+      "target": "FWd2q_iBgH2ER9aw1Gph_g",
+      "relation": "ships_to",
+      "edge_type": "transactional",
+      "confidence": "documented",
+      "hs_codes": [
+        "370120"
+      ],
+      "first_seen": "2023-08-16",
+      "last_seen": "2023-08-16",
+      "shipment_count": 1,
+      "evidence": "1 'anode material' row (miscoded HS 3701.20) to a freight forwarder.",
+      "source_call_ids": [
+        "s408"
+      ],
+      "case_ids": [
+        "case-4"
+      ],
+      "confidence_reason": "Dated shipment row naming both parties; the consignee is a forwarder."
+    },
+    {
+      "id": "e442",
+      "source": "Fj3vtxDroFyjyPsLgsnm2A",
+      "target": "rvgklT24qqqfH2rnlVlyBg",
+      "relation": "ships_to",
+      "edge_type": "contractual",
+      "confidence": "corroborated",
+      "hs_codes": [],
+      "first_seen": null,
+      "last_seen": null,
+      "shipment_count": null,
+      "evidence": "POSCO Future M announced a binding six-year, KRW 939.3 bn deal to supply Pohang artificial-graphite anode to Ultium Cells (repeated by Businesskorea). Sayari rows name GM, Ultium's co-owner, as consignee for anode material in the same period.",
+      "source_call_ids": [
+        "t402",
+        "s411",
+        "s412"
+      ],
+      "case_ids": [
+        "case-4"
+      ],
+      "confidence_reason": "The company's own release and Sayari's GM shipments point the same way, but no Sayari row names Ultium Cells."
+    },
+    {
+      "id": "e443",
+      "source": "QTGe48MKdBHh2Dkbxh_ifw",
+      "target": "rimS2-LaCZMi2HMJqtwW5w",
+      "relation": "ships_to",
+      "edge_type": "transactional",
+      "confidence": "documented",
+      "hs_codes": [
+        "380110",
+        "271312"
+      ],
+      "first_seen": "2026-05-16",
+      "last_seen": "2026-05-16",
+      "shipment_count": 10,
+      "evidence": "Recarburizer (HS 3801.10), 9 rows, and graphite petroleum coke (HS 2713.12), 1 row; Xingang → Busan for POSCO (Beijing) Trading. Steelmaking input, not anode.",
+      "source_call_ids": [
+        "s415",
+        "s416"
+      ],
+      "case_ids": [
+        "case-4"
+      ],
+      "confidence_reason": "Dated shipment rows naming both parties."
+    },
+    {
+      "id": "e501",
+      "source": "04tgJV8tHRLxXnFybfSbOg",
+      "target": "WG1hrSwGRdoLMIt997Z5-w",
+      "relation": "owns",
+      "edge_type": "contractual",
+      "confidence": "documented",
+      "hs_codes": [],
+      "first_seen": null,
+      "last_seen": null,
+      "shipment_count": null,
+      "evidence": "100% shareholder per Malaysia SSM shareholder data (3rd-party source in Sayari).",
+      "source_call_ids": [
+        "s526",
+        "s527"
+      ],
+      "confidence_reason": "Sayari's Malaysian shareholder data lists Putailai (Singapore) as holding 100% of Zichen Malaysia.",
+      "case_ids": [
+        "case-5"
+      ]
+    },
+    {
+      "id": "e502",
+      "source": "5rQqO0uMqEvtMvK_oQGcYA",
+      "target": "04tgJV8tHRLxXnFybfSbOg",
+      "relation": "owns",
+      "edge_type": "contractual",
+      "confidence": "corroborated",
+      "hs_codes": [],
+      "first_seen": null,
+      "last_seen": null,
+      "shipment_count": null,
+      "evidence": "Shareholder link in Sayari's beneficial-owner path; stake percentage not shown.",
+      "source_call_ids": [
+        "s527",
+        "t502"
+      ],
+      "confidence_reason": "Sayari's ownership graph shows the group as shareholder of the Singapore company, and Putailai's announcement (via press) calls Zichen Malaysia a wholly owned overseas subsidiary.",
+      "case_ids": [
+        "case-5"
+      ]
+    },
+    {
+      "id": "e503",
+      "source": "5rQqO0uMqEvtMvK_oQGcYA",
+      "target": "WG1hrSwGRdoLMIt997Z5-w",
+      "relation": "owns",
+      "edge_type": "contractual",
+      "confidence": "corroborated",
+      "hs_codes": [],
+      "first_seen": null,
+      "last_seen": null,
+      "shipment_count": null,
+      "evidence": "Indirect, through Putailai (Singapore). Press: 'wholly-owned overseas subsidiary, Zichen Malaysia Sdn. Bhd.'",
+      "source_call_ids": [
+        "s527",
+        "t501",
+        "t502"
+      ],
+      "confidence_reason": "Indirect ownership: the registry chain (e501 + e502) and Putailai's own March 2026 announcement agree.",
+      "case_ids": [
+        "case-5"
+      ]
+    },
+    {
+      "id": "e504",
+      "source": "Q_Z4Q6TSyW_gNl0L5pPyeQ",
+      "target": "04tgJV8tHRLxXnFybfSbOg",
+      "relation": "possibly_same_as",
+      "edge_type": "inferred",
+      "confidence": "inferred",
+      "hs_codes": [],
+      "first_seen": null,
+      "last_seen": null,
+      "shipment_count": null,
+      "evidence": "Duplicate record of the Singapore holding company, listed as a former 100% shareholder.",
+      "source_call_ids": [
+        "s526",
+        "s527"
+      ],
+      "confidence_reason": "Same name and the same 100% stake in the same company; one record is mistyped as a person. No shared identifier.",
+      "case_ids": [
+        "case-5"
+      ]
+    },
+    {
+      "id": "e505",
+      "source": "Zb9HwzswdGPKn62ayKTnIQ",
+      "target": "5rQqO0uMqEvtMvK_oQGcYA",
+      "relation": "possibly_same_as",
+      "edge_type": "inferred",
+      "confidence": "lead",
+      "hs_codes": [],
+      "first_seen": null,
+      "last_seen": null,
+      "shipment_count": null,
+      "evidence": "English-name securities record vs. Chinese registry record.",
+      "source_call_ids": [
+        "s525"
+      ],
+      "confidence_reason": "Name match only; the securities-data record has no Chinese registry identifier.",
+      "case_ids": [
+        "case-5"
+      ]
+    },
+    {
+      "id": "e506",
+      "source": "LwA4a_LwLoGPjHr6RDiArg",
+      "target": "WG1hrSwGRdoLMIt997Z5-w",
+      "relation": "director_of",
+      "edge_type": "contractual",
+      "confidence": "documented",
+      "hs_codes": [],
+      "first_seen": null,
+      "last_seen": null,
+      "shipment_count": null,
+      "evidence": "Director of Zichen Malaysia.",
+      "source_call_ids": [
+        "s526"
+      ],
+      "confidence_reason": "Listed as a current director in the Malaysian company data Sayari holds.",
+      "case_ids": [
+        "case-5"
+      ]
+    },
+    {
+      "id": "e507",
+      "source": "eKMO9SjyO_k4HmOLY8o_7A",
+      "target": "WG1hrSwGRdoLMIt997Z5-w",
+      "relation": "director_of",
+      "edge_type": "contractual",
+      "confidence": "documented",
+      "hs_codes": [],
+      "first_seen": null,
+      "last_seen": null,
+      "shipment_count": null,
+      "evidence": "Director of Zichen Malaysia.",
+      "source_call_ids": [
+        "s526"
+      ],
+      "confidence_reason": "Listed as a current director in the Malaysian company data Sayari holds.",
+      "case_ids": [
+        "case-5"
+      ]
+    },
+    {
+      "id": "e508",
+      "source": "LwA4a_LwLoGPjHr6RDiArg",
+      "target": "M5aejkK4bjb5FsPDBPoVIA",
+      "relation": "possibly_same_as",
+      "edge_type": "inferred",
+      "confidence": "lead",
+      "hs_codes": [],
+      "first_seen": null,
+      "last_seen": null,
+      "shipment_count": null,
+      "evidence": "Malaysian director 'director A' vs. Putailai group shareholder shareholder A.",
+      "source_call_ids": [
+        "s526",
+        "s527"
+      ],
+      "confidence_reason": "Name match only (romanised vs. Chinese characters); no shared identifier.",
+      "case_ids": [
+        "case-5"
+      ]
+    },
+    {
+      "id": "e509",
+      "source": "eKMO9SjyO_k4HmOLY8o_7A",
+      "target": "So9o4udTCQcP19p-UGkyig",
+      "relation": "possibly_same_as",
+      "edge_type": "inferred",
+      "confidence": "lead",
+      "hs_codes": [],
+      "first_seen": null,
+      "last_seen": null,
+      "shipment_count": null,
+      "evidence": "Malaysian director 'director B' vs. Putailai group shareholder shareholder B.",
+      "source_call_ids": [
+        "s526",
+        "s527"
+      ],
+      "confidence_reason": "Name match only, and director B is a common name.",
+      "case_ids": [
+        "case-5"
+      ]
+    },
+    {
+      "id": "e510",
+      "source": "ib6a_v_imoUoFRPQiwEjPA",
+      "target": "eX51gPEUQ-MpkznB5_ICaQ",
+      "relation": "ships_to",
+      "edge_type": "transactional",
+      "confidence": "documented",
+      "hs_codes": [
+        "380110"
+      ],
+      "first_seen": null,
+      "last_seen": "2025-01-24",
+      "shipment_count": 30,
+      "evidence": "30 HS 3801.10 rows since Jan 2024. Descriptions read 'Jig ... made of artificial Graphite': machined parts, not battery material.",
+      "source_call_ids": [
+        "s511",
+        "s516"
+      ],
+      "confidence_reason": "Dated Vietnamese export rows name both parties.",
+      "case_ids": [
+        "case-5"
+      ]
+    },
+    {
+      "id": "e511",
+      "source": "oXMFQqYBSVg9LN8JdsZXRg",
+      "target": "WADCr_igZO7cgkrG2KW0zQ",
+      "relation": "ships_to",
+      "edge_type": "transactional",
+      "confidence": "documented",
+      "hs_codes": [
+        "380110"
+      ],
+      "first_seen": "2024-11-22",
+      "last_seen": "2024-11-22",
+      "shipment_count": 1,
+      "evidence": "One HS 3801.10 row, generic description; consignee is a logistics firm.",
+      "source_call_ids": [
+        "s515",
+        "s521"
+      ],
+      "confidence_reason": "One dated US import row names both parties.",
+      "case_ids": [
+        "case-5"
+      ]
+    },
+    {
+      "id": "e512",
+      "source": "oXMFQqYBSVg9LN8JdsZXRg",
+      "target": "f0O9Dwn-kAeZ-BAH5Cz-tg",
+      "relation": "possibly_same_as",
+      "edge_type": "inferred",
+      "confidence": "lead",
+      "hs_codes": [],
+      "first_seen": null,
+      "last_seen": null,
+      "shipment_count": null,
+      "evidence": "The sister record carries a US freight-forwarder (OTI) number.",
+      "source_call_ids": [
+        "s522"
+      ],
+      "confidence_reason": "Name match only; the trade record has no address match or identifier.",
+      "case_ids": [
+        "case-5"
+      ]
+    },
+    {
+      "id": "e513",
+      "source": "VhO8XHL4mZCMTDCLkVzAYQ",
+      "target": "Wfde8TXwHX3DkOQwj2XmTA",
+      "relation": "ships_to",
+      "edge_type": "transactional",
+      "confidence": "documented",
+      "hs_codes": [
+        "380110"
+      ],
+      "first_seen": "2026-09-12",
+      "last_seen": "2026-09-12",
+      "shipment_count": 1,
+      "evidence": "'Carbon anode materials', departing Singapore. Forwarder to forwarder; the producer is not named.",
+      "source_call_ids": [
+        "s519"
+      ],
+      "confidence_reason": "A dated US import row names both parties.",
+      "case_ids": [
+        "case-5"
       ]
     }
   ]

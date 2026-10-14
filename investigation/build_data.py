@@ -470,13 +470,77 @@ CASE1 = {
     ],
 }
 
-CASE2_LEAD = {
-    "id": "case-2",
-    "title": "Morocco: the next corridor (lead)",
-    "subtitle": "Iteration 2",
-    "question": "BTR is building a 60,000 t/yr anode plant in Tangier. Morocco already sends 3,088 HS 3801.10 shipments to the US. Is any of it Chinese-owned anode material?",
-    "status": "lead",
-    "call_ids": ["s024", "t013"],
+CASE1.update({
+    "slug": "btr-indonesia",
+    "country": "IDN",
+    "plant_status": "operating",
+    "pattern": "rerouting-pattern",
+    "summary_for_non_experts": "BTR is China's biggest maker of battery anode material. In 2024 it opened a large anode plant in Indonesia. Sayari's trade records show Chinese graphite going into that plant and graphite coming out of it to five US battery and car makers. What the records don't show is who owns the plant, which is the question US tax-credit rules now turn on.",
+    "key_numbers": [
+        {"value": "19", "label": "shipment rows from the plant to US buyers", "call_ids": ["s017"]},
+        {"value": "5", "label": "US battery or car makers named in those records", "call_ids": ["s017"]},
+        {"value": "5", "label": "separate Sayari records for one plant", "call_ids": ["s005", "s006", "s007", "s022", "s023"]},
+        {"value": "0", "label": "registry records of who owns it", "call_ids": ["s009"]},
+    ],
+})
+
+# Why each Case 1 edge has the rating it has (shown on the site).
+CONF_REASON_C1 = {
+    "e001": "Shared street address and a shared US buyer, but no shared identifier, so it's our judgment, not a record.",
+    "e002": "Shared street address and the missing word of the name; no identifier links them.",
+    "e003": "Shared street address and a shortened name; no identifier links them.",
+    "e004": "Name match only; the address is just a district. One weak signal.",
+    "e005": "Both addresses name No. 8 Guangyuan 4th Road; matching attributes, no record of a relationship.",
+    "e006": "Name and district only. One weak signal.",
+    "e010": "Two sources agree: BTR's own press release and a trade directory, backed by the trade link and the plant's name. Sayari's registry has no record.",
+    "e011": "Registry shareholder record in Sayari.",
+    "e012": "Registry shareholder record in Sayari.",
+    "e020": "Sayari returned HS-coded trade records with dates.",
+    "e021": "Sayari returned HS-coded trade records with dates.",
+    "e022": "Listed as a supplier in Sayari's graph, but we didn't pull the shipment records.",
+    "e023": "Sayari returned HS-coded trade records with dates.",
+    "e024": "Sayari returned HS-coded trade records with dates.",
+    "e025": "Sayari returned HS-coded trade records with dates.",
+    "e030": "Dated shipment rows (HS 3801.10) naming both parties.",
+    "e031": "Dated shipment rows (HS 3801.10) naming both parties.",
+    "e032": "Dated shipment row (HS 3801.10) naming both parties.",
+    "e033": "Dated shipment rows (HS 3801.10) naming both parties.",
+    "e034": "Dated shipment row (HS 3801.10) naming both parties.",
+    "e035": "Dated shipment row (HS 3801.90) naming both parties.",
+    "e036": "Dated shipment row (HS 3801.10) naming both parties.",
+    "e037": "Two signals: a graph link in US import data, plus shipment rows under a sibling record.",
+    "e038": "Two signals: a graph link in US import data, plus shipment rows under sibling records.",
+    "e039": "Dated shipment rows (HS 3801.10) naming both parties.",
+    "e040": "Dated shipment rows (HS 3801.10) naming both parties.",
+}
+
+# Context calls for the overview (made 14 Oct 2026, after the first batch).
+GENERAL_CALLS = [
+    {"id": "t015", "timestamp": "2026-10-14T19:25:40Z", "server": "tavily", "tool": "tavily_search",
+     "params": {"query": "IEA China share of global battery anode material production graphite percent", "max_results": 5, "search_depth": "advanced"},
+     "question": "How much of the world's battery anode material comes from China?",
+     "purpose": "company context",
+     "result_summary": "Electrive's summary of the IEA's 2025 battery report: China supplies over 90% of anode materials, mostly graphite, and does about 80% of graphite mining and over 90% of refining. It also notes that Indonesia is expected to add some diversification.",
+     "interpretation": "This is why third-country anode plants matter: almost all battery-grade graphite processing is in China, so any 'non-Chinese' anode supply is worth checking.",
+     "scorecard": "worked", "entity_ids": [], "step": "context", "case_id": "general",
+     "source_url": "https://www.electrive.com/2025/06/03/iea-report-dimensions-and-trends-of-the-global-battery-market"},
+    {"id": "t016", "timestamp": "2026-10-14T19:25:55Z", "server": "tavily", "tool": "tavily_search",
+     "params": {"query": "graphite share of lithium-ion battery anode by weight EV battery graphite kg per vehicle", "max_results": 5},
+     "question": "How much of an EV battery is graphite?",
+     "purpose": "company context",
+     "result_summary": "A USITC working paper on graphite in EV batteries (Table C.2, citing Argonne's GREET model) gives graphite as 21% of cell weight for NMC-622 cells, 22.1% for NCA and 16.8% for LFP.",
+     "interpretation": "Graphite is roughly a fifth of a battery cell by weight, more than any other mineral, so its origin matters for tax-credit rules.",
+     "scorecard": "worked", "entity_ids": [], "step": "context", "case_id": "general",
+     "source_url": "https://www.usitc.gov/publications/332/working_papers/gvc_paper.pdf"},
+]
+
+OVERVIEW = {
+    "facts": [
+        {"value": "90%+", "label": "of the world's battery anode material is made in China", "source": "IEA, via Electrive (Jun 2025)", "url": "https://www.electrive.com/2025/06/03/iea-report-dimensions-and-trends-of-the-global-battery-market", "call_ids": ["t015"]},
+        {"value": "~1/5", "label": "of an EV battery cell's weight is graphite (17–22%, by chemistry)", "source": "USITC working paper", "url": "https://www.usitc.gov/publications/332/working_papers/gvc_paper.pdf", "call_ids": ["t016"]},
+        {"value": "93.5%", "label": "anti-dumping margin Commerce found for BTR and other Chinese anode makers in Feb 2026, never imposed", "source": "ITA fact sheet", "url": "https://www.trade.gov/final-affirmative-determinations-antidumping-and-countervailing-duty-investigations-active-anode", "call_ids": ["t005", "t006"]},
+        {"value": "~47,000", "label": "shipments of artificial graphite (HS 3801.10) into the US since Jan 2024", "source": "Sayari trade data", "url": "method.html#s024", "call_ids": ["s024"]},
+    ],
 }
 
 # ---------------------------------------------------------------------------
@@ -495,45 +559,117 @@ SOURCES = [
 ]
 
 
+CASE_ORDER = ["case-1", "case-2", "case-3", "case-4", "case-5"]
+REQUIRED_EDGE = {"id", "source", "target", "relation", "edge_type", "confidence", "evidence", "source_call_ids"}
+
+
+def load_case_files():
+    """Cases 2-5 were investigated separately; each file holds case, entities, edges, calls."""
+    out = []
+    for f in sorted((ROOT / "investigation" / "cases").glob("case*.json")):
+        out.append(json.loads(f.read_text()))
+    return out
+
+
 def main():
     tavily = json.loads((NOTES / "tavily_calls.json").read_text())
     step_for = {"policy verification": "policy", "company context": "context"}
     for t in tavily:
         t.setdefault("entity_ids", [])
         t["step"] = step_for.get(t.get("purpose"), "policy")
-    calls = sorted(SAYARI_CALLS + tavily, key=lambda c: c["timestamp"])
+        t["case_id"] = "case-1" if t["id"] in ("t012", "t013", "t014") else "general"
+    for c in SAYARI_CALLS:
+        c["case_id"] = "case-1"
 
+    for e in ENTITIES:
+        e["case_ids"] = ["case-1"]
+    for e in EDGES:
+        e["case_ids"] = ["case-1"]
+        e["confidence_reason"] = CONF_REASON_C1[e["id"]]
+
+    entities = {e["id"]: e for e in ENTITIES}
+    edges = list(EDGES)
+    calls = SAYARI_CALLS + tavily + GENERAL_CALLS
+    cases = [CASE1]
+
+    for bundle in load_case_files():
+        case = bundle["case"]
+        cid = case["id"]
+        for c in bundle["calls"]:
+            c["case_id"] = cid
+            c.setdefault("entity_ids", [])
+            calls.append(c)
+        for e in bundle["entities"]:
+            e.setdefault("sayari_url", f"https://graph.sayari.com/resource/entity/{e['id']}")
+            e.setdefault("risk_flags", []); e.setdefault("identifiers", {}); e.setdefault("type", "company")
+            if e["id"] in entities:
+                cur = entities[e["id"]]
+                cur["source_call_ids"] = sorted(set(cur["source_call_ids"]) | set(e.get("source_call_ids", [])))
+                cur["case_ids"] = sorted(set(cur["case_ids"]) | {cid})
+                cur.setdefault("case_summaries", {})[cid] = e.get("summary", "")
+            else:
+                e["case_ids"] = [cid]
+                entities[e["id"]] = e
+        for e in bundle["edges"]:
+            missing = REQUIRED_EDGE - set(e)
+            assert not missing, (cid, e.get("id"), missing)
+            e.setdefault("hs_codes", []); e.setdefault("first_seen", None); e.setdefault("last_seen", None)
+            e.setdefault("shipment_count", None); e.setdefault("confidence_reason", "")
+            e["case_ids"] = [cid]
+            edges.append(e)
+        cases.append(case)
+
+    cases.sort(key=lambda c: CASE_ORDER.index(c["id"]) if c["id"] in CASE_ORDER else 99)
+    calls.sort(key=lambda c: c["timestamp"])
+    entities = list(entities.values())
     timeline = json.loads((NOTES / "policy_timeline_raw.json").read_text())
 
-    # Integrity checks: every referenced id must exist.
-    ent_ids = {e["id"] for e in ENTITIES}
-    call_ids = {c["id"] for c in calls}
-    edge_ids = {e["id"] for e in EDGES}
-    for e in EDGES:
+    # Integrity checks: every referenced id must exist and be unique.
+    ent_ids = {e["id"] for e in entities}
+    call_ids = [c["id"] for c in calls]
+    assert len(call_ids) == len(set(call_ids)), "duplicate call ids"
+    call_ids = set(call_ids)
+    edge_ids = [e["id"] for e in edges]
+    assert len(edge_ids) == len(set(edge_ids)), "duplicate edge ids"
+    edge_ids = set(edge_ids)
+    for e in edges:
         assert e["source"] in ent_ids and e["target"] in ent_ids, e["id"]
-        assert set(e["source_call_ids"]) <= call_ids, e["id"]
-    for e in ENTITIES:
-        assert set(e["source_call_ids"]) <= call_ids, e["id"]
-    for st in CASE1["steps"]:
-        assert set(st["edge_ids"]) <= edge_ids and set(st["node_ids"]) <= ent_ids, st["title"]
-        assert set(st["call_ids"]) <= call_ids, st["title"]
+        assert set(e["source_call_ids"]) <= call_ids, (e["id"], set(e["source_call_ids"]) - call_ids)
+        assert e["confidence"] in ("documented", "corroborated", "inferred", "lead"), e["id"]
+        assert e["edge_type"] in ("transactional", "contractual", "inferred"), e["id"]
+    for e in entities:
+        assert set(e["source_call_ids"]) <= call_ids, (e["id"], set(e["source_call_ids"]) - call_ids)
+    for c in cases:
+        for st in c["steps"]:
+            assert set(st["edge_ids"]) <= edge_ids, (c["id"], st["title"], set(st["edge_ids"]) - edge_ids)
+            assert set(st["node_ids"]) <= ent_ids, (c["id"], st["title"], set(st["node_ids"]) - ent_ids)
+            assert set(st["call_ids"]) <= call_ids, (c["id"], st["title"], set(st["call_ids"]) - call_ids)
+        for k in c.get("key_numbers", []):
+            assert set(k["call_ids"]) <= call_ids, (c["id"], k)
+        for col in c["verdict"].values():
+            for v in col:
+                assert set(v["call_ids"]) <= call_ids, (c["id"], v)
     for t in timeline:
         assert set(t["source_call_ids"]) <= call_ids, t["date"]
+    for f in OVERVIEW["facts"]:
+        assert set(f["call_ids"]) <= call_ids, f
 
     meta = {"as_of": AS_OF, "generated_by": "investigation/build_data.py"}
     out = {
-        "entities.json": {**meta, "items": ENTITIES},
-        "edges.json": {**meta, "items": EDGES},
-        "cases.json": {**meta, "items": [CASE1], "leads": [CASE2_LEAD]},
+        "entities.json": {**meta, "items": entities},
+        "edges.json": {**meta, "items": edges},
+        "cases.json": {**meta, "items": cases},
         "call_log.json": {**meta, "items": calls},
         "policy_timeline.json": {**meta, "items": timeline},
         "sources.json": {**meta, "items": SOURCES},
+        "overview.json": {**meta, **OVERVIEW},
     }
     DATA.mkdir(exist_ok=True)
     for name, obj in out.items():
         (DATA / name).write_text(json.dumps(obj, indent=2, ensure_ascii=False) + "\n")
-    print(f"{len(ENTITIES)} entities, {len(EDGES)} edges, {len(calls)} calls "
-          f"({len(SAYARI_CALLS)} Sayari, {len(tavily)} Tavily), {len(timeline)} policy rows")
+    n_s = sum(c["server"] == "sayari" for c in calls)
+    print(f"{len(cases)} cases, {len(entities)} entities, {len(edges)} edges, "
+          f"{len(calls)} calls ({n_s} Sayari, {len(calls) - n_s} Tavily), {len(timeline)} policy rows")
 
 
 if __name__ == "__main__":

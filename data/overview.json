@@ -1,0 +1,43 @@
+{
+  "as_of": "2026-10-14",
+  "generated_by": "investigation/build_data.py",
+  "facts": [
+    {
+      "value": "90%+",
+      "label": "of the world's battery anode material is made in China",
+      "source": "IEA, via Electrive (Jun 2025)",
+      "url": "https://www.electrive.com/2025/06/03/iea-report-dimensions-and-trends-of-the-global-battery-market",
+      "call_ids": [
+        "t015"
+      ]
+    },
+    {
+      "value": "~1/5",
+      "label": "of an EV battery cell's weight is graphite (17–22%, by chemistry)",
+      "source": "USITC working paper",
+      "url": "https://www.usitc.gov/publications/332/working_papers/gvc_paper.pdf",
+      "call_ids": [
+        "t016"
+      ]
+    },
+    {
+      "value": "93.5%",
+      "label": "anti-dumping margin Commerce found for BTR and other Chinese anode makers in Feb 2026, never imposed",
+      "source": "ITA fact sheet",
+      "url": "https://www.trade.gov/final-affirmative-determinations-antidumping-and-countervailing-duty-investigations-active-anode",
+      "call_ids": [
+        "t005",
+        "t006"
+      ]
+    },
+    {
+      "value": "~47,000",
+      "label": "shipments of artificial graphite (HS 3801.10) into the US since Jan 2024",
+      "source": "Sayari trade data",
+      "url": "method.html#s024",
+      "call_ids": [
+        "s024"
+      ]
+    }
+  ]
+}

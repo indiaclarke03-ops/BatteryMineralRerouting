@@ -33,13 +33,18 @@
       </div>
 
       <section aria-labelledby="lessons" style="margin-top:0">
-        <h2 id="lessons">Five things the tool taught us</h2>
+        <h2 id="lessons">What the tool taught us</h2>
+        <p class="muted">Confidence ratings are explained, with the reasoning behind each, in <a href="about.html#confidence">How we rate confidence</a>.</p>
         <div class="grid-2">
           <div class="callout"><strong>Name filters can silently fail.</strong> The <code>shipper_name</code> and <code>receiver_name</code> filters were ignored twice and returned 10,000 unrelated rows (<a href="#s010">s010</a>, <a href="#s012">s012</a>). Putting the name in the free-text <code>query</code> worked (<a href="#s017">s017</a>).</div>
           <div class="callout"><strong>Rollups can be blind where rows aren't.</strong> Supplier rollups for HS 3801 from Indonesia to the US returned 0 (<a href="#s015">s015</a>, <a href="#s016">s016</a>), yet 19 shipment rows existed.</div>
           <div class="callout"><strong>One plant, five records.</strong> Each customs source spells the shipper differently, so Sayari keeps separate records. The street address was what tied them together (<a href="#s005">s005</a>–<a href="#s007">s007</a>, <a href="#s022">s022</a>, <a href="#s023">s023</a>).</div>
           <div class="callout"><strong>Ownership coverage is uneven.</strong> No shareholders for the Indonesian plant (<a href="#s009">s009</a>), even though Sayari shows BTR owning a different Indonesian company (<a href="#s020">s020</a>).</div>
           <div class="callout"><strong>Screening hits two hops out are mostly forwarders.</strong> All ten watchlist paths ran through freight or trading firms (<a href="#s021">s021</a>). This matches Sayari's own guidance (<a href="#s001">s001</a>).</div>
+          <div class="callout"><strong>"OR" queries return nothing.</strong> Boolean queries like <code>BTR OR Putailai</code> silently returned 0 in Cases 3 and 5. Search one name at a time.</div>
+          <div class="callout"><strong>Free text ranks; it doesn't filter.</strong> A quoted name in <code>query</code> puts matching rows first, but totals still count everything. Read the rows and don't trust the count (Case 2).</div>
+          <div class="callout"><strong>Corridor buckets can be mislabelled.</strong> 3,088 Morocco → US "artificial graphite" rows were mostly fertilizer and chemicals, and 917 Oman → US rows were mostly Indian cargo relayed through Omani ports (Cases 2 and 3).</div>
+          <div class="callout"><strong>Registry coverage depends on the country.</strong> Ownership was visible for plants held through Singapore (Morocco, Malaysia) and in China's registry, but not for the Indonesian PT (Cases 1, 2, 3 and 5).</div>
           <div class="callout teal"><strong>What worked well:</strong> profiles (<code>ships_to</code> lists), upstream mapping by HS code, and free-text shipment search gave a dated, HS-coded trail from China to five US cell plants.</div>
         </div>
       </section>
@@ -51,14 +56,15 @@
       </section>
 
       <section aria-labelledby="rubric-h">
-        <h2 id="rubric-h">Red-flag rubric, scored for Case 1</h2>
-        <p class="muted">Adapted from Sayari's investigation guidance (<a href="#s001">s001</a>, <a href="#s004">s004</a>) and mapped to the US prohibited-foreign-entity rules. "Detected" means a Sayari record shows it; "suggested" means signals point to it without a record; "not visible" means we couldn't test it.</p>
+        <h2 id="rubric-h">Red-flag rubric</h2>
+        <p class="muted">Adapted from Sayari's investigation guidance (<a href="#s001">s001</a>, <a href="#s004">s004</a>) and mapped to the US prohibited-foreign-entity rules. "Detected" means a Sayari record shows it; "suggested" means signals point to it without a record; "not visible" means we couldn't test it; "checked: absent" means we tested it and the data shows it isn't there.</p>
         <div class="card" id="rubric">Loading…</div>
       </section>
 
       <section aria-labelledby="replay-h">
         <h2 id="replay-h">Investigation replay</h2>
-        <p class="muted">Question → tool and parameters → result → interpretation. Times are UTC on 14 Oct 2026.</p>
+        <p class="muted">Question → tool and parameters → result → interpretation. Times are UTC on 14 Oct 2026. Grouped by case, then by investigative step.</p>
+        <nav class="case-tabs" id="replay-nav" aria-label="Jump to a case"></nav>
         <div id="replay">Loading…</div>
       </section>
 

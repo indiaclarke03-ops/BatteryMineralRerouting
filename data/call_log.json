@@ -17,7 +17,8 @@
       "interpretation": "Claim 1 holds. The announcement date (20 Oct) differs from the effective date (1 Dec).",
       "scorecard": "worked",
       "entity_ids": [],
-      "step": "policy"
+      "step": "policy",
+      "case_id": "general"
     },
     {
       "id": "t002",
@@ -34,7 +35,8 @@
       "interpretation": "The citations are correct, but the FR publication date is 17 Feb, not ~11 Feb. The 11 Feb date is the announcement.",
       "scorecard": "worked",
       "entity_ids": [],
-      "step": "policy"
+      "step": "policy",
+      "case_id": "general"
     },
     {
       "id": "t003",
@@ -51,7 +53,8 @@
       "interpretation": "Claim 4 holds, and the primary text also confirms the OBBBA enactment date.",
       "scorecard": "worked",
       "entity_ids": [],
-      "step": "policy"
+      "step": "policy",
+      "case_id": "general"
     },
     {
       "id": "t004",
@@ -68,7 +71,8 @@
       "interpretation": "Claim 5 holds on the date and outcome. The legal basis was material retardation, not injury.",
       "scorecard": "worked",
       "entity_ids": [],
-      "step": "policy"
+      "step": "policy",
+      "case_id": "general"
     },
     {
       "id": "t005",
@@ -87,7 +91,8 @@
       "interpretation": "The AD range of 93.5-102.7% is confirmed. The CVD rate should read 66.82-66.86%. BTR and Zhongke Shinzoom were named respondents/producers.",
       "scorecard": "worked",
       "entity_ids": [],
-      "step": "policy"
+      "step": "policy",
+      "case_id": "general"
     },
     {
       "id": "t006",
@@ -106,7 +111,8 @@
       "interpretation": "No duty orders exist. The project should describe this as a negative material-retardation finding (2-1).",
       "scorecard": "worked",
       "entity_ids": [],
-      "step": "policy"
+      "step": "policy",
+      "case_id": "general"
     },
     {
       "id": "t007",
@@ -123,7 +129,8 @@
       "interpretation": "Claim 2 holds.",
       "scorecard": "worked",
       "entity_ids": [],
-      "step": "policy"
+      "step": "policy",
+      "case_id": "general"
     },
     {
       "id": "t008",
@@ -140,7 +147,8 @@
       "interpretation": "This is an important newer action. The anode-level controls are announced but paused, and the 2023 graphite licensing still applies.",
       "scorecard": "worked",
       "entity_ids": [],
-      "step": "policy"
+      "step": "policy",
+      "case_id": "general"
     },
     {
       "id": "t009",
@@ -158,7 +166,8 @@
       "interpretation": "No newer PFE guidance surfaced, and the definition of effective control is still open.",
       "scorecard": "partial",
       "entity_ids": [],
-      "step": "policy"
+      "step": "policy",
+      "case_id": "general"
     },
     {
       "id": "t010",
@@ -176,7 +185,8 @@
       "interpretation": "The extension is unverified. The project should flag 10 Nov 2026 as a live deadline.",
       "scorecard": "partial",
       "entity_ids": [],
-      "step": "policy"
+      "step": "policy",
+      "case_id": "general"
     },
     {
       "id": "t011",
@@ -194,7 +204,8 @@
       "interpretation": "Newer PFE guidance could not be confirmed either way, so it is marked unverified.",
       "scorecard": "failed",
       "entity_ids": [],
-      "step": "policy"
+      "step": "policy",
+      "case_id": "general"
     },
     {
       "id": "t012",
@@ -211,7 +222,8 @@
       "interpretation": "This is BTR's main non-China anode source and a plausible third-country route for Chinese-owned anode capacity. Battery-Tech Network reports a 70/30 BTR/Stellar Investment ownership split, which is not primary-verified.",
       "scorecard": "worked",
       "entity_ids": [],
-      "step": "context"
+      "step": "context",
+      "case_id": "case-1"
     },
     {
       "id": "t013",
@@ -228,7 +240,8 @@
       "interpretation": "Morocco has a US free-trade agreement, which may explain the siting. Its current operating status in 2026 is not confirmed.",
       "scorecard": "worked",
       "entity_ids": [],
-      "step": "context"
+      "step": "context",
+      "case_id": "case-1"
     },
     {
       "id": "t014",
@@ -245,7 +258,8 @@
       "interpretation": "Oman is an emerging third-country anode hub for a respondent group in the AD case (Zhongke Shinzoom). The groundbreaking date and the Morocco cancellation come from a single trade site.",
       "scorecard": "worked",
       "entity_ids": [],
-      "step": "context"
+      "step": "context",
+      "case_id": "case-1"
     },
     {
       "id": "s001",
@@ -263,7 +277,8 @@
       "interpretation": "Three rules shaped the method: resolve the entity before anything else, keep freight forwarders out of supplier lists, and treat missing trade data as a gap, not a negative.",
       "scorecard": "worked",
       "entity_ids": [],
-      "step": "method"
+      "step": "method",
+      "case_id": "case-1"
     },
     {
       "id": "s002",
@@ -284,7 +299,8 @@
       "interpretation": "The guidance library is thin for Indonesia. We dropped the country filter and asked again (s004).",
       "scorecard": "failed",
       "entity_ids": [],
-      "step": "method"
+      "step": "method",
+      "case_id": "case-1"
     },
     {
       "id": "s003",
@@ -307,7 +323,8 @@
       "interpretation": "None of these flags says the plant itself is listed. They describe neighbours. We show them as context, never as findings about the company.",
       "scorecard": "worked",
       "entity_ids": [],
-      "step": "method"
+      "step": "method",
+      "case_id": "case-1"
     },
     {
       "id": "s004",
@@ -325,7 +342,8 @@
       "interpretation": "Became our merge rule: a matching street address plus matching name stem gives an Inferred 'possibly same as' link; a name match alone stays a Lead.",
       "scorecard": "worked",
       "entity_ids": [],
-      "step": "method"
+      "step": "method",
+      "case_id": "case-1"
     },
     {
       "id": "s005",
@@ -343,7 +361,8 @@
       "entity_ids": [
         "2omCekb1pDRKjhFOAqCNSw"
       ],
-      "step": "plant"
+      "step": "plant",
+      "case_id": "case-1"
     },
     {
       "id": "s006",
@@ -361,7 +380,8 @@
       "entity_ids": [
         "dH3rqoht5wahpKLPJih3gA"
       ],
-      "step": "plant"
+      "step": "plant",
+      "case_id": "case-1"
     },
     {
       "id": "s007",
@@ -379,7 +399,8 @@
       "entity_ids": [
         "ekoH1fr8BGvHc7UqYCY_YA"
       ],
-      "step": "plant"
+      "step": "plant",
+      "case_id": "case-1"
     },
     {
       "id": "s008",
@@ -402,7 +423,8 @@
         "jeHf5QJt0JXowTiCA8JiIQ",
         "oJvmXc2fb6aBRkCDyxOLig"
       ],
-      "step": "owner"
+      "step": "owner",
+      "case_id": "case-1"
     },
     {
       "id": "s009",
@@ -422,7 +444,8 @@
       "entity_ids": [
         "2omCekb1pDRKjhFOAqCNSw"
       ],
-      "step": "owner"
+      "step": "owner",
+      "case_id": "case-1"
     },
     {
       "id": "s010",
@@ -442,7 +465,8 @@
       "interpretation": "Same failure seen in our earlier project: name filters can silently drop. Every result has to be re-checked against the supplier field before it counts.",
       "scorecard": "failed",
       "entity_ids": [],
-      "step": "out"
+      "step": "out",
+      "case_id": "case-1"
     },
     {
       "id": "s011",
@@ -464,7 +488,8 @@
         "rvgklT24qqqfH2rnlVlyBg",
         "4fqrWAcyrgtWw2RdV6qZsg"
       ],
-      "step": "out"
+      "step": "out",
+      "case_id": "case-1"
     },
     {
       "id": "s012",
@@ -484,7 +509,8 @@
       "interpretation": "Partial. It shows anode material does leave Indonesia for the US, but an unnamed shipper can't be tied to the plant.",
       "scorecard": "partial",
       "entity_ids": [],
-      "step": "out"
+      "step": "out",
+      "case_id": "case-1"
     },
     {
       "id": "s013",
@@ -510,7 +536,8 @@
         "5_cayB1m7XahAhz_Hrrpng",
         "9pKXMU4m6GbuXl_McP8jag"
       ],
-      "step": "in"
+      "step": "in",
+      "case_id": "case-1"
     },
     {
       "id": "s014",
@@ -539,7 +566,8 @@
         "uZISesDqcaxQ8aVgsyvurw",
         "I0E-2fRqFflDTESrsMh2ZA"
       ],
-      "step": "in"
+      "step": "in",
+      "case_id": "case-1"
     },
     {
       "id": "s015",
@@ -559,7 +587,8 @@
       "interpretation": "A query that looks correct returns nothing. The free-text word 'anode' doesn't match records described as 'artificial graphite'. This is how a trail goes dark.",
       "scorecard": "failed",
       "entity_ids": [],
-      "step": "out"
+      "step": "out",
+      "case_id": "case-1"
     },
     {
       "id": "s016",
@@ -579,7 +608,8 @@
       "interpretation": "Confirms the feasibility-probe result. Rollups are blind here; the shipment search by name (s017) is what works.",
       "scorecard": "failed",
       "entity_ids": [],
-      "step": "out"
+      "step": "out",
+      "case_id": "case-1"
     },
     {
       "id": "s017",
@@ -611,7 +641,8 @@
         "oJvmXc2fb6aBRkCDyxOLig",
         "BoJ05H9uciX3VySWmVmq8g"
       ],
-      "step": "out"
+      "step": "out",
+      "case_id": "case-1"
     },
     {
       "id": "s018",
@@ -638,7 +669,8 @@
         "4fqrWAcyrgtWw2RdV6qZsg",
         "xWhz7CFJV3lxsgg8fHMGHA"
       ],
-      "step": "out"
+      "step": "out",
+      "case_id": "case-1"
     },
     {
       "id": "s019",
@@ -658,7 +690,8 @@
         "2omCekb1pDRKjhFOAqCNSw",
         "jeHf5QJt0JXowTiCA8JiIQ"
       ],
-      "step": "owner"
+      "step": "owner",
+      "case_id": "case-1"
     },
     {
       "id": "s020",
@@ -684,7 +717,8 @@
         "ebomNaL2BFXiZYYk0Y8Scg",
         "O-QDv6jXInkdMYQI92mrXA"
       ],
-      "step": "owner"
+      "step": "owner",
+      "case_id": "case-1"
     },
     {
       "id": "s021",
@@ -705,7 +739,8 @@
       "entity_ids": [
         "2omCekb1pDRKjhFOAqCNSw"
       ],
-      "step": "gap"
+      "step": "gap",
+      "case_id": "case-1"
     },
     {
       "id": "s022",
@@ -723,7 +758,8 @@
       "entity_ids": [
         "0pb5Arj9l_g5eJtqVBozsQ"
       ],
-      "step": "plant"
+      "step": "plant",
+      "case_id": "case-1"
     },
     {
       "id": "s023",
@@ -741,7 +777,8 @@
       "entity_ids": [
         "xbEAXBfl7YhUMRWA8PJqoQ"
       ],
-      "step": "plant"
+      "step": "plant",
+      "case_id": "case-1"
     },
     {
       "id": "s024",
@@ -763,7 +800,2326 @@
       "entity_ids": [
         "4fqrWAcyrgtWw2RdV6qZsg"
       ],
-      "step": "corridor"
+      "step": "corridor",
+      "case_id": "case-1"
+    },
+    {
+      "id": "t015",
+      "timestamp": "2026-10-14T19:25:40Z",
+      "server": "tavily",
+      "tool": "tavily_search",
+      "params": {
+        "query": "IEA China share of global battery anode material production graphite percent",
+        "max_results": 5,
+        "search_depth": "advanced"
+      },
+      "question": "How much of the world's battery anode material comes from China?",
+      "purpose": "company context",
+      "result_summary": "Electrive's summary of the IEA's 2025 battery report: China supplies over 90% of anode materials, mostly graphite, and does about 80% of graphite mining and over 90% of refining. It also notes that Indonesia is expected to add some diversification.",
+      "interpretation": "This is why third-country anode plants matter: almost all battery-grade graphite processing is in China, so any 'non-Chinese' anode supply is worth checking.",
+      "scorecard": "worked",
+      "entity_ids": [],
+      "step": "context",
+      "case_id": "general",
+      "source_url": "https://www.electrive.com/2025/06/03/iea-report-dimensions-and-trends-of-the-global-battery-market"
+    },
+    {
+      "id": "t016",
+      "timestamp": "2026-10-14T19:25:55Z",
+      "server": "tavily",
+      "tool": "tavily_search",
+      "params": {
+        "query": "graphite share of lithium-ion battery anode by weight EV battery graphite kg per vehicle",
+        "max_results": 5
+      },
+      "question": "How much of an EV battery is graphite?",
+      "purpose": "company context",
+      "result_summary": "A USITC working paper on graphite in EV batteries (Table C.2, citing Argonne's GREET model) gives graphite as 21% of cell weight for NMC-622 cells, 22.1% for NCA and 16.8% for LFP.",
+      "interpretation": "Graphite is roughly a fifth of a battery cell by weight, more than any other mineral, so its origin matters for tax-credit rules.",
+      "scorecard": "worked",
+      "entity_ids": [],
+      "step": "context",
+      "case_id": "general",
+      "source_url": "https://www.usitc.gov/publications/332/working_papers/gvc_paper.pdf"
+    },
+    {
+      "id": "s301",
+      "timestamp": "2026-10-14T19:26:13Z",
+      "server": "sayari",
+      "tool": "search_entities",
+      "params": {
+        "query": "Zhongke Oman",
+        "limit": 15
+      },
+      "question": "Does Sayari hold any Zhongke entity in Oman?",
+      "purpose": "Find the plant",
+      "result_summary": "0 results.",
+      "interpretation": "No Oman entity under the group name. This is the first sign the plant isn't in the data yet.",
+      "scorecard": "failed",
+      "entity_ids": [],
+      "step": "plant",
+      "case_id": "case-3"
+    },
+    {
+      "id": "s302",
+      "timestamp": "2026-10-14T19:26:13Z",
+      "server": "sayari",
+      "tool": "search_entities",
+      "params": {
+        "query": "\"Zhongke Electric\"",
+        "limit": 15
+      },
+      "question": "Which record is the listed parent?",
+      "purpose": "Resolve the parent",
+      "result_summary": "513 results came back (the limit was ignored) and the output was saved to a file. Among them were 湖南中科电气股份有限公司 (-jDI6N9q1MWnPT0ujf-8iw), an English-name duplicate 'HUNAN ZHONGKE ELECTRIC CO., LTD.' (Mn2FeoIt2w0McDIDjkIrxg), and Changsha, Chifeng and sales-department branches. Most hits are unrelated companies called Zhongke.",
+      "interpretation": "We picked the Chinese-name record because it carries a USCC and the listed-security links. The name is very common, so we parsed the results; we didn't read them by eye.",
+      "scorecard": "partial",
+      "entity_ids": [
+        "-jDI6N9q1MWnPT0ujf-8iw"
+      ],
+      "step": "owner",
+      "case_id": "case-3"
+    },
+    {
+      "id": "s303",
+      "timestamp": "2026-10-14T19:26:13Z",
+      "server": "sayari",
+      "tool": "search_entities",
+      "params": {
+        "query": "\"Zhongke Shinzoom\" OR \"Zhongke Xingcheng\"",
+        "limit": 20
+      },
+      "question": "Can one query find both romanisations?",
+      "purpose": "Resolve the anode arm",
+      "result_summary": "0 results.",
+      "interpretation": "The OR query with quoted phrases returned nothing, though each name exists (see s305). The query syntax didn't work as documented.",
+      "scorecard": "failed",
+      "entity_ids": [],
+      "step": "method",
+      "case_id": "case-3"
+    },
+    {
+      "id": "s401",
+      "timestamp": "2026-10-14T19:26:15Z",
+      "server": "sayari",
+      "tool": "search_entities",
+      "params": {
+        "query": "\"POSCO Future M\"",
+        "limit": 15
+      },
+      "question": "Which Sayari records are POSCO Future M?",
+      "purpose": "Resolve the company and its fragments",
+      "result_summary": "19 records. The main one (株式会社POSCO CHEMICAL, DART CIK 00155276) carries both the old and new names and addresses in Pohang, Gwangyang and Sejong. At least ten more records use the POSCO Future M or POSCO Chemical name, several with the same Pohang (110 Sinhang-ro) or Gwangyang (45 Yulchonsandan 8-ro) street addresses. Two records name the freight forwarder LX Pantos acting for POSCO Future M; one is the Canadian subsidiary in Bécancour.",
+      "interpretation": "Unlike Case 1, the main record has a registry identifier (Korea's DART disclosure ID), so the anchor is solid. Same-address fragments are treated as 'possibly the same as'.",
+      "scorecard": "worked",
+      "entity_ids": [
+        "Fj3vtxDroFyjyPsLgsnm2A",
+        "lGXvcBkItOrZkkvnvjxu9g",
+        "YSRMGUz3xWtyXZWZlMTCBg",
+        "y4MWluNMSgkSaHoCAptQfA"
+      ],
+      "step": "plant",
+      "case_id": "case-4"
+    },
+    {
+      "id": "s201",
+      "timestamp": "2026-10-14T19:26:16Z",
+      "server": "sayari",
+      "tool": "search_trade_facets",
+      "params": {
+        "scope": "suppliers",
+        "query": "graphite",
+        "departure_country": "MAR",
+        "arrival_country": "USA",
+        "hs_code": "380110",
+        "date_from": "2024-01-01",
+        "bucket_limit": 15
+      },
+      "question": "Who ships artificial graphite (HS 3801.10) from Morocco to the US?",
+      "purpose": "Corridor (INV-8)",
+      "result_summary": "646 suppliers, but only country buckets came back (India 261, USA 203, China 194, Spain 186...). No supplier names. Buyer countries include Colombia, Mexico, Ecuador and Guatemala, which is odd for a US-arrival filter.",
+      "interpretation": "The supplier-scope facet can't name shippers. Non-US buyer countries were a first hint that the bucket is not what it seems.",
+      "scorecard": "partial",
+      "entity_ids": [],
+      "step": "corridor",
+      "case_id": "case-2"
+    },
+    {
+      "id": "s202",
+      "timestamp": "2026-10-14T19:26:16Z",
+      "server": "sayari",
+      "tool": "search_entities",
+      "params": {
+        "query": "\"BTR Mediterranean\"",
+        "limit": 15
+      },
+      "question": "What records does Sayari hold for BTR's Moroccan subsidiary?",
+      "purpose": "Plant (INV-2)",
+      "result_summary": "6 records: two registry companies in Morocco (BTR Mediterranean New Material Technology, RC 142409 with an LEI; BTR Mediterranean Anode New Material Technology, RC 149725) and four customs-data fragments with no country.",
+      "interpretation": "Two separate legal entities plus four trade fragments. One fragment shares the registry address (Lot 25, Tanger Tech).",
+      "scorecard": "worked",
+      "entity_ids": [
+        "El_6QFk0rVRdYJanrqEtAA",
+        "Z57YvgOYL2TdoaWYgXFZ9Q",
+        "Fky8oAxiQS_tuT-0pi3wQA",
+        "dilh_xCSnTZQ_dZDy_pZwQ",
+        "hmnBuu6vz31_-lqNazNviw",
+        "1CjF5vzVgFFxVomroaYyaA"
+      ],
+      "step": "plant",
+      "case_id": "case-2"
+    },
+    {
+      "id": "s402",
+      "timestamp": "2026-10-14T19:26:20Z",
+      "server": "sayari",
+      "tool": "get_entity_profile",
+      "params": {
+        "entity_id": "Fj3vtxDroFyjyPsLgsnm2A",
+        "relationships_limit": 60
+      },
+      "question": "Who owns POSCO Future M, and who does it trade with?",
+      "purpose": "Ownership and trade partners of the main record",
+      "result_summary": "Registered 1971-05-13. Business purpose includes refractories and secondary-battery manufacturing. Shareholder: 포스코홀딩스(주) (POSCO Holdings) with 58.2%, from Korea's DART disclosure database. Owns the Canadian subsidiary. Trade counts: 10,199 sent, 1,788 received. Ships to Tesla, VinFast and a Polish logistics agent; receives from Huayou New Energy (Quzhou) and a Shanghai supply-chain firm.",
+      "interpretation": "Ownership is a registry record with a percentage. The parent is Korean. This is the opposite of Case 1, where Sayari had no owner for BTR's plant.",
+      "scorecard": "worked",
+      "entity_ids": [
+        "Fj3vtxDroFyjyPsLgsnm2A",
+        "xhmHh99vEgdFz19iRON8yA",
+        "xWhz7CFJV3lxsgg8fHMGHA"
+      ],
+      "step": "owner",
+      "case_id": "case-4"
+    },
+    {
+      "id": "s203",
+      "timestamp": "2026-10-14T19:26:22Z",
+      "server": "sayari",
+      "tool": "get_entity_profile",
+      "params": {
+        "entity_id": "El_6QFk0rVRdYJanrqEtAA",
+        "relationships_limit": 40
+      },
+      "question": "Who owns and runs BTR Mediterranean New Material Technology?",
+      "purpose": "Ownership (INV-3)",
+      "result_summary": "SASU registered 2023-10-09. 100% shareholder and beneficial owner: BNUO International Holding Pte. Ltd (Singapore). Its general manager is the same executive who appears at the Singapore and Jiangsu companies. Trade count 0 sent, 0 received.",
+      "interpretation": "Unlike Case 1, the registry data names a shareholder. The registry record itself has no trade.",
+      "scorecard": "worked",
+      "entity_ids": [
+        "El_6QFk0rVRdYJanrqEtAA",
+        "b1W3iE__07Zz0BOvA-8s7g"
+      ],
+      "step": "owner",
+      "case_id": "case-2"
+    },
+    {
+      "id": "s204",
+      "timestamp": "2026-10-14T19:26:22Z",
+      "server": "sayari",
+      "tool": "get_entity_profile",
+      "params": {
+        "entity_id": "Z57YvgOYL2TdoaWYgXFZ9Q",
+        "relationships_limit": 40
+      },
+      "question": "Who owns BTR Mediterranean Anode New Material Technology?",
+      "purpose": "Ownership (INV-3)",
+      "result_summary": "Registered 2024-05-03 in Tangier. 100% shareholder: Rian International Holding Pte. Ltd (Singapore). Director Zerui Fang. No trade.",
+      "interpretation": "A second BTR company in Tangier, held through a different Singapore holding company.",
+      "scorecard": "worked",
+      "entity_ids": [
+        "Z57YvgOYL2TdoaWYgXFZ9Q",
+        "uio2rrOWJmLIgiAKlcpdww"
+      ],
+      "step": "owner",
+      "case_id": "case-2"
+    },
+    {
+      "id": "s501",
+      "timestamp": "2026-10-14T19:26:25Z",
+      "server": "sayari",
+      "tool": "search_trade_facets",
+      "params": {
+        "scope": "suppliers",
+        "query": "graphite",
+        "hs_code": "380110",
+        "departure_country": "VNM",
+        "arrival_country": "USA",
+        "date_from": "2024-01-01"
+      },
+      "question": "How many suppliers ship artificial graphite (HS 3801.10) from Vietnam to the US since 2024?",
+      "purpose": "Corridor scan: Vietnam",
+      "result_summary": "5 suppliers. Facets do not name them; supplier-country buckets include KOR, CHN and others because they list every country a supplier is linked to.",
+      "interpretation": "A thin corridor. Five names is few enough to check one by one.",
+      "scorecard": "worked",
+      "entity_ids": [],
+      "step": "corridor",
+      "case_id": "case-5"
+    },
+    {
+      "id": "s502",
+      "timestamp": "2026-10-14T19:26:25Z",
+      "server": "sayari",
+      "tool": "search_trade_facets",
+      "params": {
+        "scope": "suppliers",
+        "query": "graphite",
+        "hs_code": "380110",
+        "departure_country": "MYS",
+        "arrival_country": "USA",
+        "date_from": "2024-01-01"
+      },
+      "question": "How many suppliers ship HS 3801.10 from Malaysia to the US since 2024?",
+      "purpose": "Corridor scan: Malaysia",
+      "result_summary": "2 suppliers.",
+      "interpretation": "The thinnest corridor of the five.",
+      "scorecard": "worked",
+      "entity_ids": [],
+      "step": "corridor",
+      "case_id": "case-5"
+    },
+    {
+      "id": "s503",
+      "timestamp": "2026-10-14T19:26:25Z",
+      "server": "sayari",
+      "tool": "search_trade_facets",
+      "params": {
+        "scope": "suppliers",
+        "query": "graphite",
+        "hs_code": "380110",
+        "departure_country": "THA",
+        "arrival_country": "USA",
+        "date_from": "2024-01-01"
+      },
+      "question": "How many suppliers ship HS 3801.10 from Thailand to the US since 2024?",
+      "purpose": "Corridor scan: Thailand",
+      "result_summary": "8 suppliers.",
+      "interpretation": "Thin; worth listing every name.",
+      "scorecard": "worked",
+      "entity_ids": [],
+      "step": "corridor",
+      "case_id": "case-5"
+    },
+    {
+      "id": "s504",
+      "timestamp": "2026-10-14T19:26:25Z",
+      "server": "sayari",
+      "tool": "search_trade_facets",
+      "params": {
+        "scope": "suppliers",
+        "query": "graphite",
+        "hs_code": "380110",
+        "departure_country": "MEX",
+        "arrival_country": "USA",
+        "date_from": "2024-01-01"
+      },
+      "question": "How many suppliers ship HS 3801.10 from Mexico to the US since 2024?",
+      "purpose": "Corridor scan: Mexico",
+      "result_summary": "347 suppliers; buyer-country buckets led by USA (555). Many supplier risk flags are 'psa_' or sub-tier flags.",
+      "interpretation": "By far the biggest corridor, but size alone says nothing about battery content.",
+      "scorecard": "worked",
+      "entity_ids": [],
+      "step": "corridor",
+      "case_id": "case-5"
+    },
+    {
+      "id": "s505",
+      "timestamp": "2026-10-14T19:26:25Z",
+      "server": "sayari",
+      "tool": "search_trade_facets",
+      "params": {
+        "scope": "suppliers",
+        "query": "graphite",
+        "hs_code": "380110",
+        "departure_country": "KOR",
+        "arrival_country": "USA",
+        "date_from": "2024-01-01"
+      },
+      "question": "How many suppliers ship HS 3801.10 from Korea to the US since 2024?",
+      "purpose": "Corridor scan: Korea",
+      "result_summary": "107 suppliers.",
+      "interpretation": "Second-largest corridor; Korea has its own anode industry.",
+      "scorecard": "worked",
+      "entity_ids": [],
+      "step": "corridor",
+      "case_id": "case-5"
+    },
+    {
+      "id": "s205",
+      "timestamp": "2026-10-14T19:26:26Z",
+      "server": "sayari",
+      "tool": "find_beneficial_owners",
+      "params": {
+        "entity_id": "El_6QFk0rVRdYJanrqEtAA",
+        "max_depth": 4,
+        "limit": 15
+      },
+      "question": "Does the ownership chain reach BTR in China?",
+      "purpose": "Ownership (INV-3)",
+      "result_summary": "2 owners: BNUO International Holding (1 hop) and BTR New Material Group (jeHf5QJt0JXowTiCA8JiIQ) at path length 4, via a 'possibly same as' Singapore registry record of BNUO.",
+      "interpretation": "Yes. BTR New Material Group is visible as the ultimate owner, with one 'possibly same as' step.",
+      "scorecard": "worked",
+      "entity_ids": [
+        "El_6QFk0rVRdYJanrqEtAA",
+        "b1W3iE__07Zz0BOvA-8s7g",
+        "NKDYreiU9nvqyC4RRZQDfA",
+        "jeHf5QJt0JXowTiCA8JiIQ"
+      ],
+      "step": "owner",
+      "case_id": "case-2"
+    },
+    {
+      "id": "s206",
+      "timestamp": "2026-10-14T19:26:26Z",
+      "server": "sayari",
+      "tool": "find_beneficial_owners",
+      "params": {
+        "entity_id": "Z57YvgOYL2TdoaWYgXFZ9Q",
+        "max_depth": 4,
+        "limit": 15
+      },
+      "question": "Does the second company's chain reach BTR?",
+      "purpose": "Ownership (INV-3)",
+      "result_summary": "2 owners: Rian International Holding (1 hop) and a Singapore record of 'BTR New Material Group Co., Ltd.' (UEN T23UF7645F) at path length 3, via a 'possibly same as' Rian record.",
+      "interpretation": "This chain also ends at BTR, but at a Singapore filing record that Sayari has not merged with the main BTR entity.",
+      "scorecard": "worked",
+      "entity_ids": [
+        "Z57YvgOYL2TdoaWYgXFZ9Q",
+        "uio2rrOWJmLIgiAKlcpdww",
+        "vATXxodFI2jKKDVrQ-ELOw",
+        "ewAw-3mKhSQX-N4we26Zyg"
+      ],
+      "step": "owner",
+      "case_id": "case-2"
+    },
+    {
+      "id": "s403",
+      "timestamp": "2026-10-14T19:26:27Z",
+      "server": "sayari",
+      "tool": "find_beneficial_owners",
+      "params": {
+        "entity_id": "Fj3vtxDroFyjyPsLgsnm2A",
+        "limit": 15
+      },
+      "question": "Is there any Chinese owner anywhere up the chain?",
+      "purpose": "Ownership tracing",
+      "result_summary": "50 owner paths returned, all one hop and all Korean: POSCO Holdings (three records under Korean and English names), POSCO (주)포스코, the National Pension Service (국민연금공단), Pohang University of Science and Technology, and about 40 named Korean individuals (DART shareholding filings by officers).",
+      "interpretation": "No Chinese owner appears at any level. The individual names are officers who report small holdings; they are not controlling owners.",
+      "scorecard": "worked",
+      "entity_ids": [
+        "Fj3vtxDroFyjyPsLgsnm2A",
+        "xhmHh99vEgdFz19iRON8yA",
+        "H3F05G33f9ITSmHNhahweg",
+        "dhu2OleybGzMUQwDgEBymg"
+      ],
+      "step": "owner",
+      "case_id": "case-4"
+    },
+    {
+      "id": "s207",
+      "timestamp": "2026-10-14T19:26:35Z",
+      "server": "sayari",
+      "tool": "find_shortest_path",
+      "params": {
+        "source_entity_id": "El_6QFk0rVRdYJanrqEtAA",
+        "target_entity_id": "jeHf5QJt0JXowTiCA8JiIQ"
+      },
+      "question": "What exactly links the Moroccan plant to BTR?",
+      "purpose": "Ownership (INV-3)",
+      "result_summary": "Path: BTR Mediterranean ← BNUO (Moroccan record) ~ BNUO Pte. Ltd. (Singapore registry, possibly same as) ← BTR (Jiangsu) New Material Technology ← BTR New Material Group.",
+      "interpretation": "An ownership path, not a trade link. Compare Case 1, where the shortest path was a shipment.",
+      "scorecard": "worked",
+      "entity_ids": [
+        "El_6QFk0rVRdYJanrqEtAA",
+        "b1W3iE__07Zz0BOvA-8s7g",
+        "NKDYreiU9nvqyC4RRZQDfA",
+        "zduDdSDoWzRJWKUinb7e0w",
+        "jeHf5QJt0JXowTiCA8JiIQ"
+      ],
+      "step": "owner",
+      "case_id": "case-2"
+    },
+    {
+      "id": "s208",
+      "timestamp": "2026-10-14T19:26:35Z",
+      "server": "sayari",
+      "tool": "get_entity_profile",
+      "params": {
+        "entity_id": "NKDYreiU9nvqyC4RRZQDfA",
+        "relationships_limit": 30
+      },
+      "question": "Who is behind BNUO International Holding in Singapore?",
+      "purpose": "Ownership (INV-3)",
+      "result_summary": "UEN 202332562W, registered 2023-08-14, holding company at Duo Tower, Fraser Street. 100% shareholder BTR (Jiangsu). Its CEO is also general manager of the Moroccan company (an individual, named in Sayari). Also owns Envolvic International Holding. Mass-address and nominee-director flags.",
+      "interpretation": "The Singapore step is a corporate-services shell, but its shareholder is a BTR subsidiary. The same executive also runs the Moroccan company, which supports the 'possibly same as' link.",
+      "scorecard": "worked",
+      "entity_ids": [
+        "NKDYreiU9nvqyC4RRZQDfA",
+        "zduDdSDoWzRJWKUinb7e0w"
+      ],
+      "step": "owner",
+      "case_id": "case-2"
+    },
+    {
+      "id": "s506",
+      "timestamp": "2026-10-14T19:26:35Z",
+      "server": "sayari",
+      "tool": "search_suppliers",
+      "params": {
+        "query": "graphite",
+        "hs_code": "380110",
+        "departure_country": "VNM",
+        "arrival_country": "USA",
+        "date_from": "2024-01-01",
+        "limit": 10
+      },
+      "question": "Who are the five Vietnam suppliers?",
+      "purpose": "Corridor scan: name the suppliers",
+      "result_summary": "Minh Thinh Loi (Da Nang, 30 shipments, latest 24 Jan 2025), HS Hyosung Global Logistics Vina (2), Hyosung TNC (1), Graphite India (1), Samsung Electronics Vietnam Thai Nguyen (1, 2019).",
+      "interpretation": "No Chinese-owned anode maker. One local parts maker, Korean groups and a logistics firm.",
+      "scorecard": "worked",
+      "entity_ids": [
+        "ib6a_v_imoUoFRPQiwEjPA"
+      ],
+      "step": "corridor",
+      "case_id": "case-5"
+    },
+    {
+      "id": "s507",
+      "timestamp": "2026-10-14T19:26:35Z",
+      "server": "sayari",
+      "tool": "search_suppliers",
+      "params": {
+        "query": "graphite",
+        "hs_code": "380110",
+        "departure_country": "THA",
+        "arrival_country": "USA",
+        "date_from": "2024-01-01",
+        "limit": 10
+      },
+      "question": "Who are the eight Thailand suppliers?",
+      "purpose": "Corridor scan: name the suppliers",
+      "result_summary": "Shanghai Supreme International Freight Forwarding, T.C. Pharmaceutical (three records), ECU Worldwide (Thailand), AC Container Line, China Highwin (Thailand), Topasia International Logistics.",
+      "interpretation": "Forwarders and a drinks maker. China Highwin is the only Chinese-named one; checked further.",
+      "scorecard": "worked",
+      "entity_ids": [
+        "oXMFQqYBSVg9LN8JdsZXRg"
+      ],
+      "step": "corridor",
+      "case_id": "case-5"
+    },
+    {
+      "id": "s508",
+      "timestamp": "2026-10-14T19:26:35Z",
+      "server": "sayari",
+      "tool": "search_suppliers",
+      "params": {
+        "query": "graphite",
+        "hs_code": "380110",
+        "departure_country": "MYS",
+        "arrival_country": "USA",
+        "date_from": "2024-01-01",
+        "limit": 10
+      },
+      "question": "Who are the two Malaysia suppliers?",
+      "purpose": "Corridor scan: name the suppliers",
+      "result_summary": "Graphite India Limited (1 shipment) and PAC Worldwide Corp (1, Apr 2025).",
+      "interpretation": "No Malaysian producer ships HS 3801.10 to the US in this data.",
+      "scorecard": "worked",
+      "entity_ids": [],
+      "step": "corridor",
+      "case_id": "case-5"
+    },
+    {
+      "id": "s404",
+      "timestamp": "2026-10-14T19:26:40Z",
+      "server": "sayari",
+      "tool": "get_upstream_supply_chain",
+      "params": {
+        "entity_id": "Fj3vtxDroFyjyPsLgsnm2A",
+        "product": [
+          "3801",
+          "2504",
+          "2713"
+        ],
+        "max_depth": 1,
+        "limit": 40
+      },
+      "question": "Where do POSCO Future M's graphite and carbon inputs come from?",
+      "purpose": "Inbound graphite by origin country",
+      "result_summary": "18 supplier rows. Natural graphite (HS 2504) from China: Zhanjiang Juxin New Energy (two records, Jul–Dec 2023), Qingdao Haida New Energy Materials (Jun–Sep 2023), Qingdao Zhongshuo New Energy (Aug 2023), Qingdao Kuntuo New Material (Jul–Sep 2023). Artificial graphite (HS 3801) from China: Qingdao Kuntuo (Sep 2023) and Qingdao Qingbei Carbon Products (Oct 2021 – Jul 2022). Natural graphite from Twigg Exploration & Mining, Mozambique (Jun 2022). Petroleum coke (HS 2713) from China EPT (Jul 2022) and P66 Ltd, UK (Mar 2022). Coal-tar pitch and oils from Rain Carbon Germany via Belgium and the Netherlands (Nov 2021 – Jan 2024). Carbon black (HS 2803) from several of the Qingdao and Zhanjiang suppliers.",
+      "interpretation": "Chinese natural graphite does flow into this Korean-owned producer. Every Chinese graphite row is dated 2023 or earlier.",
+      "scorecard": "worked",
+      "entity_ids": [
+        "Fj3vtxDroFyjyPsLgsnm2A",
+        "2ZpM8WWpqajK6jBIXAbTYQ",
+        "AyicfnT87hRIGEH7FmYfvA",
+        "YeY_0foWAdFxn5HCX58QGQ",
+        "mNl1NLitXD_XdCQLg1DGlA",
+        "goOR9J6dEj2sQuo-snuJ6A",
+        "on87w5_QYqQaQl1FQXC7cw",
+        "ffPlxyHu42G892jPO7tpbA",
+        "ljXszsmI8EtP_3Q4fuC6ZA",
+        "Bkp4ORhM634Fg0vFJk_YaA"
+      ],
+      "step": "in",
+      "case_id": "case-4"
+    },
+    {
+      "id": "s209",
+      "timestamp": "2026-10-14T19:26:42Z",
+      "server": "sayari",
+      "tool": "get_entity_profile",
+      "params": {
+        "entity_id": "zduDdSDoWzRJWKUinb7e0w",
+        "relationships_limit": 20
+      },
+      "question": "Is BTR (Jiangsu) wholly owned by BTR?",
+      "purpose": "Ownership (INV-3)",
+      "result_summary": "BTR (Jiangsu) New Material Technology, Changzhou, USCC 91320413MA1NAU5H7M, registered 2017-01-16. 100% shareholder BTR New Material Group. Holds 100% of BNUO. Its chairman is the same executive.",
+      "interpretation": "Every step is 100%. The same executive's name appears at the Jiangsu, Singapore and Moroccan companies (a cross-script name match).",
+      "scorecard": "worked",
+      "entity_ids": [
+        "zduDdSDoWzRJWKUinb7e0w",
+        "jeHf5QJt0JXowTiCA8JiIQ",
+        "NKDYreiU9nvqyC4RRZQDfA"
+      ],
+      "step": "owner",
+      "case_id": "case-2"
+    },
+    {
+      "id": "s210",
+      "timestamp": "2026-10-14T19:26:42Z",
+      "server": "sayari",
+      "tool": "search_shipments",
+      "params": {
+        "query": "\"BTR MEDITERRANEAN\"",
+        "limit": 25,
+        "response_mode": "compact"
+      },
+      "question": "What has the Moroccan plant shipped or received?",
+      "purpose": "Inputs / outputs (INV-4/5)",
+      "result_summary": "10 rows, all inbound from China to Morocco, Nov 2025 – Jun 2026: racks and pipelines (Master Union Logistics, 3), steel pipes (Shenzhen Haizhuolian Energy, 4), machinery and unspecified goods (Sinotrans, 2), one row from China Construction Yangtze International Engineering. No graphite, no exports.",
+      "interpretation": "Construction-stage inputs only. The trail from this plant has not started.",
+      "scorecard": "worked",
+      "entity_ids": [
+        "hmnBuu6vz31_-lqNazNviw",
+        "Fky8oAxiQS_tuT-0pi3wQA",
+        "dilh_xCSnTZQ_dZDy_pZwQ",
+        "1CjF5vzVgFFxVomroaYyaA",
+        "9YkmymiyFPtNKUELqJc27g",
+        "pbv1TWixpVNb8MsE_zRHYQ",
+        "30kEauryyUlKCcOmp2hJjQ",
+        "xU9hzwrivrkHb9uqEII7Ew",
+        "vgDVfKlcdVw1l_-WTSushw"
+      ],
+      "step": "in",
+      "case_id": "case-2"
+    },
+    {
+      "id": "s405",
+      "timestamp": "2026-10-14T19:26:46Z",
+      "server": "sayari",
+      "tool": "search_shipments",
+      "params": {
+        "query": "\"POSCO FUTURE M\" OR \"POSCO CHEMICAL\"",
+        "departure_country": "CHN",
+        "arrival_country": "KOR",
+        "hs_code": "2504",
+        "limit": 30,
+        "response_mode": "compact"
+      },
+      "question": "Can we pull the dated natural-graphite rows behind s404?",
+      "purpose": "Inbound shipment rows",
+      "result_summary": "0 rows.",
+      "interpretation": "The same flows s404 found are not reachable by name plus HS plus corridor. Shipment search and the supply-chain graph disagree. Recorded as a tool finding.",
+      "scorecard": "failed",
+      "entity_ids": [
+        "Fj3vtxDroFyjyPsLgsnm2A"
+      ],
+      "step": "gap",
+      "case_id": "case-4"
+    },
+    {
+      "id": "s509",
+      "timestamp": "2026-10-14T19:26:46Z",
+      "server": "sayari",
+      "tool": "search_suppliers",
+      "params": {
+        "query": "graphite",
+        "hs_code": "380110",
+        "departure_country": "MEX",
+        "arrival_country": "USA",
+        "date_from": "2024-01-01",
+        "limit": 25,
+        "response_mode": "compact"
+      },
+      "question": "Who leads the Mexico corridor?",
+      "purpose": "Corridor scan: name the suppliers",
+      "result_summary": "Top 25 of 347: Carbograf Industrial (220), Syngenta Agro (168), GrafTech Mexico (147), Viakem (94), Carbones Industriales Mexicanos (73), then Dow, Nouryon, Polaquimia, PPG, Mersen and other chemical or consumer firms.",
+      "interpretation": "Electrode and industrial-carbon makers plus many chemical firms whose rows are probably mis-coded. No Chinese-owned anode maker in the top 25.",
+      "scorecard": "partial",
+      "entity_ids": [
+        "PrF3X58WIkceHRwbwvvUvg"
+      ],
+      "step": "corridor",
+      "case_id": "case-5"
+    },
+    {
+      "id": "s211",
+      "timestamp": "2026-10-14T19:26:47Z",
+      "server": "sayari",
+      "tool": "search_trade_facets",
+      "params": {
+        "scope": "shipments",
+        "query": "graphite",
+        "departure_country": "MAR",
+        "arrival_country": "USA",
+        "hs_code": "380110",
+        "date_from": "2024-01-01",
+        "bucket_limit": 15
+      },
+      "question": "Who are the top shippers and buyers in the 3,088 Morocco-to-US HS 3801.10 rows?",
+      "purpose": "Corridor (INV-8)",
+      "result_summary": "3,088 rows, all from one data source. Top suppliers by ID: Haifa Negev Technologies 302, Coromandel 147, Gandhar Oil Refinery 135, Rotem Amfert 117, ADAMA 114. Top buyers: Uniphos Colombia 111, Haifa Mexico 96, Haifa Colombia 77, Interoc 65. Earliest date bucket 2021 despite the 2024 filter.",
+      "interpretation": "The biggest 'graphite' shippers are fertilizer, pesticide and oil companies, and the biggest buyers are in Latin America.",
+      "scorecard": "worked",
+      "entity_ids": [
+        "P_M9e-2M49LOSq5_rgBjHA",
+        "ZFnylQOY6YlfxXz6_8ySGA",
+        "buiKsXiwKnUTCRKBasr6Gw",
+        "PVBuK_uEm4Ag4mP2AQ1Euw",
+        "fsElZe8XUXmps2GtECr1VQ",
+        "lnxv3guxz0fcOzR1f52Pbw",
+        "pgH9bMsoljU5T39W-tFfjw",
+        "eZ3aFZlfdkLKXB4E8snZLA",
+        "6o_3QDj9uPQPX_tvVCBBpA"
+      ],
+      "step": "corridor",
+      "case_id": "case-2"
+    },
+    {
+      "id": "s304",
+      "timestamp": "2026-10-14T19:26:48Z",
+      "server": "sayari",
+      "tool": "get_entity_profile",
+      "params": {
+        "entity_id": "-jDI6N9q1MWnPT0ujf-8iw",
+        "relationships_limit": 60
+      },
+      "question": "Who does Zhongke Electric own, and what identifies it?",
+      "purpose": "Map ownership",
+      "result_summary": "USCC 914306007607108300, LEI 65560006WDZK75ECJB29, SZSE 300035, registered 1999. Its listed business includes lithium-ion anode material and silicon anodes. It holds 100% of 湖南中科星城科技有限公司 and 100% of 湖南中科智造工程技术有限公司. The summary counts 31 owner_of and 11 shareholder_of links. No trade.",
+      "interpretation": "This is the parent. The anode business sits one level down, in the Zhongke Xingcheng holding company.",
+      "scorecard": "worked",
+      "entity_ids": [
+        "-jDI6N9q1MWnPT0ujf-8iw",
+        "xdHWWBfC-uTqowtR0Rzdtg"
+      ],
+      "step": "owner",
+      "case_id": "case-3"
+    },
+    {
+      "id": "s305",
+      "timestamp": "2026-10-14T19:26:48Z",
+      "server": "sayari",
+      "tool": "search_entities",
+      "params": {
+        "query": "\"Shinzoom\"",
+        "limit": 20
+      },
+      "question": "What records use the group's English brand?",
+      "purpose": "Resolve the anode arm",
+      "result_summary": "15 results: a 'HUNAN ZHONGKE SHINZOOM CO., LTD' trade record (CHN/USA/MEX/CAN); Zhongke Shinzoom (HK) Co., Limited (HK CR 2574460); Zhongke Shinzoom (HK) Holdings Co., Limited (registry); 'ZHONGKE SHINZOOM (HK) HOLDINGS CO LIMITED' at 721-725 Nathan Road; Shinzoom Nouveau United Corp. (Montreal; one record also names Nouveau Monde Graphite); a UK 'Shinzoom Ltd'; and Chinese trademarks.",
+      "interpretation": "The trade-bearing records use 'Shinzoom'. The Canadian entity points to a separate Shinzoom tie-up with Nouveau Monde Graphite, which we didn't pursue. Nothing in Oman.",
+      "scorecard": "worked",
+      "entity_ids": [
+        "RpVysafWvaXbqy0N4a5qvw",
+        "KgkxLJt2omf21G3k-AFbiw",
+        "aWkEICLnf2fzW78geuH5Ag",
+        "5Rb8mSrQ1oKnsToAIDba8w"
+      ],
+      "step": "owner",
+      "case_id": "case-3"
+    },
+    {
+      "id": "s306",
+      "timestamp": "2026-10-14T19:26:48Z",
+      "server": "sayari",
+      "tool": "search_entities",
+      "params": {
+        "query": "中科星城",
+        "limit": 20
+      },
+      "question": "Does a Chinese-name search find Xingcheng entities, including any overseas?",
+      "purpose": "Resolve the anode arm",
+      "result_summary": "The call timed out.",
+      "interpretation": "No result. We got the same records through the downstream traversal (s307) instead.",
+      "scorecard": "failed",
+      "entity_ids": [],
+      "step": "method",
+      "case_id": "case-3"
+    },
+    {
+      "id": "s307",
+      "timestamp": "2026-10-14T19:29:21Z",
+      "server": "sayari",
+      "tool": "find_downstream_entities",
+      "params": {
+        "entity_id": "-jDI6N9q1MWnPT0ujf-8iw",
+        "limit": 60,
+        "max_depth": 3,
+        "response_mode": "compact"
+      },
+      "question": "Does Zhongke's registry tree reach Hong Kong or Oman?",
+      "purpose": "Map ownership",
+      "result_summary": "48 entities came back, all Chinese. They include Hunan, Guizhou, Gui'an, Yunnan, Gansu and Sichuan Zhongke Xingcheng graphite companies, a Xingcheng supply-chain company and Anhui Haida. Many level-3 hits are venture holdings through 宁波科泓产业投资中心. Gui'an and Yunnan Xingcheng carry 'owned_by_usa_section_1260h_entity' flags through a co-owner, 湖南中科星城控股有限公司. No Hong Kong or Omani entity.",
+      "interpretation": "The registry tree stops at China's border. The Hong Kong vehicle and the Oman project company aren't linked in Sayari, so the overseas half of the chain must come from the company's filings.",
+      "scorecard": "worked",
+      "entity_ids": [
+        "-jDI6N9q1MWnPT0ujf-8iw",
+        "xdHWWBfC-uTqowtR0Rzdtg",
+        "7M3Jhg6trAddkVbwtzSdZA",
+        "Etd_ARUNj9lHbX9vIMUWbQ"
+      ],
+      "step": "owner",
+      "case_id": "case-3"
+    },
+    {
+      "id": "s308",
+      "timestamp": "2026-10-14T19:29:21Z",
+      "server": "sayari",
+      "tool": "get_entity_profile",
+      "params": {
+        "entity_id": "RpVysafWvaXbqy0N4a5qvw",
+        "relationships_limit": 60
+      },
+      "question": "Who does the Shinzoom trade record ship to?",
+      "purpose": "Baseline trade",
+      "result_summary": "There are 61 sent shipments and no identifiers. Its addresses match the group's registry addresses in Ningxiang and at the Yida Smart Technology Park in Changsha. Ships_to: Linergy Power (MYS), SK On Hungary, Samsung SDI, SK Battery America, EVE Energy Malaysia, General Motors, Uni-Trans Line. It owns US, Canadian and Mexican 'SHINZOM' trademarks.",
+      "interpretation": "This is the group's exporting identity in trade data. Its address ties it to the registry producer (e307).",
+      "scorecard": "worked",
+      "entity_ids": [
+        "RpVysafWvaXbqy0N4a5qvw",
+        "aoeSqNICt_VUP-o-F-84Yg",
+        "4fqrWAcyrgtWw2RdV6qZsg",
+        "_WCNtC_iMCzef8u8s0uKyQ",
+        "ySemfyJJesFbfxEgW2SgCg",
+        "t2HmaexxvTE5WgGtj3BMxg",
+        "q4uVT7bM-GusYLonMicJ_Q",
+        "-3h_vhYQa9eIl2-txBW36Q"
+      ],
+      "step": "out",
+      "case_id": "case-3"
+    },
+    {
+      "id": "s309",
+      "timestamp": "2026-10-14T19:29:42Z",
+      "server": "sayari",
+      "tool": "search_entity_facets",
+      "params": {
+        "query": "Zhongke OR Shinzoom OR \"Zhong Ke\"",
+        "bucket_limit": 25
+      },
+      "question": "Which countries hold Zhongke- or Shinzoom-named entities?",
+      "purpose": "Find the plant",
+      "result_summary": "total_available 0.",
+      "interpretation": "The OR syntax failed here as well (see s303). This is a tool finding.",
+      "scorecard": "failed",
+      "entity_ids": [],
+      "step": "method",
+      "case_id": "case-3"
+    },
+    {
+      "id": "s310",
+      "timestamp": "2026-10-14T19:29:42Z",
+      "server": "sayari",
+      "tool": "get_entity_profile",
+      "params": {
+        "entity_id": "KgkxLJt2omf21G3k-AFbiw",
+        "relationships_limit": 40
+      },
+      "question": "Is the older Hong Kong company the Oman investor?",
+      "purpose": "Map ownership",
+      "result_summary": "Zhongke Shinzoom (HK) Co., Limited, CR 2574460, registered 2017-09-05, status inactive. No relationships and no trade.",
+      "interpretation": "A dormant near-namesake. It is not the 2024 holding company named in the filing.",
+      "scorecard": "worked",
+      "entity_ids": [
+        "KgkxLJt2omf21G3k-AFbiw"
+      ],
+      "step": "owner",
+      "case_id": "case-3"
+    },
+    {
+      "id": "s311",
+      "timestamp": "2026-10-14T19:29:47Z",
+      "server": "sayari",
+      "tool": "search_entity_facets",
+      "params": {
+        "query": "Zhongke",
+        "bucket_limit": 40
+      },
+      "question": "Is any Zhongke-named entity registered in Oman?",
+      "purpose": "Find the plant",
+      "result_summary": "128,666 entities. CHN 127,287, HKG 678, then 38 more countries down to ARE (2). Oman isn't among the 40 country buckets shown.",
+      "interpretation": "Oman has at most a trivial count. We found no Omani Zhongke entity. The bucket cut-off means this isn't a full proof.",
+      "scorecard": "partial",
+      "entity_ids": [],
+      "step": "plant",
+      "case_id": "case-3"
+    },
+    {
+      "id": "s312",
+      "timestamp": "2026-10-14T19:29:47Z",
+      "server": "sayari",
+      "tool": "search_entities",
+      "params": {
+        "query": "Sohar anode graphite",
+        "limit": 15
+      },
+      "question": "Is there any anode or graphite entity in Sohar?",
+      "purpose": "Find the plant",
+      "result_summary": "0 results.",
+      "interpretation": "Sayari has no anode entity at Sohar, which fits a plant still under construction.",
+      "scorecard": "partial",
+      "entity_ids": [],
+      "step": "plant",
+      "case_id": "case-3"
+    },
+    {
+      "id": "s406",
+      "timestamp": "2026-10-14T19:29:53Z",
+      "server": "sayari",
+      "tool": "search_shipments",
+      "params": {
+        "query": "\"ZHANJIANG JUXIN\" graphite",
+        "departure_country": "CHN",
+        "arrival_country": "KOR",
+        "limit": 30,
+        "response_mode": "compact"
+      },
+      "question": "Do the supplier's own rows show product descriptions (e.g. 'spherical')?",
+      "purpose": "Product grade of inbound graphite",
+      "result_summary": "0 rows.",
+      "interpretation": "Supplier-name search also misses rows the graph holds. We can't read the grade of these inputs from Sayari row text.",
+      "scorecard": "failed",
+      "entity_ids": [
+        "2ZpM8WWpqajK6jBIXAbTYQ"
+      ],
+      "step": "gap",
+      "case_id": "case-4"
+    },
+    {
+      "id": "t301",
+      "timestamp": "2026-10-14T19:29:55Z",
+      "server": "tavily",
+      "tool": "tavily_search",
+      "params": {
+        "query": "Zhongke Electric Oman Sohar anode groundbreaking May 2026",
+        "max_results": 8,
+        "search_depth": "advanced"
+      },
+      "question": "Is the May 2026 groundbreaking real, and who is the investing entity?",
+      "purpose": "Verify a single-source claim",
+      "result_summary": "GraphiteHub, Baidu Baike, Gulf News (citing ONA), MEED (via goalfore) and an Arabian Daily post all report ground broken at Sohar Freezone on 8 May 2026, with first-stage output due in 2027. Gulf News says Zhongke acted 'through its subsidiary Zhongke Xingcheng (Hong Kong)'. GraphiteHub also reports that on 12 Jun 2026 the board ended three other projects (two in China and one in Morocco) to focus on Luzhou and Oman. It also cites a 10 Sep 2026 company post on the Phase 1 frame being completed.",
+      "interpretation": "The 8 May 2026 groundbreaking now has several independent sources, including Omani government-linked press. It is no longer single-source. The Morocco cancellation still rests on GraphiteHub and the board notice it cites.",
+      "scorecard": "worked",
+      "entity_ids": [
+        "case3-oman-sohar-project-co",
+        "aWkEICLnf2fzW78geuH5Ag"
+      ],
+      "step": "context",
+      "case_id": "case-3"
+    },
+    {
+      "id": "t302",
+      "timestamp": "2026-10-14T19:29:55Z",
+      "server": "tavily",
+      "tool": "tavily_search",
+      "params": {
+        "query": "中科电气 阿曼 负极材料 项目 开工 苏哈尔",
+        "max_results": 8,
+        "search_depth": "advanced"
+      },
+      "question": "What does Zhongke's own filing say about the Oman structure?",
+      "purpose": "Map ownership",
+      "result_summary": "Zhongke's filing (Sina Finance bulletin) names the investor as 中科星城(香港)控股有限公司 (Zhongke Shinzoom (HK) Holdings), registration no. 77299448, at Room 1406A, 14/F, Belgian Bank Building, 721-725 Nathan Road, Mong Kok. Capital is HK$1m and its sole shareholder (100%) is 湖南中科星城石墨有限公司. The HK company sets up the Oman project company 中科星城苏哈尔新材料科技有限公司 on Plot 3751, Sohar Free Zone (356,000 m²). Investment is up to RMB 8bn, in two 100,000 t/yr parts of 36 months each. The Morocco project is deferred. Securities Times (4 Jun 2025) and aciep.net report the same chain, aciep giving Zhongke Electric's stake in the graphite company as 99.9984375%. Sina/鑫椤 and the company website (cseco.cn) confirm the 8 May 2026 start. A Sohu piece says core equipment shipped from Nantong and Shanghai to Oman.",
+      "interpretation": "This is the primary source for the HK→Oman links. Its HK address matches a Sayari trade record (e306). The equipment-shipment report is single-source.",
+      "scorecard": "worked",
+      "entity_ids": [
+        "7M3Jhg6trAddkVbwtzSdZA",
+        "aWkEICLnf2fzW78geuH5Ag",
+        "5Rb8mSrQ1oKnsToAIDba8w",
+        "case3-oman-sohar-project-co"
+      ],
+      "step": "owner",
+      "case_id": "case-3"
+    },
+    {
+      "id": "s212",
+      "timestamp": "2026-10-14T19:29:56Z",
+      "server": "sayari",
+      "tool": "search_shipments",
+      "params": {
+        "query": "graphite",
+        "departure_country": "MAR",
+        "arrival_country": "USA",
+        "hs_code": "380110",
+        "date_from": "2024-01-01",
+        "limit": 50,
+        "response_mode": "compact"
+      },
+      "question": "What do the corridor rows actually describe?",
+      "purpose": "Corridor (INV-8)",
+      "result_summary": "50 rows read. 8 are graphite: SGL Carbon SAS → SGL Carbon LLC (graphite rods, mm sizes) and GrafTech Switzerland → GrafTech USA (artificial graphite). The other 42 are fertilizers, pesticides, acids, solvents and plastics, mostly to Latin America. 41 of the 50 arrive on just three dates (27 Jun, 29 Jun, 5 Jul 2025).",
+      "interpretation": "The bucket is mostly mislabelled. These look like Latin America-bound cargo moving through Tanger Med and a US transit point, all given a graphite code. Real graphite in it is industrial.",
+      "scorecard": "worked",
+      "entity_ids": [
+        "9lcqZ7Jk-n91ZNrYnbZKkQ",
+        "XL7kqgRa7AB0VXF9aN4TvQ",
+        "iUZRg27ESc8EcIuPn3A41w",
+        "ZhR1A0VWHf7oRyGfZOxKtg",
+        "P_M9e-2M49LOSq5_rgBjHA",
+        "ZFnylQOY6YlfxXz6_8ySGA",
+        "PVBuK_uEm4Ag4mP2AQ1Euw"
+      ],
+      "step": "corridor",
+      "case_id": "case-2"
+    },
+    {
+      "id": "s407",
+      "timestamp": "2026-10-14T19:29:58Z",
+      "server": "sayari",
+      "tool": "traverse_network",
+      "params": {
+        "entity_id": "Fj3vtxDroFyjyPsLgsnm2A",
+        "relationships": [
+          "receives_from"
+        ],
+        "max_depth": 1,
+        "countries": [
+          "CHN"
+        ],
+        "limit": 50
+      },
+      "question": "Who are all of POSCO Future M's Chinese suppliers in the graph?",
+      "purpose": "Supplier list with addresses",
+      "result_summary": "44 China-linked suppliers. Graphite-related names include Zhanjiang Juxin New Energy (Guandu Industrial Park, Zhanjiang), Qingdao Huateng Graphite Technology (Nanshu Town, Laixi), Qingdao GR-Taida Carbon (Pingdu), Qingdao Luowei New Material (Graphite New Material Cluster Area, Nanshu, Laixi), Qingdao Qingbei Carbon Products (same Laixi graphite cluster), Qingdao Kuntuo New Material (Nanshu, Laixi), Hunan Zoomwe Zhengyuan Advanced Material Trade (four records) and Nantong Jintong Energy Storage. Others supply cathode inputs (Huayou New Energy Quzhou in several records, Zhejiang POSCO Huayou ESM, Ganfeng Lithium, Tianqi Lithium, Yibin Tianyi Lithium), refractories (Zibo Luzhong, Yingkou Zhonghe, RHI Asia Pacific) or are freight forwarders (Kuehne + Nagel, Shanghai Speedy, Global Expedition Logistics).",
+      "interpretation": "Several graphite suppliers sit in the Nanshu/Laixi natural-graphite cluster in Shandong. The list mixes battery, cathode and steel-refractory inputs, because the company also makes refractories.",
+      "scorecard": "worked",
+      "entity_ids": [
+        "Fj3vtxDroFyjyPsLgsnm2A",
+        "2ZpM8WWpqajK6jBIXAbTYQ",
+        "v1QB9w2AdIcXcohuVJZHyw",
+        "GglryO0mCnl2PA1AOlB2JA",
+        "-E5VEQtbiDlJDhmMR7GywQ",
+        "on87w5_QYqQaQl1FQXC7cw",
+        "goOR9J6dEj2sQuo-snuJ6A"
+      ],
+      "step": "in",
+      "case_id": "case-4"
+    },
+    {
+      "id": "t501",
+      "timestamp": "2026-10-14T19:30:01Z",
+      "server": "tavily",
+      "tool": "tavily_search",
+      "params": {
+        "query": "Chinese anode material graphite plant Vietnam OR Malaysia OR Thailand OR Mexico Shanshan Putailai Kaijin Shinzoom Shangtai overseas factory",
+        "max_results": 8,
+        "search_depth": "advanced"
+      },
+      "question": "Which Chinese anode makers have plants in the corridor countries?",
+      "purpose": "Candidate list for the corridor",
+      "result_summary": "GraphiteHub, Jiemian, Yicai/SSE and Scandasia report Putailai's US$297m, 50,000 t/yr anode plant in Gurun, Kedah, Malaysia: announced 11 Mar 2026, ground broken 1 Jun 2026, about 24 months to build. Shinzoom's planned plant is in Morocco. No Vietnam, Thailand or Mexico anode plant by these firms appeared.",
+      "interpretation": "Putailai's Malaysia plant is the one Chinese-owned anode plant in the five corridors, and it is not yet built.",
+      "scorecard": "worked",
+      "entity_ids": [],
+      "step": "context",
+      "case_id": "case-5"
+    },
+    {
+      "id": "s313",
+      "timestamp": "2026-10-14T19:30:10Z",
+      "server": "sayari",
+      "tool": "get_entity_profile",
+      "params": {
+        "entity_id": "5Rb8mSrQ1oKnsToAIDba8w",
+        "relationships_limit": 40
+      },
+      "question": "What is the Nathan Road 'Shinzoom HK Holdings' trade record?",
+      "purpose": "Map ownership",
+      "result_summary": "No country and no identifiers; address Flat/Rm 1406A, 14/F, Belgian Bank Building, 721-725 Nathan Road. Its only source is USA Imports. One shipment, to Chemico LLC.",
+      "interpretation": "The address matches the filing's Hong Kong investor exactly, so this is likely the same company acting as seller of record (e306).",
+      "scorecard": "worked",
+      "entity_ids": [
+        "5Rb8mSrQ1oKnsToAIDba8w",
+        "XtUNxc54aQijxNuFzwkjxg"
+      ],
+      "step": "owner",
+      "case_id": "case-3"
+    },
+    {
+      "id": "s314",
+      "timestamp": "2026-10-14T19:30:10Z",
+      "server": "sayari",
+      "tool": "get_entity_profile",
+      "params": {
+        "entity_id": "aWkEICLnf2fzW78geuH5Ag",
+        "relationships_limit": 40
+      },
+      "question": "Does the Hong Kong registry record show owners or an Omani subsidiary?",
+      "purpose": "Map ownership",
+      "result_summary": "Zhongke Shinzoom (HK) Holdings Co., Limited / 中科星城(香港)控股有限公司. Registered 2024-11-08, active as of 2026-07-28. Sources: China NECIPS and the HK incorporation lists. No relationships, no trade.",
+      "interpretation": "Sayari confirms the vehicle exists and when it was formed. It shows neither the owner nor the Oman subsidiary.",
+      "scorecard": "partial",
+      "entity_ids": [
+        "aWkEICLnf2fzW78geuH5Ag"
+      ],
+      "step": "owner",
+      "case_id": "case-3"
+    },
+    {
+      "id": "s315",
+      "timestamp": "2026-10-14T19:30:10Z",
+      "server": "sayari",
+      "tool": "search_entities",
+      "params": {
+        "query": "Sohar New Material Technology",
+        "limit": 15
+      },
+      "question": "Is the Oman project company in Sayari under an English name?",
+      "purpose": "Find the plant",
+      "result_summary": "0 results.",
+      "interpretation": "Sayari has no record of the project company named in the filing.",
+      "scorecard": "partial",
+      "entity_ids": [],
+      "step": "plant",
+      "case_id": "case-3"
+    },
+    {
+      "id": "s510",
+      "timestamp": "2026-10-14T19:30:10Z",
+      "server": "sayari",
+      "tool": "search_trade_facets",
+      "params": {
+        "scope": "shipments",
+        "query": "anode OR \"spherical graphite\" OR \"negative electrode\"",
+        "hs_code": "3801",
+        "arrival_country": "USA",
+        "date_from": "2024-01-01",
+        "bucket_limit": 20
+      },
+      "question": "Do any US-bound HS 3801 rows describe battery anode material?",
+      "purpose": "Find battery-grade rows by description",
+      "result_summary": "0 results.",
+      "interpretation": "The boolean query or the 4-digit HS filter returned nothing. A single word worked later (s518). A finding about the tool.",
+      "scorecard": "failed",
+      "entity_ids": [],
+      "step": "method",
+      "case_id": "case-5"
+    },
+    {
+      "id": "s408",
+      "timestamp": "2026-10-14T19:30:13Z",
+      "server": "sayari",
+      "tool": "search_shipments",
+      "params": {
+        "query": "\"POSCO FUTURE M\"",
+        "departure_country": "KOR",
+        "arrival_country": "USA",
+        "hs_code": "3801",
+        "limit": 40,
+        "response_mode": "compact"
+      },
+      "question": "Does POSCO Future M ship anode material to US battery makers?",
+      "purpose": "Outbound HS 3801 Korea → USA (page 1 of 3)",
+      "result_summary": "105 rows in total; this page has 40. Supplier is the main POSCO Future M record on every row. Buyers on this page: Tesla (12 rows of artificial graphite HS 3801.10, 'anode active material', Jan–Feb 2026), Panasonic Energy Corporation (9 rows, HS 3801.90 and 3801.10, 'anode active material', May–Jul 2026), SK Battery America (8 rows, 'Graphite PAS-CP3K', May–Jun 2025), General Motors LLC (1 row HS 3801.10, Dec 2021), Tesla with Panasonic Procurement Corporation of America (1 row, Aug 2023), and two freight forwarders, Scan Global Logistics DTW (8 rows, 2023) and FNS Inc. Chicago (1 row, 2023).",
+      "interpretation": "The query-text method from Case 1 works: every row's supplier is the right company, and product text says 'anode active material'.",
+      "scorecard": "worked",
+      "entity_ids": [
+        "Fj3vtxDroFyjyPsLgsnm2A",
+        "xWhz7CFJV3lxsgg8fHMGHA",
+        "wxnxnhKanOt7EorBjIZsxQ",
+        "aoeSqNICt_VUP-o-F-84Yg",
+        "WLUn_1F-Zz5cShfohEF7BA",
+        "BZPBOZcD6M_QtBtOWWtYUg",
+        "5qJ3A4FHw2rTjNrnGOrHQQ",
+        "FWd2q_iBgH2ER9aw1Gph_g"
+      ],
+      "step": "out",
+      "case_id": "case-4"
+    },
+    {
+      "id": "s316",
+      "timestamp": "2026-10-14T19:30:16Z",
+      "server": "sayari",
+      "tool": "get_entity_profile",
+      "params": {
+        "entity_id": "7M3Jhg6trAddkVbwtzSdZA",
+        "relationships_limit": 60
+      },
+      "question": "Who owns the anode producer, and does it trade?",
+      "purpose": "Map ownership",
+      "result_summary": "Hunan Zhongke Star City Graphite, USCC 9143010072796955X1, registered 2001-05-24, at No. 118 Quanzhou North Road, Ningxiang. Current shareholder: 湖南中科星城科技有限公司, 99.99844%. Former holders include Zhongke Electric (99.99844%) and 北京当升材料科技 (84%). Pi Tao (皮涛) is listed with 16% and as executive director, probably an older entry. 17 owner_of links. No trade.",
+      "interpretation": "The registry confirms the producer sits under Zhongke Electric through one holding company. It shows no Hong Kong subsidiary, although the filing names one.",
+      "scorecard": "worked",
+      "entity_ids": [
+        "7M3Jhg6trAddkVbwtzSdZA",
+        "xdHWWBfC-uTqowtR0Rzdtg",
+        "-jDI6N9q1MWnPT0ujf-8iw"
+      ],
+      "step": "owner",
+      "case_id": "case-3"
+    },
+    {
+      "id": "s317",
+      "timestamp": "2026-10-14T19:30:16Z",
+      "server": "sayari",
+      "tool": "search_shipments",
+      "params": {
+        "query": "\"SHINZOOM\"",
+        "arrival_country": "USA",
+        "limit": 100,
+        "response_mode": "export"
+      },
+      "question": "Does Zhongke anode material ship directly from China to the US?",
+      "purpose": "Baseline trade",
+      "result_summary": "9 rows. Hunan Zhongke Shinzoom → SK Battery America: 7 rows, Aug 2021 to May 2022. Hunan Zhongke Shinzoom → General Motors: 1 row, HS 3801.10, 2 Mar 2025. Zhongke Shinzoom (HK) Holdings → Chemico LLC: 1 row, 15 Oct 2025, departing China.",
+      "interpretation": "The direct route is thin and irregular: a 2021–22 run to SK, one GM row in 2025 and one late-2025 row via the HK vehicle. Supplier field checked on every row.",
+      "scorecard": "worked",
+      "entity_ids": [
+        "RpVysafWvaXbqy0N4a5qvw",
+        "5Rb8mSrQ1oKnsToAIDba8w",
+        "aoeSqNICt_VUP-o-F-84Yg",
+        "4fqrWAcyrgtWw2RdV6qZsg",
+        "XtUNxc54aQijxNuFzwkjxg"
+      ],
+      "step": "out",
+      "case_id": "case-3"
+    },
+    {
+      "id": "s213",
+      "timestamp": "2026-10-14T19:30:18Z",
+      "server": "sayari",
+      "tool": "search_shipments",
+      "params": {
+        "query": "\"SHINZOOM\" | \"GOTION\" | \"CNGR\" | \"HAILIANG\" | \"COBCO\" | \"BTR\"",
+        "departure_country": "MAR",
+        "date_from": "2024-01-01",
+        "limit": 40,
+        "response_mode": "compact"
+      },
+      "question": "Do any Chinese-linked battery plants in Morocco ship anything out?",
+      "purpose": "Corridor (INV-8)",
+      "result_summary": "8 rows. One real hit: COBCO → Jiangmen Umicore Chang Xin (China), inorganic compounds, May 2025. The rest are false matches: timber described as '2&BTR' grade and one asphalt row.",
+      "interpretation": "No Gotion, CNGR, Hailiang, Shinzoom or BTR exports from Morocco to the US in Sayari.",
+      "scorecard": "worked",
+      "entity_ids": [
+        "uCtlsbaFXTco2UkaXMhPNg",
+        "oWaiMIhKLQJp4ywu8WsKSQ"
+      ],
+      "step": "corridor",
+      "case_id": "case-2"
+    },
+    {
+      "id": "s511",
+      "timestamp": "2026-10-14T19:30:18Z",
+      "server": "sayari",
+      "tool": "search_trade_facets",
+      "params": {
+        "scope": "shipments",
+        "query": "graphite",
+        "hs_code": "380110",
+        "departure_country": "VNM",
+        "arrival_country": "USA",
+        "date_from": "2024-01-01"
+      },
+      "question": "How many Vietnam-to-US shipment rows are there, and who dominates?",
+      "purpose": "Corridor scan: shipment count",
+      "result_summary": "35 rows. Minh Thinh Loi sent 30, all to LTD Material LLC. Latest row 25 Aug 2025.",
+      "interpretation": "One supplier-buyer pair is the whole corridor.",
+      "scorecard": "worked",
+      "entity_ids": [
+        "ib6a_v_imoUoFRPQiwEjPA",
+        "eX51gPEUQ-MpkznB5_ICaQ"
+      ],
+      "step": "corridor",
+      "case_id": "case-5"
+    },
+    {
+      "id": "s512",
+      "timestamp": "2026-10-14T19:30:18Z",
+      "server": "sayari",
+      "tool": "search_trade_facets",
+      "params": {
+        "scope": "shipments",
+        "query": "graphite",
+        "hs_code": "380110",
+        "departure_country": "KOR",
+        "arrival_country": "USA",
+        "date_from": "2024-01-01"
+      },
+      "question": "How many Korea-to-US shipment rows are there, and who buys?",
+      "purpose": "Corridor scan: shipment count",
+      "result_summary": "717 rows, latest 13 Jul 2026. General Motors is among the top buyers (35 rows). Top supplier ID n1lmY6idUXLOGTBCIVO09Q has 129 rows.",
+      "interpretation": "Korea is a real battery corridor into US plants.",
+      "scorecard": "worked",
+      "entity_ids": [
+        "4fqrWAcyrgtWw2RdV6qZsg"
+      ],
+      "step": "corridor",
+      "case_id": "case-5"
+    },
+    {
+      "id": "s409",
+      "timestamp": "2026-10-14T19:30:20Z",
+      "server": "sayari",
+      "tool": "search_shipments",
+      "params": {
+        "query": "\"POSCO FUTURE M\"",
+        "departure_country": "KOR",
+        "arrival_country": "USA",
+        "hs_code": "3801",
+        "page_token": "eyJmcCI6Ijg1OGJmZTUyNzFjN2Y3OTcxZTljNzU0ZjhiMzEwYTU2ZDc0YjRkZTM0NTk2MzJkNTJlY2I3N2NjNDdlYWZiMzAiLCJsaW1pdCI6NDAsIm1vZGUiOiJjb21wYWN0Iiwib2Zmc2V0Ijo0MCwic3RyYXRlZ3kiOiJtYW51YWwiLCJ0b29sIjoic2VhcmNoX3NoaXBtZW50cyIsInYiOjF9",
+        "limit": 70,
+        "response_mode": "compact"
+      },
+      "question": "Page 2 of the outbound rows.",
+      "purpose": "Pagination",
+      "result_summary": "Error: 'limit cannot be used together with page_token.'",
+      "interpretation": "Parameter clash. Retried without limit.",
+      "scorecard": "failed",
+      "entity_ids": [],
+      "step": "method",
+      "case_id": "case-4"
+    },
+    {
+      "id": "s410",
+      "timestamp": "2026-10-14T19:30:21Z",
+      "server": "sayari",
+      "tool": "search_shipments",
+      "params": {
+        "query": "\"POSCO FUTURE M\"",
+        "departure_country": "KOR",
+        "arrival_country": "USA",
+        "hs_code": "3801",
+        "page_token": "eyJmcCI6Ijg1OGJmZTUyNzFjN2Y3OTcxZTljNzU0ZjhiMzEwYTU2ZDc0YjRkZTM0NTk2MzJkNTJlY2I3N2NjNDdlYWZiMzAiLCJsaW1pdCI6NDAsIm1vZGUiOiJjb21wYWN0Iiwib2Zmc2V0Ijo0MCwic3RyYXRlZ3kiOiJtYW51YWwiLCJ0b29sIjoic2VhcmNoX3NoaXBtZW50cyIsInYiOjF9",
+        "response_mode": "compact"
+      },
+      "question": "Page 2 of the outbound rows.",
+      "purpose": "Pagination",
+      "result_summary": "Error: 'response_mode cannot be used together with page_token.'",
+      "interpretation": "Second parameter clash: a page token carries its own settings. Retried with the token alone.",
+      "scorecard": "failed",
+      "entity_ids": [],
+      "step": "method",
+      "case_id": "case-4"
+    },
+    {
+      "id": "s411",
+      "timestamp": "2026-10-14T19:30:23Z",
+      "server": "sayari",
+      "tool": "search_shipments",
+      "params": {
+        "query": "\"POSCO FUTURE M\"",
+        "departure_country": "KOR",
+        "arrival_country": "USA",
+        "hs_code": "3801",
+        "page_token": "eyJmcCI6Ijg1OGJmZTUyNzFjN2Y3OTcxZTljNzU0ZjhiMzEwYTU2ZDc0YjRkZTM0NTk2MzJkNTJlY2I3N2NjNDdlYWZiMzAiLCJsaW1pdCI6NDAsIm1vZGUiOiJjb21wYWN0Iiwib2Zmc2V0Ijo0MCwic3RyYXRlZ3kiOiJtYW51YWwiLCJ0b29sIjoic2VhcmNoX3NoaXBtZW50cyIsInYiOjF9"
+      },
+      "question": "Page 2 of the outbound rows.",
+      "purpose": "Outbound HS 3801 Korea → USA (page 2 of 3)",
+      "result_summary": "40 rows. SK Battery America: 24 rows of 'Graphite PAS-CP3K' (HS 3801.90), May 2024 – May 2025. General Motors: 15 rows, HS 3801.10 'anode material graphite PAS-C3B' and 'graphite; artificial', Nov 2023 – Jun 2024. XALT Energy Alicia: 1 row 'active anode material graphite PAS-A1', HS 3801.10, May 2024.",
+      "interpretation": "SK Battery America is the steadiest buyer; GM's rows end in Jun 2024 in our results.",
+      "scorecard": "worked",
+      "entity_ids": [
+        "Fj3vtxDroFyjyPsLgsnm2A",
+        "aoeSqNICt_VUP-o-F-84Yg",
+        "4fqrWAcyrgtWw2RdV6qZsg",
+        "qAjZISyxppsZ-LjTrCmJTw"
+      ],
+      "step": "out",
+      "case_id": "case-4"
+    },
+    {
+      "id": "s214",
+      "timestamp": "2026-10-14T19:30:25Z",
+      "server": "sayari",
+      "tool": "get_entity_summary",
+      "params": {
+        "entity_id": "buiKsXiwKnUTCRKBasr6Gw"
+      },
+      "question": "Who is the third-largest supplier ID in the bucket?",
+      "purpose": "Corridor (INV-8)",
+      "result_summary": "Gandhar Oil Refinery (India) Ltd, a maker of lubricants and refined petroleum products.",
+      "interpretation": "Not a graphite producer.",
+      "scorecard": "worked",
+      "entity_ids": [
+        "buiKsXiwKnUTCRKBasr6Gw"
+      ],
+      "step": "corridor",
+      "case_id": "case-2"
+    },
+    {
+      "id": "s215",
+      "timestamp": "2026-10-14T19:30:25Z",
+      "server": "sayari",
+      "tool": "get_entity_summary",
+      "params": {
+        "entity_id": "fsElZe8XUXmps2GtECr1VQ"
+      },
+      "question": "Who is the fifth-largest supplier ID in the bucket?",
+      "purpose": "Corridor (INV-8)",
+      "result_summary": "ADAMA Agricultural Solutions Ltd., an Israeli crop-protection company.",
+      "interpretation": "Not a graphite producer.",
+      "scorecard": "worked",
+      "entity_ids": [
+        "fsElZe8XUXmps2GtECr1VQ"
+      ],
+      "step": "corridor",
+      "case_id": "case-2"
+    },
+    {
+      "id": "s216",
+      "timestamp": "2026-10-14T19:30:25Z",
+      "server": "sayari",
+      "tool": "get_entity_summary",
+      "params": {
+        "entity_id": "lnxv3guxz0fcOzR1f52Pbw"
+      },
+      "question": "Who is the largest buyer ID in the bucket?",
+      "purpose": "Corridor (INV-8)",
+      "result_summary": "Uniphos Colombia Plant Limited, a pesticide maker in Barranquilla, Colombia.",
+      "interpretation": "The largest 'US-bound graphite' buyer is a Colombian agrochemical plant.",
+      "scorecard": "worked",
+      "entity_ids": [
+        "lnxv3guxz0fcOzR1f52Pbw"
+      ],
+      "step": "corridor",
+      "case_id": "case-2"
+    },
+    {
+      "id": "s318",
+      "timestamp": "2026-10-14T19:30:25Z",
+      "server": "sayari",
+      "tool": "search_shipments",
+      "params": {
+        "query": "\"SHINZOOM\"",
+        "limit": 200,
+        "response_mode": "export"
+      },
+      "question": "Where else does Shinzoom graphite go? Are there third-country routes?",
+      "purpose": "Baseline trade",
+      "result_summary": "62 rows. EVE Energy Malaysia 18 (HS 3801.90/3801.10, Apr 2025–Apr 2026), Linergy Power 14 (HS 3801.10, Sep 2025–Feb 2026), Uni-Trans Line 18 (Korea, 2022–23, mixed HS), SK Battery America 7, Samsung SDI 2 (HS 8543), SK On Hungary 1 (HS 3801.10, via Slovenia, Mar 2023), GM 1, Chemico 1.",
+      "interpretation": "Since 2025 most Shinzoom graphite in the data goes to Malaysian cell plants, not to the US. That is the main indirect route today.",
+      "scorecard": "worked",
+      "entity_ids": [
+        "RpVysafWvaXbqy0N4a5qvw",
+        "5Rb8mSrQ1oKnsToAIDba8w",
+        "_WCNtC_iMCzef8u8s0uKyQ",
+        "ySemfyJJesFbfxEgW2SgCg",
+        "-3h_vhYQa9eIl2-txBW36Q",
+        "aoeSqNICt_VUP-o-F-84Yg",
+        "q4uVT7bM-GusYLonMicJ_Q",
+        "t2HmaexxvTE5WgGtj3BMxg",
+        "4fqrWAcyrgtWw2RdV6qZsg",
+        "XtUNxc54aQijxNuFzwkjxg"
+      ],
+      "step": "out",
+      "case_id": "case-3"
+    },
+    {
+      "id": "s412",
+      "timestamp": "2026-10-14T19:30:25Z",
+      "server": "sayari",
+      "tool": "search_shipments",
+      "params": {
+        "query": "\"POSCO FUTURE M\"",
+        "departure_country": "KOR",
+        "arrival_country": "USA",
+        "hs_code": "3801",
+        "page_token": "eyJmcCI6Ijg1OGJmZTUyNzFjN2Y3OTcxZTljNzU0ZjhiMzEwYTU2ZDc0YjRkZTM0NTk2MzJkNTJlY2I3N2NjNDdlYWZiMzAiLCJsaW1pdCI6NDAsIm1vZGUiOiJjb21wYWN0Iiwib2Zmc2V0Ijo4MCwic3RyYXRlZ3kiOiJtYW51YWwiLCJ0b29sIjoic2VhcmNoX3NoaXBtZW50cyIsInYiOjF9"
+      },
+      "question": "Page 3 of the outbound rows.",
+      "purpose": "Outbound HS 3801 Korea → USA (page 3 of 3)",
+      "result_summary": "25 rows. General Motors: 21 rows of 'anode material graphite PAS-C3B', HS 3801.10 and 3801.90, Jan–Nov 2023. XALT Energy Alicia: 2 rows of artificial graphite, Feb–Mar 2023. XALT Energy LLC: 1 row, Mar 2023. GrafTech USA LLC: 1 row of HS 3801.90 with no product text, Jul 2023.",
+      "interpretation": "All 105 rows are now read. 95 go to battery or car makers, 9 to freight forwarders and 1 to GrafTech, an electrode maker (likely industrial use).",
+      "scorecard": "worked",
+      "entity_ids": [
+        "Fj3vtxDroFyjyPsLgsnm2A",
+        "4fqrWAcyrgtWw2RdV6qZsg",
+        "qAjZISyxppsZ-LjTrCmJTw",
+        "1nxhfvO5sMgXkfCrTho9Vw",
+        "ZhR1A0VWHf7oRyGfZOxKtg"
+      ],
+      "step": "out",
+      "case_id": "case-4"
+    },
+    {
+      "id": "s513",
+      "timestamp": "2026-10-14T19:30:26Z",
+      "server": "sayari",
+      "tool": "get_entity_profile",
+      "params": {
+        "entity_id": "ib6a_v_imoUoFRPQiwEjPA",
+        "relationships_limit": 40
+      },
+      "question": "Who is Minh Thinh Loi, and who owns it?",
+      "purpose": "Check the top Vietnam supplier",
+      "result_summary": "Da Nang LLC registered 23 May 2007. Legal representative and chairman: Võ Văn Lợi. 23 ships-to and 16 receives-from partners. No shareholder listed.",
+      "interpretation": "Vietnamese-run parts maker. No Chinese ownership signal.",
+      "scorecard": "worked",
+      "entity_ids": [
+        "ib6a_v_imoUoFRPQiwEjPA"
+      ],
+      "step": "corridor",
+      "case_id": "case-5"
+    },
+    {
+      "id": "s514",
+      "timestamp": "2026-10-14T19:30:26Z",
+      "server": "sayari",
+      "tool": "search_suppliers",
+      "params": {
+        "query": "graphite",
+        "hs_code": "380110",
+        "departure_country": "KOR",
+        "arrival_country": "USA",
+        "date_from": "2024-01-01",
+        "limit": 12,
+        "response_mode": "compact"
+      },
+      "question": "Who leads the Korea corridor?",
+      "purpose": "Corridor scan: name the suppliers",
+      "result_summary": "NUC Electronics (129), POSCO Chemical (48), Ibiden Graphite Korea (45), Tokai Carbon Korea (38), LX Pantos (32), Cimilre (32), OEC Global Korea, Futronic, then forwarders.",
+      "interpretation": "Korean and Japanese producers plus logistics firms. No Chinese-owned producer in the top 12.",
+      "scorecard": "worked",
+      "entity_ids": [
+        "Fj3vtxDroFyjyPsLgsnm2A"
+      ],
+      "step": "corridor",
+      "case_id": "case-5"
+    },
+    {
+      "id": "s217",
+      "timestamp": "2026-10-14T19:30:31Z",
+      "server": "sayari",
+      "tool": "search_shipments",
+      "params": {
+        "query": "\"GRAPHITE ROD\" | \"GRAPHITE ELECTRODE\" | \"ANODE MATERIAL\" | \"SPHERICAL GRAPHITE\" | \"Graphite; artificial\"",
+        "departure_country": "MAR",
+        "arrival_country": "USA",
+        "date_from": "2024-01-01",
+        "limit": 40,
+        "response_mode": "compact"
+      },
+      "question": "Is there any real graphite, battery grade or not, on this route?",
+      "purpose": "Corridor (INV-8)",
+      "result_summary": "Total 3,104 (the quoted phrases rank rows but don't filter them). The top 20 rows are graphite: SGL Carbon (7), GrafTech to GrafTech USA (11) and GrafTech International Holdings (1), and a Resonac Graphite Spain electrode to Grupo Acerero, Mexico (1). None mention anode material or spherical graphite. The rest are the same mislabelled chemicals.",
+      "interpretation": "The real graphite on the route is European industrial graphite (electrodes, rods) owned by Western and Japanese firms. Nothing battery grade.",
+      "scorecard": "worked",
+      "entity_ids": [
+        "9lcqZ7Jk-n91ZNrYnbZKkQ",
+        "XL7kqgRa7AB0VXF9aN4TvQ",
+        "iUZRg27ESc8EcIuPn3A41w",
+        "ZhR1A0VWHf7oRyGfZOxKtg",
+        "kv_CDofj0IDnI7OZ56ogow",
+        "zLuWa9w8u4PRGbs7ixL49g",
+        "Q93ZzWJznSouEH2e8sePaQ"
+      ],
+      "step": "corridor",
+      "case_id": "case-2"
+    },
+    {
+      "id": "s515",
+      "timestamp": "2026-10-14T19:30:35Z",
+      "server": "sayari",
+      "tool": "search_shipments",
+      "params": {
+        "query": "graphite",
+        "hs_code": "380110",
+        "departure_country": "THA",
+        "arrival_country": "USA",
+        "date_from": "2024-01-01",
+        "limit": 15,
+        "response_mode": "compact"
+      },
+      "question": "What do the Thailand rows actually contain?",
+      "purpose": "Read product descriptions",
+      "result_summary": "9 rows. Descriptions include methylsiloxanes, epoxy resin and fruit flavouring. China Highwin (Thailand) has one row on 22 Nov 2024 to Brilliant Group Logistics, described only as 'Graphite; artificial'.",
+      "interpretation": "Most rows are mis-coded chemicals. Nothing battery-related.",
+      "scorecard": "worked",
+      "entity_ids": [
+        "oXMFQqYBSVg9LN8JdsZXRg",
+        "WADCr_igZO7cgkrG2KW0zQ"
+      ],
+      "step": "corridor",
+      "case_id": "case-5"
+    },
+    {
+      "id": "s516",
+      "timestamp": "2026-10-14T19:30:35Z",
+      "server": "sayari",
+      "tool": "search_shipments",
+      "params": {
+        "query": "graphite",
+        "hs_code": "380110",
+        "departure_country": "VNM",
+        "arrival_country": "USA",
+        "date_from": "2024-01-01",
+        "limit": 15,
+        "response_mode": "compact"
+      },
+      "question": "What do the Vietnam rows actually contain?",
+      "purpose": "Read product descriptions",
+      "result_summary": "Minh Thinh Loi rows (24 Jan 2025) are 'Jig ... made of artificial Graphite' to LTD Material LLC. Hyosung rows are PTMEG polymer. Graphite India sent one row to Antora Energy (25 Aug 2025).",
+      "interpretation": "Machined graphite parts and mis-coded polymer. Not anode material.",
+      "scorecard": "worked",
+      "entity_ids": [
+        "ib6a_v_imoUoFRPQiwEjPA",
+        "eX51gPEUQ-MpkznB5_ICaQ"
+      ],
+      "step": "corridor",
+      "case_id": "case-5"
+    },
+    {
+      "id": "s319",
+      "timestamp": "2026-10-14T19:30:36Z",
+      "server": "sayari",
+      "tool": "search_shipments",
+      "params": {
+        "query": "\"ZHONGKE\"",
+        "arrival_country": "OMN",
+        "limit": 50,
+        "response_mode": "export"
+      },
+      "question": "Is anything already shipping into Oman from Zhongke entities, such as equipment or feedstock?",
+      "purpose": "Find the plant",
+      "result_summary": "0 rows.",
+      "interpretation": "No inbound trade to Oman under the group's name. Press reports of equipment shipments (t302) don't appear in Sayari, possibly because of coverage or lag.",
+      "scorecard": "partial",
+      "entity_ids": [],
+      "step": "in",
+      "case_id": "case-3"
+    },
+    {
+      "id": "s320",
+      "timestamp": "2026-10-14T19:30:36Z",
+      "server": "sayari",
+      "tool": "search_trade_facets",
+      "params": {
+        "scope": "shipments",
+        "query": "graphite",
+        "departure_country": "OMN",
+        "arrival_country": "USA",
+        "hs_code": "3801",
+        "bucket_limit": 10
+      },
+      "question": "What does the Oman→US artificial-graphite corridor look like before the plant opens?",
+      "purpose": "Set the baseline",
+      "result_summary": "917 rows, from one data source. 916 are HS 3801.10, dated Aug 2021 to Jul 2025. Top supplier IDs are listed in s323.",
+      "interpretation": "A large 'Oman→US' graphite corridor already exists on paper, even though Oman has no anode plant. See s323 for who it is.",
+      "scorecard": "worked",
+      "entity_ids": [],
+      "step": "corridor",
+      "case_id": "case-3"
+    },
+    {
+      "id": "s321",
+      "timestamp": "2026-10-14T19:30:36Z",
+      "server": "sayari",
+      "tool": "search_shipments",
+      "params": {
+        "query": "\"LINERGY POWER\"",
+        "arrival_country": "USA",
+        "limit": 50,
+        "response_mode": "export"
+      },
+      "question": "Does a Malaysian buyer of Shinzoom graphite ship to the US?",
+      "purpose": "Baseline trade",
+      "result_summary": "17 rows, all lithium-ion cells or battery systems (HS 8507.60/8507.80), Nov 2025 to Sep 2026. Buyers: Eaton Corporation (5 rows, plus 1 under a second Eaton record), Ampace Technology (6), Milwaukee Tool (3 across two records), Stanley Black & Decker (1), Techtronic Product Development (1).",
+      "interpretation": "Shinzoom graphite reaches a plant whose cells go to US tool and power-equipment makers. Trade data can't show whether those cells contain Shinzoom graphite.",
+      "scorecard": "worked",
+      "entity_ids": [
+        "ySemfyJJesFbfxEgW2SgCg",
+        "BuQm2NSnUlkUMb83_BJxog"
+      ],
+      "step": "out",
+      "case_id": "case-3"
+    },
+    {
+      "id": "s322",
+      "timestamp": "2026-10-14T19:30:36Z",
+      "server": "sayari",
+      "tool": "search_shipments",
+      "params": {
+        "query": "\"EVE ENERGY MALAYSIA\"",
+        "arrival_country": "USA",
+        "limit": 50,
+        "response_mode": "export"
+      },
+      "question": "Does EVE Energy Malaysia ship to the US?",
+      "purpose": "Baseline trade",
+      "result_summary": "27 rows of lithium-ion cells (mostly INR21700, HS 8507.60/8506.50), 2025–2026. Buyers: EVE Energy North America (7; six departing Indonesia), Briggs & Stratton (3 + 2 across two records), Milwaukee Tool, TTI Consumer Power Tools, ProTechnologies, Energizer Battery Co, Stanley Black & Decker, ABM Tucker GA, Oregon International Air Freight, plus 7 undated rows.",
+      "interpretation": "This is the second indirect route: Zhongke anode material → a Malaysian cell plant → US buyers, as cells. Some rows left from Indonesia, China or Singapore, so the exporter's name alone doesn't fix the origin.",
+      "scorecard": "worked",
+      "entity_ids": [
+        "_WCNtC_iMCzef8u8s0uKyQ",
+        "gRBpjYP97b53gA7TkExdpQ",
+        "33X8P9vU58v1EcigvWeD-Q"
+      ],
+      "step": "out",
+      "case_id": "case-3"
+    },
+    {
+      "id": "s323",
+      "timestamp": "2026-10-14T19:30:44Z",
+      "server": "sayari",
+      "tool": "search_suppliers",
+      "params": {
+        "query": "graphite",
+        "departure_country": "OMN",
+        "arrival_country": "USA",
+        "hs_code": "3801",
+        "limit": 15,
+        "response_mode": "compact"
+      },
+      "question": "Who ships 'artificial graphite' from Oman to the US today?",
+      "purpose": "Set the baseline",
+      "result_summary": "122 suppliers. The top 15 are mostly Indian freight forwarders and chemical makers: Noble Shipping (165), Wilhelmsen Maritime Services (41 + 10), Aissa Maritime (35), Neptune Container Line (34), Aquapharm Chemical (32), Safewater Lines India (25), Amfico Agencies (23), E-Way Alliance India (22), Galaxy Surfactants (19), Jubilant Ingrevia (19), Aquila Organics (15), SRF Ltd (13), CEL Logistics (12), Allied Shipping (11).",
+      "interpretation": "This corridor is noise. Indian cargo is relayed through Omani ports, and the 3801.10 code looks wrong for chemical makers. A buyer can't watch 'Oman→US HS 3801.10' as a corridor; they have to watch for named shippers.",
+      "scorecard": "worked",
+      "entity_ids": [],
+      "step": "corridor",
+      "case_id": "case-3"
+    },
+    {
+      "id": "s413",
+      "timestamp": "2026-10-14T19:30:46Z",
+      "server": "sayari",
+      "tool": "get_upstream_supply_chain",
+      "params": {
+        "entity_id": "Fj3vtxDroFyjyPsLgsnm2A",
+        "product": [
+          "3801",
+          "2504"
+        ],
+        "max_depth": 1,
+        "min_date": "2024-01-01",
+        "limit": 40,
+        "response_mode": "compact"
+      },
+      "question": "Did Chinese graphite keep arriving after 2023?",
+      "purpose": "Inbound graphite after China's Dec 2023 export licensing",
+      "result_summary": "1 supplier: Rain Carbon Germany (pitch and coal-tar products). No Chinese graphite supplier from 2024 onwards.",
+      "interpretation": "In Sayari, Chinese graphite inflows to POSCO Future M stop at the end of 2023. Open sources (t401) say the company still processes Chinese spherical graphite, so this is most likely a data gap, not a real stop.",
+      "scorecard": "partial",
+      "entity_ids": [
+        "Fj3vtxDroFyjyPsLgsnm2A",
+        "ljXszsmI8EtP_3Q4fuC6ZA"
+      ],
+      "step": "gap",
+      "case_id": "case-4"
+    },
+    {
+      "id": "s517",
+      "timestamp": "2026-10-14T19:30:46Z",
+      "server": "sayari",
+      "tool": "search_entity_facets",
+      "params": {
+        "query": "\"anode material\" OR \"new energy material\" OR \"graphite technology\"",
+        "bucket_limit": 15
+      },
+      "question": "Which companies have anode-type names, and where?",
+      "purpose": "Find candidate plants by name",
+      "result_summary": "0 results.",
+      "interpretation": "Boolean OR phrases are not handled here. A finding about the tool.",
+      "scorecard": "failed",
+      "entity_ids": [],
+      "step": "method",
+      "case_id": "case-5"
+    },
+    {
+      "id": "t201",
+      "timestamp": "2026-10-14T19:30:50Z",
+      "server": "tavily",
+      "tool": "tavily_search",
+      "params": {
+        "query": "BTR Morocco Tangier anode plant 60,000 tonnes production start 2026",
+        "max_results": 6
+      },
+      "question": "What is the plant's status, and does BTR call it a subsidiary?",
+      "purpose": "Context",
+      "result_summary": "BTR's own release names BTR Mediterranean New Material Technology as the subsidiary for a 60,000 t/yr anode project (up to $366m) in Tangier Tech City. CSCEC (14 Jul 2026) says it is building the factory, with production in phases from 2026. The project has two bases: 60,000 t anode and 50,000 t cathode.",
+      "interpretation": "The plant is under construction, which fits the construction-only imports. BTR's statement independently supports the ownership chain.",
+      "scorecard": "worked",
+      "entity_ids": [
+        "El_6QFk0rVRdYJanrqEtAA",
+        "jeHf5QJt0JXowTiCA8JiIQ"
+      ],
+      "step": "context",
+      "case_id": "case-2"
+    },
+    {
+      "id": "t202",
+      "timestamp": "2026-10-14T19:30:50Z",
+      "server": "tavily",
+      "tool": "tavily_search",
+      "params": {
+        "query": "Chinese battery material plants Morocco Gotion CNGR COBCO Hailiang Shinzoom status 2026",
+        "max_results": 6
+      },
+      "question": "Which other Chinese battery-material plants in Morocco could ship graphite?",
+      "purpose": "Context",
+      "result_summary": "COBCO (Al Mada and CNGR) began making cathode precursor in Jorf Lasfar in June 2025. Gotion's Kenitra gigafactory targets Q3 2026. Hailiang plans copper foil. Shinzoom's parent postponed its anode project in June 2025 and ended it in June 2026 (Ecofin).",
+      "interpretation": "None of these is an operating graphite anode exporter, which fits finding no Chinese-owned graphite shipper on the route.",
+      "scorecard": "worked",
+      "entity_ids": [
+        "uCtlsbaFXTco2UkaXMhPNg"
+      ],
+      "step": "context",
+      "case_id": "case-2"
+    },
+    {
+      "id": "s414",
+      "timestamp": "2026-10-14T19:30:52Z",
+      "server": "sayari",
+      "tool": "search_trade_facets",
+      "params": {
+        "scope": "shipments",
+        "query": "\"POSCO FUTURE M\" OR \"POSCO CHEMICAL\"",
+        "arrival_country": "KOR",
+        "hs_code": "2504",
+        "bucket_limit": 15
+      },
+      "question": "Count natural-graphite shipments into POSCO Future M by origin.",
+      "purpose": "Inbound graphite by origin country",
+      "result_summary": "0 shipments in every bucket.",
+      "interpretation": "Same blind spot as s405: the HS + name rollup returns nothing although the graph holds the flows.",
+      "scorecard": "failed",
+      "entity_ids": [
+        "Fj3vtxDroFyjyPsLgsnm2A"
+      ],
+      "step": "gap",
+      "case_id": "case-4"
+    },
+    {
+      "id": "s518",
+      "timestamp": "2026-10-14T19:30:54Z",
+      "server": "sayari",
+      "tool": "search_trade_facets",
+      "params": {
+        "scope": "shipments",
+        "query": "anode",
+        "hs_code": "380110",
+        "arrival_country": "USA",
+        "date_from": "2024-01-01",
+        "bucket_limit": 15
+      },
+      "question": "Where do US-bound HS 3801.10 rows that mention 'anode' come from?",
+      "purpose": "Corridor scan by description",
+      "result_summary": "398 rows. Departures: Germany 68, Singapore 56, Korea 52, China 18, India 11, Bahamas 9, Oman 4, Belgium 3, Mexico 3. None from Vietnam, Malaysia or Thailand. Top buyers include General Motors (78) and Tesla (20); top supplier is POSCO Chemical (86).",
+      "interpretation": "No battery-anode rows in three of our five corridors. Singapore stands out as a hub.",
+      "scorecard": "worked",
+      "entity_ids": [
+        "4fqrWAcyrgtWw2RdV6qZsg",
+        "Fj3vtxDroFyjyPsLgsnm2A",
+        "Wfde8TXwHX3DkOQwj2XmTA"
+      ],
+      "step": "corridor",
+      "case_id": "case-5"
+    },
+    {
+      "id": "s324",
+      "timestamp": "2026-10-14T19:30:58Z",
+      "server": "sayari",
+      "tool": "find_shortest_path",
+      "params": {
+        "source_entity_id": "aWkEICLnf2fzW78geuH5Ag",
+        "target_entity_id": "-jDI6N9q1MWnPT0ujf-8iw"
+      },
+      "question": "Does Sayari connect the Hong Kong investor to Zhongke Electric at all?",
+      "purpose": "Map ownership",
+      "result_summary": "No path found.",
+      "interpretation": "The graph breaks at Hong Kong. The HK→China ownership link exists only in the company's filing.",
+      "scorecard": "worked",
+      "entity_ids": [
+        "aWkEICLnf2fzW78geuH5Ag",
+        "-jDI6N9q1MWnPT0ujf-8iw"
+      ],
+      "step": "gap",
+      "case_id": "case-3"
+    },
+    {
+      "id": "s325",
+      "timestamp": "2026-10-14T19:30:58Z",
+      "server": "sayari",
+      "tool": "check_watchlist",
+      "params": {
+        "entity_id": "-jDI6N9q1MWnPT0ujf-8iw",
+        "max_depth": 2,
+        "limit": 15,
+        "response_mode": "compact"
+      },
+      "question": "Is the parent close to sanctioned or listed entities?",
+      "purpose": "Risk context",
+      "result_summary": "15 hits, all two hops out. Each goes through a shared stock-market shareholder (HKSCC nominee or a China Merchants Bank index fund) to companies such as CNOOC, China Mobile, China Unicom, AVIC Shenyang and CloudWalk.",
+      "interpretation": "This is noise. Index funds and the Hong Kong clearing nominee hold shares in thousands of listed firms. It says nothing about Zhongke's conduct.",
+      "scorecard": "worked",
+      "entity_ids": [
+        "-jDI6N9q1MWnPT0ujf-8iw"
+      ],
+      "step": "context",
+      "case_id": "case-3"
+    },
+    {
+      "id": "s415",
+      "timestamp": "2026-10-14T19:30:58Z",
+      "server": "sayari",
+      "tool": "search_trade_facets",
+      "params": {
+        "scope": "shipments",
+        "query": "POSCO graphite",
+        "departure_country": "CHN",
+        "bucket_limit": 15
+      },
+      "question": "Is any POSCO company importing graphite from China recently?",
+      "purpose": "Recent China → Korea graphite tied to POSCO",
+      "result_summary": "10 shipments, all 16–18 May 2026, China → Korea; 9 are HS 3801.10, 1 is HS 2713.12 (calcined petroleum coke). One supplier, one buyer.",
+      "interpretation": "A recent flow exists, but the facet gives only IDs. Pulled the rows in s416.",
+      "scorecard": "worked",
+      "entity_ids": [
+        "QTGe48MKdBHh2Dkbxh_ifw",
+        "rimS2-LaCZMi2HMJqtwW5w"
+      ],
+      "step": "in",
+      "case_id": "case-4"
+    },
+    {
+      "id": "s416",
+      "timestamp": "2026-10-14T19:31:02Z",
+      "server": "sayari",
+      "tool": "search_shipments",
+      "params": {
+        "query": "POSCO graphite",
+        "departure_country": "CHN",
+        "arrival_country": "KOR",
+        "limit": 10,
+        "response_mode": "full"
+      },
+      "question": "What are those May 2026 rows?",
+      "purpose": "Check product text before counting it as anode input",
+      "result_summary": "Shipper: Tianjin Eboxline International Transport. Buyer: 'POSCO CO LTD' at 6261 Donghaean-ro (the Pohang steelworks). Product: 'recarburizer' (9 rows, HS 3801.10, about 20 t each) and 'graphite petroleum coke' (1 row), shipped on behalf of POSCO (Beijing) Trading. Source: China Imports & Exports.",
+      "interpretation": "This is steelmaking additive for the sister steel company, not battery material. It is a clear example of HS 3801.10 covering non-battery graphite. Not counted as an input to POSCO Future M.",
+      "scorecard": "worked",
+      "entity_ids": [
+        "QTGe48MKdBHh2Dkbxh_ifw",
+        "rimS2-LaCZMi2HMJqtwW5w"
+      ],
+      "step": "context",
+      "case_id": "case-4"
+    },
+    {
+      "id": "s519",
+      "timestamp": "2026-10-14T19:31:02Z",
+      "server": "sayari",
+      "tool": "search_shipments",
+      "params": {
+        "query": "anode",
+        "hs_code": "380110",
+        "departure_country": "SGP",
+        "arrival_country": "USA",
+        "date_from": "2024-01-01",
+        "limit": 25,
+        "response_mode": "compact"
+      },
+      "question": "Who ships 'anode' material from Singapore to the US?",
+      "purpose": "Follow the Singapore bucket",
+      "result_summary": "Of 56 rows, 25 returned. 'Carbon anode materials' went to General Motors (20 rows, 2 Aug – 12 Sep 2026), L-H Battery Company (2 rows, Aug 2026) and NextStar Energy (1 row, 12 Sep 2026), with no shipper named. One row (12 Sep 2026) was shipped by PT. OEC Freight Indonesia to OEC Freight (NY).",
+      "interpretation": "Battery-grade anode is reaching US plants through Singapore, but the producer is hidden. The one named shipper is an Indonesian forwarder.",
+      "scorecard": "partial",
+      "entity_ids": [
+        "4fqrWAcyrgtWw2RdV6qZsg",
+        "VqJzPhi60R4c846F7xW2TQ",
+        "KlHlMaPK_F6s27YQ8ug2UA",
+        "VhO8XHL4mZCMTDCLkVzAYQ",
+        "Wfde8TXwHX3DkOQwj2XmTA"
+      ],
+      "step": "gap",
+      "case_id": "case-5"
+    },
+    {
+      "id": "s520",
+      "timestamp": "2026-10-14T19:31:02Z",
+      "server": "sayari",
+      "tool": "search_shipments",
+      "params": {
+        "query": "anode",
+        "hs_code": "380110",
+        "departure_country": "MEX",
+        "arrival_country": "USA",
+        "date_from": "2024-01-01",
+        "limit": 10,
+        "response_mode": "compact"
+      },
+      "question": "What are the three Mexico 'anode' rows?",
+      "purpose": "Read product descriptions",
+      "result_summary": "Acrylic polymer to Harris Paints (Apr 2025), polyethyleneamines to Complex Chemical (Jul 2024), surfactant to Nouryon (Jan 2023).",
+      "interpretation": "All mis-coded chemicals. Mexico has no anode trail in this data.",
+      "scorecard": "worked",
+      "entity_ids": [],
+      "step": "corridor",
+      "case_id": "case-5"
+    },
+    {
+      "id": "s417",
+      "timestamp": "2026-10-14T19:31:08Z",
+      "server": "sayari",
+      "tool": "search_shipments",
+      "params": {
+        "query": "\"POSCO CHEMICAL\" spherical graphite",
+        "hs_code": "2504",
+        "limit": 25,
+        "response_mode": "compact"
+      },
+      "question": "Are there rows naming spherical graphite sold to POSCO Chemical?",
+      "purpose": "Product grade of inbound graphite",
+      "result_summary": "0 rows.",
+      "interpretation": "Free text plus HS filter misses again. Switched to a buyer rollup on the product phrase alone (s418, s419).",
+      "scorecard": "failed",
+      "entity_ids": [
+        "Fj3vtxDroFyjyPsLgsnm2A"
+      ],
+      "step": "gap",
+      "case_id": "case-4"
+    },
+    {
+      "id": "s418",
+      "timestamp": "2026-10-14T19:31:12Z",
+      "server": "sayari",
+      "tool": "search_trade_facets",
+      "params": {
+        "scope": "buyers",
+        "query": "\"spherical graphite\"",
+        "departure_country": "CHN",
+        "arrival_country": "KOR",
+        "bucket_limit": 15
+      },
+      "question": "Who buys Chinese spherical graphite in Korea?",
+      "purpose": "Spherical graphite corridor",
+      "result_summary": "23 buyers. Buyer facets give countries and risk flags only, not names. One buyer carries the same risk-flag set as POSCO Future M.",
+      "interpretation": "Need the named list: pulled in s419.",
+      "scorecard": "partial",
+      "entity_ids": [],
+      "step": "in",
+      "case_id": "case-4"
+    },
+    {
+      "id": "s521",
+      "timestamp": "2026-10-14T19:31:14Z",
+      "server": "sayari",
+      "tool": "get_entity_profile",
+      "params": {
+        "entity_id": "oXMFQqYBSVg9LN8JdsZXRg"
+      },
+      "question": "Is China Highwin (Thailand) a producer?",
+      "purpose": "Check the only Chinese-named Thai shipper",
+      "result_summary": "Only source is US import data. One trade partner: Brilliant Group Logistics. 2 shipments sent in total. No owners or officers.",
+      "interpretation": "No sign of a plant.",
+      "scorecard": "worked",
+      "entity_ids": [
+        "oXMFQqYBSVg9LN8JdsZXRg",
+        "WADCr_igZO7cgkrG2KW0zQ"
+      ],
+      "step": "corridor",
+      "case_id": "case-5"
+    },
+    {
+      "id": "s522",
+      "timestamp": "2026-10-14T19:31:14Z",
+      "server": "sayari",
+      "tool": "search_entities",
+      "params": {
+        "query": "Highwin Thailand",
+        "limit": 10,
+        "response_mode": "compact"
+      },
+      "question": "Are there other China Highwin records?",
+      "purpose": "Resolve the Thai shipper",
+      "result_summary": "13 records. The main one (Thai reg. 0745560004379) carries a US OTI number, 029257, which is issued to ocean freight intermediaries.",
+      "interpretation": "China Highwin is a freight forwarder. Excluded as a candidate plant.",
+      "scorecard": "worked",
+      "entity_ids": [
+        "f0O9Dwn-kAeZ-BAH5Cz-tg",
+        "oXMFQqYBSVg9LN8JdsZXRg"
+      ],
+      "step": "corridor",
+      "case_id": "case-5"
+    },
+    {
+      "id": "s419",
+      "timestamp": "2026-10-14T19:31:17Z",
+      "server": "sayari",
+      "tool": "search_buyers",
+      "params": {
+        "query": "\"spherical graphite\"",
+        "departure_country": "CHN",
+        "arrival_country": "KOR",
+        "limit": 25,
+        "response_mode": "compact"
+      },
+      "question": "Is POSCO Future M among the Korean buyers of Chinese spherical graphite?",
+      "purpose": "Spherical graphite corridor (named)",
+      "result_summary": "23 buyers. The main POSCO Future M record is first, with 167 matching shipments and the latest dated 2023-12-08; its HS list includes natural graphite powder/flake (HS 2504.10). Three more POSCO Chemical / Future M records appear (15, 14 and 1 shipments; latest 2023-01-01, 2022-09-09 and 2023-08-11). Most other buyers are Korean freight forwarders, e.g. Pax Logistics (65 shipments, latest 2025-09-09), GTG Logistics, Awards Shipping Agency (Korea).",
+      "interpretation": "This is the strongest Sayari evidence that POSCO Future M depends on Chinese spherical graphite. The trail ends on 8 Dec 2023, a week after China's export licensing for graphite took effect. Forwarders keep receiving the product later, but no row names their end customer.",
+      "scorecard": "worked",
+      "entity_ids": [
+        "Fj3vtxDroFyjyPsLgsnm2A",
+        "UCbyt8Y_8GmNUrzHG5riPw",
+        "M6ta2xQZjgwEaQFF7t6dZA",
+        "mdDF1uxfPSghv7Q25eoc2g"
+      ],
+      "step": "in",
+      "case_id": "case-4"
+    },
+    {
+      "id": "s523",
+      "timestamp": "2026-10-14T19:31:23Z",
+      "server": "sayari",
+      "tool": "search_shipments",
+      "params": {
+        "query": "anode",
+        "hs_code": "380110",
+        "departure_country": "OMN",
+        "arrival_country": "USA",
+        "date_from": "2024-01-01",
+        "limit": 10,
+        "response_mode": "full"
+      },
+      "question": "Are the Oman 'anode' rows a Chinese anode plant?",
+      "purpose": "Check an unexpected bucket",
+      "result_summary": "4 rows, Oct–Nov 2024, from B P Refineries (India) to PMC Biogenix, Memphis: erucic acid and fatty acids in ISO tanks.",
+      "interpretation": "Mis-coded chemicals. Shows how noisy HS 3801.10 is.",
+      "scorecard": "worked",
+      "entity_ids": [],
+      "step": "corridor",
+      "case_id": "case-5"
+    },
+    {
+      "id": "s420",
+      "timestamp": "2026-10-14T19:31:32Z",
+      "server": "sayari",
+      "tool": "get_entity_summary",
+      "params": {
+        "entity_id": "xhmHh99vEgdFz19iRON8yA"
+      },
+      "question": "What is the 58.2% shareholder?",
+      "purpose": "Verify the parent",
+      "result_summary": "포스코홀딩스(주) (POSCO Holdings), a Korean CO LTD. Source: South Korea DART disclosures. Not sanctioned, no PEP flag, no trade.",
+      "interpretation": "The parent is a Korean listed holding company. No Chinese link at the parent level.",
+      "scorecard": "worked",
+      "entity_ids": [
+        "xhmHh99vEgdFz19iRON8yA"
+      ],
+      "step": "owner",
+      "case_id": "case-4"
+    },
+    {
+      "id": "s421",
+      "timestamp": "2026-10-14T19:31:33Z",
+      "server": "sayari",
+      "tool": "check_watchlist",
+      "params": {
+        "entity_id": "Fj3vtxDroFyjyPsLgsnm2A",
+        "max_depth": 2,
+        "limit": 10,
+        "response_mode": "compact"
+      },
+      "question": "Is POSCO Future M near any sanctioned party?",
+      "purpose": "Screening",
+      "result_summary": "10 hits, all two hops out and all through large trading partners (EVE Energy, JSW Steel, General Motors, Mitsubishi Corporation) to Russian, Emirati or Chinese sanctioned firms. No direct hit.",
+      "interpretation": "Noise: these are customers of customers. Not a finding about POSCO Future M.",
+      "scorecard": "worked",
+      "entity_ids": [
+        "Fj3vtxDroFyjyPsLgsnm2A"
+      ],
+      "step": "context",
+      "case_id": "case-4"
+    },
+    {
+      "id": "s524",
+      "timestamp": "2026-10-14T19:31:36Z",
+      "server": "sayari",
+      "tool": "search_entities",
+      "params": {
+        "query": "Zichen Malaysia",
+        "limit": 10,
+        "response_mode": "compact"
+      },
+      "question": "Does Sayari hold Putailai's Malaysian company?",
+      "purpose": "Resolve the plant",
+      "result_summary": "Zichen Malaysia Sdn. Bhd., Malaysian reg. no. 202501044592. Other hits were unrelated Chinese sole traders.",
+      "interpretation": "One clean record for the plant company.",
+      "scorecard": "worked",
+      "entity_ids": [
+        "WG1hrSwGRdoLMIt997Z5-w"
+      ],
+      "step": "plant",
+      "case_id": "case-5"
+    },
+    {
+      "id": "s525",
+      "timestamp": "2026-10-14T19:31:36Z",
+      "server": "sayari",
+      "tool": "search_entities",
+      "params": {
+        "query": "Shanghai Putailai New Energy Technology",
+        "limit": 5,
+        "response_mode": "compact"
+      },
+      "question": "Which record is the Chinese parent?",
+      "purpose": "Resolve the parent",
+      "result_summary": "Registry record 上海璞泰来新能源科技集团股份有限公司 (USCC 91310000055944463E; countries CHN, SGP, HKG), an English securities record, and smaller group records.",
+      "interpretation": "The registry record is the parent; the English one is kept as a lead.",
+      "scorecard": "worked",
+      "entity_ids": [
+        "5rQqO0uMqEvtMvK_oQGcYA",
+        "Zb9HwzswdGPKn62ayKTnIQ"
+      ],
+      "step": "owner",
+      "case_id": "case-5"
+    },
+    {
+      "id": "s526",
+      "timestamp": "2026-10-14T19:31:42Z",
+      "server": "sayari",
+      "tool": "get_entity_profile",
+      "params": {
+        "entity_id": "WG1hrSwGRdoLMIt997Z5-w"
+      },
+      "question": "Who owns and runs Zichen Malaysia, and does it trade?",
+      "purpose": "Plant registry profile",
+      "result_summary": "Registered 23 Sep 2025, Sdn Bhd, office at Menara BHL, George Town, Penang. Purpose: production and sale of advanced battery materials and carbon-based products; import/export. Shareholder: Putailai (Singapore) Pte. Ltd., 100%. Directors: director B, director A, Ho Pui Hold. Trade count: 0 sent, 0 received.",
+      "interpretation": "Ownership is in the registry. There is no trade yet.",
+      "scorecard": "worked",
+      "entity_ids": [
+        "WG1hrSwGRdoLMIt997Z5-w",
+        "04tgJV8tHRLxXnFybfSbOg",
+        "Q_Z4Q6TSyW_gNl0L5pPyeQ",
+        "LwA4a_LwLoGPjHr6RDiArg",
+        "eKMO9SjyO_k4HmOLY8o_7A"
+      ],
+      "step": "plant",
+      "case_id": "case-5"
+    },
+    {
+      "id": "s527",
+      "timestamp": "2026-10-14T19:31:42Z",
+      "server": "sayari",
+      "tool": "find_beneficial_owners",
+      "params": {
+        "entity_id": "WG1hrSwGRdoLMIt997Z5-w"
+      },
+      "question": "Does the chain reach the Chinese parent?",
+      "purpose": "Trace ownership upstream",
+      "result_summary": "50 owner paths returned (output saved and parsed with Python). Path: Zichen Malaysia ← Putailai (Singapore) ← 上海璞泰来新能源科技集团股份有限公司 ← Chinese individuals (including shareholder A and shareholder B), funds, banks and the national social security fund.",
+      "interpretation": "Registry-backed chain from the plant to the Chinese listed parent. Percentages above the Singapore level are not shown.",
+      "scorecard": "worked",
+      "entity_ids": [
+        "WG1hrSwGRdoLMIt997Z5-w",
+        "04tgJV8tHRLxXnFybfSbOg",
+        "5rQqO0uMqEvtMvK_oQGcYA",
+        "M5aejkK4bjb5FsPDBPoVIA",
+        "So9o4udTCQcP19p-UGkyig"
+      ],
+      "step": "owner",
+      "case_id": "case-5"
+    },
+    {
+      "id": "t401",
+      "timestamp": "2026-10-14T19:31:43Z",
+      "server": "tavily",
+      "tool": "tavily_search",
+      "params": {
+        "query": "POSCO Future M spherical graphite China dependence natural graphite anode Sejong plant",
+        "max_results": 6,
+        "search_depth": "advanced"
+      },
+      "question": "Does POSCO Future M say it uses Chinese spherical graphite?",
+      "purpose": "Company context for inputs",
+      "result_summary": "KED Global: Korea relies entirely on Chinese imports for natural and spherical graphite; POSCO Future M plans to make spherical graphite at home. Korea Herald: the Sejong plant 'currently reprocesses spherical graphite … imported from China' and aims to phase out Chinese intermediates by 2027; a new Saemangeum plant (subsidiary Future Graph) will use African graphite. POSCO E&C: Sejong makes natural-graphite anode. POSCO newsroom: same Africa → Saemangeum → Sejong plan.",
+      "interpretation": "The company itself confirms the Chinese spherical-graphite dependence that Sayari shows up to Dec 2023, and says it continues. So the Sayari stop after 2023 is a coverage gap.",
+      "scorecard": "worked",
+      "entity_ids": [
+        "Fj3vtxDroFyjyPsLgsnm2A"
+      ],
+      "step": "context",
+      "case_id": "case-4"
+    },
+    {
+      "id": "t402",
+      "timestamp": "2026-10-14T19:31:52Z",
+      "server": "tavily",
+      "tool": "tavily_search",
+      "params": {
+        "query": "POSCO Future M anode supply GM Ultium Cells Tesla artificial graphite Pohang FEOC prohibited foreign entity",
+        "max_results": 6,
+        "search_depth": "advanced"
+      },
+      "question": "Which US customers has POSCO Future M announced, and what does the Pohang plant use?",
+      "purpose": "Company context for outputs",
+      "result_summary": "POSCO Future M newsroom: a binding six-year, KRW 939.3 billion deal to supply Ultium Cells (GM–LG Energy Solution) with artificial graphite anode from the Pohang plant; an earlier deal to supply Sejong anode to Ultium. Pohang artificial graphite uses needle coke from PMC Tech, a group carbon subsidiary. Businesskorea repeats the Ultium deal. Korea Herald (t401) says the Pohang synthetic graphite uses coke by-products from POSCO steelmaking. One aggregator site (energy-solutions.co) gives unsourced percentages; we did not use it.",
+      "interpretation": "Two product lines with different input risks: natural-graphite anode (Sejong) relies on Chinese spherical graphite; artificial-graphite anode (Pohang) is presented as Korean feedstock. Sayari rows can't say which plant made a given shipment.",
+      "scorecard": "worked",
+      "entity_ids": [
+        "Fj3vtxDroFyjyPsLgsnm2A",
+        "rvgklT24qqqfH2rnlVlyBg"
+      ],
+      "step": "context",
+      "case_id": "case-4"
+    },
+    {
+      "id": "s528",
+      "timestamp": "2026-10-14T19:32:06Z",
+      "server": "sayari",
+      "tool": "search_shipments",
+      "params": {
+        "query": "\"ZICHEN\"",
+        "arrival_country": "USA",
+        "date_from": "2024-01-01",
+        "limit": 15,
+        "response_mode": "compact"
+      },
+      "question": "Does any Putailai/Zichen company already ship to the US?",
+      "purpose": "Look for the group's existing US trail",
+      "result_summary": "2,987 rows, all for unrelated firms that share the word Zichen (phone cases, brake rotors, hair clips).",
+      "interpretation": "A name-only query without HS filter is useless here. We could not see the group's China-to-US anode trail.",
+      "scorecard": "failed",
+      "entity_ids": [],
+      "step": "gap",
+      "case_id": "case-5"
+    },
+    {
+      "id": "t502",
+      "timestamp": "2026-10-14T19:32:11Z",
+      "server": "tavily",
+      "tool": "tavily_search",
+      "params": {
+        "query": "\"Zichen Malaysia\" Putailai Gurun Kedah anode 50,000 tonnes",
+        "max_results": 5,
+        "search_depth": "advanced"
+      },
+      "question": "Is Zichen Malaysia the company building the plant?",
+      "purpose": "Cross-check the registry entity with the company's announcement",
+      "result_summary": "SMM and Mysteel report that the project is 'undertaken by Zichen Malaysia Sdn. Bhd.'; a post quoting the announcement calls it Putailai's 'wholly-owned overseas subsidiary'. Yicai places the plant in Gurun Heavy Industrial Park, Kedah. The groundbreaking notice lists raw material crushing, granulation, graphitization and carbonization workshops.",
+      "interpretation": "Registry record and company statement agree. The plant is designed to do the full process, not just finish imported graphite.",
+      "scorecard": "worked",
+      "entity_ids": [
+        "WG1hrSwGRdoLMIt997Z5-w",
+        "5rQqO0uMqEvtMvK_oQGcYA"
+      ],
+      "step": "plant",
+      "case_id": "case-5"
     }
   ]
 }

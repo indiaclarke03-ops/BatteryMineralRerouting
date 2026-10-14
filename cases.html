@@ -21,16 +21,19 @@
       <div class="page-head">
         <span class="eyebrow">Case Files</span>
         <h1>Case files</h1>
-        <p class="lede">Each case is one plant, traced end to end, with every finding badged by confidence and linked to its source call.</p>
+        <p class="lede">Each case is one factory, traced end to end. Every finding carries a confidence badge and links to the call that produced it.</p>
+        <nav class="case-tabs" id="case-nav" aria-label="Jump to a case" style="margin-top:var(--s-4)"></nav>
       </div>
       <div data-legend style="margin-bottom:var(--s-6)"></div>
-      <article id="case-1" aria-label="Case 1">Loading…</article>
-      <article id="case-2" aria-label="Case 2" style="margin-top:var(--s-7)"></article>
+      <div id="case-list">Loading…</div>
     </div>
   </main>
 
   <footer id="site-footer"></footer>
 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/cytoscape/3.30.2/cytoscape.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/dagre/0.8.5/dagre.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/cytoscape-dagre@2.5.0/cytoscape-dagre.js"></script>
   <script src="assets/js/data.js"></script>
   <script src="assets/js/ui.js"></script>
   <script src="assets/js/graph.js"></script>

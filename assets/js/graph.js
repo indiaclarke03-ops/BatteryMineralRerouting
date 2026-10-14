@@ -11,8 +11,11 @@
       .replace(/^PT /, "PT ").replace(/ \(record (\d)\)/, " · rec. $1");
   }
 
-  function elements(d) {
-    const nodes = d.entities.items.map((e) => ({
+  function elements(d, caseId) {
+    const inCase = (x) => !caseId || (x.case_ids || []).includes(caseId);
+    const edgesIn = d.edges.items.filter(inCase);
+    const used = new Set(); edgesIn.forEach((e) => { used.add(e.source); used.add(e.target); });
+    const nodes = d.entities.items.filter((e) => !caseId || used.has(e.id) || inCase(e)).map((e) => ({
       data: {
         id: e.id,
         label: `${e.risk_flags.some((f) => RISKY.test(f)) ? "⚑ " : ""}${shortName(e.name)}\n${PT.country(e.country)}`,
@@ -20,7 +23,7 @@
       },
       classes: [e.role, e.risk_flags.some((f) => RISKY.test(f)) ? "flagged" : ""].join(" "),
     }));
-    const edges = d.edges.items.map((e) => ({
+    const edges = edgesIn.map((e) => ({
       data: {
         id: e.id, source: e.source, target: e.target, etype: e.edge_type, conf: e.confidence,
         label: e.hs_codes.length ? e.hs_codes[0] : (e.relation === "possibly_same_as" ? "same as?" : e.relation === "owns" ? "owns" : ""),
@@ -67,7 +70,7 @@
     }
     if (typeof cytoscapeDagre !== "undefined") cytoscape.use(cytoscapeDagre);
     const cy = cytoscape({
-      container, elements: elements(d), style: STYLE,
+      container, elements: elements(d, opts.caseId), style: STYLE,
       wheelSensitivity: 0.25, minZoom: 0.25, maxZoom: 2.5, boxSelectionEnabled: false,
       autoungrabify: !!opts.locked,
     });
@@ -82,6 +85,9 @@
 
     const api = {
       cy,
+      setCase(caseId) {
+        cy.elements().remove(); cy.add(elements(d, caseId)); layout(); cy.fit(undefined, 24);
+      },
       relayout() { layout(); cy.fit(cy.elements().not(".hidden"), 24); },
       fit() { cy.fit(cy.elements().not(".hidden"), 24); },
       reset() { cy.elements().removeClass("faded hl"); cy.fit(undefined, 24); },
@@ -99,7 +105,7 @@
         const keepNodes = new Set();
         const keepEdges = new Set();
         d.edges.items.forEach((e) => {
-          if (edgePred(e) && nodePred(d.entityById.get(e.source)) && nodePred(d.entityById.get(e.target))) {
+          if (cy.getElementById(e.id).nonempty() && edgePred(e) && nodePred(d.entityById.get(e.source)) && nodePred(d.entityById.get(e.target))) {
             keepEdges.add(e.id); keepNodes.add(e.source); keepNodes.add(e.target);
           }
         });
@@ -117,8 +123,8 @@
 
   PT.graphLegendHTML = function () {
     return `<div class="graph-legend" aria-hidden="true">
-      <span class="etype tx"><span class="line"></span>Transactional</span>
-      <span class="etype ct"><span class="line"></span>Contractual</span>
+      <span class="etype tx"><span class="line"></span>Shipment</span>
+      <span class="etype ct"><span class="line"></span>Ownership</span>
       <span class="etype inf"><span class="line"></span>Inferred</span>
       <span>⚑ risk flag</span>
     </div>`;
@@ -132,6 +138,7 @@
         <div><strong>${PT.esc(PT.edgeSentence(e, d))}</strong></div>
         ${e.first_seen ? `<div class="muted">${PT.fmtDate(e.first_seen)}${e.last_seen && e.last_seen !== e.first_seen ? ` – ${PT.fmtDate(e.last_seen)}` : ""}${e.shipment_count ? ` · ${e.shipment_count} shipment row${e.shipment_count > 1 ? "s" : ""}` : ""}</div>` : ""}
         <div>${PT.esc(e.evidence)}</div>
+        ${PT.whyHTML(e)}
         <div>How we know: ${PT.receipts(e.source_call_ids)}</div>
       </li>`).join("")}</ul>`;
   };

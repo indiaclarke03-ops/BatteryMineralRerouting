@@ -21,21 +21,25 @@
       <div class="page-head">
         <span class="eyebrow">Explore</span>
         <h1>The network</h1>
-        <p class="lede">Every entity and link from Case 1. Filter by link type, country, HS code or risk flag. Click a node or a line to see what we know and which call it came from.</p>
+        <p class="lede">Every company and link from all five cases. Filter by link type, country, HS code or risk flag. Click a node or a line to see what we know and which call it came from.</p>
       </div>
 
       <div class="explore">
         <form class="filters card" id="filters" aria-label="Filters">
           <fieldset>
+            <legend><label for="f-case" style="padding:0">Case</label></legend>
+            <select id="f-case" name="case"><option value="">All cases</option></select>
+          </fieldset>
+          <fieldset>
             <legend>Link type</legend><div class="ff-check">
-            <label><input type="checkbox" name="etype" value="transactional" checked> <span class="etype tx"><span class="line" aria-hidden="true"></span>Transactional</span></label>
-            <label><input type="checkbox" name="etype" value="contractual" checked> <span class="etype ct"><span class="line" aria-hidden="true"></span>Contractual</span></label>
-            <label><input type="checkbox" name="etype" value="inferred" checked> <span class="etype inf"><span class="line" aria-hidden="true"></span>Inferred</span></label>
+            <label><input type="checkbox" name="etype" value="transactional" checked> <span class="etype tx"><span class="line" aria-hidden="true"></span>Shipment</span></label>
+            <label><input type="checkbox" name="etype" value="contractual" checked> <span class="etype ct"><span class="line" aria-hidden="true"></span>Ownership</span></label>
+            <label><input type="checkbox" name="etype" value="inferred" checked> <span class="etype inf"><span class="line" aria-hidden="true"></span>Inferred link</span></label>
           </div></fieldset>
           <fieldset>
             <legend>Confidence</legend><div class="ff-check">
             <label><input type="checkbox" name="conf" value="documented" checked> Documented</label>
-            <label><input type="checkbox" name="conf" value="corroborated" checked> Corroborated</label>
+            <label><input type="checkbox" name="conf" value="corroborated" checked> Cross-checked</label>
             <label><input type="checkbox" name="conf" value="inferred" checked> Inferred</label>
             <label><input type="checkbox" name="conf" value="lead" checked> Lead</label>
           </div></fieldset>

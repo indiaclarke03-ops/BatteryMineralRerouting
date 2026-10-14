@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Paper Trail: The Trace</title>
-  <meta name="description" content="Can trade and corporate-registry data reveal Chinese graphite anode material rerouted through third-country plants into US battery supply chains? A Sayari MCP investigation.">
+  <meta name="description" content="Is Chinese battery graphite reaching US battery plants through factories in other countries? Five plants traced with Sayari MCP.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600&family=Source+Serif+4:opsz,wght@8..60,600;8..60,700&display=swap" rel="stylesheet">
@@ -18,30 +18,143 @@
 
   <main id="main">
     <div class="wrap">
+      <!-- 1. Hero -->
       <section class="hero" aria-labelledby="q">
-        <span class="eyebrow">Case 1 · Graphite anode material · Indonesia → USA</span>
-        <h1 id="q">Can trade and registry data reveal Chinese battery graphite being rerouted through a third-country plant before it reaches US battery makers?</h1>
-        <p class="lede">We traced one plant, BTR's anode factory in Indonesia, through Sayari's knowledge graph. Each link below is labelled by type and by how sure we are of it, and each one links to the Sayari call that produced it.</p>
+        <span class="eyebrow">A Sayari MCP investigation · battery graphite</span>
+        <h1 id="q">Is Chinese battery graphite reaching US battery plants through factories in other countries?</h1>
+        <p class="lede">Chinese companies are building battery-material factories in Indonesia, Morocco, Oman and elsewhere. Their output can reach the US looking "non-Chinese". We followed the paper trail for <strong id="n-cases">five</strong> of these plants through trade and company records, and we show every link we found and how sure we are of each one.</p>
+        <div class="hero-ctas">
+          <a class="btn primary" href="#cases">See the five plants ↓</a>
+          <a class="btn" href="#trace">Walk through a case on the graph</a>
+          <a class="btn" href="method.html">How we used Sayari</a>
+        </div>
         <div class="hero-meta">
-          <span class="asof">As of 14 Oct 2026</span>
+          <span class="asof">Data as of 14 Oct 2026</span>
           <span class="asof" id="call-count">Loading…</span>
-          <a href="method.html">See every call →</a>
+        </div>
+        <div class="facts" id="facts"></div>
+      </section>
+
+      <div id="home-status"></div>
+
+      <!-- 2. Explainer -->
+      <section aria-labelledby="why">
+        <span class="eyebrow">The story in 60 seconds</span>
+        <h2 id="why">Why this matters</h2>
+        <div class="explain">
+          <div class="card">
+            <svg viewBox="0 0 200 90" aria-hidden="true">
+              <rect x="20" y="20" width="150" height="54" rx="6" fill="#fff" stroke="#1A1A1A" stroke-width="2.5"/>
+              <rect x="170" y="36" width="10" height="22" rx="2" fill="#1A1A1A"/>
+              <rect x="26" y="26" width="66" height="42" rx="3" fill="#0F5E5C"/>
+              <rect x="98" y="26" width="66" height="42" rx="3" fill="#E3EFEE" stroke="#0F5E5C" stroke-dasharray="3 3"/>
+              <text x="59" y="52" font-family="IBM Plex Mono, monospace" font-size="12" fill="#fff" text-anchor="middle">anode</text>
+              <text x="131" y="52" font-family="IBM Plex Mono, monospace" font-size="12" fill="#0F5E5C" text-anchor="middle">cathode</text>
+            </svg>
+            <span class="num">1 · The material</span>
+            <h3>Every EV battery needs graphite</h3>
+            <p>A lithium-ion battery has two electrodes. The <strong>anode</strong> side is almost always graphite, mined (natural) or made from petroleum coke (artificial). Graphite is roughly a fifth of a battery cell's weight.</p>
+          </div>
+          <div class="card">
+            <svg viewBox="0 0 200 90" aria-hidden="true">
+              <circle cx="60" cy="45" r="36" fill="#E3EFEE"/>
+              <path d="M60 45 L60 9 A36 36 0 1 1 39.4 15.5 Z" fill="#0F5E5C"/>
+              <text x="140" y="42" font-family="Source Serif 4, Georgia, serif" font-size="28" font-weight="700" fill="#0F5E5C" text-anchor="middle">90%+</text>
+              <text x="140" y="62" font-family="IBM Plex Sans, sans-serif" font-size="11" fill="#4A4A45" text-anchor="middle">made in China</text>
+            </svg>
+            <span class="num">2 · The supplier</span>
+            <h3>China makes almost all of it</h3>
+            <p>China produces over 90% of the world's battery anode material. US cell plants (Ultium, SK, Tesla and others) still need it. So Chinese makers like BTR and Zhongke are opening factories in other countries.</p>
+          </div>
+          <div class="card">
+            <svg viewBox="0 0 200 90" aria-hidden="true">
+              <path d="M20 80 V45 L50 30 V45 L80 30 V45 L110 30 V80 Z" fill="#fff" stroke="#1A1A1A" stroke-width="2.5"/>
+              <rect x="118" y="18" width="14" height="62" fill="#fff" stroke="#1A1A1A" stroke-width="2.5"/>
+              <text x="165" y="60" font-family="Source Serif 4, Georgia, serif" font-size="44" font-weight="700" fill="#6B3FA0" text-anchor="middle">?</text>
+            </svg>
+            <span class="num">3 · The rule</span>
+            <h3>The US now asks who owns the factory</h3>
+            <p>Since July 2025, US battery makers can lose clean-energy tax credits if too much of a part's cost comes from a "prohibited foreign entity", in practice often a Chinese-owned company. Anti-dumping duties were voted down in March 2026, so <strong>ownership</strong> is now the main lever.</p>
+          </div>
         </div>
       </section>
 
-      <p class="headline" id="headline"></p>
-      <div id="home-status"></div>
-
-      <section aria-labelledby="why">
-        <span class="eyebrow">Why now</span>
-        <h2 id="why">The pressure point moved from shipping origin to ownership</h2>
-        <p class="lede" style="font-size:1.125rem">The duty lever fell away in March 2026, when the USITC voted against duties. The tax-credit lever stays: US makers lose clean-energy credits if too much of a component's cost comes from a "prohibited foreign entity". So the question is no longer just where the goods shipped from, but who owns the plant they came from.</p>
-        <div id="timeline"></div>
+      <!-- 3. Diagram -->
+      <section aria-labelledby="how">
+        <span class="eyebrow">What we're looking for</span>
+        <h2 id="how">How a "rerouted" supply chain would look in the data</h2>
+        <p class="section-intro">We look for three kinds of link. Each is drawn the same way everywhere on the site, with both colour and line style.</p>
+        <div class="diagram">
+          <svg viewBox="0 0 960 300" role="img" aria-labelledby="dg-t dg-d">
+            <title id="dg-t">Rerouting pattern diagram</title>
+            <desc id="dg-d">A Chinese parent company ships graphite to a factory in a third country, which ships anode material to a US battery plant. A dashed purple line shows the parent may own the factory. A dotted amber loop shows several database records may be the same factory.</desc>
+            <defs>
+              <marker id="ab" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0 0 L10 5 L0 10 Z" fill="#1F5FBF"/></marker>
+              <marker id="ap" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0 0 L10 5 L0 10 Z" fill="#6B3FA0"/></marker>
+            </defs>
+            <!-- ownership arc -->
+            <path d="M130 128 C 200 20, 400 20, 455 118" fill="none" stroke="#6B3FA0" stroke-width="3.5" stroke-dasharray="11 6" marker-end="url(#ap)"/>
+            <text x="300" y="42" text-anchor="middle" font-family="IBM Plex Sans, sans-serif" font-size="17" fill="#6B3FA0" font-weight="600">owns? (company registries)</text>
+            <!-- shipments -->
+            <line x1="215" y1="185" x2="385" y2="185" stroke="#1F5FBF" stroke-width="4" marker-end="url(#ab)"/>
+            <text x="300" y="172" text-anchor="middle" font-family="IBM Plex Sans, sans-serif" font-size="15" fill="#1F5FBF" font-weight="600">graphite</text>
+            <text x="300" y="210" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="12" fill="#1F5FBF">trade records</text>
+            <line x1="575" y1="185" x2="745" y2="185" stroke="#1F5FBF" stroke-width="4" marker-end="url(#ab)"/>
+            <text x="660" y="172" text-anchor="middle" font-family="IBM Plex Sans, sans-serif" font-size="15" fill="#1F5FBF" font-weight="600">anode material</text>
+            <text x="660" y="210" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="12" fill="#1F5FBF">trade records</text>
+            <!-- nodes -->
+            <rect x="20" y="130" width="195" height="110" rx="8" fill="#fff" stroke="#6B3FA0" stroke-width="3"/>
+            <text x="117" y="172" text-anchor="middle" font-family="Source Serif 4, Georgia, serif" font-size="20" font-weight="700" fill="#1A1A1A">Chinese parent</text>
+            <text x="117" y="198" text-anchor="middle" font-family="IBM Plex Sans, sans-serif" font-size="14" fill="#4A4A45">e.g. BTR, Zhongke</text>
+            <text x="117" y="220" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="12" fill="#6E6D66">China</text>
+            <rect x="385" y="130" width="190" height="110" rx="8" fill="#E3EFEE" stroke="#0F5E5C" stroke-width="3.5"/>
+            <text x="480" y="172" text-anchor="middle" font-family="Source Serif 4, Georgia, serif" font-size="20" font-weight="700" fill="#1A1A1A">Third-country</text>
+            <text x="480" y="196" text-anchor="middle" font-family="Source Serif 4, Georgia, serif" font-size="20" font-weight="700" fill="#1A1A1A">factory</text>
+            <text x="480" y="220" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="12" fill="#6E6D66">Indonesia, Morocco…</text>
+            <rect x="750" y="130" width="195" height="110" rx="8" fill="#fff" stroke="#1A1A1A" stroke-width="2.5"/>
+            <text x="847" y="172" text-anchor="middle" font-family="Source Serif 4, Georgia, serif" font-size="20" font-weight="700" fill="#1A1A1A">US battery plant</text>
+            <text x="847" y="198" text-anchor="middle" font-family="IBM Plex Sans, sans-serif" font-size="13" fill="#4A4A45">e.g. Ultium, SK, Tesla</text>
+            <text x="847" y="220" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="12" fill="#6E6D66">United States</text>
+            <!-- inferred loop -->
+            <path d="M440 240 C 420 292, 545 292, 525 240" fill="none" stroke="#A86A12" stroke-width="3.5" stroke-dasharray="2 6" stroke-linecap="round"/>
+            <text x="620" y="283" font-family="IBM Plex Sans, sans-serif" font-size="15" fill="#A86A12" font-weight="600">same factory, many records? (inferred)</text>
+          </svg>
+          <div class="diagram-key">
+            <span class="etype tx"><span class="line" aria-hidden="true"></span>Shipment (transactional): customs records</span>
+            <span class="etype ct"><span class="line" aria-hidden="true"></span>Ownership (contractual): company registries</span>
+            <span class="etype inf"><span class="line" aria-hidden="true"></span>Inferred link: our reasoning, labelled</span>
+          </div>
+        </div>
+        <p class="muted" style="margin-top:var(--s-3)">Shipping Chinese material through a factory abroad is legal and common. The pattern only tells a buyer where to ask questions.</p>
       </section>
 
-      <section aria-labelledby="trace">
-        <span class="eyebrow">The trace</span>
-        <h2 id="trace">Five steps from corridor to gap</h2>
+      <!-- 4. Case cards -->
+      <section id="cases" aria-labelledby="cases-h">
+        <span class="eyebrow">Five plants, five answers</span>
+        <h2 id="cases-h">What we found</h2>
+        <p class="section-intro">Each card is one factory. The colour bar shows the kind of answer the data gave.</p>
+        <div class="case-cards" id="case-cards"></div>
+      </section>
+
+      <!-- 4b. Takeaways -->
+      <section aria-labelledby="take-h">
+        <span class="eyebrow">Across all five</span>
+        <h2 id="take-h">What the five cases tell us</h2>
+        <div class="explain" style="grid-template-columns:repeat(auto-fit,minmax(18rem,1fr))">
+          <div class="card"><span class="num">Finding 1</span><h3>Trade shows the path; registries show the owner, but rarely both</h3><p>For BTR Indonesia, Sayari shows the shipments but not the owner. For BTR Morocco and Putailai Malaysia, it shows the owner but no shipments yet. A full picture needs both at once.</p><p><a href="cases.html#case-1">Case 1</a> · <a href="cases.html#case-2">2</a> · <a href="cases.html#case-5">5</a></p></div>
+          <div class="card"><span class="num">Finding 2</span><h3>Same product, same buyers, different owners</h3><p>BTR Indonesia (Chinese-owned) and POSCO Future M (Korean-owned) both ship artificial graphite to GM, SK Battery America and Tesla. Shipping records alone can't tell them apart. Ownership data can.</p><p><a href="cases.html#case-1">Case 1</a> · <a href="cases.html#case-4">4</a></p></div>
+          <div class="card"><span class="num">Finding 3</span><h3>The next wave isn't shipping yet</h3><p>Chinese-owned anode plants in Morocco, Oman and Malaysia are all under construction, with no graphite trade in Sayari. Today is the time to record their ownership, before goods start to move.</p><p><a href="cases.html#case-2">Case 2</a> · <a href="cases.html#case-3">3</a> · <a href="cases.html#case-5">5</a></p></div>
+          <div class="card"><span class="num">Finding 4</span><h3>Country totals mislead</h3><p>3,088 "graphite" rows from Morocco were mostly mislabelled fertilizer. 917 rows from Oman were mostly Indian cargo passing through. You have to read the records, not just the counts.</p><p><a href="cases.html#case-2">Case 2</a> · <a href="cases.html#case-3">3</a></p></div>
+          <div class="card"><span class="num">Finding 5</span><h3>Sayari is powerful but needs care</h3><p><strong id="tk-calls">115</strong> Sayari calls: <span id="tk-worked">82</span> worked, <span id="tk-partial">15</span> partly, <span id="tk-failed">18</span> failed. Name filters and "OR" searches can fail silently. Every failure is shown on the Method page.</p><p><a href="method.html#scorecard-h">Scorecard</a></p></div>
+        </div>
+      </section>
+
+      <!-- 5. Walkthrough -->
+      <section id="trace" aria-labelledby="trace-h">
+        <span class="eyebrow">Step by step</span>
+        <h2 id="trace-h">Walk through a case on the network</h2>
+        <p class="section-intro">Pick a case, then use <strong>Next</strong> or the <span class="kbd">←</span> <span class="kbd">→</span> keys. The graph lights up the links behind each step.</p>
+        <div class="case-tabs" id="case-tabs" role="tablist" aria-label="Choose a case"></div>
         <div class="stepper">
           <div class="step-panel card">
             <div class="step-nav">
@@ -55,7 +168,7 @@
           </div>
           <div>
             <div class="graph-frame">
-              <div class="graph tall" id="trace-graph" role="img" aria-label="Network graph of Case 1. The same links are listed in text below."></div>
+              <div class="graph tall" id="trace-graph" role="img" aria-label="Network graph for the selected case. The same links are listed in text below."></div>
             </div>
             <details style="margin-top:var(--s-3)">
               <summary>Read the links as a list (same data as the graph)</summary>
@@ -63,24 +176,44 @@
             </details>
           </div>
         </div>
-      </section>
-
-      <section aria-labelledby="verdict-h">
-        <span class="eyebrow">Verdict</span>
-        <h2 id="verdict-h">What Sayari could and couldn't see</h2>
+        <h3 style="margin-top:var(--s-6)" id="verdict-h">Verdict for this case: what Sayari could and couldn't see</h3>
         <div class="verdict" id="verdict"></div>
-        <p class="muted" style="margin-top:var(--s-4)">None of this shows wrongdoing. Processing Chinese inputs in a third country is legal and common. A pattern like this one warrants due diligence by buyers, not conclusions.</p>
       </section>
 
+      <!-- 6. Policy timeline -->
+      <section aria-labelledby="tl-h">
+        <span class="eyebrow">Why now</span>
+        <h2 id="tl-h">The rules changed. Ownership is now the pressure point</h2>
+        <p class="section-intro">Duties on Chinese anode material were voted down in March 2026. The tax-credit test on who owns suppliers stays. Every date below was checked against a source.</p>
+        <div id="timeline"></div>
+      </section>
+
+      <!-- 7. Glossary -->
+      <section aria-labelledby="gl-h">
+        <span class="eyebrow">Plain English</span>
+        <h2 id="gl-h">Key terms</h2>
+        <dl class="glossary">
+          <div><dt>Anode</dt><dd>The negative side of a battery. In lithium-ion batteries it's almost always graphite.</dd></div>
+          <div><dt>Natural vs. artificial graphite</dt><dd>Natural graphite is mined (HS 2504). Artificial graphite is made by baking petroleum coke (HS 3801). Battery anodes use both.</dd></div>
+          <div><dt>HS code</dt><dd>The product code on every customs record. HS 3801.10 = artificial graphite; 2504 = natural graphite; 2713 = petroleum coke.</dd></div>
+          <div><dt>Prohibited foreign entity (PFE)</dt><dd>A company owned or controlled by a "foreign entity of concern" such as China. US battery makers lose tax credits if too much of a component's cost comes from PFEs.</dd></div>
+          <div><dt>Anti-dumping / countervailing duties</dt><dd>Extra tariffs on goods sold below fair value or subsidised. Commerce proposed them on Chinese anode material; the USITC voted them down.</dd></div>
+          <div><dt>Third-country plant</dt><dd>A factory outside China, often Chinese-owned, that processes Chinese inputs before export.</dd></div>
+          <div><dt>Sayari</dt><dd>A database linking company registries, ownership and customs records from 250+ jurisdictions. We queried it through its MCP server.</dd></div>
+          <div><dt>Entity resolution</dt><dd>Deciding whether several database records are really one company. Customs records spell names differently, so one factory can appear many times.</dd></div>
+        </dl>
+      </section>
+
+      <!-- 8. Feedback -->
       <section aria-labelledby="fb">
         <div class="feedback">
           <span class="eyebrow">Iteration 1 · feedback wanted</span>
           <h2 id="fb">What I want feedback on</h2>
           <ol>
-            <li><strong>Confidence labels.</strong> Is "Corroborated" right for the BTR ownership link, when the only evidence outside trade data is BTR's own press release?</li>
-            <li><strong>Naming US buyers.</strong> Customs records name Ultium Cells, SK Battery America, StarPlus, GM and Tesla. Is naming them useful, or does it read as blame?</li>
-            <li><strong>Case 2.</strong> Morocco already sends 3,088 HS 3801.10 shipments to the US, and BTR is building there. Should Morocco be next, or Zhongke Electric's Oman plant?</li>
-            <li><strong>The replay.</strong> Does the Method page make the Sayari tool use clear enough to rerun?</li>
+            <li><strong>Clarity.</strong> Could you explain the BTR Indonesia finding to someone else after reading the top of this page?</li>
+            <li><strong>Confidence labels.</strong> Do "Documented / Cross-checked / Inferred / Lead" make sense without reading the definitions?</li>
+            <li><strong>Case choice.</strong> Which of the five cases is most useful for a sourcing or compliance team, and what's missing?</li>
+            <li><strong>The replay.</strong> Could you rerun this on another supplier using the Method page and the playbook?</li>
           </ol>
         </div>
       </section>

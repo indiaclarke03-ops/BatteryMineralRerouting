@@ -1,0 +1,1660 @@
+{
+ "case": {
+  "id": "case-3",
+  "slug": "zhongke-oman",
+  "title": "Zhongke's Oman anode plant",
+  "subtitle": "Zhongke Electric / Zhongke Shinzoom · Sohar Freezone, Oman",
+  "country": "OMN",
+  "plant_status": "under construction",
+  "question": "Could Sayari detect Chinese anode material reaching US buyers through Zhongke Electric's new plant in Oman, before and after it starts producing?",
+  "headline": "Not yet: the trail hasn't started. Sayari has no record of the Sohar plant and no shipments into or out of it. The ownership chain is half visible. Sayari's Chinese registry shows Zhongke Electric owning the anode producer, and the company's own filing names the Hong Kong subsidiary that is building the plant. Today Zhongke graphite reaches the US mostly indirectly, through Malaysian cell plants, and only rarely direct from China.",
+  "summary_for_non_experts": "Zhongke Electric is a Chinese company and one of China's top three anode makers. It is building a 200,000-tonne-a-year anode plant in Oman. Ground was broken on 8 May 2026, and first output is due in 2027. Because no anode leaves the plant yet, there is nothing to trace, but we mapped who owns it and how the company's anode material reaches the US now. Sayari shows China's registry chain and the Hong Kong company's existence. It does not show the Hong Kong-to-Oman link, which comes from the company's own stock-exchange filing.",
+  "key_numbers": [
+   {
+    "value": "0",
+    "label": "Sayari records for the Oman plant or its project company",
+    "call_ids": [
+     "s301",
+     "s312",
+     "s315",
+     "s319"
+    ]
+   },
+   {
+    "value": "200,000 t/yr",
+    "label": "planned capacity, two phases; ground broken 8 May 2026",
+    "call_ids": [
+     "t301",
+     "t302"
+    ]
+   },
+   {
+    "value": "9",
+    "label": "direct China→US shipment rows from Zhongke Shinzoom entities (2021–2025)",
+    "call_ids": [
+     "s317"
+    ]
+   },
+   {
+    "value": "32",
+    "label": "artificial-graphite rows to two Malaysian cell plants, Apr 2025–Apr 2026",
+    "call_ids": [
+     "s318"
+    ]
+   },
+   {
+    "value": "917",
+    "label": "existing 'Oman→US' HS 3801 rows, mostly Indian cargo relayed through Oman: noise",
+    "call_ids": [
+     "s320",
+     "s323"
+    ]
+   }
+  ],
+  "overall_confidence": "corroborated",
+  "pattern": "trail-not-started",
+  "steps": [
+   {
+    "title": "The plant isn't in the data yet",
+    "kicker": "Step 1 · Gap",
+    "text": "We searched in English and Chinese for any Zhongke, Shinzoom or Sohar anode entity in Oman, and for shipments into Oman under the group's name. Nothing came back. That fits a plant that broke ground in May 2026 and won't produce until 2027. The project company named in the filing has no Sayari record, so it appears here without a Sayari ID.",
+    "edge_ids": [],
+    "node_ids": [
+     "case3-oman-sohar-project-co"
+    ],
+    "call_ids": [
+     "s301",
+     "s311",
+     "s312",
+     "s315",
+     "s319"
+    ]
+   },
+   {
+    "title": "The owner: registry in China, filing beyond it",
+    "kicker": "Step 2 · Contractual",
+    "text": "Sayari's registry data shows Zhongke Electric holding 100% of a Xingcheng holding company, which holds 99.998% of the anode producer, Hunan Zhongke Star City Graphite. The company's June 2025 filing says that producer owns 100% of Zhongke Shinzoom (HK) Holdings, which set up the Oman project company. Sayari has the Hong Kong company (formed Nov 2024) but no path from it to Zhongke Electric.",
+    "edge_ids": [
+     "e301",
+     "e302",
+     "e304",
+     "e305"
+    ],
+    "node_ids": [
+     "-jDI6N9q1MWnPT0ujf-8iw",
+     "xdHWWBfC-uTqowtR0Rzdtg",
+     "7M3Jhg6trAddkVbwtzSdZA",
+     "aWkEICLnf2fzW78geuH5Ag",
+     "case3-oman-sohar-project-co"
+    ],
+    "call_ids": [
+     "s304",
+     "s307",
+     "s314",
+     "s316",
+     "s324",
+     "t302"
+    ]
+   },
+   {
+    "title": "The groundbreaking checks out",
+    "kicker": "Step 3 · Cross-checked",
+    "text": "The 8 May 2026 groundbreaking was a single-source claim. Now the company's website, Gulf News (citing Oman's news agency), MEED, Sina Finance and Baidu all report it. The Hong Kong investor's address in the filing matches a Sayari trade record that has already shipped to a US importer, so the vehicle is already active in trade.",
+    "edge_ids": [
+     "e306",
+     "e312"
+    ],
+    "node_ids": [
+     "5Rb8mSrQ1oKnsToAIDba8w",
+     "aWkEICLnf2fzW78geuH5Ag",
+     "XtUNxc54aQijxNuFzwkjxg"
+    ],
+    "call_ids": [
+     "t301",
+     "t302",
+     "s313"
+    ]
+   },
+   {
+    "title": "Today's baseline: mostly via Malaysia",
+    "kicker": "Step 4 · Transactional",
+    "text": "Direct China→US rows are few: 7 to SK Battery America (2021–22), 1 to GM (Mar 2025) and 1 to Chemico (Oct 2025). Since 2025, 32 rows of artificial graphite have gone to EVE Energy Malaysia and Linergy Power. Both ship lithium-ion cells to US buyers such as Eaton, Milwaukee Tool and Briggs & Stratton. Trade data can't show whether those cells contain Zhongke graphite.",
+    "edge_ids": [
+     "e307",
+     "e310",
+     "e311",
+     "e312",
+     "e313",
+     "e314",
+     "e318",
+     "e319",
+     "e320"
+    ],
+    "node_ids": [
+     "RpVysafWvaXbqy0N4a5qvw",
+     "aoeSqNICt_VUP-o-F-84Yg",
+     "4fqrWAcyrgtWw2RdV6qZsg",
+     "_WCNtC_iMCzef8u8s0uKyQ",
+     "ySemfyJJesFbfxEgW2SgCg"
+    ],
+    "call_ids": [
+     "s308",
+     "s317",
+     "s318",
+     "s321",
+     "s322"
+    ]
+   },
+   {
+    "title": "What to watch once Sohar starts",
+    "kicker": "Step 5 · Gap",
+    "text": "The 'Oman→US artificial graphite' corridor already shows 917 rows, mostly Indian chemicals and freight relayed through Omani ports. A corridor filter won't spot the new plant; a buyer must watch named shippers. Watch for: the Sohar project company or Shinzoom (HK) Holdings as shipper; HS 3801 or petroleum coke moving from Zhongke's Chinese units into Sohar; and an Omani registry record naming the Hong Kong parent.",
+    "edge_ids": [],
+    "node_ids": [
+     "case3-oman-sohar-project-co",
+     "aWkEICLnf2fzW78geuH5Ag",
+     "5Rb8mSrQ1oKnsToAIDba8w"
+    ],
+    "call_ids": [
+     "s320",
+     "s323",
+     "s324",
+     "s325"
+    ]
+   }
+  ],
+  "verdict": {
+   "detected": [
+    {
+     "text": "Registry chain inside China: Zhongke Electric → (100%) Xingcheng holding company → (99.998%) Hunan Zhongke Star City Graphite.",
+     "call_ids": [
+      "s304",
+      "s316"
+     ]
+    },
+    {
+     "text": "Zhongke Shinzoom (HK) Holdings exists (incorporated 8 Nov 2024) and, under a matching address, appears as shipper of artificial graphite from China to Chemico LLC (Oct 2025).",
+     "call_ids": [
+      "s314",
+      "s313",
+      "s317"
+     ]
+    },
+    {
+     "text": "Current flows: 9 direct China→US rows (SK Battery America, GM, Chemico) and 32 rows to Malaysian cell plants that ship cells to US buyers.",
+     "call_ids": [
+      "s317",
+      "s318",
+      "s321",
+      "s322"
+     ]
+    }
+   ],
+   "suggested": [
+    {
+     "text": "The Hong Kong → Oman ownership: stated in Zhongke's filing and Gulf press, not in Sayari.",
+     "call_ids": [
+      "t301",
+      "t302",
+      "s324"
+     ]
+    },
+    {
+     "text": "Trade records 'Hunan Zhongke Shinzoom' and 'Shinzoom (HK) Holdings' are the registry companies, matched by street address.",
+     "call_ids": [
+      "s308",
+      "s313",
+      "s316",
+      "t302"
+     ]
+    },
+    {
+     "text": "Malaysian route: Zhongke graphite into EVE Energy Malaysia and Linergy Power, whose cells go to US buyers. The anode content of those cells can't be shown.",
+     "call_ids": [
+      "s318",
+      "s321",
+      "s322"
+     ]
+    }
+   ],
+   "not_visible": [
+    {
+     "text": "The Oman plant itself: no entity, no inputs and no outputs in Sayari.",
+     "call_ids": [
+      "s301",
+      "s315",
+      "s319"
+     ]
+    },
+    {
+     "text": "Any registry link from the Hong Kong vehicle to its Chinese parent or its Omani subsidiary.",
+     "call_ids": [
+      "s314",
+      "s324"
+     ]
+    },
+    {
+     "text": "Equipment or feedstock shipments into Sohar reported in Chinese press.",
+     "call_ids": [
+      "s319",
+      "t302"
+     ]
+    }
+   ]
+  },
+  "passport": [
+   {
+    "field": "Place of manufacture",
+    "guidance_no": "8",
+    "declared": "The cell plant's location, e.g. USA or Malaysia.",
+    "paper_trail": "Today: Ningxiang/Changsha, China, sometimes routed through Hong Kong. From 2027: possibly Sohar, Oman.",
+    "gap": true,
+    "note": "An Oman origin label would hide a Chinese-owned producer."
+   },
+   {
+    "field": "Detailed composition (anode)",
+    "guidance_no": "45",
+    "declared": "'Graphite' as the anode active material.",
+    "paper_trail": "Artificial graphite (HS 3801.10/3801.90) from Zhongke Shinzoom to Malaysian cell plants.",
+    "gap": true,
+    "note": "Composition says what, not who made it."
+   },
+   {
+    "field": "Critical raw materials > 0.1%",
+    "guidance_no": "15",
+    "declared": "Natural graphite listed if present.",
+    "paper_trail": "The rows we saw are artificial graphite. No natural-graphite inputs pulled.",
+    "gap": false,
+    "note": "Consistent, if declared."
+   },
+   {
+    "field": "Responsible-sourcing (due-diligence) report",
+    "guidance_no": "19",
+    "declared": "Deferred under the EU Battery Regulation.",
+    "paper_trail": "No forced-labor flag on Shinzoom's trade record. Two sister plants carry 'owned-by' flags through a co-owner.",
+    "gap": true,
+    "note": "Flags sit on neighbours, not on the exporter."
+   },
+   {
+    "field": "Ownership of upstream suppliers",
+    "guidance_no": "—",
+    "declared": "No such field in the EU passport.",
+    "paper_trail": "Oman plant → HK Holdings → Hunan Zhongke Star City Graphite → Zhongke Electric (filing + registry).",
+    "gap": true,
+    "note": "The US PFE test turns on this chain; half of it is outside Sayari."
+   }
+  ],
+  "red_flags": [
+   {
+    "flag": "Chinese parent ownership of the transit plant",
+    "signal": "contractual",
+    "severity": "High",
+    "result": "suggested",
+    "note": "Registry shows the Chinese links; the HK→Oman links come from the company filing."
+   },
+   {
+    "flag": "Same HS imported from China and exported to the US",
+    "signal": "transactional",
+    "severity": "High",
+    "result": "not_visible",
+    "note": "The plant has no trade yet."
+   },
+   {
+    "flag": "Recent incorporation vs. first export date",
+    "signal": "contractual",
+    "severity": "Medium",
+    "result": "suggested",
+    "note": "HK vehicle formed Nov 2024; shipper on a US entry by Oct 2025 (goods from China)."
+   },
+   {
+    "flag": "Volume spike after a policy date",
+    "signal": "transactional",
+    "severity": "Medium",
+    "result": "not_visible",
+    "note": "Too few US rows to test. The Malaysian rows start in Apr 2025."
+   },
+   {
+    "flag": "Shared address or officer with a flagged entity",
+    "signal": "inferred",
+    "severity": "Medium",
+    "result": "not_visible",
+    "note": "Watchlist hits run through index-fund and HKSCC shareholders: noise."
+   },
+   {
+    "flag": "Entity-resolution fragmentation",
+    "signal": "inferred",
+    "severity": "Low (disclose)",
+    "result": "detected",
+    "note": "Trade and registry records split; a dormant 2017 HK namesake."
+   },
+   {
+    "flag": "Forced-labor / UFLPA sub-tier flags",
+    "signal": "inferred",
+    "severity": "Medium",
+    "result": "suggested",
+    "note": "None on Shinzoom; 'owned-by' flags on two sister plants via a co-owner."
+   }
+  ],
+  "caveats": [
+   "Building a plant abroad and processing Chinese inputs there is legal and common. Nothing here shows wrongdoing by any company named.",
+   "Buyers are named because they appear in customs records. That says nothing about their compliance.",
+   "The Hong Kong → Oman ownership comes from Zhongke's filing and press, not from a registry Sayari holds.",
+   "Address-based links between trade records and registry companies are our judgment and could be wrong.",
+   "Malaysian cell exports can't be tied to Zhongke graphite at the lot level.",
+   "Oman→US HS 3801.10 data is dominated by relayed Indian cargo and likely miscoding. Don't read the corridor as anode trade.",
+   "The US anti-dumping case named Zhongke Shinzoom entities at 93.50%, but the USITC's negative vote (Mar 2026) means no order took effect."
+  ]
+ },
+ "entities": [
+  {
+   "id": "-jDI6N9q1MWnPT0ujf-8iw",
+   "name": "Hunan Zhongke Electric Co., Ltd. (湖南中科电气股份有限公司)",
+   "country": "CHN",
+   "type": "company",
+   "role": "parent",
+   "risk_flags": [
+    "psa_exports_bis_high_priority_items_direct"
+   ],
+   "identifiers": {
+    "cn_uscc": "914306007607108300",
+    "lei": "65560006WDZK75ECJB29",
+    "cn_registration_number": "430600000010207"
+   },
+   "summary": "Shenzhen-listed group (stock 300035) that started in electromagnetic equipment and now makes anode material. Sayari's registry shows it owning 100% of the holding company above its anode producer. It records no trade itself.",
+   "source_call_ids": [
+    "s302",
+    "s304",
+    "s307",
+    "s325"
+   ],
+   "sayari_url": "https://graph.sayari.com/resource/entity/-jDI6N9q1MWnPT0ujf-8iw"
+  },
+  {
+   "id": "xdHWWBfC-uTqowtR0Rzdtg",
+   "name": "湖南中科星城科技有限公司 (Zhongke Xingcheng holding company)",
+   "country": "CHN",
+   "type": "company",
+   "role": "parent",
+   "risk_flags": [],
+   "identifiers": {},
+   "summary": "Intermediate holding company. Sayari shows it 100% owned by Zhongke Electric and holding 99.998% of the anode producer Hunan Zhongke Star City Graphite. The English label is ours.",
+   "source_call_ids": [
+    "s304",
+    "s307",
+    "s316"
+   ],
+   "sayari_url": "https://graph.sayari.com/resource/entity/xdHWWBfC-uTqowtR0Rzdtg"
+  },
+  {
+   "id": "7M3Jhg6trAddkVbwtzSdZA",
+   "name": "Hunan Zhongke Star City Graphite Co., Ltd. (湖南中科星城石墨有限公司)",
+   "country": "CHN",
+   "type": "company",
+   "role": "producer",
+   "risk_flags": [],
+   "identifiers": {
+    "cn_uscc": "9143010072796955X1",
+    "cn_registration_number": "430122000007737"
+   },
+   "summary": "The group's main anode producer in Ningxiang, Changsha; registered 2001. The company's 2025 filing names it as the 100% owner of the Hong Kong company that is building the Oman plant. Its registry record holds no trade; exports appear under the 'Hunan Zhongke Shinzoom' trade record.",
+   "source_call_ids": [
+    "s307",
+    "s316",
+    "t302"
+   ],
+   "sayari_url": "https://graph.sayari.com/resource/entity/7M3Jhg6trAddkVbwtzSdZA"
+  },
+  {
+   "id": "Etd_ARUNj9lHbX9vIMUWbQ",
+   "name": "贵州中科星城石墨有限公司 (Guizhou Zhongke Xingcheng Graphite)",
+   "country": "CHN",
+   "type": "company",
+   "role": "producer",
+   "risk_flags": [],
+   "identifiers": {
+    "cn_uscc": "91520690MA6DMHPEXR"
+   },
+   "summary": "A Guizhou anode subsidiary held directly by Zhongke Electric (share not shown in our pull). 'Guizhou Zhongke Shinzoom' entities were named in the US anti-dumping case. No trade pulled.",
+   "source_call_ids": [
+    "s307"
+   ],
+   "sayari_url": "https://graph.sayari.com/resource/entity/Etd_ARUNj9lHbX9vIMUWbQ"
+  },
+  {
+   "id": "RpVysafWvaXbqy0N4a5qvw",
+   "name": "HUNAN ZHONGKE SHINZOOM CO., LTD (trade record)",
+   "country": "CHN",
+   "type": "company",
+   "role": "producer",
+   "risk_flags": [],
+   "identifiers": {},
+   "summary": "A trade-data record with no registry identifiers. Its two Changsha addresses match the group's registry addresses (No. 118 Quanzhou North Road, Ningxiang, and Building 3, Yida Smart Technology Park). It ships artificial graphite to SK Battery America, GM, two Malaysian cell makers and SK On Hungary. 62 shipment rows, 2021 to 2026.",
+   "source_call_ids": [
+    "s305",
+    "s308",
+    "s317",
+    "s318"
+   ],
+   "sayari_url": "https://graph.sayari.com/resource/entity/RpVysafWvaXbqy0N4a5qvw"
+  },
+  {
+   "id": "aWkEICLnf2fzW78geuH5Ag",
+   "name": "Zhongke Shinzoom (HK) Holdings Co., Limited (中科星城(香港)控股有限公司)",
+   "country": "HKG",
+   "type": "company",
+   "role": "parent",
+   "risk_flags": [],
+   "identifiers": {},
+   "summary": "Hong Kong company incorporated 8 Nov 2024 and active, per Sayari's Hong Kong registry data. The company's filing says it is wholly owned by Hunan Zhongke Star City Graphite and is the direct investor in the Oman project. Sayari holds no owner or subsidiary for it, and finds no path to Zhongke Electric.",
+   "source_call_ids": [
+    "s305",
+    "s314",
+    "s324",
+    "t302"
+   ],
+   "sayari_url": "https://graph.sayari.com/resource/entity/aWkEICLnf2fzW78geuH5Ag"
+  },
+  {
+   "id": "5Rb8mSrQ1oKnsToAIDba8w",
+   "name": "ZHONGKE SHINZOOM (HK) HOLDINGS CO LIMITED (trade record)",
+   "country": "HKG",
+   "type": "company",
+   "role": "trader",
+   "risk_flags": [],
+   "identifiers": {},
+   "summary": "A US-import record with no country or identifiers. Its address (Room 1406A, 14/F, Belgian Bank Building, 721-725 Nathan Road, Kowloon) is the one given for the Hong Kong holding company in Zhongke's filing. It shipped artificial graphite from China to Chemico LLC in Oct 2025.",
+   "source_call_ids": [
+    "s305",
+    "s313",
+    "s317",
+    "t302"
+   ],
+   "sayari_url": "https://graph.sayari.com/resource/entity/5Rb8mSrQ1oKnsToAIDba8w"
+  },
+  {
+   "id": "KgkxLJt2omf21G3k-AFbiw",
+   "name": "Zhongke Shinzoom (HK) Co., Limited (closed, 2017)",
+   "country": "HKG",
+   "type": "company",
+   "role": "trader",
+   "risk_flags": [],
+   "identifiers": {
+    "hk_cr_number": "2574460"
+   },
+   "summary": "An older Hong Kong company with a near-identical name, registered 5 Sep 2017 and now inactive. Sayari has no relationships or trade for it. Kept separate so it isn't confused with the 2024 holding company.",
+   "source_call_ids": [
+    "s305",
+    "s310"
+   ],
+   "sayari_url": "https://graph.sayari.com/resource/entity/KgkxLJt2omf21G3k-AFbiw"
+  },
+  {
+   "id": "case3-oman-sohar-project-co",
+   "name": "Zhongke Xingcheng Sohar New Material Technology Co., Ltd. (中科星城苏哈尔新材料科技有限公司) — not in Sayari",
+   "country": "OMN",
+   "type": "company",
+   "role": "transit_plant",
+   "risk_flags": [],
+   "identifiers": {},
+   "summary": "The Oman project company named in Zhongke's June 2025 filing. It is building a 200,000 t/yr anode base on Plot 3751 in Sohar Freezone, with ground broken on 8 May 2026 and first output due in 2027. Sayari has no record of it under any name we tried, so this node has no Sayari ID. The English name is our translation.",
+   "source_call_ids": [
+    "s301",
+    "s312",
+    "s315",
+    "s319",
+    "t301",
+    "t302"
+   ],
+   "sayari_url": null
+  },
+  {
+   "id": "aoeSqNICt_VUP-o-F-84Yg",
+   "name": "SK Battery America",
+   "country": "USA",
+   "type": "company",
+   "role": "us_buyer",
+   "risk_flags": [],
+   "identifiers": {},
+   "summary": "SK On's US cell plant in Georgia. Seven rows of artificial graphite from Hunan Zhongke Shinzoom, Aug 2021 to May 2022.",
+   "source_call_ids": [
+    "s308",
+    "s317",
+    "s318"
+   ],
+   "sayari_url": "https://graph.sayari.com/resource/entity/aoeSqNICt_VUP-o-F-84Yg"
+  },
+  {
+   "id": "4fqrWAcyrgtWw2RdV6qZsg",
+   "name": "General Motors",
+   "country": "USA",
+   "type": "company",
+   "role": "us_buyer",
+   "risk_flags": [],
+   "identifiers": {},
+   "summary": "One row of artificial graphite (HS 3801.10) from Hunan Zhongke Shinzoom, arriving 2 Mar 2025. This is the most recent battery-maker row in our results.",
+   "source_call_ids": [
+    "s308",
+    "s317",
+    "s318"
+   ],
+   "sayari_url": "https://graph.sayari.com/resource/entity/4fqrWAcyrgtWw2RdV6qZsg"
+  },
+  {
+   "id": "XtUNxc54aQijxNuFzwkjxg",
+   "name": "Chemico LLC",
+   "country": "USA",
+   "type": "company",
+   "role": "us_buyer",
+   "risk_flags": [],
+   "identifiers": {},
+   "summary": "US importer. One row of artificial graphite from Zhongke Shinzoom (HK) Holdings, shipped from China and arriving 15 Oct 2025. The data doesn't show the end use.",
+   "source_call_ids": [
+    "s313",
+    "s317",
+    "s318"
+   ],
+   "sayari_url": "https://graph.sayari.com/resource/entity/XtUNxc54aQijxNuFzwkjxg"
+  },
+  {
+   "id": "_WCNtC_iMCzef8u8s0uKyQ",
+   "name": "EVE Energy Malaysia Sdn Bhd",
+   "country": "MYS",
+   "type": "company",
+   "role": "buyer",
+   "risk_flags": [
+    "exports_to_usa_section_1260h_entity",
+    "forced_labor_sheffield_hallam_university_reports_origin_direct"
+   ],
+   "identifiers": {},
+   "summary": "Malaysian cell plant. It received 18 rows of artificial graphite (HS 3801.10/3801.90) from Hunan Zhongke Shinzoom, Apr 2025 to Apr 2026. It ships lithium-ion cells to US buyers, including EVE Energy North America, Briggs & Stratton, Milwaukee Tool, TTI Consumer Power Tools, Stanley Black & Decker, Energizer Battery Co, ProTechnologies and ABM Tucker GA.",
+   "source_call_ids": [
+    "s308",
+    "s318",
+    "s322"
+   ],
+   "sayari_url": "https://graph.sayari.com/resource/entity/_WCNtC_iMCzef8u8s0uKyQ"
+  },
+  {
+   "id": "ySemfyJJesFbfxEgW2SgCg",
+   "name": "Linergy Power Sdn Bhd",
+   "country": "MYS",
+   "type": "company",
+   "role": "buyer",
+   "risk_flags": [],
+   "identifiers": {},
+   "summary": "Malaysian cell maker. It received 14 rows of artificial graphite (HS 3801.10) from Hunan Zhongke Shinzoom, Sep 2025 to Feb 2026. It ships 18650/21700 lithium-ion cells and battery systems to US buyers: Eaton, Milwaukee Tool, Ampace Technology, Stanley Black & Decker and Techtronic Product Development.",
+   "source_call_ids": [
+    "s308",
+    "s318",
+    "s321"
+   ],
+   "sayari_url": "https://graph.sayari.com/resource/entity/ySemfyJJesFbfxEgW2SgCg"
+  },
+  {
+   "id": "t2HmaexxvTE5WgGtj3BMxg",
+   "name": "SK On Hungary Kft",
+   "country": "HUN",
+   "type": "company",
+   "role": "buyer",
+   "risk_flags": [],
+   "identifiers": {},
+   "summary": "SK On's Hungarian cell plant. One row of artificial graphite (HS 3801.10) from Hunan Zhongke Shinzoom, arriving at a Slovenian port in Mar 2023.",
+   "source_call_ids": [
+    "s308",
+    "s318"
+   ],
+   "sayari_url": "https://graph.sayari.com/resource/entity/t2HmaexxvTE5WgGtj3BMxg"
+  },
+  {
+   "id": "q4uVT7bM-GusYLonMicJ_Q",
+   "name": "Samsung SDI Co., Ltd.",
+   "country": "KOR",
+   "type": "company",
+   "role": "buyer",
+   "risk_flags": [],
+   "identifiers": {},
+   "summary": "Korean cell maker. Two rows from Hunan Zhongke Shinzoom in Dec 2021 and Jan 2022, coded HS 8543 (electrical apparatus), which looks like a coding error for anode material.",
+   "source_call_ids": [
+    "s308",
+    "s318"
+   ],
+   "sayari_url": "https://graph.sayari.com/resource/entity/q4uVT7bM-GusYLonMicJ_Q"
+  },
+  {
+   "id": "-3h_vhYQa9eIl2-txBW36Q",
+   "name": "Uni-Trans Line Co., Ltd.",
+   "country": "KOR",
+   "type": "company",
+   "role": "trader",
+   "risk_flags": [],
+   "identifiers": {},
+   "summary": "Korean freight forwarder. It is consignee on 18 Shinzoom rows to Korea, 2022–2023, under mixed HS codes (one row describes artificial graphite). We treat it as logistics, not as an end buyer.",
+   "source_call_ids": [
+    "s308",
+    "s318"
+   ],
+   "sayari_url": "https://graph.sayari.com/resource/entity/-3h_vhYQa9eIl2-txBW36Q"
+  },
+  {
+   "id": "BuQm2NSnUlkUMb83_BJxog",
+   "name": "Eaton Corporation",
+   "country": "USA",
+   "type": "company",
+   "role": "us_buyer",
+   "risk_flags": [],
+   "identifiers": {},
+   "summary": "US buyer of lithium-ion battery systems (HS 8507.60) from Linergy Power in Malaysia: 5 rows, Aug to Sep 2026. A second Eaton record (importer number 34-0196300SK) has one more row.",
+   "source_call_ids": [
+    "s321"
+   ],
+   "sayari_url": "https://graph.sayari.com/resource/entity/BuQm2NSnUlkUMb83_BJxog"
+  },
+  {
+   "id": "gRBpjYP97b53gA7TkExdpQ",
+   "name": "EVE Energy North America Corp",
+   "country": "USA",
+   "type": "company",
+   "role": "us_buyer",
+   "risk_flags": [],
+   "identifiers": {},
+   "summary": "US arm of EVE Energy. It received 7 rows of lithium-ion cells from EVE Energy Malaysia, Jan to Jun 2026. Six of those rows left from Indonesia, not Malaysia.",
+   "source_call_ids": [
+    "s322"
+   ],
+   "sayari_url": "https://graph.sayari.com/resource/entity/gRBpjYP97b53gA7TkExdpQ"
+  },
+  {
+   "id": "33X8P9vU58v1EcigvWeD-Q",
+   "name": "Briggs & Stratton, LLC",
+   "country": "USA",
+   "type": "company",
+   "role": "us_buyer",
+   "risk_flags": [],
+   "identifiers": {},
+   "summary": "US buyer of INR21700 lithium-ion cells from EVE Energy Malaysia: 3 rows, Jul to Sep 2026. Of the two dated departures, one left from Singapore and one from China.",
+   "source_call_ids": [
+    "s322"
+   ],
+   "sayari_url": "https://graph.sayari.com/resource/entity/33X8P9vU58v1EcigvWeD-Q"
+  }
+ ],
+ "edges": [
+  {
+   "id": "e301",
+   "source": "-jDI6N9q1MWnPT0ujf-8iw",
+   "target": "xdHWWBfC-uTqowtR0Rzdtg",
+   "relation": "owns",
+   "edge_type": "contractual",
+   "confidence": "documented",
+   "hs_codes": [],
+   "first_seen": null,
+   "last_seen": null,
+   "shipment_count": null,
+   "evidence": "Sayari registry data shows Zhongke Electric holding 100% of the Zhongke Xingcheng holding company.",
+   "source_call_ids": [
+    "s304",
+    "s307"
+   ],
+   "case_ids": [
+    "case-3"
+   ],
+   "confidence_reason": "A registry shareholder record in Sayari, with a percentage."
+  },
+  {
+   "id": "e302",
+   "source": "xdHWWBfC-uTqowtR0Rzdtg",
+   "target": "7M3Jhg6trAddkVbwtzSdZA",
+   "relation": "owns",
+   "edge_type": "contractual",
+   "confidence": "documented",
+   "hs_codes": [],
+   "first_seen": null,
+   "last_seen": null,
+   "shipment_count": null,
+   "evidence": "Registry shows the holding company with 99.998% of Hunan Zhongke Star City Graphite. Zhongke Electric is listed as a former holder of the same share.",
+   "source_call_ids": [
+    "s316",
+    "s307"
+   ],
+   "case_ids": [
+    "case-3"
+   ],
+   "confidence_reason": "A registry shareholder record in Sayari, with a percentage."
+  },
+  {
+   "id": "e303",
+   "source": "-jDI6N9q1MWnPT0ujf-8iw",
+   "target": "Etd_ARUNj9lHbX9vIMUWbQ",
+   "relation": "owns",
+   "edge_type": "contractual",
+   "confidence": "documented",
+   "hs_codes": [],
+   "first_seen": null,
+   "last_seen": null,
+   "shipment_count": null,
+   "evidence": "Registry shareholder_of link from Zhongke Electric to its Guizhou anode subsidiary. We didn't pull the percentage.",
+   "source_call_ids": [
+    "s307"
+   ],
+   "case_ids": [
+    "case-3"
+   ],
+   "confidence_reason": "A registry shareholder record in Sayari."
+  },
+  {
+   "id": "e304",
+   "source": "7M3Jhg6trAddkVbwtzSdZA",
+   "target": "aWkEICLnf2fzW78geuH5Ag",
+   "relation": "owns",
+   "edge_type": "contractual",
+   "confidence": "corroborated",
+   "hs_codes": [],
+   "first_seen": null,
+   "last_seen": null,
+   "shipment_count": null,
+   "evidence": "Zhongke's June 2025 exchange filing says Hunan Zhongke Star City Graphite holds 100% of Zhongke Shinzoom (HK) Holdings. Securities Times and an Arab-China research site report the same structure. Sayari has the Hong Kong company (incorporated Nov 2024) but no shareholder for it, and no path to Zhongke Electric.",
+   "source_call_ids": [
+    "t302",
+    "s314",
+    "s324"
+   ],
+   "case_ids": [
+    "case-3"
+   ],
+   "confidence_reason": "The company's own filing plus independent press coverage agree, and Sayari confirms the Hong Kong company exists. No registry record states the shareholding."
+  },
+  {
+   "id": "e305",
+   "source": "aWkEICLnf2fzW78geuH5Ag",
+   "target": "case3-oman-sohar-project-co",
+   "relation": "owns",
+   "edge_type": "contractual",
+   "confidence": "corroborated",
+   "hs_codes": [],
+   "first_seen": null,
+   "last_seen": null,
+   "shipment_count": null,
+   "evidence": "The filing says the Hong Kong company set up the Oman project company to build the plant. Gulf News and the company's website say Zhongke Electric broke ground 'through its subsidiary Zhongke Xingcheng (Hong Kong)'. Neither company appears in Sayari's Oman data.",
+   "source_call_ids": [
+    "t301",
+    "t302",
+    "s301",
+    "s315"
+   ],
+   "case_ids": [
+    "case-3"
+   ],
+   "confidence_reason": "The company filing and separate Omani and Gulf press agree. No registry record in Sayari."
+  },
+  {
+   "id": "e306",
+   "source": "5Rb8mSrQ1oKnsToAIDba8w",
+   "target": "aWkEICLnf2fzW78geuH5Ag",
+   "relation": "possibly_same_as",
+   "edge_type": "inferred",
+   "confidence": "inferred",
+   "hs_codes": [],
+   "first_seen": null,
+   "last_seen": null,
+   "shipment_count": null,
+   "evidence": "Same name. The trade record's address (Room 1406A, Belgian Bank Building, 721-725 Nathan Road) matches the address Zhongke's filing gives for the Hong Kong holding company. Sayari doesn't link the two records.",
+   "source_call_ids": [
+    "s313",
+    "s314",
+    "t302"
+   ],
+   "case_ids": [
+    "case-3"
+   ],
+   "confidence_reason": "Name and street address match across a trade record and a filing. No shared identifier."
+  },
+  {
+   "id": "e307",
+   "source": "RpVysafWvaXbqy0N4a5qvw",
+   "target": "7M3Jhg6trAddkVbwtzSdZA",
+   "relation": "possibly_same_as",
+   "edge_type": "inferred",
+   "confidence": "inferred",
+   "hs_codes": [],
+   "first_seen": null,
+   "last_seen": null,
+   "shipment_count": null,
+   "evidence": "The 'Hunan Zhongke Shinzoom' trade record uses No. 118 Quanzhou North Road, Jinzhou New Area, Ningxiang. That is the registry address of Hunan Zhongke Star City Graphite. Its other address (Building 3, Yida Smart Technology Park, Quanshui Road) matches Zhongke Electric's registry address. 'Shinzoom' is the group's romanisation of 星城 (Xingcheng).",
+   "source_call_ids": [
+    "s308",
+    "s316",
+    "s304"
+   ],
+   "case_ids": [
+    "case-3"
+   ],
+   "confidence_reason": "Street addresses and name stem match. The trade record has no identifier to confirm it."
+  },
+  {
+   "id": "e310",
+   "source": "RpVysafWvaXbqy0N4a5qvw",
+   "target": "aoeSqNICt_VUP-o-F-84Yg",
+   "relation": "ships_to",
+   "edge_type": "transactional",
+   "confidence": "documented",
+   "hs_codes": [],
+   "first_seen": "2021-08-05",
+   "last_seen": "2022-05-26",
+   "shipment_count": 7,
+   "evidence": "Seven rows China→US described as artificial graphite or graphite (no HS code on the rows).",
+   "source_call_ids": [
+    "s317",
+    "s318"
+   ],
+   "case_ids": [
+    "case-3"
+   ],
+   "confidence_reason": "Dated shipment rows in Sayari."
+  },
+  {
+   "id": "e311",
+   "source": "RpVysafWvaXbqy0N4a5qvw",
+   "target": "4fqrWAcyrgtWw2RdV6qZsg",
+   "relation": "ships_to",
+   "edge_type": "transactional",
+   "confidence": "documented",
+   "hs_codes": [
+    "380110"
+   ],
+   "first_seen": "2025-03-02",
+   "last_seen": "2025-03-02",
+   "shipment_count": 1,
+   "evidence": "One row China→US, artificial graphite (HS 3801.10).",
+   "source_call_ids": [
+    "s317",
+    "s318"
+   ],
+   "case_ids": [
+    "case-3"
+   ],
+   "confidence_reason": "A dated, HS-coded shipment row in Sayari."
+  },
+  {
+   "id": "e312",
+   "source": "5Rb8mSrQ1oKnsToAIDba8w",
+   "target": "XtUNxc54aQijxNuFzwkjxg",
+   "relation": "ships_to",
+   "edge_type": "transactional",
+   "confidence": "documented",
+   "hs_codes": [],
+   "first_seen": "2025-10-15",
+   "last_seen": "2025-10-15",
+   "shipment_count": 1,
+   "evidence": "One row, artificial graphite, shipped from China to the US with the Hong Kong holding company as shipper.",
+   "source_call_ids": [
+    "s313",
+    "s317"
+   ],
+   "case_ids": [
+    "case-3"
+   ],
+   "confidence_reason": "A dated shipment row in Sayari."
+  },
+  {
+   "id": "e313",
+   "source": "RpVysafWvaXbqy0N4a5qvw",
+   "target": "_WCNtC_iMCzef8u8s0uKyQ",
+   "relation": "ships_to",
+   "edge_type": "transactional",
+   "confidence": "documented",
+   "hs_codes": [
+    "380190",
+    "380110"
+   ],
+   "first_seen": "2025-04-17",
+   "last_seen": "2026-04-07",
+   "shipment_count": 18,
+   "evidence": "18 rows of artificial graphite to Malaysia (HS 3801.90 for most, 3801.10 for some), some departing Hong Kong. One description carries a grade code (LD07-120-05).",
+   "source_call_ids": [
+    "s318"
+   ],
+   "case_ids": [
+    "case-3"
+   ],
+   "confidence_reason": "Dated, HS-coded shipment rows in Sayari."
+  },
+  {
+   "id": "e314",
+   "source": "RpVysafWvaXbqy0N4a5qvw",
+   "target": "ySemfyJJesFbfxEgW2SgCg",
+   "relation": "ships_to",
+   "edge_type": "transactional",
+   "confidence": "documented",
+   "hs_codes": [
+    "380110"
+   ],
+   "first_seen": "2025-09-10",
+   "last_seen": "2026-02-05",
+   "shipment_count": 14,
+   "evidence": "14 rows of artificial graphite (HS 3801.10) China→Malaysia.",
+   "source_call_ids": [
+    "s318"
+   ],
+   "case_ids": [
+    "case-3"
+   ],
+   "confidence_reason": "Dated, HS-coded shipment rows in Sayari."
+  },
+  {
+   "id": "e315",
+   "source": "RpVysafWvaXbqy0N4a5qvw",
+   "target": "t2HmaexxvTE5WgGtj3BMxg",
+   "relation": "ships_to",
+   "edge_type": "transactional",
+   "confidence": "documented",
+   "hs_codes": [
+    "380110"
+   ],
+   "first_seen": "2023-03-12",
+   "last_seen": "2023-03-12",
+   "shipment_count": 1,
+   "evidence": "One row of artificial graphite (HS 3801.10), arriving in Slovenia for SK On Hungary.",
+   "source_call_ids": [
+    "s318"
+   ],
+   "case_ids": [
+    "case-3"
+   ],
+   "confidence_reason": "A dated, HS-coded shipment row in Sayari."
+  },
+  {
+   "id": "e316",
+   "source": "RpVysafWvaXbqy0N4a5qvw",
+   "target": "q4uVT7bM-GusYLonMicJ_Q",
+   "relation": "ships_to",
+   "edge_type": "transactional",
+   "confidence": "documented",
+   "hs_codes": [
+    "8543"
+   ],
+   "first_seen": "2021-12-27",
+   "last_seen": "2022-01-12",
+   "shipment_count": 2,
+   "evidence": "Two rows China→Korea coded HS 8543. The goods are probably anode material, but the rows don't say so.",
+   "source_call_ids": [
+    "s318"
+   ],
+   "case_ids": [
+    "case-3"
+   ],
+   "confidence_reason": "Dated shipment rows in Sayari. The product is unclear."
+  },
+  {
+   "id": "e317",
+   "source": "RpVysafWvaXbqy0N4a5qvw",
+   "target": "-3h_vhYQa9eIl2-txBW36Q",
+   "relation": "ships_to",
+   "edge_type": "transactional",
+   "confidence": "documented",
+   "hs_codes": [
+    "6815",
+    "8543",
+    "4203"
+   ],
+   "first_seen": "2022-04-16",
+   "last_seen": "2023-04-29",
+   "shipment_count": 18,
+   "evidence": "18 rows to a Korean forwarder under HS 6815, 8543 and 4203. One row describes artificial graphite; the leather-goods code is likely a coding error.",
+   "source_call_ids": [
+    "s318"
+   ],
+   "case_ids": [
+    "case-3"
+   ],
+   "confidence_reason": "Dated shipment rows, but the consignee is a forwarder and the HS codes are inconsistent."
+  },
+  {
+   "id": "e318",
+   "source": "ySemfyJJesFbfxEgW2SgCg",
+   "target": "BuQm2NSnUlkUMb83_BJxog",
+   "relation": "ships_to",
+   "edge_type": "transactional",
+   "confidence": "documented",
+   "hs_codes": [
+    "850760"
+   ],
+   "first_seen": "2026-08-21",
+   "last_seen": "2026-09-13",
+   "shipment_count": 5,
+   "evidence": "Five rows of rechargeable lithium-ion battery systems (HS 8507.60) Malaysia→US.",
+   "source_call_ids": [
+    "s321"
+   ],
+   "case_ids": [
+    "case-3"
+   ],
+   "confidence_reason": "Dated, HS-coded shipment rows in Sayari."
+  },
+  {
+   "id": "e319",
+   "source": "_WCNtC_iMCzef8u8s0uKyQ",
+   "target": "gRBpjYP97b53gA7TkExdpQ",
+   "relation": "ships_to",
+   "edge_type": "transactional",
+   "confidence": "documented",
+   "hs_codes": [
+    "850760",
+    "850650"
+   ],
+   "first_seen": "2026-01-28",
+   "last_seen": "2026-06-19",
+   "shipment_count": 7,
+   "evidence": "Seven rows of lithium-ion cells (INR21700) to the US. One left from Malaysia; six left from Indonesia.",
+   "source_call_ids": [
+    "s322"
+   ],
+   "case_ids": [
+    "case-3"
+   ],
+   "confidence_reason": "Dated, HS-coded shipment rows in Sayari."
+  },
+  {
+   "id": "e320",
+   "source": "_WCNtC_iMCzef8u8s0uKyQ",
+   "target": "33X8P9vU58v1EcigvWeD-Q",
+   "relation": "ships_to",
+   "edge_type": "transactional",
+   "confidence": "documented",
+   "hs_codes": [],
+   "first_seen": "2026-07-01",
+   "last_seen": "2026-09-22",
+   "shipment_count": 3,
+   "evidence": "Three rows of INR21700 lithium-ion cells to the US. Of the two dated departures, one was Singapore and one China.",
+   "source_call_ids": [
+    "s322"
+   ],
+   "case_ids": [
+    "case-3"
+   ],
+   "confidence_reason": "Dated shipment rows in Sayari."
+  }
+ ],
+ "calls": [
+  {
+   "id": "s301",
+   "timestamp": "2026-10-14T19:26:13Z",
+   "server": "sayari",
+   "tool": "search_entities",
+   "params": {
+    "query": "Zhongke Oman",
+    "limit": 15
+   },
+   "question": "Does Sayari hold any Zhongke entity in Oman?",
+   "purpose": "Find the plant",
+   "result_summary": "0 results.",
+   "interpretation": "No Oman entity under the group name. This is the first sign the plant isn't in the data yet.",
+   "scorecard": "failed",
+   "entity_ids": [],
+   "step": "plant",
+   "case_id": "case-3"
+  },
+  {
+   "id": "s302",
+   "timestamp": "2026-10-14T19:26:13Z",
+   "server": "sayari",
+   "tool": "search_entities",
+   "params": {
+    "query": "\"Zhongke Electric\"",
+    "limit": 15
+   },
+   "question": "Which record is the listed parent?",
+   "purpose": "Resolve the parent",
+   "result_summary": "513 results came back (the limit was ignored) and the output was saved to a file. Among them were 湖南中科电气股份有限公司 (-jDI6N9q1MWnPT0ujf-8iw), an English-name duplicate 'HUNAN ZHONGKE ELECTRIC CO., LTD.' (Mn2FeoIt2w0McDIDjkIrxg), and Changsha, Chifeng and sales-department branches. Most hits are unrelated companies called Zhongke.",
+   "interpretation": "We picked the Chinese-name record because it carries a USCC and the listed-security links. The name is very common, so we parsed the results; we didn't read them by eye.",
+   "scorecard": "partial",
+   "entity_ids": [
+    "-jDI6N9q1MWnPT0ujf-8iw"
+   ],
+   "step": "owner",
+   "case_id": "case-3"
+  },
+  {
+   "id": "s303",
+   "timestamp": "2026-10-14T19:26:13Z",
+   "server": "sayari",
+   "tool": "search_entities",
+   "params": {
+    "query": "\"Zhongke Shinzoom\" OR \"Zhongke Xingcheng\"",
+    "limit": 20
+   },
+   "question": "Can one query find both romanisations?",
+   "purpose": "Resolve the anode arm",
+   "result_summary": "0 results.",
+   "interpretation": "The OR query with quoted phrases returned nothing, though each name exists (see s305). The query syntax didn't work as documented.",
+   "scorecard": "failed",
+   "entity_ids": [],
+   "step": "method",
+   "case_id": "case-3"
+  },
+  {
+   "id": "s304",
+   "timestamp": "2026-10-14T19:26:48Z",
+   "server": "sayari",
+   "tool": "get_entity_profile",
+   "params": {
+    "entity_id": "-jDI6N9q1MWnPT0ujf-8iw",
+    "relationships_limit": 60
+   },
+   "question": "Who does Zhongke Electric own, and what identifies it?",
+   "purpose": "Map ownership",
+   "result_summary": "USCC 914306007607108300, LEI 65560006WDZK75ECJB29, SZSE 300035, registered 1999. Its listed business includes lithium-ion anode material and silicon anodes. It holds 100% of 湖南中科星城科技有限公司 and 100% of 湖南中科智造工程技术有限公司. The summary counts 31 owner_of and 11 shareholder_of links. No trade.",
+   "interpretation": "This is the parent. The anode business sits one level down, in the Zhongke Xingcheng holding company.",
+   "scorecard": "worked",
+   "entity_ids": [
+    "-jDI6N9q1MWnPT0ujf-8iw",
+    "xdHWWBfC-uTqowtR0Rzdtg"
+   ],
+   "step": "owner",
+   "case_id": "case-3"
+  },
+  {
+   "id": "s305",
+   "timestamp": "2026-10-14T19:26:48Z",
+   "server": "sayari",
+   "tool": "search_entities",
+   "params": {
+    "query": "\"Shinzoom\"",
+    "limit": 20
+   },
+   "question": "What records use the group's English brand?",
+   "purpose": "Resolve the anode arm",
+   "result_summary": "15 results: a 'HUNAN ZHONGKE SHINZOOM CO., LTD' trade record (CHN/USA/MEX/CAN); Zhongke Shinzoom (HK) Co., Limited (HK CR 2574460); Zhongke Shinzoom (HK) Holdings Co., Limited (registry); 'ZHONGKE SHINZOOM (HK) HOLDINGS CO LIMITED' at 721-725 Nathan Road; Shinzoom Nouveau United Corp. (Montreal; one record also names Nouveau Monde Graphite); a UK 'Shinzoom Ltd'; and Chinese trademarks.",
+   "interpretation": "The trade-bearing records use 'Shinzoom'. The Canadian entity points to a separate Shinzoom tie-up with Nouveau Monde Graphite, which we didn't pursue. Nothing in Oman.",
+   "scorecard": "worked",
+   "entity_ids": [
+    "RpVysafWvaXbqy0N4a5qvw",
+    "KgkxLJt2omf21G3k-AFbiw",
+    "aWkEICLnf2fzW78geuH5Ag",
+    "5Rb8mSrQ1oKnsToAIDba8w"
+   ],
+   "step": "owner",
+   "case_id": "case-3"
+  },
+  {
+   "id": "s306",
+   "timestamp": "2026-10-14T19:26:48Z",
+   "server": "sayari",
+   "tool": "search_entities",
+   "params": {
+    "query": "中科星城",
+    "limit": 20
+   },
+   "question": "Does a Chinese-name search find Xingcheng entities, including any overseas?",
+   "purpose": "Resolve the anode arm",
+   "result_summary": "The call timed out.",
+   "interpretation": "No result. We got the same records through the downstream traversal (s307) instead.",
+   "scorecard": "failed",
+   "entity_ids": [],
+   "step": "method",
+   "case_id": "case-3"
+  },
+  {
+   "id": "s307",
+   "timestamp": "2026-10-14T19:29:21Z",
+   "server": "sayari",
+   "tool": "find_downstream_entities",
+   "params": {
+    "entity_id": "-jDI6N9q1MWnPT0ujf-8iw",
+    "limit": 60,
+    "max_depth": 3,
+    "response_mode": "compact"
+   },
+   "question": "Does Zhongke's registry tree reach Hong Kong or Oman?",
+   "purpose": "Map ownership",
+   "result_summary": "48 entities came back, all Chinese. They include Hunan, Guizhou, Gui'an, Yunnan, Gansu and Sichuan Zhongke Xingcheng graphite companies, a Xingcheng supply-chain company and Anhui Haida. Many level-3 hits are venture holdings through 宁波科泓产业投资中心. Gui'an and Yunnan Xingcheng carry 'owned_by_usa_section_1260h_entity' flags through a co-owner, 湖南中科星城控股有限公司. No Hong Kong or Omani entity.",
+   "interpretation": "The registry tree stops at China's border. The Hong Kong vehicle and the Oman project company aren't linked in Sayari, so the overseas half of the chain must come from the company's filings.",
+   "scorecard": "worked",
+   "entity_ids": [
+    "-jDI6N9q1MWnPT0ujf-8iw",
+    "xdHWWBfC-uTqowtR0Rzdtg",
+    "7M3Jhg6trAddkVbwtzSdZA",
+    "Etd_ARUNj9lHbX9vIMUWbQ"
+   ],
+   "step": "owner",
+   "case_id": "case-3"
+  },
+  {
+   "id": "s308",
+   "timestamp": "2026-10-14T19:29:21Z",
+   "server": "sayari",
+   "tool": "get_entity_profile",
+   "params": {
+    "entity_id": "RpVysafWvaXbqy0N4a5qvw",
+    "relationships_limit": 60
+   },
+   "question": "Who does the Shinzoom trade record ship to?",
+   "purpose": "Baseline trade",
+   "result_summary": "There are 61 sent shipments and no identifiers. Its addresses match the group's registry addresses in Ningxiang and at the Yida Smart Technology Park in Changsha. Ships_to: Linergy Power (MYS), SK On Hungary, Samsung SDI, SK Battery America, EVE Energy Malaysia, General Motors, Uni-Trans Line. It owns US, Canadian and Mexican 'SHINZOM' trademarks.",
+   "interpretation": "This is the group's exporting identity in trade data. Its address ties it to the registry producer (e307).",
+   "scorecard": "worked",
+   "entity_ids": [
+    "RpVysafWvaXbqy0N4a5qvw",
+    "aoeSqNICt_VUP-o-F-84Yg",
+    "4fqrWAcyrgtWw2RdV6qZsg",
+    "_WCNtC_iMCzef8u8s0uKyQ",
+    "ySemfyJJesFbfxEgW2SgCg",
+    "t2HmaexxvTE5WgGtj3BMxg",
+    "q4uVT7bM-GusYLonMicJ_Q",
+    "-3h_vhYQa9eIl2-txBW36Q"
+   ],
+   "step": "out",
+   "case_id": "case-3"
+  },
+  {
+   "id": "s309",
+   "timestamp": "2026-10-14T19:29:42Z",
+   "server": "sayari",
+   "tool": "search_entity_facets",
+   "params": {
+    "query": "Zhongke OR Shinzoom OR \"Zhong Ke\"",
+    "bucket_limit": 25
+   },
+   "question": "Which countries hold Zhongke- or Shinzoom-named entities?",
+   "purpose": "Find the plant",
+   "result_summary": "total_available 0.",
+   "interpretation": "The OR syntax failed here as well (see s303). This is a tool finding.",
+   "scorecard": "failed",
+   "entity_ids": [],
+   "step": "method",
+   "case_id": "case-3"
+  },
+  {
+   "id": "s310",
+   "timestamp": "2026-10-14T19:29:42Z",
+   "server": "sayari",
+   "tool": "get_entity_profile",
+   "params": {
+    "entity_id": "KgkxLJt2omf21G3k-AFbiw",
+    "relationships_limit": 40
+   },
+   "question": "Is the older Hong Kong company the Oman investor?",
+   "purpose": "Map ownership",
+   "result_summary": "Zhongke Shinzoom (HK) Co., Limited, CR 2574460, registered 2017-09-05, status inactive. No relationships and no trade.",
+   "interpretation": "A dormant near-namesake. It is not the 2024 holding company named in the filing.",
+   "scorecard": "worked",
+   "entity_ids": [
+    "KgkxLJt2omf21G3k-AFbiw"
+   ],
+   "step": "owner",
+   "case_id": "case-3"
+  },
+  {
+   "id": "s311",
+   "timestamp": "2026-10-14T19:29:47Z",
+   "server": "sayari",
+   "tool": "search_entity_facets",
+   "params": {
+    "query": "Zhongke",
+    "bucket_limit": 40
+   },
+   "question": "Is any Zhongke-named entity registered in Oman?",
+   "purpose": "Find the plant",
+   "result_summary": "128,666 entities. CHN 127,287, HKG 678, then 38 more countries down to ARE (2). Oman isn't among the 40 country buckets shown.",
+   "interpretation": "Oman has at most a trivial count. We found no Omani Zhongke entity. The bucket cut-off means this isn't a full proof.",
+   "scorecard": "partial",
+   "entity_ids": [],
+   "step": "plant",
+   "case_id": "case-3"
+  },
+  {
+   "id": "s312",
+   "timestamp": "2026-10-14T19:29:47Z",
+   "server": "sayari",
+   "tool": "search_entities",
+   "params": {
+    "query": "Sohar anode graphite",
+    "limit": 15
+   },
+   "question": "Is there any anode or graphite entity in Sohar?",
+   "purpose": "Find the plant",
+   "result_summary": "0 results.",
+   "interpretation": "Sayari has no anode entity at Sohar, which fits a plant still under construction.",
+   "scorecard": "partial",
+   "entity_ids": [],
+   "step": "plant",
+   "case_id": "case-3"
+  },
+  {
+   "id": "t301",
+   "timestamp": "2026-10-14T19:29:55Z",
+   "server": "tavily",
+   "tool": "tavily_search",
+   "params": {
+    "query": "Zhongke Electric Oman Sohar anode groundbreaking May 2026",
+    "max_results": 8,
+    "search_depth": "advanced"
+   },
+   "question": "Is the May 2026 groundbreaking real, and who is the investing entity?",
+   "purpose": "Verify a single-source claim",
+   "result_summary": "GraphiteHub, Baidu Baike, Gulf News (citing ONA), MEED (via goalfore) and an Arabian Daily post all report ground broken at Sohar Freezone on 8 May 2026, with first-stage output due in 2027. Gulf News says Zhongke acted 'through its subsidiary Zhongke Xingcheng (Hong Kong)'. GraphiteHub also reports that on 12 Jun 2026 the board ended three other projects (two in China and one in Morocco) to focus on Luzhou and Oman. It also cites a 10 Sep 2026 company post on the Phase 1 frame being completed.",
+   "interpretation": "The 8 May 2026 groundbreaking now has several independent sources, including Omani government-linked press. It is no longer single-source. The Morocco cancellation still rests on GraphiteHub and the board notice it cites.",
+   "scorecard": "worked",
+   "entity_ids": [
+    "case3-oman-sohar-project-co",
+    "aWkEICLnf2fzW78geuH5Ag"
+   ],
+   "step": "context",
+   "case_id": "case-3"
+  },
+  {
+   "id": "t302",
+   "timestamp": "2026-10-14T19:29:55Z",
+   "server": "tavily",
+   "tool": "tavily_search",
+   "params": {
+    "query": "中科电气 阿曼 负极材料 项目 开工 苏哈尔",
+    "max_results": 8,
+    "search_depth": "advanced"
+   },
+   "question": "What does Zhongke's own filing say about the Oman structure?",
+   "purpose": "Map ownership",
+   "result_summary": "Zhongke's filing (Sina Finance bulletin) names the investor as 中科星城(香港)控股有限公司 (Zhongke Shinzoom (HK) Holdings), registration no. 77299448, at Room 1406A, 14/F, Belgian Bank Building, 721-725 Nathan Road, Mong Kok. Capital is HK$1m and its sole shareholder (100%) is 湖南中科星城石墨有限公司. The HK company sets up the Oman project company 中科星城苏哈尔新材料科技有限公司 on Plot 3751, Sohar Free Zone (356,000 m²). Investment is up to RMB 8bn, in two 100,000 t/yr parts of 36 months each. The Morocco project is deferred. Securities Times (4 Jun 2025) and aciep.net report the same chain, aciep giving Zhongke Electric's stake in the graphite company as 99.9984375%. Sina/鑫椤 and the company website (cseco.cn) confirm the 8 May 2026 start. A Sohu piece says core equipment shipped from Nantong and Shanghai to Oman.",
+   "interpretation": "This is the primary source for the HK→Oman links. Its HK address matches a Sayari trade record (e306). The equipment-shipment report is single-source.",
+   "scorecard": "worked",
+   "entity_ids": [
+    "7M3Jhg6trAddkVbwtzSdZA",
+    "aWkEICLnf2fzW78geuH5Ag",
+    "5Rb8mSrQ1oKnsToAIDba8w",
+    "case3-oman-sohar-project-co"
+   ],
+   "step": "owner",
+   "case_id": "case-3"
+  },
+  {
+   "id": "s313",
+   "timestamp": "2026-10-14T19:30:10Z",
+   "server": "sayari",
+   "tool": "get_entity_profile",
+   "params": {
+    "entity_id": "5Rb8mSrQ1oKnsToAIDba8w",
+    "relationships_limit": 40
+   },
+   "question": "What is the Nathan Road 'Shinzoom HK Holdings' trade record?",
+   "purpose": "Map ownership",
+   "result_summary": "No country and no identifiers; address Flat/Rm 1406A, 14/F, Belgian Bank Building, 721-725 Nathan Road. Its only source is USA Imports. One shipment, to Chemico LLC.",
+   "interpretation": "The address matches the filing's Hong Kong investor exactly, so this is likely the same company acting as seller of record (e306).",
+   "scorecard": "worked",
+   "entity_ids": [
+    "5Rb8mSrQ1oKnsToAIDba8w",
+    "XtUNxc54aQijxNuFzwkjxg"
+   ],
+   "step": "owner",
+   "case_id": "case-3"
+  },
+  {
+   "id": "s314",
+   "timestamp": "2026-10-14T19:30:10Z",
+   "server": "sayari",
+   "tool": "get_entity_profile",
+   "params": {
+    "entity_id": "aWkEICLnf2fzW78geuH5Ag",
+    "relationships_limit": 40
+   },
+   "question": "Does the Hong Kong registry record show owners or an Omani subsidiary?",
+   "purpose": "Map ownership",
+   "result_summary": "Zhongke Shinzoom (HK) Holdings Co., Limited / 中科星城(香港)控股有限公司. Registered 2024-11-08, active as of 2026-07-28. Sources: China NECIPS and the HK incorporation lists. No relationships, no trade.",
+   "interpretation": "Sayari confirms the vehicle exists and when it was formed. It shows neither the owner nor the Oman subsidiary.",
+   "scorecard": "partial",
+   "entity_ids": [
+    "aWkEICLnf2fzW78geuH5Ag"
+   ],
+   "step": "owner",
+   "case_id": "case-3"
+  },
+  {
+   "id": "s315",
+   "timestamp": "2026-10-14T19:30:10Z",
+   "server": "sayari",
+   "tool": "search_entities",
+   "params": {
+    "query": "Sohar New Material Technology",
+    "limit": 15
+   },
+   "question": "Is the Oman project company in Sayari under an English name?",
+   "purpose": "Find the plant",
+   "result_summary": "0 results.",
+   "interpretation": "Sayari has no record of the project company named in the filing.",
+   "scorecard": "partial",
+   "entity_ids": [],
+   "step": "plant",
+   "case_id": "case-3"
+  },
+  {
+   "id": "s316",
+   "timestamp": "2026-10-14T19:30:16Z",
+   "server": "sayari",
+   "tool": "get_entity_profile",
+   "params": {
+    "entity_id": "7M3Jhg6trAddkVbwtzSdZA",
+    "relationships_limit": 60
+   },
+   "question": "Who owns the anode producer, and does it trade?",
+   "purpose": "Map ownership",
+   "result_summary": "Hunan Zhongke Star City Graphite, USCC 9143010072796955X1, registered 2001-05-24, at No. 118 Quanzhou North Road, Ningxiang. Current shareholder: 湖南中科星城科技有限公司, 99.99844%. Former holders include Zhongke Electric (99.99844%) and 北京当升材料科技 (84%). Pi Tao (皮涛) is listed with 16% and as executive director, probably an older entry. 17 owner_of links. No trade.",
+   "interpretation": "The registry confirms the producer sits under Zhongke Electric through one holding company. It shows no Hong Kong subsidiary, although the filing names one.",
+   "scorecard": "worked",
+   "entity_ids": [
+    "7M3Jhg6trAddkVbwtzSdZA",
+    "xdHWWBfC-uTqowtR0Rzdtg",
+    "-jDI6N9q1MWnPT0ujf-8iw"
+   ],
+   "step": "owner",
+   "case_id": "case-3"
+  },
+  {
+   "id": "s317",
+   "timestamp": "2026-10-14T19:30:16Z",
+   "server": "sayari",
+   "tool": "search_shipments",
+   "params": {
+    "query": "\"SHINZOOM\"",
+    "arrival_country": "USA",
+    "limit": 100,
+    "response_mode": "export"
+   },
+   "question": "Does Zhongke anode material ship directly from China to the US?",
+   "purpose": "Baseline trade",
+   "result_summary": "9 rows. Hunan Zhongke Shinzoom → SK Battery America: 7 rows, Aug 2021 to May 2022. Hunan Zhongke Shinzoom → General Motors: 1 row, HS 3801.10, 2 Mar 2025. Zhongke Shinzoom (HK) Holdings → Chemico LLC: 1 row, 15 Oct 2025, departing China.",
+   "interpretation": "The direct route is thin and irregular: a 2021–22 run to SK, one GM row in 2025 and one late-2025 row via the HK vehicle. Supplier field checked on every row.",
+   "scorecard": "worked",
+   "entity_ids": [
+    "RpVysafWvaXbqy0N4a5qvw",
+    "5Rb8mSrQ1oKnsToAIDba8w",
+    "aoeSqNICt_VUP-o-F-84Yg",
+    "4fqrWAcyrgtWw2RdV6qZsg",
+    "XtUNxc54aQijxNuFzwkjxg"
+   ],
+   "step": "out",
+   "case_id": "case-3"
+  },
+  {
+   "id": "s318",
+   "timestamp": "2026-10-14T19:30:25Z",
+   "server": "sayari",
+   "tool": "search_shipments",
+   "params": {
+    "query": "\"SHINZOOM\"",
+    "limit": 200,
+    "response_mode": "export"
+   },
+   "question": "Where else does Shinzoom graphite go? Are there third-country routes?",
+   "purpose": "Baseline trade",
+   "result_summary": "62 rows. EVE Energy Malaysia 18 (HS 3801.90/3801.10, Apr 2025–Apr 2026), Linergy Power 14 (HS 3801.10, Sep 2025–Feb 2026), Uni-Trans Line 18 (Korea, 2022–23, mixed HS), SK Battery America 7, Samsung SDI 2 (HS 8543), SK On Hungary 1 (HS 3801.10, via Slovenia, Mar 2023), GM 1, Chemico 1.",
+   "interpretation": "Since 2025 most Shinzoom graphite in the data goes to Malaysian cell plants, not to the US. That is the main indirect route today.",
+   "scorecard": "worked",
+   "entity_ids": [
+    "RpVysafWvaXbqy0N4a5qvw",
+    "5Rb8mSrQ1oKnsToAIDba8w",
+    "_WCNtC_iMCzef8u8s0uKyQ",
+    "ySemfyJJesFbfxEgW2SgCg",
+    "-3h_vhYQa9eIl2-txBW36Q",
+    "aoeSqNICt_VUP-o-F-84Yg",
+    "q4uVT7bM-GusYLonMicJ_Q",
+    "t2HmaexxvTE5WgGtj3BMxg",
+    "4fqrWAcyrgtWw2RdV6qZsg",
+    "XtUNxc54aQijxNuFzwkjxg"
+   ],
+   "step": "out",
+   "case_id": "case-3"
+  },
+  {
+   "id": "s319",
+   "timestamp": "2026-10-14T19:30:36Z",
+   "server": "sayari",
+   "tool": "search_shipments",
+   "params": {
+    "query": "\"ZHONGKE\"",
+    "arrival_country": "OMN",
+    "limit": 50,
+    "response_mode": "export"
+   },
+   "question": "Is anything already shipping into Oman from Zhongke entities, such as equipment or feedstock?",
+   "purpose": "Find the plant",
+   "result_summary": "0 rows.",
+   "interpretation": "No inbound trade to Oman under the group's name. Press reports of equipment shipments (t302) don't appear in Sayari, possibly because of coverage or lag.",
+   "scorecard": "partial",
+   "entity_ids": [],
+   "step": "in",
+   "case_id": "case-3"
+  },
+  {
+   "id": "s320",
+   "timestamp": "2026-10-14T19:30:36Z",
+   "server": "sayari",
+   "tool": "search_trade_facets",
+   "params": {
+    "scope": "shipments",
+    "query": "graphite",
+    "departure_country": "OMN",
+    "arrival_country": "USA",
+    "hs_code": "3801",
+    "bucket_limit": 10
+   },
+   "question": "What does the Oman→US artificial-graphite corridor look like before the plant opens?",
+   "purpose": "Set the baseline",
+   "result_summary": "917 rows, from one data source. 916 are HS 3801.10, dated Aug 2021 to Jul 2025. Top supplier IDs are listed in s323.",
+   "interpretation": "A large 'Oman→US' graphite corridor already exists on paper, even though Oman has no anode plant. See s323 for who it is.",
+   "scorecard": "worked",
+   "entity_ids": [],
+   "step": "corridor",
+   "case_id": "case-3"
+  },
+  {
+   "id": "s321",
+   "timestamp": "2026-10-14T19:30:36Z",
+   "server": "sayari",
+   "tool": "search_shipments",
+   "params": {
+    "query": "\"LINERGY POWER\"",
+    "arrival_country": "USA",
+    "limit": 50,
+    "response_mode": "export"
+   },
+   "question": "Does a Malaysian buyer of Shinzoom graphite ship to the US?",
+   "purpose": "Baseline trade",
+   "result_summary": "17 rows, all lithium-ion cells or battery systems (HS 8507.60/8507.80), Nov 2025 to Sep 2026. Buyers: Eaton Corporation (5 rows, plus 1 under a second Eaton record), Ampace Technology (6), Milwaukee Tool (3 across two records), Stanley Black & Decker (1), Techtronic Product Development (1).",
+   "interpretation": "Shinzoom graphite reaches a plant whose cells go to US tool and power-equipment makers. Trade data can't show whether those cells contain Shinzoom graphite.",
+   "scorecard": "worked",
+   "entity_ids": [
+    "ySemfyJJesFbfxEgW2SgCg",
+    "BuQm2NSnUlkUMb83_BJxog"
+   ],
+   "step": "out",
+   "case_id": "case-3"
+  },
+  {
+   "id": "s322",
+   "timestamp": "2026-10-14T19:30:36Z",
+   "server": "sayari",
+   "tool": "search_shipments",
+   "params": {
+    "query": "\"EVE ENERGY MALAYSIA\"",
+    "arrival_country": "USA",
+    "limit": 50,
+    "response_mode": "export"
+   },
+   "question": "Does EVE Energy Malaysia ship to the US?",
+   "purpose": "Baseline trade",
+   "result_summary": "27 rows of lithium-ion cells (mostly INR21700, HS 8507.60/8506.50), 2025–2026. Buyers: EVE Energy North America (7; six departing Indonesia), Briggs & Stratton (3 + 2 across two records), Milwaukee Tool, TTI Consumer Power Tools, ProTechnologies, Energizer Battery Co, Stanley Black & Decker, ABM Tucker GA, Oregon International Air Freight, plus 7 undated rows.",
+   "interpretation": "This is the second indirect route: Zhongke anode material → a Malaysian cell plant → US buyers, as cells. Some rows left from Indonesia, China or Singapore, so the exporter's name alone doesn't fix the origin.",
+   "scorecard": "worked",
+   "entity_ids": [
+    "_WCNtC_iMCzef8u8s0uKyQ",
+    "gRBpjYP97b53gA7TkExdpQ",
+    "33X8P9vU58v1EcigvWeD-Q"
+   ],
+   "step": "out",
+   "case_id": "case-3"
+  },
+  {
+   "id": "s323",
+   "timestamp": "2026-10-14T19:30:44Z",
+   "server": "sayari",
+   "tool": "search_suppliers",
+   "params": {
+    "query": "graphite",
+    "departure_country": "OMN",
+    "arrival_country": "USA",
+    "hs_code": "3801",
+    "limit": 15,
+    "response_mode": "compact"
+   },
+   "question": "Who ships 'artificial graphite' from Oman to the US today?",
+   "purpose": "Set the baseline",
+   "result_summary": "122 suppliers. The top 15 are mostly Indian freight forwarders and chemical makers: Noble Shipping (165), Wilhelmsen Maritime Services (41 + 10), Aissa Maritime (35), Neptune Container Line (34), Aquapharm Chemical (32), Safewater Lines India (25), Amfico Agencies (23), E-Way Alliance India (22), Galaxy Surfactants (19), Jubilant Ingrevia (19), Aquila Organics (15), SRF Ltd (13), CEL Logistics (12), Allied Shipping (11).",
+   "interpretation": "This corridor is noise. Indian cargo is relayed through Omani ports, and the 3801.10 code looks wrong for chemical makers. A buyer can't watch 'Oman→US HS 3801.10' as a corridor; they have to watch for named shippers.",
+   "scorecard": "worked",
+   "entity_ids": [],
+   "step": "corridor",
+   "case_id": "case-3"
+  },
+  {
+   "id": "s324",
+   "timestamp": "2026-10-14T19:30:58Z",
+   "server": "sayari",
+   "tool": "find_shortest_path",
+   "params": {
+    "source_entity_id": "aWkEICLnf2fzW78geuH5Ag",
+    "target_entity_id": "-jDI6N9q1MWnPT0ujf-8iw"
+   },
+   "question": "Does Sayari connect the Hong Kong investor to Zhongke Electric at all?",
+   "purpose": "Map ownership",
+   "result_summary": "No path found.",
+   "interpretation": "The graph breaks at Hong Kong. The HK→China ownership link exists only in the company's filing.",
+   "scorecard": "worked",
+   "entity_ids": [
+    "aWkEICLnf2fzW78geuH5Ag",
+    "-jDI6N9q1MWnPT0ujf-8iw"
+   ],
+   "step": "gap",
+   "case_id": "case-3"
+  },
+  {
+   "id": "s325",
+   "timestamp": "2026-10-14T19:30:58Z",
+   "server": "sayari",
+   "tool": "check_watchlist",
+   "params": {
+    "entity_id": "-jDI6N9q1MWnPT0ujf-8iw",
+    "max_depth": 2,
+    "limit": 15,
+    "response_mode": "compact"
+   },
+   "question": "Is the parent close to sanctioned or listed entities?",
+   "purpose": "Risk context",
+   "result_summary": "15 hits, all two hops out. Each goes through a shared stock-market shareholder (HKSCC nominee or a China Merchants Bank index fund) to companies such as CNOOC, China Mobile, China Unicom, AVIC Shenyang and CloudWalk.",
+   "interpretation": "This is noise. Index funds and the Hong Kong clearing nominee hold shares in thousands of listed firms. It says nothing about Zhongke's conduct.",
+   "scorecard": "worked",
+   "entity_ids": [
+    "-jDI6N9q1MWnPT0ujf-8iw"
+   ],
+   "step": "context",
+   "case_id": "case-3"
+  }
+ ]
+}
