@@ -54,8 +54,8 @@
     const cf = Object.entries(PT.CONF).map(([k, m]) =>
       `<li>${PT.confBadge(k)}<span>${m.help}</span></li>`).join("");
     return `<div class="legend${compact ? " compact" : ""}">
-      <div><h4>Edge type (colour + line style)</h4><ul>${et}</ul></div>
-      <div><h4>Confidence</h4><ul>${cf}</ul></div>
+      <div><p class="legend-h">Edge type (colour + line style)</p><ul>${et}</ul></div>
+      <div><p class="legend-h">Confidence</p><ul>${cf}</ul></div>
     </div>`;
   };
 

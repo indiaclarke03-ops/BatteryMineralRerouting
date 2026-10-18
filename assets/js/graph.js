@@ -87,7 +87,7 @@
     });
     const edgeEls = [...edgeMap.values()].map((m) => ({
       data: {
-        id: m.id, source: m.source, target: m.target, conf: m.conf, ids: m.ids,
+        id: m.id, source: m.source, target: m.target, conf: m.conf, ids: m.ids, rel: m.rel,
         label: m.hs.size ? "HS " + [...m.hs].slice(0, 2).join(", ") : (PT.RELATION[m.rel] || m.rel),
         w: 2 + Math.min(5, Math.log2(1 + m.count) * 1.4),
       },
@@ -189,7 +189,9 @@
     const col = new Map(); const depth = new Map(); const weight = new Map();
     P.forEach((n) => col.set(n.id(), 2));
     const isP = (id) => col.get(id) === 2 && P.getElementById(id).nonempty();
-    const tx = cy.edges(".tx"), ct = cy.edges(".ct"), inf = cy.edges(".inf");
+    const OWNERSHIP = new Set(["owns", "shareholder_of", "subsidiary_of", "director_of", "officer_of"]);
+    const tx = cy.edges(".tx"), inf = cy.edges(".inf");
+    const ct = cy.edges(".ct").filter((e) => OWNERSHIP.has(e.data("rel")));
     // Owners: walk up ownership/officer links from the plant
     let changed = true, level = 1;
     while (changed && level < 8) {
@@ -204,6 +206,8 @@
     tx.forEach((e) => { if (isP(e.data("source")) && !col.has(e.data("target"))) { col.set(e.data("target"), 3); weight.set(e.data("target"), (weight.get(e.data("target")) || 0) + e.data("w")); } });
     // Suppliers: shipments into the plant
     tx.forEach((e) => { if (isP(e.data("target")) && !col.has(e.data("source"))) { col.set(e.data("source"), 1); weight.set(e.data("source"), (weight.get(e.data("source")) || 0) + e.data("w")); } });
+    // Known buyers always sit on the buyer side
+    nodes.forEach((n) => { if (!col.has(n.id()) && (n.hasClass("us_buyer") || n.hasClass("buyer"))) col.set(n.id(), 3); });
     // Duplicate-record leads sit with the plant
     inf.forEach((e) => { [[e.data("source"), e.data("target")], [e.data("target"), e.data("source")]].forEach(([a, b]) => { if (!col.has(a) && isP(b)) col.set(a, 2); }); });
     // Everything else joins its nearest placed neighbour
@@ -212,10 +216,14 @@
         if (col.has(n.id())) return;
         const nb = n.neighborhood("node").filter((m) => col.has(m.id()));
         if (nb.nonempty()) {
-          const c = col.get(nb[0].id());
-          const outOfPlant = n.edgesWith(P).filter((e) => isP(e.data("source"))).nonempty();
-          col.set(n.id(), c === 2 ? (outOfPlant ? 3 : 1) : c);
-          if (c === 0) depth.set(n.id(), (depth.get(nb[0].id()) || 0));
+          const m = nb[0], c = col.get(m.id());
+          const shipped = n.edgesWith(m).filter(".tx");
+          const receives = shipped.filter((e) => e.data("source") === m.id()).nonempty(); // goods flow m -> n
+          const sends = shipped.filter((e) => e.data("target") === m.id()).nonempty();    // goods flow n -> m
+          // Follow the goods: downstream of anything goes right, upstream of the plant or a supplier goes left.
+          const target = receives ? 3 : sends && c >= 1 ? 1 : c === 2 ? 1 : c;
+          col.set(n.id(), target);
+          if (target === 0) depth.set(n.id(), (depth.get(m.id()) || 0));
         }
       });
     }
@@ -228,11 +236,16 @@
       if (!list.length) return;
       list = list.sort((a, b) => c === 0 ? (depth.get(b.id()) || 0) - (depth.get(a.id()) || 0) || a.data("label").localeCompare(b.data("label"))
         : c === 2 ? b.degree() - a.degree() : (weight.get(b.id()) || 0) - (weight.get(a.id()) || 0) || a.data("label").localeCompare(b.data("label")));
-      const hs = list.map((n) => n.outerHeight());
-      const total = hs.reduce((a, h) => a + h + GAP, -GAP);
-      let y = -total / 2;
-      list.forEach((n, i) => { pos[n.id()] = { x: X[c], y: y + hs[i] / 2 }; y += hs[i] + GAP; });
-      top = Math.min(top, -total / 2);
+      // Long buyer lists wrap into extra sub-columns to the right, so the network stays compact.
+      const PER = c === 3 ? Math.max(14, Math.ceil(list.length / 3)) : list.length;
+      for (let k = 0; k * PER < list.length; k++) {
+        const chunk = list.slice(k * PER, (k + 1) * PER);
+        const hs = chunk.map((n) => n.outerHeight());
+        const total = hs.reduce((a, h) => a + h + GAP, -GAP);
+        let y = -total / 2;
+        chunk.forEach((n, i) => { pos[n.id()] = { x: X[c] + k * 225, y: y + hs[i] / 2 }; y += hs[i] + GAP; });
+        top = Math.min(top, -total / 2);
+      }
     });
     nodes.positions((n) => pos[n.id()]);
     const used = [0, 1, 2, 3].filter((c) => nodes.some((n) => col.get(n.id()) === c));

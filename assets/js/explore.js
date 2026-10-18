@@ -22,7 +22,7 @@
       tabs.querySelectorAll("button").forEach((b) => b.setAttribute("aria-selected", String(b.dataset.case === id)));
       const c = d.caseById.get(id);
       caseBox.innerHTML = c ? `<div class="exc-q"><span class="qa-label">The question</span>${PT.esc(c.question)}</div>
-        <div class="exc-a"><span class="qa-label">What we found</span>${PT.pill(c.answer_label)} ${PT.esc(c.answer_short || c.answer)} <a href="cases.html#${c.id}">Full case →</a></div>`
+        <div class="exc-a"><span class="qa-label">What we found</span>${PT.pill(c.answer_label)} ${PT.esc(c.answer_short || c.answer)} <a href="cases.html#${c.id}">Full case →</a><div style="margin-top:6px">${PT.checkedHTML(c, { plain: true })}</div></div>`
         : `<div class="exc-a">All ${d.cases.items.length} cases in one network: dense, but it shows the companies that appear in several cases, such as BTR, GM and Tesla.</div>`;
       history.replaceState(null, "", id ? `?case=${id}${location.hash}` : location.pathname);
     }

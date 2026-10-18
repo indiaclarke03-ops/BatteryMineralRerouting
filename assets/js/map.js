@@ -49,7 +49,8 @@
       .attr("transform", (p) => `translate(${p.xy[0]},${p.xy[1]})`)
       .attr("tabindex", (p) => (p.kind === "plant" ? 0 : null))
       .attr("role", (p) => (p.kind === "plant" ? "button" : null))
-      .attr("aria-label", (p) => (p.kind === "plant" ? `Case ${caseIndex.get(p.case)}: ${p.name}` : p.name));
+      .attr("aria-label", (p) => (p.kind === "plant" ? `Case ${caseIndex.get(p.case)}: ${p.name}` : null))
+      .attr("aria-hidden", (p) => (p.kind === "plant" ? null : "true"));
     node.append("circle").attr("r", (p) => (p.kind === "plant" ? 11 : p.kind === "buyers" ? 10 : 5));
     node.filter((p) => p.kind === "plant").append("text").attr("class", "map-num").attr("dy", "0.35em").text((p) => caseIndex.get(p.case));
 

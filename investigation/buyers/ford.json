@@ -1,0 +1,599 @@
+{
+  "buyer": {
+    "key": "ford",
+    "name": "Ford and BlueOval SK",
+    "category": "battery",
+    "entity_ids": [
+      "QrL4MaSQ-7UxX19AfwfDrQ",
+      "RPYYIgKHs0f-kGKGBlE9jw",
+      "OoCU9I6MsBVXeOayCVuR9A",
+      "gmCpEnquN7PI-mUnMKqvPw",
+      "9DDAlIRlqlZq7pwJ5qUwSQ",
+      "_Ao7QZ5Y0DfLVP9LADDkDw",
+      "cclu_C8fIOucVXcdONCwhA",
+      "i0HhTJctxSbPxQvZqHx1Tg"
+    ],
+    "summary": "Ford imports finished lithium-ion batteries from SK On and LG Energy Solution (Korea) and from CATL (China). The BlueOval SK cell plants received 48 rows of Chinese artificial graphite in 2024-2025 through two Chinese freight forwarders, so the producer is not named. Ford and SK On split BlueOval SK in 2026: Ford now owns the Kentucky plants and SK On the Tennessee plant."
+  },
+  "scan": {
+    "hs": [
+      "3801",
+      "8507"
+    ],
+    "date_from": "2024-01-01",
+    "note": "Sayari trade data checked on 18 Oct 2026 for HS 3801 (graphite, including anode material) and HS 8507 (batteries and parts) entering the US under the names 'BlueOval SK' and 'Ford Motor Company'. The shipment date filter let older rows through, so we counted rows by year and kept only those from 2024 onward. Ford's own shipments between its units and its exports are left out. The scan cannot see graphite or cells bought inside the US, material that arrives inside imported cells or modules, or rows filed under names we did not search, such as Ford Energy Battery LLC or SK On Tennessee. Forwarders excluded: Pactra Tianjin Logistics (44 rows of artificial graphite, China to BlueOval SK, Sep 2024 to Nov 2025), Fan Cheng Intl Trans Service (4 rows, Feb 2025) and Sinotrans Eastern (1 row of cells to a Ford record, late 2024). The Pactra rows are the largest graphite flow into BlueOval SK, but no producer is named."
+  },
+  "suppliers": [
+    {
+      "name": "SK On Co., Ltd.",
+      "entity_id": "l8-h8TE5NYMNChTmamxMeQ",
+      "country": "KOR",
+      "hs_codes": [
+        "850760"
+      ],
+      "rows": 9,
+      "first": "2024-11-10",
+      "last": "2026-07-25",
+      "owner_top": "SK Innovation Co., Ltd.",
+      "owner_country": "KOR",
+      "chinese_owned": "No",
+      "confidence": "documented",
+      "note": "Lithium-ion batteries shipped to Ford Motor Company under two SK On trade records (8 rows in 2026, plus 1 row in Nov 2024 on jKQymV9KChMdJfcSdmO4zg); the registry record lists SK Innovation as shareholder.",
+      "call_ids": [
+        "b-ford-07",
+        "b-ford-08",
+        "b-ford-14",
+        "b-ford-16"
+      ]
+    },
+    {
+      "name": "Contemporary Amperex Technology Co., Limited (CATL)",
+      "entity_id": "Hknigg_iWcgcpp_dkWgQvA",
+      "country": "CHN",
+      "hs_codes": [
+        "850760"
+      ],
+      "rows": 4,
+      "first": "2024-01-02",
+      "last": "2026-03-24",
+      "owner_top": "Contemporary Amperex Technology Co., Limited (listed company, Ningde, Fujian)",
+      "owner_country": "CHN",
+      "chinese_owned": "Yes (China-based)",
+      "confidence": "documented",
+      "note": "Lithium-ion batteries shipped from China to Ford Motor Company and a Ford/Lincoln record; CATL is a Chinese company on the US Section 1260H list, so this link warrants due diligence under the PFE rules.",
+      "call_ids": [
+        "b-ford-07",
+        "b-ford-08",
+        "b-ford-11"
+      ]
+    },
+    {
+      "name": "LG Energy Solution, Ltd.",
+      "entity_id": "Jt71Tb2z1whIR0iQZpP-fw",
+      "country": "KOR",
+      "hs_codes": [
+        "850760"
+      ],
+      "rows": 2,
+      "first": "2026-08-06",
+      "last": "2026-08-06",
+      "owner_top": "LG Corp. (through LG Chem, Ltd.)",
+      "owner_country": "KOR",
+      "chinese_owned": "No",
+      "confidence": "documented",
+      "note": "Lithium-ion accumulators for electric vehicles shipped to Ford Motor Company; Sayari's registry chain runs to LG Chem and LG Corp. in Korea.",
+      "call_ids": [
+        "b-ford-08",
+        "b-ford-15"
+      ]
+    },
+    {
+      "name": "Kunhwa ENG Co., Ltd.",
+      "entity_id": "yd7o-FGvJPdkd9N6aVr0Tw",
+      "country": "KOR",
+      "hs_codes": [
+        "850790"
+      ],
+      "rows": 3,
+      "first": "2024-07-18",
+      "last": "2026-01-14",
+      "owner_top": "Not checked (Korean-registered company)",
+      "owner_country": "KOR",
+      "chinese_owned": "No",
+      "confidence": "inferred",
+      "note": "Battery parts (not cells) shipped to a BlueOval SK record in Glendale, Kentucky; Korean registration and DART filings, but no shareholder record was checked.",
+      "call_ids": [
+        "b-ford-04",
+        "b-ford-06",
+        "b-ford-13"
+      ]
+    },
+    {
+      "name": "BTR New Material Group Sales Co., Ltd.",
+      "entity_id": "5_cayB1m7XahAhz_Hrrpng",
+      "country": "CHN",
+      "hs_codes": [
+        "380190"
+      ],
+      "rows": 1,
+      "first": "2025-08-26",
+      "last": "2025-08-26",
+      "owner_top": "BTR New Material Group Co., Ltd. (name match only)",
+      "owner_country": "CHN",
+      "chinese_owned": "Yes (China-based)",
+      "confidence": "documented",
+      "note": "One row of graphite-based material (HS 3801.90) to BlueOval SK from this Shenzhen-based BTR sales company; the link to the BTR parent is only a name match (Case 1).",
+      "call_ids": [
+        "b-ford-03",
+        "b-ford-05",
+        "b-ford-18"
+      ]
+    },
+    {
+      "name": "Toptec Co., Ltd.",
+      "entity_id": "swZx4LTN9A0Zd4KpT7hxmA",
+      "country": "KOR",
+      "hs_codes": [
+        "380120"
+      ],
+      "rows": 2,
+      "first": "2025-01-04",
+      "last": "2025-01-04",
+      "owner_top": "Not checked",
+      "owner_country": "KOR",
+      "chinese_owned": "Unknown",
+      "confidence": "lead",
+      "note": "Coded as colloidal graphite (HS 3801.20), but the product text describes a semi-auto tester, so this is probably equipment, not graphite; ownership was not checked.",
+      "call_ids": [
+        "b-ford-03",
+        "b-ford-05"
+      ]
+    }
+  ],
+  "forwarders_excluded": 3,
+  "calls": [
+    {
+      "id": "b-ford-01",
+      "timestamp": "2026-10-18T22:57:38Z",
+      "server": "sayari",
+      "tool": "search_entities",
+      "params": {
+        "query": "\"BlueOval SK\"",
+        "limit": 10
+      },
+      "question": "Which Sayari records belong to BlueOval SK, the Ford and SK On battery venture?",
+      "purpose": "buyer resolution",
+      "result_summary": "18 records. The main one (RPYYIgKHs0f-kGKGBlE9jw) carries a Kentucky org number, a Florida filing and FEI numbers, with Dearborn MI and Glendale KY addresses. Others are trade-name fragments and EPA facility records for Glendale KY and Stanton TN (BlueOval City).",
+      "interpretation": "The venture is spread over many fragments. We kept the registry-backed record and the trade and facility records with Glendale or Stanton addresses.",
+      "scorecard": "worked",
+      "entity_ids": [
+        "RPYYIgKHs0f-kGKGBlE9jw",
+        "OoCU9I6MsBVXeOayCVuR9A",
+        "gmCpEnquN7PI-mUnMKqvPw",
+        "9DDAlIRlqlZq7pwJ5qUwSQ",
+        "_Ao7QZ5Y0DfLVP9LADDkDw",
+        "cclu_C8fIOucVXcdONCwhA"
+      ],
+      "step": "buyer"
+    },
+    {
+      "id": "b-ford-02",
+      "timestamp": "2026-10-18T22:57:46Z",
+      "server": "sayari",
+      "tool": "search_trade_facets",
+      "params": {
+        "scope": "suppliers",
+        "query": "\"BlueOval SK\"",
+        "arrival_country": "USA",
+        "date_from": "2024-01-01",
+        "bucket_limit": 15
+      },
+      "question": "Where are BlueOval SK's suppliers based?",
+      "purpose": "supplier scan",
+      "result_summary": "159 supplier records. Supplier countries: Korea 134, China 29, USA 18, Japan 16, India 10, Germany 10, plus smaller counts. No supplier names in the buckets.",
+      "interpretation": "Korea dominates, as expected for an SK On-run plant. The facet gives only countries, so names had to come from the HS-filtered calls.",
+      "scorecard": "partial",
+      "entity_ids": [
+        "RPYYIgKHs0f-kGKGBlE9jw"
+      ],
+      "step": "buyer"
+    },
+    {
+      "id": "b-ford-03",
+      "timestamp": "2026-10-18T22:57:54Z",
+      "server": "sayari",
+      "tool": "search_suppliers",
+      "params": {
+        "query": "\"BlueOval SK\"",
+        "hs_code": "3801",
+        "arrival_country": "USA",
+        "date_from": "2024-01-01",
+        "limit": 20
+      },
+      "question": "Who ships graphite (HS 3801) to BlueOval SK?",
+      "purpose": "supplier scan",
+      "result_summary": "5 records: Pactra Tianjin Logistics (44 shipments, HS 380110), BlueOval SK itself (outbound), Fan Cheng Intl Trans Service (4, HS 380110), Toptec Co. (2, HS 380120) and BTR New Material Group Sales (1, HS 380190).",
+      "interpretation": "Two of the three graphite shippers from China are freight forwarders, so the producer behind most of the graphite is not named.",
+      "scorecard": "worked",
+      "entity_ids": [
+        "Rj0MkY1ZMfLxu4Wk9q4keA",
+        "cPdltpbiJ3srEuXfm_7NDA",
+        "swZx4LTN9A0Zd4KpT7hxmA",
+        "5_cayB1m7XahAhz_Hrrpng",
+        "RPYYIgKHs0f-kGKGBlE9jw"
+      ],
+      "step": "buyer"
+    },
+    {
+      "id": "b-ford-04",
+      "timestamp": "2026-10-18T22:58:02Z",
+      "server": "sayari",
+      "tool": "search_suppliers",
+      "params": {
+        "query": "\"BlueOval SK\"",
+        "hs_code": "8507",
+        "arrival_country": "USA",
+        "date_from": "2024-01-01",
+        "limit": 20
+      },
+      "question": "Who ships batteries or battery parts (HS 8507) to BlueOval SK?",
+      "purpose": "supplier scan",
+      "result_summary": "2 records: Kunhwa ENG Co. (Korea, 3 shipments of HS 850790 battery parts) and BlueOval SK itself.",
+      "interpretation": "BlueOval SK makes cells, so it imports few finished cells. Only Korean parts show.",
+      "scorecard": "worked",
+      "entity_ids": [
+        "yd7o-FGvJPdkd9N6aVr0Tw",
+        "RPYYIgKHs0f-kGKGBlE9jw"
+      ],
+      "step": "buyer"
+    },
+    {
+      "id": "b-ford-05",
+      "timestamp": "2026-10-18T22:58:10Z",
+      "server": "sayari",
+      "tool": "search_shipments",
+      "params": {
+        "query": "\"BlueOval SK\"",
+        "hs_code": "3801",
+        "arrival_country": "USA",
+        "date_from": "2024-01-01",
+        "limit": 100,
+        "response_mode": "compact"
+      },
+      "question": "Do dated shipment rows confirm graphite reaching BlueOval SK?",
+      "purpose": "confirm rows",
+      "result_summary": "57 rows. Pactra Tianjin Logistics to BlueOval SK LLC: 44 rows of artificial graphite (HS 380110), China to USA, arrivals 2024-09-12 to 2025-11-11. Fan Cheng Intl Trans Service: 4 rows, arrival 2025-02-02. BTR New Material Group Sales: 1 row of HS 380190, 2025-08-26. Toptec: 2 rows coded 380120 but described as a semi-auto tester. Also 4 rows of BlueOval SK shipping 'anode active material' and endplates to SK On Hungary in Aug-Sep 2026.",
+      "interpretation": "Chinese artificial graphite reached BlueOval SK through forwarders throughout 2024-2025. The rows to SK On Hungary run the other way and are not imports.",
+      "scorecard": "worked",
+      "entity_ids": [
+        "RPYYIgKHs0f-kGKGBlE9jw",
+        "Rj0MkY1ZMfLxu4Wk9q4keA",
+        "cPdltpbiJ3srEuXfm_7NDA",
+        "5_cayB1m7XahAhz_Hrrpng",
+        "swZx4LTN9A0Zd4KpT7hxmA",
+        "t2HmaexxvTE5WgGtj3BMxg"
+      ],
+      "step": "buyer"
+    },
+    {
+      "id": "b-ford-06",
+      "timestamp": "2026-10-18T22:58:18Z",
+      "server": "sayari",
+      "tool": "search_shipments",
+      "params": {
+        "query": "\"BlueOval SK\"",
+        "hs_code": "8507",
+        "arrival_country": "USA",
+        "date_from": "2024-01-01",
+        "limit": 100,
+        "response_mode": "compact"
+      },
+      "question": "Do dated rows confirm HS 8507 imports by BlueOval SK?",
+      "purpose": "confirm rows",
+      "result_summary": "4 rows. Kunhwa ENG to BlueOval SK (OoCU9I6MsBVXeOayCVuR9A): 3 rows of HS 850790 parts, 2024-07-18 and 2026-01-14. One outbound row from BlueOval SK to SK On Hungary.",
+      "interpretation": "No imported cells into BlueOval SK appear. Only Korean battery parts.",
+      "scorecard": "worked",
+      "entity_ids": [
+        "yd7o-FGvJPdkd9N6aVr0Tw",
+        "OoCU9I6MsBVXeOayCVuR9A",
+        "RPYYIgKHs0f-kGKGBlE9jw"
+      ],
+      "step": "buyer"
+    },
+    {
+      "id": "b-ford-07",
+      "timestamp": "2026-10-18T22:58:26Z",
+      "server": "sayari",
+      "tool": "search_suppliers",
+      "params": {
+        "query": "\"Ford Motor Company\"",
+        "hs_code": "8507",
+        "arrival_country": "USA",
+        "date_from": "2024-01-01",
+        "limit": 25,
+        "response_mode": "compact"
+      },
+      "question": "Who ships batteries (HS 8507) to Ford Motor Company in the US?",
+      "purpose": "supplier scan",
+      "result_summary": "22 records, including LG Energy Solution Wroclaw (341 shipments), Ford's own units, CATL (26), SK On Co. (two records, 18 and 8), LG Energy Solution Ltd (4), Sinotrans Eastern (1) and Chongqing Ante Trading (1).",
+      "interpretation": "The shipment counts are not limited to 2024 onward (several records last shipped in 2020). Used only to pick names to confirm with rows.",
+      "scorecard": "partial",
+      "entity_ids": [
+        "QrL4MaSQ-7UxX19AfwfDrQ",
+        "hVWvdWYN5x2zFc2z0T7-1A",
+        "Hknigg_iWcgcpp_dkWgQvA",
+        "jKQymV9KChMdJfcSdmO4zg",
+        "l8-h8TE5NYMNChTmamxMeQ",
+        "Jt71Tb2z1whIR0iQZpP-fw",
+        "30kEauryyUlKCcOmp2hJjQ",
+        "VZtQjU0irwqDV4nqLgrTCg"
+      ],
+      "step": "buyer"
+    },
+    {
+      "id": "b-ford-08",
+      "timestamp": "2026-10-18T22:58:34Z",
+      "server": "sayari",
+      "tool": "search_shipments",
+      "params": {
+        "query": "\"Ford Motor Company\"",
+        "hs_code": "850760",
+        "arrival_country": "USA",
+        "date_from": "2024-01-01",
+        "limit": 100,
+        "response_mode": "compact"
+      },
+      "question": "Which lithium-ion battery suppliers have dated rows into Ford since 2024?",
+      "purpose": "confirm rows",
+      "result_summary": "486 rows available, 100 read. Rows dated 2024 or later: SK On Co. 8 rows (2026-04-14 to 2026-07-25) plus 1 row on a second record (2024-11-10); CATL 2 rows to Ford Motor Company (2025-10-24 to 2026-03-24) and 2 rows to a 'Ford Motor Company /Ford Lincoln' record (2024-01-02 to 2024-02-21); LG Energy Solution Ltd 2 rows (2026-08-06); Sinotrans Eastern 1 row (Oct-Nov 2024). LG Energy Solution Wroclaw's 37 rows are all from 2022.",
+      "interpretation": "The date filter let 2022-2023 rows through, so we counted rows by year. Since 2024 Ford's imported cells come from SK On, CATL and LG Energy Solution.",
+      "scorecard": "partial",
+      "entity_ids": [
+        "QrL4MaSQ-7UxX19AfwfDrQ",
+        "i0HhTJctxSbPxQvZqHx1Tg",
+        "l8-h8TE5NYMNChTmamxMeQ",
+        "jKQymV9KChMdJfcSdmO4zg",
+        "Hknigg_iWcgcpp_dkWgQvA",
+        "Jt71Tb2z1whIR0iQZpP-fw",
+        "30kEauryyUlKCcOmp2hJjQ"
+      ],
+      "step": "buyer"
+    },
+    {
+      "id": "b-ford-09",
+      "timestamp": "2026-10-18T22:58:42Z",
+      "server": "sayari",
+      "tool": "search_suppliers",
+      "params": {
+        "query": "\"Ford Motor Company\"",
+        "hs_code": "3801",
+        "arrival_country": "USA",
+        "date_from": "2024-01-01",
+        "limit": 15,
+        "response_mode": "compact"
+      },
+      "question": "Does Ford Motor Company itself import graphite?",
+      "purpose": "supplier scan",
+      "result_summary": "0 results.",
+      "interpretation": "No graphite imports under the Ford name. Graphite goes to the cell plants, not the carmaker. The rollup can be blind, so this is not proof of none.",
+      "scorecard": "failed",
+      "entity_ids": [
+        "QrL4MaSQ-7UxX19AfwfDrQ"
+      ],
+      "step": "buyer"
+    },
+    {
+      "id": "b-ford-10",
+      "timestamp": "2026-10-18T22:58:50Z",
+      "server": "sayari",
+      "tool": "search_shipments",
+      "params": {
+        "query": "\"Pactra Tianjin Logistics\"",
+        "hs_code": "380110",
+        "arrival_country": "USA",
+        "date_from": "2024-01-01",
+        "limit": 5,
+        "response_mode": "full"
+      },
+      "question": "Do the full rows behind Pactra Tianjin's graphite name the real producer?",
+      "purpose": "forwarder check",
+      "result_summary": "44 rows available, 5 read. Each is 16,380 kg of 'GRAPHITE' (HS 380110) from Shanghai, Oct-Nov 2025, to BlueOval SK at 1 American Road. The source is China's export customs data. The shipper field is Pactra's own address. The buyer record also lists the alias 'SK ON TENNESSEE LLC'.",
+      "interpretation": "No producer is named. The material left China as general artificial graphite through a logistics firm. The SK On Tennessee alias fits the 2026 split of the venture.",
+      "scorecard": "worked",
+      "entity_ids": [
+        "Rj0MkY1ZMfLxu4Wk9q4keA",
+        "RPYYIgKHs0f-kGKGBlE9jw"
+      ],
+      "step": "buyer"
+    },
+    {
+      "id": "b-ford-11",
+      "timestamp": "2026-10-18T22:58:58Z",
+      "server": "sayari",
+      "tool": "get_entity_summary",
+      "params": {
+        "entity_id": "Hknigg_iWcgcpp_dkWgQvA"
+      },
+      "question": "Is the CATL record that ships cells to Ford the Chinese parent company?",
+      "purpose": "ownership",
+      "result_summary": "Contemporary Amperex Technology Co., Limited. Chinese unified social credit code 91350900587527783P, Hong Kong stock code 03750, LEI 300300KINDY1K0E9I032, address in Ningde, Fujian. Flags include usa_section_1260h.",
+      "interpretation": "This is CATL's Chinese parent record. CATL is on the US Defense Department's Section 1260H list.",
+      "scorecard": "worked",
+      "entity_ids": [
+        "Hknigg_iWcgcpp_dkWgQvA"
+      ],
+      "step": "buyer"
+    },
+    {
+      "id": "b-ford-12",
+      "timestamp": "2026-10-18T22:59:06Z",
+      "server": "sayari",
+      "tool": "find_beneficial_owners",
+      "params": {
+        "entity_id": "RPYYIgKHs0f-kGKGBlE9jw",
+        "limit": 10
+      },
+      "question": "Does Sayari show BlueOval SK's owners?",
+      "purpose": "buyer ownership",
+      "result_summary": "0 results.",
+      "interpretation": "There is no shareholder record. The 50/50 Ford and SK On ownership and the 2026 split come from press reports (b-ford-17).",
+      "scorecard": "failed",
+      "entity_ids": [
+        "RPYYIgKHs0f-kGKGBlE9jw"
+      ],
+      "step": "buyer"
+    },
+    {
+      "id": "b-ford-13",
+      "timestamp": "2026-10-18T22:59:14Z",
+      "server": "sayari",
+      "tool": "get_entity_summary",
+      "params": {
+        "entity_id": "yd7o-FGvJPdkd9N6aVr0Tw"
+      },
+      "question": "Who is Kunhwa ENG, the Korean parts supplier?",
+      "purpose": "ownership",
+      "result_summary": "KUNHWA EnG Co., Ltd. (건화이엔지). Korean corporate registration 174811-0040446, DART filer 00863603, registered 2005, auto and trailer parts maker in Gyeongsan, Korea.",
+      "interpretation": "A Korean-registered parts maker. No shareholder data was checked.",
+      "scorecard": "worked",
+      "entity_ids": [
+        "yd7o-FGvJPdkd9N6aVr0Tw"
+      ],
+      "step": "buyer"
+    },
+    {
+      "id": "b-ford-14",
+      "timestamp": "2026-10-18T22:59:22Z",
+      "server": "sayari",
+      "tool": "search_entities",
+      "params": {
+        "query": "\"에스케이온\"",
+        "limit": 5,
+        "response_mode": "compact"
+      },
+      "question": "What is SK On's registry record?",
+      "purpose": "ownership",
+      "result_summary": "1 record: SK on Co Ltd (mDxztbc05brjctrRV2LlKQ), LEI 2549004DJVWOD3WI1E40, DART 01592447, Korea.",
+      "interpretation": "This is the registry record for SK On. The two trade records that ship to Ford carry no identifiers.",
+      "scorecard": "worked",
+      "entity_ids": [
+        "mDxztbc05brjctrRV2LlKQ"
+      ],
+      "step": "buyer"
+    },
+    {
+      "id": "b-ford-15",
+      "timestamp": "2026-10-18T22:59:30Z",
+      "server": "sayari",
+      "tool": "find_beneficial_owners",
+      "params": {
+        "entity_id": "Jt71Tb2z1whIR0iQZpP-fw",
+        "limit": 10,
+        "max_depth": 2
+      },
+      "question": "Who owns LG Energy Solution, Ltd.?",
+      "purpose": "ownership",
+      "result_summary": "39 paths. LG Energy Solution is a subsidiary of LG Chem, Ltd. (rJZujbWjTgJ1iEZxCsjw9w). LG Chem's shareholders include LG Corp. (PUzZWCa41jUIBiXT2q1gEw) and Korea's National Pension Service. Several Korean individuals hold small stakes directly.",
+      "interpretation": "Korean ownership through LG Chem and LG Corp. No Chinese owner appears.",
+      "scorecard": "worked",
+      "entity_ids": [
+        "Jt71Tb2z1whIR0iQZpP-fw",
+        "rJZujbWjTgJ1iEZxCsjw9w",
+        "PUzZWCa41jUIBiXT2q1gEw"
+      ],
+      "step": "buyer"
+    },
+    {
+      "id": "b-ford-16",
+      "timestamp": "2026-10-18T22:59:38Z",
+      "server": "sayari",
+      "tool": "find_beneficial_owners",
+      "params": {
+        "entity_id": "mDxztbc05brjctrRV2LlKQ",
+        "limit": 10,
+        "max_depth": 2,
+        "response_mode": "compact"
+      },
+      "question": "Who owns SK On?",
+      "purpose": "ownership",
+      "result_summary": "Direct shareholder: SK이노베이션㈜ (SK Innovation), wrongly typed as a person in Sayari (4M5qAB_FZxIPmXqwzUpFNg). Further paths run through SK Energy Co., Ltd. to Korean individuals.",
+      "interpretation": "SK On is owned by SK Innovation (Korea). The mistyped record does not change the conclusion.",
+      "scorecard": "worked",
+      "entity_ids": [
+        "mDxztbc05brjctrRV2LlKQ",
+        "4M5qAB_FZxIPmXqwzUpFNg",
+        "BDEelPDsabKqFnZ4XHPmwA"
+      ],
+      "step": "buyer"
+    },
+    {
+      "id": "b-ford-17",
+      "timestamp": "2026-10-18T22:59:46Z",
+      "server": "tavily",
+      "tool": "tavily_search",
+      "params": {
+        "query": "Ford SK On BlueOval SK joint venture dissolution Kentucky Tennessee plants split",
+        "max_results": 5
+      },
+      "question": "What happened to the BlueOval SK joint venture?",
+      "purpose": "context",
+      "result_summary": "Electrive (12 Dec 2025) and WardsAuto report that Ford and SK On agreed to dissolve BlueOval SK. Ford takes the two Kentucky plants through a wholly owned subsidiary, and SK On takes the Tennessee plant. Tennessee Lookout (22 May 2026) reports that SK On Tennessee took full ownership of the Stanton plant. Another report names the Ford subsidiary as Ford Energy Battery LLC and says Ford assumed a $3.8bn DOE loan.",
+      "interpretation": "As of Oct 2026 the venture has been split: Kentucky belongs to Ford, Tennessee to SK On. Trade records still use the BlueOval SK name.",
+      "scorecard": "worked",
+      "entity_ids": [],
+      "step": "buyer"
+    },
+    {
+      "id": "b-ford-18",
+      "timestamp": "2026-10-18T22:59:54Z",
+      "server": "sayari",
+      "tool": "get_upstream_supply_chain",
+      "params": {
+        "entity_id": "RPYYIgKHs0f-kGKGBlE9jw",
+        "product": [
+          "3801",
+          "8507"
+        ],
+        "min_date": "2024-01-01",
+        "max_depth": 1,
+        "limit": 25,
+        "response_mode": "compact"
+      },
+      "question": "Which tier-1 suppliers does the graph show for BlueOval SK in HS 3801/8507?",
+      "purpose": "supplier scan",
+      "result_summary": "11 paths: SFA Engineering, Jinhap (진합), Youn Sung F&C, Woorim Hi-Tech, Innometry, Nepes Yahad, Toptec (all Korea), BTR New Material Group Sales and Fan Cheng Intl Trans Service (China).",
+      "interpretation": "Mostly Korean equipment and parts makers. The graph gives no row counts, so only names already confirmed by rows went into the list.",
+      "scorecard": "partial",
+      "entity_ids": [
+        "quYHvvljQ3gP1UeIWpDzsg",
+        "n--zrU_xRh6tCuD8mn_sHw",
+        "AobdcnyPM0J2ELS1biIA0g",
+        "T4nWFWHgF3PPPFEebJft5Q",
+        "SFSBgc7Nq35Su16Q6TeW3Q",
+        "pNOdU-QA2h-L2REZClisRA",
+        "swZx4LTN9A0Zd4KpT7hxmA",
+        "5_cayB1m7XahAhz_Hrrpng",
+        "cPdltpbiJ3srEuXfm_7NDA"
+      ],
+      "step": "buyer"
+    },
+    {
+      "id": "b-ford-19",
+      "timestamp": "2026-10-18T23:00:02Z",
+      "server": "sayari",
+      "tool": "search_entities",
+      "params": {
+        "query": "\"Ford Energy Battery\"",
+        "limit": 5,
+        "response_mode": "compact"
+      },
+      "question": "Does Sayari have a record for Ford Energy Battery LLC, the new owner of the Kentucky plants?",
+      "purpose": "buyer resolution",
+      "result_summary": "0 results.",
+      "interpretation": "The new Ford subsidiary is not yet in Sayari under that name. Kentucky imports still appear under BlueOval SK records.",
+      "scorecard": "failed",
+      "entity_ids": [],
+      "step": "buyer"
+    }
+  ]
+}

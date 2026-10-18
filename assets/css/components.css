@@ -88,7 +88,7 @@
 /* ---------- Legend ---------- */
 .legend { display: grid; gap: var(--s-4); grid-template-columns: 1fr; font-size: var(--fs-1); }
 @media (min-width: 720px) { .legend { grid-template-columns: 1.1fr 1fr; } }
-.legend h4 { font-family: var(--sans); font-size: var(--fs-0); text-transform: uppercase; letter-spacing: 0.08em; color: var(--ink-3); margin-bottom: var(--s-2); }
+.legend h4, .legend-h { font-family: var(--sans); font-size: var(--fs-0); text-transform: uppercase; letter-spacing: 0.08em; color: var(--ink-3); margin-bottom: var(--s-2); }
 .legend ul { list-style: none; margin: 0; padding: 0; display: grid; gap: var(--s-2); }
 .legend li { display: grid; grid-template-columns: auto 1fr; gap: var(--s-3); align-items: start; }
 .legend li span:last-child { color: var(--ink-2); }
@@ -551,3 +551,37 @@
   .timeline li { padding-top: 0; padding-left: 24px; border-top: 1px solid var(--rule); padding-top: var(--s-3); }
   .timeline li::before { left: 0; top: calc(var(--s-3) + 4px); }
 }
+.checked { display: inline-flex; align-items: center; gap: 6px; flex-wrap: wrap; font-family: var(--mono); font-size: 0.72rem; color: var(--ok); background: var(--ok-tint); border: 1px solid #BEDFCB; border-radius: 999px; padding: 2px 9px; }
+.checked .receipts a { font-size: 0.68rem; }
+.cc-foot { display: flex; justify-content: space-between; align-items: center; gap: 8px; flex-wrap: wrap; margin-top: auto; padding-top: var(--s-2); }
+.case-card.simple .cc-go { margin-top: 0; padding-top: 0; }
+.scan { margin-top: var(--s-6); }
+.scan-table td { font-size: var(--fs-1); vertical-align: top; }
+.yn.unk { background: var(--paper-2); color: var(--ink-2); }
+.warn-text { color: var(--risk); }
+.diy { max-width: 58rem; display: grid; gap: var(--s-3); padding-left: 1.3rem; }
+.diy code { font-size: 0.82em; background: var(--paper-2); padding: 0 4px; border-radius: 2px; }
+.diy-prompt { margin-top: var(--s-4); max-width: 58rem; }
+.diy-prompt summary { cursor: pointer; font-weight: 600; }
+.diy-prompt pre { white-space: pre-wrap; background: var(--card); border: 1px solid var(--rule); border-radius: var(--radius); padding: var(--s-4); font-size: 0.82rem; }
+
+/* Executive summary + tour */
+.exec { margin-top: var(--s-6); background: var(--card); border: 1px solid var(--rule); border-left: 5px solid var(--teal); border-radius: var(--radius); padding: var(--s-4) var(--s-5); box-shadow: var(--shadow); max-width: 64rem; }
+.exec h2 { font-family: var(--mono); font-size: var(--fs-0); text-transform: uppercase; letter-spacing: .1em; color: var(--teal); margin-bottom: var(--s-2); }
+.exec p { font-family: var(--serif); font-size: clamp(1.05rem, 1rem + 0.3vw, 1.2rem); line-height: 1.55; margin-bottom: var(--s-3); }
+.exec + .hero { padding-top: var(--s-5); }
+.tour { position: fixed; right: 16px; bottom: 16px; z-index: 100; width: min(380px, calc(100vw - 32px)); background: var(--ink); color: #fff; border-radius: var(--radius); padding: var(--s-4); box-shadow: 0 12px 34px rgba(0,0,0,.28); }
+.tour p { margin: var(--s-2) 0; font-size: var(--fs-1); }
+.tour a { color: #9FD8D3; }
+.tour .muted { color: #C9C7BE; }
+.tour-head { display: flex; justify-content: space-between; align-items: center; gap: 8px; }
+.tour-x { background: none; border: 1px solid #6E6D66; color: #fff; border-radius: 50%; width: 28px; height: 28px; cursor: pointer; }
+.tour-nav { display: flex; justify-content: space-between; align-items: center; gap: 8px; margin-top: var(--s-3); }
+.tour .btn { background: #fff; color: var(--ink); border-color: #fff; }
+.tour .btn.primary { background: #9FD8D3; border-color: #9FD8D3; color: var(--ink); }
+.tour-links { padding-left: 1.1rem; margin: 0; font-size: var(--fs-1); display: grid; gap: 4px; }
+.tour-focus { outline: 3px solid #E0A100; outline-offset: 8px; border-radius: var(--radius); }
+.oq { list-style: none; padding: 0; display: grid; gap: var(--s-2); }
+.oq li { border-left: 3px solid var(--inf); padding-left: var(--s-3); }
+.oq span { display: block; font-size: var(--fs-0); color: var(--ink-2); margin-top: 2px; }
+.legend-h { margin: 0 0 var(--s-2); }

@@ -7,7 +7,7 @@
   --card: #FFFFFF;
   --ink: #1A1A1A;
   --ink-2: #4A4A45;
-  --ink-3: #6E6D66;
+  --ink-3: #5E5D57;
   --rule: #DCDAD0;
   --rule-strong: #B9B6A8;
   --grid: rgba(26, 26, 26, 0.045);
@@ -22,7 +22,7 @@
   --tx-tint: #E6EEFA;
   --ct: #6B3FA0;        /* contractual: dashed purple */
   --ct-tint: #F0EAF7;
-  --inf: #A86A12;       /* inferred: dotted amber */
+  --inf: #8A570D;       /* inferred: dotted amber */
   --inf-tint: #FBF1E0;
 
   /* Risk: used sparingly */
@@ -32,13 +32,13 @@
   /* Confidence scale */
   --c-documented: #0F5E5C;
   --c-corroborated: #1F5FBF;
-  --c-inferred: #A86A12;
-  --c-lead: #6E6D66;
+  --c-inferred: #8A570D;
+  --c-lead: #5E5D57;
 
   /* Scorecard */
   --ok: #1E7A46;
   --ok-tint: #E5F3EA;
-  --part: #A86A12;
+  --part: #8A570D;
   --part-tint: #FBF1E0;
   --fail: #B42318;
   --fail-tint: #FDECEA;

@@ -1,2381 +1,2384 @@
 {
-  "case": {
-    "id": "case-7",
-    "slug": "gotion-us",
-    "title": "Gotion's battery plants inside the US",
-    "subtitle": "Gotion, Inc. and Gotion Illinois New Energy · Fremont, California and Manteno, Illinois, USA",
-    "country": "USA",
-    "plant_status": "operating",
-    "question": "When a Chinese-owned battery company builds its plant inside the US, can Sayari show both who owns it and the Chinese inputs going into it?",
-    "answer_label": "Partly",
-    "answer": "Inputs, yes: Sayari shows dated shipments of Chinese cells, packs and one lot of artificial graphite from Gotion's own Chinese plants into its US companies. Ownership only in part: Chinese registry data traces Gotion High-Tech down to a US subsidiary, but no US record shows who owns the Fremont or Manteno companies.",
-    "why_it_matters": "Since July 2025, US clean-energy tax credits depend on whether a company is owned or controlled by a 'prohibited foreign entity'. Here no third country is involved: the Chinese-owned plant is in Illinois, and its inputs come straight from the parent's factories in China. The paper trail is short, but the key ownership link sits in Chinese filings, not US ones.",
-    "headline": "Partly. The trade side is clear: Gotion's Chinese plants ship cells, packs, parts and, once, artificial graphite to Gotion Inc. and its Manteno plant, Dec 2025 to Sep 2026. The ownership side is incomplete. Chinese records show Gotion High-Tech owning a US subsidiary through Hefei Gotion, but US registries list no shareholder, so the last link rests on name and press.",
-    "summary_for_non_experts": "Gotion High-Tech is a Chinese battery maker based in Hefei. Its US arm, Gotion, Inc., is in Fremont, California, and runs a plant in Manteno, Illinois that assembles energy-storage systems and EV battery packs. US customs records show the inputs coming almost entirely from Gotion's own factories in China, including one lot of artificial graphite routed through Korea. Chinese filings show the parent owning a US subsidiary, but US registries don't say who owns the plant, and Gotion's planned Michigan plant was never built.",
-    "key_numbers": [
-      {
-        "value": "1,398",
-        "label": "US-bound shipment rows naming Gotion, Aug 2021 – Sep 2026",
-        "call_ids": [
-          "s709"
-        ]
-      },
-      {
-        "value": "145",
-        "label": "of them lithium-ion battery or part rows (HS 8507)",
-        "call_ids": [
-          "s713"
-        ]
-      },
-      {
-        "value": "2",
-        "label": "artificial graphite rows (HS 3801.10), Hefei to Fremont via Busan, 23 Dec 2025",
-        "call_ids": [
-          "s712"
-        ]
-      },
-      {
-        "value": "99.8%",
-        "label": "of Hefei Gotion owned by Gotion High-Tech, per Chinese registry data",
-        "call_ids": [
-          "s720"
-        ]
-      },
-      {
-        "value": "0",
-        "label": "shareholders shown for Gotion, Inc. in US records",
-        "call_ids": [
-          "s705",
-          "s706"
-        ]
-      }
-    ],
-    "overall_confidence": "corroborated",
-    "pattern": "complete-trail",
-    "steps": [
-      {
-        "title": "The US companies: one name, many records",
-        "kicker": "Step 1 · Inferred",
-        "text": "Gotion, Inc. appears as a California registry record, a federal SAM record and several trade records at 48660 Kato Road, Fremont. The SAM record carries the California company number, so those two are one company. The Manteno plant has a SAM record and two trade records at 333 South Spruce Street. One trade record is wrongly typed as a person.",
-        "edge_ids": [
-          "e706",
-          "e707",
-          "e708",
-          "e709",
-          "e710",
-          "e711"
-        ],
-        "node_ids": [
-          "jtptt0xXwDPrAN8CN-po4g",
-          "88rCtmTg8g2LPVqmzM7Nhw",
-          "L1HhW3HMqcvXRKoHOQdS2g",
-          "eRITWZG5dyfFu5tqu8tv-g",
-          "TeFCWTgdDF-tAyfunxgqXw",
-          "c3D62Of8RTLeBCM9wnuCvw",
-          "a2CIEyP-znrNrpln9qssYA"
-        ],
-        "call_ids": [
-          "s702",
-          "s704",
-          "s705",
-          "s707",
-          "s714",
-          "s715",
-          "s716"
-        ]
-      },
-      {
-        "title": "The owner: visible from China, not from the US",
-        "kicker": "Step 2 · Contractual",
-        "text": "Chinese registry data shows Gotion High-Tech owning 99.8% of Hefei Gotion, which owns a 'Gotion High-Tech (USA)' company in China's outbound-investment filings. California lists no shareholders, and Sayari found no owners for Gotion, Inc. A director, Steven Cai, shares a name with a Gotion High-Tech director. Registry data also lists Volkswagen (China) Investment as a shareholder of the parent, with no percentage.",
-        "edge_ids": [
-          "e701",
-          "e702",
-          "e703",
-          "e704",
-          "e705",
-          "e716",
-          "e717",
-          "e718",
-          "e719",
-          "e720"
-        ],
-        "node_ids": [
-          "Ba3SkSLr0jnGdVR7sWcnWQ",
-          "cqrsueiPWsIEIMOtO6v_Pg",
-          "sfUxx_TMvkJFG13vTnqbwQ",
-          "azdv0UO5gpHsKUJso_CA_Q",
-          "S-yRq5dFMQKTkiXrPaKPGQ",
-          "ru0HQoZ0MqsV_E41dQ5qEQ",
-          "0TsZzKZdA9j4qq_JfBakUQ",
-          "yO_m3IE68dktKtJnqx7OtQ"
-        ],
-        "call_ids": [
-          "s705",
-          "s706",
-          "s717",
-          "s718",
-          "s719",
-          "s720",
-          "s722",
-          "s725"
-        ]
-      },
-      {
-        "title": "Inputs: straight from the parent's factories",
-        "kicker": "Step 3 · Transactional",
-        "text": "Two rows of artificial graphite (HS 3801.10) went from Hefei Gotion to Gotion Inc. in Fremont, shipped from Busan on 23 Dec 2025. Lithium-ion cells and packs (HS 8507) arrive from Hefei Gotion and the group's Tongcheng plant. Some US import rows list Kingston, Jamaica as the last port: that is a ZIM transshipment hub, and the bills of lading were issued in Shanghai and Yantian, so these are Chinese shipments, not a Jamaican route. That includes 29 rows of packs bound for Manteno in Aug 2026. A Taiwan trader, Green Innovation International, sends pack covers and storage-system parts. No natural graphite (HS 2504) or petroleum coke appears.",
-        "edge_ids": [
-          "e721",
-          "e722",
-          "e723",
-          "e724",
-          "e725",
-          "e726",
-          "e727",
-          "e728",
-          "e729",
-          "e730",
-          "e731",
-          "e712",
-          "e713",
-          "e714"
-        ],
-        "node_ids": [
-          "KL5fNOIkqdQV8ZW_4a0wqw",
-          "Ctq4KZl1vI__Cm_ocAMNsg",
-          "L2r51cgdgK63Sk516U52Jg",
-          "EJwFUVeWPX6ErSnqA4dxgw",
-          "mFuYdHo30dU4r8kU_11y7w"
-        ],
-        "call_ids": [
-          "s709",
-          "s710",
-          "s712",
-          "s713",
-          "s716"
-        ]
-      },
-      {
-        "title": "Customers and status",
-        "kicker": "Step 4 · Gap",
-        "text": "US records don't show who buys from the Manteno plant; US export and domestic sales aren't in customs data. A press release names Richardson Electronics as a storage partner. Sayari does show US firms buying Gotion batteries straight from China, such as Moxion Power, up to Feb 2024. Manteno is operating, with five lines and about 300 staff by Nov 2025. Big Rapids, Michigan, was declared abandoned by the state in Sep 2025 and is now in court.",
-        "edge_ids": [
-          "e732",
-          "e733",
-          "e734",
-          "e735",
-          "e736"
-        ],
-        "node_ids": [
-          "1uN_EFYSidIznJZMZxptlw",
-          "x-d_uxTn-TE8ay6FKmZZAA",
-          "hycXzh23OxAAkCsQbnw6uQ",
-          "z5PIbfNlNWbM_PtzLkUvbg",
-          "kqhzX49SUGOaae-QwH0Cvw",
-          "case7-richardson-electronics",
-          "case7-big-rapids-project"
-        ],
-        "call_ids": [
-          "s727",
-          "s728",
-          "s731",
-          "t701",
-          "t702"
-        ]
-      }
-    ],
-    "verdict": {
-      "detected": [
-        {
-          "text": "Artificial graphite (HS 3801.10) shipped by Hefei Gotion to Gotion Inc., Fremont, via Busan on 23 Dec 2025 (2 rows).",
-          "call_ids": [
-            "s710",
-            "s712"
-          ]
-        },
-        {
-          "text": "Lithium-ion cells, packs and parts (HS 8507) from Gotion group plants in Hefei and Tongcheng to Gotion Inc. and the Manteno plant, 2024 – Sep 2026, including 29 Manteno-bound pack rows in Aug 2026.",
-          "call_ids": [
-            "s713",
-            "s716"
-          ]
-        },
-        {
-          "text": "Chinese registry ownership: Gotion High-Tech owns 99.8% of Hefei Gotion, which owns a US subsidiary per China's outbound-investment filings.",
-          "call_ids": [
-            "s718",
-            "s719",
-            "s720"
-          ]
-        },
-        {
-          "text": "Volkswagen (China) Investment is listed as a shareholder of Gotion High-Tech in registry data (no percentage).",
-          "call_ids": [
-            "s725"
-          ]
-        }
-      ],
-      "suggested": [
-        {
-          "text": "That the MOFCOM 'Gotion High-Tech (USA)' is the Fremont Gotion, Inc.: name, a shared director name (Steven Cai) and press agree, but no US record states it.",
-          "call_ids": [
-            "s705",
-            "s719",
-            "s720",
-            "t702"
-          ]
-        },
-        {
-          "text": "Gotion, Inc. controls the Manteno plant: shipments consigned to Gotion, Inc. are delivered to Gotion Illinois.",
-          "call_ids": [
-            "s716"
-          ]
-        },
-        {
-          "text": "US buyers of Gotion cells shipped direct from China: Moxion Power (graph and rollup agree); 1Energy Systems and Caban Systems appear in a rollup only.",
-          "call_ids": [
-            "s727",
-            "s731"
-          ]
-        }
-      ],
-      "not_visible": [
-        {
-          "text": "Who owns Gotion, Inc. and Gotion Illinois, from any US record. California and SAM list no shareholders.",
-          "call_ids": [
-            "s705",
-            "s706",
-            "s715"
-          ]
-        },
-        {
-          "text": "Who buys Manteno's output. US domestic sales don't appear in import data.",
-          "call_ids": [
-            "s727"
-          ]
-        },
-        {
-          "text": "Where the anode graphite inside the imported cells came from. Cells arrive finished; their graphite is upstream in China.",
-          "call_ids": [
-            "s710"
-          ]
-        },
-        {
-          "text": "The size of Volkswagen's stake.",
-          "call_ids": [
-            "s725"
-          ]
-        }
-      ]
-    },
-    "passport": [
-      {
-        "field": "Place of manufacture",
-        "guidance_no": "8",
-        "declared": "Manteno, Illinois, USA (pack and storage-system assembly).",
-        "paper_trail": "Cells and packs made by Gotion plants in Hefei and Tongcheng, China, then imported.",
-        "gap": true,
-        "note": "A US 'place of manufacture' can hide Chinese cells."
-      },
-      {
-        "field": "Detailed composition (anode)",
-        "guidance_no": "45",
-        "declared": "'Graphite' as anode material, if declared.",
-        "paper_trail": "Finished cells arrive from China; one lot of artificial graphite (HS 3801.10) went to Fremont in Dec 2025.",
-        "gap": true,
-        "note": "The anode is made inside the imported cell, so its source is out of sight."
-      },
-      {
-        "field": "Critical raw materials > 0.1%",
-        "guidance_no": "15",
-        "declared": "Natural graphite listed if present.",
-        "paper_trail": "No natural graphite (HS 2504) seen; artificial graphite only.",
-        "gap": false,
-        "note": "Consistent, if declared."
-      },
-      {
-        "field": "Responsible-sourcing (due-diligence) report",
-        "guidance_no": "19",
-        "declared": "Deferred under the EU Battery Regulation; no US equivalent.",
-        "paper_trail": "Sub-tier forced-labor 'product blueprint' flags on the Gotion Inc. trade record.",
-        "gap": true,
-        "note": "Flags describe suppliers two to four tiers up, not Gotion itself."
-      },
-      {
-        "field": "Ownership of upstream suppliers",
-        "guidance_no": "—",
-        "declared": "No such field in the EU passport.",
-        "paper_trail": "Suppliers are the parent's own plants: Hefei Gotion, 99.8% owned by Gotion High-Tech.",
-        "gap": true,
-        "note": "Here the supplier and the owner are the same Chinese group."
-      }
-    ],
-    "red_flags": [
-      {
-        "flag": "Chinese parent ownership of the transit plant",
-        "signal": "contractual",
-        "severity": "High",
-        "result": "detected",
-        "note": "Chinese registry chain to a US subsidiary; the last link to Fremont rests on name and press."
-      },
-      {
-        "flag": "Same HS imported from China and exported to the US",
-        "signal": "transactional",
-        "severity": "High",
-        "result": "not_visible",
-        "note": "The plant is in the US: inputs arrive from China, but no onward export to test."
-      },
-      {
-        "flag": "Recent incorporation vs. first export date",
-        "signal": "contractual",
-        "severity": "Medium",
-        "result": "not_visible",
-        "note": "Gotion, Inc. registered 2014; Gotion Illinois' SAM date (Jan 2026) is after its first imports (Jul 2025), but that is a federal-contractor date, not incorporation."
-      },
-      {
-        "flag": "Volume spike after a policy date",
-        "signal": "transactional",
-        "severity": "Medium",
-        "result": "not_visible",
-        "note": "Rows cluster Jul–Sep 2026, but we read only a sample and can't separate a ramp-up from a policy effect."
-      },
-      {
-        "flag": "Shared address or officer with a flagged entity",
-        "signal": "inferred",
-        "severity": "Medium",
-        "result": "suggested",
-        "note": "A director name shared with the parent; the parent's flags are adjacency flags on a stale record."
-      },
-      {
-        "flag": "Entity-resolution fragmentation",
-        "signal": "inferred",
-        "severity": "Low (disclose)",
-        "result": "detected",
-        "note": "Seven US records, two parent records, a person-typed company and an ownership loop."
-      },
-      {
-        "flag": "Forced-labor / UFLPA sub-tier flags",
-        "signal": "inferred",
-        "severity": "Medium",
-        "result": "detected",
-        "note": "Sub-tier 'product blueprint' flags on the Gotion Inc. trade record; context, not a finding."
-      }
-    ],
-    "caveats": [
-      "Gotion's US plants are legal businesses. Nothing here shows wrongdoing by any company named.",
-      "The parent's 'SOE' flags mean one hop from, or possibly owning, a state-owned enterprise. They sit on a stale former-name record and are not evidence that Gotion is state-owned.",
-      "The parent record lists Hefei Gotion as both owner and subsidiary at 99.8182%. That loop is a data artefact; we use the subsidiary direction only.",
-      "The two graphite rows have no grain size or 'anode' wording. HS 3801.10 also covers industrial graphite, so the grade is unknown.",
-      "Buyer names come from customs records and rollups; they say nothing about any buyer's compliance. 1Energy Systems and Caban Systems were not checked row by row.",
-      "Plant status comes from press and a partner's press release, not from Sayari."
+ "case": {
+  "id": "case-7",
+  "slug": "gotion-us",
+  "title": "Gotion's battery plants inside the US",
+  "subtitle": "Gotion, Inc. and Gotion Illinois New Energy · Fremont, California and Manteno, Illinois, USA",
+  "country": "USA",
+  "plant_status": "operating",
+  "question": "When a Chinese-owned battery company builds its plant inside the US, can Sayari show both who owns it and the Chinese inputs going into it?",
+  "answer_label": "Yes",
+  "answer": "Inputs, yes: Sayari shows dated shipments of Chinese cells, packs and one lot of artificial graphite from Gotion's own Chinese plants into its US companies. Ownership, yes, from the parent's own annual report (Gotion, Inc. wholly owned; Gotion Illinois 100% under it). No US record shows it.",
+  "why_it_matters": "Since July 2025, US clean-energy tax credits depend on whether a company is owned or controlled by a 'prohibited foreign entity'. Here no third country is involved: the Chinese-owned plant is in Illinois, and its inputs come straight from the parent's factories in China. The paper trail is short, but the key ownership link sits in Chinese filings, not US ones.",
+  "headline": "Partly. The trade side is clear: Gotion's Chinese plants ship cells, packs, parts and, once, artificial graphite to Gotion Inc. and its Manteno plant, Dec 2025 to Sep 2026. The ownership side is incomplete. Chinese records show Gotion High-Tech owning a US subsidiary through Hefei Gotion, and the parent's annual report names Gotion, Inc. as a wholly owned subsidiary, with Gotion Illinois 100% owned by it; US registries still list no shareholder.",
+  "summary_for_non_experts": "Gotion High-Tech is a Chinese battery maker based in Hefei. Its US arm, Gotion, Inc., is in Fremont, California, and runs a plant in Manteno, Illinois that assembles energy-storage systems and EV battery packs. US customs records show the inputs coming almost entirely from Gotion's own factories in China, including one lot of artificial graphite routed through Korea. Chinese filings show the parent owning a US subsidiary, but US registries don't say who owns the plant, and Gotion's planned Michigan plant was never built.",
+  "key_numbers": [
+   {
+    "value": "1,398",
+    "label": "US-bound shipment rows naming Gotion, Aug 2021 – Sep 2026",
+    "call_ids": [
+     "s709"
     ]
+   },
+   {
+    "value": "145",
+    "label": "of them lithium-ion battery or part rows (HS 8507)",
+    "call_ids": [
+     "s713"
+    ]
+   },
+   {
+    "value": "2",
+    "label": "artificial graphite rows (HS 3801.10), Hefei to Fremont via Busan, 23 Dec 2025",
+    "call_ids": [
+     "s712"
+    ]
+   },
+   {
+    "value": "99.8%",
+    "label": "of Hefei Gotion owned by Gotion High-Tech, per Chinese registry data",
+    "call_ids": [
+     "s720"
+    ]
+   },
+   {
+    "value": "0",
+    "label": "shareholders shown for Gotion, Inc. in US records",
+    "call_ids": [
+     "s705",
+     "s706"
+    ]
+   }
+  ],
+  "overall_confidence": "corroborated",
+  "pattern": "complete-trail",
+  "steps": [
+   {
+    "title": "The US companies: one name, many records",
+    "kicker": "Step 1 · Inferred",
+    "text": "Gotion, Inc. appears as a California registry record, a federal SAM record and several trade records at 48660 Kato Road, Fremont. The SAM record carries the California company number, so those two are one company. The Manteno plant has a SAM record and two trade records at 333 South Spruce Street. One trade record is wrongly typed as a person.",
+    "edge_ids": [
+     "e706",
+     "e707",
+     "e708",
+     "e709",
+     "e710",
+     "e711"
+    ],
+    "node_ids": [
+     "jtptt0xXwDPrAN8CN-po4g",
+     "88rCtmTg8g2LPVqmzM7Nhw",
+     "L1HhW3HMqcvXRKoHOQdS2g",
+     "eRITWZG5dyfFu5tqu8tv-g",
+     "TeFCWTgdDF-tAyfunxgqXw",
+     "c3D62Of8RTLeBCM9wnuCvw",
+     "a2CIEyP-znrNrpln9qssYA"
+    ],
+    "call_ids": [
+     "s702",
+     "s704",
+     "s705",
+     "s707",
+     "s714",
+     "s715",
+     "s716"
+    ]
+   },
+   {
+    "title": "The owner: visible from China, not from the US",
+    "kicker": "Step 2 · Contractual",
+    "text": "Chinese registry data shows Gotion High-Tech owning 99.8% of Hefei Gotion, which owns a 'Gotion High-Tech (USA)' company in China's outbound-investment filings. California lists no shareholders, and Sayari found no owners for Gotion, Inc. Gotion High-Tech's own 2023 annual report closes the gap: it calls GOTION, INC. (国轩高科（美国）有限公司) a wholly owned subsidiary, and lists Gotion Illinois New Energy as 100% held by it. A director, Steven Cai, shares a name with a Gotion High-Tech director. Volkswagen (China) Investment held 24.28% of the parent at 30 Jun 2026, and in Sep 2026 agreed to sell 5.30% to a Hefei state investor, which will leave it with 18.98%.",
+    "edge_ids": [
+     "e701",
+     "e702",
+     "e703",
+     "e704",
+     "e705",
+     "e716",
+     "e717",
+     "e718",
+     "e719",
+     "e720"
+    ],
+    "node_ids": [
+     "Ba3SkSLr0jnGdVR7sWcnWQ",
+     "cqrsueiPWsIEIMOtO6v_Pg",
+     "sfUxx_TMvkJFG13vTnqbwQ",
+     "azdv0UO5gpHsKUJso_CA_Q",
+     "S-yRq5dFMQKTkiXrPaKPGQ",
+     "ru0HQoZ0MqsV_E41dQ5qEQ",
+     "0TsZzKZdA9j4qq_JfBakUQ",
+     "yO_m3IE68dktKtJnqx7OtQ"
+    ],
+    "call_ids": [
+     "s705",
+     "s706",
+     "s717",
+     "s718",
+     "s719",
+     "s720",
+     "s722",
+     "s725"
+    ]
+   },
+   {
+    "title": "Inputs: straight from the parent's factories",
+    "kicker": "Step 3 · Transactional",
+    "text": "Two rows of artificial graphite (HS 3801.10) went from Hefei Gotion to Gotion Inc. in Fremont, shipped from Busan on 23 Dec 2025. Lithium-ion cells and packs (HS 8507) arrive from Hefei Gotion and the group's Tongcheng plant. Some US import rows list Kingston, Jamaica as the last port: that is a ZIM transshipment hub, and the bills of lading were issued in Shanghai and Yantian, so these are Chinese shipments, not a Jamaican route. That includes 29 rows of packs bound for Manteno in Aug 2026. A Taiwan trader, Green Innovation International, sends pack covers and storage-system parts. No natural graphite (HS 2504) or petroleum coke appears.",
+    "edge_ids": [
+     "e721",
+     "e722",
+     "e723",
+     "e724",
+     "e725",
+     "e726",
+     "e727",
+     "e728",
+     "e729",
+     "e730",
+     "e731",
+     "e712",
+     "e713",
+     "e714"
+    ],
+    "node_ids": [
+     "KL5fNOIkqdQV8ZW_4a0wqw",
+     "Ctq4KZl1vI__Cm_ocAMNsg",
+     "L2r51cgdgK63Sk516U52Jg",
+     "EJwFUVeWPX6ErSnqA4dxgw",
+     "mFuYdHo30dU4r8kU_11y7w"
+    ],
+    "call_ids": [
+     "s709",
+     "s710",
+     "s712",
+     "s713",
+     "s716"
+    ]
+   },
+   {
+    "title": "Customers and status",
+    "kicker": "Step 4 · Gap",
+    "text": "US records don't show who buys from the Manteno plant; US export and domestic sales aren't in customs data. A press release names Richardson Electronics as a storage partner. Sayari does show US firms buying Gotion batteries straight from China, such as Moxion Power, up to Feb 2024. Manteno is operating, with five lines and about 300 staff by Nov 2025. Big Rapids, Michigan, was declared abandoned by the state in Sep 2025 and is now in court.",
+    "edge_ids": [
+     "e732",
+     "e733",
+     "e734",
+     "e735",
+     "e736"
+    ],
+    "node_ids": [
+     "1uN_EFYSidIznJZMZxptlw",
+     "x-d_uxTn-TE8ay6FKmZZAA",
+     "hycXzh23OxAAkCsQbnw6uQ",
+     "z5PIbfNlNWbM_PtzLkUvbg",
+     "kqhzX49SUGOaae-QwH0Cvw",
+     "case7-richardson-electronics",
+     "case7-big-rapids-project"
+    ],
+    "call_ids": [
+     "s727",
+     "s728",
+     "s731",
+     "t701",
+     "t702"
+    ]
+   }
+  ],
+  "verdict": {
+   "detected": [
+    {
+     "text": "Artificial graphite (HS 3801.10) shipped by Hefei Gotion to Gotion Inc., Fremont, via Busan on 23 Dec 2025 (2 rows).",
+     "call_ids": [
+      "s710",
+      "s712"
+     ]
+    },
+    {
+     "text": "Lithium-ion cells, packs and parts (HS 8507) from Gotion group plants in Hefei and Tongcheng to Gotion Inc. and the Manteno plant, 2024 – Sep 2026, including 29 Manteno-bound pack rows in Aug 2026.",
+     "call_ids": [
+      "s713",
+      "s716"
+     ]
+    },
+    {
+     "text": "Chinese registry ownership: Gotion High-Tech owns 99.8% of Hefei Gotion, which owns a US subsidiary per China's outbound-investment filings.",
+     "call_ids": [
+      "s718",
+      "s719",
+      "s720"
+     ]
+    },
+    {
+     "text": "Volkswagen (China) Investment holds 24.28% of Gotion High-Tech (2026 interim report), falling to 18.98% under a 5.30% sale to Hefei Construction Investment agreed 28 Sep 2026.",
+     "call_ids": [
+      "s725"
+     ]
+    },
+    {
+     "text": "Gotion High-Tech's 2023 annual report: GOTION, INC. is a wholly owned subsidiary, and Gotion Illinois New Energy (set up Dec 2023) is 100% held by it.",
+     "call_ids": [
+      "w010",
+      "w013"
+     ]
+    }
+   ],
+   "suggested": [
+    {
+     "text": "That the MOFCOM 'Gotion High-Tech (USA)' is the Fremont Gotion, Inc.: name, a shared director name (Steven Cai) and press agree, but no US record states it.",
+     "call_ids": [
+      "s705",
+      "s719",
+      "s720",
+      "t702"
+     ]
+    },
+    {
+     "text": "Gotion, Inc. controls the Manteno plant: shipments consigned to Gotion, Inc. are delivered to Gotion Illinois.",
+     "call_ids": [
+      "s716"
+     ]
+    },
+    {
+     "text": "US buyers of Gotion cells shipped direct from China: Moxion Power (graph and rollup agree); 1Energy Systems and Caban Systems appear in a rollup only.",
+     "call_ids": [
+      "s727",
+      "s731"
+     ]
+    }
+   ],
+   "not_visible": [
+    {
+     "text": "Who owns Gotion, Inc. and Gotion Illinois, from any US record. California and SAM list no shareholders.",
+     "call_ids": [
+      "s705",
+      "s706",
+      "s715"
+     ]
+    },
+    {
+     "text": "Who buys Manteno's output. US domestic sales don't appear in import data.",
+     "call_ids": [
+      "s727"
+     ]
+    },
+    {
+     "text": "Where the anode graphite inside the imported cells came from. Cells arrive finished; their graphite is upstream in China.",
+     "call_ids": [
+      "s710"
+     ]
+    }
+   ]
   },
-  "entities": [
-    {
-      "id": "Ba3SkSLr0jnGdVR7sWcnWQ",
-      "name": "Gotion High-Tech Co., Ltd. (国轩高科; record carrying former name Jiangsu Dongyuan Electrical)",
-      "country": "CHN",
-      "type": "company",
-      "role": "parent",
-      "risk_flags": [
-        "chinese_soe_adjacent",
-        "owner_of_soe",
-        "owned_by_regulatory_action_entity"
-      ],
-      "identifiers": {
-        "cn_uscc": "91320600138346792B",
-        "lei": "300300J1NKV8ZBF0KN15"
-      },
-      "summary": "The listed Chinese parent (Shenzhen code 002074), headquartered in Hefei. This record still carries the former name Jiangsu Dongyuan Electrical Group. It shows Hefei Gotion as a 99.8% subsidiary, and also, wrongly, as a 99.8% owner: a loop in the data. Its SOE flags are adjacency flags, not proof of state ownership.",
-      "source_call_ids": [
-        "s704",
-        "s718",
-        "s720",
-        "s721",
-        "s722",
-        "s725"
-      ],
-      "sayari_url": "https://graph.sayari.com/resource/entity/Ba3SkSLr0jnGdVR7sWcnWQ"
-    },
-    {
-      "id": "cqrsueiPWsIEIMOtO6v_Pg",
-      "name": "国轩高科股份有限公司 (Gotion High-Tech, second registry record)",
-      "country": "CHN",
-      "type": "company",
-      "role": "parent",
-      "risk_flags": [
-        "regulatory_action"
-      ],
-      "identifiers": {
-        "cn_uscc": "91320600138346792B"
-      },
-      "summary": "A second registry record for the same parent, with the same credit code. It has no subsidiaries attached, so ownership searches from it return nothing.",
-      "source_call_ids": [
-        "s704",
-        "s717"
-      ],
-      "sayari_url": "https://graph.sayari.com/resource/entity/cqrsueiPWsIEIMOtO6v_Pg"
-    },
-    {
-      "id": "sfUxx_TMvkJFG13vTnqbwQ",
-      "name": "Hefei Gotion High-Tech Power Energy Co., Ltd. (合肥国轩高科动力能源有限公司)",
-      "country": "CHN",
-      "type": "company",
-      "role": "producer",
-      "risk_flags": [
-        "owner_of_soe",
-        "owned_by_regulatory_action_entity"
-      ],
-      "identifiers": {
-        "cn_uscc": "913401007885639594",
-        "lei": "300300YVS5U5YD31N853"
-      },
-      "summary": "Gotion's main cell-making subsidiary, 99.8% owned by the listed parent. It is the registered owner of Gotion High-Tech (USA), and it ships cells and parts to the US companies.",
-      "source_call_ids": [
-        "s710",
-        "s713",
-        "s716",
-        "s718",
-        "s719",
-        "s720",
-        "s731"
-      ],
-      "sayari_url": "https://graph.sayari.com/resource/entity/sfUxx_TMvkJFG13vTnqbwQ"
-    },
-    {
-      "id": "azdv0UO5gpHsKUJso_CA_Q",
-      "name": "国轩高科（美国）有限公司 (Gotion High-Tech (USA) Co., MOFCOM record)",
-      "country": "USA",
-      "type": "company",
-      "role": "parent",
-      "risk_flags": [
-        "owned_by_regulatory_action_entity"
-      ],
-      "identifiers": {},
-      "summary": "A US subsidiary of Hefei Gotion, recorded in China's outbound-investment filings. It has no US address or identifier, so we can't tie it to Gotion, Inc. by record. The name is the only link.",
-      "source_call_ids": [
-        "s718",
-        "s719"
-      ],
-      "sayari_url": "https://graph.sayari.com/resource/entity/azdv0UO5gpHsKUJso_CA_Q"
-    },
-    {
-      "id": "jtptt0xXwDPrAN8CN-po4g",
-      "name": "Gotion, Inc. (California registry)",
-      "country": "USA",
-      "type": "company",
-      "role": "transit_plant",
-      "risk_flags": [],
-      "identifiers": {
-        "ca_corporate_id_num": "03655947"
-      },
-      "summary": "Gotion's US headquarters company in Fremont, California, registered 12 Mar 2014. Directors include Steven Cai. California lists no shareholders, so the registry can't show who owns it.",
-      "source_call_ids": [
-        "s704",
-        "s705",
-        "s722",
-        "t702"
-      ],
-      "sayari_url": "https://graph.sayari.com/resource/entity/jtptt0xXwDPrAN8CN-po4g"
-    },
-    {
-      "id": "88rCtmTg8g2LPVqmzM7Nhw",
-      "name": "Gotion, Inc. (SAM.gov record)",
-      "country": "USA",
-      "type": "company",
-      "role": "transit_plant",
-      "risk_flags": [],
-      "identifiers": {
-        "usa_sam_uei_number": "EKWPJTF2FM43",
-        "cage": "7Z4Q1",
-        "unknown": "3655947"
-      },
-      "summary": "Federal contractor record for Gotion, Inc. It carries the California corporate number, so it is the same company. Sayari returns no owners for it.",
-      "source_call_ids": [
-        "s704",
-        "s706",
-        "s722"
-      ],
-      "sayari_url": "https://graph.sayari.com/resource/entity/88rCtmTg8g2LPVqmzM7Nhw"
-    },
-    {
-      "id": "L1HhW3HMqcvXRKoHOQdS2g",
-      "name": "GOTION INC. (trade record, Fremont)",
-      "country": "USA",
-      "type": "company",
-      "role": "transit_plant",
-      "risk_flags": [
-        "chinese_soe_adjacent",
-        "forced_labor_uflpa_origin_subtier_product_blueprint",
-        "forced_labor_aspi_origin_subtier_product_blueprint",
-        "forced_labor_sheffield_hallam_university_reports_origin_subtier_product_blueprint"
-      ],
-      "identifiers": {},
-      "summary": "The importer of record for most US Gotion trade: 48660 Kato Road, Fremont. It receives artificial graphite, cells, packs and machinery from Gotion group plants in China. Many rows are delivered to the Manteno plant. Flags are sub-tier or one-hop flags, context only.",
-      "source_call_ids": [
-        "s707",
-        "s708",
-        "s709",
-        "s710",
-        "s712",
-        "s713",
-        "s716",
-        "s727"
-      ],
-      "sayari_url": "https://graph.sayari.com/resource/entity/L1HhW3HMqcvXRKoHOQdS2g"
-    },
-    {
-      "id": "eRITWZG5dyfFu5tqu8tv-g",
-      "name": "GOTION,INC. (trade record 2)",
-      "country": "USA",
-      "type": "company",
-      "role": "transit_plant",
-      "risk_flags": [],
-      "identifiers": {},
-      "summary": "A small trade record for Gotion, Inc. (9 shipments). It received an energy-storage control cabinet from Hefei Gotion in Feb 2026.",
-      "source_call_ids": [
-        "s704",
-        "s716",
-        "s727"
-      ],
-      "sayari_url": "https://graph.sayari.com/resource/entity/eRITWZG5dyfFu5tqu8tv-g"
-    },
-    {
-      "id": "TeFCWTgdDF-tAyfunxgqXw",
-      "name": "Gotion Illinois New Energy Inc (Manteno plant)",
-      "country": "USA",
-      "type": "company",
-      "role": "transit_plant",
-      "risk_flags": [],
-      "identifiers": {
-        "usa_sam_uei_number": "SZESYXG93LF8",
-        "cage": "18RZ0"
-      },
-      "summary": "The Manteno, Illinois plant company, 333 South Spruce St. Registered in SAM on 29 Jan 2026. It imports test modules, racking and packing goods directly; most inputs arrive consigned to Gotion, Inc. The press says it builds energy-storage systems and EV packs.",
-      "source_call_ids": [
-        "s704",
-        "s715",
-        "s716",
-        "s727",
-        "t701"
-      ],
-      "sayari_url": "https://graph.sayari.com/resource/entity/TeFCWTgdDF-tAyfunxgqXw"
-    },
-    {
-      "id": "c3D62Of8RTLeBCM9wnuCvw",
-      "name": "Gotion Illinois New Energy (trade record, mis-typed as a person)",
-      "country": "USA",
-      "type": "company",
-      "role": "transit_plant",
-      "risk_flags": [],
-      "identifiers": {},
-      "summary": "A trade record for the Manteno plant at the same address. Sayari types it as a person, which is a data error. 47 shipments to Jul 2025, mainly battery parts and pack covers.",
-      "source_call_ids": [
-        "s704",
-        "s709",
-        "s714",
-        "s716",
-        "s727"
-      ],
-      "sayari_url": "https://graph.sayari.com/resource/entity/c3D62Of8RTLeBCM9wnuCvw"
-    },
-    {
-      "id": "a2CIEyP-znrNrpln9qssYA",
-      "name": "GOTION ILLINOIS (trade record 3)",
-      "country": "USA",
-      "type": "company",
-      "role": "transit_plant",
-      "risk_flags": [],
-      "identifiers": {},
-      "summary": "A name-only trade record for the Manteno plant. It received a high-voltage box from Hefei Gotion on 27 Dec 2025.",
-      "source_call_ids": [
-        "s716"
-      ],
-      "sayari_url": "https://graph.sayari.com/resource/entity/a2CIEyP-znrNrpln9qssYA"
-    },
-    {
-      "id": "KL5fNOIkqdQV8ZW_4a0wqw",
-      "name": "HEFEI GOTION HIGH-TECH POWER ENERGY (trade record)",
-      "country": "CHN",
-      "type": "company",
-      "role": "producer",
-      "risk_flags": [],
-      "identifiers": {},
-      "summary": "A trade-data record of Hefei Gotion at 599 Daihe Road, Hefei. It shipped the artificial graphite (HS 3801.10) via Busan to Gotion Inc. in Dec 2025, plus cells, dummy cells and parts in 2025–2026.",
-      "source_call_ids": [
-        "s708",
-        "s710",
-        "s712",
-        "s713",
-        "s714",
-        "s715",
-        "s716",
-        "s731"
-      ],
-      "sayari_url": "https://graph.sayari.com/resource/entity/KL5fNOIkqdQV8ZW_4a0wqw"
-    },
-    {
-      "id": "Ctq4KZl1vI__Cm_ocAMNsg",
-      "name": "HEFEI GOTION HIGH-TECH POWER ENERGYCO.,LTD (trade record 2)",
-      "country": "CHN",
-      "type": "company",
-      "role": "producer",
-      "risk_flags": [],
-      "identifiers": {},
-      "summary": "Another trade record of Hefei Gotion at 599 Daihe Road. It shipped Li-ion cells (some transshipped at Kingston, Jamaica) and an energy-storage pack to Gotion Inc. in Jul–Aug 2026.",
-      "source_call_ids": [
-        "s708",
-        "s710",
-        "s713",
-        "s716",
-        "s731"
-      ],
-      "sayari_url": "https://graph.sayari.com/resource/entity/Ctq4KZl1vI__Cm_ocAMNsg"
-    },
-    {
-      "id": "L2r51cgdgK63Sk516U52Jg",
-      "name": "Tongcheng Guoxuan New Energy Co., Ltd. (trade record)",
-      "country": "CHN",
-      "type": "company",
-      "role": "producer",
-      "risk_flags": [],
-      "identifiers": {},
-      "summary": "A Gotion group cell plant in Tongcheng, Anqing ('Guoxuan' is Gotion's Chinese name). The largest battery shipper to the US arm in 2026: Li-ion cells in Jul and packs bound for Manteno in Aug.",
-      "source_call_ids": [
-        "s708",
-        "s710",
-        "s713",
-        "s716"
-      ],
-      "sayari_url": "https://graph.sayari.com/resource/entity/L2r51cgdgK63Sk516U52Jg"
-    },
-    {
-      "id": "aXSAK32rB7828zLgi_C4zA",
-      "name": "TONGCHENG GUOXUAN NEW ENERGY CO. (trade record 2)",
-      "country": "CHN",
-      "type": "company",
-      "role": "producer",
-      "risk_flags": [],
-      "identifiers": {},
-      "summary": "A second trade record for the Tongcheng plant. It is listed as a supplier to the Manteno trade record.",
-      "source_call_ids": [
-        "s708",
-        "s714"
-      ],
-      "sayari_url": "https://graph.sayari.com/resource/entity/aXSAK32rB7828zLgi_C4zA"
-    },
-    {
-      "id": "EJwFUVeWPX6ErSnqA4dxgw",
-      "name": "Green Innovation International Co., Ltd.",
-      "country": "TWN",
-      "type": "company",
-      "role": "trader",
-      "risk_flags": [],
-      "identifiers": {},
-      "summary": "A Taiwan-registered trader that ships Chinese-made battery pack covers, storage-system accessories and cables to Gotion Inc. and the Manteno plant, Jul 2025 to Sep 2026.",
-      "source_call_ids": [
-        "s708",
-        "s710",
-        "s714",
-        "s716"
-      ],
-      "sayari_url": "https://graph.sayari.com/resource/entity/EJwFUVeWPX6ErSnqA4dxgw"
-    },
-    {
-      "id": "0TsZzKZdA9j4qq_JfBakUQ",
-      "name": "Volkswagen (China) Investment Co., Ltd. (大众汽车（中国）投资有限公司)",
-      "country": "CHN",
-      "type": "company",
-      "role": "parent",
-      "risk_flags": [
-        "soe_adjacent",
-        "regulatory_action"
-      ],
-      "identifiers": {
-        "cn_uscc": "911100007109204855"
-      },
-      "summary": "Volkswagen's Chinese holding company. Sayari's registry graph lists it as a shareholder of Gotion High-Tech; it gives no percentage.",
-      "source_call_ids": [
-        "s724",
-        "s725"
-      ],
-      "sayari_url": "https://graph.sayari.com/resource/entity/0TsZzKZdA9j4qq_JfBakUQ"
-    },
-    {
-      "id": "yO_m3IE68dktKtJnqx7OtQ",
-      "name": "Nanjing Gotion Holding Group Co., Ltd. (南京国轩控股集团有限公司)",
-      "country": "CHN",
-      "type": "company",
-      "role": "parent",
-      "risk_flags": [
-        "owner_of_soe"
-      ],
-      "identifiers": {},
-      "summary": "A shareholder of Gotion High-Tech with 10.59% in the registry record.",
-      "source_call_ids": [
-        "s720"
-      ],
-      "sayari_url": "https://graph.sayari.com/resource/entity/yO_m3IE68dktKtJnqx7OtQ"
-    },
-    {
-      "id": "S-yRq5dFMQKTkiXrPaKPGQ",
-      "name": "Steven Cai (director, Gotion, Inc.)",
-      "country": "USA",
-      "type": "person",
-      "role": "officer",
-      "risk_flags": [],
-      "identifiers": {},
-      "summary": "Director of Gotion, Inc. in the California registry. A person of the same name is deputy general manager and non-independent director of Gotion High-Tech in China. Same name only, so it is a lead, but it is the clearest people-link between the US company and the parent.",
-      "source_call_ids": [
-        "s705"
-      ],
-      "sayari_url": "https://graph.sayari.com/resource/entity/S-yRq5dFMQKTkiXrPaKPGQ"
-    },
-    {
-      "id": "ru0HQoZ0MqsV_E41dQ5qEQ",
-      "name": "Steven Cai (deputy GM and director, Gotion High-Tech)",
-      "country": "CHN",
-      "type": "person",
-      "role": "officer",
-      "risk_flags": [],
-      "identifiers": {},
-      "summary": "Deputy general manager and non-independent director of Gotion High-Tech, per the Chinese registry record.",
-      "source_call_ids": [
-        "s720"
-      ],
-      "sayari_url": "https://graph.sayari.com/resource/entity/ru0HQoZ0MqsV_E41dQ5qEQ"
-    },
-    {
-      "id": "mFuYdHo30dU4r8kU_11y7w",
-      "name": "1st Choice Freight Service Inc.",
-      "country": "USA",
-      "type": "company",
-      "role": "buyer",
-      "risk_flags": [],
-      "identifiers": {
-        "ca_corporate_id_num": "06327947"
-      },
-      "summary": "A US freight forwarder named as consignee on 186 Gotion-related shipments, including Li-ion cells from Hefei Guoxuan, transshipped at Kingston, Jamaica, in Aug 2026. A logistics party, not an end customer.",
-      "source_call_ids": [
-        "s709",
-        "s713",
-        "s727"
-      ],
-      "sayari_url": "https://graph.sayari.com/resource/entity/mFuYdHo30dU4r8kU_11y7w"
-    },
-    {
-      "id": "1uN_EFYSidIznJZMZxptlw",
-      "name": "Moxion Power Co.",
-      "country": "USA",
-      "type": "company",
-      "role": "us_buyer",
-      "risk_flags": [],
-      "identifiers": {
-        "usa_sec_cik_number": "0001863715",
-        "usa_sam_uei_number": "ZS5GW3TM9Q79"
-      },
-      "summary": "A US mobile power-storage maker. Sayari shows it buying Li-ion batteries (HS 8507.60) from Hefei Gotion: 28 shipments, the latest on 21 Feb 2024. A direct buyer from China, not from the US plants.",
-      "source_call_ids": [
-        "s727",
-        "s731"
-      ],
-      "sayari_url": "https://graph.sayari.com/resource/entity/1uN_EFYSidIznJZMZxptlw"
-    },
-    {
-      "id": "x-d_uxTn-TE8ay6FKmZZAA",
-      "name": "1Energy Systems Inc",
-      "country": "USA",
-      "type": "company",
-      "role": "us_buyer",
-      "risk_flags": [
-        "sheffield_hallam_university_forced_labor_reports_entity_adjacent"
-      ],
-      "identifiers": {
-        "usa_sec_cik_number": "0001574991"
-      },
-      "summary": "Appears in the buyer rollup for Gotion-named US imports (15 shipments, HS 8507.60 among them, to Oct 2025). The shipper isn't shown per row, so this is a lead.",
-      "source_call_ids": [
-        "s727"
-      ],
-      "sayari_url": "https://graph.sayari.com/resource/entity/x-d_uxTn-TE8ay6FKmZZAA"
-    },
-    {
-      "id": "hycXzh23OxAAkCsQbnw6uQ",
-      "name": "Caban Systems Inc",
-      "country": "USA",
-      "type": "company",
-      "role": "us_buyer",
-      "risk_flags": [],
-      "identifiers": {
-        "ca_corporate_id_num": "04269794"
-      },
-      "summary": "Appears in the buyer rollup for Gotion-named US imports (5 shipments to Oct 2025). The shipper isn't shown per row, so this is a lead.",
-      "source_call_ids": [
-        "s727"
-      ],
-      "sayari_url": "https://graph.sayari.com/resource/entity/hycXzh23OxAAkCsQbnw6uQ"
-    },
-    {
-      "id": "z5PIbfNlNWbM_PtzLkUvbg",
-      "name": "Livguard Energy Technologies Private Limited",
-      "country": "IND",
-      "type": "company",
-      "role": "buyer",
-      "risk_flags": [],
-      "identifiers": {},
-      "summary": "An Indian battery firm that Sayari lists as a buyer from the Gotion Inc. trade record. Likely Chinese-made goods sold under Gotion Inc.'s name, not exports from Fremont.",
-      "source_call_ids": [
-        "s707"
-      ],
-      "sayari_url": "https://graph.sayari.com/resource/entity/z5PIbfNlNWbM_PtzLkUvbg"
-    },
-    {
-      "id": "kqhzX49SUGOaae-QwH0Cvw",
-      "name": "VinES Energy Solutions JSC (Công ty Cổ phần Giải pháp Năng lượng Xanh VinEG)",
-      "country": "VNM",
-      "type": "company",
-      "role": "buyer",
-      "risk_flags": [],
-      "identifiers": {},
-      "summary": "A Vietnamese battery maker that Sayari lists as a buyer from the Gotion Inc. trade record.",
-      "source_call_ids": [
-        "s707"
-      ],
-      "sayari_url": "https://graph.sayari.com/resource/entity/kqhzX49SUGOaae-QwH0Cvw"
-    },
-    {
-      "id": "case7-richardson-electronics",
-      "name": "Richardson Electronics, Ltd. — not resolved in Sayari",
-      "country": "USA",
-      "type": "company",
-      "role": "us_buyer",
-      "risk_flags": [],
-      "identifiers": {},
-      "summary": "An Illinois company that announced a battery-storage partnership with Gotion Inc. on 13 May 2026, using product from the Manteno plant. Known from its own press release only.",
-      "source_call_ids": [
-        "t701"
-      ],
-      "sayari_url": null
-    },
-    {
-      "id": "case7-big-rapids-project",
-      "name": "Gotion Big Rapids project (Green Charter Township, Michigan) — not in Sayari",
-      "country": "USA",
-      "type": "company",
-      "role": "transit_plant",
-      "risk_flags": [],
-      "identifiers": {},
-      "summary": "A planned $2.36bn battery-materials plant that was never built. Michigan declared Gotion in default in Sep 2025 and demanded $23.7m back in Jan 2026. Gotion is suing the township. Sayari has no record or trade for it.",
-      "source_call_ids": [
-        "s728",
-        "t702"
-      ],
-      "sayari_url": null
-    }
+  "passport": [
+   {
+    "field": "Place of manufacture",
+    "guidance_no": "8",
+    "declared": "Manteno, Illinois, USA (pack and storage-system assembly).",
+    "paper_trail": "Cells and packs made by Gotion plants in Hefei and Tongcheng, China, then imported.",
+    "gap": true,
+    "note": "A US 'place of manufacture' can hide Chinese cells."
+   },
+   {
+    "field": "Detailed composition (anode)",
+    "guidance_no": "45",
+    "declared": "'Graphite' as anode material, if declared.",
+    "paper_trail": "Finished cells arrive from China; one lot of artificial graphite (HS 3801.10) went to Fremont in Dec 2025.",
+    "gap": true,
+    "note": "The anode is made inside the imported cell, so its source is out of sight."
+   },
+   {
+    "field": "Critical raw materials > 0.1%",
+    "guidance_no": "15",
+    "declared": "Natural graphite listed if present.",
+    "paper_trail": "No natural graphite (HS 2504) seen; artificial graphite only.",
+    "gap": false,
+    "note": "Consistent, if declared."
+   },
+   {
+    "field": "Responsible-sourcing (due-diligence) report",
+    "guidance_no": "19",
+    "declared": "Deferred under the EU Battery Regulation; no US equivalent.",
+    "paper_trail": "Sub-tier forced-labor 'product blueprint' flags on the Gotion Inc. trade record.",
+    "gap": true,
+    "note": "Flags describe suppliers two to four tiers up, not Gotion itself."
+   },
+   {
+    "field": "Ownership of upstream suppliers",
+    "guidance_no": "—",
+    "declared": "No such field in the EU passport.",
+    "paper_trail": "Suppliers are the parent's own plants: Hefei Gotion, 99.8% owned by Gotion High-Tech.",
+    "gap": true,
+    "note": "Here the supplier and the owner are the same Chinese group."
+   }
   ],
-  "edges": [
-    {
-      "id": "e701",
-      "source": "cqrsueiPWsIEIMOtO6v_Pg",
-      "target": "Ba3SkSLr0jnGdVR7sWcnWQ",
-      "relation": "possibly_same_as",
-      "edge_type": "inferred",
-      "confidence": "documented",
-      "hs_codes": [],
-      "first_seen": null,
-      "last_seen": null,
-      "shipment_count": null,
-      "evidence": "Two registry records of the parent with the same Unified Social Credit Code, 91320600138346792B.",
-      "source_call_ids": [
-        "s704",
-        "s720"
-      ],
-      "case_ids": [
-        "case-7"
-      ],
-      "confidence_reason": "They share a Chinese credit code, which identifies one legal entity."
-    },
-    {
-      "id": "e702",
-      "source": "Ba3SkSLr0jnGdVR7sWcnWQ",
-      "target": "sfUxx_TMvkJFG13vTnqbwQ",
-      "relation": "owns",
-      "edge_type": "contractual",
-      "confidence": "documented",
-      "hs_codes": [],
-      "first_seen": null,
-      "last_seen": null,
-      "shipment_count": null,
-      "evidence": "Gotion High-Tech owns 99.8182% of Hefei Gotion High-Tech Power Energy, per Chinese registry data. The same record also lists Hefei Gotion as owning 99.8182% of the parent. That reverse link is a loop, a data artefact, and we don't show it.",
-      "source_call_ids": [
-        "s718",
-        "s720"
-      ],
-      "case_ids": [
-        "case-7"
-      ],
-      "confidence_reason": "Chinese registry data lists the shareholding with a percentage."
-    },
-    {
-      "id": "e703",
-      "source": "sfUxx_TMvkJFG13vTnqbwQ",
-      "target": "azdv0UO5gpHsKUJso_CA_Q",
-      "relation": "owns",
-      "edge_type": "contractual",
-      "confidence": "documented",
-      "hs_codes": [],
-      "first_seen": null,
-      "last_seen": null,
-      "shipment_count": null,
-      "evidence": "Hefei Gotion is the shareholder and parent of 国轩高科（美国）有限公司 in China's MOFCOM outbound-investment records.",
-      "source_call_ids": [
-        "s718",
-        "s719"
-      ],
-      "case_ids": [
-        "case-7"
-      ],
-      "confidence_reason": "A Chinese government outbound-investment filing records the US subsidiary."
-    },
-    {
-      "id": "e704",
-      "source": "azdv0UO5gpHsKUJso_CA_Q",
-      "target": "jtptt0xXwDPrAN8CN-po4g",
-      "relation": "possibly_same_as",
-      "edge_type": "inferred",
-      "confidence": "lead",
-      "hs_codes": [],
-      "first_seen": null,
-      "last_seen": null,
-      "shipment_count": null,
-      "evidence": "The MOFCOM record 'Gotion High-Tech (USA)' has no address or US identifier. Only the name points to Gotion, Inc. in Fremont.",
-      "source_call_ids": [
-        "s719",
-        "s705"
-      ],
-      "case_ids": [
-        "case-7"
-      ],
-      "confidence_reason": "A name match only; no shared address or identifier."
-    },
-    {
-      "id": "e705",
-      "source": "Ba3SkSLr0jnGdVR7sWcnWQ",
-      "target": "jtptt0xXwDPrAN8CN-po4g",
-      "relation": "owns",
-      "edge_type": "contractual",
-      "confidence": "corroborated",
-      "hs_codes": [],
-      "first_seen": null,
-      "last_seen": null,
-      "shipment_count": null,
-      "evidence": "Gotion High-Tech is the ultimate owner of Gotion, Inc. Registry data shows the chain Gotion High-Tech → Hefei Gotion → a US subsidiary. The press describes Gotion, Inc. as the US subsidiary of Gotion High-Tech. No US filing names the shareholder.",
-      "source_call_ids": [
-        "s718",
-        "s719",
-        "s722",
-        "t702"
-      ],
-      "case_ids": [
-        "case-7"
-      ],
-      "confidence_reason": "A Chinese registry chain and independent press agree, but the last step to the Fremont company rests on name and press, not a US record."
-    },
-    {
-      "id": "e706",
-      "source": "88rCtmTg8g2LPVqmzM7Nhw",
-      "target": "jtptt0xXwDPrAN8CN-po4g",
-      "relation": "possibly_same_as",
-      "edge_type": "inferred",
-      "confidence": "documented",
-      "hs_codes": [],
-      "first_seen": null,
-      "last_seen": null,
-      "shipment_count": null,
-      "evidence": "The SAM.gov record carries 3655947, the California corporate number 03655947.",
-      "source_call_ids": [
-        "s704",
-        "s705"
-      ],
-      "case_ids": [
-        "case-7"
-      ],
-      "confidence_reason": "They share a registry identifier."
-    },
-    {
-      "id": "e707",
-      "source": "L1HhW3HMqcvXRKoHOQdS2g",
-      "target": "jtptt0xXwDPrAN8CN-po4g",
-      "relation": "possibly_same_as",
-      "edge_type": "inferred",
-      "confidence": "inferred",
-      "hs_codes": [],
-      "first_seen": null,
-      "last_seen": null,
-      "shipment_count": null,
-      "evidence": "The trade record and the registry record share 48660 Kato Road, Fremont, and the name. Sayari also links the trade and SAM records as 'possibly the same as'.",
-      "source_call_ids": [
-        "s705",
-        "s707",
-        "s712",
-        "s722"
-      ],
-      "case_ids": [
-        "case-7"
-      ],
-      "confidence_reason": "Same street address and name, but no shared identifier."
-    },
-    {
-      "id": "e708",
-      "source": "eRITWZG5dyfFu5tqu8tv-g",
-      "target": "jtptt0xXwDPrAN8CN-po4g",
-      "relation": "possibly_same_as",
-      "edge_type": "inferred",
-      "confidence": "lead",
-      "hs_codes": [],
-      "first_seen": null,
-      "last_seen": null,
-      "shipment_count": null,
-      "evidence": "A small trade record with the same name and no address shown.",
-      "source_call_ids": [
-        "s704",
-        "s716"
-      ],
-      "case_ids": [
-        "case-7"
-      ],
-      "confidence_reason": "A name match only."
-    },
-    {
-      "id": "e709",
-      "source": "c3D62Of8RTLeBCM9wnuCvw",
-      "target": "TeFCWTgdDF-tAyfunxgqXw",
-      "relation": "possibly_same_as",
-      "edge_type": "inferred",
-      "confidence": "inferred",
-      "hs_codes": [],
-      "first_seen": null,
-      "last_seen": null,
-      "shipment_count": null,
-      "evidence": "Both records sit at 333 South Spruce St, Manteno, IL, with the same name.",
-      "source_call_ids": [
-        "s714",
-        "s715"
-      ],
-      "case_ids": [
-        "case-7"
-      ],
-      "confidence_reason": "Same street address and name, but no shared identifier."
-    },
-    {
-      "id": "e710",
-      "source": "a2CIEyP-znrNrpln9qssYA",
-      "target": "TeFCWTgdDF-tAyfunxgqXw",
-      "relation": "possibly_same_as",
-      "edge_type": "inferred",
-      "confidence": "lead",
-      "hs_codes": [],
-      "first_seen": null,
-      "last_seen": null,
-      "shipment_count": null,
-      "evidence": "A trade record named 'Gotion Illinois' with no address shown.",
-      "source_call_ids": [
-        "s716"
-      ],
-      "case_ids": [
-        "case-7"
-      ],
-      "confidence_reason": "A name match only."
-    },
-    {
-      "id": "e711",
-      "source": "jtptt0xXwDPrAN8CN-po4g",
-      "target": "TeFCWTgdDF-tAyfunxgqXw",
-      "relation": "owns",
-      "edge_type": "contractual",
-      "confidence": "inferred",
-      "hs_codes": [],
-      "first_seen": null,
-      "last_seen": null,
-      "shipment_count": null,
-      "evidence": "Customs rows name Gotion, Inc. as consignee with delivery to Gotion Illinois New Energy, 333 South Spruce Street, Manteno. The press calls Manteno Gotion's Illinois plant. No registry record shows who owns Gotion Illinois.",
-      "source_call_ids": [
-        "s716",
-        "t701"
-      ],
-      "case_ids": [
-        "case-7"
-      ],
-      "confidence_reason": "Shipping paperwork and press tie the two companies together, but no record states the shareholding."
-    },
-    {
-      "id": "e712",
-      "source": "KL5fNOIkqdQV8ZW_4a0wqw",
-      "target": "sfUxx_TMvkJFG13vTnqbwQ",
-      "relation": "possibly_same_as",
-      "edge_type": "inferred",
-      "confidence": "inferred",
-      "hs_codes": [],
-      "first_seen": null,
-      "last_seen": null,
-      "shipment_count": null,
-      "evidence": "The trade record and the registry record share No. 599 Daihe Road, Xinzhan District, Hefei.",
-      "source_call_ids": [
-        "s731",
-        "s712"
-      ],
-      "case_ids": [
-        "case-7"
-      ],
-      "confidence_reason": "Same street address and name stem; no shared identifier."
-    },
-    {
-      "id": "e713",
-      "source": "Ctq4KZl1vI__Cm_ocAMNsg",
-      "target": "sfUxx_TMvkJFG13vTnqbwQ",
-      "relation": "possibly_same_as",
-      "edge_type": "inferred",
-      "confidence": "inferred",
-      "hs_codes": [],
-      "first_seen": null,
-      "last_seen": null,
-      "shipment_count": null,
-      "evidence": "The trade record and the registry record share No. 599 Daihe Road and No. 566 Huayuan Avenue, Hefei.",
-      "source_call_ids": [
-        "s731"
-      ],
-      "case_ids": [
-        "case-7"
-      ],
-      "confidence_reason": "Same street addresses and name stem; no shared identifier."
-    },
-    {
-      "id": "e714",
-      "source": "L2r51cgdgK63Sk516U52Jg",
-      "target": "sfUxx_TMvkJFG13vTnqbwQ",
-      "relation": "group_name_match",
-      "edge_type": "inferred",
-      "confidence": "inferred",
-      "hs_codes": [],
-      "first_seen": null,
-      "last_seen": null,
-      "shipment_count": null,
-      "evidence": "'Guoxuan' is Gotion's Chinese name. Hefei Gotion's own record lists a Longchi Road, Tongcheng address, and another Tongcheng Guoxuan record sits on Longchi Road, Anqing.",
-      "source_call_ids": [
-        "s708",
-        "s731"
-      ],
-      "case_ids": [
-        "case-7"
-      ],
-      "confidence_reason": "Group name plus an address on the parent's record; no registry shareholding pulled."
-    },
-    {
-      "id": "e715",
-      "source": "aXSAK32rB7828zLgi_C4zA",
-      "target": "L2r51cgdgK63Sk516U52Jg",
-      "relation": "possibly_same_as",
-      "edge_type": "inferred",
-      "confidence": "lead",
-      "hs_codes": [],
-      "first_seen": null,
-      "last_seen": null,
-      "shipment_count": null,
-      "evidence": "Two truncated trade-name records for Tongcheng Guoxuan New Energy.",
-      "source_call_ids": [
-        "s708",
-        "s714"
-      ],
-      "case_ids": [
-        "case-7"
-      ],
-      "confidence_reason": "A name match only."
-    },
-    {
-      "id": "e716",
-      "source": "S-yRq5dFMQKTkiXrPaKPGQ",
-      "target": "jtptt0xXwDPrAN8CN-po4g",
-      "relation": "director_of",
-      "edge_type": "contractual",
-      "confidence": "documented",
-      "hs_codes": [],
-      "first_seen": null,
-      "last_seen": null,
-      "shipment_count": null,
-      "evidence": "Listed as a current director of Gotion, Inc.",
-      "source_call_ids": [
-        "s705"
-      ],
-      "case_ids": [
-        "case-7"
-      ],
-      "confidence_reason": "California Secretary of State registry record."
-    },
-    {
-      "id": "e717",
-      "source": "ru0HQoZ0MqsV_E41dQ5qEQ",
-      "target": "Ba3SkSLr0jnGdVR7sWcnWQ",
-      "relation": "director_of",
-      "edge_type": "contractual",
-      "confidence": "documented",
-      "hs_codes": [],
-      "first_seen": null,
-      "last_seen": null,
-      "shipment_count": null,
-      "evidence": "Listed as deputy general manager and non-independent director of Gotion High-Tech.",
-      "source_call_ids": [
-        "s720"
-      ],
-      "case_ids": [
-        "case-7"
-      ],
-      "confidence_reason": "Chinese registry record."
-    },
-    {
-      "id": "e718",
-      "source": "S-yRq5dFMQKTkiXrPaKPGQ",
-      "target": "ru0HQoZ0MqsV_E41dQ5qEQ",
-      "relation": "possibly_same_as",
-      "edge_type": "inferred",
-      "confidence": "lead",
-      "hs_codes": [],
-      "first_seen": null,
-      "last_seen": null,
-      "shipment_count": null,
-      "evidence": "Same name, Steven Cai, on the boards of the US company and the Chinese parent.",
-      "source_call_ids": [
-        "s705",
-        "s720"
-      ],
-      "case_ids": [
-        "case-7"
-      ],
-      "confidence_reason": "A name match only; Sayari holds them as two people."
-    },
-    {
-      "id": "e719",
-      "source": "0TsZzKZdA9j4qq_JfBakUQ",
-      "target": "Ba3SkSLr0jnGdVR7sWcnWQ",
-      "relation": "owns",
-      "edge_type": "contractual",
-      "confidence": "documented",
-      "hs_codes": [],
-      "first_seen": null,
-      "last_seen": null,
-      "shipment_count": null,
-      "evidence": "Volkswagen (China) Investment is a shareholder of Gotion High-Tech in Sayari's registry graph. No percentage is given.",
-      "source_call_ids": [
-        "s725"
-      ],
-      "case_ids": [
-        "case-7"
-      ],
-      "confidence_reason": "A registry shareholder link returned by a path search."
-    },
-    {
-      "id": "e720",
-      "source": "yO_m3IE68dktKtJnqx7OtQ",
-      "target": "Ba3SkSLr0jnGdVR7sWcnWQ",
-      "relation": "owns",
-      "edge_type": "contractual",
-      "confidence": "documented",
-      "hs_codes": [],
-      "first_seen": null,
-      "last_seen": null,
-      "shipment_count": null,
-      "evidence": "Nanjing Gotion Holding Group holds 10.59% of Gotion High-Tech.",
-      "source_call_ids": [
-        "s720"
-      ],
-      "case_ids": [
-        "case-7"
-      ],
-      "confidence_reason": "Chinese registry shareholder data with a percentage."
-    },
-    {
-      "id": "e721",
-      "source": "KL5fNOIkqdQV8ZW_4a0wqw",
-      "target": "L1HhW3HMqcvXRKoHOQdS2g",
-      "relation": "ships_to",
-      "edge_type": "transactional",
-      "confidence": "documented",
-      "hs_codes": [
-        "380110"
-      ],
-      "first_seen": "2025-12-23",
-      "last_seen": "2025-12-23",
-      "shipment_count": 2,
-      "evidence": "Artificial graphite (HS 3801.10), 2 rows, shipped from Busan, Korea, to Tacoma on 23 Dec 2025. Shipper address Hefei; receiver 48660 Kato Road, Fremont. No grain size is given, so the grade is unknown.",
-      "source_call_ids": [
-        "s710",
-        "s712"
-      ],
-      "case_ids": [
-        "case-7"
-      ],
-      "confidence_reason": "Sayari returned dated, HS-coded rows (Korean trade data)."
-    },
-    {
-      "id": "e722",
-      "source": "KL5fNOIkqdQV8ZW_4a0wqw",
-      "target": "L1HhW3HMqcvXRKoHOQdS2g",
-      "relation": "ships_to",
-      "edge_type": "transactional",
-      "confidence": "documented",
-      "hs_codes": [
-        "850760",
-        "850790"
-      ],
-      "first_seen": "2024-04-07",
-      "last_seen": "2026-09-08",
-      "shipment_count": null,
-      "evidence": "Li-ion battery modules and battery parts (HS 8507.60, 8507.90), Jul–Sep 2026 (4 rows in s713). The graph shows HS 8507 flows from Apr 2024. Manteno-bound rows (s716) add dummy cells, adhesive and insulation board, Jan–Sep 2026.",
-      "source_call_ids": [
-        "s710",
-        "s713",
-        "s716"
-      ],
-      "case_ids": [
-        "case-7"
-      ],
-      "confidence_reason": "Sayari returned dated, HS-coded rows."
-    },
-    {
-      "id": "e723",
-      "source": "L2r51cgdgK63Sk516U52Jg",
-      "target": "L1HhW3HMqcvXRKoHOQdS2g",
-      "relation": "ships_to",
-      "edge_type": "transactional",
-      "confidence": "documented",
-      "hs_codes": [
-        "850760"
-      ],
-      "first_seen": "2026-07-14",
-      "last_seen": "2026-08-27",
-      "shipment_count": 44,
-      "evidence": "Lithium-ion cells (HS 8507.60), 15 rows on 14–21 Jul 2026, plus 29 rows of Li-ion packs (HTS 8507.60.0020) on 5–27 Aug 2026 in the Manteno-linked search. A separate Tongcheng Guoxuan record also shipped HS 8507 to Gotion Inc. in Jan–Apr 2025.",
-      "source_call_ids": [
-        "s710",
-        "s713",
-        "s716"
-      ],
-      "case_ids": [
-        "case-7"
-      ],
-      "confidence_reason": "Sayari returned dated, HS-coded rows."
-    },
-    {
-      "id": "e724",
-      "source": "sfUxx_TMvkJFG13vTnqbwQ",
-      "target": "L1HhW3HMqcvXRKoHOQdS2g",
-      "relation": "ships_to",
-      "edge_type": "transactional",
-      "confidence": "documented",
-      "hs_codes": [
-        "850760"
-      ],
-      "first_seen": "2025-07-16",
-      "last_seen": "2026-08-10",
-      "shipment_count": null,
-      "evidence": "Li-ion cells (HS 8507.60) on 3 and 10 Aug 2026 (one transshipped at Kingston, Jamaica). The graph shows HS 8507 from China and Korea, Jul 2025 – Aug 2026. Also a carton marked for delivery to Gotion Illinois, Manteno (16 Aug 2025).",
-      "source_call_ids": [
-        "s710",
-        "s713",
-        "s716"
-      ],
-      "case_ids": [
-        "case-7"
-      ],
-      "confidence_reason": "Sayari returned dated, HS-coded rows."
-    },
-    {
-      "id": "e725",
-      "source": "Ctq4KZl1vI__Cm_ocAMNsg",
-      "target": "L1HhW3HMqcvXRKoHOQdS2g",
-      "relation": "ships_to",
-      "edge_type": "transactional",
-      "confidence": "documented",
-      "hs_codes": [
-        "850760"
-      ],
-      "first_seen": "2024-06-20",
-      "last_seen": "2026-08-10",
-      "shipment_count": null,
-      "evidence": "Li-ion cells (HS 8507.60), 2 rows on 10 Aug 2026, transshipped at Kingston, Jamaica (ZIM); an LFP energy-storage pack on 28 Jul 2026; HS 8507 flows from Jun 2024 in the graph.",
-      "source_call_ids": [
-        "s710",
-        "s713",
-        "s716"
-      ],
-      "case_ids": [
-        "case-7"
-      ],
-      "confidence_reason": "Sayari returned dated, HS-coded rows."
-    },
-    {
-      "id": "e726",
-      "source": "EJwFUVeWPX6ErSnqA4dxgw",
-      "target": "L1HhW3HMqcvXRKoHOQdS2g",
-      "relation": "ships_to",
-      "edge_type": "transactional",
-      "confidence": "documented",
-      "hs_codes": [
-        "854449",
-        "7318"
-      ],
-      "first_seen": "2024-12-20",
-      "last_seen": "2026-09-08",
-      "shipment_count": null,
-      "evidence": "Storage-system accessories and coolant (Jul 2025), fasteners (Dec 2024) and insulated cable (HS 8544.49, 8 Sep 2026), all departing China.",
-      "source_call_ids": [
-        "s710",
-        "s716"
-      ],
-      "case_ids": [
-        "case-7"
-      ],
-      "confidence_reason": "Sayari returned dated shipment rows."
-    },
-    {
-      "id": "e727",
-      "source": "EJwFUVeWPX6ErSnqA4dxgw",
-      "target": "c3D62Of8RTLeBCM9wnuCvw",
-      "relation": "ships_to",
-      "edge_type": "transactional",
-      "confidence": "documented",
-      "hs_codes": [],
-      "first_seen": "2025-07-03",
-      "last_seen": "2025-07-11",
-      "shipment_count": 4,
-      "evidence": "Battery pack cover assemblies and battery cases, 4 rows, 3–11 Jul 2025, from China to the Manteno record.",
-      "source_call_ids": [
-        "s714",
-        "s716"
-      ],
-      "case_ids": [
-        "case-7"
-      ],
-      "confidence_reason": "Sayari returned dated shipment rows."
-    },
-    {
-      "id": "e728",
-      "source": "KL5fNOIkqdQV8ZW_4a0wqw",
-      "target": "TeFCWTgdDF-tAyfunxgqXw",
-      "relation": "ships_to",
-      "edge_type": "transactional",
-      "confidence": "documented",
-      "hs_codes": [],
-      "first_seen": "2025-09-24",
-      "last_seen": "2025-09-24",
-      "shipment_count": 1,
-      "evidence": "A Li-ion test module to Gotion Illinois New Energy Inc, 24 Sep 2025.",
-      "source_call_ids": [
-        "s715",
-        "s716"
-      ],
-      "case_ids": [
-        "case-7"
-      ],
-      "confidence_reason": "Sayari returned a dated shipment row."
-    },
-    {
-      "id": "e729",
-      "source": "sfUxx_TMvkJFG13vTnqbwQ",
-      "target": "a2CIEyP-znrNrpln9qssYA",
-      "relation": "ships_to",
-      "edge_type": "transactional",
-      "confidence": "documented",
-      "hs_codes": [],
-      "first_seen": "2025-12-27",
-      "last_seen": "2025-12-27",
-      "shipment_count": 1,
-      "evidence": "A high-voltage box to 'Gotion Illinois', 27 Dec 2025.",
-      "source_call_ids": [
-        "s716"
-      ],
-      "case_ids": [
-        "case-7"
-      ],
-      "confidence_reason": "Sayari returned a dated shipment row."
-    },
-    {
-      "id": "e730",
-      "source": "KL5fNOIkqdQV8ZW_4a0wqw",
-      "target": "eRITWZG5dyfFu5tqu8tv-g",
-      "relation": "ships_to",
-      "edge_type": "transactional",
-      "confidence": "documented",
-      "hs_codes": [],
-      "first_seen": "2026-02-13",
-      "last_seen": "2026-02-13",
-      "shipment_count": 1,
-      "evidence": "An energy-storage control cabinet, transformer and cables, 13 Feb 2026.",
-      "source_call_ids": [
-        "s716"
-      ],
-      "case_ids": [
-        "case-7"
-      ],
-      "confidence_reason": "Sayari returned a dated shipment row."
-    },
-    {
-      "id": "e731",
-      "source": "sfUxx_TMvkJFG13vTnqbwQ",
-      "target": "mFuYdHo30dU4r8kU_11y7w",
-      "relation": "ships_to",
-      "edge_type": "transactional",
-      "confidence": "documented",
-      "hs_codes": [
-        "850760"
-      ],
-      "first_seen": "2026-08-23",
-      "last_seen": "2026-08-23",
-      "shipment_count": 3,
-      "evidence": "Li-ion cells (HS 8507.60), 3 rows on 23 Aug 2026, transshipped at Kingston, Jamaica (ZIM), to a US freight forwarder.",
-      "source_call_ids": [
-        "s713"
-      ],
-      "case_ids": [
-        "case-7"
-      ],
-      "confidence_reason": "Sayari returned dated, HS-coded rows."
-    },
-    {
-      "id": "e732",
-      "source": "KL5fNOIkqdQV8ZW_4a0wqw",
-      "target": "1uN_EFYSidIznJZMZxptlw",
-      "relation": "ships_to",
-      "edge_type": "transactional",
-      "confidence": "corroborated",
-      "hs_codes": [
-        "850760"
-      ],
-      "first_seen": null,
-      "last_seen": "2024-02-21",
-      "shipment_count": 28,
-      "evidence": "Hefei Gotion is among Moxion Power's suppliers. The buyer rollup shows 28 Gotion-related Li-ion battery shipments (HS 8507.60), the latest on 21 Feb 2024.",
-      "source_call_ids": [
-        "s727",
-        "s731"
-      ],
-      "case_ids": [
-        "case-7"
-      ],
-      "confidence_reason": "Two Sayari tools agree (trade graph and buyer rollup), but we did not pull the dated rows."
-    },
-    {
-      "id": "e733",
-      "source": "L1HhW3HMqcvXRKoHOQdS2g",
-      "target": "z5PIbfNlNWbM_PtzLkUvbg",
-      "relation": "ships_to",
-      "edge_type": "transactional",
-      "confidence": "lead",
-      "hs_codes": [],
-      "first_seen": null,
-      "last_seen": null,
-      "shipment_count": null,
-      "evidence": "Sayari lists Livguard as a buyer from the Gotion Inc. trade record. That record's sources are Vietnamese, Korean, Indian, Chinese and Mexican customs data. Probably Chinese-made goods invoiced by Gotion Inc.",
-      "source_call_ids": [
-        "s707"
-      ],
-      "case_ids": [
-        "case-7"
-      ],
-      "confidence_reason": "A single trade-graph link; no rows pulled."
-    },
-    {
-      "id": "e734",
-      "source": "L1HhW3HMqcvXRKoHOQdS2g",
-      "target": "kqhzX49SUGOaae-QwH0Cvw",
-      "relation": "ships_to",
-      "edge_type": "transactional",
-      "confidence": "lead",
-      "hs_codes": [],
-      "first_seen": null,
-      "last_seen": null,
-      "shipment_count": null,
-      "evidence": "Sayari lists VinES as a buyer from the Gotion Inc. trade record, whose sources include Vietnamese customs data.",
-      "source_call_ids": [
-        "s707"
-      ],
-      "case_ids": [
-        "case-7"
-      ],
-      "confidence_reason": "A single trade-graph link; no rows pulled."
-    },
-    {
-      "id": "e735",
-      "source": "TeFCWTgdDF-tAyfunxgqXw",
-      "target": "case7-richardson-electronics",
-      "relation": "ships_to",
-      "edge_type": "contractual",
-      "confidence": "lead",
-      "hs_codes": [],
-      "first_seen": null,
-      "last_seen": null,
-      "shipment_count": null,
-      "evidence": "Richardson Electronics announced a partnership on 13 May 2026 to sell battery storage systems built at Gotion's Manteno plant.",
-      "source_call_ids": [
-        "t701"
-      ],
-      "case_ids": [
-        "case-7"
-      ],
-      "confidence_reason": "One company press release; no trade record yet."
-    },
-    {
-      "id": "e736",
-      "source": "jtptt0xXwDPrAN8CN-po4g",
-      "target": "case7-big-rapids-project",
-      "relation": "owns",
-      "edge_type": "contractual",
-      "confidence": "corroborated",
-      "hs_codes": [],
-      "first_seen": null,
-      "last_seen": null,
-      "shipment_count": null,
-      "evidence": "Gotion, Inc. was the developer of the Big Rapids project, which the state of Michigan declared abandoned in Sep 2025.",
-      "source_call_ids": [
-        "t702",
-        "s728"
-      ],
-      "case_ids": [
-        "case-7"
-      ],
-      "confidence_reason": "Several independent outlets (Bridge Michigan, MLive, Reuters, Fox 17) report it; Sayari has no record."
-    }
+  "red_flags": [
+   {
+    "flag": "Chinese parent ownership of the transit plant",
+    "signal": "contractual",
+    "severity": "High",
+    "result": "detected",
+    "note": "Chinese registry chain to a US subsidiary; the last link to Fremont rests on name and press."
+   },
+   {
+    "flag": "Same HS imported from China and exported to the US",
+    "signal": "transactional",
+    "severity": "High",
+    "result": "not_visible",
+    "note": "The plant is in the US: inputs arrive from China, but no onward export to test."
+   },
+   {
+    "flag": "Recent incorporation vs. first export date",
+    "signal": "contractual",
+    "severity": "Medium",
+    "result": "not_visible",
+    "note": "Gotion, Inc. registered 2014; Gotion Illinois' SAM date (Jan 2026) is after its first imports (Jul 2025), but that is a federal-contractor date, not incorporation."
+   },
+   {
+    "flag": "Volume spike after a policy date",
+    "signal": "transactional",
+    "severity": "Medium",
+    "result": "not_visible",
+    "note": "Rows cluster Jul–Sep 2026, but we read only a sample and can't separate a ramp-up from a policy effect."
+   },
+   {
+    "flag": "Shared address or officer with a flagged entity",
+    "signal": "inferred",
+    "severity": "Medium",
+    "result": "suggested",
+    "note": "A director name shared with the parent; the parent's flags are adjacency flags on a stale record."
+   },
+   {
+    "flag": "Entity-resolution fragmentation",
+    "signal": "inferred",
+    "severity": "Low (disclose)",
+    "result": "detected",
+    "note": "Seven US records, two parent records, a person-typed company and an ownership loop."
+   },
+   {
+    "flag": "Forced-labor / UFLPA sub-tier flags",
+    "signal": "inferred",
+    "severity": "Medium",
+    "result": "detected",
+    "note": "Sub-tier 'product blueprint' flags on the Gotion Inc. trade record; context, not a finding."
+   }
   ],
-  "calls": [
-    {
-      "id": "s701",
-      "timestamp": "2026-10-14T19:45:55Z",
-      "server": "sayari",
-      "tool": "search_entities",
-      "params": {
-        "query": "\"Gotion\" United States",
-        "limit": 25
-      },
-      "question": "Does a quoted-name search with a country word find the US Gotion companies?",
-      "purpose": "Resolve the US entities",
-      "result_summary": "0 results.",
-      "interpretation": "Adding a country word to a quoted name returned nothing. A search-syntax limit, not a gap in the data.",
-      "scorecard": "failed",
-      "entity_ids": [],
-      "step": "method"
-    },
-    {
-      "id": "s702",
-      "timestamp": "2026-10-14T19:46:00Z",
-      "server": "sayari",
-      "tool": "search_entity_facets",
-      "params": {
-        "query": "Gotion"
-      },
-      "question": "How many Gotion records exist, and where?",
-      "purpose": "Shape of the entity search",
-      "result_summary": "231 records: 82 China, 39 US, 21 India, 12 Indonesia, 10 Hong Kong, 10 Singapore. 135 come from trade data and 172 from company data.",
-      "interpretation": "Gotion is heavily fragmented. Many US records to sort.",
-      "scorecard": "worked",
-      "entity_ids": [],
-      "step": "method"
-    },
-    {
-      "id": "s703",
-      "timestamp": "2026-10-14T19:46:05Z",
-      "server": "sayari",
-      "tool": "search_entities",
-      "params": {
-        "query": "Gotion USA",
-        "limit": 40,
-        "response_mode": "compact"
-      },
-      "question": "Does 'Gotion USA' find the US companies?",
-      "purpose": "Resolve the US entities",
-      "result_summary": "0 results.",
-      "interpretation": "Same as s701: an extra word kills the match.",
-      "scorecard": "failed",
-      "entity_ids": [],
-      "step": "method"
-    },
-    {
-      "id": "s704",
-      "timestamp": "2026-10-14T19:46:10Z",
-      "server": "sayari",
-      "tool": "search_entities",
-      "params": {
-        "query": "Gotion",
-        "limit": 50,
-        "response_mode": "compact"
-      },
-      "question": "Which records are the US Gotion companies and the Chinese parent?",
-      "purpose": "Resolve the US entities",
-      "result_summary": "50 of 231 rows. US: GOTION, INC. (California corp. no. 03655947), Gotion, Inc. (SAM UEI EKWPJTF2FM43, CAGE 7Z4Q1), GOTION INC. (trade record, Fremont), GOTION ILLINOIS NEW ENERGY INC (SAM UEI SZESYXG93LF8), Gotion Illinois New Energy (trade record typed as a person), GOTION,INC. China: Gotion High tech Co Ltd (USCC 91320600138346792B, LEI 300300J1NKV8ZBF0KN15), 国轩高科股份有限公司 (same USCC), several Hefei Gotion trade records. No Michigan record in the first 50.",
-      "interpretation": "The US group splits into a Fremont HQ cluster and a Manteno cluster. The parent has two registry records sharing one USCC.",
-      "scorecard": "worked",
-      "entity_ids": [
-        "jtptt0xXwDPrAN8CN-po4g",
-        "88rCtmTg8g2LPVqmzM7Nhw",
-        "L1HhW3HMqcvXRKoHOQdS2g",
-        "TeFCWTgdDF-tAyfunxgqXw",
-        "c3D62Of8RTLeBCM9wnuCvw",
-        "Ba3SkSLr0jnGdVR7sWcnWQ",
-        "cqrsueiPWsIEIMOtO6v_Pg"
-      ],
-      "step": "plant"
-    },
-    {
-      "id": "s705",
-      "timestamp": "2026-10-14T19:46:15Z",
-      "server": "sayari",
-      "tool": "get_entity_profile",
-      "params": {
-        "entity_id": "jtptt0xXwDPrAN8CN-po4g",
-        "relationships_limit": 50
-      },
-      "question": "What does the California registry say about Gotion, Inc.?",
-      "purpose": "Registry record of the US company",
-      "result_summary": "Active; registered 12 Mar 2014; 48660 Kato Rd, Fremont CA. Directors Lei Guang, Chen Li and Steven Cai; secretary Meimei Fu. No shareholders listed. No trade.",
-      "interpretation": "California does not publish shareholders, so the registry can't show the Chinese parent directly. The director Steven Cai is the useful thread.",
-      "scorecard": "worked",
-      "entity_ids": [
-        "jtptt0xXwDPrAN8CN-po4g",
-        "S-yRq5dFMQKTkiXrPaKPGQ"
-      ],
-      "step": "owner"
-    },
-    {
-      "id": "s706",
-      "timestamp": "2026-10-14T19:46:20Z",
-      "server": "sayari",
-      "tool": "find_beneficial_owners",
-      "params": {
-        "entity_id": "88rCtmTg8g2LPVqmzM7Nhw"
-      },
-      "question": "Who owns Gotion, Inc. per Sayari's ownership graph?",
-      "purpose": "Ownership chain",
-      "result_summary": "0 owners returned.",
-      "interpretation": "No upstream ownership on the US side, as in Case 1. Had to work down from the parent instead.",
-      "scorecard": "failed",
-      "entity_ids": [
-        "88rCtmTg8g2LPVqmzM7Nhw"
-      ],
-      "step": "owner"
-    },
-    {
-      "id": "s707",
-      "timestamp": "2026-10-14T19:46:25Z",
-      "server": "sayari",
-      "tool": "get_entity_profile",
-      "params": {
-        "entity_id": "L1HhW3HMqcvXRKoHOQdS2g",
-        "relationships_limit": 50
-      },
-      "question": "What does the main trade record for Gotion Inc. show?",
-      "purpose": "Trade footprint of the US company",
-      "result_summary": "Addresses 48660 and 46850 Kato Road, Fremont. 17,138 shipments sent and 978 received; 52 suppliers, 12 buyers. Ships to Livguard Energy Technologies (India), Dat Bike and VinES (Vietnam) and a Vietnamese renewables firm. Sources are Vietnam, Korea, India, China and Mexico customs. Flags include chinese_soe_adjacent and sub-tier forced-labor 'product blueprint' flags.",
-      "interpretation": "Same street as the California registry record. The 'sent' count reflects Gotion Inc. named as seller on goods leaving China, not exports from Fremont.",
-      "scorecard": "worked",
-      "entity_ids": [
-        "L1HhW3HMqcvXRKoHOQdS2g",
-        "z5PIbfNlNWbM_PtzLkUvbg",
-        "kqhzX49SUGOaae-QwH0Cvw"
-      ],
-      "step": "plant"
-    },
-    {
-      "id": "s708",
-      "timestamp": "2026-10-14T19:46:30Z",
-      "server": "sayari",
-      "tool": "traverse_network",
-      "params": {
-        "entity_id": "L1HhW3HMqcvXRKoHOQdS2g",
-        "relationships": [
-          "receives_from"
-        ],
-        "max_depth": 1,
-        "limit": 60,
-        "response_mode": "compact"
-      },
-      "question": "Who supplies Gotion Inc.?",
-      "purpose": "Supplier list",
-      "result_summary": "50 suppliers returned (saved to file, parsed). Mostly Gotion group plants: several Hefei Gotion High-Tech Power Energy records, Tongcheng Guoxuan/Gotion New Energy, Shanghai Gotion New Energy, Shanghai Xuanyi. Also Maanshan Wanma Machine Building, Green Innovation International (Taiwan), Deserves Trading, Martin Bencher (project logistics), Sinotrans Central China, SZ Envicool, Suzhou Tsing Standard, VinFast. No graphite or anode maker by name.",
-      "interpretation": "The US company buys mainly from its own Chinese group. No independent anode supplier appears.",
-      "scorecard": "worked",
-      "entity_ids": [
-        "L1HhW3HMqcvXRKoHOQdS2g",
-        "L2r51cgdgK63Sk516U52Jg",
-        "EJwFUVeWPX6ErSnqA4dxgw",
-        "KL5fNOIkqdQV8ZW_4a0wqw",
-        "Ctq4KZl1vI__Cm_ocAMNsg"
-      ],
-      "step": "in"
-    },
-    {
-      "id": "s709",
-      "timestamp": "2026-10-14T19:46:35Z",
-      "server": "sayari",
-      "tool": "search_trade_facets",
-      "params": {
-        "scope": "shipments",
-        "query": "\"GOTION\"",
-        "arrival_country": "USA",
-        "bucket_limit": 15
-      },
-      "question": "What Gotion-related shipments arrive in the US?",
-      "purpose": "Inbound trade shape",
-      "result_summary": "1,398 rows, Aug 2021 to 20 Sep 2026. Departures: China 1,109, Korea 94, Hong Kong 14, Mexico 11, Jamaica 10 (ZIM transshipments of Chinese cargo, not a Jamaican origin). Top HS: 850760 lithium-ion batteries (136), 847989 machinery (90), 847910 (42). Top buyer Gotion Inc. (975 rows), then 1st Choice Freight (186) and Gotion Illinois (47). No graphite HS code in the top 15.",
-      "interpretation": "The US arm imports cells, packs and factory machinery. Graphite is not a main inbound line.",
-      "scorecard": "worked",
-      "entity_ids": [
-        "L1HhW3HMqcvXRKoHOQdS2g",
-        "mFuYdHo30dU4r8kU_11y7w",
-        "c3D62Of8RTLeBCM9wnuCvw"
-      ],
-      "step": "in"
-    },
-    {
-      "id": "s710",
-      "timestamp": "2026-10-14T19:46:40Z",
-      "server": "sayari",
-      "tool": "get_upstream_supply_chain",
-      "params": {
-        "entity_id": "L1HhW3HMqcvXRKoHOQdS2g",
-        "product": [
-          "3801",
-          "2504",
-          "2713",
-          "8507"
-        ],
-        "max_depth": 1,
-        "limit": 40
-      },
-      "question": "Which suppliers send graphite, coke or batteries to Gotion Inc., and when?",
-      "purpose": "Inbound HS and dates",
-      "result_summary": "14 rows. HS 3801 from Hefei Gotion via Korea to the US on 23 Dec 2025. HS 8507 from Hefei Gotion (Apr 2024 to Sep 2026), Tongcheng Guoxuan (Jan to Apr 2025; Jul 2026), Shanghai Gotion New Energy (Mar 2023, Apr 2024), Green Innovation (Dec 2024). No HS 2504 (natural graphite) or 2713 (petroleum coke).",
-      "interpretation": "One artificial-graphite flow and a steady battery flow, all from the Gotion group.",
-      "scorecard": "worked",
-      "entity_ids": [
-        "KL5fNOIkqdQV8ZW_4a0wqw",
-        "L2r51cgdgK63Sk516U52Jg",
-        "TaBSgpeUmzA9s0BQ5KKBIQ",
-        "Ctq4KZl1vI__Cm_ocAMNsg",
-        "sfUxx_TMvkJFG13vTnqbwQ",
-        "Z11UJc572QejZgJJ1RVEKw"
-      ],
-      "step": "in"
-    },
-    {
-      "id": "s711",
-      "timestamp": "2026-10-14T19:46:45Z",
-      "server": "sayari",
-      "tool": "search_shipments",
-      "params": {
-        "query": "\"GOTION\" graphite",
-        "arrival_country": "USA",
-        "limit": 25,
-        "response_mode": "compact"
-      },
-      "question": "Do any US-bound Gotion rows mention graphite in free text?",
-      "purpose": "Graphite inputs",
-      "result_summary": "0 rows.",
-      "interpretation": "The free-text word 'graphite' with the quoted name returned nothing, though s712 found rows by HS code. Search by HS code, not keyword.",
-      "scorecard": "failed",
-      "entity_ids": [],
-      "step": "method"
-    },
-    {
-      "id": "s712",
-      "timestamp": "2026-10-14T19:46:50Z",
-      "server": "sayari",
-      "tool": "search_shipments",
-      "params": {
-        "query": "\"GOTION\"",
-        "arrival_country": "USA",
-        "hs_code": "3801",
-        "limit": 25,
-        "response_mode": "full"
-      },
-      "question": "What are the artificial-graphite shipments into Gotion Inc.?",
-      "purpose": "Graphite inputs",
-      "result_summary": "2 rows. Shipper Hefei Gotion High-Tech Power Energy (Xinzhan High-Tech District, Hefei). Receiver Gotion Inc., 48660 Kato Road, Fremont. HS 380110 'artificial graphite'. Departed Busan, Korea, 23 Dec 2025, to Tacoma. Source: Korean trade data.",
-      "interpretation": "Chinese artificial graphite reaches the US Gotion company from its own parent group, routed through Korea. The description has no grain size, so grade is unknown.",
-      "scorecard": "worked",
-      "entity_ids": [
-        "KL5fNOIkqdQV8ZW_4a0wqw",
-        "L1HhW3HMqcvXRKoHOQdS2g"
-      ],
-      "step": "in"
-    },
-    {
-      "id": "s713",
-      "timestamp": "2026-10-14T19:46:55Z",
-      "server": "sayari",
-      "tool": "search_shipments",
-      "params": {
-        "query": "\"GOTION\"",
-        "arrival_country": "USA",
-        "hs_code": "8507",
-        "limit": 40,
-        "response_mode": "compact"
-      },
-      "question": "Who ships batteries (HS 8507) to the US Gotion entities, and when?",
-      "purpose": "Battery inputs",
-      "result_summary": "145 rows; 40 read, all 2026. Tongcheng Guoxuan New Energy to Gotion Inc.: 15 rows, 14–21 Jul 2026. Hefei Gotion records to Gotion Inc.: Li-ion cells and modules, Jul–Sep 2026, some transshipped at Kingston, Jamaica. Hefei Guoxuan Hi-Tech Power Energy to Gotion Inc. (3 and 10 Aug 2026) and to 1st Choice Freight Service (3 rows, 23 Aug 2026, transshipped at Kingston, Jamaica).",
-      "interpretation": "Chinese-made cells flow steadily into the US Gotion company from group plants in Hefei and Tongcheng.",
-      "scorecard": "worked",
-      "entity_ids": [
-        "KL5fNOIkqdQV8ZW_4a0wqw",
-        "L2r51cgdgK63Sk516U52Jg",
-        "sfUxx_TMvkJFG13vTnqbwQ",
-        "Ctq4KZl1vI__Cm_ocAMNsg",
-        "L1HhW3HMqcvXRKoHOQdS2g",
-        "mFuYdHo30dU4r8kU_11y7w"
-      ],
-      "step": "in"
-    },
-    {
-      "id": "s714",
-      "timestamp": "2026-10-14T19:47:00Z",
-      "server": "sayari",
-      "tool": "get_entity_profile",
-      "params": {
-        "entity_id": "c3D62Of8RTLeBCM9wnuCvw",
-        "relationships_limit": 30
-      },
-      "question": "What is the 'Gotion Illinois New Energy' trade record?",
-      "purpose": "Manteno plant",
-      "result_summary": "Typed as a person (a data error). Address 333 South Spruce St, Manteno IL. 47 shipments received. Suppliers: Autosmart International (Taiwan), Tongcheng Guoxuan, Green Innovation, Maanshan Wanma Machine Building, Hefei Gotion. Sources: Korean trade data and US imports.",
-      "interpretation": "The Manteno plant as an importer. The 'person' type is a classification error, not a person.",
-      "scorecard": "worked",
-      "entity_ids": [
-        "c3D62Of8RTLeBCM9wnuCvw",
-        "aXSAK32rB7828zLgi_C4zA",
-        "EJwFUVeWPX6ErSnqA4dxgw",
-        "KL5fNOIkqdQV8ZW_4a0wqw"
-      ],
-      "step": "plant"
-    },
-    {
-      "id": "s715",
-      "timestamp": "2026-10-14T19:47:05Z",
-      "server": "sayari",
-      "tool": "get_entity_profile",
-      "params": {
-        "entity_id": "TeFCWTgdDF-tAyfunxgqXw",
-        "relationships_limit": 30
-      },
-      "question": "What does the registered Gotion Illinois record show?",
-      "purpose": "Manteno plant",
-      "result_summary": "GOTION ILLINOIS NEW ENERGY INC, 333 South Spruce St, Manteno. CAGE 18RZ0, SAM UEI SZESYXG93LF8, SAM registration date 29 Jan 2026. 11 shipments received, from Hefei Gotion (two records), Zhejiang Huaray Technology and a Vietnamese racking maker. No shareholders.",
-      "interpretation": "Same address as the trade record. SAM lists no parent.",
-      "scorecard": "worked",
-      "entity_ids": [
-        "TeFCWTgdDF-tAyfunxgqXw",
-        "sfUxx_TMvkJFG13vTnqbwQ",
-        "KL5fNOIkqdQV8ZW_4a0wqw"
-      ],
-      "step": "plant"
-    },
-    {
-      "id": "s716",
-      "timestamp": "2026-10-14T19:47:10Z",
-      "server": "sayari",
-      "tool": "search_shipments",
-      "params": {
-        "query": "\"GOTION ILLINOIS\"",
-        "arrival_country": "USA",
-        "limit": 60,
-        "response_mode": "compact"
-      },
-      "question": "What goes into the Manteno plant, and from whom?",
-      "purpose": "Manteno inputs",
-      "result_summary": "120 rows; 60 read. Tongcheng Guoxuan to Gotion Inc.: 29 rows of 'lithium ion rechargeable pack' (HTS 8507600020), 5–27 Aug 2026. Hefei Gotion to Gotion Inc.: dummy cells, structural adhesive, insulation board, Jan–Sep 2026. Green Innovation International: ESS accessories and coolant (Jul 2025), cables (Sep 2026) to Gotion Inc.; pack covers to Gotion Illinois (Jul 2025). Hefei Guoxuan: a box marked 'deliver to Gotion Illinois New Energy, 333 South Spruce Street, Manteno' (16 Aug 2025) and a high-voltage box to 'Gotion Illinois' (27 Dec 2025). Anhui Ruineng: bags to Gotion Illinois (28 Jan 2026). Rack parts (Oct–Nov 2025).",
-      "interpretation": "Manteno assembles packs and storage systems from Chinese cells and parts. Many rows name Gotion Inc. as consignee with Manteno as delivery point, which ties the two US companies together. No graphite rows.",
-      "scorecard": "worked",
-      "entity_ids": [
-        "L2r51cgdgK63Sk516U52Jg",
-        "KL5fNOIkqdQV8ZW_4a0wqw",
-        "EJwFUVeWPX6ErSnqA4dxgw",
-        "sfUxx_TMvkJFG13vTnqbwQ",
-        "a2CIEyP-znrNrpln9qssYA",
-        "TeFCWTgdDF-tAyfunxgqXw",
-        "c3D62Of8RTLeBCM9wnuCvw",
-        "eRITWZG5dyfFu5tqu8tv-g",
-        "1BgMpq8w5wTTnMw6iGmvRg",
-        "B05sLBwEdWm0q5W3J1VaMQ",
-        "Ctq4KZl1vI__Cm_ocAMNsg"
-      ],
-      "step": "in"
-    },
-    {
-      "id": "s717",
-      "timestamp": "2026-10-14T19:47:15Z",
-      "server": "sayari",
-      "tool": "find_downstream_entities",
-      "params": {
-        "entity_id": "cqrsueiPWsIEIMOtO6v_Pg",
-        "countries": [
-          "USA"
-        ],
-        "limit": 25,
-        "response_mode": "compact"
-      },
-      "question": "Does the current-name parent record own any US company?",
-      "purpose": "Ownership chain",
-      "result_summary": "0 results.",
-      "interpretation": "This record of the parent carries no subsidiaries. Ownership sits on the other record.",
-      "scorecard": "failed",
-      "entity_ids": [
-        "cqrsueiPWsIEIMOtO6v_Pg"
-      ],
-      "step": "owner"
-    },
-    {
-      "id": "s718",
-      "timestamp": "2026-10-14T19:47:20Z",
-      "server": "sayari",
-      "tool": "find_downstream_entities",
-      "params": {
-        "entity_id": "Ba3SkSLr0jnGdVR7sWcnWQ",
-        "countries": [
-          "USA"
-        ],
-        "limit": 25,
-        "response_mode": "compact"
-      },
-      "question": "Does the former-name parent record reach a US company?",
-      "purpose": "Ownership chain",
-      "result_summary": "21 US-linked results (parsed from file). Key path: Gotion High-Tech → Hefei Gotion High-Tech Power Energy (合肥国轩高科动力能源) → 国轩高科（美国）有限公司 ('Gotion High-Tech (USA) Co.'). Other hits are Hefei Gotion's investments in Chery, BAIC and others, not Gotion's US operations.",
-      "interpretation": "The registry chain reaches a US company two levels down, but under a Chinese-language name, not 'Gotion, Inc.'",
-      "scorecard": "worked",
-      "entity_ids": [
-        "Ba3SkSLr0jnGdVR7sWcnWQ",
-        "sfUxx_TMvkJFG13vTnqbwQ",
-        "azdv0UO5gpHsKUJso_CA_Q"
-      ],
-      "step": "owner"
-    },
-    {
-      "id": "s719",
-      "timestamp": "2026-10-14T19:47:25Z",
-      "server": "sayari",
-      "tool": "get_entity_profile",
-      "params": {
-        "entity_id": "azdv0UO5gpHsKUJso_CA_Q",
-        "relationships_limit": 30
-      },
-      "question": "What is 国轩高科（美国）有限公司?",
-      "purpose": "Ownership chain",
-      "result_summary": "Countries CHN/USA. Shareholder and parent: Hefei Gotion High-Tech Power Energy. Sources: China MOFCOM Overseas Investment Database and MOFCOM Foreign Investment Directory. No address, no US identifier, no trade.",
-      "interpretation": "China's outbound-investment filing records a US subsidiary of Hefei Gotion. It is not linked to the California record, so the match to Gotion, Inc. rests on the name.",
-      "scorecard": "worked",
-      "entity_ids": [
-        "azdv0UO5gpHsKUJso_CA_Q",
-        "sfUxx_TMvkJFG13vTnqbwQ"
-      ],
-      "step": "owner"
-    },
-    {
-      "id": "s720",
-      "timestamp": "2026-10-14T19:47:30Z",
-      "server": "sayari",
-      "tool": "get_entity_profile",
-      "params": {
-        "entity_id": "Ba3SkSLr0jnGdVR7sWcnWQ",
-        "relationships_limit": 20
-      },
-      "question": "What does the parent's registry record show?",
-      "purpose": "Parent profile",
-      "result_summary": "Names include Gotion High-tech, 国轩高科股份有限公司 and the former name Jiangsu Dongyuan Electrical Group. USCC 91320600138346792B; LEI 300300J1NKV8ZBF0KN15. Business scope includes graphene batteries, battery modules and power batteries. Lists 243 shareholders; shown: Nanjing Gotion Holding Group 10.59%, Qiu Weidong 1.018%, an employee share plan 0.52%, and Hefei Gotion High-Tech Power Energy 99.8182%. The same record also lists Hefei Gotion as its subsidiary at 99.8182%. Directors include Steven Cai (deputy general manager, non-independent director). Flags: chinese_soe_adjacent, owner_of_soe, owned_by_regulatory_action_entity.",
-      "interpretation": "Hefei Gotion appears as both owner and subsidiary at the same 99.8182%. That is a loop, a data artefact. We use the subsidiary direction. The SOE flags sit on this stale former-name record and are adjacency flags, not a finding.",
-      "scorecard": "worked",
-      "entity_ids": [
-        "Ba3SkSLr0jnGdVR7sWcnWQ",
-        "yO_m3IE68dktKtJnqx7OtQ",
-        "sfUxx_TMvkJFG13vTnqbwQ",
-        "ru0HQoZ0MqsV_E41dQ5qEQ"
-      ],
-      "step": "owner"
-    },
-    {
-      "id": "s721",
-      "timestamp": "2026-10-14T19:47:35Z",
-      "server": "sayari",
-      "tool": "traverse_network",
-      "params": {
-        "entity_id": "Ba3SkSLr0jnGdVR7sWcnWQ",
-        "relationships": [
-          "has_shareholder"
-        ],
-        "max_depth": 1,
-        "limit": 100,
-        "response_mode": "compact"
-      },
-      "question": "Is Volkswagen among the parent's listed shareholders?",
-      "purpose": "Check the VW stake",
-      "result_summary": "50 of 243 shareholders returned (more pages exist). All are individuals and funds; Li Zhen appears. No Volkswagen entity in these 50.",
-      "interpretation": "Not conclusive alone. Checked with a path search instead (s725).",
-      "scorecard": "partial",
-      "entity_ids": [
-        "Ba3SkSLr0jnGdVR7sWcnWQ"
-      ],
-      "step": "owner"
-    },
-    {
-      "id": "s722",
-      "timestamp": "2026-10-14T19:47:40Z",
-      "server": "sayari",
-      "tool": "find_shortest_path",
-      "params": {
-        "source_entity_id": "jtptt0xXwDPrAN8CN-po4g",
-        "target_entity_id": "Ba3SkSLr0jnGdVR7sWcnWQ"
-      },
-      "question": "How does Sayari connect the California Gotion, Inc. to the Chinese parent?",
-      "purpose": "Ownership chain",
-      "result_summary": "Path found: California record → 'possibly same as' SAM record → 'possibly same as' trade record → receives goods from Hefei Gotion → Gotion High-Tech.",
-      "interpretation": "The shortest link runs through name matches and a trade link, not through shareholding. Sayari can't show the Fremont company is owned by Gotion High-Tech from the US side.",
-      "scorecard": "worked",
-      "entity_ids": [
-        "jtptt0xXwDPrAN8CN-po4g",
-        "88rCtmTg8g2LPVqmzM7Nhw",
-        "L1HhW3HMqcvXRKoHOQdS2g",
-        "sfUxx_TMvkJFG13vTnqbwQ",
-        "Ba3SkSLr0jnGdVR7sWcnWQ"
-      ],
-      "step": "owner"
-    },
-    {
-      "id": "s723",
-      "timestamp": "2026-10-14T19:47:45Z",
-      "server": "sayari",
-      "tool": "lookup_risk_factors",
-      "params": {
-        "ids": [
-          "chinese_soe_adjacent",
-          "owner_of_soe",
-          "owned_by_regulatory_action_entity",
-          "soe_adjacent"
-        ]
-      },
-      "question": "What do the SOE flags on the Gotion records mean?",
-      "purpose": "Read flag definitions",
-      "result_summary": "chinese_soe_adjacent / soe_adjacent: 1 hop from a state-owned enterprise, any relationship type. owner_of_soe: possibly owns an SOE up to 3 hops away (10%+). owned_by_regulatory_action_entity: possibly owned, up to 3 hops, by an entity under regulatory action.",
-      "interpretation": "None of these says Gotion is state-owned. They describe neighbours. On Gotion Inc. the SOE flag is one hop through any link, trade included.",
-      "scorecard": "worked",
-      "entity_ids": [],
-      "step": "context"
-    },
-    {
-      "id": "s724",
-      "timestamp": "2026-10-14T19:47:50Z",
-      "server": "sayari",
-      "tool": "search_entities",
-      "params": {
-        "query": "\"大众汽车（中国）投资有限公司\"",
-        "limit": 5,
-        "response_mode": "compact"
-      },
-      "question": "Which record is Volkswagen (China) Investment?",
-      "purpose": "Check the VW stake",
-      "result_summary": "Volkswagen (China) Investment Co., Ltd., USCC 911100007109204855 (CHN/DEU); two branches; also a same-name record typed as a person.",
-      "interpretation": "Resolved the VW entity for a path test.",
-      "scorecard": "worked",
-      "entity_ids": [
-        "0TsZzKZdA9j4qq_JfBakUQ",
-        "vgw3SB-m3bqnH1Sv8jCjZg"
-      ],
-      "step": "owner"
-    },
-    {
-      "id": "s725",
-      "timestamp": "2026-10-14T19:47:55Z",
-      "server": "sayari",
-      "tool": "find_shortest_path",
-      "params": {
-        "source_entity_id": "0TsZzKZdA9j4qq_JfBakUQ",
-        "target_entity_id": "Ba3SkSLr0jnGdVR7sWcnWQ"
-      },
-      "question": "Does the registry link Volkswagen (China) to Gotion High-Tech?",
-      "purpose": "Check the VW stake",
-      "result_summary": "Path length 2: Volkswagen (China) Investment is 'shareholder_of' Gotion High-Tech. No percentage given.",
-      "interpretation": "Registry data shows the VW shareholding, but not its size.",
-      "scorecard": "worked",
-      "entity_ids": [
-        "0TsZzKZdA9j4qq_JfBakUQ",
-        "Ba3SkSLr0jnGdVR7sWcnWQ"
-      ],
-      "step": "owner"
-    },
-    {
-      "id": "s726",
-      "timestamp": "2026-10-14T19:48:00Z",
-      "server": "sayari",
-      "tool": "find_shortest_path",
-      "params": {
-        "source_entity_id": "vgw3SB-m3bqnH1Sv8jCjZg",
-        "target_entity_id": "Ba3SkSLr0jnGdVR7sWcnWQ"
-      },
-      "question": "Is the person-typed VW record a second shareholder link?",
-      "purpose": "Check the VW stake",
-      "result_summary": "Path of 4 through Shanghai Volkswagen Powertrain and Volkswagen (China) Investment; no direct link.",
-      "interpretation": "The person-typed record is a stray. The direct link is the one in s725.",
-      "scorecard": "partial",
-      "entity_ids": [
-        "vgw3SB-m3bqnH1Sv8jCjZg"
-      ],
-      "step": "owner"
-    },
-    {
-      "id": "s727",
-      "timestamp": "2026-10-14T19:48:05Z",
-      "server": "sayari",
-      "tool": "search_buyers",
-      "params": {
-        "query": "\"GOTION\"",
-        "arrival_country": "USA",
-        "limit": 15,
-        "response_mode": "compact"
-      },
-      "question": "Who in the US receives Gotion-named goods?",
-      "purpose": "Customers",
-      "result_summary": "52 buyers. Gotion Inc. (975 shipments, to 20 Sep 2026); 1st Choice Freight Service (186, to 23 Aug 2026); Gotion Illinois (47, to Jul 2025); Moxion Power (28, HS 850760, to 21 Feb 2024); 1Energy Systems (15, to Oct 2025); Amazon.com Services (14, 2022); Gotion Illinois New Energy Inc (11, to Jan 2026); Energport (10, 2022); GOTION,INC. (9, to Feb 2026); Bluered New Energy (7, 2022); Caban Systems (5, to Oct 2025); 'Department of Supply Chain Gotion' (4, Mar 2025).",
-      "interpretation": "These are US buyers of Gotion goods shipped from abroad, not customers of the US plants. The rollup doesn't name the shipper per buyer, so non-Gotion matches are possible.",
-      "scorecard": "partial",
-      "entity_ids": [
-        "mFuYdHo30dU4r8kU_11y7w",
-        "1uN_EFYSidIznJZMZxptlw",
-        "x-d_uxTn-TE8ay6FKmZZAA",
-        "hycXzh23OxAAkCsQbnw6uQ"
-      ],
-      "step": "out"
-    },
-    {
-      "id": "s728",
-      "timestamp": "2026-10-14T19:48:10Z",
-      "server": "sayari",
-      "tool": "search_entities",
-      "params": {
-        "query": "Gotion Michigan Big Rapids",
-        "limit": 10,
-        "response_mode": "compact"
-      },
-      "question": "Is there a Sayari record for the Big Rapids, Michigan project?",
-      "purpose": "Big Rapids",
-      "result_summary": "0 results.",
-      "interpretation": "No Michigan Gotion entity found by this search. The project left no trade trail.",
-      "scorecard": "failed",
-      "entity_ids": [],
-      "step": "plant"
-    },
-    {
-      "id": "s729",
-      "timestamp": "2026-10-14T19:48:15Z",
-      "server": "sayari",
-      "tool": "search_shipments",
-      "params": {
-        "query": "\"GOTION\" + (\"MOXION\" | \"1ENERGY\" | \"CABAN\")",
-        "arrival_country": "USA",
-        "limit": 20,
-        "response_mode": "compact"
-      },
-      "question": "Can the buyer rollup be checked row by row?",
-      "purpose": "Customers",
-      "result_summary": "0 rows.",
-      "interpretation": "Boolean syntax returned nothing.",
-      "scorecard": "failed",
-      "entity_ids": [],
-      "step": "method"
-    },
-    {
-      "id": "s730",
-      "timestamp": "2026-10-14T19:48:20Z",
-      "server": "sayari",
-      "tool": "search_shipments",
-      "params": {
-        "query": "\"GOTION\" \"MOXION POWER\"",
-        "arrival_country": "USA",
-        "limit": 10,
-        "response_mode": "compact"
-      },
-      "question": "Do shipment rows link Gotion and Moxion?",
-      "purpose": "Customers",
-      "result_summary": "0 rows.",
-      "interpretation": "Two quoted names together returned nothing, though the rollup and graph show the link. Another search-syntax limit.",
-      "scorecard": "failed",
-      "entity_ids": [],
-      "step": "method"
-    },
-    {
-      "id": "s731",
-      "timestamp": "2026-10-14T19:48:25Z",
-      "server": "sayari",
-      "tool": "traverse_network",
-      "params": {
-        "entity_id": "1uN_EFYSidIznJZMZxptlw",
-        "relationships": [
-          "receives_from"
-        ],
-        "max_depth": 1,
-        "limit": 25,
-        "response_mode": "compact"
-      },
-      "question": "Who supplies Moxion Power?",
-      "purpose": "Customers",
-      "result_summary": "19 suppliers, including Hefei Gotion High-Tech Power Energy (four records, all at 599 Daihe Road, Hefei) alongside Amphenol, Boyd and others.",
-      "interpretation": "Confirms a direct trade link from the Gotion group in China to a US buyer. It also confirms the Hefei trade records share one address.",
-      "scorecard": "worked",
-      "entity_ids": [
-        "1uN_EFYSidIznJZMZxptlw",
-        "KL5fNOIkqdQV8ZW_4a0wqw",
-        "Ctq4KZl1vI__Cm_ocAMNsg",
-        "sfUxx_TMvkJFG13vTnqbwQ"
-      ],
-      "step": "out"
-    },
-    {
-      "id": "t701",
-      "timestamp": "2026-10-14T19:48:30Z",
-      "server": "tavily",
-      "tool": "tavily_search",
-      "params": {
-        "query": "Gotion Manteno Illinois plant production status 2026",
-        "max_results": 6,
-        "search_depth": "advanced",
-        "start_date": "2025-06-01"
-      },
-      "question": "Is the Manteno plant producing in 2025–2026?",
-      "purpose": "Plant status",
-      "result_summary": "Shaw Local (10 Oct and 18 Nov 2025): plant operating five lines, about 300 staff, aiming for 450 by end-2025 and 1,400 in 2026; makes commercial energy-storage units, EV packs and mobile chargers. S&P AutoTechInsight: energy-storage lines started spring 2025, EV battery production from Sep 2025; Illinois incentives of $536m. Richardson Electronics release (13 May 2026): BESS partnership with Gotion Inc. using product from the Manteno plant. URLs: shawlocal.com/daily-journal/2025/10/10/gotion-expects-to-add-450-jobs-by-end-of-2025; shawlocal.com/daily-journal/2025/11/18/gotion-gives-updates-on-manteno-plant; autotechinsight.spglobal.com/news/5283484; rell.com/press-news/richardson-electronics-ltd-announces-technology-partnership-with-gotion-to-deliver-u-s-manufactured-battery-energy-storage-systems",
-      "interpretation": "Manteno is producing, but it assembles packs and storage systems. That fits the trade data: cells come in from China. Nothing says it makes cells or anode material.",
-      "scorecard": "worked",
-      "entity_ids": [
-        "TeFCWTgdDF-tAyfunxgqXw",
-        "case7-richardson-electronics"
-      ],
-      "step": "context"
-    },
-    {
-      "id": "t702",
-      "timestamp": "2026-10-14T19:48:35Z",
-      "server": "tavily",
-      "tool": "tavily_search",
-      "params": {
-        "query": "Gotion Big Rapids Michigan battery plant 2026 status lawsuit abandoned",
-        "max_results": 6,
-        "search_depth": "advanced",
-        "start_date": "2025-06-01"
-      },
-      "question": "What happened to the Big Rapids project?",
-      "purpose": "Plant status",
-      "result_summary": "Michigan Strategic Fund letter of 17 Sep 2025 declared Gotion in default for 'voluntary abandonment' (120 days with no eligible work); the $175m grant was pulled. Gotion replied on 15 Oct 2025 that it was 'shocked'. Bridge Michigan: state says project is dead. Attorney General demanded repayment of $23.7m for land on 30 Jan 2026 (mlive). Gotion amended its federal suit against Green Charter Township in Jun 2026 seeking damages (mlive); Reuters, 1 Jul 2026: Gotion sues the township for damages. URLs: bridgemi.com/business-watch/michigan-gotion-battery-plant-plan-is-dead-after-years-of-controversy; mlive.com/news/grand-rapids/2026/01/michigan-demands-gotion-repay-237-million-for-halted-ev-battery-plant.html; mlive.com/news/grand-rapids/2026/06/gotion-seeks-millions-from-michigan-township-after-ev-battery-plant-sunk.html; reuters.com/legal/government/chinese-battery-maker-gotion-sues-michigan-town-millions-damages-over-plant-2026-07-01; fox17online.com/news/local-news/michigan/mecosta/michigan-moves-to-pull-public-funding-for-gotion-battery-plant-near-big-rapids",
-      "interpretation": "Big Rapids was never built. It is now a legal dispute, so there is no trade trail to find.",
-      "scorecard": "worked",
-      "entity_ids": [
-        "case7-big-rapids-project",
-        "jtptt0xXwDPrAN8CN-po4g"
-      ],
-      "step": "context"
-    }
+  "caveats": [
+   "Gotion's US plants are legal businesses. Nothing here shows wrongdoing by any company named.",
+   "The parent's 'SOE' flags mean one hop from, or possibly owning, a state-owned enterprise. They sit on a stale former-name record and are not evidence that Gotion is state-owned.",
+   "The parent record lists Hefei Gotion as both owner and subsidiary at 99.8182%. That loop is a data artefact; we use the subsidiary direction only.",
+   "The two graphite rows have no grain size or 'anode' wording. HS 3801.10 also covers industrial graphite, so the grade is unknown.",
+   "Buyer names come from customs records and rollups; they say nothing about any buyer's compliance. 1Energy Systems and Caban Systems were not checked row by row.",
+   "Plant status comes from press and a partner's press release, not from Sayari."
   ]
+ },
+ "entities": [
+  {
+   "id": "Ba3SkSLr0jnGdVR7sWcnWQ",
+   "name": "Gotion High-Tech Co., Ltd. (国轩高科; record carrying former name Jiangsu Dongyuan Electrical)",
+   "country": "CHN",
+   "type": "company",
+   "role": "parent",
+   "risk_flags": [
+    "chinese_soe_adjacent",
+    "owner_of_soe",
+    "owned_by_regulatory_action_entity"
+   ],
+   "identifiers": {
+    "cn_uscc": "91320600138346792B",
+    "lei": "300300J1NKV8ZBF0KN15"
+   },
+   "summary": "The listed Chinese parent (Shenzhen code 002074), headquartered in Hefei. This record still carries the former name Jiangsu Dongyuan Electrical Group. It shows Hefei Gotion as a 99.8% subsidiary, and also, wrongly, as a 99.8% owner: a loop in the data. Its SOE flags are adjacency flags, not proof of state ownership.",
+   "source_call_ids": [
+    "s704",
+    "s718",
+    "s720",
+    "s721",
+    "s722",
+    "s725"
+   ],
+   "sayari_url": "https://graph.sayari.com/resource/entity/Ba3SkSLr0jnGdVR7sWcnWQ"
+  },
+  {
+   "id": "cqrsueiPWsIEIMOtO6v_Pg",
+   "name": "国轩高科股份有限公司 (Gotion High-Tech, second registry record)",
+   "country": "CHN",
+   "type": "company",
+   "role": "parent",
+   "risk_flags": [
+    "regulatory_action"
+   ],
+   "identifiers": {
+    "cn_uscc": "91320600138346792B"
+   },
+   "summary": "A second registry record for the same parent, with the same credit code. It has no subsidiaries attached, so ownership searches from it return nothing.",
+   "source_call_ids": [
+    "s704",
+    "s717"
+   ],
+   "sayari_url": "https://graph.sayari.com/resource/entity/cqrsueiPWsIEIMOtO6v_Pg"
+  },
+  {
+   "id": "sfUxx_TMvkJFG13vTnqbwQ",
+   "name": "Hefei Gotion High-Tech Power Energy Co., Ltd. (合肥国轩高科动力能源有限公司)",
+   "country": "CHN",
+   "type": "company",
+   "role": "producer",
+   "risk_flags": [
+    "owner_of_soe",
+    "owned_by_regulatory_action_entity"
+   ],
+   "identifiers": {
+    "cn_uscc": "913401007885639594",
+    "lei": "300300YVS5U5YD31N853"
+   },
+   "summary": "Gotion's main cell-making subsidiary, 99.8% owned by the listed parent. It is the registered owner of Gotion High-Tech (USA), and it ships cells and parts to the US companies.",
+   "source_call_ids": [
+    "s710",
+    "s713",
+    "s716",
+    "s718",
+    "s719",
+    "s720",
+    "s731"
+   ],
+   "sayari_url": "https://graph.sayari.com/resource/entity/sfUxx_TMvkJFG13vTnqbwQ"
+  },
+  {
+   "id": "azdv0UO5gpHsKUJso_CA_Q",
+   "name": "国轩高科（美国）有限公司 (Gotion High-Tech (USA) Co., MOFCOM record)",
+   "country": "USA",
+   "type": "company",
+   "role": "parent",
+   "risk_flags": [
+    "owned_by_regulatory_action_entity"
+   ],
+   "identifiers": {},
+   "summary": "A US subsidiary of Hefei Gotion, recorded in China's outbound-investment filings. Gotion High-Tech's 2023 annual report pairs this Chinese name with 'GOTION INC.' and calls it wholly owned, so it is Gotion, Inc. of Fremont.",
+   "source_call_ids": [
+    "s718",
+    "s719"
+   ],
+   "sayari_url": "https://graph.sayari.com/resource/entity/azdv0UO5gpHsKUJso_CA_Q"
+  },
+  {
+   "id": "jtptt0xXwDPrAN8CN-po4g",
+   "name": "Gotion, Inc. (California registry)",
+   "country": "USA",
+   "type": "company",
+   "role": "transit_plant",
+   "risk_flags": [],
+   "identifiers": {
+    "ca_corporate_id_num": "03655947"
+   },
+   "summary": "Gotion's US headquarters company in Fremont, California, registered 12 Mar 2014. Directors include Steven Cai. California lists no shareholders, so the registry can't show who owns it.",
+   "source_call_ids": [
+    "s704",
+    "s705",
+    "s722",
+    "t702"
+   ],
+   "sayari_url": "https://graph.sayari.com/resource/entity/jtptt0xXwDPrAN8CN-po4g"
+  },
+  {
+   "id": "88rCtmTg8g2LPVqmzM7Nhw",
+   "name": "Gotion, Inc. (SAM.gov record)",
+   "country": "USA",
+   "type": "company",
+   "role": "transit_plant",
+   "risk_flags": [],
+   "identifiers": {
+    "usa_sam_uei_number": "EKWPJTF2FM43",
+    "cage": "7Z4Q1",
+    "unknown": "3655947"
+   },
+   "summary": "Federal contractor record for Gotion, Inc. It carries the California corporate number, so it is the same company. Sayari returns no owners for it.",
+   "source_call_ids": [
+    "s704",
+    "s706",
+    "s722"
+   ],
+   "sayari_url": "https://graph.sayari.com/resource/entity/88rCtmTg8g2LPVqmzM7Nhw"
+  },
+  {
+   "id": "L1HhW3HMqcvXRKoHOQdS2g",
+   "name": "GOTION INC. (trade record, Fremont)",
+   "country": "USA",
+   "type": "company",
+   "role": "transit_plant",
+   "risk_flags": [
+    "chinese_soe_adjacent",
+    "forced_labor_uflpa_origin_subtier_product_blueprint",
+    "forced_labor_aspi_origin_subtier_product_blueprint",
+    "forced_labor_sheffield_hallam_university_reports_origin_subtier_product_blueprint"
+   ],
+   "identifiers": {},
+   "summary": "The importer of record for most US Gotion trade: 48660 Kato Road, Fremont. It receives artificial graphite, cells, packs and machinery from Gotion group plants in China. Many rows are delivered to the Manteno plant. Flags are sub-tier or one-hop flags, context only.",
+   "source_call_ids": [
+    "s707",
+    "s708",
+    "s709",
+    "s710",
+    "s712",
+    "s713",
+    "s716",
+    "s727"
+   ],
+   "sayari_url": "https://graph.sayari.com/resource/entity/L1HhW3HMqcvXRKoHOQdS2g"
+  },
+  {
+   "id": "eRITWZG5dyfFu5tqu8tv-g",
+   "name": "GOTION,INC. (trade record 2)",
+   "country": "USA",
+   "type": "company",
+   "role": "transit_plant",
+   "risk_flags": [],
+   "identifiers": {},
+   "summary": "A small trade record for Gotion, Inc. (9 shipments). It received an energy-storage control cabinet from Hefei Gotion in Feb 2026.",
+   "source_call_ids": [
+    "s704",
+    "s716",
+    "s727"
+   ],
+   "sayari_url": "https://graph.sayari.com/resource/entity/eRITWZG5dyfFu5tqu8tv-g"
+  },
+  {
+   "id": "TeFCWTgdDF-tAyfunxgqXw",
+   "name": "Gotion Illinois New Energy Inc (Manteno plant)",
+   "country": "USA",
+   "type": "company",
+   "role": "transit_plant",
+   "risk_flags": [],
+   "identifiers": {
+    "usa_sam_uei_number": "SZESYXG93LF8",
+    "cage": "18RZ0"
+   },
+   "summary": "The Manteno, Illinois plant company, 333 South Spruce St. Registered in SAM on 29 Jan 2026. It imports test modules, racking and packing goods directly; most inputs arrive consigned to Gotion, Inc. The press says it builds energy-storage systems and EV packs.",
+   "source_call_ids": [
+    "s704",
+    "s715",
+    "s716",
+    "s727",
+    "t701"
+   ],
+   "sayari_url": "https://graph.sayari.com/resource/entity/TeFCWTgdDF-tAyfunxgqXw"
+  },
+  {
+   "id": "c3D62Of8RTLeBCM9wnuCvw",
+   "name": "Gotion Illinois New Energy (trade record, mis-typed as a person)",
+   "country": "USA",
+   "type": "company",
+   "role": "transit_plant",
+   "risk_flags": [],
+   "identifiers": {},
+   "summary": "A trade record for the Manteno plant at the same address. Sayari types it as a person, which is a data error. 47 shipments to Jul 2025, mainly battery parts and pack covers.",
+   "source_call_ids": [
+    "s704",
+    "s709",
+    "s714",
+    "s716",
+    "s727"
+   ],
+   "sayari_url": "https://graph.sayari.com/resource/entity/c3D62Of8RTLeBCM9wnuCvw"
+  },
+  {
+   "id": "a2CIEyP-znrNrpln9qssYA",
+   "name": "GOTION ILLINOIS (trade record 3)",
+   "country": "USA",
+   "type": "company",
+   "role": "transit_plant",
+   "risk_flags": [],
+   "identifiers": {},
+   "summary": "A name-only trade record for the Manteno plant. It received a high-voltage box from Hefei Gotion on 27 Dec 2025.",
+   "source_call_ids": [
+    "s716"
+   ],
+   "sayari_url": "https://graph.sayari.com/resource/entity/a2CIEyP-znrNrpln9qssYA"
+  },
+  {
+   "id": "KL5fNOIkqdQV8ZW_4a0wqw",
+   "name": "HEFEI GOTION HIGH-TECH POWER ENERGY (trade record)",
+   "country": "CHN",
+   "type": "company",
+   "role": "producer",
+   "risk_flags": [],
+   "identifiers": {},
+   "summary": "A trade-data record of Hefei Gotion at 599 Daihe Road, Hefei. It shipped the artificial graphite (HS 3801.10) via Busan to Gotion Inc. in Dec 2025, plus cells, dummy cells and parts in 2025–2026.",
+   "source_call_ids": [
+    "s708",
+    "s710",
+    "s712",
+    "s713",
+    "s714",
+    "s715",
+    "s716",
+    "s731"
+   ],
+   "sayari_url": "https://graph.sayari.com/resource/entity/KL5fNOIkqdQV8ZW_4a0wqw"
+  },
+  {
+   "id": "Ctq4KZl1vI__Cm_ocAMNsg",
+   "name": "HEFEI GOTION HIGH-TECH POWER ENERGYCO.,LTD (trade record 2)",
+   "country": "CHN",
+   "type": "company",
+   "role": "producer",
+   "risk_flags": [],
+   "identifiers": {},
+   "summary": "Another trade record of Hefei Gotion at 599 Daihe Road. It shipped Li-ion cells (some transshipped at Kingston, Jamaica) and an energy-storage pack to Gotion Inc. in Jul–Aug 2026.",
+   "source_call_ids": [
+    "s708",
+    "s710",
+    "s713",
+    "s716",
+    "s731"
+   ],
+   "sayari_url": "https://graph.sayari.com/resource/entity/Ctq4KZl1vI__Cm_ocAMNsg"
+  },
+  {
+   "id": "L2r51cgdgK63Sk516U52Jg",
+   "name": "Tongcheng Guoxuan New Energy Co., Ltd. (trade record)",
+   "country": "CHN",
+   "type": "company",
+   "role": "producer",
+   "risk_flags": [],
+   "identifiers": {},
+   "summary": "A Gotion group cell plant in Tongcheng, Anqing ('Guoxuan' is Gotion's Chinese name). The largest battery shipper to the US arm in 2026: Li-ion cells in Jul and packs bound for Manteno in Aug.",
+   "source_call_ids": [
+    "s708",
+    "s710",
+    "s713",
+    "s716"
+   ],
+   "sayari_url": "https://graph.sayari.com/resource/entity/L2r51cgdgK63Sk516U52Jg"
+  },
+  {
+   "id": "aXSAK32rB7828zLgi_C4zA",
+   "name": "TONGCHENG GUOXUAN NEW ENERGY CO. (trade record 2)",
+   "country": "CHN",
+   "type": "company",
+   "role": "producer",
+   "risk_flags": [],
+   "identifiers": {},
+   "summary": "A second trade record for the Tongcheng plant. It is listed as a supplier to the Manteno trade record.",
+   "source_call_ids": [
+    "s708",
+    "s714"
+   ],
+   "sayari_url": "https://graph.sayari.com/resource/entity/aXSAK32rB7828zLgi_C4zA"
+  },
+  {
+   "id": "EJwFUVeWPX6ErSnqA4dxgw",
+   "name": "Green Innovation International Co., Ltd.",
+   "country": "TWN",
+   "type": "company",
+   "role": "trader",
+   "risk_flags": [],
+   "identifiers": {},
+   "summary": "A Taiwan-registered trader that ships Chinese-made battery pack covers, storage-system accessories and cables to Gotion Inc. and the Manteno plant, Jul 2025 to Sep 2026.",
+   "source_call_ids": [
+    "s708",
+    "s710",
+    "s714",
+    "s716"
+   ],
+   "sayari_url": "https://graph.sayari.com/resource/entity/EJwFUVeWPX6ErSnqA4dxgw"
+  },
+  {
+   "id": "0TsZzKZdA9j4qq_JfBakUQ",
+   "name": "Volkswagen (China) Investment Co., Ltd. (大众汽车（中国）投资有限公司)",
+   "country": "CHN",
+   "type": "company",
+   "role": "parent",
+   "risk_flags": [
+    "soe_adjacent",
+    "regulatory_action"
+   ],
+   "identifiers": {
+    "cn_uscc": "911100007109204855"
+   },
+   "summary": "Volkswagen's Chinese holding company. Sayari's registry graph lists it as a shareholder of Gotion High-Tech; 24.28% at 30 Jun 2026 (Gotion interim report); 18.98% once the 5.30% sale agreed on 28 Sep 2026 completes.",
+   "source_call_ids": [
+    "s724",
+    "s725"
+   ],
+   "sayari_url": "https://graph.sayari.com/resource/entity/0TsZzKZdA9j4qq_JfBakUQ"
+  },
+  {
+   "id": "yO_m3IE68dktKtJnqx7OtQ",
+   "name": "Nanjing Gotion Holding Group Co., Ltd. (南京国轩控股集团有限公司)",
+   "country": "CHN",
+   "type": "company",
+   "role": "parent",
+   "risk_flags": [
+    "owner_of_soe"
+   ],
+   "identifiers": {},
+   "summary": "A shareholder of Gotion High-Tech with 10.59% in the registry record.",
+   "source_call_ids": [
+    "s720"
+   ],
+   "sayari_url": "https://graph.sayari.com/resource/entity/yO_m3IE68dktKtJnqx7OtQ"
+  },
+  {
+   "id": "S-yRq5dFMQKTkiXrPaKPGQ",
+   "name": "Steven Cai (director, Gotion, Inc.)",
+   "country": "USA",
+   "type": "person",
+   "role": "officer",
+   "risk_flags": [],
+   "identifiers": {},
+   "summary": "Director of Gotion, Inc. in the California registry. A person of the same name is deputy general manager and non-independent director of Gotion High-Tech in China. Same name only, so it is a lead, but it is the clearest people-link between the US company and the parent.",
+   "source_call_ids": [
+    "s705"
+   ],
+   "sayari_url": "https://graph.sayari.com/resource/entity/S-yRq5dFMQKTkiXrPaKPGQ"
+  },
+  {
+   "id": "ru0HQoZ0MqsV_E41dQ5qEQ",
+   "name": "Steven Cai (deputy GM and director, Gotion High-Tech)",
+   "country": "CHN",
+   "type": "person",
+   "role": "officer",
+   "risk_flags": [],
+   "identifiers": {},
+   "summary": "Deputy general manager and non-independent director of Gotion High-Tech, per the Chinese registry record.",
+   "source_call_ids": [
+    "s720"
+   ],
+   "sayari_url": "https://graph.sayari.com/resource/entity/ru0HQoZ0MqsV_E41dQ5qEQ"
+  },
+  {
+   "id": "mFuYdHo30dU4r8kU_11y7w",
+   "name": "1st Choice Freight Service Inc.",
+   "country": "USA",
+   "type": "company",
+   "role": "buyer",
+   "risk_flags": [],
+   "identifiers": {
+    "ca_corporate_id_num": "06327947"
+   },
+   "summary": "A US freight forwarder named as consignee on 186 Gotion-related shipments, including Li-ion cells from Hefei Guoxuan, transshipped at Kingston, Jamaica, in Aug 2026. A logistics party, not an end customer.",
+   "source_call_ids": [
+    "s709",
+    "s713",
+    "s727"
+   ],
+   "sayari_url": "https://graph.sayari.com/resource/entity/mFuYdHo30dU4r8kU_11y7w"
+  },
+  {
+   "id": "1uN_EFYSidIznJZMZxptlw",
+   "name": "Moxion Power Co.",
+   "country": "USA",
+   "type": "company",
+   "role": "us_buyer",
+   "risk_flags": [],
+   "identifiers": {
+    "usa_sec_cik_number": "0001863715",
+    "usa_sam_uei_number": "ZS5GW3TM9Q79"
+   },
+   "summary": "A US mobile power-storage maker. Sayari shows it buying Li-ion batteries (HS 8507.60) from Hefei Gotion: 28 shipments, the latest on 21 Feb 2024. A direct buyer from China, not from the US plants.",
+   "source_call_ids": [
+    "s727",
+    "s731"
+   ],
+   "sayari_url": "https://graph.sayari.com/resource/entity/1uN_EFYSidIznJZMZxptlw"
+  },
+  {
+   "id": "x-d_uxTn-TE8ay6FKmZZAA",
+   "name": "1Energy Systems Inc",
+   "country": "USA",
+   "type": "company",
+   "role": "us_buyer",
+   "risk_flags": [
+    "sheffield_hallam_university_forced_labor_reports_entity_adjacent"
+   ],
+   "identifiers": {
+    "usa_sec_cik_number": "0001574991"
+   },
+   "summary": "Appears in the buyer rollup for Gotion-named US imports (15 shipments, HS 8507.60 among them, to Oct 2025). The shipper isn't shown per row, so this is a lead.",
+   "source_call_ids": [
+    "s727"
+   ],
+   "sayari_url": "https://graph.sayari.com/resource/entity/x-d_uxTn-TE8ay6FKmZZAA"
+  },
+  {
+   "id": "hycXzh23OxAAkCsQbnw6uQ",
+   "name": "Caban Systems Inc",
+   "country": "USA",
+   "type": "company",
+   "role": "us_buyer",
+   "risk_flags": [],
+   "identifiers": {
+    "ca_corporate_id_num": "04269794"
+   },
+   "summary": "Appears in the buyer rollup for Gotion-named US imports (5 shipments to Oct 2025). The shipper isn't shown per row, so this is a lead.",
+   "source_call_ids": [
+    "s727"
+   ],
+   "sayari_url": "https://graph.sayari.com/resource/entity/hycXzh23OxAAkCsQbnw6uQ"
+  },
+  {
+   "id": "z5PIbfNlNWbM_PtzLkUvbg",
+   "name": "Livguard Energy Technologies Private Limited",
+   "country": "IND",
+   "type": "company",
+   "role": "buyer",
+   "risk_flags": [],
+   "identifiers": {},
+   "summary": "An Indian battery firm that Sayari lists as a buyer from the Gotion Inc. trade record. Likely Chinese-made goods sold under Gotion Inc.'s name, not exports from Fremont.",
+   "source_call_ids": [
+    "s707"
+   ],
+   "sayari_url": "https://graph.sayari.com/resource/entity/z5PIbfNlNWbM_PtzLkUvbg"
+  },
+  {
+   "id": "kqhzX49SUGOaae-QwH0Cvw",
+   "name": "VinES Energy Solutions JSC (Công ty Cổ phần Giải pháp Năng lượng Xanh VinEG)",
+   "country": "VNM",
+   "type": "company",
+   "role": "buyer",
+   "risk_flags": [],
+   "identifiers": {},
+   "summary": "A Vietnamese battery maker that Sayari lists as a buyer from the Gotion Inc. trade record.",
+   "source_call_ids": [
+    "s707"
+   ],
+   "sayari_url": "https://graph.sayari.com/resource/entity/kqhzX49SUGOaae-QwH0Cvw"
+  },
+  {
+   "id": "case7-richardson-electronics",
+   "name": "Richardson Electronics, Ltd. — not resolved in Sayari",
+   "country": "USA",
+   "type": "company",
+   "role": "us_buyer",
+   "risk_flags": [],
+   "identifiers": {},
+   "summary": "An Illinois company that announced a battery-storage partnership with Gotion Inc. on 13 May 2026, using product from the Manteno plant. Known from its own press release only.",
+   "source_call_ids": [
+    "t701"
+   ],
+   "sayari_url": null
+  },
+  {
+   "id": "case7-big-rapids-project",
+   "name": "Gotion Big Rapids project (Green Charter Township, Michigan) — not in Sayari",
+   "country": "USA",
+   "type": "company",
+   "role": "transit_plant",
+   "risk_flags": [],
+   "identifiers": {},
+   "summary": "A planned $2.36bn battery-materials plant that was never built. Michigan declared Gotion in default in Sep 2025 and demanded $23.7m back in Jan 2026. Gotion is suing the township. Sayari has no record or trade for it.",
+   "source_call_ids": [
+    "s728",
+    "t702"
+   ],
+   "sayari_url": null
+  }
+ ],
+ "edges": [
+  {
+   "id": "e701",
+   "source": "cqrsueiPWsIEIMOtO6v_Pg",
+   "target": "Ba3SkSLr0jnGdVR7sWcnWQ",
+   "relation": "possibly_same_as",
+   "edge_type": "inferred",
+   "confidence": "documented",
+   "hs_codes": [],
+   "first_seen": null,
+   "last_seen": null,
+   "shipment_count": null,
+   "evidence": "Two registry records of the parent with the same Unified Social Credit Code, 91320600138346792B.",
+   "source_call_ids": [
+    "s704",
+    "s720"
+   ],
+   "case_ids": [
+    "case-7"
+   ],
+   "confidence_reason": "They share a Chinese credit code, which identifies one legal entity."
+  },
+  {
+   "id": "e702",
+   "source": "Ba3SkSLr0jnGdVR7sWcnWQ",
+   "target": "sfUxx_TMvkJFG13vTnqbwQ",
+   "relation": "owns",
+   "edge_type": "contractual",
+   "confidence": "documented",
+   "hs_codes": [],
+   "first_seen": null,
+   "last_seen": null,
+   "shipment_count": null,
+   "evidence": "Gotion High-Tech owns 99.8182% of Hefei Gotion High-Tech Power Energy, per Chinese registry data. The same record also lists Hefei Gotion as owning 99.8182% of the parent. That reverse link is a loop, a data artefact, and we don't show it.",
+   "source_call_ids": [
+    "s718",
+    "s720"
+   ],
+   "case_ids": [
+    "case-7"
+   ],
+   "confidence_reason": "Chinese registry data lists the shareholding with a percentage."
+  },
+  {
+   "id": "e703",
+   "source": "sfUxx_TMvkJFG13vTnqbwQ",
+   "target": "azdv0UO5gpHsKUJso_CA_Q",
+   "relation": "owns",
+   "edge_type": "contractual",
+   "confidence": "documented",
+   "hs_codes": [],
+   "first_seen": null,
+   "last_seen": null,
+   "shipment_count": null,
+   "evidence": "Hefei Gotion is the shareholder and parent of 国轩高科（美国）有限公司 in China's MOFCOM outbound-investment records.",
+   "source_call_ids": [
+    "s718",
+    "s719"
+   ],
+   "case_ids": [
+    "case-7"
+   ],
+   "confidence_reason": "A Chinese government outbound-investment filing records the US subsidiary."
+  },
+  {
+   "id": "e704",
+   "source": "azdv0UO5gpHsKUJso_CA_Q",
+   "target": "jtptt0xXwDPrAN8CN-po4g",
+   "relation": "possibly_same_as",
+   "edge_type": "inferred",
+   "confidence": "lead",
+   "hs_codes": [],
+   "first_seen": null,
+   "last_seen": null,
+   "shipment_count": null,
+   "evidence": "The MOFCOM record 'Gotion High-Tech (USA)' has no address or US identifier. Only the name points to Gotion, Inc. in Fremont.",
+   "source_call_ids": [
+    "s719",
+    "s705"
+   ],
+   "case_ids": [
+    "case-7"
+   ],
+   "confidence_reason": "A name match only; no shared address or identifier."
+  },
+  {
+   "id": "e705",
+   "source": "Ba3SkSLr0jnGdVR7sWcnWQ",
+   "target": "jtptt0xXwDPrAN8CN-po4g",
+   "relation": "owns",
+   "edge_type": "contractual",
+   "confidence": "corroborated",
+   "hs_codes": [],
+   "first_seen": null,
+   "last_seen": null,
+   "shipment_count": null,
+   "evidence": "Gotion High-Tech is the ultimate owner of Gotion, Inc. Registry data shows the chain Gotion High-Tech → Hefei Gotion → a US subsidiary. Gotion High-Tech's 2023 annual report calls GOTION, INC. its wholly owned subsidiary. No US filing names the shareholder.",
+   "source_call_ids": [
+    "s718",
+    "s719",
+    "s722",
+    "t702",
+    "w013"
+   ],
+   "case_ids": [
+    "case-7"
+   ],
+   "confidence_reason": "A Chinese registry chain and independent press agree, but the last step to the Fremont company rests on name and press, not a US record."
+  },
+  {
+   "id": "e706",
+   "source": "88rCtmTg8g2LPVqmzM7Nhw",
+   "target": "jtptt0xXwDPrAN8CN-po4g",
+   "relation": "possibly_same_as",
+   "edge_type": "inferred",
+   "confidence": "documented",
+   "hs_codes": [],
+   "first_seen": null,
+   "last_seen": null,
+   "shipment_count": null,
+   "evidence": "The SAM.gov record carries 3655947, the California corporate number 03655947.",
+   "source_call_ids": [
+    "s704",
+    "s705"
+   ],
+   "case_ids": [
+    "case-7"
+   ],
+   "confidence_reason": "They share a registry identifier."
+  },
+  {
+   "id": "e707",
+   "source": "L1HhW3HMqcvXRKoHOQdS2g",
+   "target": "jtptt0xXwDPrAN8CN-po4g",
+   "relation": "possibly_same_as",
+   "edge_type": "inferred",
+   "confidence": "inferred",
+   "hs_codes": [],
+   "first_seen": null,
+   "last_seen": null,
+   "shipment_count": null,
+   "evidence": "The trade record and the registry record share 48660 Kato Road, Fremont, and the name. Sayari also links the trade and SAM records as 'possibly the same as'.",
+   "source_call_ids": [
+    "s705",
+    "s707",
+    "s712",
+    "s722"
+   ],
+   "case_ids": [
+    "case-7"
+   ],
+   "confidence_reason": "Same street address and name, but no shared identifier."
+  },
+  {
+   "id": "e708",
+   "source": "eRITWZG5dyfFu5tqu8tv-g",
+   "target": "jtptt0xXwDPrAN8CN-po4g",
+   "relation": "possibly_same_as",
+   "edge_type": "inferred",
+   "confidence": "lead",
+   "hs_codes": [],
+   "first_seen": null,
+   "last_seen": null,
+   "shipment_count": null,
+   "evidence": "A small trade record with the same name and no address shown.",
+   "source_call_ids": [
+    "s704",
+    "s716"
+   ],
+   "case_ids": [
+    "case-7"
+   ],
+   "confidence_reason": "A name match only."
+  },
+  {
+   "id": "e709",
+   "source": "c3D62Of8RTLeBCM9wnuCvw",
+   "target": "TeFCWTgdDF-tAyfunxgqXw",
+   "relation": "possibly_same_as",
+   "edge_type": "inferred",
+   "confidence": "inferred",
+   "hs_codes": [],
+   "first_seen": null,
+   "last_seen": null,
+   "shipment_count": null,
+   "evidence": "Both records sit at 333 South Spruce St, Manteno, IL, with the same name.",
+   "source_call_ids": [
+    "s714",
+    "s715"
+   ],
+   "case_ids": [
+    "case-7"
+   ],
+   "confidence_reason": "Same street address and name, but no shared identifier."
+  },
+  {
+   "id": "e710",
+   "source": "a2CIEyP-znrNrpln9qssYA",
+   "target": "TeFCWTgdDF-tAyfunxgqXw",
+   "relation": "possibly_same_as",
+   "edge_type": "inferred",
+   "confidence": "lead",
+   "hs_codes": [],
+   "first_seen": null,
+   "last_seen": null,
+   "shipment_count": null,
+   "evidence": "A trade record named 'Gotion Illinois' with no address shown.",
+   "source_call_ids": [
+    "s716"
+   ],
+   "case_ids": [
+    "case-7"
+   ],
+   "confidence_reason": "A name match only."
+  },
+  {
+   "id": "e711",
+   "source": "jtptt0xXwDPrAN8CN-po4g",
+   "target": "TeFCWTgdDF-tAyfunxgqXw",
+   "relation": "owns",
+   "edge_type": "contractual",
+   "confidence": "documented",
+   "hs_codes": [],
+   "first_seen": null,
+   "last_seen": null,
+   "shipment_count": null,
+   "evidence": "Customs rows name Gotion, Inc. as consignee with delivery to Gotion Illinois New Energy, 333 South Spruce Street, Manteno. The press calls Manteno Gotion's Illinois plant. No registry record shows who owns Gotion Illinois. Confirmed by Gotion High-Tech's 2023 annual report (100%).",
+   "source_call_ids": [
+    "s716",
+    "t701",
+    "w013"
+   ],
+   "case_ids": [
+    "case-7"
+   ],
+   "confidence_reason": "Gotion High-Tech's 2023 annual report lists Gotion Illinois as 100% held by Gotion, Inc."
+  },
+  {
+   "id": "e712",
+   "source": "KL5fNOIkqdQV8ZW_4a0wqw",
+   "target": "sfUxx_TMvkJFG13vTnqbwQ",
+   "relation": "possibly_same_as",
+   "edge_type": "inferred",
+   "confidence": "inferred",
+   "hs_codes": [],
+   "first_seen": null,
+   "last_seen": null,
+   "shipment_count": null,
+   "evidence": "The trade record and the registry record share No. 599 Daihe Road, Xinzhan District, Hefei.",
+   "source_call_ids": [
+    "s731",
+    "s712"
+   ],
+   "case_ids": [
+    "case-7"
+   ],
+   "confidence_reason": "Same street address and name stem; no shared identifier."
+  },
+  {
+   "id": "e713",
+   "source": "Ctq4KZl1vI__Cm_ocAMNsg",
+   "target": "sfUxx_TMvkJFG13vTnqbwQ",
+   "relation": "possibly_same_as",
+   "edge_type": "inferred",
+   "confidence": "inferred",
+   "hs_codes": [],
+   "first_seen": null,
+   "last_seen": null,
+   "shipment_count": null,
+   "evidence": "The trade record and the registry record share No. 599 Daihe Road and No. 566 Huayuan Avenue, Hefei.",
+   "source_call_ids": [
+    "s731"
+   ],
+   "case_ids": [
+    "case-7"
+   ],
+   "confidence_reason": "Same street addresses and name stem; no shared identifier."
+  },
+  {
+   "id": "e714",
+   "source": "L2r51cgdgK63Sk516U52Jg",
+   "target": "sfUxx_TMvkJFG13vTnqbwQ",
+   "relation": "group_name_match",
+   "edge_type": "inferred",
+   "confidence": "inferred",
+   "hs_codes": [],
+   "first_seen": null,
+   "last_seen": null,
+   "shipment_count": null,
+   "evidence": "'Guoxuan' is Gotion's Chinese name. Hefei Gotion's own record lists a Longchi Road, Tongcheng address, and another Tongcheng Guoxuan record sits on Longchi Road, Anqing.",
+   "source_call_ids": [
+    "s708",
+    "s731"
+   ],
+   "case_ids": [
+    "case-7"
+   ],
+   "confidence_reason": "Group name plus an address on the parent's record; no registry shareholding pulled."
+  },
+  {
+   "id": "e715",
+   "source": "aXSAK32rB7828zLgi_C4zA",
+   "target": "L2r51cgdgK63Sk516U52Jg",
+   "relation": "possibly_same_as",
+   "edge_type": "inferred",
+   "confidence": "lead",
+   "hs_codes": [],
+   "first_seen": null,
+   "last_seen": null,
+   "shipment_count": null,
+   "evidence": "Two truncated trade-name records for Tongcheng Guoxuan New Energy.",
+   "source_call_ids": [
+    "s708",
+    "s714"
+   ],
+   "case_ids": [
+    "case-7"
+   ],
+   "confidence_reason": "A name match only."
+  },
+  {
+   "id": "e716",
+   "source": "S-yRq5dFMQKTkiXrPaKPGQ",
+   "target": "jtptt0xXwDPrAN8CN-po4g",
+   "relation": "director_of",
+   "edge_type": "contractual",
+   "confidence": "documented",
+   "hs_codes": [],
+   "first_seen": null,
+   "last_seen": null,
+   "shipment_count": null,
+   "evidence": "Listed as a current director of Gotion, Inc.",
+   "source_call_ids": [
+    "s705"
+   ],
+   "case_ids": [
+    "case-7"
+   ],
+   "confidence_reason": "California Secretary of State registry record."
+  },
+  {
+   "id": "e717",
+   "source": "ru0HQoZ0MqsV_E41dQ5qEQ",
+   "target": "Ba3SkSLr0jnGdVR7sWcnWQ",
+   "relation": "director_of",
+   "edge_type": "contractual",
+   "confidence": "documented",
+   "hs_codes": [],
+   "first_seen": null,
+   "last_seen": null,
+   "shipment_count": null,
+   "evidence": "Listed as deputy general manager and non-independent director of Gotion High-Tech.",
+   "source_call_ids": [
+    "s720"
+   ],
+   "case_ids": [
+    "case-7"
+   ],
+   "confidence_reason": "Chinese registry record."
+  },
+  {
+   "id": "e718",
+   "source": "S-yRq5dFMQKTkiXrPaKPGQ",
+   "target": "ru0HQoZ0MqsV_E41dQ5qEQ",
+   "relation": "possibly_same_as",
+   "edge_type": "inferred",
+   "confidence": "lead",
+   "hs_codes": [],
+   "first_seen": null,
+   "last_seen": null,
+   "shipment_count": null,
+   "evidence": "Same name, Steven Cai, on the boards of the US company and the Chinese parent.",
+   "source_call_ids": [
+    "s705",
+    "s720"
+   ],
+   "case_ids": [
+    "case-7"
+   ],
+   "confidence_reason": "A name match only; Sayari holds them as two people."
+  },
+  {
+   "id": "e719",
+   "source": "0TsZzKZdA9j4qq_JfBakUQ",
+   "target": "Ba3SkSLr0jnGdVR7sWcnWQ",
+   "relation": "owns",
+   "edge_type": "contractual",
+   "confidence": "documented",
+   "hs_codes": [],
+   "first_seen": null,
+   "last_seen": null,
+   "shipment_count": null,
+   "evidence": "Volkswagen (China) Investment is a shareholder of Gotion High-Tech in Sayari's registry graph. 24.28% at 30 Jun 2026; falling to 18.98% after the agreed 5.30% sale.",
+   "source_call_ids": [
+    "s725"
+   ],
+   "case_ids": [
+    "case-7"
+   ],
+   "confidence_reason": "A registry shareholder link returned by a path search."
+  },
+  {
+   "id": "e720",
+   "source": "yO_m3IE68dktKtJnqx7OtQ",
+   "target": "Ba3SkSLr0jnGdVR7sWcnWQ",
+   "relation": "owns",
+   "edge_type": "contractual",
+   "confidence": "documented",
+   "hs_codes": [],
+   "first_seen": null,
+   "last_seen": null,
+   "shipment_count": null,
+   "evidence": "Nanjing Gotion Holding Group holds 10.59% of Gotion High-Tech.",
+   "source_call_ids": [
+    "s720"
+   ],
+   "case_ids": [
+    "case-7"
+   ],
+   "confidence_reason": "Chinese registry shareholder data with a percentage."
+  },
+  {
+   "id": "e721",
+   "source": "KL5fNOIkqdQV8ZW_4a0wqw",
+   "target": "L1HhW3HMqcvXRKoHOQdS2g",
+   "relation": "ships_to",
+   "edge_type": "transactional",
+   "confidence": "documented",
+   "hs_codes": [
+    "380110"
+   ],
+   "first_seen": "2025-12-23",
+   "last_seen": "2025-12-23",
+   "shipment_count": 2,
+   "evidence": "Artificial graphite (HS 3801.10), 2 rows, shipped from Busan, Korea, to Tacoma on 23 Dec 2025. Shipper address Hefei; receiver 48660 Kato Road, Fremont. No grain size is given, so the grade is unknown.",
+   "source_call_ids": [
+    "s710",
+    "s712"
+   ],
+   "case_ids": [
+    "case-7"
+   ],
+   "confidence_reason": "Sayari returned dated, HS-coded rows (Korean trade data)."
+  },
+  {
+   "id": "e722",
+   "source": "KL5fNOIkqdQV8ZW_4a0wqw",
+   "target": "L1HhW3HMqcvXRKoHOQdS2g",
+   "relation": "ships_to",
+   "edge_type": "transactional",
+   "confidence": "documented",
+   "hs_codes": [
+    "850760",
+    "850790"
+   ],
+   "first_seen": "2024-04-07",
+   "last_seen": "2026-09-08",
+   "shipment_count": null,
+   "evidence": "Li-ion battery modules and battery parts (HS 8507.60, 8507.90), Jul–Sep 2026 (4 rows in s713). The graph shows HS 8507 flows from Apr 2024. Manteno-bound rows (s716) add dummy cells, adhesive and insulation board, Jan–Sep 2026.",
+   "source_call_ids": [
+    "s710",
+    "s713",
+    "s716"
+   ],
+   "case_ids": [
+    "case-7"
+   ],
+   "confidence_reason": "Sayari returned dated, HS-coded rows."
+  },
+  {
+   "id": "e723",
+   "source": "L2r51cgdgK63Sk516U52Jg",
+   "target": "L1HhW3HMqcvXRKoHOQdS2g",
+   "relation": "ships_to",
+   "edge_type": "transactional",
+   "confidence": "documented",
+   "hs_codes": [
+    "850760"
+   ],
+   "first_seen": "2026-07-14",
+   "last_seen": "2026-08-27",
+   "shipment_count": 44,
+   "evidence": "Lithium-ion cells (HS 8507.60), 15 rows on 14–21 Jul 2026, plus 29 rows of Li-ion packs (HTS 8507.60.0020) on 5–27 Aug 2026 in the Manteno-linked search. A separate Tongcheng Guoxuan record also shipped HS 8507 to Gotion Inc. in Jan–Apr 2025.",
+   "source_call_ids": [
+    "s710",
+    "s713",
+    "s716"
+   ],
+   "case_ids": [
+    "case-7"
+   ],
+   "confidence_reason": "Sayari returned dated, HS-coded rows."
+  },
+  {
+   "id": "e724",
+   "source": "sfUxx_TMvkJFG13vTnqbwQ",
+   "target": "L1HhW3HMqcvXRKoHOQdS2g",
+   "relation": "ships_to",
+   "edge_type": "transactional",
+   "confidence": "documented",
+   "hs_codes": [
+    "850760"
+   ],
+   "first_seen": "2025-07-16",
+   "last_seen": "2026-08-10",
+   "shipment_count": null,
+   "evidence": "Li-ion cells (HS 8507.60) on 3 and 10 Aug 2026 (one transshipped at Kingston, Jamaica). The graph shows HS 8507 from China and Korea, Jul 2025 – Aug 2026. Also a carton marked for delivery to Gotion Illinois, Manteno (16 Aug 2025).",
+   "source_call_ids": [
+    "s710",
+    "s713",
+    "s716"
+   ],
+   "case_ids": [
+    "case-7"
+   ],
+   "confidence_reason": "Sayari returned dated, HS-coded rows."
+  },
+  {
+   "id": "e725",
+   "source": "Ctq4KZl1vI__Cm_ocAMNsg",
+   "target": "L1HhW3HMqcvXRKoHOQdS2g",
+   "relation": "ships_to",
+   "edge_type": "transactional",
+   "confidence": "documented",
+   "hs_codes": [
+    "850760"
+   ],
+   "first_seen": "2024-06-20",
+   "last_seen": "2026-08-10",
+   "shipment_count": null,
+   "evidence": "Li-ion cells (HS 8507.60), 2 rows on 10 Aug 2026, transshipped at Kingston, Jamaica (ZIM); an LFP energy-storage pack on 28 Jul 2026; HS 8507 flows from Jun 2024 in the graph.",
+   "source_call_ids": [
+    "s710",
+    "s713",
+    "s716"
+   ],
+   "case_ids": [
+    "case-7"
+   ],
+   "confidence_reason": "Sayari returned dated, HS-coded rows."
+  },
+  {
+   "id": "e726",
+   "source": "EJwFUVeWPX6ErSnqA4dxgw",
+   "target": "L1HhW3HMqcvXRKoHOQdS2g",
+   "relation": "ships_to",
+   "edge_type": "transactional",
+   "confidence": "documented",
+   "hs_codes": [
+    "854449",
+    "7318"
+   ],
+   "first_seen": "2024-12-20",
+   "last_seen": "2026-09-08",
+   "shipment_count": null,
+   "evidence": "Storage-system accessories and coolant (Jul 2025), fasteners (Dec 2024) and insulated cable (HS 8544.49, 8 Sep 2026), all departing China.",
+   "source_call_ids": [
+    "s710",
+    "s716"
+   ],
+   "case_ids": [
+    "case-7"
+   ],
+   "confidence_reason": "Sayari returned dated shipment rows."
+  },
+  {
+   "id": "e727",
+   "source": "EJwFUVeWPX6ErSnqA4dxgw",
+   "target": "c3D62Of8RTLeBCM9wnuCvw",
+   "relation": "ships_to",
+   "edge_type": "transactional",
+   "confidence": "documented",
+   "hs_codes": [],
+   "first_seen": "2025-07-03",
+   "last_seen": "2025-07-11",
+   "shipment_count": 4,
+   "evidence": "Battery pack cover assemblies and battery cases, 4 rows, 3–11 Jul 2025, from China to the Manteno record.",
+   "source_call_ids": [
+    "s714",
+    "s716"
+   ],
+   "case_ids": [
+    "case-7"
+   ],
+   "confidence_reason": "Sayari returned dated shipment rows."
+  },
+  {
+   "id": "e728",
+   "source": "KL5fNOIkqdQV8ZW_4a0wqw",
+   "target": "TeFCWTgdDF-tAyfunxgqXw",
+   "relation": "ships_to",
+   "edge_type": "transactional",
+   "confidence": "documented",
+   "hs_codes": [],
+   "first_seen": "2025-09-24",
+   "last_seen": "2025-09-24",
+   "shipment_count": 1,
+   "evidence": "A Li-ion test module to Gotion Illinois New Energy Inc, 24 Sep 2025.",
+   "source_call_ids": [
+    "s715",
+    "s716"
+   ],
+   "case_ids": [
+    "case-7"
+   ],
+   "confidence_reason": "Sayari returned a dated shipment row."
+  },
+  {
+   "id": "e729",
+   "source": "sfUxx_TMvkJFG13vTnqbwQ",
+   "target": "a2CIEyP-znrNrpln9qssYA",
+   "relation": "ships_to",
+   "edge_type": "transactional",
+   "confidence": "documented",
+   "hs_codes": [],
+   "first_seen": "2025-12-27",
+   "last_seen": "2025-12-27",
+   "shipment_count": 1,
+   "evidence": "A high-voltage box to 'Gotion Illinois', 27 Dec 2025.",
+   "source_call_ids": [
+    "s716"
+   ],
+   "case_ids": [
+    "case-7"
+   ],
+   "confidence_reason": "Sayari returned a dated shipment row."
+  },
+  {
+   "id": "e730",
+   "source": "KL5fNOIkqdQV8ZW_4a0wqw",
+   "target": "eRITWZG5dyfFu5tqu8tv-g",
+   "relation": "ships_to",
+   "edge_type": "transactional",
+   "confidence": "documented",
+   "hs_codes": [],
+   "first_seen": "2026-02-13",
+   "last_seen": "2026-02-13",
+   "shipment_count": 1,
+   "evidence": "An energy-storage control cabinet, transformer and cables, 13 Feb 2026.",
+   "source_call_ids": [
+    "s716"
+   ],
+   "case_ids": [
+    "case-7"
+   ],
+   "confidence_reason": "Sayari returned a dated shipment row."
+  },
+  {
+   "id": "e731",
+   "source": "sfUxx_TMvkJFG13vTnqbwQ",
+   "target": "mFuYdHo30dU4r8kU_11y7w",
+   "relation": "ships_to",
+   "edge_type": "transactional",
+   "confidence": "documented",
+   "hs_codes": [
+    "850760"
+   ],
+   "first_seen": "2026-08-23",
+   "last_seen": "2026-08-23",
+   "shipment_count": 3,
+   "evidence": "Li-ion cells (HS 8507.60), 3 rows on 23 Aug 2026, transshipped at Kingston, Jamaica (ZIM), to a US freight forwarder.",
+   "source_call_ids": [
+    "s713"
+   ],
+   "case_ids": [
+    "case-7"
+   ],
+   "confidence_reason": "Sayari returned dated, HS-coded rows."
+  },
+  {
+   "id": "e732",
+   "source": "KL5fNOIkqdQV8ZW_4a0wqw",
+   "target": "1uN_EFYSidIznJZMZxptlw",
+   "relation": "ships_to",
+   "edge_type": "transactional",
+   "confidence": "corroborated",
+   "hs_codes": [
+    "850760"
+   ],
+   "first_seen": null,
+   "last_seen": "2024-02-21",
+   "shipment_count": 28,
+   "evidence": "Hefei Gotion is among Moxion Power's suppliers. The buyer rollup shows 28 Gotion-related Li-ion battery shipments (HS 8507.60), the latest on 21 Feb 2024.",
+   "source_call_ids": [
+    "s727",
+    "s731"
+   ],
+   "case_ids": [
+    "case-7"
+   ],
+   "confidence_reason": "Two Sayari tools agree (trade graph and buyer rollup), but we did not pull the dated rows."
+  },
+  {
+   "id": "e733",
+   "source": "L1HhW3HMqcvXRKoHOQdS2g",
+   "target": "z5PIbfNlNWbM_PtzLkUvbg",
+   "relation": "ships_to",
+   "edge_type": "transactional",
+   "confidence": "lead",
+   "hs_codes": [],
+   "first_seen": null,
+   "last_seen": null,
+   "shipment_count": null,
+   "evidence": "Sayari lists Livguard as a buyer from the Gotion Inc. trade record. That record's sources are Vietnamese, Korean, Indian, Chinese and Mexican customs data. Probably Chinese-made goods invoiced by Gotion Inc.",
+   "source_call_ids": [
+    "s707"
+   ],
+   "case_ids": [
+    "case-7"
+   ],
+   "confidence_reason": "A single trade-graph link; no rows pulled."
+  },
+  {
+   "id": "e734",
+   "source": "L1HhW3HMqcvXRKoHOQdS2g",
+   "target": "kqhzX49SUGOaae-QwH0Cvw",
+   "relation": "ships_to",
+   "edge_type": "transactional",
+   "confidence": "lead",
+   "hs_codes": [],
+   "first_seen": null,
+   "last_seen": null,
+   "shipment_count": null,
+   "evidence": "Sayari lists VinES as a buyer from the Gotion Inc. trade record, whose sources include Vietnamese customs data.",
+   "source_call_ids": [
+    "s707"
+   ],
+   "case_ids": [
+    "case-7"
+   ],
+   "confidence_reason": "A single trade-graph link; no rows pulled."
+  },
+  {
+   "id": "e735",
+   "source": "TeFCWTgdDF-tAyfunxgqXw",
+   "target": "case7-richardson-electronics",
+   "relation": "ships_to",
+   "edge_type": "contractual",
+   "confidence": "lead",
+   "hs_codes": [],
+   "first_seen": null,
+   "last_seen": null,
+   "shipment_count": null,
+   "evidence": "Richardson Electronics announced a partnership on 13 May 2026 to sell battery storage systems built at Gotion's Manteno plant.",
+   "source_call_ids": [
+    "t701"
+   ],
+   "case_ids": [
+    "case-7"
+   ],
+   "confidence_reason": "One company press release; no trade record yet."
+  },
+  {
+   "id": "e736",
+   "source": "jtptt0xXwDPrAN8CN-po4g",
+   "target": "case7-big-rapids-project",
+   "relation": "owns",
+   "edge_type": "contractual",
+   "confidence": "corroborated",
+   "hs_codes": [],
+   "first_seen": null,
+   "last_seen": null,
+   "shipment_count": null,
+   "evidence": "Gotion, Inc. was the developer of the Big Rapids project, which the state of Michigan declared abandoned in Sep 2025.",
+   "source_call_ids": [
+    "t702",
+    "s728"
+   ],
+   "case_ids": [
+    "case-7"
+   ],
+   "confidence_reason": "Several independent outlets (Bridge Michigan, MLive, Reuters, Fox 17) report it; Sayari has no record."
+  }
+ ],
+ "calls": [
+  {
+   "id": "s701",
+   "timestamp": "2026-10-14T19:45:55Z",
+   "server": "sayari",
+   "tool": "search_entities",
+   "params": {
+    "query": "\"Gotion\" United States",
+    "limit": 25
+   },
+   "question": "Does a quoted-name search with a country word find the US Gotion companies?",
+   "purpose": "Resolve the US entities",
+   "result_summary": "0 results.",
+   "interpretation": "Adding a country word to a quoted name returned nothing. A search-syntax limit, not a gap in the data.",
+   "scorecard": "failed",
+   "entity_ids": [],
+   "step": "method"
+  },
+  {
+   "id": "s702",
+   "timestamp": "2026-10-14T19:46:00Z",
+   "server": "sayari",
+   "tool": "search_entity_facets",
+   "params": {
+    "query": "Gotion"
+   },
+   "question": "How many Gotion records exist, and where?",
+   "purpose": "Shape of the entity search",
+   "result_summary": "231 records: 82 China, 39 US, 21 India, 12 Indonesia, 10 Hong Kong, 10 Singapore. 135 come from trade data and 172 from company data.",
+   "interpretation": "Gotion is heavily fragmented. Many US records to sort.",
+   "scorecard": "worked",
+   "entity_ids": [],
+   "step": "method"
+  },
+  {
+   "id": "s703",
+   "timestamp": "2026-10-14T19:46:05Z",
+   "server": "sayari",
+   "tool": "search_entities",
+   "params": {
+    "query": "Gotion USA",
+    "limit": 40,
+    "response_mode": "compact"
+   },
+   "question": "Does 'Gotion USA' find the US companies?",
+   "purpose": "Resolve the US entities",
+   "result_summary": "0 results.",
+   "interpretation": "Same as s701: an extra word kills the match.",
+   "scorecard": "failed",
+   "entity_ids": [],
+   "step": "method"
+  },
+  {
+   "id": "s704",
+   "timestamp": "2026-10-14T19:46:10Z",
+   "server": "sayari",
+   "tool": "search_entities",
+   "params": {
+    "query": "Gotion",
+    "limit": 50,
+    "response_mode": "compact"
+   },
+   "question": "Which records are the US Gotion companies and the Chinese parent?",
+   "purpose": "Resolve the US entities",
+   "result_summary": "50 of 231 rows. US: GOTION, INC. (California corp. no. 03655947), Gotion, Inc. (SAM UEI EKWPJTF2FM43, CAGE 7Z4Q1), GOTION INC. (trade record, Fremont), GOTION ILLINOIS NEW ENERGY INC (SAM UEI SZESYXG93LF8), Gotion Illinois New Energy (trade record typed as a person), GOTION,INC. China: Gotion High tech Co Ltd (USCC 91320600138346792B, LEI 300300J1NKV8ZBF0KN15), 国轩高科股份有限公司 (same USCC), several Hefei Gotion trade records. No Michigan record in the first 50.",
+   "interpretation": "The US group splits into a Fremont HQ cluster and a Manteno cluster. The parent has two registry records sharing one USCC.",
+   "scorecard": "worked",
+   "entity_ids": [
+    "jtptt0xXwDPrAN8CN-po4g",
+    "88rCtmTg8g2LPVqmzM7Nhw",
+    "L1HhW3HMqcvXRKoHOQdS2g",
+    "TeFCWTgdDF-tAyfunxgqXw",
+    "c3D62Of8RTLeBCM9wnuCvw",
+    "Ba3SkSLr0jnGdVR7sWcnWQ",
+    "cqrsueiPWsIEIMOtO6v_Pg"
+   ],
+   "step": "plant"
+  },
+  {
+   "id": "s705",
+   "timestamp": "2026-10-14T19:46:15Z",
+   "server": "sayari",
+   "tool": "get_entity_profile",
+   "params": {
+    "entity_id": "jtptt0xXwDPrAN8CN-po4g",
+    "relationships_limit": 50
+   },
+   "question": "What does the California registry say about Gotion, Inc.?",
+   "purpose": "Registry record of the US company",
+   "result_summary": "Active; registered 12 Mar 2014; 48660 Kato Rd, Fremont CA. Directors Lei Guang, Chen Li and Steven Cai; secretary Meimei Fu. No shareholders listed. No trade.",
+   "interpretation": "California does not publish shareholders, so the registry can't show the Chinese parent directly. The director Steven Cai is the useful thread.",
+   "scorecard": "worked",
+   "entity_ids": [
+    "jtptt0xXwDPrAN8CN-po4g",
+    "S-yRq5dFMQKTkiXrPaKPGQ"
+   ],
+   "step": "owner"
+  },
+  {
+   "id": "s706",
+   "timestamp": "2026-10-14T19:46:20Z",
+   "server": "sayari",
+   "tool": "find_beneficial_owners",
+   "params": {
+    "entity_id": "88rCtmTg8g2LPVqmzM7Nhw"
+   },
+   "question": "Who owns Gotion, Inc. per Sayari's ownership graph?",
+   "purpose": "Ownership chain",
+   "result_summary": "0 owners returned.",
+   "interpretation": "No upstream ownership on the US side, as in Case 1. Had to work down from the parent instead.",
+   "scorecard": "failed",
+   "entity_ids": [
+    "88rCtmTg8g2LPVqmzM7Nhw"
+   ],
+   "step": "owner"
+  },
+  {
+   "id": "s707",
+   "timestamp": "2026-10-14T19:46:25Z",
+   "server": "sayari",
+   "tool": "get_entity_profile",
+   "params": {
+    "entity_id": "L1HhW3HMqcvXRKoHOQdS2g",
+    "relationships_limit": 50
+   },
+   "question": "What does the main trade record for Gotion Inc. show?",
+   "purpose": "Trade footprint of the US company",
+   "result_summary": "Addresses 48660 and 46850 Kato Road, Fremont. 17,138 shipments sent and 978 received; 52 suppliers, 12 buyers. Ships to Livguard Energy Technologies (India), Dat Bike and VinES (Vietnam) and a Vietnamese renewables firm. Sources are Vietnam, Korea, India, China and Mexico customs. Flags include chinese_soe_adjacent and sub-tier forced-labor 'product blueprint' flags.",
+   "interpretation": "Same street as the California registry record. The 'sent' count reflects Gotion Inc. named as seller on goods leaving China, not exports from Fremont.",
+   "scorecard": "worked",
+   "entity_ids": [
+    "L1HhW3HMqcvXRKoHOQdS2g",
+    "z5PIbfNlNWbM_PtzLkUvbg",
+    "kqhzX49SUGOaae-QwH0Cvw"
+   ],
+   "step": "plant"
+  },
+  {
+   "id": "s708",
+   "timestamp": "2026-10-14T19:46:30Z",
+   "server": "sayari",
+   "tool": "traverse_network",
+   "params": {
+    "entity_id": "L1HhW3HMqcvXRKoHOQdS2g",
+    "relationships": [
+     "receives_from"
+    ],
+    "max_depth": 1,
+    "limit": 60,
+    "response_mode": "compact"
+   },
+   "question": "Who supplies Gotion Inc.?",
+   "purpose": "Supplier list",
+   "result_summary": "50 suppliers returned (saved to file, parsed). Mostly Gotion group plants: several Hefei Gotion High-Tech Power Energy records, Tongcheng Guoxuan/Gotion New Energy, Shanghai Gotion New Energy, Shanghai Xuanyi. Also Maanshan Wanma Machine Building, Green Innovation International (Taiwan), Deserves Trading, Martin Bencher (project logistics), Sinotrans Central China, SZ Envicool, Suzhou Tsing Standard, VinFast. No graphite or anode maker by name.",
+   "interpretation": "The US company buys mainly from its own Chinese group. No independent anode supplier appears.",
+   "scorecard": "worked",
+   "entity_ids": [
+    "L1HhW3HMqcvXRKoHOQdS2g",
+    "L2r51cgdgK63Sk516U52Jg",
+    "EJwFUVeWPX6ErSnqA4dxgw",
+    "KL5fNOIkqdQV8ZW_4a0wqw",
+    "Ctq4KZl1vI__Cm_ocAMNsg"
+   ],
+   "step": "in"
+  },
+  {
+   "id": "s709",
+   "timestamp": "2026-10-14T19:46:35Z",
+   "server": "sayari",
+   "tool": "search_trade_facets",
+   "params": {
+    "scope": "shipments",
+    "query": "\"GOTION\"",
+    "arrival_country": "USA",
+    "bucket_limit": 15
+   },
+   "question": "What Gotion-related shipments arrive in the US?",
+   "purpose": "Inbound trade shape",
+   "result_summary": "1,398 rows, Aug 2021 to 20 Sep 2026. Departures: China 1,109, Korea 94, Hong Kong 14, Mexico 11, Jamaica 10 (ZIM transshipments of Chinese cargo, not a Jamaican origin). Top HS: 850760 lithium-ion batteries (136), 847989 machinery (90), 847910 (42). Top buyer Gotion Inc. (975 rows), then 1st Choice Freight (186) and Gotion Illinois (47). No graphite HS code in the top 15.",
+   "interpretation": "The US arm imports cells, packs and factory machinery. Graphite is not a main inbound line.",
+   "scorecard": "worked",
+   "entity_ids": [
+    "L1HhW3HMqcvXRKoHOQdS2g",
+    "mFuYdHo30dU4r8kU_11y7w",
+    "c3D62Of8RTLeBCM9wnuCvw"
+   ],
+   "step": "in"
+  },
+  {
+   "id": "s710",
+   "timestamp": "2026-10-14T19:46:40Z",
+   "server": "sayari",
+   "tool": "get_upstream_supply_chain",
+   "params": {
+    "entity_id": "L1HhW3HMqcvXRKoHOQdS2g",
+    "product": [
+     "3801",
+     "2504",
+     "2713",
+     "8507"
+    ],
+    "max_depth": 1,
+    "limit": 40
+   },
+   "question": "Which suppliers send graphite, coke or batteries to Gotion Inc., and when?",
+   "purpose": "Inbound HS and dates",
+   "result_summary": "14 rows. HS 3801 from Hefei Gotion via Korea to the US on 23 Dec 2025. HS 8507 from Hefei Gotion (Apr 2024 to Sep 2026), Tongcheng Guoxuan (Jan to Apr 2025; Jul 2026), Shanghai Gotion New Energy (Mar 2023, Apr 2024), Green Innovation (Dec 2024). No HS 2504 (natural graphite) or 2713 (petroleum coke).",
+   "interpretation": "One artificial-graphite flow and a steady battery flow, all from the Gotion group.",
+   "scorecard": "worked",
+   "entity_ids": [
+    "KL5fNOIkqdQV8ZW_4a0wqw",
+    "L2r51cgdgK63Sk516U52Jg",
+    "TaBSgpeUmzA9s0BQ5KKBIQ",
+    "Ctq4KZl1vI__Cm_ocAMNsg",
+    "sfUxx_TMvkJFG13vTnqbwQ",
+    "Z11UJc572QejZgJJ1RVEKw"
+   ],
+   "step": "in"
+  },
+  {
+   "id": "s711",
+   "timestamp": "2026-10-14T19:46:45Z",
+   "server": "sayari",
+   "tool": "search_shipments",
+   "params": {
+    "query": "\"GOTION\" graphite",
+    "arrival_country": "USA",
+    "limit": 25,
+    "response_mode": "compact"
+   },
+   "question": "Do any US-bound Gotion rows mention graphite in free text?",
+   "purpose": "Graphite inputs",
+   "result_summary": "0 rows.",
+   "interpretation": "The free-text word 'graphite' with the quoted name returned nothing, though s712 found rows by HS code. Search by HS code, not keyword.",
+   "scorecard": "failed",
+   "entity_ids": [],
+   "step": "method"
+  },
+  {
+   "id": "s712",
+   "timestamp": "2026-10-14T19:46:50Z",
+   "server": "sayari",
+   "tool": "search_shipments",
+   "params": {
+    "query": "\"GOTION\"",
+    "arrival_country": "USA",
+    "hs_code": "3801",
+    "limit": 25,
+    "response_mode": "full"
+   },
+   "question": "What are the artificial-graphite shipments into Gotion Inc.?",
+   "purpose": "Graphite inputs",
+   "result_summary": "2 rows. Shipper Hefei Gotion High-Tech Power Energy (Xinzhan High-Tech District, Hefei). Receiver Gotion Inc., 48660 Kato Road, Fremont. HS 380110 'artificial graphite'. Departed Busan, Korea, 23 Dec 2025, to Tacoma. Source: Korean trade data.",
+   "interpretation": "Chinese artificial graphite reaches the US Gotion company from its own parent group, routed through Korea. The description has no grain size, so grade is unknown.",
+   "scorecard": "worked",
+   "entity_ids": [
+    "KL5fNOIkqdQV8ZW_4a0wqw",
+    "L1HhW3HMqcvXRKoHOQdS2g"
+   ],
+   "step": "in"
+  },
+  {
+   "id": "s713",
+   "timestamp": "2026-10-14T19:46:55Z",
+   "server": "sayari",
+   "tool": "search_shipments",
+   "params": {
+    "query": "\"GOTION\"",
+    "arrival_country": "USA",
+    "hs_code": "8507",
+    "limit": 40,
+    "response_mode": "compact"
+   },
+   "question": "Who ships batteries (HS 8507) to the US Gotion entities, and when?",
+   "purpose": "Battery inputs",
+   "result_summary": "145 rows; 40 read, all 2026. Tongcheng Guoxuan New Energy to Gotion Inc.: 15 rows, 14–21 Jul 2026. Hefei Gotion records to Gotion Inc.: Li-ion cells and modules, Jul–Sep 2026, some transshipped at Kingston, Jamaica. Hefei Guoxuan Hi-Tech Power Energy to Gotion Inc. (3 and 10 Aug 2026) and to 1st Choice Freight Service (3 rows, 23 Aug 2026, transshipped at Kingston, Jamaica).",
+   "interpretation": "Chinese-made cells flow steadily into the US Gotion company from group plants in Hefei and Tongcheng.",
+   "scorecard": "worked",
+   "entity_ids": [
+    "KL5fNOIkqdQV8ZW_4a0wqw",
+    "L2r51cgdgK63Sk516U52Jg",
+    "sfUxx_TMvkJFG13vTnqbwQ",
+    "Ctq4KZl1vI__Cm_ocAMNsg",
+    "L1HhW3HMqcvXRKoHOQdS2g",
+    "mFuYdHo30dU4r8kU_11y7w"
+   ],
+   "step": "in"
+  },
+  {
+   "id": "s714",
+   "timestamp": "2026-10-14T19:47:00Z",
+   "server": "sayari",
+   "tool": "get_entity_profile",
+   "params": {
+    "entity_id": "c3D62Of8RTLeBCM9wnuCvw",
+    "relationships_limit": 30
+   },
+   "question": "What is the 'Gotion Illinois New Energy' trade record?",
+   "purpose": "Manteno plant",
+   "result_summary": "Typed as a person (a data error). Address 333 South Spruce St, Manteno IL. 47 shipments received. Suppliers: Autosmart International (Taiwan), Tongcheng Guoxuan, Green Innovation, Maanshan Wanma Machine Building, Hefei Gotion. Sources: Korean trade data and US imports.",
+   "interpretation": "The Manteno plant as an importer. The 'person' type is a classification error, not a person.",
+   "scorecard": "worked",
+   "entity_ids": [
+    "c3D62Of8RTLeBCM9wnuCvw",
+    "aXSAK32rB7828zLgi_C4zA",
+    "EJwFUVeWPX6ErSnqA4dxgw",
+    "KL5fNOIkqdQV8ZW_4a0wqw"
+   ],
+   "step": "plant"
+  },
+  {
+   "id": "s715",
+   "timestamp": "2026-10-14T19:47:05Z",
+   "server": "sayari",
+   "tool": "get_entity_profile",
+   "params": {
+    "entity_id": "TeFCWTgdDF-tAyfunxgqXw",
+    "relationships_limit": 30
+   },
+   "question": "What does the registered Gotion Illinois record show?",
+   "purpose": "Manteno plant",
+   "result_summary": "GOTION ILLINOIS NEW ENERGY INC, 333 South Spruce St, Manteno. CAGE 18RZ0, SAM UEI SZESYXG93LF8, SAM registration date 29 Jan 2026. 11 shipments received, from Hefei Gotion (two records), Zhejiang Huaray Technology and a Vietnamese racking maker. No shareholders.",
+   "interpretation": "Same address as the trade record. SAM lists no parent.",
+   "scorecard": "worked",
+   "entity_ids": [
+    "TeFCWTgdDF-tAyfunxgqXw",
+    "sfUxx_TMvkJFG13vTnqbwQ",
+    "KL5fNOIkqdQV8ZW_4a0wqw"
+   ],
+   "step": "plant"
+  },
+  {
+   "id": "s716",
+   "timestamp": "2026-10-14T19:47:10Z",
+   "server": "sayari",
+   "tool": "search_shipments",
+   "params": {
+    "query": "\"GOTION ILLINOIS\"",
+    "arrival_country": "USA",
+    "limit": 60,
+    "response_mode": "compact"
+   },
+   "question": "What goes into the Manteno plant, and from whom?",
+   "purpose": "Manteno inputs",
+   "result_summary": "120 rows; 60 read. Tongcheng Guoxuan to Gotion Inc.: 29 rows of 'lithium ion rechargeable pack' (HTS 8507600020), 5–27 Aug 2026. Hefei Gotion to Gotion Inc.: dummy cells, structural adhesive, insulation board, Jan–Sep 2026. Green Innovation International: ESS accessories and coolant (Jul 2025), cables (Sep 2026) to Gotion Inc.; pack covers to Gotion Illinois (Jul 2025). Hefei Guoxuan: a box marked 'deliver to Gotion Illinois New Energy, 333 South Spruce Street, Manteno' (16 Aug 2025) and a high-voltage box to 'Gotion Illinois' (27 Dec 2025). Anhui Ruineng: bags to Gotion Illinois (28 Jan 2026). Rack parts (Oct–Nov 2025).",
+   "interpretation": "Manteno assembles packs and storage systems from Chinese cells and parts. Many rows name Gotion Inc. as consignee with Manteno as delivery point, which ties the two US companies together. No graphite rows.",
+   "scorecard": "worked",
+   "entity_ids": [
+    "L2r51cgdgK63Sk516U52Jg",
+    "KL5fNOIkqdQV8ZW_4a0wqw",
+    "EJwFUVeWPX6ErSnqA4dxgw",
+    "sfUxx_TMvkJFG13vTnqbwQ",
+    "a2CIEyP-znrNrpln9qssYA",
+    "TeFCWTgdDF-tAyfunxgqXw",
+    "c3D62Of8RTLeBCM9wnuCvw",
+    "eRITWZG5dyfFu5tqu8tv-g",
+    "1BgMpq8w5wTTnMw6iGmvRg",
+    "B05sLBwEdWm0q5W3J1VaMQ",
+    "Ctq4KZl1vI__Cm_ocAMNsg"
+   ],
+   "step": "in"
+  },
+  {
+   "id": "s717",
+   "timestamp": "2026-10-14T19:47:15Z",
+   "server": "sayari",
+   "tool": "find_downstream_entities",
+   "params": {
+    "entity_id": "cqrsueiPWsIEIMOtO6v_Pg",
+    "countries": [
+     "USA"
+    ],
+    "limit": 25,
+    "response_mode": "compact"
+   },
+   "question": "Does the current-name parent record own any US company?",
+   "purpose": "Ownership chain",
+   "result_summary": "0 results.",
+   "interpretation": "This record of the parent carries no subsidiaries. Ownership sits on the other record.",
+   "scorecard": "failed",
+   "entity_ids": [
+    "cqrsueiPWsIEIMOtO6v_Pg"
+   ],
+   "step": "owner"
+  },
+  {
+   "id": "s718",
+   "timestamp": "2026-10-14T19:47:20Z",
+   "server": "sayari",
+   "tool": "find_downstream_entities",
+   "params": {
+    "entity_id": "Ba3SkSLr0jnGdVR7sWcnWQ",
+    "countries": [
+     "USA"
+    ],
+    "limit": 25,
+    "response_mode": "compact"
+   },
+   "question": "Does the former-name parent record reach a US company?",
+   "purpose": "Ownership chain",
+   "result_summary": "21 US-linked results (parsed from file). Key path: Gotion High-Tech → Hefei Gotion High-Tech Power Energy (合肥国轩高科动力能源) → 国轩高科（美国）有限公司 ('Gotion High-Tech (USA) Co.'). Other hits are Hefei Gotion's investments in Chery, BAIC and others, not Gotion's US operations.",
+   "interpretation": "The registry chain reaches a US company two levels down, but under a Chinese-language name, not 'Gotion, Inc.'",
+   "scorecard": "worked",
+   "entity_ids": [
+    "Ba3SkSLr0jnGdVR7sWcnWQ",
+    "sfUxx_TMvkJFG13vTnqbwQ",
+    "azdv0UO5gpHsKUJso_CA_Q"
+   ],
+   "step": "owner"
+  },
+  {
+   "id": "s719",
+   "timestamp": "2026-10-14T19:47:25Z",
+   "server": "sayari",
+   "tool": "get_entity_profile",
+   "params": {
+    "entity_id": "azdv0UO5gpHsKUJso_CA_Q",
+    "relationships_limit": 30
+   },
+   "question": "What is 国轩高科（美国）有限公司?",
+   "purpose": "Ownership chain",
+   "result_summary": "Countries CHN/USA. Shareholder and parent: Hefei Gotion High-Tech Power Energy. Sources: China MOFCOM Overseas Investment Database and MOFCOM Foreign Investment Directory. No address, no US identifier, no trade.",
+   "interpretation": "China's outbound-investment filing records a US subsidiary of Hefei Gotion. It is not linked to the California record, so the match to Gotion, Inc. rests on the name.",
+   "scorecard": "worked",
+   "entity_ids": [
+    "azdv0UO5gpHsKUJso_CA_Q",
+    "sfUxx_TMvkJFG13vTnqbwQ"
+   ],
+   "step": "owner"
+  },
+  {
+   "id": "s720",
+   "timestamp": "2026-10-14T19:47:30Z",
+   "server": "sayari",
+   "tool": "get_entity_profile",
+   "params": {
+    "entity_id": "Ba3SkSLr0jnGdVR7sWcnWQ",
+    "relationships_limit": 20
+   },
+   "question": "What does the parent's registry record show?",
+   "purpose": "Parent profile",
+   "result_summary": "Names include Gotion High-tech, 国轩高科股份有限公司 and the former name Jiangsu Dongyuan Electrical Group. USCC 91320600138346792B; LEI 300300J1NKV8ZBF0KN15. Business scope includes graphene batteries, battery modules and power batteries. Lists 243 shareholders; shown: Nanjing Gotion Holding Group 10.59%, Qiu Weidong 1.018%, an employee share plan 0.52%, and Hefei Gotion High-Tech Power Energy 99.8182%. The same record also lists Hefei Gotion as its subsidiary at 99.8182%. Directors include Steven Cai (deputy general manager, non-independent director). Flags: chinese_soe_adjacent, owner_of_soe, owned_by_regulatory_action_entity.",
+   "interpretation": "Hefei Gotion appears as both owner and subsidiary at the same 99.8182%. That is a loop, a data artefact. We use the subsidiary direction. The SOE flags sit on this stale former-name record and are adjacency flags, not a finding.",
+   "scorecard": "worked",
+   "entity_ids": [
+    "Ba3SkSLr0jnGdVR7sWcnWQ",
+    "yO_m3IE68dktKtJnqx7OtQ",
+    "sfUxx_TMvkJFG13vTnqbwQ",
+    "ru0HQoZ0MqsV_E41dQ5qEQ"
+   ],
+   "step": "owner"
+  },
+  {
+   "id": "s721",
+   "timestamp": "2026-10-14T19:47:35Z",
+   "server": "sayari",
+   "tool": "traverse_network",
+   "params": {
+    "entity_id": "Ba3SkSLr0jnGdVR7sWcnWQ",
+    "relationships": [
+     "has_shareholder"
+    ],
+    "max_depth": 1,
+    "limit": 100,
+    "response_mode": "compact"
+   },
+   "question": "Is Volkswagen among the parent's listed shareholders?",
+   "purpose": "Check the VW stake",
+   "result_summary": "50 of 243 shareholders returned (more pages exist). All are individuals and funds; Li Zhen appears. No Volkswagen entity in these 50.",
+   "interpretation": "Not conclusive alone. Checked with a path search instead (s725).",
+   "scorecard": "partial",
+   "entity_ids": [
+    "Ba3SkSLr0jnGdVR7sWcnWQ"
+   ],
+   "step": "owner"
+  },
+  {
+   "id": "s722",
+   "timestamp": "2026-10-14T19:47:40Z",
+   "server": "sayari",
+   "tool": "find_shortest_path",
+   "params": {
+    "source_entity_id": "jtptt0xXwDPrAN8CN-po4g",
+    "target_entity_id": "Ba3SkSLr0jnGdVR7sWcnWQ"
+   },
+   "question": "How does Sayari connect the California Gotion, Inc. to the Chinese parent?",
+   "purpose": "Ownership chain",
+   "result_summary": "Path found: California record → 'possibly same as' SAM record → 'possibly same as' trade record → receives goods from Hefei Gotion → Gotion High-Tech.",
+   "interpretation": "The shortest link runs through name matches and a trade link, not through shareholding. Sayari can't show the Fremont company is owned by Gotion High-Tech from the US side.",
+   "scorecard": "worked",
+   "entity_ids": [
+    "jtptt0xXwDPrAN8CN-po4g",
+    "88rCtmTg8g2LPVqmzM7Nhw",
+    "L1HhW3HMqcvXRKoHOQdS2g",
+    "sfUxx_TMvkJFG13vTnqbwQ",
+    "Ba3SkSLr0jnGdVR7sWcnWQ"
+   ],
+   "step": "owner"
+  },
+  {
+   "id": "s723",
+   "timestamp": "2026-10-14T19:47:45Z",
+   "server": "sayari",
+   "tool": "lookup_risk_factors",
+   "params": {
+    "ids": [
+     "chinese_soe_adjacent",
+     "owner_of_soe",
+     "owned_by_regulatory_action_entity",
+     "soe_adjacent"
+    ]
+   },
+   "question": "What do the SOE flags on the Gotion records mean?",
+   "purpose": "Read flag definitions",
+   "result_summary": "chinese_soe_adjacent / soe_adjacent: 1 hop from a state-owned enterprise, any relationship type. owner_of_soe: possibly owns an SOE up to 3 hops away (10%+). owned_by_regulatory_action_entity: possibly owned, up to 3 hops, by an entity under regulatory action.",
+   "interpretation": "None of these says Gotion is state-owned. They describe neighbours. On Gotion Inc. the SOE flag is one hop through any link, trade included.",
+   "scorecard": "worked",
+   "entity_ids": [],
+   "step": "context"
+  },
+  {
+   "id": "s724",
+   "timestamp": "2026-10-14T19:47:50Z",
+   "server": "sayari",
+   "tool": "search_entities",
+   "params": {
+    "query": "\"大众汽车（中国）投资有限公司\"",
+    "limit": 5,
+    "response_mode": "compact"
+   },
+   "question": "Which record is Volkswagen (China) Investment?",
+   "purpose": "Check the VW stake",
+   "result_summary": "Volkswagen (China) Investment Co., Ltd., USCC 911100007109204855 (CHN/DEU); two branches; also a same-name record typed as a person.",
+   "interpretation": "Resolved the VW entity for a path test.",
+   "scorecard": "worked",
+   "entity_ids": [
+    "0TsZzKZdA9j4qq_JfBakUQ",
+    "vgw3SB-m3bqnH1Sv8jCjZg"
+   ],
+   "step": "owner"
+  },
+  {
+   "id": "s725",
+   "timestamp": "2026-10-14T19:47:55Z",
+   "server": "sayari",
+   "tool": "find_shortest_path",
+   "params": {
+    "source_entity_id": "0TsZzKZdA9j4qq_JfBakUQ",
+    "target_entity_id": "Ba3SkSLr0jnGdVR7sWcnWQ"
+   },
+   "question": "Does the registry link Volkswagen (China) to Gotion High-Tech?",
+   "purpose": "Check the VW stake",
+   "result_summary": "Path length 2: Volkswagen (China) Investment is 'shareholder_of' Gotion High-Tech. No percentage given.",
+   "interpretation": "Registry data shows the VW shareholding, but not its size.",
+   "scorecard": "worked",
+   "entity_ids": [
+    "0TsZzKZdA9j4qq_JfBakUQ",
+    "Ba3SkSLr0jnGdVR7sWcnWQ"
+   ],
+   "step": "owner"
+  },
+  {
+   "id": "s726",
+   "timestamp": "2026-10-14T19:48:00Z",
+   "server": "sayari",
+   "tool": "find_shortest_path",
+   "params": {
+    "source_entity_id": "vgw3SB-m3bqnH1Sv8jCjZg",
+    "target_entity_id": "Ba3SkSLr0jnGdVR7sWcnWQ"
+   },
+   "question": "Is the person-typed VW record a second shareholder link?",
+   "purpose": "Check the VW stake",
+   "result_summary": "Path of 4 through Shanghai Volkswagen Powertrain and Volkswagen (China) Investment; no direct link.",
+   "interpretation": "The person-typed record is a stray. The direct link is the one in s725.",
+   "scorecard": "partial",
+   "entity_ids": [
+    "vgw3SB-m3bqnH1Sv8jCjZg"
+   ],
+   "step": "owner"
+  },
+  {
+   "id": "s727",
+   "timestamp": "2026-10-14T19:48:05Z",
+   "server": "sayari",
+   "tool": "search_buyers",
+   "params": {
+    "query": "\"GOTION\"",
+    "arrival_country": "USA",
+    "limit": 15,
+    "response_mode": "compact"
+   },
+   "question": "Who in the US receives Gotion-named goods?",
+   "purpose": "Customers",
+   "result_summary": "52 buyers. Gotion Inc. (975 shipments, to 20 Sep 2026); 1st Choice Freight Service (186, to 23 Aug 2026); Gotion Illinois (47, to Jul 2025); Moxion Power (28, HS 850760, to 21 Feb 2024); 1Energy Systems (15, to Oct 2025); Amazon.com Services (14, 2022); Gotion Illinois New Energy Inc (11, to Jan 2026); Energport (10, 2022); GOTION,INC. (9, to Feb 2026); Bluered New Energy (7, 2022); Caban Systems (5, to Oct 2025); 'Department of Supply Chain Gotion' (4, Mar 2025).",
+   "interpretation": "These are US buyers of Gotion goods shipped from abroad, not customers of the US plants. The rollup doesn't name the shipper per buyer, so non-Gotion matches are possible.",
+   "scorecard": "partial",
+   "entity_ids": [
+    "mFuYdHo30dU4r8kU_11y7w",
+    "1uN_EFYSidIznJZMZxptlw",
+    "x-d_uxTn-TE8ay6FKmZZAA",
+    "hycXzh23OxAAkCsQbnw6uQ"
+   ],
+   "step": "out"
+  },
+  {
+   "id": "s728",
+   "timestamp": "2026-10-14T19:48:10Z",
+   "server": "sayari",
+   "tool": "search_entities",
+   "params": {
+    "query": "Gotion Michigan Big Rapids",
+    "limit": 10,
+    "response_mode": "compact"
+   },
+   "question": "Is there a Sayari record for the Big Rapids, Michigan project?",
+   "purpose": "Big Rapids",
+   "result_summary": "0 results.",
+   "interpretation": "No Michigan Gotion entity found by this search. The project left no trade trail.",
+   "scorecard": "failed",
+   "entity_ids": [],
+   "step": "plant"
+  },
+  {
+   "id": "s729",
+   "timestamp": "2026-10-14T19:48:15Z",
+   "server": "sayari",
+   "tool": "search_shipments",
+   "params": {
+    "query": "\"GOTION\" + (\"MOXION\" | \"1ENERGY\" | \"CABAN\")",
+    "arrival_country": "USA",
+    "limit": 20,
+    "response_mode": "compact"
+   },
+   "question": "Can the buyer rollup be checked row by row?",
+   "purpose": "Customers",
+   "result_summary": "0 rows.",
+   "interpretation": "Boolean syntax returned nothing.",
+   "scorecard": "failed",
+   "entity_ids": [],
+   "step": "method"
+  },
+  {
+   "id": "s730",
+   "timestamp": "2026-10-14T19:48:20Z",
+   "server": "sayari",
+   "tool": "search_shipments",
+   "params": {
+    "query": "\"GOTION\" \"MOXION POWER\"",
+    "arrival_country": "USA",
+    "limit": 10,
+    "response_mode": "compact"
+   },
+   "question": "Do shipment rows link Gotion and Moxion?",
+   "purpose": "Customers",
+   "result_summary": "0 rows.",
+   "interpretation": "Two quoted names together returned nothing, though the rollup and graph show the link. Another search-syntax limit.",
+   "scorecard": "failed",
+   "entity_ids": [],
+   "step": "method"
+  },
+  {
+   "id": "s731",
+   "timestamp": "2026-10-14T19:48:25Z",
+   "server": "sayari",
+   "tool": "traverse_network",
+   "params": {
+    "entity_id": "1uN_EFYSidIznJZMZxptlw",
+    "relationships": [
+     "receives_from"
+    ],
+    "max_depth": 1,
+    "limit": 25,
+    "response_mode": "compact"
+   },
+   "question": "Who supplies Moxion Power?",
+   "purpose": "Customers",
+   "result_summary": "19 suppliers, including Hefei Gotion High-Tech Power Energy (four records, all at 599 Daihe Road, Hefei) alongside Amphenol, Boyd and others.",
+   "interpretation": "Confirms a direct trade link from the Gotion group in China to a US buyer. It also confirms the Hefei trade records share one address.",
+   "scorecard": "worked",
+   "entity_ids": [
+    "1uN_EFYSidIznJZMZxptlw",
+    "KL5fNOIkqdQV8ZW_4a0wqw",
+    "Ctq4KZl1vI__Cm_ocAMNsg",
+    "sfUxx_TMvkJFG13vTnqbwQ"
+   ],
+   "step": "out"
+  },
+  {
+   "id": "t701",
+   "timestamp": "2026-10-14T19:48:30Z",
+   "server": "tavily",
+   "tool": "tavily_search",
+   "params": {
+    "query": "Gotion Manteno Illinois plant production status 2026",
+    "max_results": 6,
+    "search_depth": "advanced",
+    "start_date": "2025-06-01"
+   },
+   "question": "Is the Manteno plant producing in 2025–2026?",
+   "purpose": "Plant status",
+   "result_summary": "Shaw Local (10 Oct and 18 Nov 2025): plant operating five lines, about 300 staff, aiming for 450 by end-2025 and 1,400 in 2026; makes commercial energy-storage units, EV packs and mobile chargers. S&P AutoTechInsight: energy-storage lines started spring 2025, EV battery production from Sep 2025; Illinois incentives of $536m. Richardson Electronics release (13 May 2026): BESS partnership with Gotion Inc. using product from the Manteno plant. URLs: shawlocal.com/daily-journal/2025/10/10/gotion-expects-to-add-450-jobs-by-end-of-2025; shawlocal.com/daily-journal/2025/11/18/gotion-gives-updates-on-manteno-plant; autotechinsight.spglobal.com/news/5283484; rell.com/press-news/richardson-electronics-ltd-announces-technology-partnership-with-gotion-to-deliver-u-s-manufactured-battery-energy-storage-systems",
+   "interpretation": "Manteno is producing, but it assembles packs and storage systems. That fits the trade data: cells come in from China. Nothing says it makes cells or anode material.",
+   "scorecard": "worked",
+   "entity_ids": [
+    "TeFCWTgdDF-tAyfunxgqXw",
+    "case7-richardson-electronics"
+   ],
+   "step": "context"
+  },
+  {
+   "id": "t702",
+   "timestamp": "2026-10-14T19:48:35Z",
+   "server": "tavily",
+   "tool": "tavily_search",
+   "params": {
+    "query": "Gotion Big Rapids Michigan battery plant 2026 status lawsuit abandoned",
+    "max_results": 6,
+    "search_depth": "advanced",
+    "start_date": "2025-06-01"
+   },
+   "question": "What happened to the Big Rapids project?",
+   "purpose": "Plant status",
+   "result_summary": "Michigan Strategic Fund letter of 17 Sep 2025 declared Gotion in default for 'voluntary abandonment' (120 days with no eligible work); the $175m grant was pulled. Gotion replied on 15 Oct 2025 that it was 'shocked'. Bridge Michigan: state says project is dead. Attorney General demanded repayment of $23.7m for land on 30 Jan 2026 (mlive). Gotion amended its federal suit against Green Charter Township in Jun 2026 seeking damages (mlive); Reuters, 1 Jul 2026: Gotion sues the township for damages. URLs: bridgemi.com/business-watch/michigan-gotion-battery-plant-plan-is-dead-after-years-of-controversy; mlive.com/news/grand-rapids/2026/01/michigan-demands-gotion-repay-237-million-for-halted-ev-battery-plant.html; mlive.com/news/grand-rapids/2026/06/gotion-seeks-millions-from-michigan-township-after-ev-battery-plant-sunk.html; reuters.com/legal/government/chinese-battery-maker-gotion-sues-michigan-town-millions-damages-over-plant-2026-07-01; fox17online.com/news/local-news/michigan/mecosta/michigan-moves-to-pull-public-funding-for-gotion-battery-plant-near-big-rapids",
+   "interpretation": "Big Rapids was never built. It is now a legal dispute, so there is no trade trail to find.",
+   "scorecard": "worked",
+   "entity_ids": [
+    "case7-big-rapids-project",
+    "jtptt0xXwDPrAN8CN-po4g"
+   ],
+   "step": "context"
+  }
+ ]
 }

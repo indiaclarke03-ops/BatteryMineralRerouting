@@ -1,0 +1,1742 @@
+{
+ "case": {
+  "id": "case-9",
+  "slug": "ford-btr",
+  "title": "Ford's links to BTR",
+  "subtitle": "BTR Mediterranean Anode · Tangier, Morocco; Ford and BlueOval SK, USA",
+  "country": "USA",
+  "plant_status": "under construction",
+  "question": "Can Sayari and open sources show a commercial link between Ford, or its battery joint venture BlueOval SK, and BTR's Chinese-owned plants?",
+  "answer_label": "Yes",
+  "answer": "Yes, but not through Morocco yet. In 2026, BTR's Indonesian plant shipped artificial graphite to Ford's own battery plant in Michigan. In 2025, BTR's Chinese sales company shipped graphite to BlueOval SK. The Moroccan link is still only a contract: a US$120m Ford prepayment named in a Chinese filing, with no shipments so far.",
+  "why_it_matters": "Under the PFE rules, Ford's battery tax credits depend on who owns its suppliers. BTR owns all three supply routes found here: China, Indonesia and Morocco. Ford's prepayment ties it to the Moroccan plant before that plant has produced anything.",
+  "headline": "A Chinese filing says Ford agreed to prepay US$120m to BTR's Tangier anode company, but Tangier has shipped nothing yet. Meanwhile, US import data show BTR graphite already reaching Ford: about 960 t from BTR Indonesia at Ford's Marshall, Michigan plant in 2026, and 28 rows from BTR's Shenzhen sales arm at BlueOval SK in 2025.",
+  "summary_for_non_experts": "BTR is a Chinese company that makes graphite for battery anodes, the negative side of a battery cell. In 2024, the company that holds the largest stake in BTR said Ford would pay BTR's new Moroccan plant US$120m in advance for future graphite. We couldn't find Ford confirming this, and the Moroccan plant hasn't exported anything yet. But customs records show BTR graphite already going to a Ford-owned battery plant in Michigan from BTR's Indonesian factory, and to Ford's joint venture with SK On from BTR in China.",
+  "key_numbers": [
+   {
+    "value": "US$120m",
+    "label": "prepayment Ford would make to BTR Mediterranean Anode for artificial graphite, per BTR's largest shareholder (13 Aug 2024)",
+    "call_ids": [
+     "t902",
+     "t904"
+    ]
+   },
+   {
+    "value": "US$108m",
+    "label": "reported as paid so far (unverified; sources say end-2025 or end-Jun 2026)",
+    "call_ids": [
+     "t903",
+     "t904",
+     "t906"
+    ]
+   },
+   {
+    "value": "9 rows, ~960 t",
+    "label": "BTR Indonesia artificial graphite (HS 3801.10) into Ford's Marshall, Michigan plant, May to Sep 2026",
+    "call_ids": [
+     "s915",
+     "s921"
+    ]
+   },
+   {
+    "value": "6 of 9",
+    "label": "of those rows loaded at Chinese ports (Ningbo, Yantian), not Indonesia",
+    "call_ids": [
+     "s921"
+    ]
+   },
+   {
+    "value": "28",
+    "label": "rows from BTR's Shenzhen sales arm to BlueOval SK, Jan to Nov 2025 (27 graphite, 1 cathode)",
+    "call_ids": [
+     "s913",
+     "s914"
+    ]
+   },
+   {
+    "value": "0",
+    "label": "shipments out of either Moroccan BTR company (checked 18 Oct 2026)",
+    "call_ids": [
+     "s922"
+    ]
+   }
+  ],
+  "overall_confidence": "corroborated",
+  "pattern": "complete-trail",
+  "steps": [
+   {
+    "title": "The deal: a prepayment on paper",
+    "kicker": "Step 1 · Contractual",
+    "text": "On 13 Aug 2024, BTR announced a 60,000-tonne anode plant in Tangier, through its subsidiary 'BTR Mediterranean Anode'. The same day, China Baoan, BTR's largest shareholder, said that subsidiary would sign supply and prepayment agreements with Ford, with Ford paying US$120m in advance for artificial graphite. Two later secondary sources say US$108m has been paid, but they give different dates. We found no Ford statement, and BTR's 2026 half-year report timed out when we tried to read it.",
+    "edge_ids": [
+     "e901"
+    ],
+    "node_ids": [
+     "vR1xMKUjf8bn1_A2fcxH-A",
+     "Z57YvgOYL2TdoaWYgXFZ9Q",
+     "jeHf5QJt0JXowTiCA8JiIQ"
+    ],
+    "call_ids": [
+     "t901",
+     "t902",
+     "t903",
+     "t904",
+     "t905",
+     "t906"
+    ]
+   },
+   {
+    "title": "Which Moroccan company? The filing points to the second one",
+    "kicker": "Step 2 · Contractual",
+    "text": "BTR has two Tangier companies. The filing's name, 'BTR Mediterranean Anode', matches the one registered in May 2024 (RC 149725). Moroccan company data show it is 100% owned by Rian International Holding in Singapore, and Case 2 traced that company to BTR. Case 2 had treated the other company, owned via BNUO and BTR (Jiangsu), as the anode subsidiary. That one is more likely the cathode project. Both are BTR-owned, so the ownership answer is the same.",
+    "edge_ids": [
+     "e902"
+    ],
+    "node_ids": [
+     "Z57YvgOYL2TdoaWYgXFZ9Q",
+     "uio2rrOWJmLIgiAKlcpdww",
+     "El_6QFk0rVRdYJanrqEtAA",
+     "1CjF5vzVgFFxVomroaYyaA"
+    ],
+    "call_ids": [
+     "s903",
+     "t902"
+    ]
+   },
+   {
+    "title": "Morocco: graphite in, nothing out",
+    "kicker": "Step 3 · Transactional",
+    "text": "The Tangier anode company received its first BTR Indonesia graphite in Aug 2026 (Case 2). Sayari shows no exports from either Moroccan company. The graph tools couldn't test a path from Ford or BlueOval SK to Tangier: both searches timed out. For now, the Ford link to Morocco exists only in filings.",
+    "edge_ids": [],
+    "node_ids": [
+     "El_6QFk0rVRdYJanrqEtAA",
+     "Z57YvgOYL2TdoaWYgXFZ9Q",
+     "1CjF5vzVgFFxVomroaYyaA",
+     "vR1xMKUjf8bn1_A2fcxH-A"
+    ],
+    "call_ids": [
+     "s922",
+     "s905",
+     "s920"
+    ]
+   },
+   {
+    "title": "Indonesia: BTR graphite at Ford's own plant",
+    "kicker": "Step 4 · Transactional",
+    "text": "From May to Sep 2026, US import data show 9 rows of artificial graphite (HS 3801.10, about 960 t gross) from PT Indonesia BTR to Ford's LFP cell plant in Marshall, Michigan, plus 2 rows to a second record for the same plant. Press says Ford wholly owns this plant, outside the SK On venture. Six of the 9 rows were loaded at Ningbo or Yantian in China, under the Indonesian company's name and Kendal address. A port of loading isn't proof of origin, but it warrants due diligence. BTR Indonesia had already shipped to SK Battery America in Aug 2025 (Case 1).",
+    "edge_ids": [
+     "e903",
+     "e904",
+     "e905",
+     "e906",
+     "e907",
+     "e032"
+    ],
+    "node_ids": [
+     "Lv60RfghzhQ-9oSF_kW0wA",
+     "2omCekb1pDRKjhFOAqCNSw",
+     "ALeXPymJqrTWgIhWeUyLlw",
+     "sv3GsrQVLmLz2cd353HzPQ",
+     "vR1xMKUjf8bn1_A2fcxH-A",
+     "aoeSqNICt_VUP-o-F-84Yg"
+    ],
+    "call_ids": [
+     "s915",
+     "s917",
+     "s918",
+     "s921",
+     "t907"
+    ]
+   },
+   {
+    "title": "China: BTR's sales arm supplies BlueOval SK",
+    "kicker": "Step 5 · Transactional",
+    "text": "BlueOval SK's supplier list in Sayari includes three BTR records. BTR's Shenzhen sales company sent 28 rows to BlueOval SK from Jan to Nov 2025, mostly described as 'graphite', some with purchase-order numbers. A BTR (Jiangsu) record sent one row of cathode material in Mar 2025. That is the same BTR subsidiary that owns BTR's first Moroccan company. Sayari also lists SK Battery America, which buys from BTR, as BlueOval SK's manager.",
+    "edge_ids": [
+     "e908",
+     "e909",
+     "e910",
+     "e911",
+     "e912",
+     "e913",
+     "e914",
+     "e006"
+    ],
+    "node_ids": [
+     "5_cayB1m7XahAhz_Hrrpng",
+     "vD8qX_q8JPBZpC8NYAHDfQ",
+     "EkFGNb-Mz16yvVyOx1XlPQ",
+     "zduDdSDoWzRJWKUinb7e0w",
+     "RPYYIgKHs0f-kGKGBlE9jw",
+     "aoeSqNICt_VUP-o-F-84Yg",
+     "jeHf5QJt0JXowTiCA8JiIQ"
+    ],
+    "call_ids": [
+     "s906",
+     "s907",
+     "s911",
+     "s912",
+     "s913",
+     "s914"
+    ]
+   },
+   {
+    "title": "What a buyer can't see",
+    "kicker": "Step 6 · Gap",
+    "text": "Most of BlueOval SK's graphite (45 rows in 2025) is filed under Chinese freight forwarders, Pactra Tianjin and Fan Cheng, so the maker is hidden. Sayari shows no owners for BlueOval SK and nothing under 'Ford Motor' for HS 3801. Ford's imports sit on plant-name records that don't link to Ford. BlueOval SK also re-exported 'anode active material' to SK On Hungary in 2026, so where BTR material ends up can't be traced.",
+    "edge_ids": [
+     "e916",
+     "e917",
+     "e915"
+    ],
+    "node_ids": [
+     "Rj0MkY1ZMfLxu4Wk9q4keA",
+     "cPdltpbiJ3srEuXfm_7NDA",
+     "RPYYIgKHs0f-kGKGBlE9jw",
+     "t2HmaexxvTE5WgGtj3BMxg",
+     "vR1xMKUjf8bn1_A2fcxH-A"
+    ],
+    "call_ids": [
+     "s907",
+     "s916",
+     "s919",
+     "s904",
+     "s908",
+     "s909",
+     "s910"
+    ]
+   }
+  ],
+  "verdict": {
+   "detected": [
+    {
+     "text": "BTR Indonesia shipped 9 rows of artificial graphite (HS 3801.10) to Ford's Marshall, Michigan LFP plant, May to Sep 2026, plus 2 rows to a second record for that plant.",
+     "call_ids": [
+      "s915",
+      "s921"
+     ]
+    },
+    {
+     "text": "BTR New Material Group Sales shipped 28 rows (27 graphite, 1 cathode) to BlueOval SK, Jan to Nov 2025, and 2 rows to SK Battery America in Mar 2025.",
+     "call_ids": [
+      "s913",
+      "s914"
+     ]
+    },
+    {
+     "text": "A BTR (Jiangsu) trade record shipped cathode material to BlueOval SK on 15 Mar 2025.",
+     "call_ids": [
+      "s912"
+     ]
+    },
+    {
+     "text": "The company named in the Ford filing, BTR Mediterranean Anode, is 100% owned by Rian International Holding (Singapore) in Moroccan company data.",
+     "call_ids": [
+      "s903"
+     ]
+    },
+    {
+     "text": "BTR's largest shareholder filed that BTR Mediterranean Anode would sign supply and prepayment agreements with Ford, with a US$120m prepayment for artificial graphite.",
+     "call_ids": [
+      "t902",
+      "t904"
+     ]
+    }
+   ],
+   "suggested": [
+    {
+     "text": "Ford has paid about US$108m of the prepayment, per two secondary sources that disagree on the date.",
+     "call_ids": [
+      "t903",
+      "t904"
+     ]
+    },
+    {
+     "text": "Some 'Indonesian' BTR graphite reaching Marshall may have been made or finished in China: six of nine rows were loaded at Ningbo or Yantian.",
+     "call_ids": [
+      "s921"
+     ]
+    },
+    {
+     "text": "The BTR (Jiangsu) trade record is BTR's Changzhou subsidiary, the owner of BNUO and of BTR's first Moroccan company (name and city match only).",
+     "call_ids": [
+      "s911",
+      "s912"
+     ]
+    },
+    {
+     "text": "Case 2's 'anode subsidiary' (BNUO-owned) is probably the cathode company; the anode company is the Rian-owned one.",
+     "call_ids": [
+      "t902",
+      "s903"
+     ]
+    }
+   ],
+   "not_visible": [
+    {
+     "text": "Any shipment from Morocco to Ford or anyone else. The Tangier plant has exported nothing.",
+     "call_ids": [
+      "s922"
+     ]
+    },
+    {
+     "text": "Ford's own confirmation of the agreement or the prepayment.",
+     "call_ids": [
+      "t901",
+      "t903"
+     ]
+    },
+    {
+     "text": "Who makes the 45 graphite rows into BlueOval SK filed under Chinese forwarders.",
+     "call_ids": [
+      "s907"
+     ]
+    },
+    {
+     "text": "A registry link from Ford to BlueOval SK or to the Marshall plant records; and any graph path from Ford to BTR (timed out).",
+     "call_ids": [
+      "s904",
+      "s905",
+      "s919",
+      "s920"
+     ]
+    },
+    {
+     "text": "BTR's own report of the prepayment received (extraction timed out).",
+     "call_ids": [
+      "t906"
+     ]
+    }
+   ]
+  },
+  "passport": [
+   {
+    "field": "Place of manufacture",
+    "guidance_no": "8",
+    "declared": "The cell plant's location, e.g. Marshall, Michigan.",
+    "paper_trail": "Anode graphite from BTR Indonesia, with six of nine Marshall rows loaded in China; and from BTR's Shenzhen sales arm to BlueOval SK.",
+    "gap": true,
+    "note": "The passport names the cell plant, not the anode plant, and the loading port blurs even that."
+   },
+   {
+    "field": "Detailed composition (anode)",
+    "guidance_no": "45",
+    "declared": "'Graphite' as the anode active material.",
+    "paper_trail": "Artificial graphite (HS 3801.10) into Marshall; 'graphite' rows with no HS code into BlueOval SK.",
+    "gap": true,
+    "note": "Most BlueOval SK rows carry no HS code, and 45 more name only a forwarder."
+   },
+   {
+    "field": "Critical raw materials > 0.1%",
+    "guidance_no": "15",
+    "declared": "Natural graphite listed if present.",
+    "paper_trail": "Rows are described as artificial graphite; BTR Indonesia's other US rows mix artificial and natural grades.",
+    "gap": true,
+    "note": "Whether any natural graphite reaches Ford can't be told from these rows."
+   },
+   {
+    "field": "Responsible-sourcing (due-diligence) report",
+    "guidance_no": "19",
+    "declared": "Deferred under the EU Battery Regulation.",
+    "paper_trail": "BlueOval SK carries Sayari sub-tier forced-labor flags (Sheffield Hallam, Xinjiang, UFLPA via 'possibly same as' links); BTR's parent is named in a Sheffield Hallam report.",
+    "gap": true,
+    "note": "The flags describe the supplier network, not BlueOval SK itself."
+   },
+   {
+    "field": "Ownership of upstream suppliers",
+    "guidance_no": "—",
+    "declared": "No such field in the EU passport.",
+    "paper_trail": "BTR owns all three routes: Shenzhen sales arm, Indonesian plant (60% via Hong Kong) and Tangier (100% via Singapore).",
+    "gap": false,
+    "note": "This is the PFE question. The answer here is clear, but the Ford-side ownership (JV, Marshall) comes from the press, not from Sayari."
+   }
+  ],
+  "red_flags": [
+   {
+    "flag": "Chinese parent ownership of the transit plant",
+    "signal": "contractual",
+    "severity": "High",
+    "result": "detected",
+    "note": "Tangier anode company 100% owned via Rian (Singapore) by BTR; Indonesian plant majority-owned by BTR."
+   },
+   {
+    "flag": "Same HS imported from China and exported to the US",
+    "signal": "transactional",
+    "severity": "High",
+    "result": "suggested",
+    "note": "BTR Indonesia's HS 3801.10 rows to Marshall were mostly loaded at Chinese ports. Morocco has exported nothing."
+   },
+   {
+    "flag": "Recent incorporation vs. first export date",
+    "signal": "contractual",
+    "severity": "Medium",
+    "result": "not_visible",
+    "note": "The anode company was registered in May 2024 and has no exports to compare."
+   },
+   {
+    "flag": "Volume spike after a policy date",
+    "signal": "transactional",
+    "severity": "Medium",
+    "result": "not_visible",
+    "note": "Marshall rows begin in 2026 as the plant starts up. That is a ramp-up, not a policy-linked spike."
+   },
+   {
+    "flag": "Shared address or officer with a flagged entity",
+    "signal": "inferred",
+    "severity": "Medium",
+    "result": "not_visible",
+    "note": "None found. BlueOval SK's 'mass address' flag is its Dearborn corporate address."
+   },
+   {
+    "flag": "Entity-resolution fragmentation",
+    "signal": "inferred",
+    "severity": "Low (disclose)",
+    "result": "detected",
+    "note": "18 BlueOval SK records, 2 Marshall records (one typed as a person), and several BTR sales-arm and BTR Indonesia records."
+   },
+   {
+    "flag": "Forced-labor / UFLPA sub-tier flags",
+    "signal": "inferred",
+    "severity": "Medium",
+    "result": "suggested",
+    "note": "Sub-tier and 'possibly same as' flags on BlueOval SK and SK Battery America; context, not a finding."
+   }
+  ],
+  "caveats": [
+   "Buying graphite from BTR, or prepaying a supplier, is legal and common. Nothing here shows wrongdoing by Ford, BlueOval SK, SK On or BTR.",
+   "The US$120m figure comes from a listed company's filing as reported by Chinese media. The US$108m paid figure comes from secondary sources that disagree on the date, and is unverified.",
+   "A port of loading (Ningbo, Yantian, Singapore) is not a country of origin. The Chinese-port rows may reflect routing, not where the graphite was made.",
+   "Ford's ownership of the Marshall plant and its stake in BlueOval SK come from the press and the case brief, not from Sayari's registry data.",
+   "We read 100 of 653 BTR sales-arm rows into the US and 50 of 97 BTR Indonesia rows, so counts are minimums.",
+   "BTR's stock code on the Beijing Stock Exchange appears as 835185 in 2024 filings and 920185 in 2026.",
+   "This case looks only for BTR links. A general scan of Ford's suppliers is a separate piece of work.",
+   "Records checked on 18 Oct 2026. Sayari merges and retires IDs, and several calls timed out (HTTP 408)."
+  ]
+ },
+ "entities": [
+  {
+   "id": "El_6QFk0rVRdYJanrqEtAA",
+   "name": "BTR Mediterranean New Material Technology (SASU)",
+   "country": "MAR",
+   "type": "company",
+   "role": "transit_plant",
+   "risk_flags": [
+    "psa_owned_by_sheffield_hallam_university_reports_forced_labor_entity",
+    "eu_high_risk_third"
+   ],
+   "identifiers": {
+    "ma_commercial_register": "142409",
+    "lei": "8945002T04JUT1ZWQG56",
+    "cedar_rose_uid": "MAC235776238"
+   },
+   "summary": "BTR's first Moroccan company (Oct 2023), owned through BNUO International Holding in Singapore and BTR (Jiangsu) (Case 2). The Ford prepayment filing names a different company, 'BTR Mediterranean Anode', so this one may be the cathode project company. No exports in Sayari.",
+   "source_call_ids": [
+    "s922",
+    "t902",
+    "t904"
+   ],
+   "sayari_url": "https://graph.sayari.com/resource/entity/El_6QFk0rVRdYJanrqEtAA"
+  },
+  {
+   "id": "Z57YvgOYL2TdoaWYgXFZ9Q",
+   "name": "BTR Mediterranean Anode New Material Technology",
+   "country": "MAR",
+   "type": "company",
+   "role": "transit_plant",
+   "risk_flags": [
+    "psa_owned_by_sheffield_hallam_university_reports_forced_labor_entity",
+    "eu_high_risk_third",
+    "basel_aml",
+    "cpi_score"
+   ],
+   "identifiers": {
+    "ma_commercial_register": "149725",
+    "cedar_rose_uid": "MAC242748550"
+   },
+   "summary": "Registered in Tangier on 3 May 2024, 100% owned by Rian International Holding (Singapore). Its name matches the company that, per the Aug 2024 filing by BTR's largest shareholder, would sign supply and prepayment agreements with Ford. No trade under this registry record.",
+   "source_call_ids": [
+    "s903",
+    "s905",
+    "s920",
+    "t902",
+    "t904"
+   ],
+   "sayari_url": "https://graph.sayari.com/resource/entity/Z57YvgOYL2TdoaWYgXFZ9Q"
+  },
+  {
+   "id": "1CjF5vzVgFFxVomroaYyaA",
+   "name": "BTR Mediterranean Anode New Material Technology (trade record)",
+   "country": "MAR",
+   "type": "company",
+   "role": "transit_plant",
+   "risk_flags": [],
+   "identifiers": {},
+   "summary": "Customs record with the anode company's exact name. Received 1,240 t of BTR Indonesia artificial graphite in Aug 2026 (Case 2). Still no exports from Morocco in Sayari on 18 Oct 2026.",
+   "source_call_ids": [
+    "s922"
+   ],
+   "sayari_url": "https://graph.sayari.com/resource/entity/1CjF5vzVgFFxVomroaYyaA"
+  },
+  {
+   "id": "uio2rrOWJmLIgiAKlcpdww",
+   "name": "Rian International Holding Pte. Ltd (Moroccan registry record)",
+   "country": "SGP",
+   "type": "company",
+   "role": "parent",
+   "risk_flags": [
+    "psa_owned_by_sheffield_hallam_university_reports_forced_labor_entity"
+   ],
+   "identifiers": {},
+   "summary": "Singapore holding company named in Moroccan company data as 100% shareholder and beneficial owner of BTR Mediterranean Anode. Case 2 links it to a Singapore filing record for BTR.",
+   "source_call_ids": [
+    "s903"
+   ],
+   "sayari_url": "https://graph.sayari.com/resource/entity/uio2rrOWJmLIgiAKlcpdww"
+  },
+  {
+   "id": "jeHf5QJt0JXowTiCA8JiIQ",
+   "name": "BTR New Material Group Co., Ltd.",
+   "country": "CHN",
+   "type": "company",
+   "role": "parent",
+   "risk_flags": [
+    "sheffield_hallam_university_forced_labor_entity",
+    "owner_of_forced_labor_xinjiang_entity",
+    "soe_adjacent"
+   ],
+   "identifiers": {
+    "cn_uscc": "914403007230429091"
+   },
+   "summary": "Shenzhen anode maker, listed on the Beijing Stock Exchange. Its own Aug 2024 notice on the Tangier project names no customer; its largest shareholder's notice names Ford. In Sayari, the shortest path from BlueOval SK to BTR runs through SK Battery America in two hops.",
+   "source_call_ids": [
+    "s904",
+    "s906",
+    "t902"
+   ],
+   "sayari_url": "https://graph.sayari.com/resource/entity/jeHf5QJt0JXowTiCA8JiIQ"
+  },
+  {
+   "id": "zduDdSDoWzRJWKUinb7e0w",
+   "name": "BTR (Jiangsu) New Material Technology Co., Ltd. (贝特瑞（江苏）新材料科技有限公司)",
+   "country": "CHN",
+   "type": "company",
+   "role": "parent",
+   "risk_flags": [
+    "owned_by_sheffield_hallam_university_reports_forced_labor_entity",
+    "owner_of_forced_labor_xinjiang_entity"
+   ],
+   "identifiers": {
+    "cn_uscc": "91320413MA1NAU5H7M"
+   },
+   "summary": "BTR's Changzhou subsidiary. Case 2 found it owns 100% of BNUO International Holding, the Singapore parent of BTR's first Moroccan company. A trade record with its name sold cathode material to BlueOval SK.",
+   "source_call_ids": [
+    "s912"
+   ],
+   "sayari_url": "https://graph.sayari.com/resource/entity/zduDdSDoWzRJWKUinb7e0w"
+  },
+  {
+   "id": "EkFGNb-Mz16yvVyOx1XlPQ",
+   "name": "BTR (Jiangsu) New Material Technolo (trade record)",
+   "country": "CHN",
+   "type": "company",
+   "role": "producer",
+   "risk_flags": [
+    "basel_aml",
+    "cpi_score"
+   ],
+   "identifiers": {},
+   "summary": "US import-data record at No. 519 Jiangdong Road, Jintan, Changzhou. One row of lithium nickel-cobalt-manganese oxide (cathode material) to BlueOval SK, 15 Mar 2025, and one to General Motors, 6 Aug 2026.",
+   "source_call_ids": [
+    "s911",
+    "s912"
+   ],
+   "sayari_url": "https://graph.sayari.com/resource/entity/EkFGNb-Mz16yvVyOx1XlPQ"
+  },
+  {
+   "id": "5_cayB1m7XahAhz_Hrrpng",
+   "name": "BTR New Material Group Sales Co., Ltd.",
+   "country": "CHN",
+   "type": "company",
+   "role": "trader",
+   "risk_flags": [
+    "exports_ilab_child_labor",
+    "exports_ilab_forced_labor",
+    "forced_labor_sheffield_hallam_university_reports_origin_subtier",
+    "psa_owned_by_sheffield_hallam_university_reports_forced_labor_entity"
+   ],
+   "identifiers": {},
+   "summary": "BTR's sales company at No. 8 Guangyuan 4th Road, Guangming District, Shenzhen. In US import data it sells graphite to BlueOval SK, SK Battery America, LG Energy Solution Arizona, General Motors, Panasonic, Tesla, StarPlus Energy and others.",
+   "source_call_ids": [
+    "s907",
+    "s911",
+    "s913",
+    "s914"
+   ],
+   "sayari_url": "https://graph.sayari.com/resource/entity/5_cayB1m7XahAhz_Hrrpng"
+  },
+  {
+   "id": "vD8qX_q8JPBZpC8NYAHDfQ",
+   "name": "BTR New Material Group Sales Co., Lt (record 3)",
+   "country": "CHN",
+   "type": "company",
+   "role": "trader",
+   "risk_flags": [
+    "basel_aml",
+    "cpi_score"
+   ],
+   "identifiers": {},
+   "summary": "A further US import-data record for BTR's sales arm, at the same No. 8 Guangyuan 4th Road address. Sold graphite to BlueOval SK (Jan to Jun 2025) and LG Energy Solution Arizona (2026).",
+   "source_call_ids": [
+    "s911",
+    "s913",
+    "s914"
+   ],
+   "sayari_url": "https://graph.sayari.com/resource/entity/vD8qX_q8JPBZpC8NYAHDfQ"
+  },
+  {
+   "id": "2omCekb1pDRKjhFOAqCNSw",
+   "name": "PT Indonesia BTR New Energy Material",
+   "country": "IDN",
+   "type": "company",
+   "role": "transit_plant",
+   "risk_flags": [
+    "chinese_soe_adjacent",
+    "forced_labor_uflpa_origin_subtier",
+    "psa_imports_from_usa_bis_entity"
+   ],
+   "identifiers": {
+    "lei": "254900G3L2Z0HNRV7W43",
+    "idn_tax_id": "0625540349086000"
+   },
+   "summary": "BTR's Indonesian anode plant (Morowali and Kendal), 60% held by BTR's Hong Kong arm per a broker report. Case 1 anchor record.",
+   "source_call_ids": [
+    "s915",
+    "t902"
+   ],
+   "sayari_url": "https://graph.sayari.com/resource/entity/2omCekb1pDRKjhFOAqCNSw"
+  },
+  {
+   "id": "Lv60RfghzhQ-9oSF_kW0wA",
+   "name": "PT INDONESIA BTR NEW ENERGY MATERIA (record 6)",
+   "country": "IDN",
+   "type": "company",
+   "role": "transit_plant",
+   "risk_flags": [],
+   "identifiers": {},
+   "summary": "Trade record for BTR's Indonesian plant with a Kendal shipper address. Shipped 9 rows of artificial graphite to Ford's Marshall, Michigan, battery plant (May to Sep 2026) and 2 more to a second Marshall record (Jul 2026). Six of the 9 rows were loaded at Chinese ports (Ningbo, Yantian).",
+   "source_call_ids": [
+    "s915",
+    "s918",
+    "s921"
+   ],
+   "sayari_url": "https://graph.sayari.com/resource/entity/Lv60RfghzhQ-9oSF_kW0wA"
+  },
+  {
+   "id": "vR1xMKUjf8bn1_A2fcxH-A",
+   "name": "Ford Motor Co",
+   "country": "USA",
+   "type": "company",
+   "role": "us_buyer",
+   "risk_flags": [],
+   "identifiers": {
+    "usa_sec_cik": "0000037996",
+    "lei": "20S05OYHG0MQM4VUIC57",
+    "usa_fei": "380549190"
+   },
+   "summary": "US carmaker. Named by BTR's largest shareholder as the counterparty to a US$120m prepayment to BTR's Tangier anode company. Sayari holds no trade under this record for HS 3801, and its shortest-path searches to BTR timed out.",
+   "source_call_ids": [
+    "s902",
+    "s904",
+    "s905",
+    "s916",
+    "t902",
+    "t904"
+   ],
+   "sayari_url": "https://graph.sayari.com/resource/entity/vR1xMKUjf8bn1_A2fcxH-A"
+  },
+  {
+   "id": "ALeXPymJqrTWgIhWeUyLlw",
+   "name": "BlueOval Battery Michigan Cell Plant (trade record)",
+   "country": "USA",
+   "type": "company",
+   "role": "us_buyer",
+   "risk_flags": [
+    "basel_aml",
+    "cpi_score"
+   ],
+   "identifiers": {},
+   "summary": "US import-data record for Ford's LFP battery plant at 13700 W Michigan Ave, Marshall, Michigan, also using 201 Watkins Rd, Battle Creek. 148 rows received; 15 suppliers, mostly Chinese materials firms. Includes 9 rows of BTR Indonesia artificial graphite, May to Sep 2026.",
+   "source_call_ids": [
+    "s915",
+    "s917",
+    "s921"
+   ],
+   "sayari_url": "https://graph.sayari.com/resource/entity/ALeXPymJqrTWgIhWeUyLlw"
+  },
+  {
+   "id": "sv3GsrQVLmLz2cd353HzPQ",
+   "name": "BlueOval Battery Park Michigan (trade record)",
+   "country": "USA",
+   "type": "company",
+   "role": "us_buyer",
+   "risk_flags": [
+    "basel_aml",
+    "cpi_score"
+   ],
+   "identifiers": {},
+   "summary": "A second import-data record for the Marshall plant, at the same Battle Creek address. Sayari types it as a person, which is a data error. Its only supplier is BTR's Indonesian plant (8 rows received).",
+   "source_call_ids": [
+    "s915",
+    "s918",
+    "s921"
+   ],
+   "sayari_url": "https://graph.sayari.com/resource/entity/sv3GsrQVLmLz2cd353HzPQ"
+  },
+  {
+   "id": "RPYYIgKHs0f-kGKGBlE9jw",
+   "name": "BlueOval SK LLC",
+   "country": "USA",
+   "type": "company",
+   "role": "us_buyer",
+   "risk_flags": [
+    "forced_labor_sheffield_hallam_university_reports_origin_subtier",
+    "forced_labor_xinjiang_origin_subtier",
+    "psa_forced_labor_uflpa_origin_subtier",
+    "mass_address_usage"
+   ],
+   "identifiers": {
+    "usa_fei": "873937014",
+    "usa_ky_org_no": "1219107",
+    "usa_fl_document_no": "M23000011490"
+   },
+   "summary": "Ford's battery joint venture with SK On, with cell plants in Glendale, Kentucky and Stanton, Tennessee. One of 18 BlueOval SK records in Sayari. Received graphite from BTR's sales arm in 2025. Sayari lists no shareholders for it.",
+   "source_call_ids": [
+    "s901",
+    "s906",
+    "s907",
+    "s911",
+    "s913",
+    "s914",
+    "s919"
+   ],
+   "sayari_url": "https://graph.sayari.com/resource/entity/RPYYIgKHs0f-kGKGBlE9jw"
+  },
+  {
+   "id": "aoeSqNICt_VUP-o-F-84Yg",
+   "name": "SK Battery America",
+   "country": "USA",
+   "type": "company",
+   "role": "us_buyer",
+   "risk_flags": [
+    "forced_labor_uflpa_origin_subtier",
+    "sheffield_hallam_university_forced_labor_reports_entity_adjacent",
+    "mass_address_usage"
+   ],
+   "identifiers": {},
+   "summary": "SK On's Georgia cell plant. Sayari lists it as manager of BlueOval SK. Took graphite from BTR's sales arm (Mar 2025) and BTR Indonesia (Aug 2025, Case 1).",
+   "source_call_ids": [
+    "s906",
+    "s913"
+   ],
+   "sayari_url": "https://graph.sayari.com/resource/entity/aoeSqNICt_VUP-o-F-84Yg"
+  },
+  {
+   "id": "t2HmaexxvTE5WgGtj3BMxg",
+   "name": "SK On Hungary Kft",
+   "country": "HUN",
+   "type": "company",
+   "role": "buyer",
+   "risk_flags": [],
+   "identifiers": {},
+   "summary": "SK On's Hungarian cell plant. Received 3 rows described as anode active material (HS 3801.10) and 1 battery-part row from BlueOval SK, Aug to Sep 2026.",
+   "source_call_ids": [
+    "s907"
+   ],
+   "sayari_url": "https://graph.sayari.com/resource/entity/t2HmaexxvTE5WgGtj3BMxg"
+  },
+  {
+   "id": "Rj0MkY1ZMfLxu4Wk9q4keA",
+   "name": "Pactra Tianjin Logistics Co., Ltd.",
+   "country": "CHN",
+   "type": "company",
+   "role": "trader",
+   "risk_flags": [
+    "basel_aml",
+    "cpi_score"
+   ],
+   "identifiers": {},
+   "summary": "Chinese logistics firm named as shipper on 41 rows of artificial graphite (HS 3801.10) from China to BlueOval SK, Jan to Nov 2025. The rows don't name the graphite maker.",
+   "source_call_ids": [
+    "s907",
+    "s911"
+   ],
+   "sayari_url": "https://graph.sayari.com/resource/entity/Rj0MkY1ZMfLxu4Wk9q4keA"
+  },
+  {
+   "id": "cPdltpbiJ3srEuXfm_7NDA",
+   "name": "Fan Cheng International Transport Service Co., Ltd.",
+   "country": "CHN",
+   "type": "company",
+   "role": "trader",
+   "risk_flags": [],
+   "identifiers": {},
+   "summary": "Chinese freight forwarder named as shipper on 4 rows of artificial graphite to BlueOval SK, arriving 2 Feb 2025. The maker is not named.",
+   "source_call_ids": [
+    "s907",
+    "s911"
+   ],
+   "sayari_url": "https://graph.sayari.com/resource/entity/cPdltpbiJ3srEuXfm_7NDA"
+  }
+ ],
+ "edges": [
+  {
+   "id": "e901",
+   "source": "vR1xMKUjf8bn1_A2fcxH-A",
+   "target": "Z57YvgOYL2TdoaWYgXFZ9Q",
+   "relation": "supply_agreement",
+   "edge_type": "contractual",
+   "confidence": "corroborated",
+   "confidence_reason": "A listed company's filing states the deal, and two later, separate reports say most of the money was paid; Ford has not confirmed it.",
+   "hs_codes": [],
+   "first_seen": null,
+   "last_seen": null,
+   "shipment_count": null,
+   "evidence": "On 13 Aug 2024 China Baoan, BTR's largest shareholder, announced that BTR Mediterranean Anode would sign supply and prepayment agreements with Ford Motor and/or related Ford companies to supply artificial graphite, with a US$120m prepayment, backed by a guarantee letter. Later reports say US$108m had been paid (one says by end-2025, one by end-Jun 2026).",
+   "source_call_ids": [
+    "t901",
+    "t902",
+    "t903",
+    "t904"
+   ]
+  },
+  {
+   "id": "e902",
+   "source": "uio2rrOWJmLIgiAKlcpdww",
+   "target": "Z57YvgOYL2TdoaWYgXFZ9Q",
+   "relation": "owns",
+   "edge_type": "contractual",
+   "confidence": "documented",
+   "confidence_reason": "Moroccan company data names Rian as 100% shareholder and beneficial owner.",
+   "hs_codes": [],
+   "first_seen": null,
+   "last_seen": null,
+   "shipment_count": null,
+   "evidence": "Cedar Rose Morocco data: Rian International Holding holds 100% of BTR Mediterranean Anode New Material Technology (RC 149725).",
+   "source_call_ids": [
+    "s903"
+   ]
+  },
+  {
+   "id": "e903",
+   "source": "Lv60RfghzhQ-9oSF_kW0wA",
+   "target": "ALeXPymJqrTWgIhWeUyLlw",
+   "relation": "ships_to",
+   "edge_type": "transactional",
+   "confidence": "documented",
+   "confidence_reason": "Nine dated US import rows name the BTR Indonesia shipper and the Marshall plant as receiver.",
+   "hs_codes": [
+    "380110"
+   ],
+   "first_seen": "2026-05-31",
+   "last_seen": "2026-09-17",
+   "shipment_count": 9,
+   "evidence": "9 rows of artificial graphite (HS 3801.10) from PT Indonesia BTR (Kendal address) to the Marshall plant, arriving 31 May to 17 Sep 2026; about 960 t gross in total (one row's weight looks mis-entered). Six rows were loaded at Ningbo or Yantian in China, three at Singapore.",
+   "source_call_ids": [
+    "s915",
+    "s921"
+   ]
+  },
+  {
+   "id": "e904",
+   "source": "Lv60RfghzhQ-9oSF_kW0wA",
+   "target": "sv3GsrQVLmLz2cd353HzPQ",
+   "relation": "ships_to",
+   "edge_type": "transactional",
+   "confidence": "documented",
+   "confidence_reason": "Dated US import rows name the BTR Indonesia shipper and this Marshall record.",
+   "hs_codes": [
+    "380110"
+   ],
+   "first_seen": "2026-07-06",
+   "last_seen": "2026-07-15",
+   "shipment_count": 2,
+   "evidence": "2 rows of artificial graphite (HS 3801.10) loaded at Singapore, arriving 6 and 15 Jul 2026; stated net weight 111,600 kg on the first.",
+   "source_call_ids": [
+    "s915",
+    "s918",
+    "s921"
+   ]
+  },
+  {
+   "id": "e905",
+   "source": "sv3GsrQVLmLz2cd353HzPQ",
+   "target": "ALeXPymJqrTWgIhWeUyLlw",
+   "relation": "possibly_same_as",
+   "edge_type": "inferred",
+   "confidence": "inferred",
+   "confidence_reason": "Same name stem and the same Battle Creek street address, but no shared identifier.",
+   "hs_codes": [],
+   "first_seen": null,
+   "last_seen": null,
+   "shipment_count": null,
+   "evidence": "Both records use 201 Watkins Rd, Battle Creek, MI; the cell-plant record also gives the Marshall plant address.",
+   "source_call_ids": [
+    "s917",
+    "s918"
+   ]
+  },
+  {
+   "id": "e906",
+   "source": "vR1xMKUjf8bn1_A2fcxH-A",
+   "target": "ALeXPymJqrTWgIhWeUyLlw",
+   "relation": "owns",
+   "edge_type": "contractual",
+   "confidence": "corroborated",
+   "confidence_reason": "Press reports that Ford wholly owns the Marshall plant, and the trade record carries that plant's name and street address.",
+   "hs_codes": [],
+   "first_seen": null,
+   "last_seen": null,
+   "shipment_count": null,
+   "evidence": "Press describes BlueOval Battery Park Michigan in Marshall as part of a wholly owned Ford subsidiary making LFP cells from 2026, with technology licensed from CATL. Sayari holds no registry link from Ford to this trade record.",
+   "source_call_ids": [
+    "t907",
+    "s917"
+   ]
+  },
+  {
+   "id": "e907",
+   "source": "Lv60RfghzhQ-9oSF_kW0wA",
+   "target": "2omCekb1pDRKjhFOAqCNSw",
+   "relation": "possibly_same_as",
+   "edge_type": "inferred",
+   "confidence": "lead",
+   "confidence_reason": "Name match and a Kendal address only; we didn't compare street addresses with the anchor record.",
+   "hs_codes": [],
+   "first_seen": null,
+   "last_seen": null,
+   "shipment_count": null,
+   "evidence": "Shipper name 'PT Indonesia BTR New Energy Materia' with address No. 8 Kawasan Jalan Indraprasta 8, Patebon, Kendal; BTR's Indonesian plant has a Kendal site.",
+   "source_call_ids": [
+    "s921"
+   ]
+  },
+  {
+   "id": "e908",
+   "source": "5_cayB1m7XahAhz_Hrrpng",
+   "target": "RPYYIgKHs0f-kGKGBlE9jw",
+   "relation": "ships_to",
+   "edge_type": "transactional",
+   "confidence": "documented",
+   "confidence_reason": "Sixteen dated US import rows name BTR's sales arm as shipper and BlueOval SK as receiver.",
+   "hs_codes": [
+    "380190"
+   ],
+   "first_seen": "2025-07-22",
+   "last_seen": "2025-11-13",
+   "shipment_count": 16,
+   "evidence": "16 rows described as 'graphite' (one coded HS 3801.90), arriving 22 Jul to 13 Nov 2025.",
+   "source_call_ids": [
+    "s911",
+    "s913"
+   ]
+  },
+  {
+   "id": "e909",
+   "source": "vD8qX_q8JPBZpC8NYAHDfQ",
+   "target": "RPYYIgKHs0f-kGKGBlE9jw",
+   "relation": "ships_to",
+   "edge_type": "transactional",
+   "confidence": "documented",
+   "confidence_reason": "Twelve dated US import rows name this BTR sales record as shipper and BlueOval SK as receiver.",
+   "hs_codes": [],
+   "first_seen": "2025-01-04",
+   "last_seen": "2025-06-10",
+   "shipment_count": 12,
+   "evidence": "12 rows arriving 4 Jan to 10 Jun 2025: 11 described as graphite (some with BlueOval SK purchase-order numbers) and 1 as nickel-cobalt-manganese cathode oxide. No HS codes on the rows.",
+   "source_call_ids": [
+    "s911",
+    "s913",
+    "s914"
+   ]
+  },
+  {
+   "id": "e910",
+   "source": "vD8qX_q8JPBZpC8NYAHDfQ",
+   "target": "5_cayB1m7XahAhz_Hrrpng",
+   "relation": "possibly_same_as",
+   "edge_type": "inferred",
+   "confidence": "inferred",
+   "confidence_reason": "Same name stem and the same Shenzhen street address, with no shared identifier.",
+   "hs_codes": [],
+   "first_seen": null,
+   "last_seen": null,
+   "shipment_count": null,
+   "evidence": "Both records give No. 8 Guangyuan 4th Road, Dongkeng Community, Fenghuang Street, Guangming District, Shenzhen.",
+   "source_call_ids": [
+    "s911"
+   ]
+  },
+  {
+   "id": "e911",
+   "source": "EkFGNb-Mz16yvVyOx1XlPQ",
+   "target": "RPYYIgKHs0f-kGKGBlE9jw",
+   "relation": "ships_to",
+   "edge_type": "transactional",
+   "confidence": "documented",
+   "confidence_reason": "A dated US import row names the BTR (Jiangsu) record as shipper and BlueOval SK as receiver.",
+   "hs_codes": [],
+   "first_seen": "2025-03-15",
+   "last_seen": "2025-03-15",
+   "shipment_count": 1,
+   "evidence": "1 row of lithium nickel-cobalt-manganese oxide (cathode material), arriving 15 Mar 2025.",
+   "source_call_ids": [
+    "s911",
+    "s912"
+   ]
+  },
+  {
+   "id": "e912",
+   "source": "EkFGNb-Mz16yvVyOx1XlPQ",
+   "target": "zduDdSDoWzRJWKUinb7e0w",
+   "relation": "possibly_same_as",
+   "edge_type": "inferred",
+   "confidence": "lead",
+   "confidence_reason": "Name and city (Changzhou) match only; we didn't compare the registry street address.",
+   "hs_codes": [],
+   "first_seen": null,
+   "last_seen": null,
+   "shipment_count": null,
+   "evidence": "Trade record address No. 519 Jiangdong Road, Jintan, Changzhou; the registry company is BTR's Changzhou subsidiary.",
+   "source_call_ids": [
+    "s911",
+    "s912"
+   ]
+  },
+  {
+   "id": "e913",
+   "source": "5_cayB1m7XahAhz_Hrrpng",
+   "target": "aoeSqNICt_VUP-o-F-84Yg",
+   "relation": "ships_to",
+   "edge_type": "transactional",
+   "confidence": "documented",
+   "confidence_reason": "Two dated US import rows name BTR's sales arm as shipper and SK Battery America as receiver.",
+   "hs_codes": [
+    "847989"
+   ],
+   "first_seen": "2025-03-15",
+   "last_seen": "2025-03-15",
+   "shipment_count": 2,
+   "evidence": "2 rows arriving 15 Mar 2025: one 'graphite' with a purchase-order number, one machinery (HS 8479.89).",
+   "source_call_ids": [
+    "s913"
+   ]
+  },
+  {
+   "id": "e914",
+   "source": "aoeSqNICt_VUP-o-F-84Yg",
+   "target": "RPYYIgKHs0f-kGKGBlE9jw",
+   "relation": "officer_of",
+   "edge_type": "contractual",
+   "confidence": "documented",
+   "confidence_reason": "Sayari's graph lists SK Battery America as manager of BlueOval SK.",
+   "hs_codes": [],
+   "first_seen": null,
+   "last_seen": null,
+   "shipment_count": null,
+   "evidence": "Shortest path from BlueOval SK to BTR: BlueOval SK has manager SK Battery America, which receives from BTR New Material Group.",
+   "source_call_ids": [
+    "s906"
+   ]
+  },
+  {
+   "id": "e915",
+   "source": "RPYYIgKHs0f-kGKGBlE9jw",
+   "target": "t2HmaexxvTE5WgGtj3BMxg",
+   "relation": "ships_to",
+   "edge_type": "transactional",
+   "confidence": "documented",
+   "confidence_reason": "Four dated rows name BlueOval SK as shipper and SK On Hungary as buyer.",
+   "hs_codes": [
+    "380110",
+    "850790"
+   ],
+   "first_seen": "2026-08-05",
+   "last_seen": "2026-09-05",
+   "shipment_count": 4,
+   "evidence": "3 rows described as artificial graphite 'anode active material' (HS 3801.10 on two; one coded 2841.90) and 1 battery-part row (HS 8507.90), 5 Aug to 5 Sep 2026. Departure is recorded as the Bahamas, which looks like a data error.",
+   "source_call_ids": [
+    "s907"
+   ]
+  },
+  {
+   "id": "e916",
+   "source": "Rj0MkY1ZMfLxu4Wk9q4keA",
+   "target": "RPYYIgKHs0f-kGKGBlE9jw",
+   "relation": "ships_to",
+   "edge_type": "transactional",
+   "confidence": "documented",
+   "confidence_reason": "Dated US import rows name the forwarder as shipper and BlueOval SK as receiver.",
+   "hs_codes": [
+    "380110"
+   ],
+   "first_seen": "2025-01-31",
+   "last_seen": "2025-11-11",
+   "shipment_count": 41,
+   "evidence": "41 rows of artificial graphite (HS 3801.10) from China, departures 9 Jan to 14 Oct 2025. The graphite maker is not named.",
+   "source_call_ids": [
+    "s907",
+    "s911"
+   ]
+  },
+  {
+   "id": "e917",
+   "source": "cPdltpbiJ3srEuXfm_7NDA",
+   "target": "RPYYIgKHs0f-kGKGBlE9jw",
+   "relation": "ships_to",
+   "edge_type": "transactional",
+   "confidence": "documented",
+   "confidence_reason": "Dated US import rows name the forwarder as shipper and BlueOval SK as receiver.",
+   "hs_codes": [
+    "380110"
+   ],
+   "first_seen": "2025-02-02",
+   "last_seen": "2025-02-02",
+   "shipment_count": 4,
+   "evidence": "4 rows of artificial graphite (HS 3801.10) from China, departing 14 Jan 2025 and arriving 2 Feb 2025. The maker is not named.",
+   "source_call_ids": [
+    "s907",
+    "s911"
+   ]
+  }
+ ],
+ "calls": [
+  {
+   "id": "t901",
+   "timestamp": "2026-10-18T22:57:46Z",
+   "server": "tavily",
+   "tool": "tavily_search",
+   "params": {
+    "query": "BTR New Material Ford supply agreement Morocco anode prepayment",
+    "max_results": 8,
+    "search_depth": "advanced"
+   },
+   "question": "What does the press say about a Ford supply deal with BTR's Tangier plant?",
+   "purpose": "Context: the Ford deal",
+   "result_summary": "Yicai Global (14 Aug 2024), Electrive, Yabiladi and Battery-Tech all report that BTR's largest shareholder, China Boan (Baoan) Group, said the Moroccan anode project company would sign supply and prepayment deals with Ford, with a US$120m prepayment. BTR's own notice named no customer. A LinkedIn post says Ford has prepaid US$120m.",
+   "interpretation": "The deal is reported widely, but every report traces back to one Chinese filing. No Ford statement appears.",
+   "scorecard": "worked",
+   "entity_ids": [
+    "vR1xMKUjf8bn1_A2fcxH-A",
+    "Z57YvgOYL2TdoaWYgXFZ9Q",
+    "jeHf5QJt0JXowTiCA8JiIQ"
+   ],
+   "step": "context"
+  },
+  {
+   "id": "t902",
+   "timestamp": "2026-10-18T22:58:10Z",
+   "server": "tavily",
+   "tool": "tavily_search",
+   "params": {
+    "query": "贝特瑞 摩洛哥 负极 福特 预付款 1.2亿美元 公告",
+    "max_results": 8,
+    "search_depth": "advanced"
+   },
+   "question": "Can we find the primary filings (BTR, stock 835185; China Baoan, 000009)?",
+   "purpose": "Primary source: filings",
+   "result_summary": "BTR's 13 Aug 2024 notice (Sina mirror and BTR website): a 60,000 t/yr anode project at Tangier Tech City through wholly owned subsidiary 'BTR Mediterranean Anode New Material Technology' (贝特瑞地中海负极), up to CNY 2.618bn, about 2 years to build; no customer named. Jiemian and Eastmoney summaries of China Baoan's same-day notice: that subsidiary plans to sign supply and prepayment agreements with Ford Motor and/or related companies to supply artificial graphite, with Ford prepaying US$120m, and a guarantee letter. A Sep 2026 article (52hrtt) says US$108m had been paid by end-Jun 2026. A Kaiyuan Securities report (Jul 2024) says BTR's Hong Kong arm holds 60% of the Indonesian plant.",
+   "interpretation": "The counterparty named in the filing is 'BTR Mediterranean Anode', which matches Moroccan registry record RC 149725, not the BNUO-owned company Case 2 labelled as the anode subsidiary.",
+   "scorecard": "worked",
+   "entity_ids": [
+    "vR1xMKUjf8bn1_A2fcxH-A",
+    "Z57YvgOYL2TdoaWYgXFZ9Q",
+    "jeHf5QJt0JXowTiCA8JiIQ"
+   ],
+   "step": "context"
+  },
+  {
+   "id": "t903",
+   "timestamp": "2026-10-18T22:58:12Z",
+   "server": "tavily",
+   "tool": "tavily_extract",
+   "params": {
+    "urls": [
+     "https://www.linkedin.com/posts/ryoji-mizukoshi_morocco-africa-fdi-activity-7508845442340745216-ivir"
+    ],
+    "query": "Ford prepaid 120 million BTR Tangier supply agreements"
+   },
+   "question": "What does the unverified prepayment source actually say?",
+   "purpose": "Check the unverified source",
+   "result_summary": "An analyst post says Ford prepaid US$120m under two supply and prepayment agreements, that US$108m had been received by end-2025, that BTR's parent signed a guarantee letter, and that construction started in Sep 2025. It says no source contains a statement from Ford.",
+   "interpretation": "Secondary and unverified. Its 'end-2025' date for US$108m conflicts with the 52hrtt report (end-Jun 2026).",
+   "scorecard": "partial",
+   "entity_ids": [
+    "vR1xMKUjf8bn1_A2fcxH-A",
+    "Z57YvgOYL2TdoaWYgXFZ9Q"
+   ],
+   "step": "context"
+  },
+  {
+   "id": "t904",
+   "timestamp": "2026-10-18T22:58:40Z",
+   "server": "tavily",
+   "tool": "tavily_extract",
+   "params": {
+    "urls": [
+     "https://www.jiemian.com/article/11552458.html",
+     "https://www.yicai.com/news/102230243.html",
+     "https://www.52hrtt.com/mobileview/news/G1786948101129.html?areaId=121&languageId=1"
+    ],
+    "query": "福特 供应协议 预付款协议 保证函 1.2亿美元 已支付"
+   },
+   "question": "What exactly did the China Baoan notice say, and is payment reported?",
+   "purpose": "Primary source: filing text",
+   "result_summary": "Jiemian (13 Aug 2024) quotes China Baoan: BTR Mediterranean Anode plans to sign supply and prepayment agreements with Ford Motor and/or related companies, supply them artificial graphite, and receive a US$120m prepayment from Ford Motor. 52hrtt (4 Sep 2026): Ford arranged up to US$120m and had paid US$108m by end-Jun 2026, for future artificial graphite. The Yicai page timed out.",
+   "interpretation": "The filing gives the deal's terms. Payment is reported only by secondary sources, with two different dates.",
+   "scorecard": "partial",
+   "entity_ids": [
+    "vR1xMKUjf8bn1_A2fcxH-A",
+    "Z57YvgOYL2TdoaWYgXFZ9Q"
+   ],
+   "step": "context"
+  },
+  {
+   "id": "t905",
+   "timestamp": "2026-10-18T22:59:05Z",
+   "server": "tavily",
+   "tool": "tavily_search",
+   "params": {
+    "query": "贝特瑞 2026年半年度报告 地中海负极 福特 预付款 1.08亿美元",
+    "max_results": 6,
+    "search_depth": "advanced"
+   },
+   "question": "Does BTR's own 2026 half-year report confirm the prepayment received?",
+   "purpose": "Primary source: BTR report",
+   "result_summary": "Found BTR's 2026 half-year report (28 Aug 2026; stock code now 920185) on Sina and summaries of it. The snippets mention the Indonesia and Morocco bases but not Ford. A Tangier recruitment notice says the anode plant was due to start in mid-2026.",
+   "interpretation": "The report exists, but the search snippets don't show the prepayment.",
+   "scorecard": "partial",
+   "entity_ids": [
+    "jeHf5QJt0JXowTiCA8JiIQ"
+   ],
+   "step": "context"
+  },
+  {
+   "id": "t906",
+   "timestamp": "2026-10-18T22:59:20Z",
+   "server": "tavily",
+   "tool": "tavily_extract",
+   "params": {
+    "urls": [
+     "http://money.finance.sina.com.cn/corp/view/vCB_AllBulletinDetail.php?stockid=920185&id=12570851"
+    ],
+    "query": "福特 预付款 地中海负极 合同负债 保证 摩洛哥",
+    "format": "text"
+   },
+   "question": "Does the half-year report's text mention the Ford prepayment?",
+   "purpose": "Primary source: BTR report",
+   "result_summary": "Error: request timed out.",
+   "interpretation": "We could not confirm the US$108m from BTR's own report.",
+   "scorecard": "failed",
+   "entity_ids": [
+    "jeHf5QJt0JXowTiCA8JiIQ"
+   ],
+   "step": "gap"
+  },
+  {
+   "id": "t907",
+   "timestamp": "2026-10-18T23:02:05Z",
+   "server": "tavily",
+   "tool": "tavily_search",
+   "params": {
+    "query": "BlueOval Battery Park Michigan Marshall Ford wholly owned LFP plant production start 2026",
+    "max_results": 5
+   },
+   "question": "Is the Marshall, Michigan battery plant Ford's own?",
+   "purpose": "Context: Ford's own plant",
+   "result_summary": "GreenCars: BlueOval Battery Park Michigan will be part of a wholly owned Ford subsidiary; some technology comes from CATL, and Ford says it owns the facility. Birmingham Group and Manufacturing Digital: LFP cell production in Marshall from 2026, about 20 GWh a year. City of Marshall page confirms the site.",
+   "interpretation": "Ford, not the SK On joint venture, owns the Marshall plant that receives BTR Indonesia graphite.",
+   "scorecard": "worked",
+   "entity_ids": [
+    "vR1xMKUjf8bn1_A2fcxH-A",
+    "ALeXPymJqrTWgIhWeUyLlw"
+   ],
+   "step": "context"
+  },
+  {
+   "id": "s901",
+   "timestamp": "2026-10-18T22:57:46Z",
+   "server": "sayari",
+   "tool": "search_entities",
+   "params": {
+    "query": "\"BlueOval SK\"",
+    "limit": 15
+   },
+   "question": "Which records does Sayari hold for BlueOval SK?",
+   "purpose": "Buyer (Ford JV)",
+   "result_summary": "18 records. The main one, BLUEOVAL SK LLC (RPYYIgKHs0f-kGKGBlE9jw), has FEI 873937014 and Kentucky, Florida and Washington registrations, with Dearborn and Glendale, KY addresses. Others are EPA facility and trade fragments in Glendale, KY and Stanton, TN.",
+   "interpretation": "Heavily fragmented. We use the main record, which carries the trade.",
+   "scorecard": "worked",
+   "entity_ids": [
+    "RPYYIgKHs0f-kGKGBlE9jw"
+   ],
+   "step": "plant"
+  },
+  {
+   "id": "s902",
+   "timestamp": "2026-10-18T22:59:50Z",
+   "server": "sayari",
+   "tool": "search_entities",
+   "params": {
+    "query": "\"Ford Motor Company\" Dearborn",
+    "limit": 8
+   },
+   "question": "Which Sayari record is Ford Motor Co?",
+   "purpose": "Buyer (Ford)",
+   "result_summary": "130 results (limit ignored), mostly officers and plants. FORD MOTOR CO (vR1xMKUjf8bn1_A2fcxH-A) carries SEC CIK 0000037996, LEI 20S05OYHG0MQM4VUIC57 and FEI 380549190.",
+   "interpretation": "Ford's parent record found. Its plants and battery sites appear as separate trade-only records.",
+   "scorecard": "worked",
+   "entity_ids": [
+    "vR1xMKUjf8bn1_A2fcxH-A"
+   ],
+   "step": "plant"
+  },
+  {
+   "id": "s903",
+   "timestamp": "2026-10-18T22:59:50Z",
+   "server": "sayari",
+   "tool": "get_entity_profile",
+   "params": {
+    "entity_id": "Z57YvgOYL2TdoaWYgXFZ9Q",
+    "relationships_limit": 50
+   },
+   "question": "Who owns the company named in the Ford filing, and does it trade?",
+   "purpose": "Plant owner",
+   "result_summary": "BTR Mediterranean Anode New Material Technology: RC 149725, registered 3 May 2024, Tangier. 100% shareholder and beneficial owner: Rian International Holding (Singapore). One director, Zerui Fang. No shipments sent or received under this record.",
+   "interpretation": "Chinese-group ownership through Singapore is on record. The registry record has no trade; trade sits on a separate customs record (Case 2).",
+   "scorecard": "worked",
+   "entity_ids": [
+    "Z57YvgOYL2TdoaWYgXFZ9Q",
+    "uio2rrOWJmLIgiAKlcpdww"
+   ],
+   "step": "owner"
+  },
+  {
+   "id": "s904",
+   "timestamp": "2026-10-18T23:00:20Z",
+   "server": "sayari",
+   "tool": "find_shortest_path",
+   "params": {
+    "source_entity_id": "vR1xMKUjf8bn1_A2fcxH-A",
+    "target_entity_id": "jeHf5QJt0JXowTiCA8JiIQ"
+   },
+   "question": "Is there any graph path from Ford to BTR?",
+   "purpose": "Ford to BTR link",
+   "result_summary": "Error: Sayari API error (HTTP 408), a timeout.",
+   "interpretation": "Ford's record has too many links for the path search to finish.",
+   "scorecard": "failed",
+   "entity_ids": [
+    "vR1xMKUjf8bn1_A2fcxH-A",
+    "jeHf5QJt0JXowTiCA8JiIQ"
+   ],
+   "step": "gap"
+  },
+  {
+   "id": "s905",
+   "timestamp": "2026-10-18T23:00:20Z",
+   "server": "sayari",
+   "tool": "find_shortest_path",
+   "params": {
+    "source_entity_id": "vR1xMKUjf8bn1_A2fcxH-A",
+    "target_entity_id": "Z57YvgOYL2TdoaWYgXFZ9Q"
+   },
+   "question": "Is there any graph path from Ford to the Tangier anode company?",
+   "purpose": "Ford to Morocco link",
+   "result_summary": "Error: Sayari API error (HTTP 408), a timeout.",
+   "interpretation": "No path could be tested from Ford's record.",
+   "scorecard": "failed",
+   "entity_ids": [
+    "vR1xMKUjf8bn1_A2fcxH-A",
+    "Z57YvgOYL2TdoaWYgXFZ9Q"
+   ],
+   "step": "gap"
+  },
+  {
+   "id": "s906",
+   "timestamp": "2026-10-18T23:00:20Z",
+   "server": "sayari",
+   "tool": "find_shortest_path",
+   "params": {
+    "source_entity_id": "RPYYIgKHs0f-kGKGBlE9jw",
+    "target_entity_id": "jeHf5QJt0JXowTiCA8JiIQ"
+   },
+   "question": "Is there a graph path from BlueOval SK to BTR?",
+   "purpose": "Ford JV to BTR link",
+   "result_summary": "Found, 2 hops: BlueOval SK has manager SK Battery America, which receives from BTR New Material Group.",
+   "interpretation": "The JV is two hops from BTR through SK On's Georgia plant. Direct trade sits on BTR's sales-arm records, not the parent.",
+   "scorecard": "worked",
+   "entity_ids": [
+    "RPYYIgKHs0f-kGKGBlE9jw",
+    "aoeSqNICt_VUP-o-F-84Yg",
+    "jeHf5QJt0JXowTiCA8JiIQ"
+   ],
+   "step": "in"
+  },
+  {
+   "id": "s907",
+   "timestamp": "2026-10-18T23:00:45Z",
+   "server": "sayari",
+   "tool": "search_shipments",
+   "params": {
+    "query": "\"BlueOval SK\"",
+    "hs_code": "3801",
+    "arrival_country": "USA",
+    "limit": 50,
+    "response_mode": "compact"
+   },
+   "question": "What HS 3801 (artificial graphite) does BlueOval SK import, and from whom?",
+   "purpose": "Inputs (HS 3801)",
+   "result_summary": "57 rows; 50 returned in 4 pairs: Pactra Tianjin Logistics to BlueOval SK, 41 rows HS 3801.10 from China (Jan to Nov 2025); Fan Cheng Intl Trans Service, 4 rows (Feb 2025); BTR New Material Group Sales to BlueOval SK, 1 row HS 3801.90 (26 Aug 2025); and BlueOval SK as shipper of 'anode active material' to SK On Hungary (Aug to Sep 2026).",
+   "interpretation": "One BTR row shows up under HS 3801. Most graphite comes in under forwarder names that hide the maker.",
+   "scorecard": "worked",
+   "entity_ids": [
+    "RPYYIgKHs0f-kGKGBlE9jw",
+    "Rj0MkY1ZMfLxu4Wk9q4keA",
+    "cPdltpbiJ3srEuXfm_7NDA",
+    "5_cayB1m7XahAhz_Hrrpng",
+    "t2HmaexxvTE5WgGtj3BMxg"
+   ],
+   "step": "in"
+  },
+  {
+   "id": "s908",
+   "timestamp": "2026-10-18T23:00:45Z",
+   "server": "sayari",
+   "tool": "search_shipments",
+   "params": {
+    "query": "\"SK Battery America\" BTR",
+    "hs_code": "3801",
+    "limit": 50,
+    "response_mode": "compact"
+   },
+   "question": "Does SK Battery America import HS 3801 from BTR?",
+   "purpose": "Cell supplier inputs",
+   "result_summary": "0 rows.",
+   "interpretation": "Combining a quoted name with a second term returned nothing; s913 later found BTR rows to SK Battery America without the HS filter.",
+   "scorecard": "failed",
+   "entity_ids": [
+    "aoeSqNICt_VUP-o-F-84Yg"
+   ],
+   "step": "gap"
+  },
+  {
+   "id": "s909",
+   "timestamp": "2026-10-18T23:01:00Z",
+   "server": "sayari",
+   "tool": "search_shipments",
+   "params": {
+    "query": "\"BTR New Material Group Sales\" \"BlueOval\"",
+    "arrival_country": "USA",
+    "limit": 25,
+    "response_mode": "full"
+   },
+   "question": "Pull full rows for BTR's sales arm to BlueOval SK.",
+   "purpose": "Inputs detail",
+   "result_summary": "0 rows.",
+   "interpretation": "Known quirk: two quoted names in one query return nothing.",
+   "scorecard": "failed",
+   "entity_ids": [
+    "5_cayB1m7XahAhz_Hrrpng",
+    "RPYYIgKHs0f-kGKGBlE9jw"
+   ],
+   "step": "method"
+  },
+  {
+   "id": "s910",
+   "timestamp": "2026-10-18T23:01:10Z",
+   "server": "sayari",
+   "tool": "get_upstream_supply_chain",
+   "params": {
+    "entity_id": "RPYYIgKHs0f-kGKGBlE9jw",
+    "product": [
+     "3801"
+    ],
+    "max_depth": 2,
+    "limit": 50
+   },
+   "question": "Map BlueOval SK's HS 3801 supply chain.",
+   "purpose": "Inputs (upstream)",
+   "result_summary": "Error: an unexpected error occurred.",
+   "interpretation": "The upstream tool failed; we used traverse_network instead.",
+   "scorecard": "failed",
+   "entity_ids": [
+    "RPYYIgKHs0f-kGKGBlE9jw"
+   ],
+   "step": "method"
+  },
+  {
+   "id": "s911",
+   "timestamp": "2026-10-18T23:01:25Z",
+   "server": "sayari",
+   "tool": "traverse_network",
+   "params": {
+    "entity_id": "RPYYIgKHs0f-kGKGBlE9jw",
+    "relationships": [
+     "receives_from"
+    ],
+    "max_depth": 1,
+    "limit": 100
+   },
+   "question": "Who are all of BlueOval SK's suppliers?",
+   "purpose": "Inputs (suppliers)",
+   "result_summary": "97 suppliers, mostly Korean equipment and materials firms and SK On units. Three BTR records: BTR New Material Group Sales (two records, both at No. 8 Guangyuan 4th Road, Shenzhen) and BTR (Jiangsu) New Material Technolo (No. 519 Jiangdong Road, Jintan, Changzhou). Also forwarders Pactra Tianjin and Fan Cheng, Sinoma Lithium Battery Separator and Jiangxi Zichen Technology.",
+   "interpretation": "BlueOval SK buys from BTR's Shenzhen sales arm and from a BTR (Jiangsu) record: the same BTR subsidiary that owns BTR's first Moroccan company.",
+   "scorecard": "worked",
+   "entity_ids": [
+    "RPYYIgKHs0f-kGKGBlE9jw",
+    "5_cayB1m7XahAhz_Hrrpng",
+    "vD8qX_q8JPBZpC8NYAHDfQ",
+    "EkFGNb-Mz16yvVyOx1XlPQ",
+    "Rj0MkY1ZMfLxu4Wk9q4keA",
+    "cPdltpbiJ3srEuXfm_7NDA"
+   ],
+   "step": "in"
+  },
+  {
+   "id": "s912",
+   "timestamp": "2026-10-18T23:01:50Z",
+   "server": "sayari",
+   "tool": "search_shipments",
+   "params": {
+    "query": "\"BTR (Jiangsu) New Material\"",
+    "arrival_country": "USA",
+    "limit": 50,
+    "response_mode": "compact"
+   },
+   "question": "What has BTR (Jiangsu) shipped to the US?",
+   "purpose": "Inputs (BTR Jiangsu)",
+   "result_summary": "3 rows, all cathode material (lithium nickel-cobalt-manganese oxide): to BlueOval SK (15 Mar 2025), General Motors (6 Aug 2026) and Versant Supply Chain (20 Feb 2025, under a second record).",
+   "interpretation": "The BTR (Jiangsu) link to BlueOval SK is cathode, not graphite.",
+   "scorecard": "worked",
+   "entity_ids": [
+    "EkFGNb-Mz16yvVyOx1XlPQ",
+    "RPYYIgKHs0f-kGKGBlE9jw"
+   ],
+   "step": "in"
+  },
+  {
+   "id": "s913",
+   "timestamp": "2026-10-18T23:01:50Z",
+   "server": "sayari",
+   "tool": "search_shipments",
+   "params": {
+    "query": "\"BTR New Material Group Sales\"",
+    "arrival_country": "USA",
+    "limit": 50,
+    "response_mode": "compact"
+   },
+   "question": "What has BTR's sales arm shipped to the US, and to which buyers?",
+   "purpose": "Inputs (BTR sales arm)",
+   "result_summary": "653 rows; first 50 read. Buyers: BlueOval SK (16 rows Jul to Nov 2025 and 6 rows Apr to Jun 2025, mostly 'graphite', some with purchase-order numbers, plus one cathode row), SK Battery America (2 rows Mar 2025), LG Energy Solution Arizona (4 rows 2026), General Motors (3 rows), FNS Inc (2), Panasonic Energy (4), Panasonic Procurement (5), Tesla (4), TEL (2) and Versant Supply Chain (2).",
+   "interpretation": "Direct, dated trade from BTR's Chinese sales company to Ford's joint venture through 2025.",
+   "scorecard": "worked",
+   "entity_ids": [
+    "5_cayB1m7XahAhz_Hrrpng",
+    "vD8qX_q8JPBZpC8NYAHDfQ",
+    "RPYYIgKHs0f-kGKGBlE9jw",
+    "aoeSqNICt_VUP-o-F-84Yg"
+   ],
+   "step": "in"
+  },
+  {
+   "id": "s914",
+   "timestamp": "2026-10-18T23:02:00Z",
+   "server": "sayari",
+   "tool": "search_shipments",
+   "params": {
+    "query": "\"BTR New Material Group Sales\"",
+    "arrival_country": "USA",
+    "page_token": "eyJmcCI6ImY1ZmZhNzQ5YmYwYjZkZmI2ZDhiZjYxYmE3NjAyZjY3ODlmOThhZGFkYzE1YzBiZmIwODUwMzYxMGU5OTRjYTUiLCJsaW1pdCI6NTAsIm1vZGUiOiJjb21wYWN0Iiwib2Zmc2V0Ijo1MCwic3RyYXRlZ3kiOiJtYW51YWwiLCJ0b29sIjoic2VhcmNoX3NoaXBtZW50cyIsInYiOjF9"
+   },
+   "question": "Read the next page of BTR sales-arm rows.",
+   "purpose": "Inputs (BTR sales arm)",
+   "result_summary": "Rows 51 to 100: BlueOval SK, 6 more 'graphite' rows (4 Jan to 20 Feb 2025); StarPlus Energy, 40 rows of 'powder-graphite' (Nov to Dec 2024); L-H Battery, Panasonic Energy and Panasonic Procurement rows.",
+   "interpretation": "BTR-to-BlueOval SK rows run from Jan to Nov 2025 in the 100 rows read. 553 rows remain unread.",
+   "scorecard": "partial",
+   "entity_ids": [
+    "vD8qX_q8JPBZpC8NYAHDfQ",
+    "RPYYIgKHs0f-kGKGBlE9jw"
+   ],
+   "step": "in"
+  },
+  {
+   "id": "s915",
+   "timestamp": "2026-10-18T23:02:00Z",
+   "server": "sayari",
+   "tool": "search_shipments",
+   "params": {
+    "query": "\"PT Indonesia BTR New Energy\"",
+    "arrival_country": "USA",
+    "limit": 50,
+    "response_mode": "compact"
+   },
+   "question": "Does BTR's Indonesian plant ship to Ford or BlueOval SK?",
+   "purpose": "Outputs (BTR Indonesia)",
+   "result_summary": "97 rows; 50 read. BTR Indonesia to 'BlueOval Battery Michigan Cell Plant', 9 rows HS 3801.10 (May to Sep 2026), and to 'BlueOval Battery Park Michigan', 2 rows (Jul 2026). Other buyers: Ultium Cells Warren (31 rows, Aug to Nov 2025), General Motors, Tesla, FNS Inc, FNS NY and HSBMA LLC.",
+   "interpretation": "BTR's Indonesian plant ships artificial graphite to Ford's own LFP plant in Marshall, Michigan.",
+   "scorecard": "worked",
+   "entity_ids": [
+    "Lv60RfghzhQ-9oSF_kW0wA",
+    "ALeXPymJqrTWgIhWeUyLlw",
+    "sv3GsrQVLmLz2cd353HzPQ"
+   ],
+   "step": "out"
+  },
+  {
+   "id": "s916",
+   "timestamp": "2026-10-18T23:02:00Z",
+   "server": "sayari",
+   "tool": "search_shipments",
+   "params": {
+    "query": "\"Ford Motor\"",
+    "hs_code": "3801",
+    "arrival_country": "USA",
+    "limit": 50,
+    "response_mode": "compact"
+   },
+   "question": "Does Ford import HS 3801 under its own name?",
+   "purpose": "Ford imports",
+   "result_summary": "0 rows.",
+   "interpretation": "Ford's graphite imports, if any, are filed under plant names (BlueOval), not 'Ford Motor'. A name search on Ford alone misses them.",
+   "scorecard": "worked",
+   "entity_ids": [
+    "vR1xMKUjf8bn1_A2fcxH-A"
+   ],
+   "step": "gap"
+  },
+  {
+   "id": "s917",
+   "timestamp": "2026-10-18T23:02:10Z",
+   "server": "sayari",
+   "tool": "get_entity_profile",
+   "params": {
+    "entity_id": "ALeXPymJqrTWgIhWeUyLlw",
+    "relationships_limit": 50
+   },
+   "question": "What is the 'BlueOval Battery Michigan Cell Plant' record?",
+   "purpose": "Buyer (Ford plant)",
+   "result_summary": "Trade-only record at 13700 W Michigan Ave, Marshall, MI and 201 Watkins Rd, Battle Creek, MI. 148 rows received, 15 suppliers (shown: Guangdong Donlee New Materials, Jiangsu Sidike New Materials, Suzhou Bridge Technology, Meishan Indigo Technology, Shandong Synmiway Supply Chain). No registry link to Ford.",
+   "interpretation": "The address is Ford's Marshall plant. Ownership comes from press (t907), not from Sayari.",
+   "scorecard": "worked",
+   "entity_ids": [
+    "ALeXPymJqrTWgIhWeUyLlw"
+   ],
+   "step": "plant"
+  },
+  {
+   "id": "s918",
+   "timestamp": "2026-10-18T23:02:10Z",
+   "server": "sayari",
+   "tool": "get_entity_profile",
+   "params": {
+    "entity_id": "sv3GsrQVLmLz2cd353HzPQ",
+    "relationships_limit": 50
+   },
+   "question": "What is the 'BlueOval Battery Park Michigan' record?",
+   "purpose": "Buyer (Ford plant)",
+   "result_summary": "Trade-only record typed as a person, at 201 Watkins Rd, Battle Creek, MI. 8 rows received; its only supplier is PT Indonesia BTR New Energy Materia (record 6).",
+   "interpretation": "A second fragment of the Marshall plant, with BTR Indonesia as its only supplier.",
+   "scorecard": "worked",
+   "entity_ids": [
+    "sv3GsrQVLmLz2cd353HzPQ",
+    "Lv60RfghzhQ-9oSF_kW0wA"
+   ],
+   "step": "plant"
+  },
+  {
+   "id": "s919",
+   "timestamp": "2026-10-18T23:02:20Z",
+   "server": "sayari",
+   "tool": "find_beneficial_owners",
+   "params": {
+    "entity_id": "RPYYIgKHs0f-kGKGBlE9jw",
+    "max_depth": 2
+   },
+   "question": "Does Sayari show Ford and SK On as BlueOval SK's owners?",
+   "purpose": "Ford JV owner",
+   "result_summary": "0 owners returned.",
+   "interpretation": "Sayari can't show the joint venture's ownership; the registry data hold no shareholders for this LLC.",
+   "scorecard": "worked",
+   "entity_ids": [
+    "RPYYIgKHs0f-kGKGBlE9jw"
+   ],
+   "step": "gap"
+  },
+  {
+   "id": "s920",
+   "timestamp": "2026-10-18T23:02:20Z",
+   "server": "sayari",
+   "tool": "find_shortest_path",
+   "params": {
+    "source_entity_id": "RPYYIgKHs0f-kGKGBlE9jw",
+    "target_entity_id": "Z57YvgOYL2TdoaWYgXFZ9Q"
+   },
+   "question": "Is there any path from BlueOval SK to the Tangier anode company?",
+   "purpose": "Ford JV to Morocco link",
+   "result_summary": "Error: Sayari API error (HTTP 408), a timeout.",
+   "interpretation": "Untested. No trade or registry link from the Ford side to Morocco was found in other calls either.",
+   "scorecard": "failed",
+   "entity_ids": [
+    "RPYYIgKHs0f-kGKGBlE9jw",
+    "Z57YvgOYL2TdoaWYgXFZ9Q"
+   ],
+   "step": "gap"
+  },
+  {
+   "id": "s921",
+   "timestamp": "2026-10-18T23:02:25Z",
+   "server": "sayari",
+   "tool": "search_shipments",
+   "params": {
+    "query": "\"BlueOval Battery Michigan\"",
+    "hs_code": "3801",
+    "arrival_country": "USA",
+    "limit": 15,
+    "response_mode": "full"
+   },
+   "question": "Pull full rows of HS 3801 into Ford's Marshall plant.",
+   "purpose": "Outputs detail",
+   "result_summary": "13 rows. 9 from PT Indonesia BTR (shipper address No. 8 Kawasan Jalan Indraprasta 8, Patebon, Kendal): arriving 31 May to 17 Sep 2026; six loaded at Ningbo or Yantian, China, three at Singapore; gross weights 39 t to 158 t each, about 964 t in total (one row records 158 kg, likely an entry error). 1 row from the same shipper to the Battery Park record (15 Jul 2026, Singapore, 138 t). 3 rows with no supplier named (10 Mar and 13 May 2026, 11 t to 67 t).",
+   "interpretation": "Dated, weighted rows show BTR Indonesia artificial graphite reaching Ford's own plant. Loading at Chinese ports under an Indonesian shipper name warrants due diligence on where the graphite was made.",
+   "scorecard": "worked",
+   "entity_ids": [
+    "Lv60RfghzhQ-9oSF_kW0wA",
+    "ALeXPymJqrTWgIhWeUyLlw",
+    "sv3GsrQVLmLz2cd353HzPQ"
+   ],
+   "step": "out"
+  },
+  {
+   "id": "s922",
+   "timestamp": "2026-10-18T23:02:30Z",
+   "server": "sayari",
+   "tool": "search_shipments",
+   "params": {
+    "query": "\"BTR Mediterranean\"",
+    "departure_country": "MAR",
+    "limit": 25,
+    "response_mode": "compact"
+   },
+   "question": "Has either Moroccan BTR company exported anything yet?",
+   "purpose": "Outputs (Morocco)",
+   "result_summary": "0 rows.",
+   "interpretation": "Tangier has shipped nothing in Sayari's data as of 18 Oct 2026, so the Ford deal there can't yet be seen in trade.",
+   "scorecard": "worked",
+   "entity_ids": [
+    "El_6QFk0rVRdYJanrqEtAA",
+    "Z57YvgOYL2TdoaWYgXFZ9Q",
+    "1CjF5vzVgFFxVomroaYyaA"
+   ],
+   "step": "out"
+  }
+ ]
+}

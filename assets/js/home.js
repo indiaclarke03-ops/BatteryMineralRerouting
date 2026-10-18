@@ -25,7 +25,7 @@
         <h3>${PT.esc(c.title)}</h3>
         <div>${PT.pill(c.answer_label)}</div>
         <p>${PT.esc(c.answer_short || c.answer)}</p>
-        <span class="cc-go">Read the case →</span>
+        <span class="cc-foot"><span class="cc-go">Read the case →</span>${PT.checkedHTML(c, { plain: true })}</span>
       </a>`).join("");
   }
 
@@ -34,9 +34,10 @@
     try { d = await PT.load(); } catch (e) { PT.fail(document.getElementById("case-cards"), e); return; }
     const cases = d.cases.items;
     const sy = d.call_log.items.filter((x) => x.server === "sayari");
-    const words = ["zero", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine", "ten"];
+    const words = ["zero", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine", "ten", "eleven", "twelve", "thirteen", "fourteen"];
     const set = (id, v) => { const el = document.getElementById(id); if (el) el.textContent = v; };
     set("n-cases", words[cases.length] || cases.length);
+    document.querySelectorAll(".n-cases-num").forEach((el) => { el.textContent = words[cases.length] || cases.length; });
     set("call-count", `${sy.length} Sayari queries · ${d.call_log.items.length - sy.length} source checks · all published`);
     set("tk-calls", sy.length);
     ["worked", "partial", "failed"].forEach((k) => set("tk-" + k, sy.filter((x) => x.scorecard === k).length));

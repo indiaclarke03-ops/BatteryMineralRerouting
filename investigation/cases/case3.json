@@ -1335,7 +1335,7 @@
    "question": "Is the May 2026 groundbreaking real, and who is the investing entity?",
    "purpose": "Verify a single-source claim",
    "result_summary": "GraphiteHub, Baidu Baike, Gulf News (citing ONA), MEED (via goalfore) and an Arabian Daily post all report ground broken at Sohar Freezone on 8 May 2026, with first-stage output due in 2027. Gulf News says Zhongke acted 'through its subsidiary Zhongke Xingcheng (Hong Kong)'. GraphiteHub also reports that on 12 Jun 2026 the board ended three other projects (two in China and one in Morocco) to focus on Luzhou and Oman. It also cites a 10 Sep 2026 company post on the Phase 1 frame being completed.",
-   "interpretation": "The 8 May 2026 groundbreaking now has several independent sources, including Omani government-linked press. It is no longer single-source. The Morocco cancellation still rests on GraphiteHub and the board notice it cites.",
+   "interpretation": "The 8 May 2026 groundbreaking now has several independent sources, including Omani government-linked press. It is no longer single-source. The Morocco cancellation is confirmed by Zhongke's own 12 Jun 2026 announcement, as reported by Caizhongshe, Gelonghui and China Energy Net. It was a 100 kt/yr base signed in Apr 2024 that was never built.",
    "scorecard": "worked",
    "entity_ids": [
     "case3-oman-sohar-project-co",

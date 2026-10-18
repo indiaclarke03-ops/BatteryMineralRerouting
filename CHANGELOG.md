@@ -1,5 +1,29 @@
 # Changelog
 
+## Iteration 1.4 · 18 Oct 2026
+- Four new cases:
+  - 9: Ford's links to BTR
+  - 10: CATL, Ampace and Linergy, now TDK-owned
+  - 11: CATL Debrecen, an EU comparison
+  - 12: Huayou nickel in Indonesia
+- Case 2 corrected: the anode company is most likely BTR Mediterranean Anode.
+- Ownership deepened from company filings (`verification-2.md`):
+  - BTR holds 60% of BTR Indonesia; the other 40% is Stellar Investment.
+  - EVE Malaysia is 100% owned; Putailai's Malaysian plant is 100% owned.
+  - CATL holds 59.5% of Xiamen Ampace, and TDK bought Linergy in Jun 2026.
+  - Volkswagen holds 24.28% of Gotion, falling to 18.98%.
+  - Gotion's annual report confirms it wholly owns its US subsidiaries.
+  - The 1260H listing is confirmed in the Federal Register.
+- Due Diligence lists every remaining unknown, with the document that would settle it.
+- Check a Buyer:
+  - wider HS 3801/8507 supplier scans for Ford, Panasonic and LG Energy Solution
+  - a step-by-step guide and prompt to check any buyer
+  - freight forwarders separated out
+- "Last checked" dates on every case; a monthly cloud re-check routine that opens pull requests.
+- Home: executive summary, a guided tour, a seventh finding.
+- Social preview card, favicon, and Open Graph tags on every page.
+- Accessibility: axe-core audit (WCAG 2 A/AA plus best practice) passes on every page after contrast, ARIA and heading fixes.
+
 ## Iteration 1.3 · 18 Oct 2026
 - Re-check of every headline claim and policy date (52 calls; `investigation/notes/verification.md`). Corrections:
   - Case 1: about 55 rows, including Singapore-loaded ones; shipments to Ultium continue to Nov 2025. Sayari merged the anchor record.

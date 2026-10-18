@@ -1,0 +1,1572 @@
+{
+ "case": {
+  "id": "case-11",
+  "slug": "eu-comparison",
+  "title": "CATL's Debrecen plant: the EU comparison",
+  "subtitle": "Contemporary Amperex Technology Hungary Kft. · Debrecen, Hungary",
+  "country": "HUN",
+  "plant_status": "under construction",
+  "question": "Does the same tracing method work for a Chinese-owned battery plant inside the EU, and what would the EU's own rules ask about it?",
+  "answer_label": "Partly",
+  "answer": "Ownership: yes. Hungarian registry data shows CATL owning the Debrecen plant 100% through its Hong Kong holding company, and China's own investment register agrees. Trade: only partly. Sayari shows seven shipments of Chinese factory equipment and no battery materials or exports, because goods moving inside the EU leave no customs record.",
+  "why_it_matters": "The US rules ask who owns a supplier; the EU rules ask where its raw materials came from. For a CATL plant in the EU the ownership answer is easy to find in registry data. The sourcing answer, which is what the EU will require from 2027, is the part trade data can't see once material crosses an EU border.",
+  "headline": "Inside the EU, the ownership half of the method works well and the trade half goes dark. Sayari traces CATL's Debrecen cell plant to CATL in China through a 100% Hong Kong parent, using the Hungarian registry. But the only shipments it sees are seven loads of Chinese production equipment from 2025. No cathode, anode or cells appear, and nothing goes to the US.",
+  "summary_for_non_experts": "CATL, the world's biggest battery maker, is building a 100 GWh cell factory in Debrecen, Hungary. It started trial cell production on 22 Sep 2026. Hungarian company records in Sayari show the plant belongs to CATL's Hong Kong subsidiary, which CATL owns. Hungarian customs data shows only robots, coating machines, trays and a transformer arriving from China. Inside the EU, goods cross borders without customs paperwork, so supplies from, say, CATL's German plant or an EU anode maker would not show up at all.",
+  "key_numbers": [
+   {
+    "value": "100%",
+    "label": "CATL (Hong Kong)'s stake in the Debrecen company, per the Hungarian registry",
+    "call_ids": [
+     "s11-20"
+    ]
+   },
+   {
+    "value": "7",
+    "label": "China-to-Hungary shipments naming CATL (Aug-Dec 2025), all production equipment",
+    "call_ids": [
+     "s11-13",
+     "s11-14"
+    ]
+   },
+   {
+    "value": "0",
+    "label": "shipments leaving Hungary that name CATL, to the US or anywhere",
+    "call_ids": [
+     "s11-21"
+    ]
+   },
+   {
+    "value": "18 Aug 2027",
+    "label": "when EU battery due-diligence duties now apply, after a two-year delay",
+    "call_ids": [
+     "t11-03"
+    ]
+   },
+   {
+    "value": "0",
+    "label": "ownership records linking Shanshan's planned Finnish anode plant to its Chinese parent",
+    "call_ids": [
+     "s11-19",
+     "s11-26"
+    ]
+   }
+  ],
+  "overall_confidence": "corroborated",
+  "pattern": "trail-goes-dark",
+  "steps": [
+   {
+    "title": "Choosing the plant",
+    "kicker": "Step 1 · Method",
+    "text": "We checked three candidates. Shanshan's planned anode plant has a Finnish registry record (in Mustasaari near Vaasa, not Kokkola) but no owner and no trade. Searches for Huayou or BTR companies in Hungary found none. CATL's Debrecen plant had a registry record, an ownership chain, an investment-register entry and customs rows, so it is the one we traced. It makes cells, not anode material.",
+    "edge_ids": [
+     "e11-11"
+    ],
+    "node_ids": [
+     "Tfn4TF12Z62wFwdTqxavFg",
+     "cuL17kycWigmNV3zpuabBA",
+     "VyUeBf-iagPQP8TlR9Y4Pw"
+    ],
+    "call_ids": [
+     "s11-01",
+     "s11-02",
+     "s11-03",
+     "s11-04",
+     "s11-05",
+     "s11-06",
+     "s11-07",
+     "s11-11",
+     "s11-16",
+     "s11-19",
+     "s11-24",
+     "s11-25",
+     "s11-26",
+     "t11-02",
+     "t11-05"
+    ]
+   },
+   {
+    "title": "The plant: four records, one company",
+    "kicker": "Step 2 · Inferred",
+    "text": "Sayari holds four records for CATL's Hungarian company. The Hungarian registry record carries the company number, tax number and LEI. The other three (a risk-intelligence record, a customs-data fragment and a Chinese investment-register entry) match it by name, so we link them as Inferred or Lead.",
+    "edge_ids": [
+     "e11-04",
+     "e11-05",
+     "e11-06"
+    ],
+    "node_ids": [
+     "VyUeBf-iagPQP8TlR9Y4Pw",
+     "sbHG28fzGHNWsCxC7bZhtQ",
+     "PxhF4Q4AMA_SFhC820qDMQ",
+     "VAnGEdLdcRO502mhut8JFg"
+    ],
+    "call_ids": [
+     "s11-04",
+     "s11-08",
+     "s11-09",
+     "s11-12",
+     "s11-20"
+    ]
+   },
+   {
+    "title": "The owner: two registers agree",
+    "kicker": "Step 3 · Contractual",
+    "text": "The Hungarian registry names CATL's Hong Kong holding company as 100% owner. Sayari then links that company to CATL. Separately, China's outbound-investment register lists CATL as the investor in its Hungarian company. Sayari flags CATL as on the US Section 1260H list of Chinese military companies.",
+    "edge_ids": [
+     "e11-01",
+     "e11-02",
+     "e11-03"
+    ],
+    "node_ids": [
+     "Hknigg_iWcgcpp_dkWgQvA",
+     "t1da8cNdd5H6OTcpx3Qo6g",
+     "VyUeBf-iagPQP8TlR9Y4Pw",
+     "VAnGEdLdcRO502mhut8JFg"
+    ],
+    "call_ids": [
+     "s11-09",
+     "s11-17",
+     "s11-18",
+     "s11-20",
+     "s11-22"
+    ]
+   },
+   {
+    "title": "Inputs: machines, not materials",
+    "kicker": "Step 4 · Transactional",
+    "text": "Seven 2025 shipments from Yantian to Budapest name CATL or its Hungarian company: robots, trays, extrusion-coating machine parts and a power transformer (HS 8504.23). CATL usually ships to freight forwarders (Ghibli, DSV), not to the plant by name. The only Chinese artificial graphite (HS 3801.10) entering Hungary goes to the Korean-owned plants of Samsung SDI and SK On.",
+    "edge_ids": [
+     "e11-07",
+     "e11-08",
+     "e11-09"
+    ],
+    "node_ids": [
+     "Hknigg_iWcgcpp_dkWgQvA",
+     "GrAjBdvoB6N7xmeGyBkMCA",
+     "LVsanL3iwdjyWmtNfl0k_w",
+     "LjVNLSnI-nmDh-d5_5O0vg",
+     "PxhF4Q4AMA_SFhC820qDMQ",
+     "oiVbV3GAfPObw6dbey9WAA",
+     "t2HmaexxvTE5WgGtj3BMxg"
+    ],
+    "call_ids": [
+     "s11-10",
+     "s11-13",
+     "s11-14",
+     "s11-15",
+     "s11-28",
+     "s11-29"
+    ]
+   },
+   {
+    "title": "Outputs, and the EU blind spot",
+    "kicker": "Step 5 · Gap",
+    "text": "No shipment naming CATL leaves Hungary. The only Hungary-to-US lithium-ion rows are a forwarder's own 2024 consolidations, with no maker named. Debrecen's cells are meant for European carmakers, and goods moving between EU countries don't go through customs. So the plant's EU customers, and any inputs from EU suppliers, are invisible in trade data.",
+    "edge_ids": [
+     "e11-10"
+    ],
+    "node_ids": [
+     "LjVNLSnI-nmDh-d5_5O0vg",
+     "RJbk2beBcf-6L9K74K2uVA",
+     "VyUeBf-iagPQP8TlR9Y4Pw"
+    ],
+    "call_ids": [
+     "s11-21",
+     "s11-23",
+     "t11-01"
+    ]
+   },
+   {
+    "title": "Two rulebooks, two questions",
+    "kicker": "Step 6 · Policy",
+    "text": "The EU Battery Regulation makes battery makers check how cobalt, natural graphite, lithium and nickel were sourced. That duty now starts on 18 Aug 2027, after a two-year delay. From 18 Feb 2027, EV batteries need a digital battery passport. Neither rule asks who owns the supplier. The US PFE rules do ask, and for this plant the registry answer is a 100% Chinese parent.",
+    "edge_ids": [
+     "e11-01",
+     "e11-02"
+    ],
+    "node_ids": [
+     "Hknigg_iWcgcpp_dkWgQvA",
+     "t1da8cNdd5H6OTcpx3Qo6g",
+     "VyUeBf-iagPQP8TlR9Y4Pw"
+    ],
+    "call_ids": [
+     "t11-03",
+     "t11-04",
+     "s11-20"
+    ]
+   }
+  ],
+  "verdict": {
+   "detected": [
+    {
+     "text": "A registry ownership chain: CATL -> Contemporary Amperex Technology (Hong Kong) -> Contemporary Amperex Technology Hungary Kft., 100% at the Hungarian step.",
+     "call_ids": [
+      "s11-18",
+      "s11-20",
+      "s11-22"
+     ]
+    },
+    {
+     "text": "China's MOFCOM outbound-investment directory independently lists CATL as investor in its Hungarian company.",
+     "call_ids": [
+      "s11-09"
+     ]
+    },
+    {
+     "text": "Seven China-to-Hungary shipments in Aug-Dec 2025 (robots, trays, coating-machine parts, a transformer), six of them consigned to freight forwarders.",
+     "call_ids": [
+      "s11-13",
+      "s11-14"
+     ]
+    },
+    {
+     "text": "Chinese artificial graphite entering Hungary goes to Samsung SDI Magyarország and SK On Hungary, not to CATL.",
+     "call_ids": [
+      "s11-28"
+     ]
+    }
+   ],
+   "suggested": [
+    {
+     "text": "The forwarder shipments from CATL are for the Debrecen plant. The goods fit a new cell line, but the consignee is the forwarder.",
+     "call_ids": [
+      "s11-14",
+      "t11-01"
+     ]
+    },
+    {
+     "text": "The customs fragment, the risk-intelligence record and the MOFCOM entry are the same company as the registry record.",
+     "call_ids": [
+      "s11-08",
+      "s11-09",
+      "s11-12",
+      "s11-20"
+     ]
+    }
+   ],
+   "not_visible": [
+    {
+     "text": "Any cathode, anode or graphite delivered to the Debrecen plant, from China or from inside the EU.",
+     "call_ids": [
+      "s11-13",
+      "s11-28"
+     ]
+    },
+    {
+     "text": "Any output from the plant, to EU carmakers or to the US.",
+     "call_ids": [
+      "s11-21",
+      "s11-23"
+     ]
+    },
+    {
+     "text": "Who owns Shanshan's planned Finnish anode company. Sayari has no shareholder record and no path to Ningbo Shanshan.",
+     "call_ids": [
+      "s11-19",
+      "s11-26"
+     ]
+    },
+    {
+     "text": "Any Huayou or BTR battery-material company in Hungary.",
+     "call_ids": [
+      "s11-02",
+      "s11-05",
+      "s11-06",
+      "s11-16"
+     ]
+    }
+   ]
+  },
+  "passport": [
+   {
+    "field": "Place of manufacture",
+    "guidance_no": "8",
+    "declared": "The cell plant's location (Debrecen, Hungary).",
+    "paper_trail": "Registry shows a Debrecen battery-making company; no cell shipments from it yet.",
+    "gap": true,
+    "note": "Sales to EU carmakers stay inside the EU and will not show in customs data."
+   },
+   {
+    "field": "Detailed composition (anode)",
+    "guidance_no": "45",
+    "declared": "Anode active material, e.g. graphite.",
+    "paper_trail": "No anode or graphite shipments to any CATL company in Hungary.",
+    "gap": true,
+    "note": "Chinese graphite into Hungary is visible only for Korean-owned plants."
+   },
+   {
+    "field": "Critical raw materials > 0.1%",
+    "guidance_no": "15",
+    "declared": "Lithium, nickel, cobalt, natural graphite if present.",
+    "paper_trail": "No raw-material or cathode inputs visible.",
+    "gap": true,
+    "note": "Inputs routed via CATL's German plant or EU suppliers would not cross a customs border."
+   },
+   {
+    "field": "Responsible-sourcing (due-diligence) report",
+    "guidance_no": "19",
+    "declared": "Required from 18 Aug 2027 under Article 48, after the 2025 delay.",
+    "paper_trail": "Sayari network flags via CATL (Sheffield Hallam-named entity, regulatory action).",
+    "gap": true,
+    "note": "The EU duty names natural graphite; synthetic graphite, the main anode material, is not on the list."
+   },
+   {
+    "field": "Ownership of upstream suppliers",
+    "guidance_no": "—",
+    "declared": "No such field in the EU passport.",
+    "paper_trail": "Registry chain: CATL -> CATL (Hong Kong) -> CATL Hungary, 100% at the Hungarian step; MOFCOM agrees.",
+    "gap": false,
+    "note": "This is the question US PFE rules ask, and registry data answers it here."
+   }
+  ],
+  "red_flags": [
+   {
+    "flag": "Chinese parent ownership of the transit plant",
+    "signal": "contractual",
+    "severity": "High",
+    "result": "detected",
+    "note": "100% via CATL (Hong Kong), per the Hungarian registry; MOFCOM agrees."
+   },
+   {
+    "flag": "Same HS imported from China and exported to the US",
+    "signal": "transactional",
+    "severity": "High",
+    "result": "not_visible",
+    "note": "Only equipment in; nothing out."
+   },
+   {
+    "flag": "Recent incorporation vs. first export date",
+    "signal": "contractual",
+    "severity": "Medium",
+    "result": "not_visible",
+    "note": "Registered Jan 2022; no exports to compare."
+   },
+   {
+    "flag": "Volume spike after a policy date",
+    "signal": "transactional",
+    "severity": "Medium",
+    "result": "not_visible",
+    "note": "Seven rows in 2025 follow the build schedule, not a policy date."
+   },
+   {
+    "flag": "Shared address or officer with a flagged entity",
+    "signal": "inferred",
+    "severity": "Medium",
+    "result": "not_visible",
+    "note": "None checked beyond the parent. CATL's own flags are ownership, not shared officers."
+   },
+   {
+    "flag": "Entity-resolution fragmentation",
+    "signal": "inferred",
+    "severity": "Low (disclose)",
+    "result": "detected",
+    "note": "Four records for the plant company; two for the DSV forwarder."
+   },
+   {
+    "flag": "Forced-labor / UFLPA sub-tier flags",
+    "signal": "inferred",
+    "severity": "Medium",
+    "result": "suggested",
+    "note": "Ownership-path flags via CATL (Sheffield Hallam, Section 1260H); context, not a finding."
+   }
+  ],
+  "caveats": [
+   "Building a battery plant in Hungary with Chinese ownership is legal and common. Nothing here shows wrongdoing by any company named.",
+   "Debrecen is a cell plant, not an anode plant. We chose it because it had the most Sayari data. The anode-plant candidate (Shanshan, Finland) had a registry record only.",
+   "The brief placed Shanshan's plant in Kokkola; registry data and the City of Vaasa put it in Mustasaari (Korsholm), in the GigaVaasa area.",
+   "Hungarian customs data covers trade with non-EU countries. Goods moving between EU member states don't go through customs, so intra-EU inputs and sales are missing by design.",
+   "Freight forwarders (Ghibli, DSV) are named as consignees. Linking their shipments to the plant is our inference from the goods and timing.",
+   "The Section 1260H flag on CATL comes from Sayari. We did not assess how it or CATL's ownership would be treated under the PFE rules; that depends on Treasury guidance.",
+   "The policy comparison is limited to the dates and scope stated in the EUR-Lex texts we read (Regulations 2023/1542 and 2025/1561).",
+   "Searches for Huayou and BTR companies in Hungary were by name only and limited by budget; a record under another name could exist.",
+   "Records checked on 18 Oct 2026. Sayari merges and retires IDs."
+  ]
+ },
+ "entities": [
+  {
+   "id": "VyUeBf-iagPQP8TlR9Y4Pw",
+   "name": "Contemporary Amperex Technology Hungary Kft. (registry record)",
+   "country": "HUN",
+   "type": "company",
+   "role": "transit_plant",
+   "risk_flags": [
+    "basel_aml",
+    "cpi_score"
+   ],
+   "identifiers": {
+    "hun_company_register_number": "09 09 034484",
+    "hun_tax_number": "27754025-2-09",
+    "lei": "9845000FBUO0MBAF4A76",
+    "hun_opten_id": "4432201"
+   },
+   "summary": "CATL's Debrecen cell-plant company. Hungarian registry: registered 11 Jan 2022, active, 'manufacture of batteries and accumulators'. 100% owned by CATL (Hong Kong). Owns GreenPower Energy Debrecen Kft. No trade under this record.",
+   "source_call_ids": [
+    "s11-17",
+    "s11-18",
+    "s11-20",
+    "s11-27"
+   ],
+   "sayari_url": "https://graph.sayari.com/resource/entity/VyUeBf-iagPQP8TlR9Y4Pw"
+  },
+  {
+   "id": "sbHG28fzGHNWsCxC7bZhtQ",
+   "name": "Contemporary Amperex Technology Hungary Kft. (Acuris record)",
+   "country": "HUN",
+   "type": "company",
+   "role": "transit_plant",
+   "risk_flags": [
+    "reputational_risk_financial_crime",
+    "reputational_risk_financial_crime_breaking",
+    "basel_aml",
+    "cpi_score"
+   ],
+   "identifiers": {
+    "xxx_acuris_id": "C2302839"
+   },
+   "summary": "A risk-intelligence record for the same company, Debrecen. Carries Acuris media flags (financial-crime reputational risk). Linked to the registry record by Sayari as 'possibly the same as'.",
+   "source_call_ids": [
+    "s11-04",
+    "s11-08",
+    "s11-17",
+    "s11-18"
+   ],
+   "sayari_url": "https://graph.sayari.com/resource/entity/sbHG28fzGHNWsCxC7bZhtQ"
+  },
+  {
+   "id": "PxhF4Q4AMA_SFhC820qDMQ",
+   "name": "CONTEMPORARY AMPEREX TECHNOLOGY HUNGARY KFT (trade record)",
+   "country": "HUN",
+   "type": "company",
+   "role": "transit_plant",
+   "risk_flags": [
+    "basel_aml",
+    "cpi_score"
+   ],
+   "identifiers": {},
+   "summary": "Hungarian customs-data fragment. One inbound row: a Sunten Electric power transformer, Sep 2025. No identifiers.",
+   "source_call_ids": [
+    "s11-10",
+    "s11-12",
+    "s11-13",
+    "s11-14"
+   ],
+   "sayari_url": "https://graph.sayari.com/resource/entity/PxhF4Q4AMA_SFhC820qDMQ"
+  },
+  {
+   "id": "VAnGEdLdcRO502mhut8JFg",
+   "name": "宁德时代新能源科技（匈牙利）有限责任公司 (CATL New Energy Technology (Hungary), MOFCOM record)",
+   "country": "HUN",
+   "type": "company",
+   "role": "transit_plant",
+   "risk_flags": [
+    "owned_by_usa_section_1260h_entity",
+    "owned_by_sheffield_hallam_university_reports_forced_labor_entity",
+    "owned_by_regulatory_action_entity"
+   ],
+   "identifiers": {},
+   "summary": "China's outbound-investment directory entry for CATL's Hungarian company. Lists CATL as shareholder.",
+   "source_call_ids": [
+    "s11-04",
+    "s11-09"
+   ],
+   "sayari_url": "https://graph.sayari.com/resource/entity/VAnGEdLdcRO502mhut8JFg"
+  },
+  {
+   "id": "t1da8cNdd5H6OTcpx3Qo6g",
+   "name": "Contemporary Amperex Technology (Hong Kong) Limited",
+   "country": "HKG",
+   "type": "company",
+   "role": "parent",
+   "risk_flags": [
+    "exports_ilab_child_labor",
+    "exports_ilab_forced_labor"
+   ],
+   "identifiers": {
+    "cn_hk_br_number": "65940257",
+    "lei": "25490036RU36EMVRMD24"
+   },
+   "summary": "CATL's overseas holding company. Registered in Hong Kong 1 Apr 2016. 100% owner of the Hungarian plant company and of CATL Italia. Also exports cells (1,432 shipments in UK and India trade data).",
+   "source_call_ids": [
+    "s11-17",
+    "s11-18",
+    "s11-20",
+    "s11-22",
+    "s11-27"
+   ],
+   "sayari_url": "https://graph.sayari.com/resource/entity/t1da8cNdd5H6OTcpx3Qo6g"
+  },
+  {
+   "id": "Hknigg_iWcgcpp_dkWgQvA",
+   "name": "Contemporary Amperex Technology Co., Limited (CATL)",
+   "country": "CHN",
+   "type": "company",
+   "role": "parent",
+   "risk_flags": [
+    "usa_section_1260h",
+    "sheffield_hallam_university_forced_labor_entity",
+    "regulatory_action",
+    "owned_by_soe"
+   ],
+   "identifiers": {
+    "cn_unified_social_credit_code": "91350900587527783P",
+    "lei": "300300KINDY1K0E9I032",
+    "hkg_stock_code": "03750"
+   },
+   "summary": "The world's largest battery maker, listed in Shenzhen and Hong Kong. Owns the Debrecen plant through its Hong Kong holding company. Sayari flags it as on the US Section 1260H list. Shipped production equipment to Hungary in Aug-Nov 2025.",
+   "source_call_ids": [
+    "s11-09",
+    "s11-13",
+    "s11-14",
+    "s11-17",
+    "s11-18",
+    "t11-01"
+   ],
+   "sayari_url": "https://graph.sayari.com/resource/entity/Hknigg_iWcgcpp_dkWgQvA"
+  },
+  {
+   "id": "GrAjBdvoB6N7xmeGyBkMCA",
+   "name": "Sunten Electric Company Limited",
+   "country": "CHN",
+   "type": "company",
+   "role": "producer",
+   "risk_flags": [
+    "exports_ilab_child_labor",
+    "exports_ilab_forced_labor"
+   ],
+   "identifiers": {},
+   "summary": "Chinese transformer maker. Shipped one dry-type power transformer (30.6 t) to CATL Hungary, Aug-Sep 2025.",
+   "source_call_ids": [
+    "s11-10",
+    "s11-13",
+    "s11-14"
+   ],
+   "sayari_url": "https://graph.sayari.com/resource/entity/GrAjBdvoB6N7xmeGyBkMCA"
+  },
+  {
+   "id": "LVsanL3iwdjyWmtNfl0k_w",
+   "name": "Ghibli Szállítmányozási Kft",
+   "country": "HUN",
+   "type": "company",
+   "role": "buyer",
+   "risk_flags": [],
+   "identifiers": {},
+   "summary": "Hungarian freight forwarder. Named as consignee for four CATL shipments of robots and trays from China, Aug-Nov 2025.",
+   "source_call_ids": [
+    "s11-13",
+    "s11-14"
+   ],
+   "sayari_url": "https://graph.sayari.com/resource/entity/LVsanL3iwdjyWmtNfl0k_w"
+  },
+  {
+   "id": "LjVNLSnI-nmDh-d5_5O0vg",
+   "name": "DSV Air&Sea Hungary Kft.",
+   "country": "HUN",
+   "type": "company",
+   "role": "buyer",
+   "risk_flags": [],
+   "identifiers": {},
+   "summary": "Hungarian arm of the Danish forwarder DSV. Named as consignee for two CATL shipments of extrusion-coating machine parts, Nov-Dec 2025.",
+   "source_call_ids": [
+    "s11-13",
+    "s11-14"
+   ],
+   "sayari_url": "https://graph.sayari.com/resource/entity/LjVNLSnI-nmDh-d5_5O0vg"
+  },
+  {
+   "id": "RJbk2beBcf-6L9K74K2uVA",
+   "name": "DSV AIR & SEA HUNGARY KFT (second trade record)",
+   "country": "HUN",
+   "type": "company",
+   "role": "trader",
+   "risk_flags": [],
+   "identifiers": {},
+   "summary": "Second DSV Hungary trade record. Shipper and consignee of six lithium-ion battery consolidations from Hungary to the US, Mar-Aug 2024; maker not named.",
+   "source_call_ids": [
+    "s11-23"
+   ],
+   "sayari_url": "https://graph.sayari.com/resource/entity/RJbk2beBcf-6L9K74K2uVA"
+  },
+  {
+   "id": "Tfn4TF12Z62wFwdTqxavFg",
+   "name": "Shanshan New Material (Finland) Oy",
+   "country": "FIN",
+   "type": "company",
+   "role": "contrast",
+   "risk_flags": [
+    "basel_aml",
+    "cpi_score"
+   ],
+   "identifiers": {
+    "fin_business_id": "3431191-5"
+   },
+   "summary": "Company for Shanshan's planned 100,000 t/yr synthetic-graphite anode plant in the GigaVaasa area (Mustasaari/Korsholm). Registered 19 Mar 2024. No shareholder record, no trade, no path to the Chinese parent in Sayari.",
+   "source_call_ids": [
+    "s11-01",
+    "s11-07",
+    "s11-11",
+    "s11-19",
+    "s11-25",
+    "s11-26",
+    "t11-02",
+    "t11-05"
+   ],
+   "sayari_url": "https://graph.sayari.com/resource/entity/Tfn4TF12Z62wFwdTqxavFg"
+  },
+  {
+   "id": "cuL17kycWigmNV3zpuabBA",
+   "name": "Ningbo Shanshan Co., Ltd. (宁波杉杉股份有限公司)",
+   "country": "CHN",
+   "type": "company",
+   "role": "parent",
+   "risk_flags": [
+    "regulatory_action",
+    "owner_of_forced_labor_xinjiang_entity"
+   ],
+   "identifiers": {
+    "cn_unified_social_credit_code": "91330200704803055M",
+    "lei": "300300MXM0RPCBS6WT25"
+   },
+   "summary": "Listed Chinese parent of the Shanshan anode business. Sayari shows no link to the Finnish company.",
+   "source_call_ids": [
+    "s11-24",
+    "s11-26"
+   ],
+   "sayari_url": "https://graph.sayari.com/resource/entity/cuL17kycWigmNV3zpuabBA"
+  },
+  {
+   "id": "oiVbV3GAfPObw6dbey9WAA",
+   "name": "Samsung SDI Magyarország Zrt.",
+   "country": "HUN",
+   "type": "company",
+   "role": "contrast",
+   "risk_flags": [],
+   "identifiers": {
+    "hun_company_register_number": "13 10 040717",
+    "hun_tax_number": "12627884-2-44"
+   },
+   "summary": "Korean-owned cell maker in Göd. The main importer of Chinese artificial graphite into Hungary in Sayari (91 shipments, latest Feb 2026).",
+   "source_call_ids": [
+    "s11-28"
+   ],
+   "sayari_url": "https://graph.sayari.com/resource/entity/oiVbV3GAfPObw6dbey9WAA"
+  },
+  {
+   "id": "t2HmaexxvTE5WgGtj3BMxg",
+   "name": "SK On Hungary Kft",
+   "country": "HUN",
+   "type": "company",
+   "role": "contrast",
+   "risk_flags": [],
+   "identifiers": {
+    "hun_company_register_number": "11 09 027108",
+    "lei": "529900PBEWV1DFHWJH25"
+   },
+   "summary": "Korean-owned cell maker. One Chinese artificial-graphite shipment into Hungary, Nov 2023.",
+   "source_call_ids": [
+    "s11-28"
+   ],
+   "sayari_url": "https://graph.sayari.com/resource/entity/t2HmaexxvTE5WgGtj3BMxg"
+  }
+ ],
+ "edges": [
+  {
+   "id": "e11-01",
+   "source": "Hknigg_iWcgcpp_dkWgQvA",
+   "target": "t1da8cNdd5H6OTcpx3Qo6g",
+   "relation": "owns",
+   "edge_type": "contractual",
+   "confidence": "corroborated",
+   "confidence_reason": "Sayari's graph holds the shareholder link, and China's MOFCOM directory separately lists CATL as the investor in the Hungarian company; no share percentage is shown for this hop.",
+   "hs_codes": [],
+   "first_seen": null,
+   "last_seen": null,
+   "shipment_count": null,
+   "evidence": "Sayari path: CATL (Hong Kong) has shareholder CATL. MOFCOM lists CATL as shareholder of its Hungarian company (e11-03).",
+   "source_call_ids": [
+    "s11-17",
+    "s11-18",
+    "s11-22",
+    "s11-09"
+   ]
+  },
+  {
+   "id": "e11-02",
+   "source": "t1da8cNdd5H6OTcpx3Qo6g",
+   "target": "VyUeBf-iagPQP8TlR9Y4Pw",
+   "relation": "owns",
+   "edge_type": "contractual",
+   "confidence": "documented",
+   "confidence_reason": "The Hungarian company registry (Opten) names CATL (Hong Kong) as 100% shareholder and beneficial owner.",
+   "hs_codes": [],
+   "first_seen": null,
+   "last_seen": null,
+   "shipment_count": null,
+   "evidence": "Opten registry: shareholder and beneficial owner Contemporary Amperex Technology (Hong Kong) Limited, 100%.",
+   "source_call_ids": [
+    "s11-20",
+    "s11-18"
+   ]
+  },
+  {
+   "id": "e11-03",
+   "source": "Hknigg_iWcgcpp_dkWgQvA",
+   "target": "VAnGEdLdcRO502mhut8JFg",
+   "relation": "owns",
+   "edge_type": "contractual",
+   "confidence": "documented",
+   "confidence_reason": "China's outbound-investment directory (MOFCOM) records CATL as the shareholder.",
+   "hs_codes": [],
+   "first_seen": null,
+   "last_seen": null,
+   "shipment_count": null,
+   "evidence": "MOFCOM foreign-investment directory lists CATL as shareholder of 宁德时代新能源科技（匈牙利）有限责任公司.",
+   "source_call_ids": [
+    "s11-09"
+   ]
+  },
+  {
+   "id": "e11-04",
+   "source": "VAnGEdLdcRO502mhut8JFg",
+   "target": "VyUeBf-iagPQP8TlR9Y4Pw",
+   "relation": "possibly_same_as",
+   "edge_type": "inferred",
+   "confidence": "inferred",
+   "confidence_reason": "Matching Chinese name ('CATL New Energy Technology (Hungary)'), country and parent group, but no shared identifier.",
+   "hs_codes": [],
+   "first_seen": null,
+   "last_seen": null,
+   "shipment_count": null,
+   "evidence": "Our match: the MOFCOM entry names CATL's Hungarian company; the registry record is the only CATL battery company in Hungary that we found.",
+   "source_call_ids": [
+    "s11-04",
+    "s11-09",
+    "s11-20"
+   ]
+  },
+  {
+   "id": "e11-05",
+   "source": "sbHG28fzGHNWsCxC7bZhtQ",
+   "target": "VyUeBf-iagPQP8TlR9Y4Pw",
+   "relation": "possibly_same_as",
+   "edge_type": "inferred",
+   "confidence": "inferred",
+   "confidence_reason": "Sayari links the two as 'possibly the same as' on name and city (Debrecen); no shared identifier.",
+   "hs_codes": [],
+   "first_seen": null,
+   "last_seen": null,
+   "shipment_count": null,
+   "evidence": "Same legal name and city; Sayari 'possibly same as' link.",
+   "source_call_ids": [
+    "s11-18",
+    "s11-17"
+   ]
+  },
+  {
+   "id": "e11-06",
+   "source": "PxhF4Q4AMA_SFhC820qDMQ",
+   "target": "VyUeBf-iagPQP8TlR9Y4Pw",
+   "relation": "possibly_same_as",
+   "edge_type": "inferred",
+   "confidence": "lead",
+   "confidence_reason": "Name match only; the trade record has no identifier or address.",
+   "hs_codes": [],
+   "first_seen": null,
+   "last_seen": null,
+   "shipment_count": null,
+   "evidence": "Trade record 'CONTEMPORARY AMPEREX TECHNOLOGY HUNGARY KFT' matches the registry name.",
+   "source_call_ids": [
+    "s11-12",
+    "s11-20"
+   ]
+  },
+  {
+   "id": "e11-07",
+   "source": "GrAjBdvoB6N7xmeGyBkMCA",
+   "target": "PxhF4Q4AMA_SFhC820qDMQ",
+   "relation": "ships_to",
+   "edge_type": "transactional",
+   "confidence": "documented",
+   "confidence_reason": "One dated Hungarian import row names both parties.",
+   "hs_codes": [
+    "850423"
+   ],
+   "first_seen": "2025-09-29",
+   "last_seen": "2025-09-29",
+   "shipment_count": 1,
+   "evidence": "Dry-type power transformer, HS 8504.23, 30,580 kg, Yantian to Budapest, left 24 Aug 2025, arrived 29 Sep 2025.",
+   "source_call_ids": [
+    "s11-10",
+    "s11-14"
+   ]
+  },
+  {
+   "id": "e11-08",
+   "source": "Hknigg_iWcgcpp_dkWgQvA",
+   "target": "LVsanL3iwdjyWmtNfl0k_w",
+   "relation": "ships_to",
+   "edge_type": "transactional",
+   "confidence": "documented",
+   "confidence_reason": "Four dated Hungarian import rows name CATL as shipper and the forwarder as consignee.",
+   "hs_codes": [],
+   "first_seen": "2025-09-29",
+   "last_seen": "2025-12-06",
+   "shipment_count": 4,
+   "evidence": "Robots (three rows, 6.5-9.0 t each) and 'EU2-EB580 TRAY' (10.7 t), Yantian to Budapest, Aug-Nov 2025. The forwarder is the consignee; the end user is not named.",
+   "source_call_ids": [
+    "s11-13",
+    "s11-14"
+   ]
+  },
+  {
+   "id": "e11-09",
+   "source": "Hknigg_iWcgcpp_dkWgQvA",
+   "target": "LjVNLSnI-nmDh-d5_5O0vg",
+   "relation": "ships_to",
+   "edge_type": "transactional",
+   "confidence": "documented",
+   "confidence_reason": "Two dated Hungarian import rows name CATL as shipper and DSV as consignee.",
+   "hs_codes": [
+    "847780",
+    "847790"
+   ],
+   "first_seen": "2025-12-06",
+   "last_seen": "2025-12-19",
+   "shipment_count": 2,
+   "evidence": "Double-floor extrusion-coating machine components (HS 8477.80, 12.5 t; HS 8477.90, 10.1 t), Yantian to Budapest, arrived 6 and 19 Dec 2025.",
+   "source_call_ids": [
+    "s11-13",
+    "s11-14"
+   ]
+  },
+  {
+   "id": "e11-10",
+   "source": "RJbk2beBcf-6L9K74K2uVA",
+   "target": "LjVNLSnI-nmDh-d5_5O0vg",
+   "relation": "possibly_same_as",
+   "edge_type": "inferred",
+   "confidence": "lead",
+   "confidence_reason": "Name match only between two forwarder trade records.",
+   "hs_codes": [],
+   "first_seen": null,
+   "last_seen": null,
+   "shipment_count": null,
+   "evidence": "Both records are named DSV Air & Sea Hungary Kft.",
+   "source_call_ids": [
+    "s11-14",
+    "s11-23"
+   ]
+  },
+  {
+   "id": "e11-11",
+   "source": "Tfn4TF12Z62wFwdTqxavFg",
+   "target": "cuL17kycWigmNV3zpuabBA",
+   "relation": "group_name_match",
+   "edge_type": "inferred",
+   "confidence": "lead",
+   "confidence_reason": "Only the shared 'Shanshan' name links them; Sayari finds no ownership, officer or trade path.",
+   "hs_codes": [],
+   "first_seen": null,
+   "last_seen": null,
+   "shipment_count": null,
+   "evidence": "No shareholder record (s11-19) and no graph path (s11-26). Press reports name a Shanshan subsidiary as the investor (t11-02).",
+   "source_call_ids": [
+    "s11-07",
+    "s11-19",
+    "s11-26",
+    "t11-02"
+   ]
+  }
+ ],
+ "calls": [
+  {
+   "id": "s11-01",
+   "timestamp": "2026-10-18T22:57:46Z",
+   "server": "sayari",
+   "tool": "search_entities",
+   "params": {
+    "query": "\"Shanshan\" Finland",
+    "limit": 15
+   },
+   "question": "Does Sayari hold a record for Shanshan's planned Finnish anode plant?",
+   "purpose": "Candidate check: Shanshan, Finland",
+   "result_summary": "One record: Shanshan New Material (Finland) Oy, Finnish business ID 3431191-5, with an address in Mustasaari (Korsholm), not Kokkola.",
+   "interpretation": "The planned plant has a Finnish registry record. Its address is in the GigaVaasa area near Vaasa.",
+   "scorecard": "worked",
+   "entity_ids": [
+    "Tfn4TF12Z62wFwdTqxavFg"
+   ],
+   "step": "method"
+  },
+  {
+   "id": "s11-02",
+   "timestamp": "2026-10-18T22:57:51Z",
+   "server": "sayari",
+   "tool": "search_entities",
+   "params": {
+    "query": "\"Huayou\" Hungary",
+    "limit": 15
+   },
+   "question": "Does Sayari hold a Hungarian Huayou company?",
+   "purpose": "Candidate check: Huayou, Hungary",
+   "result_summary": "0 results.",
+   "interpretation": "A country word inside the query returns 0, as in earlier cases. Retried as s11-05.",
+   "scorecard": "failed",
+   "entity_ids": [],
+   "step": "method"
+  },
+  {
+   "id": "s11-03",
+   "timestamp": "2026-10-18T22:57:55Z",
+   "server": "sayari",
+   "tool": "search_entities",
+   "params": {
+    "query": "\"CATL Debrecen\"",
+    "limit": 15
+   },
+   "question": "Does Sayari hold a record named 'CATL Debrecen'?",
+   "purpose": "Candidate check: CATL, Hungary",
+   "result_summary": "0 results.",
+   "interpretation": "The plant's public name isn't its legal name. Retried with the legal form (s11-04).",
+   "scorecard": "failed",
+   "entity_ids": [],
+   "step": "method"
+  },
+  {
+   "id": "s11-04",
+   "timestamp": "2026-10-18T22:58:00Z",
+   "server": "sayari",
+   "tool": "search_entities",
+   "params": {
+    "query": "\"CATL\" Kft",
+    "limit": 15
+   },
+   "question": "Which Hungarian (Kft) CATL companies does Sayari hold?",
+   "purpose": "Candidate check: CATL, Hungary",
+   "result_summary": "258 ranked results, mostly unrelated 'CATL' names (US, India, Germany, Poland). Two Hungarian hits: Contemporary Amperex Technology Hungary Kft. (Acuris record, Debrecen) and 宁德时代新能源科技（匈牙利）有限责任公司 (a Chinese MOFCOM outbound-investment record with countries CHN and HUN).",
+   "interpretation": "Free text ranks, it doesn't filter, but the CATL Hungary records are there. Read the rows.",
+   "scorecard": "partial",
+   "entity_ids": [
+    "sbHG28fzGHNWsCxC7bZhtQ",
+    "VAnGEdLdcRO502mhut8JFg"
+   ],
+   "step": "plant"
+  },
+  {
+   "id": "s11-05",
+   "timestamp": "2026-10-18T22:58:05Z",
+   "server": "sayari",
+   "tool": "search_entities",
+   "params": {
+    "query": "\"Huayou\" Kft",
+    "limit": 15
+   },
+   "question": "Does Sayari hold a Hungarian Huayou company under its legal form?",
+   "purpose": "Candidate check: Huayou, Hungary",
+   "result_summary": "Large ranked result. No Hungarian company; the closest is Hunan Huayou Chemicals Corp. with no country.",
+   "interpretation": "No Huayou Hungary record found by name.",
+   "scorecard": "failed",
+   "entity_ids": [],
+   "step": "method"
+  },
+  {
+   "id": "s11-06",
+   "timestamp": "2026-10-18T22:58:09Z",
+   "server": "sayari",
+   "tool": "search_entities",
+   "params": {
+    "query": "\"BTR\" Kft",
+    "limit": 15
+   },
+   "question": "Does Sayari hold a Hungarian BTR battery-material company?",
+   "purpose": "Candidate check: BTR, Hungary",
+   "result_summary": "Large ranked result. Hits are unrelated finance and 'build-to-rent' firms (for example BTR Financial Pb. Kft., BTR Finland Oy). No BTR New Material company in Hungary.",
+   "interpretation": "No BTR-linked Hungarian plant visible by name.",
+   "scorecard": "failed",
+   "entity_ids": [],
+   "step": "method"
+  },
+  {
+   "id": "s11-07",
+   "timestamp": "2026-10-18T22:58:14Z",
+   "server": "sayari",
+   "tool": "get_entity_profile",
+   "params": {
+    "entity_id": "Tfn4TF12Z62wFwdTqxavFg"
+   },
+   "question": "Who owns and runs Shanshan New Material (Finland) Oy, and does it trade?",
+   "purpose": "Candidate check: Shanshan, Finland",
+   "result_summary": "Finnish registry data (Suomen Asiakastieto). Registered 19 Mar 2024, limited company, purpose 'manufacture of other electrical equipment', address c/o the Mustasaari municipal office. One chairman and three ordinary board members, all with China and Finland country tags. No shareholder recorded. Trade count 0 sent, 0 received.",
+   "interpretation": "Registry yes, ownership no, trade no. The board is Chinese but no record names the parent.",
+   "scorecard": "worked",
+   "entity_ids": [
+    "Tfn4TF12Z62wFwdTqxavFg"
+   ],
+   "step": "plant"
+  },
+  {
+   "id": "s11-08",
+   "timestamp": "2026-10-18T22:58:19Z",
+   "server": "sayari",
+   "tool": "get_entity_profile",
+   "params": {
+    "entity_id": "sbHG28fzGHNWsCxC7bZhtQ"
+   },
+   "question": "What does the Acuris record for CATL Hungary hold?",
+   "purpose": "Plant (CATL Hungary)",
+   "result_summary": "Name 'Contemporary Amperex Technology Hungary Kft.' (alias CATL), Debrecen, Acuris ID C2302839. No relationships, trade 0. Risk tags include reputational-risk (financial crime) media flags from Acuris.",
+   "interpretation": "A risk-intelligence record with no structure. The registry record is reached through a 'possibly same as' link (s11-18).",
+   "scorecard": "partial",
+   "entity_ids": [
+    "sbHG28fzGHNWsCxC7bZhtQ"
+   ],
+   "step": "plant"
+  },
+  {
+   "id": "s11-09",
+   "timestamp": "2026-10-18T22:58:23Z",
+   "server": "sayari",
+   "tool": "get_entity_profile",
+   "params": {
+    "entity_id": "VAnGEdLdcRO502mhut8JFg"
+   },
+   "question": "Does the Chinese outbound-investment record name the Hungarian company's owner?",
+   "purpose": "Owner (CATL Hungary)",
+   "result_summary": "Source: China MOFCOM foreign-investment directory. One shareholder: Contemporary Amperex Technology Co., Limited (CATL). Network flags inherited from CATL: owned by a USA Section 1260H entity, owned by a Sheffield Hallam-named entity, owned by a regulatory-action entity.",
+   "interpretation": "China's own outbound-investment register lists CATL as the investor in its Hungarian company. This is a second, independent ownership source.",
+   "scorecard": "worked",
+   "entity_ids": [
+    "VAnGEdLdcRO502mhut8JFg",
+    "Hknigg_iWcgcpp_dkWgQvA"
+   ],
+   "step": "owner"
+  },
+  {
+   "id": "s11-10",
+   "timestamp": "2026-10-18T22:58:28Z",
+   "server": "sayari",
+   "tool": "search_shipments",
+   "params": {
+    "query": "\"Contemporary Amperex Technology Hungary\"",
+    "limit": 25,
+    "response_mode": "compact"
+   },
+   "question": "Which shipments name CATL Hungary as a party (no country filters)?",
+   "purpose": "Inputs (INV-4)",
+   "result_summary": "1 row: Sunten Electric (China) shipped a dry-type power transformer (HS 8504.23, transformers above 10,000 kVA; 30,580 kg) from Yantian on 24 Aug 2025, arriving Budapest 29 Sep 2025, to a trade record 'CONTEMPORARY AMPEREX TECHNOLOGY HUNGARY KFT'.",
+   "interpretation": "Only one row names the plant itself, and it is factory equipment. No battery materials, no exports.",
+   "scorecard": "worked",
+   "entity_ids": [
+    "GrAjBdvoB6N7xmeGyBkMCA",
+    "PxhF4Q4AMA_SFhC820qDMQ"
+   ],
+   "step": "in"
+  },
+  {
+   "id": "s11-11",
+   "timestamp": "2026-10-18T22:58:33Z",
+   "server": "sayari",
+   "tool": "search_shipments",
+   "params": {
+    "query": "\"Shanshan New Material (Finland)\"",
+    "limit": 25,
+    "response_mode": "compact"
+   },
+   "question": "Does the Finnish Shanshan company appear in any trade rows?",
+   "purpose": "Candidate check: Shanshan, Finland",
+   "result_summary": "0 rows.",
+   "interpretation": "No trade at all for the Finnish company, consistent with a plant not yet built.",
+   "scorecard": "worked",
+   "entity_ids": [
+    "Tfn4TF12Z62wFwdTqxavFg"
+   ],
+   "step": "gap"
+  },
+  {
+   "id": "s11-12",
+   "timestamp": "2026-10-18T22:58:37Z",
+   "server": "sayari",
+   "tool": "get_entity_profile",
+   "params": {
+    "entity_id": "PxhF4Q4AMA_SFhC820qDMQ"
+   },
+   "question": "What does the CATL Hungary trade record hold?",
+   "purpose": "Plant (CATL Hungary)",
+   "result_summary": "Source: Hungary Imports & Exports (January 2023 - Present). receives_from Sunten Electric only; notify party on bill of lading 6427154610. Trade count 0 sent, 1 received. No identifiers.",
+   "interpretation": "A name-only trade fragment of the plant company. Linked as a lead.",
+   "scorecard": "worked",
+   "entity_ids": [
+    "PxhF4Q4AMA_SFhC820qDMQ",
+    "GrAjBdvoB6N7xmeGyBkMCA"
+   ],
+   "step": "plant"
+  },
+  {
+   "id": "s11-13",
+   "timestamp": "2026-10-18T22:58:42Z",
+   "server": "sayari",
+   "tool": "search_trade_facets",
+   "params": {
+    "scope": "shipments",
+    "query": "\"Contemporary Amperex\"",
+    "arrival_country": "HUN",
+    "bucket_limit": 15
+   },
+   "question": "How many shipments into Hungary name CATL, and who receives them?",
+   "purpose": "Inputs (INV-4)",
+   "result_summary": "7 rows, all departing China, all from one source (Hungary Imports & Exports). Suppliers: CATL 6, Sunten Electric 1. Receivers: Ghibli Szállítmányozási Kft 4, DSV Air&Sea Hungary 2, CATL Hungary 1. HS codes 8477.80, 8477.90, 8504.23. Dates 24 Aug - 19 Dec 2025.",
+   "interpretation": "CATL ships to Hungary through freight forwarders named as consignees, so the plant itself rarely appears.",
+   "scorecard": "worked",
+   "entity_ids": [
+    "Hknigg_iWcgcpp_dkWgQvA",
+    "GrAjBdvoB6N7xmeGyBkMCA",
+    "LVsanL3iwdjyWmtNfl0k_w",
+    "LjVNLSnI-nmDh-d5_5O0vg",
+    "PxhF4Q4AMA_SFhC820qDMQ"
+   ],
+   "step": "in"
+  },
+  {
+   "id": "s11-14",
+   "timestamp": "2026-10-18T22:58:47Z",
+   "server": "sayari",
+   "tool": "search_shipments",
+   "params": {
+    "query": "\"Contemporary Amperex\"",
+    "arrival_country": "HUN",
+    "departure_country": "CHN",
+    "response_mode": "full",
+    "limit": 10
+   },
+   "question": "What exactly did CATL ship from China to Hungary?",
+   "purpose": "Inputs (INV-4)",
+   "result_summary": "7 rows, all Yantian to Budapest. CATL to Ghibli: three 'ROBOT' rows (8,997, 8,863 and 6,488 kg; left 4 Nov 2025) and one 'EU2-EB580 TRAY' row (10,691 kg; left 24 Aug 2025). CATL to DSV Air&Sea Hungary: 'double-floor extrusion coating machine components' (HS 8477.80, 12,545 kg, left 4 Nov 2025; HS 8477.90, 10,085 kg, left 12 Nov 2025). Plus the Sunten transformer (s11-10).",
+   "interpretation": "Every row is production equipment for the new cell lines. No cathode, anode, graphite or cells.",
+   "scorecard": "worked",
+   "entity_ids": [
+    "Hknigg_iWcgcpp_dkWgQvA",
+    "LVsanL3iwdjyWmtNfl0k_w",
+    "LjVNLSnI-nmDh-d5_5O0vg",
+    "GrAjBdvoB6N7xmeGyBkMCA",
+    "PxhF4Q4AMA_SFhC820qDMQ"
+   ],
+   "step": "in"
+  },
+  {
+   "id": "s11-15",
+   "timestamp": "2026-10-18T22:58:51Z",
+   "server": "sayari",
+   "tool": "search_trade_facets",
+   "params": {
+    "scope": "buyers",
+    "query": "graphite",
+    "departure_country": "CHN",
+    "arrival_country": "HUN",
+    "hs_code": "380110",
+    "bucket_limit": 15
+   },
+   "question": "Who imports artificial graphite (HS 3801.10) from China into Hungary?",
+   "purpose": "Inputs: anode material",
+   "result_summary": "2 buyers in total. Only country buckets came back, no names.",
+   "interpretation": "Follow up with search_buyers to get names (s11-28).",
+   "scorecard": "partial",
+   "entity_ids": [],
+   "step": "in"
+  },
+  {
+   "id": "s11-16",
+   "timestamp": "2026-10-18T22:58:56Z",
+   "server": "sayari",
+   "tool": "search_entities",
+   "params": {
+    "query": "\"Huayou New Energy\"",
+    "limit": 20,
+    "response_mode": "compact"
+   },
+   "question": "Is there a Huayou New Energy company in Hungary?",
+   "purpose": "Candidate check: Huayou, Hungary",
+   "result_summary": "85 results; the first 20 are Chinese Huayou records and one Singapore holding company (Huayou New Energy Li-ion Battery Materials (Singapore), UEN 202245012E). No Hungarian record on the first page.",
+   "interpretation": "Huayou's Hungarian project isn't visible by name in the first page. Not pursued further (budget).",
+   "scorecard": "partial",
+   "entity_ids": [],
+   "step": "method"
+  },
+  {
+   "id": "s11-17",
+   "timestamp": "2026-10-18T22:59:01Z",
+   "server": "sayari",
+   "tool": "find_beneficial_owners",
+   "params": {
+    "entity_id": "sbHG28fzGHNWsCxC7bZhtQ"
+   },
+   "question": "Who ultimately owns CATL Hungary?",
+   "purpose": "Owner (INV-3)",
+   "result_summary": "50 rows. Every path runs Acuris record -> 'possibly same as' -> Hungarian registry record -> beneficial owner CATL (Hong Kong) -> CATL, then fans out to CATL's listed-company shareholders (Chinese funds and individuals, UBS Group, Morgan Stanley, HHLR Advisors and others).",
+   "interpretation": "Ownership resolves to CATL. The long tail is CATL's own stock-market shareholders, not owners of the plant in any controlling sense.",
+   "scorecard": "worked",
+   "entity_ids": [
+    "sbHG28fzGHNWsCxC7bZhtQ",
+    "VyUeBf-iagPQP8TlR9Y4Pw",
+    "t1da8cNdd5H6OTcpx3Qo6g",
+    "Hknigg_iWcgcpp_dkWgQvA"
+   ],
+   "step": "owner"
+  },
+  {
+   "id": "s11-18",
+   "timestamp": "2026-10-18T22:59:05Z",
+   "server": "sayari",
+   "tool": "find_shortest_path",
+   "params": {
+    "source_entity_id": "sbHG28fzGHNWsCxC7bZhtQ",
+    "target_entity_id": "Hknigg_iWcgcpp_dkWgQvA"
+   },
+   "question": "What is the shortest path from the Hungarian plant to CATL?",
+   "purpose": "Owner (INV-3)",
+   "result_summary": "Found, 3 hops: Acuris record -possibly_same_as-> Contemporary Amperex Technology Hungary Kft. (registry) -has_beneficial_owner-> Contemporary Amperex Technology (Hong Kong) Limited -has_shareholder-> CATL.",
+   "interpretation": "A clean chain: Hungary -> Hong Kong -> China.",
+   "scorecard": "worked",
+   "entity_ids": [
+    "sbHG28fzGHNWsCxC7bZhtQ",
+    "VyUeBf-iagPQP8TlR9Y4Pw",
+    "t1da8cNdd5H6OTcpx3Qo6g",
+    "Hknigg_iWcgcpp_dkWgQvA"
+   ],
+   "step": "owner"
+  },
+  {
+   "id": "s11-19",
+   "timestamp": "2026-10-18T22:59:10Z",
+   "server": "sayari",
+   "tool": "find_beneficial_owners",
+   "params": {
+    "entity_id": "Tfn4TF12Z62wFwdTqxavFg"
+   },
+   "question": "Who owns Shanshan New Material (Finland) Oy?",
+   "purpose": "Candidate check: Shanshan, Finland",
+   "result_summary": "0 rows.",
+   "interpretation": "The Finnish record has no shareholder data, so the ownership trace stops at the border.",
+   "scorecard": "failed",
+   "entity_ids": [
+    "Tfn4TF12Z62wFwdTqxavFg"
+   ],
+   "step": "owner"
+  },
+  {
+   "id": "s11-20",
+   "timestamp": "2026-10-18T22:59:15Z",
+   "server": "sayari",
+   "tool": "get_entity_profile",
+   "params": {
+    "entity_id": "VyUeBf-iagPQP8TlR9Y4Pw",
+    "relationships_limit": 20
+   },
+   "question": "What does the Hungarian company registry say about CATL Hungary?",
+   "purpose": "Plant and owner (INV-2, INV-3)",
+   "result_summary": "Opten (Hungarian registry) and LEI data. Company register no. 09 09 034484, tax no. 27754025-2-09, LEI 9845000FBUO0MBAF4A76. Registered 11 Jan 2022; active (status date 22 Jul 2026). Purpose: manufacture of batteries and accumulators. Addresses: plot 0495/267, Debrecen 4002, and Vágóhíd utca 2 (Lion Office Center), Debrecen. Shareholder and beneficial owner: CATL (Hong Kong), 100%. Two current managers and one former manager. 100% owner of GreenPower Energy Debrecen Kft. Trade count 0.",
+   "interpretation": "The plant's legal entity, with a documented 100% Hong Kong parent.",
+   "scorecard": "worked",
+   "entity_ids": [
+    "VyUeBf-iagPQP8TlR9Y4Pw",
+    "t1da8cNdd5H6OTcpx3Qo6g"
+   ],
+   "step": "owner"
+  },
+  {
+   "id": "s11-21",
+   "timestamp": "2026-10-18T22:59:19Z",
+   "server": "sayari",
+   "tool": "search_shipments",
+   "params": {
+    "query": "\"Contemporary Amperex\"",
+    "departure_country": "HUN",
+    "response_mode": "compact",
+    "limit": 25
+   },
+   "question": "Does any shipment naming CATL leave Hungary?",
+   "purpose": "Outputs (INV-5)",
+   "result_summary": "0 rows.",
+   "interpretation": "No visible exports from CATL in Hungary, to the US or anywhere else outside the EU.",
+   "scorecard": "worked",
+   "entity_ids": [],
+   "step": "out"
+  },
+  {
+   "id": "s11-22",
+   "timestamp": "2026-10-18T22:59:24Z",
+   "server": "sayari",
+   "tool": "get_entity_profile",
+   "params": {
+    "entity_id": "t1da8cNdd5H6OTcpx3Qo6g",
+    "relationships_limit": 10
+   },
+   "question": "What is CATL's Hong Kong holding company?",
+   "purpose": "Owner (INV-3)",
+   "result_summary": "Contemporary Amperex Technology (Hong Kong) Limited, HK business registration 65940257, LEI 25490036RU36EMVRMD24, registered 1 Apr 2016, active. Sole shareholder of CATL Italia; shareholder of CATL Australia and two Chinese leasing companies (25% and 19.1%). Trade: 1,432 shipments sent (UK and India trade data), to buyers in Indonesia, Colombia, the Philippines, Pakistan and Vietnam. Sources include China's MOFCOM directory.",
+   "interpretation": "CATL's main overseas holding company, which also exports cells itself. It holds the Hungarian plant.",
+   "scorecard": "worked",
+   "entity_ids": [
+    "t1da8cNdd5H6OTcpx3Qo6g"
+   ],
+   "step": "owner"
+  },
+  {
+   "id": "s11-23",
+   "timestamp": "2026-10-18T22:59:29Z",
+   "server": "sayari",
+   "tool": "search_shipments",
+   "params": {
+    "query": "\"Hungary Kft\"",
+    "departure_country": "HUN",
+    "arrival_country": "USA",
+    "hs_code": "850760",
+    "response_mode": "compact",
+    "limit": 25
+   },
+   "question": "Do lithium-ion cells (HS 8507.60) from Hungarian companies reach the US?",
+   "purpose": "Outputs (INV-5)",
+   "result_summary": "6 rows, Mar - Aug 2024, all with DSV Air & Sea Hungary Kft as both shipper and consignee: lithium-ion batteries, including a 24 V pack of 18650 cells.",
+   "interpretation": "A forwarder's own consolidations; the maker isn't named. Nothing ties these rows to CATL.",
+   "scorecard": "partial",
+   "entity_ids": [
+    "RJbk2beBcf-6L9K74K2uVA"
+   ],
+   "step": "out"
+  },
+  {
+   "id": "s11-24",
+   "timestamp": "2026-10-18T22:59:33Z",
+   "server": "sayari",
+   "tool": "search_entities",
+   "params": {
+    "query": "\"杉杉股份有限公司\"",
+    "limit": 5,
+    "response_mode": "compact"
+   },
+   "question": "What is the Sayari ID of Shanshan's Chinese parent?",
+   "purpose": "Candidate check: Shanshan, Finland",
+   "result_summary": "Ningbo Shanshan Co., Ltd. (宁波杉杉股份有限公司), unified social credit code 91330200704803055M, LEI 300300MXM0RPCBS6WT25; plus branch records.",
+   "interpretation": "Parent identified, for a path test (s11-26).",
+   "scorecard": "worked",
+   "entity_ids": [
+    "cuL17kycWigmNV3zpuabBA"
+   ],
+   "step": "owner"
+  },
+  {
+   "id": "s11-25",
+   "timestamp": "2026-10-18T22:59:38Z",
+   "server": "sayari",
+   "tool": "traverse_network",
+   "params": {
+    "entity_id": "H-6TG_KK7tq8FDlENmDIMA",
+    "max_depth": 1,
+    "limit": 25,
+    "response_mode": "compact"
+   },
+   "question": "Does the Finnish company's chairman link to any other Shanshan company?",
+   "purpose": "Candidate check: Shanshan, Finland",
+   "result_summary": "1 link only: the Finnish company itself.",
+   "interpretation": "The officer route to the parent is closed too.",
+   "scorecard": "partial",
+   "entity_ids": [
+    "Tfn4TF12Z62wFwdTqxavFg"
+   ],
+   "step": "owner"
+  },
+  {
+   "id": "s11-26",
+   "timestamp": "2026-10-18T22:59:43Z",
+   "server": "sayari",
+   "tool": "find_shortest_path",
+   "params": {
+    "source_entity_id": "Tfn4TF12Z62wFwdTqxavFg",
+    "target_entity_id": "cuL17kycWigmNV3zpuabBA"
+   },
+   "question": "Is there any path from the Finnish company to Ningbo Shanshan?",
+   "purpose": "Candidate check: Shanshan, Finland",
+   "result_summary": "No path found.",
+   "interpretation": "Sayari can't link the planned Finnish anode plant to its Chinese parent. Only the shared name does.",
+   "scorecard": "failed",
+   "entity_ids": [
+    "Tfn4TF12Z62wFwdTqxavFg",
+    "cuL17kycWigmNV3zpuabBA"
+   ],
+   "step": "owner"
+  },
+  {
+   "id": "s11-27",
+   "timestamp": "2026-10-18T22:59:47Z",
+   "server": "sayari",
+   "tool": "traverse_network",
+   "params": {
+    "entity_id": "L5wQNpRxwbTEZTlHgOm2SA",
+    "max_depth": 1,
+    "limit": 15,
+    "response_mode": "compact"
+   },
+   "question": "What is GreenPower Energy Debrecen Kft, the plant's subsidiary?",
+   "purpose": "Plant (CATL Hungary)",
+   "result_summary": "Three links: shareholder CATL Hungary (registry record), beneficial owner CATL (Hong Kong), and a manager who is also a manager of CATL Hungary.",
+   "interpretation": "A 100% CATL subsidiary in Debrecen; its business is not stated. Not added to the graph.",
+   "scorecard": "worked",
+   "entity_ids": [
+    "VyUeBf-iagPQP8TlR9Y4Pw",
+    "t1da8cNdd5H6OTcpx3Qo6g"
+   ],
+   "step": "plant"
+  },
+  {
+   "id": "s11-28",
+   "timestamp": "2026-10-18T22:59:52Z",
+   "server": "sayari",
+   "tool": "search_buyers",
+   "params": {
+    "query": "graphite",
+    "departure_country": "CHN",
+    "arrival_country": "HUN",
+    "hs_code": "380110",
+    "limit": 10,
+    "response_mode": "compact"
+   },
+   "question": "Who are the two importers of Chinese artificial graphite into Hungary?",
+   "purpose": "Inputs: anode material",
+   "result_summary": "Samsung SDI Magyarország Zrt. (91 shipments, latest 27 Feb 2026) and SK On Hungary Kft (1 shipment, 25 Nov 2023). No CATL company.",
+   "interpretation": "Chinese graphite does reach Hungary, but for the Korean-owned cell makers. Nothing for CATL in this slice.",
+   "scorecard": "worked",
+   "entity_ids": [
+    "oiVbV3GAfPObw6dbey9WAA",
+    "t2HmaexxvTE5WgGtj3BMxg"
+   ],
+   "step": "in"
+  },
+  {
+   "id": "s11-29",
+   "timestamp": "2026-10-18T22:59:57Z",
+   "server": "sayari",
+   "tool": "search_trade_facets",
+   "params": {
+    "scope": "shipments",
+    "query": "Debrecen",
+    "departure_country": "CHN",
+    "arrival_country": "HUN",
+    "bucket_limit": 15
+   },
+   "question": "What Chinese goods arrive in Debrecen?",
+   "purpose": "Inputs: Debrecen corridor",
+   "result_summary": "230 rows, 2023-10-15 to 2026-07-02. One supplier-buyer pair accounts for 226-228 of them. HS codes are steel articles (7326), bearings (8482), vehicle parts (8708) and jewellery (7113). No battery-material codes.",
+   "interpretation": "The Debrecen corridor is dominated by one unrelated pair. No visible cathode, anode or cell flows.",
+   "scorecard": "partial",
+   "entity_ids": [],
+   "step": "corridor"
+  },
+  {
+   "id": "t11-01",
+   "timestamp": "2026-10-18T23:00:01Z",
+   "server": "tavily",
+   "tool": "tavily_search",
+   "params": {
+    "query": "CATL Debrecen battery plant production start 2026",
+    "max_results": 5,
+    "search_depth": "advanced"
+   },
+   "question": "What is the status of CATL's Debrecen plant?",
+   "purpose": "Context: plant status",
+   "result_summary": "CATL release (PR Newswire, 22 Sep 2026): trial production of cells began 22 Sep 2026 on the first two lines, after an occupancy permit in Aug 2026; the project was announced Aug 2022 and the first cell building started in summer 2023. iGrow News (23 Sep 2026): first phase 34 GWh, full site planned for 100 GWh; modules made in Debrecen since autumn 2024. CnEVPost (Sep 2025): investment of up to EUR 7.34 bn; about 90% of CATL's May 2025 Hong Kong listing proceeds earmarked for the Hungarian project.",
+   "interpretation": "The cell plant entered trial production a month ago. It is a company statement plus press coverage.",
+   "scorecard": "worked",
+   "entity_ids": [
+    "Hknigg_iWcgcpp_dkWgQvA",
+    "VyUeBf-iagPQP8TlR9Y4Pw"
+   ],
+   "step": "context"
+  },
+  {
+   "id": "t11-02",
+   "timestamp": "2026-10-18T23:00:06Z",
+   "server": "tavily",
+   "tool": "tavily_search",
+   "params": {
+    "query": "Shanshan Kokkola anode plant Finland status",
+    "max_results": 5,
+    "search_depth": "advanced"
+   },
+   "question": "What is the status of Shanshan's Finnish anode project?",
+   "purpose": "Context: candidate status",
+   "result_summary": "Benchmark: Shanshan to invest EUR 1.28 bn in a 100,000 t/yr synthetic graphite anode plant in Finland, in two phases. City of Vaasa: plot 3019 in Korsholm (Mustasaari), GigaVaasa area, 52.5 ha, pre-reserved. SupplyChainBrain/Bloomberg: the investor is Shanghai Shanshan Lithium Battery Material Technology. GraphiteHub (undated): environmental approvals completed, 'ready to break ground'.",
+   "interpretation": "The project is in the Vaasa region, not Kokkola. It is planned and not yet built, which matches the empty trade record.",
+   "scorecard": "worked",
+   "entity_ids": [
+    "Tfn4TF12Z62wFwdTqxavFg"
+   ],
+   "step": "context"
+  },
+  {
+   "id": "t11-03",
+   "timestamp": "2026-10-18T23:00:11Z",
+   "server": "tavily",
+   "tool": "tavily_search",
+   "params": {
+    "query": "Regulation (EU) 2023/1542 battery due diligence obligations postponed 2027 battery passport Article 77 Article 48",
+    "max_results": 5,
+    "search_depth": "advanced",
+    "include_domains": [
+     "eur-lex.europa.eu",
+     "environment.ec.europa.eu",
+     "ec.europa.eu",
+     "europarl.europa.eu",
+     "consilium.europa.eu"
+    ]
+   },
+   "question": "What do the EU Battery Regulation's due-diligence rules cover, and when do they apply?",
+   "purpose": "Policy: EU Battery Regulation",
+   "result_summary": "Regulation (EU) 2025/1561 of 18 Jul 2025 (EUR-Lex): Regulation 2023/1542 imposes due-diligence obligations covering the sourcing, processing and trading of cobalt, natural graphite, lithium and nickel; Article 48(1)'s application date moves from 18 Aug 2025 to 18 Aug 2027, and the Commission guidelines date (Art. 48(5)) to 26 Jul 2026. Commission proposal COM(2025)258 gives the reason as time for guidelines and notified bodies.",
+   "interpretation": "Primary EU source. The duty is about where raw materials come from and how they were produced, not about who owns the supplier.",
+   "scorecard": "worked",
+   "entity_ids": [],
+   "step": "context"
+  },
+  {
+   "id": "t11-04",
+   "timestamp": "2026-10-18T23:00:15Z",
+   "server": "tavily",
+   "tool": "tavily_search",
+   "params": {
+    "query": "Regulation (EU) 2023/1542 Article 77 battery passport \"18 February 2027\" electric vehicle batteries",
+    "max_results": 4,
+    "search_depth": "advanced",
+    "include_domains": [
+     "eur-lex.europa.eu",
+     "environment.ec.europa.eu",
+     "ec.europa.eu",
+     "europarl.europa.eu"
+    ]
+   },
+   "question": "When does the EU battery passport apply?",
+   "purpose": "Policy: EU Battery Regulation",
+   "result_summary": "EUR-Lex text of Regulation 2023/1542, Article 77(1): from 18 Feb 2027 each LMT battery, industrial battery over 2 kWh and electric-vehicle battery placed on the market must have an electronic 'battery passport'. Article 13(6): from the same date batteries carry a QR code linking to it. Carbon-footprint declarations for EV batteries are phased from 18 Aug 2026 or 18 months after the delegated act, whichever is later.",
+   "interpretation": "Primary EU source for the passport date.",
+   "scorecard": "worked",
+   "entity_ids": [],
+   "step": "context"
+  },
+  {
+   "id": "t11-05",
+   "timestamp": "2026-10-18T23:00:20Z",
+   "server": "tavily",
+   "tool": "tavily_search",
+   "params": {
+    "query": "Shanshan Finland anode plant Mustasaari GigaVaasa 2026 construction decision",
+    "max_results": 5,
+    "start_date": "2025-06-01"
+   },
+   "question": "Has Shanshan taken an investment decision for Finland since mid-2025?",
+   "purpose": "Context: candidate status",
+   "result_summary": "2 academic results (Kotilainen, 2025-26) list Shanshan, Mustasaari among Finnish battery projects and note many may not reach a final investment decision. No news of construction.",
+   "interpretation": "No evidence of construction; treat the plant as planned.",
+   "scorecard": "partial",
+   "entity_ids": [
+    "Tfn4TF12Z62wFwdTqxavFg"
+   ],
+   "step": "context"
+  }
+ ]
+}

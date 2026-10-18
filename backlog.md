@@ -99,6 +99,13 @@ Work P0 top to bottom. Status values: `todo` / `doing` / `done`.
 | FB-15 | P0 | Due Diligence page (screening, questions, watch list) | done |
 | FB-16 | P0 | Full re-check and debug | done (verification.md; links, JS errors, 375px) |
 
+| FB-17 | P0 | Last-checked dates and a monthly automated re-check | done (routine trig_01MBbitewdgsnGLWA9oFew1A) |
+| FB-18 | P0 | More complete buyer check (live-search guide; Ford, Panasonic, LGES in depth) | done |
+| FB-19 | P0 | Deeper ownership, and the document that settles each unknown | done (verification-2.md; Due Diligence) |
+| FB-20 | P0 | New cases: Ford–BTR, CATL/Ampace, EU comparison, nickel | done (cases 9–12) |
+| FB-21 | P0 | Polish: accessibility audit, social card, tour, executive summary | done |
+| QA-3b | P1 | Lighthouse accessibility ≥ 90 | replaced by an axe-core audit: 0 violations on all pages |
+
 ## Parking lot
 - Zhongke Electric's Oman anode project as a forward-looking case (production targeted for 2027).
 - Downstream view: which US OEMs sit below a flagged plant (`find_downstream_entities`).

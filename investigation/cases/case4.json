@@ -7,7 +7,7 @@
   "country": "KOR",
   "plant_status": "operating",
   "question": "Can Sayari tell a Korean-owned anode maker that uses Chinese graphite apart from a Chinese-owned one?",
-  "headline": "Yes on ownership, partly on inputs. Sayari's Korean registry data shows POSCO Holdings owns 58.2% of POSCO Future M, with no Chinese owner anywhere up the chain. It also shows Chinese natural graphite going in (to Dec 2023) and 95 anode shipments going out to GM, SK Battery America, Tesla, Panasonic and XALT (Dec 2021 – Jul 2026). It cannot show how much Chinese graphite ends up in any US-bound shipment, and its Chinese input trail stops in Dec 2023, while the company says it still uses Chinese spherical graphite.",
+  "headline": "Yes on ownership, partly on inputs. Sayari's Korean registry data shows POSCO Holdings owns 58.2% of POSCO Future M, with no Chinese owner anywhere up the chain. It also shows Chinese natural graphite going in (to Dec 2023) and 95 anode shipments going out to GM, SK Battery America, Tesla, Panasonic and XALT (Dec 2021 – Jul 2026). It cannot show how much Chinese graphite ends up in any US-bound shipment, and its Chinese input trail stops in Dec 2023, while press reports and the company's own plans show it still depends on Chinese spherical graphite until its Saemangeum plant starts in late 2027.",
   "summary_for_non_experts": "POSCO Future M is the battery-materials arm of Korea's POSCO steel group. It is the largest anode maker outside China and sells to US battery and car plants. This is our contrast case: the owner is Korean, but the company has relied on China for spherical graphite, the rounded, purified graphite that natural-graphite anode is made from. Sayari shows the Korean owner clearly, unlike BTR's Indonesian plant in Case 1, and it shows Chinese graphite going in and anode going out to the US. What it cannot show is how much Chinese material is inside the anode that reaches the US.",
   "key_numbers": [
    {
@@ -145,7 +145,7 @@
    {
     "title": "What the data can't separate",
     "kicker": "Step 5 · Gap",
-    "text": "Trade rows can't link a Chinese input to a US-bound export, or tell Sejong's natural-graphite anode from Pohang's artificial-graphite anode. Chinese graphite rows to POSCO Future M stop on 8 Dec 2023, a week after China's export licensing began. The company says it still uses Chinese spherical graphite, so the gap is in coverage. Several name-and-HS searches returned 0 even though the graph holds the flows.",
+    "text": "Trade rows can't link a Chinese input to a US-bound export, or tell Sejong's natural-graphite anode from Pohang's artificial-graphite anode. Chinese graphite rows to POSCO Future M stop on 8 Dec 2023, a week after China's export licensing began. Korea still imports all its spherical graphite from China (KED Global, 2025), and POSCO Future M's own spherical-graphite plant at Saemangeum isn't due until late 2027, so its natural-graphite anode still depends on Chinese spherical graphite. The gap is in coverage; no company figure for the Chinese share was found. Several name-and-HS searches returned 0 even though the graph holds the flows.",
     "edge_ids": [
      "e443"
     ],

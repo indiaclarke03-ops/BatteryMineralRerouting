@@ -1,0 +1,1768 @@
+{
+  "as_of": "2026-10-14",
+  "generated_by": "investigation/build_data.py",
+  "items": [
+    {
+      "buyer": {
+        "key": "ford",
+        "name": "Ford and BlueOval SK",
+        "category": "battery",
+        "entity_ids": [
+          "QrL4MaSQ-7UxX19AfwfDrQ",
+          "RPYYIgKHs0f-kGKGBlE9jw",
+          "OoCU9I6MsBVXeOayCVuR9A",
+          "gmCpEnquN7PI-mUnMKqvPw",
+          "9DDAlIRlqlZq7pwJ5qUwSQ",
+          "_Ao7QZ5Y0DfLVP9LADDkDw",
+          "cclu_C8fIOucVXcdONCwhA",
+          "i0HhTJctxSbPxQvZqHx1Tg"
+        ],
+        "summary": "Ford imports finished lithium-ion batteries from SK On and LG Energy Solution (Korea) and from CATL (China). The BlueOval SK cell plants received 48 rows of Chinese artificial graphite in 2024-2025 through two Chinese freight forwarders, so the producer is not named. Ford and SK On split BlueOval SK in 2026: Ford now owns the Kentucky plants and SK On the Tennessee plant."
+      },
+      "scan": {
+        "hs": [
+          "3801",
+          "8507"
+        ],
+        "date_from": "2024-01-01",
+        "note": "Sayari trade data checked on 18 Oct 2026 for HS 3801 (graphite, including anode material) and HS 8507 (batteries and parts) entering the US under the names 'BlueOval SK' and 'Ford Motor Company'. The shipment date filter let older rows through, so we counted rows by year and kept only those from 2024 onward. Ford's own shipments between its units and its exports are left out. The scan cannot see graphite or cells bought inside the US, material that arrives inside imported cells or modules, or rows filed under names we did not search, such as Ford Energy Battery LLC or SK On Tennessee. Forwarders excluded: Pactra Tianjin Logistics (44 rows of artificial graphite, China to BlueOval SK, Sep 2024 to Nov 2025), Fan Cheng Intl Trans Service (4 rows, Feb 2025) and Sinotrans Eastern (1 row of cells to a Ford record, late 2024). The Pactra rows are the largest graphite flow into BlueOval SK, but no producer is named."
+      },
+      "suppliers": [
+        {
+          "name": "SK On Co., Ltd.",
+          "entity_id": "l8-h8TE5NYMNChTmamxMeQ",
+          "country": "KOR",
+          "hs_codes": [
+            "850760"
+          ],
+          "rows": 9,
+          "first": "2024-11-10",
+          "last": "2026-07-25",
+          "owner_top": "SK Innovation Co., Ltd.",
+          "owner_country": "KOR",
+          "chinese_owned": "No",
+          "confidence": "documented",
+          "note": "Lithium-ion batteries shipped to Ford Motor Company under two SK On trade records (8 rows in 2026, plus 1 row in Nov 2024 on jKQymV9KChMdJfcSdmO4zg); the registry record lists SK Innovation as shareholder.",
+          "call_ids": [
+            "b-ford-07",
+            "b-ford-08",
+            "b-ford-14",
+            "b-ford-16"
+          ]
+        },
+        {
+          "name": "Contemporary Amperex Technology Co., Limited (CATL)",
+          "entity_id": "Hknigg_iWcgcpp_dkWgQvA",
+          "country": "CHN",
+          "hs_codes": [
+            "850760"
+          ],
+          "rows": 4,
+          "first": "2024-01-02",
+          "last": "2026-03-24",
+          "owner_top": "Contemporary Amperex Technology Co., Limited (listed company, Ningde, Fujian)",
+          "owner_country": "CHN",
+          "chinese_owned": "Yes (China-based)",
+          "confidence": "documented",
+          "note": "Lithium-ion batteries shipped from China to Ford Motor Company and a Ford/Lincoln record; CATL is a Chinese company on the US Section 1260H list, so this link warrants due diligence under the PFE rules.",
+          "call_ids": [
+            "b-ford-07",
+            "b-ford-08",
+            "b-ford-11"
+          ]
+        },
+        {
+          "name": "LG Energy Solution, Ltd.",
+          "entity_id": "Jt71Tb2z1whIR0iQZpP-fw",
+          "country": "KOR",
+          "hs_codes": [
+            "850760"
+          ],
+          "rows": 2,
+          "first": "2026-08-06",
+          "last": "2026-08-06",
+          "owner_top": "LG Corp. (through LG Chem, Ltd.)",
+          "owner_country": "KOR",
+          "chinese_owned": "No",
+          "confidence": "documented",
+          "note": "Lithium-ion accumulators for electric vehicles shipped to Ford Motor Company; Sayari's registry chain runs to LG Chem and LG Corp. in Korea.",
+          "call_ids": [
+            "b-ford-08",
+            "b-ford-15"
+          ]
+        },
+        {
+          "name": "Kunhwa ENG Co., Ltd.",
+          "entity_id": "yd7o-FGvJPdkd9N6aVr0Tw",
+          "country": "KOR",
+          "hs_codes": [
+            "850790"
+          ],
+          "rows": 3,
+          "first": "2024-07-18",
+          "last": "2026-01-14",
+          "owner_top": "Not checked (Korean-registered company)",
+          "owner_country": "KOR",
+          "chinese_owned": "No",
+          "confidence": "inferred",
+          "note": "Battery parts (not cells) shipped to a BlueOval SK record in Glendale, Kentucky; Korean registration and DART filings, but no shareholder record was checked.",
+          "call_ids": [
+            "b-ford-04",
+            "b-ford-06",
+            "b-ford-13"
+          ]
+        },
+        {
+          "name": "BTR New Material Group Sales Co., Ltd.",
+          "entity_id": "5_cayB1m7XahAhz_Hrrpng",
+          "country": "CHN",
+          "hs_codes": [
+            "380190"
+          ],
+          "rows": 1,
+          "first": "2025-08-26",
+          "last": "2025-08-26",
+          "owner_top": "BTR New Material Group Co., Ltd. (name match only)",
+          "owner_country": "CHN",
+          "chinese_owned": "Yes (China-based)",
+          "confidence": "documented",
+          "note": "One row of graphite-based material (HS 3801.90) to BlueOval SK from this Shenzhen-based BTR sales company; the link to the BTR parent is only a name match (Case 1).",
+          "call_ids": [
+            "b-ford-03",
+            "b-ford-05",
+            "b-ford-18"
+          ]
+        },
+        {
+          "name": "Toptec Co., Ltd.",
+          "entity_id": "swZx4LTN9A0Zd4KpT7hxmA",
+          "country": "KOR",
+          "hs_codes": [
+            "380120"
+          ],
+          "rows": 2,
+          "first": "2025-01-04",
+          "last": "2025-01-04",
+          "owner_top": "Not checked",
+          "owner_country": "KOR",
+          "chinese_owned": "Unknown",
+          "confidence": "lead",
+          "note": "Coded as colloidal graphite (HS 3801.20), but the product text describes a semi-auto tester, so this is probably equipment, not graphite; ownership was not checked.",
+          "call_ids": [
+            "b-ford-03",
+            "b-ford-05"
+          ]
+        }
+      ],
+      "forwarders_excluded": 3,
+      "calls": [
+        {
+          "id": "b-ford-01",
+          "timestamp": "2026-10-18T22:57:38Z",
+          "server": "sayari",
+          "tool": "search_entities",
+          "params": {
+            "query": "\"BlueOval SK\"",
+            "limit": 10
+          },
+          "question": "Which Sayari records belong to BlueOval SK, the Ford and SK On battery venture?",
+          "purpose": "buyer resolution",
+          "result_summary": "18 records. The main one (RPYYIgKHs0f-kGKGBlE9jw) carries a Kentucky org number, a Florida filing and FEI numbers, with Dearborn MI and Glendale KY addresses. Others are trade-name fragments and EPA facility records for Glendale KY and Stanton TN (BlueOval City).",
+          "interpretation": "The venture is spread over many fragments. We kept the registry-backed record and the trade and facility records with Glendale or Stanton addresses.",
+          "scorecard": "worked",
+          "entity_ids": [
+            "RPYYIgKHs0f-kGKGBlE9jw",
+            "OoCU9I6MsBVXeOayCVuR9A",
+            "gmCpEnquN7PI-mUnMKqvPw",
+            "9DDAlIRlqlZq7pwJ5qUwSQ",
+            "_Ao7QZ5Y0DfLVP9LADDkDw",
+            "cclu_C8fIOucVXcdONCwhA"
+          ],
+          "step": "buyer",
+          "case_id": "buyer:ford"
+        },
+        {
+          "id": "b-ford-02",
+          "timestamp": "2026-10-18T22:57:46Z",
+          "server": "sayari",
+          "tool": "search_trade_facets",
+          "params": {
+            "scope": "suppliers",
+            "query": "\"BlueOval SK\"",
+            "arrival_country": "USA",
+            "date_from": "2024-01-01",
+            "bucket_limit": 15
+          },
+          "question": "Where are BlueOval SK's suppliers based?",
+          "purpose": "supplier scan",
+          "result_summary": "159 supplier records. Supplier countries: Korea 134, China 29, USA 18, Japan 16, India 10, Germany 10, plus smaller counts. No supplier names in the buckets.",
+          "interpretation": "Korea dominates, as expected for an SK On-run plant. The facet gives only countries, so names had to come from the HS-filtered calls.",
+          "scorecard": "partial",
+          "entity_ids": [
+            "RPYYIgKHs0f-kGKGBlE9jw"
+          ],
+          "step": "buyer",
+          "case_id": "buyer:ford"
+        },
+        {
+          "id": "b-ford-03",
+          "timestamp": "2026-10-18T22:57:54Z",
+          "server": "sayari",
+          "tool": "search_suppliers",
+          "params": {
+            "query": "\"BlueOval SK\"",
+            "hs_code": "3801",
+            "arrival_country": "USA",
+            "date_from": "2024-01-01",
+            "limit": 20
+          },
+          "question": "Who ships graphite (HS 3801) to BlueOval SK?",
+          "purpose": "supplier scan",
+          "result_summary": "5 records: Pactra Tianjin Logistics (44 shipments, HS 380110), BlueOval SK itself (outbound), Fan Cheng Intl Trans Service (4, HS 380110), Toptec Co. (2, HS 380120) and BTR New Material Group Sales (1, HS 380190).",
+          "interpretation": "Two of the three graphite shippers from China are freight forwarders, so the producer behind most of the graphite is not named.",
+          "scorecard": "worked",
+          "entity_ids": [
+            "Rj0MkY1ZMfLxu4Wk9q4keA",
+            "cPdltpbiJ3srEuXfm_7NDA",
+            "swZx4LTN9A0Zd4KpT7hxmA",
+            "5_cayB1m7XahAhz_Hrrpng",
+            "RPYYIgKHs0f-kGKGBlE9jw"
+          ],
+          "step": "buyer",
+          "case_id": "buyer:ford"
+        },
+        {
+          "id": "b-ford-04",
+          "timestamp": "2026-10-18T22:58:02Z",
+          "server": "sayari",
+          "tool": "search_suppliers",
+          "params": {
+            "query": "\"BlueOval SK\"",
+            "hs_code": "8507",
+            "arrival_country": "USA",
+            "date_from": "2024-01-01",
+            "limit": 20
+          },
+          "question": "Who ships batteries or battery parts (HS 8507) to BlueOval SK?",
+          "purpose": "supplier scan",
+          "result_summary": "2 records: Kunhwa ENG Co. (Korea, 3 shipments of HS 850790 battery parts) and BlueOval SK itself.",
+          "interpretation": "BlueOval SK makes cells, so it imports few finished cells. Only Korean parts show.",
+          "scorecard": "worked",
+          "entity_ids": [
+            "yd7o-FGvJPdkd9N6aVr0Tw",
+            "RPYYIgKHs0f-kGKGBlE9jw"
+          ],
+          "step": "buyer",
+          "case_id": "buyer:ford"
+        },
+        {
+          "id": "b-ford-05",
+          "timestamp": "2026-10-18T22:58:10Z",
+          "server": "sayari",
+          "tool": "search_shipments",
+          "params": {
+            "query": "\"BlueOval SK\"",
+            "hs_code": "3801",
+            "arrival_country": "USA",
+            "date_from": "2024-01-01",
+            "limit": 100,
+            "response_mode": "compact"
+          },
+          "question": "Do dated shipment rows confirm graphite reaching BlueOval SK?",
+          "purpose": "confirm rows",
+          "result_summary": "57 rows. Pactra Tianjin Logistics to BlueOval SK LLC: 44 rows of artificial graphite (HS 380110), China to USA, arrivals 2024-09-12 to 2025-11-11. Fan Cheng Intl Trans Service: 4 rows, arrival 2025-02-02. BTR New Material Group Sales: 1 row of HS 380190, 2025-08-26. Toptec: 2 rows coded 380120 but described as a semi-auto tester. Also 4 rows of BlueOval SK shipping 'anode active material' and endplates to SK On Hungary in Aug-Sep 2026.",
+          "interpretation": "Chinese artificial graphite reached BlueOval SK through forwarders throughout 2024-2025. The rows to SK On Hungary run the other way and are not imports.",
+          "scorecard": "worked",
+          "entity_ids": [
+            "RPYYIgKHs0f-kGKGBlE9jw",
+            "Rj0MkY1ZMfLxu4Wk9q4keA",
+            "cPdltpbiJ3srEuXfm_7NDA",
+            "5_cayB1m7XahAhz_Hrrpng",
+            "swZx4LTN9A0Zd4KpT7hxmA",
+            "t2HmaexxvTE5WgGtj3BMxg"
+          ],
+          "step": "buyer",
+          "case_id": "buyer:ford"
+        },
+        {
+          "id": "b-ford-06",
+          "timestamp": "2026-10-18T22:58:18Z",
+          "server": "sayari",
+          "tool": "search_shipments",
+          "params": {
+            "query": "\"BlueOval SK\"",
+            "hs_code": "8507",
+            "arrival_country": "USA",
+            "date_from": "2024-01-01",
+            "limit": 100,
+            "response_mode": "compact"
+          },
+          "question": "Do dated rows confirm HS 8507 imports by BlueOval SK?",
+          "purpose": "confirm rows",
+          "result_summary": "4 rows. Kunhwa ENG to BlueOval SK (OoCU9I6MsBVXeOayCVuR9A): 3 rows of HS 850790 parts, 2024-07-18 and 2026-01-14. One outbound row from BlueOval SK to SK On Hungary.",
+          "interpretation": "No imported cells into BlueOval SK appear. Only Korean battery parts.",
+          "scorecard": "worked",
+          "entity_ids": [
+            "yd7o-FGvJPdkd9N6aVr0Tw",
+            "OoCU9I6MsBVXeOayCVuR9A",
+            "RPYYIgKHs0f-kGKGBlE9jw"
+          ],
+          "step": "buyer",
+          "case_id": "buyer:ford"
+        },
+        {
+          "id": "b-ford-07",
+          "timestamp": "2026-10-18T22:58:26Z",
+          "server": "sayari",
+          "tool": "search_suppliers",
+          "params": {
+            "query": "\"Ford Motor Company\"",
+            "hs_code": "8507",
+            "arrival_country": "USA",
+            "date_from": "2024-01-01",
+            "limit": 25,
+            "response_mode": "compact"
+          },
+          "question": "Who ships batteries (HS 8507) to Ford Motor Company in the US?",
+          "purpose": "supplier scan",
+          "result_summary": "22 records, including LG Energy Solution Wroclaw (341 shipments), Ford's own units, CATL (26), SK On Co. (two records, 18 and 8), LG Energy Solution Ltd (4), Sinotrans Eastern (1) and Chongqing Ante Trading (1).",
+          "interpretation": "The shipment counts are not limited to 2024 onward (several records last shipped in 2020). Used only to pick names to confirm with rows.",
+          "scorecard": "partial",
+          "entity_ids": [
+            "QrL4MaSQ-7UxX19AfwfDrQ",
+            "hVWvdWYN5x2zFc2z0T7-1A",
+            "Hknigg_iWcgcpp_dkWgQvA",
+            "jKQymV9KChMdJfcSdmO4zg",
+            "l8-h8TE5NYMNChTmamxMeQ",
+            "Jt71Tb2z1whIR0iQZpP-fw",
+            "30kEauryyUlKCcOmp2hJjQ",
+            "VZtQjU0irwqDV4nqLgrTCg"
+          ],
+          "step": "buyer",
+          "case_id": "buyer:ford"
+        },
+        {
+          "id": "b-ford-08",
+          "timestamp": "2026-10-18T22:58:34Z",
+          "server": "sayari",
+          "tool": "search_shipments",
+          "params": {
+            "query": "\"Ford Motor Company\"",
+            "hs_code": "850760",
+            "arrival_country": "USA",
+            "date_from": "2024-01-01",
+            "limit": 100,
+            "response_mode": "compact"
+          },
+          "question": "Which lithium-ion battery suppliers have dated rows into Ford since 2024?",
+          "purpose": "confirm rows",
+          "result_summary": "486 rows available, 100 read. Rows dated 2024 or later: SK On Co. 8 rows (2026-04-14 to 2026-07-25) plus 1 row on a second record (2024-11-10); CATL 2 rows to Ford Motor Company (2025-10-24 to 2026-03-24) and 2 rows to a 'Ford Motor Company /Ford Lincoln' record (2024-01-02 to 2024-02-21); LG Energy Solution Ltd 2 rows (2026-08-06); Sinotrans Eastern 1 row (Oct-Nov 2024). LG Energy Solution Wroclaw's 37 rows are all from 2022.",
+          "interpretation": "The date filter let 2022-2023 rows through, so we counted rows by year. Since 2024 Ford's imported cells come from SK On, CATL and LG Energy Solution.",
+          "scorecard": "partial",
+          "entity_ids": [
+            "QrL4MaSQ-7UxX19AfwfDrQ",
+            "i0HhTJctxSbPxQvZqHx1Tg",
+            "l8-h8TE5NYMNChTmamxMeQ",
+            "jKQymV9KChMdJfcSdmO4zg",
+            "Hknigg_iWcgcpp_dkWgQvA",
+            "Jt71Tb2z1whIR0iQZpP-fw",
+            "30kEauryyUlKCcOmp2hJjQ"
+          ],
+          "step": "buyer",
+          "case_id": "buyer:ford"
+        },
+        {
+          "id": "b-ford-09",
+          "timestamp": "2026-10-18T22:58:42Z",
+          "server": "sayari",
+          "tool": "search_suppliers",
+          "params": {
+            "query": "\"Ford Motor Company\"",
+            "hs_code": "3801",
+            "arrival_country": "USA",
+            "date_from": "2024-01-01",
+            "limit": 15,
+            "response_mode": "compact"
+          },
+          "question": "Does Ford Motor Company itself import graphite?",
+          "purpose": "supplier scan",
+          "result_summary": "0 results.",
+          "interpretation": "No graphite imports under the Ford name. Graphite goes to the cell plants, not the carmaker. The rollup can be blind, so this is not proof of none.",
+          "scorecard": "failed",
+          "entity_ids": [
+            "QrL4MaSQ-7UxX19AfwfDrQ"
+          ],
+          "step": "buyer",
+          "case_id": "buyer:ford"
+        },
+        {
+          "id": "b-ford-10",
+          "timestamp": "2026-10-18T22:58:50Z",
+          "server": "sayari",
+          "tool": "search_shipments",
+          "params": {
+            "query": "\"Pactra Tianjin Logistics\"",
+            "hs_code": "380110",
+            "arrival_country": "USA",
+            "date_from": "2024-01-01",
+            "limit": 5,
+            "response_mode": "full"
+          },
+          "question": "Do the full rows behind Pactra Tianjin's graphite name the real producer?",
+          "purpose": "forwarder check",
+          "result_summary": "44 rows available, 5 read. Each is 16,380 kg of 'GRAPHITE' (HS 380110) from Shanghai, Oct-Nov 2025, to BlueOval SK at 1 American Road. The source is China's export customs data. The shipper field is Pactra's own address. The buyer record also lists the alias 'SK ON TENNESSEE LLC'.",
+          "interpretation": "No producer is named. The material left China as general artificial graphite through a logistics firm. The SK On Tennessee alias fits the 2026 split of the venture.",
+          "scorecard": "worked",
+          "entity_ids": [
+            "Rj0MkY1ZMfLxu4Wk9q4keA",
+            "RPYYIgKHs0f-kGKGBlE9jw"
+          ],
+          "step": "buyer",
+          "case_id": "buyer:ford"
+        },
+        {
+          "id": "b-ford-11",
+          "timestamp": "2026-10-18T22:58:58Z",
+          "server": "sayari",
+          "tool": "get_entity_summary",
+          "params": {
+            "entity_id": "Hknigg_iWcgcpp_dkWgQvA"
+          },
+          "question": "Is the CATL record that ships cells to Ford the Chinese parent company?",
+          "purpose": "ownership",
+          "result_summary": "Contemporary Amperex Technology Co., Limited. Chinese unified social credit code 91350900587527783P, Hong Kong stock code 03750, LEI 300300KINDY1K0E9I032, address in Ningde, Fujian. Flags include usa_section_1260h.",
+          "interpretation": "This is CATL's Chinese parent record. CATL is on the US Defense Department's Section 1260H list.",
+          "scorecard": "worked",
+          "entity_ids": [
+            "Hknigg_iWcgcpp_dkWgQvA"
+          ],
+          "step": "buyer",
+          "case_id": "buyer:ford"
+        },
+        {
+          "id": "b-ford-12",
+          "timestamp": "2026-10-18T22:59:06Z",
+          "server": "sayari",
+          "tool": "find_beneficial_owners",
+          "params": {
+            "entity_id": "RPYYIgKHs0f-kGKGBlE9jw",
+            "limit": 10
+          },
+          "question": "Does Sayari show BlueOval SK's owners?",
+          "purpose": "buyer ownership",
+          "result_summary": "0 results.",
+          "interpretation": "There is no shareholder record. The 50/50 Ford and SK On ownership and the 2026 split come from press reports (b-ford-17).",
+          "scorecard": "failed",
+          "entity_ids": [
+            "RPYYIgKHs0f-kGKGBlE9jw"
+          ],
+          "step": "buyer",
+          "case_id": "buyer:ford"
+        },
+        {
+          "id": "b-ford-13",
+          "timestamp": "2026-10-18T22:59:14Z",
+          "server": "sayari",
+          "tool": "get_entity_summary",
+          "params": {
+            "entity_id": "yd7o-FGvJPdkd9N6aVr0Tw"
+          },
+          "question": "Who is Kunhwa ENG, the Korean parts supplier?",
+          "purpose": "ownership",
+          "result_summary": "KUNHWA EnG Co., Ltd. (건화이엔지). Korean corporate registration 174811-0040446, DART filer 00863603, registered 2005, auto and trailer parts maker in Gyeongsan, Korea.",
+          "interpretation": "A Korean-registered parts maker. No shareholder data was checked.",
+          "scorecard": "worked",
+          "entity_ids": [
+            "yd7o-FGvJPdkd9N6aVr0Tw"
+          ],
+          "step": "buyer",
+          "case_id": "buyer:ford"
+        },
+        {
+          "id": "b-ford-14",
+          "timestamp": "2026-10-18T22:59:22Z",
+          "server": "sayari",
+          "tool": "search_entities",
+          "params": {
+            "query": "\"에스케이온\"",
+            "limit": 5,
+            "response_mode": "compact"
+          },
+          "question": "What is SK On's registry record?",
+          "purpose": "ownership",
+          "result_summary": "1 record: SK on Co Ltd (mDxztbc05brjctrRV2LlKQ), LEI 2549004DJVWOD3WI1E40, DART 01592447, Korea.",
+          "interpretation": "This is the registry record for SK On. The two trade records that ship to Ford carry no identifiers.",
+          "scorecard": "worked",
+          "entity_ids": [
+            "mDxztbc05brjctrRV2LlKQ"
+          ],
+          "step": "buyer",
+          "case_id": "buyer:ford"
+        },
+        {
+          "id": "b-ford-15",
+          "timestamp": "2026-10-18T22:59:30Z",
+          "server": "sayari",
+          "tool": "find_beneficial_owners",
+          "params": {
+            "entity_id": "Jt71Tb2z1whIR0iQZpP-fw",
+            "limit": 10,
+            "max_depth": 2
+          },
+          "question": "Who owns LG Energy Solution, Ltd.?",
+          "purpose": "ownership",
+          "result_summary": "39 paths. LG Energy Solution is a subsidiary of LG Chem, Ltd. (rJZujbWjTgJ1iEZxCsjw9w). LG Chem's shareholders include LG Corp. (PUzZWCa41jUIBiXT2q1gEw) and Korea's National Pension Service. Several Korean individuals hold small stakes directly.",
+          "interpretation": "Korean ownership through LG Chem and LG Corp. No Chinese owner appears.",
+          "scorecard": "worked",
+          "entity_ids": [
+            "Jt71Tb2z1whIR0iQZpP-fw",
+            "rJZujbWjTgJ1iEZxCsjw9w",
+            "PUzZWCa41jUIBiXT2q1gEw"
+          ],
+          "step": "buyer",
+          "case_id": "buyer:ford"
+        },
+        {
+          "id": "b-ford-16",
+          "timestamp": "2026-10-18T22:59:38Z",
+          "server": "sayari",
+          "tool": "find_beneficial_owners",
+          "params": {
+            "entity_id": "mDxztbc05brjctrRV2LlKQ",
+            "limit": 10,
+            "max_depth": 2,
+            "response_mode": "compact"
+          },
+          "question": "Who owns SK On?",
+          "purpose": "ownership",
+          "result_summary": "Direct shareholder: SK이노베이션㈜ (SK Innovation), wrongly typed as a person in Sayari (4M5qAB_FZxIPmXqwzUpFNg). Further paths run through SK Energy Co., Ltd. to Korean individuals.",
+          "interpretation": "SK On is owned by SK Innovation (Korea). The mistyped record does not change the conclusion.",
+          "scorecard": "worked",
+          "entity_ids": [
+            "mDxztbc05brjctrRV2LlKQ",
+            "4M5qAB_FZxIPmXqwzUpFNg",
+            "BDEelPDsabKqFnZ4XHPmwA"
+          ],
+          "step": "buyer",
+          "case_id": "buyer:ford"
+        },
+        {
+          "id": "b-ford-17",
+          "timestamp": "2026-10-18T22:59:46Z",
+          "server": "tavily",
+          "tool": "tavily_search",
+          "params": {
+            "query": "Ford SK On BlueOval SK joint venture dissolution Kentucky Tennessee plants split",
+            "max_results": 5
+          },
+          "question": "What happened to the BlueOval SK joint venture?",
+          "purpose": "context",
+          "result_summary": "Electrive (12 Dec 2025) and WardsAuto report that Ford and SK On agreed to dissolve BlueOval SK. Ford takes the two Kentucky plants through a wholly owned subsidiary, and SK On takes the Tennessee plant. Tennessee Lookout (22 May 2026) reports that SK On Tennessee took full ownership of the Stanton plant. Another report names the Ford subsidiary as Ford Energy Battery LLC and says Ford assumed a $3.8bn DOE loan.",
+          "interpretation": "As of Oct 2026 the venture has been split: Kentucky belongs to Ford, Tennessee to SK On. Trade records still use the BlueOval SK name.",
+          "scorecard": "worked",
+          "entity_ids": [],
+          "step": "buyer",
+          "case_id": "buyer:ford"
+        },
+        {
+          "id": "b-ford-18",
+          "timestamp": "2026-10-18T22:59:54Z",
+          "server": "sayari",
+          "tool": "get_upstream_supply_chain",
+          "params": {
+            "entity_id": "RPYYIgKHs0f-kGKGBlE9jw",
+            "product": [
+              "3801",
+              "8507"
+            ],
+            "min_date": "2024-01-01",
+            "max_depth": 1,
+            "limit": 25,
+            "response_mode": "compact"
+          },
+          "question": "Which tier-1 suppliers does the graph show for BlueOval SK in HS 3801/8507?",
+          "purpose": "supplier scan",
+          "result_summary": "11 paths: SFA Engineering, Jinhap (진합), Youn Sung F&C, Woorim Hi-Tech, Innometry, Nepes Yahad, Toptec (all Korea), BTR New Material Group Sales and Fan Cheng Intl Trans Service (China).",
+          "interpretation": "Mostly Korean equipment and parts makers. The graph gives no row counts, so only names already confirmed by rows went into the list.",
+          "scorecard": "partial",
+          "entity_ids": [
+            "quYHvvljQ3gP1UeIWpDzsg",
+            "n--zrU_xRh6tCuD8mn_sHw",
+            "AobdcnyPM0J2ELS1biIA0g",
+            "T4nWFWHgF3PPPFEebJft5Q",
+            "SFSBgc7Nq35Su16Q6TeW3Q",
+            "pNOdU-QA2h-L2REZClisRA",
+            "swZx4LTN9A0Zd4KpT7hxmA",
+            "5_cayB1m7XahAhz_Hrrpng",
+            "cPdltpbiJ3srEuXfm_7NDA"
+          ],
+          "step": "buyer",
+          "case_id": "buyer:ford"
+        },
+        {
+          "id": "b-ford-19",
+          "timestamp": "2026-10-18T23:00:02Z",
+          "server": "sayari",
+          "tool": "search_entities",
+          "params": {
+            "query": "\"Ford Energy Battery\"",
+            "limit": 5,
+            "response_mode": "compact"
+          },
+          "question": "Does Sayari have a record for Ford Energy Battery LLC, the new owner of the Kentucky plants?",
+          "purpose": "buyer resolution",
+          "result_summary": "0 results.",
+          "interpretation": "The new Ford subsidiary is not yet in Sayari under that name. Kentucky imports still appear under BlueOval SK records.",
+          "scorecard": "failed",
+          "entity_ids": [],
+          "step": "buyer",
+          "case_id": "buyer:ford"
+        }
+      ]
+    },
+    {
+      "buyer": {
+        "key": "lges",
+        "name": "LG Energy Solution in the US",
+        "category": "battery",
+        "entity_ids": [
+          "F0Fb6NqGosio6xKWPKo8Eg",
+          "PXxX3IuShk7qrM3fnymfdw",
+          "4bQMcjfPdC1ZPlGsf_Atfg",
+          "jXzY61ucagUm-jK86wYiNQ",
+          "WDsAyFCb5tMjekOXnoYAyA",
+          "irKtpc_N2pjgNxCLsIkqSQ",
+          "NKCf4aVKAhqXf5DY-SkatA",
+          "bZUr_n8oypoXkqE92q6kWQ",
+          "rvgklT24qqqfH2rnlVlyBg",
+          "kCTEQjRAGcFo6AM_PGW2bw",
+          "KlHlMaPK_F6s27YQ8ug2UA"
+        ],
+        "summary": "In US trade data LG Energy Solution appears mostly as a seller of cells. As a buyer, its storage unit LG Energy Solution Vertech takes cells from the Korean parent and from the group's plant in Nanjing, China. Ultium Cells, its venture with GM, received 53 rows of Chinese artificial graphite from Shanghai Shanshan in 2024-2025, and BTR graphite now reaches the Arizona plant and GM records that name LG Energy Solution. The Honda (L-H Battery) and Hyundai ventures showed no supplier rows in this scan."
+      },
+      "scan": {
+        "hs": [
+          "3801",
+          "8507"
+        ],
+        "date_from": "2024-01-01",
+        "note": "Sayari trade data checked on 18 Oct 2026 for HS 3801 (graphite, including anode material) and HS 8507 (batteries and parts) entering the US on rows that name 'LG Energy Solution' or 'LG Energy Solution Vertech'. Many graphite rows list General Motors as consignee and LG Energy Solution as notify party; they are counted as LG Energy Solution and Ultium supply, and each note says when the recorded buyer is GM. Facet counts ignored the 2024 date filter and are marked where used. The scan cannot see purchases inside the US, the L-H Battery (Honda) and Hyundai ventures under their own names, or the producer behind about 90 graphite rows with no named shipper (65 and 9 to GM, 2 to LG Energy Solution Arizona, 14 through OEC Freight). Shanghai Shanshan Tech is left out because its 14 rows are all from 2020-2022. Forwarders excluded: Xiamen Port Logistics (97 rows of cells from China to GM, 2026) and OEC Freight (NY) (consignee on 14 graphite rows)."
+      },
+      "suppliers": [
+        {
+          "name": "LG Energy Solution, Ltd.",
+          "entity_id": "Jt71Tb2z1whIR0iQZpP-fw",
+          "country": "KOR",
+          "hs_codes": [
+            "850760",
+            "850790"
+          ],
+          "rows": 84,
+          "first": "2024-01-12",
+          "last": "2026-08-27",
+          "owner_top": "LG Corp. (through LG Chem, Ltd.)",
+          "owner_country": "KOR",
+          "chinese_owned": "No",
+          "confidence": "documented",
+          "note": "The Korean parent ships cells and battery parts to LG Energy Solution Vertech (rows across three LG Energy Solution trade records); Sayari's registry chain runs to LG Chem and LG Corp.",
+          "call_ids": [
+            "b-lg-04",
+            "b-lg-14",
+            "b-lg-15",
+            "b-lg-16"
+          ]
+        },
+        {
+          "name": "Shanghai Shanshan New Material Co., Ltd.",
+          "entity_id": "Lz1tqelhtyNnBxvG140gqA",
+          "country": "CHN",
+          "hs_codes": [
+            "380110"
+          ],
+          "rows": 53,
+          "first": "2024-10-08",
+          "last": "2025-07-24",
+          "owner_top": "Ningbo Shanshan Co., Ltd.",
+          "owner_country": "CHN",
+          "chinese_owned": "Yes",
+          "confidence": "corroborated",
+          "note": "Artificial graphite powder from China to the Ultium Cells plants (46 rows to Ultium Cells SP, 7 to Spring Hill), plus 34 more rows to GM; the company's own site and the trade record both place it in the Chinese Shanshan group.",
+          "call_ids": [
+            "b-lg-03",
+            "b-lg-05",
+            "b-lg-12"
+          ]
+        },
+        {
+          "name": "POSCO Future M Co., Ltd.",
+          "entity_id": "Fj3vtxDroFyjyPsLgsnm2A",
+          "country": "KOR",
+          "hs_codes": [
+            "380110",
+            "380190"
+          ],
+          "rows": 60,
+          "first": null,
+          "last": null,
+          "owner_top": "POSCO Holdings Inc.",
+          "owner_country": "KOR",
+          "chinese_owned": "No",
+          "confidence": "documented",
+          "note": "Facet count only (46 rows plus 14 on trade fragment BzPYSGQAr-O9bHTjG0t7vQ), not limited by date, so the dates are not confirmed here; POSCO Holdings ownership is documented in the site's POSCO case and in the Panasonic profile.",
+          "call_ids": [
+            "b-lg-03",
+            "b-lg-10"
+          ]
+        },
+        {
+          "name": "LG Energy Solution Wroclaw sp. z o.o.",
+          "entity_id": "hVWvdWYN5x2zFc2z0T7-1A",
+          "country": "POL",
+          "hs_codes": [
+            "380110"
+          ],
+          "rows": 16,
+          "first": "2026-05-14",
+          "last": "2026-05-14",
+          "owner_top": "LG Energy Solution, Ltd. (presumed)",
+          "owner_country": "KOR",
+          "chinese_owned": "No",
+          "confidence": "inferred",
+          "note": "The group's Polish plant shipped anode active material from Germany to a GM record that names LG Energy Solution; the parent link is inferred from the name, and where the graphite was made is not shown.",
+          "call_ids": [
+            "b-lg-03",
+            "b-lg-06"
+          ]
+        },
+        {
+          "name": "LG Energy Solution (Nanjing) Co., Ltd.",
+          "entity_id": "KTsKQO9RUQKylaz4kbiO1A",
+          "country": "CHN",
+          "hs_codes": [
+            "850760"
+          ],
+          "rows": 10,
+          "first": "2024-04-18",
+          "last": "2026-06-15",
+          "owner_top": "LG Energy Solution, Ltd. (presumed)",
+          "owner_country": "KOR",
+          "chinese_owned": "No",
+          "confidence": "inferred",
+          "note": "Lithium-ion cells from the group's China plant to LG Energy Solution Vertech, spread over five trade records; Sayari shows no owner, so Korean parentage is inferred from the name, and a China-based supplier still warrants a check under the PFE rules.",
+          "call_ids": [
+            "b-lg-08",
+            "b-lg-11",
+            "b-lg-14",
+            "b-lg-15"
+          ]
+        },
+        {
+          "name": "PT Indonesia BTR New Energy Material",
+          "entity_id": "dH3rqoht5wahpKLPJih3gA",
+          "country": "IDN",
+          "hs_codes": [
+            "380110"
+          ],
+          "rows": 1,
+          "first": "2026-09-19",
+          "last": "2026-09-19",
+          "owner_top": "BTR New Material Group Co., Ltd. (60%)",
+          "owner_country": "CHN",
+          "chinese_owned": "Yes",
+          "confidence": "documented",
+          "note": "One confirmed row of carbon anode material from BTR's Indonesian plant to a GM record that names LG Energy Solution (the facet counts 11 rows across two BTR Indonesia records); BTR's 60% stake is documented in Case 1.",
+          "call_ids": [
+            "b-lg-03",
+            "b-lg-06"
+          ]
+        },
+        {
+          "name": "BTR New Material Group Sales Co., Ltd. (trade record vD8q)",
+          "entity_id": "vD8qX_q8JPBZpC8NYAHDfQ",
+          "country": "CHN",
+          "hs_codes": [
+            "380110"
+          ],
+          "rows": 1,
+          "first": "2026-08-04",
+          "last": "2026-08-04",
+          "owner_top": "BTR New Material Group Co., Ltd. (name match only)",
+          "owner_country": "CHN",
+          "chinese_owned": "Yes (China-based)",
+          "confidence": "documented",
+          "note": "One row of artificial graphite shipped from China directly to LG Energy Solution Arizona.",
+          "call_ids": [
+            "b-lg-05",
+            "b-lg-06"
+          ]
+        },
+        {
+          "name": "LG Chem, Ltd.",
+          "entity_id": "rJZujbWjTgJ1iEZxCsjw9w",
+          "country": "KOR",
+          "hs_codes": [
+            "380110"
+          ],
+          "rows": 1,
+          "first": "2026-06-20",
+          "last": "2026-06-20",
+          "owner_top": "LG Corp.",
+          "owner_country": "KOR",
+          "chinese_owned": "No",
+          "confidence": "documented",
+          "note": "One confirmed row of artificial graphite to a GM record that names LG Energy Solution (the facet counts 23, not limited by date); LG Corp. is a registry shareholder.",
+          "call_ids": [
+            "b-lg-03",
+            "b-lg-06",
+            "b-lg-16"
+          ]
+        },
+        {
+          "name": "Huzhou Kaijin New Energy Technology",
+          "entity_id": "WUVFrEV3fAxElCfxxK4Tpg",
+          "country": "CHN",
+          "hs_codes": [
+            "380110"
+          ],
+          "rows": 2,
+          "first": "2025-01-27",
+          "last": "2025-02-06",
+          "owner_top": "Not checked",
+          "owner_country": "CHN",
+          "chinese_owned": "Yes (China-based)",
+          "confidence": "inferred",
+          "note": "Graphite ('AML412T') from China to a GM record that names LG Energy Solution; the record has no country or identifiers, so China-based is inferred from the departure port and the name.",
+          "call_ids": [
+            "b-lg-05"
+          ]
+        },
+        {
+          "name": "Hunan Zhongke Shinzoom Co., Ltd. (trade record)",
+          "entity_id": "RpVysafWvaXbqy0N4a5qvw",
+          "country": "CHN",
+          "hs_codes": [
+            "380110"
+          ],
+          "rows": 1,
+          "first": "2025-03-02",
+          "last": "2025-03-02",
+          "owner_top": "Hunan Zhongke Electric Co., Ltd. (inferred, Case 3)",
+          "owner_country": "CHN",
+          "chinese_owned": "Yes (China-based)",
+          "confidence": "documented",
+          "note": "One row of artificial graphite from China to a GM record that names LG Energy Solution; this Changsha-based trade record is tied to Hunan Zhongke Electric in Case 3.",
+          "call_ids": [
+            "b-lg-05"
+          ]
+        }
+      ],
+      "forwarders_excluded": 2,
+      "calls": [
+        {
+          "id": "b-lg-01",
+          "timestamp": "2026-10-18T23:01:47Z",
+          "server": "sayari",
+          "tool": "search_entities",
+          "params": {
+            "query": "\"LG Energy Solution Michigan\"",
+            "limit": 10,
+            "response_mode": "compact"
+          },
+          "question": "Which Sayari records belong to LG Energy Solution Michigan in Holland, MI?",
+          "purpose": "buyer resolution",
+          "result_summary": "106 records. Main record: LG Energy Solution Michigan, Inc. (F0Fb6NqGosio6xKWPKo8Eg; Michigan corp ID 801058568, FEI 841563669, Nevada filing). Others: an Illinois-registered record (PXxX3IuShk7qrM3fnymfdw), the older LG Chem Michigan Inc (4bQMcjfPdC1ZPlGsf_Atfg) and trade-name fragments, including one 'c/o Ultium Cells LLC'.",
+          "interpretation": "Holland, MI is spread over several records. The LG Chem Michigan record is the plant's old name.",
+          "scorecard": "worked",
+          "entity_ids": [
+            "F0Fb6NqGosio6xKWPKo8Eg",
+            "PXxX3IuShk7qrM3fnymfdw",
+            "4bQMcjfPdC1ZPlGsf_Atfg",
+            "jfw-a7x-8xUU7pW0J_sqvg"
+          ],
+          "step": "buyer",
+          "case_id": "buyer:lges"
+        },
+        {
+          "id": "b-lg-02",
+          "timestamp": "2026-10-18T23:01:59Z",
+          "server": "sayari",
+          "tool": "search_entities",
+          "params": {
+            "query": "\"LG Energy Solution Arizona\"",
+            "limit": 5,
+            "response_mode": "compact"
+          },
+          "question": "Which records belong to the Arizona plant?",
+          "purpose": "buyer resolution",
+          "result_summary": "10 records, including LG Energy Solution Arizona Inc (jXzY61ucagUm-jK86wYiNQ; Arizona entity 23511053, plus CA, NJ and TX filings) and LG Energy Solution Arizona ESS, Inc. (WDsAyFCb5tMjekOXnoYAyA).",
+          "interpretation": "The Arizona cell plant and its energy-storage arm are both registered in Arizona.",
+          "scorecard": "worked",
+          "entity_ids": [
+            "jXzY61ucagUm-jK86wYiNQ",
+            "WDsAyFCb5tMjekOXnoYAyA"
+          ],
+          "step": "buyer",
+          "case_id": "buyer:lges"
+        },
+        {
+          "id": "b-lg-03",
+          "timestamp": "2026-10-18T23:02:11Z",
+          "server": "sayari",
+          "tool": "search_trade_facets",
+          "params": {
+            "scope": "shipments",
+            "query": "\"LG Energy Solution\"",
+            "hs_code": "3801",
+            "arrival_country": "USA",
+            "date_from": "2024-01-01",
+            "bucket_limit": 15
+          },
+          "question": "How do graphite rows that name LG Energy Solution split by buyer and supplier?",
+          "purpose": "supplier scan",
+          "result_summary": "494 rows. Buyers: General Motors 363, Ultium Cells SP (bZUr_n8oypoXkqE92q6kWQ) 52, OEC Freight (NY) 14, LG Chem Michigan 11, Ultium Cells Spring Hill 7, LG Energy Solution Arizona 5. Suppliers: Shanghai Shanshan New Material 155, POSCO Future M 46, LG Chem 23, LG Energy Solution Wroclaw 16, Shanghai Shanshan Tech 14, a second POSCO Future M record 14, PT Indonesia BTR (two records) 6 and 5. Departures: China 188, Singapore 91, Korea 57, Germany 17. The earliest date is 2020-02-27.",
+          "interpretation": "The facet ignored the date filter. Most rows name LG Energy Solution as notify party on GM or Ultium imports. Shanshan, a Chinese company, is the largest named graphite supplier.",
+          "scorecard": "partial",
+          "entity_ids": [
+            "4fqrWAcyrgtWw2RdV6qZsg",
+            "bZUr_n8oypoXkqE92q6kWQ",
+            "Wfde8TXwHX3DkOQwj2XmTA",
+            "4bQMcjfPdC1ZPlGsf_Atfg",
+            "kCTEQjRAGcFo6AM_PGW2bw",
+            "jXzY61ucagUm-jK86wYiNQ",
+            "Lz1tqelhtyNnBxvG140gqA",
+            "Fj3vtxDroFyjyPsLgsnm2A",
+            "rJZujbWjTgJ1iEZxCsjw9w",
+            "hVWvdWYN5x2zFc2z0T7-1A",
+            "8Xks_6gqhSVEYRMjigWC4Q",
+            "BzPYSGQAr-O9bHTjG0t7vQ",
+            "dH3rqoht5wahpKLPJih3gA",
+            "Lv60RfghzhQ-9oSF_kW0wA"
+          ],
+          "step": "buyer",
+          "case_id": "buyer:lges"
+        },
+        {
+          "id": "b-lg-04",
+          "timestamp": "2026-10-18T23:02:23Z",
+          "server": "sayari",
+          "tool": "search_trade_facets",
+          "params": {
+            "scope": "shipments",
+            "query": "\"LG Energy Solution\"",
+            "hs_code": "8507",
+            "arrival_country": "USA",
+            "date_from": "2024-01-01",
+            "bucket_limit": 15
+          },
+          "question": "How do battery rows (HS 8507) that name LG Energy Solution split?",
+          "purpose": "supplier scan",
+          "result_summary": "6,018 rows. Top supplier: LG Energy Solution, Ltd. 2,638. Top buyers: General Motors 2,780, Ford 351, Tesla 264, LG Energy Solution Vertech 136. Departures: Korea 1,145, China 584, Germany 423, Vietnam 48.",
+          "interpretation": "Here LG Energy Solution is mostly the seller of cells to US carmakers, not the buyer. For the plants as buyers, we narrowed to LG Energy Solution Vertech (b-lg-14).",
+          "scorecard": "partial",
+          "entity_ids": [
+            "Jt71Tb2z1whIR0iQZpP-fw",
+            "4fqrWAcyrgtWw2RdV6qZsg",
+            "QrL4MaSQ-7UxX19AfwfDrQ",
+            "xWhz7CFJV3lxsgg8fHMGHA",
+            "irKtpc_N2pjgNxCLsIkqSQ"
+          ],
+          "step": "buyer",
+          "case_id": "buyer:lges"
+        },
+        {
+          "id": "b-lg-05",
+          "timestamp": "2026-10-18T23:02:35Z",
+          "server": "sayari",
+          "tool": "search_shipments",
+          "params": {
+            "query": "\"LG Energy Solution\"",
+            "hs_code": "3801",
+            "arrival_country": "USA",
+            "departure_country": "CHN",
+            "date_from": "2024-01-01",
+            "limit": 100,
+            "response_mode": "compact"
+          },
+          "question": "Which Chinese graphite shippers appear on rows naming LG Energy Solution?",
+          "purpose": "confirm rows",
+          "result_summary": "188 rows, 100 read. Shanghai Shanshan New Material: 46 rows to Ultium Cells SP (2024-10-08 to 2025-07-24), 7 rows to Ultium Cells Spring Hill (2024-12-16 to 2025-03-17) and 34 rows to General Motors. BTR New Material Group Sales (vD8qX_q8JPBZpC8NYAHDfQ): 1 row to LG Energy Solution Arizona (2026-08-04). Hunan Zhongke Shinzoom: 1 row to GM (2025-03-02). Huzhou Kaijin New Energy Technology: 2 rows to GM (Jan-Feb 2025, 'GRAPHITE AML412T'). Unnamed shipper: 9 rows to GM ('carbon anode materials').",
+          "interpretation": "Chinese artificial graphite powder from Shanshan reached the Ultium Cells plants (the GM and LG Energy Solution venture) in volume during 2024-2025. Since mid-2026 a BTR row goes directly to the Arizona plant.",
+          "scorecard": "worked",
+          "entity_ids": [
+            "Lz1tqelhtyNnBxvG140gqA",
+            "bZUr_n8oypoXkqE92q6kWQ",
+            "kCTEQjRAGcFo6AM_PGW2bw",
+            "4fqrWAcyrgtWw2RdV6qZsg",
+            "vD8qX_q8JPBZpC8NYAHDfQ",
+            "jXzY61ucagUm-jK86wYiNQ",
+            "RpVysafWvaXbqy0N4a5qvw",
+            "WUVFrEV3fAxElCfxxK4Tpg"
+          ],
+          "step": "buyer",
+          "case_id": "buyer:lges"
+        },
+        {
+          "id": "b-lg-06",
+          "timestamp": "2026-10-18T23:02:47Z",
+          "server": "sayari",
+          "tool": "search_shipments",
+          "params": {
+            "query": "\"LG Energy Solution\"",
+            "hs_code": "3801",
+            "arrival_country": "USA",
+            "date_from": "2024-01-01",
+            "limit": 100,
+            "response_mode": "compact"
+          },
+          "question": "Which graphite rows naming LG Energy Solution have no departure filter (to catch Singapore and Germany loadings)?",
+          "purpose": "confirm rows",
+          "result_summary": "494 rows, 100 read (all 2026). Unnamed shipper to GM: 65 rows of 'carbon anode materials' from China and Singapore. LG Energy Solution Wroclaw to GM: 16 rows of anode active material from Germany (2026-05-14). Unnamed shipper to OEC Freight (NY): 14 rows, notify LG Energy Solution Inc. Unnamed shipper to LG Energy Solution Arizona: 2 rows (2026-02-04, 2026-07-15). BTR Sales to LG Energy Solution Arizona: 1 row. LG Chem to GM: 1 row (2026-06-20). PT Indonesia BTR (dH3rqoht5wahpKLPJih3gA) to GM: 1 row (2026-09-19).",
+          "interpretation": "In 2026 most graphite rows that name LG Energy Solution have no named shipper, and many load in Singapore. LG Energy Solution's Polish plant also re-exports anode material to the US.",
+          "scorecard": "worked",
+          "entity_ids": [
+            "4fqrWAcyrgtWw2RdV6qZsg",
+            "hVWvdWYN5x2zFc2z0T7-1A",
+            "Wfde8TXwHX3DkOQwj2XmTA",
+            "jXzY61ucagUm-jK86wYiNQ",
+            "vD8qX_q8JPBZpC8NYAHDfQ",
+            "rJZujbWjTgJ1iEZxCsjw9w",
+            "dH3rqoht5wahpKLPJih3gA"
+          ],
+          "step": "buyer",
+          "case_id": "buyer:lges"
+        },
+        {
+          "id": "b-lg-07",
+          "timestamp": "2026-10-18T23:02:59Z",
+          "server": "sayari",
+          "tool": "get_upstream_supply_chain",
+          "params": {
+            "entity_id": "F0Fb6NqGosio6xKWPKo8Eg",
+            "product": [
+              "3801",
+              "8507"
+            ],
+            "min_date": "2024-01-01",
+            "max_depth": 1,
+            "limit": 25,
+            "response_mode": "compact"
+          },
+          "question": "Which suppliers does the graph list for LG Energy Solution Michigan?",
+          "purpose": "supplier scan",
+          "result_summary": "0 results.",
+          "interpretation": "The Michigan registry record has no HS-filtered supplier links. Its imports may sit on trade fragments or on GM and Ultium records.",
+          "scorecard": "failed",
+          "entity_ids": [
+            "F0Fb6NqGosio6xKWPKo8Eg"
+          ],
+          "step": "buyer",
+          "case_id": "buyer:lges"
+        },
+        {
+          "id": "b-lg-08",
+          "timestamp": "2026-10-18T23:03:11Z",
+          "server": "sayari",
+          "tool": "search_shipments",
+          "params": {
+            "query": "\"LG Energy Solution\"",
+            "hs_code": "8507",
+            "arrival_country": "USA",
+            "departure_country": "CHN",
+            "date_from": "2024-01-01",
+            "limit": 100,
+            "response_mode": "compact"
+          },
+          "question": "Do cells from China reach LG Energy Solution's US units?",
+          "purpose": "confirm rows",
+          "result_summary": "584 rows, 100 read. Xiamen Port Logistics (a forwarder) to General Motors: 97 rows of lithium-ion batteries (Jun-Sep 2026). LG Energy Solution (Nanjing) to LG Energy Solution Vertech: 2 rows (2026-06-15). LG Energy Solution Ltd to American-Iowa Mfg: 1 row.",
+          "interpretation": "Cells from China do reach LG Energy Solution Vertech from the group's Nanjing plant. The large GM flow from China goes through a forwarder.",
+          "scorecard": "partial",
+          "entity_ids": [
+            "dUKZXEmTmQnwEvtiezwmag",
+            "4fqrWAcyrgtWw2RdV6qZsg",
+            "KTsKQO9RUQKylaz4kbiO1A",
+            "irKtpc_N2pjgNxCLsIkqSQ",
+            "Jt71Tb2z1whIR0iQZpP-fw"
+          ],
+          "step": "buyer",
+          "case_id": "buyer:lges"
+        },
+        {
+          "id": "b-lg-09",
+          "timestamp": "2026-10-18T23:03:23Z",
+          "server": "sayari",
+          "tool": "get_entity_summary",
+          "params": {
+            "entity_id": "8Xks_6gqhSVEYRMjigWC4Q"
+          },
+          "question": "What is the 'Shanghai Shanshan Tech' supplier record?",
+          "purpose": "ownership",
+          "result_summary": "Shanghai Shanshan Tech Co., Ltd. (上海杉杉科技有限公司). Chinese unified social credit code 91310115631590190T, LEI 836800U95OZO2BH29846, Pudong, Shanghai, registered 1998/1999. Anode-material maker; flagged sheffield_hallam_university_forced_labor_entity.",
+          "interpretation": "A Chinese-registered anode maker in the Shanshan group.",
+          "scorecard": "worked",
+          "entity_ids": [
+            "8Xks_6gqhSVEYRMjigWC4Q"
+          ],
+          "step": "buyer",
+          "case_id": "buyer:lges"
+        },
+        {
+          "id": "b-lg-10",
+          "timestamp": "2026-10-18T23:03:35Z",
+          "server": "sayari",
+          "tool": "get_entity_summary",
+          "params": {
+            "entity_id": "BzPYSGQAr-O9bHTjG0t7vQ"
+          },
+          "question": "What is the supplier record BzPYSGQAr-O9bHTjG0t7vQ?",
+          "purpose": "ownership",
+          "result_summary": "'POSCO CHEMICAL CO.,LTD POSCO FUTURE M CO., LTD.', 110 Sinhang-ro, Pohang, Korea. US import data only, 18 shipments sent.",
+          "interpretation": "A trade fragment of POSCO Future M (same Pohang address).",
+          "scorecard": "worked",
+          "entity_ids": [
+            "BzPYSGQAr-O9bHTjG0t7vQ"
+          ],
+          "step": "buyer",
+          "case_id": "buyer:lges"
+        },
+        {
+          "id": "b-lg-11",
+          "timestamp": "2026-10-18T23:03:47Z",
+          "server": "sayari",
+          "tool": "find_beneficial_owners",
+          "params": {
+            "entity_id": "KTsKQO9RUQKylaz4kbiO1A",
+            "limit": 5,
+            "max_depth": 2,
+            "response_mode": "compact"
+          },
+          "question": "Does Sayari show who owns LG Energy Solution (Nanjing)?",
+          "purpose": "ownership",
+          "result_summary": "0 results.",
+          "interpretation": "This is a trade record with no owner link. Parentage by LG Energy Solution is inferred from the name.",
+          "scorecard": "failed",
+          "entity_ids": [
+            "KTsKQO9RUQKylaz4kbiO1A"
+          ],
+          "step": "buyer",
+          "case_id": "buyer:lges"
+        },
+        {
+          "id": "b-lg-12",
+          "timestamp": "2026-10-18T23:03:59Z",
+          "server": "tavily",
+          "tool": "tavily_search",
+          "params": {
+            "query": "Shanghai Shanshan New Material Co Ltd anode subsidiary of Ningbo Shanshan ownership 2025 restructuring",
+            "max_results": 5
+          },
+          "question": "Who owns the Shanshan anode business that ships to Ultium Cells?",
+          "purpose": "ownership",
+          "result_summary": "Ningbo Shanshan Co., Ltd. (Shanghai-listed, 600884) says on its own website that it runs anode production bases including Shanghai Shanshan. SMM lists 'Shanghai Shanshan New Materials' among Shanshan Technology's bases. GraphiteHub and BigGo report that the controlling Shanshan Group entered court restructuring in 2025, with BTR-led and Anhui state-capital investor groups bidding.",
+          "interpretation": "Shanghai Shanshan New Material is part of the Chinese Shanshan group. Its controlling shareholder is being restructured, possibly towards Chinese state-linked capital. This is not confirmed.",
+          "scorecard": "worked",
+          "entity_ids": [],
+          "step": "buyer",
+          "case_id": "buyer:lges"
+        },
+        {
+          "id": "b-lg-13",
+          "timestamp": "2026-10-18T23:04:11Z",
+          "server": "sayari",
+          "tool": "search_shipments",
+          "params": {
+            "query": "\"Shanghai Shanshan Tech\"",
+            "hs_code": "3801",
+            "arrival_country": "USA",
+            "date_from": "2024-01-01",
+            "limit": 50,
+            "response_mode": "compact"
+          },
+          "question": "Are Shanghai Shanshan Tech's graphite rows recent?",
+          "purpose": "confirm rows",
+          "result_summary": "14 rows, all 2020-2022: 8 rows to LG Chem Michigan (Dec 2020) and 6 to General Motors (2021-2022).",
+          "interpretation": "Nothing from 2024 onward, so it is left out of the supplier list. The date filter was ignored again.",
+          "scorecard": "worked",
+          "entity_ids": [
+            "8Xks_6gqhSVEYRMjigWC4Q",
+            "4bQMcjfPdC1ZPlGsf_Atfg",
+            "4fqrWAcyrgtWw2RdV6qZsg"
+          ],
+          "step": "buyer",
+          "case_id": "buyer:lges"
+        },
+        {
+          "id": "b-lg-14",
+          "timestamp": "2026-10-18T23:04:23Z",
+          "server": "sayari",
+          "tool": "search_trade_facets",
+          "params": {
+            "scope": "shipments",
+            "query": "\"LG Energy Solution Vertech\"",
+            "hs_code": "8507",
+            "arrival_country": "USA",
+            "date_from": "2024-01-01",
+            "bucket_limit": 10
+          },
+          "question": "Who supplies cells to LG Energy Solution Vertech (the group's US energy-storage unit)?",
+          "purpose": "supplier scan",
+          "result_summary": "140 rows. Suppliers: LG Energy Solution Ltd 113, a second LG Energy Solution record (jlCCvvWgGVABxSVyqsQXAQ) 10, LG Energy Solution (Nanjing) 4, plus smaller records. Departures: Korea 54, China 13.",
+          "interpretation": "Mostly intra-group cells from Korea, plus a smaller flow from the Nanjing plant in China.",
+          "scorecard": "partial",
+          "entity_ids": [
+            "irKtpc_N2pjgNxCLsIkqSQ",
+            "Jt71Tb2z1whIR0iQZpP-fw",
+            "jlCCvvWgGVABxSVyqsQXAQ",
+            "KTsKQO9RUQKylaz4kbiO1A"
+          ],
+          "step": "buyer",
+          "case_id": "buyer:lges"
+        },
+        {
+          "id": "b-lg-15",
+          "timestamp": "2026-10-18T23:04:35Z",
+          "server": "sayari",
+          "tool": "search_shipments",
+          "params": {
+            "query": "\"LG Energy Solution Vertech\"",
+            "hs_code": "8507",
+            "arrival_country": "USA",
+            "date_from": "2024-01-01",
+            "limit": 100,
+            "response_mode": "compact"
+          },
+          "question": "Do dated rows confirm the Vertech suppliers?",
+          "purpose": "confirm rows",
+          "result_summary": "100 of 140 rows read. LG Energy Solution Ltd to Vertech: 70 rows from 2024 onward (2024-01-12 to 2026-08-25), plus 3 to a second Vertech record. The jlCC record: 10 rows (2025-06-01 to 2026-08-27). Another LG Energy Solution record: 1 row. Five LG Energy Solution (Nanjing) records: 10 rows from China (2024-04-18 to 2026-06-15). Into R Co. (Korea): 3 rows.",
+          "interpretation": "Confirmed. LG Energy Solution's US storage unit gets cells from Korea and from Nanjing, China.",
+          "scorecard": "worked",
+          "entity_ids": [
+            "irKtpc_N2pjgNxCLsIkqSQ",
+            "NKCf4aVKAhqXf5DY-SkatA",
+            "Jt71Tb2z1whIR0iQZpP-fw",
+            "jlCCvvWgGVABxSVyqsQXAQ",
+            "i-PmbmXiUDhbS2YCetyQcw",
+            "KTsKQO9RUQKylaz4kbiO1A",
+            "gNPC8v63oi_-FUnHQiVWLQ",
+            "1p2v4pC35RNPB1ZBT5n2mQ",
+            "TYkpx4xbCk8CKzE79AumQw",
+            "JiROe5STSgLuszWIpePmEA",
+            "mjZJKH55tvK8kripZbRi_A",
+            "OyoEqh0jfDWpXWFBY34PQg"
+          ],
+          "step": "buyer",
+          "case_id": "buyer:lges"
+        },
+        {
+          "id": "b-lg-16",
+          "timestamp": "2026-10-18T23:04:47Z",
+          "server": "sayari",
+          "tool": "find_beneficial_owners",
+          "params": {
+            "entity_id": "Jt71Tb2z1whIR0iQZpP-fw",
+            "limit": 10,
+            "max_depth": 2,
+            "entity_types": [
+              "company"
+            ],
+            "response_mode": "compact"
+          },
+          "question": "Who owns LG Energy Solution, Ltd. and LG Chem?",
+          "purpose": "ownership",
+          "result_summary": "LG Energy Solution is a subsidiary of LG Chem, Ltd. Its other shareholders are Korea's National Pension Service and an employee stock association. LG Chem's shareholders include LG Corp., the LG Yonam Foundation and the National Pension Service. One record also lists LG Chem (Chongqing) Engineering Plastics as an LG Chem shareholder, which looks like a data error.",
+          "interpretation": "Korean ownership through LG Chem and LG Corp. The Chongqing link is probably reversed (a subsidiary entered as a shareholder) and doesn't change the conclusion.",
+          "scorecard": "worked",
+          "entity_ids": [
+            "Jt71Tb2z1whIR0iQZpP-fw",
+            "rJZujbWjTgJ1iEZxCsjw9w",
+            "PUzZWCa41jUIBiXT2q1gEw",
+            "2mbVzHNuyJxrpAJ1Cg-LkQ"
+          ],
+          "step": "buyer",
+          "case_id": "buyer:lges"
+        }
+      ]
+    },
+    {
+      "buyer": {
+        "key": "panasonic",
+        "name": "Panasonic Energy (Nevada and De Soto, Kansas)",
+        "category": "battery",
+        "entity_ids": [
+          "wxnxnhKanOt7EorBjIZsxQ",
+          "BZPBOZcD6M_QtBtOWWtYUg",
+          "BF4DKqw-DBGSKUtMwFuRJw",
+          "Ibc73l69Ju8JLHNeZgPJuQ",
+          "qc5jd54dyctACe6voyAX7A",
+          "tJHABh2JwvOHgSPzs4_YxQ",
+          "2u69S3eUKvGIRMirgsTDlg"
+        ],
+        "summary": "Panasonic Energy's US records import cells and battery parts mainly from Panasonic's own Japanese unit, and anode graphite from POSCO Future M (Korea) and, once, from BTR (China). The largest graphite flow is 34 rows of coated spherical graphite whose shipper is not named; it left Chinese ports in 2025 and Singapore and Malaysian ports in 2026. Who makes that graphite, and who owns them, could not be established."
+      },
+      "scan": {
+        "hs": [
+          "3801",
+          "8507"
+        ],
+        "date_from": "2024-01-01",
+        "note": "Sayari trade data checked on 18 Oct 2026 for HS 3801 (graphite, including anode material) and HS 8507 (batteries and parts) entering the US under the name 'Panasonic Energy', plus a product-code search ('I-ACT5'). Panasonic Procurement Corporation of America buys for the plants, so its records count as the buyer. The quoted name also matches other Panasonic units (Panasonic Automotive Systems, Panasonic Energy Mexico, Panasonic Energy Suzhou), whose rows go to other buyers and are left out. For example, Prime Planet Energy ships cells from Dalian to Panasonic Automotive Systems, which is outside this profile. No record specific to De Soto, Kansas was found, so the Kansas plant may be filed under the records above or not be visible. The scan cannot see material bought inside the US or rows that omit the Panasonic name. No freight forwarders appeared among the suppliers."
+      },
+      "suppliers": [
+        {
+          "name": "Panasonic Operational Excellence Co., Ltd.",
+          "entity_id": "75ev7s6HHnu6sFJyEMysdw",
+          "country": "JPN",
+          "hs_codes": [
+            "850760",
+            "850790",
+            "850750"
+          ],
+          "rows": 78,
+          "first": "2026-05-06",
+          "last": "2026-09-16",
+          "owner_top": "Panasonic Holdings (Sayari record 'PANASONIC CORPORATION')",
+          "owner_country": "JPN",
+          "chinese_owned": "No",
+          "confidence": "documented",
+          "note": "Panasonic's own Japanese unit ships lithium-ion cells and battery parts to Panasonic Energy Sales Company (48 rows) and Panasonic Energy Corporation (30 rows).",
+          "call_ids": [
+            "b-pan-06",
+            "b-pan-08",
+            "b-pan-11"
+          ]
+        },
+        {
+          "name": "Unnamed shipper (spherical graphite, product codes I-ACT5 / I-ALE2 / I-NSG17-B)",
+          "entity_id": null,
+          "country": null,
+          "hs_codes": [
+            "380110",
+            "380190"
+          ],
+          "rows": 34,
+          "first": "2025-05-05",
+          "last": "2026-09-12",
+          "owner_top": "Unknown",
+          "owner_country": null,
+          "chinese_owned": "Unknown",
+          "confidence": "lead",
+          "note": "Coated spherical graphite, a battery-grade anode material, shipped to Panasonic procurement and energy records with the shipper's name withheld; 2025 lots left from Chinese ports and later lots from Singapore and Malaysia, a pattern that warrants due diligence on where the material is made.",
+          "call_ids": [
+            "b-pan-03",
+            "b-pan-04",
+            "b-pan-05",
+            "b-pan-10",
+            "b-pan-12"
+          ]
+        },
+        {
+          "name": "POSCO Future M Co., Ltd.",
+          "entity_id": "Fj3vtxDroFyjyPsLgsnm2A",
+          "country": "KOR",
+          "hs_codes": [
+            "380110",
+            "380190"
+          ],
+          "rows": 16,
+          "first": "2026-05-06",
+          "last": "2026-07-28",
+          "owner_top": "POSCO Holdings Inc.",
+          "owner_country": "KOR",
+          "chinese_owned": "No",
+          "confidence": "documented",
+          "note": "'Anode active material' shipped from Korea to Panasonic Energy Corporation (9 dated rows plus 7 undated); the site's POSCO case shows this plant also takes in graphite from Chinese suppliers.",
+          "call_ids": [
+            "b-pan-02",
+            "b-pan-03",
+            "b-pan-08",
+            "b-pan-12",
+            "b-pan-13"
+          ]
+        },
+        {
+          "name": "BTR New Material Group Sales Co., Ltd.",
+          "entity_id": "5_cayB1m7XahAhz_Hrrpng",
+          "country": "CHN",
+          "hs_codes": [
+            "380110"
+          ],
+          "rows": 1,
+          "first": "2025-03-16",
+          "last": "2025-03-16",
+          "owner_top": "BTR New Material Group Co., Ltd. (name match only)",
+          "owner_country": "CHN",
+          "chinese_owned": "Yes (China-based)",
+          "confidence": "documented",
+          "note": "One row of artificial graphite from China to Panasonic Energy Corporation, naming Panasonic Procurement Corporation of America as notify party; Sayari has no shareholder record for this BTR sales company.",
+          "call_ids": [
+            "b-pan-02",
+            "b-pan-03",
+            "b-pan-08",
+            "b-pan-14"
+          ]
+        }
+      ],
+      "forwarders_excluded": 0,
+      "calls": [
+        {
+          "id": "b-pan-01",
+          "timestamp": "2026-10-18T23:00:07Z",
+          "server": "sayari",
+          "tool": "search_entities",
+          "params": {
+            "query": "\"Panasonic Energy of North America\"",
+            "limit": 10,
+            "response_mode": "compact"
+          },
+          "question": "Which Sayari records belong to Panasonic Energy's US plants?",
+          "purpose": "buyer resolution",
+          "result_summary": "21 records. They include Panasonic Energy of North America (tJHABh2JwvOHgSPzs4_YxQ; EPA and RCRA IDs from Nevada), a 'Division of Panasonic Corporation' record and two Gigafactory trade-name records, plus Japanese suppliers registered in Nevada.",
+          "interpretation": "Along with the Panasonic Energy Corporation and Panasonic Procurement Corporation of America records already on the site, these cover the Nevada plant. No De Soto, Kansas record turned up under this name.",
+          "scorecard": "worked",
+          "entity_ids": [
+            "tJHABh2JwvOHgSPzs4_YxQ",
+            "tBS95mYPt6wT8tKWkcs63A",
+            "2u69S3eUKvGIRMirgsTDlg",
+            "gK2UrvG5Syo8HiIcugX4iA"
+          ],
+          "step": "buyer",
+          "case_id": "buyer:panasonic"
+        },
+        {
+          "id": "b-pan-02",
+          "timestamp": "2026-10-18T23:00:13Z",
+          "server": "sayari",
+          "tool": "search_suppliers",
+          "params": {
+            "query": "\"Panasonic Energy\"",
+            "hs_code": "3801",
+            "arrival_country": "USA",
+            "date_from": "2024-01-01",
+            "limit": 20,
+            "response_mode": "compact"
+          },
+          "question": "Who ships graphite (HS 3801) to Panasonic Energy in the US?",
+          "purpose": "supplier scan",
+          "result_summary": "2 named suppliers: POSCO Future M (16 shipments, HS 380110/380190, latest 2026-07-28) and BTR New Material Group Sales (1, HS 380110).",
+          "interpretation": "Few named suppliers. The shipment rows show more graphite whose supplier is not named.",
+          "scorecard": "worked",
+          "entity_ids": [
+            "Fj3vtxDroFyjyPsLgsnm2A",
+            "5_cayB1m7XahAhz_Hrrpng"
+          ],
+          "step": "buyer",
+          "case_id": "buyer:panasonic"
+        },
+        {
+          "id": "b-pan-03",
+          "timestamp": "2026-10-18T23:00:19Z",
+          "server": "sayari",
+          "tool": "search_shipments",
+          "params": {
+            "query": "\"Panasonic Energy\"",
+            "hs_code": "3801",
+            "arrival_country": "USA",
+            "date_from": "2024-01-01",
+            "limit": 100,
+            "response_mode": "compact"
+          },
+          "question": "Do dated rows confirm graphite reaching Panasonic Energy?",
+          "purpose": "confirm rows",
+          "result_summary": "31 rows. POSCO Future M to Panasonic Energy Corporation: 16 rows of 'anode active material' and artificial graphite from Korea (9 dated May-Jul 2026, 7 undated). BTR New Material Group Sales: 1 row of artificial graphite from China, 2025-03-16, with Panasonic Procurement Corporation of America as second notify party. Unnamed shipper: 7 rows of 'surface treated spherical graphite' from Singapore to a Panasonic Procurement record (May-Sep 2026) and 2 rows (product codes I-ACT5, I-ALE2) to Panasonic Energy Corporation (Jun-Aug 2026). Also 5 rows from Taiwan to Tesla.",
+          "interpretation": "Battery-grade graphite reaches Panasonic from POSCO Future M (Korea), from BTR (China) and from an unnamed shipper.",
+          "scorecard": "worked",
+          "entity_ids": [
+            "wxnxnhKanOt7EorBjIZsxQ",
+            "Ibc73l69Ju8JLHNeZgPJuQ",
+            "Fj3vtxDroFyjyPsLgsnm2A",
+            "5_cayB1m7XahAhz_Hrrpng",
+            "xWhz7CFJV3lxsgg8fHMGHA"
+          ],
+          "step": "buyer",
+          "case_id": "buyer:panasonic"
+        },
+        {
+          "id": "b-pan-04",
+          "timestamp": "2026-10-18T23:00:25Z",
+          "server": "sayari",
+          "tool": "search_shipments",
+          "params": {
+            "query": "\"I-ACT5\"",
+            "limit": 40,
+            "response_mode": "compact"
+          },
+          "question": "How much 'I-ACT5' spherical graphite reaches Panasonic, and from where?",
+          "purpose": "confirm rows",
+          "result_summary": "29 rows, none naming a supplier. 25 rows go to Panasonic Procurement Corporation (BF4DKqw-DBGSKUtMwFuRJw), arriving 2025-05-05 to 2026-09-06 from Singapore, Malaysia and China. One 2025 row lists 280 packages of I-ACT5 and 280 of I-NSG17-B. 1 row goes to Panasonic Energy Corporation and 3 to Tesla.",
+          "interpretation": "A steady flow of coated spherical graphite with the shipper's name withheld. The departure ports change over time.",
+          "scorecard": "worked",
+          "entity_ids": [
+            "BF4DKqw-DBGSKUtMwFuRJw",
+            "wxnxnhKanOt7EorBjIZsxQ",
+            "xWhz7CFJV3lxsgg8fHMGHA"
+          ],
+          "step": "buyer",
+          "case_id": "buyer:panasonic"
+        },
+        {
+          "id": "b-pan-05",
+          "timestamp": "2026-10-18T23:00:31Z",
+          "server": "tavily",
+          "tool": "tavily_search",
+          "params": {
+            "query": "\"I-ACT5\" spherical graphite anode",
+            "max_results": 5
+          },
+          "question": "Which company makes the graphite product coded I-ACT5?",
+          "purpose": "supplier identity",
+          "result_summary": "No match. The results were general pages on spherical graphite (patents, MDPI, Westwater, Benchmark).",
+          "interpretation": "The product code does not identify the producer.",
+          "scorecard": "failed",
+          "entity_ids": [],
+          "step": "buyer",
+          "case_id": "buyer:panasonic"
+        },
+        {
+          "id": "b-pan-06",
+          "timestamp": "2026-10-18T23:00:37Z",
+          "server": "sayari",
+          "tool": "search_shipments",
+          "params": {
+            "query": "\"Panasonic Energy\"",
+            "hs_code": "8507",
+            "arrival_country": "USA",
+            "date_from": "2024-01-01",
+            "limit": 100,
+            "response_mode": "compact"
+          },
+          "question": "Who ships batteries or battery parts (HS 8507) to Panasonic Energy in the US?",
+          "purpose": "confirm rows",
+          "result_summary": "1,655 rows available, 100 read (all 2026). Panasonic Operational Excellence (Japan) to Panasonic Energy Sales Company: 48 rows of HS 850760/850790 (2026-05-06 to 2026-09-16). The same supplier to Panasonic Energy Corporation: 30 rows, mostly HS 850790 parts plus 2 rows of nickel-metal hydride. Other rows go to Panasonic Automotive Systems, Ingenico and Breas Medical.",
+          "interpretation": "The quoted name also matches other Panasonic units, so most rows are not for the battery plants. Into Panasonic Energy's own records, the 8507 flow is from Panasonic's own Japanese unit.",
+          "scorecard": "partial",
+          "entity_ids": [
+            "75ev7s6HHnu6sFJyEMysdw",
+            "qc5jd54dyctACe6voyAX7A",
+            "wxnxnhKanOt7EorBjIZsxQ",
+            "kbZXREsHGQj4bAwna6ankw",
+            "tNmD6GPmwVGFlv1P5aw7tA",
+            "Glvg05kbHOZJfwS-uUK3jg",
+            "Z0h2qxEQOQ_IKjoQpsb3Lw",
+            "dPb_nWQEtwAQAcyWzJTtQA"
+          ],
+          "step": "buyer",
+          "case_id": "buyer:panasonic"
+        },
+        {
+          "id": "b-pan-07",
+          "timestamp": "2026-10-18T23:00:43Z",
+          "server": "sayari",
+          "tool": "search_suppliers",
+          "params": {
+            "query": "\"Panasonic Energy\"",
+            "hs_code": "8507",
+            "arrival_country": "USA",
+            "date_from": "2024-01-01",
+            "limit": 25,
+            "response_mode": "compact"
+          },
+          "question": "Which suppliers dominate HS 8507 under the Panasonic Energy name?",
+          "purpose": "supplier scan",
+          "result_summary": "23 records: Panasonic Energy Mexico (658), Panasonic Operational Excellence (487), Panasonic Gobel Energy Indonesia (162), Panasonic Energy Co. (131, last 2024-03-01), Prime Planet Energy Dalian (82, last 2023), Panasonic Energy Wuxi and Suzhou, Shenzhen Megmeet and others.",
+          "interpretation": "The counts are not limited by date, and many records ship consumer batteries to other buyers. Used only as a name list.",
+          "scorecard": "partial",
+          "entity_ids": [
+            "Z0h2qxEQOQ_IKjoQpsb3Lw",
+            "75ev7s6HHnu6sFJyEMysdw",
+            "Yrhz499Ea2uW9b8H1H0t9g",
+            "FHVtuTqxn5XLJPD_dJtmuQ",
+            "EuGEpO6Z84S8ygRI5Kt7Pw",
+            "Glvg05kbHOZJfwS-uUK3jg",
+            "Rw0DryC2sWx-T_zJ4c9-tA"
+          ],
+          "step": "buyer",
+          "case_id": "buyer:panasonic"
+        },
+        {
+          "id": "b-pan-08",
+          "timestamp": "2026-10-18T23:00:49Z",
+          "server": "sayari",
+          "tool": "get_upstream_supply_chain",
+          "params": {
+            "entity_id": "wxnxnhKanOt7EorBjIZsxQ",
+            "product": [
+              "3801",
+              "8507"
+            ],
+            "min_date": "2024-01-01",
+            "max_depth": 1,
+            "limit": 25,
+            "response_mode": "compact"
+          },
+          "question": "Which tier-1 suppliers does the graph list for Panasonic Energy Corporation?",
+          "purpose": "supplier scan",
+          "result_summary": "14 paths: Panasonic Operational Excellence (two records, Japan), POSCO Future M (Korea), BTR New Material Group Sales (China), and a garbled record named 'DAIICHI DAIBIRU-HONKAN'.",
+          "interpretation": "The graph confirms the same short list: Panasonic's own Japanese unit, POSCO Future M and BTR.",
+          "scorecard": "worked",
+          "entity_ids": [
+            "wxnxnhKanOt7EorBjIZsxQ",
+            "75ev7s6HHnu6sFJyEMysdw",
+            "pUgbdxb17YvwVw1KHvmM8Q",
+            "Fj3vtxDroFyjyPsLgsnm2A",
+            "5_cayB1m7XahAhz_Hrrpng"
+          ],
+          "step": "buyer",
+          "case_id": "buyer:panasonic"
+        },
+        {
+          "id": "b-pan-09",
+          "timestamp": "2026-10-18T23:00:55Z",
+          "server": "sayari",
+          "tool": "get_upstream_supply_chain",
+          "params": {
+            "entity_id": "BZPBOZcD6M_QtBtOWWtYUg",
+            "product": [
+              "3801",
+              "8507"
+            ],
+            "min_date": "2024-01-01",
+            "max_depth": 1,
+            "limit": 25,
+            "response_mode": "compact"
+          },
+          "question": "Does the Panasonic Procurement Corporation of America record show suppliers?",
+          "purpose": "supplier scan",
+          "result_summary": "0 results.",
+          "interpretation": "This record has no HS-filtered supplier links. The procurement rows sit on other records (BF4DKqw-DBGSKUtMwFuRJw, Ibc73l69Ju8JLHNeZgPJuQ).",
+          "scorecard": "failed",
+          "entity_ids": [
+            "BZPBOZcD6M_QtBtOWWtYUg"
+          ],
+          "step": "buyer",
+          "case_id": "buyer:panasonic"
+        },
+        {
+          "id": "b-pan-10",
+          "timestamp": "2026-10-18T23:01:01Z",
+          "server": "sayari",
+          "tool": "search_shipments",
+          "params": {
+            "query": "\"I-ACT5\"",
+            "departure_country": "CHN",
+            "limit": 3,
+            "response_mode": "full"
+          },
+          "question": "Do the full I-ACT5 rows from China reveal the shipper?",
+          "purpose": "supplier identity",
+          "result_summary": "3 rows, May-Jul 2025, from Yantian and Haikou to Long Beach, 189,000-226,800 kg each, for Panasonic Procurement Corporation at 2050 W. 190th St., Torrance, CA. No shipper name or address. Source: USA Imports.",
+          "interpretation": "Large lots of spherical graphite left China for Panasonic's procurement arm in 2025. Later lots left from Singapore and Malaysia. The shipper is withheld, so its ownership can't be checked.",
+          "scorecard": "worked",
+          "entity_ids": [
+            "BF4DKqw-DBGSKUtMwFuRJw"
+          ],
+          "step": "buyer",
+          "case_id": "buyer:panasonic"
+        },
+        {
+          "id": "b-pan-11",
+          "timestamp": "2026-10-18T23:01:07Z",
+          "server": "sayari",
+          "tool": "find_beneficial_owners",
+          "params": {
+            "entity_id": "75ev7s6HHnu6sFJyEMysdw",
+            "limit": 5,
+            "max_depth": 2,
+            "response_mode": "compact"
+          },
+          "question": "Who owns Panasonic Operational Excellence Co., Ltd.?",
+          "purpose": "ownership",
+          "result_summary": "It is a subsidiary of the record named PANASONIC CORPORATION (CUZdf3KBIP6LGOp6DSrfEQ). The upstream shareholders are Japanese trust banks, State Street and the Government of Norway (custody accounts).",
+          "interpretation": "Owned within Japan's Panasonic group, whose shareholders are listed-market investors. No Chinese owner.",
+          "scorecard": "worked",
+          "entity_ids": [
+            "75ev7s6HHnu6sFJyEMysdw",
+            "CUZdf3KBIP6LGOp6DSrfEQ"
+          ],
+          "step": "buyer",
+          "case_id": "buyer:panasonic"
+        },
+        {
+          "id": "b-pan-12",
+          "timestamp": "2026-10-18T23:01:13Z",
+          "server": "sayari",
+          "tool": "search_trade_facets",
+          "params": {
+            "scope": "shipments",
+            "query": "\"Panasonic Energy\"",
+            "hs_code": "3801",
+            "arrival_country": "USA",
+            "date_from": "2024-01-01",
+            "bucket_limit": 10
+          },
+          "question": "How do the 31 graphite rows split by buyer, supplier and departure country?",
+          "purpose": "supplier scan",
+          "result_summary": "Top buyers: Panasonic Energy Corporation 12, Panasonic Procurement (Ibc73l69Ju8JLHNeZgPJuQ) 7, Tesla 5. Named suppliers: POSCO Future M 16, BTR Sales 1, so 14 rows have no named supplier. Departures: Korea 9, Singapore 8, Taiwan 4, China 1. Dates 2025-03-16 to 2026-09-18.",
+          "interpretation": "About half of Panasonic's graphite rows have no named supplier. The named ones are POSCO Future M and BTR.",
+          "scorecard": "worked",
+          "entity_ids": [
+            "wxnxnhKanOt7EorBjIZsxQ",
+            "Ibc73l69Ju8JLHNeZgPJuQ",
+            "Fj3vtxDroFyjyPsLgsnm2A",
+            "5_cayB1m7XahAhz_Hrrpng"
+          ],
+          "step": "buyer",
+          "case_id": "buyer:panasonic"
+        },
+        {
+          "id": "b-pan-13",
+          "timestamp": "2026-10-18T23:01:19Z",
+          "server": "sayari",
+          "tool": "find_beneficial_owners",
+          "params": {
+            "entity_id": "Fj3vtxDroFyjyPsLgsnm2A",
+            "limit": 5,
+            "max_depth": 1,
+            "entity_types": [
+              "company"
+            ],
+            "response_mode": "compact"
+          },
+          "question": "Who owns POSCO Future M?",
+          "purpose": "ownership",
+          "result_summary": "Shareholders include POSCO Holdings (포스코홀딩스, xhmHh99vEgdFz19iRON8yA, plus a former-name record), an employee stock ownership association, Pohang University of Science and Technology, and one other record.",
+          "interpretation": "Korean ownership led by POSCO Holdings. This matches the site's POSCO Future M case.",
+          "scorecard": "worked",
+          "entity_ids": [
+            "Fj3vtxDroFyjyPsLgsnm2A",
+            "xhmHh99vEgdFz19iRON8yA",
+            "hmVAMxUKkLq_KHlK6Bj8FQ"
+          ],
+          "step": "buyer",
+          "case_id": "buyer:panasonic"
+        },
+        {
+          "id": "b-pan-14",
+          "timestamp": "2026-10-18T23:01:25Z",
+          "server": "sayari",
+          "tool": "find_beneficial_owners",
+          "params": {
+            "entity_id": "5_cayB1m7XahAhz_Hrrpng",
+            "limit": 5,
+            "max_depth": 2,
+            "response_mode": "compact"
+          },
+          "question": "Does Sayari show who owns BTR New Material Group Sales?",
+          "purpose": "ownership",
+          "result_summary": "0 results.",
+          "interpretation": "There is no shareholder record. The link to the BTR parent stays a name match, as in Case 1.",
+          "scorecard": "failed",
+          "entity_ids": [
+            "5_cayB1m7XahAhz_Hrrpng"
+          ],
+          "step": "buyer",
+          "case_id": "buyer:panasonic"
+        }
+      ]
+    }
+  ]
+}

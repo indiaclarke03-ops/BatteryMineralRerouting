@@ -97,12 +97,14 @@
     "date": "2026-06-08",
     "measure": "EVE Energy added to the US Section 1260H list of Chinese military companies",
     "relevance": "EVE Energy owns the Malaysian cell plant in Case 6. The listing doesn't ban commercial purchases, but it restricts US defense procurement and is a signal buyers screen for.",
-    "source_url": "https://www.wilmerhale.com/en/insights/client-alerts/20260611-pentagon-adds-65-new-entities-to-the-1260h-list-of-chinese-military-companies",
-    "source_name": "WilmerHale; Holland & Knight; DLA Piper (Federal Register notice 10 Jun 2026)",
+    "source_url": "https://www.federalregister.gov/documents/2026/06/10/2026-11571/notice-of-availability-of-designation-of-chinese-military-companies",
+    "source_name": "Federal Register Doc. 2026-11571 (10 Jun 2026); WilmerHale; Holland & Knight",
     "verified": true,
     "note": "List published 8 Jun 2026; Federal Register notice dated 10 Jun 2026.",
     "source_call_ids": [
-      "v044"
+      "v044",
+      "w017",
+      "w018"
     ]
   },
   {

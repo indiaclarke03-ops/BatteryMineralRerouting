@@ -1,0 +1,2089 @@
+{
+ "case": {
+  "id": "case-10",
+  "slug": "catl-ampace",
+  "title": "CATL, Ampace and Linergy Power",
+  "subtitle": "Linergy Power Sdn Bhd · Serendah, Selangor, Malaysia",
+  "country": "MYS",
+  "plant_status": "operating",
+  "question": "Can Sayari show how far up Linergy Power's ownership goes, whether it is part of the CATL group, and what it sends to US buyers?",
+  "answer_label": "Partly",
+  "answer": "Partly. Sayari traces Linergy up to CATL and shows 17 rows of cells going to US buyers. But the percentages came from CATL's and TDK's filings, and Sayari missed the June 2026 sale that took Linergy out of the CATL group and into Japan's TDK.",
+  "why_it_matters": "PFE tests look at who owns and controls the cell maker on the date of the transaction. Here the answer changed in June 2026: from a group CATL consolidates (CATL has been on the 1260H list since January 2025) to a Japanese company. Registry data that lags by months would give a buyer the wrong answer for later shipments. Earlier shipments would show the opposite problem if the registry were updated and no dates kept.",
+  "headline": "Until June 2026 Linergy Power was 100% owned by Ampace's Hong Kong company, inside a Xiamen group that CATL consolidates with a 59.5% stake. TDK of Japan then bought all of it. Sayari still shows the old chain: 11 US-bound cell rows left under the CATL-group owner, and 6 to Eaton after the sale.",
+  "summary_for_non_experts": "Linergy Power is a new battery-cell factory near Kuala Lumpur. It was set up in December 2024 by Ampace, a Chinese battery company that CATL, the world's biggest battery maker, controls together with ATL, a battery unit of Japan's TDK. Most of what the plant buys comes from China, much of it from Ampace itself. Its first cells went to US power-tool makers. In June 2026 TDK bought the whole plant, but the company records we searched hadn't been updated four months later.",
+  "key_numbers": [
+   {
+    "value": "59.5%",
+    "label": "CATL's indirect stake in Xiamen Ampace, Linergy's parent until June 2026 (CATL filing)",
+    "call_ids": [
+     "t10-01"
+    ]
+   },
+   {
+    "value": "100%",
+    "label": "of Linergy bought by TDK's Singapore unit in June 2026, for US$241.1m",
+    "call_ids": [
+     "t10-03",
+     "t10-04"
+    ]
+   },
+   {
+    "value": "11 / 6",
+    "label": "US-bound rows before the sale (Nov 2025–Feb 2026) and after it (Aug–Sep 2026, all Eaton)",
+    "call_ids": [
+     "s10-15"
+    ]
+   },
+   {
+    "value": "1,044",
+    "label": "of Linergy's 2,759 inbound rows came from its own parent, Xiamen Ampace",
+    "call_ids": [
+     "s10-07"
+    ]
+   },
+   {
+    "value": "97%",
+    "label": "of inbound rows left from China (2,679)",
+    "call_ids": [
+     "s10-07"
+    ]
+   }
+  ],
+  "overall_confidence": "corroborated",
+  "pattern": "complete-trail",
+  "steps": [
+   {
+    "title": "What Sayari's registry shows",
+    "kicker": "Step 1 · Contractual",
+    "text": "Malaysian company data names Ampace Technology Limited (Hong Kong) as Linergy's only shareholder. Above it, Sayari shows Xiamen Ampace, then Xiamen Xinnenghe, CATL and four Xiamen partnerships, then CATL's own shareholders. None of these links carries a percentage. One Linergy director, Jia Zhuocheng, has the same name as Xiamen Ampace's general manager.",
+    "edge_ids": [
+     "e10-01",
+     "e10-03",
+     "e10-04",
+     "e10-05",
+     "e10-06",
+     "e10-07",
+     "e10-08",
+     "e10-09",
+     "e10-10"
+    ],
+    "node_ids": [
+     "ySemfyJJesFbfxEgW2SgCg",
+     "TcV1qONXBV-YSjtqMe-yFQ",
+     "sXzqumDIg-3LZrua0Pt_PA",
+     "8gdUB3Z6x69ZhJN5xfNYFQ",
+     "ApHsZLGLjF2eLOFCSnZDVg",
+     "Hknigg_iWcgcpp_dkWgQvA",
+     "RhhxdtCaRd_ia37ejZqiew",
+     "27up985UHLWoN9v1oWWKvQ"
+    ],
+    "call_ids": [
+     "s10-01",
+     "s10-02",
+     "s10-03",
+     "s10-04",
+     "s10-05",
+     "s10-06"
+    ]
+   },
+   {
+    "title": "The percentages come from filings",
+    "kicker": "Step 2 · Contractual",
+    "text": "CATL's March 2026 filing calls Xiamen Ampace a consolidated subsidiary. Xinnenghe holds 85% of it, and CATL holds 59.5% indirectly. TDK's own releases put the joint venture behind Xinnenghe at 70% CATL and 30% ATL, TDK's battery unit. Until June 2026, then, Linergy sat inside a group that CATL controls. CATL has been on the US Section 1260H list since January 2025.",
+    "edge_ids": [
+     "e10-01",
+     "e10-04",
+     "e10-05",
+     "e10-06"
+    ],
+    "node_ids": [
+     "sXzqumDIg-3LZrua0Pt_PA",
+     "8gdUB3Z6x69ZhJN5xfNYFQ",
+     "Hknigg_iWcgcpp_dkWgQvA",
+     "ApHsZLGLjF2eLOFCSnZDVg"
+    ],
+    "call_ids": [
+     "t10-01",
+     "t10-02",
+     "t10-03",
+     "t10-05"
+    ]
+   },
+   {
+    "title": "In June 2026 the owner changed, and Sayari hasn't caught up",
+    "kicker": "Step 3 · Contractual",
+    "text": "On 19 May 2026 TDK said its Singapore unit, Amperex Technology (Singapore), would buy 100% of Linergy for US$241.1m, with the transfer set for 15 June. TDK's results for the quarter to 30 June confirm the purchase. On 18 October Sayari still showed Ampace as the shareholder, and showed no Linergy under the Singapore company. A buyer screening Linergy in registry data would still see a CATL-group owner.",
+    "edge_ids": [
+     "e10-01",
+     "e10-02"
+    ],
+    "node_ids": [
+     "ySemfyJJesFbfxEgW2SgCg",
+     "XsLwbCaQEeyzOMh9_sOl3w",
+     "TcV1qONXBV-YSjtqMe-yFQ"
+    ],
+    "call_ids": [
+     "t10-03",
+     "t10-04",
+     "s10-04",
+     "s10-16",
+     "s10-18"
+    ]
+   },
+   {
+    "title": "Chinese materials in, much of it from the parent",
+    "kicker": "Step 4 · Transactional",
+    "text": "Of 2,759 inbound rows (May 2025 to Jun 2026), 2,679 left from China. Xiamen Ampace itself sent 1,044, including cathode and anode material, carbon black and copper and aluminium foil. Graphite came from Zhongke Shinzoom (14 rows) and Shanshan (3), cathode powder (HS 2842.90) from XTC, Qinghai Taifeng Pulead and Chengdu B&M, and electrolyte from Tinci, Capchem and a forwarder. Much of the rest is production-line equipment.",
+    "edge_ids": [
+     "e10-11",
+     "e10-12",
+     "e10-13",
+     "e10-14",
+     "e10-15",
+     "e10-16",
+     "e10-17",
+     "e10-18",
+     "e10-19",
+     "e10-20",
+     "e10-21",
+     "e10-22",
+     "e10-23"
+    ],
+    "node_ids": [
+     "RpVysafWvaXbqy0N4a5qvw",
+     "Lz1tqelhtyNnBxvG140gqA",
+     "bZXSPJMXNdy2zYpIvDww_A",
+     "9jSUCs3ibkazFjdeQ_Xgbw",
+     "mKWeDE6j7Ei8tMyB4eZtpg",
+     "h2bjYM0YRGfNwxnxi9HSsg",
+     "-aS1MMo3XHX5HXo7WsfZeg",
+     "_hgyVvRYdgxLJ-RVYcxn8A",
+     "h4UwyGzpWI7LUgB94JFYNQ",
+     "7yuWA5RAqqR3VKp322S_5g",
+     "B34zjcMXPUfwMQRBjUgvPg",
+     "wmXExqiq-S2ggSfGYDK23w",
+     "v6769GN3_Mt_rD2hVnw74Q"
+    ],
+    "call_ids": [
+     "s10-07",
+     "s10-08",
+     "s10-09",
+     "s10-10",
+     "s10-11",
+     "s10-12",
+     "s10-13",
+     "s10-14"
+    ]
+   },
+   {
+    "title": "Cells out to the US, before and after the sale",
+    "kicker": "Step 5 · Transactional",
+    "text": "17 rows of cells and battery systems (HS 8507, rechargeable batteries) went to the US. Before the sale, Nov 2025 to Feb 2026: 11 rows of 18650 and 21700 power-tool cells, to Ampace's own Hong Kong company (6), Milwaukee Tool (3), Stanley Black & Decker (1) and Techtronic (1). After the sale, Aug to Sep 2026: 6 rows of battery systems to Eaton in Raleigh, North Carolina. No rows show for Mar to Jul 2026, because the Malaysian export data stops in February.",
+    "edge_ids": [
+     "e10-24",
+     "e10-25",
+     "e10-26",
+     "e10-27",
+     "e10-28",
+     "e10-29",
+     "e10-30"
+    ],
+    "node_ids": [
+     "TcV1qONXBV-YSjtqMe-yFQ",
+     "7v82EsEljCQ4PkCcnyMTBA",
+     "XZmnm7ViWgrVw_gAfFPVgQ",
+     "5ETwnZflxje1vTTjeNyT6w",
+     "DoTF8asU1jM35geCp8Dg6Q",
+     "BuQm2NSnUlkUMb83_BJxog",
+     "VsOcgTRnMskYDFTjvGl9Lg"
+    ],
+    "call_ids": [
+     "s10-15"
+    ]
+   },
+   {
+    "title": "Buyers' own records don't link to Ampace or CATL",
+    "kicker": "Step 6 · Inferred",
+    "text": "We asked Sayari for the shortest path from Eaton to CATL and from Milwaukee Tool to Xiamen Ampace. Both run only through trade: buyer, then Linergy, then Ampace's Hong Kong company. Neither buyer has an ownership or officer link to the group. Their exposure is through what they buy, and that depends on the date of each shipment.",
+    "edge_ids": [
+     "e10-31",
+     "e10-29",
+     "e10-26"
+    ],
+    "node_ids": [
+     "BuQm2NSnUlkUMb83_BJxog",
+     "XZmnm7ViWgrVw_gAfFPVgQ",
+     "Hknigg_iWcgcpp_dkWgQvA",
+     "sXzqumDIg-3LZrua0Pt_PA"
+    ],
+    "call_ids": [
+     "s10-17",
+     "s10-19"
+    ]
+   }
+  ],
+  "verdict": {
+   "detected": [
+    {
+     "text": "Registry chain: Linergy ← Ampace Technology (HK) ← Xiamen Ampace ← Xinnenghe and CATL, with CATL's own shareholders above.",
+     "call_ids": [
+      "s10-04",
+      "s10-05",
+      "s10-03",
+      "s10-06"
+     ]
+    },
+    {
+     "text": "From filings, not Sayari: Ampace (HK) held 100% of Linergy until June 2026; Xinnenghe holds 85% of Xiamen Ampace; CATL holds 59.5% indirectly and consolidates it.",
+     "call_ids": [
+      "t10-01",
+      "t10-02",
+      "t10-03"
+     ]
+    },
+    {
+     "text": "TDK bought 100% of Linergy through Amperex Technology (Singapore): agreed 19 May 2026, transfer set for 15 June, confirmed in TDK's results for the quarter to 30 June.",
+     "call_ids": [
+      "t10-03",
+      "t10-04"
+     ]
+    },
+    {
+     "text": "Sayari still showed the pre-sale owner on 18 Oct 2026, and no Linergy under the Singapore buyer.",
+     "call_ids": [
+      "s10-04",
+      "s10-18"
+     ]
+    },
+    {
+     "text": "17 artificial-graphite rows from Zhongke Shinzoom and Shanshan, plus cathode powder, electrolyte, foils and anode materials, almost all from China and much from the parent.",
+     "call_ids": [
+      "s10-10",
+      "s10-11",
+      "s10-12",
+      "s10-13",
+      "s10-14"
+     ]
+    },
+    {
+     "text": "17 US-bound rows: 11 before the sale (Ampace HK, Milwaukee Tool, Stanley Black & Decker, Techtronic), 6 after it (Eaton).",
+     "call_ids": [
+      "s10-15"
+     ]
+    },
+    {
+     "text": "CATL has been on the Section 1260H list since the 6 January 2025 update.",
+     "call_ids": [
+      "t10-05"
+     ]
+    }
+   ],
+   "suggested": [
+    {
+     "text": "CATL's look-through stake in Linergy before the sale was about 59.5%, assuming Xiamen Ampace owns all of Ampace (HK). Sayari gives no percentage for that link.",
+     "call_ids": [
+      "s10-02",
+      "t10-01"
+     ]
+    },
+    {
+     "text": "The Linergy director Jia Zhuocheng is probably Xiamen Ampace's general manager 贾琢成 (name only).",
+     "call_ids": [
+      "s10-02",
+      "s10-04"
+     ]
+    },
+    {
+     "text": "HS 2842.90 rows from XTC, Pulead and Chengdu B&M are cathode powder; the code and supplier names fit, but most rows carry no product text.",
+     "call_ids": [
+      "s10-11"
+     ]
+    }
+   ],
+   "not_visible": [
+    {
+     "text": "Any shipments from Mar to Jul 2026, and anything Linergy received after the sale: the Malaysian trade data ends in February 2026.",
+     "call_ids": [
+      "s10-07",
+      "s10-15"
+     ]
+    },
+    {
+     "text": "Whether Linergy still buys from Xiamen Ampace and other CATL-group suppliers under TDK ownership.",
+     "call_ids": [
+      "s10-07"
+     ]
+    },
+    {
+     "text": "Which graphite went into which cells, and whether the Eaton battery systems contain cells made before the sale.",
+     "call_ids": [
+      "s10-10",
+      "s10-15"
+     ]
+    },
+    {
+     "text": "Whether any of these buyers claims a US tax credit, and how the PFE rules would treat each shipment.",
+     "call_ids": []
+    }
+   ]
+  },
+  "passport": [
+   {
+    "field": "Place of manufacture",
+    "guidance_no": "8",
+    "declared": "Malaysia (Serendah, Selangor).",
+    "paper_trail": "Cells shipped from Kuala Lumpur (Nov 2025–Feb 2026); battery systems to Eaton listed as departing Tawau, Malaysia (Aug–Sep 2026).",
+    "gap": false,
+    "note": "The Malaysian label is accurate for the plant. It says nothing about who owned it, which changed in June 2026."
+   },
+   {
+    "field": "Detailed composition (anode)",
+    "guidance_no": "45",
+    "declared": "Graphite anode.",
+    "paper_trail": "Artificial graphite from Zhongke Shinzoom and Shanshan; silicon-carbon anode material from Xiamen Ampace.",
+    "gap": true,
+    "note": "Two anode groups plus the parent; no lot-level link to a given cell."
+   },
+   {
+    "field": "Critical raw materials > 0.1%",
+    "guidance_no": "15",
+    "declared": "Graphite, lithium, nickel, cobalt, manganese if present.",
+    "paper_trail": "NCM cathode material from the parent; HS 2842.90 salts from XTC, Pulead and Chengdu B&M; no natural graphite rows seen.",
+    "gap": true,
+    "note": "Cathode chemistry is clear on only one row; the others carry only the HS code."
+   },
+   {
+    "field": "Responsible-sourcing (due-diligence) report",
+    "guidance_no": "19",
+    "declared": "Deferred under the EU Battery Regulation.",
+    "paper_trail": "Sub-tier ASPI and Sheffield Hallam flags on the plant, via suppliers; CATL itself is named in Sheffield Hallam reports (per Sayari).",
+    "gap": true,
+    "note": "Flags describe the supplier network, not findings about the plant."
+   },
+   {
+    "field": "Ownership of upstream suppliers",
+    "guidance_no": "—",
+    "declared": "No such field in the EU passport.",
+    "paper_trail": "Until Jun 2026: Linergy ← Ampace (HK) 100% ← Xiamen Ampace ← Xinnenghe 85% ← CATL 70% (59.5% look-through). Since Jun 2026: TDK 100%. Sayari shows only the first.",
+    "gap": true,
+    "note": "Ownership here has a date. A passport or registry snapshot without one would be wrong for half the shipments."
+   }
+  ],
+  "red_flags": [
+   {
+    "flag": "Chinese parent ownership of the transit plant",
+    "signal": "contractual",
+    "severity": "High",
+    "result": "detected",
+    "note": "Until June 2026: 100% Ampace (HK), in a group CATL consolidates (59.5%). Since then: TDK (Japan) 100%, per TDK's filings."
+   },
+   {
+    "flag": "Same HS imported from China and exported to the US",
+    "signal": "transactional",
+    "severity": "High",
+    "result": "suggested",
+    "note": "34 inbound rows of HS 8507.60 cells from China, and cells under the same code out to the US. The plant also imports full cell materials, so it makes cells. Which cells went out warrants checking."
+   },
+   {
+    "flag": "Recent incorporation vs. first export date",
+    "signal": "contractual",
+    "severity": "Medium",
+    "result": "suggested",
+    "note": "Registered 19 Dec 2024; first inbound row May 2025; first US row 18 Nov 2025. Normal for a new plant."
+   },
+   {
+    "flag": "Volume spike after a policy date",
+    "signal": "transactional",
+    "severity": "Medium",
+    "result": "not_visible",
+    "note": "CATL's January 2025 listing predates the plant. The Eaton rows begin after the TDK sale, but the Mar–Jul 2026 data gap hides any trend."
+   },
+   {
+    "flag": "Shared address or officer with a flagged entity",
+    "signal": "inferred",
+    "severity": "Medium",
+    "result": "suggested",
+    "note": "A Linergy director shares the name of Xiamen Ampace's general manager; Xiamen Ampace is owned by a 1260H-listed company. Name match only."
+   },
+   {
+    "flag": "Entity-resolution fragmentation",
+    "signal": "inferred",
+    "severity": "Low (disclose)",
+    "result": "detected",
+    "note": "Xiamen Ampace has a registry record and separate trade records; Eaton and Milwaukee Tool have two records each; Linergy's name appears as 'Linery'."
+   },
+   {
+    "flag": "Forced-labor / UFLPA sub-tier flags",
+    "signal": "inferred",
+    "severity": "Medium",
+    "result": "suggested",
+    "note": "ASPI and Sheffield Hallam sub-tier flags on the plant via its suppliers. Context, not a finding."
+   }
+  ],
+  "caveats": [
+   "Making cells in Malaysia from Chinese materials is legal and common. Nothing here shows wrongdoing by any company named.",
+   "Buyers are named because they appear in customs records. That says nothing about their compliance, or whether they claim any US tax credit.",
+   "The ownership percentages come from CATL's and TDK's filings and from The Edge's reading of the Malaysian registry, not from Sayari.",
+   "CATL's 59.5% applies to Xiamen Ampace. Carrying it down to Linergy assumes Xiamen Ampace owns all of Ampace (HK); Sayari shows the link without a percentage.",
+   "Sayari lists CATL as a direct shareholder of Xiamen Ampace too. CATL's filing describes only the indirect stake, so that record may be out of date.",
+   "TDK set the share transfer for 15 June 2026 and reported completion within the quarter to 30 June. We use mid-June as the change date; the exact day isn't confirmed.",
+   "Before the sale TDK already held 25.5% of Linergy indirectly, through ATL's stake in the joint venture. Japanese and Chinese interests were mixed from the start.",
+   "No trade rows show for Mar–Jul 2026. The Malaysian export source ends in February 2026, and the US import rows for Linergy start in August.",
+   "The Eaton rows list Tawau, in Sabah, as the departure port, far from the Selangor plant. Treat route details with care.",
+   "The 1260H date comes from law-firm and trade-press summaries of the DoD list; we didn't open the Federal Register notice.",
+   "Records checked on 18 Oct 2026. Sayari may add the TDK link later."
+  ]
+ },
+ "entities": [
+  {
+   "id": "ySemfyJJesFbfxEgW2SgCg",
+   "name": "Linergy Power Sdn Bhd",
+   "country": "MYS",
+   "type": "company",
+   "role": "transit_plant",
+   "risk_flags": [
+    "export_controls_section_1260h_50_percent_rule",
+    "forced_labor_aspi_origin_subtier",
+    "forced_labor_sheffield_hallam_university_reports_origin_subtier",
+    "exports_ilab_forced_labor"
+   ],
+   "identifiers": {
+    "mys_company_number": "1599895M"
+   },
+   "summary": "Cell maker in Serendah, Selangor, registered 19 Dec 2024 (company no. 1599895M). Until mid-June 2026 it was 100% owned by Ampace Technology Limited (Hong Kong), part of a Xiamen group that CATL consolidates. TDK of Japan bought 100% through Amperex Technology (Singapore) in June 2026. Sayari still shows the Ampace chain. 2,759 inbound rows (2,679 from China); 17 US-bound rows of cells and battery systems, Nov 2025 to Sep 2026.",
+   "source_call_ids": [
+    "s10-01",
+    "s10-04",
+    "s10-05",
+    "s10-07",
+    "s10-15",
+    "t10-03",
+    "t10-04"
+   ],
+   "sayari_url": "https://graph.sayari.com/resource/entity/ySemfyJJesFbfxEgW2SgCg"
+  },
+  {
+   "id": "TcV1qONXBV-YSjtqMe-yFQ",
+   "name": "Ampace Technology Limited",
+   "country": "HKG",
+   "type": "company",
+   "role": "parent",
+   "risk_flags": [
+    "owned_by_usa_section_1260h_entity",
+    "imports_from_usa_section_1260h_entity",
+    "exports_to_usa_section_1260h_entity"
+   ],
+   "identifiers": {
+    "hk_cr_number": "3177026",
+    "hk_br_number": "74288399"
+   },
+   "summary": "Hong Kong company (CR 3177026) that Malaysian company data names as Linergy's shareholder; The Edge, citing the Companies Commission of Malaysia, reported it held 100% before the TDK sale. Sayari shows it as a subsidiary of Xiamen Ampace. It was also the consignee on 6 US-bound cell rows from Linergy in Feb 2026, and Sayari shows a trade link from CATL to it.",
+   "source_call_ids": [
+    "s10-04",
+    "s10-05",
+    "s10-15",
+    "s10-17",
+    "t10-03"
+   ],
+   "sayari_url": "https://graph.sayari.com/resource/entity/TcV1qONXBV-YSjtqMe-yFQ"
+  },
+  {
+   "id": "sXzqumDIg-3LZrua0Pt_PA",
+   "name": "厦门新能安科技有限公司 (Xiamen Ampace Technology)",
+   "country": "CHN",
+   "type": "company",
+   "role": "parent",
+   "risk_flags": [
+    "owned_by_usa_section_1260h_entity",
+    "owned_by_regulatory_action_entity"
+   ],
+   "identifiers": {
+    "cn_uscc": "91350200MA8TJ86R2M"
+   },
+   "summary": "Xiamen battery maker, registered 7 Jul 2021 (USCC 91350200MA8TJ86R2M); a former name in the record is 厦门时代新能源科技有限公司. CATL's own March 2026 filing calls it a consolidated subsidiary: Xiamen Xinnenghe holds 85%, so CATL holds 59.5% indirectly. Its legal representative and general manager is 贾琢成 (Jia Zhuocheng). Sayari lists Ampace Technology Limited (HK) as its subsidiary.",
+   "source_call_ids": [
+    "s10-02",
+    "s10-03",
+    "s10-05",
+    "t10-01"
+   ],
+   "sayari_url": "https://graph.sayari.com/resource/entity/sXzqumDIg-3LZrua0Pt_PA"
+  },
+  {
+   "id": "bZXSPJMXNdy2zYpIvDww_A",
+   "name": "XIAMEN AMPACE TECHNOLOGY LIMITED (trade record)",
+   "country": "CHN",
+   "type": "company",
+   "role": "parent",
+   "risk_flags": [],
+   "identifiers": {},
+   "summary": "Trade-data record of Xiamen Ampace. Linergy's largest supplier: 1,044 of its 2,759 inbound rows. The rows we read include NCM cathode material, silicon-carbon anode material, conductive carbon black, coated cathode rolls, aluminium foil and copper foil.",
+   "source_call_ids": [
+    "s10-07",
+    "s10-09",
+    "s10-11",
+    "s10-12",
+    "s10-13",
+    "s10-14"
+   ],
+   "sayari_url": "https://graph.sayari.com/resource/entity/bZXSPJMXNdy2zYpIvDww_A"
+  },
+  {
+   "id": "8gdUB3Z6x69ZhJN5xfNYFQ",
+   "name": "厦门新能和科技有限公司 (Xiamen Xinnenghe Technology)",
+   "country": "CHN",
+   "type": "company",
+   "role": "parent",
+   "risk_flags": [
+    "owned_by_usa_section_1260h_entity"
+   ],
+   "identifiers": {
+    "cn_uscc": "91350200MA8W0TC734"
+   },
+   "summary": "Holds 85% of Xiamen Ampace (CATL filing). Sayari lists two shareholders: CATL and 厦门新能同科技有限公司. TDK's 2021–22 releases describe the CATL–ATL cell joint venture as 70% CATL, 30% ATL; CATL's 59.5% figure (85% x 70%) fits that split.",
+   "source_call_ids": [
+    "s10-03",
+    "s10-06",
+    "t10-01",
+    "t10-02"
+   ],
+   "sayari_url": "https://graph.sayari.com/resource/entity/8gdUB3Z6x69ZhJN5xfNYFQ"
+  },
+  {
+   "id": "ApHsZLGLjF2eLOFCSnZDVg",
+   "name": "厦门新能同科技有限公司 (Xiamen Xinnengtong Technology)",
+   "country": "CHN",
+   "type": "company",
+   "role": "parent",
+   "risk_flags": [],
+   "identifiers": {
+    "cn_uscc": "91350200MA8W0Q1M85"
+   },
+   "summary": "Shareholder of Xiamen Xinnenghe in Sayari. TDK's April 2022 release describes a Xiamen holding company for ATL's two joint ventures with CATL, 100% owned by ATL (a TDK subsidiary), with Jia Zhuocheng as representative. Matching the English name 'Ampeak' to this Chinese record is our inference from its role.",
+   "source_call_ids": [
+    "s10-06",
+    "t10-02"
+   ],
+   "sayari_url": "https://graph.sayari.com/resource/entity/ApHsZLGLjF2eLOFCSnZDVg"
+  },
+  {
+   "id": "Hknigg_iWcgcpp_dkWgQvA",
+   "name": "Contemporary Amperex Technology Co., Limited (CATL)",
+   "country": "CHN",
+   "type": "company",
+   "role": "parent",
+   "risk_flags": [
+    "usa_section_1260h",
+    "regulatory_action",
+    "sheffield_hallam_university_forced_labor_entity",
+    "owned_by_soe"
+   ],
+   "identifiers": {
+    "cn_uscc": "91350900587527783P",
+    "lei": "300300KINDY1K0E9I032"
+   },
+   "summary": "China's largest battery maker (USCC 91350900587527783P; HK stock code 03750). Added to the US Defense Department's Section 1260H list in the 6 January 2025 update. Holds 59.5% of Xiamen Ampace indirectly per its own filing. Sayari also lists it as a direct shareholder of Xiamen Ampace and of Xinnenghe.",
+   "source_call_ids": [
+    "s10-03",
+    "s10-06",
+    "s10-17",
+    "t10-01",
+    "t10-05"
+   ],
+   "sayari_url": "https://graph.sayari.com/resource/entity/Hknigg_iWcgcpp_dkWgQvA"
+  },
+  {
+   "id": "XsLwbCaQEeyzOMh9_sOl3w",
+   "name": "Amperex Technology (Singapore) Pte. Ltd.",
+   "country": "SGP",
+   "type": "company",
+   "role": "parent",
+   "risk_flags": [],
+   "identifiers": {
+    "sgp_uen": "202038271D",
+    "lei": "984500DAA01BC7DBD718"
+   },
+   "summary": "TDK's ATL-group financial and investment company in Singapore (UEN 202038271D, LEI 984500DAA01BC7DBD718). TDK's 19 May 2026 release says it is buying 100% of Linergy for US$241.1m; TDK's results for the quarter to 30 Jun 2026 confirm the purchase. On 18 Oct 2026 Sayari's record showed only an Indian subsidiary, not Linergy.",
+   "source_call_ids": [
+    "s10-16",
+    "s10-18",
+    "t10-03",
+    "t10-04"
+   ],
+   "sayari_url": "https://graph.sayari.com/resource/entity/XsLwbCaQEeyzOMh9_sOl3w"
+  },
+  {
+   "id": "RhhxdtCaRd_ia37ejZqiew",
+   "name": "Jia Zhuocheng (director record, Malaysia)",
+   "country": "CHN",
+   "type": "person",
+   "role": "officer",
+   "risk_flags": [],
+   "identifiers": {},
+   "summary": "Director of Linergy Power in Malaysian company data, with a Shanghai address. A 贾琢成 is legal representative and general manager of Xiamen Ampace, and TDK named a Jia Zhuocheng as representative of ATL's Xiamen holding company. No shared identifier links the records.",
+   "source_call_ids": [
+    "s10-04",
+    "t10-01",
+    "t10-02"
+   ],
+   "sayari_url": "https://graph.sayari.com/resource/entity/RhhxdtCaRd_ia37ejZqiew"
+  },
+  {
+   "id": "27up985UHLWoN9v1oWWKvQ",
+   "name": "贾琢成 (Jia Zhuocheng, officer record, Xiamen Ampace)",
+   "country": "CHN",
+   "type": "person",
+   "role": "officer",
+   "risk_flags": [],
+   "identifiers": {},
+   "summary": "General manager of Xiamen Ampace in Chinese registry data; CATL's filing names him as its legal representative.",
+   "source_call_ids": [
+    "s10-02",
+    "t10-01"
+   ],
+   "sayari_url": "https://graph.sayari.com/resource/entity/27up985UHLWoN9v1oWWKvQ"
+  },
+  {
+   "id": "RpVysafWvaXbqy0N4a5qvw",
+   "name": "HUNAN ZHONGKE SHINZOOM CO., LTD (trade record)",
+   "country": "CHN",
+   "type": "company",
+   "role": "producer",
+   "risk_flags": [],
+   "identifiers": {},
+   "summary": "Zhongke Electric's anode business (Case 3). 14 rows of artificial graphite (HS 3801.10) to Linergy, 10 Sep 2025 to 5 Feb 2026.",
+   "source_call_ids": [
+    "s10-10"
+   ],
+   "sayari_url": "https://graph.sayari.com/resource/entity/RpVysafWvaXbqy0N4a5qvw"
+  },
+  {
+   "id": "Lz1tqelhtyNnBxvG140gqA",
+   "name": "SHANGHAI SHANSHAN NEW MATERIAL CO.,LTD (trade record)",
+   "country": "CHN",
+   "type": "company",
+   "role": "producer",
+   "risk_flags": [],
+   "identifiers": {},
+   "summary": "Shanshan anode group. 3 rows of artificial graphite (one 'artificial graphite powder') to Linergy, Nov 2025 and Jan 2026.",
+   "source_call_ids": [
+    "s10-08",
+    "s10-10"
+   ],
+   "sayari_url": "https://graph.sayari.com/resource/entity/Lz1tqelhtyNnBxvG140gqA"
+  },
+  {
+   "id": "9jSUCs3ibkazFjdeQ_Xgbw",
+   "name": "XTC NEW ENERGY MATERIALS (trade record)",
+   "country": "CHN",
+   "type": "company",
+   "role": "producer",
+   "risk_flags": [],
+   "identifiers": {},
+   "summary": "Chinese cathode-material maker. 4 rows of HS 2842.90 salts (the code commonly used for cathode powders) to Linergy, 12 Sep 2025.",
+   "source_call_ids": [
+    "s10-11"
+   ],
+   "sayari_url": "https://graph.sayari.com/resource/entity/9jSUCs3ibkazFjdeQ_Xgbw"
+  },
+  {
+   "id": "mKWeDE6j7Ei8tMyB4eZtpg",
+   "name": "XTC NEW ENERGY MATERIALS (NINGDE) (trade record)",
+   "country": "CHN",
+   "type": "company",
+   "role": "producer",
+   "risk_flags": [],
+   "identifiers": {},
+   "summary": "Ningde unit of the same cathode group. One HS 2842.90 row to Linergy, 23 Oct 2025.",
+   "source_call_ids": [
+    "s10-11"
+   ],
+   "sayari_url": "https://graph.sayari.com/resource/entity/mKWeDE6j7Ei8tMyB4eZtpg"
+  },
+  {
+   "id": "h2bjYM0YRGfNwxnxi9HSsg",
+   "name": "QINGHAI TAIFENG PULEAD LITHIUM (trade record)",
+   "country": "CHN",
+   "type": "company",
+   "role": "producer",
+   "risk_flags": [],
+   "identifiers": {},
+   "summary": "Qinghai lithium-materials company. One HS 2842.90 row to Linergy, 16 Jan 2026.",
+   "source_call_ids": [
+    "s10-09",
+    "s10-11"
+   ],
+   "sayari_url": "https://graph.sayari.com/resource/entity/h2bjYM0YRGfNwxnxi9HSsg"
+  },
+  {
+   "id": "-aS1MMo3XHX5HXo7WsfZeg",
+   "name": "CHENGDU B&M SCIENCE AND (TECHNOLOGY) (trade record)",
+   "country": "CHN",
+   "type": "company",
+   "role": "producer",
+   "risk_flags": [],
+   "identifiers": {},
+   "summary": "One HS 2842.90 row to Linergy, 22 Sep 2025. The name is cut off in the record.",
+   "source_call_ids": [
+    "s10-11"
+   ],
+   "sayari_url": "https://graph.sayari.com/resource/entity/-aS1MMo3XHX5HXo7WsfZeg"
+  },
+  {
+   "id": "_hgyVvRYdgxLJ-RVYcxn8A",
+   "name": "JIUJIANG TINCI MATERIALS TECHNOLOGY CO., LTD (九江天赐高新材料)",
+   "country": "CHN",
+   "type": "company",
+   "role": "producer",
+   "risk_flags": [],
+   "identifiers": {},
+   "summary": "Tinci group's Jiujiang electrolyte company. 7 rows of HS 3824.99 to Linergy, Sep 2025 to Feb 2026, two described as 'electrolyte'.",
+   "source_call_ids": [
+    "s10-08",
+    "s10-09",
+    "s10-12"
+   ],
+   "sayari_url": "https://graph.sayari.com/resource/entity/_hgyVvRYdgxLJ-RVYcxn8A"
+  },
+  {
+   "id": "h4UwyGzpWI7LUgB94JFYNQ",
+   "name": "SHENZHEN CAPCHEM TECHNOLOGY CO.,LTD",
+   "country": "CHN",
+   "type": "company",
+   "role": "producer",
+   "risk_flags": [],
+   "identifiers": {},
+   "summary": "Electrolyte maker. 6 rows to Linergy, Dec 2025 to Feb 2026, described as 'electrolyte for lithium-ion battery'.",
+   "source_call_ids": [
+    "s10-12"
+   ],
+   "sayari_url": "https://graph.sayari.com/resource/entity/h4UwyGzpWI7LUgB94JFYNQ"
+  },
+  {
+   "id": "7yuWA5RAqqR3VKp322S_5g",
+   "name": "HIGH DAY LOGISTICS LTD",
+   "country": "CHN",
+   "type": "company",
+   "role": "trader",
+   "risk_flags": [],
+   "identifiers": {},
+   "summary": "Logistics company named as shipper on 18 rows of lithium-ion battery electrolyte in portable tanks to Linergy, Oct 2025 to Jun 2026. Likely a forwarder; the maker isn't named.",
+   "source_call_ids": [
+    "s10-12"
+   ],
+   "sayari_url": "https://graph.sayari.com/resource/entity/7yuWA5RAqqR3VKp322S_5g"
+  },
+  {
+   "id": "B34zjcMXPUfwMQRBjUgvPg",
+   "name": "HARBIN WAN XIN GRAPHITE VALLEY TECH (trade record)",
+   "country": "CHN",
+   "type": "company",
+   "role": "producer",
+   "risk_flags": [],
+   "identifiers": {},
+   "summary": "One row of carbon-nanotube conductive paste (HS 3824.99) to Linergy, 19 Feb 2026.",
+   "source_call_ids": [
+    "s10-12"
+   ],
+   "sayari_url": "https://graph.sayari.com/resource/entity/B34zjcMXPUfwMQRBjUgvPg"
+  },
+  {
+   "id": "wmXExqiq-S2ggSfGYDK23w",
+   "name": "YONG JIE NEW MATERIAL CO., LTD.",
+   "country": "CHN",
+   "type": "company",
+   "role": "producer",
+   "risk_flags": [],
+   "identifiers": {},
+   "summary": "2 rows of aluminium foil (HS 7607.11) to Linergy, 23 Sep 2025.",
+   "source_call_ids": [
+    "s10-13"
+   ],
+   "sayari_url": "https://graph.sayari.com/resource/entity/wmXExqiq-S2ggSfGYDK23w"
+  },
+  {
+   "id": "v6769GN3_Mt_rD2hVnw74Q",
+   "name": "DONGGUAN AMPACK TECHNOLOGY LIMITED",
+   "country": "CHN",
+   "type": "company",
+   "role": "producer",
+   "risk_flags": [],
+   "identifiers": {},
+   "summary": "ATL-group company in Dongguan; its trade record mentions Ampace Technology Limited. 53 inbound rows to Linergy in Sayari's supplier count; we didn't read their product lines.",
+   "source_call_ids": [
+    "s10-07",
+    "s10-08"
+   ],
+   "sayari_url": "https://graph.sayari.com/resource/entity/v6769GN3_Mt_rD2hVnw74Q"
+  },
+  {
+   "id": "BuQm2NSnUlkUMb83_BJxog",
+   "name": "Eaton Corporation",
+   "country": "USA",
+   "type": "company",
+   "role": "us_buyer",
+   "risk_flags": [],
+   "identifiers": {},
+   "summary": "Power-management company. 5 rows of 'rechargeable lithium ion battery, system' (HS 8507.60) from Linergy, 21 Aug to 13 Sep 2026, receiver Raleigh, NC (importer no. 34-0196300SK), departing Tawau. All after TDK took over Linergy.",
+   "source_call_ids": [
+    "s10-15",
+    "s10-17"
+   ],
+   "sayari_url": "https://graph.sayari.com/resource/entity/BuQm2NSnUlkUMb83_BJxog"
+  },
+  {
+   "id": "VsOcgTRnMskYDFTjvGl9Lg",
+   "name": "Eaton Corporation (IOR 34-0196300SK, record 2)",
+   "country": "USA",
+   "type": "company",
+   "role": "us_buyer",
+   "risk_flags": [],
+   "identifiers": {
+    "us_importer_number": "34-0196300SK"
+   },
+   "summary": "Second Eaton record, same Raleigh address. One row of battery systems from Linergy, 14 Aug 2026.",
+   "source_call_ids": [
+    "s10-15"
+   ],
+   "sayari_url": "https://graph.sayari.com/resource/entity/VsOcgTRnMskYDFTjvGl9Lg"
+  },
+  {
+   "id": "7v82EsEljCQ4PkCcnyMTBA",
+   "name": "Milwaykee Tool (misspelt record)",
+   "country": "USA",
+   "type": "company",
+   "role": "us_buyer",
+   "risk_flags": [],
+   "identifiers": {},
+   "summary": "2 rows of JP25P1 18650 cells 'for power tools' from Linergy, departing Kuala Lumpur 28 Feb 2026.",
+   "source_call_ids": [
+    "s10-15"
+   ],
+   "sayari_url": "https://graph.sayari.com/resource/entity/7v82EsEljCQ4PkCcnyMTBA"
+  },
+  {
+   "id": "XZmnm7ViWgrVw_gAfFPVgQ",
+   "name": "Milwaukee Tool (Linergy record)",
+   "country": "USA",
+   "type": "company",
+   "role": "us_buyer",
+   "risk_flags": [],
+   "identifiers": {},
+   "summary": "One row of HS 8507.80 accumulators from Linergy, 23 Jan 2026. Sayari's shortest path from this record to Xiamen Ampace runs only through trade with Linergy.",
+   "source_call_ids": [
+    "s10-15",
+    "s10-19"
+   ],
+   "sayari_url": "https://graph.sayari.com/resource/entity/XZmnm7ViWgrVw_gAfFPVgQ"
+  },
+  {
+   "id": "5ETwnZflxje1vTTjeNyT6w",
+   "name": "Stanly Black Decker Inc (misspelt record)",
+   "country": "USA",
+   "type": "company",
+   "role": "us_buyer",
+   "risk_flags": [],
+   "identifiers": {},
+   "summary": "One HS 8507.60 row from Linergy, 24 Dec 2025.",
+   "source_call_ids": [
+    "s10-15"
+   ],
+   "sayari_url": "https://graph.sayari.com/resource/entity/5ETwnZflxje1vTTjeNyT6w"
+  },
+  {
+   "id": "DoTF8asU1jM35geCp8Dg6Q",
+   "name": "Techtronic Product Development Ltd.",
+   "country": "USA",
+   "type": "company",
+   "role": "us_buyer",
+   "risk_flags": [],
+   "identifiers": {},
+   "summary": "Techtronic group unit named on one HS 8507.60 row from Linergy, 18 Nov 2025, routed to Anchorage.",
+   "source_call_ids": [
+    "s10-15"
+   ],
+   "sayari_url": "https://graph.sayari.com/resource/entity/DoTF8asU1jM35geCp8Dg6Q"
+  }
+ ],
+ "edges": [
+  {
+   "id": "e10-01",
+   "source": "TcV1qONXBV-YSjtqMe-yFQ",
+   "target": "ySemfyJJesFbfxEgW2SgCg",
+   "relation": "owns",
+   "edge_type": "contractual",
+   "confidence": "corroborated",
+   "confidence_reason": "A Malaysian registry-derived shareholder record in Sayari, plus The Edge citing the Companies Commission of Malaysia for 100%.",
+   "hs_codes": [],
+   "first_seen": "2024-12-19",
+   "last_seen": "2026-06-15",
+   "shipment_count": null,
+   "evidence": "Malaysian company data names Ampace Technology Limited as Linergy's shareholder; The Edge (20 May 2026) reported 100%. Historical: valid until the June 2026 sale to TDK, though Sayari still shows it as current.",
+   "source_call_ids": [
+    "s10-04",
+    "s10-05",
+    "t10-03"
+   ]
+  },
+  {
+   "id": "e10-02",
+   "source": "XsLwbCaQEeyzOMh9_sOl3w",
+   "target": "ySemfyJJesFbfxEgW2SgCg",
+   "relation": "owns",
+   "edge_type": "contractual",
+   "confidence": "corroborated",
+   "confidence_reason": "TDK's own board-resolution release and its quarterly results, plus The Edge's report; no registry record in Sayari yet.",
+   "hs_codes": [],
+   "first_seen": "2026-06-15",
+   "last_seen": null,
+   "shipment_count": null,
+   "evidence": "TDK: Amperex Technology (Singapore) to acquire 100% (1,017,605,244 shares) for US$241.1m; board approval 19 May 2026, transfer scheduled 15 Jun 2026; results for the quarter to 30 Jun 2026 say all shares were acquired. Before the deal TDK said it held 25.5% indirectly.",
+   "source_call_ids": [
+    "t10-03",
+    "t10-04",
+    "s10-18"
+   ]
+  },
+  {
+   "id": "e10-03",
+   "source": "sXzqumDIg-3LZrua0Pt_PA",
+   "target": "TcV1qONXBV-YSjtqMe-yFQ",
+   "relation": "owns",
+   "edge_type": "contractual",
+   "confidence": "documented",
+   "confidence_reason": "A registry subsidiary record in Sayari; no percentage given.",
+   "hs_codes": [],
+   "first_seen": null,
+   "last_seen": null,
+   "shipment_count": null,
+   "evidence": "Sayari's Xiamen Ampace profile lists Ampace Technology Limited (HK) as its subsidiary.",
+   "source_call_ids": [
+    "s10-02",
+    "s10-05"
+   ]
+  },
+  {
+   "id": "e10-04",
+   "source": "8gdUB3Z6x69ZhJN5xfNYFQ",
+   "target": "sXzqumDIg-3LZrua0Pt_PA",
+   "relation": "shareholder_of",
+   "edge_type": "contractual",
+   "confidence": "corroborated",
+   "confidence_reason": "Sayari's registry shareholder record plus CATL's own filing giving 85%.",
+   "hs_codes": [],
+   "first_seen": null,
+   "last_seen": null,
+   "shipment_count": null,
+   "evidence": "Xiamen Xinnenghe holds 85% of Xiamen Ampace (CATL guarantee announcement, 10 Mar 2026; same figure in the 15 Mar 2025 announcement). The other 15% sits with four Xiamen investment partnerships in Sayari.",
+   "source_call_ids": [
+    "s10-03",
+    "t10-01"
+   ]
+  },
+  {
+   "id": "e10-05",
+   "source": "Hknigg_iWcgcpp_dkWgQvA",
+   "target": "8gdUB3Z6x69ZhJN5xfNYFQ",
+   "relation": "shareholder_of",
+   "edge_type": "contractual",
+   "confidence": "corroborated",
+   "confidence_reason": "Sayari's registry shareholder record plus TDK's joint-venture disclosure (70%) and CATL's 59.5% look-through figure.",
+   "hs_codes": [],
+   "first_seen": null,
+   "last_seen": null,
+   "shipment_count": null,
+   "evidence": "CATL holds 70% of Xinnenghe, the CATL–ATL cell joint venture (TDK release; consistent with CATL's 'indirect 59.5%' = 85% x 70%). CATL calls Xinnenghe its controlled subsidiary.",
+   "source_call_ids": [
+    "s10-06",
+    "t10-01",
+    "t10-02"
+   ]
+  },
+  {
+   "id": "e10-06",
+   "source": "ApHsZLGLjF2eLOFCSnZDVg",
+   "target": "8gdUB3Z6x69ZhJN5xfNYFQ",
+   "relation": "shareholder_of",
+   "edge_type": "contractual",
+   "confidence": "corroborated",
+   "confidence_reason": "Sayari's registry shareholder record plus TDK's disclosure of ATL's 30% via a Xiamen holding company.",
+   "hs_codes": [],
+   "first_seen": null,
+   "last_seen": null,
+   "shipment_count": null,
+   "evidence": "厦门新能同 is Xinnenghe's other shareholder in Sayari; TDK describes ATL's 30% in the cell joint venture, held through a 100% ATL holding company.",
+   "source_call_ids": [
+    "s10-06",
+    "t10-02"
+   ]
+  },
+  {
+   "id": "e10-07",
+   "source": "Hknigg_iWcgcpp_dkWgQvA",
+   "target": "sXzqumDIg-3LZrua0Pt_PA",
+   "relation": "shareholder_of",
+   "edge_type": "contractual",
+   "confidence": "documented",
+   "confidence_reason": "A registry shareholder record in Sayari; CATL's filing describes only the indirect route, so this direct link may be historical.",
+   "hs_codes": [],
+   "first_seen": null,
+   "last_seen": null,
+   "shipment_count": null,
+   "evidence": "Sayari lists CATL as a direct shareholder of Xiamen Ampace, without a percentage. CATL's own filing gives the 85% via Xinnenghe only.",
+   "source_call_ids": [
+    "s10-03"
+   ]
+  },
+  {
+   "id": "e10-08",
+   "source": "RhhxdtCaRd_ia37ejZqiew",
+   "target": "ySemfyJJesFbfxEgW2SgCg",
+   "relation": "director_of",
+   "edge_type": "contractual",
+   "confidence": "documented",
+   "confidence_reason": "A Malaysian company-data director record in Sayari.",
+   "hs_codes": [],
+   "first_seen": null,
+   "last_seen": null,
+   "shipment_count": null,
+   "evidence": "Jia Zhuocheng (passport holder, Shanghai address) is a director of Linergy Power.",
+   "source_call_ids": [
+    "s10-04"
+   ]
+  },
+  {
+   "id": "e10-09",
+   "source": "27up985UHLWoN9v1oWWKvQ",
+   "target": "sXzqumDIg-3LZrua0Pt_PA",
+   "relation": "officer_of",
+   "edge_type": "contractual",
+   "confidence": "documented",
+   "confidence_reason": "A Chinese registry officer record in Sayari, matching CATL's filing.",
+   "hs_codes": [],
+   "first_seen": null,
+   "last_seen": null,
+   "shipment_count": null,
+   "evidence": "贾琢成 is general manager and legal representative of Xiamen Ampace.",
+   "source_call_ids": [
+    "s10-02",
+    "t10-01"
+   ]
+  },
+  {
+   "id": "e10-10",
+   "source": "RhhxdtCaRd_ia37ejZqiew",
+   "target": "27up985UHLWoN9v1oWWKvQ",
+   "relation": "possibly_same_as",
+   "edge_type": "inferred",
+   "confidence": "lead",
+   "confidence_reason": "Same name in pinyin and Chinese characters, both in the Ampace group; no shared identifier or address.",
+   "hs_codes": [],
+   "first_seen": null,
+   "last_seen": null,
+   "shipment_count": null,
+   "evidence": "The Linergy director 'Jia, Zhuocheng' and Xiamen Ampace's 贾琢成 may be one person, which would link the plant's board to its Xiamen parent.",
+   "source_call_ids": [
+    "s10-02",
+    "s10-04",
+    "t10-02"
+   ]
+  },
+  {
+   "id": "e10-11",
+   "source": "RpVysafWvaXbqy0N4a5qvw",
+   "target": "ySemfyJJesFbfxEgW2SgCg",
+   "relation": "ships_to",
+   "edge_type": "transactional",
+   "confidence": "documented",
+   "confidence_reason": "Dated, HS-coded shipment rows in Sayari.",
+   "hs_codes": [
+    "380110"
+   ],
+   "first_seen": "2025-09-10",
+   "last_seen": "2026-02-05",
+   "shipment_count": 14,
+   "evidence": "14 rows of artificial graphite (HS 3801.10), China to Malaysia.",
+   "source_call_ids": [
+    "s10-10"
+   ]
+  },
+  {
+   "id": "e10-12",
+   "source": "Lz1tqelhtyNnBxvG140gqA",
+   "target": "ySemfyJJesFbfxEgW2SgCg",
+   "relation": "ships_to",
+   "edge_type": "transactional",
+   "confidence": "documented",
+   "confidence_reason": "Dated, HS-coded shipment rows in Sayari.",
+   "hs_codes": [
+    "380110"
+   ],
+   "first_seen": "2025-11-17",
+   "last_seen": "2026-01-22",
+   "shipment_count": 3,
+   "evidence": "3 rows of artificial graphite, one 'artificial graphite powder', China to Malaysia.",
+   "source_call_ids": [
+    "s10-10"
+   ]
+  },
+  {
+   "id": "e10-13",
+   "source": "bZXSPJMXNdy2zYpIvDww_A",
+   "target": "ySemfyJJesFbfxEgW2SgCg",
+   "relation": "ships_to",
+   "edge_type": "transactional",
+   "confidence": "documented",
+   "confidence_reason": "Dated, HS-coded shipment rows in Sayari.",
+   "hs_codes": [
+    "284290",
+    "382499",
+    "760711",
+    "760719",
+    "760720",
+    "741011"
+   ],
+   "first_seen": "2025-09-10",
+   "last_seen": "2026-02-20",
+   "shipment_count": 1044,
+   "evidence": "1,044 rows in all from the parent's trade record. The cell-material rows we read: NCM cathode (1, HS 2842.90), silicon-carbon anode material, conductive carbon black and coated cathode rolls (4, HS 3824.99), aluminium foil (10, HS 7607) and copper foil (3, HS 7410.11), Sep 2025 to Feb 2026.",
+   "source_call_ids": [
+    "s10-07",
+    "s10-11",
+    "s10-12",
+    "s10-13",
+    "s10-14"
+   ]
+  },
+  {
+   "id": "e10-14",
+   "source": "9jSUCs3ibkazFjdeQ_Xgbw",
+   "target": "ySemfyJJesFbfxEgW2SgCg",
+   "relation": "ships_to",
+   "edge_type": "transactional",
+   "confidence": "documented",
+   "confidence_reason": "Dated, HS-coded shipment rows in Sayari.",
+   "hs_codes": [
+    "284290"
+   ],
+   "first_seen": "2025-09-12",
+   "last_seen": "2025-09-12",
+   "shipment_count": 4,
+   "evidence": "4 rows of HS 2842.90 salts (cathode-powder code), China to Malaysia.",
+   "source_call_ids": [
+    "s10-11"
+   ]
+  },
+  {
+   "id": "e10-15",
+   "source": "mKWeDE6j7Ei8tMyB4eZtpg",
+   "target": "ySemfyJJesFbfxEgW2SgCg",
+   "relation": "ships_to",
+   "edge_type": "transactional",
+   "confidence": "documented",
+   "confidence_reason": "A dated, HS-coded shipment row in Sayari.",
+   "hs_codes": [
+    "284290"
+   ],
+   "first_seen": "2025-10-23",
+   "last_seen": "2025-10-23",
+   "shipment_count": 1,
+   "evidence": "One row of HS 2842.90 salts.",
+   "source_call_ids": [
+    "s10-11"
+   ]
+  },
+  {
+   "id": "e10-16",
+   "source": "h2bjYM0YRGfNwxnxi9HSsg",
+   "target": "ySemfyJJesFbfxEgW2SgCg",
+   "relation": "ships_to",
+   "edge_type": "transactional",
+   "confidence": "documented",
+   "confidence_reason": "A dated, HS-coded shipment row in Sayari.",
+   "hs_codes": [
+    "284290"
+   ],
+   "first_seen": "2026-01-16",
+   "last_seen": "2026-01-16",
+   "shipment_count": 1,
+   "evidence": "One row of HS 2842.90 salts.",
+   "source_call_ids": [
+    "s10-11"
+   ]
+  },
+  {
+   "id": "e10-17",
+   "source": "-aS1MMo3XHX5HXo7WsfZeg",
+   "target": "ySemfyJJesFbfxEgW2SgCg",
+   "relation": "ships_to",
+   "edge_type": "transactional",
+   "confidence": "documented",
+   "confidence_reason": "A dated, HS-coded shipment row in Sayari.",
+   "hs_codes": [
+    "284290"
+   ],
+   "first_seen": "2025-09-22",
+   "last_seen": "2025-09-22",
+   "shipment_count": 1,
+   "evidence": "One row of HS 2842.90 salts.",
+   "source_call_ids": [
+    "s10-11"
+   ]
+  },
+  {
+   "id": "e10-18",
+   "source": "_hgyVvRYdgxLJ-RVYcxn8A",
+   "target": "ySemfyJJesFbfxEgW2SgCg",
+   "relation": "ships_to",
+   "edge_type": "transactional",
+   "confidence": "documented",
+   "confidence_reason": "Dated, HS-coded shipment rows in Sayari.",
+   "hs_codes": [
+    "382499"
+   ],
+   "first_seen": "2025-09-09",
+   "last_seen": "2026-02-28",
+   "shipment_count": 7,
+   "evidence": "7 rows of HS 3824.99 chemical preparations, two described as electrolyte; 4 loaded in Hong Kong.",
+   "source_call_ids": [
+    "s10-12"
+   ]
+  },
+  {
+   "id": "e10-19",
+   "source": "h4UwyGzpWI7LUgB94JFYNQ",
+   "target": "ySemfyJJesFbfxEgW2SgCg",
+   "relation": "ships_to",
+   "edge_type": "transactional",
+   "confidence": "documented",
+   "confidence_reason": "Dated, HS-coded shipment rows in Sayari.",
+   "hs_codes": [
+    "382499"
+   ],
+   "first_seen": "2025-12-03",
+   "last_seen": "2026-02-12",
+   "shipment_count": 6,
+   "evidence": "6 rows described as electrolyte for lithium-ion (and primary lithium) batteries.",
+   "source_call_ids": [
+    "s10-12"
+   ]
+  },
+  {
+   "id": "e10-20",
+   "source": "7yuWA5RAqqR3VKp322S_5g",
+   "target": "ySemfyJJesFbfxEgW2SgCg",
+   "relation": "ships_to",
+   "edge_type": "transactional",
+   "confidence": "documented",
+   "confidence_reason": "Dated, HS-coded shipment rows in Sayari.",
+   "hs_codes": [
+    "3824",
+    "382499"
+   ],
+   "first_seen": "2025-10-30",
+   "last_seen": "2026-06-09",
+   "shipment_count": 18,
+   "evidence": "18 rows of lithium-ion battery electrolyte in portable tanks, China to Malaysia; the last arrived 9 Jun 2026.",
+   "source_call_ids": [
+    "s10-12"
+   ]
+  },
+  {
+   "id": "e10-21",
+   "source": "B34zjcMXPUfwMQRBjUgvPg",
+   "target": "ySemfyJJesFbfxEgW2SgCg",
+   "relation": "ships_to",
+   "edge_type": "transactional",
+   "confidence": "documented",
+   "confidence_reason": "A dated, HS-coded shipment row in Sayari.",
+   "hs_codes": [
+    "382499"
+   ],
+   "first_seen": "2026-02-19",
+   "last_seen": "2026-02-19",
+   "shipment_count": 1,
+   "evidence": "One row of carbon-nanotube conductive paste.",
+   "source_call_ids": [
+    "s10-12"
+   ]
+  },
+  {
+   "id": "e10-22",
+   "source": "wmXExqiq-S2ggSfGYDK23w",
+   "target": "ySemfyJJesFbfxEgW2SgCg",
+   "relation": "ships_to",
+   "edge_type": "transactional",
+   "confidence": "documented",
+   "confidence_reason": "Dated, HS-coded shipment rows in Sayari.",
+   "hs_codes": [
+    "760711"
+   ],
+   "first_seen": "2025-09-23",
+   "last_seen": "2025-09-23",
+   "shipment_count": 2,
+   "evidence": "2 rows of rolled aluminium foil under 0.2 mm.",
+   "source_call_ids": [
+    "s10-13"
+   ]
+  },
+  {
+   "id": "e10-23",
+   "source": "v6769GN3_Mt_rD2hVnw74Q",
+   "target": "ySemfyJJesFbfxEgW2SgCg",
+   "relation": "ships_to",
+   "edge_type": "transactional",
+   "confidence": "documented",
+   "confidence_reason": "Sayari counts 53 shipment rows for this pair; we didn't read their dates or products.",
+   "hs_codes": [],
+   "first_seen": null,
+   "last_seen": null,
+   "shipment_count": 53,
+   "evidence": "53 inbound rows from an ATL-group company in Dongguan; products not read.",
+   "source_call_ids": [
+    "s10-07",
+    "s10-08"
+   ]
+  },
+  {
+   "id": "e10-24",
+   "source": "ySemfyJJesFbfxEgW2SgCg",
+   "target": "TcV1qONXBV-YSjtqMe-yFQ",
+   "relation": "ships_to",
+   "edge_type": "transactional",
+   "confidence": "documented",
+   "confidence_reason": "Dated, HS-coded shipment rows in Sayari.",
+   "hs_codes": [
+    "850760"
+   ],
+   "first_seen": "2026-02-05",
+   "last_seen": "2026-02-12",
+   "shipment_count": 6,
+   "evidence": "Before the TDK sale: 6 US-bound rows of JP30P1, JP25P1 (18650) and JP40P1 (21700) cylindrical cells 'for power tools', departing Kuala Lumpur, with Linergy's own shareholder as consignee.",
+   "source_call_ids": [
+    "s10-15"
+   ]
+  },
+  {
+   "id": "e10-25",
+   "source": "ySemfyJJesFbfxEgW2SgCg",
+   "target": "7v82EsEljCQ4PkCcnyMTBA",
+   "relation": "ships_to",
+   "edge_type": "transactional",
+   "confidence": "documented",
+   "confidence_reason": "Dated, HS-coded shipment rows in Sayari.",
+   "hs_codes": [
+    "850760"
+   ],
+   "first_seen": "2026-02-28",
+   "last_seen": "2026-02-28",
+   "shipment_count": 2,
+   "evidence": "Before the TDK sale: 2 rows of JP25P1 18650 cells for power tools, departing Kuala Lumpur.",
+   "source_call_ids": [
+    "s10-15"
+   ]
+  },
+  {
+   "id": "e10-26",
+   "source": "ySemfyJJesFbfxEgW2SgCg",
+   "target": "XZmnm7ViWgrVw_gAfFPVgQ",
+   "relation": "ships_to",
+   "edge_type": "transactional",
+   "confidence": "documented",
+   "confidence_reason": "A dated, HS-coded shipment row in Sayari.",
+   "hs_codes": [
+    "850780"
+   ],
+   "first_seen": "2026-01-23",
+   "last_seen": "2026-01-23",
+   "shipment_count": 1,
+   "evidence": "Before the TDK sale: one row of HS 8507.80 accumulators.",
+   "source_call_ids": [
+    "s10-15"
+   ]
+  },
+  {
+   "id": "e10-27",
+   "source": "ySemfyJJesFbfxEgW2SgCg",
+   "target": "5ETwnZflxje1vTTjeNyT6w",
+   "relation": "ships_to",
+   "edge_type": "transactional",
+   "confidence": "documented",
+   "confidence_reason": "A dated, HS-coded shipment row in Sayari.",
+   "hs_codes": [
+    "850760"
+   ],
+   "first_seen": "2025-12-24",
+   "last_seen": "2025-12-24",
+   "shipment_count": 1,
+   "evidence": "Before the TDK sale: one row of lithium-ion accumulators.",
+   "source_call_ids": [
+    "s10-15"
+   ]
+  },
+  {
+   "id": "e10-28",
+   "source": "ySemfyJJesFbfxEgW2SgCg",
+   "target": "DoTF8asU1jM35geCp8Dg6Q",
+   "relation": "ships_to",
+   "edge_type": "transactional",
+   "confidence": "documented",
+   "confidence_reason": "A dated, HS-coded shipment row in Sayari.",
+   "hs_codes": [
+    "850760"
+   ],
+   "first_seen": "2025-11-18",
+   "last_seen": "2025-11-18",
+   "shipment_count": 1,
+   "evidence": "Before the TDK sale: one row of lithium-ion accumulators, routed to Anchorage.",
+   "source_call_ids": [
+    "s10-15"
+   ]
+  },
+  {
+   "id": "e10-29",
+   "source": "ySemfyJJesFbfxEgW2SgCg",
+   "target": "BuQm2NSnUlkUMb83_BJxog",
+   "relation": "ships_to",
+   "edge_type": "transactional",
+   "confidence": "documented",
+   "confidence_reason": "Dated, HS-coded shipment rows in Sayari.",
+   "hs_codes": [
+    "850760"
+   ],
+   "first_seen": "2026-08-21",
+   "last_seen": "2026-09-13",
+   "shipment_count": 5,
+   "evidence": "After the TDK sale: 5 rows of 'rechargeable lithium ion battery, system' (120 to 210 pallets each, about 95 to 166 t), departing Tawau for Newark, receiver Raleigh, NC.",
+   "source_call_ids": [
+    "s10-15"
+   ]
+  },
+  {
+   "id": "e10-30",
+   "source": "ySemfyJJesFbfxEgW2SgCg",
+   "target": "VsOcgTRnMskYDFTjvGl9Lg",
+   "relation": "ships_to",
+   "edge_type": "transactional",
+   "confidence": "documented",
+   "confidence_reason": "A dated, HS-coded shipment row in Sayari.",
+   "hs_codes": [
+    "850760"
+   ],
+   "first_seen": "2026-08-14",
+   "last_seen": "2026-08-14",
+   "shipment_count": 1,
+   "evidence": "After the TDK sale: one row of 30 pallets of lithium-ion battery systems.",
+   "source_call_ids": [
+    "s10-15"
+   ]
+  },
+  {
+   "id": "e10-31",
+   "source": "Hknigg_iWcgcpp_dkWgQvA",
+   "target": "TcV1qONXBV-YSjtqMe-yFQ",
+   "relation": "ships_to",
+   "edge_type": "transactional",
+   "confidence": "lead",
+   "confidence_reason": "Sayari's graph shows a trade link, but we pulled no dated rows for it.",
+   "hs_codes": [],
+   "first_seen": null,
+   "last_seen": null,
+   "shipment_count": null,
+   "evidence": "Sayari's shortest path from Eaton to CATL runs Eaton ← Linergy ← Ampace Technology (HK) ← CATL, all trade links.",
+   "source_call_ids": [
+    "s10-17"
+   ]
+  }
+ ],
+ "calls": [
+  {
+   "id": "s10-01",
+   "timestamp": "2026-10-18T22:57:50Z",
+   "server": "sayari",
+   "tool": "get_entity_profile",
+   "params": {
+    "entity_id": "ySemfyJJesFbfxEgW2SgCg",
+    "relationships_limit": 50
+   },
+   "question": "What does Sayari hold on Linergy Power today?",
+   "purpose": "Resolve the plant",
+   "result_summary": "LINERGY POWER SDN BHD, registered 19 Dec 2024, company no. 1599895M, Serendah plant in Selangor; purpose: manufacture and trade of batteries. 1 shareholder, 3 directors, 1 officer, 2 lawyers; 78 shipments sent, 2,759 received. Sources include Malaysia SSM shareholder profiles and US imports.",
+   "interpretation": "Same plant as Case 6. The record has no sign of the June 2026 sale.",
+   "scorecard": "worked",
+   "entity_ids": [
+    "ySemfyJJesFbfxEgW2SgCg"
+   ],
+   "step": "plant"
+  },
+  {
+   "id": "s10-02",
+   "timestamp": "2026-10-18T22:57:50Z",
+   "server": "sayari",
+   "tool": "get_entity_profile",
+   "params": {
+    "entity_id": "sXzqumDIg-3LZrua0Pt_PA",
+    "relationships_limit": 50
+   },
+   "question": "Who runs Xiamen Ampace, and what sits under it?",
+   "purpose": "Map ownership",
+   "result_summary": "厦门新能安科技有限公司, registered 7 Jul 2021, active (28 Jul 2026), former name 厦门时代新能源科技有限公司. Subsidiary: AMPACE TECHNOLOGY LIMITED (HK). General manager 贾琢成; chairman 耿继斌; 6 shareholders and 8 holdings (not listed in this pull). No trade under this registry record.",
+   "interpretation": "The Hong Kong shareholder of Linergy sits directly under Xiamen Ampace. The general manager's name matches a Linergy director.",
+   "scorecard": "worked",
+   "entity_ids": [
+    "sXzqumDIg-3LZrua0Pt_PA",
+    "TcV1qONXBV-YSjtqMe-yFQ",
+    "27up985UHLWoN9v1oWWKvQ"
+   ],
+   "step": "owner"
+  },
+  {
+   "id": "s10-03",
+   "timestamp": "2026-10-18T22:58:05Z",
+   "server": "sayari",
+   "tool": "traverse_network",
+   "params": {
+    "entity_id": "sXzqumDIg-3LZrua0Pt_PA",
+    "relationships": [
+     "has_shareholder"
+    ],
+    "max_depth": 1,
+    "limit": 20,
+    "response_mode": "full"
+   },
+   "question": "Who are Xiamen Ampace's shareholders, and with what shares?",
+   "purpose": "Map ownership",
+   "result_summary": "6 shareholders: 厦门新能和科技有限公司 (USCC 91350200MA8W0TC734), CATL, and four Xiamen investment partnerships (博睿荣景, 博智荣创, 博悦荣安, 博睿荣欣). No percentages.",
+   "interpretation": "CATL appears directly and through Xinnenghe. Percentages have to come from filings.",
+   "scorecard": "partial",
+   "entity_ids": [
+    "sXzqumDIg-3LZrua0Pt_PA",
+    "8gdUB3Z6x69ZhJN5xfNYFQ",
+    "Hknigg_iWcgcpp_dkWgQvA"
+   ],
+   "step": "owner"
+  },
+  {
+   "id": "s10-04",
+   "timestamp": "2026-10-18T22:58:05Z",
+   "server": "sayari",
+   "tool": "traverse_network",
+   "params": {
+    "entity_id": "ySemfyJJesFbfxEgW2SgCg",
+    "relationships": [
+     "has_shareholder",
+     "has_director",
+     "has_officer"
+    ],
+    "max_depth": 1,
+    "limit": 20,
+    "response_mode": "full"
+   },
+   "question": "Who owns and runs Linergy, per the registry?",
+   "purpose": "Map ownership",
+   "result_summary": "Shareholder: AMPACE TECHNOLOGY LIMITED (HK, CR 3177026). Directors: JIA, ZHUOCHENG (Shanghai address), XU, SHUANG (Nanjing address), WONG WANG KIT (Kuala Lumpur). Officer: a Malaysian company secretary flagged for mass registration. No percentage, no TDK or Amperex (Singapore).",
+   "interpretation": "On 18 Oct 2026 Sayari still shows the pre-sale shareholder. The Jia Zhuocheng name ties the board to Xiamen Ampace's general manager (name only).",
+   "scorecard": "worked",
+   "entity_ids": [
+    "ySemfyJJesFbfxEgW2SgCg",
+    "TcV1qONXBV-YSjtqMe-yFQ",
+    "RhhxdtCaRd_ia37ejZqiew"
+   ],
+   "step": "owner"
+  },
+  {
+   "id": "s10-05",
+   "timestamp": "2026-10-18T22:58:20Z",
+   "server": "sayari",
+   "tool": "find_beneficial_owners",
+   "params": {
+    "entity_id": "ySemfyJJesFbfxEgW2SgCg",
+    "max_depth": 4,
+    "entity_types": [
+     "company"
+    ],
+    "limit": 25,
+    "response_mode": "compact"
+   },
+   "question": "How far up does Linergy's ownership chain go in Sayari?",
+   "purpose": "Map ownership",
+   "result_summary": "25 owners (saved to file and parsed): Ampace Technology Limited (1), Xiamen Ampace (2), Xinnenghe, CATL and four partnerships (3), and at level 4 CATL's own shareholders, e.g. 厦门瑞庭投资, 北京华鼎新动力, UBS Group, Morgan Stanley, HHLR, Kuwait Investment Authority. Paths flagged 'partial_path'; no percentages.",
+   "interpretation": "Sayari traces the chain to CATL and beyond, but gives no shares and still shows the old owner.",
+   "scorecard": "partial",
+   "entity_ids": [
+    "ySemfyJJesFbfxEgW2SgCg",
+    "TcV1qONXBV-YSjtqMe-yFQ",
+    "sXzqumDIg-3LZrua0Pt_PA",
+    "8gdUB3Z6x69ZhJN5xfNYFQ",
+    "Hknigg_iWcgcpp_dkWgQvA"
+   ],
+   "step": "owner"
+  },
+  {
+   "id": "s10-06",
+   "timestamp": "2026-10-18T22:58:33Z",
+   "server": "sayari",
+   "tool": "traverse_network",
+   "params": {
+    "entity_id": "8gdUB3Z6x69ZhJN5xfNYFQ",
+    "relationships": [
+     "has_shareholder"
+    ],
+    "max_depth": 1,
+    "limit": 20,
+    "response_mode": "compact"
+   },
+   "question": "Who owns Xiamen Xinnenghe, the 85% holder?",
+   "purpose": "Map ownership",
+   "result_summary": "2 shareholders: CATL and 厦门新能同科技有限公司 (USCC 91350200MA8W0Q1M85, same Hongtang Road address block). No percentages.",
+   "interpretation": "The 85% holder is the CATL–ATL joint venture. TDK's disclosures give the 70/30 split.",
+   "scorecard": "worked",
+   "entity_ids": [
+    "8gdUB3Z6x69ZhJN5xfNYFQ",
+    "Hknigg_iWcgcpp_dkWgQvA",
+    "ApHsZLGLjF2eLOFCSnZDVg"
+   ],
+   "step": "owner"
+  },
+  {
+   "id": "t10-01",
+   "timestamp": "2026-10-18T22:58:45Z",
+   "server": "tavily",
+   "tool": "tavily_search",
+   "params": {
+    "query": "宁德时代 厦门新能安科技有限公司 持股比例 年度报告",
+    "max_results": 8,
+    "search_depth": "advanced"
+   },
+   "question": "What share of Xiamen Ampace does CATL hold, from CATL's own filings?",
+   "purpose": "Ownership percentages",
+   "result_summary": "CATL's guarantee-quota announcements (cninfo, 10 Mar 2026 and 15 Mar 2025) list Xiamen Ampace as a consolidated controlled subsidiary: Xiamen Xinnenghe holds 85%, CATL holds 59.5% indirectly; legal representative 贾琢成; registered capital RMB 5bn; 2025 revenue about RMB 12.6bn. Also returned CATL's Q1 2026 report (top shareholder 厦门瑞庭投资 22.45%) and a 2024 article describing Xinnenghe as 70% CATL, 30% ATL-owned 新能同.",
+   "interpretation": "CATL consolidates Xiamen Ampace and holds 59.5% of it, so until June 2026 Linergy sat inside the CATL group.",
+   "scorecard": "worked",
+   "entity_ids": [
+    "sXzqumDIg-3LZrua0Pt_PA",
+    "8gdUB3Z6x69ZhJN5xfNYFQ",
+    "Hknigg_iWcgcpp_dkWgQvA",
+    "27up985UHLWoN9v1oWWKvQ"
+   ],
+   "step": "owner"
+  },
+  {
+   "id": "t10-02",
+   "timestamp": "2026-10-18T22:58:45Z",
+   "server": "tavily",
+   "tool": "tavily_search",
+   "params": {
+    "query": "Ampace Xiamen CATL TDK shareholding percentage joint venture Ampace Technology",
+    "max_results": 8,
+    "search_depth": "advanced"
+   },
+   "question": "What do TDK's disclosures say about the CATL–ATL joint ventures?",
+   "purpose": "Ownership percentages",
+   "result_summary": "TDK releases (28 Apr 2021, 27 Apr 2022): the cell joint venture (RMB 5bn) is ATL 30%, CATL 70%; the pack joint venture is ATL 70%, CATL 30%; a new Xiamen holding company (representative Jia Zhuocheng) is 100% ATL. BCPG and TDK product pages describe Ampace as an ATL–CATL joint venture.",
+   "interpretation": "Confirms the 70% CATL stake in the 85% holder. ATL is a TDK subsidiary, so TDK had an indirect stake all along.",
+   "scorecard": "worked",
+   "entity_ids": [
+    "8gdUB3Z6x69ZhJN5xfNYFQ",
+    "ApHsZLGLjF2eLOFCSnZDVg",
+    "Hknigg_iWcgcpp_dkWgQvA"
+   ],
+   "step": "owner"
+  },
+  {
+   "id": "s10-07",
+   "timestamp": "2026-10-18T22:58:53Z",
+   "server": "sayari",
+   "tool": "search_trade_facets",
+   "params": {
+    "scope": "shipments",
+    "query": "\"LINERGY POWER\"",
+    "arrival_country": "MYS",
+    "bucket_limit": 25
+   },
+   "question": "What does Linergy import, from where and from whom?",
+   "purpose": "Map inputs",
+   "result_summary": "2,759 rows, 15 May 2025 to 9 Jun 2026. Departure: China 2,679, Hong Kong 78, Singapore 2. Top supplier bZXSPJMXNdy2zYpIvDww_A (Xiamen Ampace trade record) 1,044 rows; Zhuhai Titans 223. Top HS codes are machinery and fittings (8479.89 169, 7326.90 143, 9403.20 137), battery parts (8507.90 115) and cells (8507.60 34).",
+   "interpretation": "97% of inbound rows leave China; over a third come from the parent itself. Much is plant equipment.",
+   "scorecard": "worked",
+   "entity_ids": [
+    "ySemfyJJesFbfxEgW2SgCg",
+    "bZXSPJMXNdy2zYpIvDww_A",
+    "v6769GN3_Mt_rD2hVnw74Q"
+   ],
+   "step": "in"
+  },
+  {
+   "id": "s10-08",
+   "timestamp": "2026-10-18T22:59:05Z",
+   "server": "sayari",
+   "tool": "traverse_network",
+   "params": {
+    "entity_id": "ySemfyJJesFbfxEgW2SgCg",
+    "relationships": [
+     "receives_from"
+    ],
+    "max_depth": 1,
+    "limit": 60,
+    "response_mode": "compact"
+   },
+   "question": "Who are Linergy's named suppliers?",
+   "purpose": "Map inputs",
+   "result_summary": "50 suppliers returned (saved to file and parsed), mostly Chinese equipment makers (Wuxi Lead Intelligent, Hymson Laser, Guangdong Lead, Linde China forklifts). Materials suppliers include Shanghai Shanshan, 九江天赐 (Tinci), Liyang and Ningde 'Advanced Material Tech', Ampace Technology Limited and Dongguan Ampack.",
+   "interpretation": "A new plant being fitted out with Chinese production lines, and fed by Chinese materials makers.",
+   "scorecard": "worked",
+   "entity_ids": [
+    "ySemfyJJesFbfxEgW2SgCg",
+    "Lz1tqelhtyNnBxvG140gqA",
+    "_hgyVvRYdgxLJ-RVYcxn8A",
+    "v6769GN3_Mt_rD2hVnw74Q",
+    "TcV1qONXBV-YSjtqMe-yFQ"
+   ],
+   "step": "in"
+  },
+  {
+   "id": "s10-09",
+   "timestamp": "2026-10-18T22:59:20Z",
+   "server": "sayari",
+   "tool": "get_upstream_supply_chain",
+   "params": {
+    "entity_id": "ySemfyJJesFbfxEgW2SgCg",
+    "max_depth": 1,
+    "product": [
+     "3801",
+     "2842",
+     "2841",
+     "2836",
+     "3824",
+     "7607",
+     "7410",
+     "3920",
+     "3921",
+     "8507",
+     "2811",
+     "2826"
+    ],
+    "limit": 40,
+    "response_mode": "compact"
+   },
+   "question": "Which suppliers send cell materials (graphite, cathode, electrolyte, foils, separator)?",
+   "purpose": "Map inputs",
+   "result_summary": "40 paths (saved to file and parsed): Xiamen Ampace trade record (several), Zhuhai Titans, Ningde and Liyang Advanced Material, Qinghai Taifeng Pulead Lithium, Tinci, Jiangyin Sinbon, Wuxi Lead and others. No HS or dates in the compact output.",
+   "interpretation": "Useful as a list; we then pulled rows HS code by HS code.",
+   "scorecard": "partial",
+   "entity_ids": [
+    "ySemfyJJesFbfxEgW2SgCg",
+    "bZXSPJMXNdy2zYpIvDww_A",
+    "h2bjYM0YRGfNwxnxi9HSsg",
+    "_hgyVvRYdgxLJ-RVYcxn8A"
+   ],
+   "step": "in"
+  },
+  {
+   "id": "s10-10",
+   "timestamp": "2026-10-18T22:59:30Z",
+   "server": "sayari",
+   "tool": "search_shipments",
+   "params": {
+    "query": "\"LINERGY POWER\"",
+    "arrival_country": "MYS",
+    "hs_code": "3801",
+    "limit": 200,
+    "response_mode": "export"
+   },
+   "question": "Re-check: who sends graphite to Linergy?",
+   "purpose": "Map inputs",
+   "result_summary": "17 rows of artificial graphite (HS 3801.10), China to Malaysia: Hunan Zhongke Shinzoom 14 (10 Sep 2025 to 5 Feb 2026), Shanghai Shanshan 3 (17 Nov 2025, 22 Jan 2026).",
+   "interpretation": "Same as Case 6. Both are Chinese anode groups.",
+   "scorecard": "worked",
+   "entity_ids": [
+    "ySemfyJJesFbfxEgW2SgCg",
+    "RpVysafWvaXbqy0N4a5qvw",
+    "Lz1tqelhtyNnBxvG140gqA"
+   ],
+   "step": "in"
+  },
+  {
+   "id": "s10-11",
+   "timestamp": "2026-10-18T22:59:35Z",
+   "server": "sayari",
+   "tool": "search_shipments",
+   "params": {
+    "query": "\"LINERGY POWER\"",
+    "arrival_country": "MYS",
+    "hs_code": "2842",
+    "limit": 200,
+    "response_mode": "export"
+   },
+   "question": "Who sends cathode powder (HS 2842) to Linergy?",
+   "purpose": "Map inputs",
+   "result_summary": "8 rows, all from China: XTC New Energy Materials 4 (12 Sep 2025), XTC (Ningde) 1, Chengdu B&M 1, Qinghai Taifeng Pulead 1 (16 Jan 2026) and Xiamen Ampace 1 ('nickel-cobalt-manganese', 6 Nov 2025).",
+   "interpretation": "Small, trial-scale cathode volumes from Chinese makers and from the parent.",
+   "scorecard": "worked",
+   "entity_ids": [
+    "ySemfyJJesFbfxEgW2SgCg",
+    "9jSUCs3ibkazFjdeQ_Xgbw",
+    "mKWeDE6j7Ei8tMyB4eZtpg",
+    "-aS1MMo3XHX5HXo7WsfZeg",
+    "h2bjYM0YRGfNwxnxi9HSsg",
+    "bZXSPJMXNdy2zYpIvDww_A"
+   ],
+   "step": "in"
+  },
+  {
+   "id": "s10-12",
+   "timestamp": "2026-10-18T22:59:40Z",
+   "server": "sayari",
+   "tool": "search_shipments",
+   "params": {
+    "query": "\"LINERGY POWER\"",
+    "arrival_country": "MYS",
+    "hs_code": "3824",
+    "limit": 200,
+    "response_mode": "export"
+   },
+   "question": "Who sends electrolyte and other cell chemicals (HS 3824)?",
+   "purpose": "Map inputs",
+   "result_summary": "36 rows: High Day Logistics 18 (lithium-ion battery electrolyte in tanks, to 9 Jun 2026), Jiujiang Tinci 7, Shenzhen Capchem 6, Xiamen Ampace 4 (silicon-carbon anode material, conductive carbon black, coated cathode rolls), Harbin Wanxin Graphite Valley 1 (carbon-nanotube paste).",
+   "interpretation": "Electrolyte comes from two big Chinese makers, plus a forwarder. The parent also sends anode and cathode materials coded as chemical preparations.",
+   "scorecard": "worked",
+   "entity_ids": [
+    "ySemfyJJesFbfxEgW2SgCg",
+    "7yuWA5RAqqR3VKp322S_5g",
+    "_hgyVvRYdgxLJ-RVYcxn8A",
+    "h4UwyGzpWI7LUgB94JFYNQ",
+    "B34zjcMXPUfwMQRBjUgvPg",
+    "bZXSPJMXNdy2zYpIvDww_A"
+   ],
+   "step": "in"
+  },
+  {
+   "id": "s10-13",
+   "timestamp": "2026-10-18T22:59:52Z",
+   "server": "sayari",
+   "tool": "search_shipments",
+   "params": {
+    "query": "\"LINERGY POWER\"",
+    "arrival_country": "MYS",
+    "hs_code": "7607",
+    "limit": 200,
+    "response_mode": "export"
+   },
+   "question": "Who sends aluminium foil (the cathode current collector)?",
+   "purpose": "Map inputs",
+   "result_summary": "12 rows from China: Xiamen Ampace 10 (Sep 2025 to Feb 2026), Yong Jie New Material 2 (23 Sep 2025).",
+   "interpretation": "Foil comes mainly from the parent.",
+   "scorecard": "worked",
+   "entity_ids": [
+    "ySemfyJJesFbfxEgW2SgCg",
+    "bZXSPJMXNdy2zYpIvDww_A",
+    "wmXExqiq-S2ggSfGYDK23w"
+   ],
+   "step": "in"
+  },
+  {
+   "id": "s10-14",
+   "timestamp": "2026-10-18T22:59:52Z",
+   "server": "sayari",
+   "tool": "search_shipments",
+   "params": {
+    "query": "\"LINERGY POWER\"",
+    "arrival_country": "MYS",
+    "hs_code": "7410",
+    "limit": 200,
+    "response_mode": "export"
+   },
+   "question": "Who sends copper foil (the anode current collector)?",
+   "purpose": "Map inputs",
+   "result_summary": "3 rows of refined copper foil (HS 7410.11), all from Xiamen Ampace, 10 Sep 2025 to 6 Jan 2026.",
+   "interpretation": "The parent supplies copper foil too.",
+   "scorecard": "worked",
+   "entity_ids": [
+    "ySemfyJJesFbfxEgW2SgCg",
+    "bZXSPJMXNdy2zYpIvDww_A"
+   ],
+   "step": "in"
+  },
+  {
+   "id": "t10-03",
+   "timestamp": "2026-10-18T23:00:12Z",
+   "server": "tavily",
+   "tool": "tavily_extract",
+   "params": {
+    "urls": [
+     "https://www.tdk.com/en/news_center/press/20260519_00.html",
+     "https://theedgemalaysia.com/node/804307"
+    ],
+    "query": "Linergy Power acquisition shares Ampace Technology Amperex Technology Singapore"
+   },
+   "question": "Did TDK buy Linergy, and from whom?",
+   "purpose": "Ownership change",
+   "result_summary": "TDK release, 19 May 2026: Amperex Technology (Singapore) Pte. Ltd. to acquire 100% (1,017,605,244 shares) of Linergy for US$240m plus US$1.1m fees; board resolution and agreement 19 May 2026; share transfer scheduled 15 Jun 2026; Linergy net assets US$217.3m at 31 Mar 2026. The Edge, 20 May 2026: per the Companies Commission of Malaysia, Linergy is wholly owned by Ampace Technology Ltd; TDK withheld the seller's name at the major shareholder's request.",
+   "interpretation": "Confirms the pre-sale 100% Ampace stake and the planned date of the change of owner.",
+   "scorecard": "worked",
+   "entity_ids": [
+    "ySemfyJJesFbfxEgW2SgCg",
+    "XsLwbCaQEeyzOMh9_sOl3w",
+    "TcV1qONXBV-YSjtqMe-yFQ"
+   ],
+   "step": "owner"
+  },
+  {
+   "id": "t10-04",
+   "timestamp": "2026-10-18T23:00:20Z",
+   "server": "tavily",
+   "tool": "tavily_search",
+   "params": {
+    "query": "TDK first quarter fiscal 2026 results Linergy Power acquired all shares consolidated subsidiary",
+    "include_domains": [
+     "tdk.com"
+    ],
+    "max_results": 5,
+    "search_depth": "advanced"
+   },
+   "question": "Did the sale complete?",
+   "purpose": "Ownership change",
+   "result_summary": "TDK's results for the three months to 30 Jun 2026 (filed 31 Jul 2026) say TDK Group acquired all shares of Linergy Power in the quarter. The 19 May release adds that TDK already held 25.5% indirectly and had no personnel link.",
+   "interpretation": "Linergy has been a TDK subsidiary since about mid-June 2026. The 25.5% fits ATL's 30% of the 85% holder (our arithmetic).",
+   "scorecard": "worked",
+   "entity_ids": [
+    "ySemfyJJesFbfxEgW2SgCg",
+    "XsLwbCaQEeyzOMh9_sOl3w"
+   ],
+   "step": "owner"
+  },
+  {
+   "id": "t10-05",
+   "timestamp": "2026-10-18T23:00:20Z",
+   "server": "tavily",
+   "tool": "tavily_search",
+   "params": {
+    "query": "Contemporary Amperex Technology CATL added Section 1260H Chinese military companies list January 2025 Department of Defense",
+    "max_results": 6,
+    "search_depth": "advanced"
+   },
+   "question": "When was CATL put on the Section 1260H list?",
+   "purpose": "Check the 1260H flag",
+   "result_summary": "Hogan Lovells: DoD published the updated list on 6 Jan 2025 in the Federal Register (134 entities). Communications Litigation Today (22 Apr 2025): the Pentagon added CATL in January; a CATL spokesperson called it an error and said CATL was asking DoD to correct it. A 2026 newswire piece repeats the January 2025 designation.",
+   "interpretation": "Sayari's 'usa_section_1260h' flag on CATL matches the January 2025 update. We read law-firm and trade-press summaries, not the DoD list itself.",
+   "scorecard": "partial",
+   "entity_ids": [
+    "Hknigg_iWcgcpp_dkWgQvA"
+   ],
+   "step": "context"
+  },
+  {
+   "id": "s10-15",
+   "timestamp": "2026-10-18T23:00:32Z",
+   "server": "sayari",
+   "tool": "search_shipments",
+   "params": {
+    "query": "\"LINERGY POWER\"",
+    "arrival_country": "USA",
+    "limit": 50,
+    "response_mode": "full"
+   },
+   "question": "Which US buyers receive Linergy's cells, and when?",
+   "purpose": "Map outputs",
+   "result_summary": "17 rows (saved to file and parsed). Malaysian export data, Nov 2025 to Feb 2026: Ampace Technology Limited 6 (JP30P1/JP25P1 18650 and JP40P1 21700 power-tool cells), Milwaykee Tool 2 + Milwaukee Tool 1, Stanly Black Decker 1, Techtronic Product Development 1. US import data, 14 Aug to 13 Sep 2026: Eaton 5 + 1 under a second record ('rechargeable lithium ion battery, system', receiver Raleigh, NC, departing Tawau). Linergy now carries an 'export_controls_section_1260h_50_percent_rule' flag.",
+   "interpretation": "Split by owner: 11 rows left while Linergy was in the CATL-consolidated group; the 6 Eaton rows left after TDK took over. No rows for Mar to Jul 2026: Malaysian export data stops in Feb 2026.",
+   "scorecard": "worked",
+   "entity_ids": [
+    "ySemfyJJesFbfxEgW2SgCg",
+    "TcV1qONXBV-YSjtqMe-yFQ",
+    "7v82EsEljCQ4PkCcnyMTBA",
+    "XZmnm7ViWgrVw_gAfFPVgQ",
+    "5ETwnZflxje1vTTjeNyT6w",
+    "DoTF8asU1jM35geCp8Dg6Q",
+    "BuQm2NSnUlkUMb83_BJxog",
+    "VsOcgTRnMskYDFTjvGl9Lg"
+   ],
+   "step": "out"
+  },
+  {
+   "id": "s10-16",
+   "timestamp": "2026-10-18T23:01:13Z",
+   "server": "sayari",
+   "tool": "search_entities",
+   "params": {
+    "query": "\"Amperex Technology (Singapore)\"",
+    "limit": 5,
+    "response_mode": "compact"
+   },
+   "question": "Does Sayari have a record for the new owner?",
+   "purpose": "Ownership change",
+   "result_summary": "1 record: AMPEREX TECHNOLOGY (SINGAPORE) PTE. LTD. (XsLwbCaQEeyzOMh9_sOl3w), UEN 202038271D, LEI 984500DAA01BC7DBD718, countries SGP and JPN.",
+   "interpretation": "The buyer exists in Sayari, so we can check whether the link to Linergy has appeared.",
+   "scorecard": "worked",
+   "entity_ids": [
+    "XsLwbCaQEeyzOMh9_sOl3w"
+   ],
+   "step": "gap"
+  },
+  {
+   "id": "s10-17",
+   "timestamp": "2026-10-18T23:01:13Z",
+   "server": "sayari",
+   "tool": "find_shortest_path",
+   "params": {
+    "source_entity_id": "BuQm2NSnUlkUMb83_BJxog",
+    "target_entity_id": "Hknigg_iWcgcpp_dkWgQvA"
+   },
+   "question": "Does Eaton's own record connect to CATL other than through Linergy?",
+   "purpose": "Buyer links",
+   "result_summary": "Path of 3 hops: Eaton ← Linergy (trade) ← Ampace Technology Limited (trade) ← CATL (trade). No ownership or officer link.",
+   "interpretation": "Eaton's record links to the CATL group only through what it buys. Nothing in Eaton's own records ties it to Ampace or CATL.",
+   "scorecard": "worked",
+   "entity_ids": [
+    "BuQm2NSnUlkUMb83_BJxog",
+    "ySemfyJJesFbfxEgW2SgCg",
+    "TcV1qONXBV-YSjtqMe-yFQ",
+    "Hknigg_iWcgcpp_dkWgQvA"
+   ],
+   "step": "gap"
+  },
+  {
+   "id": "s10-18",
+   "timestamp": "2026-10-18T23:01:25Z",
+   "server": "sayari",
+   "tool": "find_downstream_entities",
+   "params": {
+    "entity_id": "XsLwbCaQEeyzOMh9_sOl3w",
+    "max_depth": 1,
+    "limit": 25,
+    "response_mode": "compact"
+   },
+   "question": "Does Sayari show Amperex Technology (Singapore) owning Linergy yet?",
+   "purpose": "Ownership change",
+   "result_summary": "1 subsidiary: ATLBATTERY TECHNOLOGY (INDIA) PRIVATE LIMITED. No Linergy.",
+   "interpretation": "Four months after completion, Sayari still doesn't record the sale. Registry-based screening of Linergy would show a CATL-group owner.",
+   "scorecard": "worked",
+   "entity_ids": [
+    "XsLwbCaQEeyzOMh9_sOl3w"
+   ],
+   "step": "gap"
+  },
+  {
+   "id": "s10-19",
+   "timestamp": "2026-10-18T23:01:25Z",
+   "server": "sayari",
+   "tool": "find_shortest_path",
+   "params": {
+    "source_entity_id": "XZmnm7ViWgrVw_gAfFPVgQ",
+    "target_entity_id": "sXzqumDIg-3LZrua0Pt_PA"
+   },
+   "question": "Does Milwaukee Tool's record connect to Xiamen Ampace other than through Linergy?",
+   "purpose": "Buyer links",
+   "result_summary": "Path: Milwaukee Tool ← Linergy (trade) ← Ampace Technology Limited (trade) → Xiamen Ampace (shareholder). No direct link.",
+   "interpretation": "As with Eaton, the only route is trade through Linergy.",
+   "scorecard": "worked",
+   "entity_ids": [
+    "XZmnm7ViWgrVw_gAfFPVgQ",
+    "ySemfyJJesFbfxEgW2SgCg",
+    "TcV1qONXBV-YSjtqMe-yFQ",
+    "sXzqumDIg-3LZrua0Pt_PA"
+   ],
+   "step": "gap"
+  }
+ ]
+}

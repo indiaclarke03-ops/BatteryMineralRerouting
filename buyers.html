@@ -5,6 +5,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Paper Trail: Check a Buyer</title>
   <meta name="description" content="Pick a US battery buyer and see every supplier in the traced supply chains, who owns it, and what it shipped.">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Paper Trail">
+  <meta property="og:title" content="Paper Trail: Check a Buyer">
+  <meta property="og:description" content="Pick a US battery buyer and see every supplier in the traced supply chains, who owns it, and what it shipped.">
+  <meta property="og:url" content="https://indiaclarke03-ops.github.io/BatteryMineralRerouting/buyers.html">
+  <meta property="og:image" content="https://indiaclarke03-ops.github.io/BatteryMineralRerouting/assets/img/social-card.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="theme-color" content="#0F5E5C">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600&family=Source+Serif+4:opsz,wght@8..60,600;8..60,700&display=swap" rel="stylesheet">
@@ -21,7 +32,7 @@
       <div class="page-head">
         <span class="eyebrow">Check a Buyer</span>
         <h1>Who supplies this buyer, and who owns them?</h1>
-        <p class="lede">Choose a US company to see every supplier that ships to it in our eight traced supply chains: what it shipped, when, and who ultimately owns it.</p>
+        <p class="lede">Choose a US company to see every supplier that ships to it in our traced supply chains: what it shipped, when, and who ultimately owns it. For Ford, Panasonic and LG Energy Solution there is also a wider scan of all their graphite and battery-cell suppliers.</p>
       </div>
 
       <div class="buyer-picker card">
@@ -32,10 +43,31 @@
 
       <div id="buyer-result" aria-live="polite">Loading…</div>
 
+      <section aria-labelledby="diy-h" style="margin-top:var(--s-7)">
+        <h2 id="diy-h">Check any US buyer yourself</h2>
+        <p class="section-intro">The profiles above cover our traced cases plus in-depth scans for Ford, Panasonic and LG Energy Solution. To check any other buyer, run the same steps with Sayari access, either by hand in Sayari Graph or through the Sayari MCP server in an AI assistant. Allow about 15 minutes per buyer.</p>
+        <ol class="diy">
+          <li><strong>Find the buyer's records.</strong> <code>search_entities</code> with the legal name, then <code>get_entity_summary</code> on each candidate. Expect several records (different plants, misspellings); keep every US one.</li>
+          <li><strong>Scan its suppliers by product.</strong> <code>search_trade_facets</code> with scope <code>shipments</code>, <code>query</code> = the quoted buyer name, <code>arrival_country</code> USA, <code>date_from</code> 2024-01-01, run once with <code>hs_code</code> 3801 (graphite, anode material) and once with 8507 (lithium-ion cells). Read the top-supplier buckets. Don't use the <code>receiver_name</code> filter: it is often ignored.</li>
+          <li><strong>Confirm the rows.</strong> <code>search_shipments</code> with the same query, and read each row's shipper, product text, dates and port of loading. Drop freight forwarders. Note rows "loaded in Singapore" or other hubs.</li>
+          <li><strong>Check who owns each supplier.</strong> <code>find_beneficial_owners</code> on each supplier. If it returns nothing, try <code>find_shortest_path</code> to the suspected parent, then the parent's annual report.</li>
+          <li><strong>Rate and record.</strong> Mark each supplier as Chinese-owned Yes / No / Unknown, with a confidence rating (<a href="about.html#confidence">how we rate</a>), and keep the call log. Then use the <a href="diligence.html#questions">supplier questions</a>.</li>
+        </ol>
+        <details class="diy-prompt"><summary>Copy-ready prompt for an AI assistant with the Sayari connector</summary>
+<pre id="diy-text">Using the Sayari MCP tools, check the US buyer "[BUYER NAME]" for graphite and battery suppliers.
+1. Find its Sayari records (search_entities, then get_entity_summary). List the US ones.
+2. Run search_trade_facets (scope: shipments; query: the quoted buyer name; arrival_country USA; date_from 2024-01-01), once with hs_code 3801 and once with hs_code 8507. Don't use receiver_name.
+3. Confirm the top suppliers with search_shipments. Drop freight forwarders. Note the ports of loading.
+4. For each supplier, run find_beneficial_owners and name the ultimate owner and its country.
+5. Return a table: supplier | country | HS | rows | date range | ultimate owner | Chinese-owned? (Yes/No/Unknown) | confidence (documented / cross-checked / inferred / lead) | evidence.
+Use neutral language. Don't guess: say "Unknown" when ownership isn't on record.</pre>
+        <button type="button" class="btn" id="diy-copy">Copy prompt</button> <span class="muted" id="diy-msg" aria-live="polite"></span></details>
+      </section>
+
       <section aria-labelledby="scope-h" style="margin-top:var(--s-7)">
         <h2 id="scope-h" style="font-size:1.2rem">Scope and limits</h2>
         <ul class="muted" style="max-width:52rem">
-          <li>This covers only the suppliers in our eight cases, not every supplier the company has. A buyer with no Chinese-owned suppliers here may still have them elsewhere.</li>
+          <li>The "traced cases" view covers only suppliers in our cases. The wider scans cover the HS 3801 and 8507 suppliers visible in US customs data, which still misses domestic purchases and goods arriving inside finished products.</li>
           <li>"Chinese-owned" comes from each case's ownership screening and carries its confidence rating. "Company based in China" means it ships directly from China.</li>
           <li>Shipment rows come from customs records in Sayari. Domestic US sales don't appear in customs data.</li>
           <li id="fw-note"></li>
@@ -49,5 +81,11 @@
   <script src="assets/js/data.js"></script>
   <script src="assets/js/ui.js"></script>
   <script src="assets/js/buyers.js"></script>
+  <script>
+    document.getElementById("diy-copy").addEventListener("click", async () => {
+      const m = document.getElementById("diy-msg");
+      try { await navigator.clipboard.writeText(document.getElementById("diy-text").textContent); m.textContent = "Copied."; } catch (e) { m.textContent = "Select the text and copy it."; }
+    });
+  </script>
 </body>
 </html>

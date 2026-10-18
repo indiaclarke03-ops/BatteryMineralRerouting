@@ -170,7 +170,7 @@
    {
     "title": "A second plant, same shape: Linergy Power",
     "kicker": "Step 5 · Corridor",
-    "text": "Linergy Power in Selangor was registered in Dec 2024. Its shareholder is Ampace Technology (Hong Kong), whose Xiamen parent counts CATL among its shareholders. It took 17 rows of artificial graphite from Zhongke Shinzoom and Shanshan, and shipped 17 rows of cells and battery systems to the US: Eaton 6, Ampace itself 6, Milwaukee Tool 3, Stanley Black & Decker 1 and Techtronic Product Development 1.",
+    "text": "Linergy Power in Selangor was registered in Dec 2024. Until June 2026 it was 100% owned by Ampace Technology (Hong Kong), whose Xiamen parent is 59.5% owned by CATL. In June 2026 Japan's TDK bought all of it for US$241m through ATL's Singapore arm, so the Aug–Sep 2026 US rows were shipped under TDK ownership. Sayari's registry data still shows the old Ampace chain. It took 17 rows of artificial graphite from Zhongke Shinzoom and Shanshan, and shipped 17 rows of cells and battery systems to the US: Eaton 6, Ampace itself 6, Milwaukee Tool 3, Stanley Black & Decker 1 and Techtronic Product Development 1.",
     "edge_ids": [
      "e635",
      "e636",
@@ -237,6 +237,15 @@
       "s617",
       "s618"
      ]
+    },
+    {
+     "text": "From filings, not Sayari: EVE Malaysia is 100% EVE (through EVE Asia); CATL holds 59.5% of Xiamen Ampace; TDK (Japan) bought 100% of Linergy Power in June 2026.",
+     "call_ids": [
+      "w004",
+      "w005",
+      "w006",
+      "w007"
+     ]
     }
    ],
    "suggested": [
@@ -273,13 +282,6 @@
      "call_ids": [
       "s609",
       "s610"
-     ]
-    },
-    {
-     "text": "EVE Asia's percentage in the Malaysian plant, and CATL's percentage in Xiamen Ampace.",
-     "call_ids": [
-      "s604",
-      "s616"
      ]
     },
     {
@@ -327,7 +329,7 @@
     "field": "Ownership of upstream suppliers",
     "guidance_no": "—",
     "declared": "No such field in the EU passport.",
-    "paper_trail": "Plant → EVE Asia (HK) → EVE Energy (Huizhou), listed under 1260H since 8 June 2026. Linergy → Ampace (HK) → Xiamen Ampace → CATL among shareholders.",
+    "paper_trail": "Plant → EVE Asia (HK) → EVE Energy (Huizhou), listed under 1260H since 8 June 2026. Linergy → Ampace (HK) → Xiamen Ampace (CATL 59.5%) until Jun 2026; TDK (Japan) 100% since then.",
     "gap": true,
     "note": "For a US cell buyer, the cell maker's owner is what the PFE test looks at; Sayari shows it."
    }
@@ -390,7 +392,7 @@
    "Trade data can't tie a given cell to a given graphite shipment.",
    "The 1260H listing (8 June 2026) came after most of the trade shown here.",
    "HS 2842.90 is read as cathode powder from the code and supplier names only.",
-   "Ownership percentages are missing for EVE Asia → EVE Malaysia and for CATL → Xiamen Ampace.",
+   "Ownership percentages come from company filings, not Sayari. EVE's interim report shows EVE Malaysia at 100%, and CATL's Mar 2026 announcement shows CATL holding 59.5% of Xiamen Ampace.",
    "Departure ports such as 'Pinang' and 'Hongkong' appear with mismatched countries in some rows. Treat the route details with care."
   ]
  },
@@ -923,7 +925,7 @@
    "identifiers": {
     "mys_company_number": "1599895M"
    },
-   "summary": "Cell maker in Serendah, Selangor, registered 19 Dec 2024. Its shareholder is Ampace Technology Limited (Hong Kong), part of a Xiamen group co-owned by CATL. 17 rows of artificial graphite in from Zhongke Shinzoom and Shanshan; 17 rows of cells and battery systems out to the US, Nov 2025 to Sep 2026.",
+   "summary": "Cell maker in Serendah, Selangor, registered 19 Dec 2024. Owned 100% by Ampace Technology Limited (Hong Kong; CATL holds 59.5% further up) until June 2026, when TDK's Amperex Technology (Singapore) bought 100%. Sayari hasn't caught up with the sale. 17 rows of artificial graphite in from Zhongke Shinzoom and Shanshan; 17 rows of cells and battery systems out to the US, Nov 2025 to Sep 2026.",
    "source_call_ids": [
     "s614",
     "s615",
@@ -966,7 +968,7 @@
    "identifiers": {
     "cn_uscc": "91350200MA8TJ86R2M"
    },
-   "summary": "Xiamen parent of Ampace Technology Limited. Its shareholders include CATL, 厦门新能和科技有限公司 and four Xiamen partnerships; shares not returned.",
+   "summary": "Xiamen parent of Ampace Technology Limited. 85% held by 厦门新能和科技 (Xiamen Xinnenghe: CATL 70%, ATL 30%), the rest by four Xiamen partnerships. CATL holds 59.5% indirectly and consolidates it (CATL announcement, 10 Mar 2026).",
    "source_call_ids": [
     "s616"
    ],
@@ -1078,6 +1080,22 @@
     "s618"
    ],
    "sayari_url": "https://graph.sayari.com/resource/entity/DoTF8asU1jM35geCp8Dg6Q"
+  },
+  {
+   "id": "XsLwbCaQEeyzOMh9_sOl3w",
+   "name": "TDK Corporation, via Amperex Technology (Singapore) Pte. Ltd.",
+   "country": "JPN",
+   "type": "company",
+   "role": "parent",
+   "risk_flags": [],
+   "identifiers": {},
+   "summary": "TDK's ATL unit in Singapore. Bought 100% of Linergy Power in June 2026 (US$241.1m). Sayari's record doesn't yet show Linergy as a subsidiary.",
+   "source_call_ids": [
+    "w006",
+    "w007",
+    "w019"
+   ],
+   "sayari_url": "https://graph.sayari.com/resource/entity/XsLwbCaQEeyzOMh9_sOl3w"
   }
  ],
  "edges": [
@@ -1834,7 +1852,7 @@
    "first_seen": null,
    "last_seen": null,
    "shipment_count": null,
-   "evidence": "Malaysian company data names Ampace Technology Limited as Linergy Power's shareholder; no percentage.",
+   "evidence": "Malaysian company data names Ampace Technology Limited as Linergy Power's shareholder (100%, per SSM as reported by The Edge). Historical: TDK bought 100% in June 2026.",
    "source_call_ids": [
     "s614"
    ],
@@ -2080,6 +2098,25 @@
     "case-6"
    ],
    "confidence_reason": "A dated, HS-coded shipment row in Sayari."
+  },
+  {
+   "id": "e647",
+   "source": "XsLwbCaQEeyzOMh9_sOl3w",
+   "target": "ySemfyJJesFbfxEgW2SgCg",
+   "relation": "owns",
+   "edge_type": "contractual",
+   "confidence": "documented",
+   "hs_codes": [],
+   "first_seen": "2026-06-15",
+   "last_seen": null,
+   "shipment_count": null,
+   "evidence": "TDK bought 100% of Linergy Power through Amperex Technology (Singapore): board approval 19 May 2026, transfer scheduled 15 Jun 2026, completion confirmed in TDK's Q1 results (31 Jul 2026).",
+   "confidence_reason": "TDK's own press release and quarterly results.",
+   "source_call_ids": [
+    "w006",
+    "w007",
+    "w019"
+   ]
   }
  ],
  "calls": [

@@ -7,7 +7,7 @@
 
 > Can trade and corporate-registry data reveal Chinese battery materials, especially graphite anode material, being rerouted through third-country plants before they reach US battery supply chains?
 
-Iteration 1 traces **eight cases** end to end:
+Paper Trail traces **twelve cases** end to end:
 
 | # | Case | What Sayari showed |
 |---|---|---|
@@ -19,6 +19,10 @@ Iteration 1 traces **eight cases** end to end:
 | 6 | EVE Energy's cell plant, Malaysia | Full trail at the cell level: Chinese anode graphite (BTR, Zhongke, Shanshan) in; cells out to EVE North America, Briggs & Stratton, Milwaukee Tool and others. EVE added to the 1260H list in June 2026 |
 | 7 | Gotion's plants inside the US | Chinese cells, packs and graphite shipped from Gotion's Chinese plants to Fremont and Manteno. Ownership visible from the Chinese side only |
 | 8 | Syrah, Mozambique → Louisiana (benchmark) | A non-Chinese chain: Balama graphite to Vidalia, with Australian ownership (annual report). The same mine also sells to Chinese buyers and to BTR Indonesia |
+| 9 | Ford's links to BTR | BTR Indonesia graphite into Ford's Marshall, Michigan plant (2026; some loaded in China); BTR's sales arm to BlueOval SK (2025); US$120m prepayment to BTR's Moroccan anode company (filing) |
+| 10 | CATL, Ampace and Linergy Power (Malaysia) | CATL group owned Linergy (59.5% via Xiamen Ampace) until TDK (Japan) bought it in Jun 2026; Sayari still shows the old chain. Cells to Eaton, Milwaukee Tool and others |
+| 11 | CATL Debrecen (EU comparison) | 100% CATL ownership visible in Hungarian registry; EU-internal trade invisible to customs data. EU rules ask about sourcing, not ownership |
+| 12 | Huayou nickel, Indonesia (beyond graphite) | 57% Huayou-owned HPAL plant in IMIP; its nickel goes to China; no direct US flow, and the hop into US cathode isn't joined by any record |
 
 Every link on the site carries an edge type, a confidence badge and the IDs of the calls that produced it.
 
@@ -30,11 +34,18 @@ Built for GLOB1-GC 2620 *Beyond the Brand: Harnessing Emerging Tech in Ethical S
 |---|---|
 | `index.html`: The Trace | Headline, key numbers, why it matters, a world map of the eight supply chains, short answers per case, cross-case findings, policy timeline |
 | `explore.html`: Explore | The network for each case in four columns (owners, suppliers, plant, buyers); hover to focus, click for evidence; filters |
-| `buyers.html`: Check a Buyer | Pick a US buyer (GM, Tesla, SK Battery America…) to see every supplier in the data, its owner and what it shipped |
+| `buyers.html`: Check a Buyer | Pick a US buyer to see suppliers from the traced cases, plus wider HS 3801/8507 scans for Ford, Panasonic and LG Energy Solution, and a step-by-step guide to check any buyer |
 | `cases.html`: Case Files | All eight cases: question, answer, why it matters, key numbers, network, steps, verdict, passport card, red flags |
 | `diligence.html`: Due Diligence | Ownership screening for every plant, supplier questions generated from red flags, a watch list |
 | `method.html`: Method | Lessons, the 18 Oct re-check, Sayari scorecard, rubric, replay of every call, searchable log |
 | `about.html`: About this tool | Purpose, how to read it, confidence ratings, naming policy, sources, credits, limits, changelog |
+
+## Staying current
+
+- Every case shows when it was last re-checked (`checks` in `investigation/curated.json`).
+- A monthly cloud routine (1st of each month, 14:00 UTC) re-runs the key Sayari checks and logs them in `investigation/notes/recheck-YYYY-MM.md`. It updates the dates and opens a pull request flagging changes; nothing merges automatically.
+- A one-off routine on 11 Nov 2026 re-checks China's Announcement 70 and the US PFE guidance.
+- How to add a case: `investigation/case-spec.md`.
 
 ## How it works
 

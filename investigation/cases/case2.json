@@ -263,7 +263,7 @@
      ]
     },
     {
-     "text": "Which of the two Moroccan companies will run the anode line and which the cathode line.",
+     "text": "Confirmation from BTR itself of which Moroccan company runs the anode line. A shareholder's filing points to BTR Mediterranean Anode (see Case 9).",
      "call_ids": [
       "s203",
       "s204",
@@ -379,7 +379,8 @@
    "'Departure Morocco' probably often means transshipment through Tanger Med; the European graphite rows likely did not originate in Morocco.",
    "Entity-resolution links are our judgment and could be wrong. The Yang Shunyi match is across records with reversed name order.",
    "Sayari free-text queries rank rows but do not filter them; counts after a quoted query are not counts of matches.",
-   "The Aug 2026 graphite rows were found in an 18 Oct 2026 re-check; they were either newer than the first search or filed under a trade record the first search missed."
+   "The Aug 2026 graphite rows were found in an 18 Oct 2026 re-check; they were either newer than the first search or filed under a trade record the first search missed.",
+   "Which company runs which line: a 13 Aug 2024 filing by BTR's largest shareholder (see Case 9) names 'BTR Mediterranean Anode' as the anode company. That is the Rian-owned company; the BNUO-owned one is more likely the cathode company. The ownership chain shown in step 2 is the BNUO company's. The anode company's chain runs through Rian International Holding to a Singapore record of BTR."
   ],
   "answer_label": "Partly",
   "answer": "Ownership: yes. Registry data shows BTR owning the Tangier company 100% through a Singapore holding company, and the same executive runs both. Shipments: inbound only so far. In Aug 2026, BTR's Indonesian plant sent 1,240 t of artificial graphite to the Tangier anode company; nothing has left the plant yet.",
@@ -401,7 +402,7 @@
     "lei": "8945002T04JUT1ZWQG56",
     "cedar_rose_uid": "MAC235776238"
    },
-   "summary": "The subsidiary BTR named for its Tangier anode project. Registered 9 Oct 2023 at Lot 25, Tanger Tech free zone. Sayari's Moroccan registry data names one 100% shareholder, BNUO International Holding of Singapore. No trade under this record.",
+   "summary": "One of BTR's two Moroccan companies, registered 9 Oct 2023 at Lot 25, Tanger Tech free zone. 100% owned by BNUO International Holding (Singapore). A 2024 filing by BTR's largest shareholder names the other company as the anode company, so this one is more likely the cathode company. No trade under this record.",
    "source_call_ids": [
     "s202",
     "s203",
@@ -424,7 +425,7 @@
     "ma_commercial_register": "149725",
     "cedar_rose_uid": "MAC242748550"
    },
-   "summary": "A second Moroccan BTR company, registered 3 May 2024 in Tangier. 100% owned by Rian International Holding of Singapore. Which of the two companies runs the anode line and which the cathode line is not stated in Sayari.",
+   "summary": "BTR Mediterranean Anode New Material Technology, registered 3 May 2024 in Tangier and 100% owned by Rian International Holding (Singapore). A 2024 filing by BTR's largest shareholder names this company as the recipient of Ford's US$120m prepayment for artificial graphite, so it is most likely the anode company. Its trade record received BTR Indonesia's graphite in Aug 2026.",
    "source_call_ids": [
     "s202",
     "s204",

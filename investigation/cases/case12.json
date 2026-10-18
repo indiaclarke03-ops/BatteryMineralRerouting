@@ -1,0 +1,3865 @@
+{
+ "case": {
+  "id": "case-12",
+  "slug": "indonesia-nickel",
+  "title": "Beyond graphite: Indonesian nickel from a Huayou plant",
+  "subtitle": "PT Huayue Nickel Cobalt · Morowali (IMIP), Indonesia",
+  "country": "IDN",
+  "plant_status": "operating",
+  "question": "Can Sayari show nickel from a Chinese-owned Indonesian plant reaching US battery supply chains, directly or through cathode makers in Korea, Japan or China?",
+  "answer_label": "Partly",
+  "answer": "Partly. Sayari shows the plant's nickel intermediate going almost entirely to China, much of it to its own Chinese owners, and nothing nickel-based going straight to the US. It also shows Huayou precursor reaching POSCO Future M (to 2023) and POSCO cathode reaching a US cell plant (2026), but no record joins those steps to this plant.",
+  "why_it_matters": "Most Indonesian nickel is processed in plants more than 25% Chinese-owned, which already kept it out of the US EV credit. From 2026 the PFE rules bring the same ownership question to the 45X manufacturing credit for US cell plants. A buyer that sees 'Korea' on its cathode invoice cannot see this plant at all, so the nickel's origin has to be traced, not assumed.",
+  "headline": "The plant is clearly Chinese-led: Huayou 57% and CMOC 30%, per open sources, with a Chinese beneficial owner in Indonesia's register. Sayari shows 308 rows of nickel intermediate leaving it, mostly for China, and no nickel going to the US. The trail to US cell plants goes dark in China, where the MHP becomes precursor.",
+  "summary_for_non_experts": "Batteries need nickel as well as graphite. In Indonesia, Chinese companies run huge plants that turn nickel ore into an intermediate called MHP (mixed hydroxide precipitate). We followed one, PT Huayue Nickel Cobalt, which is majority-owned by China's Huayou. Its MHP mostly goes to Huayou's own factories in China, which make precursor, the next step towards cathode. Sayari can show that next step reaching a Korean cathode maker and Korean cathode reaching a US cell plant, but it cannot show that this plant's nickel is inside.",
+  "key_numbers": [
+   {
+    "value": "57%",
+    "label": "Huayou's stake in the plant (co-shareholder filing and AEER report)",
+    "call_ids": [
+     "t12-01"
+    ]
+   },
+   {
+    "value": "308",
+    "label": "export rows of nickel intermediate (HS 7501.20) from the plant, 2021–Aug 2026",
+    "call_ids": [
+     "s12-09"
+    ]
+   },
+   {
+    "value": "76 of 200",
+    "label": "rows we read that went to Huayou-named companies; 20 more went to CMOC",
+    "call_ids": [
+     "s12-11",
+     "s12-12"
+    ]
+   },
+   {
+    "value": "0",
+    "label": "nickel rows to the US; all 48 US-bound rows are valves and valve parts",
+    "call_ids": [
+     "s12-10"
+    ]
+   },
+   {
+    "value": "87",
+    "label": "rows of cathode-coded HS 2841.90 from POSCO Future M to StarPlus Energy, May–Jul 2026",
+    "call_ids": [
+     "s12-21"
+    ]
+   }
+  ],
+  "overall_confidence": "corroborated",
+  "pattern": "trail-goes-dark",
+  "steps": [
+   {
+    "title": "Why this plant",
+    "kicker": "Step 1 · Context",
+    "text": "PT Huayue Nickel Cobalt (HNC) was Huayou's first high-pressure acid leach (HPAL) plant in the Morowali park, where BTR's anode plant also sits. It started in Nov 2021 and makes about 60,000 t of nickel a year in MHP. Its shareholders are published by a listed co-owner, and Sayari has a record with its Indonesian tax ID. That makes it the best-documented test case.",
+    "edge_ids": [],
+    "node_ids": [
+     "d36wLU72WGaWpEduWzxfNw"
+    ],
+    "call_ids": [
+     "s12-01",
+     "s12-02",
+     "t12-01"
+    ]
+   },
+   {
+    "title": "Eight records, one plant",
+    "kicker": "Step 2 · Inferred",
+    "text": "Sayari holds eight records for the plant. The main one has the tax ID and both the Morowali site and the Jakarta office. Four share that office address in Sopo Del Tower A; one of them is wrongly typed as a person. Three are name-only and kept as leads.",
+    "edge_ids": [
+     "e12-01",
+     "e12-02",
+     "e12-03",
+     "e12-04",
+     "e12-05",
+     "e12-06",
+     "e12-07"
+    ],
+    "node_ids": [
+     "d36wLU72WGaWpEduWzxfNw",
+     "Ez81wqDCkYuIjnT9f30Ifw",
+     "xI-CsXxNFsCuDyao-h5uCQ",
+     "Uez7TzdLHdKr_H0xSODvyA",
+     "z1oM-Pp9uyq37UaaF1Rihg",
+     "Ymxqm3kJPGytQyBL7jXezg",
+     "o9Ln4E80py9bVIBTH3lazA",
+     "VLdRtXQM_rBOqEQVtf3pkw"
+    ],
+    "call_ids": [
+     "s12-01",
+     "s12-02"
+    ]
+   },
+   {
+    "title": "The owner: Huayou, 57%",
+    "kicker": "Step 3 · Contractual",
+    "text": "Indonesia's beneficial-owner register, via Sayari, names two people: Chen Xuehua, with an address in Huayou's home city, and Hsieh Wei-Tong in Taipei. An AEER report lists Chen Xuehua as a 6.43% shareholder of Huayou. The company stakes come from open sources: Huayou 57%, CMOC 30%, Nickel Industries 10%. Sayari's own shortest path to Huayou is a trade link through Huayou's import-export arm.",
+    "edge_ids": [
+     "e12-08",
+     "e12-09",
+     "e12-10",
+     "e12-11",
+     "e12-12",
+     "e12-13",
+     "e12-14",
+     "e12-15",
+     "e12-16",
+     "e12-17",
+     "e12-18",
+     "e12-19",
+     "e12-20"
+    ],
+    "node_ids": [
+     "GstlFKZ-29D5gm8p3Xg6mw",
+     "WsTfWkdMP4iuUyQG7iidlQ",
+     "9qVFfWtDk6KefWuKgt8uOg",
+     "7OXs4DTLrDP0MB8gbZuTnA",
+     "RbLPDr6UX-QhTaP5x11BQQ"
+    ],
+    "call_ids": [
+     "s12-03",
+     "s12-04",
+     "s12-05",
+     "s12-06",
+     "t12-01"
+    ]
+   },
+   {
+    "title": "Where the MHP goes",
+    "kicker": "Step 4 · Transactional",
+    "text": "The plant sent 308 rows of HS 7501.20, the code for nickel intermediates such as MHP. Of the 200 most recent rows (Aug 2024 – Aug 2026), 76 went to Huayou companies in Guangxi, Quzhou and Hong Kong and 20 to CMOC, its second shareholder. Most of the rest went to traders (IXM, Trafigura, Mercuria) and Chinese battery-materials makers (CNGR, Brunp, Jinchuan, Umicore's Jiangmen JV). Only India's Malco Energy sits outside China and the trading houses.",
+    "edge_ids": [
+     "e12-21",
+     "e12-22",
+     "e12-23",
+     "e12-24",
+     "e12-25",
+     "e12-26",
+     "e12-27",
+     "e12-28",
+     "e12-29",
+     "e12-30",
+     "e12-31",
+     "e12-32",
+     "e12-33",
+     "e12-34",
+     "e12-35",
+     "e12-36",
+     "e12-37",
+     "e12-38",
+     "e12-39",
+     "e12-40",
+     "e12-41",
+     "e12-42",
+     "e12-43",
+     "e12-44",
+     "e12-45",
+     "e12-46",
+     "e12-47",
+     "e12-48",
+     "e12-49",
+     "e12-50",
+     "e12-51",
+     "e12-52",
+     "e12-53",
+     "e12-54"
+    ],
+    "node_ids": [
+     "mM2BJnjq_KYla3H9_zQHQg",
+     "IIei9yVxJwNGPNOuQwQsGw",
+     "PngfQG6leaGtxETdtENi0g",
+     "VzWGnh0SfG2WP5oPDcPOPQ",
+     "lrJp9t-68mxX65btZ3j3Bw",
+     "KGQq5VCbYtKqGu65BSHm5w",
+     "cU2MfaQrsUChpWaqsKx2dw"
+    ],
+    "call_ids": [
+     "s12-07",
+     "s12-08",
+     "s12-09",
+     "s12-11",
+     "s12-12"
+    ]
+   },
+   {
+    "title": "US rows: valves, not nickel",
+    "kicker": "Step 5 · Transactional",
+    "text": "All 48 rows from the plant to the US are valves and valve parts with serial numbers, sent to ValvTechnologies in Houston and Caldera Engineering in Utah, Jan 2023 – Nov 2025. HPAL plants wear out such valves, so the rows fit repairs or returns. No MHP, nickel sulphate or matte goes straight to the US in these results.",
+    "edge_ids": [
+     "e12-55",
+     "e12-56",
+     "e12-57",
+     "e12-58"
+    ],
+    "node_ids": [
+     "uVQaJRf9eQQbdQf9RVxBSA",
+     "V26diz4dlR986Du6ylwgkw",
+     "yuxcwL986OMuVCw60s2usA"
+    ],
+    "call_ids": [
+     "s12-10"
+    ]
+   },
+   {
+    "title": "One step further: precursor to Korea, cathode to Indiana",
+    "kicker": "Step 6 · Transactional",
+    "text": "Huayou precursor companies shipped 29 rows of cathode precursor (HS 2853.90, 'nickel cobalt manganese hydroxide') to POSCO Future M, Dec 2021 – Dec 2023. Huayou's annual report confirms a long-term supply deal. Separately, POSCO Future M shipped 87 rows of cathode-coded HS 2841.90 to StarPlus Energy's cell plant in Kokomo, Indiana, May–Jul 2026.",
+    "edge_ids": [
+     "e12-61",
+     "e12-62",
+     "e12-63",
+     "e12-64",
+     "e12-65",
+     "e12-66",
+     "e12-67",
+     "e12-68",
+     "e12-69",
+     "e12-70",
+     "e12-71"
+    ],
+    "node_ids": [
+     "ki6hICRACf98bvo9QNh6yQ",
+     "zQD30wAsnYMA012sbiEMbQ",
+     "Fj3vtxDroFyjyPsLgsnm2A",
+     "N_UQeUCvCpXAkOSJd6CEYw",
+     "N3UgWRTegQ-62gm83cCoJw",
+     "Dc9b1oOozZ8IaaC89j8JSg",
+     "4fqrWAcyrgtWw2RdV6qZsg",
+     "rJZujbWjTgJ1iEZxCsjw9w"
+    ],
+    "call_ids": [
+     "s12-14",
+     "s12-18",
+     "s12-19",
+     "s12-20",
+     "s12-21",
+     "s12-23",
+     "t12-03"
+    ]
+   },
+   {
+    "title": "Where the trail goes dark",
+    "kicker": "Step 7 · Gap",
+    "text": "Nothing joins the steps. Huayou's biggest MHP buyer in China shows no exports, and the precursor exporter is a different Huayou company with no visible MHP from this plant. The precursor rows end in Dec 2023, before the 2026 cathode rows, and POSCO says it is moving to China-free precursor. Free-text searches for 'Huayou' into the US return unrelated furniture and kitchenware.",
+    "edge_ids": [],
+    "node_ids": [
+     "mM2BJnjq_KYla3H9_zQHQg",
+     "IIei9yVxJwNGPNOuQwQsGw"
+    ],
+    "call_ids": [
+     "s12-13",
+     "s12-16",
+     "s12-17",
+     "s12-22",
+     "t12-03"
+    ]
+   }
+  ],
+  "verdict": {
+   "detected": [
+    {
+     "text": "308 export rows of nickel intermediate (HS 7501.20) from the plant; of the 200 we read, 76 went to Huayou companies and 20 to CMOC, Aug 2024 – Aug 2026.",
+     "call_ids": [
+      "s12-09",
+      "s12-11",
+      "s12-12"
+     ]
+    },
+    {
+     "text": "Two beneficial owners in Indonesia's register, one with an address in Huayou's home city.",
+     "call_ids": [
+      "s12-03"
+     ]
+    },
+    {
+     "text": "No nickel product shipped from the plant to the US; the 48 US rows are valves and parts.",
+     "call_ids": [
+      "s12-10"
+     ]
+    },
+    {
+     "text": "Huayou precursor to POSCO Future M (29 rows, 2021–2023) and POSCO Future M HS 2841.90 to StarPlus Energy, Indiana (87 rows, May–Jul 2026).",
+     "call_ids": [
+      "s12-19",
+      "s12-21"
+     ]
+    }
+   ],
+   "suggested": [
+    {
+     "text": "Huayou 57% / CMOC 30% ownership: two open sources agree, but Sayari's registry data show only individuals, not the companies.",
+     "call_ids": [
+      "t12-01",
+      "s12-03",
+      "s12-05"
+     ]
+    },
+    {
+     "text": "A group pathway from Indonesian MHP through Huayou's Chinese plants to Korean cathode makers (POSCO Future M, LG Chem): the parts exist, but no record joins them.",
+     "call_ids": [
+      "s12-16",
+      "s12-19",
+      "s12-22",
+      "t12-03"
+     ]
+    },
+    {
+     "text": "Forced-labor sub-tier flags on the plant's records. These describe network neighbours, not the plant.",
+     "call_ids": [
+      "s12-01",
+      "s12-02"
+     ]
+    }
+   ],
+   "not_visible": [
+    {
+     "text": "Whether any of this plant's nickel is inside the cathode reaching StarPlus Energy or any other US cell plant.",
+     "call_ids": [
+      "s12-17",
+      "s12-21",
+      "s12-22"
+     ]
+    },
+    {
+     "text": "Where Guangxi Huayou, the top MHP buyer, sends its output; it has no visible exports.",
+     "call_ids": [
+      "s12-17"
+     ]
+    },
+    {
+     "text": "The company shareholding chain from Huayou and CMOC to the plant, and the 108 oldest MHP rows (before Aug 2024), which we did not read.",
+     "call_ids": [
+      "s12-03",
+      "s12-12"
+     ]
+    }
+   ]
+  },
+  "passport": [
+   {
+    "field": "Place of manufacture",
+    "guidance_no": "8",
+    "declared": "The cell plant's location, e.g. USA.",
+    "paper_trail": "Cathode from Korea; precursor from China; MHP from Morowali, Indonesia.",
+    "gap": true,
+    "note": "The field covers the battery, not the nickel two or three steps upstream."
+   },
+   {
+    "field": "Detailed composition (cathode)",
+    "guidance_no": "45",
+    "declared": "'NCM' or 'NCA' as the cathode active material.",
+    "paper_trail": "HS 2841.90 cathode from POSCO Future M; HS 2853.90 precursor from Huayou companies; HS 7501.20 MHP from HNC.",
+    "gap": true,
+    "note": "Composition says what, not where from."
+   },
+   {
+    "field": "Critical raw materials > 0.1%",
+    "guidance_no": "15",
+    "declared": "Nickel and cobalt listed.",
+    "paper_trail": "MHP carries both nickel and cobalt (the plant's name says so).",
+    "gap": false,
+    "note": "Consistent, if declared."
+   },
+   {
+    "field": "Responsible-sourcing (due-diligence) report",
+    "guidance_no": "19",
+    "declared": "Deferred under the EU Battery Regulation.",
+    "paper_trail": "Sub-tier forced-labor flags on the plant's records; AEER reports on HPAL environmental risk in Indonesia.",
+    "gap": true,
+    "note": "Nickel from HPAL raises tailings and coal-power questions a report would need to cover."
+   },
+   {
+    "field": "Ownership of upstream suppliers",
+    "guidance_no": "—",
+    "declared": "No such field in the EU passport.",
+    "paper_trail": "Huayou 57%, CMOC 30% (open sources); a Chinese beneficial owner in Indonesia's register.",
+    "gap": true,
+    "note": "The US PFE rules ask exactly this question."
+   }
+  ],
+  "red_flags": [
+   {
+    "flag": "Chinese parent ownership of the transit plant",
+    "signal": "contractual",
+    "severity": "High",
+    "result": "detected",
+    "note": "A Chinese beneficial owner in Indonesia's register; Huayou 57% and CMOC 30% per open sources."
+   },
+   {
+    "flag": "Same HS imported from China and exported to the US",
+    "signal": "transactional",
+    "severity": "High",
+    "result": "absent",
+    "note": "No nickel product goes to the US; the US rows are valves."
+   },
+   {
+    "flag": "Recent incorporation vs. first export date",
+    "signal": "contractual",
+    "severity": "Medium",
+    "result": "not_visible",
+    "note": "No incorporation date in Sayari. First export row Mar 2021, before the Nov 2021 start-up."
+   },
+   {
+    "flag": "Volume spike after a policy date",
+    "signal": "transactional",
+    "severity": "Medium",
+    "result": "not_visible",
+    "note": "We read 200 of 308 MHP rows and did not count volumes by month."
+   },
+   {
+    "flag": "Shared address or officer with a flagged entity",
+    "signal": "inferred",
+    "severity": "Medium",
+    "result": "not_visible",
+    "note": "Shares a Jakarta office tower with other Chinese-linked nickel firms (Huafei, Eternal Nickel, Huaneng); none is a flagged entity. SOE flags describe neighbours."
+   },
+   {
+    "flag": "Entity-resolution fragmentation",
+    "signal": "inferred",
+    "severity": "Low (disclose)",
+    "result": "detected",
+    "note": "Eight records for the plant, 13 for Huayou, two for StarPlus Energy."
+   },
+   {
+    "flag": "Forced-labor / UFLPA sub-tier flags",
+    "signal": "inferred",
+    "severity": "Medium",
+    "result": "suggested",
+    "note": "Xinjiang and UFLPA sub-tier flags on the plant's records; these are network signals, not findings."
+   }
+  ],
+  "caveats": [
+   "Processing nickel in Indonesia with Chinese investment is legal and common. Nothing here shows wrongdoing by any company named.",
+   "The US buyers are named because they appear in customs records; this says nothing about their compliance.",
+   "The ownership percentages come from Nickel Industries' 2023 filing and an AEER report (Feb 2025); stakes may have changed since.",
+   "HS 7501.20 covers several nickel intermediates. We treat these rows as MHP because the plant makes only MHP, but the rows do not say so.",
+   "We read 200 of the 308 MHP rows (Aug 2024 – Aug 2026). Earlier buyers may differ.",
+   "HS 2841.90 also carries some miscoded anode rows (Tesla, 2023). The StarPlus rows have no product text, so 'cathode' is our reading of the code.",
+   "Policy notes come from secondary summaries (Tax Law Center, Fastmarkets); check IRS Notice 2026-15 before relying on them.",
+   "Records checked 18 Oct 2026. Sayari merges and retires IDs."
+  ]
+ },
+ "entities": [
+  {
+   "id": "d36wLU72WGaWpEduWzxfNw",
+   "name": "PT Huayue Nickel Cobalt",
+   "country": "IDN",
+   "type": "company",
+   "role": "transit_plant",
+   "risk_flags": [
+    "chinese_soe_adjacent",
+    "soe_adjacent",
+    "forced_labor_xinjiang_origin_subtier_product_blueprint"
+   ],
+   "identifiers": {
+    "idn_tax_id": "0867718132067000",
+    "idn_transaction_number": "3721158"
+   },
+   "summary": "Huayou-led HPAL plant in the Morowali park (IMIP), Sulawesi, making mixed hydroxide precipitate (MHP). Main Sayari record: Indonesian tax ID, Morowali and Jakarta (Sopo Del Tower A, floor 21) addresses. 384 shipments sent, almost all HS 7501.20, mostly to China.",
+   "source_call_ids": [
+    "s12-01",
+    "s12-02",
+    "s12-03",
+    "s12-07",
+    "s12-09",
+    "t12-01"
+   ],
+   "sayari_url": "https://graph.sayari.com/resource/entity/d36wLU72WGaWpEduWzxfNw"
+  },
+  {
+   "id": "Ez81wqDCkYuIjnT9f30Ifw",
+   "name": "PT Huayue Nickel Cobalt Sopo Del Office Tower A (record 2)",
+   "country": "IDN",
+   "type": "company",
+   "role": "transit_plant",
+   "risk_flags": [],
+   "identifiers": {},
+   "summary": "Trade-name record carrying the plant's Jakarta office address (floor 21, Mega Kuningan Barat III Lot 10). No country or identifier.",
+   "source_call_ids": [
+    "s12-01"
+   ],
+   "sayari_url": "https://graph.sayari.com/resource/entity/Ez81wqDCkYuIjnT9f30Ifw"
+  },
+  {
+   "id": "xI-CsXxNFsCuDyao-h5uCQ",
+   "name": "PT. Huayue Nickel Cobalt Sopo Del Office Tower A (record 3)",
+   "country": "IDN",
+   "type": "company",
+   "role": "transit_plant",
+   "risk_flags": [],
+   "identifiers": {},
+   "summary": "Trade-name record with the same Jakarta office address. No identifier.",
+   "source_call_ids": [
+    "s12-01"
+   ],
+   "sayari_url": "https://graph.sayari.com/resource/entity/xI-CsXxNFsCuDyao-h5uCQ"
+  },
+  {
+   "id": "Uez7TzdLHdKr_H0xSODvyA",
+   "name": "PT. Huayue Nickel Cobalt G. Sopo Del (record 4)",
+   "country": "IDN",
+   "type": "company",
+   "role": "transit_plant",
+   "risk_flags": [],
+   "identifiers": {},
+   "summary": "Trade-name record with the same Jakarta office address. No identifier.",
+   "source_call_ids": [
+    "s12-01"
+   ],
+   "sayari_url": "https://graph.sayari.com/resource/entity/Uez7TzdLHdKr_H0xSODvyA"
+  },
+  {
+   "id": "z1oM-Pp9uyq37UaaF1Rihg",
+   "name": "Huayue Nickel Cobalt (record 5, typed as a person)",
+   "country": "IDN",
+   "type": "company",
+   "role": "transit_plant",
+   "risk_flags": [],
+   "identifiers": {},
+   "summary": "Record mis-typed as a person, with the plant's Sopo Del Tower A address. Shows how trade data fragments one company.",
+   "source_call_ids": [
+    "s12-01"
+   ],
+   "sayari_url": "https://graph.sayari.com/resource/entity/z1oM-Pp9uyq37UaaF1Rihg"
+  },
+  {
+   "id": "Ymxqm3kJPGytQyBL7jXezg",
+   "name": "Huayue Nickel Cobalt (record 6)",
+   "country": "IDN",
+   "type": "company",
+   "role": "transit_plant",
+   "risk_flags": [],
+   "identifiers": {},
+   "summary": "Sparse record: name and 'Jakarta Selatan' only.",
+   "source_call_ids": [
+    "s12-01"
+   ],
+   "sayari_url": "https://graph.sayari.com/resource/entity/Ymxqm3kJPGytQyBL7jXezg"
+  },
+  {
+   "id": "o9Ln4E80py9bVIBTH3lazA",
+   "name": "PT Huayue Nickel Cobalt (record 7)",
+   "country": "IDN",
+   "type": "company",
+   "role": "transit_plant",
+   "risk_flags": [],
+   "identifiers": {},
+   "summary": "Sparse record: name and 'Kota Administrasi Jakarta Selatan' only.",
+   "source_call_ids": [
+    "s12-01"
+   ],
+   "sayari_url": "https://graph.sayari.com/resource/entity/o9Ln4E80py9bVIBTH3lazA"
+  },
+  {
+   "id": "VLdRtXQM_rBOqEQVtf3pkw",
+   "name": "PY Huayue Nickel Cobalt (record 8)",
+   "country": "IDN",
+   "type": "company",
+   "role": "transit_plant",
+   "risk_flags": [],
+   "identifiers": {},
+   "summary": "Misspelt ('PY') record, Indonesia, no address or identifier.",
+   "source_call_ids": [
+    "s12-01"
+   ],
+   "sayari_url": "https://graph.sayari.com/resource/entity/VLdRtXQM_rBOqEQVtf3pkw"
+  },
+  {
+   "id": "GstlFKZ-29D5gm8p3Xg6mw",
+   "name": "Zhejiang Huayou Cobalt Co., Ltd.",
+   "country": "CHN",
+   "type": "company",
+   "role": "parent",
+   "risk_flags": [
+    "regulatory_action",
+    "controlled_by_mass_business_registration",
+    "forced_labor_xinjiang_origin_subtier"
+   ],
+   "identifiers": {
+    "lei": "30030099QFLNMEGP7M05",
+    "cn_unified_social_credit_code": "913300007368873961",
+    "cn_importexport_code": "3300736887396"
+   },
+   "summary": "Chinese battery-materials group, Tongxiang, Zhejiang (LEI 30030099QFLNMEGP7M05). Holds 57% of the plant according to co-shareholder Nickel Industries and an AEER report. Sayari has no shareholding record linking it to the plant.",
+   "source_call_ids": [
+    "s12-04",
+    "s12-05",
+    "t12-01",
+    "t12-03"
+   ],
+   "sayari_url": "https://graph.sayari.com/resource/entity/GstlFKZ-29D5gm8p3Xg6mw"
+  },
+  {
+   "id": "WsTfWkdMP4iuUyQG7iidlQ",
+   "name": "浙江华友钴业股份有限公司 (Huayou Cobalt, Chinese-name record)",
+   "country": "CHN",
+   "type": "company",
+   "role": "parent",
+   "risk_flags": [
+    "owned_by_chinese_soe",
+    "chinese_soe_adjacent"
+   ],
+   "identifiers": {
+    "cn_organization_code": "736887396",
+    "cn_unified_social_credit_code": "913300004368873961",
+    "cn_registration_number": "330400400004910"
+   },
+   "summary": "Chinese-language registry record for Huayou Cobalt at 18 Wuzhen East Road, Tongxiang. Its organisation code (736887396) is embedded in the English record's identifiers.",
+   "source_call_ids": [
+    "s12-04",
+    "s12-06"
+   ],
+   "sayari_url": "https://graph.sayari.com/resource/entity/WsTfWkdMP4iuUyQG7iidlQ"
+  },
+  {
+   "id": "9qVFfWtDk6KefWuKgt8uOg",
+   "name": "Chen Xuehua",
+   "country": "CHN",
+   "type": "person",
+   "role": "officer",
+   "risk_flags": [],
+   "identifiers": {
+    "idn_ubo_owner_id": "771950"
+   },
+   "summary": "Listed in Indonesia's beneficial-owner register (via Sayari) as a beneficial owner of the plant, with an address in Tongxiang, Zhejiang, Huayou's home city. An AEER report, citing Huayou's 2023 annual report, lists Chen Xuehua as a 6.43% shareholder of Huayou Cobalt.",
+   "source_call_ids": [
+    "s12-03",
+    "s12-06",
+    "t12-01"
+   ],
+   "sayari_url": "https://graph.sayari.com/resource/entity/9qVFfWtDk6KefWuKgt8uOg"
+  },
+  {
+   "id": "7OXs4DTLrDP0MB8gbZuTnA",
+   "name": "Hsieh Wei-Tong",
+   "country": "TWN",
+   "type": "person",
+   "role": "officer",
+   "risk_flags": [],
+   "identifiers": {
+    "idn_ubo_owner_id": "771951"
+   },
+   "summary": "Second beneficial owner of the plant in the Indonesian register, with a Taipei address. Sayari does not explain this person's link to any shareholder.",
+   "source_call_ids": [
+    "s12-03"
+   ],
+   "sayari_url": "https://graph.sayari.com/resource/entity/7OXs4DTLrDP0MB8gbZuTnA"
+  },
+  {
+   "id": "RbLPDr6UX-QhTaP5x11BQQ",
+   "name": "Zhejiang Huayou Import & Export Co., Ltd.",
+   "country": "CHN",
+   "type": "company",
+   "role": "trader",
+   "risk_flags": [
+    "owned_by_chinese_soe",
+    "exports_ilab_forced_labor"
+   ],
+   "identifiers": {},
+   "summary": "Huayou's trading arm (Huayou is its shareholder in Sayari). Sayari's graph shows it supplying the plant; this trade link, not a shareholding, is the plant's shortest path to Huayou.",
+   "source_call_ids": [
+    "s12-05",
+    "s12-06"
+   ],
+   "sayari_url": "https://graph.sayari.com/resource/entity/RbLPDr6UX-QhTaP5x11BQQ"
+  },
+  {
+   "id": "mM2BJnjq_KYla3H9_zQHQg",
+   "name": "Guangxi Huayou New Material Co., Ltd.",
+   "country": "CHN",
+   "type": "company",
+   "role": "buyer",
+   "risk_flags": [],
+   "identifiers": {},
+   "summary": "Huayou-named plant in Yulin, Guangxi. The plant's busiest MHP buyer in the rows we read: 34 rows of HS 7501.20, Feb 2025 – Aug 2026. Sayari shows no onward shipments from it.",
+   "source_call_ids": [
+    "s12-11",
+    "s12-12",
+    "s12-17"
+   ],
+   "sayari_url": "https://graph.sayari.com/resource/entity/mM2BJnjq_KYla3H9_zQHQg"
+  },
+  {
+   "id": "IIei9yVxJwNGPNOuQwQsGw",
+   "name": "Quzhou Huayou Cobalt New Material Co., Ltd.",
+   "country": "CHN",
+   "type": "company",
+   "role": "buyer",
+   "risk_flags": [],
+   "identifiers": {},
+   "summary": "Huayou-named plant in Quzhou, Zhejiang. 21 rows of HS 7501.20 from the plant, Feb 2025 – Feb 2026. Its 20 visible export partners include small Korean, Vietnamese, Russian and Indian firms and other Indonesian nickel plants, but no cathode maker or US cell plant.",
+   "source_call_ids": [
+    "s12-11",
+    "s12-12",
+    "s12-16"
+   ],
+   "sayari_url": "https://graph.sayari.com/resource/entity/IIei9yVxJwNGPNOuQwQsGw"
+  },
+  {
+   "id": "PngfQG6leaGtxETdtENi0g",
+   "name": "Huayou (Hong Kong) Co., Limited",
+   "country": "HKG",
+   "type": "company",
+   "role": "trader",
+   "risk_flags": [],
+   "identifiers": {},
+   "summary": "Huayou's Hong Kong trading company. 21 rows of HS 7501.20 from the plant, Aug 2024 – Aug 2025. Also buys nickel cathode from another Indonesian plant, delivered to Korea.",
+   "source_call_ids": [
+    "s12-07",
+    "s12-11",
+    "s12-12",
+    "s12-15"
+   ],
+   "sayari_url": "https://graph.sayari.com/resource/entity/PngfQG6leaGtxETdtENi0g"
+  },
+  {
+   "id": "0MNsm_PAjuxVwnNyKhp7jg",
+   "name": "Huayou (Hong Kong) Co., Limited (record 2)",
+   "country": "HKG",
+   "type": "company",
+   "role": "trader",
+   "risk_flags": [],
+   "identifiers": {},
+   "summary": "Second record for Huayou's Hong Kong company, with Korean and Japanese country tags. Received 8 rows of nickel cathode from PT Eternal Nickel Industry into Korea, Feb–Mar 2025.",
+   "source_call_ids": [
+    "s12-15"
+   ],
+   "sayari_url": "https://graph.sayari.com/resource/entity/0MNsm_PAjuxVwnNyKhp7jg"
+  },
+  {
+   "id": "lrJp9t-68mxX65btZ3j3Bw",
+   "name": "IXM (Shanghai) Corporate Management Company Limited",
+   "country": "CHN",
+   "type": "company",
+   "role": "trader",
+   "risk_flags": [],
+   "identifiers": {},
+   "summary": "Shanghai arm of metals trader IXM. 25 rows of HS 7501.20 from the plant, Jan 2025 – Aug 2026, delivered to China and Switzerland.",
+   "source_call_ids": [
+    "s12-07",
+    "s12-11",
+    "s12-12"
+   ],
+   "sayari_url": "https://graph.sayari.com/resource/entity/lrJp9t-68mxX65btZ3j3Bw"
+  },
+  {
+   "id": "kVqJhZuuT3zNp8rVF2xKdg",
+   "name": "IXM (Shanghai) Corporate Management Company Ltd (record 2)",
+   "country": "CHN",
+   "type": "company",
+   "role": "trader",
+   "risk_flags": [],
+   "identifiers": {},
+   "summary": "Second IXM Shanghai record, same Lujiazui address. 15 rows of HS 7501.20, Jun 2025 – Jun 2026.",
+   "source_call_ids": [
+    "s12-07",
+    "s12-11",
+    "s12-12"
+   ],
+   "sayari_url": "https://graph.sayari.com/resource/entity/kVqJhZuuT3zNp8rVF2xKdg"
+  },
+  {
+   "id": "VzWGnh0SfG2WP5oPDcPOPQ",
+   "name": "CMOC Limited",
+   "country": "CHN",
+   "type": "company",
+   "role": "buyer",
+   "risk_flags": [],
+   "identifiers": {},
+   "summary": "Trading company of CMOC, which holds 30% of the plant (per Nickel Industries and AEER). 18 rows of HS 7501.20, Sep 2024 – Jan 2025.",
+   "source_call_ids": [
+    "s12-07",
+    "s12-11",
+    "s12-12"
+   ],
+   "sayari_url": "https://graph.sayari.com/resource/entity/VzWGnh0SfG2WP5oPDcPOPQ"
+  },
+  {
+   "id": "ZaKwUyhsIvVTY19Xcs9eLg",
+   "name": "CMOC Limited (Hong Kong record)",
+   "country": "HKG",
+   "type": "company",
+   "role": "buyer",
+   "risk_flags": [],
+   "identifiers": {},
+   "summary": "Hong Kong CMOC Limited record. 2 rows of HS 7501.20, Aug 2024.",
+   "source_call_ids": [
+    "s12-07",
+    "s12-11",
+    "s12-12"
+   ],
+   "sayari_url": "https://graph.sayari.com/resource/entity/ZaKwUyhsIvVTY19Xcs9eLg"
+  },
+  {
+   "id": "h1_igDgmZeJnM8ZYjP0fbw",
+   "name": "Tsing Creation International Holding Limited",
+   "country": "HKG",
+   "type": "company",
+   "role": "trader",
+   "risk_flags": [],
+   "identifiers": {},
+   "summary": "Hong Kong trader with a Wuxi, Jiangsu address. 15 rows of HS 7501.20, Aug 2024 – Aug 2025. Its link to any shareholder is not shown.",
+   "source_call_ids": [
+    "s12-07",
+    "s12-11",
+    "s12-12"
+   ],
+   "sayari_url": "https://graph.sayari.com/resource/entity/h1_igDgmZeJnM8ZYjP0fbw"
+  },
+  {
+   "id": "ZGSAeajSEGDZi8GM0aiVQA",
+   "name": "CNMC International Trading Co., Ltd.",
+   "country": "CHN",
+   "type": "company",
+   "role": "trader",
+   "risk_flags": [],
+   "identifiers": {},
+   "summary": "Trading company at the CNMC Building, Beijing (also indexed as 'Metal Challenge Company Limited'). 8 rows of HS 7501.20, Sep 2025 – Jan 2026.",
+   "source_call_ids": [
+    "s12-07",
+    "s12-11"
+   ],
+   "sayari_url": "https://graph.sayari.com/resource/entity/ZGSAeajSEGDZi8GM0aiVQA"
+  },
+  {
+   "id": "wjLTvhB3dhht42e-E70LWg",
+   "name": "Jinchuan Group Nickel Salts Co., Ltd.",
+   "country": "CHN",
+   "type": "company",
+   "role": "buyer",
+   "risk_flags": [],
+   "identifiers": {},
+   "summary": "Nickel-salts maker in Jinchang, Gansu. 5 rows of HS 7501.20, Feb 2025 – Jan 2026.",
+   "source_call_ids": [
+    "s12-07",
+    "s12-11",
+    "s12-12"
+   ],
+   "sayari_url": "https://graph.sayari.com/resource/entity/wjLTvhB3dhht42e-E70LWg"
+  },
+  {
+   "id": "UzT3_TT2SnI3YootPt0WcA",
+   "name": "浙江信安国际贸易集团有限公司 (Zhejiang Xin'an International Trade Group)",
+   "country": "CHN",
+   "type": "company",
+   "role": "trader",
+   "risk_flags": [],
+   "identifiers": {},
+   "summary": "Quzhou-based trading group. 5 rows of HS 7501.20, Nov 2025 – Jan 2026.",
+   "source_call_ids": [
+    "s12-07",
+    "s12-11"
+   ],
+   "sayari_url": "https://graph.sayari.com/resource/entity/UzT3_TT2SnI3YootPt0WcA"
+  },
+  {
+   "id": "KGQq5VCbYtKqGu65BSHm5w",
+   "name": "Guizhou CNGR Advanced Material Trading Co., Ltd.",
+   "country": "CHN",
+   "type": "company",
+   "role": "buyer",
+   "risk_flags": [],
+   "identifiers": {},
+   "summary": "Trading arm of cathode-precursor maker CNGR, Guiyang. 3 rows of HS 7501.20, Nov–Dec 2025.",
+   "source_call_ids": [
+    "s12-07",
+    "s12-11"
+   ],
+   "sayari_url": "https://graph.sayari.com/resource/entity/KGQq5VCbYtKqGu65BSHm5w"
+  },
+  {
+   "id": "cH4v089kWgUexQsV822ugA",
+   "name": "Guangxi CNGR New Energy Science & Technology Co., Ltd.",
+   "country": "CHN",
+   "type": "company",
+   "role": "buyer",
+   "risk_flags": [],
+   "identifiers": {},
+   "summary": "CNGR company in Qinzhou, Guangxi. 1 row of HS 7501.20, Jun 2026.",
+   "source_call_ids": [
+    "s12-07",
+    "s12-11"
+   ],
+   "sayari_url": "https://graph.sayari.com/resource/entity/cH4v089kWgUexQsV822ugA"
+  },
+  {
+   "id": "NNd7dqEX2M1s1xiqh6PCWw",
+   "name": "Yichang Yihua Brunp New Material Co., Ltd.",
+   "country": "CHN",
+   "type": "company",
+   "role": "buyer",
+   "risk_flags": [],
+   "identifiers": {},
+   "summary": "Brunp-named battery-materials company in Yichang, Hubei. 2 rows of HS 7501.20, May–Jun 2026.",
+   "source_call_ids": [
+    "s12-07",
+    "s12-11"
+   ],
+   "sayari_url": "https://graph.sayari.com/resource/entity/NNd7dqEX2M1s1xiqh6PCWw"
+  },
+  {
+   "id": "woLJFqF6GCLLYeJBgZvFfg",
+   "name": "Jiangmen Chancsun Umicore Industry Co., Ltd.",
+   "country": "CHN",
+   "type": "company",
+   "role": "buyer",
+   "risk_flags": [],
+   "identifiers": {},
+   "summary": "Umicore-named precursor company in Jiangmen. 1 row of HS 7501.20, Sep 2025.",
+   "source_call_ids": [
+    "s12-07",
+    "s12-11"
+   ],
+   "sayari_url": "https://graph.sayari.com/resource/entity/woLJFqF6GCLLYeJBgZvFfg"
+  },
+  {
+   "id": "ojFzTG7M5khFZCgZORyvaw",
+   "name": "Wanhua Chemical (Yantai) Battery Material Technology Co., Ltd.",
+   "country": "CHN",
+   "type": "company",
+   "role": "buyer",
+   "risk_flags": [],
+   "identifiers": {},
+   "summary": "Battery-materials arm of Wanhua Chemical. 1 row of HS 7501.20, Feb 2025.",
+   "source_call_ids": [
+    "s12-07",
+    "s12-11",
+    "s12-12"
+   ],
+   "sayari_url": "https://graph.sayari.com/resource/entity/ojFzTG7M5khFZCgZORyvaw"
+  },
+  {
+   "id": "tgr3gCs1yln5imqewTaYzg",
+   "name": "Zhejiang Weiming Shengqing New Energy Materials Co., Ltd.",
+   "country": "CHN",
+   "type": "company",
+   "role": "buyer",
+   "risk_flags": [],
+   "identifiers": {},
+   "summary": "Wenzhou battery-materials company. 1 row of HS 7501.20, Apr 2025.",
+   "source_call_ids": [
+    "s12-07",
+    "s12-11",
+    "s12-12"
+   ],
+   "sayari_url": "https://graph.sayari.com/resource/entity/tgr3gCs1yln5imqewTaYzg"
+  },
+  {
+   "id": "peh2aaMX6Uc4iclgwV_Yiw",
+   "name": "南通金通储能动力新材料有限公司 (Nantong Jintong Energy Storage Power New Material)",
+   "country": "CHN",
+   "type": "company",
+   "role": "buyer",
+   "risk_flags": [],
+   "identifiers": {},
+   "summary": "Nantong battery-materials company. 1 row of HS 7501.20, Sep 2025.",
+   "source_call_ids": [
+    "s12-07",
+    "s12-11"
+   ],
+   "sayari_url": "https://graph.sayari.com/resource/entity/peh2aaMX6Uc4iclgwV_Yiw"
+  },
+  {
+   "id": "XXaZBOWuQHUuRF8kIMeD_A",
+   "name": "江西佳纳能源科技有限公司 (Jiangxi Jiana Energy Technology)",
+   "country": "CHN",
+   "type": "company",
+   "role": "buyer",
+   "risk_flags": [],
+   "identifiers": {},
+   "summary": "Cobalt and nickel materials company in Longnan, Jiangxi. 2 rows of HS 7501.20, Nov 2025.",
+   "source_call_ids": [
+    "s12-07",
+    "s12-11"
+   ],
+   "sayari_url": "https://graph.sayari.com/resource/entity/XXaZBOWuQHUuRF8kIMeD_A"
+  },
+  {
+   "id": "ZutAsZXUwnXdVkam_h1MVQ",
+   "name": "Jiana HK Limited",
+   "country": "HKG",
+   "type": "company",
+   "role": "trader",
+   "risk_flags": [],
+   "identifiers": {},
+   "summary": "Hong Kong company sharing the 'Jiana' name. 1 row of HS 7501.20 to Hong Kong, May 2026.",
+   "source_call_ids": [
+    "s12-07",
+    "s12-11"
+   ],
+   "sayari_url": "https://graph.sayari.com/resource/entity/ZutAsZXUwnXdVkam_h1MVQ"
+  },
+  {
+   "id": "2ZeXxsq0caRd8S088p5mgQ",
+   "name": "XTC Recycling Technology (Xiamen) Ltd",
+   "country": "CHN",
+   "type": "company",
+   "role": "buyer",
+   "risk_flags": [],
+   "identifiers": {},
+   "summary": "Xiamen recycling company. 1 row of HS 7501.20, Oct 2025.",
+   "source_call_ids": [
+    "s12-07",
+    "s12-11"
+   ],
+   "sayari_url": "https://graph.sayari.com/resource/entity/2ZeXxsq0caRd8S088p5mgQ"
+  },
+  {
+   "id": "lT-hmJ_-ORaFt2RK3aQh8w",
+   "name": "Ganzhou Hanrui New Energy Technology Co., Ltd.",
+   "country": "CHN",
+   "type": "company",
+   "role": "buyer",
+   "risk_flags": [],
+   "identifiers": {},
+   "summary": "Ganzhou company. 1 row of HS 7501.20, Sep 2025.",
+   "source_call_ids": [
+    "s12-07",
+    "s12-11"
+   ],
+   "sayari_url": "https://graph.sayari.com/resource/entity/lT-hmJ_-ORaFt2RK3aQh8w"
+  },
+  {
+   "id": "NQWdtyXbI4ETIUhjvXl9fA",
+   "name": "Huaqing Nickel and Cobalt Company Limited",
+   "country": "HKG",
+   "type": "company",
+   "role": "buyer",
+   "risk_flags": [],
+   "identifiers": {},
+   "summary": "Hong Kong company. 1 row of HS 7501.20 to Hong Kong, Aug 2025. Its name is close to 'Huaqing Hualong Consulting', a 2% shareholder of the plant per AEER; no record links them.",
+   "source_call_ids": [
+    "s12-07",
+    "s12-11",
+    "s12-12"
+   ],
+   "sayari_url": "https://graph.sayari.com/resource/entity/NQWdtyXbI4ETIUhjvXl9fA"
+  },
+  {
+   "id": "0rD1AdKe6DU2Mhps7-wCQw",
+   "name": "Trafigura Investment (China) Co., Ltd.",
+   "country": "CHN",
+   "type": "company",
+   "role": "trader",
+   "risk_flags": [],
+   "identifiers": {},
+   "summary": "Shanghai arm of trader Trafigura. 1 row of HS 7501.20, Aug 2026.",
+   "source_call_ids": [
+    "s12-07",
+    "s12-11"
+   ],
+   "sayari_url": "https://graph.sayari.com/resource/entity/0rD1AdKe6DU2Mhps7-wCQw"
+  },
+  {
+   "id": "M5oiRlX6pfACm9YgsmU1gg",
+   "name": "Trafigura SPG International Trading (Shandong) Co., Ltd.",
+   "country": "CHN",
+   "type": "company",
+   "role": "trader",
+   "risk_flags": [],
+   "identifiers": {},
+   "summary": "Trafigura company in Shandong. 1 row of HS 7501.20, Nov 2025.",
+   "source_call_ids": [
+    "s12-07",
+    "s12-11"
+   ],
+   "sayari_url": "https://graph.sayari.com/resource/entity/M5oiRlX6pfACm9YgsmU1gg"
+  },
+  {
+   "id": "AXrZ8cjxFQQ78w5-bbDfYQ",
+   "name": "Trafigura Asia Trading Pte Ltd",
+   "country": "SGP",
+   "type": "company",
+   "role": "trader",
+   "risk_flags": [],
+   "identifiers": {},
+   "summary": "Trafigura's Singapore trading company. 1 row of HS 7501.20 to Singapore, Oct 2025.",
+   "source_call_ids": [
+    "s12-07",
+    "s12-11"
+   ],
+   "sayari_url": "https://graph.sayari.com/resource/entity/AXrZ8cjxFQQ78w5-bbDfYQ"
+  },
+  {
+   "id": "lu0Wd7oLTE81R67KK6ZZ0A",
+   "name": "Mercuria Dry Bulk Pte Ltd",
+   "country": "SGP",
+   "type": "company",
+   "role": "trader",
+   "risk_flags": [],
+   "identifiers": {},
+   "summary": "Singapore arm of trader Mercuria. 2 rows of HS 7501.20 to Singapore, Jan 2026.",
+   "source_call_ids": [
+    "s12-07",
+    "s12-11"
+   ],
+   "sayari_url": "https://graph.sayari.com/resource/entity/lu0Wd7oLTE81R67KK6ZZ0A"
+  },
+  {
+   "id": "pA8eIyU5ecqQsLfQsLDdCQ",
+   "name": "Mercuria Energy Trading SA",
+   "country": "CHE",
+   "type": "company",
+   "role": "trader",
+   "risk_flags": [],
+   "identifiers": {},
+   "summary": "Geneva trader (LEI 549300G6ZUFBJVLAJQ46). 1 row of HS 7501.20 recorded as arriving in Switzerland, Dec 2025.",
+   "source_call_ids": [
+    "s12-07",
+    "s12-11"
+   ],
+   "sayari_url": "https://graph.sayari.com/resource/entity/pA8eIyU5ecqQsLfQsLDdCQ"
+  },
+  {
+   "id": "VpyEBZK-iStcoQBf0FzqDw",
+   "name": "Sherman Mineral Trading Pte. Ltd.",
+   "country": "SGP",
+   "type": "company",
+   "role": "trader",
+   "risk_flags": [],
+   "identifiers": {},
+   "summary": "Singapore trader. 2 rows of HS 7501.20 to China, Jan–Mar 2025.",
+   "source_call_ids": [
+    "s12-07",
+    "s12-11",
+    "s12-12"
+   ],
+   "sayari_url": "https://graph.sayari.com/resource/entity/VpyEBZK-iStcoQBf0FzqDw"
+  },
+  {
+   "id": "M6jLocKdHyfTfuyC_Z-irg",
+   "name": "Sherman Mineral Trading Private Limited",
+   "country": "SGP",
+   "type": "company",
+   "role": "trader",
+   "risk_flags": [],
+   "identifiers": {},
+   "summary": "Second Sherman Mineral Trading record. 1 row of HS 7501.20 to Singapore, Aug 2025.",
+   "source_call_ids": [
+    "s12-07",
+    "s12-11"
+   ],
+   "sayari_url": "https://graph.sayari.com/resource/entity/M6jLocKdHyfTfuyC_Z-irg"
+  },
+  {
+   "id": "nzZLSFJ3kSq0KaI1zQ0TNQ",
+   "name": "China-Base Ningbo Foreign Trade Co., Ltd.",
+   "country": "CHN",
+   "type": "company",
+   "role": "trader",
+   "risk_flags": [],
+   "identifiers": {},
+   "summary": "Ningbo trading company. 1 row of HS 7501.20, Feb 2025.",
+   "source_call_ids": [
+    "s12-07",
+    "s12-11",
+    "s12-12"
+   ],
+   "sayari_url": "https://graph.sayari.com/resource/entity/nzZLSFJ3kSq0KaI1zQ0TNQ"
+  },
+  {
+   "id": "mQiBIyVJ2Cu-4a9uvX2iPA",
+   "name": "C Steinweg Logistics (Lianyungang) Co., Ltd.",
+   "country": "CHN",
+   "type": "company",
+   "role": "trader",
+   "risk_flags": [],
+   "identifiers": {},
+   "summary": "Warehouse and logistics company at Lianyungang port. 1 row of HS 7501.20, Nov 2025.",
+   "source_call_ids": [
+    "s12-07",
+    "s12-11"
+   ],
+   "sayari_url": "https://graph.sayari.com/resource/entity/mQiBIyVJ2Cu-4a9uvX2iPA"
+  },
+  {
+   "id": "auzSftpGnzOxJcjKKP25Yw",
+   "name": "Access World (Shanghai) Logistics Company Ltd",
+   "country": "CHN",
+   "type": "company",
+   "role": "trader",
+   "risk_flags": [],
+   "identifiers": {},
+   "summary": "Shanghai warehouse and logistics company. 1 row of HS 7501.20, Oct 2025.",
+   "source_call_ids": [
+    "s12-07",
+    "s12-11"
+   ],
+   "sayari_url": "https://graph.sayari.com/resource/entity/auzSftpGnzOxJcjKKP25Yw"
+  },
+  {
+   "id": "cU2MfaQrsUChpWaqsKx2dw",
+   "name": "Malco Energy Limited",
+   "country": "IND",
+   "type": "company",
+   "role": "buyer",
+   "risk_flags": [],
+   "identifiers": {},
+   "summary": "Tuticorin, India. 3 rows of HS 7501.20 to India, Feb 2025. The only non-Chinese processor among the MHP buyers we read.",
+   "source_call_ids": [
+    "s12-07",
+    "s12-11",
+    "s12-12"
+   ],
+   "sayari_url": "https://graph.sayari.com/resource/entity/cU2MfaQrsUChpWaqsKx2dw"
+  },
+  {
+   "id": "uVQaJRf9eQQbdQf9RVxBSA",
+   "name": "ValvTechnologies LLC",
+   "country": "USA",
+   "type": "company",
+   "role": "us_buyer",
+   "risk_flags": [],
+   "identifiers": {},
+   "summary": "Houston valve maker. 26 rows of valves and valve parts (HS 8481.80) from the plant, Jan 2023 – Nov 2025, with serial numbers. Equipment, not nickel.",
+   "source_call_ids": [
+    "s12-07",
+    "s12-10"
+   ],
+   "sayari_url": "https://graph.sayari.com/resource/entity/uVQaJRf9eQQbdQf9RVxBSA"
+  },
+  {
+   "id": "V26diz4dlR986Du6ylwgkw",
+   "name": "ValvTecnologies LLC (misspelt record)",
+   "country": "USA",
+   "type": "company",
+   "role": "us_buyer",
+   "risk_flags": [],
+   "identifiers": {},
+   "summary": "Misspelt record at the same Houston address (5904 Bingle Road). 2 rows of valves, Nov 2025.",
+   "source_call_ids": [
+    "s12-07",
+    "s12-10"
+   ],
+   "sayari_url": "https://graph.sayari.com/resource/entity/V26diz4dlR986Du6ylwgkw"
+  },
+  {
+   "id": "yuxcwL986OMuVCw60s2usA",
+   "name": "Caldera Engineering LC",
+   "country": "USA",
+   "type": "company",
+   "role": "us_buyer",
+   "risk_flags": [],
+   "identifiers": {},
+   "summary": "Provo, Utah maker of HPAL flash and vent valves. 20 rows of valve parts and plugs (HS 8481.80, 8419.89) from the plant, Jan 2023 – Nov 2025.",
+   "source_call_ids": [
+    "s12-07",
+    "s12-10"
+   ],
+   "sayari_url": "https://graph.sayari.com/resource/entity/yuxcwL986OMuVCw60s2usA"
+  },
+  {
+   "id": "oZ-QV5StOu0UipdQi2KUYA",
+   "name": "PT Eternal Nickel Industry",
+   "country": "IDN",
+   "type": "company",
+   "role": "producer",
+   "risk_flags": [],
+   "identifiers": {
+    "idn_tax_id": "0407557008063000"
+   },
+   "summary": "Another Indonesian nickel company in the same Jakarta office tower (Sopo Del Tower A, 17th floor). Shipped 27 rows of 99.99% nickel cathode (HS 7502.10) to Huayou's Hong Kong companies, delivered to Korea, Feb 2025 – May 2026.",
+   "source_call_ids": [
+    "s12-15",
+    "s12-16"
+   ],
+   "sayari_url": "https://graph.sayari.com/resource/entity/oZ-QV5StOu0UipdQi2KUYA"
+  },
+  {
+   "id": "ki6hICRACf98bvo9QNh6yQ",
+   "name": "Huayou New Energy",
+   "country": "CHN",
+   "type": "company",
+   "role": "producer",
+   "risk_flags": [],
+   "identifiers": {},
+   "summary": "Huayou-named precursor exporter. 27 rows of HS 2853.90, some described as 'nickel cobalt manganese hydroxide' (cathode precursor), to POSCO Future M records, Dec 2021 – Dec 2023.",
+   "source_call_ids": [
+    "s12-19"
+   ],
+   "sayari_url": "https://graph.sayari.com/resource/entity/ki6hICRACf98bvo9QNh6yQ"
+  },
+  {
+   "id": "zQD30wAsnYMA012sbiEMbQ",
+   "name": "Huayou New Energy Technology (Quzhou) Co.",
+   "country": "CHN",
+   "type": "company",
+   "role": "producer",
+   "risk_flags": [],
+   "identifiers": {},
+   "summary": "Huayou-named precursor company in Quzhou. 2 rows of HS 2853.90 to POSCO Future M, Feb 2022. Sayari's graph also links it to LG Chem as a buyer. Its shortest path to the Indonesian plant runs through LG Chem and Marubeni, not through a Huayou record.",
+   "source_call_ids": [
+    "s12-14",
+    "s12-19",
+    "s12-22"
+   ],
+   "sayari_url": "https://graph.sayari.com/resource/entity/zQD30wAsnYMA012sbiEMbQ"
+  },
+  {
+   "id": "Fj3vtxDroFyjyPsLgsnm2A",
+   "name": "POSCO Future M Co., Ltd. (formerly POSCO Chemical)",
+   "country": "KOR",
+   "type": "company",
+   "role": "buyer",
+   "risk_flags": [],
+   "identifiers": {},
+   "summary": "Korean cathode and anode maker (Case 4). Received cathode precursor from Huayou companies, Dec 2021 – Dec 2023, and shipped 87 rows of HS 2841.90 (the code for cathode material) to StarPlus Energy in Indiana, May–Jul 2026.",
+   "source_call_ids": [
+    "s12-18",
+    "s12-19",
+    "s12-20",
+    "s12-21",
+    "t12-03"
+   ],
+   "sayari_url": "https://graph.sayari.com/resource/entity/Fj3vtxDroFyjyPsLgsnm2A"
+  },
+  {
+   "id": "N_UQeUCvCpXAkOSJd6CEYw",
+   "name": "POSCO Future M Co., Ltd. 110 (Korean import record)",
+   "country": "KOR",
+   "type": "company",
+   "role": "buyer",
+   "risk_flags": [],
+   "identifiers": {},
+   "summary": "Korean import-data record named 'POSCO FUTURE M CO.,LTD.110,' (110 Sinhang-ro is POSCO Future M's Pohang address in Case 4). 9 rows of precursor from Huayou New Energy, Aug–Dec 2023.",
+   "source_call_ids": [
+    "s12-19"
+   ],
+   "sayari_url": "https://graph.sayari.com/resource/entity/N_UQeUCvCpXAkOSJd6CEYw"
+  },
+  {
+   "id": "N3UgWRTegQ-62gm83cCoJw",
+   "name": "POSCO Future M Co., Ltd. 87 (Korean import record)",
+   "country": "KOR",
+   "type": "company",
+   "role": "buyer",
+   "risk_flags": [],
+   "identifiers": {},
+   "summary": "Korean import-data record named 'POSCO FUTURE M CO.,LTD.87,'. 2 rows of precursor from Huayou New Energy, Apr 2023.",
+   "source_call_ids": [
+    "s12-19"
+   ],
+   "sayari_url": "https://graph.sayari.com/resource/entity/N3UgWRTegQ-62gm83cCoJw"
+  },
+  {
+   "id": "rJZujbWjTgJ1iEZxCsjw9w",
+   "name": "LG Chem, Ltd.",
+   "country": "KOR",
+   "type": "company",
+   "role": "buyer",
+   "risk_flags": [],
+   "identifiers": {},
+   "summary": "Korean cathode maker. Sayari's graph shows Huayou New Energy Technology (Quzhou) shipping to it; we did not pull the rows. Huayou's 2023 annual report mentions a cathode and precursor cooperation memorandum with LG Chem.",
+   "source_call_ids": [
+    "s12-18",
+    "s12-22",
+    "t12-03"
+   ],
+   "sayari_url": "https://graph.sayari.com/resource/entity/rJZujbWjTgJ1iEZxCsjw9w"
+  },
+  {
+   "id": "Dc9b1oOozZ8IaaC89j8JSg",
+   "name": "StarPlus Energy LLC (Kokomo record)",
+   "country": "USA",
+   "type": "company",
+   "role": "us_buyer",
+   "risk_flags": [],
+   "identifiers": {
+    "usa_in_biz_no": "202206271602911",
+    "usa_frs_id": "110071424615"
+   },
+   "summary": "Stellantis–Samsung SDI cell plant at 2151 E Lincoln Rd, Kokomo, Indiana (Indiana business number, EPA facility IDs). Received 87 rows of HS 2841.90 from POSCO Future M, May–Jul 2026.",
+   "source_call_ids": [
+    "s12-20",
+    "s12-21",
+    "s12-23"
+   ],
+   "sayari_url": "https://graph.sayari.com/resource/entity/Dc9b1oOozZ8IaaC89j8JSg"
+  },
+  {
+   "id": "1iZm5WHKh2xwHvW9-qFunQ",
+   "name": "StarPlus Energy, LLC",
+   "country": "USA",
+   "type": "company",
+   "role": "us_buyer",
+   "risk_flags": [],
+   "identifiers": {},
+   "summary": "Case 1's StarPlus record. Likely the same cell plant as the Kokomo record in this case, but no identifier ties them.",
+   "source_call_ids": [
+    "s12-23"
+   ],
+   "sayari_url": "https://graph.sayari.com/resource/entity/1iZm5WHKh2xwHvW9-qFunQ"
+  },
+  {
+   "id": "4fqrWAcyrgtWw2RdV6qZsg",
+   "name": "General Motors",
+   "country": "USA",
+   "type": "company",
+   "role": "us_buyer",
+   "risk_flags": [],
+   "identifiers": {},
+   "summary": "Received 3 rows of HS 2841.90 from POSCO Future M, Jun–Aug 2022, with forwarder FNS Inc. on the record.",
+   "source_call_ids": [
+    "s12-21"
+   ],
+   "sayari_url": "https://graph.sayari.com/resource/entity/4fqrWAcyrgtWw2RdV6qZsg"
+  },
+  {
+   "id": "qnqQPmgy3rGsnUG0xxuS8A",
+   "name": "Tongxiang Huaang Trading Co., Ltd.",
+   "country": "CHN",
+   "type": "company",
+   "role": "trader",
+   "risk_flags": [],
+   "identifiers": {},
+   "summary": "Trader at 98 Wuzhen East Road, Tongxiang (Huayou's home city); flags include owned_by_chinese_soe. A listed buyer of the plant.",
+   "source_call_ids": [
+    "s12-08"
+   ],
+   "sayari_url": "https://graph.sayari.com/resource/entity/qnqQPmgy3rGsnUG0xxuS8A"
+  },
+  {
+   "id": "5BTrGa7scqiXx1UY_qKksA",
+   "name": "Zhejiang Youqing Trading Co., Ltd.",
+   "country": "CHN",
+   "type": "company",
+   "role": "trader",
+   "risk_flags": [],
+   "identifiers": {},
+   "summary": "Trader at 98 Wuzhen East Road, Tongxiang, one room from Tongxiang Huaang Trading. A listed buyer of the plant.",
+   "source_call_ids": [
+    "s12-07"
+   ],
+   "sayari_url": "https://graph.sayari.com/resource/entity/5BTrGa7scqiXx1UY_qKksA"
+  },
+  {
+   "id": "SZVCwz1tw4jSazz0Cqhf3A",
+   "name": "Eternal Tsingshan Group Limited",
+   "country": "HKG",
+   "type": "company",
+   "role": "trader",
+   "risk_flags": [],
+   "identifiers": {},
+   "summary": "Tsingshan-named company (Indonesia, China, Singapore, Hong Kong, Korea tags). A listed buyer of the plant.",
+   "source_call_ids": [
+    "s12-07"
+   ],
+   "sayari_url": "https://graph.sayari.com/resource/entity/SZVCwz1tw4jSazz0Cqhf3A"
+  },
+  {
+   "id": "GQcCCBlWQKjhtKPjGH_M8A",
+   "name": "Tsing Creation International Holding Limiited (record 2)",
+   "country": "CHE",
+   "type": "company",
+   "role": "trader",
+   "risk_flags": [],
+   "identifiers": {},
+   "summary": "Misspelt second Tsing Creation record with the same Wuxi address. A listed buyer of the plant.",
+   "source_call_ids": [
+    "s12-07"
+   ],
+   "sayari_url": "https://graph.sayari.com/resource/entity/GQcCCBlWQKjhtKPjGH_M8A"
+  },
+  {
+   "id": "11VYoGhoDTtrcOk6kzwrRA",
+   "name": "Huaqing Nickel & Cobalt Company Limited (record 2)",
+   "country": "HKG",
+   "type": "company",
+   "role": "buyer",
+   "risk_flags": [],
+   "identifiers": {},
+   "summary": "Second Huaqing Nickel and Cobalt record. A listed buyer of the plant.",
+   "source_call_ids": [
+    "s12-07"
+   ],
+   "sayari_url": "https://graph.sayari.com/resource/entity/11VYoGhoDTtrcOk6kzwrRA"
+  },
+  {
+   "id": "d8x1blfAYQjfj9GfP9KKzA",
+   "name": "CMOC Limited (record 3)",
+   "country": "HKG",
+   "type": "company",
+   "role": "buyer",
+   "risk_flags": [],
+   "identifiers": {},
+   "summary": "Another CMOC Limited record. A listed buyer of the plant.",
+   "source_call_ids": [
+    "s12-07"
+   ],
+   "sayari_url": "https://graph.sayari.com/resource/entity/d8x1blfAYQjfj9GfP9KKzA"
+  },
+  {
+   "id": "5VKlG8PIhQWuUlbajPiMtQ",
+   "name": "CMOC Limited (record 4)",
+   "country": "CHN",
+   "type": "company",
+   "role": "buyer",
+   "risk_flags": [],
+   "identifiers": {},
+   "summary": "CMOC Limited record at Lujiazui Century Financial Plaza, Shanghai. A listed buyer of the plant.",
+   "source_call_ids": [
+    "s12-07"
+   ],
+   "sayari_url": "https://graph.sayari.com/resource/entity/5VKlG8PIhQWuUlbajPiMtQ"
+  },
+  {
+   "id": "Eqw8Cklt_9F3TM_OkpYi3Q",
+   "name": "CMOC Limited (record 5)",
+   "country": "CHN",
+   "type": "company",
+   "role": "buyer",
+   "risk_flags": [],
+   "identifiers": {},
+   "summary": "CMOC Limited record at the same Shanghai address. A listed buyer of the plant.",
+   "source_call_ids": [
+    "s12-07"
+   ],
+   "sayari_url": "https://graph.sayari.com/resource/entity/Eqw8Cklt_9F3TM_OkpYi3Q"
+  },
+  {
+   "id": "kaeTD2BiXCYXjbYONaSpdg",
+   "name": "Macquarie Bank Limited",
+   "country": "AUS",
+   "type": "company",
+   "role": "trader",
+   "risk_flags": [],
+   "identifiers": {},
+   "summary": "Sydney bank with a commodities business. A listed buyer of the plant.",
+   "source_call_ids": [
+    "s12-07"
+   ],
+   "sayari_url": "https://graph.sayari.com/resource/entity/kaeTD2BiXCYXjbYONaSpdg"
+  },
+  {
+   "id": "BFCf_eck0XDu46uyiK3lOw",
+   "name": "EVTech Valves ZJK Co., Ltd.",
+   "country": "CHN",
+   "type": "company",
+   "role": "buyer",
+   "risk_flags": [],
+   "identifiers": {},
+   "summary": "Tianjin valve company. A listed buyer of the plant (likely equipment).",
+   "source_call_ids": [
+    "s12-07"
+   ],
+   "sayari_url": "https://graph.sayari.com/resource/entity/BFCf_eck0XDu46uyiK3lOw"
+  },
+  {
+   "id": "iVy5JNClAmJ6bJYtMHVLlg",
+   "name": "Valvescom (Beijing) Controls Co., Ltd.",
+   "country": "CHN",
+   "type": "company",
+   "role": "buyer",
+   "risk_flags": [],
+   "identifiers": {},
+   "summary": "Beijing valve-controls company. A listed buyer of the plant (likely equipment).",
+   "source_call_ids": [
+    "s12-07"
+   ],
+   "sayari_url": "https://graph.sayari.com/resource/entity/iVy5JNClAmJ6bJYtMHVLlg"
+  },
+  {
+   "id": "hA2kEXRHbJKZhjelmKIu7g",
+   "name": "MHWirth GmbH",
+   "country": "DEU",
+   "type": "company",
+   "role": "buyer",
+   "risk_flags": [],
+   "identifiers": {},
+   "summary": "Erkelenz, Germany equipment maker. A listed buyer of the plant (likely equipment).",
+   "source_call_ids": [
+    "s12-07"
+   ],
+   "sayari_url": "https://graph.sayari.com/resource/entity/hA2kEXRHbJKZhjelmKIu7g"
+  },
+  {
+   "id": "ZCqTr9oLOTEZwvSZ2KgMtQ",
+   "name": "JB Engineering Ltd",
+   "country": "HKG",
+   "type": "company",
+   "role": "buyer",
+   "risk_flags": [],
+   "identifiers": {},
+   "summary": "Hong Kong engineering company. A listed buyer of the plant.",
+   "source_call_ids": [
+    "s12-07"
+   ],
+   "sayari_url": "https://graph.sayari.com/resource/entity/ZCqTr9oLOTEZwvSZ2KgMtQ"
+  },
+  {
+   "id": "90x-fyBYVuhloo3nmeG0VA",
+   "name": "China Shipping-Vastwin Engineering & Logistics",
+   "country": "CHN",
+   "type": "company",
+   "role": "trader",
+   "risk_flags": [],
+   "identifiers": {},
+   "summary": "Nanjing logistics company; 10 of the plant's export rows (any product).",
+   "source_call_ids": [
+    "s12-07"
+   ],
+   "sayari_url": "https://graph.sayari.com/resource/entity/90x-fyBYVuhloo3nmeG0VA"
+  },
+  {
+   "id": "GB0dj36x8mqEIRXC6fDDEQ",
+   "name": "DBR Industrial Products Pty Ltd",
+   "country": "AUS",
+   "type": "company",
+   "role": "buyer",
+   "risk_flags": [],
+   "identifiers": {},
+   "summary": "Western Australia industrial-products company. A listed buyer of the plant.",
+   "source_call_ids": [
+    "s12-07"
+   ],
+   "sayari_url": "https://graph.sayari.com/resource/entity/GB0dj36x8mqEIRXC6fDDEQ"
+  }
+ ],
+ "edges": [
+  {
+   "id": "e12-01",
+   "source": "Ez81wqDCkYuIjnT9f30Ifw",
+   "target": "d36wLU72WGaWpEduWzxfNw",
+   "relation": "possibly_same_as",
+   "edge_type": "inferred",
+   "confidence": "inferred",
+   "confidence_reason": "Same street address and name stem; no shared identifier.",
+   "hs_codes": [],
+   "first_seen": null,
+   "last_seen": null,
+   "shipment_count": null,
+   "evidence": "Shares the Sopo Del Office Tower A, floor 21, Mega Kuningan Barat III address and the 'Huayue Nickel Cobalt' name with the main record.",
+   "source_call_ids": [
+    "s12-01",
+    "s12-02"
+   ]
+  },
+  {
+   "id": "e12-02",
+   "source": "xI-CsXxNFsCuDyao-h5uCQ",
+   "target": "d36wLU72WGaWpEduWzxfNw",
+   "relation": "possibly_same_as",
+   "edge_type": "inferred",
+   "confidence": "inferred",
+   "confidence_reason": "Same street address and name stem; no shared identifier.",
+   "hs_codes": [],
+   "first_seen": null,
+   "last_seen": null,
+   "shipment_count": null,
+   "evidence": "Shares the Sopo Del Office Tower A, floor 21, Mega Kuningan Barat III address and the 'Huayue Nickel Cobalt' name with the main record.",
+   "source_call_ids": [
+    "s12-01",
+    "s12-02"
+   ]
+  },
+  {
+   "id": "e12-03",
+   "source": "Uez7TzdLHdKr_H0xSODvyA",
+   "target": "d36wLU72WGaWpEduWzxfNw",
+   "relation": "possibly_same_as",
+   "edge_type": "inferred",
+   "confidence": "inferred",
+   "confidence_reason": "Same street address and name stem; no shared identifier.",
+   "hs_codes": [],
+   "first_seen": null,
+   "last_seen": null,
+   "shipment_count": null,
+   "evidence": "Shares the Sopo Del Office Tower A, floor 21, Mega Kuningan Barat III address and the 'Huayue Nickel Cobalt' name with the main record.",
+   "source_call_ids": [
+    "s12-01",
+    "s12-02"
+   ]
+  },
+  {
+   "id": "e12-04",
+   "source": "z1oM-Pp9uyq37UaaF1Rihg",
+   "target": "d36wLU72WGaWpEduWzxfNw",
+   "relation": "possibly_same_as",
+   "edge_type": "inferred",
+   "confidence": "inferred",
+   "confidence_reason": "Same street address and name stem; no shared identifier.",
+   "hs_codes": [],
+   "first_seen": null,
+   "last_seen": null,
+   "shipment_count": null,
+   "evidence": "Shares the Sopo Del Office Tower A, floor 21, Mega Kuningan Barat III address and the 'Huayue Nickel Cobalt' name with the main record.",
+   "source_call_ids": [
+    "s12-01",
+    "s12-02"
+   ]
+  },
+  {
+   "id": "e12-05",
+   "source": "Ymxqm3kJPGytQyBL7jXezg",
+   "target": "d36wLU72WGaWpEduWzxfNw",
+   "relation": "possibly_same_as",
+   "edge_type": "inferred",
+   "confidence": "lead",
+   "confidence_reason": "Name match only, with at most a district name.",
+   "hs_codes": [],
+   "first_seen": null,
+   "last_seen": null,
+   "shipment_count": null,
+   "evidence": "Same or misspelt name; only 'Jakarta Selatan' or no address.",
+   "source_call_ids": [
+    "s12-01"
+   ]
+  },
+  {
+   "id": "e12-06",
+   "source": "o9Ln4E80py9bVIBTH3lazA",
+   "target": "d36wLU72WGaWpEduWzxfNw",
+   "relation": "possibly_same_as",
+   "edge_type": "inferred",
+   "confidence": "lead",
+   "confidence_reason": "Name match only, with at most a district name.",
+   "hs_codes": [],
+   "first_seen": null,
+   "last_seen": null,
+   "shipment_count": null,
+   "evidence": "Same or misspelt name; only 'Jakarta Selatan' or no address.",
+   "source_call_ids": [
+    "s12-01"
+   ]
+  },
+  {
+   "id": "e12-07",
+   "source": "VLdRtXQM_rBOqEQVtf3pkw",
+   "target": "d36wLU72WGaWpEduWzxfNw",
+   "relation": "possibly_same_as",
+   "edge_type": "inferred",
+   "confidence": "lead",
+   "confidence_reason": "Name match only, with at most a district name.",
+   "hs_codes": [],
+   "first_seen": null,
+   "last_seen": null,
+   "shipment_count": null,
+   "evidence": "Same or misspelt name; only 'Jakarta Selatan' or no address.",
+   "source_call_ids": [
+    "s12-01"
+   ]
+  },
+  {
+   "id": "e12-08",
+   "source": "GstlFKZ-29D5gm8p3Xg6mw",
+   "target": "d36wLU72WGaWpEduWzxfNw",
+   "relation": "owns",
+   "edge_type": "contractual",
+   "confidence": "corroborated",
+   "confidence_reason": "Two independent open sources agree on 57%, and Sayari's beneficial-owner record points to a Huayou shareholder; no registry shareholding in Sayari.",
+   "hs_codes": [],
+   "first_seen": null,
+   "last_seen": null,
+   "shipment_count": null,
+   "evidence": "Nickel Industries' 2023 EGM notice and AEER's Feb 2025 HPAL report both give Huayou Cobalt 57% of HNC (CMOC 30%, Nickel Industries 10%, Huaqing Hualong Consulting 2%, Long Sincere 1%).",
+   "source_call_ids": [
+    "t12-01",
+    "s12-03",
+    "s12-05"
+   ]
+  },
+  {
+   "id": "e12-09",
+   "source": "9qVFfWtDk6KefWuKgt8uOg",
+   "target": "d36wLU72WGaWpEduWzxfNw",
+   "relation": "shareholder_of",
+   "edge_type": "contractual",
+   "confidence": "documented",
+   "confidence_reason": "Indonesian beneficial-owner register record returned by Sayari.",
+   "hs_codes": [],
+   "first_seen": null,
+   "last_seen": null,
+   "shipment_count": null,
+   "evidence": "Listed as a beneficial owner of the plant (owner ID 771950), Tongxiang, Zhejiang address. Percentage not given.",
+   "source_call_ids": [
+    "s12-03"
+   ]
+  },
+  {
+   "id": "e12-10",
+   "source": "7OXs4DTLrDP0MB8gbZuTnA",
+   "target": "d36wLU72WGaWpEduWzxfNw",
+   "relation": "shareholder_of",
+   "edge_type": "contractual",
+   "confidence": "documented",
+   "confidence_reason": "Indonesian beneficial-owner register record returned by Sayari.",
+   "hs_codes": [],
+   "first_seen": null,
+   "last_seen": null,
+   "shipment_count": null,
+   "evidence": "Listed as a beneficial owner of the plant (owner ID 771951), Taipei address. Percentage and link to a shareholder not given.",
+   "source_call_ids": [
+    "s12-03"
+   ]
+  },
+  {
+   "id": "e12-11",
+   "source": "9qVFfWtDk6KefWuKgt8uOg",
+   "target": "GstlFKZ-29D5gm8p3Xg6mw",
+   "relation": "shareholder_of",
+   "edge_type": "contractual",
+   "confidence": "corroborated",
+   "confidence_reason": "AEER (citing Huayou's annual report) names the holding, and the Sayari record's Tongxiang address matches Huayou's home city.",
+   "hs_codes": [],
+   "first_seen": null,
+   "last_seen": null,
+   "shipment_count": null,
+   "evidence": "AEER lists Chen Xuehua with 6.43% of Huayou Cobalt (2023 top-10 shareholders). Sayari has no direct record of this link.",
+   "source_call_ids": [
+    "t12-01",
+    "s12-03",
+    "s12-04"
+   ]
+  },
+  {
+   "id": "e12-12",
+   "source": "GstlFKZ-29D5gm8p3Xg6mw",
+   "target": "RbLPDr6UX-QhTaP5x11BQQ",
+   "relation": "owns",
+   "edge_type": "contractual",
+   "confidence": "documented",
+   "confidence_reason": "Sayari returned a shareholder relationship.",
+   "hs_codes": [],
+   "first_seen": null,
+   "last_seen": null,
+   "shipment_count": null,
+   "evidence": "Huayou Cobalt is a shareholder of Zhejiang Huayou Import & Export in Sayari's graph.",
+   "source_call_ids": [
+    "s12-05"
+   ]
+  },
+  {
+   "id": "e12-13",
+   "source": "RbLPDr6UX-QhTaP5x11BQQ",
+   "target": "d36wLU72WGaWpEduWzxfNw",
+   "relation": "ships_to",
+   "edge_type": "transactional",
+   "confidence": "lead",
+   "confidence_reason": "Sayari's graph shows a trade link, but we did not pull the dated rows.",
+   "hs_codes": [],
+   "first_seen": null,
+   "last_seen": null,
+   "shipment_count": null,
+   "evidence": "The plant 'receives from' Huayou Import & Export on Sayari's shortest path to Huayou.",
+   "source_call_ids": [
+    "s12-05",
+    "s12-06"
+   ]
+  },
+  {
+   "id": "e12-14",
+   "source": "WsTfWkdMP4iuUyQG7iidlQ",
+   "target": "GstlFKZ-29D5gm8p3Xg6mw",
+   "relation": "possibly_same_as",
+   "edge_type": "inferred",
+   "confidence": "inferred",
+   "confidence_reason": "Same organisation code inside both records' identifiers and the same street; the credit codes differ by one digit.",
+   "hs_codes": [],
+   "first_seen": null,
+   "last_seen": null,
+   "shipment_count": null,
+   "evidence": "Chinese-name record's organisation code 736887396 appears in the English record's import-export code; both at 18 Wuzhen East Road, Tongxiang.",
+   "source_call_ids": [
+    "s12-04"
+   ]
+  },
+  {
+   "id": "e12-15",
+   "source": "GstlFKZ-29D5gm8p3Xg6mw",
+   "target": "mM2BJnjq_KYla3H9_zQHQg",
+   "relation": "group_name_match",
+   "edge_type": "inferred",
+   "confidence": "lead",
+   "confidence_reason": "Group name only; we did not check a shareholding record.",
+   "hs_codes": [],
+   "first_seen": null,
+   "last_seen": null,
+   "shipment_count": null,
+   "evidence": "Carries the Huayou name; Huayou's own reports describe precursor and trading subsidiaries, but no record here ties this company to the parent.",
+   "source_call_ids": [
+    "s12-04",
+    "s12-11"
+   ]
+  },
+  {
+   "id": "e12-16",
+   "source": "GstlFKZ-29D5gm8p3Xg6mw",
+   "target": "IIei9yVxJwNGPNOuQwQsGw",
+   "relation": "group_name_match",
+   "edge_type": "inferred",
+   "confidence": "lead",
+   "confidence_reason": "Group name only; we did not check a shareholding record.",
+   "hs_codes": [],
+   "first_seen": null,
+   "last_seen": null,
+   "shipment_count": null,
+   "evidence": "Carries the Huayou name; Huayou's own reports describe precursor and trading subsidiaries, but no record here ties this company to the parent.",
+   "source_call_ids": [
+    "s12-04",
+    "s12-11"
+   ]
+  },
+  {
+   "id": "e12-17",
+   "source": "GstlFKZ-29D5gm8p3Xg6mw",
+   "target": "PngfQG6leaGtxETdtENi0g",
+   "relation": "group_name_match",
+   "edge_type": "inferred",
+   "confidence": "lead",
+   "confidence_reason": "Group name only; we did not check a shareholding record.",
+   "hs_codes": [],
+   "first_seen": null,
+   "last_seen": null,
+   "shipment_count": null,
+   "evidence": "Carries the Huayou name; Huayou's own reports describe precursor and trading subsidiaries, but no record here ties this company to the parent.",
+   "source_call_ids": [
+    "s12-04",
+    "s12-11"
+   ]
+  },
+  {
+   "id": "e12-18",
+   "source": "GstlFKZ-29D5gm8p3Xg6mw",
+   "target": "ki6hICRACf98bvo9QNh6yQ",
+   "relation": "group_name_match",
+   "edge_type": "inferred",
+   "confidence": "lead",
+   "confidence_reason": "Group name only; we did not check a shareholding record.",
+   "hs_codes": [],
+   "first_seen": null,
+   "last_seen": null,
+   "shipment_count": null,
+   "evidence": "Carries the Huayou name; Huayou's own reports describe precursor and trading subsidiaries, but no record here ties this company to the parent.",
+   "source_call_ids": [
+    "s12-04",
+    "s12-19"
+   ]
+  },
+  {
+   "id": "e12-19",
+   "source": "GstlFKZ-29D5gm8p3Xg6mw",
+   "target": "zQD30wAsnYMA012sbiEMbQ",
+   "relation": "group_name_match",
+   "edge_type": "inferred",
+   "confidence": "lead",
+   "confidence_reason": "Group name only; we did not check a shareholding record.",
+   "hs_codes": [],
+   "first_seen": null,
+   "last_seen": null,
+   "shipment_count": null,
+   "evidence": "Carries the Huayou name; Huayou's own reports describe precursor and trading subsidiaries, but no record here ties this company to the parent.",
+   "source_call_ids": [
+    "s12-04",
+    "s12-19"
+   ]
+  },
+  {
+   "id": "e12-20",
+   "source": "0MNsm_PAjuxVwnNyKhp7jg",
+   "target": "PngfQG6leaGtxETdtENi0g",
+   "relation": "possibly_same_as",
+   "edge_type": "inferred",
+   "confidence": "lead",
+   "confidence_reason": "Same name only; addresses not compared.",
+   "hs_codes": [],
+   "first_seen": null,
+   "last_seen": null,
+   "shipment_count": null,
+   "evidence": "Two 'Huayou (Hong Kong) Co., Limited' records.",
+   "source_call_ids": [
+    "s12-15"
+   ]
+  },
+  {
+   "id": "e12-21",
+   "source": "d36wLU72WGaWpEduWzxfNw",
+   "target": "mM2BJnjq_KYla3H9_zQHQg",
+   "relation": "ships_to",
+   "edge_type": "transactional",
+   "confidence": "documented",
+   "confidence_reason": "Dated HS 7501.20 shipment rows returned by Sayari.",
+   "hs_codes": [
+    "750120"
+   ],
+   "first_seen": "2025-02-28",
+   "last_seen": "2026-08-29",
+   "shipment_count": 34,
+   "evidence": "34 rows of HS 7501.20 (nickel intermediate products, here MHP) in the 200 rows we read.",
+   "source_call_ids": [
+    "s12-11",
+    "s12-12"
+   ]
+  },
+  {
+   "id": "e12-22",
+   "source": "d36wLU72WGaWpEduWzxfNw",
+   "target": "IIei9yVxJwNGPNOuQwQsGw",
+   "relation": "ships_to",
+   "edge_type": "transactional",
+   "confidence": "documented",
+   "confidence_reason": "Dated HS 7501.20 shipment rows returned by Sayari.",
+   "hs_codes": [
+    "750120"
+   ],
+   "first_seen": "2025-02-10",
+   "last_seen": "2026-02-05",
+   "shipment_count": 21,
+   "evidence": "21 rows of HS 7501.20 (nickel intermediate products, here MHP) in the 200 rows we read.",
+   "source_call_ids": [
+    "s12-11",
+    "s12-12"
+   ]
+  },
+  {
+   "id": "e12-23",
+   "source": "d36wLU72WGaWpEduWzxfNw",
+   "target": "PngfQG6leaGtxETdtENi0g",
+   "relation": "ships_to",
+   "edge_type": "transactional",
+   "confidence": "documented",
+   "confidence_reason": "Dated HS 7501.20 shipment rows returned by Sayari.",
+   "hs_codes": [
+    "750120"
+   ],
+   "first_seen": "2024-08-05",
+   "last_seen": "2025-08-26",
+   "shipment_count": 21,
+   "evidence": "21 rows of HS 7501.20 (nickel intermediate products, here MHP) in the 200 rows we read.",
+   "source_call_ids": [
+    "s12-11",
+    "s12-12"
+   ]
+  },
+  {
+   "id": "e12-24",
+   "source": "d36wLU72WGaWpEduWzxfNw",
+   "target": "lrJp9t-68mxX65btZ3j3Bw",
+   "relation": "ships_to",
+   "edge_type": "transactional",
+   "confidence": "documented",
+   "confidence_reason": "Dated HS 7501.20 shipment rows returned by Sayari.",
+   "hs_codes": [
+    "750120"
+   ],
+   "first_seen": "2025-01-21",
+   "last_seen": "2026-08-06",
+   "shipment_count": 25,
+   "evidence": "25 rows of HS 7501.20 (nickel intermediate products) in the 200 rows we read.",
+   "source_call_ids": [
+    "s12-11",
+    "s12-12"
+   ]
+  },
+  {
+   "id": "e12-25",
+   "source": "d36wLU72WGaWpEduWzxfNw",
+   "target": "kVqJhZuuT3zNp8rVF2xKdg",
+   "relation": "ships_to",
+   "edge_type": "transactional",
+   "confidence": "documented",
+   "confidence_reason": "Dated HS 7501.20 shipment rows returned by Sayari.",
+   "hs_codes": [
+    "750120"
+   ],
+   "first_seen": "2025-06-21",
+   "last_seen": "2026-06-23",
+   "shipment_count": 15,
+   "evidence": "15 rows of HS 7501.20 (nickel intermediate products) in the 200 rows we read.",
+   "source_call_ids": [
+    "s12-11",
+    "s12-12"
+   ]
+  },
+  {
+   "id": "e12-26",
+   "source": "d36wLU72WGaWpEduWzxfNw",
+   "target": "VzWGnh0SfG2WP5oPDcPOPQ",
+   "relation": "ships_to",
+   "edge_type": "transactional",
+   "confidence": "documented",
+   "confidence_reason": "Dated HS 7501.20 shipment rows returned by Sayari.",
+   "hs_codes": [
+    "750120"
+   ],
+   "first_seen": "2024-09-04",
+   "last_seen": "2025-01-01",
+   "shipment_count": 18,
+   "evidence": "18 rows of HS 7501.20 (nickel intermediate products) in the 200 rows we read.",
+   "source_call_ids": [
+    "s12-11",
+    "s12-12"
+   ]
+  },
+  {
+   "id": "e12-27",
+   "source": "d36wLU72WGaWpEduWzxfNw",
+   "target": "ZaKwUyhsIvVTY19Xcs9eLg",
+   "relation": "ships_to",
+   "edge_type": "transactional",
+   "confidence": "documented",
+   "confidence_reason": "Dated HS 7501.20 shipment rows returned by Sayari.",
+   "hs_codes": [
+    "750120"
+   ],
+   "first_seen": "2024-08-03",
+   "last_seen": "2024-08-03",
+   "shipment_count": 2,
+   "evidence": "2 rows of HS 7501.20 (nickel intermediate products) in the 200 rows we read.",
+   "source_call_ids": [
+    "s12-11",
+    "s12-12"
+   ]
+  },
+  {
+   "id": "e12-28",
+   "source": "d36wLU72WGaWpEduWzxfNw",
+   "target": "h1_igDgmZeJnM8ZYjP0fbw",
+   "relation": "ships_to",
+   "edge_type": "transactional",
+   "confidence": "documented",
+   "confidence_reason": "Dated HS 7501.20 shipment rows returned by Sayari.",
+   "hs_codes": [
+    "750120"
+   ],
+   "first_seen": "2024-08-23",
+   "last_seen": "2025-08-07",
+   "shipment_count": 15,
+   "evidence": "15 rows of HS 7501.20 (nickel intermediate products) in the 200 rows we read.",
+   "source_call_ids": [
+    "s12-11",
+    "s12-12"
+   ]
+  },
+  {
+   "id": "e12-29",
+   "source": "d36wLU72WGaWpEduWzxfNw",
+   "target": "ZGSAeajSEGDZi8GM0aiVQA",
+   "relation": "ships_to",
+   "edge_type": "transactional",
+   "confidence": "documented",
+   "confidence_reason": "Dated HS 7501.20 shipment rows returned by Sayari.",
+   "hs_codes": [
+    "750120"
+   ],
+   "first_seen": "2025-09-05",
+   "last_seen": "2026-01-27",
+   "shipment_count": 8,
+   "evidence": "8 rows of HS 7501.20 (nickel intermediate products) in the 200 rows we read.",
+   "source_call_ids": [
+    "s12-11",
+    "s12-12"
+   ]
+  },
+  {
+   "id": "e12-30",
+   "source": "d36wLU72WGaWpEduWzxfNw",
+   "target": "wjLTvhB3dhht42e-E70LWg",
+   "relation": "ships_to",
+   "edge_type": "transactional",
+   "confidence": "documented",
+   "confidence_reason": "Dated HS 7501.20 shipment rows returned by Sayari.",
+   "hs_codes": [
+    "750120"
+   ],
+   "first_seen": "2025-02-28",
+   "last_seen": "2026-01-23",
+   "shipment_count": 5,
+   "evidence": "5 rows of HS 7501.20 (nickel intermediate products) in the 200 rows we read.",
+   "source_call_ids": [
+    "s12-11",
+    "s12-12"
+   ]
+  },
+  {
+   "id": "e12-31",
+   "source": "d36wLU72WGaWpEduWzxfNw",
+   "target": "UzT3_TT2SnI3YootPt0WcA",
+   "relation": "ships_to",
+   "edge_type": "transactional",
+   "confidence": "documented",
+   "confidence_reason": "Dated HS 7501.20 shipment rows returned by Sayari.",
+   "hs_codes": [
+    "750120"
+   ],
+   "first_seen": "2025-11-06",
+   "last_seen": "2026-01-17",
+   "shipment_count": 5,
+   "evidence": "5 rows of HS 7501.20 (nickel intermediate products) in the 200 rows we read.",
+   "source_call_ids": [
+    "s12-11",
+    "s12-12"
+   ]
+  },
+  {
+   "id": "e12-32",
+   "source": "d36wLU72WGaWpEduWzxfNw",
+   "target": "KGQq5VCbYtKqGu65BSHm5w",
+   "relation": "ships_to",
+   "edge_type": "transactional",
+   "confidence": "documented",
+   "confidence_reason": "Dated HS 7501.20 shipment rows returned by Sayari.",
+   "hs_codes": [
+    "750120"
+   ],
+   "first_seen": "2025-11-27",
+   "last_seen": "2025-12-19",
+   "shipment_count": 3,
+   "evidence": "3 rows of HS 7501.20 (nickel intermediate products) in the 200 rows we read.",
+   "source_call_ids": [
+    "s12-11",
+    "s12-12"
+   ]
+  },
+  {
+   "id": "e12-33",
+   "source": "d36wLU72WGaWpEduWzxfNw",
+   "target": "cH4v089kWgUexQsV822ugA",
+   "relation": "ships_to",
+   "edge_type": "transactional",
+   "confidence": "documented",
+   "confidence_reason": "Dated HS 7501.20 shipment rows returned by Sayari.",
+   "hs_codes": [
+    "750120"
+   ],
+   "first_seen": "2026-06-28",
+   "last_seen": "2026-06-28",
+   "shipment_count": 1,
+   "evidence": "1 row of HS 7501.20 (nickel intermediate products) in the 200 rows we read.",
+   "source_call_ids": [
+    "s12-11",
+    "s12-12"
+   ]
+  },
+  {
+   "id": "e12-34",
+   "source": "d36wLU72WGaWpEduWzxfNw",
+   "target": "NNd7dqEX2M1s1xiqh6PCWw",
+   "relation": "ships_to",
+   "edge_type": "transactional",
+   "confidence": "documented",
+   "confidence_reason": "Dated HS 7501.20 shipment rows returned by Sayari.",
+   "hs_codes": [
+    "750120"
+   ],
+   "first_seen": "2026-05-28",
+   "last_seen": "2026-06-28",
+   "shipment_count": 2,
+   "evidence": "2 rows of HS 7501.20 (nickel intermediate products) in the 200 rows we read.",
+   "source_call_ids": [
+    "s12-11",
+    "s12-12"
+   ]
+  },
+  {
+   "id": "e12-35",
+   "source": "d36wLU72WGaWpEduWzxfNw",
+   "target": "woLJFqF6GCLLYeJBgZvFfg",
+   "relation": "ships_to",
+   "edge_type": "transactional",
+   "confidence": "documented",
+   "confidence_reason": "Dated HS 7501.20 shipment rows returned by Sayari.",
+   "hs_codes": [
+    "750120"
+   ],
+   "first_seen": "2025-09-05",
+   "last_seen": "2025-09-05",
+   "shipment_count": 1,
+   "evidence": "1 row of HS 7501.20 (nickel intermediate products) in the 200 rows we read.",
+   "source_call_ids": [
+    "s12-11",
+    "s12-12"
+   ]
+  },
+  {
+   "id": "e12-36",
+   "source": "d36wLU72WGaWpEduWzxfNw",
+   "target": "ojFzTG7M5khFZCgZORyvaw",
+   "relation": "ships_to",
+   "edge_type": "transactional",
+   "confidence": "documented",
+   "confidence_reason": "Dated HS 7501.20 shipment rows returned by Sayari.",
+   "hs_codes": [
+    "750120"
+   ],
+   "first_seen": "2025-02-28",
+   "last_seen": "2025-02-28",
+   "shipment_count": 1,
+   "evidence": "1 row of HS 7501.20 (nickel intermediate products) in the 200 rows we read.",
+   "source_call_ids": [
+    "s12-11",
+    "s12-12"
+   ]
+  },
+  {
+   "id": "e12-37",
+   "source": "d36wLU72WGaWpEduWzxfNw",
+   "target": "tgr3gCs1yln5imqewTaYzg",
+   "relation": "ships_to",
+   "edge_type": "transactional",
+   "confidence": "documented",
+   "confidence_reason": "Dated HS 7501.20 shipment rows returned by Sayari.",
+   "hs_codes": [
+    "750120"
+   ],
+   "first_seen": "2025-04-29",
+   "last_seen": "2025-04-29",
+   "shipment_count": 1,
+   "evidence": "1 row of HS 7501.20 (nickel intermediate products) in the 200 rows we read.",
+   "source_call_ids": [
+    "s12-11",
+    "s12-12"
+   ]
+  },
+  {
+   "id": "e12-38",
+   "source": "d36wLU72WGaWpEduWzxfNw",
+   "target": "peh2aaMX6Uc4iclgwV_Yiw",
+   "relation": "ships_to",
+   "edge_type": "transactional",
+   "confidence": "documented",
+   "confidence_reason": "Dated HS 7501.20 shipment rows returned by Sayari.",
+   "hs_codes": [
+    "750120"
+   ],
+   "first_seen": "2025-09-03",
+   "last_seen": "2025-09-03",
+   "shipment_count": 1,
+   "evidence": "1 row of HS 7501.20 (nickel intermediate products) in the 200 rows we read.",
+   "source_call_ids": [
+    "s12-11",
+    "s12-12"
+   ]
+  },
+  {
+   "id": "e12-39",
+   "source": "d36wLU72WGaWpEduWzxfNw",
+   "target": "XXaZBOWuQHUuRF8kIMeD_A",
+   "relation": "ships_to",
+   "edge_type": "transactional",
+   "confidence": "documented",
+   "confidence_reason": "Dated HS 7501.20 shipment rows returned by Sayari.",
+   "hs_codes": [
+    "750120"
+   ],
+   "first_seen": "2025-11-27",
+   "last_seen": "2025-11-27",
+   "shipment_count": 2,
+   "evidence": "2 rows of HS 7501.20 (nickel intermediate products) in the 200 rows we read.",
+   "source_call_ids": [
+    "s12-11",
+    "s12-12"
+   ]
+  },
+  {
+   "id": "e12-40",
+   "source": "d36wLU72WGaWpEduWzxfNw",
+   "target": "ZutAsZXUwnXdVkam_h1MVQ",
+   "relation": "ships_to",
+   "edge_type": "transactional",
+   "confidence": "documented",
+   "confidence_reason": "Dated HS 7501.20 shipment rows returned by Sayari.",
+   "hs_codes": [
+    "750120"
+   ],
+   "first_seen": "2026-05-28",
+   "last_seen": "2026-05-28",
+   "shipment_count": 1,
+   "evidence": "1 row of HS 7501.20 (nickel intermediate products) in the 200 rows we read.",
+   "source_call_ids": [
+    "s12-11",
+    "s12-12"
+   ]
+  },
+  {
+   "id": "e12-41",
+   "source": "d36wLU72WGaWpEduWzxfNw",
+   "target": "2ZeXxsq0caRd8S088p5mgQ",
+   "relation": "ships_to",
+   "edge_type": "transactional",
+   "confidence": "documented",
+   "confidence_reason": "Dated HS 7501.20 shipment rows returned by Sayari.",
+   "hs_codes": [
+    "750120"
+   ],
+   "first_seen": "2025-10-17",
+   "last_seen": "2025-10-17",
+   "shipment_count": 1,
+   "evidence": "1 row of HS 7501.20 (nickel intermediate products) in the 200 rows we read.",
+   "source_call_ids": [
+    "s12-11",
+    "s12-12"
+   ]
+  },
+  {
+   "id": "e12-42",
+   "source": "d36wLU72WGaWpEduWzxfNw",
+   "target": "lT-hmJ_-ORaFt2RK3aQh8w",
+   "relation": "ships_to",
+   "edge_type": "transactional",
+   "confidence": "documented",
+   "confidence_reason": "Dated HS 7501.20 shipment rows returned by Sayari.",
+   "hs_codes": [
+    "750120"
+   ],
+   "first_seen": "2025-09-16",
+   "last_seen": "2025-09-16",
+   "shipment_count": 1,
+   "evidence": "1 row of HS 7501.20 (nickel intermediate products) in the 200 rows we read.",
+   "source_call_ids": [
+    "s12-11",
+    "s12-12"
+   ]
+  },
+  {
+   "id": "e12-43",
+   "source": "d36wLU72WGaWpEduWzxfNw",
+   "target": "NQWdtyXbI4ETIUhjvXl9fA",
+   "relation": "ships_to",
+   "edge_type": "transactional",
+   "confidence": "documented",
+   "confidence_reason": "Dated HS 7501.20 shipment rows returned by Sayari.",
+   "hs_codes": [
+    "750120"
+   ],
+   "first_seen": "2025-08-03",
+   "last_seen": "2025-08-03",
+   "shipment_count": 1,
+   "evidence": "1 row of HS 7501.20 (nickel intermediate products) in the 200 rows we read.",
+   "source_call_ids": [
+    "s12-11",
+    "s12-12"
+   ]
+  },
+  {
+   "id": "e12-44",
+   "source": "d36wLU72WGaWpEduWzxfNw",
+   "target": "0rD1AdKe6DU2Mhps7-wCQw",
+   "relation": "ships_to",
+   "edge_type": "transactional",
+   "confidence": "documented",
+   "confidence_reason": "Dated HS 7501.20 shipment rows returned by Sayari.",
+   "hs_codes": [
+    "750120"
+   ],
+   "first_seen": "2026-08-04",
+   "last_seen": "2026-08-04",
+   "shipment_count": 1,
+   "evidence": "1 row of HS 7501.20 (nickel intermediate products) in the 200 rows we read.",
+   "source_call_ids": [
+    "s12-11",
+    "s12-12"
+   ]
+  },
+  {
+   "id": "e12-45",
+   "source": "d36wLU72WGaWpEduWzxfNw",
+   "target": "M5oiRlX6pfACm9YgsmU1gg",
+   "relation": "ships_to",
+   "edge_type": "transactional",
+   "confidence": "documented",
+   "confidence_reason": "Dated HS 7501.20 shipment rows returned by Sayari.",
+   "hs_codes": [
+    "750120"
+   ],
+   "first_seen": "2025-11-11",
+   "last_seen": "2025-11-11",
+   "shipment_count": 1,
+   "evidence": "1 row of HS 7501.20 (nickel intermediate products) in the 200 rows we read.",
+   "source_call_ids": [
+    "s12-11",
+    "s12-12"
+   ]
+  },
+  {
+   "id": "e12-46",
+   "source": "d36wLU72WGaWpEduWzxfNw",
+   "target": "AXrZ8cjxFQQ78w5-bbDfYQ",
+   "relation": "ships_to",
+   "edge_type": "transactional",
+   "confidence": "documented",
+   "confidence_reason": "Dated HS 7501.20 shipment rows returned by Sayari.",
+   "hs_codes": [
+    "750120"
+   ],
+   "first_seen": "2025-10-16",
+   "last_seen": "2025-10-16",
+   "shipment_count": 1,
+   "evidence": "1 row of HS 7501.20 (nickel intermediate products) in the 200 rows we read.",
+   "source_call_ids": [
+    "s12-11",
+    "s12-12"
+   ]
+  },
+  {
+   "id": "e12-47",
+   "source": "d36wLU72WGaWpEduWzxfNw",
+   "target": "lu0Wd7oLTE81R67KK6ZZ0A",
+   "relation": "ships_to",
+   "edge_type": "transactional",
+   "confidence": "documented",
+   "confidence_reason": "Dated HS 7501.20 shipment rows returned by Sayari.",
+   "hs_codes": [
+    "750120"
+   ],
+   "first_seen": "2026-01-29",
+   "last_seen": "2026-01-29",
+   "shipment_count": 2,
+   "evidence": "2 rows of HS 7501.20 (nickel intermediate products) in the 200 rows we read.",
+   "source_call_ids": [
+    "s12-11",
+    "s12-12"
+   ]
+  },
+  {
+   "id": "e12-48",
+   "source": "d36wLU72WGaWpEduWzxfNw",
+   "target": "pA8eIyU5ecqQsLfQsLDdCQ",
+   "relation": "ships_to",
+   "edge_type": "transactional",
+   "confidence": "documented",
+   "confidence_reason": "Dated HS 7501.20 shipment rows returned by Sayari.",
+   "hs_codes": [
+    "750120"
+   ],
+   "first_seen": "2025-12-26",
+   "last_seen": "2025-12-26",
+   "shipment_count": 1,
+   "evidence": "1 row of HS 7501.20 (nickel intermediate products) in the 200 rows we read.",
+   "source_call_ids": [
+    "s12-11",
+    "s12-12"
+   ]
+  },
+  {
+   "id": "e12-49",
+   "source": "d36wLU72WGaWpEduWzxfNw",
+   "target": "VpyEBZK-iStcoQBf0FzqDw",
+   "relation": "ships_to",
+   "edge_type": "transactional",
+   "confidence": "documented",
+   "confidence_reason": "Dated HS 7501.20 shipment rows returned by Sayari.",
+   "hs_codes": [
+    "750120"
+   ],
+   "first_seen": "2025-01-29",
+   "last_seen": "2025-03-02",
+   "shipment_count": 2,
+   "evidence": "2 rows of HS 7501.20 (nickel intermediate products) in the 200 rows we read.",
+   "source_call_ids": [
+    "s12-11",
+    "s12-12"
+   ]
+  },
+  {
+   "id": "e12-50",
+   "source": "d36wLU72WGaWpEduWzxfNw",
+   "target": "M6jLocKdHyfTfuyC_Z-irg",
+   "relation": "ships_to",
+   "edge_type": "transactional",
+   "confidence": "documented",
+   "confidence_reason": "Dated HS 7501.20 shipment rows returned by Sayari.",
+   "hs_codes": [
+    "750120"
+   ],
+   "first_seen": "2025-08-26",
+   "last_seen": "2025-08-26",
+   "shipment_count": 1,
+   "evidence": "1 row of HS 7501.20 (nickel intermediate products) in the 200 rows we read.",
+   "source_call_ids": [
+    "s12-11",
+    "s12-12"
+   ]
+  },
+  {
+   "id": "e12-51",
+   "source": "d36wLU72WGaWpEduWzxfNw",
+   "target": "nzZLSFJ3kSq0KaI1zQ0TNQ",
+   "relation": "ships_to",
+   "edge_type": "transactional",
+   "confidence": "documented",
+   "confidence_reason": "Dated HS 7501.20 shipment rows returned by Sayari.",
+   "hs_codes": [
+    "750120"
+   ],
+   "first_seen": "2025-02-28",
+   "last_seen": "2025-02-28",
+   "shipment_count": 1,
+   "evidence": "1 row of HS 7501.20 (nickel intermediate products) in the 200 rows we read.",
+   "source_call_ids": [
+    "s12-11",
+    "s12-12"
+   ]
+  },
+  {
+   "id": "e12-52",
+   "source": "d36wLU72WGaWpEduWzxfNw",
+   "target": "mQiBIyVJ2Cu-4a9uvX2iPA",
+   "relation": "ships_to",
+   "edge_type": "transactional",
+   "confidence": "documented",
+   "confidence_reason": "Dated HS 7501.20 shipment rows returned by Sayari.",
+   "hs_codes": [
+    "750120"
+   ],
+   "first_seen": "2025-11-29",
+   "last_seen": "2025-11-29",
+   "shipment_count": 1,
+   "evidence": "1 row of HS 7501.20 (nickel intermediate products) in the 200 rows we read.",
+   "source_call_ids": [
+    "s12-11",
+    "s12-12"
+   ]
+  },
+  {
+   "id": "e12-53",
+   "source": "d36wLU72WGaWpEduWzxfNw",
+   "target": "auzSftpGnzOxJcjKKP25Yw",
+   "relation": "ships_to",
+   "edge_type": "transactional",
+   "confidence": "documented",
+   "confidence_reason": "Dated HS 7501.20 shipment rows returned by Sayari.",
+   "hs_codes": [
+    "750120"
+   ],
+   "first_seen": "2025-10-25",
+   "last_seen": "2025-10-25",
+   "shipment_count": 1,
+   "evidence": "1 row of HS 7501.20 (nickel intermediate products) in the 200 rows we read.",
+   "source_call_ids": [
+    "s12-11",
+    "s12-12"
+   ]
+  },
+  {
+   "id": "e12-54",
+   "source": "d36wLU72WGaWpEduWzxfNw",
+   "target": "cU2MfaQrsUChpWaqsKx2dw",
+   "relation": "ships_to",
+   "edge_type": "transactional",
+   "confidence": "documented",
+   "confidence_reason": "Dated HS 7501.20 shipment rows returned by Sayari.",
+   "hs_codes": [
+    "750120"
+   ],
+   "first_seen": "2025-02-07",
+   "last_seen": "2025-02-07",
+   "shipment_count": 3,
+   "evidence": "3 rows of HS 7501.20 (nickel intermediate products) in the 200 rows we read.",
+   "source_call_ids": [
+    "s12-11",
+    "s12-12"
+   ]
+  },
+  {
+   "id": "e12-55",
+   "source": "d36wLU72WGaWpEduWzxfNw",
+   "target": "uVQaJRf9eQQbdQf9RVxBSA",
+   "relation": "ships_to",
+   "edge_type": "transactional",
+   "confidence": "documented",
+   "confidence_reason": "Dated shipment rows returned by Sayari.",
+   "hs_codes": [
+    "848180",
+    "810320"
+   ],
+   "first_seen": "2023-01-16",
+   "last_seen": "2025-11-25",
+   "shipment_count": 26,
+   "evidence": "Valves and valve parts with serial numbers (A20 and tantalum valves); one row coded as tantalum (HS 8103.20). Pattern consistent with equipment sent back for repair.",
+   "source_call_ids": [
+    "s12-10"
+   ]
+  },
+  {
+   "id": "e12-56",
+   "source": "d36wLU72WGaWpEduWzxfNw",
+   "target": "V26diz4dlR986Du6ylwgkw",
+   "relation": "ships_to",
+   "edge_type": "transactional",
+   "confidence": "documented",
+   "confidence_reason": "Dated shipment rows returned by Sayari.",
+   "hs_codes": [
+    "848180"
+   ],
+   "first_seen": "2025-11-27",
+   "last_seen": "2025-11-27",
+   "shipment_count": 2,
+   "evidence": "Two tantalum valves with serial numbers.",
+   "source_call_ids": [
+    "s12-10"
+   ]
+  },
+  {
+   "id": "e12-57",
+   "source": "d36wLU72WGaWpEduWzxfNw",
+   "target": "yuxcwL986OMuVCw60s2usA",
+   "relation": "ships_to",
+   "edge_type": "transactional",
+   "confidence": "documented",
+   "confidence_reason": "Dated shipment rows returned by Sayari.",
+   "hs_codes": [
+    "848180",
+    "841989"
+   ],
+   "first_seen": "2023-01-24",
+   "last_seen": "2025-11-26",
+   "shipment_count": 20,
+   "evidence": "Valve seats, plugs, stems, clamps and a flash valve blast tube (ceramic or titanium trim).",
+   "source_call_ids": [
+    "s12-10"
+   ]
+  },
+  {
+   "id": "e12-58",
+   "source": "V26diz4dlR986Du6ylwgkw",
+   "target": "uVQaJRf9eQQbdQf9RVxBSA",
+   "relation": "possibly_same_as",
+   "edge_type": "inferred",
+   "confidence": "inferred",
+   "confidence_reason": "Same Houston street address and near-identical name; no identifier.",
+   "hs_codes": [],
+   "first_seen": null,
+   "last_seen": null,
+   "shipment_count": null,
+   "evidence": "Both at 5904 Bingle Road, Houston, TX 77092.",
+   "source_call_ids": [
+    "s12-07"
+   ]
+  },
+  {
+   "id": "e12-59",
+   "source": "oZ-QV5StOu0UipdQi2KUYA",
+   "target": "PngfQG6leaGtxETdtENi0g",
+   "relation": "ships_to",
+   "edge_type": "transactional",
+   "confidence": "documented",
+   "confidence_reason": "Dated shipment rows returned by Sayari.",
+   "hs_codes": [
+    "750210"
+   ],
+   "first_seen": "2025-04-26",
+   "last_seen": "2026-05-04",
+   "shipment_count": 19,
+   "evidence": "Nickel cathode, 99.99% Ni, departing Indonesia, arriving Korea.",
+   "source_call_ids": [
+    "s12-15"
+   ]
+  },
+  {
+   "id": "e12-60",
+   "source": "oZ-QV5StOu0UipdQi2KUYA",
+   "target": "0MNsm_PAjuxVwnNyKhp7jg",
+   "relation": "ships_to",
+   "edge_type": "transactional",
+   "confidence": "documented",
+   "confidence_reason": "Dated shipment rows returned by Sayari.",
+   "hs_codes": [
+    "750210"
+   ],
+   "first_seen": "2025-02-10",
+   "last_seen": "2025-03-29",
+   "shipment_count": 8,
+   "evidence": "Nickel cathode, 99.99% Ni, departing Indonesia, arriving Korea.",
+   "source_call_ids": [
+    "s12-15"
+   ]
+  },
+  {
+   "id": "e12-61",
+   "source": "ki6hICRACf98bvo9QNh6yQ",
+   "target": "Fj3vtxDroFyjyPsLgsnm2A",
+   "relation": "ships_to",
+   "edge_type": "transactional",
+   "confidence": "corroborated",
+   "confidence_reason": "Dated rows in Sayari, plus Huayou's annual report naming a long-term precursor supply deal with POSCO Chemical.",
+   "hs_codes": [
+    "285390"
+   ],
+   "first_seen": "2021-12-12",
+   "last_seen": "2023-08-12",
+   "shipment_count": 16,
+   "evidence": "HS 2853.90 'nickel cobalt manganese hydroxide' (cathode precursor) into Korea.",
+   "source_call_ids": [
+    "s12-19",
+    "t12-03"
+   ]
+  },
+  {
+   "id": "e12-62",
+   "source": "ki6hICRACf98bvo9QNh6yQ",
+   "target": "N_UQeUCvCpXAkOSJd6CEYw",
+   "relation": "ships_to",
+   "edge_type": "transactional",
+   "confidence": "documented",
+   "confidence_reason": "Dated shipment rows returned by Sayari.",
+   "hs_codes": [
+    "285390"
+   ],
+   "first_seen": "2023-08-12",
+   "last_seen": "2023-12-03",
+   "shipment_count": 9,
+   "evidence": "HS 2853.90 into Korea.",
+   "source_call_ids": [
+    "s12-19"
+   ]
+  },
+  {
+   "id": "e12-63",
+   "source": "ki6hICRACf98bvo9QNh6yQ",
+   "target": "N3UgWRTegQ-62gm83cCoJw",
+   "relation": "ships_to",
+   "edge_type": "transactional",
+   "confidence": "documented",
+   "confidence_reason": "Dated shipment rows returned by Sayari.",
+   "hs_codes": [
+    "285390"
+   ],
+   "first_seen": "2023-04-24",
+   "last_seen": "2023-04-24",
+   "shipment_count": 2,
+   "evidence": "HS 2853.90 into Korea.",
+   "source_call_ids": [
+    "s12-19"
+   ]
+  },
+  {
+   "id": "e12-64",
+   "source": "zQD30wAsnYMA012sbiEMbQ",
+   "target": "Fj3vtxDroFyjyPsLgsnm2A",
+   "relation": "ships_to",
+   "edge_type": "transactional",
+   "confidence": "documented",
+   "confidence_reason": "Dated shipment rows returned by Sayari.",
+   "hs_codes": [
+    "285390"
+   ],
+   "first_seen": "2022-02-18",
+   "last_seen": "2022-02-18",
+   "shipment_count": 2,
+   "evidence": "HS 2853.90 into Korea.",
+   "source_call_ids": [
+    "s12-19"
+   ]
+  },
+  {
+   "id": "e12-65",
+   "source": "zQD30wAsnYMA012sbiEMbQ",
+   "target": "ki6hICRACf98bvo9QNh6yQ",
+   "relation": "possibly_same_as",
+   "edge_type": "inferred",
+   "confidence": "lead",
+   "confidence_reason": "Name stem only; the short record has no address.",
+   "hs_codes": [],
+   "first_seen": null,
+   "last_seen": null,
+   "shipment_count": null,
+   "evidence": "'Huayou New Energy' and 'Huayou New Energy Technology (Quzhou)' ship the same product to the same buyer.",
+   "source_call_ids": [
+    "s12-19"
+   ]
+  },
+  {
+   "id": "e12-66",
+   "source": "N_UQeUCvCpXAkOSJd6CEYw",
+   "target": "Fj3vtxDroFyjyPsLgsnm2A",
+   "relation": "possibly_same_as",
+   "edge_type": "inferred",
+   "confidence": "inferred",
+   "confidence_reason": "Name plus the '110' street number of POSCO Future M's Pohang address; no identifier.",
+   "hs_codes": [],
+   "first_seen": null,
+   "last_seen": null,
+   "shipment_count": null,
+   "evidence": "'POSCO FUTURE M CO.,LTD.110,' matches the 110 Sinhang-ro address seen in Case 4.",
+   "source_call_ids": [
+    "s12-19"
+   ]
+  },
+  {
+   "id": "e12-67",
+   "source": "N3UgWRTegQ-62gm83cCoJw",
+   "target": "Fj3vtxDroFyjyPsLgsnm2A",
+   "relation": "possibly_same_as",
+   "edge_type": "inferred",
+   "confidence": "lead",
+   "confidence_reason": "Name match only; the '87' fragment is unexplained.",
+   "hs_codes": [],
+   "first_seen": null,
+   "last_seen": null,
+   "shipment_count": null,
+   "evidence": "'POSCO FUTURE M CO.,LTD.87,' buys the same product from the same supplier.",
+   "source_call_ids": [
+    "s12-19"
+   ]
+  },
+  {
+   "id": "e12-68",
+   "source": "zQD30wAsnYMA012sbiEMbQ",
+   "target": "rJZujbWjTgJ1iEZxCsjw9w",
+   "relation": "ships_to",
+   "edge_type": "transactional",
+   "confidence": "lead",
+   "confidence_reason": "A graph link on a shortest path; we did not pull dated rows.",
+   "hs_codes": [],
+   "first_seen": null,
+   "last_seen": null,
+   "shipment_count": null,
+   "evidence": "Sayari's path from Huayou New Energy Technology (Quzhou) to the plant runs via a ships_to link to LG Chem.",
+   "source_call_ids": [
+    "s12-22"
+   ]
+  },
+  {
+   "id": "e12-69",
+   "source": "Fj3vtxDroFyjyPsLgsnm2A",
+   "target": "Dc9b1oOozZ8IaaC89j8JSg",
+   "relation": "ships_to",
+   "edge_type": "transactional",
+   "confidence": "documented",
+   "confidence_reason": "Dated HS 2841.90 shipment rows returned by Sayari.",
+   "hs_codes": [
+    "284190"
+   ],
+   "first_seen": "2026-05-14",
+   "last_seen": "2026-07-23",
+   "shipment_count": 87,
+   "evidence": "87 rows of HS 2841.90 (salts of oxometallic acids, the code used for NCM cathode active material) from Korea to the Kokomo cell plant.",
+   "source_call_ids": [
+    "s12-21"
+   ]
+  },
+  {
+   "id": "e12-70",
+   "source": "Fj3vtxDroFyjyPsLgsnm2A",
+   "target": "4fqrWAcyrgtWw2RdV6qZsg",
+   "relation": "ships_to",
+   "edge_type": "transactional",
+   "confidence": "documented",
+   "confidence_reason": "Dated HS 2841.90 shipment rows returned by Sayari.",
+   "hs_codes": [
+    "284190"
+   ],
+   "first_seen": "2022-06-04",
+   "last_seen": "2022-08-03",
+   "shipment_count": 3,
+   "evidence": "HS 2841.90 from Korea; forwarder FNS Inc. also on the rows.",
+   "source_call_ids": [
+    "s12-21"
+   ]
+  },
+  {
+   "id": "e12-71",
+   "source": "Dc9b1oOozZ8IaaC89j8JSg",
+   "target": "1iZm5WHKh2xwHvW9-qFunQ",
+   "relation": "possibly_same_as",
+   "edge_type": "inferred",
+   "confidence": "lead",
+   "confidence_reason": "Same name only; Case 1's record has no address or identifier.",
+   "hs_codes": [],
+   "first_seen": null,
+   "last_seen": null,
+   "shipment_count": null,
+   "evidence": "Both named StarPlus Energy LLC, USA.",
+   "source_call_ids": [
+    "s12-23"
+   ]
+  },
+  {
+   "id": "e12-72",
+   "source": "d36wLU72WGaWpEduWzxfNw",
+   "target": "qnqQPmgy3rGsnUG0xxuS8A",
+   "relation": "ships_to",
+   "edge_type": "transactional",
+   "confidence": "lead",
+   "confidence_reason": "Listed as a ships_to partner in Sayari's graph; we did not pull its rows or products.",
+   "hs_codes": [],
+   "first_seen": null,
+   "last_seen": null,
+   "shipment_count": null,
+   "evidence": "Appears among the plant's 53 export partners.",
+   "source_call_ids": [
+    "s12-08"
+   ]
+  },
+  {
+   "id": "e12-73",
+   "source": "d36wLU72WGaWpEduWzxfNw",
+   "target": "5BTrGa7scqiXx1UY_qKksA",
+   "relation": "ships_to",
+   "edge_type": "transactional",
+   "confidence": "lead",
+   "confidence_reason": "Listed as a ships_to partner in Sayari's graph; we did not pull its rows or products.",
+   "hs_codes": [],
+   "first_seen": null,
+   "last_seen": null,
+   "shipment_count": null,
+   "evidence": "Appears among the plant's 53 export partners.",
+   "source_call_ids": [
+    "s12-07"
+   ]
+  },
+  {
+   "id": "e12-74",
+   "source": "d36wLU72WGaWpEduWzxfNw",
+   "target": "SZVCwz1tw4jSazz0Cqhf3A",
+   "relation": "ships_to",
+   "edge_type": "transactional",
+   "confidence": "lead",
+   "confidence_reason": "Listed as a ships_to partner in Sayari's graph; we did not pull its rows or products.",
+   "hs_codes": [],
+   "first_seen": null,
+   "last_seen": null,
+   "shipment_count": null,
+   "evidence": "Appears among the plant's 53 export partners.",
+   "source_call_ids": [
+    "s12-07"
+   ]
+  },
+  {
+   "id": "e12-75",
+   "source": "d36wLU72WGaWpEduWzxfNw",
+   "target": "GQcCCBlWQKjhtKPjGH_M8A",
+   "relation": "ships_to",
+   "edge_type": "transactional",
+   "confidence": "lead",
+   "confidence_reason": "Listed as a ships_to partner in Sayari's graph; we did not pull its rows or products.",
+   "hs_codes": [],
+   "first_seen": null,
+   "last_seen": null,
+   "shipment_count": null,
+   "evidence": "Appears among the plant's 53 export partners.",
+   "source_call_ids": [
+    "s12-07"
+   ]
+  },
+  {
+   "id": "e12-76",
+   "source": "d36wLU72WGaWpEduWzxfNw",
+   "target": "11VYoGhoDTtrcOk6kzwrRA",
+   "relation": "ships_to",
+   "edge_type": "transactional",
+   "confidence": "lead",
+   "confidence_reason": "Listed as a ships_to partner in Sayari's graph; we did not pull its rows or products.",
+   "hs_codes": [],
+   "first_seen": null,
+   "last_seen": null,
+   "shipment_count": null,
+   "evidence": "Appears among the plant's 53 export partners.",
+   "source_call_ids": [
+    "s12-07"
+   ]
+  },
+  {
+   "id": "e12-77",
+   "source": "d36wLU72WGaWpEduWzxfNw",
+   "target": "d8x1blfAYQjfj9GfP9KKzA",
+   "relation": "ships_to",
+   "edge_type": "transactional",
+   "confidence": "lead",
+   "confidence_reason": "Listed as a ships_to partner in Sayari's graph; we did not pull its rows or products.",
+   "hs_codes": [],
+   "first_seen": null,
+   "last_seen": null,
+   "shipment_count": null,
+   "evidence": "Appears among the plant's 53 export partners.",
+   "source_call_ids": [
+    "s12-07"
+   ]
+  },
+  {
+   "id": "e12-78",
+   "source": "d36wLU72WGaWpEduWzxfNw",
+   "target": "5VKlG8PIhQWuUlbajPiMtQ",
+   "relation": "ships_to",
+   "edge_type": "transactional",
+   "confidence": "lead",
+   "confidence_reason": "Listed as a ships_to partner in Sayari's graph; we did not pull its rows or products.",
+   "hs_codes": [],
+   "first_seen": null,
+   "last_seen": null,
+   "shipment_count": null,
+   "evidence": "Appears among the plant's 53 export partners.",
+   "source_call_ids": [
+    "s12-07"
+   ]
+  },
+  {
+   "id": "e12-79",
+   "source": "d36wLU72WGaWpEduWzxfNw",
+   "target": "Eqw8Cklt_9F3TM_OkpYi3Q",
+   "relation": "ships_to",
+   "edge_type": "transactional",
+   "confidence": "lead",
+   "confidence_reason": "Listed as a ships_to partner in Sayari's graph; we did not pull its rows or products.",
+   "hs_codes": [],
+   "first_seen": null,
+   "last_seen": null,
+   "shipment_count": null,
+   "evidence": "Appears among the plant's 53 export partners.",
+   "source_call_ids": [
+    "s12-07"
+   ]
+  },
+  {
+   "id": "e12-80",
+   "source": "d36wLU72WGaWpEduWzxfNw",
+   "target": "kaeTD2BiXCYXjbYONaSpdg",
+   "relation": "ships_to",
+   "edge_type": "transactional",
+   "confidence": "lead",
+   "confidence_reason": "Listed as a ships_to partner in Sayari's graph; we did not pull its rows or products.",
+   "hs_codes": [],
+   "first_seen": null,
+   "last_seen": null,
+   "shipment_count": null,
+   "evidence": "Appears among the plant's 53 export partners.",
+   "source_call_ids": [
+    "s12-07"
+   ]
+  },
+  {
+   "id": "e12-81",
+   "source": "d36wLU72WGaWpEduWzxfNw",
+   "target": "BFCf_eck0XDu46uyiK3lOw",
+   "relation": "ships_to",
+   "edge_type": "transactional",
+   "confidence": "lead",
+   "confidence_reason": "Listed as a ships_to partner in Sayari's graph; we did not pull its rows or products.",
+   "hs_codes": [],
+   "first_seen": null,
+   "last_seen": null,
+   "shipment_count": null,
+   "evidence": "Appears among the plant's 53 export partners.",
+   "source_call_ids": [
+    "s12-07"
+   ]
+  },
+  {
+   "id": "e12-82",
+   "source": "d36wLU72WGaWpEduWzxfNw",
+   "target": "iVy5JNClAmJ6bJYtMHVLlg",
+   "relation": "ships_to",
+   "edge_type": "transactional",
+   "confidence": "lead",
+   "confidence_reason": "Listed as a ships_to partner in Sayari's graph; we did not pull its rows or products.",
+   "hs_codes": [],
+   "first_seen": null,
+   "last_seen": null,
+   "shipment_count": null,
+   "evidence": "Appears among the plant's 53 export partners.",
+   "source_call_ids": [
+    "s12-07"
+   ]
+  },
+  {
+   "id": "e12-83",
+   "source": "d36wLU72WGaWpEduWzxfNw",
+   "target": "hA2kEXRHbJKZhjelmKIu7g",
+   "relation": "ships_to",
+   "edge_type": "transactional",
+   "confidence": "lead",
+   "confidence_reason": "Listed as a ships_to partner in Sayari's graph; we did not pull its rows or products.",
+   "hs_codes": [],
+   "first_seen": null,
+   "last_seen": null,
+   "shipment_count": null,
+   "evidence": "Appears among the plant's 53 export partners.",
+   "source_call_ids": [
+    "s12-07"
+   ]
+  },
+  {
+   "id": "e12-84",
+   "source": "d36wLU72WGaWpEduWzxfNw",
+   "target": "ZCqTr9oLOTEZwvSZ2KgMtQ",
+   "relation": "ships_to",
+   "edge_type": "transactional",
+   "confidence": "lead",
+   "confidence_reason": "Listed as a ships_to partner in Sayari's graph; we did not pull its rows or products.",
+   "hs_codes": [],
+   "first_seen": null,
+   "last_seen": null,
+   "shipment_count": null,
+   "evidence": "Appears among the plant's 53 export partners.",
+   "source_call_ids": [
+    "s12-07"
+   ]
+  },
+  {
+   "id": "e12-85",
+   "source": "d36wLU72WGaWpEduWzxfNw",
+   "target": "90x-fyBYVuhloo3nmeG0VA",
+   "relation": "ships_to",
+   "edge_type": "transactional",
+   "confidence": "lead",
+   "confidence_reason": "Listed as a ships_to partner in Sayari's graph; we did not pull its rows or products.",
+   "hs_codes": [],
+   "first_seen": null,
+   "last_seen": null,
+   "shipment_count": null,
+   "evidence": "Appears among the plant's 53 export partners.",
+   "source_call_ids": [
+    "s12-07"
+   ]
+  },
+  {
+   "id": "e12-86",
+   "source": "d36wLU72WGaWpEduWzxfNw",
+   "target": "GB0dj36x8mqEIRXC6fDDEQ",
+   "relation": "ships_to",
+   "edge_type": "transactional",
+   "confidence": "lead",
+   "confidence_reason": "Listed as a ships_to partner in Sayari's graph; we did not pull its rows or products.",
+   "hs_codes": [],
+   "first_seen": null,
+   "last_seen": null,
+   "shipment_count": null,
+   "evidence": "Appears among the plant's 53 export partners.",
+   "source_call_ids": [
+    "s12-07"
+   ]
+  },
+  {
+   "id": "e12-87",
+   "source": "GQcCCBlWQKjhtKPjGH_M8A",
+   "target": "h1_igDgmZeJnM8ZYjP0fbw",
+   "relation": "possibly_same_as",
+   "edge_type": "inferred",
+   "confidence": "inferred",
+   "confidence_reason": "Same Wuxi street address and name (one misspelt); no identifier.",
+   "hs_codes": [],
+   "first_seen": null,
+   "last_seen": null,
+   "shipment_count": null,
+   "evidence": "Both at No. 50 Xindongan Road, Shuofang, Xinwu District, Wuxi.",
+   "source_call_ids": [
+    "s12-07"
+   ]
+  }
+ ],
+ "calls": [
+  {
+   "id": "s12-01",
+   "timestamp": "2026-10-18T22:57:35Z",
+   "server": "sayari",
+   "tool": "search_entities",
+   "params": {
+    "query": "\"Huayue Nickel Cobalt\"",
+    "limit": 10
+   },
+   "question": "Which Sayari records describe the Huayue Nickel Cobalt plant?",
+   "purpose": "Resolve the plant",
+   "result_summary": "8 records. The main one (d36wLU72WGaWpEduWzxfNw) carries Indonesian tax ID 0867718132067000 and Jakarta office addresses in Sopo Del Tower A, floor 21. Four more trade-name records share that address (one typed as a person); three are name-only.",
+   "interpretation": "One plant, eight records; the tax ID anchors the main one.",
+   "scorecard": "worked",
+   "entity_ids": [
+    "d36wLU72WGaWpEduWzxfNw",
+    "Ez81wqDCkYuIjnT9f30Ifw",
+    "xI-CsXxNFsCuDyao-h5uCQ",
+    "Uez7TzdLHdKr_H0xSODvyA",
+    "z1oM-Pp9uyq37UaaF1Rihg",
+    "Ymxqm3kJPGytQyBL7jXezg",
+    "o9Ln4E80py9bVIBTH3lazA",
+    "VLdRtXQM_rBOqEQVtf3pkw"
+   ],
+   "step": "plant"
+  },
+  {
+   "id": "s12-02",
+   "timestamp": "2026-10-18T22:57:45Z",
+   "server": "sayari",
+   "tool": "get_entity_profile",
+   "params": {
+    "entity_id": "d36wLU72WGaWpEduWzxfNw",
+    "relationships_limit": 50
+   },
+   "question": "What does the main record hold?",
+   "purpose": "Plant profile",
+   "result_summary": "Adds a Morowali industrial park address (Kec. Bahodopi). 53 ships_to and 141 receives_from partners, 2 beneficial owners. 384 shipments sent, 24,793 received. Sources: Korean, Japanese, UK and Dutch trade data, among others. Flags: chinese_soe_adjacent, soe_adjacent, Xinjiang product-blueprint sub-tier.",
+   "interpretation": "The record ties the Jakarta office to the Morowali site. The profile did not list partner names.",
+   "scorecard": "worked",
+   "entity_ids": [
+    "d36wLU72WGaWpEduWzxfNw"
+   ],
+   "step": "plant"
+  },
+  {
+   "id": "s12-03",
+   "timestamp": "2026-10-18T22:57:55Z",
+   "server": "sayari",
+   "tool": "find_beneficial_owners",
+   "params": {
+    "entity_id": "d36wLU72WGaWpEduWzxfNw"
+   },
+   "question": "Who owns the plant, per Sayari?",
+   "purpose": "Trace owners",
+   "result_summary": "2 beneficial owners, both from Indonesian UBO data: Chen Xuehua (Tongxiang, Zhejiang address; owner ID 771950) and Hsieh Wei-Tong (Taipei address; owner ID 771951). No company shareholders, no percentages.",
+   "interpretation": "A Chinese individual from Huayou's home city is a registered beneficial owner, but no corporate chain is shown.",
+   "scorecard": "partial",
+   "entity_ids": [
+    "9qVFfWtDk6KefWuKgt8uOg",
+    "7OXs4DTLrDP0MB8gbZuTnA"
+   ],
+   "step": "owner"
+  },
+  {
+   "id": "s12-04",
+   "timestamp": "2026-10-18T22:58:00Z",
+   "server": "sayari",
+   "tool": "search_entities",
+   "params": {
+    "query": "\"Zhejiang Huayou Cobalt\"",
+    "limit": 8,
+    "response_mode": "compact"
+   },
+   "question": "Which record is the Chinese parent?",
+   "purpose": "Resolve the parent",
+   "result_summary": "13 records. Main: Zhejiang Huayou Cobalt Co., Ltd. (GstlFKZ-29D5gm8p3Xg6mw), LEI 30030099QFLNMEGP7M05, credit code 913300007368873961, flags incl. regulatory_action. A Chinese-name record (WsTfWkdMP4iuUyQG7iidlQ) holds organisation code 736887396 and owned_by_chinese_soe flags. Others are trade-name fragments in the UK, Italy and Singapore.",
+   "interpretation": "The parent resolves on an LEI. The two main records share an organisation code.",
+   "scorecard": "worked",
+   "entity_ids": [
+    "GstlFKZ-29D5gm8p3Xg6mw",
+    "WsTfWkdMP4iuUyQG7iidlQ"
+   ],
+   "step": "owner"
+  },
+  {
+   "id": "s12-05",
+   "timestamp": "2026-10-18T22:58:05Z",
+   "server": "sayari",
+   "tool": "find_shortest_path",
+   "params": {
+    "source_entity_id": "d36wLU72WGaWpEduWzxfNw",
+    "target_entity_id": "GstlFKZ-29D5gm8p3Xg6mw"
+   },
+   "question": "Is the plant linked to Huayou in Sayari?",
+   "purpose": "Test the ownership link",
+   "result_summary": "Path of length 3: the plant receives from Zhejiang Huayou Import & Export, which has Huayou Cobalt as shareholder.",
+   "interpretation": "The shortest link is trade, not ownership, as with BTR in Case 1.",
+   "scorecard": "partial",
+   "entity_ids": [
+    "d36wLU72WGaWpEduWzxfNw",
+    "RbLPDr6UX-QhTaP5x11BQQ",
+    "GstlFKZ-29D5gm8p3Xg6mw"
+   ],
+   "step": "owner"
+  },
+  {
+   "id": "s12-06",
+   "timestamp": "2026-10-18T22:58:07Z",
+   "server": "sayari",
+   "tool": "find_shortest_path",
+   "params": {
+    "source_entity_id": "9qVFfWtDk6KefWuKgt8uOg",
+    "target_entity_id": "WsTfWkdMP4iuUyQG7iidlQ"
+   },
+   "question": "Does Sayari link the beneficial owner Chen Xuehua to Huayou?",
+   "purpose": "Test the person-to-parent link",
+   "result_summary": "Path of length 4 runs through the plant and Huayou Import & Export; no direct shareholding from Chen Xuehua to Huayou.",
+   "interpretation": "Sayari does not hold Chen Xuehua's Huayou stake; that comes from open sources.",
+   "scorecard": "partial",
+   "entity_ids": [
+    "9qVFfWtDk6KefWuKgt8uOg",
+    "d36wLU72WGaWpEduWzxfNw",
+    "RbLPDr6UX-QhTaP5x11BQQ",
+    "WsTfWkdMP4iuUyQG7iidlQ"
+   ],
+   "step": "owner"
+  },
+  {
+   "id": "t12-01",
+   "timestamp": "2026-10-18T22:58:10Z",
+   "server": "tavily",
+   "tool": "tavily_search",
+   "params": {
+    "query": "PT Huayue Nickel Cobalt shareholding Huayou Tsingshan Morowali HPAL MHP",
+    "max_results": 6,
+    "search_depth": "advanced"
+   },
+   "question": "Who owns HNC and what does it make?",
+   "purpose": "Context: ownership and plant",
+   "result_summary": "Nickel Industries' Nov 2023 EGM notice: it bought 10% of HNC from a Tsingshan entity for US$270m; other shareholders Huayou (57%) and CMOC (30%). AEER (Feb 2025): Huayou 57%, CMOC 30%, Nickel Industries 10%, Huaqing Hualong Consulting 2%, Long Sincere 1%; HNC capacity 60,000 t/y MHP; Chen Xuehua 6.43% of Huayou. MBMA press release: commissioned Nov 2021, nameplate by Apr 2022. Nickel Industries site: 4 autoclaves, 60 kt Ni in MHP.",
+   "interpretation": "Ownership is well documented in open sources: a Chinese parent with a clear majority.",
+   "scorecard": "worked",
+   "entity_ids": [
+    "d36wLU72WGaWpEduWzxfNw",
+    "GstlFKZ-29D5gm8p3Xg6mw",
+    "9qVFfWtDk6KefWuKgt8uOg"
+   ],
+   "step": "owner"
+  },
+  {
+   "id": "s12-07",
+   "timestamp": "2026-10-18T22:58:16Z",
+   "server": "sayari",
+   "tool": "traverse_network",
+   "params": {
+    "entity_id": "d36wLU72WGaWpEduWzxfNw",
+    "relationships": [
+     "ships_to"
+    ],
+    "max_depth": 1,
+    "limit": 60,
+    "response_mode": "compact"
+   },
+   "question": "Who does the plant ship to?",
+   "purpose": "Map buyers",
+   "result_summary": "50 of 53 partners on page 1: Huayou companies (Guangxi, Quzhou, Hong Kong), CMOC (5 records), CNGR (2), IXM, Trafigura, Mercuria, Brunp, Wanhua, Umicore's Jiangmen JV, traders and logistics firms, and US valve makers ValvTechnologies and Caldera Engineering. No Korean or Japanese cathode maker, no US cell plant.",
+   "interpretation": "Almost every buyer is Chinese, a Chinese-group company or a commodity trader.",
+   "scorecard": "worked",
+   "entity_ids": [
+    "d36wLU72WGaWpEduWzxfNw",
+    "mM2BJnjq_KYla3H9_zQHQg",
+    "IIei9yVxJwNGPNOuQwQsGw",
+    "PngfQG6leaGtxETdtENi0g",
+    "uVQaJRf9eQQbdQf9RVxBSA",
+    "yuxcwL986OMuVCw60s2usA"
+   ],
+   "step": "out"
+  },
+  {
+   "id": "s12-08",
+   "timestamp": "2026-10-18T22:58:25Z",
+   "server": "sayari",
+   "tool": "traverse_network",
+   "params": {
+    "entity_id": "d36wLU72WGaWpEduWzxfNw",
+    "relationships": [
+     "ships_to"
+    ],
+    "max_depth": 1,
+    "min_depth": 1,
+    "limit": 50,
+    "offset": 50,
+    "response_mode": "compact"
+   },
+   "question": "Who are the remaining buyers?",
+   "purpose": "Map buyers (page 2)",
+   "result_summary": "3 more: Mercuria Energy Trading SA, Tongxiang Huaang Trading (a Tongxiang trader with owned_by_chinese_soe flags) and Jinchuan Group Nickel Salts.",
+   "interpretation": "All 53 partners seen; none is a US battery maker.",
+   "scorecard": "worked",
+   "entity_ids": [
+    "pA8eIyU5ecqQsLfQsLDdCQ",
+    "wjLTvhB3dhht42e-E70LWg"
+   ],
+   "step": "out"
+  },
+  {
+   "id": "s12-09",
+   "timestamp": "2026-10-18T22:58:35Z",
+   "server": "sayari",
+   "tool": "search_trade_facets",
+   "params": {
+    "scope": "shipments",
+    "query": "\"Huayue Nickel Cobalt\"",
+    "departure_country": "IDN",
+    "bucket_limit": 15
+   },
+   "question": "What does the plant export, and where to?",
+   "purpose": "Shape of exports",
+   "result_summary": "382 rows, all with this plant as supplier. HS 7501.20 (nickel intermediate products) 308; valves (8481.80) 45; others small. Arrivals: China 293, USA 48, Hong Kong 14, Switzerland 8, Singapore 7, Australia 4, India 3. Dates 12 Mar 2021 – 29 Aug 2026.",
+   "interpretation": "MHP is the main export and China the main destination. The 48 US rows need checking.",
+   "scorecard": "worked",
+   "entity_ids": [
+    "d36wLU72WGaWpEduWzxfNw"
+   ],
+   "step": "out"
+  },
+  {
+   "id": "s12-10",
+   "timestamp": "2026-10-18T22:58:45Z",
+   "server": "sayari",
+   "tool": "search_shipments",
+   "params": {
+    "query": "\"Huayue Nickel Cobalt\"",
+    "departure_country": "IDN",
+    "arrival_country": "USA",
+    "limit": 50,
+    "response_mode": "compact"
+   },
+   "question": "Does any nickel go straight to the US?",
+   "purpose": "Direct US flows",
+   "result_summary": "All 48 US rows are valves and valve parts with serial numbers: ValvTechnologies (26 + 2 rows) and Caldera Engineering (20), Jan 2023 – Nov 2025. One row is coded HS 8103.20 (a tantalum valve). No nickel product.",
+   "interpretation": "No direct US nickel flows. The rows fit equipment going back to its makers.",
+   "scorecard": "worked",
+   "entity_ids": [
+    "uVQaJRf9eQQbdQf9RVxBSA",
+    "V26diz4dlR986Du6ylwgkw",
+    "yuxcwL986OMuVCw60s2usA"
+   ],
+   "step": "out"
+  },
+  {
+   "id": "s12-11",
+   "timestamp": "2026-10-18T22:58:52Z",
+   "server": "sayari",
+   "tool": "search_shipments",
+   "params": {
+    "query": "\"Huayue Nickel Cobalt\"",
+    "departure_country": "IDN",
+    "hs_code": "750120",
+    "limit": 100,
+    "response_mode": "compact"
+   },
+   "question": "Who buys the plant's MHP (HS 7501.20)?",
+   "purpose": "MHP buyers, page 1",
+   "result_summary": "100 of 308 rows, Aug 2025 – Aug 2026, 25 buyer pairs. Top: Guangxi Huayou New Material 27, IXM Shanghai (two records) 23, Quzhou Huayou 10, CNMC International Trading 8. Also CNGR (2 companies), Brunp, Jinchuan, Umicore's Jiangmen JV, Trafigura, Mercuria and others.",
+   "interpretation": "The newest rows go mostly to Huayou's own Chinese plants and to traders.",
+   "scorecard": "worked",
+   "entity_ids": [
+    "d36wLU72WGaWpEduWzxfNw",
+    "mM2BJnjq_KYla3H9_zQHQg",
+    "lrJp9t-68mxX65btZ3j3Bw",
+    "IIei9yVxJwNGPNOuQwQsGw"
+   ],
+   "step": "out"
+  },
+  {
+   "id": "s12-12",
+   "timestamp": "2026-10-18T22:59:10Z",
+   "server": "sayari",
+   "tool": "search_shipments",
+   "params": {
+    "query": "\"Huayue Nickel Cobalt\"",
+    "departure_country": "IDN",
+    "hs_code": "750120",
+    "page_token": "(page 2 token from s12-11)"
+   },
+   "question": "Who bought MHP earlier?",
+   "purpose": "MHP buyers, page 2",
+   "result_summary": "Rows 101–200, Aug 2024 – Aug 2025. Huayou (Hong Kong) 20, CMOC Limited 18 + 2, IXM 16 + 1, Tsing Creation 15, Quzhou Huayou 11, Guangxi Huayou 7, Malco Energy (India) 3, plus single rows to Wanhua, Weiming, Jinchuan and others. The last 108 rows (to Aug 2024) were not read.",
+   "interpretation": "Across 200 rows, 76 went to Huayou-named companies and 20 to CMOC: about half stays inside the plant's own shareholder groups.",
+   "scorecard": "partial",
+   "entity_ids": [
+    "d36wLU72WGaWpEduWzxfNw",
+    "PngfQG6leaGtxETdtENi0g",
+    "VzWGnh0SfG2WP5oPDcPOPQ",
+    "h1_igDgmZeJnM8ZYjP0fbw",
+    "cU2MfaQrsUChpWaqsKx2dw"
+   ],
+   "step": "out"
+  },
+  {
+   "id": "s12-13",
+   "timestamp": "2026-10-18T22:59:30Z",
+   "server": "sayari",
+   "tool": "search_trade_facets",
+   "params": {
+    "scope": "shipments",
+    "query": "\"Huayou\"",
+    "arrival_country": "USA",
+    "date_from": "2024-01-01",
+    "bucket_limit": 10
+   },
+   "question": "Does anything Huayou-named reach the US?",
+   "purpose": "Group-level US flows",
+   "result_summary": "2,959 rows, but the top HS codes are furniture, kitchenware, glass and machinery. The free-text 'Huayou' matches many unrelated firms.",
+   "interpretation": "Too noisy to use; recorded as a failed search.",
+   "scorecard": "failed",
+   "entity_ids": [],
+   "step": "gap"
+  },
+  {
+   "id": "s12-14",
+   "timestamp": "2026-10-18T22:59:32Z",
+   "server": "sayari",
+   "tool": "search_trade_facets",
+   "params": {
+    "scope": "shipments",
+    "query": "\"Huayou\"",
+    "arrival_country": "KOR",
+    "date_from": "2024-01-01",
+    "bucket_limit": 10
+   },
+   "question": "Does Huayou material reach Korean cathode makers?",
+   "purpose": "Group-level Korea flows",
+   "result_summary": "1,438 rows. Top buyer POSCO Future M (637). HS codes mix textiles and plants with nickel (7502.10, 221 rows) and inorganic compounds (2853.10/2853.90). 27 rows leave from Indonesia. Top supplier includes Huayou New Energy Technology (Quzhou).",
+   "interpretation": "A lead to POSCO Future M; needs product-level rows.",
+   "scorecard": "partial",
+   "entity_ids": [
+    "Fj3vtxDroFyjyPsLgsnm2A",
+    "zQD30wAsnYMA012sbiEMbQ"
+   ],
+   "step": "corridor"
+  },
+  {
+   "id": "s12-15",
+   "timestamp": "2026-10-18T22:59:45Z",
+   "server": "sayari",
+   "tool": "search_shipments",
+   "params": {
+    "query": "\"Huayou\"",
+    "departure_country": "IDN",
+    "arrival_country": "KOR",
+    "date_from": "2024-01-01",
+    "limit": 30,
+    "response_mode": "compact"
+   },
+   "question": "Which Indonesia-to-Korea rows mention Huayou?",
+   "purpose": "Indonesia to Korea",
+   "result_summary": "27 rows, all from PT Eternal Nickel Industry (not HNC): 99.99% nickel cathode (HS 7502.10) to Huayou (Hong Kong) records, delivered to Korea, Feb 2025 – May 2026.",
+   "interpretation": "Huayou moves Indonesian nickel into Korea, but not from this plant in these results.",
+   "scorecard": "partial",
+   "entity_ids": [
+    "oZ-QV5StOu0UipdQi2KUYA",
+    "PngfQG6leaGtxETdtENi0g",
+    "0MNsm_PAjuxVwnNyKhp7jg"
+   ],
+   "step": "corridor"
+  },
+  {
+   "id": "s12-16",
+   "timestamp": "2026-10-18T23:00:00Z",
+   "server": "sayari",
+   "tool": "traverse_network",
+   "params": {
+    "entity_id": "IIei9yVxJwNGPNOuQwQsGw",
+    "relationships": [
+     "ships_to"
+    ],
+    "max_depth": 1,
+    "limit": 50,
+    "response_mode": "compact"
+   },
+   "question": "Where does Quzhou Huayou, an MHP buyer, ship to?",
+   "purpose": "Second hop from a group buyer",
+   "result_summary": "20 partners: small Korean firms (JH Chemical, Emisorb, Sung Woo, CND), Russian, Ukrainian, Vietnamese, Indian, Brazilian and Mexican companies, logistics firms, and Indonesian nickel plants (Huafei, Eternal Nickel, Huaneng, and HNC itself). No cathode maker or US cell plant.",
+   "interpretation": "The MHP's next step is not visible from this buyer.",
+   "scorecard": "partial",
+   "entity_ids": [
+    "IIei9yVxJwNGPNOuQwQsGw",
+    "oZ-QV5StOu0UipdQi2KUYA"
+   ],
+   "step": "gap"
+  },
+  {
+   "id": "s12-17",
+   "timestamp": "2026-10-18T23:00:02Z",
+   "server": "sayari",
+   "tool": "traverse_network",
+   "params": {
+    "entity_id": "mM2BJnjq_KYla3H9_zQHQg",
+    "relationships": [
+     "ships_to"
+    ],
+    "max_depth": 1,
+    "limit": 50,
+    "response_mode": "compact"
+   },
+   "question": "Where does Guangxi Huayou, the top MHP buyer, ship to?",
+   "purpose": "Second hop from a group buyer",
+   "result_summary": "0 partners.",
+   "interpretation": "The largest MHP buyer has no visible exports, so its output is either sold inside China or not in Sayari's sources.",
+   "scorecard": "failed",
+   "entity_ids": [
+    "mM2BJnjq_KYla3H9_zQHQg"
+   ],
+   "step": "gap"
+  },
+  {
+   "id": "s12-18",
+   "timestamp": "2026-10-18T23:00:10Z",
+   "server": "sayari",
+   "tool": "search_buyers",
+   "params": {
+    "query": "\"Huayou\"",
+    "departure_country": "CHN",
+    "arrival_country": "KOR",
+    "date_from": "2024-01-01",
+    "limit": 15,
+    "response_mode": "compact"
+   },
+   "question": "Which Korean companies buy from Huayou-named shippers?",
+   "purpose": "Korean buyers",
+   "result_summary": "64 buyers. POSCO Future M first (637 rows), then Kumho Tire, Access World Busan (nickel 7502.10), PGS (East Asia), LG Chem (16 rows incl. cobalt oxide 2822.00, HS 2825.90, 2833.29). The HS lists mix in textiles and plants, and the latest dates shown are in 2023 despite the 2024 filter.",
+   "interpretation": "POSCO Future M and LG Chem are the cathode makers on the list. The date filter seems not to apply to the rollup.",
+   "scorecard": "partial",
+   "entity_ids": [
+    "Fj3vtxDroFyjyPsLgsnm2A",
+    "rJZujbWjTgJ1iEZxCsjw9w"
+   ],
+   "step": "corridor"
+  },
+  {
+   "id": "s12-19",
+   "timestamp": "2026-10-18T23:00:20Z",
+   "server": "sayari",
+   "tool": "search_shipments",
+   "params": {
+    "query": "\"Huayou\"",
+    "departure_country": "CHN",
+    "arrival_country": "KOR",
+    "hs_code": "285390",
+    "limit": 40,
+    "response_mode": "compact"
+   },
+   "question": "Does Huayou ship cathode precursor to POSCO Future M?",
+   "purpose": "Precursor flows",
+   "result_summary": "29 rows, Dec 2021 – Dec 2023: Huayou New Energy to POSCO Future M (16), to 'POSCO FUTURE M CO.,LTD.110,' (9) and '...87,' (2); Huayou New Energy Technology (Quzhou) to POSCO Future M (2, Feb 2022). Two rows say 'nickel cobalt manganese hydroxide'.",
+   "interpretation": "Huayou precursor reached a Korean cathode maker. The rows stop in Dec 2023.",
+   "scorecard": "worked",
+   "entity_ids": [
+    "ki6hICRACf98bvo9QNh6yQ",
+    "zQD30wAsnYMA012sbiEMbQ",
+    "Fj3vtxDroFyjyPsLgsnm2A",
+    "N_UQeUCvCpXAkOSJd6CEYw",
+    "N3UgWRTegQ-62gm83cCoJw"
+   ],
+   "step": "corridor"
+  },
+  {
+   "id": "s12-20",
+   "timestamp": "2026-10-18T23:00:36Z",
+   "server": "sayari",
+   "tool": "search_trade_facets",
+   "params": {
+    "scope": "shipments",
+    "query": "\"POSCO Future M\"",
+    "departure_country": "KOR",
+    "arrival_country": "USA",
+    "bucket_limit": 10
+   },
+   "question": "What does POSCO Future M ship to the US?",
+   "purpose": "Korean cathode to US",
+   "result_summary": "1,368 rows. Top HS: 2841.90 (405), 3824.99 (266), 2102.10 (217, miscoded), 2504.90 (188), 3801.90/3801.10. Top buyers include GM, a StarPlus Energy record (Dc9b1oOozZ8IaaC89j8JSg), Tesla, SK Battery America, XALT, Panasonic. Dates Nov 2021 – Jul 2026.",
+   "interpretation": "HS 2841.90 is the code for NCM cathode material; worth pulling.",
+   "scorecard": "worked",
+   "entity_ids": [
+    "Fj3vtxDroFyjyPsLgsnm2A",
+    "Dc9b1oOozZ8IaaC89j8JSg",
+    "4fqrWAcyrgtWw2RdV6qZsg"
+   ],
+   "step": "corridor"
+  },
+  {
+   "id": "s12-21",
+   "timestamp": "2026-10-18T23:00:50Z",
+   "server": "sayari",
+   "tool": "search_shipments",
+   "params": {
+    "query": "\"POSCO Future M\"",
+    "departure_country": "KOR",
+    "arrival_country": "USA",
+    "hs_code": "284190",
+    "limit": 100,
+    "response_mode": "compact"
+   },
+   "question": "Who receives POSCO Future M's HS 2841.90?",
+   "purpose": "Cathode buyers in the US",
+   "result_summary": "100 of 405 rows: StarPlus Energy LLC 87 rows, 14 May – 23 Jul 2026; GM 3 rows, Jun–Aug 2022 (with FNS Inc.); Scan Global Logistics 4 rows incl. 'active cathode material', 2023; Tesla 6 rows described as 'anode active material' under this code, 2023.",
+   "interpretation": "POSCO Future M cathode material reaches a US cell plant in 2026. Some 2841.90 rows are miscoded anode.",
+   "scorecard": "worked",
+   "entity_ids": [
+    "Fj3vtxDroFyjyPsLgsnm2A",
+    "Dc9b1oOozZ8IaaC89j8JSg",
+    "4fqrWAcyrgtWw2RdV6qZsg",
+    "xWhz7CFJV3lxsgg8fHMGHA"
+   ],
+   "step": "corridor"
+  },
+  {
+   "id": "s12-22",
+   "timestamp": "2026-10-18T23:01:10Z",
+   "server": "sayari",
+   "tool": "find_shortest_path",
+   "params": {
+    "source_entity_id": "zQD30wAsnYMA012sbiEMbQ",
+    "target_entity_id": "d36wLU72WGaWpEduWzxfNw"
+   },
+   "question": "Is Huayou's precursor company linked to the Indonesian plant?",
+   "purpose": "Test the group link",
+   "result_summary": "Path of length 4: Huayou New Energy Technology (Quzhou) ships to LG Chem; LG Chem links to Marubeni; Marubeni links to the plant by trade. No Huayou record in between.",
+   "interpretation": "Sayari does not show HNC's MHP feeding this precursor company.",
+   "scorecard": "partial",
+   "entity_ids": [
+    "zQD30wAsnYMA012sbiEMbQ",
+    "rJZujbWjTgJ1iEZxCsjw9w",
+    "d36wLU72WGaWpEduWzxfNw"
+   ],
+   "step": "gap"
+  },
+  {
+   "id": "s12-23",
+   "timestamp": "2026-10-18T23:01:12Z",
+   "server": "sayari",
+   "tool": "get_entity_summary",
+   "params": {
+    "entity_id": "Dc9b1oOozZ8IaaC89j8JSg"
+   },
+   "question": "Is the StarPlus record the Kokomo cell plant?",
+   "purpose": "Resolve the US buyer",
+   "result_summary": "StarPlus Energy LLC, 2151 E Lincoln Rd, Kokomo, IN; Indiana business number 202206271602911 (registered 22 Jun 2022); EPA facility IDs; business purpose battery manufacturing. 5,947 shipments received.",
+   "interpretation": "Yes, the Stellantis–Samsung SDI cell plant. It is a different Sayari record from Case 1's StarPlus.",
+   "scorecard": "worked",
+   "entity_ids": [
+    "Dc9b1oOozZ8IaaC89j8JSg"
+   ],
+   "step": "corridor"
+  },
+  {
+   "id": "t12-02",
+   "timestamp": "2026-10-18T23:01:45Z",
+   "server": "tavily",
+   "tool": "tavily_search",
+   "params": {
+    "query": "prohibited foreign entity rules 45X Indonesian nickel Chinese-owned smelters battery supply chain 2026",
+    "max_results": 6,
+    "search_depth": "advanced"
+   },
+   "question": "How do the PFE rules treat a Chinese-owned supplier?",
+   "purpose": "Policy: PFE rules",
+   "result_summary": "Tax Law Center: OBBBA PFE entity, payment and material-assistance rules apply to 45X components sold in tax years after 2025. Certainty Software summary: a foreign-influenced entity includes one where a single specified foreign entity owns more than 25%; material-assistance thresholds for 45X battery components rise to 85% by 2030. Tax Law Center also cites IRS Notice 2026-15 on supplier certifications.",
+   "interpretation": "Under these tests, a supplier majority-owned by a Chinese company warrants due diligence before its material counts toward a 45X claim.",
+   "scorecard": "worked",
+   "entity_ids": [],
+   "step": "context"
+  },
+  {
+   "id": "t12-03",
+   "timestamp": "2026-10-18T23:01:47Z",
+   "server": "tavily",
+   "tool": "tavily_search",
+   "params": {
+    "query": "Huayou POSCO Future M precursor supply joint venture nickel Indonesia",
+    "max_results": 5,
+    "search_depth": "advanced"
+   },
+   "question": "Did Huayou supply POSCO with precursor, and does it still?",
+   "purpose": "Context: Huayou–POSCO link",
+   "result_summary": "Huayou's 2023 annual report: a long-term ternary precursor supply agreement with POSCO Chemical, and an MOU with LG Chem on precursor and cathode. Korea Times (Jun 2025): POSCO Future M scrapped its Huayou precursor JV (Sep 2024), bought out Huayou's share of POSCO HY Clean Metal, and plans China-free precursor in Gwangyang because Chinese-made precursors lost US credit eligibility. KED Global (May 2023) on the planned JV.",
+   "interpretation": "Corroborates the Huayou-to-POSCO precursor rows, and explains why they stop after 2023.",
+   "scorecard": "worked",
+   "entity_ids": [
+    "GstlFKZ-29D5gm8p3Xg6mw",
+    "Fj3vtxDroFyjyPsLgsnm2A",
+    "rJZujbWjTgJ1iEZxCsjw9w"
+   ],
+   "step": "context"
+  },
+  {
+   "id": "t12-04",
+   "timestamp": "2026-10-18T23:02:00Z",
+   "server": "tavily",
+   "tool": "tavily_search",
+   "params": {
+    "query": "Indonesia nickel FEOC 30D clean vehicle credit Chinese ownership 25% Indonesia free trade agreement critical minerals deal",
+    "max_results": 5,
+    "search_depth": "advanced"
+   },
+   "question": "How has the US treated Indonesian nickel?",
+   "purpose": "Policy: Indonesian nickel",
+   "result_summary": "Fastmarkets: Treasury's Dec 2023 FEOC definition (25% Chinese ownership) leaves most Indonesian nickel, including Huayou, Tsingshan, CNGR and Lygend projects, outside 30D credits; exceptions are Antam, most Vale Indonesia operations and an Eramet–BASF plan. Globaldeal.io: Pomalaa (Vale, Sumitomo Metal Mining, Ford) is presented as the non-FEOC template.",
+   "interpretation": "Chinese-majority plants like HNC were already outside the EV credit; the 2026 PFE rules extend the ownership test to manufacturing credits.",
+   "scorecard": "worked",
+   "entity_ids": [
+    "d36wLU72WGaWpEduWzxfNw"
+   ],
+   "step": "context"
+  }
+ ]
+}

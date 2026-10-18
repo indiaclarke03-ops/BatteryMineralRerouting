@@ -1,0 +1,467 @@
+{
+  "buyer": {
+    "key": "panasonic",
+    "name": "Panasonic Energy (Nevada and De Soto, Kansas)",
+    "category": "battery",
+    "entity_ids": [
+      "wxnxnhKanOt7EorBjIZsxQ",
+      "BZPBOZcD6M_QtBtOWWtYUg",
+      "BF4DKqw-DBGSKUtMwFuRJw",
+      "Ibc73l69Ju8JLHNeZgPJuQ",
+      "qc5jd54dyctACe6voyAX7A",
+      "tJHABh2JwvOHgSPzs4_YxQ",
+      "2u69S3eUKvGIRMirgsTDlg"
+    ],
+    "summary": "Panasonic Energy's US records import cells and battery parts mainly from Panasonic's own Japanese unit, and anode graphite from POSCO Future M (Korea) and, once, from BTR (China). The largest graphite flow is 34 rows of coated spherical graphite whose shipper is not named; it left Chinese ports in 2025 and Singapore and Malaysian ports in 2026. Who makes that graphite, and who owns them, could not be established."
+  },
+  "scan": {
+    "hs": [
+      "3801",
+      "8507"
+    ],
+    "date_from": "2024-01-01",
+    "note": "Sayari trade data checked on 18 Oct 2026 for HS 3801 (graphite, including anode material) and HS 8507 (batteries and parts) entering the US under the name 'Panasonic Energy', plus a product-code search ('I-ACT5'). Panasonic Procurement Corporation of America buys for the plants, so its records count as the buyer. The quoted name also matches other Panasonic units (Panasonic Automotive Systems, Panasonic Energy Mexico, Panasonic Energy Suzhou), whose rows go to other buyers and are left out. For example, Prime Planet Energy ships cells from Dalian to Panasonic Automotive Systems, which is outside this profile. No record specific to De Soto, Kansas was found, so the Kansas plant may be filed under the records above or not be visible. The scan cannot see material bought inside the US or rows that omit the Panasonic name. No freight forwarders appeared among the suppliers."
+  },
+  "suppliers": [
+    {
+      "name": "Panasonic Operational Excellence Co., Ltd.",
+      "entity_id": "75ev7s6HHnu6sFJyEMysdw",
+      "country": "JPN",
+      "hs_codes": [
+        "850760",
+        "850790",
+        "850750"
+      ],
+      "rows": 78,
+      "first": "2026-05-06",
+      "last": "2026-09-16",
+      "owner_top": "Panasonic Holdings (Sayari record 'PANASONIC CORPORATION')",
+      "owner_country": "JPN",
+      "chinese_owned": "No",
+      "confidence": "documented",
+      "note": "Panasonic's own Japanese unit ships lithium-ion cells and battery parts to Panasonic Energy Sales Company (48 rows) and Panasonic Energy Corporation (30 rows).",
+      "call_ids": [
+        "b-pan-06",
+        "b-pan-08",
+        "b-pan-11"
+      ]
+    },
+    {
+      "name": "Unnamed shipper (spherical graphite, product codes I-ACT5 / I-ALE2 / I-NSG17-B)",
+      "entity_id": null,
+      "country": null,
+      "hs_codes": [
+        "380110",
+        "380190"
+      ],
+      "rows": 34,
+      "first": "2025-05-05",
+      "last": "2026-09-12",
+      "owner_top": "Unknown",
+      "owner_country": null,
+      "chinese_owned": "Unknown",
+      "confidence": "lead",
+      "note": "Coated spherical graphite, a battery-grade anode material, shipped to Panasonic procurement and energy records with the shipper's name withheld; 2025 lots left from Chinese ports and later lots from Singapore and Malaysia, a pattern that warrants due diligence on where the material is made.",
+      "call_ids": [
+        "b-pan-03",
+        "b-pan-04",
+        "b-pan-05",
+        "b-pan-10",
+        "b-pan-12"
+      ]
+    },
+    {
+      "name": "POSCO Future M Co., Ltd.",
+      "entity_id": "Fj3vtxDroFyjyPsLgsnm2A",
+      "country": "KOR",
+      "hs_codes": [
+        "380110",
+        "380190"
+      ],
+      "rows": 16,
+      "first": "2026-05-06",
+      "last": "2026-07-28",
+      "owner_top": "POSCO Holdings Inc.",
+      "owner_country": "KOR",
+      "chinese_owned": "No",
+      "confidence": "documented",
+      "note": "'Anode active material' shipped from Korea to Panasonic Energy Corporation (9 dated rows plus 7 undated); the site's POSCO case shows this plant also takes in graphite from Chinese suppliers.",
+      "call_ids": [
+        "b-pan-02",
+        "b-pan-03",
+        "b-pan-08",
+        "b-pan-12",
+        "b-pan-13"
+      ]
+    },
+    {
+      "name": "BTR New Material Group Sales Co., Ltd.",
+      "entity_id": "5_cayB1m7XahAhz_Hrrpng",
+      "country": "CHN",
+      "hs_codes": [
+        "380110"
+      ],
+      "rows": 1,
+      "first": "2025-03-16",
+      "last": "2025-03-16",
+      "owner_top": "BTR New Material Group Co., Ltd. (name match only)",
+      "owner_country": "CHN",
+      "chinese_owned": "Yes (China-based)",
+      "confidence": "documented",
+      "note": "One row of artificial graphite from China to Panasonic Energy Corporation, naming Panasonic Procurement Corporation of America as notify party; Sayari has no shareholder record for this BTR sales company.",
+      "call_ids": [
+        "b-pan-02",
+        "b-pan-03",
+        "b-pan-08",
+        "b-pan-14"
+      ]
+    }
+  ],
+  "forwarders_excluded": 0,
+  "calls": [
+    {
+      "id": "b-pan-01",
+      "timestamp": "2026-10-18T23:00:07Z",
+      "server": "sayari",
+      "tool": "search_entities",
+      "params": {
+        "query": "\"Panasonic Energy of North America\"",
+        "limit": 10,
+        "response_mode": "compact"
+      },
+      "question": "Which Sayari records belong to Panasonic Energy's US plants?",
+      "purpose": "buyer resolution",
+      "result_summary": "21 records. They include Panasonic Energy of North America (tJHABh2JwvOHgSPzs4_YxQ; EPA and RCRA IDs from Nevada), a 'Division of Panasonic Corporation' record and two Gigafactory trade-name records, plus Japanese suppliers registered in Nevada.",
+      "interpretation": "Along with the Panasonic Energy Corporation and Panasonic Procurement Corporation of America records already on the site, these cover the Nevada plant. No De Soto, Kansas record turned up under this name.",
+      "scorecard": "worked",
+      "entity_ids": [
+        "tJHABh2JwvOHgSPzs4_YxQ",
+        "tBS95mYPt6wT8tKWkcs63A",
+        "2u69S3eUKvGIRMirgsTDlg",
+        "gK2UrvG5Syo8HiIcugX4iA"
+      ],
+      "step": "buyer"
+    },
+    {
+      "id": "b-pan-02",
+      "timestamp": "2026-10-18T23:00:13Z",
+      "server": "sayari",
+      "tool": "search_suppliers",
+      "params": {
+        "query": "\"Panasonic Energy\"",
+        "hs_code": "3801",
+        "arrival_country": "USA",
+        "date_from": "2024-01-01",
+        "limit": 20,
+        "response_mode": "compact"
+      },
+      "question": "Who ships graphite (HS 3801) to Panasonic Energy in the US?",
+      "purpose": "supplier scan",
+      "result_summary": "2 named suppliers: POSCO Future M (16 shipments, HS 380110/380190, latest 2026-07-28) and BTR New Material Group Sales (1, HS 380110).",
+      "interpretation": "Few named suppliers. The shipment rows show more graphite whose supplier is not named.",
+      "scorecard": "worked",
+      "entity_ids": [
+        "Fj3vtxDroFyjyPsLgsnm2A",
+        "5_cayB1m7XahAhz_Hrrpng"
+      ],
+      "step": "buyer"
+    },
+    {
+      "id": "b-pan-03",
+      "timestamp": "2026-10-18T23:00:19Z",
+      "server": "sayari",
+      "tool": "search_shipments",
+      "params": {
+        "query": "\"Panasonic Energy\"",
+        "hs_code": "3801",
+        "arrival_country": "USA",
+        "date_from": "2024-01-01",
+        "limit": 100,
+        "response_mode": "compact"
+      },
+      "question": "Do dated rows confirm graphite reaching Panasonic Energy?",
+      "purpose": "confirm rows",
+      "result_summary": "31 rows. POSCO Future M to Panasonic Energy Corporation: 16 rows of 'anode active material' and artificial graphite from Korea (9 dated May-Jul 2026, 7 undated). BTR New Material Group Sales: 1 row of artificial graphite from China, 2025-03-16, with Panasonic Procurement Corporation of America as second notify party. Unnamed shipper: 7 rows of 'surface treated spherical graphite' from Singapore to a Panasonic Procurement record (May-Sep 2026) and 2 rows (product codes I-ACT5, I-ALE2) to Panasonic Energy Corporation (Jun-Aug 2026). Also 5 rows from Taiwan to Tesla.",
+      "interpretation": "Battery-grade graphite reaches Panasonic from POSCO Future M (Korea), from BTR (China) and from an unnamed shipper.",
+      "scorecard": "worked",
+      "entity_ids": [
+        "wxnxnhKanOt7EorBjIZsxQ",
+        "Ibc73l69Ju8JLHNeZgPJuQ",
+        "Fj3vtxDroFyjyPsLgsnm2A",
+        "5_cayB1m7XahAhz_Hrrpng",
+        "xWhz7CFJV3lxsgg8fHMGHA"
+      ],
+      "step": "buyer"
+    },
+    {
+      "id": "b-pan-04",
+      "timestamp": "2026-10-18T23:00:25Z",
+      "server": "sayari",
+      "tool": "search_shipments",
+      "params": {
+        "query": "\"I-ACT5\"",
+        "limit": 40,
+        "response_mode": "compact"
+      },
+      "question": "How much 'I-ACT5' spherical graphite reaches Panasonic, and from where?",
+      "purpose": "confirm rows",
+      "result_summary": "29 rows, none naming a supplier. 25 rows go to Panasonic Procurement Corporation (BF4DKqw-DBGSKUtMwFuRJw), arriving 2025-05-05 to 2026-09-06 from Singapore, Malaysia and China. One 2025 row lists 280 packages of I-ACT5 and 280 of I-NSG17-B. 1 row goes to Panasonic Energy Corporation and 3 to Tesla.",
+      "interpretation": "A steady flow of coated spherical graphite with the shipper's name withheld. The departure ports change over time.",
+      "scorecard": "worked",
+      "entity_ids": [
+        "BF4DKqw-DBGSKUtMwFuRJw",
+        "wxnxnhKanOt7EorBjIZsxQ",
+        "xWhz7CFJV3lxsgg8fHMGHA"
+      ],
+      "step": "buyer"
+    },
+    {
+      "id": "b-pan-05",
+      "timestamp": "2026-10-18T23:00:31Z",
+      "server": "tavily",
+      "tool": "tavily_search",
+      "params": {
+        "query": "\"I-ACT5\" spherical graphite anode",
+        "max_results": 5
+      },
+      "question": "Which company makes the graphite product coded I-ACT5?",
+      "purpose": "supplier identity",
+      "result_summary": "No match. The results were general pages on spherical graphite (patents, MDPI, Westwater, Benchmark).",
+      "interpretation": "The product code does not identify the producer.",
+      "scorecard": "failed",
+      "entity_ids": [],
+      "step": "buyer"
+    },
+    {
+      "id": "b-pan-06",
+      "timestamp": "2026-10-18T23:00:37Z",
+      "server": "sayari",
+      "tool": "search_shipments",
+      "params": {
+        "query": "\"Panasonic Energy\"",
+        "hs_code": "8507",
+        "arrival_country": "USA",
+        "date_from": "2024-01-01",
+        "limit": 100,
+        "response_mode": "compact"
+      },
+      "question": "Who ships batteries or battery parts (HS 8507) to Panasonic Energy in the US?",
+      "purpose": "confirm rows",
+      "result_summary": "1,655 rows available, 100 read (all 2026). Panasonic Operational Excellence (Japan) to Panasonic Energy Sales Company: 48 rows of HS 850760/850790 (2026-05-06 to 2026-09-16). The same supplier to Panasonic Energy Corporation: 30 rows, mostly HS 850790 parts plus 2 rows of nickel-metal hydride. Other rows go to Panasonic Automotive Systems, Ingenico and Breas Medical.",
+      "interpretation": "The quoted name also matches other Panasonic units, so most rows are not for the battery plants. Into Panasonic Energy's own records, the 8507 flow is from Panasonic's own Japanese unit.",
+      "scorecard": "partial",
+      "entity_ids": [
+        "75ev7s6HHnu6sFJyEMysdw",
+        "qc5jd54dyctACe6voyAX7A",
+        "wxnxnhKanOt7EorBjIZsxQ",
+        "kbZXREsHGQj4bAwna6ankw",
+        "tNmD6GPmwVGFlv1P5aw7tA",
+        "Glvg05kbHOZJfwS-uUK3jg",
+        "Z0h2qxEQOQ_IKjoQpsb3Lw",
+        "dPb_nWQEtwAQAcyWzJTtQA"
+      ],
+      "step": "buyer"
+    },
+    {
+      "id": "b-pan-07",
+      "timestamp": "2026-10-18T23:00:43Z",
+      "server": "sayari",
+      "tool": "search_suppliers",
+      "params": {
+        "query": "\"Panasonic Energy\"",
+        "hs_code": "8507",
+        "arrival_country": "USA",
+        "date_from": "2024-01-01",
+        "limit": 25,
+        "response_mode": "compact"
+      },
+      "question": "Which suppliers dominate HS 8507 under the Panasonic Energy name?",
+      "purpose": "supplier scan",
+      "result_summary": "23 records: Panasonic Energy Mexico (658), Panasonic Operational Excellence (487), Panasonic Gobel Energy Indonesia (162), Panasonic Energy Co. (131, last 2024-03-01), Prime Planet Energy Dalian (82, last 2023), Panasonic Energy Wuxi and Suzhou, Shenzhen Megmeet and others.",
+      "interpretation": "The counts are not limited by date, and many records ship consumer batteries to other buyers. Used only as a name list.",
+      "scorecard": "partial",
+      "entity_ids": [
+        "Z0h2qxEQOQ_IKjoQpsb3Lw",
+        "75ev7s6HHnu6sFJyEMysdw",
+        "Yrhz499Ea2uW9b8H1H0t9g",
+        "FHVtuTqxn5XLJPD_dJtmuQ",
+        "EuGEpO6Z84S8ygRI5Kt7Pw",
+        "Glvg05kbHOZJfwS-uUK3jg",
+        "Rw0DryC2sWx-T_zJ4c9-tA"
+      ],
+      "step": "buyer"
+    },
+    {
+      "id": "b-pan-08",
+      "timestamp": "2026-10-18T23:00:49Z",
+      "server": "sayari",
+      "tool": "get_upstream_supply_chain",
+      "params": {
+        "entity_id": "wxnxnhKanOt7EorBjIZsxQ",
+        "product": [
+          "3801",
+          "8507"
+        ],
+        "min_date": "2024-01-01",
+        "max_depth": 1,
+        "limit": 25,
+        "response_mode": "compact"
+      },
+      "question": "Which tier-1 suppliers does the graph list for Panasonic Energy Corporation?",
+      "purpose": "supplier scan",
+      "result_summary": "14 paths: Panasonic Operational Excellence (two records, Japan), POSCO Future M (Korea), BTR New Material Group Sales (China), and a garbled record named 'DAIICHI DAIBIRU-HONKAN'.",
+      "interpretation": "The graph confirms the same short list: Panasonic's own Japanese unit, POSCO Future M and BTR.",
+      "scorecard": "worked",
+      "entity_ids": [
+        "wxnxnhKanOt7EorBjIZsxQ",
+        "75ev7s6HHnu6sFJyEMysdw",
+        "pUgbdxb17YvwVw1KHvmM8Q",
+        "Fj3vtxDroFyjyPsLgsnm2A",
+        "5_cayB1m7XahAhz_Hrrpng"
+      ],
+      "step": "buyer"
+    },
+    {
+      "id": "b-pan-09",
+      "timestamp": "2026-10-18T23:00:55Z",
+      "server": "sayari",
+      "tool": "get_upstream_supply_chain",
+      "params": {
+        "entity_id": "BZPBOZcD6M_QtBtOWWtYUg",
+        "product": [
+          "3801",
+          "8507"
+        ],
+        "min_date": "2024-01-01",
+        "max_depth": 1,
+        "limit": 25,
+        "response_mode": "compact"
+      },
+      "question": "Does the Panasonic Procurement Corporation of America record show suppliers?",
+      "purpose": "supplier scan",
+      "result_summary": "0 results.",
+      "interpretation": "This record has no HS-filtered supplier links. The procurement rows sit on other records (BF4DKqw-DBGSKUtMwFuRJw, Ibc73l69Ju8JLHNeZgPJuQ).",
+      "scorecard": "failed",
+      "entity_ids": [
+        "BZPBOZcD6M_QtBtOWWtYUg"
+      ],
+      "step": "buyer"
+    },
+    {
+      "id": "b-pan-10",
+      "timestamp": "2026-10-18T23:01:01Z",
+      "server": "sayari",
+      "tool": "search_shipments",
+      "params": {
+        "query": "\"I-ACT5\"",
+        "departure_country": "CHN",
+        "limit": 3,
+        "response_mode": "full"
+      },
+      "question": "Do the full I-ACT5 rows from China reveal the shipper?",
+      "purpose": "supplier identity",
+      "result_summary": "3 rows, May-Jul 2025, from Yantian and Haikou to Long Beach, 189,000-226,800 kg each, for Panasonic Procurement Corporation at 2050 W. 190th St., Torrance, CA. No shipper name or address. Source: USA Imports.",
+      "interpretation": "Large lots of spherical graphite left China for Panasonic's procurement arm in 2025. Later lots left from Singapore and Malaysia. The shipper is withheld, so its ownership can't be checked.",
+      "scorecard": "worked",
+      "entity_ids": [
+        "BF4DKqw-DBGSKUtMwFuRJw"
+      ],
+      "step": "buyer"
+    },
+    {
+      "id": "b-pan-11",
+      "timestamp": "2026-10-18T23:01:07Z",
+      "server": "sayari",
+      "tool": "find_beneficial_owners",
+      "params": {
+        "entity_id": "75ev7s6HHnu6sFJyEMysdw",
+        "limit": 5,
+        "max_depth": 2,
+        "response_mode": "compact"
+      },
+      "question": "Who owns Panasonic Operational Excellence Co., Ltd.?",
+      "purpose": "ownership",
+      "result_summary": "It is a subsidiary of the record named PANASONIC CORPORATION (CUZdf3KBIP6LGOp6DSrfEQ). The upstream shareholders are Japanese trust banks, State Street and the Government of Norway (custody accounts).",
+      "interpretation": "Owned within Japan's Panasonic group, whose shareholders are listed-market investors. No Chinese owner.",
+      "scorecard": "worked",
+      "entity_ids": [
+        "75ev7s6HHnu6sFJyEMysdw",
+        "CUZdf3KBIP6LGOp6DSrfEQ"
+      ],
+      "step": "buyer"
+    },
+    {
+      "id": "b-pan-12",
+      "timestamp": "2026-10-18T23:01:13Z",
+      "server": "sayari",
+      "tool": "search_trade_facets",
+      "params": {
+        "scope": "shipments",
+        "query": "\"Panasonic Energy\"",
+        "hs_code": "3801",
+        "arrival_country": "USA",
+        "date_from": "2024-01-01",
+        "bucket_limit": 10
+      },
+      "question": "How do the 31 graphite rows split by buyer, supplier and departure country?",
+      "purpose": "supplier scan",
+      "result_summary": "Top buyers: Panasonic Energy Corporation 12, Panasonic Procurement (Ibc73l69Ju8JLHNeZgPJuQ) 7, Tesla 5. Named suppliers: POSCO Future M 16, BTR Sales 1, so 14 rows have no named supplier. Departures: Korea 9, Singapore 8, Taiwan 4, China 1. Dates 2025-03-16 to 2026-09-18.",
+      "interpretation": "About half of Panasonic's graphite rows have no named supplier. The named ones are POSCO Future M and BTR.",
+      "scorecard": "worked",
+      "entity_ids": [
+        "wxnxnhKanOt7EorBjIZsxQ",
+        "Ibc73l69Ju8JLHNeZgPJuQ",
+        "Fj3vtxDroFyjyPsLgsnm2A",
+        "5_cayB1m7XahAhz_Hrrpng"
+      ],
+      "step": "buyer"
+    },
+    {
+      "id": "b-pan-13",
+      "timestamp": "2026-10-18T23:01:19Z",
+      "server": "sayari",
+      "tool": "find_beneficial_owners",
+      "params": {
+        "entity_id": "Fj3vtxDroFyjyPsLgsnm2A",
+        "limit": 5,
+        "max_depth": 1,
+        "entity_types": [
+          "company"
+        ],
+        "response_mode": "compact"
+      },
+      "question": "Who owns POSCO Future M?",
+      "purpose": "ownership",
+      "result_summary": "Shareholders include POSCO Holdings (포스코홀딩스, xhmHh99vEgdFz19iRON8yA, plus a former-name record), an employee stock ownership association, Pohang University of Science and Technology, and one other record.",
+      "interpretation": "Korean ownership led by POSCO Holdings. This matches the site's POSCO Future M case.",
+      "scorecard": "worked",
+      "entity_ids": [
+        "Fj3vtxDroFyjyPsLgsnm2A",
+        "xhmHh99vEgdFz19iRON8yA",
+        "hmVAMxUKkLq_KHlK6Bj8FQ"
+      ],
+      "step": "buyer"
+    },
+    {
+      "id": "b-pan-14",
+      "timestamp": "2026-10-18T23:01:25Z",
+      "server": "sayari",
+      "tool": "find_beneficial_owners",
+      "params": {
+        "entity_id": "5_cayB1m7XahAhz_Hrrpng",
+        "limit": 5,
+        "max_depth": 2,
+        "response_mode": "compact"
+      },
+      "question": "Does Sayari show who owns BTR New Material Group Sales?",
+      "purpose": "ownership",
+      "result_summary": "0 results.",
+      "interpretation": "There is no shareholder record. The link to the BTR parent stays a name match, as in Case 1.",
+      "scorecard": "failed",
+      "entity_ids": [
+        "5_cayB1m7XahAhz_Hrrpng"
+      ],
+      "step": "buyer"
+    }
+  ]
+}

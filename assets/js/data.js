@@ -2,7 +2,7 @@
 window.PT = window.PT || {};
 
 (function (PT) {
-  const FILES = ["entities", "edges", "cases", "call_log", "policy_timeline", "sources", "overview", "curated"];
+  const FILES = ["entities", "edges", "cases", "call_log", "policy_timeline", "sources", "overview", "curated", "buyers"];
 
   PT.load = async function () {
     if (PT._data) return PT._data;
@@ -28,7 +28,7 @@ window.PT = window.PT || {};
   };
 
   PT.CONF = {
-    documented: { label: "Documented", help: "A record shows it: Sayari returned dated shipment rows or a company-registry entry for this exact link." },
+    documented: { label: "Documented", help: "A primary record shows it: dated shipment rows or a registry entry in Sayari, or the company's own stock-exchange or regulatory filing." },
     corroborated: { label: "Cross-checked", help: "Two independent sources agree, for example a Sayari link plus a company statement or filing. No single record states it in full." },
     inferred: { label: "Inferred", help: "Our judgment from matching details (same street address, same name, same buyers). No record states it." },
     lead: { label: "Lead", help: "One weak signal, such as a name match. Worth checking; don't rely on it." },
@@ -64,7 +64,8 @@ window.PT = window.PT || {};
     ships_to: "ships to", owns: "owns", possibly_same_as: "possibly the same as",
     shares_address: "shares an address with", group_name_match: "name matches group of",
     subsidiary_of: "is a subsidiary of", director_of: "is a director of", risk_adjacent: "is one hop from",
-    shareholder_of: "owns a stake in", receives_from: "receives from",
+    shareholder_of: "owns a stake in", receives_from: "receives from", supply_agreement: "has a supply agreement with",
+    officer_of: "is an officer of",
   };
 
   PT.confBadge = function (c) {
@@ -88,6 +89,11 @@ window.PT = window.PT || {};
       <div class="a"><span class="qa-label">What we found</span>${PT.pill(c.answer_label)}<div>${PT.esc(c.answer || c.headline)}</div></div>
       <div class="w"><span class="qa-label">Why it matters</span>${PT.esc(c.why_it_matters || "")}</div>
     </div>`;
+  };
+  PT.checkedHTML = function (c, opts = {}) {
+    if (!c.last_checked) return "";
+    const ids = (c.checked_call_ids || []).slice(0, opts.n || 4);
+    return `<span class="checked" title="The date this case's key facts were last re-run against Sayari">✓ Last checked ${PT.fmtDate(c.last_checked)}${ids.length && !opts.plain ? " " + PT.receipts(ids) : ""}</span>`;
   };
   PT.receipts = function (ids) {
     if (!ids || !ids.length) return "";

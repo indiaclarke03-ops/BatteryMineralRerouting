@@ -87,7 +87,7 @@
 
   function logRows(calls) {
     // Calls with a replay card own the bare id; the others are anchored on their log row.
-    const inReplay = (c) => c.server === "sayari" && c.case_id !== "general";
+    const inReplay = (c) => c.server === "sayari" && String(c.case_id).startsWith("case-");
     return calls.map((c) => `<tr id="${inReplay(c) ? "log-" + c.id : c.id}">
       <td class="mono">${inReplay(c) ? `<a href="#${c.id}">${c.id}</a>` : c.id}</td>
       <td><span class="badge server">${PT.esc(c.server)}</span><div class="muted" style="font-size:var(--fs-0)">${PT.esc(c.case_id === "general" ? (c.step === "verify" ? "re-check" : "overview") : c.case_id)}</div></td>

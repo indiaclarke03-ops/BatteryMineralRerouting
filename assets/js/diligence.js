@@ -8,6 +8,7 @@
       <thead><tr><th>Case</th><th>Plant</th><th>Ultimate owner</th><th>Chinese-owned?</th><th>Owner in Sayari's registry data?</th><th>Plant ships to US buyers?</th><th>Confidence</th></tr></thead>
       <tbody>${d.cases.items.map((c, i) => {
         const s = sc[c.id];
+        if (!s) return "";
         const isPlant = (id) => { const en = d.entityById.get(id) || {}; return (en.case_roles || {})[c.id] === "transit_plant"; };
         const usEdges = d.edges.items.filter((e) => e.case_ids.includes(c.id) && e.relation === "ships_to" && e.edge_type === "transactional"
           && isPlant(e.source) && !isPlant(e.target) && (d.entityById.get(e.target) || {}).country === "USA");
@@ -35,9 +36,10 @@
   function cardsHTML(d) {
     return d.cases.items.map((c, i) => {
       const s = d.curated.screening[c.id];
+      if (!s) return "";
       return `<article class="screen-card" id="screen-${c.id}">
         <div class="sc-head">
-          <div><span class="eyebrow">Case ${i + 1} · ${PT.esc(s.status)}</span><h3>${PT.esc(s.plant)}</h3><span class="muted" style="font-size:var(--fs-1)">${PT.esc(s.location)}</span></div>
+          <div><span class="eyebrow">Case ${i + 1} · ${PT.esc(s.status)}</span><h3>${PT.esc(s.plant)}</h3><span class="muted" style="font-size:var(--fs-1)">${PT.esc(s.location)}</span> ${PT.checkedHTML(c, { plain: true })}</div>
           <div class="sc-verdict ${s.chinese_owned === "Yes" ? "yes" : "no"}"><span>Chinese-owned?</span><strong>${PT.esc(s.chinese_owned)}</strong>${PT.confBadge(s.confidence)}</div>
         </div>
         <div class="sc-body">
@@ -46,6 +48,7 @@
             <h4>Its inputs</h4><p>${PT.esc(s.inputs)}</p>
             <h4>US buyers exposed</h4><p>${PT.esc(s.us_exposure)}</p>
             <h4>Questions to resolve</h4><ul>${s.questions.map((q) => `<li>${PT.esc(q)}</li>`).join("")}</ul>
+            ${(s.open_questions || []).length ? `<h4>Still unknown, and the document that would settle it</h4><ul class="oq">${s.open_questions.map((o) => `<li><strong>${PT.esc(o.q)}</strong><span>Document: ${PT.esc(o.doc)}</span></li>`).join("")}</ul>` : ""}
             <p class="sc-links"><a href="cases.html#${c.id}">Full case →</a> <a href="explore.html?case=${c.id}">Network →</a> <span>Sources ${PT.receipts(s.call_ids.slice(0, 6))}</span></p>
           </div>
         </div>
@@ -102,9 +105,11 @@
     try { d = await PT.load(); } catch (e) { PT.fail(document.getElementById("matrix"), e); return; }
     document.getElementById("matrix").innerHTML = matrixHTML(d);
     document.getElementById("screen-cards").innerHTML = cardsHTML(d);
+    document.getElementById("open-q").innerHTML = `<div class="table-scroll card" style="padding:0"><table class="screen-table"><thead><tr><th>Case</th><th>Still unknown</th><th>Document that would settle it</th></tr></thead><tbody>${
+      d.cases.items.flatMap((c, i) => ((d.curated.screening[c.id] || {}).open_questions || []).map((o) => `<tr><td class="mono"><a href="#screen-${c.id}">${i + 1}</a></td><td>${PT.esc(o.q)}</td><td>${PT.esc(o.doc)}</td></tr>`)).join("")}</tbody></table></div>`;
     document.getElementById("watch-list").innerHTML = watchHTML(d);
     const sel = document.getElementById("q-case");
-    sel.innerHTML = d.cases.items.map((c, i) => `<option value="${c.id}">${i + 1}. ${PT.esc(d.curated.screening[c.id].plant)}</option>`).join("");
+    sel.innerHTML = d.cases.items.map((c, i) => d.curated.screening[c.id] ? `<option value="${c.id}">${i + 1}. ${PT.esc(d.curated.screening[c.id].plant)}</option>` : "").join("");
     const out = document.getElementById("q-result");
     const draw = () => {
       out.innerHTML = questionsHTML(d, sel.value);

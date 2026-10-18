@@ -55,7 +55,7 @@
         {
           "title": "The owner: not in the registry",
           "kicker": "Step 3 · Contractual",
-          "text": "Sayari returns no shareholders for the plant, and its shortest path to BTR in China is a trade link. Sayari does show BTR owning a different Indonesian company (Liyuan), so the gap is specific to this plant. BTR's own press release calls the plant its Indonesian facility, so the ownership edge is shown with that source, not Sayari's.",
+          "text": "Sayari returns no shareholders for the plant, and its shortest path to BTR in China is a trade link. Sayari does show BTR owning a different Indonesian company (Liyuan), so the gap is specific to this plant. BTR's own exchange filings show it holds 60% through BTR (Hong Kong). The other 40% belongs to Stellar Investment, a Singapore holding company that Indonesian press links to the Tsingshan nickel group. The ownership edge is shown with those filings, not Sayari's.",
           "edge_ids": [
             "e010",
             "e011",
@@ -300,7 +300,7 @@
       ],
       "slug": "btr-indonesia",
       "answer_label": "Partly",
-      "answer": "The trade, yes: Chinese artificial graphite goes in, and graphite goes out to Ultium Cells, SK Battery America, StarPlus Energy, GM and Tesla. The ownership, no: Sayari has no registry record of BTR owning the plant, so that link rests on BTR's own statements.",
+      "answer": "The trade, yes: Chinese artificial graphite goes in, and graphite goes out to Ultium Cells, SK Battery America, StarPlus Energy, GM and Tesla. The ownership, no: Sayari has no registry record of BTR owning the plant, so that link rests on BTR's own filings: 60% BTR, with Stellar Investment (linked in the press to Tsingshan) holding 40%.",
       "why_it_matters": "This is the pattern US tax-credit rules target: a Chinese company's plant in a third country supplying US battery makers. A buyer that only checks the country of origin sees 'Indonesia'. Only the ownership check shows 'BTR', and that is the part Sayari couldn't confirm.",
       "country": "IDN",
       "plant_status": "operating",
@@ -342,7 +342,25 @@
           ]
         }
       ],
-      "answer_short": "Chinese graphite goes in, and graphite goes out to five US battery and car makers. Who owns the plant isn't in the registry."
+      "answer_short": "Chinese graphite goes in, and graphite goes out to five US battery and car makers. Who owns the plant isn't in the registry.",
+      "last_checked": "2026-10-18",
+      "checked_call_ids": [
+        "v001",
+        "v002",
+        "v003",
+        "v004",
+        "v005",
+        "v006",
+        "v007",
+        "v008",
+        "v009",
+        "v010",
+        "v011",
+        "v012",
+        "v041",
+        "v042",
+        "v043"
+      ]
     },
     {
       "id": "case-2",
@@ -608,7 +626,7 @@
             ]
           },
           {
-            "text": "Which of the two Moroccan companies will run the anode line and which the cathode line.",
+            "text": "Confirmation from BTR itself of which Moroccan company runs the anode line. A shareholder's filing points to BTR Mediterranean Anode (see Case 9).",
             "call_ids": [
               "s203",
               "s204",
@@ -724,12 +742,21 @@
         "'Departure Morocco' probably often means transshipment through Tanger Med; the European graphite rows likely did not originate in Morocco.",
         "Entity-resolution links are our judgment and could be wrong. The Yang Shunyi match is across records with reversed name order.",
         "Sayari free-text queries rank rows but do not filter them; counts after a quoted query are not counts of matches.",
-        "The Aug 2026 graphite rows were found in an 18 Oct 2026 re-check; they were either newer than the first search or filed under a trade record the first search missed."
+        "The Aug 2026 graphite rows were found in an 18 Oct 2026 re-check; they were either newer than the first search or filed under a trade record the first search missed.",
+        "Which company runs which line: a 13 Aug 2024 filing by BTR's largest shareholder (see Case 9) names 'BTR Mediterranean Anode' as the anode company. That is the Rian-owned company; the BNUO-owned one is more likely the cathode company. The ownership chain shown in step 2 is the BNUO company's. The anode company's chain runs through Rian International Holding to a Singapore record of BTR."
       ],
       "answer_label": "Partly",
       "answer": "Ownership: yes. Registry data shows BTR owning the Tangier company 100% through a Singapore holding company, and the same executive runs both. Shipments: inbound only so far. In Aug 2026, BTR's Indonesian plant sent 1,240 t of artificial graphite to the Tangier anode company; nothing has left the plant yet.",
       "why_it_matters": "Morocco has a US free-trade agreement, and BTR's plant is meant to supply Western carmakers. Because ownership is already on record, US buyers can tell the plant is Chinese-owned before its first shipment, which is exactly what the tax-credit rules ask them to check.",
-      "answer_short": "BTR's 100% ownership is on record. The first graphite arrived from BTR's own Indonesian plant in Aug 2026, and nothing has been exported yet."
+      "answer_short": "BTR's 100% ownership is on record. The first graphite arrived from BTR's own Indonesian plant in Aug 2026, and nothing has been exported yet.",
+      "last_checked": "2026-10-18",
+      "checked_call_ids": [
+        "v013",
+        "v014",
+        "v015",
+        "v016",
+        "v017"
+      ]
     },
     {
       "id": "case-3",
@@ -1079,7 +1106,14 @@
       "answer_label": "Not yet",
       "answer": "The Oman plant isn't in Sayari yet. Ownership is visible inside China's registry and in the company's own filing. Today Zhongke graphite reaches the US mostly indirectly, as artificial graphite shipped to two Malaysian battery-cell plants.",
       "why_it_matters": "At up to 200,000 t/yr, Sohar would be one of the largest anode plants outside China. Recording its ownership now gives buyers a baseline before any 'Made in Oman' anode material appears.",
-      "answer_short": "The Oman plant isn't in the data yet. Zhongke graphite reaches the US today through Malaysian cell plants."
+      "answer_short": "The Oman plant isn't in the data yet. Zhongke graphite reaches the US today through Malaysian cell plants.",
+      "last_checked": "2026-10-18",
+      "checked_call_ids": [
+        "v018",
+        "v019",
+        "v020",
+        "v021"
+      ]
     },
     {
       "id": "case-4",
@@ -1089,7 +1123,7 @@
       "country": "KOR",
       "plant_status": "operating",
       "question": "Can Sayari tell a Korean-owned anode maker that uses Chinese graphite apart from a Chinese-owned one?",
-      "headline": "Yes on ownership, partly on inputs. Sayari's Korean registry data shows POSCO Holdings owns 58.2% of POSCO Future M, with no Chinese owner anywhere up the chain. It also shows Chinese natural graphite going in (to Dec 2023) and 95 anode shipments going out to GM, SK Battery America, Tesla, Panasonic and XALT (Dec 2021 – Jul 2026). It cannot show how much Chinese graphite ends up in any US-bound shipment, and its Chinese input trail stops in Dec 2023, while the company says it still uses Chinese spherical graphite.",
+      "headline": "Yes on ownership, partly on inputs. Sayari's Korean registry data shows POSCO Holdings owns 58.2% of POSCO Future M, with no Chinese owner anywhere up the chain. It also shows Chinese natural graphite going in (to Dec 2023) and 95 anode shipments going out to GM, SK Battery America, Tesla, Panasonic and XALT (Dec 2021 – Jul 2026). It cannot show how much Chinese graphite ends up in any US-bound shipment, and its Chinese input trail stops in Dec 2023, while press reports and the company's own plans show it still depends on Chinese spherical graphite until its Saemangeum plant starts in late 2027.",
       "summary_for_non_experts": "POSCO Future M is the battery-materials arm of Korea's POSCO steel group. It is the largest anode maker outside China and sells to US battery and car plants. This is our contrast case: the owner is Korean, but the company has relied on China for spherical graphite, the rounded, purified graphite that natural-graphite anode is made from. Sayari shows the Korean owner clearly, unlike BTR's Indonesian plant in Case 1, and it shows Chinese graphite going in and anode going out to the US. What it cannot show is how much Chinese material is inside the anode that reaches the US.",
       "key_numbers": [
         {
@@ -1227,7 +1261,7 @@
         {
           "title": "What the data can't separate",
           "kicker": "Step 5 · Gap",
-          "text": "Trade rows can't link a Chinese input to a US-bound export, or tell Sejong's natural-graphite anode from Pohang's artificial-graphite anode. Chinese graphite rows to POSCO Future M stop on 8 Dec 2023, a week after China's export licensing began. The company says it still uses Chinese spherical graphite, so the gap is in coverage. Several name-and-HS searches returned 0 even though the graph holds the flows.",
+          "text": "Trade rows can't link a Chinese input to a US-bound export, or tell Sejong's natural-graphite anode from Pohang's artificial-graphite anode. Chinese graphite rows to POSCO Future M stop on 8 Dec 2023, a week after China's export licensing began. Korea still imports all its spherical graphite from China (KED Global, 2025), and POSCO Future M's own spherical-graphite plant at Saemangeum isn't due until late 2027, so its natural-graphite anode still depends on Chinese spherical graphite. The gap is in coverage; no company figure for the Chinese share was found. Several name-and-HS searches returned 0 even though the graph holds the flows.",
           "edge_ids": [
             "e443"
           ],
@@ -1416,7 +1450,16 @@
       "answer_label": "Yes",
       "answer": "Yes on ownership: POSCO Holdings owns 58.2% of POSCO Future M, with no Chinese owner in the chain. Partly on inputs: Chinese graphite flowed in until Dec 2023. It ships to the same US buyers as BTR Indonesia.",
       "why_it_matters": "The US rules treat a Chinese-owned supplier very differently from a non-Chinese supplier that buys some Chinese inputs. Trade records alone make the two look alike, and ownership data is what separates them.",
-      "answer_short": "Korean-owned, with Chinese graphite inputs. It sells to the same US buyers as BTR Indonesia."
+      "answer_short": "Korean-owned, with Chinese graphite inputs. It sells to the same US buyers as BTR Indonesia.",
+      "last_checked": "2026-10-18",
+      "checked_call_ids": [
+        "v022",
+        "v023",
+        "v024",
+        "v025",
+        "v026",
+        "v027"
+      ]
     },
     {
       "id": "case-5",
@@ -1553,7 +1596,7 @@
         {
           "title": "The owner: in the registry this time",
           "kicker": "Step 4 · Contractual",
-          "text": "Malaysian shareholder data lists Putailai (Singapore) as owning 100% of Zichen Malaysia. Sayari's ownership graph links that company to the Shanghai-listed Putailai group, and Putailai's own announcement calls Zichen Malaysia a wholly owned subsidiary. Two directors share names with group shareholders. That is a lead, not a link.",
+          "text": "Malaysian shareholder data lists Putailai (Singapore) as owning 100% of Zichen Malaysia. Sayari's ownership graph links that company to the Shanghai-listed Putailai group, and Putailai's SSE announcement of 11 Mar 2026 calls Zichen Malaysia a wholly owned overseas grandchild company, while a 2023 announcement calls Putailai (Singapore) wholly owned. Two directors share names with group shareholders. That is a lead, not a link.",
           "edge_ids": [
             "e501",
             "e502",
@@ -1764,7 +1807,12 @@
       "answer_label": "Not yet",
       "answer": "No. The rows from Vietnam, Malaysia, Thailand, Mexico and Korea were electrode makers, machined parts, forwarders or mislabelled chemicals. The one Chinese-owned anode plant found, Putailai's Zichen Malaysia, is 100% Chinese-owned on paper but still under construction.",
       "why_it_matters": "This sets a baseline: as of Oct 2026, the big third-country Chinese anode plants aren't yet shipping to the US. It also shows that country-level trade totals can mislead, so buyers need plant-level checks.",
-      "answer_short": "No Chinese-owned anode maker is shipping to the US from five corridors. Putailai's Malaysian plant is still being built."
+      "answer_short": "No Chinese-owned anode maker is shipping to the US from five corridors. Putailai's Malaysian plant is still being built.",
+      "last_checked": "2026-10-18",
+      "checked_call_ids": [
+        "v028",
+        "v029"
+      ]
     },
     {
       "id": "case-6",
@@ -1937,7 +1985,7 @@
         {
           "title": "A second plant, same shape: Linergy Power",
           "kicker": "Step 5 · Corridor",
-          "text": "Linergy Power in Selangor was registered in Dec 2024. Its shareholder is Ampace Technology (Hong Kong), whose Xiamen parent counts CATL among its shareholders. It took 17 rows of artificial graphite from Zhongke Shinzoom and Shanshan, and shipped 17 rows of cells and battery systems to the US: Eaton 6, Ampace itself 6, Milwaukee Tool 3, Stanley Black & Decker 1 and Techtronic Product Development 1.",
+          "text": "Linergy Power in Selangor was registered in Dec 2024. Until June 2026 it was 100% owned by Ampace Technology (Hong Kong), whose Xiamen parent is 59.5% owned by CATL. In June 2026 Japan's TDK bought all of it for US$241m through ATL's Singapore arm, so the Aug–Sep 2026 US rows were shipped under TDK ownership. Sayari's registry data still shows the old Ampace chain. It took 17 rows of artificial graphite from Zhongke Shinzoom and Shanshan, and shipped 17 rows of cells and battery systems to the US: Eaton 6, Ampace itself 6, Milwaukee Tool 3, Stanley Black & Decker 1 and Techtronic Product Development 1.",
           "edge_ids": [
             "e635",
             "e636",
@@ -2004,6 +2052,15 @@
               "s617",
               "s618"
             ]
+          },
+          {
+            "text": "From filings, not Sayari: EVE Malaysia is 100% EVE (through EVE Asia); CATL holds 59.5% of Xiamen Ampace; TDK (Japan) bought 100% of Linergy Power in June 2026.",
+            "call_ids": [
+              "w004",
+              "w005",
+              "w006",
+              "w007"
+            ]
           }
         ],
         "suggested": [
@@ -2040,13 +2097,6 @@
             "call_ids": [
               "s609",
               "s610"
-            ]
-          },
-          {
-            "text": "EVE Asia's percentage in the Malaysian plant, and CATL's percentage in Xiamen Ampace.",
-            "call_ids": [
-              "s604",
-              "s616"
             ]
           },
           {
@@ -2094,7 +2144,7 @@
           "field": "Ownership of upstream suppliers",
           "guidance_no": "—",
           "declared": "No such field in the EU passport.",
-          "paper_trail": "Plant → EVE Asia (HK) → EVE Energy (Huizhou), listed under 1260H since 8 June 2026. Linergy → Ampace (HK) → Xiamen Ampace → CATL among shareholders.",
+          "paper_trail": "Plant → EVE Asia (HK) → EVE Energy (Huizhou), listed under 1260H since 8 June 2026. Linergy → Ampace (HK) → Xiamen Ampace (CATL 59.5%) until Jun 2026; TDK (Japan) 100% since then.",
           "gap": true,
           "note": "For a US cell buyer, the cell maker's owner is what the PFE test looks at; Sayari shows it."
         }
@@ -2157,10 +2207,16 @@
         "Trade data can't tie a given cell to a given graphite shipment.",
         "The 1260H listing (8 June 2026) came after most of the trade shown here.",
         "HS 2842.90 is read as cathode powder from the code and supplier names only.",
-        "Ownership percentages are missing for EVE Asia → EVE Malaysia and for CATL → Xiamen Ampace.",
+        "Ownership percentages come from company filings, not Sayari. EVE's interim report shows EVE Malaysia at 100%, and CATL's Mar 2026 announcement shows CATL holding 59.5% of Xiamen Ampace.",
         "Departure ports such as 'Pinang' and 'Hongkong' appear with mismatched countries in some rows. Treat the route details with care."
       ],
-      "answer_short": "Chinese anode graphite goes in and finished cells go out to US buyers, from a plant owned by China's EVE Energy."
+      "answer_short": "Chinese anode graphite goes in and finished cells go out to US buyers, from a plant owned by China's EVE Energy.",
+      "last_checked": "2026-10-18",
+      "checked_call_ids": [
+        "v030",
+        "v031",
+        "v032"
+      ]
     },
     {
       "id": "case-7",
@@ -2170,10 +2226,10 @@
       "country": "USA",
       "plant_status": "operating",
       "question": "When a Chinese-owned battery company builds its plant inside the US, can Sayari show both who owns it and the Chinese inputs going into it?",
-      "answer_label": "Partly",
-      "answer": "Inputs, yes: Sayari shows dated shipments of Chinese cells, packs and one lot of artificial graphite from Gotion's own Chinese plants into its US companies. Ownership only in part: Chinese registry data traces Gotion High-Tech down to a US subsidiary, but no US record shows who owns the Fremont or Manteno companies.",
+      "answer_label": "Yes",
+      "answer": "Inputs, yes: Sayari shows dated shipments of Chinese cells, packs and one lot of artificial graphite from Gotion's own Chinese plants into its US companies. Ownership, yes, from the parent's own annual report (Gotion, Inc. wholly owned; Gotion Illinois 100% under it). No US record shows it.",
       "why_it_matters": "Since July 2025, US clean-energy tax credits depend on whether a company is owned or controlled by a 'prohibited foreign entity'. Here no third country is involved: the Chinese-owned plant is in Illinois, and its inputs come straight from the parent's factories in China. The paper trail is short, but the key ownership link sits in Chinese filings, not US ones.",
-      "headline": "Partly. The trade side is clear: Gotion's Chinese plants ship cells, packs, parts and, once, artificial graphite to Gotion Inc. and its Manteno plant, Dec 2025 to Sep 2026. The ownership side is incomplete. Chinese records show Gotion High-Tech owning a US subsidiary through Hefei Gotion, but US registries list no shareholder, so the last link rests on name and press.",
+      "headline": "Partly. The trade side is clear: Gotion's Chinese plants ship cells, packs, parts and, once, artificial graphite to Gotion Inc. and its Manteno plant, Dec 2025 to Sep 2026. The ownership side is incomplete. Chinese records show Gotion High-Tech owning a US subsidiary through Hefei Gotion, and the parent's annual report names Gotion, Inc. as a wholly owned subsidiary, with Gotion Illinois 100% owned by it; US registries still list no shareholder.",
       "summary_for_non_experts": "Gotion High-Tech is a Chinese battery maker based in Hefei. Its US arm, Gotion, Inc., is in Fremont, California, and runs a plant in Manteno, Illinois that assembles energy-storage systems and EV battery packs. US customs records show the inputs coming almost entirely from Gotion's own factories in China, including one lot of artificial graphite routed through Korea. Chinese filings show the parent owning a US subsidiary, but US registries don't say who owns the plant, and Gotion's planned Michigan plant was never built.",
       "key_numbers": [
         {
@@ -2250,7 +2306,7 @@
         {
           "title": "The owner: visible from China, not from the US",
           "kicker": "Step 2 · Contractual",
-          "text": "Chinese registry data shows Gotion High-Tech owning 99.8% of Hefei Gotion, which owns a 'Gotion High-Tech (USA)' company in China's outbound-investment filings. California lists no shareholders, and Sayari found no owners for Gotion, Inc. A director, Steven Cai, shares a name with a Gotion High-Tech director. Registry data also lists Volkswagen (China) Investment as a shareholder of the parent, with no percentage.",
+          "text": "Chinese registry data shows Gotion High-Tech owning 99.8% of Hefei Gotion, which owns a 'Gotion High-Tech (USA)' company in China's outbound-investment filings. California lists no shareholders, and Sayari found no owners for Gotion, Inc. Gotion High-Tech's own 2023 annual report closes the gap: it calls GOTION, INC. (国轩高科（美国）有限公司) a wholly owned subsidiary, and lists Gotion Illinois New Energy as 100% held by it. A director, Steven Cai, shares a name with a Gotion High-Tech director. Volkswagen (China) Investment held 24.28% of the parent at 30 Jun 2026, and in Sep 2026 agreed to sell 5.30% to a Hefei state investor, which will leave it with 18.98%.",
           "edge_ids": [
             "e701",
             "e702",
@@ -2373,9 +2429,16 @@
             ]
           },
           {
-            "text": "Volkswagen (China) Investment is listed as a shareholder of Gotion High-Tech in registry data (no percentage).",
+            "text": "Volkswagen (China) Investment holds 24.28% of Gotion High-Tech (2026 interim report), falling to 18.98% under a 5.30% sale to Hefei Construction Investment agreed 28 Sep 2026.",
             "call_ids": [
               "s725"
+            ]
+          },
+          {
+            "text": "Gotion High-Tech's 2023 annual report: GOTION, INC. is a wholly owned subsidiary, and Gotion Illinois New Energy (set up Dec 2023) is 100% held by it.",
+            "call_ids": [
+              "w010",
+              "w013"
             ]
           }
         ],
@@ -2422,12 +2485,6 @@
             "text": "Where the anode graphite inside the imported cells came from. Cells arrive finished; their graphite is upstream in China.",
             "call_ids": [
               "s710"
-            ]
-          },
-          {
-            "text": "The size of Volkswagen's stake.",
-            "call_ids": [
-              "s725"
             ]
           }
         ]
@@ -2533,7 +2590,13 @@
         "Buyer names come from customs records and rollups; they say nothing about any buyer's compliance. 1Energy Systems and Caban Systems were not checked row by row.",
         "Plant status comes from press and a partner's press release, not from Sayari."
       ],
-      "answer_short": "Gotion's Chinese plants ship cells, packs and graphite to its US sites, but no US record shows who owns them."
+      "answer_short": "Gotion's Chinese plants ship cells, packs and graphite to its US sites, which its annual report says it wholly owns, though no US record shows it.",
+      "last_checked": "2026-10-18",
+      "checked_call_ids": [
+        "v033",
+        "v034",
+        "v035"
+      ]
     },
     {
       "id": "case-8",
@@ -2926,7 +2989,1704 @@
         "Entity-resolution links are our judgment and could be wrong.",
         "Sayari has since filed the Aug 2025 Twigg → BTR Indonesia row under another Twigg record (pINZVxJgOaXpyrNkPgaeBQ); the shipment itself was re-confirmed on 18 Oct 2026."
       ],
-      "answer_short": "A non-Chinese chain from Mozambique to Louisiana, but the same mine also supplies Chinese-owned plants."
+      "answer_short": "A non-Chinese chain from Mozambique to Louisiana, but the same mine also supplies Chinese-owned plants.",
+      "last_checked": "2026-10-18",
+      "checked_call_ids": [
+        "v036",
+        "v037",
+        "v038",
+        "v039",
+        "v040"
+      ]
+    },
+    {
+      "id": "case-9",
+      "slug": "ford-btr",
+      "title": "Ford's links to BTR",
+      "subtitle": "BTR Mediterranean Anode · Tangier, Morocco; Ford and BlueOval SK, USA",
+      "country": "USA",
+      "plant_status": "under construction",
+      "question": "Can Sayari and open sources show a commercial link between Ford, or its battery joint venture BlueOval SK, and BTR's Chinese-owned plants?",
+      "answer_label": "Yes",
+      "answer": "Yes, but not through Morocco yet. In 2026, BTR's Indonesian plant shipped artificial graphite to Ford's own battery plant in Michigan. In 2025, BTR's Chinese sales company shipped graphite to BlueOval SK. The Moroccan link is still only a contract: a US$120m Ford prepayment named in a Chinese filing, with no shipments so far.",
+      "why_it_matters": "Under the PFE rules, Ford's battery tax credits depend on who owns its suppliers. BTR owns all three supply routes found here: China, Indonesia and Morocco. Ford's prepayment ties it to the Moroccan plant before that plant has produced anything.",
+      "headline": "A Chinese filing says Ford agreed to prepay US$120m to BTR's Tangier anode company, but Tangier has shipped nothing yet. Meanwhile, US import data show BTR graphite already reaching Ford: about 960 t from BTR Indonesia at Ford's Marshall, Michigan plant in 2026, and 28 rows from BTR's Shenzhen sales arm at BlueOval SK in 2025.",
+      "summary_for_non_experts": "BTR is a Chinese company that makes graphite for battery anodes, the negative side of a battery cell. In 2024, the company that holds the largest stake in BTR said Ford would pay BTR's new Moroccan plant US$120m in advance for future graphite. We couldn't find Ford confirming this, and the Moroccan plant hasn't exported anything yet. But customs records show BTR graphite already going to a Ford-owned battery plant in Michigan from BTR's Indonesian factory, and to Ford's joint venture with SK On from BTR in China.",
+      "key_numbers": [
+        {
+          "value": "US$120m",
+          "label": "prepayment Ford would make to BTR Mediterranean Anode for artificial graphite, per BTR's largest shareholder (13 Aug 2024)",
+          "call_ids": [
+            "t902",
+            "t904"
+          ]
+        },
+        {
+          "value": "US$108m",
+          "label": "reported as paid so far (unverified; sources say end-2025 or end-Jun 2026)",
+          "call_ids": [
+            "t903",
+            "t904",
+            "t906"
+          ]
+        },
+        {
+          "value": "9 rows, ~960 t",
+          "label": "BTR Indonesia artificial graphite (HS 3801.10) into Ford's Marshall, Michigan plant, May to Sep 2026",
+          "call_ids": [
+            "s915",
+            "s921"
+          ]
+        },
+        {
+          "value": "6 of 9",
+          "label": "of those rows loaded at Chinese ports (Ningbo, Yantian), not Indonesia",
+          "call_ids": [
+            "s921"
+          ]
+        },
+        {
+          "value": "28",
+          "label": "rows from BTR's Shenzhen sales arm to BlueOval SK, Jan to Nov 2025 (27 graphite, 1 cathode)",
+          "call_ids": [
+            "s913",
+            "s914"
+          ]
+        },
+        {
+          "value": "0",
+          "label": "shipments out of either Moroccan BTR company (checked 18 Oct 2026)",
+          "call_ids": [
+            "s922"
+          ]
+        }
+      ],
+      "overall_confidence": "corroborated",
+      "pattern": "complete-trail",
+      "steps": [
+        {
+          "title": "The deal: a prepayment on paper",
+          "kicker": "Step 1 · Contractual",
+          "text": "On 13 Aug 2024, BTR announced a 60,000-tonne anode plant in Tangier, through its subsidiary 'BTR Mediterranean Anode'. The same day, China Baoan, BTR's largest shareholder, said that subsidiary would sign supply and prepayment agreements with Ford, with Ford paying US$120m in advance for artificial graphite. Two later secondary sources say US$108m has been paid, but they give different dates. We found no Ford statement, and BTR's 2026 half-year report timed out when we tried to read it.",
+          "edge_ids": [
+            "e901"
+          ],
+          "node_ids": [
+            "vR1xMKUjf8bn1_A2fcxH-A",
+            "Z57YvgOYL2TdoaWYgXFZ9Q",
+            "jeHf5QJt0JXowTiCA8JiIQ"
+          ],
+          "call_ids": [
+            "t901",
+            "t902",
+            "t903",
+            "t904",
+            "t905",
+            "t906"
+          ]
+        },
+        {
+          "title": "Which Moroccan company? The filing points to the second one",
+          "kicker": "Step 2 · Contractual",
+          "text": "BTR has two Tangier companies. The filing's name, 'BTR Mediterranean Anode', matches the one registered in May 2024 (RC 149725). Moroccan company data show it is 100% owned by Rian International Holding in Singapore, and Case 2 traced that company to BTR. Case 2 had treated the other company, owned via BNUO and BTR (Jiangsu), as the anode subsidiary. That one is more likely the cathode project. Both are BTR-owned, so the ownership answer is the same.",
+          "edge_ids": [
+            "e902"
+          ],
+          "node_ids": [
+            "Z57YvgOYL2TdoaWYgXFZ9Q",
+            "uio2rrOWJmLIgiAKlcpdww",
+            "El_6QFk0rVRdYJanrqEtAA",
+            "1CjF5vzVgFFxVomroaYyaA"
+          ],
+          "call_ids": [
+            "s903",
+            "t902"
+          ]
+        },
+        {
+          "title": "Morocco: graphite in, nothing out",
+          "kicker": "Step 3 · Transactional",
+          "text": "The Tangier anode company received its first BTR Indonesia graphite in Aug 2026 (Case 2). Sayari shows no exports from either Moroccan company. The graph tools couldn't test a path from Ford or BlueOval SK to Tangier: both searches timed out. For now, the Ford link to Morocco exists only in filings.",
+          "edge_ids": [],
+          "node_ids": [
+            "El_6QFk0rVRdYJanrqEtAA",
+            "Z57YvgOYL2TdoaWYgXFZ9Q",
+            "1CjF5vzVgFFxVomroaYyaA",
+            "vR1xMKUjf8bn1_A2fcxH-A"
+          ],
+          "call_ids": [
+            "s922",
+            "s905",
+            "s920"
+          ]
+        },
+        {
+          "title": "Indonesia: BTR graphite at Ford's own plant",
+          "kicker": "Step 4 · Transactional",
+          "text": "From May to Sep 2026, US import data show 9 rows of artificial graphite (HS 3801.10, about 960 t gross) from PT Indonesia BTR to Ford's LFP cell plant in Marshall, Michigan, plus 2 rows to a second record for the same plant. Press says Ford wholly owns this plant, outside the SK On venture. Six of the 9 rows were loaded at Ningbo or Yantian in China, under the Indonesian company's name and Kendal address. A port of loading isn't proof of origin, but it warrants due diligence. BTR Indonesia had already shipped to SK Battery America in Aug 2025 (Case 1).",
+          "edge_ids": [
+            "e903",
+            "e904",
+            "e905",
+            "e906",
+            "e907",
+            "e032"
+          ],
+          "node_ids": [
+            "Lv60RfghzhQ-9oSF_kW0wA",
+            "2omCekb1pDRKjhFOAqCNSw",
+            "ALeXPymJqrTWgIhWeUyLlw",
+            "sv3GsrQVLmLz2cd353HzPQ",
+            "vR1xMKUjf8bn1_A2fcxH-A",
+            "aoeSqNICt_VUP-o-F-84Yg"
+          ],
+          "call_ids": [
+            "s915",
+            "s917",
+            "s918",
+            "s921",
+            "t907"
+          ]
+        },
+        {
+          "title": "China: BTR's sales arm supplies BlueOval SK",
+          "kicker": "Step 5 · Transactional",
+          "text": "BlueOval SK's supplier list in Sayari includes three BTR records. BTR's Shenzhen sales company sent 28 rows to BlueOval SK from Jan to Nov 2025, mostly described as 'graphite', some with purchase-order numbers. A BTR (Jiangsu) record sent one row of cathode material in Mar 2025. That is the same BTR subsidiary that owns BTR's first Moroccan company. Sayari also lists SK Battery America, which buys from BTR, as BlueOval SK's manager.",
+          "edge_ids": [
+            "e908",
+            "e909",
+            "e910",
+            "e911",
+            "e912",
+            "e913",
+            "e914",
+            "e006"
+          ],
+          "node_ids": [
+            "5_cayB1m7XahAhz_Hrrpng",
+            "vD8qX_q8JPBZpC8NYAHDfQ",
+            "EkFGNb-Mz16yvVyOx1XlPQ",
+            "zduDdSDoWzRJWKUinb7e0w",
+            "RPYYIgKHs0f-kGKGBlE9jw",
+            "aoeSqNICt_VUP-o-F-84Yg",
+            "jeHf5QJt0JXowTiCA8JiIQ"
+          ],
+          "call_ids": [
+            "s906",
+            "s907",
+            "s911",
+            "s912",
+            "s913",
+            "s914"
+          ]
+        },
+        {
+          "title": "What a buyer can't see",
+          "kicker": "Step 6 · Gap",
+          "text": "Most of BlueOval SK's graphite (45 rows in 2025) is filed under Chinese freight forwarders, Pactra Tianjin and Fan Cheng, so the maker is hidden. Sayari shows no owners for BlueOval SK and nothing under 'Ford Motor' for HS 3801. Ford's imports sit on plant-name records that don't link to Ford. BlueOval SK also re-exported 'anode active material' to SK On Hungary in 2026, so where BTR material ends up can't be traced.",
+          "edge_ids": [
+            "e916",
+            "e917",
+            "e915"
+          ],
+          "node_ids": [
+            "Rj0MkY1ZMfLxu4Wk9q4keA",
+            "cPdltpbiJ3srEuXfm_7NDA",
+            "RPYYIgKHs0f-kGKGBlE9jw",
+            "t2HmaexxvTE5WgGtj3BMxg",
+            "vR1xMKUjf8bn1_A2fcxH-A"
+          ],
+          "call_ids": [
+            "s907",
+            "s916",
+            "s919",
+            "s904",
+            "s908",
+            "s909",
+            "s910"
+          ]
+        }
+      ],
+      "verdict": {
+        "detected": [
+          {
+            "text": "BTR Indonesia shipped 9 rows of artificial graphite (HS 3801.10) to Ford's Marshall, Michigan LFP plant, May to Sep 2026, plus 2 rows to a second record for that plant.",
+            "call_ids": [
+              "s915",
+              "s921"
+            ]
+          },
+          {
+            "text": "BTR New Material Group Sales shipped 28 rows (27 graphite, 1 cathode) to BlueOval SK, Jan to Nov 2025, and 2 rows to SK Battery America in Mar 2025.",
+            "call_ids": [
+              "s913",
+              "s914"
+            ]
+          },
+          {
+            "text": "A BTR (Jiangsu) trade record shipped cathode material to BlueOval SK on 15 Mar 2025.",
+            "call_ids": [
+              "s912"
+            ]
+          },
+          {
+            "text": "The company named in the Ford filing, BTR Mediterranean Anode, is 100% owned by Rian International Holding (Singapore) in Moroccan company data.",
+            "call_ids": [
+              "s903"
+            ]
+          },
+          {
+            "text": "BTR's largest shareholder filed that BTR Mediterranean Anode would sign supply and prepayment agreements with Ford, with a US$120m prepayment for artificial graphite.",
+            "call_ids": [
+              "t902",
+              "t904"
+            ]
+          }
+        ],
+        "suggested": [
+          {
+            "text": "Ford has paid about US$108m of the prepayment, per two secondary sources that disagree on the date.",
+            "call_ids": [
+              "t903",
+              "t904"
+            ]
+          },
+          {
+            "text": "Some 'Indonesian' BTR graphite reaching Marshall may have been made or finished in China: six of nine rows were loaded at Ningbo or Yantian.",
+            "call_ids": [
+              "s921"
+            ]
+          },
+          {
+            "text": "The BTR (Jiangsu) trade record is BTR's Changzhou subsidiary, the owner of BNUO and of BTR's first Moroccan company (name and city match only).",
+            "call_ids": [
+              "s911",
+              "s912"
+            ]
+          },
+          {
+            "text": "Case 2's 'anode subsidiary' (BNUO-owned) is probably the cathode company; the anode company is the Rian-owned one.",
+            "call_ids": [
+              "t902",
+              "s903"
+            ]
+          }
+        ],
+        "not_visible": [
+          {
+            "text": "Any shipment from Morocco to Ford or anyone else. The Tangier plant has exported nothing.",
+            "call_ids": [
+              "s922"
+            ]
+          },
+          {
+            "text": "Ford's own confirmation of the agreement or the prepayment.",
+            "call_ids": [
+              "t901",
+              "t903"
+            ]
+          },
+          {
+            "text": "Who makes the 45 graphite rows into BlueOval SK filed under Chinese forwarders.",
+            "call_ids": [
+              "s907"
+            ]
+          },
+          {
+            "text": "A registry link from Ford to BlueOval SK or to the Marshall plant records; and any graph path from Ford to BTR (timed out).",
+            "call_ids": [
+              "s904",
+              "s905",
+              "s919",
+              "s920"
+            ]
+          },
+          {
+            "text": "BTR's own report of the prepayment received (extraction timed out).",
+            "call_ids": [
+              "t906"
+            ]
+          }
+        ]
+      },
+      "passport": [
+        {
+          "field": "Place of manufacture",
+          "guidance_no": "8",
+          "declared": "The cell plant's location, e.g. Marshall, Michigan.",
+          "paper_trail": "Anode graphite from BTR Indonesia, with six of nine Marshall rows loaded in China; and from BTR's Shenzhen sales arm to BlueOval SK.",
+          "gap": true,
+          "note": "The passport names the cell plant, not the anode plant, and the loading port blurs even that."
+        },
+        {
+          "field": "Detailed composition (anode)",
+          "guidance_no": "45",
+          "declared": "'Graphite' as the anode active material.",
+          "paper_trail": "Artificial graphite (HS 3801.10) into Marshall; 'graphite' rows with no HS code into BlueOval SK.",
+          "gap": true,
+          "note": "Most BlueOval SK rows carry no HS code, and 45 more name only a forwarder."
+        },
+        {
+          "field": "Critical raw materials > 0.1%",
+          "guidance_no": "15",
+          "declared": "Natural graphite listed if present.",
+          "paper_trail": "Rows are described as artificial graphite; BTR Indonesia's other US rows mix artificial and natural grades.",
+          "gap": true,
+          "note": "Whether any natural graphite reaches Ford can't be told from these rows."
+        },
+        {
+          "field": "Responsible-sourcing (due-diligence) report",
+          "guidance_no": "19",
+          "declared": "Deferred under the EU Battery Regulation.",
+          "paper_trail": "BlueOval SK carries Sayari sub-tier forced-labor flags (Sheffield Hallam, Xinjiang, UFLPA via 'possibly same as' links); BTR's parent is named in a Sheffield Hallam report.",
+          "gap": true,
+          "note": "The flags describe the supplier network, not BlueOval SK itself."
+        },
+        {
+          "field": "Ownership of upstream suppliers",
+          "guidance_no": "—",
+          "declared": "No such field in the EU passport.",
+          "paper_trail": "BTR owns all three routes: Shenzhen sales arm, Indonesian plant (60% via Hong Kong) and Tangier (100% via Singapore).",
+          "gap": false,
+          "note": "This is the PFE question. The answer here is clear, but the Ford-side ownership (JV, Marshall) comes from the press, not from Sayari."
+        }
+      ],
+      "red_flags": [
+        {
+          "flag": "Chinese parent ownership of the transit plant",
+          "signal": "contractual",
+          "severity": "High",
+          "result": "detected",
+          "note": "Tangier anode company 100% owned via Rian (Singapore) by BTR; Indonesian plant majority-owned by BTR."
+        },
+        {
+          "flag": "Same HS imported from China and exported to the US",
+          "signal": "transactional",
+          "severity": "High",
+          "result": "suggested",
+          "note": "BTR Indonesia's HS 3801.10 rows to Marshall were mostly loaded at Chinese ports. Morocco has exported nothing."
+        },
+        {
+          "flag": "Recent incorporation vs. first export date",
+          "signal": "contractual",
+          "severity": "Medium",
+          "result": "not_visible",
+          "note": "The anode company was registered in May 2024 and has no exports to compare."
+        },
+        {
+          "flag": "Volume spike after a policy date",
+          "signal": "transactional",
+          "severity": "Medium",
+          "result": "not_visible",
+          "note": "Marshall rows begin in 2026 as the plant starts up. That is a ramp-up, not a policy-linked spike."
+        },
+        {
+          "flag": "Shared address or officer with a flagged entity",
+          "signal": "inferred",
+          "severity": "Medium",
+          "result": "not_visible",
+          "note": "None found. BlueOval SK's 'mass address' flag is its Dearborn corporate address."
+        },
+        {
+          "flag": "Entity-resolution fragmentation",
+          "signal": "inferred",
+          "severity": "Low (disclose)",
+          "result": "detected",
+          "note": "18 BlueOval SK records, 2 Marshall records (one typed as a person), and several BTR sales-arm and BTR Indonesia records."
+        },
+        {
+          "flag": "Forced-labor / UFLPA sub-tier flags",
+          "signal": "inferred",
+          "severity": "Medium",
+          "result": "suggested",
+          "note": "Sub-tier and 'possibly same as' flags on BlueOval SK and SK Battery America; context, not a finding."
+        }
+      ],
+      "caveats": [
+        "Buying graphite from BTR, or prepaying a supplier, is legal and common. Nothing here shows wrongdoing by Ford, BlueOval SK, SK On or BTR.",
+        "The US$120m figure comes from a listed company's filing as reported by Chinese media. The US$108m paid figure comes from secondary sources that disagree on the date, and is unverified.",
+        "A port of loading (Ningbo, Yantian, Singapore) is not a country of origin. The Chinese-port rows may reflect routing, not where the graphite was made.",
+        "Ford's ownership of the Marshall plant and its stake in BlueOval SK come from the press and the case brief, not from Sayari's registry data.",
+        "We read 100 of 653 BTR sales-arm rows into the US and 50 of 97 BTR Indonesia rows, so counts are minimums.",
+        "BTR's stock code on the Beijing Stock Exchange appears as 835185 in 2024 filings and 920185 in 2026.",
+        "This case looks only for BTR links. A general scan of Ford's suppliers is a separate piece of work.",
+        "Records checked on 18 Oct 2026. Sayari merges and retires IDs, and several calls timed out (HTTP 408)."
+      ],
+      "answer_short": "Yes, but not via Morocco yet: BTR graphite reached Ford's Michigan plant from Indonesia in 2026, and BlueOval SK from China in 2025.",
+      "last_checked": "2026-10-18",
+      "checked_call_ids": []
+    },
+    {
+      "id": "case-10",
+      "slug": "catl-ampace",
+      "title": "CATL, Ampace and Linergy Power",
+      "subtitle": "Linergy Power Sdn Bhd · Serendah, Selangor, Malaysia",
+      "country": "MYS",
+      "plant_status": "operating",
+      "question": "Can Sayari show how far up Linergy Power's ownership goes, whether it is part of the CATL group, and what it sends to US buyers?",
+      "answer_label": "Partly",
+      "answer": "Partly. Sayari traces Linergy up to CATL and shows 17 rows of cells going to US buyers. But the percentages came from CATL's and TDK's filings, and Sayari missed the June 2026 sale that took Linergy out of the CATL group and into Japan's TDK.",
+      "why_it_matters": "PFE tests look at who owns and controls the cell maker on the date of the transaction. Here the answer changed in June 2026: from a group CATL consolidates (CATL has been on the 1260H list since January 2025) to a Japanese company. Registry data that lags by months would give a buyer the wrong answer for later shipments. Earlier shipments would show the opposite problem if the registry were updated and no dates kept.",
+      "headline": "Until June 2026 Linergy Power was 100% owned by Ampace's Hong Kong company, inside a Xiamen group that CATL consolidates with a 59.5% stake. TDK of Japan then bought all of it. Sayari still shows the old chain: 11 US-bound cell rows left under the CATL-group owner, and 6 to Eaton after the sale.",
+      "summary_for_non_experts": "Linergy Power is a new battery-cell factory near Kuala Lumpur. It was set up in December 2024 by Ampace, a Chinese battery company that CATL, the world's biggest battery maker, controls together with ATL, a battery unit of Japan's TDK. Most of what the plant buys comes from China, much of it from Ampace itself. Its first cells went to US power-tool makers. In June 2026 TDK bought the whole plant, but the company records we searched hadn't been updated four months later.",
+      "key_numbers": [
+        {
+          "value": "59.5%",
+          "label": "CATL's indirect stake in Xiamen Ampace, Linergy's parent until June 2026 (CATL filing)",
+          "call_ids": [
+            "t10-01"
+          ]
+        },
+        {
+          "value": "100%",
+          "label": "of Linergy bought by TDK's Singapore unit in June 2026, for US$241.1m",
+          "call_ids": [
+            "t10-03",
+            "t10-04"
+          ]
+        },
+        {
+          "value": "11 / 6",
+          "label": "US-bound rows before the sale (Nov 2025–Feb 2026) and after it (Aug–Sep 2026, all Eaton)",
+          "call_ids": [
+            "s10-15"
+          ]
+        },
+        {
+          "value": "1,044",
+          "label": "of Linergy's 2,759 inbound rows came from its own parent, Xiamen Ampace",
+          "call_ids": [
+            "s10-07"
+          ]
+        },
+        {
+          "value": "97%",
+          "label": "of inbound rows left from China (2,679)",
+          "call_ids": [
+            "s10-07"
+          ]
+        }
+      ],
+      "overall_confidence": "corroborated",
+      "pattern": "complete-trail",
+      "steps": [
+        {
+          "title": "What Sayari's registry shows",
+          "kicker": "Step 1 · Contractual",
+          "text": "Malaysian company data names Ampace Technology Limited (Hong Kong) as Linergy's only shareholder. Above it, Sayari shows Xiamen Ampace, then Xiamen Xinnenghe, CATL and four Xiamen partnerships, then CATL's own shareholders. None of these links carries a percentage. One Linergy director, Jia Zhuocheng, has the same name as Xiamen Ampace's general manager.",
+          "edge_ids": [
+            "e10-01",
+            "e10-03",
+            "e10-04",
+            "e10-05",
+            "e10-06",
+            "e10-07",
+            "e10-08",
+            "e10-09",
+            "e10-10"
+          ],
+          "node_ids": [
+            "ySemfyJJesFbfxEgW2SgCg",
+            "TcV1qONXBV-YSjtqMe-yFQ",
+            "sXzqumDIg-3LZrua0Pt_PA",
+            "8gdUB3Z6x69ZhJN5xfNYFQ",
+            "ApHsZLGLjF2eLOFCSnZDVg",
+            "Hknigg_iWcgcpp_dkWgQvA",
+            "RhhxdtCaRd_ia37ejZqiew",
+            "27up985UHLWoN9v1oWWKvQ"
+          ],
+          "call_ids": [
+            "s10-01",
+            "s10-02",
+            "s10-03",
+            "s10-04",
+            "s10-05",
+            "s10-06"
+          ]
+        },
+        {
+          "title": "The percentages come from filings",
+          "kicker": "Step 2 · Contractual",
+          "text": "CATL's March 2026 filing calls Xiamen Ampace a consolidated subsidiary. Xinnenghe holds 85% of it, and CATL holds 59.5% indirectly. TDK's own releases put the joint venture behind Xinnenghe at 70% CATL and 30% ATL, TDK's battery unit. Until June 2026, then, Linergy sat inside a group that CATL controls. CATL has been on the US Section 1260H list since January 2025.",
+          "edge_ids": [
+            "e10-01",
+            "e10-04",
+            "e10-05",
+            "e10-06"
+          ],
+          "node_ids": [
+            "sXzqumDIg-3LZrua0Pt_PA",
+            "8gdUB3Z6x69ZhJN5xfNYFQ",
+            "Hknigg_iWcgcpp_dkWgQvA",
+            "ApHsZLGLjF2eLOFCSnZDVg"
+          ],
+          "call_ids": [
+            "t10-01",
+            "t10-02",
+            "t10-03",
+            "t10-05"
+          ]
+        },
+        {
+          "title": "In June 2026 the owner changed, and Sayari hasn't caught up",
+          "kicker": "Step 3 · Contractual",
+          "text": "On 19 May 2026 TDK said its Singapore unit, Amperex Technology (Singapore), would buy 100% of Linergy for US$241.1m, with the transfer set for 15 June. TDK's results for the quarter to 30 June confirm the purchase. On 18 October Sayari still showed Ampace as the shareholder, and showed no Linergy under the Singapore company. A buyer screening Linergy in registry data would still see a CATL-group owner.",
+          "edge_ids": [
+            "e10-01",
+            "e10-02"
+          ],
+          "node_ids": [
+            "ySemfyJJesFbfxEgW2SgCg",
+            "XsLwbCaQEeyzOMh9_sOl3w",
+            "TcV1qONXBV-YSjtqMe-yFQ"
+          ],
+          "call_ids": [
+            "t10-03",
+            "t10-04",
+            "s10-04",
+            "s10-16",
+            "s10-18"
+          ]
+        },
+        {
+          "title": "Chinese materials in, much of it from the parent",
+          "kicker": "Step 4 · Transactional",
+          "text": "Of 2,759 inbound rows (May 2025 to Jun 2026), 2,679 left from China. Xiamen Ampace itself sent 1,044, including cathode and anode material, carbon black and copper and aluminium foil. Graphite came from Zhongke Shinzoom (14 rows) and Shanshan (3), cathode powder (HS 2842.90) from XTC, Qinghai Taifeng Pulead and Chengdu B&M, and electrolyte from Tinci, Capchem and a forwarder. Much of the rest is production-line equipment.",
+          "edge_ids": [
+            "e10-11",
+            "e10-12",
+            "e10-13",
+            "e10-14",
+            "e10-15",
+            "e10-16",
+            "e10-17",
+            "e10-18",
+            "e10-19",
+            "e10-20",
+            "e10-21",
+            "e10-22",
+            "e10-23"
+          ],
+          "node_ids": [
+            "RpVysafWvaXbqy0N4a5qvw",
+            "Lz1tqelhtyNnBxvG140gqA",
+            "bZXSPJMXNdy2zYpIvDww_A",
+            "9jSUCs3ibkazFjdeQ_Xgbw",
+            "mKWeDE6j7Ei8tMyB4eZtpg",
+            "h2bjYM0YRGfNwxnxi9HSsg",
+            "-aS1MMo3XHX5HXo7WsfZeg",
+            "_hgyVvRYdgxLJ-RVYcxn8A",
+            "h4UwyGzpWI7LUgB94JFYNQ",
+            "7yuWA5RAqqR3VKp322S_5g",
+            "B34zjcMXPUfwMQRBjUgvPg",
+            "wmXExqiq-S2ggSfGYDK23w",
+            "v6769GN3_Mt_rD2hVnw74Q"
+          ],
+          "call_ids": [
+            "s10-07",
+            "s10-08",
+            "s10-09",
+            "s10-10",
+            "s10-11",
+            "s10-12",
+            "s10-13",
+            "s10-14"
+          ]
+        },
+        {
+          "title": "Cells out to the US, before and after the sale",
+          "kicker": "Step 5 · Transactional",
+          "text": "17 rows of cells and battery systems (HS 8507, rechargeable batteries) went to the US. Before the sale, Nov 2025 to Feb 2026: 11 rows of 18650 and 21700 power-tool cells, to Ampace's own Hong Kong company (6), Milwaukee Tool (3), Stanley Black & Decker (1) and Techtronic (1). After the sale, Aug to Sep 2026: 6 rows of battery systems to Eaton in Raleigh, North Carolina. No rows show for Mar to Jul 2026, because the Malaysian export data stops in February.",
+          "edge_ids": [
+            "e10-24",
+            "e10-25",
+            "e10-26",
+            "e10-27",
+            "e10-28",
+            "e10-29",
+            "e10-30"
+          ],
+          "node_ids": [
+            "TcV1qONXBV-YSjtqMe-yFQ",
+            "7v82EsEljCQ4PkCcnyMTBA",
+            "XZmnm7ViWgrVw_gAfFPVgQ",
+            "5ETwnZflxje1vTTjeNyT6w",
+            "DoTF8asU1jM35geCp8Dg6Q",
+            "BuQm2NSnUlkUMb83_BJxog",
+            "VsOcgTRnMskYDFTjvGl9Lg"
+          ],
+          "call_ids": [
+            "s10-15"
+          ]
+        },
+        {
+          "title": "Buyers' own records don't link to Ampace or CATL",
+          "kicker": "Step 6 · Inferred",
+          "text": "We asked Sayari for the shortest path from Eaton to CATL and from Milwaukee Tool to Xiamen Ampace. Both run only through trade: buyer, then Linergy, then Ampace's Hong Kong company. Neither buyer has an ownership or officer link to the group. Their exposure is through what they buy, and that depends on the date of each shipment.",
+          "edge_ids": [
+            "e10-31",
+            "e10-29",
+            "e10-26"
+          ],
+          "node_ids": [
+            "BuQm2NSnUlkUMb83_BJxog",
+            "XZmnm7ViWgrVw_gAfFPVgQ",
+            "Hknigg_iWcgcpp_dkWgQvA",
+            "sXzqumDIg-3LZrua0Pt_PA"
+          ],
+          "call_ids": [
+            "s10-17",
+            "s10-19"
+          ]
+        }
+      ],
+      "verdict": {
+        "detected": [
+          {
+            "text": "Registry chain: Linergy ← Ampace Technology (HK) ← Xiamen Ampace ← Xinnenghe and CATL, with CATL's own shareholders above.",
+            "call_ids": [
+              "s10-04",
+              "s10-05",
+              "s10-03",
+              "s10-06"
+            ]
+          },
+          {
+            "text": "From filings, not Sayari: Ampace (HK) held 100% of Linergy until June 2026; Xinnenghe holds 85% of Xiamen Ampace; CATL holds 59.5% indirectly and consolidates it.",
+            "call_ids": [
+              "t10-01",
+              "t10-02",
+              "t10-03"
+            ]
+          },
+          {
+            "text": "TDK bought 100% of Linergy through Amperex Technology (Singapore): agreed 19 May 2026, transfer set for 15 June, confirmed in TDK's results for the quarter to 30 June.",
+            "call_ids": [
+              "t10-03",
+              "t10-04"
+            ]
+          },
+          {
+            "text": "Sayari still showed the pre-sale owner on 18 Oct 2026, and no Linergy under the Singapore buyer.",
+            "call_ids": [
+              "s10-04",
+              "s10-18"
+            ]
+          },
+          {
+            "text": "17 artificial-graphite rows from Zhongke Shinzoom and Shanshan, plus cathode powder, electrolyte, foils and anode materials, almost all from China and much from the parent.",
+            "call_ids": [
+              "s10-10",
+              "s10-11",
+              "s10-12",
+              "s10-13",
+              "s10-14"
+            ]
+          },
+          {
+            "text": "17 US-bound rows: 11 before the sale (Ampace HK, Milwaukee Tool, Stanley Black & Decker, Techtronic), 6 after it (Eaton).",
+            "call_ids": [
+              "s10-15"
+            ]
+          },
+          {
+            "text": "CATL has been on the Section 1260H list since the 6 January 2025 update.",
+            "call_ids": [
+              "t10-05"
+            ]
+          }
+        ],
+        "suggested": [
+          {
+            "text": "CATL's look-through stake in Linergy before the sale was about 59.5%, assuming Xiamen Ampace owns all of Ampace (HK). Sayari gives no percentage for that link.",
+            "call_ids": [
+              "s10-02",
+              "t10-01"
+            ]
+          },
+          {
+            "text": "The Linergy director Jia Zhuocheng is probably Xiamen Ampace's general manager 贾琢成 (name only).",
+            "call_ids": [
+              "s10-02",
+              "s10-04"
+            ]
+          },
+          {
+            "text": "HS 2842.90 rows from XTC, Pulead and Chengdu B&M are cathode powder; the code and supplier names fit, but most rows carry no product text.",
+            "call_ids": [
+              "s10-11"
+            ]
+          }
+        ],
+        "not_visible": [
+          {
+            "text": "Any shipments from Mar to Jul 2026, and anything Linergy received after the sale: the Malaysian trade data ends in February 2026.",
+            "call_ids": [
+              "s10-07",
+              "s10-15"
+            ]
+          },
+          {
+            "text": "Whether Linergy still buys from Xiamen Ampace and other CATL-group suppliers under TDK ownership.",
+            "call_ids": [
+              "s10-07"
+            ]
+          },
+          {
+            "text": "Which graphite went into which cells, and whether the Eaton battery systems contain cells made before the sale.",
+            "call_ids": [
+              "s10-10",
+              "s10-15"
+            ]
+          },
+          {
+            "text": "Whether any of these buyers claims a US tax credit, and how the PFE rules would treat each shipment.",
+            "call_ids": []
+          }
+        ]
+      },
+      "passport": [
+        {
+          "field": "Place of manufacture",
+          "guidance_no": "8",
+          "declared": "Malaysia (Serendah, Selangor).",
+          "paper_trail": "Cells shipped from Kuala Lumpur (Nov 2025–Feb 2026); battery systems to Eaton listed as departing Tawau, Malaysia (Aug–Sep 2026).",
+          "gap": false,
+          "note": "The Malaysian label is accurate for the plant. It says nothing about who owned it, which changed in June 2026."
+        },
+        {
+          "field": "Detailed composition (anode)",
+          "guidance_no": "45",
+          "declared": "Graphite anode.",
+          "paper_trail": "Artificial graphite from Zhongke Shinzoom and Shanshan; silicon-carbon anode material from Xiamen Ampace.",
+          "gap": true,
+          "note": "Two anode groups plus the parent; no lot-level link to a given cell."
+        },
+        {
+          "field": "Critical raw materials > 0.1%",
+          "guidance_no": "15",
+          "declared": "Graphite, lithium, nickel, cobalt, manganese if present.",
+          "paper_trail": "NCM cathode material from the parent; HS 2842.90 salts from XTC, Pulead and Chengdu B&M; no natural graphite rows seen.",
+          "gap": true,
+          "note": "Cathode chemistry is clear on only one row; the others carry only the HS code."
+        },
+        {
+          "field": "Responsible-sourcing (due-diligence) report",
+          "guidance_no": "19",
+          "declared": "Deferred under the EU Battery Regulation.",
+          "paper_trail": "Sub-tier ASPI and Sheffield Hallam flags on the plant, via suppliers; CATL itself is named in Sheffield Hallam reports (per Sayari).",
+          "gap": true,
+          "note": "Flags describe the supplier network, not findings about the plant."
+        },
+        {
+          "field": "Ownership of upstream suppliers",
+          "guidance_no": "—",
+          "declared": "No such field in the EU passport.",
+          "paper_trail": "Until Jun 2026: Linergy ← Ampace (HK) 100% ← Xiamen Ampace ← Xinnenghe 85% ← CATL 70% (59.5% look-through). Since Jun 2026: TDK 100%. Sayari shows only the first.",
+          "gap": true,
+          "note": "Ownership here has a date. A passport or registry snapshot without one would be wrong for half the shipments."
+        }
+      ],
+      "red_flags": [
+        {
+          "flag": "Chinese parent ownership of the transit plant",
+          "signal": "contractual",
+          "severity": "High",
+          "result": "detected",
+          "note": "Until June 2026: 100% Ampace (HK), in a group CATL consolidates (59.5%). Since then: TDK (Japan) 100%, per TDK's filings."
+        },
+        {
+          "flag": "Same HS imported from China and exported to the US",
+          "signal": "transactional",
+          "severity": "High",
+          "result": "suggested",
+          "note": "34 inbound rows of HS 8507.60 cells from China, and cells under the same code out to the US. The plant also imports full cell materials, so it makes cells. Which cells went out warrants checking."
+        },
+        {
+          "flag": "Recent incorporation vs. first export date",
+          "signal": "contractual",
+          "severity": "Medium",
+          "result": "suggested",
+          "note": "Registered 19 Dec 2024; first inbound row May 2025; first US row 18 Nov 2025. Normal for a new plant."
+        },
+        {
+          "flag": "Volume spike after a policy date",
+          "signal": "transactional",
+          "severity": "Medium",
+          "result": "not_visible",
+          "note": "CATL's January 2025 listing predates the plant. The Eaton rows begin after the TDK sale, but the Mar–Jul 2026 data gap hides any trend."
+        },
+        {
+          "flag": "Shared address or officer with a flagged entity",
+          "signal": "inferred",
+          "severity": "Medium",
+          "result": "suggested",
+          "note": "A Linergy director shares the name of Xiamen Ampace's general manager; Xiamen Ampace is owned by a 1260H-listed company. Name match only."
+        },
+        {
+          "flag": "Entity-resolution fragmentation",
+          "signal": "inferred",
+          "severity": "Low (disclose)",
+          "result": "detected",
+          "note": "Xiamen Ampace has a registry record and separate trade records; Eaton and Milwaukee Tool have two records each; Linergy's name appears as 'Linery'."
+        },
+        {
+          "flag": "Forced-labor / UFLPA sub-tier flags",
+          "signal": "inferred",
+          "severity": "Medium",
+          "result": "suggested",
+          "note": "ASPI and Sheffield Hallam sub-tier flags on the plant via its suppliers. Context, not a finding."
+        }
+      ],
+      "caveats": [
+        "Making cells in Malaysia from Chinese materials is legal and common. Nothing here shows wrongdoing by any company named.",
+        "Buyers are named because they appear in customs records. That says nothing about their compliance, or whether they claim any US tax credit.",
+        "The ownership percentages come from CATL's and TDK's filings and from The Edge's reading of the Malaysian registry, not from Sayari.",
+        "CATL's 59.5% applies to Xiamen Ampace. Carrying it down to Linergy assumes Xiamen Ampace owns all of Ampace (HK); Sayari shows the link without a percentage.",
+        "Sayari lists CATL as a direct shareholder of Xiamen Ampace too. CATL's filing describes only the indirect stake, so that record may be out of date.",
+        "TDK set the share transfer for 15 June 2026 and reported completion within the quarter to 30 June. We use mid-June as the change date; the exact day isn't confirmed.",
+        "Before the sale TDK already held 25.5% of Linergy indirectly, through ATL's stake in the joint venture. Japanese and Chinese interests were mixed from the start.",
+        "No trade rows show for Mar–Jul 2026. The Malaysian export source ends in February 2026, and the US import rows for Linergy start in August.",
+        "The Eaton rows list Tawau, in Sabah, as the departure port, far from the Selangor plant. Treat route details with care.",
+        "The 1260H date comes from law-firm and trade-press summaries of the DoD list; we didn't open the Federal Register notice.",
+        "Records checked on 18 Oct 2026. Sayari may add the TDK link later."
+      ],
+      "answer_short": "CATL's group owned Linergy until June 2026, when Japan's TDK bought it. Sayari still shows the old Chinese chain.",
+      "last_checked": "2026-10-18",
+      "checked_call_ids": []
+    },
+    {
+      "id": "case-11",
+      "slug": "eu-comparison",
+      "title": "CATL's Debrecen plant: the EU comparison",
+      "subtitle": "Contemporary Amperex Technology Hungary Kft. · Debrecen, Hungary",
+      "country": "HUN",
+      "plant_status": "under construction",
+      "question": "Does the same tracing method work for a Chinese-owned battery plant inside the EU, and what would the EU's own rules ask about it?",
+      "answer_label": "Partly",
+      "answer": "Ownership: yes. Hungarian registry data shows CATL owning the Debrecen plant 100% through its Hong Kong holding company, and China's own investment register agrees. Trade: only partly. Sayari shows seven shipments of Chinese factory equipment and no battery materials or exports, because goods moving inside the EU leave no customs record.",
+      "why_it_matters": "The US rules ask who owns a supplier; the EU rules ask where its raw materials came from. For a CATL plant in the EU the ownership answer is easy to find in registry data. The sourcing answer, which is what the EU will require from 2027, is the part trade data can't see once material crosses an EU border.",
+      "headline": "Inside the EU, the ownership half of the method works well and the trade half goes dark. Sayari traces CATL's Debrecen cell plant to CATL in China through a 100% Hong Kong parent, using the Hungarian registry. But the only shipments it sees are seven loads of Chinese production equipment from 2025. No cathode, anode or cells appear, and nothing goes to the US.",
+      "summary_for_non_experts": "CATL, the world's biggest battery maker, is building a 100 GWh cell factory in Debrecen, Hungary. It started trial cell production on 22 Sep 2026. Hungarian company records in Sayari show the plant belongs to CATL's Hong Kong subsidiary, which CATL owns. Hungarian customs data shows only robots, coating machines, trays and a transformer arriving from China. Inside the EU, goods cross borders without customs paperwork, so supplies from, say, CATL's German plant or an EU anode maker would not show up at all.",
+      "key_numbers": [
+        {
+          "value": "100%",
+          "label": "CATL (Hong Kong)'s stake in the Debrecen company, per the Hungarian registry",
+          "call_ids": [
+            "s11-20"
+          ]
+        },
+        {
+          "value": "7",
+          "label": "China-to-Hungary shipments naming CATL (Aug-Dec 2025), all production equipment",
+          "call_ids": [
+            "s11-13",
+            "s11-14"
+          ]
+        },
+        {
+          "value": "0",
+          "label": "shipments leaving Hungary that name CATL, to the US or anywhere",
+          "call_ids": [
+            "s11-21"
+          ]
+        },
+        {
+          "value": "18 Aug 2027",
+          "label": "when EU battery due-diligence duties now apply, after a two-year delay",
+          "call_ids": [
+            "t11-03"
+          ]
+        },
+        {
+          "value": "0",
+          "label": "ownership records linking Shanshan's planned Finnish anode plant to its Chinese parent",
+          "call_ids": [
+            "s11-19",
+            "s11-26"
+          ]
+        }
+      ],
+      "overall_confidence": "corroborated",
+      "pattern": "trail-goes-dark",
+      "steps": [
+        {
+          "title": "Choosing the plant",
+          "kicker": "Step 1 · Method",
+          "text": "We checked three candidates. Shanshan's planned anode plant has a Finnish registry record (in Mustasaari near Vaasa, not Kokkola) but no owner and no trade. Searches for Huayou or BTR companies in Hungary found none. CATL's Debrecen plant had a registry record, an ownership chain, an investment-register entry and customs rows, so it is the one we traced. It makes cells, not anode material.",
+          "edge_ids": [
+            "e11-11"
+          ],
+          "node_ids": [
+            "Tfn4TF12Z62wFwdTqxavFg",
+            "cuL17kycWigmNV3zpuabBA",
+            "VyUeBf-iagPQP8TlR9Y4Pw"
+          ],
+          "call_ids": [
+            "s11-01",
+            "s11-02",
+            "s11-03",
+            "s11-04",
+            "s11-05",
+            "s11-06",
+            "s11-07",
+            "s11-11",
+            "s11-16",
+            "s11-19",
+            "s11-24",
+            "s11-25",
+            "s11-26",
+            "t11-02",
+            "t11-05"
+          ]
+        },
+        {
+          "title": "The plant: four records, one company",
+          "kicker": "Step 2 · Inferred",
+          "text": "Sayari holds four records for CATL's Hungarian company. The Hungarian registry record carries the company number, tax number and LEI. The other three (a risk-intelligence record, a customs-data fragment and a Chinese investment-register entry) match it by name, so we link them as Inferred or Lead.",
+          "edge_ids": [
+            "e11-04",
+            "e11-05",
+            "e11-06"
+          ],
+          "node_ids": [
+            "VyUeBf-iagPQP8TlR9Y4Pw",
+            "sbHG28fzGHNWsCxC7bZhtQ",
+            "PxhF4Q4AMA_SFhC820qDMQ",
+            "VAnGEdLdcRO502mhut8JFg"
+          ],
+          "call_ids": [
+            "s11-04",
+            "s11-08",
+            "s11-09",
+            "s11-12",
+            "s11-20"
+          ]
+        },
+        {
+          "title": "The owner: two registers agree",
+          "kicker": "Step 3 · Contractual",
+          "text": "The Hungarian registry names CATL's Hong Kong holding company as 100% owner. Sayari then links that company to CATL. Separately, China's outbound-investment register lists CATL as the investor in its Hungarian company. Sayari flags CATL as on the US Section 1260H list of Chinese military companies.",
+          "edge_ids": [
+            "e11-01",
+            "e11-02",
+            "e11-03"
+          ],
+          "node_ids": [
+            "Hknigg_iWcgcpp_dkWgQvA",
+            "t1da8cNdd5H6OTcpx3Qo6g",
+            "VyUeBf-iagPQP8TlR9Y4Pw",
+            "VAnGEdLdcRO502mhut8JFg"
+          ],
+          "call_ids": [
+            "s11-09",
+            "s11-17",
+            "s11-18",
+            "s11-20",
+            "s11-22"
+          ]
+        },
+        {
+          "title": "Inputs: machines, not materials",
+          "kicker": "Step 4 · Transactional",
+          "text": "Seven 2025 shipments from Yantian to Budapest name CATL or its Hungarian company: robots, trays, extrusion-coating machine parts and a power transformer (HS 8504.23). CATL usually ships to freight forwarders (Ghibli, DSV), not to the plant by name. The only Chinese artificial graphite (HS 3801.10) entering Hungary goes to the Korean-owned plants of Samsung SDI and SK On.",
+          "edge_ids": [
+            "e11-07",
+            "e11-08",
+            "e11-09"
+          ],
+          "node_ids": [
+            "Hknigg_iWcgcpp_dkWgQvA",
+            "GrAjBdvoB6N7xmeGyBkMCA",
+            "LVsanL3iwdjyWmtNfl0k_w",
+            "LjVNLSnI-nmDh-d5_5O0vg",
+            "PxhF4Q4AMA_SFhC820qDMQ",
+            "oiVbV3GAfPObw6dbey9WAA",
+            "t2HmaexxvTE5WgGtj3BMxg"
+          ],
+          "call_ids": [
+            "s11-10",
+            "s11-13",
+            "s11-14",
+            "s11-15",
+            "s11-28",
+            "s11-29"
+          ]
+        },
+        {
+          "title": "Outputs, and the EU blind spot",
+          "kicker": "Step 5 · Gap",
+          "text": "No shipment naming CATL leaves Hungary. The only Hungary-to-US lithium-ion rows are a forwarder's own 2024 consolidations, with no maker named. Debrecen's cells are meant for European carmakers, and goods moving between EU countries don't go through customs. So the plant's EU customers, and any inputs from EU suppliers, are invisible in trade data.",
+          "edge_ids": [
+            "e11-10"
+          ],
+          "node_ids": [
+            "LjVNLSnI-nmDh-d5_5O0vg",
+            "RJbk2beBcf-6L9K74K2uVA",
+            "VyUeBf-iagPQP8TlR9Y4Pw"
+          ],
+          "call_ids": [
+            "s11-21",
+            "s11-23",
+            "t11-01"
+          ]
+        },
+        {
+          "title": "Two rulebooks, two questions",
+          "kicker": "Step 6 · Policy",
+          "text": "The EU Battery Regulation makes battery makers check how cobalt, natural graphite, lithium and nickel were sourced. That duty now starts on 18 Aug 2027, after a two-year delay. From 18 Feb 2027, EV batteries need a digital battery passport. Neither rule asks who owns the supplier. The US PFE rules do ask, and for this plant the registry answer is a 100% Chinese parent.",
+          "edge_ids": [
+            "e11-01",
+            "e11-02"
+          ],
+          "node_ids": [
+            "Hknigg_iWcgcpp_dkWgQvA",
+            "t1da8cNdd5H6OTcpx3Qo6g",
+            "VyUeBf-iagPQP8TlR9Y4Pw"
+          ],
+          "call_ids": [
+            "t11-03",
+            "t11-04",
+            "s11-20"
+          ]
+        }
+      ],
+      "verdict": {
+        "detected": [
+          {
+            "text": "A registry ownership chain: CATL -> Contemporary Amperex Technology (Hong Kong) -> Contemporary Amperex Technology Hungary Kft., 100% at the Hungarian step.",
+            "call_ids": [
+              "s11-18",
+              "s11-20",
+              "s11-22"
+            ]
+          },
+          {
+            "text": "China's MOFCOM outbound-investment directory independently lists CATL as investor in its Hungarian company.",
+            "call_ids": [
+              "s11-09"
+            ]
+          },
+          {
+            "text": "Seven China-to-Hungary shipments in Aug-Dec 2025 (robots, trays, coating-machine parts, a transformer), six of them consigned to freight forwarders.",
+            "call_ids": [
+              "s11-13",
+              "s11-14"
+            ]
+          },
+          {
+            "text": "Chinese artificial graphite entering Hungary goes to Samsung SDI Magyarország and SK On Hungary, not to CATL.",
+            "call_ids": [
+              "s11-28"
+            ]
+          }
+        ],
+        "suggested": [
+          {
+            "text": "The forwarder shipments from CATL are for the Debrecen plant. The goods fit a new cell line, but the consignee is the forwarder.",
+            "call_ids": [
+              "s11-14",
+              "t11-01"
+            ]
+          },
+          {
+            "text": "The customs fragment, the risk-intelligence record and the MOFCOM entry are the same company as the registry record.",
+            "call_ids": [
+              "s11-08",
+              "s11-09",
+              "s11-12",
+              "s11-20"
+            ]
+          }
+        ],
+        "not_visible": [
+          {
+            "text": "Any cathode, anode or graphite delivered to the Debrecen plant, from China or from inside the EU.",
+            "call_ids": [
+              "s11-13",
+              "s11-28"
+            ]
+          },
+          {
+            "text": "Any output from the plant, to EU carmakers or to the US.",
+            "call_ids": [
+              "s11-21",
+              "s11-23"
+            ]
+          },
+          {
+            "text": "Who owns Shanshan's planned Finnish anode company. Sayari has no shareholder record and no path to Ningbo Shanshan.",
+            "call_ids": [
+              "s11-19",
+              "s11-26"
+            ]
+          },
+          {
+            "text": "Any Huayou or BTR battery-material company in Hungary.",
+            "call_ids": [
+              "s11-02",
+              "s11-05",
+              "s11-06",
+              "s11-16"
+            ]
+          }
+        ]
+      },
+      "passport": [
+        {
+          "field": "Place of manufacture",
+          "guidance_no": "8",
+          "declared": "The cell plant's location (Debrecen, Hungary).",
+          "paper_trail": "Registry shows a Debrecen battery-making company; no cell shipments from it yet.",
+          "gap": true,
+          "note": "Sales to EU carmakers stay inside the EU and will not show in customs data."
+        },
+        {
+          "field": "Detailed composition (anode)",
+          "guidance_no": "45",
+          "declared": "Anode active material, e.g. graphite.",
+          "paper_trail": "No anode or graphite shipments to any CATL company in Hungary.",
+          "gap": true,
+          "note": "Chinese graphite into Hungary is visible only for Korean-owned plants."
+        },
+        {
+          "field": "Critical raw materials > 0.1%",
+          "guidance_no": "15",
+          "declared": "Lithium, nickel, cobalt, natural graphite if present.",
+          "paper_trail": "No raw-material or cathode inputs visible.",
+          "gap": true,
+          "note": "Inputs routed via CATL's German plant or EU suppliers would not cross a customs border."
+        },
+        {
+          "field": "Responsible-sourcing (due-diligence) report",
+          "guidance_no": "19",
+          "declared": "Required from 18 Aug 2027 under Article 48, after the 2025 delay.",
+          "paper_trail": "Sayari network flags via CATL (Sheffield Hallam-named entity, regulatory action).",
+          "gap": true,
+          "note": "The EU duty names natural graphite; synthetic graphite, the main anode material, is not on the list."
+        },
+        {
+          "field": "Ownership of upstream suppliers",
+          "guidance_no": "—",
+          "declared": "No such field in the EU passport.",
+          "paper_trail": "Registry chain: CATL -> CATL (Hong Kong) -> CATL Hungary, 100% at the Hungarian step; MOFCOM agrees.",
+          "gap": false,
+          "note": "This is the question US PFE rules ask, and registry data answers it here."
+        }
+      ],
+      "red_flags": [
+        {
+          "flag": "Chinese parent ownership of the transit plant",
+          "signal": "contractual",
+          "severity": "High",
+          "result": "detected",
+          "note": "100% via CATL (Hong Kong), per the Hungarian registry; MOFCOM agrees."
+        },
+        {
+          "flag": "Same HS imported from China and exported to the US",
+          "signal": "transactional",
+          "severity": "High",
+          "result": "not_visible",
+          "note": "Only equipment in; nothing out."
+        },
+        {
+          "flag": "Recent incorporation vs. first export date",
+          "signal": "contractual",
+          "severity": "Medium",
+          "result": "not_visible",
+          "note": "Registered Jan 2022; no exports to compare."
+        },
+        {
+          "flag": "Volume spike after a policy date",
+          "signal": "transactional",
+          "severity": "Medium",
+          "result": "not_visible",
+          "note": "Seven rows in 2025 follow the build schedule, not a policy date."
+        },
+        {
+          "flag": "Shared address or officer with a flagged entity",
+          "signal": "inferred",
+          "severity": "Medium",
+          "result": "not_visible",
+          "note": "None checked beyond the parent. CATL's own flags are ownership, not shared officers."
+        },
+        {
+          "flag": "Entity-resolution fragmentation",
+          "signal": "inferred",
+          "severity": "Low (disclose)",
+          "result": "detected",
+          "note": "Four records for the plant company; two for the DSV forwarder."
+        },
+        {
+          "flag": "Forced-labor / UFLPA sub-tier flags",
+          "signal": "inferred",
+          "severity": "Medium",
+          "result": "suggested",
+          "note": "Ownership-path flags via CATL (Sheffield Hallam, Section 1260H); context, not a finding."
+        }
+      ],
+      "caveats": [
+        "Building a battery plant in Hungary with Chinese ownership is legal and common. Nothing here shows wrongdoing by any company named.",
+        "Debrecen is a cell plant, not an anode plant. We chose it because it had the most Sayari data. The anode-plant candidate (Shanshan, Finland) had a registry record only.",
+        "The brief placed Shanshan's plant in Kokkola; registry data and the City of Vaasa put it in Mustasaari (Korsholm), in the GigaVaasa area.",
+        "Hungarian customs data covers trade with non-EU countries. Goods moving between EU member states don't go through customs, so intra-EU inputs and sales are missing by design.",
+        "Freight forwarders (Ghibli, DSV) are named as consignees. Linking their shipments to the plant is our inference from the goods and timing.",
+        "The Section 1260H flag on CATL comes from Sayari. We did not assess how it or CATL's ownership would be treated under the PFE rules; that depends on Treasury guidance.",
+        "The policy comparison is limited to the dates and scope stated in the EUR-Lex texts we read (Regulations 2023/1542 and 2025/1561).",
+        "Searches for Huayou and BTR companies in Hungary were by name only and limited by budget; a record under another name could exist.",
+        "Records checked on 18 Oct 2026. Sayari merges and retires IDs."
+      ],
+      "answer_short": "CATL's 100% ownership is on record, but EU-internal trade is invisible: only Chinese factory equipment shows up, and no battery materials.",
+      "last_checked": "2026-10-18",
+      "checked_call_ids": []
+    },
+    {
+      "id": "case-12",
+      "slug": "indonesia-nickel",
+      "title": "Beyond graphite: Indonesian nickel from a Huayou plant",
+      "subtitle": "PT Huayue Nickel Cobalt · Morowali (IMIP), Indonesia",
+      "country": "IDN",
+      "plant_status": "operating",
+      "question": "Can Sayari show nickel from a Chinese-owned Indonesian plant reaching US battery supply chains, directly or through cathode makers in Korea, Japan or China?",
+      "answer_label": "Partly",
+      "answer": "Partly. Sayari shows the plant's nickel intermediate going almost entirely to China, much of it to its own Chinese owners, and nothing nickel-based going straight to the US. It also shows Huayou precursor reaching POSCO Future M (to 2023) and POSCO cathode reaching a US cell plant (2026), but no record joins those steps to this plant.",
+      "why_it_matters": "Most Indonesian nickel is processed in plants more than 25% Chinese-owned, which already kept it out of the US EV credit. From 2026 the PFE rules bring the same ownership question to the 45X manufacturing credit for US cell plants. A buyer that sees 'Korea' on its cathode invoice cannot see this plant at all, so the nickel's origin has to be traced, not assumed.",
+      "headline": "The plant is clearly Chinese-led: Huayou 57% and CMOC 30%, per open sources, with a Chinese beneficial owner in Indonesia's register. Sayari shows 308 rows of nickel intermediate leaving it, mostly for China, and no nickel going to the US. The trail to US cell plants goes dark in China, where the MHP becomes precursor.",
+      "summary_for_non_experts": "Batteries need nickel as well as graphite. In Indonesia, Chinese companies run huge plants that turn nickel ore into an intermediate called MHP (mixed hydroxide precipitate). We followed one, PT Huayue Nickel Cobalt, which is majority-owned by China's Huayou. Its MHP mostly goes to Huayou's own factories in China, which make precursor, the next step towards cathode. Sayari can show that next step reaching a Korean cathode maker and Korean cathode reaching a US cell plant, but it cannot show that this plant's nickel is inside.",
+      "key_numbers": [
+        {
+          "value": "57%",
+          "label": "Huayou's stake in the plant (co-shareholder filing and AEER report)",
+          "call_ids": [
+            "t12-01"
+          ]
+        },
+        {
+          "value": "308",
+          "label": "export rows of nickel intermediate (HS 7501.20) from the plant, 2021–Aug 2026",
+          "call_ids": [
+            "s12-09"
+          ]
+        },
+        {
+          "value": "76 of 200",
+          "label": "rows we read that went to Huayou-named companies; 20 more went to CMOC",
+          "call_ids": [
+            "s12-11",
+            "s12-12"
+          ]
+        },
+        {
+          "value": "0",
+          "label": "nickel rows to the US; all 48 US-bound rows are valves and valve parts",
+          "call_ids": [
+            "s12-10"
+          ]
+        },
+        {
+          "value": "87",
+          "label": "rows of cathode-coded HS 2841.90 from POSCO Future M to StarPlus Energy, May–Jul 2026",
+          "call_ids": [
+            "s12-21"
+          ]
+        }
+      ],
+      "overall_confidence": "corroborated",
+      "pattern": "trail-goes-dark",
+      "steps": [
+        {
+          "title": "Why this plant",
+          "kicker": "Step 1 · Context",
+          "text": "PT Huayue Nickel Cobalt (HNC) was Huayou's first high-pressure acid leach (HPAL) plant in the Morowali park, where BTR's anode plant also sits. It started in Nov 2021 and makes about 60,000 t of nickel a year in MHP. Its shareholders are published by a listed co-owner, and Sayari has a record with its Indonesian tax ID. That makes it the best-documented test case.",
+          "edge_ids": [],
+          "node_ids": [
+            "d36wLU72WGaWpEduWzxfNw"
+          ],
+          "call_ids": [
+            "s12-01",
+            "s12-02",
+            "t12-01"
+          ]
+        },
+        {
+          "title": "Eight records, one plant",
+          "kicker": "Step 2 · Inferred",
+          "text": "Sayari holds eight records for the plant. The main one has the tax ID and both the Morowali site and the Jakarta office. Four share that office address in Sopo Del Tower A; one of them is wrongly typed as a person. Three are name-only and kept as leads.",
+          "edge_ids": [
+            "e12-01",
+            "e12-02",
+            "e12-03",
+            "e12-04",
+            "e12-05",
+            "e12-06",
+            "e12-07"
+          ],
+          "node_ids": [
+            "d36wLU72WGaWpEduWzxfNw",
+            "Ez81wqDCkYuIjnT9f30Ifw",
+            "xI-CsXxNFsCuDyao-h5uCQ",
+            "Uez7TzdLHdKr_H0xSODvyA",
+            "z1oM-Pp9uyq37UaaF1Rihg",
+            "Ymxqm3kJPGytQyBL7jXezg",
+            "o9Ln4E80py9bVIBTH3lazA",
+            "VLdRtXQM_rBOqEQVtf3pkw"
+          ],
+          "call_ids": [
+            "s12-01",
+            "s12-02"
+          ]
+        },
+        {
+          "title": "The owner: Huayou, 57%",
+          "kicker": "Step 3 · Contractual",
+          "text": "Indonesia's beneficial-owner register, via Sayari, names two people: Chen Xuehua, with an address in Huayou's home city, and Hsieh Wei-Tong in Taipei. An AEER report lists Chen Xuehua as a 6.43% shareholder of Huayou. The company stakes come from open sources: Huayou 57%, CMOC 30%, Nickel Industries 10%. Sayari's own shortest path to Huayou is a trade link through Huayou's import-export arm.",
+          "edge_ids": [
+            "e12-08",
+            "e12-09",
+            "e12-10",
+            "e12-11",
+            "e12-12",
+            "e12-13",
+            "e12-14",
+            "e12-15",
+            "e12-16",
+            "e12-17",
+            "e12-18",
+            "e12-19",
+            "e12-20"
+          ],
+          "node_ids": [
+            "GstlFKZ-29D5gm8p3Xg6mw",
+            "WsTfWkdMP4iuUyQG7iidlQ",
+            "9qVFfWtDk6KefWuKgt8uOg",
+            "7OXs4DTLrDP0MB8gbZuTnA",
+            "RbLPDr6UX-QhTaP5x11BQQ"
+          ],
+          "call_ids": [
+            "s12-03",
+            "s12-04",
+            "s12-05",
+            "s12-06",
+            "t12-01"
+          ]
+        },
+        {
+          "title": "Where the MHP goes",
+          "kicker": "Step 4 · Transactional",
+          "text": "The plant sent 308 rows of HS 7501.20, the code for nickel intermediates such as MHP. Of the 200 most recent rows (Aug 2024 – Aug 2026), 76 went to Huayou companies in Guangxi, Quzhou and Hong Kong and 20 to CMOC, its second shareholder. Most of the rest went to traders (IXM, Trafigura, Mercuria) and Chinese battery-materials makers (CNGR, Brunp, Jinchuan, Umicore's Jiangmen JV). Only India's Malco Energy sits outside China and the trading houses.",
+          "edge_ids": [
+            "e12-21",
+            "e12-22",
+            "e12-23",
+            "e12-24",
+            "e12-25",
+            "e12-26",
+            "e12-27",
+            "e12-28",
+            "e12-29",
+            "e12-30",
+            "e12-31",
+            "e12-32",
+            "e12-33",
+            "e12-34",
+            "e12-35",
+            "e12-36",
+            "e12-37",
+            "e12-38",
+            "e12-39",
+            "e12-40",
+            "e12-41",
+            "e12-42",
+            "e12-43",
+            "e12-44",
+            "e12-45",
+            "e12-46",
+            "e12-47",
+            "e12-48",
+            "e12-49",
+            "e12-50",
+            "e12-51",
+            "e12-52",
+            "e12-53",
+            "e12-54"
+          ],
+          "node_ids": [
+            "mM2BJnjq_KYla3H9_zQHQg",
+            "IIei9yVxJwNGPNOuQwQsGw",
+            "PngfQG6leaGtxETdtENi0g",
+            "VzWGnh0SfG2WP5oPDcPOPQ",
+            "lrJp9t-68mxX65btZ3j3Bw",
+            "KGQq5VCbYtKqGu65BSHm5w",
+            "cU2MfaQrsUChpWaqsKx2dw"
+          ],
+          "call_ids": [
+            "s12-07",
+            "s12-08",
+            "s12-09",
+            "s12-11",
+            "s12-12"
+          ]
+        },
+        {
+          "title": "US rows: valves, not nickel",
+          "kicker": "Step 5 · Transactional",
+          "text": "All 48 rows from the plant to the US are valves and valve parts with serial numbers, sent to ValvTechnologies in Houston and Caldera Engineering in Utah, Jan 2023 – Nov 2025. HPAL plants wear out such valves, so the rows fit repairs or returns. No MHP, nickel sulphate or matte goes straight to the US in these results.",
+          "edge_ids": [
+            "e12-55",
+            "e12-56",
+            "e12-57",
+            "e12-58"
+          ],
+          "node_ids": [
+            "uVQaJRf9eQQbdQf9RVxBSA",
+            "V26diz4dlR986Du6ylwgkw",
+            "yuxcwL986OMuVCw60s2usA"
+          ],
+          "call_ids": [
+            "s12-10"
+          ]
+        },
+        {
+          "title": "One step further: precursor to Korea, cathode to Indiana",
+          "kicker": "Step 6 · Transactional",
+          "text": "Huayou precursor companies shipped 29 rows of cathode precursor (HS 2853.90, 'nickel cobalt manganese hydroxide') to POSCO Future M, Dec 2021 – Dec 2023. Huayou's annual report confirms a long-term supply deal. Separately, POSCO Future M shipped 87 rows of cathode-coded HS 2841.90 to StarPlus Energy's cell plant in Kokomo, Indiana, May–Jul 2026.",
+          "edge_ids": [
+            "e12-61",
+            "e12-62",
+            "e12-63",
+            "e12-64",
+            "e12-65",
+            "e12-66",
+            "e12-67",
+            "e12-68",
+            "e12-69",
+            "e12-70",
+            "e12-71"
+          ],
+          "node_ids": [
+            "ki6hICRACf98bvo9QNh6yQ",
+            "zQD30wAsnYMA012sbiEMbQ",
+            "Fj3vtxDroFyjyPsLgsnm2A",
+            "N_UQeUCvCpXAkOSJd6CEYw",
+            "N3UgWRTegQ-62gm83cCoJw",
+            "Dc9b1oOozZ8IaaC89j8JSg",
+            "4fqrWAcyrgtWw2RdV6qZsg",
+            "rJZujbWjTgJ1iEZxCsjw9w"
+          ],
+          "call_ids": [
+            "s12-14",
+            "s12-18",
+            "s12-19",
+            "s12-20",
+            "s12-21",
+            "s12-23",
+            "t12-03"
+          ]
+        },
+        {
+          "title": "Where the trail goes dark",
+          "kicker": "Step 7 · Gap",
+          "text": "Nothing joins the steps. Huayou's biggest MHP buyer in China shows no exports, and the precursor exporter is a different Huayou company with no visible MHP from this plant. The precursor rows end in Dec 2023, before the 2026 cathode rows, and POSCO says it is moving to China-free precursor. Free-text searches for 'Huayou' into the US return unrelated furniture and kitchenware.",
+          "edge_ids": [],
+          "node_ids": [
+            "mM2BJnjq_KYla3H9_zQHQg",
+            "IIei9yVxJwNGPNOuQwQsGw"
+          ],
+          "call_ids": [
+            "s12-13",
+            "s12-16",
+            "s12-17",
+            "s12-22",
+            "t12-03"
+          ]
+        }
+      ],
+      "verdict": {
+        "detected": [
+          {
+            "text": "308 export rows of nickel intermediate (HS 7501.20) from the plant; of the 200 we read, 76 went to Huayou companies and 20 to CMOC, Aug 2024 – Aug 2026.",
+            "call_ids": [
+              "s12-09",
+              "s12-11",
+              "s12-12"
+            ]
+          },
+          {
+            "text": "Two beneficial owners in Indonesia's register, one with an address in Huayou's home city.",
+            "call_ids": [
+              "s12-03"
+            ]
+          },
+          {
+            "text": "No nickel product shipped from the plant to the US; the 48 US rows are valves and parts.",
+            "call_ids": [
+              "s12-10"
+            ]
+          },
+          {
+            "text": "Huayou precursor to POSCO Future M (29 rows, 2021–2023) and POSCO Future M HS 2841.90 to StarPlus Energy, Indiana (87 rows, May–Jul 2026).",
+            "call_ids": [
+              "s12-19",
+              "s12-21"
+            ]
+          }
+        ],
+        "suggested": [
+          {
+            "text": "Huayou 57% / CMOC 30% ownership: two open sources agree, but Sayari's registry data show only individuals, not the companies.",
+            "call_ids": [
+              "t12-01",
+              "s12-03",
+              "s12-05"
+            ]
+          },
+          {
+            "text": "A group pathway from Indonesian MHP through Huayou's Chinese plants to Korean cathode makers (POSCO Future M, LG Chem): the parts exist, but no record joins them.",
+            "call_ids": [
+              "s12-16",
+              "s12-19",
+              "s12-22",
+              "t12-03"
+            ]
+          },
+          {
+            "text": "Forced-labor sub-tier flags on the plant's records. These describe network neighbours, not the plant.",
+            "call_ids": [
+              "s12-01",
+              "s12-02"
+            ]
+          }
+        ],
+        "not_visible": [
+          {
+            "text": "Whether any of this plant's nickel is inside the cathode reaching StarPlus Energy or any other US cell plant.",
+            "call_ids": [
+              "s12-17",
+              "s12-21",
+              "s12-22"
+            ]
+          },
+          {
+            "text": "Where Guangxi Huayou, the top MHP buyer, sends its output; it has no visible exports.",
+            "call_ids": [
+              "s12-17"
+            ]
+          },
+          {
+            "text": "The company shareholding chain from Huayou and CMOC to the plant, and the 108 oldest MHP rows (before Aug 2024), which we did not read.",
+            "call_ids": [
+              "s12-03",
+              "s12-12"
+            ]
+          }
+        ]
+      },
+      "passport": [
+        {
+          "field": "Place of manufacture",
+          "guidance_no": "8",
+          "declared": "The cell plant's location, e.g. USA.",
+          "paper_trail": "Cathode from Korea; precursor from China; MHP from Morowali, Indonesia.",
+          "gap": true,
+          "note": "The field covers the battery, not the nickel two or three steps upstream."
+        },
+        {
+          "field": "Detailed composition (cathode)",
+          "guidance_no": "45",
+          "declared": "'NCM' or 'NCA' as the cathode active material.",
+          "paper_trail": "HS 2841.90 cathode from POSCO Future M; HS 2853.90 precursor from Huayou companies; HS 7501.20 MHP from HNC.",
+          "gap": true,
+          "note": "Composition says what, not where from."
+        },
+        {
+          "field": "Critical raw materials > 0.1%",
+          "guidance_no": "15",
+          "declared": "Nickel and cobalt listed.",
+          "paper_trail": "MHP carries both nickel and cobalt (the plant's name says so).",
+          "gap": false,
+          "note": "Consistent, if declared."
+        },
+        {
+          "field": "Responsible-sourcing (due-diligence) report",
+          "guidance_no": "19",
+          "declared": "Deferred under the EU Battery Regulation.",
+          "paper_trail": "Sub-tier forced-labor flags on the plant's records; AEER reports on HPAL environmental risk in Indonesia.",
+          "gap": true,
+          "note": "Nickel from HPAL raises tailings and coal-power questions a report would need to cover."
+        },
+        {
+          "field": "Ownership of upstream suppliers",
+          "guidance_no": "—",
+          "declared": "No such field in the EU passport.",
+          "paper_trail": "Huayou 57%, CMOC 30% (open sources); a Chinese beneficial owner in Indonesia's register.",
+          "gap": true,
+          "note": "The US PFE rules ask exactly this question."
+        }
+      ],
+      "red_flags": [
+        {
+          "flag": "Chinese parent ownership of the transit plant",
+          "signal": "contractual",
+          "severity": "High",
+          "result": "detected",
+          "note": "A Chinese beneficial owner in Indonesia's register; Huayou 57% and CMOC 30% per open sources."
+        },
+        {
+          "flag": "Same HS imported from China and exported to the US",
+          "signal": "transactional",
+          "severity": "High",
+          "result": "absent",
+          "note": "No nickel product goes to the US; the US rows are valves."
+        },
+        {
+          "flag": "Recent incorporation vs. first export date",
+          "signal": "contractual",
+          "severity": "Medium",
+          "result": "not_visible",
+          "note": "No incorporation date in Sayari. First export row Mar 2021, before the Nov 2021 start-up."
+        },
+        {
+          "flag": "Volume spike after a policy date",
+          "signal": "transactional",
+          "severity": "Medium",
+          "result": "not_visible",
+          "note": "We read 200 of 308 MHP rows and did not count volumes by month."
+        },
+        {
+          "flag": "Shared address or officer with a flagged entity",
+          "signal": "inferred",
+          "severity": "Medium",
+          "result": "not_visible",
+          "note": "Shares a Jakarta office tower with other Chinese-linked nickel firms (Huafei, Eternal Nickel, Huaneng); none is a flagged entity. SOE flags describe neighbours."
+        },
+        {
+          "flag": "Entity-resolution fragmentation",
+          "signal": "inferred",
+          "severity": "Low (disclose)",
+          "result": "detected",
+          "note": "Eight records for the plant, 13 for Huayou, two for StarPlus Energy."
+        },
+        {
+          "flag": "Forced-labor / UFLPA sub-tier flags",
+          "signal": "inferred",
+          "severity": "Medium",
+          "result": "suggested",
+          "note": "Xinjiang and UFLPA sub-tier flags on the plant's records; these are network signals, not findings."
+        }
+      ],
+      "caveats": [
+        "Processing nickel in Indonesia with Chinese investment is legal and common. Nothing here shows wrongdoing by any company named.",
+        "The US buyers are named because they appear in customs records; this says nothing about their compliance.",
+        "The ownership percentages come from Nickel Industries' 2023 filing and an AEER report (Feb 2025); stakes may have changed since.",
+        "HS 7501.20 covers several nickel intermediates. We treat these rows as MHP because the plant makes only MHP, but the rows do not say so.",
+        "We read 200 of the 308 MHP rows (Aug 2024 – Aug 2026). Earlier buyers may differ.",
+        "HS 2841.90 also carries some miscoded anode rows (Tesla, 2023). The StarPlus rows have no product text, so 'cathode' is our reading of the code.",
+        "Policy notes come from secondary summaries (Tax Law Center, Fastmarkets); check IRS Notice 2026-15 before relying on them.",
+        "Records checked 18 Oct 2026. Sayari merges and retires IDs."
+      ],
+      "answer_short": "Huayou's Indonesian nickel plant sends its output to Chinese refiners and traders. No nickel goes directly to the US, and the hop to US cathodes isn't joined by any record.",
+      "last_checked": "2026-10-18",
+      "checked_call_ids": []
     }
   ]
 }

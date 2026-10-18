@@ -323,9 +323,9 @@ EDGES = [
          "Name and district match the parent group. No registry link was pulled.",
          ["s013"]),
     # Ownership (contractual)
-    edge("e010", BTR, PLANT, "owns", "contractual", "corroborated",
-         "Not in Sayari (find_beneficial_owners returned 0; shortest path is trade only). BTR's own press release calls the plant its Indonesian facility; one trade directory gives 70% BTR, 30% Stellar Investment (single source).",
-         ["s009", "s019", "t012"]),
+    edge("e010", BTR, PLANT, "owns", "contractual", "documented",
+         "Not in Sayari (find_beneficial_owners returned 0; shortest path is trade only). BTR's own Beijing Stock Exchange filings give the split: 60% BTR (through BTR (Hong Kong) New Material) and 40% Stellar Investment Pte. Ltd. of Singapore, which the filing says is owned by Ever Rising Limited. Indonesian press links Stellar to the Tsingshan group.",
+         ["s009", "s019", "t012", "w001", "w002"]),
     edge("e011", BTR, LIYUAN_CZ, "owns", "contractual", "documented",
          "Registry shareholder_of link in Sayari.", ["s020"]),
     edge("e012", LIYUAN_CZ, LIYUAN_ID, "owns", "contractual", "documented",
@@ -407,7 +407,7 @@ CASE1 = {
          "text": "Sayari holds five separate records for the Indonesian plant. Four share the same Kendal street address and a version of the same name, which makes them Inferred matches. The fifth was a sparse gazette record on 14 Oct; by 18 Oct Sayari had moved the plant's tax ID and LEI onto it, so it is now the main record.",
          "edge_ids": ["e001", "e002", "e003", "e004"], "node_ids": [PLANT, PLANT_KENDAL, PLANT_JKT, PLANT_FRAG4, PLANT_FRAG5], "call_ids": ["s005", "s006", "s007", "s022", "s023"]},
         {"title": "The owner: not in the registry", "kicker": "Step 3 · Contractual",
-         "text": "Sayari returns no shareholders for the plant, and its shortest path to BTR in China is a trade link. Sayari does show BTR owning a different Indonesian company (Liyuan), so the gap is specific to this plant. BTR's own press release calls the plant its Indonesian facility, so the ownership edge is shown with that source, not Sayari's.",
+         "text": "Sayari returns no shareholders for the plant, and its shortest path to BTR in China is a trade link. Sayari does show BTR owning a different Indonesian company (Liyuan), so the gap is specific to this plant. BTR's own exchange filings show it holds 60% through BTR (Hong Kong). The other 40% belongs to Stellar Investment, a Singapore holding company that Indonesian press links to the Tsingshan nickel group. The ownership edge is shown with those filings, not Sayari's.",
          "edge_ids": ["e010", "e011", "e012"], "node_ids": [BTR, PLANT, LIYUAN_CZ, LIYUAN_ID], "call_ids": ["s009", "s019", "s020", "t012"]},
         {"title": "Same product in, same product out", "kicker": "Step 4 · Transactional",
          "text": "Artificial graphite (HS 3801) arrives from BTR and from a trader registered in the BTR Building in Shenzhen. Artificial graphite (HS 3801.10, some 3801.90) leaves for Ultium Cells, SK Battery America, StarPlus Energy, GM and Tesla, Dec 2024 to Nov 2025, with one more GM row in Sep 2026. Many of the Ultium and GM rows were recorded as loaded in Singapore. Natural graphite also arrives from Mozambique, Madagascar and the UAE.",
@@ -477,7 +477,7 @@ CASE1.update({
     "slug": "btr-indonesia",
     "question": "Can Sayari show Chinese graphite being processed in BTR's Indonesian plant and shipped on to US battery makers, and who owns the plant?",
     "answer_label": "Partly",
-    "answer": "The trade, yes: Chinese artificial graphite goes in, and graphite goes out to Ultium Cells, SK Battery America, StarPlus Energy, GM and Tesla. The ownership, no: Sayari has no registry record of BTR owning the plant, so that link rests on BTR's own statements.",
+    "answer": "The trade, yes: Chinese artificial graphite goes in, and graphite goes out to Ultium Cells, SK Battery America, StarPlus Energy, GM and Tesla. The ownership, no: Sayari has no registry record of BTR owning the plant, so that link rests on BTR's own filings: 60% BTR, with Stellar Investment (linked in the press to Tsingshan) holding 40%.",
     "why_it_matters": "This is the pattern US tax-credit rules target: a Chinese company's plant in a third country supplying US battery makers. A buyer that only checks the country of origin sees 'Indonesia'. Only the ownership check shows 'BTR', and that is the part Sayari couldn't confirm.",
     "country": "IDN",
     "plant_status": "operating",
@@ -499,7 +499,7 @@ CONF_REASON_C1 = {
     "e004": "Upgraded on 18 Oct: Sayari now attaches the plant's tax ID and LEI to this record, so the two are the same company on the record.",
     "e005": "Both addresses name No. 8 Guangyuan 4th Road; matching attributes, no record of a relationship.",
     "e006": "Name and district only. One weak signal.",
-    "e010": "Two sources agree: BTR's own press release and a trade directory, backed by the trade link and the plant's name. Sayari's registry has no record.",
+    "e010": "BTR's own stock-exchange filings state the 60% holding. That is a primary document, though Sayari's registry has no record of it.",
     "e011": "Registry shareholder record in Sayari.",
     "e012": "Registry shareholder record in Sayari.",
     "e020": "Sayari returned HS-coded trade records with dates.",
@@ -572,28 +572,47 @@ REQUIRED_EDGE = {"id", "source", "target", "relation", "edge_type", "confidence"
 
 
 def load_verification_calls():
-    """Parse the call-log table at the bottom of investigation/notes/verification.md (18 Oct 2026)."""
-    md = (NOTES / "verification.md").read_text()
+    """Parse the call-log tables in investigation/notes/verification*.md and recheck-*.md.
+    Rows look like: | v001 | sayari.search_shipments | params | result |"""
+    import re
     out = []
-    start = md.index("## Call log")
-    for line in md[start:].splitlines():
-        if not line.startswith("| v"):
+    files = sorted(NOTES.glob("verification*.md")) + sorted(NOTES.glob("recheck-*.md"))
+    row = re.compile(r"^\|\s*([a-z][\w-]*\d)\s*\|")
+    for f in files:
+        md = f.read_text()
+        if "## Call log" not in md:
             continue
-        cells = [c.strip() for c in line.strip().strip("|").split("|")]
-        vid, tool, params, result = cells[0], cells[1], cells[2], " | ".join(cells[3:])
-        server, _, tname = tool.partition(".")
-        low = result.lower()
-        # A check that returns 0 can be the confirmation itself (e.g. "no record of the Sohar plant"),
-        # so only tool errors, refused requests and empty searches for a target we expected count as failed.
-        failed = low.startswith("error") or low.startswith("refused") or "low-value" in low or "misses" in low or "or quirk" in low
-        n = int(vid[1:])
-        out.append({
-            "id": vid, "timestamp": f"2026-10-18T15:{n // 2:02d}:{(n % 2) * 30:02d}Z", "server": server, "tool": tname,
-            "params": {"summary": params}, "question": "Verification pass: re-check a published claim",
-            "purpose": "Verification pass (18 Oct 2026)", "result_summary": result,
-            "interpretation": "See investigation/notes/verification.md for the claim this call checked and the correction it led to.",
-            "scorecard": "failed" if failed else "worked", "entity_ids": [], "step": "verify", "case_id": "general",
-        })
+        m = re.search(r"(\d{4}-\d{2}-\d{2})", f.stem) or re.search(r"(\d{4}-\d{2})", f.stem)
+        day = {"verification": "2026-10-18", "verification-2": "2026-10-18"}.get(f.stem) or (m.group(1) if m else "2026-10-18")
+        if len(day) == 7:
+            day += "-01"
+        for line in md[md.index("## Call log"):].splitlines():
+            mm = row.match(line)
+            if not mm:
+                continue
+            cells = [c.strip() for c in line.strip().strip("|").split("|")]
+            vid, tool, params, result = cells[0], cells[1], cells[2], " | ".join(cells[3:])
+            server, _, tname = tool.partition(".")
+            low = result.lower()
+            # A check that returns 0 can be the confirmation itself, so only tool errors,
+            # refused requests and empty searches for an expected target count as failed.
+            failed = low.startswith("error") or low.startswith("refused") or "low-value" in low or "misses" in low or "or quirk" in low
+            n = len(out)
+            out.append({
+                "id": vid, "timestamp": f"{day}T15:{(n // 60) % 60:02d}:{n % 60:02d}Z", "server": server or "sayari", "tool": tname or tool,
+                "params": {"summary": params}, "question": "Re-check of a published claim",
+                "purpose": f"Re-check ({f.stem})", "result_summary": result,
+                "interpretation": f"See investigation/notes/{f.name} for the claim this call checked.",
+                "scorecard": "failed" if failed else "worked", "entity_ids": [], "step": "verify", "case_id": "general",
+            })
+    return out
+
+
+def load_buyer_profiles():
+    """In-depth buyer profiles: investigation/buyers/<key>.json."""
+    out = []
+    for f in sorted((ROOT / "investigation" / "buyers").glob("*.json")):
+        out.append(json.loads(f.read_text()))
     return out
 
 
@@ -658,14 +677,27 @@ def main():
             edges.append(e)
         cases.append(case)
 
-    cases.sort(key=lambda c: CASE_ORDER.index(c["id"]) if c["id"] in CASE_ORDER else 99)
+    cases.sort(key=lambda c: (CASE_ORDER.index(c["id"]) if c["id"] in CASE_ORDER else 50 + int(c["id"].split("-")[1])))
+
+    buyers = load_buyer_profiles()
+    for bp in buyers:
+        for c in bp["calls"]:
+            c["case_id"] = "buyer:" + bp["buyer"]["key"]
+            c.setdefault("entity_ids", []); c.setdefault("step", "buyer")
+            calls.append(c)
 
     entities_by_id = entities  # dict at this point
     # Curated presentation layer: short answers, map, screening cards, watch list.
     curated = json.loads((ROOT / "investigation" / "curated.json").read_text())
     case_ids = {c["id"] for c in cases}
     for c in cases:
-        c["answer_short"] = curated["answer_short"][c["id"]]
+        c["answer_short"] = curated["answer_short"].get(c["id"]) or c.get("answer", "")
+        chk = curated.get("checks", {}).get(c["id"])
+        if chk:
+            c["last_checked"], c["checked_call_ids"] = chk["date"], chk["call_ids"]
+        else:  # never re-checked: the date of the case's own investigation
+            own = sorted(x["timestamp"] for x in calls if x.get("case_id") == c["id"])
+            c["last_checked"], c["checked_call_ids"] = (own[-1][:10] if own else AS_OF), []
     for cid, card in curated["screening"].items():
         assert cid in case_ids, cid
         own = [e for e in edges if cid in e["case_ids"] and e["edge_type"] == "contractual"
@@ -712,6 +744,12 @@ def main():
                 assert set(v["call_ids"]) <= call_ids, (c["id"], v)
     for t in timeline:
         assert set(t["source_call_ids"]) <= call_ids, t["date"]
+    for c in cases:
+        assert set(c.get("checked_call_ids", [])) <= call_ids, (c["id"], "checked_call_ids")
+    for bp in buyers:
+        bcalls = {x["id"] for x in bp["calls"]}
+        for sup in bp["suppliers"]:
+            assert set(sup.get("call_ids", [])) <= call_ids, (bp["buyer"]["key"], sup["name"])
     for f in OVERVIEW["facts"]:
         assert set(f["call_ids"]) <= call_ids, f
 
@@ -725,6 +763,7 @@ def main():
         "sources.json": {**meta, "items": SOURCES},
         "overview.json": {**meta, **OVERVIEW},
         "curated.json": {**meta, **curated},
+        "buyers.json": {**meta, "items": buyers},
     }
     DATA.mkdir(exist_ok=True)
     for name, obj in out.items():
