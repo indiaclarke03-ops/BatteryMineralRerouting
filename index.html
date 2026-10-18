@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Paper Trail: The Trace</title>
-  <meta name="description" content="Is Chinese battery graphite reaching US battery plants through factories in other countries? Five plants traced with Sayari MCP.">
+  <meta name="description" content="Following Chinese battery graphite through third-country factories to US supply chains: eight cases traced through trade and company-registry data.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600&family=Source+Serif+4:opsz,wght@8..60,600;8..60,700&display=swap" rel="stylesheet">
@@ -20,16 +20,16 @@
     <div class="wrap">
       <!-- 1. Hero -->
       <section class="hero" aria-labelledby="q">
-        <span class="eyebrow">A Sayari MCP investigation · battery graphite</span>
-        <h1 id="q">Is Chinese battery graphite reaching US battery plants through factories in other countries?</h1>
-        <p class="lede">Chinese companies are building battery-material factories in Indonesia, Morocco, Oman and elsewhere. Their output can reach the US looking "non-Chinese". We followed the paper trail for <strong id="n-cases">five</strong> of these plants through trade and company records, and we show every link we found and how sure we are of each one.</p>
+        <span class="eyebrow">Battery supply-chain intelligence · graphite</span>
+        <h1 id="q">Following Chinese battery graphite through third-country factories to US supply chains</h1>
+        <p class="lede">Chinese companies make almost all of the world's battery anode material, and they are now building factories in Indonesia, Morocco, Oman, Malaysia and the US itself. We traced <strong id="n-cases">eight</strong> of these supply chains through trade and company records to show where the material goes, who owns each plant, and how sure we can be of each link.</p>
         <div class="hero-ctas">
-          <a class="btn primary" href="#cases">See the plants ↓</a>
-          <a class="btn" href="#trace">Walk through a case on the graph</a>
-          <a class="btn" href="method.html">How we used Sayari</a>
+          <a class="btn primary" href="#cases">See what we found ↓</a>
+          <a class="btn" href="buyers.html">Check a buyer</a>
+          <a class="btn" href="explore.html">Explore the network</a>
         </div>
         <div class="hero-meta">
-          <span class="asof">Data as of 14 Oct 2026</span>
+          <span class="asof">Data as of 14 Oct 2026 · re-checked 18 Oct 2026</span>
           <span class="asof" id="call-count">Loading…</span>
         </div>
         <div class="facts" id="facts"></div>
@@ -128,11 +128,30 @@
         <p class="muted" style="margin-top:var(--s-3)">Shipping Chinese material through a factory abroad is legal and common. The pattern only tells a buyer where to ask questions.</p>
       </section>
 
+      <!-- 3b. Map -->
+      <section id="map-section" aria-labelledby="map-h">
+        <span class="eyebrow">Where the trail runs</span>
+        <h2 id="map-h">Eight supply chains on one map</h2>
+        <p class="section-intro">Each dot is a plant we traced. Lines show material moving between countries, taken from customs records. Dashed lines are plants that are owned and planned but not shipping yet. Choose a plant to see what we found.</p>
+        <div class="map-wrap">
+          <div class="map-frame" id="map" role="img" aria-label="World map of the eight traced supply chains. The same information is in the case cards below."></div>
+          <aside class="map-card" id="map-card" aria-live="polite"></aside>
+        </div>
+        <div class="map-key">
+          <span><i class="mk mk-origin"></i>Chinese parent / source</span>
+          <span><i class="mk mk-plant"></i>Plant we traced</span>
+          <span><i class="mk mk-buyers"></i>US buyers</span>
+          <span><i class="ml ml-input"></i>Material shipped (customs records)</span>
+          <span><i class="ml ml-planned"></i>Owned, not shipping yet</span>
+          <span><i class="ml ml-owner"></i>Ownership</span>
+        </div>
+      </section>
+
       <!-- 4. Case cards -->
       <section id="cases" aria-labelledby="cases-h">
-        <span class="eyebrow">One plant per case</span>
+        <span class="eyebrow">Eight cases</span>
         <h2 id="cases-h">What we found</h2>
-        <p class="section-intro">Each card asks one question about one factory and gives the answer the data supports. The colour bar shows the kind of answer.</p>
+        <p class="section-intro">One plant per case: the short answer, and a link to the full case file.</p>
         <div class="case-cards" id="case-cards"></div>
       </section>
 
@@ -140,45 +159,14 @@
       <section aria-labelledby="take-h">
         <span class="eyebrow">Across the cases</span>
         <h2 id="take-h">What the cases tell us</h2>
-        <div class="explain" style="grid-template-columns:repeat(auto-fit,minmax(18rem,1fr))">
-          <div class="card"><span class="num">Finding 1</span><h3>Trade shows the route; registries show the owner, but rarely both</h3><p>For BTR Indonesia, Sayari shows the shipments but not the owner. For BTR Morocco and Putailai Malaysia, it shows the owner but no shipments yet. For Gotion in the US, ownership is only visible from the Chinese side.</p><p><a href="cases.html#case-1">Case 1</a> · <a href="cases.html#case-2">2</a> · <a href="cases.html#case-5">5</a> · <a href="cases.html#case-7">7</a></p></div>
-          <div class="card"><span class="num">Finding 2</span><h3>Same product, same buyers, different owners</h3><p>BTR Indonesia (Chinese-owned), POSCO Future M (Korean-owned) and Syrah (Australian-owned) all supply graphite into US battery chains, and the first two ship to GM, SK Battery America and Tesla. Shipping records alone can't tell them apart; ownership data can.</p><p><a href="cases.html#case-1">Case 1</a> · <a href="cases.html#case-4">4</a> · <a href="cases.html#case-8">8</a></p></div>
-          <div class="card"><span class="num">Finding 3</span><h3>Graphite can arrive hidden inside finished cells</h3><p>EVE's Malaysian plant takes in Chinese anode graphite from BTR, Zhongke and Shanshan, and ships finished cells to Briggs &amp; Stratton, Milwaukee Tool and others. The graphite never appears in US customs data as graphite.</p><p><a href="cases.html#case-6">Case 6</a></p></div>
-          <div class="card"><span class="num">Finding 4</span><h3>The next wave isn't shipping yet</h3><p>Chinese-owned anode plants in Morocco, Oman and Malaysia are all under construction, with no graphite trade in Sayari. Now is the time to record their ownership, before goods start to move.</p><p><a href="cases.html#case-2">Case 2</a> · <a href="cases.html#case-3">3</a> · <a href="cases.html#case-5">5</a></p></div>
-          <div class="card"><span class="num">Finding 5</span><h3>Origin labels mislead</h3><p>3,088 "graphite" rows from Morocco were mostly mislabelled fertilizer. 917 rows from Oman were mostly Indian cargo passing through. One Mozambique mine sells both to a US plant and to Chinese-owned plants. "Where from" never answers "who owns".</p><p><a href="cases.html#case-2">Case 2</a> · <a href="cases.html#case-3">3</a> · <a href="cases.html#case-8">8</a></p></div>
-          <div class="card"><span class="num">Finding 6</span><h3>Sayari is powerful but needs care</h3><p><strong id="tk-calls">–</strong> Sayari calls: <span id="tk-worked">–</span> worked, <span id="tk-partial">–</span> partly, <span id="tk-failed">–</span> failed. Name filters, "OR" searches and some quoted searches fail silently. Every failure is shown on the Method page.</p><p><a href="method.html#scorecard-h">Scorecard</a></p></div>
-        </div>
-      </section>
-
-      <!-- 5. Walkthrough -->
-      <section id="trace" aria-labelledby="trace-h">
-        <span class="eyebrow">Step by step</span>
-        <h2 id="trace-h">Walk through a case on the network</h2>
-        <p class="section-intro">Pick a case, then use <strong>Next</strong> or the <span class="kbd">←</span> <span class="kbd">→</span> keys. The graph lights up the links behind each step.</p>
-        <div class="case-tabs" id="case-tabs" role="tablist" aria-label="Choose a case"></div>
-        <div class="stepper">
-          <div class="step-panel card">
-            <div class="step-nav">
-              <button class="btn" id="step-prev" type="button" aria-label="Previous step">← Prev</button>
-              <button class="btn primary" id="step-next" type="button" aria-label="Next step">Next →</button>
-              <button class="btn" id="step-all" type="button">Show all</button>
-            </div>
-            <ol class="step-dots" id="step-dots" aria-label="Steps"></ol>
-            <div class="step-body" id="step-body" aria-live="polite"></div>
-            <div data-legend="compact"></div>
-          </div>
-          <div>
-            <div class="graph-frame">
-              <div class="graph tall" id="trace-graph" role="img" aria-label="Network graph for the selected case. The same links are listed in text below."></div>
-            </div>
-            <details style="margin-top:var(--s-3)">
-              <summary>Read the links as a list (same data as the graph)</summary>
-              <div id="trace-list" style="margin-top:var(--s-3)"></div>
-            </details>
-          </div>
-        </div>
-        <h3 style="margin-top:var(--s-6)" id="verdict-h">Verdict for this case: what Sayari could and couldn't see</h3>
-        <div class="verdict" id="verdict"></div>
+        <ol class="findings">
+          <li><div class="f-num">01</div><div class="f-body"><h3>Shipping records show the route; company registries show the owner, but rarely both</h3><p>For BTR Indonesia, Sayari shows the shipments but not the owner. For BTR Morocco and Putailai Malaysia, it shows the owner before the plant exports anything. For Gotion in the US, the owner is visible only from the Chinese side.</p><p class="f-links">Cases <a href="cases.html#case-1">1</a> <a href="cases.html#case-2">2</a> <a href="cases.html#case-5">5</a> <a href="cases.html#case-7">7</a></p></div></li>
+          <li><div class="f-num">02</div><div class="f-body"><h3>Same product, same buyers, different owners</h3><p>BTR Indonesia (Chinese-owned) and POSCO Future M (Korean-owned) both ship artificial graphite to GM, SK Battery America and Tesla. Shipping records alone can't tell them apart; ownership data can.</p><p class="f-links">Cases <a href="cases.html#case-1">1</a> <a href="cases.html#case-4">4</a> <a href="cases.html#case-8">8</a></p></div></li>
+          <li><div class="f-num">03</div><div class="f-body"><h3>Graphite can arrive inside finished battery cells</h3><p>EVE's Malaysian plant takes in Chinese anode graphite from BTR, Zhongke and Shanshan, and ships finished cells to Briggs &amp; Stratton, Milwaukee Tool and others. The graphite never appears in US customs data as graphite.</p><p class="f-links">Case <a href="cases.html#case-6">6</a></p></div></li>
+          <li><div class="f-num">04</div><div class="f-body"><h3>The next wave isn't shipping yet</h3><p>Chinese-owned anode plants in Morocco, Oman and Malaysia are still being built or ramping up, and none exports yet. BTR's Moroccan plant took its first graphite, from BTR's own Indonesian plant, in Aug 2026. Their ownership is already on record, so buyers can know who owns them before the first export.</p><p class="f-links">Cases <a href="cases.html#case-2">2</a> <a href="cases.html#case-3">3</a> <a href="cases.html#case-5">5</a> · <a href="diligence.html#watch">Watch list</a></p></div></li>
+          <li><div class="f-num">05</div><div class="f-body"><h3>Country of origin doesn't tell you who owns the plant</h3><p>3,088 "graphite" rows from Morocco were mostly mislabelled fertilizer, and most of the 917 rows from Oman were Indian cargo relayed through Omani ports. One Mozambique mine supplies both a US plant and Chinese-owned plants.</p><p class="f-links">Cases <a href="cases.html#case-2">2</a> <a href="cases.html#case-3">3</a> <a href="cases.html#case-8">8</a></p></div></li>
+          <li><div class="f-num">06</div><div class="f-body"><h3>The data is powerful but needs careful reading</h3><p><strong id="tk-calls">–</strong> Sayari queries: <span id="tk-worked">–</span> answered the question, <span id="tk-partial">–</span> partly, <span id="tk-failed">–</span> failed. Some search filters fail silently, so every result was checked by hand. Every query is published.</p><p class="f-links"><a href="method.html#scorecard-h">See the scorecard</a></p></div></li>
+        </ol>
       </section>
 
       <!-- 6. Policy timeline -->
@@ -193,6 +181,7 @@
       <section aria-labelledby="gl-h">
         <span class="eyebrow">Plain English</span>
         <h2 id="gl-h">Key terms</h2>
+        <details class="gloss-wrap"><summary>Show the eight terms used on this site</summary>
         <dl class="glossary">
           <div><dt>Anode</dt><dd>The negative side of a battery. In lithium-ion batteries it's almost always graphite.</dd></div>
           <div><dt>Natural vs. artificial graphite</dt><dd>Natural graphite is mined (HS 2504). Artificial graphite is made by baking petroleum coke (HS 3801). Battery anodes use both.</dd></div>
@@ -203,6 +192,7 @@
           <div><dt>Sayari</dt><dd>A database linking company registries, ownership and customs records from 250+ jurisdictions. We queried it through its MCP server.</dd></div>
           <div><dt>Entity resolution</dt><dd>Deciding whether several database records are really one company. Customs records spell names differently, so one factory can appear many times.</dd></div>
         </dl>
+        </details>
       </section>
 
     </div>
@@ -210,13 +200,12 @@
 
   <footer id="site-footer"></footer>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/cytoscape/3.30.2/cytoscape.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/dagre/0.8.5/dagre.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/cytoscape-dagre@2.5.0/cytoscape-dagre.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.9.0/d3.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/topojson-client@3.1.0/dist/topojson-client.min.js"></script>
   <script src="assets/js/data.js"></script>
   <script src="assets/js/ui.js"></script>
-  <script src="assets/js/graph.js"></script>
-  <script src="assets/js/stepper.js"></script>
+  <script src="assets/js/map.js"></script>
+  <script src="assets/js/home.js"></script>
   <script>document.addEventListener("DOMContentLoaded", () => PT.initHome());</script>
 </body>
 </html>

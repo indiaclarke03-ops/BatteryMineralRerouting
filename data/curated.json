@@ -1,0 +1,936 @@
+{
+  "as_of": "2026-10-14",
+  "generated_by": "investigation/build_data.py",
+  "answer_short": {
+    "case-1": "Chinese graphite goes in, and graphite goes out to five US battery and car makers. Who owns the plant isn't in the registry.",
+    "case-2": "BTR's 100% ownership is on record. The first graphite arrived from BTR's own Indonesian plant in Aug 2026, and nothing has been exported yet.",
+    "case-3": "The Oman plant isn't in the data yet. Zhongke graphite reaches the US today through Malaysian cell plants.",
+    "case-4": "Korean-owned, with Chinese graphite inputs. It sells to the same US buyers as BTR Indonesia.",
+    "case-5": "No Chinese-owned anode maker is shipping to the US from five corridors. Putailai's Malaysian plant is still being built.",
+    "case-6": "Chinese anode graphite goes in and finished cells go out to US buyers, from a plant owned by China's EVE Energy.",
+    "case-7": "Gotion's Chinese plants ship cells, packs and graphite to its US sites, but no US record shows who owns them.",
+    "case-8": "A non-Chinese chain from Mozambique to Louisiana, but the same mine also supplies Chinese-owned plants."
+  },
+  "map": {
+    "places": {
+      "shenzhen": {
+        "name": "Shenzhen, China",
+        "lat": 22.54,
+        "lon": 114.06,
+        "kind": "origin",
+        "note": "BTR New Material Group headquarters"
+      },
+      "hunan": {
+        "name": "Hunan, China",
+        "lat": 28.23,
+        "lon": 112.94,
+        "kind": "origin",
+        "note": "Zhongke Electric / Zhongke Shinzoom anode plants"
+      },
+      "shanghai": {
+        "name": "Shanghai, China",
+        "lat": 31.23,
+        "lon": 121.47,
+        "kind": "origin",
+        "note": "Putailai headquarters"
+      },
+      "hefei": {
+        "name": "Hefei, China",
+        "lat": 31.82,
+        "lon": 117.23,
+        "kind": "origin",
+        "note": "Gotion High-Tech"
+      },
+      "huizhou": {
+        "name": "Huizhou, China",
+        "lat": 23.11,
+        "lon": 114.42,
+        "kind": "origin",
+        "note": "EVE Energy headquarters"
+      },
+      "qingdao": {
+        "name": "Qingdao, China",
+        "lat": 36.07,
+        "lon": 120.38,
+        "kind": "origin",
+        "note": "Graphite suppliers to POSCO Future M"
+      },
+      "balama": {
+        "name": "Balama, Mozambique",
+        "lat": -13.35,
+        "lon": 38.57,
+        "kind": "origin",
+        "note": "Syrah's graphite mine (Twigg)"
+      },
+      "indonesia": {
+        "name": "Morowali & Kendal, Indonesia",
+        "lat": -4.4,
+        "lon": 116.0,
+        "kind": "plant",
+        "case": "case-1"
+      },
+      "tangier": {
+        "name": "Tangier, Morocco",
+        "lat": 35.76,
+        "lon": -5.83,
+        "kind": "plant",
+        "case": "case-2"
+      },
+      "sohar": {
+        "name": "Sohar, Oman",
+        "lat": 24.35,
+        "lon": 56.73,
+        "kind": "plant",
+        "case": "case-3"
+      },
+      "pohang": {
+        "name": "Pohang & Sejong, South Korea",
+        "lat": 36.02,
+        "lon": 129.37,
+        "kind": "plant",
+        "case": "case-4"
+      },
+      "kedah_zichen": {
+        "name": "Kedah, Malaysia",
+        "lat": 7.6,
+        "lon": 98.6,
+        "kind": "plant",
+        "case": "case-5",
+        "note": "Putailai's Zichen plant (marker shifted so it doesn't overlap EVE)"
+      },
+      "kedah_eve": {
+        "name": "Kedah, Malaysia",
+        "lat": 3.6,
+        "lon": 102.6,
+        "kind": "plant",
+        "case": "case-6",
+        "note": "EVE Energy's cell plant (marker shifted)"
+      },
+      "gotion_us": {
+        "name": "Fremont, CA & Manteno, IL",
+        "lat": 41.25,
+        "lon": -87.83,
+        "kind": "plant",
+        "case": "case-7"
+      },
+      "vidalia": {
+        "name": "Vidalia, Louisiana",
+        "lat": 31.57,
+        "lon": -91.43,
+        "kind": "plant",
+        "case": "case-8"
+      },
+      "us_buyers": {
+        "name": "US battery and car makers",
+        "lat": 34.0,
+        "lon": -102.0,
+        "kind": "buyers",
+        "note": "Ultium Cells, SK Battery America, StarPlus Energy, GM, Tesla, Panasonic, Briggs & Stratton, Milwaukee Tool and others"
+      }
+    },
+    "flows": [
+      {
+        "case": "case-1",
+        "from": "shenzhen",
+        "to": "indonesia",
+        "type": "input",
+        "label": "Artificial graphite from BTR and a trader in the BTR Building"
+      },
+      {
+        "case": "case-1",
+        "from": "indonesia",
+        "to": "us_buyers",
+        "type": "output",
+        "label": "Artificial graphite to Ultium, SK, StarPlus, GM and Tesla (19 rows)"
+      },
+      {
+        "case": "case-2",
+        "from": "shenzhen",
+        "to": "tangier",
+        "type": "owner",
+        "label": "Owned 100% by BTR through Singapore"
+      },
+      {
+        "case": "case-3",
+        "from": "hunan",
+        "to": "sohar",
+        "type": "planned",
+        "label": "Planned plant, not in Sayari yet"
+      },
+      {
+        "case": "case-3",
+        "from": "hunan",
+        "to": "kedah_eve",
+        "type": "input",
+        "label": "Zhongke graphite to Malaysian cell plants today"
+      },
+      {
+        "case": "case-4",
+        "from": "qingdao",
+        "to": "pohang",
+        "type": "input",
+        "label": "Chinese natural and spherical graphite (to Dec 2023)"
+      },
+      {
+        "case": "case-4",
+        "from": "pohang",
+        "to": "us_buyers",
+        "type": "output",
+        "label": "Anode material to GM, SK, Tesla, Panasonic and XALT (95 rows)"
+      },
+      {
+        "case": "case-5",
+        "from": "shanghai",
+        "to": "kedah_zichen",
+        "type": "planned",
+        "label": "100% Putailai-owned; under construction"
+      },
+      {
+        "case": "case-6",
+        "from": "hunan",
+        "to": "kedah_eve",
+        "type": "input",
+        "label": "Anode graphite from Zhongke, BTR and Shanshan (59 rows)"
+      },
+      {
+        "case": "case-6",
+        "from": "huizhou",
+        "to": "kedah_eve",
+        "type": "owner",
+        "label": "Owned by EVE Energy through EVE Asia (Hong Kong)"
+      },
+      {
+        "case": "case-6",
+        "from": "kedah_eve",
+        "to": "us_buyers",
+        "type": "output",
+        "label": "Finished cells to US buyers (27 rows)"
+      },
+      {
+        "case": "case-7",
+        "from": "hefei",
+        "to": "gotion_us",
+        "type": "input",
+        "label": "Cells, packs and graphite from Gotion's Chinese plants"
+      },
+      {
+        "case": "case-8",
+        "from": "balama",
+        "to": "vidalia",
+        "type": "input",
+        "label": "Natural graphite to Vidalia (7 rows)"
+      },
+      {
+        "case": "case-8",
+        "from": "balama",
+        "to": "indonesia",
+        "type": "input",
+        "label": "The same mine also ships to BTR Indonesia"
+      },
+      {
+        "case": "case-2",
+        "from": "indonesia",
+        "to": "tangier",
+        "type": "input",
+        "label": "First graphite: 1,240 t from BTR Indonesia (Aug 2026)"
+      }
+    ]
+  },
+  "screening": {
+    "case-1": {
+      "plant": "PT Indonesia BTR New Energy Material",
+      "location": "Morowali & Kendal, Indonesia",
+      "status": "Operating",
+      "chinese_owned": "Yes",
+      "owner_top": "BTR New Material Group (China)",
+      "chain": [
+        {
+          "name": "BTR New Material Group Co., Ltd.",
+          "country": "CHN",
+          "stake": "Not in Sayari; one trade directory says 70%",
+          "basis": "Company press release + trade directory"
+        },
+        {
+          "name": "PT Indonesia BTR New Energy Material",
+          "country": "IDN",
+          "stake": "",
+          "basis": "The plant"
+        }
+      ],
+      "confidence": "corroborated",
+      "visibility": "Ownership not visible in Sayari's registry data; rests on BTR's own statements.",
+      "inputs": "Chinese artificial graphite (HS 3801) from BTR and a trader in the BTR Building; natural graphite from Mozambique, Madagascar and the UAE.",
+      "us_exposure": "Ultium Cells (Warren, Spring Hill), SK Battery America, StarPlus Energy, General Motors, Tesla",
+      "questions": [
+        "Ask the supplier for its shareholder register, filed with Indonesia's companies registry (AHU), and the identity of any minority shareholder.",
+        "Which graphite feedstock, and from which origin, went into the lots shipped to you? Ask for lot-level certificates."
+      ],
+      "call_ids": [
+        "s009",
+        "s019",
+        "s020",
+        "t012"
+      ],
+      "registry": "No",
+      "case_id": "case-1"
+    },
+    "case-2": {
+      "plant": "BTR Mediterranean New Material Technology",
+      "location": "Tangier Tech City, Morocco",
+      "status": "Under construction; first graphite received Aug 2026",
+      "chinese_owned": "Yes",
+      "owner_top": "BTR New Material Group (China)",
+      "chain": [
+        {
+          "name": "BTR New Material Group Co., Ltd.",
+          "country": "CHN",
+          "stake": "100%",
+          "basis": "China registry (SAIC)"
+        },
+        {
+          "name": "BTR (Jiangsu) New Material Technology",
+          "country": "CHN",
+          "stake": "100%",
+          "basis": "Singapore registry"
+        },
+        {
+          "name": "BNUO International Holding Pte. Ltd.",
+          "country": "SGP",
+          "stake": "100%",
+          "basis": "Moroccan company data"
+        },
+        {
+          "name": "BTR Mediterranean New Material Technology",
+          "country": "MAR",
+          "stake": "",
+          "basis": "The plant company"
+        }
+      ],
+      "confidence": "corroborated",
+      "visibility": "Visible in registry data at every step, 100% each time. One step joins two records of the Singapore holding company, and one matches BTR (Jiangsu)'s Singapore record to its Chinese record by name and address.",
+      "inputs": "Construction goods from China, then 1,240 t of artificial graphite from BTR's Indonesian plant (19 Aug 2026).",
+      "us_exposure": "None yet. Ford has been reported as an expected customer.",
+      "questions": [
+        "Which of BTR's two Moroccan companies will run the anode line, and who owns the second one's Singapore parent (Rian International Holding)?",
+        "Where will the Tangier plant source its graphite and coke, and will any be Chinese-origin?"
+      ],
+      "call_ids": [
+        "s203",
+        "s204",
+        "s205",
+        "s206",
+        "s207",
+        "s208",
+        "s209",
+        "t201"
+      ],
+      "registry": "Yes",
+      "case_id": "case-2"
+    },
+    "case-3": {
+      "plant": "Zhongke Xingcheng Sohar New Material Technology",
+      "location": "Sohar Freezone, Oman",
+      "status": "Under construction (ground broken 8 May 2026)",
+      "chinese_owned": "Yes",
+      "owner_top": "Hunan Zhongke Electric (China)",
+      "chain": [
+        {
+          "name": "Hunan Zhongke Electric Co., Ltd.",
+          "country": "CHN",
+          "stake": "100%",
+          "basis": "China registry"
+        },
+        {
+          "name": "Zhongke Xingcheng holding company",
+          "country": "CHN",
+          "stake": "99.998%",
+          "basis": "China registry"
+        },
+        {
+          "name": "Hunan Zhongke Star City Graphite",
+          "country": "CHN",
+          "stake": "100%",
+          "basis": "Company filing (June 2025)"
+        },
+        {
+          "name": "Zhongke Shinzoom (HK) Holdings",
+          "country": "HKG",
+          "stake": "Founder",
+          "basis": "Company filing and press"
+        },
+        {
+          "name": "Sohar project company",
+          "country": "OMN",
+          "stake": "",
+          "basis": "Not in Sayari yet"
+        }
+      ],
+      "confidence": "corroborated",
+      "visibility": "Registry visible inside China; the Hong Kong and Oman steps rest on the company's filing.",
+      "inputs": "None yet. Zhongke's Chinese plants already supply Malaysian cell makers.",
+      "us_exposure": "Indirect today, through cells made in Malaysia (see Case 6).",
+      "questions": [
+        "Once Sohar ships, does the shipper name the Oman project company or Zhongke Shinzoom (HK) Holdings?",
+        "Ask the supplier for its Omani commercial registration and shareholder certificate."
+      ],
+      "call_ids": [
+        "s301",
+        "s304",
+        "s307",
+        "s314",
+        "s315",
+        "s316",
+        "s324",
+        "t301",
+        "t302"
+      ],
+      "registry": "Partly",
+      "case_id": "case-3"
+    },
+    "case-4": {
+      "plant": "POSCO Future M",
+      "location": "Pohang & Sejong, South Korea",
+      "status": "Operating",
+      "chinese_owned": "No",
+      "owner_top": "POSCO Holdings (South Korea)",
+      "chain": [
+        {
+          "name": "POSCO Holdings Inc.",
+          "country": "KOR",
+          "stake": "58.2%",
+          "basis": "Korea DART disclosure"
+        },
+        {
+          "name": "POSCO Future M Co., Ltd.",
+          "country": "KOR",
+          "stake": "",
+          "basis": "The plant company"
+        }
+      ],
+      "confidence": "documented",
+      "visibility": "Visible in registry data; no Chinese owner among 50 ownership paths.",
+      "inputs": "Chinese natural and spherical graphite from Qingdao suppliers (to Dec 2023 in the data; the company says it still uses some).",
+      "us_exposure": "General Motors, SK Battery America, Tesla, Panasonic Energy, XALT; Ultium Cells by contract",
+      "questions": [
+        "What share of the anode material you receive is made from Chinese-origin graphite, and who owns those graphite suppliers?",
+        "Which plant made your lots: Sejong (natural graphite) or Pohang (artificial graphite)?"
+      ],
+      "call_ids": [
+        "s402",
+        "s403",
+        "s420"
+      ],
+      "registry": "Yes",
+      "case_id": "case-4"
+    },
+    "case-5": {
+      "plant": "Zichen Malaysia Sdn. Bhd.",
+      "location": "Kedah, Malaysia",
+      "status": "Under construction (ground broken 1 June 2026)",
+      "chinese_owned": "Yes",
+      "owner_top": "Shanghai Putailai New Energy Technology (China)",
+      "chain": [
+        {
+          "name": "Shanghai Putailai New Energy Technology",
+          "country": "CHN",
+          "stake": "Not shown",
+          "basis": "Sayari ownership path + press"
+        },
+        {
+          "name": "Putailai (Singapore) Pte. Ltd.",
+          "country": "SGP",
+          "stake": "100%",
+          "basis": "Malaysian shareholder data"
+        },
+        {
+          "name": "Zichen Malaysia Sdn. Bhd.",
+          "country": "MYS",
+          "stake": "",
+          "basis": "The plant company"
+        }
+      ],
+      "confidence": "corroborated",
+      "visibility": "Visible in registry data; Shanghai-based directors Han Zhongwei and Liu Fang.",
+      "inputs": "None yet.",
+      "us_exposure": "None yet.",
+      "questions": [
+        "When Zichen Malaysia starts shipping, who are its buyers, and are any of them cell makers supplying the US?",
+        "Will the plant's graphite precursors (needle coke, petroleum coke) come from China?"
+      ],
+      "call_ids": [
+        "s526",
+        "s527",
+        "t501",
+        "t502"
+      ],
+      "registry": "Yes",
+      "case_id": "case-5"
+    },
+    "case-6": {
+      "plant": "EVE Energy Malaysia Sdn Bhd",
+      "location": "Kedah, Malaysia",
+      "status": "Operating",
+      "chinese_owned": "Yes",
+      "owner_top": "EVE Energy Co., Ltd. (Huizhou, China)",
+      "chain": [
+        {
+          "name": "EVE Energy Co., Ltd.",
+          "country": "CHN",
+          "stake": "100%",
+          "basis": "Hong Kong registry"
+        },
+        {
+          "name": "EVE Asia Co., Limited",
+          "country": "HKG",
+          "stake": "Shareholder (% not shown)",
+          "basis": "Malaysian company data"
+        },
+        {
+          "name": "EVE Energy Malaysia Sdn Bhd",
+          "country": "MYS",
+          "stake": "",
+          "basis": "The plant company"
+        }
+      ],
+      "confidence": "corroborated",
+      "visibility": "Visible in registry data; the same directors (Liu Jincheng, Chan Tsun Ming) sit on both the Hong Kong and Malaysian boards.",
+      "inputs": "Anode graphite from Zhongke Shinzoom, BTR, Shanshan and Qingdao Taidongrui; 91% of all inbound rows left from China.",
+      "us_exposure": "EVE Energy North America, Briggs & Stratton, TTI, Milwaukee Tool, Stanley Black & Decker, Energizer and others",
+      "questions": [
+        "Ask the cell supplier for its shareholder register and the ultimate parent's position on the US Section 1260H list.",
+        "Does the cell maker certify the origin and supplier of the anode material in your cells?"
+      ],
+      "call_ids": [
+        "s603",
+        "s604",
+        "s606",
+        "s614",
+        "s616",
+        "t602"
+      ],
+      "registry": "Yes",
+      "case_id": "case-6"
+    },
+    "case-7": {
+      "plant": "Gotion, Inc. (Fremont, CA) and Gotion Illinois (Manteno, IL)",
+      "location": "United States",
+      "status": "Manteno operating (packs and storage systems)",
+      "chinese_owned": "Yes",
+      "owner_top": "Gotion High-Tech (Hefei, China)",
+      "chain": [
+        {
+          "name": "Gotion High-Tech Co., Ltd.",
+          "country": "CHN",
+          "stake": "Volkswagen (China) is a shareholder; % not shown",
+          "basis": "China registry"
+        },
+        {
+          "name": "Hefei Gotion High-Tech Power Energy",
+          "country": "CHN",
+          "stake": "99.8%",
+          "basis": "China registry"
+        },
+        {
+          "name": "Gotion High-Tech (USA)",
+          "country": "USA",
+          "stake": "Parent",
+          "basis": "China outbound-investment filing (MOFCOM)"
+        },
+        {
+          "name": "Gotion, Inc. (Fremont)",
+          "country": "USA",
+          "stake": "",
+          "basis": "Name, shared director and press"
+        },
+        {
+          "name": "Gotion Illinois New Energy (Manteno)",
+          "country": "USA",
+          "stake": "",
+          "basis": "Inferred from customs consignee"
+        }
+      ],
+      "confidence": "corroborated",
+      "visibility": "Visible from the Chinese side only; no US record lists shareholders.",
+      "inputs": "Lithium-ion cells and packs from Gotion's Hefei and Tongcheng plants; 2 rows of artificial graphite (Dec 2025).",
+      "us_exposure": "Gotion's own US entities; storage customers such as Richardson Electronics (announced partner)",
+      "questions": [
+        "For US-assembled packs or storage systems, which cells are inside, and who made them?",
+        "Ask for the US entities' ownership certification under the prohibited-foreign-entity rules."
+      ],
+      "call_ids": [
+        "s716",
+        "s718",
+        "s719",
+        "s720",
+        "s722",
+        "s725",
+        "s728",
+        "t701",
+        "t702"
+      ],
+      "registry": "Partly",
+      "case_id": "case-7"
+    },
+    "case-8": {
+      "plant": "Syrah Technologies LLC (Vidalia)",
+      "location": "Vidalia, Louisiana",
+      "status": "Operating (qualification volumes)",
+      "chinese_owned": "No",
+      "owner_top": "Syrah Resources (Australia)",
+      "chain": [
+        {
+          "name": "Syrah Resources Limited",
+          "country": "AUS",
+          "stake": "100%",
+          "basis": "Annual report + Australian registry"
+        },
+        {
+          "name": "Syrah US Holdings Pty Ltd",
+          "country": "AUS",
+          "stake": "Member",
+          "basis": "US LLC record"
+        },
+        {
+          "name": "Syrah Technologies LLC",
+          "country": "USA",
+          "stake": "",
+          "basis": "The plant company"
+        }
+      ],
+      "confidence": "corroborated",
+      "visibility": "Partly visible in registry data; the percentages come from Syrah's own annual report.",
+      "inputs": "Natural graphite from Syrah's Balama mine (Mozambique, 95% owned); some processing equipment and one small graphite lot from China.",
+      "us_exposure": "Tesla offtake agreement (under qualification)",
+      "questions": [
+        "Confirm that the graphite in your lots came from Balama and not from third-party flake bought by Syrah Global.",
+        "The same mine sells to Chinese-owned plants. Make sure your contract covers chain-of-custody from mine to anode."
+      ],
+      "call_ids": [
+        "s803",
+        "s813",
+        "s814",
+        "s819",
+        "s823",
+        "t803"
+      ],
+      "registry": "Partly",
+      "case_id": "case-8"
+    }
+  },
+  "question_templates": {
+    "Chinese parent ownership of the transit plant": {
+      "detected": "Get the full shareholder chain to the ultimate owner, with percentages, and check each owner against the US prohibited-foreign-entity definitions.",
+      "suggested": "Ownership rests on indirect evidence. Ask the supplier for a registry extract that names its shareholders.",
+      "not_visible": "Ownership couldn't be confirmed. Ask for a registry extract and an ownership certification before relying on the supplier.",
+      "absent": "No Chinese owner found. Keep a dated record of the ownership check and repeat it each year."
+    },
+    "Same HS imported from China and exported to the US": {
+      "detected": "The plant imports Chinese graphite and exports graphite to the US. Ask for lot-level origin certificates for the material you buy.",
+      "suggested": "Inputs may include Chinese graphite. Ask what share of feedstock is Chinese-origin.",
+      "not_visible": "Input origin couldn't be tested. Ask the supplier to list its graphite feedstock sources.",
+      "absent": "No Chinese graphite inputs found in the data. Confirm with the supplier that this is still true."
+    },
+    "Recent incorporation vs. first export date": {
+      "detected": "The company was set up shortly before exporting. Ask about its operating history and its real production capacity.",
+      "suggested": "Check the incorporation date against first shipments.",
+      "not_visible": "No incorporation date was available. Request the certificate of incorporation.",
+      "absent": "Long operating history; no concern on this point."
+    },
+    "Volume spike after a policy date": {
+      "detected": "Volumes changed after a policy date. Ask why, and whether the routing or product changed.",
+      "suggested": "Watch volumes around policy dates.",
+      "not_visible": "Not tested. Compare monthly volumes before and after July 2025 and March 2026.",
+      "absent": "No spike seen in the data."
+    },
+    "Shared address or officer with a flagged entity": {
+      "detected": "The supplier shares an address or officer with a flagged company. Ask who the shared party is and what the relationship is.",
+      "suggested": "A possible shared officer or address. Confirm the relationship.",
+      "not_visible": "Not tested.",
+      "absent": "No shared address or officer with a flagged company found."
+    },
+    "Entity-resolution fragmentation": {
+      "detected": "The supplier appears under several names. Agree with it the exact legal entity, registration number and address that should appear on your documents.",
+      "suggested": "Possible duplicate records. Confirm the legal entity.",
+      "not_visible": "Not tested.",
+      "absent": "Single clean record."
+    },
+    "Forced-labor / UFLPA sub-tier flags": {
+      "detected": "Sub-tier forced-labor flags appear. Request a supply-chain map to the mine or precursor level and check it against the UFLPA Entity List.",
+      "suggested": "Possible sub-tier forced-labor exposure. Ask for a sub-tier supplier list.",
+      "not_visible": "Not tested.",
+      "absent": "No forced-labor flags found."
+    }
+  },
+  "watch": [
+    {
+      "case": "case-2",
+      "plant": "BTR Mediterranean (Tangier, Morocco)",
+      "status": "First graphite received (Aug 2026); no exports yet",
+      "last_checked": "2026-10-18",
+      "next_check": "2026-11-15",
+      "watch_for": [
+        "First exports from Tangier, especially to US or Mexican battery plants",
+        "More graphite from BTR Indonesia or China",
+        "Which of the two Moroccan BTR companies is named as shipper"
+      ],
+      "how": "Search shipments for the quoted names \"BTR MEDITERRANEAN\" with departure Morocco; check the plant's Sayari profile for new ships_to links."
+    },
+    {
+      "case": "case-3",
+      "plant": "Zhongke Xingcheng Sohar (Oman)",
+      "status": "Under construction",
+      "last_checked": "2026-10-18",
+      "next_check": "2026-11-15",
+      "watch_for": [
+        "A Sayari record for the Oman project company",
+        "Chinese inputs arriving at Sohar",
+        "Any shipper named Zhongke Shinzoom (HK) or the Sohar company"
+      ],
+      "how": "Search entities for \"Zhongke\" with country Oman; search shipments with arrival Oman and HS 3801/2713."
+    },
+    {
+      "case": "case-5",
+      "plant": "Zichen Malaysia (Kedah, Malaysia)",
+      "status": "Under construction",
+      "last_checked": "2026-10-18",
+      "next_check": "2026-12-01",
+      "watch_for": [
+        "First imports of needle coke or graphite precursors",
+        "First exports and their buyers",
+        "Changes to directors or shareholders"
+      ],
+      "how": "Check the Zichen Malaysia profile (WG1hrSwGRdoLMIt997Z5-w) for new trade; search shipments for \"ZICHEN MALAYSIA\"."
+    }
+  ],
+  "buyer_groups": [
+    {
+      "key": "gm",
+      "name": "General Motors",
+      "category": "battery",
+      "ids": [
+        "4fqrWAcyrgtWw2RdV6qZsg",
+        "WLUn_1F-Zz5cShfohEF7BA"
+      ]
+    },
+    {
+      "key": "ultium",
+      "name": "Ultium Cells (GM–LG Energy Solution)",
+      "category": "battery",
+      "ids": [
+        "rvgklT24qqqfH2rnlVlyBg",
+        "kCTEQjRAGcFo6AM_PGW2bw"
+      ]
+    },
+    {
+      "key": "tesla",
+      "name": "Tesla",
+      "category": "battery",
+      "ids": [
+        "xWhz7CFJV3lxsgg8fHMGHA"
+      ]
+    },
+    {
+      "key": "sk",
+      "name": "SK Battery America",
+      "category": "battery",
+      "ids": [
+        "aoeSqNICt_VUP-o-F-84Yg"
+      ]
+    },
+    {
+      "key": "starplus",
+      "name": "StarPlus Energy (Stellantis–Samsung SDI)",
+      "category": "battery",
+      "ids": [
+        "1iZm5WHKh2xwHvW9-qFunQ"
+      ]
+    },
+    {
+      "key": "panasonic",
+      "name": "Panasonic Energy",
+      "category": "battery",
+      "ids": [
+        "wxnxnhKanOt7EorBjIZsxQ",
+        "BZPBOZcD6M_QtBtOWWtYUg"
+      ]
+    },
+    {
+      "key": "xalt",
+      "name": "XALT Energy",
+      "category": "battery",
+      "ids": [
+        "qAjZISyxppsZ-LjTrCmJTw",
+        "1nxhfvO5sMgXkfCrTho9Vw"
+      ]
+    },
+    {
+      "key": "eve_na",
+      "name": "EVE Energy North America",
+      "category": "battery",
+      "ids": [
+        "gRBpjYP97b53gA7TkExdpQ"
+      ]
+    },
+    {
+      "key": "milwaukee",
+      "name": "Milwaukee Tool",
+      "category": "products",
+      "ids": [
+        "Wnywbj_-4pXcDUV6p0aSzQ",
+        "XZmnm7ViWgrVw_gAfFPVgQ",
+        "7v82EsEljCQ4PkCcnyMTBA"
+      ]
+    },
+    {
+      "key": "tti",
+      "name": "Techtronic Industries (TTI)",
+      "category": "products",
+      "ids": [
+        "z7L-XcWZt2KVLzSUBkP7BQ",
+        "DoTF8asU1jM35geCp8Dg6Q"
+      ]
+    },
+    {
+      "key": "briggs",
+      "name": "Briggs & Stratton",
+      "category": "products",
+      "ids": [
+        "33X8P9vU58v1EcigvWeD-Q",
+        "TrQHururSYl_Fqbbewp1cA"
+      ]
+    },
+    {
+      "key": "stanley",
+      "name": "Stanley Black & Decker",
+      "category": "products",
+      "ids": [
+        "2Rvh_WaZCmF-SvM2tzBHUQ",
+        "5ETwnZflxje1vTTjeNyT6w"
+      ]
+    },
+    {
+      "key": "eaton",
+      "name": "Eaton",
+      "category": "products",
+      "ids": [
+        "BuQm2NSnUlkUMb83_BJxog",
+        "VsOcgTRnMskYDFTjvGl9Lg"
+      ]
+    },
+    {
+      "key": "energizer",
+      "name": "Energizer",
+      "category": "products",
+      "ids": [
+        "1kOQxrwnyAG2-nF4M_CVSA"
+      ]
+    },
+    {
+      "key": "protech",
+      "name": "ProTechnologies",
+      "category": "products",
+      "ids": [
+        "IYgYRg8qmwkPgPYFBaWAcQ"
+      ]
+    },
+    {
+      "key": "abm",
+      "name": "ABM Tucker GA",
+      "category": "products",
+      "ids": [
+        "eyRTfPmql9CpETmfR2Igvw"
+      ]
+    },
+    {
+      "key": "moxion",
+      "name": "Moxion Power",
+      "category": "products",
+      "ids": [
+        "1uN_EFYSidIznJZMZxptlw"
+      ]
+    },
+    {
+      "key": "gotion_us",
+      "name": "Gotion (US entities)",
+      "category": "chinese_owned_us",
+      "ids": [
+        "L1HhW3HMqcvXRKoHOQdS2g",
+        "eRITWZG5dyfFu5tqu8tv-g",
+        "a2CIEyP-znrNrpln9qssYA",
+        "c3D62Of8RTLeBCM9wnuCvw",
+        "TeFCWTgdDF-tAyfunxgqXw"
+      ]
+    },
+    {
+      "key": "syrah_us",
+      "name": "Syrah Technologies (Vidalia)",
+      "category": "battery",
+      "ids": [
+        "NvC-a4BgmoxO63ubVyUiUQ",
+        "azVXA4lXaKfU8wYdoluS_g"
+      ]
+    },
+    {
+      "key": "chemico",
+      "name": "Chemico LLC",
+      "category": "industrial",
+      "ids": [
+        "XtUNxc54aQijxNuFzwkjxg"
+      ]
+    },
+    {
+      "key": "graftech",
+      "name": "GrafTech",
+      "category": "industrial",
+      "ids": [
+        "kv_CDofj0IDnI7OZ56ogow",
+        "ZhR1A0VWHf7oRyGfZOxKtg"
+      ]
+    },
+    {
+      "key": "sgl",
+      "name": "SGL Carbon",
+      "category": "industrial",
+      "ids": [
+        "XL7kqgRa7AB0VXF9aN4TvQ"
+      ]
+    },
+    {
+      "key": "aminco",
+      "name": "Aminco Resources",
+      "category": "industrial",
+      "ids": [
+        "oJvmXc2fb6aBRkCDyxOLig"
+      ]
+    },
+    {
+      "key": "larpen",
+      "name": "Larpen Metallurgical Service",
+      "category": "industrial",
+      "ids": [
+        "BoJ05H9uciX3VySWmVmq8g"
+      ]
+    },
+    {
+      "key": "ltd",
+      "name": "LTD Material",
+      "category": "industrial",
+      "ids": [
+        "eX51gPEUQ-MpkznB5_ICaQ"
+      ]
+    },
+    {
+      "key": "forwarders",
+      "name": "Freight forwarders (not the real buyer)",
+      "category": "forwarder",
+      "ids": [
+        "mFuYdHo30dU4r8kU_11y7w",
+        "WADCr_igZO7cgkrG2KW0zQ",
+        "FWd2q_iBgH2ER9aw1Gph_g",
+        "Wfde8TXwHX3DkOQwj2XmTA",
+        "bEMD87uBc5enuWc_w0BT3w",
+        "5qJ3A4FHw2rTjNrnGOrHQQ"
+      ]
+    }
+  ]
+}

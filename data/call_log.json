@@ -3646,7 +3646,7 @@
       },
       "question": "What Gotion-related shipments arrive in the US?",
       "purpose": "Inbound trade shape",
-      "result_summary": "1,398 rows, Aug 2021 to 20 Sep 2026. Departures: China 1,109, Korea 94, Hong Kong 14, Mexico 11, Jamaica 10. Top HS: 850760 lithium-ion batteries (136), 847989 machinery (90), 847910 (42). Top buyer Gotion Inc. (975 rows), then 1st Choice Freight (186) and Gotion Illinois (47). No graphite HS code in the top 15.",
+      "result_summary": "1,398 rows, Aug 2021 to 20 Sep 2026. Departures: China 1,109, Korea 94, Hong Kong 14, Mexico 11, Jamaica 10 (ZIM transshipments of Chinese cargo, not a Jamaican origin). Top HS: 850760 lithium-ion batteries (136), 847989 machinery (90), 847910 (42). Top buyer Gotion Inc. (975 rows), then 1st Choice Freight (186) and Gotion Illinois (47). No graphite HS code in the top 15.",
       "interpretation": "The US arm imports cells, packs and factory machinery. Graphite is not a main inbound line.",
       "scorecard": "worked",
       "entity_ids": [
@@ -3840,7 +3840,7 @@
       },
       "question": "Who ships batteries (HS 8507) to the US Gotion entities, and when?",
       "purpose": "Battery inputs",
-      "result_summary": "145 rows; 40 read, all 2026. Tongcheng Guoxuan New Energy to Gotion Inc.: 15 rows, 14–21 Jul 2026. Hefei Gotion records to Gotion Inc.: Li-ion cells and modules, Jul–Sep 2026, some via Jamaica. Hefei Guoxuan Hi-Tech Power Energy to Gotion Inc. (3 and 10 Aug 2026) and to 1st Choice Freight Service (3 rows, 23 Aug 2026, via Jamaica).",
+      "result_summary": "145 rows; 40 read, all 2026. Tongcheng Guoxuan New Energy to Gotion Inc.: 15 rows, 14–21 Jul 2026. Hefei Gotion records to Gotion Inc.: Li-ion cells and modules, Jul–Sep 2026, some transshipped at Kingston, Jamaica. Hefei Guoxuan Hi-Tech Power Energy to Gotion Inc. (3 and 10 Aug 2026) and to 1st Choice Freight Service (3 rows, 23 Aug 2026, transshipped at Kingston, Jamaica).",
       "interpretation": "Chinese-made cells flow steadily into the US Gotion company from group plants in Hefei and Tongcheng.",
       "scorecard": "worked",
       "entity_ids": [
@@ -5159,6 +5159,890 @@
       ],
       "step": "out",
       "case_id": "case-8"
+    },
+    {
+      "id": "v001",
+      "timestamp": "2026-10-18T15:00:30Z",
+      "server": "sayari",
+      "tool": "search_shipments",
+      "params": {
+        "summary": "query \"PT Indonesia BTR New Energy Material\", hs 3801, arrival USA, 2024-01-01–2025-12-31, limit 50, compact"
+      },
+      "question": "Verification pass: re-check a published claim",
+      "purpose": "Verification pass (18 Oct 2026)",
+      "result_summary": "55 rows. Record 2 (dH3r…) sent 26 rows to Ultium Warren (Jul–Nov 2025, via SGP) and 5 to GM (Apr 2025) + 1 (Sep 2026). Record ekoH… rows to SKBA, Ultium W/SH, StarPlus, Aminco, Larpen",
+      "interpretation": "See investigation/notes/verification.md for the claim this call checked and the correction it led to.",
+      "scorecard": "worked",
+      "entity_ids": [],
+      "step": "verify",
+      "case_id": "general"
+    },
+    {
+      "id": "v002",
+      "timestamp": "2026-10-18T15:01:00Z",
+      "server": "sayari",
+      "tool": "find_beneficial_owners",
+      "params": {
+        "summary": "entity 2omCekb1…"
+      },
+      "question": "Verification pass: re-check a published claim",
+      "purpose": "Verification pass (18 Oct 2026)",
+      "result_summary": "error (\"unexpected error\")",
+      "interpretation": "See investigation/notes/verification.md for the claim this call checked and the correction it led to.",
+      "scorecard": "failed",
+      "entity_ids": [],
+      "step": "verify",
+      "case_id": "general"
+    },
+    {
+      "id": "v003",
+      "timestamp": "2026-10-18T15:01:30Z",
+      "server": "sayari",
+      "tool": "search_shipments",
+      "params": {
+        "summary": "page 2 with limit"
+      },
+      "question": "Verification pass: re-check a published claim",
+      "purpose": "Verification pass (18 Oct 2026)",
+      "result_summary": "refused: limit not allowed with page_token",
+      "interpretation": "See investigation/notes/verification.md for the claim this call checked and the correction it led to.",
+      "scorecard": "failed",
+      "entity_ids": [],
+      "step": "verify",
+      "case_id": "general"
+    },
+    {
+      "id": "v004",
+      "timestamp": "2026-10-18T15:02:00Z",
+      "server": "sayari",
+      "tool": "find_beneficial_owners",
+      "params": {
+        "summary": "entity 2omCekb1…, max_depth 4, limit 15"
+      },
+      "question": "Verification pass: re-check a published claim",
+      "purpose": "Verification pass (18 Oct 2026)",
+      "result_summary": "error",
+      "interpretation": "See investigation/notes/verification.md for the claim this call checked and the correction it led to.",
+      "scorecard": "failed",
+      "entity_ids": [],
+      "step": "verify",
+      "case_id": "general"
+    },
+    {
+      "id": "v005",
+      "timestamp": "2026-10-18T15:02:30Z",
+      "server": "sayari",
+      "tool": "search_shipments",
+      "params": {
+        "summary": "page 2 with response_mode"
+      },
+      "question": "Verification pass: re-check a published claim",
+      "purpose": "Verification pass (18 Oct 2026)",
+      "result_summary": "refused: response_mode not allowed with page_token",
+      "interpretation": "See investigation/notes/verification.md for the claim this call checked and the correction it led to.",
+      "scorecard": "failed",
+      "entity_ids": [],
+      "step": "verify",
+      "case_id": "general"
+    },
+    {
+      "id": "v006",
+      "timestamp": "2026-10-18T15:03:00Z",
+      "server": "sayari",
+      "tool": "traverse_network",
+      "params": {
+        "summary": "entity 2omCekb1…, ownership relationships, depth 2"
+      },
+      "question": "Verification pass: re-check a published claim",
+      "purpose": "Verification pass (18 Oct 2026)",
+      "result_summary": "error",
+      "interpretation": "See investigation/notes/verification.md for the claim this call checked and the correction it led to.",
+      "scorecard": "failed",
+      "entity_ids": [],
+      "step": "verify",
+      "case_id": "general"
+    },
+    {
+      "id": "v007",
+      "timestamp": "2026-10-18T15:03:30Z",
+      "server": "sayari",
+      "tool": "search_shipments",
+      "params": {
+        "summary": "page 2 of v001"
+      },
+      "question": "Verification pass: re-check a published claim",
+      "purpose": "Verification pass (18 Oct 2026)",
+      "result_summary": "5 more rows: 1 StarPlus (Mar 2025) and 4 undated 3801.90 rows from record 2",
+      "interpretation": "See investigation/notes/verification.md for the claim this call checked and the correction it led to.",
+      "scorecard": "worked",
+      "entity_ids": [],
+      "step": "verify",
+      "case_id": "general"
+    },
+    {
+      "id": "v008",
+      "timestamp": "2026-10-18T15:04:00Z",
+      "server": "sayari",
+      "tool": "get_entity_profile",
+      "params": {
+        "summary": "entity 2omCekb1…"
+      },
+      "question": "Verification pass: re-check a published claim",
+      "purpose": "Verification pass (18 Oct 2026)",
+      "result_summary": "error",
+      "interpretation": "See investigation/notes/verification.md for the claim this call checked and the correction it led to.",
+      "scorecard": "failed",
+      "entity_ids": [],
+      "step": "verify",
+      "case_id": "general"
+    },
+    {
+      "id": "v009",
+      "timestamp": "2026-10-18T15:04:30Z",
+      "server": "sayari",
+      "tool": "search_shipments",
+      "params": {
+        "summary": "query \"\\\"INDONESIA BTR\\\" Tesla\", arrival USA"
+      },
+      "question": "Verification pass: re-check a published claim",
+      "purpose": "Verification pass (18 Oct 2026)",
+      "result_summary": "0",
+      "interpretation": "See investigation/notes/verification.md for the claim this call checked and the correction it led to.",
+      "scorecard": "worked",
+      "entity_ids": [],
+      "step": "verify",
+      "case_id": "general"
+    },
+    {
+      "id": "v010",
+      "timestamp": "2026-10-18T15:05:00Z",
+      "server": "sayari",
+      "tool": "find_beneficial_owners",
+      "params": {
+        "summary": "entity 2omCekb1…, compact"
+      },
+      "question": "Verification pass: re-check a published claim",
+      "purpose": "Verification pass (18 Oct 2026)",
+      "result_summary": "error",
+      "interpretation": "See investigation/notes/verification.md for the claim this call checked and the correction it led to.",
+      "scorecard": "failed",
+      "entity_ids": [],
+      "step": "verify",
+      "case_id": "general"
+    },
+    {
+      "id": "v011",
+      "timestamp": "2026-10-18T15:05:30Z",
+      "server": "sayari",
+      "tool": "search_shipments",
+      "params": {
+        "summary": "query \"\\\"INDONESIA BTR\\\"\", IDN→USA, limit 50, compact"
+      },
+      "question": "Verification pass: re-check a published claim",
+      "purpose": "Verification pass (18 Oct 2026)",
+      "result_summary": "24 rows: Larpen 7, StarPlus 5 (2 cosmetics HS), Ultium W 3, Aminco 3, Ultium SH 2, GM 1+1, SKBA 1, Tesla 1",
+      "interpretation": "See investigation/notes/verification.md for the claim this call checked and the correction it led to.",
+      "scorecard": "worked",
+      "entity_ids": [],
+      "step": "verify",
+      "case_id": "general"
+    },
+    {
+      "id": "v012",
+      "timestamp": "2026-10-18T15:06:00Z",
+      "server": "sayari",
+      "tool": "get_entity_summary",
+      "params": {
+        "summary": "entity 2omCekb1…"
+      },
+      "question": "Verification pass: re-check a published claim",
+      "purpose": "Verification pass (18 Oct 2026)",
+      "result_summary": "error",
+      "interpretation": "See investigation/notes/verification.md for the claim this call checked and the correction it led to.",
+      "scorecard": "failed",
+      "entity_ids": [],
+      "step": "verify",
+      "case_id": "general"
+    },
+    {
+      "id": "v013",
+      "timestamp": "2026-10-18T15:06:30Z",
+      "server": "sayari",
+      "tool": "find_beneficial_owners",
+      "params": {
+        "summary": "entity El_6QFk0rVRdYJanrqEtAA"
+      },
+      "question": "Verification pass: re-check a published claim",
+      "purpose": "Verification pass (18 Oct 2026)",
+      "result_summary": "BNUO (SGP), then BTR (Jiangsu) Singapore record via a \"possibly same as\" hop",
+      "interpretation": "See investigation/notes/verification.md for the claim this call checked and the correction it led to.",
+      "scorecard": "worked",
+      "entity_ids": [],
+      "step": "verify",
+      "case_id": "general"
+    },
+    {
+      "id": "v014",
+      "timestamp": "2026-10-18T15:07:00Z",
+      "server": "sayari",
+      "tool": "search_shipments",
+      "params": {
+        "summary": "query \"\\\"BTR Mediterranean\\\"\", limit 25, compact"
+      },
+      "question": "Verification pass: re-check a published claim",
+      "purpose": "Verification pass (18 Oct 2026)",
+      "result_summary": "17 rows: construction goods 2025–26, plus 3 HS 380110 rows BTR Indonesia → BTR Mediterranean Anode, 19 Aug 2026",
+      "interpretation": "See investigation/notes/verification.md for the claim this call checked and the correction it led to.",
+      "scorecard": "worked",
+      "entity_ids": [],
+      "step": "verify",
+      "case_id": "general"
+    },
+    {
+      "id": "v015",
+      "timestamp": "2026-10-18T15:07:30Z",
+      "server": "sayari",
+      "tool": "search_shipments",
+      "params": {
+        "summary": "query \"BTR MEDITERRANEAN ANODE NEW MATERIAL TECHNOLOGY\", departure IDN, full"
+      },
+      "question": "Verification pass: re-check a published claim",
+      "purpose": "Verification pass (18 Oct 2026)",
+      "result_summary": "3 rows, 40 t + 1,160 t + 40 t, about US$857k total, Morowali → Tangier, Indonesian export data",
+      "interpretation": "See investigation/notes/verification.md for the claim this call checked and the correction it led to.",
+      "scorecard": "worked",
+      "entity_ids": [],
+      "step": "verify",
+      "case_id": "general"
+    },
+    {
+      "id": "v016",
+      "timestamp": "2026-10-18T15:08:00Z",
+      "server": "sayari",
+      "tool": "find_beneficial_owners",
+      "params": {
+        "summary": "entity NKDYreiU9nvqyC4RRZQDfA, limit 10, full"
+      },
+      "question": "Verification pass: re-check a published claim",
+      "purpose": "Verification pass (18 Oct 2026)",
+      "result_summary": "BTR (Jiangsu) → (possibly same as) Chinese record → BTR New Material Group → individual shareholders; no % in output",
+      "interpretation": "See investigation/notes/verification.md for the claim this call checked and the correction it led to.",
+      "scorecard": "worked",
+      "entity_ids": [],
+      "step": "verify",
+      "case_id": "general"
+    },
+    {
+      "id": "v017",
+      "timestamp": "2026-10-18T15:08:30Z",
+      "server": "sayari",
+      "tool": "get_entity_profile",
+      "params": {
+        "summary": "entity El_6QFk0rVRdYJanrqEtAA, limit 20"
+      },
+      "question": "Verification pass: re-check a published claim",
+      "purpose": "Verification pass (18 Oct 2026)",
+      "result_summary": "Shareholder and beneficial owner BNUO 100%; trade 0 sent / 0 received; registered 9 Oct 2023",
+      "interpretation": "See investigation/notes/verification.md for the claim this call checked and the correction it led to.",
+      "scorecard": "worked",
+      "entity_ids": [],
+      "step": "verify",
+      "case_id": "general"
+    },
+    {
+      "id": "v018",
+      "timestamp": "2026-10-18T15:09:00Z",
+      "server": "sayari",
+      "tool": "search_entities",
+      "params": {
+        "summary": "query \"Zhongke Sohar\""
+      },
+      "question": "Verification pass: re-check a published claim",
+      "purpose": "Verification pass (18 Oct 2026)",
+      "result_summary": "0",
+      "interpretation": "See investigation/notes/verification.md for the claim this call checked and the correction it led to.",
+      "scorecard": "worked",
+      "entity_ids": [],
+      "step": "verify",
+      "case_id": "general"
+    },
+    {
+      "id": "v019",
+      "timestamp": "2026-10-18T15:09:30Z",
+      "server": "sayari",
+      "tool": "search_shipments",
+      "params": {
+        "summary": "query \"\\\"ZHONGKE SHINZOOM\\\"\", arrival MYS, limit 40"
+      },
+      "question": "Verification pass: re-check a published claim",
+      "purpose": "Verification pass (18 Oct 2026)",
+      "result_summary": "32 rows: EVE Energy Malaysia 18 (Apr 2025–Apr 2026), Linergy 14 (Sep 2025–Feb 2026)",
+      "interpretation": "See investigation/notes/verification.md for the claim this call checked and the correction it led to.",
+      "scorecard": "worked",
+      "entity_ids": [],
+      "step": "verify",
+      "case_id": "general"
+    },
+    {
+      "id": "v020",
+      "timestamp": "2026-10-18T15:10:00Z",
+      "server": "sayari",
+      "tool": "search_entities",
+      "params": {
+        "summary": "query \"中科星城 苏哈尔\""
+      },
+      "question": "Verification pass: re-check a published claim",
+      "purpose": "Verification pass (18 Oct 2026)",
+      "result_summary": "1 unrelated hit (PowerChina Anhui branch)",
+      "interpretation": "See investigation/notes/verification.md for the claim this call checked and the correction it led to.",
+      "scorecard": "worked",
+      "entity_ids": [],
+      "step": "verify",
+      "case_id": "general"
+    },
+    {
+      "id": "v021",
+      "timestamp": "2026-10-18T15:10:30Z",
+      "server": "sayari",
+      "tool": "search_shipments",
+      "params": {
+        "summary": "query \"Zhongke\", arrival OMN, from 2025-06-01"
+      },
+      "question": "Verification pass: re-check a published claim",
+      "purpose": "Verification pass (18 Oct 2026)",
+      "result_summary": "0",
+      "interpretation": "See investigation/notes/verification.md for the claim this call checked and the correction it led to.",
+      "scorecard": "worked",
+      "entity_ids": [],
+      "step": "verify",
+      "case_id": "general"
+    },
+    {
+      "id": "v022",
+      "timestamp": "2026-10-18T15:11:00Z",
+      "server": "sayari",
+      "tool": "find_beneficial_owners",
+      "params": {
+        "summary": "entity Fj3vtxDroFyjyPsLgsnm2A, depth 1, limit 10"
+      },
+      "question": "Verification pass: re-check a published claim",
+      "purpose": "Verification pass (18 Oct 2026)",
+      "result_summary": "10 Korean shareholders (individuals and POSCO steel); no Chinese owner",
+      "interpretation": "See investigation/notes/verification.md for the claim this call checked and the correction it led to.",
+      "scorecard": "worked",
+      "entity_ids": [],
+      "step": "verify",
+      "case_id": "general"
+    },
+    {
+      "id": "v023",
+      "timestamp": "2026-10-18T15:11:30Z",
+      "server": "sayari",
+      "tool": "search_shipments",
+      "params": {
+        "summary": "query \"\\\"POSCO FUTURE M\\\"\", hs 3801, KOR→USA, limit 50"
+      },
+      "question": "Verification pass: re-check a published claim",
+      "purpose": "Verification pass (18 Oct 2026)",
+      "result_summary": "111 rows in total; sample shows GM, SKBA, Tesla, Panasonic and forwarder rows",
+      "interpretation": "See investigation/notes/verification.md for the claim this call checked and the correction it led to.",
+      "scorecard": "worked",
+      "entity_ids": [],
+      "step": "verify",
+      "case_id": "general"
+    },
+    {
+      "id": "v024",
+      "timestamp": "2026-10-18T15:12:00Z",
+      "server": "sayari",
+      "tool": "search_trade_facets",
+      "params": {
+        "summary": "scope shipments, same filters as v023"
+      },
+      "question": "Verification pass: re-check a published claim",
+      "purpose": "Verification pass (18 Oct 2026)",
+      "result_summary": "Buyers GM 36, SKBA 32, Tesla 13, Panasonic 9, Scan Global 8+6, XALT 3+1, GM LLC 1, FNS 1; Dec 2021–Jul 2026",
+      "interpretation": "See investigation/notes/verification.md for the claim this call checked and the correction it led to.",
+      "scorecard": "worked",
+      "entity_ids": [],
+      "step": "verify",
+      "case_id": "general"
+    },
+    {
+      "id": "v025",
+      "timestamp": "2026-10-18T15:12:30Z",
+      "server": "sayari",
+      "tool": "get_entity_profile",
+      "params": {
+        "summary": "entity Fj3v…, limit 15"
+      },
+      "question": "Verification pass: re-check a published claim",
+      "purpose": "Verification pass (18 Oct 2026)",
+      "result_summary": "Truncated; 59 shareholder links in total",
+      "interpretation": "See investigation/notes/verification.md for the claim this call checked and the correction it led to.",
+      "scorecard": "worked",
+      "entity_ids": [],
+      "step": "verify",
+      "case_id": "general"
+    },
+    {
+      "id": "v026",
+      "timestamp": "2026-10-18T15:13:00Z",
+      "server": "sayari",
+      "tool": "traverse_network",
+      "params": {
+        "summary": "entity Fj3v…, has_shareholder, companies, depth 1, full"
+      },
+      "question": "Verification pass: re-check a published claim",
+      "purpose": "Verification pass (18 Oct 2026)",
+      "result_summary": "POSCO Holdings (3 records), NPS, POSTECH, POSCO, ESOP; no %",
+      "interpretation": "See investigation/notes/verification.md for the claim this call checked and the correction it led to.",
+      "scorecard": "worked",
+      "entity_ids": [],
+      "step": "verify",
+      "case_id": "general"
+    },
+    {
+      "id": "v027",
+      "timestamp": "2026-10-18T15:13:30Z",
+      "server": "sayari",
+      "tool": "get_entity_profile",
+      "params": {
+        "summary": "entity Fj3v…, limit 60"
+      },
+      "question": "Verification pass: re-check a published claim",
+      "purpose": "Verification pass (18 Oct 2026)",
+      "result_summary": "POSCO Holdings 58.2% (DART)",
+      "interpretation": "See investigation/notes/verification.md for the claim this call checked and the correction it led to.",
+      "scorecard": "worked",
+      "entity_ids": [],
+      "step": "verify",
+      "case_id": "general"
+    },
+    {
+      "id": "v028",
+      "timestamp": "2026-10-18T15:14:00Z",
+      "server": "sayari",
+      "tool": "get_entity_profile",
+      "params": {
+        "summary": "entity WG1hrSwGRdoLMIt997Z5-w"
+      },
+      "question": "Verification pass: re-check a published claim",
+      "purpose": "Verification pass (18 Oct 2026)",
+      "result_summary": "Putailai (Singapore) 100%; trade 0/0; registered 23 Sep 2025",
+      "interpretation": "See investigation/notes/verification.md for the claim this call checked and the correction it led to.",
+      "scorecard": "worked",
+      "entity_ids": [],
+      "step": "verify",
+      "case_id": "general"
+    },
+    {
+      "id": "v029",
+      "timestamp": "2026-10-18T15:14:30Z",
+      "server": "sayari",
+      "tool": "search_shipments",
+      "params": {
+        "summary": "query \"\\\"Zichen Malaysia\\\"\""
+      },
+      "question": "Verification pass: re-check a published claim",
+      "purpose": "Verification pass (18 Oct 2026)",
+      "result_summary": "0",
+      "interpretation": "See investigation/notes/verification.md for the claim this call checked and the correction it led to.",
+      "scorecard": "worked",
+      "entity_ids": [],
+      "step": "verify",
+      "case_id": "general"
+    },
+    {
+      "id": "v030",
+      "timestamp": "2026-10-18T15:15:00Z",
+      "server": "sayari",
+      "tool": "search_trade_facets",
+      "params": {
+        "summary": "scope shipments, \"EVE ENERGY MALAYSIA\", hs 3801, arrival MYS"
+      },
+      "question": "Verification pass: re-check a published claim",
+      "purpose": "Verification pass (18 Oct 2026)",
+      "result_summary": "59 rows, 9 supplier records, Apr 2025–Apr 2026",
+      "interpretation": "See investigation/notes/verification.md for the claim this call checked and the correction it led to.",
+      "scorecard": "worked",
+      "entity_ids": [],
+      "step": "verify",
+      "case_id": "general"
+    },
+    {
+      "id": "v031",
+      "timestamp": "2026-10-18T15:15:30Z",
+      "server": "sayari",
+      "tool": "search_trade_facets",
+      "params": {
+        "summary": "scope shipments, \"EVE ENERGY MALAYSIA\", hs 8507, arrival USA"
+      },
+      "question": "Verification pass: re-check a published claim",
+      "purpose": "Verification pass (18 Oct 2026)",
+      "result_summary": "19 rows; latest 19 Jun 2026",
+      "interpretation": "See investigation/notes/verification.md for the claim this call checked and the correction it led to.",
+      "scorecard": "worked",
+      "entity_ids": [],
+      "step": "verify",
+      "case_id": "general"
+    },
+    {
+      "id": "v032",
+      "timestamp": "2026-10-18T15:16:00Z",
+      "server": "sayari",
+      "tool": "search_shipments",
+      "params": {
+        "summary": "\"EVE ENERGY MALAYSIA\", arrival USA, from 2025-10-01, export"
+      },
+      "question": "Verification pass: re-check a published claim",
+      "purpose": "Verification pass (18 Oct 2026)",
+      "result_summary": "27 rows Oct 2025–Sep 2026; Jul–Sep 2026 rows via SGP/CHN; one 19 Jun 2026 row from \"Pinang\" (IDN)",
+      "interpretation": "See investigation/notes/verification.md for the claim this call checked and the correction it led to.",
+      "scorecard": "worked",
+      "entity_ids": [],
+      "step": "verify",
+      "case_id": "general"
+    },
+    {
+      "id": "v033",
+      "timestamp": "2026-10-18T15:16:30Z",
+      "server": "sayari",
+      "tool": "search_shipments",
+      "params": {
+        "summary": "\"GOTION\", hs 3801, arrival USA, full"
+      },
+      "question": "Verification pass: re-check a published claim",
+      "purpose": "Verification pass (18 Oct 2026)",
+      "result_summary": "2 rows, Hefei Gotion → Gotion Inc., Pusan 23 Dec 2025 → Tacoma",
+      "interpretation": "See investigation/notes/verification.md for the claim this call checked and the correction it led to.",
+      "scorecard": "worked",
+      "entity_ids": [],
+      "step": "verify",
+      "case_id": "general"
+    },
+    {
+      "id": "v034",
+      "timestamp": "2026-10-18T15:17:00Z",
+      "server": "sayari",
+      "tool": "search_shipments",
+      "params": {
+        "summary": "\"GOTION\", departure JAM, arrival USA, full"
+      },
+      "question": "Verification pass: re-check a published claim",
+      "purpose": "Verification pass (18 Oct 2026)",
+      "result_summary": "10 rows, all Port Bustamante (Kingston) → Houston; ZIM Shanghai/Yantian bills of lading; Chinese shippers",
+      "interpretation": "See investigation/notes/verification.md for the claim this call checked and the correction it led to.",
+      "scorecard": "worked",
+      "entity_ids": [],
+      "step": "verify",
+      "case_id": "general"
+    },
+    {
+      "id": "v035",
+      "timestamp": "2026-10-18T15:17:30Z",
+      "server": "sayari",
+      "tool": "search_trade_facets",
+      "params": {
+        "summary": "scope shipments, \"GOTION\", hs 8507, arrival USA"
+      },
+      "question": "Verification pass: re-check a published claim",
+      "purpose": "Verification pass (18 Oct 2026)",
+      "result_summary": "145 rows; departures CHN 131, JAM 9, KOR 2; Gotion Inc. 83, 1st Choice 49",
+      "interpretation": "See investigation/notes/verification.md for the claim this call checked and the correction it led to.",
+      "scorecard": "worked",
+      "entity_ids": [],
+      "step": "verify",
+      "case_id": "general"
+    },
+    {
+      "id": "v036",
+      "timestamp": "2026-10-18T15:18:00Z",
+      "server": "sayari",
+      "tool": "search_shipments",
+      "params": {
+        "summary": "\"Syrah Technologies\", hs 2504, arrival USA"
+      },
+      "question": "Verification pass: re-check a published claim",
+      "purpose": "Verification pass (18 Oct 2026)",
+      "result_summary": "Twigg → Syrah Technologies 7 rows, Sep 2023–Jan 2024; plus 8 unnamed-supplier flake rows",
+      "interpretation": "See investigation/notes/verification.md for the claim this call checked and the correction it led to.",
+      "scorecard": "worked",
+      "entity_ids": [],
+      "step": "verify",
+      "case_id": "general"
+    },
+    {
+      "id": "v037",
+      "timestamp": "2026-10-18T15:18:30Z",
+      "server": "sayari",
+      "tool": "search_shipments",
+      "params": {
+        "summary": "\"\\\"INDONESIA BTR\\\" graphite\", arrival IDN, hs 2504"
+      },
+      "question": "Verification pass: re-check a published claim",
+      "purpose": "Verification pass (18 Oct 2026)",
+      "result_summary": "0 (buyer-name query misses)",
+      "interpretation": "See investigation/notes/verification.md for the claim this call checked and the correction it led to.",
+      "scorecard": "failed",
+      "entity_ids": [],
+      "step": "verify",
+      "case_id": "general"
+    },
+    {
+      "id": "v038",
+      "timestamp": "2026-10-18T15:19:00Z",
+      "server": "sayari",
+      "tool": "search_shipments",
+      "params": {
+        "summary": "\"Twigg OR \\\"Syrah Global\\\"\", arrival IDN"
+      },
+      "question": "Verification pass: re-check a published claim",
+      "purpose": "Verification pass (18 Oct 2026)",
+      "result_summary": "0 (known OR quirk)",
+      "interpretation": "See investigation/notes/verification.md for the claim this call checked and the correction it led to.",
+      "scorecard": "failed",
+      "entity_ids": [],
+      "step": "verify",
+      "case_id": "general"
+    },
+    {
+      "id": "v039",
+      "timestamp": "2026-10-18T15:19:30Z",
+      "server": "sayari",
+      "tool": "search_shipments",
+      "params": {
+        "summary": "\"\\\"TWIGG EXPLORATION\\\"\", arrival IDN"
+      },
+      "question": "Verification pass: re-check a published claim",
+      "purpose": "Verification pass (18 Oct 2026)",
+      "result_summary": "3 rows to BTR Indonesia (Apr 2024 ×2, Aug 2025); Aug row under Twigg record pINZVx…",
+      "interpretation": "See investigation/notes/verification.md for the claim this call checked and the correction it led to.",
+      "scorecard": "worked",
+      "entity_ids": [],
+      "step": "verify",
+      "case_id": "general"
+    },
+    {
+      "id": "v040",
+      "timestamp": "2026-10-18T15:20:00Z",
+      "server": "sayari",
+      "tool": "search_shipments",
+      "params": {
+        "summary": "\"\\\"SYRAH GLOBAL\\\"\", arrival IDN"
+      },
+      "question": "Verification pass: re-check a published claim",
+      "purpose": "Verification pass (18 Oct 2026)",
+      "result_summary": "4 rows to BTR Indonesia, Jan–Apr 2026",
+      "interpretation": "See investigation/notes/verification.md for the claim this call checked and the correction it led to.",
+      "scorecard": "worked",
+      "entity_ids": [],
+      "step": "verify",
+      "case_id": "general"
+    },
+    {
+      "id": "v041",
+      "timestamp": "2026-10-18T15:20:30Z",
+      "server": "sayari",
+      "tool": "find_beneficial_owners",
+      "params": {
+        "summary": "entity 2omCekb1…, depth 2, limit 5"
+      },
+      "question": "Verification pass: re-check a published claim",
+      "purpose": "Verification pass (18 Oct 2026)",
+      "result_summary": "error",
+      "interpretation": "See investigation/notes/verification.md for the claim this call checked and the correction it led to.",
+      "scorecard": "failed",
+      "entity_ids": [],
+      "step": "verify",
+      "case_id": "general"
+    },
+    {
+      "id": "v042",
+      "timestamp": "2026-10-18T15:21:00Z",
+      "server": "sayari",
+      "tool": "find_beneficial_owners",
+      "params": {
+        "summary": "entity ekoH1fr8BGvHc7UqYCY_YA"
+      },
+      "question": "Verification pass: re-check a published claim",
+      "purpose": "Verification pass (18 Oct 2026)",
+      "result_summary": "0 owners",
+      "interpretation": "See investigation/notes/verification.md for the claim this call checked and the correction it led to.",
+      "scorecard": "worked",
+      "entity_ids": [],
+      "step": "verify",
+      "case_id": "general"
+    },
+    {
+      "id": "v043",
+      "timestamp": "2026-10-18T15:21:30Z",
+      "server": "sayari",
+      "tool": "search_entities",
+      "params": {
+        "summary": "\"\\\"PT Indonesia BTR New Energy Material\\\"\""
+      },
+      "question": "Verification pass: re-check a published claim",
+      "purpose": "Verification pass (18 Oct 2026)",
+      "result_summary": "1 record: ekoH1fr8… with Indonesian tax ID and LEI",
+      "interpretation": "See investigation/notes/verification.md for the claim this call checked and the correction it led to.",
+      "scorecard": "worked",
+      "entity_ids": [],
+      "step": "verify",
+      "case_id": "general"
+    },
+    {
+      "id": "v044",
+      "timestamp": "2026-10-18T15:22:00Z",
+      "server": "tavily",
+      "tool": "tavily_search",
+      "params": {
+        "summary": "\"EVE Energy Section 1260H list …\", from 2026-01-01, advanced"
+      },
+      "question": "Verification pass: re-check a published claim",
+      "purpose": "Verification pass (18 Oct 2026)",
+      "result_summary": "Holland & Knight, Dentons, WilmerHale, Cleary, DLA Piper: EVE added 8 Jun 2026 (FR notice 10 Jun)",
+      "interpretation": "See investigation/notes/verification.md for the claim this call checked and the correction it led to.",
+      "scorecard": "worked",
+      "entity_ids": [],
+      "step": "verify",
+      "case_id": "general"
+    },
+    {
+      "id": "v045",
+      "timestamp": "2026-10-18T15:22:30Z",
+      "server": "tavily",
+      "tool": "tavily_search",
+      "params": {
+        "summary": "\"China MOFCOM suspension … Announcement 70 … November 2026\", from 2026-09-01"
+      },
+      "question": "Verification pass: re-check a published claim",
+      "purpose": "Verification pass (18 Oct 2026)",
+      "result_summary": "Announcement 70 end date still 10 Nov 2026; no extension text found",
+      "interpretation": "See investigation/notes/verification.md for the claim this call checked and the correction it led to.",
+      "scorecard": "worked",
+      "entity_ids": [],
+      "step": "verify",
+      "case_id": "general"
+    },
+    {
+      "id": "v046",
+      "timestamp": "2026-10-18T15:23:00Z",
+      "server": "tavily",
+      "tool": "tavily_search",
+      "params": {
+        "summary": "\"MOFCOM US China trade truce extended January 10 2027 …\", news, from 2026-09-15"
+      },
+      "question": "Verification pass: re-check a published claim",
+      "purpose": "Verification pass (18 Oct 2026)",
+      "result_summary": "MOFCOM confirmed truce extension to 10 Jan 2027 on 28 Sep; legal suspension date unchanged",
+      "interpretation": "See investigation/notes/verification.md for the claim this call checked and the correction it led to.",
+      "scorecard": "worked",
+      "entity_ids": [],
+      "step": "verify",
+      "case_id": "general"
+    },
+    {
+      "id": "v047",
+      "timestamp": "2026-10-18T15:23:30Z",
+      "server": "tavily",
+      "tool": "tavily_search",
+      "params": {
+        "summary": "\"Treasury IRS proposed regulations prohibited foreign entity … safe harbor tables 2026\", from 2026-03-01"
+      },
+      "question": "Verification pass: re-check a published claim",
+      "purpose": "Verification pass (18 Oct 2026)",
+      "result_summary": "Only Notice 2026-15 and commentary; tables due 31 Dec 2026",
+      "interpretation": "See investigation/notes/verification.md for the claim this call checked and the correction it led to.",
+      "scorecard": "worked",
+      "entity_ids": [],
+      "step": "verify",
+      "case_id": "general"
+    },
+    {
+      "id": "v048",
+      "timestamp": "2026-10-18T15:24:00Z",
+      "server": "tavily",
+      "tool": "tavily_search",
+      "params": {
+        "summary": "\"prohibited foreign entity proposed regulations effective control …\", news, from 2026-06-01"
+      },
+      "question": "Verification pass: re-check a published claim",
+      "purpose": "Verification pass (18 Oct 2026)",
+      "result_summary": "No proposed regs reported; Hunterbrook notes open questions (Aug 2026)",
+      "interpretation": "See investigation/notes/verification.md for the claim this call checked and the correction it led to.",
+      "scorecard": "worked",
+      "entity_ids": [],
+      "step": "verify",
+      "case_id": "general"
+    },
+    {
+      "id": "v049",
+      "timestamp": "2026-10-18T15:24:30Z",
+      "server": "tavily",
+      "tool": "tavily_search",
+      "params": {
+        "summary": "\"Gotion Manteno … Big Rapids … lawsuit October 2026\", news, from 2026-08-01"
+      },
+      "question": "Verification pass: re-check a published claim",
+      "purpose": "Verification pass (18 Oct 2026)",
+      "result_summary": "1 low-value social-media hit",
+      "interpretation": "See investigation/notes/verification.md for the claim this call checked and the correction it led to.",
+      "scorecard": "failed",
+      "entity_ids": [],
+      "step": "verify",
+      "case_id": "general"
+    },
+    {
+      "id": "v050",
+      "timestamp": "2026-10-18T15:25:00Z",
+      "server": "tavily",
+      "tool": "tavily_search",
+      "params": {
+        "summary": "\"Gotion Big Rapids Michigan Strategic Fund lawsuit ruling 2026 Manteno\", advanced, from 2026-06-01"
+      },
+      "question": "Verification pass: re-check a published claim",
+      "purpose": "Verification pass (18 Oct 2026)",
+      "result_summary": "Amended complaint for damages (Jun 2026); settlement conference requested (Aug 2026); Manteno residents' suit ongoing",
+      "interpretation": "See investigation/notes/verification.md for the claim this call checked and the correction it led to.",
+      "scorecard": "worked",
+      "entity_ids": [],
+      "step": "verify",
+      "case_id": "general"
+    },
+    {
+      "id": "v051",
+      "timestamp": "2026-10-18T15:25:30Z",
+      "server": "tavily",
+      "tool": "tavily_search",
+      "params": {
+        "summary": "\"BTR Tangier Morocco anode plant production 2026 OR Zhongke … Oman Sohar …\", advanced, from 2026-06-01"
+      },
+      "question": "Verification pass: re-check a published claim",
+      "purpose": "Verification pass (18 Oct 2026)",
+      "result_summary": "CSCEC: BTR 60 kt anode plant advancing, phased production from 2026; nothing new on Zhongke Oman",
+      "interpretation": "See investigation/notes/verification.md for the claim this call checked and the correction it led to.",
+      "scorecard": "worked",
+      "entity_ids": [],
+      "step": "verify",
+      "case_id": "general"
+    },
+    {
+      "id": "v052",
+      "timestamp": "2026-10-18T15:26:00Z",
+      "server": "tavily",
+      "tool": "tavily_search",
+      "params": {
+        "summary": "1260H list text, include_domains federalregister.gov / war.gov / defense.gov"
+      },
+      "question": "Verification pass: re-check a published claim",
+      "purpose": "Verification pass (18 Oct 2026)",
+      "result_summary": "0 results",
+      "interpretation": "See investigation/notes/verification.md for the claim this call checked and the correction it led to.",
+      "scorecard": "worked",
+      "entity_ids": [],
+      "step": "verify",
+      "case_id": "general"
     }
   ]
 }

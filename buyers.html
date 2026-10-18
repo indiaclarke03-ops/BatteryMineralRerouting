@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Paper Trail: Check a Buyer</title>
+  <meta name="description" content="Pick a US battery buyer and see every supplier in the traced supply chains, who owns it, and what it shipped.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600&family=Source+Serif+4:opsz,wght@8..60,600;8..60,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/tokens.css">
+  <link rel="stylesheet" href="assets/css/base.css">
+  <link rel="stylesheet" href="assets/css/components.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header id="site-header"></header>
+
+  <main id="main">
+    <div class="wrap">
+      <div class="page-head">
+        <span class="eyebrow">Check a Buyer</span>
+        <h1>Who supplies this buyer, and who owns them?</h1>
+        <p class="lede">Choose a US company to see every supplier that ships to it in our eight traced supply chains: what it shipped, when, and who ultimately owns it.</p>
+      </div>
+
+      <div class="buyer-picker card">
+        <label for="buyer-select" class="bp-label">US buyer</label>
+        <select id="buyer-select" class="bp-select"></select>
+        <div class="bp-quick"><span class="muted">Quick picks:</span> <div id="buyer-quick" class="case-tabs" style="margin:0"></div></div>
+      </div>
+
+      <div id="buyer-result" aria-live="polite">Loading…</div>
+
+      <section aria-labelledby="scope-h" style="margin-top:var(--s-7)">
+        <h2 id="scope-h" style="font-size:1.2rem">Scope and limits</h2>
+        <ul class="muted" style="max-width:52rem">
+          <li>This covers only the suppliers in our eight cases, not every supplier the company has. A buyer with no Chinese-owned suppliers here may still have them elsewhere.</li>
+          <li>"Chinese-owned" comes from each case's ownership screening and carries its confidence rating. "Company based in China" means it ships directly from China.</li>
+          <li>Shipment rows come from customs records in Sayari. Domestic US sales don't appear in customs data.</li>
+          <li id="fw-note"></li>
+        </ul>
+      </section>
+    </div>
+  </main>
+
+  <footer id="site-footer"></footer>
+
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/ui.js"></script>
+  <script src="assets/js/buyers.js"></script>
+</body>
+</html>

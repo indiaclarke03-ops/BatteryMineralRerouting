@@ -20,66 +20,60 @@
     <div class="wrap">
       <div class="page-head">
         <span class="eyebrow">Explore</span>
-        <h1>The network</h1>
-        <p class="lede">Every company and link we traced, one case at a time. Filter by link type, country, HS code or risk flag. Click a node or a line to see what we know and which call it came from.</p>
+        <h1>The network, case by case</h1>
+        <p class="lede">Each case reads left to right: who owns the plant, what goes into it, the plant itself, and where its output goes. Hover over a company to trace its links; click it to see the evidence.</p>
       </div>
 
-      <div class="explore">
-        <form class="filters card" id="filters" aria-label="Filters">
-          <fieldset>
-            <legend><label for="f-case" style="padding:0">Case</label></legend>
-            <select id="f-case" name="case"><option value="">All cases (dense)</option></select>
-          </fieldset>
-          <fieldset>
-            <legend>Link type</legend><div class="ff-check">
-            <label><input type="checkbox" name="etype" value="transactional" checked> <span class="etype tx"><span class="line" aria-hidden="true"></span>Shipment</span></label>
-            <label><input type="checkbox" name="etype" value="contractual" checked> <span class="etype ct"><span class="line" aria-hidden="true"></span>Ownership</span></label>
-            <label><input type="checkbox" name="etype" value="inferred" checked> <span class="etype inf"><span class="line" aria-hidden="true"></span>Inferred link</span></label>
-          </div></fieldset>
-          <fieldset>
-            <legend>Confidence</legend><div class="ff-check">
-            <label><input type="checkbox" name="conf" value="documented" checked> Documented</label>
-            <label><input type="checkbox" name="conf" value="corroborated" checked> Cross-checked</label>
-            <label><input type="checkbox" name="conf" value="inferred" checked> Inferred</label>
-            <label><input type="checkbox" name="conf" value="lead" checked> Lead</label>
-          </div></fieldset>
-          <fieldset>
-            <legend><label for="f-country" style="padding:0">Country</label></legend>
-            <select id="f-country" name="country"><option value="">All countries</option></select>
-          </fieldset>
-          <fieldset>
-            <legend><label for="f-hs" style="padding:0">HS code</label></legend>
-            <select id="f-hs" name="hs">
-              <option value="">Any (incl. no HS)</option>
-              <option value="3801">3801: artificial graphite & preparations</option>
-              <option value="2504">2504: natural graphite</option>
-              <option value="2713">2713: petroleum coke</option>
-            </select>
-          </fieldset>
-          <fieldset>
-            <legend>Risk</legend>
-            <label><input type="checkbox" name="risk" id="f-risk"> Only entities with a ⚑ risk flag (and their links)</label>
-          </fieldset>
-          <div class="ff-actions">
-            <button class="btn" type="reset" id="f-reset">Reset filters</button>
-            <p class="muted" style="font-size:var(--fs-0);margin:0" id="f-count" aria-live="polite"></p>
+      <form id="filters" aria-label="Choose a case and refine the network">
+        <div class="ex-tabs" id="ex-tabs" role="tablist" aria-label="Choose a case"></div>
+        <select id="f-case" name="case" class="visually-hidden" tabindex="-1" aria-hidden="true"><option value="">All cases</option></select>
+        <div class="ex-case card" id="ex-case" aria-live="polite"></div>
+        <details class="ex-refine">
+          <summary>Refine: link type, confidence, country, product code, risk <span class="muted" id="f-count" aria-live="polite"></span></summary>
+          <div class="filters ex-filters">
+            <fieldset>
+              <legend>Link type</legend><div class="ff-check">
+              <label><input type="checkbox" name="etype" value="transactional" checked> <span class="etype tx"><span class="line" aria-hidden="true"></span>Shipment</span></label>
+              <label><input type="checkbox" name="etype" value="contractual" checked> <span class="etype ct"><span class="line" aria-hidden="true"></span>Ownership</span></label>
+              <label><input type="checkbox" name="etype" value="inferred" checked> <span class="etype inf"><span class="line" aria-hidden="true"></span>Inferred link</span></label>
+            </div></fieldset>
+            <fieldset>
+              <legend>Confidence</legend><div class="ff-check">
+              <label><input type="checkbox" name="conf" value="documented" checked> Documented</label>
+              <label><input type="checkbox" name="conf" value="corroborated" checked> Cross-checked</label>
+              <label><input type="checkbox" name="conf" value="inferred" checked> Inferred</label>
+              <label><input type="checkbox" name="conf" value="lead" checked> Lead</label>
+            </div></fieldset>
+            <fieldset>
+              <legend><label for="f-country" style="padding:0">Country</label></legend>
+              <select id="f-country" name="country"><option value="">All countries</option></select>
+            </fieldset>
+            <fieldset>
+              <legend><label for="f-hs" style="padding:0">Product (HS code)</label></legend>
+              <select id="f-hs" name="hs">
+                <option value="">Any</option>
+                <option value="3801">3801: artificial graphite</option>
+                <option value="2504">2504: natural graphite</option>
+                <option value="2713">2713: petroleum coke</option>
+                <option value="8507">8507: lithium-ion cells and batteries</option>
+              </select>
+            </fieldset>
+            <fieldset>
+              <legend>Risk</legend>
+              <label><input type="checkbox" name="risk" id="f-risk"> Only companies with a ⚑ risk flag</label>
+            </fieldset>
+            <div class="ff-actions"><button class="btn" type="reset" id="f-reset">Reset</button></div>
           </div>
-        </form>
+        </details>
+      </form>
 
-        <div>
-          <div class="graph-frame">
-            <div class="graph xtall" id="graph" role="img" aria-label="Network graph. A text list of the same links follows."></div>
-          </div>
-          <p class="muted" style="font-size:var(--fs-0);margin-top:var(--s-2)">Hover to focus on a company's links. Click for details. Scroll or use + − to zoom; drag to pan. Faint lines are Leads. <a href="about.html#read">How to read the graph</a></p>
-        </div>
-
-
+      <div class="graph-frame">
+        <div class="graph xtall" id="graph" role="img" aria-label="Network graph for the selected case. A text list of the same links follows."></div>
       </div>
 
       <section aria-labelledby="list-h">
-        <h2 id="list-h">All links as a list</h2>
-        <p class="muted">Same data as the graph, filtered the same way. Handy on a phone or with a screen reader.</p>
-        <div id="edge-list"></div>
+        <details><summary><h2 id="list-h" style="display:inline;font-size:1.2rem">All links as a list</h2> <span class="muted">(same data as the graph; useful on a phone or with a screen reader)</span></summary>
+        <div id="edge-list" style="margin-top:var(--s-3)"></div></details>
       </section>
     </div>
   </main>

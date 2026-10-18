@@ -11,8 +11,8 @@ Iteration 1 traces **eight cases** end to end:
 
 | # | Case | What Sayari showed |
 |---|---|---|
-| 1 | BTR's anode plant, Indonesia | Chinese graphite in; HS 3801.10 out to Ultium Cells, SK Battery America, StarPlus, GM and Tesla. No registry ownership: the BTR link comes from open sources |
-| 2 | BTR's anode plant, Tangier, Morocco | The reverse: 100% BTR ownership is visible through Singapore, but there's no graphite trade yet. The 3,088-row "Morocco → US graphite" corridor is mostly mislabelled fertilizer |
+| 1 | BTR's anode plant, Indonesia | Chinese graphite in; about 55 rows of HS 3801 out to Ultium Cells, SK Battery America, StarPlus, GM and Tesla (some loaded in Singapore). No registry ownership: the BTR link comes from open sources |
+| 2 | BTR's anode plant, Tangier, Morocco | The reverse: 100% BTR ownership is visible through Singapore; the first graphite arrived from BTR Indonesia in Aug 2026, and there are no exports yet. The 3,088-row "Morocco → US graphite" corridor is mostly mislabelled fertilizer |
 | 3 | Zhongke Electric's plant, Sohar, Oman | Not in Sayari yet. Ownership is visible in China's registry and the company's filing; today Zhongke graphite reaches the US mostly via Malaysian cell plants |
 | 4 | POSCO Future M, Korea (contrast) | Korean-owned (POSCO Holdings 58.2%, registry); Chinese graphite in until Dec 2023; 95 anode shipments to GM, SK Battery America, Tesla, Panasonic and XALT. Same buyers as Case 1, different owner |
 | 5 | Putailai's Zichen plant, Malaysia | Five corridor scans found no Chinese-owned anode maker shipping to the US. The one Chinese-owned plant is registered 100% via Singapore but isn't trading yet |
@@ -28,22 +28,24 @@ Built for GLOB1-GC 2620 *Beyond the Brand: Harnessing Emerging Tech in Ethical S
 
 | Page | What's on it |
 |---|---|
-| `index.html`: The Trace | The question, policy timeline, a 5-step walkthrough on the graph (← → keys), the verdict and feedback asks |
-| `explore.html`: Explore | Cytoscape network with filters (link type, confidence, country, HS code, risk), a side panel and a list view |
-| `cases.html`: Case Files | All eight cases, each with question, answer and why it matters: key numbers, mini graph, steps, verdict, Passport vs. Paper Trail card, red flags, caveats |
-| `method.html`: Method | Investigation replay of every Sayari call (grouped by case), capability scorecard, red-flag rubric, searchable call log |
-| `about.html`: About this tool | Purpose, how to read it, data sources, credits, limitations and ethics, changelog |
+| `index.html`: The Trace | Headline, key numbers, why it matters, a world map of the eight supply chains, short answers per case, cross-case findings, policy timeline |
+| `explore.html`: Explore | The network for each case in four columns (owners, suppliers, plant, buyers); hover to focus, click for evidence; filters |
+| `buyers.html`: Check a Buyer | Pick a US buyer (GM, Tesla, SK Battery America…) to see every supplier in the data, its owner and what it shipped |
+| `cases.html`: Case Files | All eight cases: question, answer, why it matters, key numbers, network, steps, verdict, passport card, red flags |
+| `diligence.html`: Due Diligence | Ownership screening for every plant, supplier questions generated from red flags, a watch list |
+| `method.html`: Method | Lessons, the 18 Oct re-check, Sayari scorecard, rubric, replay of every call, searchable log |
+| `about.html`: About this tool | Purpose, how to read it, confidence ratings, naming policy, sources, credits, limits, changelog |
 
 ## How it works
 
 - Static site with no build step: vanilla HTML/CSS/JS plus pinned CDN libraries.
-- **No keys in the browser.** Sayari and Tavily were queried through MCP in VS Code (Claude Code). Case 1 is summarised in `investigation/build_data.py`; cases 2–8 are in `investigation/cases/case*.json`. The builder merges them, checks every cross-reference, and writes the curated JSON in `/data`. The site only reads that JSON.
+- **No keys in the browser.** Sayari and Tavily were queried through MCP in VS Code (Claude Code). Case 1 is summarised in `investigation/build_data.py`; cases 2–8 are in `investigation/cases/case*.json`; map points, screening cards, buyer groups and the watch list are in `investigation/curated.json`; the 18 Oct re-check is `investigation/notes/verification.md`. The builder merges them, checks every cross-reference, and writes the curated JSON in `/data`. The site only reads that JSON.
 - **Derived data only.** Sayari data is licensed, so we publish our own summaries (names, link types, dates, HS codes, counts, flags) and link each entity to Sayari Graph. No raw record dumps.
 
 ```
-data/            entities, edges, cases, call_log, policy_timeline, sources (+ schema.md)
+data/            entities, edges, cases, call_log, policy_timeline, sources, overview, curated, world-110m (+ schema.md)
 investigation/   build_data.py, playbook.md, notes/ (Tavily calls, company context, demo script)
-assets/          css/ (tokens, base, components) and js/ (data, ui, graph, stepper, explore, cases, calllog)
+assets/          css/ (tokens, base, components) and js/ (data, ui, graph, map, home, explore, buyers, cases, diligence, calllog)
 ```
 
 ## Reproduce

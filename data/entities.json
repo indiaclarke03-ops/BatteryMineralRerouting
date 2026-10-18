@@ -199,7 +199,7 @@
         "lei": "254900G3L2Z0HNRV7W43",
         "idn_tax_id": "0625540349086000"
       },
-      "summary": "Anode plant with sites at IMIP Morowali and Kendal. The anchor record: tax ID, LEI and the most trade history (78 sent, 4,083 received).",
+      "summary": "Anode plant with sites at IMIP Morowali and Kendal. Our anchor record on 14 Oct (tax ID, LEI, 78 sent and 4,083 received). By 18 Oct, Sayari had merged it: this ID no longer resolves, and the tax ID and LEI now sit on record ekoH1fr8BGvHc7UqYCY_YA, which the Sayari link here opens.",
       "source_call_ids": [
         "s005",
         "s008",
@@ -213,7 +213,7 @@
         "s813",
         "s826"
       ],
-      "sayari_url": "https://graph.sayari.com/resource/entity/2omCekb1pDRKjhFOAqCNSw",
+      "sayari_url": "https://graph.sayari.com/resource/entity/ekoH1fr8BGvHc7UqYCY_YA",
       "records": 5,
       "case_ids": [
         "case-1",
@@ -259,16 +259,25 @@
       "role": "transit_plant",
       "risk_flags": [],
       "identifiers": {},
-      "summary": "Company-gazette record with only 'Jakarta Barat' as an address. No trade, no identifiers.",
+      "summary": "On 14 Oct a company-gazette record with only 'Jakarta Barat' as an address. By 18 Oct Sayari had made it the plant's main record: it now carries the tax ID and LEI. It still shows no owners.",
       "source_call_ids": [
-        "s007"
+        "s007",
+        "v014",
+        "v015",
+        "v042",
+        "v043"
       ],
       "sayari_url": "https://graph.sayari.com/resource/entity/ekoH1fr8BGvHc7UqYCY_YA",
       "case_ids": [
-        "case-1"
+        "case-1",
+        "case-2"
       ],
       "case_roles": {
-        "case-1": "transit_plant"
+        "case-1": "transit_plant",
+        "case-2": "producer"
+      },
+      "case_summaries": {
+        "case-2": "BTR's Indonesian anode plant (Case 1). Shipped Tangier's first artificial graphite in Aug 2026."
       }
     },
     {
@@ -712,10 +721,12 @@
       "role": "transit_plant",
       "risk_flags": [],
       "identifiers": {},
-      "summary": "Customs record with the anode company's exact name and no address. One inbound row from a Chinese construction contractor in late 2025.",
+      "summary": "Customs record with the anode company's exact name. One construction row in late 2025, then 3 rows of artificial graphite from BTR's Indonesian plant on 19 Aug 2026.",
       "source_call_ids": [
         "s202",
-        "s210"
+        "s210",
+        "v014",
+        "v015"
       ],
       "sayari_url": "https://graph.sayari.com/resource/entity/1CjF5vzVgFFxVomroaYyaA",
       "case_ids": [
@@ -4026,7 +4037,7 @@
       "role": "producer",
       "risk_flags": [],
       "identifiers": {},
-      "summary": "Another trade record of Hefei Gotion at 599 Daihe Road. It shipped Li-ion cells (some via Jamaica) and an energy-storage pack to Gotion Inc. in Jul–Aug 2026.",
+      "summary": "Another trade record of Hefei Gotion at 599 Daihe Road. It shipped Li-ion cells (some transshipped at Kingston, Jamaica) and an energy-storage pack to Gotion Inc. in Jul–Aug 2026.",
       "source_call_ids": [
         "s708",
         "s710",
@@ -4207,7 +4218,7 @@
       "identifiers": {
         "ca_corporate_id_num": "06327947"
       },
-      "summary": "A US freight forwarder named as consignee on 186 Gotion-related shipments, including Li-ion cells from Hefei Guoxuan via Jamaica in Aug 2026. A logistics party, not an end customer.",
+      "summary": "A US freight forwarder named as consignee on 186 Gotion-related shipments, including Li-ion cells from Hefei Guoxuan, transshipped at Kingston, Jamaica, in Aug 2026. A logistics party, not an end customer.",
       "source_call_ids": [
         "s709",
         "s713",

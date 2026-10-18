@@ -67,7 +67,7 @@ Work P0 top to bottom. Status values: `todo` / `doing` / `done`.
 | QA-1 | P0 | Language and confidence review | plan §8 passes | done (grep clean; every edge badged) |
 | QA-2 | P0 | Mobile and projector check; keyboard focus visible | No horizontal scroll | done at 500px and 1400px in headless Chrome; check 375px on a real phone |
 | QA-3 | P1 | Lighthouse accessibility ≥ 90 | Report saved | todo |
-| QA-4 | P1 | Re-run 3 random logged calls | `investigation/notes/verification.md` | todo |
+| QA-4 | P1 | Re-run 3 random logged calls | `investigation/notes/verification.md` | done (all headline claims, 18 Oct) |
 
 ## DEMO
 | ID | P | Story | Done when | Status |
@@ -91,6 +91,13 @@ Work P0 top to bottom. Status values: `todo` / `doing` / `done`.
 | FB-8 | P0 | For each case, make the question, the answer and why it matters clear | done |
 | FB-9 | P0 | More case studies | done (8 cases) |
 | FB-10 | P0 | Remove the feedback box from the home page | done |
+
+| FB-11 | P0 | Home: new headline, no graph or verdict, simpler findings, new format for the cross-case findings | done |
+| FB-12 | P0 | Explore graph: clarity, professionalism, UX | done (four-column layout, case tabs) |
+| FB-13 | P0 | Check a Buyer page | done |
+| FB-14 | P0 | World map | done (home page) |
+| FB-15 | P0 | Due Diligence page (screening, questions, watch list) | done |
+| FB-16 | P0 | Full re-check and debug | done (verification.md; links, JS errors, 375px) |
 
 ## Parking lot
 - Zhongke Electric's Oman anode project as a forward-looking case (production targeted for 2027).

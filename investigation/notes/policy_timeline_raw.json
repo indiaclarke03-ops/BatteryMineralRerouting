@@ -7,7 +7,9 @@
     "source_name": "IEA Policies database (summarising MOFCOM/GACC announcement); corroborated by Mayer Brown and Hogan Lovells (JDSupra)",
     "verified": true,
     "note": "Announced 20 Oct 2023, effective 1 Dec 2023. Claim's 'Dec 2023' is the effective date; the announcement date is 20 Oct 2023. No MOFCOM primary page retrieved; secondary sources (IEA, law firms) agree on number, dates and scope.",
-    "source_call_ids": ["t001"]
+    "source_call_ids": [
+      "t001"
+    ]
   },
   {
     "date": "2025-07-04",
@@ -17,7 +19,11 @@
     "source_name": "IRS Notice 2026-15 (cites Pub. L. 119-21, 139 Stat. 72, July 4, 2025); IRS newsroom; EY Tax News",
     "verified": true,
     "note": "Confirmed via IRS primary text. PFE is defined in IRC 7701(a)(51) and material assistance in 7701(a)(52). For 45Y/48E the material-assistance test applies to facilities beginning construction after 31 Dec 2025; for 45X it applies to components sold in tax years beginning after enactment.",
-    "source_call_ids": ["t003", "t007", "t009"]
+    "source_call_ids": [
+      "t003",
+      "t007",
+      "t009"
+    ]
   },
   {
     "date": "2025-10-09",
@@ -27,7 +33,10 @@
     "source_name": "Fred Gao (translation of MOFCOM/GACC No. 58/2025); CIRS Group; Global Times",
     "verified": true,
     "note": "Issued 9 Oct 2025 with a scheduled effective date of 8 Nov 2025, but suspended before that date (see the 2025-11-07 entry). Not a claim in the original list; added as a newer action.",
-    "source_call_ids": ["t001", "t008"]
+    "source_call_ids": [
+      "t001",
+      "t008"
+    ]
   },
   {
     "date": "2025-11-07",
@@ -36,8 +45,13 @@
     "source_url": "https://www.cirs-group.com/en/chemicals/china-temporarily-suspends-export-controls-on-key-raw-materials-including-rare-earths-lithium-batteries-and-diamond",
     "source_name": "CIRS Group; Global Times; Pillsbury; chemradar",
     "verified": true,
-    "note": "Separately, MOFCOM Announcement No. 72 (9 Nov 2025) suspends the stricter end-use review for dual-use graphite exports to the US (Article 2 of No. 46 of 2024) until 27 Nov 2026 (Pillsbury). One trade-press site (ljyenergy.com) says the No. 70 suspension was extended to 10 Jan 2027 in late Sept 2026; TIMEWELL (Oct 2026) reports MOFCOM describes the arrangement as running to 10 Jan 2027 but found no formal announcement extending No. 70. The extension is UNVERIFIED from a primary source.",
-    "source_call_ids": ["t008", "t010"]
+    "note": "Legal end date of the suspension is 10 Nov 2026. On 28 Sep 2026 MOFCOM said the wider US–China truce runs to 10 Jan 2027, but as of 18 Oct 2026 no new announcement has moved the legal end date. Re-check after 10 Nov 2026.",
+    "source_call_ids": [
+      "t008",
+      "t010",
+      "v045",
+      "v046"
+    ]
   },
   {
     "date": "2026-02-11",
@@ -47,7 +61,10 @@
     "source_name": "ITA (trade.gov) fact sheet; Federal Register 91 FR 7247 (AD, FR Doc. 2026-02998) and 91 FR 7261 (CVD, FR Doc. 2026-02999)",
     "verified": true,
     "note": "CORRECTED: announced 11 Feb 2026 but published in the Federal Register on 17 Feb 2026 (both notices 'applicable February 17, 2026'), not around 11 Feb. AD: 93.50% for the separate-rate exporters/producers (including BTR, Shanshan, Zhongke Shinzoom combinations); China-wide entity 102.72%. CVD: 66.82% (Huzhou Kaijin; AFA) and 66.86% (Panasonic Global Procurement China and All Others), so '~66.8%' should read 66.82-66.86%. The final scope excludes AAM incorporated into lithium-ion battery products (per USITC report).",
-    "source_call_ids": ["t002", "t005"]
+    "source_call_ids": [
+      "t002",
+      "t005"
+    ]
   },
   {
     "date": "2026-02-12",
@@ -57,7 +74,10 @@
     "source_name": "IRS newsroom; Notice PDF https://www.irs.gov/pub/irs-drop/n-26-15.pdf; IRB 2026-11",
     "verified": true,
     "note": "Confirmed. The notice says little on who counts as a PFE or on effective control; proposed regulations are promised. Comments were due 30 Mar 2026. The statute requires PFE safe-harbor tables by 31 Dec 2026 (per McGuireWoods).",
-    "source_call_ids": ["t003", "t009"]
+    "source_call_ids": [
+      "t003",
+      "t009"
+    ]
   },
   {
     "date": "2026-03-12",
@@ -67,7 +87,35 @@
     "source_name": "USITC news release; USITC Publication 5719",
     "verified": true,
     "note": "CORRECTED wording: the finding was that imports have NOT 'materially retarded the establishment of an industry in the United States', not a standard 'no material injury' finding. Vote was 2-1 (Karpel and Johanson negative; Kearns affirmative). Commerce will not issue AD or CVD orders. The FR notice of the determinations was published 3 Apr 2026 (per the FR document list).",
-    "source_call_ids": ["t002", "t004", "t006"]
+    "source_call_ids": [
+      "t002",
+      "t004",
+      "t006"
+    ]
+  },
+  {
+    "date": "2026-06-08",
+    "measure": "EVE Energy added to the US Section 1260H list of Chinese military companies",
+    "relevance": "EVE Energy owns the Malaysian cell plant in Case 6. The listing doesn't ban commercial purchases, but it restricts US defense procurement and is a signal buyers screen for.",
+    "source_url": "https://www.wilmerhale.com/en/insights/client-alerts/20260611-pentagon-adds-65-new-entities-to-the-1260h-list-of-chinese-military-companies",
+    "source_name": "WilmerHale; Holland & Knight; DLA Piper (Federal Register notice 10 Jun 2026)",
+    "verified": true,
+    "note": "List published 8 Jun 2026; Federal Register notice dated 10 Jun 2026.",
+    "source_call_ids": [
+      "v044"
+    ]
+  },
+  {
+    "date": "2026-09-28",
+    "measure": "MOFCOM says the US–China trade truce runs to 10 Jan 2027",
+    "relevance": "The political deadline for China's paused graphite and battery export controls moves to Jan 2027, but the legal suspension in Announcement 70 still ends on 10 Nov 2026 unless a new announcement is issued.",
+    "source_url": "https://www.globaltimes.cn/page/202609/1371502.shtml",
+    "source_name": "Global Times (MOFCOM statement); China Briefing; Thomson Reuters",
+    "verified": true,
+    "note": "Checked 18 Oct 2026.",
+    "source_call_ids": [
+      "v046"
+    ]
   },
   {
     "date": "2026-10-14",
@@ -76,7 +124,12 @@
     "source_url": "https://www.mcguirewoods.com/client-resources/alerts/2026/3/irs-releases-initial-feoc-guidance-answers-key-questions-leaves-others-unanswered",
     "source_name": "McGuireWoods",
     "verified": false,
-    "note": "A search limited to results after 1 May 2026 found no proposed PFE regulations or new IRS notice. Absence is not confirmed; check irs.gov and the Federal Register directly before stating that none exist.",
-    "source_call_ids": ["t009", "t011"]
+    "note": "Re-checked 18 Oct 2026: still nothing beyond Notice 2026-15. The safe-harbor tables are due by 31 Dec 2026, and questions on effective control and Hong Kong remain open.",
+    "source_call_ids": [
+      "t009",
+      "t011",
+      "v047",
+      "v048"
+    ]
   }
 ]

@@ -240,7 +240,7 @@ ENTITIES = [
         "Madagascar graphite producer that shipped natural graphite (HS 2504) to the plant, 2025–2026.",
         ["s013", "s014"]),
     ent(PLANT, "PT Indonesia BTR New Energy Material", "IDN", "transit_plant",
-        "Anode plant with sites at IMIP Morowali and Kendal. The anchor record: tax ID, LEI and the most trade history (78 sent, 4,083 received).",
+        "Anode plant with sites at IMIP Morowali and Kendal. Our anchor record on 14 Oct (tax ID, LEI, 78 sent and 4,083 received). By 18 Oct, Sayari had merged it: this ID no longer resolves, and the tax ID and LEI now sit on record ekoH1fr8BGvHc7UqYCY_YA, which the Sayari link here opens.",
         ["s005", "s008", "s009", "s013", "s014", "s017", "s019", "s021"],
         ["chinese_soe_adjacent", "forced_labor_uflpa_origin_subtier", "psa_imports_from_usa_bis_entity"],
         {"lei": "254900G3L2Z0HNRV7W43", "idn_tax_id": "0625540349086000"},
@@ -249,8 +249,8 @@ ENTITIES = [
         "Kendal-only record built from US import data. Same street address as the anchor, name cut off. 37 shipments sent.",
         ["s006", "s011", "s018"], ["psa_imports_from_usa_bis_entity"]),
     ent(PLANT_JKT, "PT Indonesia BTR New Energy Material (record 3)", "IDN", "transit_plant",
-        "Company-gazette record with only 'Jakarta Barat' as an address. No trade, no identifiers.",
-        ["s007"]),
+        "On 14 Oct a company-gazette record with only 'Jakarta Barat' as an address. By 18 Oct Sayari had made it the plant's main record: it now carries the tax ID and LEI. It still shows no owners.",
+        ["s007", "v042", "v043"]),
     ent(PLANT_FRAG4, "PT Indonesia BTR New Energy (record 4)", "IDN", "transit_plant",
         "Trade-data record whose name lost the word 'Material' into the address field. Same Kendal street address.",
         ["s017", "s022"]),
@@ -312,7 +312,7 @@ EDGES = [
     edge("e003", PLANT_FRAG5, PLANT, "possibly_same_as", "inferred", "inferred",
          "Same Kendal street address; shortened name. No shared identifier.",
          ["s005", "s023"]),
-    edge("e004", PLANT_JKT, PLANT, "possibly_same_as", "inferred", "lead",
+    edge("e004", PLANT_JKT, PLANT, "possibly_same_as", "inferred", "documented",
          "Exact legal name, but the only address is 'Jakarta Barat' and there are no identifiers. Name alone is not enough to merge.",
          ["s005", "s007", "s004"]),
     # Shared address (inferred)
@@ -374,21 +374,24 @@ EDGES = [
     edge("e037", PLANT_KENDAL, TESLA, "ships_to", "transactional", "corroborated",
          "Graph link from US import data; shipment rows seen under record 5 (e036).",
          ["s011", "s018"]),
-    edge("e038", PLANT_KENDAL, GM, "ships_to", "transactional", "corroborated",
-         "Graph link from US import data; shipment rows seen under records 4 and 5 (e034, e035).",
-         ["s011", "s018"]),
+    edge("e038", PLANT_KENDAL, GM, "ships_to", "transactional", "documented",
+         "Artificial graphite (HS 3801). 5 rows arriving 7 Apr 2025 and 1 row arriving 19 Sep 2026, recorded in US import data as loaded in Singapore.",
+         ["s011", "s018", "v001"], ["3801"], "2025-04-07", "2026-09-19", 6),
+    edge("e041", PLANT_KENDAL, ULT_W, "ships_to", "transactional", "documented",
+         "Artificial graphite (22 rows HS 3801.10, 4 rows HS 3801.90). 26 rows arriving 30 Jul – 21 Nov 2025, recorded in US import data as loaded in Singapore. Found in the 18 Oct verification pass.",
+         ["v001"], ["380110", "380190"], "2025-07-30", "2025-11-21", 26),
     edge("e039", PLANT, AMINCO, "ships_to", "transactional", "documented",
          "Artificial graphite in 0.2–8 mm grades (HS 3801.10). 3 rows, 30 Sep 2025. Grades suggest non-battery use.",
          ["s017"], ["380110"], "2025-09-30", "2025-09-30", 3),
     edge("e040", PLANT, LARPEN, "ships_to", "transactional", "documented",
-         "Artificial graphite in 1–10 mm grades (HS 3801.10). 2 rows, 10 Jun 2026. Grades suggest metallurgical use.",
-         ["s017"], ["380110"], "2026-06-10", "2026-06-10", 2),
+         "Artificial graphite in 1–10 mm grades (HS 3801.10). 7 rows, Jun – Aug 2026 (5 added in the 18 Oct re-check). Grades suggest metallurgical use.",
+         ["s017", "v011"], ["380110"], "2026-06-10", "2026-08-31", 7),
 ]
 
 # ---------------------------------------------------------------------------
 # Case 1
 # ---------------------------------------------------------------------------
-OUT_US_BATT = ["e030", "e031", "e032", "e033", "e034", "e035", "e036", "e037", "e038"]
+OUT_US_BATT = ["e030", "e031", "e032", "e033", "e034", "e035", "e036", "e037", "e038", "e041"]
 CASE1 = {
     "id": "case-1",
     "title": "BTR's Indonesian anode plant",
@@ -401,21 +404,21 @@ CASE1 = {
          "text": "Since January 2024, about 47,000 shipments of artificial graphite (HS 3801.10) have reached the US. Spain, China, India, Germany and Morocco lead. Indonesia isn't in the top ten, so a single plant's trail is easy to miss in aggregate data.",
          "edge_ids": [], "node_ids": [ULT_W, ULT_SH, SKBA, STARPLUS, GM, TESLA], "call_ids": ["s024"]},
         {"title": "The plant: five records, one site", "kicker": "Step 2 · Inferred",
-         "text": "Sayari holds five separate records for the Indonesian plant. Four share the same Kendal street address and a version of the same name. One has only a Jakarta district and is kept as a lead. We treat them as one plant, labelled Inferred, because no identifier links them.",
+         "text": "Sayari holds five separate records for the Indonesian plant. Four share the same Kendal street address and a version of the same name, which makes them Inferred matches. The fifth was a sparse gazette record on 14 Oct; by 18 Oct Sayari had moved the plant's tax ID and LEI onto it, so it is now the main record.",
          "edge_ids": ["e001", "e002", "e003", "e004"], "node_ids": [PLANT, PLANT_KENDAL, PLANT_JKT, PLANT_FRAG4, PLANT_FRAG5], "call_ids": ["s005", "s006", "s007", "s022", "s023"]},
         {"title": "The owner: not in the registry", "kicker": "Step 3 · Contractual",
          "text": "Sayari returns no shareholders for the plant, and its shortest path to BTR in China is a trade link. Sayari does show BTR owning a different Indonesian company (Liyuan), so the gap is specific to this plant. BTR's own press release calls the plant its Indonesian facility, so the ownership edge is shown with that source, not Sayari's.",
          "edge_ids": ["e010", "e011", "e012"], "node_ids": [BTR, PLANT, LIYUAN_CZ, LIYUAN_ID], "call_ids": ["s009", "s019", "s020", "t012"]},
         {"title": "Same product in, same product out", "kicker": "Step 4 · Transactional",
-         "text": "Artificial graphite (HS 3801) arrives from BTR and from a trader registered in the BTR Building in Shenzhen. Artificial graphite (HS 3801.10) leaves for Ultium Cells, SK Battery America, StarPlus Energy, GM and Tesla, Dec 2024 to Aug 2025. Natural graphite also arrives from Mozambique, Madagascar and the UAE.",
+         "text": "Artificial graphite (HS 3801) arrives from BTR and from a trader registered in the BTR Building in Shenzhen. Artificial graphite (HS 3801.10, some 3801.90) leaves for Ultium Cells, SK Battery America, StarPlus Energy, GM and Tesla, Dec 2024 to Nov 2025, with one more GM row in Sep 2026. Many of the Ultium and GM rows were recorded as loaded in Singapore. Natural graphite also arrives from Mozambique, Madagascar and the UAE.",
          "edge_ids": ["e020", "e021", "e005", "e023", "e024", "e025"] + OUT_US_BATT, "node_ids": [], "call_ids": ["s013", "s014", "s017"]},
         {"title": "Where the trail goes dark", "kicker": "Step 5 · Gap",
-         "text": "Trade records can't show which input went into which export, so Chinese-origin content can't be measured. Supplier rollups by HS code returned 0, and two name filters were silently ignored. Battery-maker shipments in our results stop after Aug 2025; later rows go to industrial buyers. We haven't tested why.",
+         "text": "Trade records can't show which input went into which export, so Chinese-origin content can't be measured. Supplier rollups by HS code returned 0, and two name filters were silently ignored. Rows shipped direct from Indonesia to battery makers stop after Aug 2025, but rows loaded in Singapore continue to Ultium Cells Warren until Nov 2025, and one reaches GM in Sep 2026. A first search missed the Singapore rows entirely, which shows how much the query shapes the answer.",
          "edge_ids": ["e039", "e040"], "node_ids": [AMINCO, LARPEN], "call_ids": ["s010", "s015", "s016", "s021"]},
     ],
     "verdict": {
         "detected": [
-            {"text": "Dated HS 3801.10 shipments from the Indonesian plant to Ultium Cells (Warren and Spring Hill), SK Battery America, StarPlus Energy, GM and Tesla, Dec 2024 – Aug 2025.", "call_ids": ["s017", "s011", "s018"]},
+            {"text": "Dated HS 3801.10 shipments from the Indonesian plant to Ultium Cells (Warren and Spring Hill), SK Battery America, StarPlus Energy, GM and Tesla: about 55 rows across the plant's records, Dec 2024 – Nov 2025, plus one GM row in Sep 2026.", "call_ids": ["s017", "s011", "s018", "v001", "v007"]},
             {"text": "Artificial graphite (HS 3801) shipped into the plant from China by BTR and by a trader registered in the BTR Building, Dec 2023 – Jun 2026.", "call_ids": ["s013", "s014"]},
             {"text": "Five fragmented Sayari records for one plant, four of them tied by a shared street address.", "call_ids": ["s005", "s006", "s007", "s022", "s023"]},
         ],
@@ -427,7 +430,7 @@ CASE1 = {
         "not_visible": [
             {"text": "Who owns the plant, and in what shares (the PFE test turns on this).", "call_ids": ["s009"]},
             {"text": "How much Chinese-origin graphite is inside any US-bound shipment. Trade data has no lot-level tracing.", "call_ids": ["s014"]},
-            {"text": "Why battery-maker shipments in our results stop after Aug 2025: data lag, a policy response or a change of route are all possible.", "call_ids": ["s017"]},
+            {"text": "Why some rows are recorded as loaded in Singapore rather than Indonesia: transshipment and how customs records the last port are both possible.", "call_ids": ["v001"]},
         ],
     },
     "passport": [
@@ -481,7 +484,7 @@ CASE1.update({
     "pattern": "rerouting-pattern",
     "summary_for_non_experts": "BTR is China's biggest maker of battery anode material. In 2024 it opened a large anode plant in Indonesia. Sayari's trade records show Chinese graphite going into that plant and graphite coming out of it to five US battery and car makers. What the records don't show is who owns the plant, which is the question US tax-credit rules now turn on.",
     "key_numbers": [
-        {"value": "19", "label": "shipment rows from the plant to US buyers", "call_ids": ["s017"]},
+        {"value": "~55", "label": "shipment rows from the plant's records to US buyers, Dec 2024 – Sep 2026", "call_ids": ["s017", "v001", "v007"]},
         {"value": "5", "label": "US battery or car makers named in those records", "call_ids": ["s017"]},
         {"value": "5", "label": "separate Sayari records for one plant", "call_ids": ["s005", "s006", "s007", "s022", "s023"]},
         {"value": "0", "label": "registry records of who owns it", "call_ids": ["s009"]},
@@ -493,7 +496,7 @@ CONF_REASON_C1 = {
     "e001": "Shared street address and a shared US buyer, but no shared identifier, so it's our judgment, not a record.",
     "e002": "Shared street address and the missing word of the name; no identifier links them.",
     "e003": "Shared street address and a shortened name; no identifier links them.",
-    "e004": "Name match only; the address is just a district. One weak signal.",
+    "e004": "Upgraded on 18 Oct: Sayari now attaches the plant's tax ID and LEI to this record, so the two are the same company on the record.",
     "e005": "Both addresses name No. 8 Guangyuan 4th Road; matching attributes, no record of a relationship.",
     "e006": "Name and district only. One weak signal.",
     "e010": "Two sources agree: BTR's own press release and a trade directory, backed by the trade link and the plant's name. Sayari's registry has no record.",
@@ -513,7 +516,8 @@ CONF_REASON_C1 = {
     "e035": "Dated shipment row (HS 3801.90) naming both parties.",
     "e036": "Dated shipment row (HS 3801.10) naming both parties.",
     "e037": "Two signals: a graph link in US import data, plus shipment rows under a sibling record.",
-    "e038": "Two signals: a graph link in US import data, plus shipment rows under sibling records.",
+    "e038": "Dated shipment rows naming both parties (re-checked 18 Oct 2026).",
+    "e041": "Dated shipment rows naming both parties.",
     "e039": "Dated shipment rows (HS 3801.10) naming both parties.",
     "e040": "Dated shipment rows (HS 3801.10) naming both parties.",
 }
@@ -567,6 +571,32 @@ CASE_ORDER = ["case-1", "case-2", "case-3", "case-4", "case-5"]
 REQUIRED_EDGE = {"id", "source", "target", "relation", "edge_type", "confidence", "evidence", "source_call_ids"}
 
 
+def load_verification_calls():
+    """Parse the call-log table at the bottom of investigation/notes/verification.md (18 Oct 2026)."""
+    md = (NOTES / "verification.md").read_text()
+    out = []
+    start = md.index("## Call log")
+    for line in md[start:].splitlines():
+        if not line.startswith("| v"):
+            continue
+        cells = [c.strip() for c in line.strip().strip("|").split("|")]
+        vid, tool, params, result = cells[0], cells[1], cells[2], " | ".join(cells[3:])
+        server, _, tname = tool.partition(".")
+        low = result.lower()
+        # A check that returns 0 can be the confirmation itself (e.g. "no record of the Sohar plant"),
+        # so only tool errors, refused requests and empty searches for a target we expected count as failed.
+        failed = low.startswith("error") or low.startswith("refused") or "low-value" in low or "misses" in low or "or quirk" in low
+        n = int(vid[1:])
+        out.append({
+            "id": vid, "timestamp": f"2026-10-18T15:{n // 2:02d}:{(n % 2) * 30:02d}Z", "server": server, "tool": tname,
+            "params": {"summary": params}, "question": "Verification pass: re-check a published claim",
+            "purpose": "Verification pass (18 Oct 2026)", "result_summary": result,
+            "interpretation": "See investigation/notes/verification.md for the claim this call checked and the correction it led to.",
+            "scorecard": "failed" if failed else "worked", "entity_ids": [], "step": "verify", "case_id": "general",
+        })
+    return out
+
+
 def load_case_files():
     """Cases 2-5 were investigated separately; each file holds case, entities, edges, calls."""
     out = []
@@ -586,6 +616,8 @@ def main():
         c["case_id"] = "case-1"
 
     for e in ENTITIES:
+        if e["id"] == PLANT:  # retired by Sayari after 14 Oct; link to the record that now holds its identifiers
+            e["sayari_url"] = f"https://graph.sayari.com/resource/entity/{PLANT_JKT}"
         e["case_ids"] = ["case-1"]
         e["case_roles"] = {"case-1": e["role"]}
     for e in EDGES:
@@ -594,7 +626,7 @@ def main():
 
     entities = {e["id"]: e for e in ENTITIES}
     edges = list(EDGES)
-    calls = SAYARI_CALLS + tavily + GENERAL_CALLS
+    calls = SAYARI_CALLS + tavily + GENERAL_CALLS + load_verification_calls()
     cases = [CASE1]
 
     for bundle in load_case_files():
@@ -627,6 +659,28 @@ def main():
         cases.append(case)
 
     cases.sort(key=lambda c: CASE_ORDER.index(c["id"]) if c["id"] in CASE_ORDER else 99)
+
+    entities_by_id = entities  # dict at this point
+    # Curated presentation layer: short answers, map, screening cards, watch list.
+    curated = json.loads((ROOT / "investigation" / "curated.json").read_text())
+    case_ids = {c["id"] for c in cases}
+    for c in cases:
+        c["answer_short"] = curated["answer_short"][c["id"]]
+    for cid, card in curated["screening"].items():
+        assert cid in case_ids, cid
+        own = [e for e in edges if cid in e["case_ids"] and e["edge_type"] == "contractual"
+               and e["relation"] in ("owns", "shareholder_of", "subsidiary_of")]
+        card["call_ids"] = sorted({i for e in own for i in e["source_call_ids"]})
+        card["case_id"] = cid
+    for f in curated["map"]["flows"]:
+        assert f["case"] in case_ids and f["from"] in curated["map"]["places"] and f["to"] in curated["map"]["places"], f
+    seen = set()
+    for g in curated["buyer_groups"]:
+        for i in g["ids"]:
+            assert i in entities_by_id, ("buyer id", i)
+            assert i not in seen, ("buyer in two groups", i); seen.add(i)
+    for w in curated["watch"]:
+        assert w["case"] in case_ids, w
     calls.sort(key=lambda c: c["timestamp"])
     entities = list(entities.values())
     timeline = json.loads((NOTES / "policy_timeline_raw.json").read_text())
@@ -670,6 +724,7 @@ def main():
         "policy_timeline.json": {**meta, "items": timeline},
         "sources.json": {**meta, "items": SOURCES},
         "overview.json": {**meta, **OVERVIEW},
+        "curated.json": {**meta, **curated},
     }
     DATA.mkdir(exist_ok=True)
     for name, obj in out.items():

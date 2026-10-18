@@ -72,7 +72,7 @@
       "target": "2omCekb1pDRKjhFOAqCNSw",
       "relation": "possibly_same_as",
       "edge_type": "inferred",
-      "confidence": "lead",
+      "confidence": "documented",
       "hs_codes": [],
       "first_seen": null,
       "last_seen": null,
@@ -86,7 +86,7 @@
       "case_ids": [
         "case-1"
       ],
-      "confidence_reason": "Name match only; the address is just a district. One weak signal."
+      "confidence_reason": "Upgraded on 18 Oct: Sayari now attaches the plant's tax ID and LEI to this record, so the two are the same company on the record."
     },
     {
       "id": "e005",
@@ -509,20 +509,46 @@
       "target": "4fqrWAcyrgtWw2RdV6qZsg",
       "relation": "ships_to",
       "edge_type": "transactional",
-      "confidence": "corroborated",
-      "hs_codes": [],
-      "first_seen": null,
-      "last_seen": null,
-      "shipment_count": null,
-      "evidence": "Graph link from US import data; shipment rows seen under records 4 and 5 (e034, e035).",
+      "confidence": "documented",
+      "hs_codes": [
+        "3801"
+      ],
+      "first_seen": "2025-04-07",
+      "last_seen": "2026-09-19",
+      "shipment_count": 6,
+      "evidence": "Artificial graphite (HS 3801). 5 rows arriving 7 Apr 2025 and 1 row arriving 19 Sep 2026, recorded in US import data as loaded in Singapore.",
       "source_call_ids": [
         "s011",
-        "s018"
+        "s018",
+        "v001"
       ],
       "case_ids": [
         "case-1"
       ],
-      "confidence_reason": "Two signals: a graph link in US import data, plus shipment rows under sibling records."
+      "confidence_reason": "Dated shipment rows naming both parties (re-checked 18 Oct 2026)."
+    },
+    {
+      "id": "e041",
+      "source": "dH3rqoht5wahpKLPJih3gA",
+      "target": "rvgklT24qqqfH2rnlVlyBg",
+      "relation": "ships_to",
+      "edge_type": "transactional",
+      "confidence": "documented",
+      "hs_codes": [
+        "380110",
+        "380190"
+      ],
+      "first_seen": "2025-07-30",
+      "last_seen": "2025-11-21",
+      "shipment_count": 26,
+      "evidence": "Artificial graphite (22 rows HS 3801.10, 4 rows HS 3801.90). 26 rows arriving 30 Jul – 21 Nov 2025, recorded in US import data as loaded in Singapore. Found in the 18 Oct verification pass.",
+      "source_call_ids": [
+        "v001"
+      ],
+      "case_ids": [
+        "case-1"
+      ],
+      "confidence_reason": "Dated shipment rows naming both parties."
     },
     {
       "id": "e039",
@@ -557,11 +583,12 @@
         "380110"
       ],
       "first_seen": "2026-06-10",
-      "last_seen": "2026-06-10",
-      "shipment_count": 2,
-      "evidence": "Artificial graphite in 1–10 mm grades (HS 3801.10). 2 rows, 10 Jun 2026. Grades suggest metallurgical use.",
+      "last_seen": "2026-08-31",
+      "shipment_count": 7,
+      "evidence": "Artificial graphite in 1–10 mm grades (HS 3801.10). 7 rows, Jun – Aug 2026 (5 added in the 18 Oct re-check). Grades suggest metallurgical use.",
       "source_call_ids": [
-        "s017"
+        "s017",
+        "v011"
       ],
       "case_ids": [
         "case-1"
@@ -1206,6 +1233,29 @@
       "source_call_ids": [
         "s218",
         "s219"
+      ],
+      "case_ids": [
+        "case-2"
+      ]
+    },
+    {
+      "id": "e231",
+      "source": "ekoH1fr8BGvHc7UqYCY_YA",
+      "target": "1CjF5vzVgFFxVomroaYyaA",
+      "relation": "ships_to",
+      "edge_type": "transactional",
+      "confidence": "documented",
+      "hs_codes": [
+        "380110"
+      ],
+      "first_seen": "2026-08-19",
+      "last_seen": "2026-08-19",
+      "shipment_count": 3,
+      "evidence": "Artificial graphite (HS 3801.10): 40 t + 1,160 t + 40 t, about US$857,000, Morowali (IMIP) to Tangier Tech. Indonesian export data.",
+      "confidence_reason": "Dated shipment rows naming both parties (Indonesian export data).",
+      "source_call_ids": [
+        "v014",
+        "v015"
       ],
       "case_ids": [
         "case-2"
@@ -4172,7 +4222,7 @@
       "first_seen": "2025-07-16",
       "last_seen": "2026-08-10",
       "shipment_count": null,
-      "evidence": "Li-ion cells (HS 8507.60) on 3 and 10 Aug 2026 (one via Jamaica). The graph shows HS 8507 from China and Korea, Jul 2025 – Aug 2026. Also a carton marked for delivery to Gotion Illinois, Manteno (16 Aug 2025).",
+      "evidence": "Li-ion cells (HS 8507.60) on 3 and 10 Aug 2026 (one transshipped at Kingston, Jamaica). The graph shows HS 8507 from China and Korea, Jul 2025 – Aug 2026. Also a carton marked for delivery to Gotion Illinois, Manteno (16 Aug 2025).",
       "source_call_ids": [
         "s710",
         "s713",
@@ -4196,7 +4246,7 @@
       "first_seen": "2024-06-20",
       "last_seen": "2026-08-10",
       "shipment_count": null,
-      "evidence": "Li-ion cells (HS 8507.60), 2 rows on 10 Aug 2026 via Jamaica; an LFP energy-storage pack on 28 Jul 2026; HS 8507 flows from Jun 2024 in the graph.",
+      "evidence": "Li-ion cells (HS 8507.60), 2 rows on 10 Aug 2026, transshipped at Kingston, Jamaica (ZIM); an LFP energy-storage pack on 28 Jul 2026; HS 8507 flows from Jun 2024 in the graph.",
       "source_call_ids": [
         "s710",
         "s713",
@@ -4326,7 +4376,7 @@
       "first_seen": "2026-08-23",
       "last_seen": "2026-08-23",
       "shipment_count": 3,
-      "evidence": "Li-ion cells (HS 8507.60), 3 rows on 23 Aug 2026, routed via Jamaica, to a US freight forwarder.",
+      "evidence": "Li-ion cells (HS 8507.60), 3 rows on 23 Aug 2026, transshipped at Kingston, Jamaica (ZIM), to a US freight forwarder.",
       "source_call_ids": [
         "s713"
       ],

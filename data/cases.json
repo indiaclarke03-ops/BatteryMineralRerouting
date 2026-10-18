@@ -30,7 +30,7 @@
         {
           "title": "The plant: five records, one site",
           "kicker": "Step 2 · Inferred",
-          "text": "Sayari holds five separate records for the Indonesian plant. Four share the same Kendal street address and a version of the same name. One has only a Jakarta district and is kept as a lead. We treat them as one plant, labelled Inferred, because no identifier links them.",
+          "text": "Sayari holds five separate records for the Indonesian plant. Four share the same Kendal street address and a version of the same name, which makes them Inferred matches. The fifth was a sparse gazette record on 14 Oct; by 18 Oct Sayari had moved the plant's tax ID and LEI onto it, so it is now the main record.",
           "edge_ids": [
             "e001",
             "e002",
@@ -77,7 +77,7 @@
         {
           "title": "Same product in, same product out",
           "kicker": "Step 4 · Transactional",
-          "text": "Artificial graphite (HS 3801) arrives from BTR and from a trader registered in the BTR Building in Shenzhen. Artificial graphite (HS 3801.10) leaves for Ultium Cells, SK Battery America, StarPlus Energy, GM and Tesla, Dec 2024 to Aug 2025. Natural graphite also arrives from Mozambique, Madagascar and the UAE.",
+          "text": "Artificial graphite (HS 3801) arrives from BTR and from a trader registered in the BTR Building in Shenzhen. Artificial graphite (HS 3801.10, some 3801.90) leaves for Ultium Cells, SK Battery America, StarPlus Energy, GM and Tesla, Dec 2024 to Nov 2025, with one more GM row in Sep 2026. Many of the Ultium and GM rows were recorded as loaded in Singapore. Natural graphite also arrives from Mozambique, Madagascar and the UAE.",
           "edge_ids": [
             "e020",
             "e021",
@@ -93,7 +93,8 @@
             "e035",
             "e036",
             "e037",
-            "e038"
+            "e038",
+            "e041"
           ],
           "node_ids": [],
           "call_ids": [
@@ -105,7 +106,7 @@
         {
           "title": "Where the trail goes dark",
           "kicker": "Step 5 · Gap",
-          "text": "Trade records can't show which input went into which export, so Chinese-origin content can't be measured. Supplier rollups by HS code returned 0, and two name filters were silently ignored. Battery-maker shipments in our results stop after Aug 2025; later rows go to industrial buyers. We haven't tested why.",
+          "text": "Trade records can't show which input went into which export, so Chinese-origin content can't be measured. Supplier rollups by HS code returned 0, and two name filters were silently ignored. Rows shipped direct from Indonesia to battery makers stop after Aug 2025, but rows loaded in Singapore continue to Ultium Cells Warren until Nov 2025, and one reaches GM in Sep 2026. A first search missed the Singapore rows entirely, which shows how much the query shapes the answer.",
           "edge_ids": [
             "e039",
             "e040"
@@ -125,11 +126,13 @@
       "verdict": {
         "detected": [
           {
-            "text": "Dated HS 3801.10 shipments from the Indonesian plant to Ultium Cells (Warren and Spring Hill), SK Battery America, StarPlus Energy, GM and Tesla, Dec 2024 – Aug 2025.",
+            "text": "Dated HS 3801.10 shipments from the Indonesian plant to Ultium Cells (Warren and Spring Hill), SK Battery America, StarPlus Energy, GM and Tesla: about 55 rows across the plant's records, Dec 2024 – Nov 2025, plus one GM row in Sep 2026.",
             "call_ids": [
               "s017",
               "s011",
-              "s018"
+              "s018",
+              "v001",
+              "v007"
             ]
           },
           {
@@ -188,9 +191,9 @@
             ]
           },
           {
-            "text": "Why battery-maker shipments in our results stop after Aug 2025: data lag, a policy response or a change of route are all possible.",
+            "text": "Why some rows are recorded as loaded in Singapore rather than Indonesia: transshipment and how customs records the last port are both possible.",
             "call_ids": [
-              "s017"
+              "v001"
             ]
           }
         ]
@@ -305,10 +308,12 @@
       "summary_for_non_experts": "BTR is China's biggest maker of battery anode material. In 2024 it opened a large anode plant in Indonesia. Sayari's trade records show Chinese graphite going into that plant and graphite coming out of it to five US battery and car makers. What the records don't show is who owns the plant, which is the question US tax-credit rules now turn on.",
       "key_numbers": [
         {
-          "value": "19",
-          "label": "shipment rows from the plant to US buyers",
+          "value": "~55",
+          "label": "shipment rows from the plant's records to US buyers, Dec 2024 – Sep 2026",
           "call_ids": [
-            "s017"
+            "s017",
+            "v001",
+            "v007"
           ]
         },
         {
@@ -336,7 +341,8 @@
             "s009"
           ]
         }
-      ]
+      ],
+      "answer_short": "Chinese graphite goes in, and graphite goes out to five US battery and car makers. Who owns the plant isn't in the registry."
     },
     {
       "id": "case-2",
@@ -346,7 +352,7 @@
       "country": "MAR",
       "plant_status": "under construction",
       "question": "Can Sayari show who owns BTR's new Moroccan anode plant, and whether it already ships graphite to the US?",
-      "headline": "The reverse of Case 1: ownership is visible, trade is not. Sayari traces BTR's Moroccan subsidiary to BTR in China through a Singapore holding company, 100% at each step. The plant has no graphite trade yet, and the 3,088 'graphite' shipments from Morocco to the US are mostly mislabelled fertilizers and chemicals, plus a little European industrial graphite.",
+      "headline": "The reverse of Case 1: ownership is visible, and trade has only just begun. Sayari traces BTR's Moroccan subsidiary to BTR in China through a Singapore holding company, 100% at each step. In Aug 2026 the plant received its first artificial graphite (1,240 t) from BTR's own Indonesian plant, and it has exported nothing yet. The 3,088 'graphite' shipments from Morocco to the US are mostly mislabelled fertilizers and chemicals, plus a little European industrial graphite.",
       "summary_for_non_experts": "BTR, the world's biggest maker of graphite for battery anodes, is building a 60,000-tonne-a-year anode plant near Tangier through a local subsidiary. Morocco has a US free-trade agreement, so a plant there could one day supply US battery makers. Sayari's company records show that the plant belongs to BTR, via Singapore and a BTR subsidiary in Jiangsu. So far the plant has only imported building materials and machinery from China. None of the large Morocco-to-US 'graphite' trade is battery material.",
       "key_numbers": [
         {
@@ -360,10 +366,12 @@
           ]
         },
         {
-          "value": "0",
-          "label": "graphite shipments in or out of the Moroccan plant's six Sayari records",
+          "value": "3 in, 0 out",
+          "label": "graphite shipments for the Moroccan plant: 1,240 t from BTR Indonesia, 19 Aug 2026 (found 18 Oct)",
           "call_ids": [
-            "s210"
+            "s210",
+            "v014",
+            "v015"
           ]
         },
         {
@@ -419,7 +427,7 @@
         {
           "title": "The owner: visible this time",
           "kicker": "Step 2 · Contractual",
-          "text": "Moroccan records name a Singapore holding company, BNUO International, as 100% owner. Singapore records show BNUO is 100% owned by BTR (Jiangsu), and Chinese records show BTR owns all of BTR (Jiangsu). One step is a 'possibly same as' link between two BNUO records, backed by a shared officer, Yang Shunyi. BTR's own release confirms the subsidiary. The same person, Yang Shunyi, is director of the Singapore holding company and manager of the Moroccan plant company, with an address in BTR's home district of Shenzhen.",
+          "text": "Moroccan records name a Singapore holding company, BNUO International, as 100% owner. Singapore records show BNUO is 100% owned by BTR (Jiangsu), and Chinese records show BTR owns all of BTR (Jiangsu). One step is a 'possibly same as' link between two BNUO records, backed by a shared officer, Yang Shunyi. BTR's own release confirms the subsidiary. The same person, Yang Shunyi, is director of the Singapore holding company and manager of the Moroccan plant company, with an address in BTR's home district of Shenzhen. One hop is a record match: the Singapore record of BTR (Jiangsu) is linked to the Chinese registry record by name and address, not by a shared identifier.",
           "edge_ids": [
             "e201",
             "e202",
@@ -456,15 +464,16 @@
           ]
         },
         {
-          "title": "Inputs: steel and machinery, not graphite",
+          "title": "Inputs: construction goods, then BTR graphite",
           "kicker": "Step 3 · Transactional",
-          "text": "All 10 shipment rows for the plant are inbound from China, Nov 2025 – Jun 2026: pipes, racks, machinery and goods from a construction contractor. There is no graphite in and nothing out. The plant is still being built.",
+          "text": "From Nov 2025 to Jun 2026, the plant's rows are construction goods from China: pipes, racks, machinery. Then, on 19 Aug 2026, three rows of artificial graphite (HS 3801.10, 1,240 t, about US$857,000) left BTR's Indonesian plant in Morowali for the Tangier anode company. That is graphite moving between two BTR-owned plants. Nothing has left Tangier yet.",
           "edge_ids": [
             "e214",
             "e215",
             "e216",
             "e217",
-            "e218"
+            "e218",
+            "e231"
           ],
           "node_ids": [
             "9YkmymiyFPtNKUELqJc27g",
@@ -475,7 +484,9 @@
           ],
           "call_ids": [
             "s210",
-            "t201"
+            "t201",
+            "v014",
+            "v015"
           ]
         },
         {
@@ -556,9 +567,11 @@
             ]
           },
           {
-            "text": "Construction-stage imports from China to the plant (pipes, racks, machinery), Nov 2025 – Jun 2026.",
+            "text": "Construction-stage imports from China (Nov 2025 – Jun 2026), then the first artificial graphite: 1,240 t from BTR's Indonesian plant on 19 Aug 2026.",
             "call_ids": [
-              "s210"
+              "s210",
+              "v014",
+              "v015"
             ]
           },
           {
@@ -589,10 +602,9 @@
         ],
         "not_visible": [
           {
-            "text": "Any graphite going into or out of the Moroccan plant. It has not started production, so there is no trail yet.",
+            "text": "Where the Tangier plant's output will go. It has exported nothing yet.",
             "call_ids": [
-              "s210",
-              "t201"
+              "v014"
             ]
           },
           {
@@ -625,17 +637,17 @@
           "field": "Detailed composition (anode)",
           "guidance_no": "45",
           "declared": "'Graphite' as the anode active material.",
-          "paper_trail": "Not yet observable: the plant has no graphite inputs or outputs in Sayari.",
+          "paper_trail": "First input seen: artificial graphite (HS 3801.10) from BTR's Indonesian plant, Aug 2026. No outputs yet.",
           "gap": true,
-          "note": "The feedstock source (Chinese coke or graphite, or another source) is unknown until imports start."
+          "note": "BTR Indonesia itself takes Chinese graphite (Case 1), so Tangier's feedstock may be Chinese-origin at one remove."
         },
         {
           "field": "Critical raw materials > 0.1%",
           "guidance_no": "15",
           "declared": "Natural graphite listed if present.",
-          "paper_trail": "No graphite inputs recorded.",
+          "paper_trail": "Artificial graphite inputs recorded from Aug 2026; no natural graphite yet.",
           "gap": true,
-          "note": "Trail not started."
+          "note": "Early days: one consignment so far."
         },
         {
           "field": "Responsible-sourcing (due-diligence) report",
@@ -711,11 +723,13 @@
         "We read about 90 of the 3,088 corridor rows (ranked results), not all of them. A small battery-grade flow could still be hidden in the rest.",
         "'Departure Morocco' probably often means transshipment through Tanger Med; the European graphite rows likely did not originate in Morocco.",
         "Entity-resolution links are our judgment and could be wrong. The Yang Shunyi match is across records with reversed name order.",
-        "Sayari free-text queries rank rows but do not filter them; counts after a quoted query are not counts of matches."
+        "Sayari free-text queries rank rows but do not filter them; counts after a quoted query are not counts of matches.",
+        "The Aug 2026 graphite rows were found in an 18 Oct 2026 re-check; they were either newer than the first search or filed under a trade record the first search missed."
       ],
       "answer_label": "Partly",
-      "answer": "Ownership: yes. Registry data shows BTR owning the Tangier company 100% through a Singapore holding company, and the same executive runs both. Shipments: not yet. The plant is still being built and has no graphite trade.",
-      "why_it_matters": "Morocco has a US free-trade agreement, and BTR's plant is meant to supply Western carmakers. Because ownership is already on record, US buyers can tell the plant is Chinese-owned before its first shipment, which is exactly what the tax-credit rules ask them to check."
+      "answer": "Ownership: yes. Registry data shows BTR owning the Tangier company 100% through a Singapore holding company, and the same executive runs both. Shipments: inbound only so far. In Aug 2026, BTR's Indonesian plant sent 1,240 t of artificial graphite to the Tangier anode company; nothing has left the plant yet.",
+      "why_it_matters": "Morocco has a US free-trade agreement, and BTR's plant is meant to supply Western carmakers. Because ownership is already on record, US buyers can tell the plant is Chinese-owned before its first shipment, which is exactly what the tax-credit rules ask them to check.",
+      "answer_short": "BTR's 100% ownership is on record. The first graphite arrived from BTR's own Indonesian plant in Aug 2026, and nothing has been exported yet."
     },
     {
       "id": "case-3",
@@ -755,7 +769,7 @@
         },
         {
           "value": "32",
-          "label": "artificial-graphite rows to two Malaysian cell plants, Apr 2025–Apr 2026",
+          "label": "artificial-graphite rows (HS 3801.10 or 3801.90) to two Malaysian cell plants, Apr 2025–Apr 2026",
           "call_ids": [
             "s318"
           ]
@@ -1064,7 +1078,8 @@
       ],
       "answer_label": "Not yet",
       "answer": "The Oman plant isn't in Sayari yet. Ownership is visible inside China's registry and in the company's own filing. Today Zhongke graphite reaches the US mostly indirectly, as artificial graphite shipped to two Malaysian battery-cell plants.",
-      "why_it_matters": "At up to 200,000 t/yr, Sohar would be one of the largest anode plants outside China. Recording its ownership now gives buyers a baseline before any 'Made in Oman' anode material appears."
+      "why_it_matters": "At up to 200,000 t/yr, Sohar would be one of the largest anode plants outside China. Recording its ownership now gives buyers a baseline before any 'Made in Oman' anode material appears.",
+      "answer_short": "The Oman plant isn't in the data yet. Zhongke graphite reaches the US today through Malaysian cell plants."
     },
     {
       "id": "case-4",
@@ -1400,7 +1415,8 @@
       ],
       "answer_label": "Yes",
       "answer": "Yes on ownership: POSCO Holdings owns 58.2% of POSCO Future M, with no Chinese owner in the chain. Partly on inputs: Chinese graphite flowed in until Dec 2023. It ships to the same US buyers as BTR Indonesia.",
-      "why_it_matters": "The US rules treat a Chinese-owned supplier very differently from a non-Chinese supplier that buys some Chinese inputs. Trade records alone make the two look alike, and ownership data is what separates them."
+      "why_it_matters": "The US rules treat a Chinese-owned supplier very differently from a non-Chinese supplier that buys some Chinese inputs. Trade records alone make the two look alike, and ownership data is what separates them.",
+      "answer_short": "Korean-owned, with Chinese graphite inputs. It sells to the same US buyers as BTR Indonesia."
     },
     {
       "id": "case-5",
@@ -1747,7 +1763,8 @@
       ],
       "answer_label": "Not yet",
       "answer": "No. The rows from Vietnam, Malaysia, Thailand, Mexico and Korea were electrode makers, machined parts, forwarders or mislabelled chemicals. The one Chinese-owned anode plant found, Putailai's Zichen Malaysia, is 100% Chinese-owned on paper but still under construction.",
-      "why_it_matters": "This sets a baseline: as of Oct 2026, the big third-country Chinese anode plants aren't yet shipping to the US. It also shows that country-level trade totals can mislead, so buyers need plant-level checks."
+      "why_it_matters": "This sets a baseline: as of Oct 2026, the big third-country Chinese anode plants aren't yet shipping to the US. It also shows that country-level trade totals can mislead, so buyers need plant-level checks.",
+      "answer_short": "No Chinese-owned anode maker is shipping to the US from five corridors. Putailai's Malaysian plant is still being built."
     },
     {
       "id": "case-6",
@@ -2109,7 +2126,7 @@
           "signal": "transactional",
           "severity": "Medium",
           "result": "suggested",
-          "note": "No spike, but after the June 2026 1260H listing the US rows depart Singapore, Yantian and Pusan instead of Penang."
+          "note": "No spike. One row on 19 Jun 2026, after the 8 Jun listing, still left from 'Pinang' (Penang). From July 2026 the US rows depart Singapore, Yantian or Pusan instead."
         },
         {
           "flag": "Shared address or officer with a flagged entity",
@@ -2142,7 +2159,8 @@
         "HS 2842.90 is read as cathode powder from the code and supplier names only.",
         "Ownership percentages are missing for EVE Asia → EVE Malaysia and for CATL → Xiamen Ampace.",
         "Departure ports such as 'Pinang' and 'Hongkong' appear with mismatched countries in some rows. Treat the route details with care."
-      ]
+      ],
+      "answer_short": "Chinese anode graphite goes in and finished cells go out to US buyers, from a plant owned by China's EVE Energy."
     },
     {
       "id": "case-7",
@@ -2269,7 +2287,7 @@
         {
           "title": "Inputs: straight from the parent's factories",
           "kicker": "Step 3 · Transactional",
-          "text": "Two rows of artificial graphite (HS 3801.10) went from Hefei Gotion to Gotion Inc. in Fremont, shipped from Busan on 23 Dec 2025. Lithium-ion cells and packs (HS 8507) arrive from Hefei Gotion and the group's Tongcheng plant, some via Jamaica. That includes 29 rows of packs bound for Manteno in Aug 2026. A Taiwan trader, Green Innovation International, sends pack covers and storage-system parts. No natural graphite (HS 2504) or petroleum coke appears.",
+          "text": "Two rows of artificial graphite (HS 3801.10) went from Hefei Gotion to Gotion Inc. in Fremont, shipped from Busan on 23 Dec 2025. Lithium-ion cells and packs (HS 8507) arrive from Hefei Gotion and the group's Tongcheng plant. Some US import rows list Kingston, Jamaica as the last port: that is a ZIM transshipment hub, and the bills of lading were issued in Shanghai and Yantian, so these are Chinese shipments, not a Jamaican route. That includes 29 rows of packs bound for Manteno in Aug 2026. A Taiwan trader, Green Innovation International, sends pack covers and storage-system parts. No natural graphite (HS 2504) or petroleum coke appears.",
           "edge_ids": [
             "e721",
             "e722",
@@ -2514,7 +2532,8 @@
         "The two graphite rows have no grain size or 'anode' wording. HS 3801.10 also covers industrial graphite, so the grade is unknown.",
         "Buyer names come from customs records and rollups; they say nothing about any buyer's compliance. 1Energy Systems and Caban Systems were not checked row by row.",
         "Plant status comes from press and a partner's press release, not from Sayari."
-      ]
+      ],
+      "answer_short": "Gotion's Chinese plants ship cells, packs and graphite to its US sites, but no US record shows who owns them."
     },
     {
       "id": "case-8",
@@ -2904,8 +2923,10 @@
         "A port of loading (e.g. Shanghai) is not a country of origin. The Shanghai-loaded flake rows name no supplier.",
         "All China rows we found are from 2022. Later trade may exist outside Sayari's coverage.",
         "Plant status and the Tesla offtake come from the company and the press (Tavily), not from Sayari.",
-        "Entity-resolution links are our judgment and could be wrong."
-      ]
+        "Entity-resolution links are our judgment and could be wrong.",
+        "Sayari has since filed the Aug 2025 Twigg → BTR Indonesia row under another Twigg record (pINZVxJgOaXpyrNkPgaeBQ); the shipment itself was re-confirmed on 18 Oct 2026."
+      ],
+      "answer_short": "A non-Chinese chain from Mozambique to Louisiana, but the same mine also supplies Chinese-owned plants."
     }
   ]
 }

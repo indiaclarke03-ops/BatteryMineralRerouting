@@ -1,5 +1,28 @@
 # Changelog
 
+## Iteration 1.3 · 18 Oct 2026
+- Re-check of every headline claim and policy date (52 calls; `investigation/notes/verification.md`). Corrections:
+  - Case 1: about 55 rows, including Singapore-loaded ones; shipments to Ultium continue to Nov 2025. Sayari merged the anchor record.
+  - Case 2: first graphite into Tangier from BTR Indonesia (1,240 t, 19 Aug 2026).
+  - Case 7: "via Jamaica" rows explained as ZIM transshipment at Kingston.
+  - Case 6: port wording. Policy: EVE 1260H confirmed; truce extended to 10 Jan 2027, but Announcement 70 still ends 10 Nov 2026.
+- Home page:
+  - new headline
+  - world map of the eight supply chains
+  - simpler case cards with one-line answers
+  - findings as a numbered list
+  - walkthrough graph and verdict removed
+  - glossary collapsed
+- New pages:
+  - **Check a Buyer:** suppliers, owners and shipments for a chosen US buyer.
+  - **Due Diligence:** ownership screening, supplier questions and a watch list.
+- Explore:
+  - four-column layout (owners → suppliers → plant → buyers)
+  - case tabs, with filters tucked away
+  - duplicate buyer records merged
+  - readable starting zoom
+- About: removed the audience sentence and updated the purpose.
+
 ## Iteration 1.2 · 14 Oct 2026 (before class, second review)
 - Three more cases:
   - EVE Energy Malaysia, rerouting at the cell level

@@ -359,7 +359,7 @@
     "signal": "transactional",
     "severity": "Medium",
     "result": "suggested",
-    "note": "No spike, but after the June 2026 1260H listing the US rows depart Singapore, Yantian and Pusan instead of Penang."
+    "note": "No spike. One row on 19 Jun 2026, after the 8 Jun listing, still left from 'Pinang' (Penang). From July 2026 the US rows depart Singapore, Yantian or Pusan instead."
    },
    {
     "flag": "Shared address or officer with a flagged entity",

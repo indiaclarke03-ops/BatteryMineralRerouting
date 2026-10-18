@@ -43,7 +43,7 @@
           <span class="pattern ${PT.esc(c.pattern)}">${PT.esc(PT.PATTERN[c.pattern] || c.pattern)}</span>
           Overall confidence: ${PT.confBadge(c.overall_confidence)}
           <span class="muted" style="font-size:var(--fs-0)">${nEdges} links · ${nCalls} logged calls · plant ${PT.esc(c.plant_status || "")}</span>
-          <a href="index.html?case=${PT.esc(c.id)}#trace" class="btn" style="margin-left:auto">Walk through it →</a>
+          <a href="explore.html?case=${PT.esc(c.id)}" class="btn" style="margin-left:auto">Open in Explore →</a>
         </div>
         ${PT.qaHTML(c)}
         <details style="margin-bottom:var(--s-3)"><summary>The full answer in plain English</summary>

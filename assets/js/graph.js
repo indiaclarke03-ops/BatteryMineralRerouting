@@ -18,7 +18,7 @@
   };
 
   function shortName(n) {
-    return String(n)
+    return String(n).replace(/\s*\((trade record[^)]*|[^)]*misspelt record|[^)]*record \d+|record \d+)\)\s*$/i, "")
       .replace(/,? (Co\.,? )?Ltd\.?$/i, "").replace(/ (Sdn\.? Bhd\.?|Pte\.? Ltd\.?|LLC|Inc\.?|Lda|S\.A\.|\(SASU\))\.?$/i, "")
       .replace(/\s+/g, " ").trim();
   }
@@ -36,6 +36,11 @@
     if (merge) {
       edges.filter((e) => e.relation === "possibly_same_as" && e.confidence !== "lead")
         .forEach((e) => { const a = find(e.source), b = find(e.target); if (a !== b) parent.set(a, b); });
+      // Known duplicate buyer records (e.g. misspellings), curated on the Check a Buyer page
+      ((d.curated && d.curated.buyer_groups) || []).filter((g) => g.category !== "forwarder").forEach((g) => {
+        const present = g.ids.filter((i) => parent.has(i));
+        for (let i = 1; i < present.length; i++) { const a = find(present[i]), b = find(present[0]); if (a !== b) parent.set(a, b); }
+      });
     }
     const degree = new Map();
     edges.forEach((e) => { degree.set(e.source, (degree.get(e.source) || 0) + 1); degree.set(e.target, (degree.get(e.target) || 0) + 1); });
@@ -47,15 +52,18 @@
       ids.forEach((id) => rep.set(id, best));
     });
 
+    const groupName = new Map();
+    ((d.curated && d.curated.buyer_groups) || []).forEach((g) => g.ids.forEach((i) => groupName.set(i, g.name)));
     const nodeEls = [];
     groups.forEach((ids) => {
       const id = rep.get(ids[0]);
       const e = d.entityById.get(id);
+      const display = ids.length > 1 && groupName.has(id) ? groupName.get(id) : e.name;
       const role = (caseId && e.case_roles && e.case_roles[caseId]) || e.role;
       const flagged = ids.some((x) => (d.entityById.get(x).risk_flags || []).some((f) => RISKY.test(f)));
       const extra = ids.length > 1 ? ` · ${ids.length} records` : "";
       nodeEls.push({
-        data: { id, members: ids, label: `${flagged ? "⚑ " : ""}${shortName(e.name)}\n${PT.country(e.country)}${extra}` },
+        data: { id, members: ids, label: `${flagged ? "⚑ " : ""}${shortName(display)}\n${PT.country(e.country)}${extra}` },
         classes: [role || "contrast", e.type === "person" ? "person" : "", ids.length > 1 ? "merged" : ""].join(" "),
       });
     });
@@ -119,6 +127,10 @@
     { selector: "node:selected", style: { "border-color": "#E0A100", "border-width": 4 } },
     { selector: "edge:selected", style: { "line-color": "#E0A100", "target-arrow-color": "#E0A100", opacity: 1, label: "data(label)" } },
     { selector: ".hidden", style: { display: "none" } },
+    { selector: "node.lane", style: {
+      "background-opacity": 0, "border-width": 0, label: "data(label)", "font-family": "IBM Plex Mono, monospace",
+      "font-size": 13, "font-weight": 600, color: "#0F5E5C", "text-transform": "uppercase", width: 200, height: 24, events: "no",
+    } },
   ];
 
   PT.nodePanel = function (d, e, members, caseId) {
@@ -164,6 +176,69 @@
   };
 
 
+
+  /* Lane layout for a single case: Owners & people | Suppliers | The plant | Buyers.
+     Every case reads left to right in the same structure. */
+  const LANES = ["Owners and people", "Suppliers and inputs", "The plant", "Buyers and outputs"];
+  function laneLayout(cy) {
+    cy.remove(".lane");
+    const nodes = cy.nodes();
+    if (!nodes.length) return;
+    let P = nodes.filter(".transit_plant");
+    if (P.empty()) P = nodes.max((n) => n.degree()).ele.collection();
+    const col = new Map(); const depth = new Map(); const weight = new Map();
+    P.forEach((n) => col.set(n.id(), 2));
+    const isP = (id) => col.get(id) === 2 && P.getElementById(id).nonempty();
+    const tx = cy.edges(".tx"), ct = cy.edges(".ct"), inf = cy.edges(".inf");
+    // Owners: walk up ownership/officer links from the plant
+    let changed = true, level = 1;
+    while (changed && level < 8) {
+      changed = false;
+      ct.forEach((e) => {
+        const s = e.data("source"), t = e.data("target");
+        if (!col.has(s) && (isP(t) || col.get(t) === 0)) { col.set(s, 0); depth.set(s, (depth.get(t) || 0) + 1); changed = true; }
+      });
+      level++;
+    }
+    // Buyers (after owners, so an owner that also buys stays with the owners): shipments leaving the plant
+    tx.forEach((e) => { if (isP(e.data("source")) && !col.has(e.data("target"))) { col.set(e.data("target"), 3); weight.set(e.data("target"), (weight.get(e.data("target")) || 0) + e.data("w")); } });
+    // Suppliers: shipments into the plant
+    tx.forEach((e) => { if (isP(e.data("target")) && !col.has(e.data("source"))) { col.set(e.data("source"), 1); weight.set(e.data("source"), (weight.get(e.data("source")) || 0) + e.data("w")); } });
+    // Duplicate-record leads sit with the plant
+    inf.forEach((e) => { [[e.data("source"), e.data("target")], [e.data("target"), e.data("source")]].forEach(([a, b]) => { if (!col.has(a) && isP(b)) col.set(a, 2); }); });
+    // Everything else joins its nearest placed neighbour
+    for (let pass = 0; pass < 4; pass++) {
+      nodes.forEach((n) => {
+        if (col.has(n.id())) return;
+        const nb = n.neighborhood("node").filter((m) => col.has(m.id()));
+        if (nb.nonempty()) {
+          const c = col.get(nb[0].id());
+          const outOfPlant = n.edgesWith(P).filter((e) => isP(e.data("source"))).nonempty();
+          col.set(n.id(), c === 2 ? (outOfPlant ? 3 : 1) : c);
+          if (c === 0) depth.set(n.id(), (depth.get(nb[0].id()) || 0));
+        }
+      });
+    }
+    nodes.forEach((n) => { if (!col.has(n.id())) col.set(n.id(), 1); });
+
+    const X = [0, 330, 660, 990], GAP = 22;
+    const pos = {}; let top = Infinity;
+    [0, 1, 2, 3].forEach((c) => {
+      let list = nodes.filter((n) => col.get(n.id()) === c);
+      if (!list.length) return;
+      list = list.sort((a, b) => c === 0 ? (depth.get(b.id()) || 0) - (depth.get(a.id()) || 0) || a.data("label").localeCompare(b.data("label"))
+        : c === 2 ? b.degree() - a.degree() : (weight.get(b.id()) || 0) - (weight.get(a.id()) || 0) || a.data("label").localeCompare(b.data("label")));
+      const hs = list.map((n) => n.outerHeight());
+      const total = hs.reduce((a, h) => a + h + GAP, -GAP);
+      let y = -total / 2;
+      list.forEach((n, i) => { pos[n.id()] = { x: X[c], y: y + hs[i] / 2 }; y += hs[i] + GAP; });
+      top = Math.min(top, -total / 2);
+    });
+    nodes.positions((n) => pos[n.id()]);
+    const used = [0, 1, 2, 3].filter((c) => nodes.some((n) => col.get(n.id()) === c));
+    cy.add(used.map((c) => ({ group: "nodes", data: { id: `lane-${c}`, label: LANES[c] }, classes: "lane", position: { x: X[c], y: top - 60 } })));
+  }
+
   PT.Graph = function (container, d, opts = {}) {
     if (typeof cytoscape === "undefined") {
       container.innerHTML = `<p class="graph-fallback">The graph library didn't load. The list view shows the same links.</p>`;
@@ -178,7 +253,10 @@
       wheelSensitivity: 0.2, minZoom: 0.2, maxZoom: 2.5, boxSelectionEnabled: false,
       autoungrabify: true, // nodes can't be dragged; clicking only opens details
     });
-    const layout = () => cy.layout({ name: "dagre", rankDir: "LR", nodeSep: 24, rankSep: 120, edgeSep: 12, padding: 30, animate: false }).run();
+    const layout = () => {
+      if (caseId && opts.lanes !== false) laneLayout(cy);
+      else cy.layout({ name: "dagre", rankDir: "LR", nodeSep: 24, rankSep: 120, edgeSep: 12, padding: 30, animate: false }).run();
+    };
     const MIN = opts.minZoom || 0.75;
     function fitReadable() {
       cy.fit(cy.elements().not(".hidden"), 30);
@@ -290,15 +368,16 @@
       filter(edgePred, nodePred) {
         const keepNodes = new Set(), keepEdges = new Set();
         cy.edges().forEach((el) => {
+          if (!el.data("ids")) return;
           const ok = el.data("ids").some((id) => edgePred(d.edgeById.get(id)));
           const s = d.entityById.get(el.data("source")), t = d.entityById.get(el.data("target"));
           if (ok && nodePred(s) && nodePred(t)) { keepEdges.add(el.id()); keepNodes.add(el.data("source")); keepNodes.add(el.data("target")); }
         });
         cy.batch(() => {
           cy.edges().forEach((e) => e.toggleClass("hidden", !keepEdges.has(e.id())));
-          cy.nodes().forEach((n) => n.toggleClass("hidden", !keepNodes.has(n.id())));
+          cy.nodes().not(".lane").forEach((n) => n.toggleClass("hidden", !keepNodes.has(n.id())));
         });
-        if (keepEdges.size) cy.fit(cy.elements().not(".hidden"), 30);
+        if (keepEdges.size) fitReadable();
       },
       showDetails(id) {
         api.select(id);

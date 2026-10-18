@@ -86,9 +86,11 @@
   }
 
   function logRows(calls) {
-    return calls.map((c) => `<tr id="${c.server === "sayari" ? "log-" + c.id : c.id}">
-      <td class="mono"><a href="${c.server === "sayari" ? "#" + c.id : "#" + c.id}">${c.id}</a></td>
-      <td><span class="badge server">${PT.esc(c.server)}</span><div class="muted" style="font-size:var(--fs-0)">${PT.esc(c.case_id === "general" ? "overview" : c.case_id)}</div></td>
+    // Calls with a replay card own the bare id; the others are anchored on their log row.
+    const inReplay = (c) => c.server === "sayari" && c.case_id !== "general";
+    return calls.map((c) => `<tr id="${inReplay(c) ? "log-" + c.id : c.id}">
+      <td class="mono">${inReplay(c) ? `<a href="#${c.id}">${c.id}</a>` : c.id}</td>
+      <td><span class="badge server">${PT.esc(c.server)}</span><div class="muted" style="font-size:var(--fs-0)">${PT.esc(c.case_id === "general" ? (c.step === "verify" ? "re-check" : "overview") : c.case_id)}</div></td>
       <td><code>${PT.esc(c.tool)}</code></td>
       <td>${PT.esc(c.question)}<div class="muted" style="font-size:var(--fs-0)">${PT.esc(c.result_summary)}</div></td>
       <td>${PT.scoreBadge(c.scorecard)}</td>

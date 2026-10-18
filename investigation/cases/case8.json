@@ -387,7 +387,8 @@
    "A port of loading (e.g. Shanghai) is not a country of origin. The Shanghai-loaded flake rows name no supplier.",
    "All China rows we found are from 2022. Later trade may exist outside Sayari's coverage.",
    "Plant status and the Tesla offtake come from the company and the press (Tavily), not from Sayari.",
-   "Entity-resolution links are our judgment and could be wrong."
+   "Entity-resolution links are our judgment and could be wrong.",
+   "Sayari has since filed the Aug 2025 Twigg → BTR Indonesia row under another Twigg record (pINZVxJgOaXpyrNkPgaeBQ); the shipment itself was re-confirmed on 18 Oct 2026."
   ]
  },
  "entities": [

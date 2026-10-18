@@ -3,7 +3,9 @@
   const PAGES = [
     ["index.html", "The Trace"],
     ["explore.html", "Explore"],
+    ["buyers.html", "Check a Buyer"],
     ["cases.html", "Case Files"],
+    ["diligence.html", "Due Diligence"],
     ["method.html", "Method"],
     ["about.html", "About this tool"],
   ];
@@ -39,7 +41,7 @@
       footer.className = "site-footer";
       footer.innerHTML = `
         <div class="wrap">
-          <div><strong>Paper Trail</strong>: tracing battery-mineral rerouting with Sayari MCP. Iteration 1, data as of 14 Oct 2026.</div>
+          <div><strong>Paper Trail</strong>: tracing battery-mineral rerouting with Sayari MCP. Data as of 14 Oct 2026, re-checked 18 Oct 2026.</div>
           <div>Not an accusation tool: patterns here warrant due diligence, not conclusions. See <a href="about.html#limits">limitations</a>.</div>
           <div>GLOB1-GC 2620, NYU Center for Global Affairs · <a href="${REPO}">Source on GitHub</a> · MIT licence · Companion to <a href="https://indiaclarke03-ops.github.io/EthicalBatterySourcing/">Battery Passport Audit</a></div>
         </div>`;

@@ -48,10 +48,12 @@
       "source_url": "https://www.cirs-group.com/en/chemicals/china-temporarily-suspends-export-controls-on-key-raw-materials-including-rare-earths-lithium-batteries-and-diamond",
       "source_name": "CIRS Group; Global Times; Pillsbury; chemradar",
       "verified": true,
-      "note": "Separately, MOFCOM Announcement No. 72 (9 Nov 2025) suspends the stricter end-use review for dual-use graphite exports to the US (Article 2 of No. 46 of 2024) until 27 Nov 2026 (Pillsbury). One trade-press site (ljyenergy.com) says the No. 70 suspension was extended to 10 Jan 2027 in late Sept 2026; TIMEWELL (Oct 2026) reports MOFCOM describes the arrangement as running to 10 Jan 2027 but found no formal announcement extending No. 70. The extension is UNVERIFIED from a primary source.",
+      "note": "Legal end date of the suspension is 10 Nov 2026. On 28 Sep 2026 MOFCOM said the wider US–China truce runs to 10 Jan 2027, but as of 18 Oct 2026 no new announcement has moved the legal end date. Re-check after 10 Nov 2026.",
       "source_call_ids": [
         "t008",
-        "t010"
+        "t010",
+        "v045",
+        "v046"
       ]
     },
     {
@@ -95,16 +97,42 @@
       ]
     },
     {
+      "date": "2026-06-08",
+      "measure": "EVE Energy added to the US Section 1260H list of Chinese military companies",
+      "relevance": "EVE Energy owns the Malaysian cell plant in Case 6. The listing doesn't ban commercial purchases, but it restricts US defense procurement and is a signal buyers screen for.",
+      "source_url": "https://www.wilmerhale.com/en/insights/client-alerts/20260611-pentagon-adds-65-new-entities-to-the-1260h-list-of-chinese-military-companies",
+      "source_name": "WilmerHale; Holland & Knight; DLA Piper (Federal Register notice 10 Jun 2026)",
+      "verified": true,
+      "note": "List published 8 Jun 2026; Federal Register notice dated 10 Jun 2026.",
+      "source_call_ids": [
+        "v044"
+      ]
+    },
+    {
+      "date": "2026-09-28",
+      "measure": "MOFCOM says the US–China trade truce runs to 10 Jan 2027",
+      "relevance": "The political deadline for China's paused graphite and battery export controls moves to Jan 2027, but the legal suspension in Announcement 70 still ends on 10 Nov 2026 unless a new announcement is issued.",
+      "source_url": "https://www.globaltimes.cn/page/202609/1371502.shtml",
+      "source_name": "Global Times (MOFCOM statement); China Briefing; Thomson Reuters",
+      "verified": true,
+      "note": "Checked 18 Oct 2026.",
+      "source_call_ids": [
+        "v046"
+      ]
+    },
+    {
       "date": "2026-10-14",
       "measure": "Status check: further PFE guidance (proposed regs / safe-harbor tables)",
       "relevance": "Who counts as a PFE, and the effective-control rules, would determine whether Chinese-owned plants in Indonesia, Morocco or Oman are PFEs.",
       "source_url": "https://www.mcguirewoods.com/client-resources/alerts/2026/3/irs-releases-initial-feoc-guidance-answers-key-questions-leaves-others-unanswered",
       "source_name": "McGuireWoods",
       "verified": false,
-      "note": "A search limited to results after 1 May 2026 found no proposed PFE regulations or new IRS notice. Absence is not confirmed; check irs.gov and the Federal Register directly before stating that none exist.",
+      "note": "Re-checked 18 Oct 2026: still nothing beyond Notice 2026-15. The safe-harbor tables are due by 31 Dec 2026, and questions on effective control and Hong Kong remain open.",
       "source_call_ids": [
         "t009",
-        "t011"
+        "t011",
+        "v047",
+        "v048"
       ]
     }
   ]

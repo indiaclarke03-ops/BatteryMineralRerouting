@@ -2,7 +2,7 @@
 window.PT = window.PT || {};
 
 (function (PT) {
-  const FILES = ["entities", "edges", "cases", "call_log", "policy_timeline", "sources", "overview"];
+  const FILES = ["entities", "edges", "cases", "call_log", "policy_timeline", "sources", "overview", "curated"];
 
   PT.load = async function () {
     if (PT._data) return PT._data;
@@ -36,7 +36,7 @@ window.PT = window.PT || {};
   PT.PATTERN = {
     "rerouting-pattern": "Pattern found: Chinese inputs in, US shipments out",
     "complete-trail": "Full trail visible",
-    "trail-not-started": "Not producing yet: baseline set",
+    "trail-not-started": "Not exporting yet: baseline set",
     "contrast-legitimate": "Contrast: non-Chinese owner",
     "trail-goes-dark": "Trail goes dark",
   };

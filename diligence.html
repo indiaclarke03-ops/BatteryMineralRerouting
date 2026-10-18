@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Paper Trail: Due Diligence</title>
+  <meta name="description" content="Ownership screening for each traced plant, supplier due-diligence questions, and a watch list for plants not yet exporting.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600&family=Source+Serif+4:opsz,wght@8..60,600;8..60,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/tokens.css">
+  <link rel="stylesheet" href="assets/css/base.css">
+  <link rel="stylesheet" href="assets/css/components.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header id="site-header"></header>
+
+  <main id="main">
+    <div class="wrap">
+      <div class="page-head">
+        <span class="eyebrow">Due Diligence</span>
+        <h1>From findings to supplier checks</h1>
+        <p class="lede">Three tools for sourcing and compliance teams: an ownership screen for every plant we traced, supplier questions generated from each case's red flags, and a watch list for plants that aren't exporting yet.</p>
+        <ul class="toc">
+          <li><a href="#screening">1. Ownership screening</a> ·</li>
+          <li><a href="#questions">2. Supplier questions</a> ·</li>
+          <li><a href="#watch">3. Watch list</a></li>
+        </ul>
+      </div>
+
+      <p class="callout teal" style="max-width:56rem">These tools show where to look, not whether a supplier is a "prohibited foreign entity". That depends on legal tests and cost shares we don't assess. Treasury's guidance is still incomplete: as of 18 Oct 2026, the safe-harbor tables are due by 31 Dec 2026.</p>
+
+      <section id="screening" aria-labelledby="screening-h">
+        <span class="eyebrow">1 · Ownership screening</span>
+        <h2 id="screening-h">Who owns each plant?</h2>
+        <p class="section-intro">One row per plant, then the full ownership chain for each, with the source behind every step.</p>
+        <div id="matrix">Loading…</div>
+        <div id="screen-cards" class="screen-cards"></div>
+      </section>
+
+      <section id="questions" aria-labelledby="questions-h">
+        <span class="eyebrow">2 · Supplier questions</span>
+        <h2 id="questions-h">What to ask the supplier</h2>
+        <p class="section-intro">Choose a plant to get a ready-to-send list of questions, built from its red flags and our findings.</p>
+        <div class="q-picker card"><label for="q-case" class="bp-label">Plant</label><select id="q-case" class="bp-select"></select></div>
+        <div id="q-result"></div>
+      </section>
+
+      <section id="watch" aria-labelledby="watch-h">
+        <span class="eyebrow">3 · Watch list</span>
+        <h2 id="watch-h">Plants to re-check</h2>
+        <p class="section-intro">These Chinese-owned plants aren't exporting yet. Their ownership is already on record, so the moment they start shipping, buyers will know who owns them. Each card says what would change the picture and how to re-check it.</p>
+        <div id="watch-list" class="watch-list"></div>
+      </section>
+    </div>
+  </main>
+
+  <footer id="site-footer"></footer>
+
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/ui.js"></script>
+  <script src="assets/js/diligence.js"></script>
+</body>
+</html>
