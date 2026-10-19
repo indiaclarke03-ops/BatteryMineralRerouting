@@ -37,7 +37,6 @@
     const words = ["zero", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine", "ten", "eleven", "twelve", "thirteen", "fourteen"];
     const set = (id, v) => { const el = document.getElementById(id); if (el) el.textContent = v; };
     set("n-cases", words[cases.length] || cases.length);
-    document.querySelectorAll(".n-cases-num").forEach((el) => { el.textContent = words[cases.length] || cases.length; });
     set("call-count", `${sy.length} Sayari queries · ${d.call_log.items.length - sy.length} source checks · all published`);
     set("tk-calls", sy.length);
     ["worked", "partial", "failed"].forEach((k) => set("tk-" + k, sy.filter((x) => x.scorecard === k).length));

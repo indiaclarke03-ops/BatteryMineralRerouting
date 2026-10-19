@@ -139,7 +139,7 @@
       "first_seen": null,
       "last_seen": null,
       "shipment_count": null,
-      "evidence": "Not in Sayari (find_beneficial_owners returned 0; shortest path is trade only). BTR's own Beijing Stock Exchange filings give the split: 60% BTR (through BTR (Hong Kong) New Material) and 40% Stellar Investment Pte. Ltd. of Singapore, which the filing says is owned by Ever Rising Limited. Indonesian press links Stellar to the Tsingshan group.",
+      "evidence": "Not in Sayari (find_beneficial_owners returned 0; shortest path is trade only). BTR's own Beijing Stock Exchange filings give the split: 60% BTR (through BTR (Hong Kong) New Material) and 40% Stellar Investment Pte. Ltd. of Singapore, which the filing says is owned by Ever Rising Limited. Indonesian press (Petromindo, a single secondary source, unverified) links Stellar to the Tsingshan group.",
       "source_call_ids": [
         "s009",
         "s019",
@@ -5415,27 +5415,6 @@
       ]
     },
     {
-      "id": "e509",
-      "source": "eKMO9SjyO_k4HmOLY8o_7A",
-      "target": "So9o4udTCQcP19p-UGkyig",
-      "relation": "possibly_same_as",
-      "edge_type": "inferred",
-      "confidence": "lead",
-      "hs_codes": [],
-      "first_seen": null,
-      "last_seen": null,
-      "shipment_count": null,
-      "evidence": "Malaysian director 'Liu Fang' vs. Putailai group shareholder 刘芳.",
-      "source_call_ids": [
-        "s526",
-        "s527"
-      ],
-      "confidence_reason": "Name match only, and Liu Fang is a common name.",
-      "case_ids": [
-        "case-5"
-      ]
-    },
-    {
       "id": "e510",
       "source": "ib6a_v_imoUoFRPQiwEjPA",
       "target": "eX51gPEUQ-MpkznB5_ICaQ",
@@ -8118,8 +8097,8 @@
       "target": "Z57YvgOYL2TdoaWYgXFZ9Q",
       "relation": "supply_agreement",
       "edge_type": "contractual",
-      "confidence": "corroborated",
-      "confidence_reason": "A listed company's filing states the deal, and two later, separate reports say most of the money was paid; Ford has not confirmed it.",
+      "confidence": "documented",
+      "confidence_reason": "Single source, but a primary one: a mandatory stock-exchange announcement by China Baoan, BTR's largest shareholder (13 Aug 2024). Ford has not confirmed it, and the 'US$108m paid' figure comes from secondary reports and is unverified.",
       "hs_codes": [],
       "first_seen": null,
       "last_seen": null,

@@ -55,7 +55,7 @@
         {
           "title": "The owner: not in the registry",
           "kicker": "Step 3 · Contractual",
-          "text": "Sayari returns no shareholders for the plant, and its shortest path to BTR in China is a trade link. Sayari does show BTR owning a different Indonesian company (Liyuan), so the gap is specific to this plant. BTR's own exchange filings show it holds 60% through BTR (Hong Kong). The other 40% belongs to Stellar Investment, a Singapore holding company that Indonesian press links to the Tsingshan nickel group. The ownership edge is shown with those filings, not Sayari's.",
+          "text": "Sayari returns no shareholders for the plant, and its shortest path to BTR in China is a trade link. Sayari does show BTR owning a different Indonesian company (Liyuan), so the gap is specific to this plant. BTR's own exchange filings show it holds 60% through BTR (Hong Kong). The other 40% belongs to Stellar Investment, a Singapore holding company that one Indonesian press report (unverified) links to the Tsingshan nickel group. The ownership edge is shown with those filings, not Sayari's.",
           "edge_ids": [
             "e010",
             "e011",
@@ -300,7 +300,7 @@
       ],
       "slug": "btr-indonesia",
       "answer_label": "Partly",
-      "answer": "The trade, yes: Chinese artificial graphite goes in, and graphite goes out to Ultium Cells, SK Battery America, StarPlus Energy, GM and Tesla. The ownership, no: Sayari has no registry record of BTR owning the plant, so that link rests on BTR's own filings: 60% BTR, with Stellar Investment (linked in the press to Tsingshan) holding 40%.",
+      "answer": "The trade, yes: Chinese artificial graphite goes in, and graphite goes out to Ultium Cells, SK Battery America, StarPlus Energy, GM and Tesla. The ownership, no: Sayari has no registry record of BTR owning the plant, so that link rests on BTR's own filings: 60% BTR, with Stellar Investment holding 40% (one unverified press report links it to Tsingshan).",
       "why_it_matters": "This is the pattern US tax-credit rules target: a Chinese company's plant in a third country supplying US battery makers. A buyer that only checks the country of origin sees 'Indonesia'. Only the ownership check shows 'BTR', and that is the part Sayari couldn't confirm.",
       "country": "IDN",
       "plant_status": "operating",
@@ -1596,7 +1596,7 @@
         {
           "title": "The owner: in the registry this time",
           "kicker": "Step 4 · Contractual",
-          "text": "Malaysian shareholder data lists Putailai (Singapore) as owning 100% of Zichen Malaysia. Sayari's ownership graph links that company to the Shanghai-listed Putailai group, and Putailai's SSE announcement of 11 Mar 2026 calls Zichen Malaysia a wholly owned overseas grandchild company, while a 2023 announcement calls Putailai (Singapore) wholly owned. Two directors share names with group shareholders. That is a lead, not a link.",
+          "text": "Malaysian shareholder data lists Putailai (Singapore) as owning 100% of Zichen Malaysia. Sayari's ownership graph links that company to the Shanghai-listed Putailai group, and Putailai's SSE announcement of 11 Mar 2026 calls Zichen Malaysia a wholly owned overseas grandchild company, while a 2023 announcement calls Putailai (Singapore) wholly owned. One director, Han Zhongwei, shares a name with a listed Putailai shareholder. That is a lead, not a link.",
           "edge_ids": [
             "e501",
             "e502",
@@ -1605,8 +1605,7 @@
             "e505",
             "e506",
             "e507",
-            "e508",
-            "e509"
+            "e508"
           ],
           "node_ids": [
             "04tgJV8tHRLxXnFybfSbOg",
@@ -1615,8 +1614,7 @@
             "Zb9HwzswdGPKn62ayKTnIQ",
             "LwA4a_LwLoGPjHr6RDiArg",
             "eKMO9SjyO_k4HmOLY8o_7A",
-            "M5aejkK4bjb5FsPDBPoVIA",
-            "So9o4udTCQcP19p-UGkyig"
+            "M5aejkK4bjb5FsPDBPoVIA"
           ],
           "call_ids": [
             "s525",
@@ -4339,7 +4337,7 @@
         {
           "title": "The owner: Huayou, 57%",
           "kicker": "Step 3 · Contractual",
-          "text": "Indonesia's beneficial-owner register, via Sayari, names two people: Chen Xuehua, with an address in Huayou's home city, and Hsieh Wei-Tong in Taipei. An AEER report lists Chen Xuehua as a 6.43% shareholder of Huayou. The company stakes come from open sources: Huayou 57%, CMOC 30%, Nickel Industries 10%. Sayari's own shortest path to Huayou is a trade link through Huayou's import-export arm.",
+          "text": "Indonesia's beneficial-owner register, via Sayari, names two people: Chen Xuehua, with an address in Huayou's home city, and a second individual with a Taipei address whose role is unexplained (name withheld). An AEER report lists Chen Xuehua as a 6.43% shareholder of Huayou. The company stakes come from open sources: Huayou 57%, CMOC 30%, Nickel Industries 10%. Sayari's own shortest path to Huayou is a trade link through Huayou's import-export arm.",
           "edge_ids": [
             "e12-08",
             "e12-09",

@@ -1,7 +1,7 @@
 /* Paper Trail: a short guided tour of the site, started from the home page. */
 (function () {
   const STEPS = [
-    { sel: "#exec-h", title: "1 · The short version", text: "The paragraph above is the whole story in five sentences. Everything else on the site is the evidence behind it." },
+    { sel: "#facts", title: "1 · Why it matters", text: "China makes over 90% of the world's battery anode material, and US tax-credit rules now ask who owns each supplier. These four numbers set the scene." },
     { sel: "#map-section", title: "2 · Where the trail runs", text: "Each numbered dot is a plant we traced. Click one to see who owns it and what the records show." },
     { sel: "#cases", title: "3 · One answer per plant", text: "Each case asks one question and gives a Yes / Partly / Not yet answer. Open a case to see every link and its source." },
     { sel: "#take-h", title: "4 · What the cases add up to", text: "Six findings across all the cases. Finding 2 is the key one: shipping records alone can't tell a Chinese-owned supplier from a Korean one." },

@@ -134,7 +134,7 @@
    {
     "title": "The owner: in the registry this time",
     "kicker": "Step 4 · Contractual",
-    "text": "Malaysian shareholder data lists Putailai (Singapore) as owning 100% of Zichen Malaysia. Sayari's ownership graph links that company to the Shanghai-listed Putailai group, and Putailai's SSE announcement of 11 Mar 2026 calls Zichen Malaysia a wholly owned overseas grandchild company, while a 2023 announcement calls Putailai (Singapore) wholly owned. Two directors share names with group shareholders. That is a lead, not a link.",
+    "text": "Malaysian shareholder data lists Putailai (Singapore) as owning 100% of Zichen Malaysia. Sayari's ownership graph links that company to the Shanghai-listed Putailai group, and Putailai's SSE announcement of 11 Mar 2026 calls Zichen Malaysia a wholly owned overseas grandchild company, while a 2023 announcement calls Putailai (Singapore) wholly owned. One director, Han Zhongwei, shares a name with a listed Putailai shareholder. That is a lead, not a link.",
     "edge_ids": [
      "e501",
      "e502",
@@ -143,8 +143,7 @@
      "e505",
      "e506",
      "e507",
-     "e508",
-     "e509"
+     "e508"
     ],
     "node_ids": [
      "04tgJV8tHRLxXnFybfSbOg",
@@ -153,8 +152,7 @@
      "Zb9HwzswdGPKn62ayKTnIQ",
      "LwA4a_LwLoGPjHr6RDiArg",
      "eKMO9SjyO_k4HmOLY8o_7A",
-     "M5aejkK4bjb5FsPDBPoVIA",
-     "So9o4udTCQcP19p-UGkyig"
+     "M5aejkK4bjb5FsPDBPoVIA"
     ],
     "call_ids": [
      "s525",
@@ -482,20 +480,6 @@
     "s531"
    ],
    "sayari_url": "https://graph.sayari.com/resource/entity/eKMO9SjyO_k4HmOLY8o_7A"
-  },
-  {
-   "id": "So9o4udTCQcP19p-UGkyig",
-   "name": "刘芳 (Liu Fang)",
-   "country": "CHN",
-   "type": "person",
-   "role": "officer",
-   "risk_flags": [],
-   "identifiers": {},
-   "summary": "Listed by Sayari among Putailai group shareholders. A very common name, so the match to the Malaysian director is weak.",
-   "source_call_ids": [
-    "s527"
-   ],
-   "sayari_url": "https://graph.sayari.com/resource/entity/So9o4udTCQcP19p-UGkyig"
   },
   {
    "id": "ib6a_v_imoUoFRPQiwEjPA",
@@ -836,24 +820,6 @@
     "s527"
    ],
    "confidence_reason": "Name match only (romanised vs. Chinese characters); no shared identifier."
-  },
-  {
-   "id": "e509",
-   "source": "eKMO9SjyO_k4HmOLY8o_7A",
-   "target": "So9o4udTCQcP19p-UGkyig",
-   "relation": "possibly_same_as",
-   "edge_type": "inferred",
-   "confidence": "lead",
-   "hs_codes": [],
-   "first_seen": null,
-   "last_seen": null,
-   "shipment_count": null,
-   "evidence": "Malaysian director 'Liu Fang' vs. Putailai group shareholder 刘芳.",
-   "source_call_ids": [
-    "s526",
-    "s527"
-   ],
-   "confidence_reason": "Name match only, and Liu Fang is a common name."
   },
   {
    "id": "e510",
@@ -1513,7 +1479,7 @@
    },
    "question": "Who owns and runs Zichen Malaysia, and does it trade?",
    "purpose": "Plant registry profile",
-   "result_summary": "Registered 23 Sep 2025, Sdn Bhd, office at Menara BHL, George Town, Penang. Purpose: production and sale of advanced battery materials and carbon-based products; import/export. Shareholder: Putailai (Singapore) Pte. Ltd., 100%. Directors: Liu Fang, Han Zhongwei, Ho Pui Hold. Trade count: 0 sent, 0 received.",
+   "result_summary": "Registered 23 Sep 2025, Sdn Bhd, office at Menara BHL, George Town, Penang. Purpose: production and sale of advanced battery materials and carbon-based products; import/export. Shareholder: Putailai (Singapore) Pte. Ltd., 100%. Directors: Liu Fang, Han Zhongwei and a third director. Trade count: 0 sent, 0 received.",
    "interpretation": "Ownership is in the registry. There is no trade yet.",
    "scorecard": "worked",
    "entity_ids": [
@@ -1535,15 +1501,14 @@
    },
    "question": "Does the chain reach the Chinese parent?",
    "purpose": "Trace ownership upstream",
-   "result_summary": "50 owner paths returned (output saved and parsed with Python). Path: Zichen Malaysia ← Putailai (Singapore) ← 上海璞泰来新能源科技集团股份有限公司 ← Chinese individuals (including 韩钟伟 and 刘芳), funds, banks and the national social security fund.",
+   "result_summary": "50 owner paths returned (output saved and parsed with Python). Path: Zichen Malaysia ← Putailai (Singapore) ← 上海璞泰来新能源科技集团股份有限公司 ← Chinese individuals (including 韩钟伟), funds, banks and the national social security fund.",
    "interpretation": "Registry-backed chain from the plant to the Chinese listed parent. Percentages above the Singapore level are not shown.",
    "scorecard": "worked",
    "entity_ids": [
     "WG1hrSwGRdoLMIt997Z5-w",
     "04tgJV8tHRLxXnFybfSbOg",
     "5rQqO0uMqEvtMvK_oQGcYA",
-    "M5aejkK4bjb5FsPDBPoVIA",
-    "So9o4udTCQcP19p-UGkyig"
+    "M5aejkK4bjb5FsPDBPoVIA"
    ],
    "step": "owner"
   },

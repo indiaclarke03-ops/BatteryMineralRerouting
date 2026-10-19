@@ -585,3 +585,4 @@
 .oq li { border-left: 3px solid var(--inf); padding-left: var(--s-3); }
 .oq span { display: block; font-size: var(--fs-0); color: var(--ink-2); margin-top: 2px; }
 .legend-h { margin: 0 0 var(--s-2); }
+.tour-btn { border-style: dashed; }

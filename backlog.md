@@ -22,7 +22,7 @@ Work P0 top to bottom. Status values: `todo` / `doing` / `done`.
 | DATA-1 | P0 | `data/schema.md` plus seed JSON files (plan §4) | Files committed | done |
 | DATA-2 | P0 | Call-log convention for Sayari and Tavily | Every call logged with id, tool, params, purpose, summary | done (38 calls) |
 | POL-1 | P0 | Verify the policy timeline with Tavily | `policy_timeline.json` with source URLs | done (3 corrections, 2 additions) |
-| DATA-0 | P1 | Ask the instructor what Sayari-derived data may be published publicly | Answer in `investigation/notes/data-permissions.md` | todo |
+| DATA-0 | P1 | Ask the instructor what Sayari-derived data may be published publicly | Answer in `investigation/notes/data-permissions.md` | done: approved (19 Oct 2026) |
 
 ## INVESTIGATION (Sayari MCP)
 | ID | P | Story | Done when | Status |
@@ -105,6 +105,10 @@ Work P0 top to bottom. Status values: `todo` / `doing` / `done`.
 | FB-20 | P0 | New cases: Ford–BTR, CATL/Ampace, EU comparison, nickel | done (cases 9–12) |
 | FB-21 | P0 | Polish: accessibility audit, social card, tour, executive summary | done |
 | QA-3b | P1 | Lighthouse accessibility ≥ 90 | replaced by an axe-core audit: 0 violations on all pages |
+
+| FB-22 | P0 | Drop names that can't be explained | done (Case 12 second beneficial owner; Case 5 weak shareholder match; one nominee director) |
+| FB-23 | P0 | Keep single-source claims, labelled correctly | done (Ford prepayment: documented, single primary filing; Tsingshan–Stellar: unverified single press source) |
+| FB-24 | P0 | Remove the "In brief" box; keep the tour | done |
 
 ## Parking lot
 - Zhongke Electric's Oman anode project as a forward-looking case (production targeted for 2027).

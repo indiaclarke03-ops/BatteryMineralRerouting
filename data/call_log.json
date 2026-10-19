@@ -2999,7 +2999,7 @@
       },
       "question": "Who owns and runs Zichen Malaysia, and does it trade?",
       "purpose": "Plant registry profile",
-      "result_summary": "Registered 23 Sep 2025, Sdn Bhd, office at Menara BHL, George Town, Penang. Purpose: production and sale of advanced battery materials and carbon-based products; import/export. Shareholder: Putailai (Singapore) Pte. Ltd., 100%. Directors: Liu Fang, Han Zhongwei, Ho Pui Hold. Trade count: 0 sent, 0 received.",
+      "result_summary": "Registered 23 Sep 2025, Sdn Bhd, office at Menara BHL, George Town, Penang. Purpose: production and sale of advanced battery materials and carbon-based products; import/export. Shareholder: Putailai (Singapore) Pte. Ltd., 100%. Directors: Liu Fang, Han Zhongwei and a third director. Trade count: 0 sent, 0 received.",
       "interpretation": "Ownership is in the registry. There is no trade yet.",
       "scorecard": "worked",
       "entity_ids": [
@@ -3022,15 +3022,14 @@
       },
       "question": "Does the chain reach the Chinese parent?",
       "purpose": "Trace ownership upstream",
-      "result_summary": "50 owner paths returned (output saved and parsed with Python). Path: Zichen Malaysia ← Putailai (Singapore) ← 上海璞泰来新能源科技集团股份有限公司 ← Chinese individuals (including 韩钟伟 and 刘芳), funds, banks and the national social security fund.",
+      "result_summary": "50 owner paths returned (output saved and parsed with Python). Path: Zichen Malaysia ← Putailai (Singapore) ← 上海璞泰来新能源科技集团股份有限公司 ← Chinese individuals (including 韩钟伟), funds, banks and the national social security fund.",
       "interpretation": "Registry-backed chain from the plant to the Chinese listed parent. Percentages above the Singapore level are not shown.",
       "scorecard": "worked",
       "entity_ids": [
         "WG1hrSwGRdoLMIt997Z5-w",
         "04tgJV8tHRLxXnFybfSbOg",
         "5rQqO0uMqEvtMvK_oQGcYA",
-        "M5aejkK4bjb5FsPDBPoVIA",
-        "So9o4udTCQcP19p-UGkyig"
+        "M5aejkK4bjb5FsPDBPoVIA"
       ],
       "step": "owner",
       "case_id": "case-5"
@@ -6827,7 +6826,7 @@
       },
       "question": "Who owns the plant, per Sayari?",
       "purpose": "Trace owners",
-      "result_summary": "2 beneficial owners, both from Indonesian UBO data: Chen Xuehua (Tongxiang, Zhejiang address; owner ID 771950) and Hsieh Wei-Tong (Taipei address; owner ID 771951). No company shareholders, no percentages.",
+      "result_summary": "2 beneficial owners, both from Indonesian UBO data: Chen Xuehua (Tongxiang, Zhejiang address; owner ID 771950) and a second individual (Taipei address; name withheld because no role is explained). No company shareholders, no percentages.",
       "interpretation": "A Chinese individual from Huayou's home city is a registered beneficial owner, but no corporate chain is shown.",
       "scorecard": "partial",
       "entity_ids": [

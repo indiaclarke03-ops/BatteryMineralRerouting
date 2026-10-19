@@ -98,7 +98,7 @@
    {
     "title": "The owner: Huayou, 57%",
     "kicker": "Step 3 · Contractual",
-    "text": "Indonesia's beneficial-owner register, via Sayari, names two people: Chen Xuehua, with an address in Huayou's home city, and Hsieh Wei-Tong in Taipei. An AEER report lists Chen Xuehua as a 6.43% shareholder of Huayou. The company stakes come from open sources: Huayou 57%, CMOC 30%, Nickel Industries 10%. Sayari's own shortest path to Huayou is a trade link through Huayou's import-export arm.",
+    "text": "Indonesia's beneficial-owner register, via Sayari, names two people: Chen Xuehua, with an address in Huayou's home city, and a second individual with a Taipei address whose role is unexplained (name withheld). An AEER report lists Chen Xuehua as a 6.43% shareholder of Huayou. The company stakes come from open sources: Huayou 57%, CMOC 30%, Nickel Industries 10%. Sayari's own shortest path to Huayou is a trade link through Huayou's import-export arm.",
     "edge_ids": [
      "e12-08",
      "e12-09",
@@ -636,7 +636,7 @@
   },
   {
    "id": "7OXs4DTLrDP0MB8gbZuTnA",
-   "name": "Hsieh Wei-Tong",
+   "name": "Second listed beneficial owner (name withheld)",
    "country": "TWN",
    "type": "person",
    "role": "officer",
@@ -644,7 +644,7 @@
    "identifiers": {
     "idn_ubo_owner_id": "771951"
    },
-   "summary": "Second beneficial owner of the plant in the Indonesian register, with a Taipei address. Sayari does not explain this person's link to any shareholder.",
+   "summary": "A second individual listed as a beneficial owner of the plant in Indonesia's register, with a Taipei address. Nothing explains their link to any shareholder, so the name is withheld; the record can be checked in Sayari.",
    "source_call_ids": [
     "s12-03"
    ],
@@ -3298,7 +3298,7 @@
    },
    "question": "Who owns the plant, per Sayari?",
    "purpose": "Trace owners",
-   "result_summary": "2 beneficial owners, both from Indonesian UBO data: Chen Xuehua (Tongxiang, Zhejiang address; owner ID 771950) and Hsieh Wei-Tong (Taipei address; owner ID 771951). No company shareholders, no percentages.",
+   "result_summary": "2 beneficial owners, both from Indonesian UBO data: Chen Xuehua (Tongxiang, Zhejiang address; owner ID 771950) and a second individual (Taipei address; name withheld because no role is explained). No company shareholders, no percentages.",
    "interpretation": "A Chinese individual from Huayou's home city is a registered beneficial owner, but no corporate chain is shown.",
    "scorecard": "partial",
    "entity_ids": [

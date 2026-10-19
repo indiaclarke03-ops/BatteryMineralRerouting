@@ -1977,7 +1977,7 @@
     },
     {
       "id": "7OXs4DTLrDP0MB8gbZuTnA",
-      "name": "Hsieh Wei-Tong",
+      "name": "Second listed beneficial owner (name withheld)",
       "country": "TWN",
       "type": "person",
       "role": "officer",
@@ -1985,7 +1985,7 @@
       "identifiers": {
         "idn_ubo_owner_id": "771951"
       },
-      "summary": "Second beneficial owner of the plant in the Indonesian register, with a Taipei address. Sayari does not explain this person's link to any shareholder.",
+      "summary": "A second individual listed as a beneficial owner of the plant in Indonesia's register, with a Taipei address. Nothing explains their link to any shareholder, so the name is withheld; the record can be checked in Sayari.",
       "source_call_ids": [
         "s12-03"
       ],
@@ -5367,26 +5367,6 @@
         "s531"
       ],
       "sayari_url": "https://graph.sayari.com/resource/entity/eKMO9SjyO_k4HmOLY8o_7A",
-      "case_ids": [
-        "case-5"
-      ],
-      "case_roles": {
-        "case-5": "officer"
-      }
-    },
-    {
-      "id": "So9o4udTCQcP19p-UGkyig",
-      "name": "刘芳 (Liu Fang)",
-      "country": "CHN",
-      "type": "person",
-      "role": "officer",
-      "risk_flags": [],
-      "identifiers": {},
-      "summary": "Listed by Sayari among Putailai group shareholders. A very common name, so the match to the Malaysian director is weak.",
-      "source_call_ids": [
-        "s527"
-      ],
-      "sayari_url": "https://graph.sayari.com/resource/entity/So9o4udTCQcP19p-UGkyig",
       "case_ids": [
         "case-5"
       ],

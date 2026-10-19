@@ -405,7 +405,7 @@
         }
       ],
       "confidence": "documented",
-      "visibility": "Not in Sayari's registry data. BTR's own exchange filings state 60%; the 40% holder, Stellar Investment Pte. Ltd., is owned by Ever Rising Ltd and linked in the press to Tsingshan.",
+      "visibility": "Not in Sayari's registry data. BTR's own exchange filings state 60%; the 40% holder, Stellar Investment Pte. Ltd., is owned by Ever Rising Ltd and linked to Tsingshan by a single press report (unverified).",
       "inputs": "Chinese artificial graphite (HS 3801) from BTR and a trader in the BTR Building; natural graphite from Mozambique, Madagascar and the UAE.",
       "us_exposure": "Ultium Cells (Warren, Spring Hill), SK Battery America, StarPlus Energy, General Motors, Tesla",
       "questions": [
@@ -423,7 +423,7 @@
       "registry": "No",
       "open_questions": [
         {
-          "q": "Who ultimately owns the 40% holder, Stellar Investment Pte. Ltd., and its parent Ever Rising Ltd? The press link to Tsingshan is unconfirmed.",
+          "q": "Who ultimately owns the 40% holder, Stellar Investment Pte. Ltd., and its parent Ever Rising Ltd? A single press report links it to Tsingshan (unverified).",
           "doc": "Singapore ACRA business profile for Stellar Investment Pte. Ltd. (shareholders and officers), then the registry filing for Ever Rising Ltd in its home jurisdiction."
         },
         {
