@@ -1,15 +1,15 @@
-/* Paper Trail: Case Files page (all cases). */
+/* Mineral Trace: Case Files page (all cases). */
 (function (PT) {
   const LABEL = { detected: "Detected", suggested: "Suggested", not_visible: "Not visible", absent: "Checked: absent" };
 
   function passportHTML(rows) {
-    return `<div class="passport" role="table" aria-label="Passport versus Paper Trail">
-      <div class="passport-head"><strong>Passport vs. Paper Trail</strong><span>EU Battery Regulation passport fields · illustrative</span></div>
+    return `<div class="passport" role="table" aria-label="Passport versus Mineral Trace">
+      <div class="passport-head"><strong>Passport vs. Mineral Trace</strong><span>EU Battery Regulation passport fields · illustrative</span></div>
       ${rows.map((r) => `
         <div class="passport-row${r.gap ? " gap" : ""}" role="row">
           <div class="pf" role="rowheader">${PT.esc(r.field)}<small>Passport field no. ${PT.esc(r.guidance_no)}</small></div>
           <div class="declared" role="cell"><span class="label">What the passport declares</span>${PT.esc(r.declared)}</div>
-          <div class="observed" role="cell"><span class="label">What the paper trail shows</span>${PT.esc(r.paper_trail)}
+          <div class="observed" role="cell"><span class="label">What the records show</span>${PT.esc(r.paper_trail)}
             <div>${r.gap ? `<span class="gap-tag">GAP</span>` : `<span class="ok-tag">CONSISTENT</span>`} <span class="muted" style="font-size:var(--fs-0)">${PT.esc(r.note || "")}</span></div>
           </div>
         </div>`).join("")}
@@ -91,10 +91,10 @@
       entries.forEach((en) => {
         if (!en.isIntersecting || en.target.dataset.done) return;
         en.target.dataset.done = "1";
-        PT.graphChrome(en.target.parentElement, PT.Graph(en.target, d, { caseId: en.target.id.slice(2) }));
+        PT.graphChrome(en.target.parentElement, PT.Graph(en.target, d, { caseId: en.target.id.slice(2), fitAll: true, chain: true }));
       });
     }, { rootMargin: "200px" }) : null;
-    document.querySelectorAll(".mini-graph").forEach((el) => { if (io) io.observe(el); else PT.graphChrome(el.parentElement, PT.Graph(el, d, { caseId: el.id.slice(2) })); });
+    document.querySelectorAll(".mini-graph").forEach((el) => { if (io) io.observe(el); else PT.graphChrome(el.parentElement, PT.Graph(el, d, { caseId: el.id.slice(2), fitAll: true, chain: true })); });
 
     if (location.hash) { const el = document.getElementById(location.hash.slice(1)); if (el) el.scrollIntoView(); }
   }

@@ -1,4 +1,4 @@
-/* Paper Trail: Due Diligence page (ownership screening, question generator, watch list). */
+/* Mineral Trace: Due Diligence page (ownership screening, question generator, watch list). */
 (function (PT) {
   const RES = { detected: "Detected", suggested: "Suggested", not_visible: "Not visible", absent: "Checked: absent" };
 
@@ -83,7 +83,7 @@
     let n = 1;
     s.questions.forEach((q) => lines.push(`${n++}. ${q}`));
     fromFlags.forEach((x) => lines.push(`${n++}. ${x.q} [${RES[x.result]}: ${x.flag}]`));
-    lines.push("", "Source: Paper Trail, data as of 14 Oct 2026 (re-checked 18 Oct 2026).");
+    lines.push("", "Source: Mineral Trace, data as of 14 Oct 2026 (re-checked 18 Oct 2026).");
     return lines.join("\n");
   }
 

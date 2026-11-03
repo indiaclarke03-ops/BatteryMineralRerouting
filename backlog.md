@@ -1,4 +1,4 @@
-# Paper Trail: Backlog
+# Mineral Trace: Backlog
 
 **P0** = needed for tonight's demo (Wed 14 Oct 2026) · **P1** = Iteration 2, after feedback · **P2** = stretch
 Work P0 top to bottom. Status values: `todo` / `doing` / `done`.
@@ -44,7 +44,7 @@ Work P0 top to bottom. Status values: `todo` / `doing` / `done`.
 ## UI
 | ID | P | Story | Done when | Status |
 |---|---|---|---|---|
-| UI-1 | P0 | Paper Trail's own design system | `tokens.css` done; distinct from the passport project | done (Source Serif 4 / IBM Plex, paper + teal) |
+| UI-1 | P0 | Mineral Trace's own design system | `tokens.css` done; distinct from the passport project | done (Source Serif 4 / IBM Plex, paper + teal) |
 | UI-2 | P0 | Shared nav and footer; legend component | On all pages; works on mobile | done |
 | UI-3 | P0 | Explore: Cytoscape + dagre graph from JSON | Renders Case 1 network | done |
 | UI-4 | P0 | Explore filters: edge type, country, HS code, risk flag | Instant toggle | done (+ confidence) |
@@ -53,7 +53,7 @@ Work P0 top to bottom. Status values: `todo` / `doing` / `done`.
 | UI-6b | P0 | Verdict panel on Home | Present and sourced | done |
 | UI-6c | P1 | Playbook rendered as a page | Linked from Method | todo (linked as Markdown on GitHub for now) |
 | UI-7 | P0 | About this tool | All sections present | done |
-| UI-8 | P0 | Case Files with the Passport vs. Paper Trail card | Renders from `cases.json` | done |
+| UI-8 | P0 | Case Files with the Passport vs. Mineral Trace card | Renders from `cases.json` | done |
 | UI-9 | P0 | Home: hero, policy strip, 5-step stepper (← →), feedback block | Presentable on a projector | done |
 | UI-10 | P1 | Scrollama scrollytelling version of Home | Smooth; falls back on mobile | todo |
 | UI-11 | P1 | Corridors page: D3 Sankey | Renders | todo |
@@ -109,6 +109,9 @@ Work P0 top to bottom. Status values: `todo` / `doing` / `done`.
 | FB-22 | P0 | Drop names that can't be explained | done (Case 12 second beneficial owner; Case 5 weak shareholder match; one nominee director) |
 | FB-23 | P0 | Keep single-source claims, labelled correctly | done (Ford prepayment: documented, single primary filing; Tsingshan–Stellar: unverified single press source) |
 | FB-24 | P0 | Remove the "In brief" box; keep the tour | done |
+| FB-25 | P0 | Rename the site Mineral Trace | done |
+| FB-26 | P0 | The Trace: bigger map, animated routes, case drop-downs, numbers under the description, remove "What the cases tell us" | done |
+| FB-27 | P0 | Explore: side panel, autosize on case click, moving arrows, no hover fade, highlight risks without removing the chain | done |
 
 ## Parking lot
 - Zhongke Electric's Oman anode project as a forward-looking case (production targeted for 2027).

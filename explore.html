@@ -3,12 +3,12 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Paper Trail: Explore</title>
+  <title>Mineral Trace: Explore</title>
   <meta name="description" content="Interactive network of the Case 1 trace: shipments, ownership and inferred links, each with its confidence and source call.">
   <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
   <meta property="og:type" content="website">
-  <meta property="og:site_name" content="Paper Trail">
-  <meta property="og:title" content="Paper Trail: Explore">
+  <meta property="og:site_name" content="Mineral Trace">
+  <meta property="og:title" content="Mineral Trace: Explore">
   <meta property="og:description" content="Interactive network of the Case 1 trace: shipments, ownership and inferred links, each with its confidence and source call.">
   <meta property="og:url" content="https://indiaclarke03-ops.github.io/BatteryMineralRerouting/explore.html">
   <meta property="og:image" content="https://indiaclarke03-ops.github.io/BatteryMineralRerouting/assets/img/social-card.png">
@@ -28,62 +28,63 @@
   <header id="site-header"></header>
 
   <main id="main">
-    <div class="wrap">
-      <div class="page-head">
+    <div class="wrap wide">
+      <div class="page-head compact">
         <span class="eyebrow">Explore</span>
         <h1>The network, case by case</h1>
-        <p class="lede">Each case reads left to right: who owns the plant, what goes into it, the plant itself, and where its output goes. Hover over a company to trace its links; click it to see the evidence.</p>
+        <p class="lede">Each case reads left to right: who owns the plant, what goes into it, the plant itself, and where its output goes. Click any company or line to trace its chain and see the evidence.</p>
       </div>
 
-      <form id="filters" aria-label="Choose a case and refine the network">
+      <form id="filters" aria-label="Choose a case and adjust the network">
         <div class="ex-tabs" id="ex-tabs" role="tablist" aria-label="Choose a case"></div>
-        <select id="f-case" name="case" class="visually-hidden" tabindex="-1" aria-hidden="true"><option value="">All cases</option></select>
-        <div class="ex-case card" id="ex-case" aria-live="polite"></div>
-        <details class="ex-refine">
-          <summary>Refine: link type, confidence, country, product code, risk <span class="muted" id="f-count" aria-live="polite"></span></summary>
-          <div class="filters ex-filters">
-            <fieldset>
-              <legend>Link type</legend><div class="ff-check">
-              <label><input type="checkbox" name="etype" value="transactional" checked> <span class="etype tx"><span class="line" aria-hidden="true"></span>Shipment</span></label>
-              <label><input type="checkbox" name="etype" value="contractual" checked> <span class="etype ct"><span class="line" aria-hidden="true"></span>Ownership</span></label>
-              <label><input type="checkbox" name="etype" value="inferred" checked> <span class="etype inf"><span class="line" aria-hidden="true"></span>Inferred link</span></label>
-            </div></fieldset>
-            <fieldset>
-              <legend>Confidence</legend><div class="ff-check">
-              <label><input type="checkbox" name="conf" value="documented" checked> Documented</label>
-              <label><input type="checkbox" name="conf" value="corroborated" checked> Cross-checked</label>
-              <label><input type="checkbox" name="conf" value="inferred" checked> Inferred</label>
-              <label><input type="checkbox" name="conf" value="lead" checked> Lead</label>
-            </div></fieldset>
-            <fieldset>
-              <legend><label for="f-country" style="padding:0">Country</label></legend>
-              <select id="f-country" name="country"><option value="">All countries</option></select>
-            </fieldset>
-            <fieldset>
-              <legend><label for="f-hs" style="padding:0">Product (HS code)</label></legend>
+
+        <div class="ex-bar">
+          <div class="ex-group">
+            <span class="ex-h">Highlight</span>
+            <label class="chip chip-risk"><input type="checkbox" name="risk" id="f-risk"> ⚑ Risk flags <b id="risk-n"></b></label>
+            <label class="ex-sel"><span class="visually-hidden">Highlight a country</span>
+              <select id="f-country" name="country"><option value="">Any country</option></select></label>
+            <label class="ex-sel"><span class="visually-hidden">Highlight a product</span>
               <select id="f-hs" name="hs">
-                <option value="">Any</option>
+                <option value="">Any product</option>
                 <option value="3801">3801: artificial graphite</option>
                 <option value="2504">2504: natural graphite</option>
                 <option value="2713">2713: petroleum coke</option>
                 <option value="8507">8507: lithium-ion cells and batteries</option>
-              </select>
-            </fieldset>
-            <fieldset>
-              <legend>Risk</legend>
-              <label><input type="checkbox" name="risk" id="f-risk"> Only companies with a ⚑ risk flag</label>
-            </fieldset>
-            <div class="ff-actions"><button class="btn" type="reset" id="f-reset">Reset</button></div>
+              </select></label>
+            <span class="muted ex-count" id="f-count" aria-live="polite"></span>
           </div>
-        </details>
+          <div class="ex-group">
+            <span class="ex-h">Show links</span>
+            <label class="chip"><input type="checkbox" name="etype" value="transactional" checked> <span class="etype tx"><span class="line" aria-hidden="true"></span>Shipment</span></label>
+            <label class="chip"><input type="checkbox" name="etype" value="contractual" checked> <span class="etype ct"><span class="line" aria-hidden="true"></span>Ownership</span></label>
+            <label class="chip"><input type="checkbox" name="etype" value="inferred" checked> <span class="etype inf"><span class="line" aria-hidden="true"></span>Inferred</span></label>
+          </div>
+          <div class="ex-group">
+            <span class="ex-h">Confidence</span>
+            <label class="chip"><input type="checkbox" name="conf" value="documented" checked> Documented</label>
+            <label class="chip"><input type="checkbox" name="conf" value="corroborated" checked> Cross-checked</label>
+            <label class="chip"><input type="checkbox" name="conf" value="inferred" checked> Inferred</label>
+            <label class="chip"><input type="checkbox" name="conf" value="lead" checked> Lead</label>
+          </div>
+          <div class="ex-group ex-view" id="ex-view">
+            <span class="ex-h">View</span>
+            <button class="btn ex-reset" type="reset" id="f-reset">Reset</button>
+          </div>
+        </div>
+        <p class="ex-note" id="risk-note" hidden>⚑ Risk flags are context from Sayari. Most describe a company's neighbours, not the company itself. <a href="about.html#flags">How to read flags</a></p>
       </form>
 
-      <div class="graph-frame">
-        <div class="graph xtall" id="graph" role="img" aria-label="Network graph for the selected case. A text list of the same links follows."></div>
+      <h2 class="visually-hidden">Network and details</h2>
+      <div class="ex-stage">
+        <div class="graph-frame">
+          <div class="graph xtall" id="graph" role="img" aria-label="Network graph for the selected case. The side panel lists every company, and a text list of the same links follows."></div>
+        </div>
+        <aside class="ex-panel card" id="ex-panel" aria-live="polite" aria-label="Details"></aside>
       </div>
 
       <section aria-labelledby="list-h">
-        <details><summary><h2 id="list-h" style="display:inline;font-size:1.2rem">All links as a list</h2> <span class="muted">(same data as the graph; useful on a phone or with a screen reader)</span></summary>
+        <details><summary><h2 id="list-h" style="display:inline;font-size:1.2rem">All links as a list</h2> <span class="muted"><span id="list-count"></span> · same data as the graph; useful on a phone or with a screen reader</span></summary>
         <div id="edge-list" style="margin-top:var(--s-3)"></div></details>
       </section>
     </div>

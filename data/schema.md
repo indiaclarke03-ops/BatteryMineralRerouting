@@ -49,7 +49,7 @@ All files are written by `investigation/build_data.py`. Each file is `{ "as_of":
 `{id, name, type, url, used_for}`
 
 ## curated.json
-Presentation layer from `investigation/curated.json`: `answer_short` per case; `map` (`places`, `flows`); `screening` (one ownership card per case, with `call_ids` computed from the case's ownership edges); `question_templates` (per red flag and result); `watch` (plants to re-check); `buyer_groups` (duplicate US buyer records grouped by company).
+Presentation layer from `investigation/curated.json`: `answer_short` per case; `map` (`places`, `flows`, `routes`: the ordered steps played on the map for each case, with each leg citing `edge_ids` and carrying `confidence`, `first_seen` and `last_seen` computed from those links); `screening` (one ownership card per case, with `call_ids` computed from the case's ownership edges); `question_templates` (per red flag and result); `watch` (plants to re-check); `buyer_groups` (duplicate US buyer records grouped by company).
 
 ## overview.json
 Key-number tiles for the home page, each with a source and call ids.

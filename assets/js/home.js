@@ -1,4 +1,4 @@
-/* Paper Trail: home page (key numbers, case cards, findings, policy timeline). */
+/* Mineral Trace: home page (key numbers, case cards, policy timeline). */
 (function (PT) {
   const KEY_DATES = new Set(["2025-07-04", "2026-02-12", "2026-03-12"]);
 
@@ -38,11 +38,9 @@
     const set = (id, v) => { const el = document.getElementById(id); if (el) el.textContent = v; };
     set("n-cases", words[cases.length] || cases.length);
     set("call-count", `${sy.length} Sayari queries · ${d.call_log.items.length - sy.length} source checks · all published`);
-    set("tk-calls", sy.length);
-    ["worked", "partial", "failed"].forEach((k) => set("tk-" + k, sy.filter((x) => x.scorecard === k).length));
     document.getElementById("facts").innerHTML = factsHTML(d.overview.facts);
     document.getElementById("case-cards").innerHTML = caseCardsHTML(cases);
     document.getElementById("timeline").innerHTML = timelineHTML(d.policy_timeline.items);
-    if (PT.initMap) PT.initMap(document.getElementById("map"), document.getElementById("map-card"), d);
+    if (PT.initMap) PT.initMap(document.getElementById("map"), document.getElementById("map-side"), d);
   };
 })(window.PT);

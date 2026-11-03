@@ -3,12 +3,12 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Paper Trail: The Trace</title>
+  <title>Mineral Trace: The Trace</title>
   <meta name="description" content="Following Chinese battery graphite through third-country factories to US supply chains: a dozen cases traced through trade and company-registry data.">
   <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
   <meta property="og:type" content="website">
-  <meta property="og:site_name" content="Paper Trail">
-  <meta property="og:title" content="Paper Trail: The Trace">
+  <meta property="og:site_name" content="Mineral Trace">
+  <meta property="og:title" content="Mineral Trace: The Trace">
   <meta property="og:description" content="Following Chinese battery graphite through third-country factories to US supply chains: a dozen cases traced through trade and company-registry data.">
   <meta property="og:url" content="https://indiaclarke03-ops.github.io/BatteryMineralRerouting/">
   <meta property="og:image" content="https://indiaclarke03-ops.github.io/BatteryMineralRerouting/assets/img/social-card.png">
@@ -34,6 +34,7 @@
         <span class="eyebrow">Battery supply-chain intelligence · graphite</span>
         <h1 id="q">Following Chinese battery graphite through third-country factories to US supply chains</h1>
         <p class="lede">Chinese companies make almost all of the world's battery anode material, and they are now building factories in Indonesia, Morocco, Oman, Malaysia, the EU and the US itself. We traced <strong id="n-cases">twelve</strong> of these supply chains through trade and company records to show where the material goes, who owns each plant, and how sure we can be of each link.</p>
+        <div class="facts" id="facts"></div>
         <div class="hero-ctas">
           <a class="btn primary" href="#cases">See what we found ↓</a>
           <a class="btn" href="buyers.html">Check a buyer</a>
@@ -44,7 +45,6 @@
           <span class="asof">Data as of 14 Oct 2026 · re-checked 18 Oct 2026</span>
           <span class="asof" id="call-count">Loading…</span>
         </div>
-        <div class="facts" id="facts"></div>
       </section>
 
       <div id="home-status"></div>
@@ -141,21 +141,23 @@
       </section>
 
       <!-- 3b. Map -->
-      <section id="map-section" aria-labelledby="map-h">
+      <section id="map-section" class="map-section" aria-labelledby="map-h">
         <span class="eyebrow">Where the trail runs</span>
-        <h2 id="map-h">Every traced supply chain on one map</h2>
-        <p class="section-intro">Each dot is a plant we traced. Lines show material moving between countries, taken from customs records. Dashed lines are plants that are owned and planned but not shipping yet. Choose a plant to see what we found.</p>
+        <h2 id="map-h">Watch each supply chain move across the map</h2>
+        <p class="section-intro">Choose a plant on the map or in the list. The route plays in order, from the mine or first supplier, through the plant, to where the output goes and who owns it. We only draw what the records show, so some routes start late or stop early.</p>
         <div class="map-wrap">
-          <div class="map-frame" id="map" role="group" aria-label="World map of the traced supply chains. Each numbered plant is a button; the same information is in the case cards below."></div>
-          <div class="map-card" id="map-card" aria-live="polite"></div>
+          <div class="map-frame" id="map" role="group" aria-label="World map of the traced supply chains. Each numbered plant is a button; the list beside the map has the same routes as text."></div>
+          <div class="map-side" id="map-side" role="group" aria-label="Traced supply chains"></div>
         </div>
         <div class="map-key">
-          <span><i class="mk mk-origin"></i>Chinese parent / source</span>
+          <span><i class="mk mk-origin"></i>Source or owner</span>
           <span><i class="mk mk-plant"></i>Plant we traced</span>
           <span><i class="mk mk-buyers"></i>US buyers</span>
-          <span><i class="ml ml-input"></i>Material shipped (customs records)</span>
-          <span><i class="ml ml-planned"></i>Owned, not shipping yet</span>
+          <span><i class="ml"></i>Material shipped</span>
+          <span><i class="ml ml-output"></i>Plant output</span>
           <span><i class="ml ml-owner"></i>Ownership</span>
+          <span><i class="ml ml-planned"></i>Planned or contracted, not shipping yet</span>
+          <span class="muted">Lines join who shipped to whom. They are not the ships' actual routes. Some markers are shifted so they don't overlap.</span>
         </div>
       </section>
 
@@ -165,21 +167,6 @@
         <h2 id="cases-h">What we found</h2>
         <p class="section-intro">One plant per case: the short answer, and a link to the full case file.</p>
         <div class="case-cards" id="case-cards"></div>
-      </section>
-
-      <!-- 4b. Takeaways -->
-      <section aria-labelledby="take-h">
-        <span class="eyebrow">Across the cases</span>
-        <h2 id="take-h">What the cases tell us</h2>
-        <ol class="findings">
-          <li><div class="f-num">01</div><div class="f-body"><h3>Shipping records show the route; company registries show the owner, but rarely both</h3><p>For BTR Indonesia, Sayari shows the shipments but not the owner. For BTR Morocco and Putailai Malaysia, it shows the owner before the plant exports anything. For Gotion in the US, the owner is visible only from the Chinese side.</p><p class="f-links">Cases <a href="cases.html#case-1">1</a> <a href="cases.html#case-2">2</a> <a href="cases.html#case-5">5</a> <a href="cases.html#case-7">7</a></p></div></li>
-          <li><div class="f-num">02</div><div class="f-body"><h3>Same product, same buyers, different owners</h3><p>BTR Indonesia (Chinese-owned) and POSCO Future M (Korean-owned) both ship artificial graphite to GM, SK Battery America and Tesla, and BTR now also supplies Ford. Shipping records alone can't tell them apart; ownership data can.</p><p class="f-links">Cases <a href="cases.html#case-1">1</a> <a href="cases.html#case-4">4</a> <a href="cases.html#case-8">8</a> <a href="cases.html#case-9">9</a></p></div></li>
-          <li><div class="f-num">03</div><div class="f-body"><h3>Graphite can arrive inside finished battery cells</h3><p>EVE's and Linergy's Malaysian plants take in Chinese anode graphite from BTR, Zhongke and Shanshan, and ship finished cells to Briggs &amp; Stratton, Milwaukee Tool, Eaton and others. The graphite never appears in US customs data as graphite. The same is true inside the EU, where trade between member states leaves no customs record.</p><p class="f-links">Cases <a href="cases.html#case-6">6</a> <a href="cases.html#case-10">10</a> <a href="cases.html#case-11">11</a></p></div></li>
-          <li><div class="f-num">04</div><div class="f-body"><h3>The next wave isn't shipping yet</h3><p>Chinese-owned anode plants in Morocco, Oman and Malaysia are still being built or ramping up, and none exports yet. BTR's Moroccan plant took its first graphite, from BTR's own Indonesian plant, in Aug 2026. Their ownership is already on record, so buyers can know who owns them before the first export.</p><p class="f-links">Cases <a href="cases.html#case-2">2</a> <a href="cases.html#case-3">3</a> <a href="cases.html#case-5">5</a> · <a href="diligence.html#watch">Watch list</a></p></div></li>
-          <li><div class="f-num">05</div><div class="f-body"><h3>Country of origin doesn't tell you who owns the plant</h3><p>3,088 "graphite" rows from Morocco were mostly mislabelled fertilizer, and most of the 917 rows from Oman were Indian cargo relayed through Omani ports. One Mozambique mine supplies both a US plant and Chinese-owned plants.</p><p class="f-links">Cases <a href="cases.html#case-2">2</a> <a href="cases.html#case-3">3</a> <a href="cases.html#case-8">8</a></p></div></li>
-          <li><div class="f-num">06</div><div class="f-body"><h3>Owners change faster than registries do</h3><p>Japan's TDK bought the Malaysian cell maker Linergy Power from CATL's Ampace in June 2026, but in October Sayari still showed the old Chinese owners. BTR's 60% of its Indonesian plant is in BTR's own filings, not the registry. Combine registry data with company filings, and re-check.</p><p class="f-links">Cases <a href="cases.html#case-1">1</a> <a href="cases.html#case-10">10</a></p></div></li>
-          <li><div class="f-num">07</div><div class="f-body"><h3>The data is powerful but needs careful reading</h3><p><strong id="tk-calls">–</strong> Sayari queries: <span id="tk-worked">–</span> answered the question, <span id="tk-partial">–</span> partly, <span id="tk-failed">–</span> failed. Some search filters fail silently, so every result was checked by hand. Every query is published.</p><p class="f-links"><a href="method.html#scorecard-h">See the scorecard</a></p></div></li>
-        </ol>
       </section>
 
       <!-- 6. Policy timeline -->

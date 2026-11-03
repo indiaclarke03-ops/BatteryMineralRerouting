@@ -1,6 +1,6 @@
-# Paper Trail: how to investigate and write up a case
+# Mineral Trace: how to investigate and write up a case
 
-This is the brief for adding a case study to Paper Trail. It is written for an analyst, or an AI agent, with Sayari MCP and Tavily access. Read all of it before starting.
+This is the brief for adding a case study to Mineral Trace. It is written for an analyst, or an AI agent, with Sayari MCP and Tavily access. Read all of it before starting.
 
 ## Context
 The site asks whether trade and corporate-registry data can reveal Chinese battery materials (mainly graphite anode material, and also cells and other minerals) reaching US supply chains through plants in third countries, and who owns those plants. The policy hook is the US "prohibited foreign entity" (PFE) rules: since July 2025, clean-energy tax credits (§45X and others) depend on whether suppliers are owned or controlled by PFEs. In March 2026 the USITC voted against anti-dumping duties on Chinese anode material, so ownership is now the main lever.
@@ -78,5 +78,7 @@ Every edge needs a `confidence_reason`: one sentence on why it gets that rating.
 - **ID formats:** Sayari calls are `s<N>01`… and Tavily calls `t<N>01`…; for cases 10 and above use `s<N>-01` and `t<N>-01`. Edges are `e<N>01`… (`e<N>-01` for 10+).
 - **Role:** the case's own plant(s) must have `role: "transit_plant"`.
 - **Self-check before finishing:** parse the JSON, and confirm every edge's source and target, every step `node_ids`/`edge_ids` and every `call_ids` reference resolves within your file or to existing Case 1 IDs.
+
+**Map route:** every case also needs an entry in `map.routes` in `investigation/curated.json`: ordered steps (`stage`, `title`, `text`, then `legs` or `at`), each citing `edge_ids` from that case. Draw only what the records show. The builder fails if a case has no route.
 
 Finish with a 5–8 line message covering the headline, counts (entities, edges, calls; worked / partial / failed) and anything you couldn't verify.

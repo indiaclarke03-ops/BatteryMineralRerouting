@@ -1,12 +1,13 @@
-/* Paper Trail: Cytoscape + dagre network graph.
+/* Mineral Trace: Cytoscape + dagre network graph.
    Readability rules: duplicate records (possibly-same-as) merge into one node by default;
-   nodes are coloured by role; edge labels appear on hover; line width follows shipment count. */
+   nodes are coloured by role; line width follows shipment count; clicking lights up a company's
+   whole chain without removing the rest. Moving arrows show the direction of goods and ownership. */
 (function (PT) {
   const C = {
     tx: "#1F5FBF", ct: "#6B3FA0", inf: "#A86A12", ink: "#1A1A1A", ink2: "#4A4A45", ink3: "#6E6D66",
     rule: "#B9B6A8", teal: "#0F5E5C", risk: "#B42318", card: "#FFFFFF", paper: "#FAFAF7",
   };
-  const RISKY = /forced_labor|sheffield|uflpa|sanction|export_control|bis_entity/;
+  const RISKY = PT.RISKY = /forced_labor|sheffield|uflpa|sanction|export_control|bis_entity/;
   const CONF_RANK = { documented: 4, corroborated: 3, inferred: 2, lead: 1 };
 
   PT.ROLE_STYLE = {
@@ -63,7 +64,7 @@
       const flagged = ids.some((x) => (d.entityById.get(x).risk_flags || []).some((f) => RISKY.test(f)));
       const extra = ids.length > 1 ? ` · ${ids.length} records` : "";
       nodeEls.push({
-        data: { id, members: ids, label: `${flagged ? "⚑ " : ""}${shortName(display)}\n${PT.country(e.country)}${extra}` },
+        data: { id, members: ids, flagged, name: shortName(display), country: e.country, label: `${flagged ? "⚑ " : ""}${shortName(display)}\n${PT.country(e.country)}${extra}` },
         classes: [role || "contrast", e.type === "person" ? "person" : "", ids.length > 1 ? "merged" : ""].join(" "),
       });
     });
@@ -98,38 +99,46 @@
 
   const STYLE = [
     { selector: "node", style: {
-      shape: "round-rectangle", "background-color": "#F2F1EB", "border-width": 1.5, "border-color": C.rule,
-      label: "data(label)", "text-wrap": "wrap", "text-max-width": 165, "font-family": "IBM Plex Sans, system-ui, sans-serif",
-      "font-size": 13, "line-height": 1.25, color: C.ink, "text-valign": "center", "text-halign": "center",
-      width: 185, height: "label", padding: "11px",
+      shape: "round-rectangle", "background-color": "#EAF1FB", "border-width": 1.5, "border-color": "#9DB8E0",
+      label: "data(label)", "text-wrap": "wrap", "text-max-width": 160, "font-family": "IBM Plex Sans, system-ui, sans-serif",
+      "font-size": 12.5, "line-height": 1.25, color: C.ink, "text-valign": "center", "text-halign": "center",
+      width: 178, height: "label", padding: "10px", "transition-property": "opacity, border-width", "transition-duration": 180,
     } },
-    { selector: "node.parent", style: { "background-color": "#EFE7F8", "border-color": C.ct, "border-width": 2.5, "font-weight": 600 } },
-    { selector: "node.person", style: { shape: "round-rectangle", "background-color": "#FFFFFF", "border-color": C.ct, "border-style": "dashed", "font-size": 12, width: 160 } },
-    { selector: "node.transit_plant", style: { "background-color": C.teal, "border-color": C.teal, color: "#FFFFFF", "font-weight": 700, "font-size": 14, width: 205 } },
+    { selector: "node.parent", style: { "background-color": "#F1EAFB", "border-color": C.ct, "font-weight": 600 } },
+    { selector: "node.person", style: { "background-color": "#FFFFFF", "border-color": C.ct, "border-style": "dashed", "font-size": 12, width: 158 } },
+    { selector: "node.transit_plant", style: { "background-color": C.teal, "border-color": C.teal, color: "#FFFFFF", "font-weight": 700, "font-size": 13.5, width: 200 } },
     { selector: "node.us_buyer", style: { "background-color": "#FFFFFF", "border-color": C.ink, "border-width": 2 } },
     { selector: "node.buyer", style: { "background-color": "#FFFFFF", "border-color": C.ink3 } },
-    { selector: "node.contrast", style: { "background-color": "#FFFFFF", "border-style": "dashed", color: C.ink2 } },
+    { selector: "node.contrast", style: { "background-color": "#F7F6F1", "border-color": C.rule, "border-style": "dashed", color: C.ink2 } },
     { selector: "node.merged", style: { "border-width": 4, "border-style": "double" } },
     { selector: "edge", style: {
-      width: "data(w)", "curve-style": "bezier", "target-arrow-shape": "triangle", "arrow-scale": 1.1,
+      width: "data(w)", "curve-style": "bezier", "target-arrow-shape": "triangle", "arrow-scale": 1, "edge-distances": "node-position",
       "font-family": "IBM Plex Mono, monospace", "font-size": 11, label: "", color: C.ink,
       "text-background-color": "#FFFFFF", "text-background-opacity": 1, "text-background-padding": 3,
-      "text-background-shape": "round-rectangle", opacity: 0.8,
+      "text-background-shape": "round-rectangle", opacity: 0.62, "transition-property": "opacity", "transition-duration": 180,
     } },
     { selector: "edge.tx", style: { "line-color": C.tx, "target-arrow-color": C.tx } },
     { selector: "edge.ct", style: { "line-color": C.ct, "target-arrow-color": C.ct, "line-style": "dashed", "line-dash-pattern": [9, 5] } },
     { selector: "edge.inf", style: { "line-color": C.inf, "target-arrow-color": C.inf, "line-style": "dotted", "target-arrow-shape": "none" } },
-    { selector: "edge.conf-lead", style: { opacity: 0.4 } },
+    { selector: "edge.conf-lead", style: { opacity: 0.32 } },
     { selector: "edge.labelled", style: { label: "data(label)" } },
-    { selector: ".faded", style: { opacity: 0.08, "text-opacity": 0.12 } },
-    { selector: "edge.hl", style: { opacity: 1, label: "data(label)", "z-index": 10 } },
-    { selector: "node.hl", style: { opacity: 1, "z-index": 10 } },
-    { selector: "node:selected", style: { "border-color": "#E0A100", "border-width": 4 } },
+    { selector: "node.hover", style: { "underlay-color": C.teal, "underlay-opacity": 0.14, "underlay-padding": 6, "underlay-shape": "round-rectangle" } },
+    { selector: "edge.hover", style: { opacity: 1 } },
+    { selector: ".sp-dim", style: { opacity: 0.62, "text-opacity": 0.8 } },
+    { selector: "edge.sp-dim", style: { opacity: 0.3 } },
+    { selector: "edge.sp-on", style: { opacity: 1 } },
+    { selector: "node.sp-on", style: { "underlay-color": "#E0A100", "underlay-opacity": 0.28, "underlay-padding": 7, "underlay-shape": "round-rectangle", "border-width": 3 } },
+    { selector: "node.sp-risk", style: { "underlay-color": C.risk, "underlay-opacity": 0.26, "underlay-padding": 8, "border-color": C.risk, "border-width": 3.5 } },
+    { selector: ".faded", style: { opacity: 0.32, "text-opacity": 0.5 } },
+    { selector: "edge.faded", style: { opacity: 0.12 } },
+    { selector: "edge.hl", style: { opacity: 1, "z-index": 10 } },
+    { selector: "node.hl", style: { opacity: 1, "text-opacity": 1, "z-index": 10 } },
+    { selector: "node:selected", style: { "border-color": "#E0A100", "border-width": 4, "underlay-color": "#E0A100", "underlay-opacity": 0.3, "underlay-padding": 8, "underlay-shape": "round-rectangle" } },
     { selector: "edge:selected", style: { "line-color": "#E0A100", "target-arrow-color": "#E0A100", opacity: 1, label: "data(label)" } },
     { selector: ".hidden", style: { display: "none" } },
     { selector: "node.lane", style: {
       "background-opacity": 0, "border-width": 0, label: "data(label)", "font-family": "IBM Plex Mono, monospace",
-      "font-size": 13, "font-weight": 600, color: "#0F5E5C", "text-transform": "uppercase", width: 200, height: 24, events: "no",
+      "font-size": 14, "font-weight": 600, color: "#0F5E5C", "text-transform": "uppercase", "text-wrap": "none", width: 200, height: 24, events: "no",
     } },
   ];
 
@@ -229,27 +238,157 @@
     }
     nodes.forEach((n) => { if (!col.has(n.id())) col.set(n.id(), 1); });
 
-    const X = [0, 330, 660, 990], GAP = 22;
-    const pos = {}; let top = Infinity;
+    // Each lane wraps into sub-columns, so a long list stays compact enough to see whole.
+    const GAP = 16, ROW = 12, COL_W = 212, LANE_GAP = 120;
+    const pos = {}, lanes = [], bands = [];
+    let top = Infinity, bottom = -Infinity, x = 0;
     [0, 1, 2, 3].forEach((c) => {
       let list = nodes.filter((n) => col.get(n.id()) === c);
       if (!list.length) return;
       list = list.sort((a, b) => c === 0 ? (depth.get(b.id()) || 0) - (depth.get(a.id()) || 0) || a.data("label").localeCompare(b.data("label"))
         : c === 2 ? b.degree() - a.degree() : (weight.get(b.id()) || 0) - (weight.get(a.id()) || 0) || a.data("label").localeCompare(b.data("label")));
-      // Long buyer lists wrap into extra sub-columns to the right, so the network stays compact.
-      const PER = c === 3 ? Math.max(14, Math.ceil(list.length / 3)) : list.length;
-      for (let k = 0; k * PER < list.length; k++) {
-        const chunk = list.slice(k * PER, (k + 1) * PER);
+      const per = Math.max(ROW, Math.ceil(Math.sqrt(list.length * 1.8)));
+      const chunks = Math.ceil(list.length / per);
+      const w = c === 2 ? COL_W + 24 : COL_W;
+      for (let k = 0; k < chunks; k++) {
+        const chunk = list.slice(k * per, (k + 1) * per);
         const hs = chunk.map((n) => n.outerHeight());
         const total = hs.reduce((a, h) => a + h + GAP, -GAP);
         let y = -total / 2;
-        chunk.forEach((n, i) => { pos[n.id()] = { x: X[c] + k * 225, y: y + hs[i] / 2 }; y += hs[i] + GAP; });
-        top = Math.min(top, -total / 2);
+        chunk.forEach((n, i) => { pos[n.id()] = { x: x + k * w + w / 2, y: y + hs[i] / 2 }; y += hs[i] + GAP; });
+        top = Math.min(top, -total / 2); bottom = Math.max(bottom, total / 2);
       }
+      bands.push({ c, x0: x - 18, x1: x + chunks * w + 18 });
+      lanes.push({ title: LANES[c], ids: list.map((n) => n.id()) });
+      x += chunks * w + LANE_GAP;
     });
     nodes.positions((n) => pos[n.id()]);
-    const used = [0, 1, 2, 3].filter((c) => nodes.some((n) => col.get(n.id()) === c));
-    cy.add(used.map((c) => ({ group: "nodes", data: { id: `lane-${c}`, label: LANES[c] }, classes: "lane", position: { x: X[c], y: top - 60 } })));
+    bands.forEach((b) => { b.y0 = top - 62; b.y1 = bottom + 26; });
+    cy.add(bands.map((b) => ({ group: "nodes", data: { id: `lane-${b.c}`, label: LANES[b.c] }, classes: "lane", position: { x: (b.x0 + b.x1) / 2, y: top - 38 } })));
+    sCurves(cy);
+    return { lanes, bands };
+  }
+
+  /* S-shaped lines: leave and arrive horizontally, so a lane reads like a flow rather than a tangle. */
+  function sCurves(cy) {
+    cy.edges().forEach((e) => {
+      const a = e.source().position(), b = e.target().position();
+      const dx = b.x - a.x, dy = b.y - a.y, len2 = dx * dx + dy * dy;
+      if (Math.abs(dx) < 60 || Math.abs(dy) < 6) return; // same lane, or level: a plain line reads best
+      const c = [{ x: a.x + dx / 2, y: a.y }, { x: a.x + dx / 2, y: b.y }];
+      const w = c.map((q) => ((q.x - a.x) * dx + (q.y - a.y) * dy) / len2);
+      const dist = c.map((q) => ((q.y - a.y) * dx - (q.x - a.x) * dy) / Math.sqrt(len2));
+      e.style({ "curve-style": "unbundled-bezier", "control-point-weights": w.map((v) => v.toFixed(3)).join(" "), "control-point-distances": dist.map((v) => v.toFixed(1)).join(" ") });
+    });
+  }
+
+  /* Points along a drawn edge, in graph coordinates. */
+  function edgePoints(e) {
+    const s = e.sourceEndpoint(), t = e.targetEndpoint();
+    const cp = e.controlPoints() || [];
+    if (!cp.length) return [s, t];
+    const out = [];
+    const quad = (p0, p1, p2) => { for (let i = 0; i <= 14; i++) { const u = i / 14, v = 1 - u; out.push({ x: v * v * p0.x + 2 * v * u * p1.x + u * u * p2.x, y: v * v * p0.y + 2 * v * u * p1.y + u * u * p2.y }); } };
+    let from = s;
+    cp.forEach((c, i) => {
+      const next = cp[i + 1], to = next ? { x: (c.x + next.x) / 2, y: (c.y + next.y) / 2 } : t;
+      quad(from, c, to); from = to;
+    });
+    return out;
+  }
+
+  /* Small arrows travelling along the lines. Inferred and lead links stay still: nothing is known to move. */
+  function flowLayer(cy, frame, container) {
+    const cv = document.createElement("canvas");
+    cv.className = "graph-flow";
+    frame.appendChild(cv);
+    const ctx = cv.getContext("2d");
+    let on = !window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    let tracks = null, boxes = [], raf = 0, seen = true;
+    const size = () => {
+      const r = window.devicePixelRatio || 1;
+      cv.width = container.clientWidth * r; cv.height = container.clientHeight * r;
+      cv.style.width = container.clientWidth + "px"; cv.style.height = container.clientHeight + "px";
+    };
+    function collect() {
+      boxes = cy.nodes().not(".lane").filter((n) => n.visible()).map((n) => n.boundingBox({ includeLabels: false, includeUnderlays: false }));
+      tracks = cy.edges().filter((e) => e.visible() && !e.hasClass("inf") && !e.hasClass("conf-lead")).map((e) => {
+        const pts = edgePoints(e), cum = [0];
+        for (let i = 1; i < pts.length; i++) cum.push(cum[i - 1] + Math.hypot(pts[i].x - pts[i - 1].x, pts[i].y - pts[i - 1].y));
+        return { e, pts, cum, len: cum[cum.length - 1], color: e.hasClass("tx") ? C.tx : C.ct, speed: e.hasClass("tx") ? 46 : 26, size: 5 + e.data("w") * 0.5 };
+      });
+    }
+    function at(tr, d) {
+      let i = 1;
+      while (i < tr.cum.length - 1 && tr.cum[i] < d) i++;
+      const a = tr.pts[i - 1], b = tr.pts[i], u = (d - tr.cum[i - 1]) / ((tr.cum[i] - tr.cum[i - 1]) || 1);
+      return { x: a.x + (b.x - a.x) * u, y: a.y + (b.y - a.y) * u, ang: Math.atan2(b.y - a.y, b.x - a.x) };
+    }
+    function frameDraw(now) {
+      raf = 0;
+      if (!on || !seen) return;
+      if (!tracks) collect();
+      const r = window.devicePixelRatio || 1, z = cy.zoom(), p = cy.pan();
+      ctx.setTransform(1, 0, 0, 1, 0, 0);
+      ctx.clearRect(0, 0, cv.width, cv.height);
+      ctx.setTransform(r * z, 0, 0, r * z, r * p.x, r * p.y);
+      ctx.strokeStyle = "#FFFFFF"; ctx.lineWidth = 1.1;
+      const SPACE = 130;
+      tracks.forEach((tr) => {
+        if (tr.len < 40) return;
+        const dimmed = tr.e.hasClass("faded") || tr.e.hasClass("sp-dim");
+        ctx.globalAlpha = dimmed ? 0.25 : 1;
+        ctx.fillStyle = tr.e.selected() ? "#E0A100" : tr.color;
+        const off = ((now / 1000) * tr.speed) % SPACE;
+        for (let d = off + 6; d < tr.len - 12; d += SPACE) {
+          const q = at(tr, d), s = tr.size;
+          if (boxes.some((b) => q.x > b.x1 && q.x < b.x2 && q.y > b.y1 && q.y < b.y2)) continue; // lines run behind companies
+          ctx.save(); ctx.translate(q.x, q.y); ctx.rotate(q.ang);
+          ctx.beginPath(); ctx.moveTo(s, 0); ctx.lineTo(-s * 0.7, s * 0.72); ctx.lineTo(-s * 0.7, -s * 0.72); ctx.closePath();
+          ctx.fill(); ctx.stroke(); ctx.restore();
+        }
+      });
+      ctx.globalAlpha = 1;
+      raf = requestAnimationFrame(frameDraw);
+    }
+    const start = () => { if (on && seen && !raf) raf = requestAnimationFrame(frameDraw); };
+    if ("IntersectionObserver" in window) new IntersectionObserver((en) => { seen = en[0].isIntersecting; start(); }).observe(container);
+    size(); start();
+    return {
+      dirty() { tracks = null; },
+      resize() { size(); },
+      get on() { return on; },
+      set(v) {
+        on = v;
+        if (!v) { ctx.setTransform(1, 0, 0, 1, 0, 0); ctx.clearRect(0, 0, cv.width, cv.height); if (raf) cancelAnimationFrame(raf); raf = 0; } else start();
+      },
+    };
+  }
+
+  /* Soft column backgrounds behind the graph. */
+  function bandLayer(cy, frame, container) {
+    const cv = document.createElement("canvas");
+    cv.className = "graph-bands";
+    frame.insertBefore(cv, frame.firstChild);
+    const ctx = cv.getContext("2d");
+    let bands = [];
+    function paint() {
+      const r = window.devicePixelRatio || 1;
+      if (cv.width !== container.clientWidth * r || cv.height !== container.clientHeight * r) {
+        cv.width = container.clientWidth * r; cv.height = container.clientHeight * r;
+        cv.style.width = container.clientWidth + "px"; cv.style.height = container.clientHeight + "px";
+      }
+      const z = cy.zoom(), p = cy.pan();
+      ctx.setTransform(1, 0, 0, 1, 0, 0);
+      ctx.clearRect(0, 0, cv.width, cv.height);
+      ctx.setTransform(r * z, 0, 0, r * z, r * p.x, r * p.y);
+      bands.forEach((b) => {
+        ctx.fillStyle = b.c === 2 ? "rgba(15,94,92,.07)" : "rgba(26,26,26,.03)";
+        ctx.beginPath(); ctx.roundRect(b.x0, b.y0, b.x1 - b.x0, b.y1 - b.y0, 12); ctx.fill();
+      });
+    }
+    cy.on("viewport resize", paint);
+    return { set(b) { bands = b || []; paint(); } };
   }
 
   PT.Graph = function (container, d, opts = {}) {
@@ -261,18 +400,32 @@
     let merge = opts.merge !== false;
     let caseId = opts.caseId;
     let built = build(d, caseId, merge);
+    const frame = container.parentElement;
     const cy = cytoscape({
       container, elements: built.els, style: STYLE,
-      wheelSensitivity: 0.2, minZoom: 0.2, maxZoom: 2.5, boxSelectionEnabled: false,
+      wheelSensitivity: 0.2, minZoom: 0.05, maxZoom: 2.5, boxSelectionEnabled: false,
       autoungrabify: true, // nodes can't be dragged; clicking only opens details
     });
+    const under = bandLayer(cy, frame, container);
+    const flow = opts.flow ? flowLayer(cy, frame, container) : null;
+    let lanes = null;
     const layout = () => {
-      if (caseId && opts.lanes !== false) laneLayout(cy);
+      lanes = null;
+      if (opts.lanes !== false) lanes = laneLayout(cy);
       else cy.layout({ name: "dagre", rankDir: "LR", nodeSep: 24, rankSep: 120, edgeSep: 12, padding: 30, animate: false }).run();
+      if (flow) flow.dirty();
     };
-    const MIN = opts.minZoom || 0.75;
+    const MIN = opts.minZoom || 0.75, MAX_FIT = 1.1;
+    const shown = () => cy.elements().not(".hidden");
+    /* See the whole network, but don't blow a small one up. */
+    function fitWhole() {
+      cy.resize();
+      cy.fit(shown(), 26);
+      if (cy.zoom() > MAX_FIT) { cy.zoom(MAX_FIT); cy.center(shown()); }
+    }
     function fitReadable() {
-      cy.fit(cy.elements().not(".hidden"), 30);
+      if (opts.fitAll) { fitWhole(); return; }
+      cy.fit(shown(), 30);
       if (cy.zoom() < MIN) {
         const plant = cy.nodes(".transit_plant").sort((a, b) => b.degree() - a.degree())[0] || cy.nodes().max((n) => n.degree()).ele;
         cy.zoom(MIN);
@@ -281,9 +434,9 @@
     }
     layout();
     fitReadable();
+    under.set(lanes && lanes.bands);
 
-    // Hover: tooltip + neighbourhood focus.
-    const frame = container.parentElement;
+    // Hover: a tooltip and a soft emphasis. The rest of the graph stays as it is.
     const tip = document.createElement("div");
     tip.className = "graph-tip"; tip.hidden = true;
     frame.appendChild(tip);
@@ -297,18 +450,15 @@
       const e = d.edgeById.get(ids[0]);
       return `<strong>${PT.esc(PT.edgeSentence(e, d))}</strong>${ids.length > 1 ? ` <span class="muted">(+${ids.length - 1} more)</span>` : ""}<br>${PT.esc((PT.ETYPE[e.edge_type] || {}).label)} · ${PT.esc((PT.CONF[el.data("conf")] || {}).label)}${(e.hs_codes || []).length ? ` · ${PT.esc(el.data("label"))}` : ""}`;
     };
-    let locked = false;
     cy.on("mouseover", "node, edge", (ev) => {
       const el = ev.target;
       tip.innerHTML = tipText(el); tip.hidden = false;
-      if (locked) return;
-      const nb = el.isNode() ? el.closedNeighborhood() : el.union(el.connectedNodes());
-      cy.elements().addClass("faded"); nb.removeClass("faded").addClass("hl");
+      el.addClass("hover");
+      if (el.isNode()) el.connectedEdges().addClass("hover");
     });
     cy.on("mouseout", "node, edge", () => {
       tip.hidden = true;
-      if (locked) return;
-      cy.elements().removeClass("faded hl");
+      cy.elements().removeClass("hover");
     });
     cy.on("mousemove", (ev) => {
       if (tip.hidden) return;
@@ -317,31 +467,54 @@
       tip.style.top = (p.y + 16) + "px";
     });
 
-    // Details drawer: clicking a company or a line shows what we know about it.
-    const drawer = document.createElement("aside");
-    drawer.className = "side-panel card drawer";
-    drawer.setAttribute("aria-live", "polite");
-    drawer.hidden = true;
-    frame.appendChild(drawer);
-    const close = () => { drawer.hidden = true; cy.elements().unselect(); };
+    // Details: in the side panel when the page has one, otherwise in a drawer over the graph.
+    const CLOSE = `<button type="button" class="drawer-close" aria-label="Close details">×</button>`;
+    const panel = opts.panel || document.createElement("aside");
+    if (!opts.panel) {
+      panel.className = "side-panel card drawer";
+      panel.setAttribute("aria-live", "polite");
+      panel.hidden = true;
+      frame.appendChild(panel);
+    }
+    const fill = (html) => { panel.innerHTML = CLOSE + html; panel.hidden = false; panel.scrollTop = 0; };
+
+    /* Light up everything upstream and downstream of a company or line. The rest stays visible, just quieter. */
+    function chainOf(el) {
+      if (el.isNode()) return el.union(el.predecessors()).union(el.successors());
+      return el.union(el.connectedNodes()).union(el.source().predecessors()).union(el.target().successors());
+    }
+    function lightChain(el) {
+      if (!opts.chain) return;
+      cy.batch(() => {
+        cy.elements().removeClass("faded hl");
+        if (!el || el.empty()) return;
+        const on = chainOf(el);
+        cy.elements().not(on).not(".lane").addClass("faded");
+        on.addClass("hl");
+      });
+    }
+    const close = () => {
+      if (!opts.panel) panel.hidden = true;
+      cy.elements().unselect();
+      lightChain(null);
+      if (opts.onClear) opts.onClear();
+    };
     const openNode = (id, members) => {
       const e = d.entityById.get(id); if (!e) return;
-      drawer.innerHTML = `<button type="button" class="drawer-close" aria-label="Close details">×</button>` + PT.nodePanel(d, e, members || [id], caseId);
-      drawer.hidden = false; drawer.scrollTop = 0;
+      fill(PT.nodePanel(d, e, members || [id], caseId));
     };
     const openEdge = (id, ids) => {
       const e = d.edgeById.get(id); if (!e) return;
-      drawer.innerHTML = `<button type="button" class="drawer-close" aria-label="Close details">×</button>` + PT.edgePanel(d, e, ids);
-      drawer.hidden = false; drawer.scrollTop = 0;
+      fill(PT.edgePanel(d, e, ids));
     };
-    drawer.addEventListener("click", (ev) => {
+    panel.addEventListener("click", (ev) => {
       if (ev.target.closest(".drawer-close")) { close(); return; }
       const a = ev.target.closest("[data-edge]");
-      if (a) { ev.preventDefault(); const el = elOfEdge(a.dataset.edge); if (el && el.nonempty()) { cy.elements().unselect(); el.select(); openEdge(el.data("ids")[0], el.data("ids")); } else openEdge(a.dataset.edge); }
+      if (a) { ev.preventDefault(); const el = elOfEdge(a.dataset.edge); if (el && el.nonempty()) { cy.elements().unselect(); el.select(); lightChain(el); openEdge(el.data("ids")[0], el.data("ids")); } else openEdge(a.dataset.edge); }
     });
-    document.addEventListener("keydown", (ev) => { if (ev.key === "Escape" && !drawer.hidden) close(); });
-    cy.on("tap", "node", (ev) => { const n = ev.target; openNode(n.id(), n.data("members")); if (opts.onSelect) opts.onSelect({ kind: "node", id: n.id() }); });
-    cy.on("tap", "edge", (ev) => { const e = ev.target; openEdge(e.data("ids")[0], e.data("ids")); if (opts.onSelect) opts.onSelect({ kind: "edge", id: e.data("ids")[0] }); });
+    document.addEventListener("keydown", (ev) => { if (ev.key === "Escape" && (opts.panel ? cy.$(":selected").nonempty() : !panel.hidden)) close(); });
+    cy.on("tap", "node", (ev) => { const n = ev.target; lightChain(n); openNode(n.id(), n.data("members")); if (opts.onSelect) opts.onSelect({ kind: "node", id: n.id() }); });
+    cy.on("tap", "edge", (ev) => { const e = ev.target; lightChain(e); openEdge(e.data("ids")[0], e.data("ids")); if (opts.onSelect) opts.onSelect({ kind: "edge", id: e.data("ids")[0] }); });
     cy.on("tap", (ev) => { if (ev.target === cy) close(); });
     cy.on("mouseover", "node, edge", () => { container.style.cursor = "pointer"; });
     cy.on("mouseout", "node, edge", () => { container.style.cursor = ""; });
@@ -352,27 +525,51 @@
     const api = {
       cy,
       get merged() { return merge; },
-      setCase(id) { caseId = id; api.rebuild(); },
+      setCase(id) { caseId = id; cy.elements().unselect(); api.rebuild(); },
       setMerge(on) { merge = on; api.rebuild(); },
       rebuild() {
-        drawer.hidden = true;
+        if (!opts.panel) panel.hidden = true;
         built = build(d, caseId, merge);
-        locked = false;
         cy.elements().remove(); cy.add(built.els); layout(); fitReadable();
+        under.set(lanes && lanes.bands);
       },
-      relayout() { layout(); api.fit(); },
-      fit() { cy.animate({ fit: { eles: cy.elements().not(".hidden"), padding: 30 } }, { duration: 300 }); },
+      relayout() { layout(); under.set(lanes && lanes.bands); api.fit(); },
+      fit() { cy.animate({ fit: { eles: shown(), padding: 26 } }, { duration: 300 }); },
       zoom(f) { cy.animate({ zoom: { level: cy.zoom() * f, renderedPosition: { x: container.clientWidth / 2, y: container.clientHeight / 2 } } }, { duration: 200 }); },
-      reset() { locked = false; cy.elements().removeClass("faded hl"); fitReadable(); },
-      fitAll() { cy.animate({ fit: { eles: cy.elements().not(".hidden"), padding: 30 } }, { duration: 300 }); },
+      reset() { cy.elements().removeClass("faded hl"); fitReadable(); },
+      fitAll() { api.fit(); },
+      clearFocus() { close(); },
+      /* Company list for a side panel, grouped by lane. */
+      lanes() {
+        const row = (id) => { const n = cy.getElementById(id); return { id, name: n.data("name"), country: n.data("country"), flagged: n.data("flagged"), hidden: n.hasClass("hidden") }; };
+        if (lanes) return lanes.lanes.map((l) => ({ title: l.title, rows: l.ids.map(row) }));
+        return [{ title: "Companies and people", rows: cy.nodes().not(".lane").map((n) => row(n.id())).sort((a, b) => a.name.localeCompare(b.name)) }];
+      },
+      /* Highlight matching companies and quieten the rest. Nothing is removed. */
+      spotlight(match) {
+        let n = 0;
+        cy.batch(() => {
+          cy.elements().removeClass("sp-dim sp-on sp-risk");
+          if (!match) return;
+          const nodes = cy.nodes().not(".lane");
+          const on = nodes.filter(match.node);
+          n = on.length;
+          on.addClass(match.risk ? "sp-on sp-risk" : "sp-on");
+          nodes.not(on).addClass("sp-dim");
+          cy.edges().forEach((e) => {
+            const lit = on.has(e.source()) || on.has(e.target());
+            e.addClass(lit && (!match.edge || match.edge(e)) ? "sp-on" : "sp-dim");
+          });
+        });
+        return n;
+      },
       highlight(edgeIds = [], nodeIds = []) {
         cy.elements().removeClass("hl faded");
-        if (!edgeIds.length && !nodeIds.length) { locked = false; cy.fit(undefined, 30); return; }
+        if (!edgeIds.length && !nodeIds.length) { cy.fit(undefined, 30); return; }
         let sel = cy.collection();
         edgeIds.forEach((id) => { const e = elOfEdge(id); if (e.nonempty()) sel = sel.union(e).union(e.connectedNodes()); });
         nodeIds.forEach((id) => { const n = elOfNode(id); if (n.nonempty()) sel = sel.union(n); });
-        if (sel.empty()) { locked = false; return; }
-        locked = true;
+        if (sel.empty()) return;
         cy.elements().addClass("faded");
         sel.removeClass("faded").addClass("hl");
         cy.animate({ fit: { eles: sel, padding: 60 } }, { duration: 450 });
@@ -390,20 +587,25 @@
           cy.edges().forEach((e) => e.toggleClass("hidden", !keepEdges.has(e.id())));
           cy.nodes().not(".lane").forEach((n) => n.toggleClass("hidden", !keepNodes.has(n.id())));
         });
-        if (keepEdges.size) fitReadable();
+        if (flow) flow.dirty();
       },
       showDetails(id) {
         api.select(id);
-        if (d.edgeById.has(id)) { const el = elOfEdge(id); openEdge(id, el && el.nonempty() ? el.data("ids") : [id]); }
-        else { const n = elOfNode(id); openNode(n.nonempty() ? n.id() : id, n.nonempty() ? n.data("members") : [id]); }
+        if (d.edgeById.has(id)) { const el = elOfEdge(id); lightChain(el); openEdge(id, el && el.nonempty() ? el.data("ids") : [id]); }
+        else { const n = elOfNode(id); lightChain(n); openNode(n.nonempty() ? n.id() : id, n.nonempty() ? n.data("members") : [id]); }
       },
       select(id) {
         cy.elements().unselect();
         const el = d.edgeById.has(id) ? elOfEdge(id) : elOfNode(id);
-        if (el && el.nonempty()) { el.select(); cy.animate({ center: { eles: el }, zoom: Math.max(cy.zoom(), 0.9) }, { duration: 300 }); }
+        if (el && el.nonempty()) {
+          el.select();
+          if (!opts.fitAll) cy.animate({ center: { eles: el }, zoom: Math.max(cy.zoom(), 0.9) }, { duration: 300 });
+        }
       },
+      get motion() { return flow ? flow.on : null; },
+      setMotion(on) { if (flow) flow.set(on); },
     };
-    window.addEventListener("resize", () => cy.resize());
+    window.addEventListener("resize", () => { cy.resize(); if (flow) flow.resize(); });
     (PT._graphs = PT._graphs || []).push(api);
     return api;
   };
@@ -417,6 +619,7 @@
         <button type="button" data-z="1.25" title="Zoom in" aria-label="Zoom in">+</button>
         <button type="button" data-z="0.8" title="Zoom out" aria-label="Zoom out">−</button>
         <button type="button" data-fit title="Show the whole network" aria-label="Show the whole network">⤢</button>
+        ${api.motion === null ? "" : `<button type="button" data-motion></button>`}
       </div>`);
     frame.insertAdjacentHTML("afterend", `
       <div class="graph-key" aria-hidden="true">
@@ -425,17 +628,24 @@
         <span class="etype tx"><span class="line"></span>Shipment</span>
         <span class="etype ct"><span class="line"></span>Ownership</span>
         <span class="etype inf"><span class="line"></span>Inferred</span>
-        <span class="muted">Thicker blue line = more shipments · ⚑ risk flag · hover to focus · drag to pan · ⤢ shows everything</span>
+        <span class="muted">Thicker blue line = more shipments · ⚑ risk flag · click to trace a chain · drag to pan · ⤢ shows everything</span>
       </div>`);
     frame.querySelectorAll("[data-z]").forEach((b) => b.addEventListener("click", () => api.zoom(+b.dataset.z)));
     frame.querySelector("[data-fit]").addEventListener("click", () => api.fitAll());
+    const mo = frame.querySelector("[data-motion]");
+    if (mo) {
+      const label = () => { const t = api.motion ? "Pause the moving arrows" : "Play the moving arrows"; mo.textContent = api.motion ? "❚❚" : "▶"; mo.title = t; mo.setAttribute("aria-label", t); };
+      label();
+      mo.addEventListener("click", () => { api.setMotion(!api.motion); label(); });
+    }
     if (opts.toggles) {
       const bar = document.createElement("div");
       bar.className = "graph-toggles";
       bar.innerHTML = `
         <label><input type="checkbox" data-merge ${api.merged ? "checked" : ""}> Merge duplicate records of the same company</label>
         <label><input type="checkbox" data-labels> Show product codes on lines</label>`;
-      frame.parentElement.insertBefore(bar, frame);
+      if (opts.toggleHost) opts.toggleHost.appendChild(bar);
+      else frame.parentElement.insertBefore(bar, frame);
       bar.querySelector("[data-merge]").addEventListener("change", (e) => { api.setMerge(e.target.checked); if (opts.onRebuild) opts.onRebuild(); });
       bar.querySelector("[data-labels]").addEventListener("change", (e) => api.showLabels(e.target.checked));
     }

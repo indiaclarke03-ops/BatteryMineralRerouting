@@ -707,6 +707,27 @@ def main():
     for f in curated["map"]["flows"]:
         assert f["case"] in case_ids and f["from"] in curated["map"]["places"] and f["to"] in curated["map"]["places"], f
     seen = set()
+    # Map routes: each step cites links from its own case; confidence and dates come from those links.
+    rank = {"documented": 4, "corroborated": 3, "inferred": 2, "lead": 1}
+    edge_by_id = {e["id"]: e for e in edges}
+    def evidence(cid, ids):
+        rows = [edge_by_id[i] for i in ids]
+        assert all(cid in e["case_ids"] for e in rows), (cid, ids)
+        first = sorted(e["first_seen"] for e in rows if e.get("first_seen"))
+        last = sorted(e["last_seen"] for e in rows if e.get("last_seen"))
+        return {"confidence": max((e["confidence"] for e in rows), key=lambda c: rank[c]),
+                "first_seen": first[0] if first else None, "last_seen": last[-1] if last else None}
+    places = curated["map"]["places"]
+    assert set(curated["map"]["routes"]) == case_ids
+    for cid, steps in curated["map"]["routes"].items():
+        for s in steps:
+            assert s.get("legs") or s.get("at"), (cid, s)
+            assert not s.get("at") or s["at"] in places, (cid, s)
+            for leg in s.get("legs", []):
+                assert leg["from"] in places and leg["to"] in places and leg["edge_ids"], (cid, leg)
+                leg.update(evidence(cid, leg["edge_ids"]))
+            if s.get("edge_ids"):
+                s.update(evidence(cid, s["edge_ids"]))
     for g in curated["buyer_groups"]:
         for i in g["ids"]:
             assert i in entities_by_id, ("buyer id", i)

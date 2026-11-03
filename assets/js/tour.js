@@ -1,11 +1,10 @@
-/* Paper Trail: a short guided tour of the site, started from the home page. */
+/* Mineral Trace: a short guided tour of the site, started from the home page. */
 (function () {
   const STEPS = [
     { sel: "#facts", title: "1 · Why it matters", text: "China makes over 90% of the world's battery anode material, and US tax-credit rules now ask who owns each supplier. These four numbers set the scene." },
-    { sel: "#map-section", title: "2 · Where the trail runs", text: "Each numbered dot is a plant we traced. Click one to see who owns it and what the records show." },
+    { sel: "#map-section", title: "2 · Where the trail runs", text: "Each numbered dot is a plant we traced. Choose one to watch its route play across the map, step by step, with more about the case in the list beside it." },
     { sel: "#cases", title: "3 · One answer per plant", text: "Each case asks one question and gives a Yes / Partly / Not yet answer. Open a case to see every link and its source." },
-    { sel: "#take-h", title: "4 · What the cases add up to", text: "Six findings across all the cases. Finding 2 is the key one: shipping records alone can't tell a Chinese-owned supplier from a Korean one." },
-    { sel: null, title: "5 · Put it to work", text: "Use these pages for your own checks.", links: [["buyers.html", "Check a Buyer: who supplies GM, Ford, Tesla…"], ["diligence.html", "Due Diligence: ownership screen and supplier questions"], ["explore.html", "Explore: every link, with its evidence"], ["method.html", "Method: every Sayari query we ran"]] },
+    { sel: null, title: "4 · Put it to work", text: "Use these pages for your own checks.", links: [["buyers.html", "Check a Buyer: who supplies GM, Ford, Tesla…"], ["diligence.html", "Due Diligence: ownership screen and supplier questions"], ["explore.html", "Explore: every link, with its evidence"], ["method.html", "Method: every Sayari query we ran"]] },
   ];
   let i = 0, box = null, focused = null;
 

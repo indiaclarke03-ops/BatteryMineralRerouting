@@ -187,6 +187,13 @@
         "kind": "plant",
         "case": "case-12",
         "note": "Huayue Nickel Cobalt (marker shifted from BTR's plant)"
+      },
+      "madagascar": {
+        "name": "Madagascar",
+        "lat": -19.0,
+        "lon": 46.8,
+        "kind": "origin",
+        "note": "ERG Madagascar (country-level marker)"
       }
     },
     "flows": [
@@ -202,7 +209,7 @@
         "from": "indonesia",
         "to": "us_buyers",
         "type": "output",
-        "label": "Artificial graphite to Ultium, SK, StarPlus, GM and Tesla (19 rows)"
+        "label": "Artificial graphite to Ultium, SK, StarPlus, GM and Tesla (about 55 rows)"
       },
       {
         "case": "case-2",
@@ -379,7 +386,825 @@
         "type": "input",
         "label": "Huayou cathode precursor to POSCO Future M (2021–2023)"
       }
-    ]
+    ],
+    "routes": {
+      "case-1": [
+        {
+          "stage": "Mine",
+          "title": "Natural graphite from African mines",
+          "text": "Natural graphite reaches the plant from Syrah's mine in Mozambique and from ERG Madagascar.",
+          "legs": [
+            {
+              "from": "balama",
+              "to": "indonesia",
+              "type": "input",
+              "edge_ids": [
+                "e023"
+              ]
+            },
+            {
+              "from": "madagascar",
+              "to": "indonesia",
+              "type": "input",
+              "edge_ids": [
+                "e025"
+              ]
+            }
+          ]
+        },
+        {
+          "stage": "Inputs",
+          "title": "Chinese graphite and petroleum coke",
+          "text": "BTR and a trader in the BTR Building ship artificial graphite and petroleum coke to the plant.",
+          "legs": [
+            {
+              "from": "shenzhen",
+              "to": "indonesia",
+              "type": "input",
+              "edge_ids": [
+                "e020",
+                "e021"
+              ]
+            }
+          ]
+        },
+        {
+          "stage": "Processing",
+          "title": "BTR's plant in Indonesia",
+          "text": "The plant processes these inputs into battery anode material.",
+          "at": "indonesia"
+        },
+        {
+          "stage": "Output",
+          "title": "Out to US battery and car makers",
+          "text": "Artificial graphite ships to Ultium Cells, SK Battery America, StarPlus Energy, GM and Tesla.",
+          "legs": [
+            {
+              "from": "indonesia",
+              "to": "us_buyers",
+              "type": "output",
+              "edge_ids": [
+                "e030",
+                "e031",
+                "e032",
+                "e033",
+                "e034",
+                "e035",
+                "e036",
+                "e038",
+                "e041"
+              ]
+            }
+          ]
+        },
+        {
+          "stage": "Owner",
+          "title": "Who owns the plant",
+          "text": "BTR's own filings give it a 60% stake. No registry record in Sayari shows this.",
+          "legs": [
+            {
+              "from": "shenzhen",
+              "to": "indonesia",
+              "type": "owner",
+              "edge_ids": [
+                "e010"
+              ]
+            }
+          ]
+        }
+      ],
+      "case-2": [
+        {
+          "stage": "Owner",
+          "title": "Who owns the plant",
+          "text": "BTR owns the plant 100%, through holding companies in Singapore.",
+          "legs": [
+            {
+              "from": "shenzhen",
+              "to": "tangier",
+              "type": "owner",
+              "edge_ids": [
+                "e201",
+                "e203",
+                "e204",
+                "e205",
+                "e206",
+                "e208"
+              ]
+            }
+          ]
+        },
+        {
+          "stage": "Inputs",
+          "title": "First graphite arrives",
+          "text": "The first graphite, 1,240 t, came from BTR's own Indonesian plant in Aug 2026.",
+          "legs": [
+            {
+              "from": "indonesia",
+              "to": "tangier",
+              "type": "input",
+              "edge_ids": [
+                "e231"
+              ]
+            }
+          ]
+        },
+        {
+          "stage": "Processing",
+          "title": "BTR's plant in Tangier",
+          "text": "The plant is still under construction.",
+          "at": "tangier"
+        },
+        {
+          "stage": "Output",
+          "title": "No exports yet",
+          "text": "Nothing has been exported, so the route stops here for now.",
+          "at": "tangier",
+          "end": true
+        }
+      ],
+      "case-3": [
+        {
+          "stage": "Owner",
+          "title": "Who owns the plant",
+          "text": "Zhongke Electric's group holds the Omani plant through a Hong Kong company.",
+          "legs": [
+            {
+              "from": "hunan",
+              "to": "sohar",
+              "type": "owner",
+              "edge_ids": [
+                "e301",
+                "e302",
+                "e304",
+                "e305"
+              ]
+            }
+          ]
+        },
+        {
+          "stage": "Processing",
+          "title": "The planned plant in Sohar",
+          "text": "The plant is still being built, and no shipments from it appear in the records.",
+          "at": "sohar"
+        },
+        {
+          "stage": "Inputs",
+          "title": "Today's route: graphite to Malaysia",
+          "text": "Zhongke graphite already reaches cell plants in Malaysia run by EVE Energy and Linergy Power.",
+          "legs": [
+            {
+              "from": "hunan",
+              "to": "kedah_eve",
+              "type": "input",
+              "edge_ids": [
+                "e313"
+              ]
+            },
+            {
+              "from": "hunan",
+              "to": "selangor",
+              "type": "input",
+              "edge_ids": [
+                "e314"
+              ]
+            }
+          ]
+        },
+        {
+          "stage": "Output",
+          "title": "Then on to the US inside cells",
+          "text": "Those plants ship to US buyers, including Briggs & Stratton and Eaton.",
+          "legs": [
+            {
+              "from": "kedah_eve",
+              "to": "us_buyers",
+              "type": "output",
+              "edge_ids": [
+                "e319",
+                "e320"
+              ]
+            },
+            {
+              "from": "selangor",
+              "to": "us_buyers",
+              "type": "output",
+              "edge_ids": [
+                "e318"
+              ]
+            }
+          ]
+        }
+      ],
+      "case-4": [
+        {
+          "stage": "Mine",
+          "title": "Natural graphite from Mozambique",
+          "text": "One shipment from Syrah's mine in Mozambique reached POSCO Future M.",
+          "legs": [
+            {
+              "from": "balama",
+              "to": "pohang",
+              "type": "input",
+              "edge_ids": [
+                "e416"
+              ]
+            }
+          ]
+        },
+        {
+          "stage": "Inputs",
+          "title": "Graphite inputs from Qingdao",
+          "text": "Qingdao companies shipped natural graphite and carbon inputs to the plant.",
+          "legs": [
+            {
+              "from": "qingdao",
+              "to": "pohang",
+              "type": "input",
+              "edge_ids": [
+                "e412",
+                "e413",
+                "e414",
+                "e415"
+              ]
+            }
+          ]
+        },
+        {
+          "stage": "Processing",
+          "title": "POSCO Future M in South Korea",
+          "text": "The plants process these inputs into battery anode material.",
+          "at": "pohang"
+        },
+        {
+          "stage": "Output",
+          "title": "Out to the same US buyers as BTR",
+          "text": "Anode material ships to GM, SK Battery America, Tesla, Panasonic and XALT.",
+          "legs": [
+            {
+              "from": "pohang",
+              "to": "us_buyers",
+              "type": "output",
+              "edge_ids": [
+                "e430",
+                "e431",
+                "e433",
+                "e434",
+                "e435",
+                "e437",
+                "e438"
+              ]
+            }
+          ]
+        },
+        {
+          "stage": "Owner",
+          "title": "Who owns the plant",
+          "text": "POSCO Holdings holds 58.2%. None of the 50 ownership paths checked leads to a Chinese owner.",
+          "at": "pohang",
+          "edge_ids": [
+            "e401",
+            "e402"
+          ]
+        }
+      ],
+      "case-5": [
+        {
+          "stage": "Owner",
+          "title": "Who owns the plant",
+          "text": "Putailai owns the plant 100%, through a Singapore company.",
+          "legs": [
+            {
+              "from": "shanghai",
+              "to": "kedah_zichen",
+              "type": "owner",
+              "edge_ids": [
+                "e501",
+                "e502",
+                "e503"
+              ]
+            }
+          ]
+        },
+        {
+          "stage": "Processing",
+          "title": "Zichen's plant in Kedah",
+          "text": "The plant is still under construction.",
+          "at": "kedah_zichen"
+        },
+        {
+          "stage": "Output",
+          "title": "No exports yet",
+          "text": "No shipments from this plant appear in the records, so the route stops here for now.",
+          "at": "kedah_zichen",
+          "end": true
+        }
+      ],
+      "case-6": [
+        {
+          "stage": "Inputs",
+          "title": "Anode graphite arrives",
+          "text": "Zhongke, BTR, Shanshan and Qingdao Taidongrui ship anode graphite to the plant, including from BTR's Indonesian plant.",
+          "legs": [
+            {
+              "from": "hunan",
+              "to": "kedah_eve",
+              "type": "input",
+              "edge_ids": [
+                "e613"
+              ]
+            },
+            {
+              "from": "shenzhen",
+              "to": "kedah_eve",
+              "type": "input",
+              "edge_ids": [
+                "e614",
+                "e615"
+              ]
+            },
+            {
+              "from": "shanghai",
+              "to": "kedah_eve",
+              "type": "input",
+              "edge_ids": [
+                "e618"
+              ]
+            },
+            {
+              "from": "qingdao",
+              "to": "kedah_eve",
+              "type": "input",
+              "edge_ids": [
+                "e612"
+              ]
+            },
+            {
+              "from": "indonesia",
+              "to": "kedah_eve",
+              "type": "input",
+              "edge_ids": [
+                "e616",
+                "e617"
+              ]
+            }
+          ]
+        },
+        {
+          "stage": "Processing",
+          "title": "EVE's cell plant in Kedah",
+          "text": "The plant makes finished battery cells, so the graphite is now inside a product.",
+          "at": "kedah_eve"
+        },
+        {
+          "stage": "Output",
+          "title": "Finished cells to US buyers",
+          "text": "Cells ship to Briggs & Stratton, Milwaukee Tool, Stanley Black & Decker, Energizer and others. US customs records list them as cells, not graphite.",
+          "legs": [
+            {
+              "from": "kedah_eve",
+              "to": "us_buyers",
+              "type": "output",
+              "edge_ids": [
+                "e625",
+                "e626",
+                "e627",
+                "e628",
+                "e629",
+                "e630",
+                "e631",
+                "e632",
+                "e633"
+              ]
+            }
+          ]
+        },
+        {
+          "stage": "Owner",
+          "title": "Who owns the plant",
+          "text": "EVE Energy owns the plant through EVE Asia in Hong Kong.",
+          "legs": [
+            {
+              "from": "huizhou",
+              "to": "kedah_eve",
+              "type": "owner",
+              "edge_ids": [
+                "e601",
+                "e603"
+              ]
+            }
+          ]
+        }
+      ],
+      "case-7": [
+        {
+          "stage": "Inputs",
+          "title": "Direct from Gotion's Chinese plants",
+          "text": "Gotion's Chinese plants ship cells, packs and graphite straight to its US sites.",
+          "legs": [
+            {
+              "from": "hefei",
+              "to": "gotion_us",
+              "type": "input",
+              "edge_ids": [
+                "e721",
+                "e722",
+                "e723",
+                "e724",
+                "e725"
+              ]
+            }
+          ]
+        },
+        {
+          "stage": "Processing",
+          "title": "Gotion's sites inside the US",
+          "text": "No third country is involved: these sites are in California and Illinois.",
+          "at": "gotion_us"
+        },
+        {
+          "stage": "Owner",
+          "title": "Who owns the sites",
+          "text": "Gotion's annual report says it wholly owns them, but no US record shows it.",
+          "legs": [
+            {
+              "from": "hefei",
+              "to": "gotion_us",
+              "type": "owner",
+              "edge_ids": [
+                "e705",
+                "e711"
+              ]
+            }
+          ]
+        },
+        {
+          "stage": "Output",
+          "title": "Onward sales are unclear",
+          "text": "The only onward links are leads, so the route stops here.",
+          "at": "gotion_us",
+          "edge_ids": [
+            "e733",
+            "e734",
+            "e735"
+          ],
+          "end": true
+        }
+      ],
+      "case-8": [
+        {
+          "stage": "Mine",
+          "title": "Natural graphite from Mozambique",
+          "text": "Syrah's Balama mine ships natural graphite to Syrah's own plant in Louisiana.",
+          "legs": [
+            {
+              "from": "balama",
+              "to": "vidalia",
+              "type": "input",
+              "edge_ids": [
+                "e807"
+              ]
+            }
+          ]
+        },
+        {
+          "stage": "Inputs",
+          "title": "One shipment from China",
+          "text": "One shipment of artificial graphite came from Qingdao Mien New Material.",
+          "at": "vidalia",
+          "edge_ids": [
+            "e827"
+          ]
+        },
+        {
+          "stage": "Processing",
+          "title": "Syrah's plant in Vidalia",
+          "text": "The plant processes natural graphite into anode material.",
+          "at": "vidalia"
+        },
+        {
+          "stage": "Output",
+          "title": "Out to Tesla",
+          "text": "Tesla is the US buyer linked to the plant.",
+          "legs": [
+            {
+              "from": "vidalia",
+              "to": "us_buyers",
+              "type": "output",
+              "edge_ids": [
+                "e837"
+              ]
+            }
+          ]
+        },
+        {
+          "stage": "Also",
+          "title": "The same mine also sells elsewhere",
+          "text": "The same mine ships to BTR Indonesia and to Chinese buyers, so one mine can feed both kinds of chain.",
+          "legs": [
+            {
+              "from": "balama",
+              "to": "indonesia",
+              "type": "input",
+              "edge_ids": [
+                "e808",
+                "e809"
+              ]
+            },
+            {
+              "from": "balama",
+              "to": "qingdao",
+              "type": "input",
+              "edge_ids": [
+                "e812",
+                "e813",
+                "e814"
+              ]
+            }
+          ]
+        },
+        {
+          "stage": "Owner",
+          "title": "Who owns the chain",
+          "text": "Australia's Syrah Resources owns both the mine and the plant.",
+          "at": "vidalia",
+          "edge_ids": [
+            "e804",
+            "e805"
+          ]
+        }
+      ],
+      "case-9": [
+        {
+          "stage": "Inputs",
+          "title": "BTR Indonesia to Ford's Michigan plant",
+          "text": "BTR Indonesia graphite reached Ford's Marshall plant in 2026, about 960 t. Most of the rows were loaded in China.",
+          "legs": [
+            {
+              "from": "indonesia",
+              "to": "marshall",
+              "type": "input",
+              "edge_ids": [
+                "e903",
+                "e904"
+              ]
+            }
+          ]
+        },
+        {
+          "stage": "Inputs",
+          "title": "BTR's sales arm to BlueOval SK",
+          "text": "BTR's Shenzhen sales arm and BTR Jiangsu shipped to BlueOval SK, Ford's venture with SK, in 2025.",
+          "legs": [
+            {
+              "from": "shenzhen",
+              "to": "marshall",
+              "type": "input",
+              "edge_ids": [
+                "e908",
+                "e909",
+                "e911"
+              ]
+            }
+          ]
+        },
+        {
+          "stage": "Processing",
+          "title": "Ford's battery plants",
+          "text": "Ford's plants are the end of this route. BlueOval SK's sites are in Kentucky and Tennessee.",
+          "at": "marshall"
+        },
+        {
+          "stage": "Contract",
+          "title": "The Tangier contract",
+          "text": "A China Baoan filing says Ford agreed to prepay US$120m to BTR's Tangier company. It is one filing, Ford hasn't confirmed it, and Tangier has shipped nothing yet.",
+          "legs": [
+            {
+              "from": "tangier",
+              "to": "marshall",
+              "type": "planned",
+              "edge_ids": [
+                "e901"
+              ]
+            }
+          ]
+        }
+      ],
+      "case-10": [
+        {
+          "stage": "Inputs",
+          "title": "Graphite and materials from China",
+          "text": "Zhongke Shinzoom and Shanshan ship graphite, and Xiamen Ampace ships other cell materials.",
+          "legs": [
+            {
+              "from": "hunan",
+              "to": "selangor",
+              "type": "input",
+              "edge_ids": [
+                "e10-11"
+              ]
+            },
+            {
+              "from": "shanghai",
+              "to": "selangor",
+              "type": "input",
+              "edge_ids": [
+                "e10-12"
+              ]
+            },
+            {
+              "from": "xiamen",
+              "to": "selangor",
+              "type": "input",
+              "edge_ids": [
+                "e10-13"
+              ]
+            }
+          ]
+        },
+        {
+          "stage": "Processing",
+          "title": "Linergy Power in Malaysia",
+          "text": "The plant makes battery cells.",
+          "at": "selangor"
+        },
+        {
+          "stage": "Output",
+          "title": "Cells to US buyers",
+          "text": "Cells ship to Eaton, Milwaukee Tool, Stanley Black & Decker and Techtronic.",
+          "legs": [
+            {
+              "from": "selangor",
+              "to": "us_buyers",
+              "type": "output",
+              "edge_ids": [
+                "e10-25",
+                "e10-26",
+                "e10-27",
+                "e10-28",
+                "e10-29",
+                "e10-30"
+              ]
+            }
+          ]
+        },
+        {
+          "stage": "Owner",
+          "title": "Owner until June 2026",
+          "text": "CATL's group owned the plant through Ampace.",
+          "legs": [
+            {
+              "from": "xiamen",
+              "to": "selangor",
+              "type": "owner",
+              "edge_ids": [
+                "e10-01",
+                "e10-03"
+              ]
+            }
+          ]
+        },
+        {
+          "stage": "Owner",
+          "title": "Owner since June 2026",
+          "text": "Japan's TDK bought the plant through its Singapore company. In October, Sayari still showed the old Chinese owners.",
+          "legs": [
+            {
+              "from": "tokyo",
+              "to": "selangor",
+              "type": "owner",
+              "edge_ids": [
+                "e10-02"
+              ]
+            }
+          ]
+        }
+      ],
+      "case-11": [
+        {
+          "stage": "Owner",
+          "title": "Who owns the plant",
+          "text": "CATL owns the plant 100%, through CATL (Hong Kong).",
+          "legs": [
+            {
+              "from": "ningde",
+              "to": "debrecen",
+              "type": "owner",
+              "edge_ids": [
+                "e11-01",
+                "e11-02"
+              ]
+            }
+          ]
+        },
+        {
+          "stage": "Inputs",
+          "title": "Factory equipment only",
+          "text": "Chinese production equipment appears in the records. No battery materials do.",
+          "legs": [
+            {
+              "from": "ningde",
+              "to": "debrecen",
+              "type": "input",
+              "edge_ids": [
+                "e11-07",
+                "e11-08",
+                "e11-09"
+              ]
+            }
+          ]
+        },
+        {
+          "stage": "Processing",
+          "title": "CATL's plant in Debrecen",
+          "text": "The plant is still under construction.",
+          "at": "debrecen"
+        },
+        {
+          "stage": "Output",
+          "title": "The route goes dark",
+          "text": "Trade between EU countries leaves no customs record, so the route stops here.",
+          "at": "debrecen",
+          "end": true
+        }
+      ],
+      "case-12": [
+        {
+          "stage": "Processing",
+          "title": "Huayue's nickel plant",
+          "text": "Huayou's plant in Indonesia produces a nickel intermediate.",
+          "at": "morowali_nickel"
+        },
+        {
+          "stage": "Owner",
+          "title": "Who owns the plant",
+          "text": "Company filings put Huayou's stake at 57%.",
+          "legs": [
+            {
+              "from": "tongxiang",
+              "to": "morowali_nickel",
+              "type": "owner",
+              "edge_ids": [
+                "e12-08"
+              ]
+            }
+          ]
+        },
+        {
+          "stage": "Output",
+          "title": "Out to Chinese refiners",
+          "text": "The nickel intermediate ships to Huayou companies, CMOC and other Chinese buyers. None ships directly to the US.",
+          "legs": [
+            {
+              "from": "morowali_nickel",
+              "to": "tongxiang",
+              "type": "output",
+              "edge_ids": [
+                "e12-21",
+                "e12-22",
+                "e12-26"
+              ]
+            }
+          ]
+        },
+        {
+          "stage": "Inputs",
+          "title": "Huayou precursor to South Korea",
+          "text": "Huayou companies shipped cathode precursor to POSCO Future M.",
+          "legs": [
+            {
+              "from": "tongxiang",
+              "to": "pohang",
+              "type": "input",
+              "edge_ids": [
+                "e12-61",
+                "e12-62",
+                "e12-63",
+                "e12-64"
+              ]
+            }
+          ],
+          "gap": "No record joins this step to the one before it."
+        },
+        {
+          "stage": "Output",
+          "title": "POSCO to US buyers",
+          "text": "POSCO Future M shipped to StarPlus Energy and GM.",
+          "legs": [
+            {
+              "from": "pohang",
+              "to": "us_buyers",
+              "type": "output",
+              "edge_ids": [
+                "e12-69",
+                "e12-70"
+              ]
+            }
+          ],
+          "gap": "No record joins this step to the one before it."
+        }
+      ]
+    }
   },
   "screening": {
     "case-1": {
