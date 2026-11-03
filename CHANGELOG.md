@@ -2,6 +2,7 @@
 
 ## Iteration 1.5 · 3 Nov 2026
 - Renamed the site Paper Trail | Minerals, with "Paper Trail" in bold (logo, favicon, social card). The repo name and URL are unchanged.
+- New favicon showing PT | M, with PNG versions for Safari and home screens. Page files are now versioned, so browsers pick up changes.
 - The Trace:
   - Key numbers now sit directly under the description, and the title is higher on the page.
   - Bigger map with an animated route for each of the 12 cases. The map turns to fit the route and plays it step by step.
