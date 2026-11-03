@@ -1,7 +1,7 @@
 # Changelog
 
 ## Iteration 1.5 · 3 Nov 2026
-- Renamed the site Mineral Trace (logo, favicon, social card). The repo name and URL are unchanged.
+- Renamed the site Paper Trail | Minerals, with "Paper Trail" in bold (logo, favicon, social card). The repo name and URL are unchanged.
 - The Trace:
   - Key numbers now sit directly under the description, and the title is higher on the page.
   - Bigger map with an animated route for each of the 12 cases. The map turns to fit the route and plays it step by step.
@@ -97,5 +97,5 @@
   - The CVD rate is 66.82–66.86%.
   - The USITC's finding was "material retardation", not no injury.
   - Added China's Announcements 58 and 70 (2025).
-- Site: The Trace (5-step stepper with ← →), Explore (filters, side panel, list view), Case Files (Passport vs. Mineral Trace), Method (replay, scorecard, rubric, Fuse.js log search), About.
+- Site: The Trace (5-step stepper with ← →), Explore (filters, side panel, list view), Case Files (Passport vs. Paper Trail), Method (replay, scorecard, rubric, Fuse.js log search), About.
 - Case 2 (Morocco) logged as a lead.

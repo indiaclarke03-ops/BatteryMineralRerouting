@@ -1,4 +1,4 @@
-# Mineral Trace
+# **Paper Trail** | Minerals
 
 *Tracing battery-mineral rerouting with Sayari MCP.*
 
@@ -7,7 +7,7 @@
 
 > Can trade and corporate-registry data reveal Chinese battery materials, especially graphite anode material, being rerouted through third-country plants before they reach US battery supply chains?
 
-Mineral Trace traces **twelve cases** end to end:
+**Paper Trail** | Minerals traces **twelve cases** end to end:
 
 | # | Case | What Sayari showed |
 |---|---|---|

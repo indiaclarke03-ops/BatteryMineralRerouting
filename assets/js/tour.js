@@ -1,4 +1,4 @@
-/* Mineral Trace: a short guided tour of the site, started from the home page. */
+/* Paper Trail | Minerals: a short guided tour of the site, started from the home page. */
 (function () {
   const STEPS = [
     { sel: "#facts", title: "1 · Why it matters", text: "China makes over 90% of the world's battery anode material, and US tax-credit rules now ask who owns each supplier. These four numbers set the scene." },

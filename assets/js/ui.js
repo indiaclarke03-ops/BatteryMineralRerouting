@@ -1,4 +1,4 @@
-/* Mineral Trace: shared header, footer and legend. */
+/* Paper Trail | Minerals: shared header, footer and legend. */
 (function (PT) {
   const PAGES = [
     ["index.html", "The Trace"],
@@ -23,7 +23,7 @@
       header.className = "site-header";
       header.innerHTML = `
         <div class="wrap">
-          <a class="brand" href="index.html"><span class="brand-mark">MT</span>Mineral Trace</a>
+          <a class="brand" href="index.html"><span class="brand-mark">PT</span><strong>Paper Trail</strong><span class="brand-sub">| Minerals</span></a>
           <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav">Menu</button>
           <nav class="nav" id="site-nav" aria-label="Main">
             ${PAGES.map(([href, label]) => `<a href="${href}"${href === here ? ' aria-current="page"' : ""}>${label}</a>`).join("")}
@@ -41,7 +41,7 @@
       footer.className = "site-footer";
       footer.innerHTML = `
         <div class="wrap">
-          <div><strong>Mineral Trace</strong>: tracing battery-mineral rerouting with Sayari MCP. Data as of 14 Oct 2026, re-checked 18 Oct 2026.</div>
+          <div><strong>Paper Trail</strong> | Minerals: tracing battery-mineral rerouting with Sayari MCP. Data as of 14 Oct 2026, re-checked 18 Oct 2026.</div>
           <div>Not an accusation tool: patterns here warrant due diligence, not conclusions. See <a href="about.html#limits">limitations</a>.</div>
           <div>GLOB1-GC 2620, NYU Center for Global Affairs · <a href="${REPO}">Source on GitHub</a> · MIT licence · Companion to <a href="https://indiaclarke03-ops.github.io/EthicalBatterySourcing/">Battery Passport Audit</a></div>
         </div>`;

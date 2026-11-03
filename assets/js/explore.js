@@ -1,4 +1,4 @@
-/* Mineral Trace: Explore page (case picker, highlights, side panel, list view). */
+/* Paper Trail | Minerals: Explore page (case picker, highlights, side panel, list view). */
 (function (PT) {
   async function init() {
     let d;

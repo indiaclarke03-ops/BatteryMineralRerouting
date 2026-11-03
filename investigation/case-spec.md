@@ -1,6 +1,6 @@
-# Mineral Trace: how to investigate and write up a case
+# Paper Trail | Minerals: how to investigate and write up a case
 
-This is the brief for adding a case study to Mineral Trace. It is written for an analyst, or an AI agent, with Sayari MCP and Tavily access. Read all of it before starting.
+This is the brief for adding a case study to Paper Trail | Minerals. It is written for an analyst, or an AI agent, with Sayari MCP and Tavily access. Read all of it before starting.
 
 ## Context
 The site asks whether trade and corporate-registry data can reveal Chinese battery materials (mainly graphite anode material, and also cells and other minerals) reaching US supply chains through plants in third countries, and who owns those plants. The policy hook is the US "prohibited foreign entity" (PFE) rules: since July 2025, clean-energy tax credits (§45X and others) depend on whether suppliers are owned or controlled by PFEs. In March 2026 the USITC voted against anti-dumping duties on Chinese anode material, so ownership is now the main lever.

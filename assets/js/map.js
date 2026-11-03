@@ -1,4 +1,4 @@
-/* Mineral Trace: world map of the traced supply chains (D3 + TopoJSON, no map tiles).
+/* Paper Trail | Minerals: world map of the traced supply chains (D3 + TopoJSON, no map tiles).
    Choosing a plant turns the map to fit its route, then plays the route one step at a time. */
 (function (PT) {
   const COL = { input: "#1F5FBF", output: "#0F5E5C", planned: "#5E5D57", owner: "#6B3FA0" };

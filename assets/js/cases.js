@@ -1,10 +1,10 @@
-/* Mineral Trace: Case Files page (all cases). */
+/* Paper Trail | Minerals: Case Files page (all cases). */
 (function (PT) {
   const LABEL = { detected: "Detected", suggested: "Suggested", not_visible: "Not visible", absent: "Checked: absent" };
 
   function passportHTML(rows) {
-    return `<div class="passport" role="table" aria-label="Passport versus Mineral Trace">
-      <div class="passport-head"><strong>Passport vs. Mineral Trace</strong><span>EU Battery Regulation passport fields · illustrative</span></div>
+    return `<div class="passport" role="table" aria-label="Passport versus Paper Trail">
+      <div class="passport-head"><strong>Passport vs. Paper Trail</strong><span>EU Battery Regulation passport fields · illustrative</span></div>
       ${rows.map((r) => `
         <div class="passport-row${r.gap ? " gap" : ""}" role="row">
           <div class="pf" role="rowheader">${PT.esc(r.field)}<small>Passport field no. ${PT.esc(r.guidance_no)}</small></div>

@@ -1,4 +1,4 @@
-/* Mineral Trace: Check a Buyer. For a US buyer, list every supplier in our data, who owns it, and what it ships. */
+/* Paper Trail | Minerals: Check a Buyer. For a US buyer, list every supplier in our data, who owns it, and what it ships. */
 (function (PT) {
   const CAT = {
     battery: "Battery and car makers",

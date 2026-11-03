@@ -1,4 +1,4 @@
-/* Mineral Trace: home page (key numbers, case cards, policy timeline). */
+/* Paper Trail | Minerals: home page (key numbers, case cards, policy timeline). */
 (function (PT) {
   const KEY_DATES = new Set(["2025-07-04", "2026-02-12", "2026-03-12"]);
 

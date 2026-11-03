@@ -1,4 +1,4 @@
-/* Mineral Trace: Method page (replay, scorecard, rubric, searchable call log). */
+/* Paper Trail | Minerals: Method page (replay, scorecard, rubric, searchable call log). */
 (function (PT) {
   const STEP_LABEL = {
     method: "Set-up: tradecraft and flag definitions",

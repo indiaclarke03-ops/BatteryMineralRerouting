@@ -1,4 +1,4 @@
-/* Mineral Trace: data loading and shared formatting helpers. */
+/* Paper Trail | Minerals: data loading and shared formatting helpers. */
 window.PT = window.PT || {};
 
 (function (PT) {

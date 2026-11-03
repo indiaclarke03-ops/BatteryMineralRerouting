@@ -1,4 +1,4 @@
-/* Mineral Trace: Cytoscape + dagre network graph.
+/* Paper Trail | Minerals: Cytoscape + dagre network graph.
    Readability rules: duplicate records (possibly-same-as) merge into one node by default;
    nodes are coloured by role; line width follows shipment count; clicking lights up a company's
    whole chain without removing the rest. Moving arrows show the direction of goods and ownership. */
