@@ -2,6 +2,7 @@
 
 ## Iteration 1.6 · 5 Nov 2026
 - Full re-check of all 12 cases, three buyer scans and every policy date (278 new logged calls). See the notes in `investigation/notes/recheck-2026-11-05-*.md`.
+- Case 5: the second director's name is withheld, because nothing ties that person to Putailai beyond a common name.
 - Corrections: Case 5 (Putailai's exports found), Case 12 (448 rows, not 87), Case 1 (about 100 rows, seven buyers, the Sep 2026 row went to LG), Case 9 (11 rows, about 1,160 t), plus updated counts in Cases 2, 3, 4, 6 and 7.
 - Explore: every section of the supply chain is now one column. Goods run left to right, and owners sit above the plant. Busy cases get a taller graph.
 - The Trace: a short description of every page.

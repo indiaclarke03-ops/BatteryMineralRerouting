@@ -2999,7 +2999,7 @@
       },
       "question": "Who owns and runs Zichen Malaysia, and does it trade?",
       "purpose": "Plant registry profile",
-      "result_summary": "Registered 23 Sep 2025, Sdn Bhd, office at Menara BHL, George Town, Penang. Purpose: production and sale of advanced battery materials and carbon-based products; import/export. Shareholder: Putailai (Singapore) Pte. Ltd., 100%. Directors: Liu Fang, Han Zhongwei and a third director. Trade count: 0 sent, 0 received.",
+      "result_summary": "Registered 23 Sep 2025, Sdn Bhd, office at Menara BHL, George Town, Penang. Purpose: production and sale of advanced battery materials and carbon-based products; import/export. Shareholder: Putailai (Singapore) Pte. Ltd., 100%. Directors: the second director (name withheld), Han Zhongwei and a third director. Trade count: 0 sent, 0 received.",
       "interpretation": "Ownership is in the registry. There is no trade yet.",
       "scorecard": "worked",
       "entity_ids": [
@@ -3168,7 +3168,7 @@
       },
       "question": "Who is the second director of Zichen Malaysia?",
       "purpose": "Officers linking the plant to its parent",
-      "result_summary": "Liu Fang, with an address in Pudong, Shanghai. Source: Malaysian shareholder profiles.",
+      "result_summary": "The second director, with an address in Pudong, Shanghai (name withheld). Source: Malaysian shareholder profiles.",
       "interpretation": "A second Shanghai-based director. It is a very common name, so the match to the Putailai shareholder stays weak.",
       "scorecard": "worked",
       "entity_ids": [
