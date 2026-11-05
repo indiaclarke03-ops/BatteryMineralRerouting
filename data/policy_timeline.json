@@ -48,12 +48,25 @@
       "source_url": "https://www.cirs-group.com/en/chemicals/china-temporarily-suspends-export-controls-on-key-raw-materials-including-rare-earths-lithium-batteries-and-diamond",
       "source_name": "CIRS Group; Global Times; Pillsbury; chemradar",
       "verified": true,
-      "note": "Legal end date of the suspension is 10 Nov 2026. On 28 Sep 2026 MOFCOM said the wider US–China truce runs to 10 Jan 2027, but as of 18 Oct 2026 no new announcement has moved the legal end date. Re-check after 10 Nov 2026.",
+      "note": "Legal end date of the suspension is 10 Nov 2026. On 28 Sep 2026 MOFCOM said the wider US–China truce runs to 10 Jan 2027, but as of 5 Nov 2026 no new announcement has moved the legal end date. Re-check after 10 Nov 2026.",
       "source_call_ids": [
         "t008",
         "t010",
         "v045",
         "v046"
+      ]
+    },
+    {
+      "date": "2025-11-09",
+      "measure": "China suspends paragraph 2 of Announcement No. 46 of 2024 until 27 Nov 2026 (MOFCOM Announcement No. 72 of 2025)",
+      "relevance": "Pauses China's stricter end-user and end-use review of dual-use graphite going to the US. This is a separate clock from Announcement No. 70, and it ends 17 days later.",
+      "source_url": "http://www.mofcom.gov.cn/zwgk/zcfb/art/2025/art_5c68985a6b1a46778e2e8dbff1bb1601.html",
+      "source_name": "MOFCOM Announcement No. 72 of 2025 (primary); CIRS Group",
+      "verified": true,
+      "note": "Paragraph 1, the ban on dual-use exports to US military users, stays in force. As of 5 Nov 2026 no extension notice had been found. Re-check after 27 Nov 2026.",
+      "source_call_ids": [
+        "n2611a15",
+        "n2611a16"
       ]
     },
     {
@@ -85,7 +98,7 @@
     {
       "date": "2026-03-12",
       "measure": "USITC negative final determinations on active anode material from China (701-TA-752, 731-TA-1730)",
-      "relevance": "Because the Commission voted no, no AD/CVD orders were issued. Chinese anode material avoids those duties, so routing around duties no longer matters, while the PFE tax-credit test still does.",
+      "relevance": "Because the Commission voted no, no AD/CVD orders were issued. Chinese anode material pays neither duty today, so the PFE tax-credit test is the live issue. An appeal could reopen the question.",
       "source_url": "https://www.usitc.gov/press_room/news_release/2026/er0312_68281.htm",
       "source_name": "USITC news release; USITC Publication 5719",
       "verified": true,
@@ -117,7 +130,7 @@
       "source_url": "https://www.globaltimes.cn/page/202609/1371502.shtml",
       "source_name": "Global Times (MOFCOM statement); China Briefing; Thomson Reuters",
       "verified": true,
-      "note": "Checked 18 Oct 2026.",
+      "note": "Checked 5 Nov 2026. No new notice had been found. US and Chinese negotiators are due to meet in Shenzhen later in November.",
       "source_call_ids": [
         "v046"
       ]
@@ -129,12 +142,52 @@
       "source_url": "https://www.mcguirewoods.com/client-resources/alerts/2026/3/irs-releases-initial-feoc-guidance-answers-key-questions-leaves-others-unanswered",
       "source_name": "McGuireWoods",
       "verified": false,
-      "note": "Re-checked 18 Oct 2026: still nothing beyond Notice 2026-15. The safe-harbor tables are due by 31 Dec 2026, and questions on effective control and Hong Kong remain open.",
+      "note": "Re-checked 5 Nov 2026: still nothing beyond Notice 2026-15. The safe-harbor tables are due by 31 Dec 2026, and questions on effective control and Hong Kong remain open.",
       "source_call_ids": [
         "t009",
         "t011",
         "v047",
         "v048"
+      ]
+    },
+    {
+      "date": "2026-10-19",
+      "measure": "Petitioners ask for a voluntary remand of the USITC's negative anode vote, in an appeal at the Court of International Trade",
+      "relevance": "If the vote were sent back and reversed, duties on Chinese anode material could return. Single source: a filing by Novonix, a member of the petitioning group. We have not seen the court docket.",
+      "source_url": "https://www.stocktitan.net/sec-filings/NVX/6-k-novonix-ltd-current-report-foreign-issuer-6ac844c28183.html",
+      "source_name": "Novonix Form 6-K, 30 Oct 2026 (mirror of SEC filing)",
+      "verified": false,
+      "single_source": true,
+      "note": "Single source. Novonix gives oral argument as the second half of January 2027 and calls a voluntary remand unusual.",
+      "source_call_ids": [
+        "n2611a20",
+        "n2611a21"
+      ]
+    },
+    {
+      "date": "2026-10-29",
+      "measure": "UFLPA Entity List updated to 190 entities (91 FR 68159)",
+      "relevance": "Three genomics companies were added. None of the eight Chinese battery companies checked on this site is listed. Buyers should keep screening, because the list keeps changing.",
+      "source_url": "https://www.federalregister.gov/documents/2026/10/29/2026-22094/notice-regarding-the-uyghur-forced-labor-prevention-act-entity-list",
+      "source_name": "Federal Register Doc. 2026-22094",
+      "verified": true,
+      "note": "Whole list read on 5 Nov 2026. Checked for BTR, Zhongke, Putailai, EVE, CATL, Gotion, Huayou and Shanshan (the anode maker). The listed 'Hoshine Silicon Industry (Shanshan)' is a different company.",
+      "source_call_ids": [
+        "n2611a05",
+        "n2611a07"
+      ]
+    },
+    {
+      "date": "2026-11-10",
+      "measure": "BIS Affiliates Rule due to return unless BIS extends its suspension",
+      "relevance": "Scheduled, not yet an event. The rule would extend US export restrictions to foreign firms owned 50% or more by listed parties. It was the US side of the same deal as Announcement No. 70, whose suspension legally ends the same day.",
+      "source_url": "https://www.dechert.com/knowledge/onpoint/2026/10/bis-affiliates-rule--november-10-reimposition-remains-scheduled-.html",
+      "source_name": "Dechert (28 Oct 2026), citing the BIS final rule of 12 Nov 2025",
+      "verified": true,
+      "note": "As of 28 Oct 2026 BIS had published no extension. An extension to 10 Jan 2027 is expected but unconfirmed. Re-check after 10 Nov 2026.",
+      "source_call_ids": [
+        "n2611a17",
+        "n2611a18"
       ]
     }
   ]

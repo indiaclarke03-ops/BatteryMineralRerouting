@@ -516,13 +516,14 @@
         "3801"
       ],
       "first_seen": "2025-04-07",
-      "last_seen": "2026-09-19",
-      "shipment_count": 6,
-      "evidence": "Artificial graphite (HS 3801). 5 rows arriving 7 Apr 2025 and 1 row arriving 19 Sep 2026, recorded in US import data as loaded in Singapore.",
+      "last_seen": "2025-04-07",
+      "shipment_count": 5,
+      "evidence": "Artificial graphite (HS 3801). 5 rows arriving 7 Apr 2025, recorded in US import data as loaded in Singapore. A later row arriving 19 Sep 2026 went to an LG Energy Solution address: see link e045.",
       "source_call_ids": [
         "s011",
         "s018",
-        "v001"
+        "v001",
+        "n2611b06"
       ],
       "case_ids": [
         "case-1"
@@ -3026,12 +3027,14 @@
       "hs_codes": [
         "284190"
       ],
-      "first_seen": "2026-05-14",
-      "last_seen": "2026-07-23",
-      "shipment_count": 87,
-      "evidence": "87 rows of HS 2841.90 (salts of oxometallic acids, the code used for NCM cathode active material) from Korea to the Kokomo cell plant.",
+      "first_seen": null,
+      "last_seen": "2026-10-18",
+      "shipment_count": 448,
+      "evidence": "448 rows of HS 2841.90 (the code used for NCM cathode active material) in the Korea-departure slice, to the Kokomo cell plant. A second US feed repeats many of them. First date not established.",
       "source_call_ids": [
-        "s12-21"
+        "n2611d09",
+        "n2611d13",
+        "n2611d55"
       ],
       "case_ids": [
         "case-12"
@@ -3616,16 +3619,16 @@
       "target": "El_6QFk0rVRdYJanrqEtAA",
       "relation": "possibly_same_as",
       "edge_type": "inferred",
-      "confidence": "lead",
+      "confidence": "documented",
       "hs_codes": [],
       "first_seen": null,
       "last_seen": null,
       "shipment_count": null,
-      "evidence": "Truncated name only; no country or address.",
-      "confidence_reason": "Name only.",
+      "evidence": "A Master Union Logistics row (departed 20 Jul 2026) to this trade record quotes RC 142409, the register number on the BNUO-owned company.",
+      "confidence_reason": "A shipping row to this fragment quotes the registry company's commercial register number, 142409; this rests on one free-text field.",
       "source_call_ids": [
-        "s202",
-        "s210"
+        "n2611b05",
+        "n2611b26"
       ],
       "case_ids": [
         "case-2"
@@ -3663,7 +3666,7 @@
       "first_seen": null,
       "last_seen": null,
       "shipment_count": null,
-      "evidence": "Exact name match; no address or identifier on the trade record.",
+      "evidence": "Exact name match. The trade record now gives Lot 1 and 2, Tanger Tech, but no identifier.",
       "confidence_reason": "Name only.",
       "source_call_ids": [
         "s202",
@@ -3682,8 +3685,8 @@
       "confidence": "documented",
       "hs_codes": [],
       "first_seen": "2026-05-04",
-      "last_seen": "2026-05-10",
-      "shipment_count": 3,
+      "last_seen": "2026-06-23",
+      "shipment_count": 5,
       "evidence": "Racks and pipelines, China to Morocco, departed May 2026 (arrived June).",
       "confidence_reason": "Dated shipment rows.",
       "source_call_ids": [
@@ -4446,13 +4449,15 @@
       "relation": "ships_to",
       "edge_type": "transactional",
       "confidence": "documented",
-      "hs_codes": [],
+      "hs_codes": [
+        "850790"
+      ],
       "first_seen": "2026-07-01",
-      "last_seen": "2026-09-22",
-      "shipment_count": 3,
-      "evidence": "Three rows of INR21700 lithium-ion cells to the US. Of the two dated departures, one was Singapore and one China.",
+      "last_seen": "2026-10-12",
+      "shipment_count": 7,
+      "evidence": "Seven rows of INR21700 lithium-ion cells to the US, departing Singapore, China and Pusan.",
       "source_call_ids": [
-        "s322"
+        "n2611c37"
       ],
       "case_ids": [
         "case-3"
@@ -5035,7 +5040,7 @@
       "first_seen": "2023-08-16",
       "last_seen": "2026-02-21",
       "shipment_count": 13,
-      "evidence": "Artificial graphite 'anode active material', 12 rows Jan–Feb 2026; plus 1 row (HS 3801.90) in Aug 2023 shared with Panasonic Procurement.",
+      "evidence": "Artificial graphite 'anode active material', 12 rows Jan–Feb 2026; plus 1 row (HS 3801.90) in Aug 2023 shared with Panasonic Procurement. A second US feed adds 31 rows dated Jul 2024 – Dec 2025 with no departure country.",
       "source_call_ids": [
         "s402",
         "s408"
@@ -5054,12 +5059,13 @@
       "confidence": "documented",
       "hs_codes": [
         "380190",
-        "380110"
+        "380110",
+        "380120"
       ],
       "first_seen": "2026-05-06",
-      "last_seen": "2026-07-28",
-      "shipment_count": 9,
-      "evidence": "'Anode active material' / artificial graphite, 9 rows, departures 6 May – 28 Jul 2026.",
+      "last_seen": "2026-08-11",
+      "shipment_count": 11,
+      "evidence": "'Anode active material' / artificial graphite, 11 rows, departures 6 May – 11 Aug 2026.",
       "source_call_ids": [
         "s408"
       ],
@@ -6057,33 +6063,15 @@
       "relation": "ships_to",
       "edge_type": "transactional",
       "confidence": "documented",
-      "hs_codes": [],
+      "hs_codes": [
+        "850790"
+      ],
       "first_seen": "2026-07-01",
-      "last_seen": "2026-09-22",
-      "shipment_count": 3,
-      "evidence": "3 rows of INR21700/50E lithium-ion cells to Wauwatosa, WI, departing Singapore, Yantian (China) and Pusan.",
+      "last_seen": "2026-10-12",
+      "shipment_count": 7,
+      "evidence": "7 rows of INR21700/50E lithium-ion cells, departing Singapore, Yantian (China) and Pusan. The 12 Oct 2026 row is coded HS 8507.90.",
       "source_call_ids": [
-        "s609"
-      ],
-      "case_ids": [
-        "case-6"
-      ],
-      "confidence_reason": "Dated shipment rows in Sayari."
-    },
-    {
-      "id": "e627",
-      "source": "_WCNtC_iMCzef8u8s0uKyQ",
-      "target": "TrQHururSYl_Fqbbewp1cA",
-      "relation": "ships_to",
-      "edge_type": "transactional",
-      "confidence": "documented",
-      "hs_codes": [],
-      "first_seen": "2026-07-15",
-      "last_seen": "2026-09-01",
-      "shipment_count": 2,
-      "evidence": "2 rows of INR21700/50E cells, departing Singapore and Yantian (China).",
-      "source_call_ids": [
-        "s609"
+        "n2611c37"
       ],
       "case_ids": [
         "case-6"
@@ -6915,7 +6903,7 @@
       "first_seen": null,
       "last_seen": null,
       "shipment_count": null,
-      "evidence": "Volkswagen (China) Investment is a shareholder of Gotion High-Tech in Sayari's registry graph. 24.28% at 30 Jun 2026; falling to 18.98% after the agreed 5.30% sale.",
+      "evidence": "Volkswagen (China) Investment is a shareholder of Gotion High-Tech in Sayari's registry graph. 24.28% at 30 Sep 2026; would fall to 18.98% once the 5.30% sale completes. Hefei regulator approval reported 5 Nov 2026; transfer not done.",
       "source_call_ids": [
         "s725"
       ],
@@ -6979,7 +6967,7 @@
         "850790"
       ],
       "first_seen": "2024-04-07",
-      "last_seen": "2026-09-08",
+      "last_seen": "2026-10-04",
       "shipment_count": null,
       "evidence": "Li-ion battery modules and battery parts (HS 8507.60, 8507.90), Jul–Sep 2026 (4 rows in s713). The graph shows HS 8507 flows from Apr 2024. Manteno-bound rows (s716) add dummy cells, adhesive and insulation board, Jan–Sep 2026.",
       "source_call_ids": [
@@ -7181,9 +7169,9 @@
         "850760"
       ],
       "first_seen": "2026-08-23",
-      "last_seen": "2026-08-23",
-      "shipment_count": 3,
-      "evidence": "Li-ion cells (HS 8507.60), 3 rows on 23 Aug 2026, transshipped at Kingston, Jamaica (ZIM), to a US freight forwarder.",
+      "last_seen": "2026-10-04",
+      "shipment_count": 5,
+      "evidence": "Li-ion cells (HS 8507.60), 5 rows, 23 Aug – 4 Oct 2026, transshipped at Kingston, Jamaica (ZIM), to a US freight forwarder.",
       "source_call_ids": [
         "s713"
       ],
@@ -7286,7 +7274,7 @@
       "first_seen": null,
       "last_seen": null,
       "shipment_count": null,
-      "evidence": "Gotion, Inc. was the developer of the Big Rapids project, which the state of Michigan declared abandoned in Sep 2025.",
+      "evidence": "Gotion, Inc. was the developer of the Big Rapids project, which the state of Michigan declared abandoned in Sep 2025. A tentative Oct 2026 settlement would end the project and move the land to the State Land Bank; the Michigan Strategic Fund had not voted as of 27 Oct.",
       "source_call_ids": [
         "t702",
         "s728"
@@ -7936,11 +7924,12 @@
       "confidence": "documented",
       "hs_codes": [],
       "first_seen": "2023-01-20",
-      "last_seen": "2025-07-17",
-      "shipment_count": 3,
-      "evidence": "Baghouses, rotary valves, liners and hammers from China.",
+      "last_seen": "2026-10-08",
+      "shipment_count": 4,
+      "evidence": "Baghouses, rotary valves, liners and hammers from China. Latest row: classifier and mill parts, arrived 8 Oct 2026.",
       "source_call_ids": [
-        "s807"
+        "s807",
+        "n2611b41"
       ],
       "confidence_reason": "Dated trade rows naming both parties.",
       "case_ids": [
@@ -8098,12 +8087,12 @@
       "relation": "supply_agreement",
       "edge_type": "contractual",
       "confidence": "documented",
-      "confidence_reason": "Single source, but a primary one: a mandatory stock-exchange announcement by China Baoan, BTR's largest shareholder (13 Aug 2024). Ford has not confirmed it, and the 'US$108m paid' figure comes from secondary reports and is unverified.",
+      "confidence_reason": "Single source, but a primary one: a mandatory stock-exchange announcement by China Baoan, whose group companies are BTR's two largest shareholders (13 Aug 2024). Ford has not confirmed it, and the 'US$108m paid' figure comes from secondary reports and is unverified.",
       "hs_codes": [],
       "first_seen": null,
       "last_seen": null,
       "shipment_count": null,
-      "evidence": "On 13 Aug 2024 China Baoan, BTR's largest shareholder, announced that BTR Mediterranean Anode would sign supply and prepayment agreements with Ford Motor and/or related Ford companies to supply artificial graphite, with a US$120m prepayment, backed by a guarantee letter. Later reports say US$108m had been paid (one says by end-2025, one by end-Jun 2026).",
+      "evidence": "On 13 Aug 2024 China Baoan, whose group companies are BTR's two largest shareholders, announced that BTR Mediterranean Anode would sign supply and prepayment agreements with Ford Motor and/or related Ford companies to supply artificial graphite, with a US$120m prepayment, backed by a guarantee letter. Later reports say US$108m had been paid (one says by end-2025, one by end-Jun 2026).",
       "source_call_ids": [
         "t901",
         "t902",
@@ -8146,12 +8135,15 @@
         "380110"
       ],
       "first_seen": "2026-05-31",
-      "last_seen": "2026-09-17",
-      "shipment_count": 9,
-      "evidence": "9 rows of artificial graphite (HS 3801.10) from PT Indonesia BTR (Kendal address) to the Marshall plant, arriving 31 May to 17 Sep 2026; about 960 t gross in total (one row's weight looks mis-entered). Six rows were loaded at Ningbo or Yantian in China, three at Singapore.",
+      "last_seen": "2026-10-07",
+      "shipment_count": 11,
+      "evidence": "11 rows of artificial graphite, arriving 31 May to 7 Oct 2026, about 1,160 t gross as recorded. 7 loaded in China (4 Yantian, 3 Ningbo), 4 at Singapore. One row records 158 kg against a stated net weight of 148,827 kg, likely an entry error.",
       "source_call_ids": [
         "s915",
-        "s921"
+        "s921",
+        "n2611b19",
+        "n2611b20",
+        "n2611b43"
       ],
       "case_ids": [
         "case-9"
@@ -8428,7 +8420,7 @@
       ],
       "first_seen": "2025-01-31",
       "last_seen": "2025-11-11",
-      "shipment_count": 41,
+      "shipment_count": 42,
       "evidence": "41 rows of artificial graphite (HS 3801.10) from China, departures 9 Jan to 14 Oct 2025. The graphite maker is not named.",
       "source_call_ids": [
         "s907",
@@ -8459,6 +8451,466 @@
       ],
       "case_ids": [
         "case-9"
+      ]
+    },
+    {
+      "id": "e042",
+      "source": "ekoH1fr8BGvHc7UqYCY_YA",
+      "target": "xWhz7CFJV3lxsgg8fHMGHA",
+      "relation": "ships_to",
+      "edge_type": "transactional",
+      "hs_codes": [],
+      "first_seen": "2026-01-21",
+      "last_seen": "2026-01-21",
+      "shipment_count": 1,
+      "confidence": "documented",
+      "confidence_reason": "One dated US import row names both parties; the row carries no HS code.",
+      "evidence": "1 row described as carbon anode materials, arriving 21 Jan 2026, recorded in US import data as loaded in Singapore.",
+      "source_call_ids": [
+        "n2611b43",
+        "n2611b55"
+      ],
+      "case_ids": [
+        "case-1"
+      ]
+    },
+    {
+      "id": "e043",
+      "source": "Lv60RfghzhQ-9oSF_kW0wA",
+      "target": "n3epSyTN-HbHMmnpJHNhkA",
+      "relation": "ships_to",
+      "edge_type": "transactional",
+      "hs_codes": [
+        "380110"
+      ],
+      "first_seen": "2026-06-13",
+      "last_seen": "2026-06-13",
+      "shipment_count": 1,
+      "confidence": "documented",
+      "confidence_reason": "One dated US import row names both parties and describes battery-grade spherical graphite.",
+      "evidence": "122 packages of artificial graphite and surface-treated spherical graphite, 97.8 t net, loaded in Hong Kong, arriving 13 Jun 2026.",
+      "source_call_ids": [
+        "n2611b07",
+        "n2611b14",
+        "n2611b17",
+        "n2611b76"
+      ],
+      "case_ids": [
+        "case-1"
+      ]
+    },
+    {
+      "id": "e044",
+      "source": "ekoH1fr8BGvHc7UqYCY_YA",
+      "target": "EAd4f9FKWeoImIL2ltX93A",
+      "relation": "ships_to",
+      "edge_type": "transactional",
+      "hs_codes": [
+        "380110"
+      ],
+      "first_seen": "2026-10-16",
+      "last_seen": "2026-10-16",
+      "shipment_count": 1,
+      "confidence": "inferred",
+      "confidence_reason": "The supplier field is blank; the link rests on the plant's name in the row's account text, on one row.",
+      "evidence": "372 packages of artificial graphite, 234.36 t, arriving Los Angeles 16 Oct 2026, account PT Indonesia BTR New Energy Material. FNS is a freight forwarder, so the end buyer is not named.",
+      "source_call_ids": [
+        "n2611b06",
+        "n2611b10",
+        "n2611b43"
+      ],
+      "case_ids": [
+        "case-1"
+      ]
+    },
+    {
+      "id": "e045",
+      "source": "ekoH1fr8BGvHc7UqYCY_YA",
+      "target": "4fqrWAcyrgtWw2RdV6qZsg",
+      "relation": "ships_to",
+      "edge_type": "transactional",
+      "hs_codes": [
+        "380110"
+      ],
+      "first_seen": "2026-09-19",
+      "last_seen": "2026-09-19",
+      "shipment_count": 1,
+      "confidence": "documented",
+      "confidence_reason": "A dated US import row names the shipper; the target record mixes GM and LG Energy Solution names, so the delivery address identifies the receiver.",
+      "evidence": "35.3 t of carbon anode materials, loaded at Pusan, arriving Los Angeles 19 Sep 2026, delivered to 1 LG Way, Holland, Michigan.",
+      "source_call_ids": [
+        "n2611b06"
+      ],
+      "case_ids": [
+        "case-1"
+      ]
+    },
+    {
+      "id": "e233",
+      "source": "hmnBuu6vz31_-lqNazNviw",
+      "target": "1CjF5vzVgFFxVomroaYyaA",
+      "relation": "possibly_same_as",
+      "edge_type": "inferred",
+      "confidence": "inferred",
+      "confidence_reason": "Same name stem and the same lots (1 and 2) in Tanger Tech, with no shared identifier, so this is our judgment.",
+      "evidence": "Both trade records give Lot 1 and 2, Tanger Tech, and the BTR Mediterranean Anode name.",
+      "source_call_ids": [
+        "n2611b05",
+        "n2611b27",
+        "s210"
+      ],
+      "case_ids": [
+        "case-2"
+      ],
+      "hs_codes": [],
+      "first_seen": null,
+      "last_seen": null,
+      "shipment_count": null
+    },
+    {
+      "id": "e444",
+      "source": "RosuicQyFavmKExu13ogvA",
+      "target": "Fj3vtxDroFyjyPsLgsnm2A",
+      "relation": "possibly_same_as",
+      "edge_type": "inferred",
+      "confidence": "inferred",
+      "confidence_reason": "Same name and the same Gwangyang street address, but no shared identifier, so it is our judgment.",
+      "evidence": "US-import-only record for POSCO Future M at 45 Yulchon Sandan 8-ro, Gwangyang; 51 rows sent.",
+      "source_call_ids": [
+        "n2611d02",
+        "n2611d17"
+      ],
+      "case_ids": [
+        "case-4"
+      ],
+      "hs_codes": [],
+      "first_seen": null,
+      "last_seen": null,
+      "shipment_count": null
+    },
+    {
+      "id": "e514",
+      "source": "5rQqO0uMqEvtMvK_oQGcYA",
+      "target": "zTmjvxb--FZPXZG8PERmOg",
+      "relation": "owns",
+      "edge_type": "contractual",
+      "confidence": "corroborated",
+      "confidence_reason": "Sayari shows Shanghai Putailai as a shareholder of Jiangxi Zichen, and press calls it the group subsidiary that runs the anode business. No percentage was returned.",
+      "evidence": "Sayari owner path from Jiangxi Zichen to Shanghai Putailai. Press on Putailai's 2026 results names it as the anode subsidiary.",
+      "source_call_ids": [
+        "n2611c48",
+        "n2611c62"
+      ],
+      "case_ids": [
+        "case-5"
+      ],
+      "hs_codes": [],
+      "first_seen": null,
+      "last_seen": null,
+      "shipment_count": null
+    },
+    {
+      "id": "e515",
+      "source": "zTmjvxb--FZPXZG8PERmOg",
+      "target": "uFjg3v6bVZDhlhSp0D5C5g",
+      "relation": "ships_to",
+      "edge_type": "transactional",
+      "hs_codes": [],
+      "first_seen": "2025-06-12",
+      "last_seen": "2025-07-10",
+      "shipment_count": 2,
+      "confidence": "documented",
+      "confidence_reason": "Dated shipment rows in Sayari.",
+      "evidence": "2 rows described as graphite, China to the group's US company (Sayari shows it inactive).",
+      "source_call_ids": [
+        "n2611c50",
+        "n2611c61"
+      ],
+      "case_ids": [
+        "case-5"
+      ]
+    },
+    {
+      "id": "e516",
+      "source": "zTmjvxb--FZPXZG8PERmOg",
+      "target": "RPYYIgKHs0f-kGKGBlE9jw",
+      "relation": "ships_to",
+      "edge_type": "transactional",
+      "hs_codes": [],
+      "first_seen": "2024-05-25",
+      "last_seen": "2025-02-07",
+      "shipment_count": 2,
+      "confidence": "documented",
+      "confidence_reason": "Dated shipment rows in Sayari.",
+      "evidence": "2 rows described as graphite to BlueOval SK.",
+      "source_call_ids": [
+        "n2611c50"
+      ],
+      "case_ids": [
+        "case-5"
+      ]
+    },
+    {
+      "id": "e517",
+      "source": "kK2TOAWUJqpBl_jcmU2rsg",
+      "target": "cclu_C8fIOucVXcdONCwhA",
+      "relation": "ships_to",
+      "edge_type": "transactional",
+      "hs_codes": [],
+      "first_seen": "2025-02-13",
+      "last_seen": "2025-02-13",
+      "shipment_count": 1,
+      "confidence": "documented",
+      "confidence_reason": "Dated shipment row in Sayari. The shipper is a second Jiangxi Zichen record, matched on name only.",
+      "evidence": "1 row described as graphite to a second BlueOval SK record; the row lists Spain as departure.",
+      "source_call_ids": [
+        "n2611c50"
+      ],
+      "case_ids": [
+        "case-5"
+      ]
+    },
+    {
+      "id": "e518",
+      "source": "zTmjvxb--FZPXZG8PERmOg",
+      "target": "Of8V4IKvPMrBhGKoO-Enqg",
+      "relation": "ships_to",
+      "edge_type": "transactional",
+      "hs_codes": [
+        "380110"
+      ],
+      "first_seen": "2025-02-28",
+      "last_seen": "2025-02-28",
+      "shipment_count": 2,
+      "confidence": "documented",
+      "confidence_reason": "Dated shipment rows in Sayari.",
+      "evidence": "2 rows of HS 3801.10 to HL-GA Battery Company.",
+      "source_call_ids": [
+        "n2611c50"
+      ],
+      "case_ids": [
+        "case-5"
+      ]
+    },
+    {
+      "id": "e519",
+      "source": "zTmjvxb--FZPXZG8PERmOg",
+      "target": "75mTlfJmZhOZmQY94FLJcQ",
+      "relation": "ships_to",
+      "edge_type": "transactional",
+      "hs_codes": [],
+      "first_seen": "2024-04-22",
+      "last_seen": "2025-03-09",
+      "shipment_count": 2,
+      "confidence": "documented",
+      "confidence_reason": "Dated shipment rows in Sayari.",
+      "evidence": "2 rows described as graphite to OneD Material.",
+      "source_call_ids": [
+        "n2611c50"
+      ],
+      "case_ids": [
+        "case-5"
+      ]
+    },
+    {
+      "id": "e520",
+      "source": "zTmjvxb--FZPXZG8PERmOg",
+      "target": "mP3j6N2XkD4HgpOIxjlDxg",
+      "relation": "ships_to",
+      "edge_type": "transactional",
+      "hs_codes": [],
+      "first_seen": "2024-08-14",
+      "last_seen": "2024-08-14",
+      "shipment_count": 1,
+      "confidence": "documented",
+      "confidence_reason": "Dated shipment rows in Sayari.",
+      "evidence": "1 row described as graphite to American Lithium Energy.",
+      "source_call_ids": [
+        "n2611c50"
+      ],
+      "case_ids": [
+        "case-5"
+      ]
+    },
+    {
+      "id": "e521",
+      "source": "zTmjvxb--FZPXZG8PERmOg",
+      "target": "q4uVT7bM-GusYLonMicJ_Q",
+      "relation": "ships_to",
+      "edge_type": "transactional",
+      "hs_codes": [
+        "380110",
+        "380190"
+      ],
+      "first_seen": "2025-05-20",
+      "last_seen": "2026-02-07",
+      "shipment_count": 37,
+      "confidence": "documented",
+      "confidence_reason": "Dated shipment rows in Sayari.",
+      "evidence": "37 rows from China arriving in Malaysia, consignee Samsung SDI.",
+      "source_call_ids": [
+        "n2611c13",
+        "n2611c49"
+      ],
+      "case_ids": [
+        "case-5"
+      ]
+    },
+    {
+      "id": "e648",
+      "source": "_WCNtC_iMCzef8u8s0uKyQ",
+      "target": "stFLtUgGfc0__7Yr690bQg",
+      "relation": "ships_to",
+      "edge_type": "transactional",
+      "hs_codes": [
+        "850760"
+      ],
+      "first_seen": "2025-06-26",
+      "last_seen": "2026-02-23",
+      "shipment_count": 13,
+      "confidence": "documented",
+      "confidence_reason": "Dated shipment rows in Sayari.",
+      "evidence": "13 rows of HS 8507.60 from Malaysia to Green Planet Distribution Centre, Vietnam.",
+      "source_call_ids": [
+        "n2611c73"
+      ],
+      "case_ids": [
+        "case-6"
+      ]
+    },
+    {
+      "id": "e649",
+      "source": "_WCNtC_iMCzef8u8s0uKyQ",
+      "target": "osezq_4NIFh0ZY4PKJDi7A",
+      "relation": "ships_to",
+      "edge_type": "transactional",
+      "hs_codes": [
+        "850760"
+      ],
+      "first_seen": "2026-02-13",
+      "last_seen": "2026-08-14",
+      "shipment_count": 5,
+      "confidence": "documented",
+      "confidence_reason": "Dated shipment rows in Sayari.",
+      "evidence": "5 rows of HS 8507.60 to Greenworks Vietnam.",
+      "source_call_ids": [
+        "n2611c73"
+      ],
+      "case_ids": [
+        "case-6"
+      ]
+    },
+    {
+      "id": "e650",
+      "source": "_WCNtC_iMCzef8u8s0uKyQ",
+      "target": "TpqddARxaiwPfKk8RCIMjg",
+      "relation": "ships_to",
+      "edge_type": "transactional",
+      "hs_codes": [
+        "850760"
+      ],
+      "first_seen": "2026-03-25",
+      "last_seen": "2026-07-10",
+      "shipment_count": 3,
+      "confidence": "documented",
+      "confidence_reason": "Dated shipment rows in Sayari.",
+      "evidence": "3 rows of cells to Chervon Vietnam, for garden and hand tools.",
+      "source_call_ids": [
+        "n2611c73"
+      ],
+      "case_ids": [
+        "case-6"
+      ]
+    },
+    {
+      "id": "e651",
+      "source": "_WCNtC_iMCzef8u8s0uKyQ",
+      "target": "7ur0_9rzVaGinY-Sb6FIoQ",
+      "relation": "ships_to",
+      "edge_type": "transactional",
+      "hs_codes": [
+        "850760"
+      ],
+      "first_seen": "2026-02-14",
+      "last_seen": "2026-02-14",
+      "shipment_count": 1,
+      "confidence": "documented",
+      "confidence_reason": "Dated shipment rows in Sayari.",
+      "evidence": "1 row of HS 8507.60 to a second Chervon Vietnam record.",
+      "source_call_ids": [
+        "n2611c73"
+      ],
+      "case_ids": [
+        "case-6"
+      ]
+    },
+    {
+      "id": "e652",
+      "source": "_WCNtC_iMCzef8u8s0uKyQ",
+      "target": "q_03yiLI9VczHHNvFTJ1zQ",
+      "relation": "ships_to",
+      "edge_type": "transactional",
+      "hs_codes": [
+        "850760"
+      ],
+      "first_seen": "2026-07-01",
+      "last_seen": "2026-07-01",
+      "shipment_count": 2,
+      "confidence": "documented",
+      "confidence_reason": "Dated shipment rows in Sayari.",
+      "evidence": "2 rows of cells to Topband Smart Dong Nai, Vietnam.",
+      "source_call_ids": [
+        "n2611c73"
+      ],
+      "case_ids": [
+        "case-6"
+      ]
+    },
+    {
+      "id": "e10-32",
+      "source": "ySemfyJJesFbfxEgW2SgCg",
+      "target": "bZXSPJMXNdy2zYpIvDww_A",
+      "relation": "ships_to",
+      "edge_type": "transactional",
+      "hs_codes": [
+        "392390",
+        "850760",
+        "850750"
+      ],
+      "first_seen": "2025-11-06",
+      "last_seen": "2026-08-04",
+      "shipment_count": 39,
+      "confidence": "documented",
+      "confidence_reason": "Dated shipment rows in Sayari.",
+      "evidence": "39 rows from Linergy to Xiamen Ampace: packaging boxes, cell samples, process materials and test equipment. The last 5, EVA boxes, left on 30 Jun 2026, after the sale to TDK.",
+      "source_call_ids": [
+        "n2611c40"
+      ],
+      "case_ids": [
+        "case-10"
+      ]
+    },
+    {
+      "id": "e12-90",
+      "source": "Fj3vtxDroFyjyPsLgsnm2A",
+      "target": "4fqrWAcyrgtWw2RdV6qZsg",
+      "relation": "ships_to",
+      "edge_type": "transactional",
+      "hs_codes": [
+        "284190"
+      ],
+      "first_seen": "2026-08-09",
+      "last_seen": "2026-10-20",
+      "shipment_count": 18,
+      "confidence": "documented",
+      "confidence_reason": "Dated shipment rows returned by Sayari, with product text naming NCM on some rows.",
+      "evidence": "18 rows read of HS 2841.90, some naming lithium nickel cobalt manganese oxide, Pusan to Los Angeles. The two rows checked in full give receiver 1 LG Way, Holland, Michigan. Sayari's General Motors record also carries LG Energy Solution Michigan and Ultium Cells names.",
+      "source_call_ids": [
+        "n2611d09",
+        "n2611d55"
+      ],
+      "case_ids": [
+        "case-12"
       ]
     }
   ]

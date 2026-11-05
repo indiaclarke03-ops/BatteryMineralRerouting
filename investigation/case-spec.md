@@ -31,7 +31,12 @@ Repo layout: Case 1 lives in `investigation/build_data.py`; Cases 2+ are `invest
 - **Watchlist noise:** `check_watchlist` hits two hops out are usually freight forwarders. Say so.
 - **Flags:** `*_adjacent` = one hop from a flagged entity; `psa_*` = via a "possibly same as" link. They describe neighbours, not the entity itself.
 - **HS 3801.10 includes non-battery graphite** (electrodes, refractories, recarburizer). Grain sizes in mm suggest industrial grade; "anode material", "spherical graphite" or µm sizes suggest battery grade.
-- **Records change.** Sayari merges and retires IDs. Note the date you checked.
+- **Records change.** Sayari merges and retires IDs. Note the date you checked. Keep our entity IDs stable and map retired ones in `investigation/recheck_additions.json`.
+- **Date filters don't hold.** `date_from` and `date_to` were ignored in Nov 2026. Judge rows by their own dates.
+- **A page is not a total.** Count from facets, not from one page of rows.
+- **US data has two feeds that overlap.** One lists a departure country and one doesn't, so a departure filter drops rows and adding the two double-counts.
+- **Search the full company name.** A short word such as 'Zichen' can bury the real company under unrelated firms.
+- **Sayari's 'General Motors' record mixes companies.** It also carries LG Energy Solution Michigan and Ultium Cells names, so read the delivery address.
 
 ## Rules
 - **Never invent anything.** No IDs, numbers, dates, names or URLs that didn't come from a call you made and logged.
@@ -66,7 +71,7 @@ Every edge needs a `confidence_reason`: one sentence on why it gets that rating.
     "pattern": "rerouting-pattern | complete-trail | trail-not-started | contrast-legitimate | trail-goes-dark",
     "steps": [{"title": "...", "kicker": "Step 1 · Transactional", "text": "2–4 sentences", "edge_ids": [], "node_ids": [], "call_ids": []}],
     "verdict": {"detected": [{"text": "...", "call_ids": []}], "suggested": [], "not_visible": []},
-    "passport": [ /* 5 rows: Place of manufacture (8), Detailed composition (45), Critical raw materials > 0.1% (15), Responsible-sourcing report (19), Ownership of upstream suppliers (—). Fields: field, guidance_no, declared, paper_trail, gap, note */ ],
+    "passport": [ /* Kept in the data but no longer shown on the site. 5 rows: Place of manufacture (8), Detailed composition (45), Critical raw materials > 0.1% (15), Responsible-sourcing report (19), Ownership of upstream suppliers (—). Fields: field, guidance_no, declared, paper_trail, gap, note */ ],
     "red_flags": [ /* the same 7 flags, in the same order, as the existing cases; result = detected | suggested | not_visible | absent */ ],
     "caveats": ["..."]
   },

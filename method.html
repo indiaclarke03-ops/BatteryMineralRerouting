@@ -5,15 +5,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Paper Trail | Minerals: Method</title>
   <meta name="description" content="Investigation replay of every Sayari MCP call, the red-flag rubric, a Sayari capability scorecard and a searchable call log.">
-  <link rel="icon" href="assets/img/favicon.svg?v=20261103b" type="image/svg+xml">
-  <link rel="alternate icon" href="assets/img/favicon-32.png?v=20261103b" type="image/png" sizes="32x32">
-  <link rel="apple-touch-icon" href="assets/img/favicon-180.png?v=20261103b">
+  <link rel="icon" href="assets/img/favicon.svg?v=20261105b" type="image/svg+xml">
+  <link rel="alternate icon" href="assets/img/favicon-32.png?v=20261105b" type="image/png" sizes="32x32">
+  <link rel="apple-touch-icon" href="assets/img/favicon-180.png?v=20261105b">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Paper Trail | Minerals">
   <meta property="og:title" content="Paper Trail | Minerals: Method">
   <meta property="og:description" content="Investigation replay of every Sayari MCP call, the red-flag rubric, a Sayari capability scorecard and a searchable call log.">
   <meta property="og:url" content="https://indiaclarke03-ops.github.io/BatteryMineralRerouting/method.html">
-  <meta property="og:image" content="https://indiaclarke03-ops.github.io/BatteryMineralRerouting/assets/img/social-card.png?v=20261103b">
+  <meta property="og:image" content="https://indiaclarke03-ops.github.io/BatteryMineralRerouting/assets/img/social-card.png?v=20261105b">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
   <meta name="twitter:card" content="summary_large_image">
@@ -21,9 +21,9 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600&family=Source+Serif+4:opsz,wght@8..60,600;8..60,700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/css/tokens.css?v=20261103b">
-  <link rel="stylesheet" href="assets/css/base.css?v=20261103b">
-  <link rel="stylesheet" href="assets/css/components.css?v=20261103b">
+  <link rel="stylesheet" href="assets/css/tokens.css?v=20261105b">
+  <link rel="stylesheet" href="assets/css/base.css?v=20261105b">
+  <link rel="stylesheet" href="assets/css/components.css?v=20261105b">
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
@@ -34,23 +34,27 @@
       <div class="page-head">
         <span class="eyebrow">Method</span>
         <h1>How we used Sayari MCP</h1>
-        <p class="lede">Every Sayari call in the investigation, replayed in order. Each card shows the question in plain English, the exact tool and parameters, what came back, and what we made of it. Every link on the site points back to one of these cards.</p>
+        <p class="lede">What we learned from Sayari, how well it worked, and every query we ran. Open a case below to replay its queries. Every link on the site points back to one of them.</p>
         <ul class="toc">
-          <li><a href="#lessons">Lessons about the tool</a> ·</li>
-          <li><a href="#scorecard-h">Capability scorecard</a> ·</li>
-          <li><a href="#rubric-h">Red-flag rubric</a> ·</li>
-          <li><a href="#replay-h">Replay</a> ·</li>
-          <li><a href="#log-h">Full call log</a> ·</li>
+          <li><a href="#lessons">Lessons</a> ·</li>
+          <li><a href="#scorecard-h">Scorecard</a> ·</li>
+          <li><a href="#replay-h">Every query, by case</a> ·</li>
+          <li><a href="#log-h">Search all calls</a> ·</li>
           <li><a href="https://github.com/indiaclarke03-ops/BatteryMineralRerouting/blob/main/investigation/playbook.md">Rerun it: the playbook</a></li>
         </ul>
       </div>
 
       <section aria-labelledby="lessons" style="margin-top:0">
         <h2 id="lessons">What the tool taught us</h2>
-        <p class="muted">Confidence ratings are explained, with the reasoning behind each, in <a href="about.html#confidence">How we rate confidence</a>.</p>
+        <p class="muted">Confidence ratings are explained in <a href="about.html#confidence">How we rate confidence</a>.</p>
         <div class="grid-2">
           <div class="callout"><strong>Name filters can silently fail.</strong> The <code>shipper_name</code> and <code>receiver_name</code> filters were ignored twice and returned 10,000 unrelated rows (<a href="#s010">s010</a>, <a href="#s012">s012</a>). Putting the name in the free-text <code>query</code> worked (<a href="#s017">s017</a>).</div>
           <div class="callout"><strong>Rollups can be blind where rows aren't.</strong> Supplier rollups for HS 3801 from Indonesia to the US returned 0 (<a href="#s015">s015</a>, <a href="#s016">s016</a>), yet 19 shipment rows existed.</div>
+          <div class="callout teal"><strong>Company filings fill registry gaps.</strong> Where Sayari had no owner, stock-exchange filings did: BTR's 60% of its Indonesian plant, and Gotion's wholly owned US subsidiaries. Sayari plus filings beats either alone.</div>
+          <div class="callout teal"><strong>What worked well:</strong> profiles (<code>ships_to</code> lists), upstream mapping by HS code, and free-text shipment search gave a dated, HS-coded trail from China to five US cell plants.</div>
+        </div>
+        <details class="m-more"><summary>9 more lessons</summary>
+          <div class="grid-2">
           <div class="callout"><strong>One plant, five records.</strong> Each customs source spells the shipper differently, so Sayari keeps separate records. The street address was what tied them together (<a href="#s005">s005</a>–<a href="#s007">s007</a>, <a href="#s022">s022</a>, <a href="#s023">s023</a>).</div>
           <div class="callout"><strong>Ownership coverage is uneven.</strong> No shareholders for the Indonesian plant (<a href="#s009">s009</a>), even though Sayari shows BTR owning a different Indonesian company (<a href="#s020">s020</a>).</div>
           <div class="callout"><strong>Screening hits two hops out are mostly forwarders.</strong> All ten watchlist paths ran through freight or trading firms (<a href="#s021">s021</a>). This matches Sayari's own guidance (<a href="#s001">s001</a>).</div>
@@ -60,13 +64,23 @@
           <div class="callout"><strong>Registry coverage depends on the country.</strong> Ownership was visible for plants held through Singapore (Morocco, Malaysia) and in China's registry, but not for the Indonesian PT (Cases 1, 2, 3 and 5).</div>
           <div class="callout"><strong>Query syntax matters.</strong> Adding a country word to a quoted name, or putting two quoted names in one query, returned 0. A page token can't be combined with <code>limit</code>, and long shortest-path searches can time out (Cases 7 and 8).</div>
           <div class="callout"><strong>Registries lag behind real changes of owner.</strong> Japan's TDK bought Linergy Power in June 2026, but in October Sayari still showed the old Chinese (CATL/Ampace) chain. Company filings caught the change (Case 6).</div>
-          <div class="callout teal"><strong>Company filings fill registry gaps.</strong> Where Sayari had no owner, stock-exchange filings did: BTR's 60% of its Indonesian plant, and Gotion's wholly owned US subsidiaries. Sayari plus filings beats either alone.</div>
-          <div class="callout teal"><strong>What worked well:</strong> profiles (<code>ships_to</code> lists), upstream mapping by HS code, and free-text shipment search gave a dated, HS-coded trail from China to five US cell plants.</div>
-        </div>
+          </div>
+        </details>
       </section>
 
-      <section aria-labelledby="verify-h">
-        <h2 id="verify-h">Re-checked on 18 Oct 2026</h2>
+      <section aria-labelledby="recheck-h" id="recheck">
+        <h2 id="recheck-h">Latest re-check: 5 Nov 2026</h2>
+        <p class="section-intro">We re-ran every case, buyer scan and policy date. Ownership held in all twelve cases, but several published claims needed correcting, and the trail has moved on since October.</p>
+        <ul class="verify-list">
+          <li><strong>Case 5 was wrong.</strong> We said Putailai's exports couldn't be found. A search on the full name of its anode company, Jiangxi Zichen, finds 2,313 rows, including 10 to US buyers in 2024–25.</li>
+          <li><strong>Case 12 used a page count as a total.</strong> The 87 StarPlus rows were one page of results. The real figure is at least 448, to Oct 2026.</li>
+          <li><strong>The "GM" row of Sep 2026 went to LG.</strong> Its delivery address is LG Energy Solution in Holland, Michigan. Sayari's General Motors record mixes several companies, so we now read the address on each row.</li>
+          <li><strong>BTR graphite keeps reaching Ford.</strong> Marshall is now 11 rows and about 1,160 t, to 7 Oct 2026. Rows naming BTR Indonesia into the US are now about 100, not 55, and Hyundai's Georgia venture is a new buyer.</li>
+          <li><strong>Sayari retired several records.</strong> Syrah Vidalia, Gotion Illinois and Ultium Warren moved to new IDs. Syrah's new record now shows an owner.</li>
+          <li><strong>Policy.</strong> The USITC anode vote is under appeal (single source: one company filing). China's pause on tighter graphite checks for the US ends 27 Nov 2026, and no notice has moved the 10 Nov end of its anode-control suspension. Treasury has published nothing new on PFEs.</li>
+        </ul>
+        <p class="muted">Not checked: Ford's Q3 10-Q, the court docket, and two hand-read samples in Case 2. Rows into Malaysia and Oman stop months ago, so "no new rows" there can mean no newer data. <a href="https://github.com/indiaclarke03-ops/BatteryMineralRerouting/tree/main/investigation/notes">Full notes on GitHub</a></p>
+        <details class="m-more"><summary><h3 id="verify-h">Earlier: re-checked on 18 Oct 2026</h3></summary>
         <p class="section-intro">Before publishing to a wider audience, every headline claim was re-run against Sayari, and every policy date against primary sources (52 calls, <code>v001</code>–<code>v052</code> in the log below). Most claims were confirmed. These were corrected:</p>
         <ul class="verify-list">
           <li><strong>Case 1, shipment count.</strong> About 55 rows, not 19. A second record holds about 31 rows recorded as loaded in Singapore, so a search filtered to "departing Indonesia" missed them. Shipments to Ultium Cells continue to Nov 2025, and one reaches GM in Sep 2026.</li>
@@ -76,6 +90,7 @@
           <li><strong>Policy.</strong> EVE Energy's 1260H listing (8 Jun 2026) is confirmed. China's truce now runs to 10 Jan 2027, but the legal suspension of its graphite controls still ends 10 Nov 2026.</li>
         </ul>
         <p class="muted">Lesson: Sayari's records change over time, and filters shape answers. Re-run key queries before relying on them. <a href="https://github.com/indiaclarke03-ops/BatteryMineralRerouting/blob/main/investigation/notes/verification.md">Full verification report</a></p>
+      </details>
       </section>
 
       <section aria-labelledby="scorecard-h">
@@ -85,29 +100,32 @@
       </section>
 
       <section aria-labelledby="rubric-h">
-        <h2 id="rubric-h">Red-flag rubric</h2>
+        <details class="m-more"><summary><h3 id="rubric-h">Red-flag rubric</h3></summary>
         <p class="muted">Adapted from Sayari's investigation guidance (<a href="#s001">s001</a>, <a href="#s004">s004</a>) and mapped to the US prohibited-foreign-entity rules. "Detected" means a Sayari record shows it; "suggested" means signals point to it without a record; "not visible" means we couldn't test it; "checked: absent" means we tested it and the data shows it isn't there.</p>
         <div class="card" id="rubric">Loading…</div>
+        </details>
       </section>
 
       <section aria-labelledby="replay-h">
-        <h2 id="replay-h">Investigation replay</h2>
-        <p class="muted">Question → tool and parameters → result → interpretation. Times are UTC on 14 Oct 2026. Grouped by case, then by investigative step.</p>
-        <nav class="case-tabs" id="replay-nav" aria-label="Jump to a case"></nav>
+        <h2 id="replay-h">Every query, by case</h2>
+        <p class="muted">Open a case to replay its queries in order: the question, the tool and parameters, the result, and what it means.</p>
         <div id="replay">Loading…</div>
       </section>
 
       <section aria-labelledby="log-h">
-        <h2 id="log-h">Full call log (Sayari and Tavily)</h2>
+        <h2 id="log-h">Search all calls</h2>
+        <p class="muted">Every Sayari and Tavily call, including re-checks. Type to search; results appear below.</p>
         <label for="log-search" class="visually-hidden">Search the call log</label>
         <input class="searchbox" id="log-search" type="search" placeholder="Search by tool, company, HS code, question…" autocomplete="off">
         <p class="muted" id="log-count" aria-live="polite" style="margin:var(--s-2) 0"></p>
+        <details class="m-more" id="log-wrap"><summary id="log-sum">Show the full log</summary>
         <div class="table-scroll card" style="padding:0">
           <table class="log-table">
             <thead><tr><th>ID</th><th>Server</th><th>Tool</th><th>Question and result</th><th>Score</th><th>Time</th></tr></thead>
             <tbody id="log-body"></tbody>
           </table>
         </div>
+        </details>
         <p class="muted" style="margin-top:var(--s-3)">Results are our own summaries. We don't publish raw Sayari records; the data is licensed. Tavily summaries are paraphrased. Tavily timestamps are approximate.</p>
       </section>
     </div>
@@ -116,8 +134,8 @@
   <footer id="site-footer"></footer>
 
   <script src="https://cdn.jsdelivr.net/npm/fuse.js@7.0.0/dist/fuse.min.js"></script>
-  <script src="assets/js/data.js?v=20261103b"></script>
-  <script src="assets/js/ui.js?v=20261103b"></script>
-  <script src="assets/js/calllog.js?v=20261103b"></script>
+  <script src="assets/js/data.js?v=20261105b"></script>
+  <script src="assets/js/ui.js?v=20261105b"></script>
+  <script src="assets/js/calllog.js?v=20261105b"></script>
 </body>
 </html>

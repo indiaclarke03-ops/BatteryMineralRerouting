@@ -16,7 +16,7 @@
       "kCTEQjRAGcFo6AM_PGW2bw",
       "KlHlMaPK_F6s27YQ8ug2UA"
     ],
-    "summary": "In US trade data LG Energy Solution appears mostly as a seller of cells. As a buyer, its storage unit LG Energy Solution Vertech takes cells from the Korean parent and from the group's plant in Nanjing, China. Ultium Cells, its venture with GM, received 53 rows of Chinese artificial graphite from Shanghai Shanshan in 2024-2025, and BTR graphite now reaches the Arizona plant and GM records that name LG Energy Solution. The Honda (L-H Battery) and Hyundai ventures showed no supplier rows in this scan."
+    "summary": "In US trade data LG Energy Solution appears mostly as a seller of cells. As a buyer, its storage unit LG Energy Solution Vertech takes cells from the Korean parent and from the group's plant in Nanjing, China. Ultium Cells, its venture with GM, received 53 rows of Chinese artificial graphite from Shanghai Shanshan in 2024-2025, and BTR graphite now reaches the Arizona plant and GM records that name LG Energy Solution. The Honda (L-H Battery) and Hyundai ventures showed no supplier rows in this scan. Graphite with no named shipper also reached the group from Busan in Oct 2026 and, on one row, from Kaohsiung, Taiwan to the Arizona plant."
   },
   "scan": {
     "hs": [
@@ -24,7 +24,7 @@
       "8507"
     ],
     "date_from": "2024-01-01",
-    "note": "Sayari trade data checked on 18 Oct 2026 for HS 3801 (graphite, including anode material) and HS 8507 (batteries and parts) entering the US on rows that name 'LG Energy Solution' or 'LG Energy Solution Vertech'. Many graphite rows list General Motors as consignee and LG Energy Solution as notify party; they are counted as LG Energy Solution and Ultium supply, and each note says when the recorded buyer is GM. Facet counts ignored the 2024 date filter and are marked where used. The scan cannot see purchases inside the US, the L-H Battery (Honda) and Hyundai ventures under their own names, or the producer behind about 90 graphite rows with no named shipper (65 and 9 to GM, 2 to LG Energy Solution Arizona, 14 through OEC Freight). Shanghai Shanshan Tech is left out because its 14 rows are all from 2020-2022. Forwarders excluded: Xiamen Port Logistics (97 rows of cells from China to GM, 2026) and OEC Freight (NY) (consignee on 14 graphite rows)."
+    "note": "Sayari trade data checked on 18 Oct 2026 for HS 3801 (graphite, including anode material) and HS 8507 (batteries and parts) entering the US on rows that name 'LG Energy Solution' or 'LG Energy Solution Vertech'. Many graphite rows sit under Sayari's 'General Motors' trade record. That record also carries the names LG Energy Solution Michigan, Ultium Cells and Compact Power, so it mixes several companies. These rows are counted as LG Energy Solution and Ultium supply, and each note says when the recorded buyer is that record. Facet counts ignored the 2024 date filter and are marked where used. The scan cannot see purchases inside the US, the L-H Battery (Honda) and Hyundai ventures under their own names, or the producer behind about 90 graphite rows with no named shipper (65 and 9 to GM, 2 to LG Energy Solution Arizona, 14 through OEC Freight). Shanghai Shanshan Tech is left out because its 14 rows are all from 2020-2022. Forwarders excluded: Xiamen Port Logistics (97 rows of cells from China to GM, 2026) and OEC Freight (NY) (consignee on 14 graphite rows)."
   },
   "suppliers": [
     {
@@ -37,7 +37,7 @@
       ],
       "rows": 84,
       "first": "2024-01-12",
-      "last": "2026-08-27",
+      "last": "2026-10-11",
       "owner_top": "LG Corp. (through LG Chem, Ltd.)",
       "owner_country": "KOR",
       "chinese_owned": "No",
@@ -101,7 +101,7 @@
       ],
       "rows": 16,
       "first": "2026-05-14",
-      "last": "2026-05-14",
+      "last": "2026-10-11",
       "owner_top": "LG Energy Solution, Ltd. (presumed)",
       "owner_country": "KOR",
       "chinese_owned": "No",
@@ -121,7 +121,7 @@
       ],
       "rows": 10,
       "first": "2024-04-18",
-      "last": "2026-06-15",
+      "last": "2026-10-11",
       "owner_top": "LG Energy Solution, Ltd. (presumed)",
       "owner_country": "KOR",
       "chinese_owned": "No",

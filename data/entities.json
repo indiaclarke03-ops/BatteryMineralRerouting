@@ -261,7 +261,7 @@
         "s011",
         "s018"
       ],
-      "sayari_url": "https://graph.sayari.com/resource/entity/dH3rqoht5wahpKLPJih3gA",
+      "sayari_url": "https://graph.sayari.com/resource/entity/ekoH1fr8BGvHc7UqYCY_YA",
       "case_ids": [
         "case-1"
       ],
@@ -363,7 +363,7 @@
         "s018",
         "t402"
       ],
-      "sayari_url": "https://graph.sayari.com/resource/entity/rvgklT24qqqfH2rnlVlyBg",
+      "sayari_url": "https://graph.sayari.com/resource/entity/OS78Ov4LxLbUR1aVaNZrMA",
       "case_ids": [
         "case-1",
         "case-4"
@@ -1428,7 +1428,7 @@
         "s11-17",
         "s11-18"
       ],
-      "sayari_url": "https://graph.sayari.com/resource/entity/sbHG28fzGHNWsCxC7bZhtQ",
+      "sayari_url": "https://graph.sayari.com/resource/entity/MiHLLkR_Di3szEG__bJGfg",
       "case_ids": [
         "case-11"
       ],
@@ -2907,7 +2907,7 @@
       "role": "buyer",
       "risk_flags": [],
       "identifiers": {},
-      "summary": "Korean cathode and anode maker (Case 4). Received cathode precursor from Huayou companies, Dec 2021 – Dec 2023, and shipped 87 rows of HS 2841.90 (the code for cathode material) to StarPlus Energy in Indiana, May–Jul 2026.",
+      "summary": "Korean cathode and anode maker (Case 4). Received cathode precursor from Huayou companies, Dec 2021 – Dec 2023, and shipped at least 448 rows of HS 2841.90 (the code for cathode material) to StarPlus Energy in Indiana, to Oct 2026.",
       "source_call_ids": [
         "s12-18",
         "s12-19",
@@ -3019,7 +3019,7 @@
         "usa_in_biz_no": "202206271602911",
         "usa_frs_id": "110071424615"
       },
-      "summary": "Stellantis–Samsung SDI cell plant at 2151 E Lincoln Rd, Kokomo, Indiana (Indiana business number, EPA facility IDs). Received 87 rows of HS 2841.90 from POSCO Future M, May–Jul 2026.",
+      "summary": "Stellantis–Samsung SDI cell plant at 2151 E Lincoln Rd, Kokomo, Indiana (Indiana business number, EPA facility IDs). Received at least 448 rows of HS 2841.90 from POSCO Future M, to Oct 2026.",
       "source_call_ids": [
         "s12-20",
         "s12-21",
@@ -4491,10 +4491,12 @@
       ],
       "sayari_url": "https://graph.sayari.com/resource/entity/q4uVT7bM-GusYLonMicJ_Q",
       "case_ids": [
-        "case-3"
+        "case-3",
+        "case-5"
       ],
       "case_roles": {
-        "case-3": "buyer"
+        "case-3": "buyer",
+        "case-5": "buyer"
       }
     },
     {
@@ -5016,7 +5018,7 @@
       "source_call_ids": [
         "s408"
       ],
-      "sayari_url": "https://graph.sayari.com/resource/entity/WLUn_1F-Zz5cShfohEF7BA",
+      "sayari_url": "https://graph.sayari.com/resource/entity/Yg9iex7iQvTxSVdVf-QvwQ",
       "case_ids": [
         "case-4"
       ],
@@ -5871,12 +5873,14 @@
       ],
       "sayari_url": "https://graph.sayari.com/resource/entity/Lv60RfghzhQ-9oSF_kW0wA",
       "case_ids": [
+        "case-1",
         "case-6",
         "case-9"
       ],
       "case_roles": {
         "case-6": "producer",
-        "case-9": "transit_plant"
+        "case-9": "transit_plant",
+        "case-1": "transit_plant"
       },
       "case_summaries": {
         "case-9": "Trade record for BTR's Indonesian plant with a Kendal shipper address. Shipped 9 rows of artificial graphite to Ford's Marshall, Michigan, battery plant (May to Sep 2026) and 2 more to a second Marshall record (Jul 2026). Six of the 9 rows were loaded at Chinese ports (Ningbo, Yantian)."
@@ -5961,26 +5965,6 @@
       ],
       "case_roles": {
         "case-6": "producer"
-      }
-    },
-    {
-      "id": "TrQHururSYl_Fqbbewp1cA",
-      "name": "Briggs and Stratton Corp (record 2)",
-      "country": "USA",
-      "type": "company",
-      "role": "us_buyer",
-      "risk_flags": [],
-      "identifiers": {},
-      "summary": "Second Briggs & Stratton record, same Wauwatosa address. 2 rows of INR21700/50E cells from EVE Energy Malaysia, Jul and Sep 2026, departing Singapore and Yantian (China).",
-      "source_call_ids": [
-        "s609"
-      ],
-      "sayari_url": "https://graph.sayari.com/resource/entity/TrQHururSYl_Fqbbewp1cA",
-      "case_ids": [
-        "case-6"
-      ],
-      "case_roles": {
-        "case-6": "us_buyer"
       }
     },
     {
@@ -6360,7 +6344,7 @@
         "s727",
         "t701"
       ],
-      "sayari_url": "https://graph.sayari.com/resource/entity/TeFCWTgdDF-tAyfunxgqXw",
+      "sayari_url": "https://graph.sayari.com/resource/entity/nPWKaWyZ8NyEfoNxnUqdZw",
       "case_ids": [
         "case-7"
       ],
@@ -6894,7 +6878,7 @@
         "t802",
         "t803"
       ],
-      "sayari_url": "https://graph.sayari.com/resource/entity/NvC-a4BgmoxO63ubVyUiUQ",
+      "sayari_url": "https://graph.sayari.com/resource/entity/I7QWK7f0HxLx924w9i0iDg",
       "case_ids": [
         "case-8"
       ],
@@ -7584,10 +7568,12 @@
       ],
       "sayari_url": "https://graph.sayari.com/resource/entity/RPYYIgKHs0f-kGKGBlE9jw",
       "case_ids": [
+        "case-5",
         "case-9"
       ],
       "case_roles": {
-        "case-9": "us_buyer"
+        "case-9": "us_buyer",
+        "case-5": "us_buyer"
       }
     },
     {
@@ -7633,6 +7619,330 @@
       ],
       "case_roles": {
         "case-9": "trader"
+      }
+    },
+    {
+      "id": "n3epSyTN-HbHMmnpJHNhkA",
+      "name": "HSBMA LLC (Hyundai and SK On)",
+      "country": "USA",
+      "role": "us_buyer",
+      "summary": "Hyundai Motor Group and SK On battery venture at Kingston, Georgia, per its own website. Received battery-grade graphite in Jun 2026.",
+      "source_call_ids": [
+        "n2611b76",
+        "n2611b17"
+      ],
+      "sayari_url": "https://graph.sayari.com/resource/entity/n3epSyTN-HbHMmnpJHNhkA",
+      "risk_flags": [],
+      "identifiers": {},
+      "type": "company",
+      "case_ids": [
+        "case-1"
+      ],
+      "case_roles": {
+        "case-1": "us_buyer"
+      }
+    },
+    {
+      "id": "EAd4f9FKWeoImIL2ltX93A",
+      "name": "FNS, Inc. (freight forwarder)",
+      "country": "USA",
+      "role": "trader",
+      "summary": "A US freight forwarder named as receiver, so the end buyer is not shown.",
+      "source_call_ids": [
+        "n2611b10"
+      ],
+      "sayari_url": "https://graph.sayari.com/resource/entity/EAd4f9FKWeoImIL2ltX93A",
+      "risk_flags": [],
+      "identifiers": {},
+      "type": "company",
+      "case_ids": [
+        "case-1"
+      ],
+      "case_roles": {
+        "case-1": "trader"
+      }
+    },
+    {
+      "id": "CIaftd6cYu0w_6K81qTGvg",
+      "name": "PT Indonesia BTR New Energy Mate (fragment)",
+      "country": "IDN",
+      "role": "transit_plant",
+      "summary": "A further trade record for the plant, on the same Kendal street. 5 rows to NextStar Energy, Apr 2025.",
+      "source_call_ids": [
+        "n2611b34",
+        "n2611b46"
+      ],
+      "sayari_url": "https://graph.sayari.com/resource/entity/CIaftd6cYu0w_6K81qTGvg",
+      "risk_flags": [],
+      "identifiers": {},
+      "type": "company",
+      "case_ids": [
+        "case-1"
+      ],
+      "case_roles": {
+        "case-1": "transit_plant"
+      }
+    },
+    {
+      "id": "zTmjvxb--FZPXZG8PERmOg",
+      "name": "Jiangxi Zichen Technology Co., Ltd.",
+      "country": "CHN",
+      "role": "producer",
+      "summary": "The Putailai group's anode company, in China. 2,313 rows in Sayari.",
+      "source_call_ids": [
+        "n2611c13",
+        "n2611c48",
+        "n2611c49"
+      ],
+      "sayari_url": "https://graph.sayari.com/resource/entity/zTmjvxb--FZPXZG8PERmOg",
+      "risk_flags": [],
+      "identifiers": {},
+      "type": "company",
+      "case_ids": [
+        "case-5"
+      ],
+      "case_roles": {
+        "case-5": "producer"
+      }
+    },
+    {
+      "id": "kK2TOAWUJqpBl_jcmU2rsg",
+      "name": "Jiangxi Zichen (second trade record)",
+      "country": "CHN",
+      "role": "producer",
+      "summary": "A second trade record, matched on name only.",
+      "source_call_ids": [
+        "n2611c50"
+      ],
+      "sayari_url": "https://graph.sayari.com/resource/entity/kK2TOAWUJqpBl_jcmU2rsg",
+      "risk_flags": [],
+      "identifiers": {},
+      "type": "company",
+      "case_ids": [
+        "case-5"
+      ],
+      "case_roles": {
+        "case-5": "producer"
+      }
+    },
+    {
+      "id": "uFjg3v6bVZDhlhSp0D5C5g",
+      "name": "Putailai America LLC",
+      "country": "USA",
+      "role": "buyer",
+      "summary": "The group's US company. Registered 19 Dec 2024; Sayari shows it inactive.",
+      "source_call_ids": [
+        "n2611c61"
+      ],
+      "sayari_url": "https://graph.sayari.com/resource/entity/uFjg3v6bVZDhlhSp0D5C5g",
+      "risk_flags": [],
+      "identifiers": {},
+      "type": "company",
+      "case_ids": [
+        "case-5"
+      ],
+      "case_roles": {
+        "case-5": "buyer"
+      }
+    },
+    {
+      "id": "cclu_C8fIOucVXcdONCwhA",
+      "name": "BlueOval SK (second record)",
+      "country": "USA",
+      "role": "us_buyer",
+      "summary": "A second trade record for BlueOval SK.",
+      "source_call_ids": [
+        "n2611c50"
+      ],
+      "sayari_url": "https://graph.sayari.com/resource/entity/cclu_C8fIOucVXcdONCwhA",
+      "risk_flags": [],
+      "identifiers": {},
+      "type": "company",
+      "case_ids": [
+        "case-5"
+      ],
+      "case_roles": {
+        "case-5": "us_buyer"
+      }
+    },
+    {
+      "id": "Of8V4IKvPMrBhGKoO-Enqg",
+      "name": "HL-GA Battery Company",
+      "country": "USA",
+      "role": "us_buyer",
+      "summary": "Received HS 3801.10 from Jiangxi Zichen in Feb 2025.",
+      "source_call_ids": [
+        "n2611c50"
+      ],
+      "sayari_url": "https://graph.sayari.com/resource/entity/Of8V4IKvPMrBhGKoO-Enqg",
+      "risk_flags": [],
+      "identifiers": {},
+      "type": "company",
+      "case_ids": [
+        "case-5"
+      ],
+      "case_roles": {
+        "case-5": "us_buyer"
+      }
+    },
+    {
+      "id": "75mTlfJmZhOZmQY94FLJcQ",
+      "name": "OneD Material",
+      "country": "USA",
+      "role": "us_buyer",
+      "summary": "Received graphite from Jiangxi Zichen, 2024 to 2025.",
+      "source_call_ids": [
+        "n2611c50"
+      ],
+      "sayari_url": "https://graph.sayari.com/resource/entity/75mTlfJmZhOZmQY94FLJcQ",
+      "risk_flags": [],
+      "identifiers": {},
+      "type": "company",
+      "case_ids": [
+        "case-5"
+      ],
+      "case_roles": {
+        "case-5": "us_buyer"
+      }
+    },
+    {
+      "id": "mP3j6N2XkD4HgpOIxjlDxg",
+      "name": "American Lithium Energy",
+      "country": "USA",
+      "role": "us_buyer",
+      "summary": "Received graphite from Jiangxi Zichen in Aug 2024.",
+      "source_call_ids": [
+        "n2611c50"
+      ],
+      "sayari_url": "https://graph.sayari.com/resource/entity/mP3j6N2XkD4HgpOIxjlDxg",
+      "risk_flags": [],
+      "identifiers": {},
+      "type": "company",
+      "case_ids": [
+        "case-5"
+      ],
+      "case_roles": {
+        "case-5": "us_buyer"
+      }
+    },
+    {
+      "id": "stFLtUgGfc0__7Yr690bQg",
+      "name": "Green Planet Distribution Centre",
+      "country": "VNM",
+      "role": "buyer",
+      "summary": "Received cells from EVE Malaysia in Vietnam.",
+      "source_call_ids": [
+        "n2611c73"
+      ],
+      "sayari_url": "https://graph.sayari.com/resource/entity/stFLtUgGfc0__7Yr690bQg",
+      "risk_flags": [],
+      "identifiers": {},
+      "type": "company",
+      "case_ids": [
+        "case-6"
+      ],
+      "case_roles": {
+        "case-6": "buyer"
+      }
+    },
+    {
+      "id": "osezq_4NIFh0ZY4PKJDi7A",
+      "name": "Greenworks Vietnam",
+      "country": "VNM",
+      "role": "buyer",
+      "summary": "Received cells from EVE Malaysia.",
+      "source_call_ids": [
+        "n2611c73"
+      ],
+      "sayari_url": "https://graph.sayari.com/resource/entity/osezq_4NIFh0ZY4PKJDi7A",
+      "risk_flags": [],
+      "identifiers": {},
+      "type": "company",
+      "case_ids": [
+        "case-6"
+      ],
+      "case_roles": {
+        "case-6": "buyer"
+      }
+    },
+    {
+      "id": "TpqddARxaiwPfKk8RCIMjg",
+      "name": "Chervon Vietnam",
+      "country": "VNM",
+      "role": "buyer",
+      "summary": "Received cells from EVE Malaysia, for garden and hand tools.",
+      "source_call_ids": [
+        "n2611c73"
+      ],
+      "sayari_url": "https://graph.sayari.com/resource/entity/TpqddARxaiwPfKk8RCIMjg",
+      "risk_flags": [],
+      "identifiers": {},
+      "type": "company",
+      "case_ids": [
+        "case-6"
+      ],
+      "case_roles": {
+        "case-6": "buyer"
+      }
+    },
+    {
+      "id": "7ur0_9rzVaGinY-Sb6FIoQ",
+      "name": "Chervon Vietnam (second record)",
+      "country": "VNM",
+      "role": "buyer",
+      "summary": "A second trade record for Chervon Vietnam.",
+      "source_call_ids": [
+        "n2611c73"
+      ],
+      "sayari_url": "https://graph.sayari.com/resource/entity/7ur0_9rzVaGinY-Sb6FIoQ",
+      "risk_flags": [],
+      "identifiers": {},
+      "type": "company",
+      "case_ids": [
+        "case-6"
+      ],
+      "case_roles": {
+        "case-6": "buyer"
+      }
+    },
+    {
+      "id": "q_03yiLI9VczHHNvFTJ1zQ",
+      "name": "Topband Smart Dong Nai",
+      "country": "VNM",
+      "role": "buyer",
+      "summary": "Received cells from EVE Malaysia in Jul 2026.",
+      "source_call_ids": [
+        "n2611c73"
+      ],
+      "sayari_url": "https://graph.sayari.com/resource/entity/q_03yiLI9VczHHNvFTJ1zQ",
+      "risk_flags": [],
+      "identifiers": {},
+      "type": "company",
+      "case_ids": [
+        "case-6"
+      ],
+      "case_roles": {
+        "case-6": "buyer"
+      }
+    },
+    {
+      "id": "RosuicQyFavmKExu13ogvA",
+      "name": "POSCO Future M (US import record, Gwangyang)",
+      "country": "KOR",
+      "role": "transit_plant",
+      "summary": "A US-import-only record at the Gwangyang address. 51 rows sent.",
+      "source_call_ids": [
+        "n2611d17"
+      ],
+      "sayari_url": "https://graph.sayari.com/resource/entity/RosuicQyFavmKExu13ogvA",
+      "risk_flags": [],
+      "identifiers": {},
+      "type": "company",
+      "case_ids": [
+        "case-4"
+      ],
+      "case_roles": {
+        "case-4": "transit_plant"
       }
     }
   ]

@@ -1,4 +1,4 @@
-/* Paper Trail | Minerals: Due Diligence page (ownership screening, question generator, watch list). */
+/* Paper Trail | Minerals: Due Diligence page (ownership screening, watch list). */
 (function (PT) {
   const RES = { detected: "Detected", suggested: "Suggested", not_visible: "Not visible", absent: "Checked: absent" };
 
@@ -47,44 +47,12 @@
           <div>
             <h4>Its inputs</h4><p>${PT.esc(s.inputs)}</p>
             <h4>US buyers exposed</h4><p>${PT.esc(s.us_exposure)}</p>
-            <h4>Questions to resolve</h4><ul>${s.questions.map((q) => `<li>${PT.esc(q)}</li>`).join("")}</ul>
             ${(s.open_questions || []).length ? `<h4>Still unknown, and the document that would settle it</h4><ul class="oq">${s.open_questions.map((o) => `<li><strong>${PT.esc(o.q)}</strong><span>Document: ${PT.esc(o.doc)}</span></li>`).join("")}</ul>` : ""}
             <p class="sc-links"><a href="cases.html#${c.id}">Full case →</a> <a href="explore.html?case=${c.id}">Network →</a> <span>Sources ${PT.receipts(s.call_ids.slice(0, 6))}</span></p>
           </div>
         </div>
       </article>`;
     }).join("");
-  }
-
-  function questionsFor(d, cid) {
-    const c = d.caseById.get(cid), s = d.curated.screening[cid], T = d.curated.question_templates;
-    const fromFlags = c.red_flags.map((f) => ({ flag: f.flag, result: f.result, q: (T[f.flag] || {})[f.result] })).filter((x) => x.q);
-    const priority = { detected: 0, suggested: 1, not_visible: 2, absent: 3 };
-    fromFlags.sort((a, b) => priority[a.result] - priority[b.result]);
-    return { c, s, fromFlags };
-  }
-
-  function questionsHTML(d, cid) {
-    const { c, s, fromFlags } = questionsFor(d, cid);
-    return `<div class="q-out">
-      <h3>Supplier questions: ${PT.esc(s.plant)}</h3>
-      <p class="muted">Generated from this case's red flags and findings, most pressing first. Adapt them before sending.</p>
-      <ol class="q-list">
-        ${s.questions.map((q) => `<li><span class="q-tag case">From the case</span>${PT.esc(q)}</li>`).join("")}
-        ${fromFlags.map((x) => `<li><span class="q-tag r-${x.result}">${PT.esc(RES[x.result])}: ${PT.esc(x.flag)}</span>${PT.esc(x.q)}</li>`).join("")}
-      </ol>
-      <div class="q-actions"><button type="button" class="btn primary" id="q-copy">Copy questions</button> <button type="button" class="btn" onclick="window.print()">Print</button> <span id="q-msg" class="muted" aria-live="polite"></span></div>
-    </div>`;
-  }
-
-  function questionsText(d, cid) {
-    const { s, fromFlags } = questionsFor(d, cid);
-    const lines = [`Supplier due-diligence questions: ${s.plant} (${s.location})`, ""];
-    let n = 1;
-    s.questions.forEach((q) => lines.push(`${n++}. ${q}`));
-    fromFlags.forEach((x) => lines.push(`${n++}. ${x.q} [${RES[x.result]}: ${x.flag}]`));
-    lines.push("", "Source: Paper Trail | Minerals, data as of 14 Oct 2026 (re-checked 18 Oct 2026).");
-    return lines.join("\n");
   }
 
   function watchHTML(d) {
@@ -108,19 +76,6 @@
     document.getElementById("open-q").innerHTML = `<div class="table-scroll card" style="padding:0"><table class="screen-table"><thead><tr><th>Case</th><th>Still unknown</th><th>Document that would settle it</th></tr></thead><tbody>${
       d.cases.items.flatMap((c, i) => ((d.curated.screening[c.id] || {}).open_questions || []).map((o) => `<tr><td class="mono"><a href="#screen-${c.id}">${i + 1}</a></td><td>${PT.esc(o.q)}</td><td>${PT.esc(o.doc)}</td></tr>`)).join("")}</tbody></table></div>`;
     document.getElementById("watch-list").innerHTML = watchHTML(d);
-    const sel = document.getElementById("q-case");
-    sel.innerHTML = d.cases.items.map((c, i) => d.curated.screening[c.id] ? `<option value="${c.id}">${i + 1}. ${PT.esc(d.curated.screening[c.id].plant)}</option>` : "").join("");
-    const out = document.getElementById("q-result");
-    const draw = () => {
-      out.innerHTML = questionsHTML(d, sel.value);
-      document.getElementById("q-copy").addEventListener("click", async () => {
-        const msg = document.getElementById("q-msg");
-        try { await navigator.clipboard.writeText(questionsText(d, sel.value)); msg.textContent = "Copied."; }
-        catch (e) { msg.textContent = "Couldn't copy. Select the list and copy it instead."; }
-      });
-    };
-    sel.addEventListener("change", draw);
-    draw();
     if (location.hash) { const el = document.getElementById(location.hash.slice(1)); if (el) el.scrollIntoView(); }
   }
   document.addEventListener("DOMContentLoaded", init);

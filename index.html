@@ -5,15 +5,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Paper Trail | Minerals: The Trace</title>
   <meta name="description" content="Following Chinese battery graphite through third-country factories to US supply chains: a dozen cases traced through trade and company-registry data.">
-  <link rel="icon" href="assets/img/favicon.svg?v=20261103b" type="image/svg+xml">
-  <link rel="alternate icon" href="assets/img/favicon-32.png?v=20261103b" type="image/png" sizes="32x32">
-  <link rel="apple-touch-icon" href="assets/img/favicon-180.png?v=20261103b">
+  <link rel="icon" href="assets/img/favicon.svg?v=20261105b" type="image/svg+xml">
+  <link rel="alternate icon" href="assets/img/favicon-32.png?v=20261105b" type="image/png" sizes="32x32">
+  <link rel="apple-touch-icon" href="assets/img/favicon-180.png?v=20261105b">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Paper Trail | Minerals">
   <meta property="og:title" content="Paper Trail | Minerals: The Trace">
   <meta property="og:description" content="Following Chinese battery graphite through third-country factories to US supply chains: a dozen cases traced through trade and company-registry data.">
   <meta property="og:url" content="https://indiaclarke03-ops.github.io/BatteryMineralRerouting/">
-  <meta property="og:image" content="https://indiaclarke03-ops.github.io/BatteryMineralRerouting/assets/img/social-card.png?v=20261103b">
+  <meta property="og:image" content="https://indiaclarke03-ops.github.io/BatteryMineralRerouting/assets/img/social-card.png?v=20261105b">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
   <meta name="twitter:card" content="summary_large_image">
@@ -21,9 +21,9 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600&family=Source+Serif+4:opsz,wght@8..60,600;8..60,700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/css/tokens.css?v=20261103b">
-  <link rel="stylesheet" href="assets/css/base.css?v=20261103b">
-  <link rel="stylesheet" href="assets/css/components.css?v=20261103b">
+  <link rel="stylesheet" href="assets/css/tokens.css?v=20261105b">
+  <link rel="stylesheet" href="assets/css/base.css?v=20261105b">
+  <link rel="stylesheet" href="assets/css/components.css?v=20261105b">
 </head>
 <body class="home">
   <a class="skip-link" href="#main">Skip to content</a>
@@ -37,6 +37,15 @@
         <h1 id="q">Following Chinese battery graphite through third-country factories to US supply chains</h1>
         <p class="lede">Chinese companies make almost all of the world's battery anode material, and they are now building factories in Indonesia, Morocco, Oman, Malaysia, the EU and the US itself. We traced <strong id="n-cases">twelve</strong> of these supply chains through trade and company records to show where the material goes, who owns each plant, and how sure we can be of each link.</p>
         <div class="facts" id="facts"></div>
+        <nav class="page-guide" aria-label="What's on each page">
+          <a class="pg here" href="#map-section"><strong>The Trace</strong><span>Start here. Why this matters, and every supply chain played out on a map.</span></a>
+          <a class="pg" href="explore.html"><strong>Explore</strong><span>Start from a plant and trace both ways: back to its suppliers, forward to its buyers.</span></a>
+          <a class="pg" href="buyers.html"><strong>Check a Buyer</strong><span>Start from a US company and trace backwards to its suppliers and their owners.</span></a>
+          <a class="pg" href="cases.html"><strong>Case Files</strong><span>The full write-up of each case: question, answer, evidence and caveats.</span></a>
+          <a class="pg" href="diligence.html"><strong>Due Diligence</strong><span>Who owns each plant, what's still unknown, and which plants to watch.</span></a>
+          <a class="pg" href="method.html"><strong>Method</strong><span>How we used Sayari, what it taught us, and every query we ran.</span></a>
+          <a class="pg" href="about.html"><strong>About this tool</strong><span>How to read the ratings, plus sources, limits and the changelog.</span></a>
+        </nav>
         <div class="hero-ctas">
           <a class="btn primary" href="#cases">See what we found ↓</a>
           <a class="btn" href="buyers.html">Check a buyer</a>
@@ -44,7 +53,7 @@
           <button type="button" class="btn tour-btn" id="tour-start">Take the 2-minute tour →</button>
         </div>
         <div class="hero-meta">
-          <span class="asof">Data as of 14 Oct 2026 · re-checked 18 Oct 2026</span>
+          <span class="asof">Data as of 14 Oct 2026 · re-checked 5 Nov 2026</span>
           <span class="asof" id="call-count">Loading…</span>
         </div>
       </section>
@@ -88,7 +97,7 @@
             </svg>
             <span class="num">3 · The rule</span>
             <h3>The US now asks who owns the factory</h3>
-            <p>Since July 2025, US battery makers can lose clean-energy tax credits if too much of a part's cost comes from a "prohibited foreign entity", in practice often a Chinese-owned company. Anti-dumping duties were voted down in March 2026, so <strong>ownership</strong> is now the main lever.</p>
+            <p>Since July 2025, US battery makers can lose clean-energy tax credits if too much of a part's cost comes from a "prohibited foreign entity", in practice often a Chinese-owned company. Anti-dumping duties were voted down in March 2026, though US producers are appealing. For now, <strong>ownership</strong> is the main lever.</p>
           </div>
         </div>
       </section>
@@ -175,7 +184,7 @@
       <section aria-labelledby="tl-h">
         <span class="eyebrow">Why now</span>
         <h2 id="tl-h">The rules changed. Ownership is now the pressure point</h2>
-        <p class="section-intro">Duties on Chinese anode material were voted down in March 2026. The tax-credit test on who owns suppliers stays. Every date below was checked against a source.</p>
+        <p class="section-intro">Duties on Chinese anode material were voted down in March 2026, and that vote is under appeal. The tax-credit test on who owns suppliers stays. Every date below was checked against a source.</p>
         <div id="timeline"></div>
       </section>
 
@@ -189,7 +198,7 @@
           <div><dt>Natural vs. artificial graphite</dt><dd>Natural graphite is mined (HS 2504). Artificial graphite is made by baking petroleum coke (HS 3801). Battery anodes use both.</dd></div>
           <div><dt>HS code</dt><dd>The product code on every customs record. HS 3801.10 = artificial graphite; 2504 = natural graphite; 2713 = petroleum coke.</dd></div>
           <div><dt>Prohibited foreign entity (PFE)</dt><dd>A company owned or controlled by a "foreign entity of concern" such as China. US battery makers lose tax credits if too much of a component's cost comes from PFEs.</dd></div>
-          <div><dt>Anti-dumping / countervailing duties</dt><dd>Extra tariffs on goods sold below fair value or subsidised. Commerce proposed them on Chinese anode material; the USITC voted them down.</dd></div>
+          <div><dt>Anti-dumping / countervailing duties</dt><dd>Extra tariffs on goods sold below fair value or subsidised. Commerce found grounds for them on Chinese anode material; the USITC voted them down. US producers are appealing.</dd></div>
           <div><dt>Third-country plant</dt><dd>A factory outside China, often Chinese-owned, that processes Chinese inputs before export.</dd></div>
           <div><dt>Sayari</dt><dd>A database linking company registries, ownership and customs records from 250+ jurisdictions. We queried it through its MCP server.</dd></div>
           <div><dt>Entity resolution</dt><dd>Deciding whether several database records are really one company. Customs records spell names differently, so one factory can appear many times.</dd></div>
@@ -204,11 +213,11 @@
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.9.0/d3.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/topojson-client@3.1.0/dist/topojson-client.min.js"></script>
-  <script src="assets/js/data.js?v=20261103b"></script>
-  <script src="assets/js/ui.js?v=20261103b"></script>
-  <script src="assets/js/map.js?v=20261103b"></script>
-  <script src="assets/js/home.js?v=20261103b"></script>
-  <script src="assets/js/tour.js?v=20261103b"></script>
+  <script src="assets/js/data.js?v=20261105b"></script>
+  <script src="assets/js/ui.js?v=20261105b"></script>
+  <script src="assets/js/map.js?v=20261105b"></script>
+  <script src="assets/js/home.js?v=20261105b"></script>
+  <script src="assets/js/tour.js?v=20261105b"></script>
   <script>document.addEventListener("DOMContentLoaded", () => PT.initHome());</script>
 </body>
 </html>

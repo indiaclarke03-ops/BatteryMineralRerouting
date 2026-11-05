@@ -1478,9 +1478,9 @@
         "date_from": "2024-01-01",
         "bucket_limit": 15
       },
-      "question": "Who are the top shippers and buyers in the 3,088 Morocco-to-US HS 3801.10 rows?",
+      "question": "Who are the top shippers and buyers in the 3,086 Morocco-to-US HS 3801.10 rows?",
       "purpose": "Corridor (INV-8)",
-      "result_summary": "3,088 rows, all from one data source. Top suppliers by ID: Haifa Negev Technologies 302, Coromandel 147, Gandhar Oil Refinery 135, Rotem Amfert 117, ADAMA 114. Top buyers: Uniphos Colombia 111, Haifa Mexico 96, Haifa Colombia 77, Interoc 65. Earliest date bucket 2021 despite the 2024 filter.",
+      "result_summary": "3,086 rows, all from one data source. Top suppliers by ID: Haifa Negev Technologies 302, Coromandel 147, Gandhar Oil Refinery 135, Rotem Amfert 117, ADAMA 114. Top buyers: Uniphos Colombia 111, Haifa Mexico 96, Haifa Colombia 77, Interoc 65. Earliest date bucket 2021 despite the 2024 filter.",
       "interpretation": "The biggest 'graphite' shippers are fertilizer, pesticide and oil companies, and the biggest buyers are in Latin America.",
       "scorecard": "worked",
       "entity_ids": [
@@ -10434,6 +10434,4732 @@
       ],
       "step": "buyer",
       "case_id": "buyer:lges"
+    },
+    {
+      "id": "n2611a01",
+      "timestamp": "2026-11-05T15:01:22Z",
+      "server": "tavily",
+      "tool": "tavily_search",
+      "params": {
+        "summary": "MOFCOM Announcement 70 extension, from 15 Oct"
+      },
+      "question": "Re-check of a published claim",
+      "purpose": "Re-check (recheck-2026-11-05-a)",
+      "result_summary": "Several trackers dated 29 to 30 Oct found no notice amending No. 70; surfaced No. 72 and its 27 Nov date",
+      "interpretation": "See investigation/notes/recheck-2026-11-05-a.md for the claim this call checked.",
+      "scorecard": "worked",
+      "entity_ids": [],
+      "step": "verify",
+      "case_id": "general"
+    },
+    {
+      "id": "n2611a02",
+      "timestamp": "2026-11-05T15:01:23Z",
+      "server": "tavily",
+      "tool": "tavily_search",
+      "params": {
+        "summary": "China extends suspension of export controls, from 1 Nov"
+      },
+      "question": "Re-check of a published claim",
+      "purpose": "Re-check (recheck-2026-11-05-a)",
+      "result_summary": "Sources dated 2 to 4 Nov still report no published notice; outcome open",
+      "interpretation": "See investigation/notes/recheck-2026-11-05-a.md for the claim this call checked.",
+      "scorecard": "worked",
+      "entity_ids": [],
+      "step": "verify",
+      "case_id": "general"
+    },
+    {
+      "id": "n2611a03",
+      "timestamp": "2026-11-05T15:01:24Z",
+      "server": "tavily",
+      "tool": "tavily_search",
+      "params": {
+        "summary": "Chinese-language query on continued suspension, from 20 Oct"
+      },
+      "question": "Re-check of a published claim",
+      "purpose": "Re-check (recheck-2026-11-05-a)",
+      "result_summary": "No extension announcement; surfaced MOFCOM home page and Announcements 48 to 52",
+      "interpretation": "See investigation/notes/recheck-2026-11-05-a.md for the claim this call checked.",
+      "scorecard": "worked",
+      "entity_ids": [],
+      "step": "verify",
+      "case_id": "general"
+    },
+    {
+      "id": "n2611a04",
+      "timestamp": "2026-11-05T15:01:25Z",
+      "server": "tavily",
+      "tool": "tavily_extract",
+      "params": {
+        "summary": "mofcom.gov.cn home page"
+      },
+      "question": "Re-check of a published claim",
+      "purpose": "Re-check (recheck-2026-11-05-a)",
+      "result_summary": "Latest listed announcement is No. 53 of 29 Oct; none concerns No. 70; UFLPA spokesperson item seen",
+      "interpretation": "See investigation/notes/recheck-2026-11-05-a.md for the claim this call checked.",
+      "scorecard": "worked",
+      "entity_ids": [],
+      "step": "verify",
+      "case_id": "general"
+    },
+    {
+      "id": "n2611a05",
+      "timestamp": "2026-11-05T15:01:26Z",
+      "server": "tavily",
+      "tool": "tavily_extract",
+      "params": {
+        "summary": "MOFCOM UFLPA statement, 29 Oct press conference, policy list page"
+      },
+      "question": "Re-check of a published claim",
+      "purpose": "Re-check (recheck-2026-11-05-a)",
+      "result_summary": "Statement objects to the listing and promises measures; press conference did not cover No. 70; policy list page was an older snapshot",
+      "interpretation": "See investigation/notes/recheck-2026-11-05-a.md for the claim this call checked.",
+      "scorecard": "worked",
+      "entity_ids": [],
+      "step": "verify",
+      "case_id": "general"
+    },
+    {
+      "id": "n2611a06",
+      "timestamp": "2026-11-05T15:01:27Z",
+      "server": "tavily",
+      "tool": "tavily_search",
+      "params": {
+        "summary": "UFLPA Entity List additions, from 1 Aug"
+      },
+      "question": "Re-check of a published claim",
+      "purpose": "Re-check (recheck-2026-11-05-a)",
+      "result_summary": "29 Oct notice adds three genomics firms for 190 total; 3 Aug notice added 43",
+      "interpretation": "See investigation/notes/recheck-2026-11-05-a.md for the claim this call checked.",
+      "scorecard": "worked",
+      "entity_ids": [],
+      "step": "verify",
+      "case_id": "general"
+    },
+    {
+      "id": "n2611a07",
+      "timestamp": "2026-11-05T15:01:28Z",
+      "server": "tavily",
+      "tool": "tavily_extract",
+      "params": {
+        "summary": "Federal Register doc 2026-22094"
+      },
+      "question": "Re-check of a published claim",
+      "purpose": "Re-check (recheck-2026-11-05-a)",
+      "result_summary": "Full list read; none of the eight named site companies listed",
+      "interpretation": "See investigation/notes/recheck-2026-11-05-a.md for the claim this call checked.",
+      "scorecard": "worked",
+      "entity_ids": [],
+      "step": "verify",
+      "case_id": "general"
+    },
+    {
+      "id": "n2611a08",
+      "timestamp": "2026-11-05T15:01:29Z",
+      "server": "tavily",
+      "tool": "tavily_search",
+      "params": {
+        "summary": "Proposed PFE and effective-control regulations, from 10 Oct"
+      },
+      "question": "Re-check of a published claim",
+      "purpose": "Re-check (recheck-2026-11-05-a)",
+      "result_summary": "No PFE proposed rule found; open items described in commentary",
+      "interpretation": "See investigation/notes/recheck-2026-11-05-a.md for the claim this call checked.",
+      "scorecard": "worked",
+      "entity_ids": [],
+      "step": "verify",
+      "case_id": "general"
+    },
+    {
+      "id": "n2611a09",
+      "timestamp": "2026-11-05T15:01:30Z",
+      "server": "tavily",
+      "tool": "tavily_extract",
+      "params": {
+        "summary": "IRS priority guidance update through 30 Sep"
+      },
+      "question": "Re-check of a published claim",
+      "purpose": "Re-check (recheck-2026-11-05-a)",
+      "result_summary": "PFE item lists only Notice 2026-15",
+      "interpretation": "See investigation/notes/recheck-2026-11-05-a.md for the claim this call checked.",
+      "scorecard": "worked",
+      "entity_ids": [],
+      "step": "verify",
+      "case_id": "general"
+    },
+    {
+      "id": "n2611a10",
+      "timestamp": "2026-11-05T15:01:31Z",
+      "server": "tavily",
+      "tool": "tavily_search",
+      "params": {
+        "summary": "FEOC safe-harbor tables, from 18 Oct"
+      },
+      "question": "Re-check of a published claim",
+      "purpose": "Re-check (recheck-2026-11-05-a)",
+      "result_summary": "Tables still described as due by 31 Dec; Enphase 10-Q expects more guidance; SolarEdge cites delay",
+      "interpretation": "See investigation/notes/recheck-2026-11-05-a.md for the claim this call checked.",
+      "scorecard": "worked",
+      "entity_ids": [],
+      "step": "verify",
+      "case_id": "general"
+    },
+    {
+      "id": "n2611a11",
+      "timestamp": "2026-11-05T15:01:32Z",
+      "server": "tavily",
+      "tool": "tavily_search",
+      "params": {
+        "summary": "OIRA review of a PFE rule, from 15 Sep"
+      },
+      "question": "Re-check of a published claim",
+      "purpose": "Re-check (recheck-2026-11-05-a)",
+      "result_summary": "No record found of a PFE rule at OIRA",
+      "interpretation": "See investigation/notes/recheck-2026-11-05-a.md for the claim this call checked.",
+      "scorecard": "worked",
+      "entity_ids": [],
+      "step": "verify",
+      "case_id": "general"
+    },
+    {
+      "id": "n2611a12",
+      "timestamp": "2026-11-05T15:01:33Z",
+      "server": "tavily",
+      "tool": "tavily_search",
+      "params": {
+        "summary": "Section 232 and 301 on graphite and critical minerals, from 10 Oct"
+      },
+      "question": "Re-check of a published claim",
+      "purpose": "Re-check (recheck-2026-11-05-a)",
+      "result_summary": "Critical minerals 232 still has no tariff; 301 forced-labor and excess-capacity items noted",
+      "interpretation": "See investigation/notes/recheck-2026-11-05-a.md for the claim this call checked.",
+      "scorecard": "worked",
+      "entity_ids": [],
+      "step": "verify",
+      "case_id": "general"
+    },
+    {
+      "id": "n2611a13",
+      "timestamp": "2026-11-05T15:01:34Z",
+      "server": "tavily",
+      "tool": "tavily_extract",
+      "params": {
+        "summary": "hashtaginvesting post, Ecovadis 301 guide"
+      },
+      "question": "Re-check of a published claim",
+      "purpose": "Re-check (recheck-2026-11-05-a)",
+      "result_summary": "Blog gives no new critical-minerals action; guide confirms 12.5% forced-labor duty and open excess-capacity probe",
+      "interpretation": "See investigation/notes/recheck-2026-11-05-a.md for the claim this call checked.",
+      "scorecard": "worked",
+      "entity_ids": [],
+      "step": "verify",
+      "case_id": "general"
+    },
+    {
+      "id": "n2611a14",
+      "timestamp": "2026-11-05T15:01:35Z",
+      "server": "tavily",
+      "tool": "tavily_search",
+      "params": {
+        "summary": "US-China truce talks, from 25 Oct, news"
+      },
+      "question": "Re-check of a published claim",
+      "purpose": "Re-check (recheck-2026-11-05-a)",
+      "result_summary": "SCMP reports Bessent and He Lifeng to meet in Shenzhen later in November",
+      "interpretation": "See investigation/notes/recheck-2026-11-05-a.md for the claim this call checked.",
+      "scorecard": "worked",
+      "entity_ids": [],
+      "step": "verify",
+      "case_id": "general"
+    },
+    {
+      "id": "n2611a15",
+      "timestamp": "2026-11-05T15:01:36Z",
+      "server": "tavily",
+      "tool": "tavily_search",
+      "params": {
+        "summary": "Chinese-language query on Announcement No. 72"
+      },
+      "question": "Re-check of a published claim",
+      "purpose": "Re-check (recheck-2026-11-05-a)",
+      "result_summary": "MOFCOM text found; paragraph 2 suspended to 27 Nov 2026; covers stricter graphite review for the US",
+      "interpretation": "See investigation/notes/recheck-2026-11-05-a.md for the claim this call checked.",
+      "scorecard": "worked",
+      "entity_ids": [],
+      "step": "verify",
+      "case_id": "general"
+    },
+    {
+      "id": "n2611a16",
+      "timestamp": "2026-11-05T15:01:37Z",
+      "server": "tavily",
+      "tool": "tavily_extract",
+      "params": {
+        "summary": "MOFCOM No. 72, SCMP, strategicrawmaterial.com"
+      },
+      "question": "Re-check of a published claim",
+      "purpose": "Re-check (recheck-2026-11-05-a)",
+      "result_summary": "No. 72 text confirmed; talks confirmed; tracker confirms no amending notice as of 29 Oct",
+      "interpretation": "See investigation/notes/recheck-2026-11-05-a.md for the claim this call checked.",
+      "scorecard": "worked",
+      "entity_ids": [],
+      "step": "verify",
+      "case_id": "general"
+    },
+    {
+      "id": "n2611a17",
+      "timestamp": "2026-11-05T15:01:38Z",
+      "server": "tavily",
+      "tool": "tavily_search",
+      "params": {
+        "summary": "BIS Affiliates Rule suspension, from 1 Oct"
+      },
+      "question": "Re-check of a published claim",
+      "purpose": "Re-check (recheck-2026-11-05-a)",
+      "result_summary": "Rule due back 10 Nov; law firms report no BIS extension notice; 178 Section 301 exclusions said to expire 10 Nov",
+      "interpretation": "See investigation/notes/recheck-2026-11-05-a.md for the claim this call checked.",
+      "scorecard": "worked",
+      "entity_ids": [],
+      "step": "verify",
+      "case_id": "general"
+    },
+    {
+      "id": "n2611a18",
+      "timestamp": "2026-11-05T15:01:39Z",
+      "server": "tavily",
+      "tool": "tavily_extract",
+      "params": {
+        "summary": "Dechert alert, Federal Register BIS listing"
+      },
+      "question": "Re-check of a published claim",
+      "purpose": "Re-check (recheck-2026-11-05-a)",
+      "result_summary": "Dechert 28 Oct confirms status; BIS listing to 27 Oct shows no new Entity List additions",
+      "interpretation": "See investigation/notes/recheck-2026-11-05-a.md for the claim this call checked.",
+      "scorecard": "worked",
+      "entity_ids": [],
+      "step": "verify",
+      "case_id": "general"
+    },
+    {
+      "id": "n2611a19",
+      "timestamp": "2026-11-05T15:01:40Z",
+      "server": "tavily",
+      "tool": "tavily_extract",
+      "params": {
+        "summary": "Federal Register searches for PFE, anode, Chinese military companies"
+      },
+      "question": "Re-check of a published claim",
+      "purpose": "Re-check (recheck-2026-11-05-a)",
+      "result_summary": "No PFE rule; last anode notice 3 Apr 2026; last 1260H notice 10 Jun 2026",
+      "interpretation": "See investigation/notes/recheck-2026-11-05-a.md for the claim this call checked.",
+      "scorecard": "worked",
+      "entity_ids": [],
+      "step": "verify",
+      "case_id": "general"
+    },
+    {
+      "id": "n2611a20",
+      "timestamp": "2026-11-05T15:01:41Z",
+      "server": "tavily",
+      "tool": "tavily_search",
+      "params": {
+        "summary": "Anode AD/CVD appeal or new petition, from 1 Apr"
+      },
+      "question": "Re-check of a published claim",
+      "purpose": "Re-check (recheck-2026-11-05-a)",
+      "result_summary": "Novonix 6-K reports a CIT appeal; Akin Gump confirms Novonix in the petitioner group; no new petition",
+      "interpretation": "See investigation/notes/recheck-2026-11-05-a.md for the claim this call checked.",
+      "scorecard": "worked",
+      "entity_ids": [],
+      "step": "verify",
+      "case_id": "general"
+    },
+    {
+      "id": "n2611a21",
+      "timestamp": "2026-11-05T15:01:42Z",
+      "server": "tavily",
+      "tool": "tavily_extract",
+      "params": {
+        "summary": "Novonix 6-K on StockTitan"
+      },
+      "question": "Re-check of a published claim",
+      "purpose": "Re-check (recheck-2026-11-05-a)",
+      "result_summary": "Reports CIT appeal, argument in second half of January 2027, 19 Oct remand request",
+      "interpretation": "See investigation/notes/recheck-2026-11-05-a.md for the claim this call checked.",
+      "scorecard": "worked",
+      "entity_ids": [],
+      "step": "verify",
+      "case_id": "general"
+    },
+    {
+      "id": "n2611a22",
+      "timestamp": "2026-11-05T15:01:43Z",
+      "server": "tavily",
+      "tool": "tavily_search",
+      "params": {
+        "summary": "CIT anode appeal and voluntary remand, from 1 May"
+      },
+      "question": "Re-check of a published claim",
+      "purpose": "Re-check (recheck-2026-11-05-a)",
+      "result_summary": "No docket or independent confirmation found",
+      "interpretation": "See investigation/notes/recheck-2026-11-05-a.md for the claim this call checked.",
+      "scorecard": "worked",
+      "entity_ids": [],
+      "step": "verify",
+      "case_id": "general"
+    },
+    {
+      "id": "n2611a23",
+      "timestamp": "2026-11-05T15:01:44Z",
+      "server": "tavily",
+      "tool": "tavily_search",
+      "params": {
+        "summary": "Syrah September quarterly, from 1 Oct"
+      },
+      "question": "Re-check of a published claim",
+      "purpose": "Re-check (recheck-2026-11-05-a)",
+      "result_summary": "Report found; excerpts did not mention the appeal",
+      "interpretation": "See investigation/notes/recheck-2026-11-05-a.md for the claim this call checked.",
+      "scorecard": "worked",
+      "entity_ids": [],
+      "step": "verify",
+      "case_id": "general"
+    },
+    {
+      "id": "n2611a24",
+      "timestamp": "2026-11-05T15:01:45Z",
+      "server": "tavily",
+      "tool": "tavily_extract",
+      "params": {
+        "summary": "Listcorp Syrah quarterly, advanced"
+      },
+      "question": "Re-check of a published claim",
+      "purpose": "Re-check (recheck-2026-11-05-a)",
+      "result_summary": "Error: page returned a shell only, with no report text",
+      "interpretation": "See investigation/notes/recheck-2026-11-05-a.md for the claim this call checked.",
+      "scorecard": "failed",
+      "entity_ids": [],
+      "step": "verify",
+      "case_id": "general"
+    },
+    {
+      "id": "n2611a25",
+      "timestamp": "2026-11-05T15:01:46Z",
+      "server": "tavily",
+      "tool": "tavily_search",
+      "params": {
+        "summary": "1260H updates, from 1 Oct"
+      },
+      "question": "Re-check of a published claim",
+      "purpose": "Re-check (recheck-2026-11-05-a)",
+      "result_summary": "No list change reported since June 2026",
+      "interpretation": "See investigation/notes/recheck-2026-11-05-a.md for the claim this call checked.",
+      "scorecard": "worked",
+      "entity_ids": [],
+      "step": "verify",
+      "case_id": "general"
+    },
+    {
+      "id": "n2611a26",
+      "timestamp": "2026-11-05T15:01:47Z",
+      "server": "tavily",
+      "tool": "tavily_search",
+      "params": {
+        "summary": "IEA 2026 anode share, from 1 Apr"
+      },
+      "question": "Re-check of a published claim",
+      "purpose": "Re-check (recheck-2026-11-05-a)",
+      "result_summary": "IEA Energy Technology Perspectives 2026 found with anode figures",
+      "interpretation": "See investigation/notes/recheck-2026-11-05-a.md for the claim this call checked.",
+      "scorecard": "worked",
+      "entity_ids": [],
+      "step": "verify",
+      "case_id": "general"
+    },
+    {
+      "id": "n2611a27",
+      "timestamp": "2026-11-05T15:01:48Z",
+      "server": "tavily",
+      "tool": "tavily_extract",
+      "params": {
+        "summary": "IEA ETP 2026 PDF"
+      },
+      "question": "Re-check of a published claim",
+      "purpose": "Re-check (recheck-2026-11-05-a)",
+      "result_summary": "Over 90% of anode material in 2024; up to 97% of capacity",
+      "interpretation": "See investigation/notes/recheck-2026-11-05-a.md for the claim this call checked.",
+      "scorecard": "worked",
+      "entity_ids": [],
+      "step": "verify",
+      "case_id": "general"
+    },
+    {
+      "id": "n2611a28",
+      "timestamp": "2026-11-05T15:01:49Z",
+      "server": "tavily",
+      "tool": "tavily_extract",
+      "params": {
+        "summary": "USITC working paper, ITA fact sheet, Federal Register AD notice"
+      },
+      "question": "Re-check of a published claim",
+      "purpose": "Re-check (recheck-2026-11-05-a)",
+      "result_summary": "Graphite 14.1 to 22.1% of cell weight; 93.50% and 102.72% confirmed",
+      "interpretation": "See investigation/notes/recheck-2026-11-05-a.md for the claim this call checked.",
+      "scorecard": "worked",
+      "entity_ids": [],
+      "step": "verify",
+      "case_id": "general"
+    },
+    {
+      "id": "n2611a29",
+      "timestamp": "2026-11-05T15:01:50Z",
+      "server": "tavily",
+      "tool": "tavily_search",
+      "params": {
+        "summary": "EU battery due diligence and passport dates, from 1 Sep"
+      },
+      "question": "Re-check of a published claim",
+      "purpose": "Re-check (recheck-2026-11-05-a)",
+      "result_summary": "Dates unchanged: 18 Feb 2027 and 18 Aug 2027",
+      "interpretation": "See investigation/notes/recheck-2026-11-05-a.md for the claim this call checked.",
+      "scorecard": "worked",
+      "entity_ids": [],
+      "step": "verify",
+      "case_id": "general"
+    },
+    {
+      "id": "n2611a30",
+      "timestamp": "2026-11-05T15:01:51Z",
+      "server": "tavily",
+      "tool": "tavily_search",
+      "params": {
+        "summary": "EU guidelines and Industrial Accelerator Act, from 1 Aug"
+      },
+      "question": "Re-check of a published claim",
+      "purpose": "Re-check (recheck-2026-11-05-a)",
+      "result_summary": "Guidelines deadline given as 26 Jul 2026, publication not found; threshold change provisional; IAA still a proposal",
+      "interpretation": "See investigation/notes/recheck-2026-11-05-a.md for the claim this call checked.",
+      "scorecard": "worked",
+      "entity_ids": [],
+      "step": "verify",
+      "case_id": "general"
+    },
+    {
+      "id": "n2611a31",
+      "timestamp": "2026-11-05T15:01:52Z",
+      "server": "tavily",
+      "tool": "tavily_extract",
+      "params": {
+        "summary": "European Commission battery passport FAQ"
+      },
+      "question": "Re-check of a published claim",
+      "purpose": "Re-check (recheck-2026-11-05-a)",
+      "result_summary": "Due-diligence report required from August 2027",
+      "interpretation": "See investigation/notes/recheck-2026-11-05-a.md for the claim this call checked.",
+      "scorecard": "worked",
+      "entity_ids": [],
+      "step": "verify",
+      "case_id": "general"
+    },
+    {
+      "id": "n2611a32",
+      "timestamp": "2026-11-05T15:01:53Z",
+      "server": "tavily",
+      "tool": "tavily_search",
+      "params": {
+        "summary": "CATL Debrecen news, from 1 Oct"
+      },
+      "question": "Re-check of a published claim",
+      "purpose": "Re-check (recheck-2026-11-05-a)",
+      "result_summary": "Court dismissal, trial production and German complaint surfaced",
+      "interpretation": "See investigation/notes/recheck-2026-11-05-a.md for the claim this call checked.",
+      "scorecard": "worked",
+      "entity_ids": [],
+      "step": "verify",
+      "case_id": "general"
+    },
+    {
+      "id": "n2611a33",
+      "timestamp": "2026-11-05T15:01:54Z",
+      "server": "tavily",
+      "tool": "tavily_extract",
+      "params": {
+        "summary": "Complaint press release, East Asia Brief"
+      },
+      "question": "Re-check of a published claim",
+      "purpose": "Re-check (recheck-2026-11-05-a)",
+      "result_summary": "Complaint under German supply-chain law confirmed; East Asia Brief gives 30 Oct for the ruling",
+      "interpretation": "See investigation/notes/recheck-2026-11-05-a.md for the claim this call checked.",
+      "scorecard": "worked",
+      "entity_ids": [],
+      "step": "verify",
+      "case_id": "general"
+    },
+    {
+      "id": "n2611a34",
+      "timestamp": "2026-11-05T15:01:55Z",
+      "server": "tavily",
+      "tool": "tavily_search",
+      "params": {
+        "summary": "Hungarian-language query on the court ruling, from 20 Oct"
+      },
+      "question": "Re-check of a published claim",
+      "purpose": "Re-check (recheck-2026-11-05-a)",
+      "result_summary": "Hungarian outlets give 29 Oct, final, because the 2023 permit was replaced",
+      "interpretation": "See investigation/notes/recheck-2026-11-05-a.md for the claim this call checked.",
+      "scorecard": "worked",
+      "entity_ids": [],
+      "step": "verify",
+      "case_id": "general"
+    },
+    {
+      "id": "n2611a35",
+      "timestamp": "2026-11-05T15:01:56Z",
+      "server": "tavily",
+      "tool": "tavily_search",
+      "params": {
+        "summary": "EU state aid for CATL Debrecen, from 1 Jun"
+      },
+      "question": "Re-check of a published claim",
+      "purpose": "Re-check (recheck-2026-11-05-a)",
+      "result_summary": "CATL refers to HUF 129 bn in aid for phase one; no Commission decision located",
+      "interpretation": "See investigation/notes/recheck-2026-11-05-a.md for the claim this call checked.",
+      "scorecard": "worked",
+      "entity_ids": [],
+      "step": "verify",
+      "case_id": "general"
+    },
+    {
+      "id": "n2611a36",
+      "timestamp": "2026-11-05T15:01:57Z",
+      "server": "tavily",
+      "tool": "tavily_search",
+      "params": {
+        "summary": "Latest MOFCOM notice, past week, news"
+      },
+      "question": "Re-check of a published claim",
+      "purpose": "Re-check (recheck-2026-11-05-a)",
+      "result_summary": "One irrelevant result only; nothing new",
+      "interpretation": "See investigation/notes/recheck-2026-11-05-a.md for the claim this call checked.",
+      "scorecard": "worked",
+      "entity_ids": [],
+      "step": "verify",
+      "case_id": "general"
+    },
+    {
+      "id": "n2611a37",
+      "timestamp": "2026-11-05T15:01:58Z",
+      "server": "tavily",
+      "tool": "tavily_extract",
+      "params": {
+        "summary": "Yahoo Finance, rare-earth-mining.com, SolarEdge transcript, Index.hu"
+      },
+      "question": "Re-check of a published claim",
+      "purpose": "Re-check (recheck-2026-11-05-a)",
+      "result_summary": "No notice as of 4 to 5 Nov; SolarEdge cites delayed guidance; ruling reasoning confirmed",
+      "interpretation": "See investigation/notes/recheck-2026-11-05-a.md for the claim this call checked.",
+      "scorecard": "worked",
+      "entity_ids": [],
+      "step": "verify",
+      "case_id": "general"
+    },
+    {
+      "id": "n2611a38",
+      "timestamp": "2026-11-05T15:01:59Z",
+      "server": "sayari",
+      "tool": "search_trade_facets",
+      "params": {
+        "summary": "scope shipments, query artificial graphite, hs_code 380110, arrival USA, date_from 2024-01-01"
+      },
+      "question": "Re-check of a published claim",
+      "purpose": "Re-check (recheck-2026-11-05-a)",
+      "result_summary": "47,511 rows; Spain 8,870, China 5,354, India 3,692, Germany 3,541, Morocco 3,086; latest 20 Oct 2026. The home-page figure of about 47,000 holds",
+      "interpretation": "See investigation/notes/recheck-2026-11-05-a.md for the claim this call checked.",
+      "scorecard": "worked",
+      "entity_ids": [],
+      "step": "verify",
+      "case_id": "general"
+    },
+    {
+      "id": "n2611a39",
+      "timestamp": "2026-11-05T15:02:00Z",
+      "server": "sayari",
+      "tool": "get_entity_summary",
+      "params": {
+        "summary": "OS78Ov4LxLbUR1aVaNZrMA"
+      },
+      "question": "Re-check of a published claim",
+      "purpose": "Re-check (recheck-2026-11-05-a)",
+      "result_summary": "ULTIUM CELLS WARREN PLANT, 7400 Tod Avenue, Warren, Ohio; also the Streetsboro warehouse address; 187 rows received. This is the live Warren record",
+      "interpretation": "See investigation/notes/recheck-2026-11-05-a.md for the claim this call checked.",
+      "scorecard": "worked",
+      "entity_ids": [],
+      "step": "verify",
+      "case_id": "general"
+    },
+    {
+      "id": "n2611a40",
+      "timestamp": "2026-11-05T15:02:01Z",
+      "server": "sayari",
+      "tool": "get_entity_summary",
+      "params": {
+        "summary": "rvgklT24qqqfH2rnlVlyBg"
+      },
+      "question": "Re-check of a published claim",
+      "purpose": "Re-check (recheck-2026-11-05-a)",
+      "result_summary": "Error: unexpected error, third failed attempt; the old Ultium Cells Warren record no longer opens",
+      "interpretation": "See investigation/notes/recheck-2026-11-05-a.md for the claim this call checked.",
+      "scorecard": "failed",
+      "entity_ids": [],
+      "step": "verify",
+      "case_id": "general"
+    },
+    {
+      "id": "n2611b01",
+      "timestamp": "2026-11-05T15:02:02Z",
+      "server": "sayari",
+      "tool": "get_entity_summary",
+      "params": {
+        "summary": "ekoH1fr8BGvHc7UqYCY_YA"
+      },
+      "question": "Re-check of a published claim",
+      "purpose": "Re-check (recheck-2026-11-05-b)",
+      "result_summary": "Live plant record, tax ID and LEI present, Kendal and Morowali addresses, 123 sent, 4,101 received",
+      "interpretation": "See investigation/notes/recheck-2026-11-05-b.md for the claim this call checked.",
+      "scorecard": "worked",
+      "entity_ids": [],
+      "step": "verify",
+      "case_id": "general"
+    },
+    {
+      "id": "n2611b02",
+      "timestamp": "2026-11-05T15:02:03Z",
+      "server": "sayari",
+      "tool": "get_entity_summary",
+      "params": {
+        "summary": "2omCekb1pDRKjhFOAqCNSw"
+      },
+      "question": "Re-check of a published claim",
+      "purpose": "Re-check (recheck-2026-11-05-b)",
+      "result_summary": "Error: unexpected error (known bad ID)",
+      "interpretation": "See investigation/notes/recheck-2026-11-05-b.md for the claim this call checked.",
+      "scorecard": "failed",
+      "entity_ids": [],
+      "step": "verify",
+      "case_id": "general"
+    },
+    {
+      "id": "n2611b03",
+      "timestamp": "2026-11-05T15:02:04Z",
+      "server": "sayari",
+      "tool": "find_beneficial_owners",
+      "params": {
+        "summary": "ekoH1fr8BGvHc7UqYCY_YA, limit 15"
+      },
+      "question": "Re-check of a published claim",
+      "purpose": "Re-check (recheck-2026-11-05-b)",
+      "result_summary": "0 owners",
+      "interpretation": "See investigation/notes/recheck-2026-11-05-b.md for the claim this call checked.",
+      "scorecard": "worked",
+      "entity_ids": [],
+      "step": "verify",
+      "case_id": "general"
+    },
+    {
+      "id": "n2611b04",
+      "timestamp": "2026-11-05T15:02:05Z",
+      "server": "sayari",
+      "tool": "search_shipments",
+      "params": {
+        "summary": "\"INDONESIA BTR NEW ENERGY MATERIAL\", HS 3801, arrival USA, from 2026-08-01, compact"
+      },
+      "question": "Re-check of a published claim",
+      "purpose": "Re-check (recheck-2026-11-05-b)",
+      "result_summary": "56 rows, date filter ignored; buyers GM record 35, Larpen 7, Aminco 3, StarPlus 3, Spring Hill 2, SK Battery America 1, FNS, Inc. 1 (16 Oct 2026)",
+      "interpretation": "See investigation/notes/recheck-2026-11-05-b.md for the claim this call checked.",
+      "scorecard": "worked",
+      "entity_ids": [],
+      "step": "verify",
+      "case_id": "general"
+    },
+    {
+      "id": "n2611b05",
+      "timestamp": "2026-11-05T15:02:06Z",
+      "server": "sayari",
+      "tool": "search_shipments",
+      "params": {
+        "summary": "\"BTR MEDITERRANEAN\", no country filter, compact"
+      },
+      "question": "Re-check of a published claim",
+      "purpose": "Re-check (recheck-2026-11-05-b)",
+      "result_summary": "17 rows: 14 Chinese goods rows to Jul 2026 departures, 3 HS 380110 from BTR Indonesia 19 Aug 2026; one row quotes RC 142409",
+      "interpretation": "See investigation/notes/recheck-2026-11-05-b.md for the claim this call checked.",
+      "scorecard": "worked",
+      "entity_ids": [],
+      "step": "verify",
+      "case_id": "general"
+    },
+    {
+      "id": "n2611b06",
+      "timestamp": "2026-11-05T15:02:07Z",
+      "server": "sayari",
+      "tool": "search_shipments",
+      "params": {
+        "summary": "\"PT, . INDONESIA BTR NEW ENERGY MATERIAL\", HS 380110, arrival USA, from 2026-09-20, limit 5, full"
+      },
+      "question": "Re-check of a published claim",
+      "purpose": "Re-check (recheck-2026-11-05-b)",
+      "result_summary": "48 available, 5 read: FNS, Inc. 234.36 t 16 Oct 2026; 19 Sep 2026 row via Pusan to 1 LG Way; Nov 2025 rows to FNS warehouse Streetsboro",
+      "interpretation": "See investigation/notes/recheck-2026-11-05-b.md for the claim this call checked.",
+      "scorecard": "worked",
+      "entity_ids": [],
+      "step": "verify",
+      "case_id": "general"
+    },
+    {
+      "id": "n2611b07",
+      "timestamp": "2026-11-05T15:02:08Z",
+      "server": "sayari",
+      "tool": "search_shipments",
+      "params": {
+        "summary": "\"PT INDONESIA BTR NEW ENERGY MATERIA\", arrival USA, from 2026-05-01, compact"
+      },
+      "question": "Re-check of a published claim",
+      "purpose": "Re-check (recheck-2026-11-05-b)",
+      "result_summary": "29 rows on Lv60: Marshall 11, Battery Park 2, HSBMA 1, GM record 13, undated 2",
+      "interpretation": "See investigation/notes/recheck-2026-11-05-b.md for the claim this call checked.",
+      "scorecard": "worked",
+      "entity_ids": [],
+      "step": "verify",
+      "case_id": "general"
+    },
+    {
+      "id": "n2611b08",
+      "timestamp": "2026-11-05T15:02:09Z",
+      "server": "sayari",
+      "tool": "get_entity_summary",
+      "params": {
+        "summary": "rvgklT24qqqfH2rnlVlyBg"
+      },
+      "question": "Re-check of a published claim",
+      "purpose": "Re-check (recheck-2026-11-05-b)",
+      "result_summary": "Error: unexpected error",
+      "interpretation": "See investigation/notes/recheck-2026-11-05-b.md for the claim this call checked.",
+      "scorecard": "failed",
+      "entity_ids": [],
+      "step": "verify",
+      "case_id": "general"
+    },
+    {
+      "id": "n2611b09",
+      "timestamp": "2026-11-05T15:02:10Z",
+      "server": "sayari",
+      "tool": "get_entity_summary",
+      "params": {
+        "summary": "Lv60RfghzhQ-9oSF_kW0wA"
+      },
+      "question": "Re-check of a published claim",
+      "purpose": "Re-check (recheck-2026-11-05-b)",
+      "result_summary": "Trade-only record, Kendal addresses, 31 sent, 0 received",
+      "interpretation": "See investigation/notes/recheck-2026-11-05-b.md for the claim this call checked.",
+      "scorecard": "worked",
+      "entity_ids": [],
+      "step": "verify",
+      "case_id": "general"
+    },
+    {
+      "id": "n2611b10",
+      "timestamp": "2026-11-05T15:02:11Z",
+      "server": "sayari",
+      "tool": "get_entity_summary",
+      "params": {
+        "summary": "EAd4f9FKWeoImIL2ltX93A"
+      },
+      "question": "Re-check of a published claim",
+      "purpose": "Re-check (recheck-2026-11-05-b)",
+      "result_summary": "FNS, Inc., Chicago, USA imports only, 4 received",
+      "interpretation": "See investigation/notes/recheck-2026-11-05-b.md for the claim this call checked.",
+      "scorecard": "worked",
+      "entity_ids": [],
+      "step": "verify",
+      "case_id": "general"
+    },
+    {
+      "id": "n2611b11",
+      "timestamp": "2026-11-05T15:02:12Z",
+      "server": "sayari",
+      "tool": "get_entity_summary",
+      "params": {
+        "summary": "ALeXPymJqrTWgIhWeUyLlw"
+      },
+      "question": "Re-check of a published claim",
+      "purpose": "Re-check (recheck-2026-11-05-b)",
+      "result_summary": "Marshall and Battle Creek addresses, 174 received (148 on 18 Oct)",
+      "interpretation": "See investigation/notes/recheck-2026-11-05-b.md for the claim this call checked.",
+      "scorecard": "worked",
+      "entity_ids": [],
+      "step": "verify",
+      "case_id": "general"
+    },
+    {
+      "id": "n2611b12",
+      "timestamp": "2026-11-05T15:02:13Z",
+      "server": "sayari",
+      "tool": "search_trade_facets",
+      "params": {
+        "summary": "shipments, \"INDONESIA BTR NEW ENERGY MATERIAL\", from 2026-09-01"
+      },
+      "question": "Re-check of a published claim",
+      "purpose": "Re-check (recheck-2026-11-05-b)",
+      "result_summary": "4,234 rows, latest 2026-10-16; date filter ignored; arrival USA 68",
+      "interpretation": "See investigation/notes/recheck-2026-11-05-b.md for the claim this call checked.",
+      "scorecard": "worked",
+      "entity_ids": [],
+      "step": "verify",
+      "case_id": "general"
+    },
+    {
+      "id": "n2611b13",
+      "timestamp": "2026-11-05T15:02:14Z",
+      "server": "sayari",
+      "tool": "search_shipments",
+      "params": {
+        "summary": "Lv60 name, HS 380110, SGP to USA, from 2026-05-01, export"
+      },
+      "question": "Re-check of a published claim",
+      "purpose": "Re-check (recheck-2026-11-05-b)",
+      "result_summary": "18 rows: Marshall 4, Battery Park 2, GM record 10, undated 2",
+      "interpretation": "See investigation/notes/recheck-2026-11-05-b.md for the claim this call checked.",
+      "scorecard": "worked",
+      "entity_ids": [],
+      "step": "verify",
+      "case_id": "general"
+    },
+    {
+      "id": "n2611b14",
+      "timestamp": "2026-11-05T15:02:15Z",
+      "server": "sayari",
+      "tool": "search_trade_facets",
+      "params": {
+        "summary": "shipments, Lv60 name, arrival USA"
+      },
+      "question": "Re-check of a published claim",
+      "purpose": "Re-check (recheck-2026-11-05-b)",
+      "result_summary": "29 rows: GM record 13, Marshall 11, Battery Park 2, HSBMA 1; SGP 21, CHN 7, HKG 1; latest 2026-10-07",
+      "interpretation": "See investigation/notes/recheck-2026-11-05-b.md for the claim this call checked.",
+      "scorecard": "worked",
+      "entity_ids": [],
+      "step": "verify",
+      "case_id": "general"
+    },
+    {
+      "id": "n2611b15",
+      "timestamp": "2026-11-05T15:02:16Z",
+      "server": "sayari",
+      "tool": "search_entities",
+      "params": {
+        "summary": "\"BTR New Energy Material\", limit 12, compact"
+      },
+      "question": "Re-check of a published claim",
+      "purpose": "Re-check (recheck-2026-11-05-b)",
+      "result_summary": "1 record: ekoH1fr8",
+      "interpretation": "See investigation/notes/recheck-2026-11-05-b.md for the claim this call checked.",
+      "scorecard": "worked",
+      "entity_ids": [],
+      "step": "verify",
+      "case_id": "general"
+    },
+    {
+      "id": "n2611b16",
+      "timestamp": "2026-11-05T15:02:17Z",
+      "server": "sayari",
+      "tool": "search_entities",
+      "params": {
+        "summary": "\"Ultium Cells Warren\", limit 6, compact"
+      },
+      "question": "Re-check of a published claim",
+      "purpose": "Re-check (recheck-2026-11-05-b)",
+      "result_summary": "3 records: OS78Ov4L, GM record, D4LVmVkr FNS warehouse; no rvgklT24",
+      "interpretation": "See investigation/notes/recheck-2026-11-05-b.md for the claim this call checked.",
+      "scorecard": "worked",
+      "entity_ids": [],
+      "step": "verify",
+      "case_id": "general"
+    },
+    {
+      "id": "n2611b17",
+      "timestamp": "2026-11-05T15:02:18Z",
+      "server": "sayari",
+      "tool": "get_entity_summary",
+      "params": {
+        "summary": "n3epSyTN-HbHMmnpJHNhkA"
+      },
+      "question": "Re-check of a published claim",
+      "purpose": "Re-check (recheck-2026-11-05-b)",
+      "result_summary": "HSBMA LLC, Kingston GA, 1 received",
+      "interpretation": "See investigation/notes/recheck-2026-11-05-b.md for the claim this call checked.",
+      "scorecard": "worked",
+      "entity_ids": [],
+      "step": "verify",
+      "case_id": "general"
+    },
+    {
+      "id": "n2611b18",
+      "timestamp": "2026-11-05T15:02:19Z",
+      "server": "sayari",
+      "tool": "get_upstream_supply_chain",
+      "params": {
+        "summary": "ekoH1fr8, products 3801 and 2504, from 2026-07-01, depth 1"
+      },
+      "question": "Re-check of a published claim",
+      "purpose": "Re-check (recheck-2026-11-05-b)",
+      "result_summary": "0 paths",
+      "interpretation": "See investigation/notes/recheck-2026-11-05-b.md for the claim this call checked.",
+      "scorecard": "worked",
+      "entity_ids": [],
+      "step": "verify",
+      "case_id": "general"
+    },
+    {
+      "id": "n2611b19",
+      "timestamp": "2026-11-05T15:02:20Z",
+      "server": "sayari",
+      "tool": "search_shipments",
+      "params": {
+        "summary": "Lv60 name, CHN to USA, limit 8, full"
+      },
+      "question": "Re-check of a published claim",
+      "purpose": "Re-check (recheck-2026-11-05-b)",
+      "result_summary": "7 rows to Marshall: 3 Ningbo, 4 Yantian, 28 Aug to 17 Sep 2026; one row records 158 kg",
+      "interpretation": "See investigation/notes/recheck-2026-11-05-b.md for the claim this call checked.",
+      "scorecard": "worked",
+      "entity_ids": [],
+      "step": "verify",
+      "case_id": "general"
+    },
+    {
+      "id": "n2611b20",
+      "timestamp": "2026-11-05T15:02:21Z",
+      "server": "sayari",
+      "tool": "search_shipments",
+      "params": {
+        "summary": "Lv60 name, SGP to USA, from 2026-05-01, limit 4, full"
+      },
+      "question": "Re-check of a published claim",
+      "purpose": "Re-check (recheck-2026-11-05-b)",
+      "result_summary": "21 available, 4 read: Marshall 7 Oct 2026 twice, 6 Sep 2026; Battery Park 15 Jul 2026",
+      "interpretation": "See investigation/notes/recheck-2026-11-05-b.md for the claim this call checked.",
+      "scorecard": "worked",
+      "entity_ids": [],
+      "step": "verify",
+      "case_id": "general"
+    },
+    {
+      "id": "n2611b21",
+      "timestamp": "2026-11-05T15:02:22Z",
+      "server": "sayari",
+      "tool": "get_entity_summary",
+      "params": {
+        "summary": "rvgklT24qqqfH2rnlVlyBg (retry)"
+      },
+      "question": "Re-check of a published claim",
+      "purpose": "Re-check (recheck-2026-11-05-b)",
+      "result_summary": "Error: unexpected error",
+      "interpretation": "See investigation/notes/recheck-2026-11-05-b.md for the claim this call checked.",
+      "scorecard": "failed",
+      "entity_ids": [],
+      "step": "verify",
+      "case_id": "general"
+    },
+    {
+      "id": "n2611b22",
+      "timestamp": "2026-11-05T15:02:23Z",
+      "server": "sayari",
+      "tool": "get_entity_summary",
+      "params": {
+        "summary": "2omCekb1pDRKjhFOAqCNSw (retry)"
+      },
+      "question": "Re-check of a published claim",
+      "purpose": "Re-check (recheck-2026-11-05-b)",
+      "result_summary": "Error: unexpected error",
+      "interpretation": "See investigation/notes/recheck-2026-11-05-b.md for the claim this call checked.",
+      "scorecard": "failed",
+      "entity_ids": [],
+      "step": "verify",
+      "case_id": "general"
+    },
+    {
+      "id": "n2611b23",
+      "timestamp": "2026-11-05T15:02:24Z",
+      "server": "sayari",
+      "tool": "search_trade_facets",
+      "params": {
+        "summary": "shipments, plant name, arrival IDN, HS 3801"
+      },
+      "question": "Re-check of a published claim",
+      "purpose": "Re-check (recheck-2026-11-05-b)",
+      "result_summary": "141 rows, Ruiqing 139, BTR 1, all from China, latest 2026-06-23",
+      "interpretation": "See investigation/notes/recheck-2026-11-05-b.md for the claim this call checked.",
+      "scorecard": "worked",
+      "entity_ids": [],
+      "step": "verify",
+      "case_id": "general"
+    },
+    {
+      "id": "n2611b24",
+      "timestamp": "2026-11-05T15:02:25Z",
+      "server": "sayari",
+      "tool": "search_trade_facets",
+      "params": {
+        "summary": "shipments, plant name, arrival IDN, HS 2504"
+      },
+      "question": "Re-check of a published claim",
+      "purpose": "Re-check (recheck-2026-11-05-b)",
+      "result_summary": "134 rows, departures China 120, Mozambique 6, UAE 4, Madagascar 4, latest 2026-06-06",
+      "interpretation": "See investigation/notes/recheck-2026-11-05-b.md for the claim this call checked.",
+      "scorecard": "worked",
+      "entity_ids": [],
+      "step": "verify",
+      "case_id": "general"
+    },
+    {
+      "id": "n2611b25",
+      "timestamp": "2026-11-05T15:02:26Z",
+      "server": "sayari",
+      "tool": "get_entity_summary",
+      "params": {
+        "summary": "Z57YvgOYL2TdoaWYgXFZ9Q"
+      },
+      "question": "Re-check of a published claim",
+      "purpose": "Re-check (recheck-2026-11-05-b)",
+      "result_summary": "BTR Mediterranean Anode, RC 149725, registered 3 May 2024, trade 0/0",
+      "interpretation": "See investigation/notes/recheck-2026-11-05-b.md for the claim this call checked.",
+      "scorecard": "worked",
+      "entity_ids": [],
+      "step": "verify",
+      "case_id": "general"
+    },
+    {
+      "id": "n2611b26",
+      "timestamp": "2026-11-05T15:02:27Z",
+      "server": "sayari",
+      "tool": "get_entity_summary",
+      "params": {
+        "summary": "El_6QFk0rVRdYJanrqEtAA"
+      },
+      "question": "Re-check of a published claim",
+      "purpose": "Re-check (recheck-2026-11-05-b)",
+      "result_summary": "BTR Mediterranean New Material Technology, RC 142409, LEI present, trade 0/0",
+      "interpretation": "See investigation/notes/recheck-2026-11-05-b.md for the claim this call checked.",
+      "scorecard": "worked",
+      "entity_ids": [],
+      "step": "verify",
+      "case_id": "general"
+    },
+    {
+      "id": "n2611b27",
+      "timestamp": "2026-11-05T15:02:28Z",
+      "server": "sayari",
+      "tool": "get_entity_summary",
+      "params": {
+        "summary": "1CjF5vzVgFFxVomroaYyaA"
+      },
+      "question": "Re-check of a published claim",
+      "purpose": "Re-check (recheck-2026-11-05-b)",
+      "result_summary": "Trade record, Lot 1 and 2 Tanger Tech, 0 sent, 4 received",
+      "interpretation": "See investigation/notes/recheck-2026-11-05-b.md for the claim this call checked.",
+      "scorecard": "worked",
+      "entity_ids": [],
+      "step": "verify",
+      "case_id": "general"
+    },
+    {
+      "id": "n2611b28",
+      "timestamp": "2026-11-05T15:02:29Z",
+      "server": "sayari",
+      "tool": "find_beneficial_owners",
+      "params": {
+        "summary": "Z57YvgOYL2TdoaWYgXFZ9Q, limit 15"
+      },
+      "question": "Re-check of a published claim",
+      "purpose": "Re-check (recheck-2026-11-05-b)",
+      "result_summary": "Rian International Holding, then Singapore record of BTR",
+      "interpretation": "See investigation/notes/recheck-2026-11-05-b.md for the claim this call checked.",
+      "scorecard": "worked",
+      "entity_ids": [],
+      "step": "verify",
+      "case_id": "general"
+    },
+    {
+      "id": "n2611b29",
+      "timestamp": "2026-11-05T15:02:30Z",
+      "server": "sayari",
+      "tool": "find_beneficial_owners",
+      "params": {
+        "summary": "El_6QFk0rVRdYJanrqEtAA, limit 15"
+      },
+      "question": "Re-check of a published claim",
+      "purpose": "Re-check (recheck-2026-11-05-b)",
+      "result_summary": "BNUO International Holding, then BTR New Material Group",
+      "interpretation": "See investigation/notes/recheck-2026-11-05-b.md for the claim this call checked.",
+      "scorecard": "worked",
+      "entity_ids": [],
+      "step": "verify",
+      "case_id": "general"
+    },
+    {
+      "id": "n2611b30",
+      "timestamp": "2026-11-05T15:02:31Z",
+      "server": "sayari",
+      "tool": "search_shipments",
+      "params": {
+        "summary": "\"BTR MEDITERRANEAN\", departure MAR, compact"
+      },
+      "question": "Re-check of a published claim",
+      "purpose": "Re-check (recheck-2026-11-05-b)",
+      "result_summary": "0 rows",
+      "interpretation": "See investigation/notes/recheck-2026-11-05-b.md for the claim this call checked.",
+      "scorecard": "worked",
+      "entity_ids": [],
+      "step": "verify",
+      "case_id": "general"
+    },
+    {
+      "id": "n2611b31",
+      "timestamp": "2026-11-05T15:02:32Z",
+      "server": "sayari",
+      "tool": "search_entities",
+      "params": {
+        "summary": "\"BTR Mediterranean\", limit 12, compact"
+      },
+      "question": "Re-check of a published claim",
+      "purpose": "Re-check (recheck-2026-11-05-b)",
+      "result_summary": "6 records, the same six as the site",
+      "interpretation": "See investigation/notes/recheck-2026-11-05-b.md for the claim this call checked.",
+      "scorecard": "worked",
+      "entity_ids": [],
+      "step": "verify",
+      "case_id": "general"
+    },
+    {
+      "id": "n2611b32",
+      "timestamp": "2026-11-05T15:02:33Z",
+      "server": "sayari",
+      "tool": "search_trade_facets",
+      "params": {
+        "summary": "shipments, \"PT Indonesia BTR New Energy\", arrival USA"
+      },
+      "question": "Re-check of a published claim",
+      "purpose": "Re-check (recheck-2026-11-05-b)",
+      "result_summary": "102 rows, 2024-12-15 to 2026-10-16; SGP 61, IDN 22, CHN 8, HKG 1",
+      "interpretation": "See investigation/notes/recheck-2026-11-05-b.md for the claim this call checked.",
+      "scorecard": "worked",
+      "entity_ids": [],
+      "step": "verify",
+      "case_id": "general"
+    },
+    {
+      "id": "n2611b33",
+      "timestamp": "2026-11-05T15:02:34Z",
+      "server": "sayari",
+      "tool": "get_entity_summary",
+      "params": {
+        "summary": "dH3rqoht5wahpKLPJih3gA"
+      },
+      "question": "Re-check of a published claim",
+      "purpose": "Re-check (recheck-2026-11-05-b)",
+      "result_summary": "Error: unexpected error",
+      "interpretation": "See investigation/notes/recheck-2026-11-05-b.md for the claim this call checked.",
+      "scorecard": "failed",
+      "entity_ids": [],
+      "step": "verify",
+      "case_id": "general"
+    },
+    {
+      "id": "n2611b34",
+      "timestamp": "2026-11-05T15:02:35Z",
+      "server": "sayari",
+      "tool": "get_entity_summary",
+      "params": {
+        "summary": "0pb5Arj9l_g5eJtqVBozsQ"
+      },
+      "question": "Re-check of a published claim",
+      "purpose": "Re-check (recheck-2026-11-05-b)",
+      "result_summary": "Live, Kendal, 7 sent, 12 received",
+      "interpretation": "See investigation/notes/recheck-2026-11-05-b.md for the claim this call checked.",
+      "scorecard": "worked",
+      "entity_ids": [],
+      "step": "verify",
+      "case_id": "general"
+    },
+    {
+      "id": "n2611b35",
+      "timestamp": "2026-11-05T15:02:36Z",
+      "server": "sayari",
+      "tool": "get_entity_summary",
+      "params": {
+        "summary": "xbEAXBfl7YhUMRWA8PJqoQ"
+      },
+      "question": "Re-check of a published claim",
+      "purpose": "Re-check (recheck-2026-11-05-b)",
+      "result_summary": "Live, Kendal, 12 sent, 0 received",
+      "interpretation": "See investigation/notes/recheck-2026-11-05-b.md for the claim this call checked.",
+      "scorecard": "worked",
+      "entity_ids": [],
+      "step": "verify",
+      "case_id": "general"
+    },
+    {
+      "id": "n2611b36",
+      "timestamp": "2026-11-05T15:02:37Z",
+      "server": "sayari",
+      "tool": "search_trade_facets",
+      "params": {
+        "summary": "shipments, graphite, HS 380110, MAR to USA, from 2024-01-01"
+      },
+      "question": "Re-check of a published claim",
+      "purpose": "Re-check (recheck-2026-11-05-b)",
+      "result_summary": "3,086 rows, latest 2026-07-19, same top suppliers",
+      "interpretation": "See investigation/notes/recheck-2026-11-05-b.md for the claim this call checked.",
+      "scorecard": "worked",
+      "entity_ids": [],
+      "step": "verify",
+      "case_id": "general"
+    },
+    {
+      "id": "n2611b37",
+      "timestamp": "2026-11-05T15:02:38Z",
+      "server": "sayari",
+      "tool": "get_entity_summary",
+      "params": {
+        "summary": "NvC-a4BgmoxO63ubVyUiUQ"
+      },
+      "question": "Re-check of a published claim",
+      "purpose": "Re-check (recheck-2026-11-05-b)",
+      "result_summary": "Error: unexpected error",
+      "interpretation": "See investigation/notes/recheck-2026-11-05-b.md for the claim this call checked.",
+      "scorecard": "failed",
+      "entity_ids": [],
+      "step": "verify",
+      "case_id": "general"
+    },
+    {
+      "id": "n2611b38",
+      "timestamp": "2026-11-05T15:02:39Z",
+      "server": "sayari",
+      "tool": "find_beneficial_owners",
+      "params": {
+        "summary": "NvC-a4BgmoxO63ubVyUiUQ, limit 10"
+      },
+      "question": "Re-check of a published claim",
+      "purpose": "Re-check (recheck-2026-11-05-b)",
+      "result_summary": "Error: unexpected error",
+      "interpretation": "See investigation/notes/recheck-2026-11-05-b.md for the claim this call checked.",
+      "scorecard": "failed",
+      "entity_ids": [],
+      "step": "verify",
+      "case_id": "general"
+    },
+    {
+      "id": "n2611b39",
+      "timestamp": "2026-11-05T15:02:40Z",
+      "server": "sayari",
+      "tool": "find_beneficial_owners",
+      "params": {
+        "summary": "ffPlxyHu42G892jPO7tpbA, limit 10"
+      },
+      "question": "Re-check of a published claim",
+      "purpose": "Re-check (recheck-2026-11-05-b)",
+      "result_summary": "0 owners",
+      "interpretation": "See investigation/notes/recheck-2026-11-05-b.md for the claim this call checked.",
+      "scorecard": "worked",
+      "entity_ids": [],
+      "step": "verify",
+      "case_id": "general"
+    },
+    {
+      "id": "n2611b40",
+      "timestamp": "2026-11-05T15:02:41Z",
+      "server": "sayari",
+      "tool": "search_trade_facets",
+      "params": {
+        "summary": "shipments, \"TWIGG EXPLORATION\", departure MOZ"
+      },
+      "question": "Re-check of a published claim",
+      "purpose": "Re-check (recheck-2026-11-05-b)",
+      "result_summary": "190 rows, China 89, USA 7, Indonesia 3, latest 2026-03-01",
+      "interpretation": "See investigation/notes/recheck-2026-11-05-b.md for the claim this call checked.",
+      "scorecard": "worked",
+      "entity_ids": [],
+      "step": "verify",
+      "case_id": "general"
+    },
+    {
+      "id": "n2611b41",
+      "timestamp": "2026-11-05T15:02:42Z",
+      "server": "sayari",
+      "tool": "search_shipments",
+      "params": {
+        "summary": "\"SYRAH TECHNOLOGIES\", from 2026-01-01, limit 40, compact"
+      },
+      "question": "Re-check of a published claim",
+      "purpose": "Re-check (recheck-2026-11-05-b)",
+      "result_summary": "75 available, 40 read; Zhejiang Leap 8 Oct 2026; unnamed furnace parts and valves 2026; live record I7QWK7f0",
+      "interpretation": "See investigation/notes/recheck-2026-11-05-b.md for the claim this call checked.",
+      "scorecard": "worked",
+      "entity_ids": [],
+      "step": "verify",
+      "case_id": "general"
+    },
+    {
+      "id": "n2611b42",
+      "timestamp": "2026-11-05T15:02:43Z",
+      "server": "sayari",
+      "tool": "search_shipments",
+      "params": {
+        "summary": "\"SYRAH GLOBAL\", limit 30, compact"
+      },
+      "question": "Re-check of a published claim",
+      "purpose": "Re-check (recheck-2026-11-05-b)",
+      "result_summary": "353 available, 30 read; 4 rows to BTR Indonesia Jan to Apr 2026; RHI Mexico to Jul 2026; India refractory buyers",
+      "interpretation": "See investigation/notes/recheck-2026-11-05-b.md for the claim this call checked.",
+      "scorecard": "worked",
+      "entity_ids": [],
+      "step": "verify",
+      "case_id": "general"
+    },
+    {
+      "id": "n2611b43",
+      "timestamp": "2026-11-05T15:02:44Z",
+      "server": "sayari",
+      "tool": "search_buyers",
+      "params": {
+        "summary": "\"PT Indonesia BTR New Energy\", arrival USA, limit 20, compact"
+      },
+      "question": "Re-check of a published claim",
+      "purpose": "Re-check (recheck-2026-11-05-b)",
+      "result_summary": "14 buyers: GM record 49, Marshall 11, Larpen 7, NextStar 6, StarPlus 5, FNS Inc 4, FNS, Inc. 3, Aminco 3, Spring Hill 2, Battery Park 2, SK Battery America 1, FNS NY 1, HSBMA 1, Tesla 1",
+      "interpretation": "See investigation/notes/recheck-2026-11-05-b.md for the claim this call checked.",
+      "scorecard": "worked",
+      "entity_ids": [],
+      "step": "verify",
+      "case_id": "general"
+    },
+    {
+      "id": "n2611b44",
+      "timestamp": "2026-11-05T15:02:45Z",
+      "server": "sayari",
+      "tool": "get_entity_summary",
+      "params": {
+        "summary": "I7QWK7f0HxLx924w9i0iDg"
+      },
+      "question": "Re-check of a published claim",
+      "purpose": "Re-check (recheck-2026-11-05-b)",
+      "result_summary": "Syrah Technologies LLC, Louisiana ID 42632807Q, 1 sent, 73 received, chinese_soe_adjacent flag",
+      "interpretation": "See investigation/notes/recheck-2026-11-05-b.md for the claim this call checked.",
+      "scorecard": "worked",
+      "entity_ids": [],
+      "step": "verify",
+      "case_id": "general"
+    },
+    {
+      "id": "n2611b45",
+      "timestamp": "2026-11-05T15:02:46Z",
+      "server": "sayari",
+      "tool": "find_beneficial_owners",
+      "params": {
+        "summary": "I7QWK7f0HxLx924w9i0iDg, limit 10"
+      },
+      "question": "Re-check of a published claim",
+      "purpose": "Re-check (recheck-2026-11-05-b)",
+      "result_summary": "1 owner: Syrah US Holdings Pty Utd (shareholder link)",
+      "interpretation": "See investigation/notes/recheck-2026-11-05-b.md for the claim this call checked.",
+      "scorecard": "worked",
+      "entity_ids": [],
+      "step": "verify",
+      "case_id": "general"
+    },
+    {
+      "id": "n2611b46",
+      "timestamp": "2026-11-05T15:02:47Z",
+      "server": "sayari",
+      "tool": "get_entity_summary",
+      "params": {
+        "summary": "CIaftd6cYu0w_6K81qTGvg"
+      },
+      "question": "Re-check of a published claim",
+      "purpose": "Re-check (recheck-2026-11-05-b)",
+      "result_summary": "New fragment, Kendal, USA imports only, 5 sent",
+      "interpretation": "See investigation/notes/recheck-2026-11-05-b.md for the claim this call checked.",
+      "scorecard": "worked",
+      "entity_ids": [],
+      "step": "verify",
+      "case_id": "general"
+    },
+    {
+      "id": "n2611b47",
+      "timestamp": "2026-11-05T15:02:48Z",
+      "server": "sayari",
+      "tool": "search_trade_facets",
+      "params": {
+        "summary": "shipments, \"BlueOval Battery Michigan\", arrival USA"
+      },
+      "question": "Re-check of a published claim",
+      "purpose": "Re-check (recheck-2026-11-05-b)",
+      "result_summary": "176 rows, latest 2026-10-18; HS 283510 40, 380110 15, 741011 14, 850790 9; CHN 108, SGP 35",
+      "interpretation": "See investigation/notes/recheck-2026-11-05-b.md for the claim this call checked.",
+      "scorecard": "worked",
+      "entity_ids": [],
+      "step": "verify",
+      "case_id": "general"
+    },
+    {
+      "id": "n2611b48",
+      "timestamp": "2026-11-05T15:02:49Z",
+      "server": "sayari",
+      "tool": "search_shipments",
+      "params": {
+        "summary": "\"BlueOval SK\", HS 3801, arrival USA, from 2025-11-14, compact"
+      },
+      "question": "Re-check of a published claim",
+      "purpose": "Re-check (recheck-2026-11-05-b)",
+      "result_summary": "57 rows, date filter ignored; Pactra 44, Fan Cheng 4, BTR Sales 1, Toptec 2, SK On Hungary 4; nothing new",
+      "interpretation": "See investigation/notes/recheck-2026-11-05-b.md for the claim this call checked.",
+      "scorecard": "worked",
+      "entity_ids": [],
+      "step": "verify",
+      "case_id": "general"
+    },
+    {
+      "id": "n2611b49",
+      "timestamp": "2026-11-05T15:02:50Z",
+      "server": "sayari",
+      "tool": "search_shipments",
+      "params": {
+        "summary": "\"BTR New Material Group Sales\", arrival USA, from 2026-07-01, limit 15, compact"
+      },
+      "question": "Re-check of a published claim",
+      "purpose": "Re-check (recheck-2026-11-05-b)",
+      "result_summary": "654 available, 15 read; GM LLC 23 Sep 2026; LG Energy Solution Arizona 12 Sep 2026; BlueOval SK rows Oct to 13 Nov 2025 with no HS code",
+      "interpretation": "See investigation/notes/recheck-2026-11-05-b.md for the claim this call checked.",
+      "scorecard": "worked",
+      "entity_ids": [],
+      "step": "verify",
+      "case_id": "general"
+    },
+    {
+      "id": "n2611b50",
+      "timestamp": "2026-11-05T15:02:51Z",
+      "server": "sayari",
+      "tool": "find_shortest_path",
+      "params": {
+        "summary": "Ford vR1xMKUj to Z57YvgOY"
+      },
+      "question": "Re-check of a published claim",
+      "purpose": "Re-check (recheck-2026-11-05-b)",
+      "result_summary": "No path found",
+      "interpretation": "See investigation/notes/recheck-2026-11-05-b.md for the claim this call checked.",
+      "scorecard": "worked",
+      "entity_ids": [],
+      "step": "verify",
+      "case_id": "general"
+    },
+    {
+      "id": "n2611b51",
+      "timestamp": "2026-11-05T15:02:52Z",
+      "server": "sayari",
+      "tool": "find_shortest_path",
+      "params": {
+        "summary": "BlueOval SK RPYYIgKH to 1CjF5vzV"
+      },
+      "question": "Re-check of a published claim",
+      "purpose": "Re-check (recheck-2026-11-05-b)",
+      "result_summary": "Error: Sayari API error (HTTP 408)",
+      "interpretation": "See investigation/notes/recheck-2026-11-05-b.md for the claim this call checked.",
+      "scorecard": "failed",
+      "entity_ids": [],
+      "step": "verify",
+      "case_id": "general"
+    },
+    {
+      "id": "n2611b52",
+      "timestamp": "2026-11-05T15:02:53Z",
+      "server": "sayari",
+      "tool": "search_shipments",
+      "params": {
+        "summary": "\"Ford Motor Company\", HS 850760, arrival USA, from 2026-08-01, limit 30, compact"
+      },
+      "question": "Re-check of a published claim",
+      "purpose": "Re-check (recheck-2026-11-05-b)",
+      "result_summary": "494 available, 30 read; SK On 8, LG Energy Solution 2, CATL rows on Mjp9Bptr; nothing new after 6 Aug",
+      "interpretation": "See investigation/notes/recheck-2026-11-05-b.md for the claim this call checked.",
+      "scorecard": "worked",
+      "entity_ids": [],
+      "step": "verify",
+      "case_id": "general"
+    },
+    {
+      "id": "n2611b53",
+      "timestamp": "2026-11-05T15:02:54Z",
+      "server": "sayari",
+      "tool": "search_entities",
+      "params": {
+        "summary": "\"Ford Energy Battery\", limit 5, compact"
+      },
+      "question": "Re-check of a published claim",
+      "purpose": "Re-check (recheck-2026-11-05-b)",
+      "result_summary": "0 results",
+      "interpretation": "See investigation/notes/recheck-2026-11-05-b.md for the claim this call checked.",
+      "scorecard": "worked",
+      "entity_ids": [],
+      "step": "verify",
+      "case_id": "general"
+    },
+    {
+      "id": "n2611b54",
+      "timestamp": "2026-11-05T15:02:55Z",
+      "server": "sayari",
+      "tool": "search_entities",
+      "params": {
+        "summary": "\"SK On Tennessee\", limit 5, compact"
+      },
+      "question": "Re-check of a published claim",
+      "purpose": "Re-check (recheck-2026-11-05-b)",
+      "result_summary": "2 records: BlueOval SK and SK On Tennessee QrQjyFVo",
+      "interpretation": "See investigation/notes/recheck-2026-11-05-b.md for the claim this call checked.",
+      "scorecard": "worked",
+      "entity_ids": [],
+      "step": "verify",
+      "case_id": "general"
+    },
+    {
+      "id": "n2611b55",
+      "timestamp": "2026-11-05T15:02:56Z",
+      "server": "sayari",
+      "tool": "search_shipments",
+      "params": {
+        "summary": "\"PT Indonesia BTR New Energy\", SGP to USA, from 2025-12-01, limit 70, export"
+      },
+      "question": "Re-check of a published claim",
+      "purpose": "Re-check (recheck-2026-11-05-b)",
+      "result_summary": "61 rows; Tesla 21 Jan 2026; FNS Inc 16 Apr 2026; NextStar 5 rows Apr 2025; rest as published",
+      "interpretation": "See investigation/notes/recheck-2026-11-05-b.md for the claim this call checked.",
+      "scorecard": "worked",
+      "entity_ids": [],
+      "step": "verify",
+      "case_id": "general"
+    },
+    {
+      "id": "n2611b56",
+      "timestamp": "2026-11-05T15:02:57Z",
+      "server": "sayari",
+      "tool": "search_suppliers",
+      "params": {
+        "summary": "\"BlueOval Battery Michigan\", HS 3801, arrival USA, limit 10, compact"
+      },
+      "question": "Re-check of a published claim",
+      "purpose": "Re-check (recheck-2026-11-05-b)",
+      "result_summary": "1 supplier: Lv60, 12 rows",
+      "interpretation": "See investigation/notes/recheck-2026-11-05-b.md for the claim this call checked.",
+      "scorecard": "worked",
+      "entity_ids": [],
+      "step": "verify",
+      "case_id": "general"
+    },
+    {
+      "id": "n2611b57",
+      "timestamp": "2026-11-05T15:02:58Z",
+      "server": "sayari",
+      "tool": "search_shipments",
+      "params": {
+        "summary": "\"BlueOval Battery Michigan\", HS 8507, arrival USA, limit 15, compact"
+      },
+      "question": "Re-check of a published claim",
+      "purpose": "Re-check (recheck-2026-11-05-b)",
+      "result_summary": "9 rows from Everwin Precision (Vietnam), 28 Jun to 2 Sep 2026, HS 850790",
+      "interpretation": "See investigation/notes/recheck-2026-11-05-b.md for the claim this call checked.",
+      "scorecard": "worked",
+      "entity_ids": [],
+      "step": "verify",
+      "case_id": "general"
+    },
+    {
+      "id": "n2611b58",
+      "timestamp": "2026-11-05T15:02:59Z",
+      "server": "sayari",
+      "tool": "search_trade_facets",
+      "params": {
+        "summary": "shipments, \"Ford Motor Company\", HS 850760, arrival USA, from 2024-01-01"
+      },
+      "question": "Re-check of a published claim",
+      "purpose": "Re-check (recheck-2026-11-05-b)",
+      "result_summary": "494 rows; top supplier hVWvdWYN 341; Hknigg 8, Mjp9 7; latest 2026-08-26",
+      "interpretation": "See investigation/notes/recheck-2026-11-05-b.md for the claim this call checked.",
+      "scorecard": "worked",
+      "entity_ids": [],
+      "step": "verify",
+      "case_id": "general"
+    },
+    {
+      "id": "n2611b59",
+      "timestamp": "2026-11-05T15:03:00Z",
+      "server": "sayari",
+      "tool": "find_shortest_path",
+      "params": {
+        "summary": "BlueOval SK RPYYIgKH to Z57YvgOY"
+      },
+      "question": "Re-check of a published claim",
+      "purpose": "Re-check (recheck-2026-11-05-b)",
+      "result_summary": "Error: Sayari API error (HTTP 408)",
+      "interpretation": "See investigation/notes/recheck-2026-11-05-b.md for the claim this call checked.",
+      "scorecard": "failed",
+      "entity_ids": [],
+      "step": "verify",
+      "case_id": "general"
+    },
+    {
+      "id": "n2611b60",
+      "timestamp": "2026-11-05T15:03:01Z",
+      "server": "sayari",
+      "tool": "search_shipments",
+      "params": {
+        "summary": "\"SYRAH GLOBAL\", arrival USA, limit 15, compact"
+      },
+      "question": "Re-check of a published claim",
+      "purpose": "Re-check (recheck-2026-11-05-b)",
+      "result_summary": "16 available, 15 read; Wogen Pacific 8 Jan 2026; ERG Madagascar 25 Aug 2025; Syrah Global as receiver",
+      "interpretation": "See investigation/notes/recheck-2026-11-05-b.md for the claim this call checked.",
+      "scorecard": "worked",
+      "entity_ids": [],
+      "step": "verify",
+      "case_id": "general"
+    },
+    {
+      "id": "n2611b61",
+      "timestamp": "2026-11-05T15:03:02Z",
+      "server": "sayari",
+      "tool": "traverse_network",
+      "params": {
+        "summary": "ALeXPymJ, receives_from, depth 1, limit 30, compact"
+      },
+      "question": "Re-check of a published claim",
+      "purpose": "Re-check (recheck-2026-11-05-b)",
+      "result_summary": "15 suppliers, mostly Chinese, plus Lv60, Everwin (Vietnam) and Itochu Plastics",
+      "interpretation": "See investigation/notes/recheck-2026-11-05-b.md for the claim this call checked.",
+      "scorecard": "worked",
+      "entity_ids": [],
+      "step": "verify",
+      "case_id": "general"
+    },
+    {
+      "id": "n2611b62",
+      "timestamp": "2026-11-05T15:03:03Z",
+      "server": "sayari",
+      "tool": "search_shipments",
+      "params": {
+        "summary": "\"BlueOval Battery Michigan\", HS 283510, arrival USA, limit 40, compact"
+      },
+      "question": "Re-check of a published claim",
+      "purpose": "Re-check (recheck-2026-11-05-b)",
+      "result_summary": "40 rows of lithium iron phosphate, 16 Mar to 9 Oct 2026, supplier blank, loaded CHN, SGP, MYS",
+      "interpretation": "See investigation/notes/recheck-2026-11-05-b.md for the claim this call checked.",
+      "scorecard": "worked",
+      "entity_ids": [],
+      "step": "verify",
+      "case_id": "general"
+    },
+    {
+      "id": "n2611b63",
+      "timestamp": "2026-11-05T15:03:04Z",
+      "server": "tavily",
+      "tool": "tavily_search",
+      "params": {
+        "summary": "贝特瑞 2026年三季报 第三季度 净利润, from 2026-10-01"
+      },
+      "question": "Re-check of a published claim",
+      "purpose": "Re-check (recheck-2026-11-05-b)",
+      "result_summary": "BTR Q3 report 29 Oct: revenue RMB 17.318bn, net 611m (one outlet says 950m); holders 42.15% and 23.45%; no Ford or Morocco mention",
+      "interpretation": "See investigation/notes/recheck-2026-11-05-b.md for the claim this call checked.",
+      "scorecard": "worked",
+      "entity_ids": [],
+      "step": "verify",
+      "case_id": "general"
+    },
+    {
+      "id": "n2611b64",
+      "timestamp": "2026-11-05T15:03:05Z",
+      "server": "tavily",
+      "tool": "tavily_search",
+      "params": {
+        "summary": "Ford BTR Morocco graphite prepayment $120 million, from 2026-08-01"
+      },
+      "question": "Re-check of a published claim",
+      "purpose": "Re-check (recheck-2026-11-05-b)",
+      "result_summary": "LinkedIn posts by one analyst repeat US$120m and US$108m and a guarantee letter; no Ford statement; industries.ma article on cathode unit",
+      "interpretation": "See investigation/notes/recheck-2026-11-05-b.md for the claim this call checked.",
+      "scorecard": "worked",
+      "entity_ids": [],
+      "step": "verify",
+      "case_id": "general"
+    },
+    {
+      "id": "n2611b65",
+      "timestamp": "2026-11-05T15:03:06Z",
+      "server": "tavily",
+      "tool": "tavily_extract",
+      "params": {
+        "summary": "en.industries.ma BTR MAD 303.61 million article"
+      },
+      "question": "Re-check of a published claim",
+      "purpose": "Re-check (recheck-2026-11-05-b)",
+      "result_summary": "Cathode subsidiary MAD 303.61m capital, nearly MAD 910m construction in progress, 50,000 t plant, 28 Aug announcement",
+      "interpretation": "See investigation/notes/recheck-2026-11-05-b.md for the claim this call checked.",
+      "scorecard": "worked",
+      "entity_ids": [],
+      "step": "verify",
+      "case_id": "general"
+    },
+    {
+      "id": "n2611b66",
+      "timestamp": "2026-11-05T15:03:07Z",
+      "server": "tavily",
+      "tool": "tavily_search",
+      "params": {
+        "summary": "BTR Tanger Tech usine anode production démarrage octobre 2026, from 2026-09-15"
+      },
+      "question": "Re-check of a published claim",
+      "purpose": "Re-check (recheck-2026-11-05-b)",
+      "result_summary": "Job ads Oct 2026 for BTR Mediterranean; no production start reported",
+      "interpretation": "See investigation/notes/recheck-2026-11-05-b.md for the claim this call checked.",
+      "scorecard": "worked",
+      "entity_ids": [],
+      "step": "verify",
+      "case_id": "general"
+    },
+    {
+      "id": "n2611b67",
+      "timestamp": "2026-11-05T15:03:08Z",
+      "server": "tavily",
+      "tool": "tavily_search",
+      "params": {
+        "summary": "Syrah quarterly Sept 2026 Vidalia Tesla Balama, from 2026-10-01"
+      },
+      "question": "Re-check of a published claim",
+      "purpose": "Re-check (recheck-2026-11-05-b)",
+      "result_summary": "Syrah post and Kalkine: ramp-up began Sep 2026, first sales targeted Dec quarter, 19 kt Balama, US$76m cash",
+      "interpretation": "See investigation/notes/recheck-2026-11-05-b.md for the claim this call checked.",
+      "scorecard": "worked",
+      "entity_ids": [],
+      "step": "verify",
+      "case_id": "general"
+    },
+    {
+      "id": "n2611b68",
+      "timestamp": "2026-11-05T15:03:09Z",
+      "server": "tavily",
+      "tool": "tavily_extract",
+      "params": {
+        "summary": "kalkine.com.au Syrah Vidalia article; seekingalpha Q3 2026 transcript"
+      },
+      "question": "Re-check of a published claim",
+      "purpose": "Re-check (recheck-2026-11-05-b)",
+      "result_summary": "More than 550 t made; POSCO Future M sales; breakbulk to Indonesia; no product to Vidalia; Tesla and Lucid offtakes",
+      "interpretation": "See investigation/notes/recheck-2026-11-05-b.md for the claim this call checked.",
+      "scorecard": "worked",
+      "entity_ids": [],
+      "step": "verify",
+      "case_id": "general"
+    },
+    {
+      "id": "n2611b69",
+      "timestamp": "2026-11-05T15:03:10Z",
+      "server": "tavily",
+      "tool": "tavily_search",
+      "params": {
+        "summary": "Syrah Vidalia Tesla qualification offtake breakbulk Indonesia POSCO, from 2026-10-15"
+      },
+      "question": "Re-check of a published claim",
+      "purpose": "Re-check (recheck-2026-11-05-b)",
+      "result_summary": "Transcript: final qualification expected Dec quarter; Tesla the largest offtaker; POSCO sales confirmed",
+      "interpretation": "See investigation/notes/recheck-2026-11-05-b.md for the claim this call checked.",
+      "scorecard": "worked",
+      "entity_ids": [],
+      "step": "verify",
+      "case_id": "general"
+    },
+    {
+      "id": "n2611b70",
+      "timestamp": "2026-11-05T15:03:11Z",
+      "server": "tavily",
+      "tool": "tavily_search",
+      "params": {
+        "summary": "Ford BlueOval Battery Park Michigan LFP production graphite, from 2026-10-01"
+      },
+      "question": "Re-check of a published claim",
+      "purpose": "Re-check (recheck-2026-11-05-b)",
+      "result_summary": "Ford careers pages only; nothing on graphite supply",
+      "interpretation": "See investigation/notes/recheck-2026-11-05-b.md for the claim this call checked.",
+      "scorecard": "worked",
+      "entity_ids": [],
+      "step": "verify",
+      "case_id": "general"
+    },
+    {
+      "id": "n2611b71",
+      "timestamp": "2026-11-05T15:03:12Z",
+      "server": "tavily",
+      "tool": "tavily_search",
+      "params": {
+        "summary": "Ford Form 10-Q quarter ended September 30 2026 prepayments, from 2026-10-15"
+      },
+      "question": "Re-check of a published claim",
+      "purpose": "Re-check (recheck-2026-11-05-b)",
+      "result_summary": "Ford Q3 releases dated 28 Oct listed; 10-Q text not returned",
+      "interpretation": "See investigation/notes/recheck-2026-11-05-b.md for the claim this call checked.",
+      "scorecard": "worked",
+      "entity_ids": [],
+      "step": "verify",
+      "case_id": "general"
+    },
+    {
+      "id": "n2611b72",
+      "timestamp": "2026-11-05T15:03:13Z",
+      "server": "tavily",
+      "tool": "tavily_search",
+      "params": {
+        "summary": "贝特瑞 印尼 负极 基地 产能 美国 客户 福特 摩洛哥 投产, from 2026-09-01"
+      },
+      "question": "Re-check of a published claim",
+      "purpose": "Re-check (recheck-2026-11-05-b)",
+      "result_summary": "Nothing relevant; spam results",
+      "interpretation": "See investigation/notes/recheck-2026-11-05-b.md for the claim this call checked.",
+      "scorecard": "worked",
+      "entity_ids": [],
+      "step": "verify",
+      "case_id": "general"
+    },
+    {
+      "id": "n2611b73",
+      "timestamp": "2026-11-05T15:03:14Z",
+      "server": "tavily",
+      "tool": "tavily_search",
+      "params": {
+        "summary": "Syrah Balama Mozambique 15% state stake Twigg DFC waiver, from 2026-06-01"
+      },
+      "question": "Re-check of a published claim",
+      "purpose": "Re-check (recheck-2026-11-05-b)",
+      "result_summary": "DFC temporarily waived defaults, US$15m to Twigg before 31 Oct, total US$83m; nothing new on state stake",
+      "interpretation": "See investigation/notes/recheck-2026-11-05-b.md for the claim this call checked.",
+      "scorecard": "worked",
+      "entity_ids": [],
+      "step": "verify",
+      "case_id": "general"
+    },
+    {
+      "id": "n2611b74",
+      "timestamp": "2026-11-05T15:03:15Z",
+      "server": "tavily",
+      "tool": "tavily_extract",
+      "params": {
+        "summary": "kalkine.com.au Syrah DFC US$15m article"
+      },
+      "question": "Re-check of a published claim",
+      "purpose": "Re-check (recheck-2026-11-05-b)",
+      "result_summary": "DFC warrants would reach 1.0% of Syrah; may appoint a director subject to FIRB; further funds not assured",
+      "interpretation": "See investigation/notes/recheck-2026-11-05-b.md for the claim this call checked.",
+      "scorecard": "worked",
+      "entity_ids": [],
+      "step": "verify",
+      "case_id": "general"
+    },
+    {
+      "id": "n2611b75",
+      "timestamp": "2026-11-05T15:03:16Z",
+      "server": "sayari",
+      "tool": "get_entity_summary",
+      "params": {
+        "summary": "QrQjyFVoqfUjWa-yZtgcRA"
+      },
+      "question": "Re-check of a published claim",
+      "purpose": "Re-check (recheck-2026-11-05-b)",
+      "result_summary": "SK On Tennessee, Stanton TN, 2 received",
+      "interpretation": "See investigation/notes/recheck-2026-11-05-b.md for the claim this call checked.",
+      "scorecard": "worked",
+      "entity_ids": [],
+      "step": "verify",
+      "case_id": "general"
+    },
+    {
+      "id": "n2611b76",
+      "timestamp": "2026-11-05T15:03:17Z",
+      "server": "tavily",
+      "tool": "tavily_search",
+      "params": {
+        "summary": "HSBMA LLC Hyundai SK On joint venture Bartow County"
+      },
+      "question": "Re-check of a published claim",
+      "purpose": "Re-check (recheck-2026-11-05-b)",
+      "result_summary": "HSBMA website: Hyundai Motor Group and SK On venture at 5059 Hwy 411, Kingston GA; LinkedIn page says 50/50",
+      "interpretation": "See investigation/notes/recheck-2026-11-05-b.md for the claim this call checked.",
+      "scorecard": "worked",
+      "entity_ids": [],
+      "step": "verify",
+      "case_id": "general"
+    },
+    {
+      "id": "n2611b77",
+      "timestamp": "2026-11-05T15:03:18Z",
+      "server": "sayari",
+      "tool": "find_beneficial_owners",
+      "params": {
+        "summary": "RPYYIgKHs0f-kGKGBlE9jw, limit 10"
+      },
+      "question": "Re-check of a published claim",
+      "purpose": "Re-check (recheck-2026-11-05-b)",
+      "result_summary": "0 owners",
+      "interpretation": "See investigation/notes/recheck-2026-11-05-b.md for the claim this call checked.",
+      "scorecard": "worked",
+      "entity_ids": [],
+      "step": "verify",
+      "case_id": "general"
+    },
+    {
+      "id": "n2611c01",
+      "timestamp": "2026-11-05T15:03:19Z",
+      "server": "sayari",
+      "tool": "search_entities",
+      "params": {
+        "summary": "query \"Zhongke\" Oman Sohar, limit 10"
+      },
+      "question": "Re-check of a published claim",
+      "purpose": "Re-check (recheck-2026-11-05-c)",
+      "result_summary": "0 hits",
+      "interpretation": "See investigation/notes/recheck-2026-11-05-c.md for the claim this call checked.",
+      "scorecard": "worked",
+      "entity_ids": [],
+      "step": "verify",
+      "case_id": "general"
+    },
+    {
+      "id": "n2611c02",
+      "timestamp": "2026-11-05T15:03:20Z",
+      "server": "sayari",
+      "tool": "search_entities",
+      "params": {
+        "summary": "query \"Zhongke Xingcheng Sohar\", limit 10"
+      },
+      "question": "Re-check of a published claim",
+      "purpose": "Re-check (recheck-2026-11-05-c)",
+      "result_summary": "0 hits",
+      "interpretation": "See investigation/notes/recheck-2026-11-05-c.md for the claim this call checked.",
+      "scorecard": "worked",
+      "entity_ids": [],
+      "step": "verify",
+      "case_id": "general"
+    },
+    {
+      "id": "n2611c03",
+      "timestamp": "2026-11-05T15:03:21Z",
+      "server": "sayari",
+      "tool": "search_entities",
+      "params": {
+        "summary": "query \"中科星城苏哈尔\", limit 10"
+      },
+      "question": "Re-check of a published claim",
+      "purpose": "Re-check (recheck-2026-11-05-c)",
+      "result_summary": "0 hits",
+      "interpretation": "See investigation/notes/recheck-2026-11-05-c.md for the claim this call checked.",
+      "scorecard": "worked",
+      "entity_ids": [],
+      "step": "verify",
+      "case_id": "general"
+    },
+    {
+      "id": "n2611c04",
+      "timestamp": "2026-11-05T15:03:22Z",
+      "server": "sayari",
+      "tool": "get_entity_summary",
+      "params": {
+        "summary": "aWkEICLnf2fzW78geuH5Ag"
+      },
+      "question": "Re-check of a published claim",
+      "purpose": "Re-check (recheck-2026-11-05-c)",
+      "result_summary": "Zhongke Shinzoom (HK) Holdings, active 28 Jul 2026, registered 8 Nov 2024, trade 0 / 0",
+      "interpretation": "See investigation/notes/recheck-2026-11-05-c.md for the claim this call checked.",
+      "scorecard": "worked",
+      "entity_ids": [],
+      "step": "verify",
+      "case_id": "general"
+    },
+    {
+      "id": "n2611c05",
+      "timestamp": "2026-11-05T15:03:23Z",
+      "server": "sayari",
+      "tool": "find_beneficial_owners",
+      "params": {
+        "summary": "aWkEICLnf2fzW78geuH5Ag, limit 10"
+      },
+      "question": "Re-check of a published claim",
+      "purpose": "Re-check (recheck-2026-11-05-c)",
+      "result_summary": "0 owners",
+      "interpretation": "See investigation/notes/recheck-2026-11-05-c.md for the claim this call checked.",
+      "scorecard": "worked",
+      "entity_ids": [],
+      "step": "verify",
+      "case_id": "general"
+    },
+    {
+      "id": "n2611c06",
+      "timestamp": "2026-11-05T15:03:24Z",
+      "server": "sayari",
+      "tool": "search_trade_facets",
+      "params": {
+        "summary": "shipments, \"ZHONGKE SHINZOOM\", date_from 2026-04-01, no country filter"
+      },
+      "question": "Re-check of a published claim",
+      "purpose": "Re-check (recheck-2026-11-05-c)",
+      "result_summary": "62 rows, MYS 32, KOR 20, USA 9, SVN 1; latest 7 Apr 2026; date filter ignored",
+      "interpretation": "See investigation/notes/recheck-2026-11-05-c.md for the claim this call checked.",
+      "scorecard": "worked",
+      "entity_ids": [],
+      "step": "verify",
+      "case_id": "general"
+    },
+    {
+      "id": "n2611c07",
+      "timestamp": "2026-11-05T15:03:25Z",
+      "server": "sayari",
+      "tool": "search_trade_facets",
+      "params": {
+        "summary": "shipments, Sohar graphite anode, arrival OMN, from 2026-01-01"
+      },
+      "question": "Re-check of a published claim",
+      "purpose": "Re-check (recheck-2026-11-05-c)",
+      "result_summary": "0 rows",
+      "interpretation": "See investigation/notes/recheck-2026-11-05-c.md for the claim this call checked.",
+      "scorecard": "worked",
+      "entity_ids": [],
+      "step": "verify",
+      "case_id": "general"
+    },
+    {
+      "id": "n2611c08",
+      "timestamp": "2026-11-05T15:03:26Z",
+      "server": "sayari",
+      "tool": "search_shipments",
+      "params": {
+        "summary": "\"ZHONGKE\", arrival OMN, limit 10"
+      },
+      "question": "Re-check of a published claim",
+      "purpose": "Re-check (recheck-2026-11-05-c)",
+      "result_summary": "0 rows",
+      "interpretation": "See investigation/notes/recheck-2026-11-05-c.md for the claim this call checked.",
+      "scorecard": "worked",
+      "entity_ids": [],
+      "step": "verify",
+      "case_id": "general"
+    },
+    {
+      "id": "n2611c09",
+      "timestamp": "2026-11-05T15:03:27Z",
+      "server": "sayari",
+      "tool": "get_entity_summary",
+      "params": {
+        "summary": "WG1hrSwGRdoLMIt997Z5-w"
+      },
+      "question": "Re-check of a published claim",
+      "purpose": "Re-check (recheck-2026-11-05-c)",
+      "result_summary": "Zichen Malaysia live, registered 23 Sep 2025, trade 0 / 0",
+      "interpretation": "See investigation/notes/recheck-2026-11-05-c.md for the claim this call checked.",
+      "scorecard": "worked",
+      "entity_ids": [],
+      "step": "verify",
+      "case_id": "general"
+    },
+    {
+      "id": "n2611c10",
+      "timestamp": "2026-11-05T15:03:28Z",
+      "server": "sayari",
+      "tool": "find_beneficial_owners",
+      "params": {
+        "summary": "WG1hrSwGRdoLMIt997Z5-w, limit 10"
+      },
+      "question": "Re-check of a published claim",
+      "purpose": "Re-check (recheck-2026-11-05-c)",
+      "result_summary": "50 paths (saved, parsed): Putailai Singapore, then Shanghai Putailai, then listed-company holders; no new company in the chain",
+      "interpretation": "See investigation/notes/recheck-2026-11-05-c.md for the claim this call checked.",
+      "scorecard": "worked",
+      "entity_ids": [],
+      "step": "verify",
+      "case_id": "general"
+    },
+    {
+      "id": "n2611c11",
+      "timestamp": "2026-11-05T15:03:29Z",
+      "server": "sayari",
+      "tool": "search_entities",
+      "params": {
+        "summary": "query \"Zichen Malaysia\", limit 10"
+      },
+      "question": "Re-check of a published claim",
+      "purpose": "Re-check (recheck-2026-11-05-c)",
+      "result_summary": "1 record, the same ID",
+      "interpretation": "See investigation/notes/recheck-2026-11-05-c.md for the claim this call checked.",
+      "scorecard": "worked",
+      "entity_ids": [],
+      "step": "verify",
+      "case_id": "general"
+    },
+    {
+      "id": "n2611c12",
+      "timestamp": "2026-11-05T15:03:30Z",
+      "server": "sayari",
+      "tool": "search_shipments",
+      "params": {
+        "summary": "\"ZICHEN MALAYSIA\", limit 10"
+      },
+      "question": "Re-check of a published claim",
+      "purpose": "Re-check (recheck-2026-11-05-c)",
+      "result_summary": "0 rows",
+      "interpretation": "See investigation/notes/recheck-2026-11-05-c.md for the claim this call checked.",
+      "scorecard": "worked",
+      "entity_ids": [],
+      "step": "verify",
+      "case_id": "general"
+    },
+    {
+      "id": "n2611c13",
+      "timestamp": "2026-11-05T15:03:31Z",
+      "server": "sayari",
+      "tool": "search_shipments",
+      "params": {
+        "summary": "\"ZICHEN\", arrival MYS, from 2026-01-01, limit 10"
+      },
+      "question": "Re-check of a published claim",
+      "purpose": "Re-check (recheck-2026-11-05-c)",
+      "result_summary": "52 rows in 7 pairs (saved, parsed); 37 are Jiangxi Zichen Technology to Samsung SDI, HS 3801, the rest unrelated",
+      "interpretation": "See investigation/notes/recheck-2026-11-05-c.md for the claim this call checked.",
+      "scorecard": "worked",
+      "entity_ids": [],
+      "step": "verify",
+      "case_id": "general"
+    },
+    {
+      "id": "n2611c14",
+      "timestamp": "2026-11-05T15:03:32Z",
+      "server": "sayari",
+      "tool": "get_entity_profile",
+      "params": {
+        "summary": "WG1hrSwGRdoLMIt997Z5-w, relationships 30"
+      },
+      "question": "Re-check of a published claim",
+      "purpose": "Re-check (recheck-2026-11-05-c)",
+      "result_summary": "Putailai Singapore 100%, person-typed duplicate marked former, 3 directors, 1 secretary, trade 0 / 0",
+      "interpretation": "See investigation/notes/recheck-2026-11-05-c.md for the claim this call checked.",
+      "scorecard": "worked",
+      "entity_ids": [],
+      "step": "verify",
+      "case_id": "general"
+    },
+    {
+      "id": "n2611c15",
+      "timestamp": "2026-11-05T15:03:33Z",
+      "server": "sayari",
+      "tool": "search_trade_facets",
+      "params": {
+        "summary": "shipments, \"PUTAILAI\", arrival MYS"
+      },
+      "question": "Re-check of a published claim",
+      "purpose": "Re-check (recheck-2026-11-05-c)",
+      "result_summary": "0 rows",
+      "interpretation": "See investigation/notes/recheck-2026-11-05-c.md for the claim this call checked.",
+      "scorecard": "worked",
+      "entity_ids": [],
+      "step": "verify",
+      "case_id": "general"
+    },
+    {
+      "id": "n2611c16",
+      "timestamp": "2026-11-05T15:03:34Z",
+      "server": "sayari",
+      "tool": "search_trade_facets",
+      "params": {
+        "summary": "shipments, Gurun Kedah anode needle coke, arrival MYS, from 2026-01-01"
+      },
+      "question": "Re-check of a published claim",
+      "purpose": "Re-check (recheck-2026-11-05-c)",
+      "result_summary": "0 rows",
+      "interpretation": "See investigation/notes/recheck-2026-11-05-c.md for the claim this call checked.",
+      "scorecard": "worked",
+      "entity_ids": [],
+      "step": "verify",
+      "case_id": "general"
+    },
+    {
+      "id": "n2611c17",
+      "timestamp": "2026-11-05T15:03:35Z",
+      "server": "sayari",
+      "tool": "get_entity_profile",
+      "params": {
+        "summary": "_WCNtC_iMCzef8u8s0uKyQ, relationships 60"
+      },
+      "question": "Re-check of a published claim",
+      "purpose": "Re-check (recheck-2026-11-05-c)",
+      "result_summary": "EVE Malaysia live; sent 140, received 3,602; 40 ships_to, 336 receives_from in summary",
+      "interpretation": "See investigation/notes/recheck-2026-11-05-c.md for the claim this call checked.",
+      "scorecard": "worked",
+      "entity_ids": [],
+      "step": "verify",
+      "case_id": "general"
+    },
+    {
+      "id": "n2611c18",
+      "timestamp": "2026-11-05T15:03:36Z",
+      "server": "sayari",
+      "tool": "find_beneficial_owners",
+      "params": {
+        "summary": "_WCNtC_iMCzef8u8s0uKyQ, depth 2, limit 10"
+      },
+      "question": "Re-check of a published claim",
+      "purpose": "Re-check (recheck-2026-11-05-c)",
+      "result_summary": "1 owner: EVE Asia trade and shareholder record",
+      "interpretation": "See investigation/notes/recheck-2026-11-05-c.md for the claim this call checked.",
+      "scorecard": "worked",
+      "entity_ids": [],
+      "step": "verify",
+      "case_id": "general"
+    },
+    {
+      "id": "n2611c19",
+      "timestamp": "2026-11-05T15:03:37Z",
+      "server": "sayari",
+      "tool": "search_trade_facets",
+      "params": {
+        "summary": "shipments, \"EVE ENERGY MALAYSIA\", HS 3801, arrival MYS"
+      },
+      "question": "Re-check of a published claim",
+      "purpose": "Re-check (recheck-2026-11-05-c)",
+      "result_summary": "59 rows, same suppliers, 17 Apr 2025 to 7 Apr 2026",
+      "interpretation": "See investigation/notes/recheck-2026-11-05-c.md for the claim this call checked.",
+      "scorecard": "worked",
+      "entity_ids": [],
+      "step": "verify",
+      "case_id": "general"
+    },
+    {
+      "id": "n2611c20",
+      "timestamp": "2026-11-05T15:03:38Z",
+      "server": "sayari",
+      "tool": "search_trade_facets",
+      "params": {
+        "summary": "shipments, \"EVE ENERGY MALAYSIA\", HS 8507, arrival USA"
+      },
+      "question": "Re-check of a published claim",
+      "purpose": "Re-check (recheck-2026-11-05-c)",
+      "result_summary": "20 rows, latest 12 Oct 2026, HS 850760 19, 850790 1",
+      "interpretation": "See investigation/notes/recheck-2026-11-05-c.md for the claim this call checked.",
+      "scorecard": "worked",
+      "entity_ids": [],
+      "step": "verify",
+      "case_id": "general"
+    },
+    {
+      "id": "n2611c21",
+      "timestamp": "2026-11-05T15:03:39Z",
+      "server": "sayari",
+      "tool": "search_trade_facets",
+      "params": {
+        "summary": "shipments, \"EVE ENERGY MALAYSIA\", arrival MYS"
+      },
+      "question": "Re-check of a published claim",
+      "purpose": "Re-check (recheck-2026-11-05-c)",
+      "result_summary": "3,608 rows, CHN 3,285, 3 Jan 2025 to 26 Apr 2026",
+      "interpretation": "See investigation/notes/recheck-2026-11-05-c.md for the claim this call checked.",
+      "scorecard": "worked",
+      "entity_ids": [],
+      "step": "verify",
+      "case_id": "general"
+    },
+    {
+      "id": "n2611c22",
+      "timestamp": "2026-11-05T15:03:40Z",
+      "server": "sayari",
+      "tool": "search_shipments",
+      "params": {
+        "summary": "\"EVE ENERGY MALAYSIA\", arrival USA, from 2026-09-01, compact, limit 50"
+      },
+      "question": "Re-check of a published claim",
+      "purpose": "Re-check (recheck-2026-11-05-c)",
+      "result_summary": "29 rows, date filter ignored; Briggs 7, EVE North America 7, newest 12 Oct 2026",
+      "interpretation": "See investigation/notes/recheck-2026-11-05-c.md for the claim this call checked.",
+      "scorecard": "worked",
+      "entity_ids": [],
+      "step": "verify",
+      "case_id": "general"
+    },
+    {
+      "id": "n2611c23",
+      "timestamp": "2026-11-05T15:03:41Z",
+      "server": "sayari",
+      "tool": "search_shipments",
+      "params": {
+        "summary": "\"EVE ENERGY MALAYSIA\", from 2026-05-01, compact, limit 50"
+      },
+      "question": "Re-check of a published claim",
+      "purpose": "Re-check (recheck-2026-11-05-c)",
+      "result_summary": "First 50 of 3,741; Vietnam buyers appear; no inbound row after 26 Apr 2026 in this page",
+      "interpretation": "See investigation/notes/recheck-2026-11-05-c.md for the claim this call checked.",
+      "scorecard": "worked",
+      "entity_ids": [],
+      "step": "verify",
+      "case_id": "general"
+    },
+    {
+      "id": "n2611c24",
+      "timestamp": "2026-11-05T15:03:42Z",
+      "server": "sayari",
+      "tool": "get_entity_summary",
+      "params": {
+        "summary": "ySemfyJJesFbfxEgW2SgCg"
+      },
+      "question": "Re-check of a published claim",
+      "purpose": "Re-check (recheck-2026-11-05-c)",
+      "result_summary": "Linergy live, sent 94, received 2,775",
+      "interpretation": "See investigation/notes/recheck-2026-11-05-c.md for the claim this call checked.",
+      "scorecard": "worked",
+      "entity_ids": [],
+      "step": "verify",
+      "case_id": "general"
+    },
+    {
+      "id": "n2611c25",
+      "timestamp": "2026-11-05T15:03:43Z",
+      "server": "sayari",
+      "tool": "find_beneficial_owners",
+      "params": {
+        "summary": "ySemfyJJesFbfxEgW2SgCg, depth 3, limit 10, compact"
+      },
+      "question": "Re-check of a published claim",
+      "purpose": "Re-check (recheck-2026-11-05-c)",
+      "result_summary": "6 owners via Ampace HK and Xiamen Ampace: CATL, Xinnenghe, four partnerships; no TDK",
+      "interpretation": "See investigation/notes/recheck-2026-11-05-c.md for the claim this call checked.",
+      "scorecard": "worked",
+      "entity_ids": [],
+      "step": "verify",
+      "case_id": "general"
+    },
+    {
+      "id": "n2611c26",
+      "timestamp": "2026-11-05T15:03:44Z",
+      "server": "sayari",
+      "tool": "find_downstream_entities",
+      "params": {
+        "summary": "XsLwbCaQEeyzOMh9_sOl3w, depth 2, limit 20, compact"
+      },
+      "question": "Re-check of a published claim",
+      "purpose": "Re-check (recheck-2026-11-05-c)",
+      "result_summary": "1 subsidiary, ATLBattery Technology (India); no Linergy",
+      "interpretation": "See investigation/notes/recheck-2026-11-05-c.md for the claim this call checked.",
+      "scorecard": "worked",
+      "entity_ids": [],
+      "step": "verify",
+      "case_id": "general"
+    },
+    {
+      "id": "n2611c27",
+      "timestamp": "2026-11-05T15:03:45Z",
+      "server": "sayari",
+      "tool": "search_trade_facets",
+      "params": {
+        "summary": "shipments, \"LINERGY POWER\", no filters"
+      },
+      "question": "Re-check of a published claim",
+      "purpose": "Re-check (recheck-2026-11-05-c)",
+      "result_summary": "2,853 rows; arrival MYS 2,759, CHN 53, HKG 23, USA 17, DEU 1; latest 13 Sep 2026",
+      "interpretation": "See investigation/notes/recheck-2026-11-05-c.md for the claim this call checked.",
+      "scorecard": "worked",
+      "entity_ids": [],
+      "step": "verify",
+      "case_id": "general"
+    },
+    {
+      "id": "n2611c28",
+      "timestamp": "2026-11-05T15:03:46Z",
+      "server": "sayari",
+      "tool": "search_shipments",
+      "params": {
+        "summary": "\"LINERGY POWER\", arrival USA, compact, limit 50"
+      },
+      "question": "Re-check of a published claim",
+      "purpose": "Re-check (recheck-2026-11-05-c)",
+      "result_summary": "17 rows: Eaton 5 + 1, Ampace 6, Milwaukee 2 + 1, Stanley 1, Techtronic 1",
+      "interpretation": "See investigation/notes/recheck-2026-11-05-c.md for the claim this call checked.",
+      "scorecard": "worked",
+      "entity_ids": [],
+      "step": "verify",
+      "case_id": "general"
+    },
+    {
+      "id": "n2611c29",
+      "timestamp": "2026-11-05T15:03:47Z",
+      "server": "sayari",
+      "tool": "search_shipments",
+      "params": {
+        "summary": "\"LINERGY POWER\", from 2026-06-01, compact, limit 50"
+      },
+      "question": "Re-check of a published claim",
+      "purpose": "Re-check (recheck-2026-11-05-c)",
+      "result_summary": "First 50 of 2,853, date filter ignored; post-Feb China rows and electrolyte to 9 Jun 2026",
+      "interpretation": "See investigation/notes/recheck-2026-11-05-c.md for the claim this call checked.",
+      "scorecard": "worked",
+      "entity_ids": [],
+      "step": "verify",
+      "case_id": "general"
+    },
+    {
+      "id": "n2611c30",
+      "timestamp": "2026-11-05T15:03:48Z",
+      "server": "sayari",
+      "tool": "search_trade_facets",
+      "params": {
+        "summary": "shipments, graphite, dep OMN, arr USA, HS 3801"
+      },
+      "question": "Re-check of a published claim",
+      "purpose": "Re-check (recheck-2026-11-05-c)",
+      "result_summary": "922 rows, HS 380110 919, 380190 3; latest 12 Oct 2026",
+      "interpretation": "See investigation/notes/recheck-2026-11-05-c.md for the claim this call checked.",
+      "scorecard": "worked",
+      "entity_ids": [],
+      "step": "verify",
+      "case_id": "general"
+    },
+    {
+      "id": "n2611c31",
+      "timestamp": "2026-11-05T15:03:49Z",
+      "server": "sayari",
+      "tool": "search_trade_facets",
+      "params": {
+        "summary": "shipments, graphite, arrival OMN, HS 3801"
+      },
+      "question": "Re-check of a published claim",
+      "purpose": "Re-check (recheck-2026-11-05-c)",
+      "result_summary": "277 rows, IND 193, CHN 68; latest 28 Feb 2026",
+      "interpretation": "See investigation/notes/recheck-2026-11-05-c.md for the claim this call checked.",
+      "scorecard": "worked",
+      "entity_ids": [],
+      "step": "verify",
+      "case_id": "general"
+    },
+    {
+      "id": "n2611c32",
+      "timestamp": "2026-11-05T15:03:50Z",
+      "server": "sayari",
+      "tool": "search_trade_facets",
+      "params": {
+        "summary": "shipments, petroleum coke, dep CHN, arr OMN"
+      },
+      "question": "Re-check of a published claim",
+      "purpose": "Re-check (recheck-2026-11-05-c)",
+      "result_summary": "6 rows, machinery parts, latest 2 Sep 2020",
+      "interpretation": "See investigation/notes/recheck-2026-11-05-c.md for the claim this call checked.",
+      "scorecard": "worked",
+      "entity_ids": [],
+      "step": "verify",
+      "case_id": "general"
+    },
+    {
+      "id": "n2611c33",
+      "timestamp": "2026-11-05T15:03:51Z",
+      "server": "sayari",
+      "tool": "find_shortest_path",
+      "params": {
+        "summary": "aWkEICLnf2fzW78geuH5Ag to -jDI6N9q1MWnPT0ujf-8iw"
+      },
+      "question": "Re-check of a published claim",
+      "purpose": "Re-check (recheck-2026-11-05-c)",
+      "result_summary": "No path found",
+      "interpretation": "See investigation/notes/recheck-2026-11-05-c.md for the claim this call checked.",
+      "scorecard": "worked",
+      "entity_ids": [],
+      "step": "verify",
+      "case_id": "general"
+    },
+    {
+      "id": "n2611c34",
+      "timestamp": "2026-11-05T15:03:52Z",
+      "server": "sayari",
+      "tool": "search_trade_facets",
+      "params": {
+        "summary": "shipments, anode, HS 380110, arr USA, from 2024-01-01"
+      },
+      "question": "Re-check of a published claim",
+      "purpose": "Re-check (recheck-2026-11-05-c)",
+      "result_summary": "562 rows, earliest 27 Feb 2020 so date filter ignored; IND 92, DEU 68, SGP 66, KOR 59, OMN 28, CHN 24",
+      "interpretation": "See investigation/notes/recheck-2026-11-05-c.md for the claim this call checked.",
+      "scorecard": "worked",
+      "entity_ids": [],
+      "step": "verify",
+      "case_id": "general"
+    },
+    {
+      "id": "n2611c35",
+      "timestamp": "2026-11-05T15:03:53Z",
+      "server": "sayari",
+      "tool": "search_suppliers",
+      "params": {
+        "summary": "graphite, HS 380110, dep MYS, arr USA, from 2024-01-01, compact"
+      },
+      "question": "Re-check of a published claim",
+      "purpose": "Re-check (recheck-2026-11-05-c)",
+      "result_summary": "2 suppliers: Graphite India 1, PAC Worldwide 1",
+      "interpretation": "See investigation/notes/recheck-2026-11-05-c.md for the claim this call checked.",
+      "scorecard": "worked",
+      "entity_ids": [],
+      "step": "verify",
+      "case_id": "general"
+    },
+    {
+      "id": "n2611c36",
+      "timestamp": "2026-11-05T15:03:54Z",
+      "server": "sayari",
+      "tool": "get_entity_summary",
+      "params": {
+        "summary": "TrQHururSYl_Fqbbewp1cA"
+      },
+      "question": "Re-check of a published claim",
+      "purpose": "Re-check (recheck-2026-11-05-c)",
+      "result_summary": "Error: unexpected server error (Briggs and Stratton Corp record 2)",
+      "interpretation": "See investigation/notes/recheck-2026-11-05-c.md for the claim this call checked.",
+      "scorecard": "failed",
+      "entity_ids": [],
+      "step": "verify",
+      "case_id": "general"
+    },
+    {
+      "id": "n2611c37",
+      "timestamp": "2026-11-05T15:03:55Z",
+      "server": "sayari",
+      "tool": "search_shipments",
+      "params": {
+        "summary": "\"EVE ENERGY MALAYSIA\", arrival USA, full, limit 50"
+      },
+      "question": "Re-check of a published claim",
+      "purpose": "Re-check (recheck-2026-11-05-c)",
+      "result_summary": "29 rows (saved, parsed); new rows 28 Sep and 12 Oct 2026 from Singapore, Briggs & Stratton",
+      "interpretation": "See investigation/notes/recheck-2026-11-05-c.md for the claim this call checked.",
+      "scorecard": "worked",
+      "entity_ids": [],
+      "step": "verify",
+      "case_id": "general"
+    },
+    {
+      "id": "n2611c38",
+      "timestamp": "2026-11-05T15:03:56Z",
+      "server": "sayari",
+      "tool": "traverse_network",
+      "params": {
+        "summary": "_WCNtC_iMCzef8u8s0uKyQ, ships_to, depth 1, limit 45, compact"
+      },
+      "question": "Re-check of a published claim",
+      "purpose": "Re-check (recheck-2026-11-05-c)",
+      "result_summary": "39 buyer records (saved, parsed); TrQHur record absent",
+      "interpretation": "See investigation/notes/recheck-2026-11-05-c.md for the claim this call checked.",
+      "scorecard": "worked",
+      "entity_ids": [],
+      "step": "verify",
+      "case_id": "general"
+    },
+    {
+      "id": "n2611c39",
+      "timestamp": "2026-11-05T15:03:57Z",
+      "server": "sayari",
+      "tool": "find_beneficial_owners",
+      "params": {
+        "summary": "Q44xfE6o9nOXO5IvLfsxeg, depth 1, limit 5, compact"
+      },
+      "question": "Re-check of a published claim",
+      "purpose": "Re-check (recheck-2026-11-05-c)",
+      "result_summary": "EVE Energy Co., Ltd., still flagged usa_section_1260h",
+      "interpretation": "See investigation/notes/recheck-2026-11-05-c.md for the claim this call checked.",
+      "scorecard": "worked",
+      "entity_ids": [],
+      "step": "verify",
+      "case_id": "general"
+    },
+    {
+      "id": "n2611c40",
+      "timestamp": "2026-11-05T15:03:58Z",
+      "server": "sayari",
+      "tool": "search_shipments",
+      "params": {
+        "summary": "\"LINERGY POWER\", dep MYS, compact, limit 100"
+      },
+      "question": "Re-check of a published claim",
+      "purpose": "Re-check (recheck-2026-11-05-c)",
+      "result_summary": "94 rows (saved, parsed); Xiamen Ampace 39, self 16, Eaton 6, Ampace 11, Chung Tin 11 across records",
+      "interpretation": "See investigation/notes/recheck-2026-11-05-c.md for the claim this call checked.",
+      "scorecard": "worked",
+      "entity_ids": [],
+      "step": "verify",
+      "case_id": "general"
+    },
+    {
+      "id": "n2611c41",
+      "timestamp": "2026-11-05T15:03:59Z",
+      "server": "sayari",
+      "tool": "search_trade_facets",
+      "params": {
+        "summary": "shipments, \"LINERGY POWER\", HS 3801"
+      },
+      "question": "Re-check of a published claim",
+      "purpose": "Re-check (recheck-2026-11-05-c)",
+      "result_summary": "17 rows, Zhongke Shinzoom 14, Shanshan 3, latest 5 Feb 2026",
+      "interpretation": "See investigation/notes/recheck-2026-11-05-c.md for the claim this call checked.",
+      "scorecard": "worked",
+      "entity_ids": [],
+      "step": "verify",
+      "case_id": "general"
+    },
+    {
+      "id": "n2611c42",
+      "timestamp": "2026-11-05T15:04:00Z",
+      "server": "sayari",
+      "tool": "find_shortest_path",
+      "params": {
+        "summary": "XsLwbCaQEeyzOMh9_sOl3w to ySemfyJJesFbfxEgW2SgCg"
+      },
+      "question": "Re-check of a published claim",
+      "purpose": "Re-check (recheck-2026-11-05-c)",
+      "result_summary": "Path via ATLBattery India, then Xiamen Ampace trade record, then Linergy; no ownership link",
+      "interpretation": "See investigation/notes/recheck-2026-11-05-c.md for the claim this call checked.",
+      "scorecard": "worked",
+      "entity_ids": [],
+      "step": "verify",
+      "case_id": "general"
+    },
+    {
+      "id": "n2611c43",
+      "timestamp": "2026-11-05T15:04:01Z",
+      "server": "sayari",
+      "tool": "traverse_network",
+      "params": {
+        "summary": "ySemfyJJesFbfxEgW2SgCg, shareholder, director, officer, depth 1, compact"
+      },
+      "question": "Re-check of a published claim",
+      "purpose": "Re-check (recheck-2026-11-05-c)",
+      "result_summary": "Shareholder Ampace Technology Limited; 3 directors and 1 secretary; no TDK or Amperex",
+      "interpretation": "See investigation/notes/recheck-2026-11-05-c.md for the claim this call checked.",
+      "scorecard": "worked",
+      "entity_ids": [],
+      "step": "verify",
+      "case_id": "general"
+    },
+    {
+      "id": "n2611c44",
+      "timestamp": "2026-11-05T15:04:02Z",
+      "server": "sayari",
+      "tool": "search_shipments",
+      "params": {
+        "summary": "graphite, dep OMN, arr USA, HS 3801, from 2025-08-01, compact, limit 40"
+      },
+      "question": "Re-check of a published claim",
+      "purpose": "Re-check (recheck-2026-11-05-c)",
+      "result_summary": "First 40 of 922; 12 Oct 2026 rows at top, next newest 11 Jul 2025; mislabelled chemicals",
+      "interpretation": "See investigation/notes/recheck-2026-11-05-c.md for the claim this call checked.",
+      "scorecard": "worked",
+      "entity_ids": [],
+      "step": "verify",
+      "case_id": "general"
+    },
+    {
+      "id": "n2611c45",
+      "timestamp": "2026-11-05T15:04:03Z",
+      "server": "sayari",
+      "tool": "search_shipments",
+      "params": {
+        "summary": "anode, HS 380110, dep SGP, arr USA, from 2024-01-01, compact, limit 80"
+      },
+      "question": "Re-check of a published claim",
+      "purpose": "Re-check (recheck-2026-11-05-c)",
+      "result_summary": "All 66 rows: GM 28, OEC NY 21, L-H 5, NextStar 3, OEC to OEC 1, BTR Indonesia to GM 4 and FNS 4",
+      "interpretation": "See investigation/notes/recheck-2026-11-05-c.md for the claim this call checked.",
+      "scorecard": "worked",
+      "entity_ids": [],
+      "step": "verify",
+      "case_id": "general"
+    },
+    {
+      "id": "n2611c46",
+      "timestamp": "2026-11-05T15:04:04Z",
+      "server": "sayari",
+      "tool": "search_shipments",
+      "params": {
+        "summary": "anode, HS 380110, dep OMN, arr USA, from 2024-01-01, compact, limit 30"
+      },
+      "question": "Re-check of a published claim",
+      "purpose": "Re-check (recheck-2026-11-05-c)",
+      "result_summary": "28 rows, Honeywell 24, PMC Biogenix 4; chemicals, 2023 to 2024",
+      "interpretation": "See investigation/notes/recheck-2026-11-05-c.md for the claim this call checked.",
+      "scorecard": "worked",
+      "entity_ids": [],
+      "step": "verify",
+      "case_id": "general"
+    },
+    {
+      "id": "n2611c47",
+      "timestamp": "2026-11-05T15:04:05Z",
+      "server": "sayari",
+      "tool": "get_entity_summary",
+      "params": {
+        "summary": "TrQHururSYl_Fqbbewp1cA (retry)"
+      },
+      "question": "Re-check of a published claim",
+      "purpose": "Re-check (recheck-2026-11-05-c)",
+      "result_summary": "Error: unexpected server error again",
+      "interpretation": "See investigation/notes/recheck-2026-11-05-c.md for the claim this call checked.",
+      "scorecard": "failed",
+      "entity_ids": [],
+      "step": "verify",
+      "case_id": "general"
+    },
+    {
+      "id": "n2611c48",
+      "timestamp": "2026-11-05T15:04:06Z",
+      "server": "sayari",
+      "tool": "find_beneficial_owners",
+      "params": {
+        "summary": "zTmjvxb--FZPXZG8PERmOg, depth 2, limit 8, compact"
+      },
+      "question": "Re-check of a published claim",
+      "purpose": "Re-check (recheck-2026-11-05-c)",
+      "result_summary": "Shanghai Putailai is the direct holder on every path, then its holders",
+      "interpretation": "See investigation/notes/recheck-2026-11-05-c.md for the claim this call checked.",
+      "scorecard": "worked",
+      "entity_ids": [],
+      "step": "verify",
+      "case_id": "general"
+    },
+    {
+      "id": "n2611c49",
+      "timestamp": "2026-11-05T15:04:07Z",
+      "server": "sayari",
+      "tool": "search_trade_facets",
+      "params": {
+        "summary": "shipments, \"JIANGXI ZICHEN\", no filters"
+      },
+      "question": "Re-check of a published claim",
+      "purpose": "Re-check (recheck-2026-11-05-c)",
+      "result_summary": "2,313 rows; POL 956, KOR 714, IDN 474, MYS 37, USA 10; latest 23 Jul 2026",
+      "interpretation": "See investigation/notes/recheck-2026-11-05-c.md for the claim this call checked.",
+      "scorecard": "worked",
+      "entity_ids": [],
+      "step": "verify",
+      "case_id": "general"
+    },
+    {
+      "id": "n2611c50",
+      "timestamp": "2026-11-05T15:04:08Z",
+      "server": "sayari",
+      "tool": "search_shipments",
+      "params": {
+        "summary": "\"JIANGXI ZICHEN\", arrival USA, compact, limit 30"
+      },
+      "question": "Re-check of a published claim",
+      "purpose": "Re-check (recheck-2026-11-05-c)",
+      "result_summary": "10 rows, 22 Apr 2024 to 10 Jul 2025, six buyer records",
+      "interpretation": "See investigation/notes/recheck-2026-11-05-c.md for the claim this call checked.",
+      "scorecard": "worked",
+      "entity_ids": [],
+      "step": "verify",
+      "case_id": "general"
+    },
+    {
+      "id": "n2611c51",
+      "timestamp": "2026-11-05T15:04:09Z",
+      "server": "sayari",
+      "tool": "search_trade_facets",
+      "params": {
+        "summary": "shipments, \"EVE ENERGY MALAYSIA\", arrival VNM"
+      },
+      "question": "Re-check of a published claim",
+      "purpose": "Re-check (recheck-2026-11-05-c)",
+      "result_summary": "25 rows, all HS 850760, 26 Jun 2025 to 14 Aug 2026",
+      "interpretation": "See investigation/notes/recheck-2026-11-05-c.md for the claim this call checked.",
+      "scorecard": "worked",
+      "entity_ids": [],
+      "step": "verify",
+      "case_id": "general"
+    },
+    {
+      "id": "n2611c52",
+      "timestamp": "2026-11-05T15:04:10Z",
+      "server": "sayari",
+      "tool": "get_entity_summary",
+      "params": {
+        "summary": "_IHfEu_T2MeuJ-1BUW1tpw"
+      },
+      "question": "Re-check of a published claim",
+      "purpose": "Re-check (recheck-2026-11-05-c)",
+      "result_summary": "BS BRIGGSSTRATTON LLC, Malaysian trade data only, received 1",
+      "interpretation": "See investigation/notes/recheck-2026-11-05-c.md for the claim this call checked.",
+      "scorecard": "worked",
+      "entity_ids": [],
+      "step": "verify",
+      "case_id": "general"
+    },
+    {
+      "id": "n2611c53",
+      "timestamp": "2026-11-05T15:04:11Z",
+      "server": "sayari",
+      "tool": "search_shipments",
+      "params": {
+        "summary": "graphite, dep OMN, arr USA, HS 380190, full, limit 10"
+      },
+      "question": "Re-check of a published claim",
+      "purpose": "Re-check (recheck-2026-11-05-c)",
+      "result_summary": "3 rows: two expandable graphite flake, 12 Oct 2026, Salalah to Charleston; one from 2023",
+      "interpretation": "See investigation/notes/recheck-2026-11-05-c.md for the claim this call checked.",
+      "scorecard": "worked",
+      "entity_ids": [],
+      "step": "verify",
+      "case_id": "general"
+    },
+    {
+      "id": "n2611c54",
+      "timestamp": "2026-11-05T15:04:12Z",
+      "server": "sayari",
+      "tool": "search_trade_facets",
+      "params": {
+        "summary": "shipments, anode, HS 380110, dep VNM, arr USA"
+      },
+      "question": "Re-check of a published claim",
+      "purpose": "Re-check (recheck-2026-11-05-c)",
+      "result_summary": "0 rows",
+      "interpretation": "See investigation/notes/recheck-2026-11-05-c.md for the claim this call checked.",
+      "scorecard": "worked",
+      "entity_ids": [],
+      "step": "verify",
+      "case_id": "general"
+    },
+    {
+      "id": "n2611c55",
+      "timestamp": "2026-11-05T15:04:13Z",
+      "server": "sayari",
+      "tool": "search_trade_facets",
+      "params": {
+        "summary": "shipments, anode, HS 380110, dep THA, arr USA"
+      },
+      "question": "Re-check of a published claim",
+      "purpose": "Re-check (recheck-2026-11-05-c)",
+      "result_summary": "0 rows",
+      "interpretation": "See investigation/notes/recheck-2026-11-05-c.md for the claim this call checked.",
+      "scorecard": "worked",
+      "entity_ids": [],
+      "step": "verify",
+      "case_id": "general"
+    },
+    {
+      "id": "n2611c56",
+      "timestamp": "2026-11-05T15:04:14Z",
+      "server": "sayari",
+      "tool": "search_trade_facets",
+      "params": {
+        "summary": "shipments, anode, HS 380110, dep MYS, arr USA"
+      },
+      "question": "Re-check of a published claim",
+      "purpose": "Re-check (recheck-2026-11-05-c)",
+      "result_summary": "0 rows",
+      "interpretation": "See investigation/notes/recheck-2026-11-05-c.md for the claim this call checked.",
+      "scorecard": "worked",
+      "entity_ids": [],
+      "step": "verify",
+      "case_id": "general"
+    },
+    {
+      "id": "n2611c57",
+      "timestamp": "2026-11-05T15:04:15Z",
+      "server": "tavily",
+      "tool": "tavily_search",
+      "params": {
+        "summary": "中科电气 阿曼 苏哈尔 progress, from 2026-10-01, advanced, 8"
+      },
+      "question": "Re-check of a published claim",
+      "purpose": "Re-check (recheck-2026-11-05-c)",
+      "result_summary": "Zhongke Q3 summary 26 Oct; East Money post on 10 Sep topping out; Seetao 4 Nov list of Omani projects",
+      "interpretation": "See investigation/notes/recheck-2026-11-05-c.md for the claim this call checked.",
+      "scorecard": "worked",
+      "entity_ids": [],
+      "step": "verify",
+      "case_id": "general"
+    },
+    {
+      "id": "n2611c58",
+      "timestamp": "2026-11-05T15:04:16Z",
+      "server": "sayari",
+      "tool": "get_entity_summary",
+      "params": {
+        "summary": "zTmjvxb--FZPXZG8PERmOg"
+      },
+      "question": "Re-check of a published claim",
+      "purpose": "Re-check (recheck-2026-11-05-c)",
+      "result_summary": "Jiangxi Zichen Technology, USCC 913609210588363379, LEI 836800JFM11XKOFHHT10, sent 2,259",
+      "interpretation": "See investigation/notes/recheck-2026-11-05-c.md for the claim this call checked.",
+      "scorecard": "worked",
+      "entity_ids": [],
+      "step": "verify",
+      "case_id": "general"
+    },
+    {
+      "id": "n2611c59",
+      "timestamp": "2026-11-05T15:04:17Z",
+      "server": "sayari",
+      "tool": "get_entity_summary",
+      "params": {
+        "summary": "ODDxapyYxMymSFIuQhWsHw"
+      },
+      "question": "Re-check of a published claim",
+      "purpose": "Re-check (recheck-2026-11-05-c)",
+      "result_summary": "PT HLI Green Power, Karawang, Indonesia",
+      "interpretation": "See investigation/notes/recheck-2026-11-05-c.md for the claim this call checked.",
+      "scorecard": "worked",
+      "entity_ids": [],
+      "step": "verify",
+      "case_id": "general"
+    },
+    {
+      "id": "n2611c60",
+      "timestamp": "2026-11-05T15:04:18Z",
+      "server": "sayari",
+      "tool": "get_entity_summary",
+      "params": {
+        "summary": "hVWvdWYN5x2zFc2z0T7-1A"
+      },
+      "question": "Re-check of a published claim",
+      "purpose": "Re-check (recheck-2026-11-05-c)",
+      "result_summary": "LG Energy Solution Wroclaw, Poland",
+      "interpretation": "See investigation/notes/recheck-2026-11-05-c.md for the claim this call checked.",
+      "scorecard": "worked",
+      "entity_ids": [],
+      "step": "verify",
+      "case_id": "general"
+    },
+    {
+      "id": "n2611c61",
+      "timestamp": "2026-11-05T15:04:19Z",
+      "server": "sayari",
+      "tool": "get_entity_summary",
+      "params": {
+        "summary": "uFjg3v6bVZDhlhSp0D5C5g"
+      },
+      "question": "Re-check of a published claim",
+      "purpose": "Re-check (recheck-2026-11-05-c)",
+      "result_summary": "Putailai America LLC, registered 19 Dec 2024, inactive, received 2",
+      "interpretation": "See investigation/notes/recheck-2026-11-05-c.md for the claim this call checked.",
+      "scorecard": "worked",
+      "entity_ids": [],
+      "step": "verify",
+      "case_id": "general"
+    },
+    {
+      "id": "n2611c62",
+      "timestamp": "2026-11-05T15:04:20Z",
+      "server": "tavily",
+      "tool": "tavily_search",
+      "params": {
+        "summary": "璞泰来 马来西亚 紫宸 progress and Q3, from 2026-09-15, advanced, 6"
+      },
+      "question": "Re-check of a published claim",
+      "purpose": "Re-check (recheck-2026-11-05-c)",
+      "result_summary": "Q3 published 19 Oct; Malaysian project continues; June 2026 start repeated; Jiangxi Zichen named as anode subsidiary; Hong Kong filing",
+      "interpretation": "See investigation/notes/recheck-2026-11-05-c.md for the claim this call checked.",
+      "scorecard": "worked",
+      "entity_ids": [],
+      "step": "verify",
+      "case_id": "general"
+    },
+    {
+      "id": "n2611c63",
+      "timestamp": "2026-11-05T15:04:21Z",
+      "server": "tavily",
+      "tool": "tavily_search",
+      "params": {
+        "summary": "EVE Energy 1260H lawsuit removal challenge, from 2026-06-15, advanced, 8"
+      },
+      "question": "Re-check of a published claim",
+      "purpose": "Re-check (recheck-2026-11-05-c)",
+      "result_summary": "Law-firm alerts confirm listing; Alibaba suit; no EVE challenge reported",
+      "interpretation": "See investigation/notes/recheck-2026-11-05-c.md for the claim this call checked.",
+      "scorecard": "worked",
+      "entity_ids": [],
+      "step": "verify",
+      "case_id": "general"
+    },
+    {
+      "id": "n2611c64",
+      "timestamp": "2026-11-05T15:04:22Z",
+      "server": "tavily",
+      "tool": "tavily_search",
+      "params": {
+        "summary": "亿纬锂能 1260H 回应 起诉 马来西亚 三季报, from 2026-08-01, advanced, 8"
+      },
+      "question": "Re-check of a published claim",
+      "purpose": "Re-check (recheck-2026-11-05-c)",
+      "result_summary": "Blog post on 337-TA-1518; Malaysia phase three started; no EVE 1260H suit reported",
+      "interpretation": "See investigation/notes/recheck-2026-11-05-c.md for the claim this call checked.",
+      "scorecard": "worked",
+      "entity_ids": [],
+      "step": "verify",
+      "case_id": "general"
+    },
+    {
+      "id": "n2611c65",
+      "timestamp": "2026-11-05T15:04:23Z",
+      "server": "tavily",
+      "tool": "tavily_search",
+      "params": {
+        "summary": "337-TA-1518 respondents, advanced, 8"
+      },
+      "question": "Re-check of a published claim",
+      "purpose": "Re-check (recheck-2026-11-05-c)",
+      "result_summary": "Federal Register 2026-17240 lists respondents; digests of the complaint; EVE denial via Caixin",
+      "interpretation": "See investigation/notes/recheck-2026-11-05-c.md for the claim this call checked.",
+      "scorecard": "worked",
+      "entity_ids": [],
+      "step": "verify",
+      "case_id": "general"
+    },
+    {
+      "id": "n2611c66",
+      "timestamp": "2026-11-05T15:04:24Z",
+      "server": "tavily",
+      "tool": "tavily_search",
+      "params": {
+        "summary": "TDK second quarter Linergy, from 2026-08-01, advanced, 8"
+      },
+      "question": "Re-check of a published claim",
+      "purpose": "Re-check (recheck-2026-11-05-c)",
+      "result_summary": "TDK Investor Day speech; The Edge on the sale; nothing new on buyers",
+      "interpretation": "See investigation/notes/recheck-2026-11-05-c.md for the claim this call checked.",
+      "scorecard": "worked",
+      "entity_ids": [],
+      "step": "verify",
+      "case_id": "general"
+    },
+    {
+      "id": "n2611c67",
+      "timestamp": "2026-11-05T15:04:25Z",
+      "server": "tavily",
+      "tool": "tavily_search",
+      "params": {
+        "summary": "TDK results second quarter FY March 2027 Linergy, tdk.com only, advanced, 6"
+      },
+      "question": "Re-check of a published claim",
+      "purpose": "Re-check (recheck-2026-11-05-c)",
+      "result_summary": "Q1 results, 19 May release (US$240m plus US$1.1m fees), 30 Oct results PDF located",
+      "interpretation": "See investigation/notes/recheck-2026-11-05-c.md for the claim this call checked.",
+      "scorecard": "worked",
+      "entity_ids": [],
+      "step": "verify",
+      "case_id": "general"
+    },
+    {
+      "id": "n2611c68",
+      "timestamp": "2026-11-05T15:04:26Z",
+      "server": "tavily",
+      "tool": "tavily_extract",
+      "params": {
+        "summary": "TDK 30 Oct 2026 results PDF, basic"
+      },
+      "question": "Re-check of a published claim",
+      "purpose": "Re-check (recheck-2026-11-05-c)",
+      "result_summary": "Error: failed to fetch url",
+      "interpretation": "See investigation/notes/recheck-2026-11-05-c.md for the claim this call checked.",
+      "scorecard": "failed",
+      "entity_ids": [],
+      "step": "verify",
+      "case_id": "general"
+    },
+    {
+      "id": "n2611c69",
+      "timestamp": "2026-11-05T15:04:27Z",
+      "server": "tavily",
+      "tool": "tavily_extract",
+      "params": {
+        "summary": "TDK 30 Oct 2026 results PDF, advanced, query Linergy Power"
+      },
+      "question": "Re-check of a published claim",
+      "purpose": "Re-check (recheck-2026-11-05-c)",
+      "result_summary": "TDK acquired all Linergy shares in the six months to 30 Sep 2026 and consolidated it",
+      "interpretation": "See investigation/notes/recheck-2026-11-05-c.md for the claim this call checked.",
+      "scorecard": "worked",
+      "entity_ids": [],
+      "step": "verify",
+      "case_id": "general"
+    },
+    {
+      "id": "n2611c70",
+      "timestamp": "2026-11-05T15:04:28Z",
+      "server": "tavily",
+      "tool": "tavily_search",
+      "params": {
+        "summary": "璞泰来 韩钟伟 role, advanced, 6"
+      },
+      "question": "Re-check of a published claim",
+      "purpose": "Re-check (recheck-2026-11-05-c)",
+      "result_summary": "Sina Finance: Putailai director and executive deputy general manager since May 2024",
+      "interpretation": "See investigation/notes/recheck-2026-11-05-c.md for the claim this call checked.",
+      "scorecard": "worked",
+      "entity_ids": [],
+      "step": "verify",
+      "case_id": "general"
+    },
+    {
+      "id": "n2611c71",
+      "timestamp": "2026-11-05T15:04:29Z",
+      "server": "tavily",
+      "tool": "tavily_search",
+      "params": {
+        "summary": "1260H preliminary injunction Aug 2026, from 2026-07-15, advanced, 6"
+      },
+      "question": "Re-check of a published claim",
+      "purpose": "Re-check (recheck-2026-11-05-c)",
+      "result_summary": "WuXi AppTec injunction 7 Aug 2026; orders apply to named litigants",
+      "interpretation": "See investigation/notes/recheck-2026-11-05-c.md for the claim this call checked.",
+      "scorecard": "worked",
+      "entity_ids": [],
+      "step": "verify",
+      "case_id": "general"
+    },
+    {
+      "id": "n2611c72",
+      "timestamp": "2026-11-05T15:04:30Z",
+      "server": "tavily",
+      "tool": "tavily_search",
+      "params": {
+        "summary": "亿纬锂能 2026 三季报, from 2026-10-15, 5"
+      },
+      "question": "Re-check of a published claim",
+      "purpose": "Re-check (recheck-2026-11-05-c)",
+      "result_summary": "Nine-month revenue RMB 73.39bn, net profit RMB 5.24bn; Fluence framework; 2028 Malaysia remark",
+      "interpretation": "See investigation/notes/recheck-2026-11-05-c.md for the claim this call checked.",
+      "scorecard": "worked",
+      "entity_ids": [],
+      "step": "verify",
+      "case_id": "general"
+    },
+    {
+      "id": "n2611c73",
+      "timestamp": "2026-11-05T15:04:31Z",
+      "server": "sayari",
+      "tool": "search_shipments",
+      "params": {
+        "summary": "\"EVE ENERGY MALAYSIA\", arrival VNM, compact, limit 30"
+      },
+      "question": "Re-check of a published claim",
+      "purpose": "Re-check (recheck-2026-11-05-c)",
+      "result_summary": "25 rows: Green Planet 13, Greenworks 5, Chervon 3 + 1, Topband 2, one unrelated forwarder pair",
+      "interpretation": "See investigation/notes/recheck-2026-11-05-c.md for the claim this call checked.",
+      "scorecard": "worked",
+      "entity_ids": [],
+      "step": "verify",
+      "case_id": "general"
+    },
+    {
+      "id": "n2611d01",
+      "timestamp": "2026-11-05T15:04:32Z",
+      "server": "sayari",
+      "tool": "get_entity_summary",
+      "params": {
+        "summary": "entity Fj3vtxDroFyjyPsLgsnm2A"
+      },
+      "question": "Re-check of a published claim",
+      "purpose": "Re-check (recheck-2026-11-05-d)",
+      "result_summary": "POSCO Future M resolves; DART 00155276; 10,370 sent, 1,799 received",
+      "interpretation": "See investigation/notes/recheck-2026-11-05-d.md for the claim this call checked.",
+      "scorecard": "worked",
+      "entity_ids": [],
+      "step": "verify",
+      "case_id": "general"
+    },
+    {
+      "id": "n2611d02",
+      "timestamp": "2026-11-05T15:04:33Z",
+      "server": "sayari",
+      "tool": "get_entity_profile",
+      "params": {
+        "summary": "entity Fj3v..., relationships_limit 80"
+      },
+      "question": "Re-check of a published claim",
+      "purpose": "Re-check (recheck-2026-11-05-d)",
+      "result_summary": "POSCO Holdings 58.2%; 59 shareholders in the summary; 4 companies held",
+      "interpretation": "See investigation/notes/recheck-2026-11-05-d.md for the claim this call checked.",
+      "scorecard": "worked",
+      "entity_ids": [],
+      "step": "verify",
+      "case_id": "general"
+    },
+    {
+      "id": "n2611d03",
+      "timestamp": "2026-11-05T15:04:34Z",
+      "server": "sayari",
+      "tool": "find_beneficial_owners",
+      "params": {
+        "summary": "entity Fj3v..., limit 50, depth 3, compact"
+      },
+      "question": "Re-check of a published claim",
+      "purpose": "Re-check (recheck-2026-11-05-d)",
+      "result_summary": "50 paths, all Korean; POSCO Holdings record included",
+      "interpretation": "See investigation/notes/recheck-2026-11-05-d.md for the claim this call checked.",
+      "scorecard": "worked",
+      "entity_ids": [],
+      "step": "verify",
+      "case_id": "general"
+    },
+    {
+      "id": "n2611d04",
+      "timestamp": "2026-11-05T15:04:35Z",
+      "server": "sayari",
+      "tool": "search_trade_facets",
+      "params": {
+        "summary": "shipments, \"POSCO FUTURE M\", HS 3801, arrival USA, no departure filter"
+      },
+      "question": "Re-check of a published claim",
+      "purpose": "Re-check (recheck-2026-11-05-d)",
+      "result_summary": "223 rows; Korea 113; latest 2026-08-11; GM 60, Tesla 52",
+      "interpretation": "See investigation/notes/recheck-2026-11-05-d.md for the claim this call checked.",
+      "scorecard": "worked",
+      "entity_ids": [],
+      "step": "verify",
+      "case_id": "general"
+    },
+    {
+      "id": "n2611d05",
+      "timestamp": "2026-11-05T15:04:36Z",
+      "server": "sayari",
+      "tool": "search_shipments",
+      "params": {
+        "summary": "\"POSCO FUTURE M\", HS 3801, arrival USA, date_from 2026-07-01, limit 100, compact"
+      },
+      "question": "Re-check of a published claim",
+      "purpose": "Re-check (recheck-2026-11-05-d)",
+      "result_summary": "Filter ignored; 100 of 223 rows; Tesla 39 rows Jul 2024 to Feb 2026 with no departure field",
+      "interpretation": "See investigation/notes/recheck-2026-11-05-d.md for the claim this call checked.",
+      "scorecard": "worked",
+      "entity_ids": [],
+      "step": "verify",
+      "case_id": "general"
+    },
+    {
+      "id": "n2611d06",
+      "timestamp": "2026-11-05T15:04:37Z",
+      "server": "sayari",
+      "tool": "search_shipments",
+      "params": {
+        "summary": "\"POSCO FUTURE M\" spherical graphite, arrival KOR, date_from 2024-01-01, limit 50"
+      },
+      "question": "Re-check of a published claim",
+      "purpose": "Re-check (recheck-2026-11-05-d)",
+      "result_summary": "0 rows",
+      "interpretation": "See investigation/notes/recheck-2026-11-05-d.md for the claim this call checked.",
+      "scorecard": "worked",
+      "entity_ids": [],
+      "step": "verify",
+      "case_id": "general"
+    },
+    {
+      "id": "n2611d07",
+      "timestamp": "2026-11-05T15:04:38Z",
+      "server": "sayari",
+      "tool": "search_trade_facets",
+      "params": {
+        "summary": "shipments, \"POSCO FUTURE M\", HS 2504, arrival KOR"
+      },
+      "question": "Re-check of a published claim",
+      "purpose": "Re-check (recheck-2026-11-05-d)",
+      "result_summary": "39 rows; China 38, Mozambique 1; latest 2023-12-08",
+      "interpretation": "See investigation/notes/recheck-2026-11-05-d.md for the claim this call checked.",
+      "scorecard": "worked",
+      "entity_ids": [],
+      "step": "verify",
+      "case_id": "general"
+    },
+    {
+      "id": "n2611d08",
+      "timestamp": "2026-11-05T15:04:39Z",
+      "server": "sayari",
+      "tool": "get_upstream_supply_chain",
+      "params": {
+        "summary": "entity Fj3v..., HS 3801 and 2504, min_date 2024-01-01, depth 1"
+      },
+      "question": "Re-check of a published claim",
+      "purpose": "Re-check (recheck-2026-11-05-d)",
+      "result_summary": "1 result: Rain Carbon Germany",
+      "interpretation": "See investigation/notes/recheck-2026-11-05-d.md for the claim this call checked.",
+      "scorecard": "worked",
+      "entity_ids": [],
+      "step": "verify",
+      "case_id": "general"
+    },
+    {
+      "id": "n2611d09",
+      "timestamp": "2026-11-05T15:04:40Z",
+      "server": "sayari",
+      "tool": "search_shipments",
+      "params": {
+        "summary": "\"POSCO FUTURE M\", HS 2841, arrival USA, date_from 2026-07-01, limit 100"
+      },
+      "question": "Re-check of a published claim",
+      "purpose": "Re-check (recheck-2026-11-05-d)",
+      "result_summary": "1,120 total; 100 read: GM record 18 and StarPlus 82 rows, Aug to Oct 2026",
+      "interpretation": "See investigation/notes/recheck-2026-11-05-d.md for the claim this call checked.",
+      "scorecard": "worked",
+      "entity_ids": [],
+      "step": "verify",
+      "case_id": "general"
+    },
+    {
+      "id": "n2611d10",
+      "timestamp": "2026-11-05T15:04:41Z",
+      "server": "sayari",
+      "tool": "search_trade_facets",
+      "params": {
+        "summary": "shipments, \"POSCO FUTURE M\", HS 3801, KOR to USA"
+      },
+      "question": "Re-check of a published claim",
+      "purpose": "Re-check (recheck-2026-11-05-d)",
+      "result_summary": "113 rows; GM 36, SK 32, Tesla 13, Panasonic 11; latest 2026-08-11",
+      "interpretation": "See investigation/notes/recheck-2026-11-05-d.md for the claim this call checked.",
+      "scorecard": "worked",
+      "entity_ids": [],
+      "step": "verify",
+      "case_id": "general"
+    },
+    {
+      "id": "n2611d11",
+      "timestamp": "2026-11-05T15:04:42Z",
+      "server": "sayari",
+      "tool": "search_trade_facets",
+      "params": {
+        "summary": "shipments, \"POSCO FUTURE M\", HS 2841, arrival USA"
+      },
+      "question": "Re-check of a published claim",
+      "purpose": "Re-check (recheck-2026-11-05-d)",
+      "result_summary": "1,120 rows; StarPlus 985, GM 74, Tesla 38; latest 2026-10-20",
+      "interpretation": "See investigation/notes/recheck-2026-11-05-d.md for the claim this call checked.",
+      "scorecard": "worked",
+      "entity_ids": [],
+      "step": "verify",
+      "case_id": "general"
+    },
+    {
+      "id": "n2611d12",
+      "timestamp": "2026-11-05T15:04:43Z",
+      "server": "sayari",
+      "tool": "search_shipments",
+      "params": {
+        "summary": "same as d05, page 2 token"
+      },
+      "question": "Re-check of a published claim",
+      "purpose": "Re-check (recheck-2026-11-05-d)",
+      "result_summary": "Rows 101 to 200; Panasonic 11, SK 32, GM 24 with Korea departure",
+      "interpretation": "See investigation/notes/recheck-2026-11-05-d.md for the claim this call checked.",
+      "scorecard": "worked",
+      "entity_ids": [],
+      "step": "verify",
+      "case_id": "general"
+    },
+    {
+      "id": "n2611d13",
+      "timestamp": "2026-11-05T15:04:44Z",
+      "server": "sayari",
+      "tool": "search_trade_facets",
+      "params": {
+        "summary": "shipments, \"POSCO Future M\", HS 284190, KOR to USA"
+      },
+      "question": "Re-check of a published claim",
+      "purpose": "Re-check (recheck-2026-11-05-d)",
+      "result_summary": "486 rows; StarPlus 448, GM 24, Tesla 10; latest 2026-08-31",
+      "interpretation": "See investigation/notes/recheck-2026-11-05-d.md for the claim this call checked.",
+      "scorecard": "worked",
+      "entity_ids": [],
+      "step": "verify",
+      "case_id": "general"
+    },
+    {
+      "id": "n2611d14",
+      "timestamp": "2026-11-05T15:04:45Z",
+      "server": "sayari",
+      "tool": "search_shipments",
+      "params": {
+        "summary": "\"POSCO FUTURE M\", HS 3801, KOR to USA, limit 30, compact"
+      },
+      "question": "Re-check of a published claim",
+      "purpose": "Re-check (recheck-2026-11-05-d)",
+      "result_summary": "113 total; Panasonic 11 rows, departures 6 May to 11 Aug 2026; GM LLC row now on Yg9i...",
+      "interpretation": "See investigation/notes/recheck-2026-11-05-d.md for the claim this call checked.",
+      "scorecard": "worked",
+      "entity_ids": [],
+      "step": "verify",
+      "case_id": "general"
+    },
+    {
+      "id": "n2611d15",
+      "timestamp": "2026-11-05T15:04:46Z",
+      "server": "sayari",
+      "tool": "search_buyers",
+      "params": {
+        "summary": "\"spherical graphite\", CHN to KOR, limit 10"
+      },
+      "question": "Re-check of a published claim",
+      "purpose": "Re-check (recheck-2026-11-05-d)",
+      "result_summary": "POSCO Future M 167, latest 2023-12-08",
+      "interpretation": "See investigation/notes/recheck-2026-11-05-d.md for the claim this call checked.",
+      "scorecard": "worked",
+      "entity_ids": [],
+      "step": "verify",
+      "case_id": "general"
+    },
+    {
+      "id": "n2611d16",
+      "timestamp": "2026-11-05T15:04:47Z",
+      "server": "sayari",
+      "tool": "search_trade_facets",
+      "params": {
+        "summary": "shipments, \"STARPLUS ENERGY\", HS 284190, arrival USA"
+      },
+      "question": "Re-check of a published claim",
+      "purpose": "Re-check (recheck-2026-11-05-d)",
+      "result_summary": "1,593 rows; POSCO 935, second POSCO record 50, two EcoPro records 22 and 6; 31 May 2024 to 18 Oct 2026",
+      "interpretation": "See investigation/notes/recheck-2026-11-05-d.md for the claim this call checked.",
+      "scorecard": "worked",
+      "entity_ids": [],
+      "step": "verify",
+      "case_id": "general"
+    },
+    {
+      "id": "n2611d17",
+      "timestamp": "2026-11-05T15:04:48Z",
+      "server": "sayari",
+      "tool": "get_entity_summary",
+      "params": {
+        "summary": "entity RosuicQyFavmKExu13ogvA"
+      },
+      "question": "Re-check of a published claim",
+      "purpose": "Re-check (recheck-2026-11-05-d)",
+      "result_summary": "POSCO Future M US-import record, Gwangyang and Pohang addresses, 51 sent",
+      "interpretation": "See investigation/notes/recheck-2026-11-05-d.md for the claim this call checked.",
+      "scorecard": "worked",
+      "entity_ids": [],
+      "step": "verify",
+      "case_id": "general"
+    },
+    {
+      "id": "n2611d18",
+      "timestamp": "2026-11-05T15:04:49Z",
+      "server": "sayari",
+      "tool": "get_entity_summary",
+      "params": {
+        "summary": "entity WLUn_1F-Zz5cShfohEF7BA"
+      },
+      "question": "Re-check of a published claim",
+      "purpose": "Re-check (recheck-2026-11-05-d)",
+      "result_summary": "Error: unexpected error",
+      "interpretation": "See investigation/notes/recheck-2026-11-05-d.md for the claim this call checked.",
+      "scorecard": "failed",
+      "entity_ids": [],
+      "step": "verify",
+      "case_id": "general"
+    },
+    {
+      "id": "n2611d19",
+      "timestamp": "2026-11-05T15:04:50Z",
+      "server": "sayari",
+      "tool": "search_shipments",
+      "params": {
+        "summary": "two quoted names, HS 284190, arrival USA, limit 3, full"
+      },
+      "question": "Re-check of a published claim",
+      "purpose": "Re-check (recheck-2026-11-05-d)",
+      "result_summary": "0 rows, the known two-quoted-names failure",
+      "interpretation": "See investigation/notes/recheck-2026-11-05-d.md for the claim this call checked.",
+      "scorecard": "worked",
+      "entity_ids": [],
+      "step": "verify",
+      "case_id": "general"
+    },
+    {
+      "id": "n2611d20",
+      "timestamp": "2026-11-05T15:04:51Z",
+      "server": "sayari",
+      "tool": "get_entity_summary",
+      "params": {
+        "summary": "entity TeFCWTgdDF-tAyfunxgqXw"
+      },
+      "question": "Re-check of a published claim",
+      "purpose": "Re-check (recheck-2026-11-05-d)",
+      "result_summary": "Error: unexpected error",
+      "interpretation": "See investigation/notes/recheck-2026-11-05-d.md for the claim this call checked.",
+      "scorecard": "failed",
+      "entity_ids": [],
+      "step": "verify",
+      "case_id": "general"
+    },
+    {
+      "id": "n2611d21",
+      "timestamp": "2026-11-05T15:04:52Z",
+      "server": "sayari",
+      "tool": "find_beneficial_owners",
+      "params": {
+        "summary": "entity jtptt0xXwDPrAN8CN-po4g, limit 25"
+      },
+      "question": "Re-check of a published claim",
+      "purpose": "Re-check (recheck-2026-11-05-d)",
+      "result_summary": "0 owners",
+      "interpretation": "See investigation/notes/recheck-2026-11-05-d.md for the claim this call checked.",
+      "scorecard": "worked",
+      "entity_ids": [],
+      "step": "verify",
+      "case_id": "general"
+    },
+    {
+      "id": "n2611d22",
+      "timestamp": "2026-11-05T15:04:53Z",
+      "server": "sayari",
+      "tool": "find_beneficial_owners",
+      "params": {
+        "summary": "entity TeFCW..., limit 25"
+      },
+      "question": "Re-check of a published claim",
+      "purpose": "Re-check (recheck-2026-11-05-d)",
+      "result_summary": "Error: unexpected error",
+      "interpretation": "See investigation/notes/recheck-2026-11-05-d.md for the claim this call checked.",
+      "scorecard": "failed",
+      "entity_ids": [],
+      "step": "verify",
+      "case_id": "general"
+    },
+    {
+      "id": "n2611d23",
+      "timestamp": "2026-11-05T15:04:54Z",
+      "server": "sayari",
+      "tool": "get_entity_profile",
+      "params": {
+        "summary": "entity Ba3SkSLr0jnGdVR7sWcnWQ, relationships_limit 20"
+      },
+      "question": "Re-check of a published claim",
+      "purpose": "Re-check (recheck-2026-11-05-d)",
+      "result_summary": "Hefei Gotion 99.8182% both ways; Nanjing Gotion 10.59%; 243 shareholders",
+      "interpretation": "See investigation/notes/recheck-2026-11-05-d.md for the claim this call checked.",
+      "scorecard": "worked",
+      "entity_ids": [],
+      "step": "verify",
+      "case_id": "general"
+    },
+    {
+      "id": "n2611d24",
+      "timestamp": "2026-11-05T15:04:55Z",
+      "server": "sayari",
+      "tool": "search_shipments",
+      "params": {
+        "summary": "\"GOTION\", HS 3801, arrival USA, limit 10"
+      },
+      "question": "Re-check of a published claim",
+      "purpose": "Re-check (recheck-2026-11-05-d)",
+      "result_summary": "2 rows, 23 Dec 2025",
+      "interpretation": "See investigation/notes/recheck-2026-11-05-d.md for the claim this call checked.",
+      "scorecard": "worked",
+      "entity_ids": [],
+      "step": "verify",
+      "case_id": "general"
+    },
+    {
+      "id": "n2611d25",
+      "timestamp": "2026-11-05T15:04:56Z",
+      "server": "sayari",
+      "tool": "search_shipments",
+      "params": {
+        "summary": "\"GOTION\", HS 2504, arrival USA, limit 10"
+      },
+      "question": "Re-check of a published claim",
+      "purpose": "Re-check (recheck-2026-11-05-d)",
+      "result_summary": "0 rows",
+      "interpretation": "See investigation/notes/recheck-2026-11-05-d.md for the claim this call checked.",
+      "scorecard": "worked",
+      "entity_ids": [],
+      "step": "verify",
+      "case_id": "general"
+    },
+    {
+      "id": "n2611d26",
+      "timestamp": "2026-11-05T15:04:57Z",
+      "server": "sayari",
+      "tool": "get_entity_summary",
+      "params": {
+        "summary": "entity TeFCW..., retry"
+      },
+      "question": "Re-check of a published claim",
+      "purpose": "Re-check (recheck-2026-11-05-d)",
+      "result_summary": "Error: unexpected error",
+      "interpretation": "See investigation/notes/recheck-2026-11-05-d.md for the claim this call checked.",
+      "scorecard": "failed",
+      "entity_ids": [],
+      "step": "verify",
+      "case_id": "general"
+    },
+    {
+      "id": "n2611d27",
+      "timestamp": "2026-11-05T15:04:58Z",
+      "server": "sayari",
+      "tool": "get_entity_profile",
+      "params": {
+        "summary": "entity TeFCW..., relationships_limit 10"
+      },
+      "question": "Re-check of a published claim",
+      "purpose": "Re-check (recheck-2026-11-05-d)",
+      "result_summary": "Error: unexpected error",
+      "interpretation": "See investigation/notes/recheck-2026-11-05-d.md for the claim this call checked.",
+      "scorecard": "failed",
+      "entity_ids": [],
+      "step": "verify",
+      "case_id": "general"
+    },
+    {
+      "id": "n2611d28",
+      "timestamp": "2026-11-05T15:04:59Z",
+      "server": "sayari",
+      "tool": "search_entities",
+      "params": {
+        "summary": "\"Gotion Illinois\", limit 8, compact"
+      },
+      "question": "Re-check of a published claim",
+      "purpose": "Re-check (recheck-2026-11-05-d)",
+      "result_summary": "4 records; new nPWK... and w_LG...; TeFCW absent",
+      "interpretation": "See investigation/notes/recheck-2026-11-05-d.md for the claim this call checked.",
+      "scorecard": "worked",
+      "entity_ids": [],
+      "step": "verify",
+      "case_id": "general"
+    },
+    {
+      "id": "n2611d29",
+      "timestamp": "2026-11-05T15:05:00Z",
+      "server": "sayari",
+      "tool": "find_beneficial_owners",
+      "params": {
+        "summary": "entity Ba3Sk..., limit 15, depth 1, companies"
+      },
+      "question": "Re-check of a published claim",
+      "purpose": "Re-check (recheck-2026-11-05-d)",
+      "result_summary": "15 company holders, Volkswagen (China) among them, no percentage",
+      "interpretation": "See investigation/notes/recheck-2026-11-05-d.md for the claim this call checked.",
+      "scorecard": "worked",
+      "entity_ids": [],
+      "step": "verify",
+      "case_id": "general"
+    },
+    {
+      "id": "n2611d30",
+      "timestamp": "2026-11-05T15:05:01Z",
+      "server": "sayari",
+      "tool": "search_trade_facets",
+      "params": {
+        "summary": "shipments, \"GOTION\", arrival USA"
+      },
+      "question": "Re-check of a published claim",
+      "purpose": "Re-check (recheck-2026-11-05-d)",
+      "result_summary": "1,470 rows; China 1,169, Korea 94; 1 Aug 2021 to 20 Oct 2026",
+      "interpretation": "See investigation/notes/recheck-2026-11-05-d.md for the claim this call checked.",
+      "scorecard": "worked",
+      "entity_ids": [],
+      "step": "verify",
+      "case_id": "general"
+    },
+    {
+      "id": "n2611d31",
+      "timestamp": "2026-11-05T15:05:02Z",
+      "server": "sayari",
+      "tool": "search_trade_facets",
+      "params": {
+        "summary": "shipments, \"GOTION\", HS 8507, arrival USA"
+      },
+      "question": "Re-check of a published claim",
+      "purpose": "Re-check (recheck-2026-11-05-d)",
+      "result_summary": "149 rows; 10 Mar 2023 to 4 Oct 2026; Jamaica 13",
+      "interpretation": "See investigation/notes/recheck-2026-11-05-d.md for the claim this call checked.",
+      "scorecard": "worked",
+      "entity_ids": [],
+      "step": "verify",
+      "case_id": "general"
+    },
+    {
+      "id": "n2611d32",
+      "timestamp": "2026-11-05T15:05:03Z",
+      "server": "sayari",
+      "tool": "search_shipments",
+      "params": {
+        "summary": "\"GOTION\", HS 8507, arrival USA, date_from 2026-09-01, limit 40"
+      },
+      "question": "Re-check of a published claim",
+      "purpose": "Re-check (recheck-2026-11-05-d)",
+      "result_summary": "40 of 149 read; latest cells via Jamaica to 4 Oct 2026",
+      "interpretation": "See investigation/notes/recheck-2026-11-05-d.md for the claim this call checked.",
+      "scorecard": "worked",
+      "entity_ids": [],
+      "step": "verify",
+      "case_id": "general"
+    },
+    {
+      "id": "n2611d33",
+      "timestamp": "2026-11-05T15:05:04Z",
+      "server": "sayari",
+      "tool": "get_entity_summary",
+      "params": {
+        "summary": "entity nPWKaWyZ8NyEfoNxnUqdZw"
+      },
+      "question": "Re-check of a published claim",
+      "purpose": "Re-check (recheck-2026-11-05-d)",
+      "result_summary": "Same UEI and CAGE as old record; IL and DE files; active 9 Oct 2026; 11 received",
+      "interpretation": "See investigation/notes/recheck-2026-11-05-d.md for the claim this call checked.",
+      "scorecard": "worked",
+      "entity_ids": [],
+      "step": "verify",
+      "case_id": "general"
+    },
+    {
+      "id": "n2611d34",
+      "timestamp": "2026-11-05T15:05:05Z",
+      "server": "sayari",
+      "tool": "find_beneficial_owners",
+      "params": {
+        "summary": "entity nPWK..., limit 10"
+      },
+      "question": "Re-check of a published claim",
+      "purpose": "Re-check (recheck-2026-11-05-d)",
+      "result_summary": "0 owners",
+      "interpretation": "See investigation/notes/recheck-2026-11-05-d.md for the claim this call checked.",
+      "scorecard": "worked",
+      "entity_ids": [],
+      "step": "verify",
+      "case_id": "general"
+    },
+    {
+      "id": "n2611d35",
+      "timestamp": "2026-11-05T15:05:06Z",
+      "server": "sayari",
+      "tool": "search_shipments",
+      "params": {
+        "summary": "\"GOTION ILLINOIS\", arrival USA, limit 60"
+      },
+      "question": "Re-check of a published claim",
+      "purpose": "Re-check (recheck-2026-11-05-d)",
+      "result_summary": "60 of 124 read; 29 pack rows Aug 2026; new suppliers listed",
+      "interpretation": "See investigation/notes/recheck-2026-11-05-d.md for the claim this call checked.",
+      "scorecard": "worked",
+      "entity_ids": [],
+      "step": "verify",
+      "case_id": "general"
+    },
+    {
+      "id": "n2611d36",
+      "timestamp": "2026-11-05T15:05:07Z",
+      "server": "sayari",
+      "tool": "get_entity_summary",
+      "params": {
+        "summary": "entity VyUeBf-iagPQP8TlR9Y4Pw"
+      },
+      "question": "Re-check of a published claim",
+      "purpose": "Re-check (recheck-2026-11-05-d)",
+      "result_summary": "Resolves; same register, tax and LEI IDs; 0 trade",
+      "interpretation": "See investigation/notes/recheck-2026-11-05-d.md for the claim this call checked.",
+      "scorecard": "worked",
+      "entity_ids": [],
+      "step": "verify",
+      "case_id": "general"
+    },
+    {
+      "id": "n2611d37",
+      "timestamp": "2026-11-05T15:05:08Z",
+      "server": "sayari",
+      "tool": "find_beneficial_owners",
+      "params": {
+        "summary": "entity VyUeBf..., limit 10, depth 3"
+      },
+      "question": "Re-check of a published claim",
+      "purpose": "Re-check (recheck-2026-11-05-d)",
+      "result_summary": "10 paths, all through CATL Hong Kong and CATL",
+      "interpretation": "See investigation/notes/recheck-2026-11-05-d.md for the claim this call checked.",
+      "scorecard": "worked",
+      "entity_ids": [],
+      "step": "verify",
+      "case_id": "general"
+    },
+    {
+      "id": "n2611d38",
+      "timestamp": "2026-11-05T15:05:09Z",
+      "server": "sayari",
+      "tool": "search_entities",
+      "params": {
+        "summary": "\"Contemporary Amperex Technology Hungary\", limit 8"
+      },
+      "question": "Re-check of a published claim",
+      "purpose": "Re-check (recheck-2026-11-05-d)",
+      "result_summary": "4 records; MiHL... present, sbHG... absent",
+      "interpretation": "See investigation/notes/recheck-2026-11-05-d.md for the claim this call checked.",
+      "scorecard": "worked",
+      "entity_ids": [],
+      "step": "verify",
+      "case_id": "general"
+    },
+    {
+      "id": "n2611d39",
+      "timestamp": "2026-11-05T15:05:10Z",
+      "server": "sayari",
+      "tool": "search_shipments",
+      "params": {
+        "summary": "\"Contemporary Amperex\", arrival HUN, limit 30"
+      },
+      "question": "Re-check of a published claim",
+      "purpose": "Re-check (recheck-2026-11-05-d)",
+      "result_summary": "7 rows, unchanged, nothing after Dec 2025",
+      "interpretation": "See investigation/notes/recheck-2026-11-05-d.md for the claim this call checked.",
+      "scorecard": "worked",
+      "entity_ids": [],
+      "step": "verify",
+      "case_id": "general"
+    },
+    {
+      "id": "n2611d40",
+      "timestamp": "2026-11-05T15:05:11Z",
+      "server": "sayari",
+      "tool": "search_shipments",
+      "params": {
+        "summary": "\"Contemporary Amperex\", departure HUN, limit 25"
+      },
+      "question": "Re-check of a published claim",
+      "purpose": "Re-check (recheck-2026-11-05-d)",
+      "result_summary": "0 rows",
+      "interpretation": "See investigation/notes/recheck-2026-11-05-d.md for the claim this call checked.",
+      "scorecard": "worked",
+      "entity_ids": [],
+      "step": "verify",
+      "case_id": "general"
+    },
+    {
+      "id": "n2611d41",
+      "timestamp": "2026-11-05T15:05:12Z",
+      "server": "sayari",
+      "tool": "search_shipments",
+      "params": {
+        "summary": "\"Debrecen\", HS 3801, arrival HUN, limit 25"
+      },
+      "question": "Re-check of a published claim",
+      "purpose": "Re-check (recheck-2026-11-05-d)",
+      "result_summary": "0 rows",
+      "interpretation": "See investigation/notes/recheck-2026-11-05-d.md for the claim this call checked.",
+      "scorecard": "worked",
+      "entity_ids": [],
+      "step": "verify",
+      "case_id": "general"
+    },
+    {
+      "id": "n2611d42",
+      "timestamp": "2026-11-05T15:05:13Z",
+      "server": "sayari",
+      "tool": "search_shipments",
+      "params": {
+        "summary": "\"CATL\", HS 8507, arrival HUN, limit 20"
+      },
+      "question": "Re-check of a published claim",
+      "purpose": "Re-check (recheck-2026-11-05-d)",
+      "result_summary": "0 rows",
+      "interpretation": "See investigation/notes/recheck-2026-11-05-d.md for the claim this call checked.",
+      "scorecard": "worked",
+      "entity_ids": [],
+      "step": "verify",
+      "case_id": "general"
+    },
+    {
+      "id": "n2611d43",
+      "timestamp": "2026-11-05T15:05:14Z",
+      "server": "sayari",
+      "tool": "get_entity_summary",
+      "params": {
+        "summary": "entity sbHG28fzGHNWsCxC7bZhtQ"
+      },
+      "question": "Re-check of a published claim",
+      "purpose": "Re-check (recheck-2026-11-05-d)",
+      "result_summary": "Error: unexpected error",
+      "interpretation": "See investigation/notes/recheck-2026-11-05-d.md for the claim this call checked.",
+      "scorecard": "failed",
+      "entity_ids": [],
+      "step": "verify",
+      "case_id": "general"
+    },
+    {
+      "id": "n2611d44",
+      "timestamp": "2026-11-05T15:05:15Z",
+      "server": "sayari",
+      "tool": "get_entity_summary",
+      "params": {
+        "summary": "entity MiHLLkR_Di3szEG__bJGfg"
+      },
+      "question": "Re-check of a published claim",
+      "purpose": "Re-check (recheck-2026-11-05-d)",
+      "result_summary": "Acuris C2302839; financial-crime media flags; 0 trade",
+      "interpretation": "See investigation/notes/recheck-2026-11-05-d.md for the claim this call checked.",
+      "scorecard": "worked",
+      "entity_ids": [],
+      "step": "verify",
+      "case_id": "general"
+    },
+    {
+      "id": "n2611d45",
+      "timestamp": "2026-11-05T15:05:16Z",
+      "server": "sayari",
+      "tool": "search_buyers",
+      "params": {
+        "summary": "graphite, HS 3801, arrival HUN, date_from 2026-01-01, limit 10"
+      },
+      "question": "Re-check of a published claim",
+      "purpose": "Re-check (recheck-2026-11-05-d)",
+      "result_summary": "7 buyers; Samsung SDI 374, latest 8 May 2026; no CATL",
+      "interpretation": "See investigation/notes/recheck-2026-11-05-d.md for the claim this call checked.",
+      "scorecard": "worked",
+      "entity_ids": [],
+      "step": "verify",
+      "case_id": "general"
+    },
+    {
+      "id": "n2611d46",
+      "timestamp": "2026-11-05T15:05:17Z",
+      "server": "sayari",
+      "tool": "get_entity_summary",
+      "params": {
+        "summary": "entity d36wLU72WGaWpEduWzxfNw"
+      },
+      "question": "Re-check of a published claim",
+      "purpose": "Re-check (recheck-2026-11-05-d)",
+      "result_summary": "Resolves; same tax ID; 384 sent",
+      "interpretation": "See investigation/notes/recheck-2026-11-05-d.md for the claim this call checked.",
+      "scorecard": "worked",
+      "entity_ids": [],
+      "step": "verify",
+      "case_id": "general"
+    },
+    {
+      "id": "n2611d47",
+      "timestamp": "2026-11-05T15:05:18Z",
+      "server": "sayari",
+      "tool": "search_entities",
+      "params": {
+        "summary": "\"Huayue Nickel Cobalt\", limit 12"
+      },
+      "question": "Re-check of a published claim",
+      "purpose": "Re-check (recheck-2026-11-05-d)",
+      "result_summary": "8 records, the same 8 as the site list",
+      "interpretation": "See investigation/notes/recheck-2026-11-05-d.md for the claim this call checked.",
+      "scorecard": "worked",
+      "entity_ids": [],
+      "step": "verify",
+      "case_id": "general"
+    },
+    {
+      "id": "n2611d48",
+      "timestamp": "2026-11-05T15:05:19Z",
+      "server": "sayari",
+      "tool": "find_beneficial_owners",
+      "params": {
+        "summary": "entity d36w..., limit 15"
+      },
+      "question": "Re-check of a published claim",
+      "purpose": "Re-check (recheck-2026-11-05-d)",
+      "result_summary": "2 listed individuals, unchanged; names not repeated here",
+      "interpretation": "See investigation/notes/recheck-2026-11-05-d.md for the claim this call checked.",
+      "scorecard": "worked",
+      "entity_ids": [],
+      "step": "verify",
+      "case_id": "general"
+    },
+    {
+      "id": "n2611d49",
+      "timestamp": "2026-11-05T15:05:20Z",
+      "server": "sayari",
+      "tool": "search_shipments",
+      "params": {
+        "summary": "\"Huayue Nickel Cobalt\", IDN to USA, date_from 2025-11-01, limit 10"
+      },
+      "question": "Re-check of a published claim",
+      "purpose": "Re-check (recheck-2026-11-05-d)",
+      "result_summary": "48 total; valves; latest 27 Nov 2025",
+      "interpretation": "See investigation/notes/recheck-2026-11-05-d.md for the claim this call checked.",
+      "scorecard": "worked",
+      "entity_ids": [],
+      "step": "verify",
+      "case_id": "general"
+    },
+    {
+      "id": "n2611d50",
+      "timestamp": "2026-11-05T15:05:21Z",
+      "server": "sayari",
+      "tool": "search_trade_facets",
+      "params": {
+        "summary": "shipments, \"Huayue Nickel Cobalt\", departure IDN"
+      },
+      "question": "Re-check of a published claim",
+      "purpose": "Re-check (recheck-2026-11-05-d)",
+      "result_summary": "382 rows; HS 750120 308; USA 48; latest 29 Aug 2026",
+      "interpretation": "See investigation/notes/recheck-2026-11-05-d.md for the claim this call checked.",
+      "scorecard": "worked",
+      "entity_ids": [],
+      "step": "verify",
+      "case_id": "general"
+    },
+    {
+      "id": "n2611d51",
+      "timestamp": "2026-11-05T15:05:22Z",
+      "server": "sayari",
+      "tool": "search_shipments",
+      "params": {
+        "summary": "\"Huayue Nickel Cobalt\", HS 750120, date_from 2026-08-01, limit 40"
+      },
+      "question": "Re-check of a published claim",
+      "purpose": "Re-check (recheck-2026-11-05-d)",
+      "result_summary": "40 of 308 read; no new buyers; latest 29 Aug 2026",
+      "interpretation": "See investigation/notes/recheck-2026-11-05-d.md for the claim this call checked.",
+      "scorecard": "worked",
+      "entity_ids": [],
+      "step": "verify",
+      "case_id": "general"
+    },
+    {
+      "id": "n2611d52",
+      "timestamp": "2026-11-05T15:05:23Z",
+      "server": "sayari",
+      "tool": "search_suppliers",
+      "params": {
+        "summary": "nickel, HS 7501, IDN to USA, limit 10"
+      },
+      "question": "Re-check of a published claim",
+      "purpose": "Re-check (recheck-2026-11-05-d)",
+      "result_summary": "0 suppliers",
+      "interpretation": "See investigation/notes/recheck-2026-11-05-d.md for the claim this call checked.",
+      "scorecard": "worked",
+      "entity_ids": [],
+      "step": "verify",
+      "case_id": "general"
+    },
+    {
+      "id": "n2611d53",
+      "timestamp": "2026-11-05T15:05:24Z",
+      "server": "sayari",
+      "tool": "search_suppliers",
+      "params": {
+        "summary": "nickel, HS 7502, IDN to USA, limit 10"
+      },
+      "question": "Re-check of a published claim",
+      "purpose": "Re-check (recheck-2026-11-05-d)",
+      "result_summary": "1 supplier: CNGR Ding Xing, 3 shipments, latest 13 Dec 2025",
+      "interpretation": "See investigation/notes/recheck-2026-11-05-d.md for the claim this call checked.",
+      "scorecard": "worked",
+      "entity_ids": [],
+      "step": "verify",
+      "case_id": "general"
+    },
+    {
+      "id": "n2611d54",
+      "timestamp": "2026-11-05T15:05:25Z",
+      "server": "sayari",
+      "tool": "search_shipments",
+      "params": {
+        "summary": "\"Huayou\", HS 2853, arrival KOR, date_from 2024-01-01, limit 15"
+      },
+      "question": "Re-check of a published claim",
+      "purpose": "Re-check (recheck-2026-11-05-d)",
+      "result_summary": "15 of 67 read; rows end Dec 2023",
+      "interpretation": "See investigation/notes/recheck-2026-11-05-d.md for the claim this call checked.",
+      "scorecard": "worked",
+      "entity_ids": [],
+      "step": "verify",
+      "case_id": "general"
+    },
+    {
+      "id": "n2611d55",
+      "timestamp": "2026-11-05T15:05:26Z",
+      "server": "sayari",
+      "tool": "search_shipments",
+      "params": {
+        "summary": "\"POSCO FUTURE M\", HS 284190, arrival USA, date_from 2026-10-15, limit 3, full"
+      },
+      "question": "Re-check of a published claim",
+      "purpose": "Re-check (recheck-2026-11-05-d)",
+      "result_summary": "2 rows to 1 LG Way, Holland, 20 Oct 2026; 1 to Kokomo, 18 Oct; GM record aliases shown",
+      "interpretation": "See investigation/notes/recheck-2026-11-05-d.md for the claim this call checked.",
+      "scorecard": "worked",
+      "entity_ids": [],
+      "step": "verify",
+      "case_id": "general"
+    },
+    {
+      "id": "n2611d56",
+      "timestamp": "2026-11-05T15:05:27Z",
+      "server": "sayari",
+      "tool": "get_entity_summary",
+      "params": {
+        "summary": "entity U2oqbA1HwGOfyoaZT2kaCA"
+      },
+      "question": "Re-check of a published claim",
+      "purpose": "Re-check (recheck-2026-11-05-d)",
+      "result_summary": "EcoPro EM trade record, Korea, 22 sent",
+      "interpretation": "See investigation/notes/recheck-2026-11-05-d.md for the claim this call checked.",
+      "scorecard": "worked",
+      "entity_ids": [],
+      "step": "verify",
+      "case_id": "general"
+    },
+    {
+      "id": "n2611d57",
+      "timestamp": "2026-11-05T15:05:28Z",
+      "server": "sayari",
+      "tool": "get_entity_summary",
+      "params": {
+        "summary": "entity E8kKPSmrzqU56WSWFW_B_w"
+      },
+      "question": "Re-check of a published claim",
+      "purpose": "Re-check (recheck-2026-11-05-d)",
+      "result_summary": "EcoPro EM Company Limited, Pohang, 114 sent",
+      "interpretation": "See investigation/notes/recheck-2026-11-05-d.md for the claim this call checked.",
+      "scorecard": "worked",
+      "entity_ids": [],
+      "step": "verify",
+      "case_id": "general"
+    },
+    {
+      "id": "n2611d58",
+      "timestamp": "2026-11-05T15:05:29Z",
+      "server": "sayari",
+      "tool": "search_trade_facets",
+      "params": {
+        "summary": "shipments, battery, HS 8507, arrival HUN, date_from 2026-06-01"
+      },
+      "question": "Re-check of a published claim",
+      "purpose": "Re-check (recheck-2026-11-05-d)",
+      "result_summary": "2,157 rows, filter ignored; latest 2026-08-24",
+      "interpretation": "See investigation/notes/recheck-2026-11-05-d.md for the claim this call checked.",
+      "scorecard": "worked",
+      "entity_ids": [],
+      "step": "verify",
+      "case_id": "general"
+    },
+    {
+      "id": "n2611d59",
+      "timestamp": "2026-11-05T15:05:30Z",
+      "server": "sayari",
+      "tool": "lookup_risk_factors",
+      "params": {
+        "summary": "reputational_risk_financial_crime and _breaking"
+      },
+      "question": "Re-check of a published claim",
+      "purpose": "Re-check (recheck-2026-11-05-d)",
+      "result_summary": "Definitions: media mentions; breaking means within 3 months",
+      "interpretation": "See investigation/notes/recheck-2026-11-05-d.md for the claim this call checked.",
+      "scorecard": "worked",
+      "entity_ids": [],
+      "step": "verify",
+      "case_id": "general"
+    },
+    {
+      "id": "n2611d60",
+      "timestamp": "2026-11-05T15:05:31Z",
+      "server": "sayari",
+      "tool": "search_shipments",
+      "params": {
+        "summary": "\"CNGR DING XING\", arrival USA, limit 6, full"
+      },
+      "question": "Re-check of a published claim",
+      "purpose": "Re-check (recheck-2026-11-05-d)",
+      "result_summary": "6 rows: 3 nickel, 3 cobalt, Dec 2024 to Aug 2026",
+      "interpretation": "See investigation/notes/recheck-2026-11-05-d.md for the claim this call checked.",
+      "scorecard": "worked",
+      "entity_ids": [],
+      "step": "verify",
+      "case_id": "general"
+    },
+    {
+      "id": "n2611d61",
+      "timestamp": "2026-11-05T15:05:32Z",
+      "server": "sayari",
+      "tool": "find_beneficial_owners",
+      "params": {
+        "summary": "entity nOqQmHGAytm_cZwP4GUsQA, limit 6"
+      },
+      "question": "Re-check of a published claim",
+      "purpose": "Re-check (recheck-2026-11-05-d)",
+      "result_summary": "2 individuals with China addresses, role unexplained",
+      "interpretation": "See investigation/notes/recheck-2026-11-05-d.md for the claim this call checked.",
+      "scorecard": "worked",
+      "entity_ids": [],
+      "step": "verify",
+      "case_id": "general"
+    },
+    {
+      "id": "n2611d62",
+      "timestamp": "2026-11-05T15:05:33Z",
+      "server": "sayari",
+      "tool": "search_suppliers",
+      "params": {
+        "summary": "\"Eternal Nickel\", arrival USA, limit 5"
+      },
+      "question": "Re-check of a published claim",
+      "purpose": "Re-check (recheck-2026-11-05-d)",
+      "result_summary": "0 suppliers",
+      "interpretation": "See investigation/notes/recheck-2026-11-05-d.md for the claim this call checked.",
+      "scorecard": "worked",
+      "entity_ids": [],
+      "step": "verify",
+      "case_id": "general"
+    },
+    {
+      "id": "n2611d63",
+      "timestamp": "2026-11-05T15:05:34Z",
+      "server": "sayari",
+      "tool": "search_shipments",
+      "params": {
+        "summary": "\"Panasonic Energy\", HS 3801, arrival USA, date_from 2026-08-01, limit 60"
+      },
+      "question": "Re-check of a published claim",
+      "purpose": "Re-check (recheck-2026-11-05-d)",
+      "result_summary": "36 rows; POSCO 18; unnamed shipper rows from Singapore and Taiwan",
+      "interpretation": "See investigation/notes/recheck-2026-11-05-d.md for the claim this call checked.",
+      "scorecard": "worked",
+      "entity_ids": [],
+      "step": "verify",
+      "case_id": "general"
+    },
+    {
+      "id": "n2611d64",
+      "timestamp": "2026-11-05T15:05:35Z",
+      "server": "sayari",
+      "tool": "search_shipments",
+      "params": {
+        "summary": "\"I-ACT5\", limit 40"
+      },
+      "question": "Re-check of a published claim",
+      "purpose": "Re-check (recheck-2026-11-05-d)",
+      "result_summary": "33 rows; Panasonic Procurement 28, Panasonic Energy 2, Tesla 3",
+      "interpretation": "See investigation/notes/recheck-2026-11-05-d.md for the claim this call checked.",
+      "scorecard": "worked",
+      "entity_ids": [],
+      "step": "verify",
+      "case_id": "general"
+    },
+    {
+      "id": "n2611d65",
+      "timestamp": "2026-11-05T15:05:36Z",
+      "server": "sayari",
+      "tool": "search_suppliers",
+      "params": {
+        "summary": "\"Panasonic Energy\", HS 3801, arrival USA, date_from 2024-01-01"
+      },
+      "question": "Re-check of a published claim",
+      "purpose": "Re-check (recheck-2026-11-05-d)",
+      "result_summary": "2 named: POSCO 18, latest 11 Aug 2026; BTR Sales 1",
+      "interpretation": "See investigation/notes/recheck-2026-11-05-d.md for the claim this call checked.",
+      "scorecard": "worked",
+      "entity_ids": [],
+      "step": "verify",
+      "case_id": "general"
+    },
+    {
+      "id": "n2611d66",
+      "timestamp": "2026-11-05T15:05:37Z",
+      "server": "sayari",
+      "tool": "search_shipments",
+      "params": {
+        "summary": "\"Panasonic Energy\", HS 8507, JPN to USA, date_from 2026-09-01, limit 30"
+      },
+      "question": "Re-check of a published claim",
+      "purpose": "Re-check (recheck-2026-11-05-d)",
+      "result_summary": "30 of 652 read; latest 15 Oct 2026",
+      "interpretation": "See investigation/notes/recheck-2026-11-05-d.md for the claim this call checked.",
+      "scorecard": "worked",
+      "entity_ids": [],
+      "step": "verify",
+      "case_id": "general"
+    },
+    {
+      "id": "n2611d67",
+      "timestamp": "2026-11-05T15:05:38Z",
+      "server": "sayari",
+      "tool": "search_suppliers",
+      "params": {
+        "summary": "\"LG Energy Solution\", HS 3801, arrival USA, date_from 2024-01-01, limit 20"
+      },
+      "question": "Re-check of a published claim",
+      "purpose": "Re-check (recheck-2026-11-05-d)",
+      "result_summary": "24 suppliers; Shanshan latest 2025; no new named Chinese supplier in the top 20",
+      "interpretation": "See investigation/notes/recheck-2026-11-05-d.md for the claim this call checked.",
+      "scorecard": "worked",
+      "entity_ids": [],
+      "step": "verify",
+      "case_id": "general"
+    },
+    {
+      "id": "n2611d68",
+      "timestamp": "2026-11-05T15:05:39Z",
+      "server": "sayari",
+      "tool": "search_shipments",
+      "params": {
+        "summary": "\"LG Energy Solution\", HS 3801, arrival USA, date_from 2026-09-01, limit 4, full"
+      },
+      "question": "Re-check of a published claim",
+      "purpose": "Re-check (recheck-2026-11-05-d)",
+      "result_summary": "542 total; Kaohsiung row to Arizona, Busan rows to Elwood, shippers unnamed",
+      "interpretation": "See investigation/notes/recheck-2026-11-05-d.md for the claim this call checked.",
+      "scorecard": "worked",
+      "entity_ids": [],
+      "step": "verify",
+      "case_id": "general"
+    },
+    {
+      "id": "n2611d69",
+      "timestamp": "2026-11-05T15:05:40Z",
+      "server": "sayari",
+      "tool": "search_shipments",
+      "params": {
+        "summary": "same, date_from 2026-08-01, limit 80, compact"
+      },
+      "question": "Re-check of a published claim",
+      "purpose": "Re-check (recheck-2026-11-05-d)",
+      "result_summary": "80 read; GM record 67 unnamed; OEC 9; BTR Indonesia 1",
+      "interpretation": "See investigation/notes/recheck-2026-11-05-d.md for the claim this call checked.",
+      "scorecard": "worked",
+      "entity_ids": [],
+      "step": "verify",
+      "case_id": "general"
+    },
+    {
+      "id": "n2611d70",
+      "timestamp": "2026-11-05T15:05:41Z",
+      "server": "sayari",
+      "tool": "search_shipments",
+      "params": {
+        "summary": "\"LG Energy Solution Vertech\", HS 8507, arrival USA, date_from 2026-08-01, limit 25"
+      },
+      "question": "Re-check of a published claim",
+      "purpose": "Re-check (recheck-2026-11-05-d)",
+      "result_summary": "151 total; LGES Ltd latest 11 Oct 2026; INTO R 2 rows",
+      "interpretation": "See investigation/notes/recheck-2026-11-05-d.md for the claim this call checked.",
+      "scorecard": "worked",
+      "entity_ids": [],
+      "step": "verify",
+      "case_id": "general"
+    },
+    {
+      "id": "n2611d71",
+      "timestamp": "2026-11-05T15:05:42Z",
+      "server": "sayari",
+      "tool": "search_shipments",
+      "params": {
+        "summary": "\"STARPLUS ENERGY\", HS 284190, arrival USA, date_to 2025-06-30, limit 15"
+      },
+      "question": "Re-check of a published claim",
+      "purpose": "Re-check (recheck-2026-11-05-d)",
+      "result_summary": "Filter ignored; 15 rows, all 18 Oct 2026",
+      "interpretation": "See investigation/notes/recheck-2026-11-05-d.md for the claim this call checked.",
+      "scorecard": "worked",
+      "entity_ids": [],
+      "step": "verify",
+      "case_id": "general"
+    },
+    {
+      "id": "n2611d72",
+      "timestamp": "2026-11-05T15:05:43Z",
+      "server": "sayari",
+      "tool": "get_entity_summary",
+      "params": {
+        "summary": "entity Yg9iex7iQvTxSVdVf-QvwQ"
+      },
+      "question": "Re-check of a published claim",
+      "purpose": "Re-check (recheck-2026-11-05-d)",
+      "result_summary": "General Motors LLC; active 19 Oct 2026; SAM UEI DG8EN42LYHL6",
+      "interpretation": "See investigation/notes/recheck-2026-11-05-d.md for the claim this call checked.",
+      "scorecard": "worked",
+      "entity_ids": [],
+      "step": "verify",
+      "case_id": "general"
+    },
+    {
+      "id": "n2611d73",
+      "timestamp": "2026-11-05T15:05:44Z",
+      "server": "tavily",
+      "tool": "tavily_search",
+      "params": {
+        "summary": "Chinese query on VW 5.30% transfer, from 2026-09-20, advanced, 8"
+      },
+      "question": "Re-check of a published claim",
+      "purpose": "Re-check (recheck-2026-11-05-d)",
+      "result_summary": "Announcement 2026-075 terms; approval and transfer pending at 28 Sep",
+      "interpretation": "See investigation/notes/recheck-2026-11-05-d.md for the claim this call checked.",
+      "scorecard": "worked",
+      "entity_ids": [],
+      "step": "verify",
+      "case_id": "general"
+    },
+    {
+      "id": "n2611d74",
+      "timestamp": "2026-11-05T15:05:45Z",
+      "server": "tavily",
+      "tool": "tavily_search",
+      "params": {
+        "summary": "Chinese query on transfer completion, from 2026-10-10, advanced, 8"
+      },
+      "question": "Re-check of a published claim",
+      "purpose": "Re-check (recheck-2026-11-05-d)",
+      "result_summary": "Hefei regulator approval, notice 5 Nov 2026; Q3 report 24.28%; transfer not done",
+      "interpretation": "See investigation/notes/recheck-2026-11-05-d.md for the claim this call checked.",
+      "scorecard": "worked",
+      "entity_ids": [],
+      "step": "verify",
+      "case_id": "general"
+    },
+    {
+      "id": "n2611d75",
+      "timestamp": "2026-11-05T15:05:46Z",
+      "server": "tavily",
+      "tool": "tavily_search",
+      "params": {
+        "summary": "Gotion Manteno Illinois plant October 2026, from 2026-10-01, advanced, 8"
+      },
+      "question": "Re-check of a published claim",
+      "purpose": "Re-check (recheck-2026-11-05-d)",
+      "result_summary": "OSHA story; 5th amended complaint; a congressman's statement on the settlement",
+      "interpretation": "See investigation/notes/recheck-2026-11-05-d.md for the claim this call checked.",
+      "scorecard": "worked",
+      "entity_ids": [],
+      "step": "verify",
+      "case_id": "general"
+    },
+    {
+      "id": "n2611d76",
+      "timestamp": "2026-11-05T15:05:47Z",
+      "server": "tavily",
+      "tool": "tavily_search",
+      "params": {
+        "summary": "Gotion Green Charter settlement, from 2026-10-10, advanced, 6"
+      },
+      "question": "Re-check of a published claim",
+      "purpose": "Re-check (recheck-2026-11-05-d)",
+      "result_summary": "Tentative deal from 2 Oct; township approved; fund tabled vote 27 Oct",
+      "interpretation": "See investigation/notes/recheck-2026-11-05-d.md for the claim this call checked.",
+      "scorecard": "worked",
+      "entity_ids": [],
+      "step": "verify",
+      "case_id": "general"
+    },
+    {
+      "id": "n2611d77",
+      "timestamp": "2026-11-05T15:05:48Z",
+      "server": "tavily",
+      "tool": "tavily_search",
+      "params": {
+        "summary": "OSHA Gotion Manteno, from 2026-09-20, advanced, 6"
+      },
+      "question": "Re-check of a published claim",
+      "purpose": "Re-check (recheck-2026-11-05-d)",
+      "result_summary": "Error: 429 rate limit",
+      "interpretation": "See investigation/notes/recheck-2026-11-05-d.md for the claim this call checked.",
+      "scorecard": "failed",
+      "entity_ids": [],
+      "step": "verify",
+      "case_id": "general"
+    },
+    {
+      "id": "n2611d78",
+      "timestamp": "2026-11-05T15:05:49Z",
+      "server": "tavily",
+      "tool": "tavily_search",
+      "params": {
+        "summary": "same, retried after waiting"
+      },
+      "question": "Re-check of a published claim",
+      "purpose": "Re-check (recheck-2026-11-05-d)",
+      "result_summary": "Shaw Local: burn injury 28 Sep, nearly 600 staff, two March fines contested",
+      "interpretation": "See investigation/notes/recheck-2026-11-05-d.md for the claim this call checked.",
+      "scorecard": "worked",
+      "entity_ids": [],
+      "step": "verify",
+      "case_id": "general"
+    },
+    {
+      "id": "n2611d79",
+      "timestamp": "2026-11-05T15:05:50Z",
+      "server": "tavily",
+      "tool": "tavily_search",
+      "params": {
+        "summary": "Korean query on POSCO spherical graphite and Q3, from 2026-10-01, advanced, 8"
+      },
+      "question": "Re-check of a published claim",
+      "purpose": "Re-check (recheck-2026-11-05-d)",
+      "result_summary": "No company share of Chinese graphite; Q3 revenue and profit; broker notes on non-China supply",
+      "interpretation": "See investigation/notes/recheck-2026-11-05-d.md for the claim this call checked.",
+      "scorecard": "worked",
+      "entity_ids": [],
+      "step": "verify",
+      "case_id": "general"
+    },
+    {
+      "id": "n2611d80",
+      "timestamp": "2026-11-05T15:05:51Z",
+      "server": "tavily",
+      "tool": "tavily_search",
+      "params": {
+        "summary": "CATL Debrecen production start, from 2026-09-15, advanced, 8"
+      },
+      "question": "Re-check of a published claim",
+      "purpose": "Re-check (recheck-2026-11-05-d)",
+      "result_summary": "CATL release: trial from 22 Sep; 537,000 modules; no series date",
+      "interpretation": "See investigation/notes/recheck-2026-11-05-d.md for the claim this call checked.",
+      "scorecard": "worked",
+      "entity_ids": [],
+      "step": "verify",
+      "case_id": "general"
+    },
+    {
+      "id": "n2611d81",
+      "timestamp": "2026-11-05T15:05:52Z",
+      "server": "tavily",
+      "tool": "tavily_search",
+      "params": {
+        "summary": "Huayou HPAL IMIP news, from 2026-10-01, advanced, 8"
+      },
+      "question": "Re-check of a published claim",
+      "purpose": "Re-check (recheck-2026-11-05-d)",
+      "result_summary": "Reuters: IMIP coordinated cuts expected; MHP halving weighed",
+      "interpretation": "See investigation/notes/recheck-2026-11-05-d.md for the claim this call checked.",
+      "scorecard": "worked",
+      "entity_ids": [],
+      "step": "verify",
+      "case_id": "general"
+    },
+    {
+      "id": "n2611d82",
+      "timestamp": "2026-11-05T15:05:53Z",
+      "server": "sayari",
+      "tool": "get_entity_summary",
+      "params": {
+        "summary": "entity TeFCW..., final retry"
+      },
+      "question": "Re-check of a published claim",
+      "purpose": "Re-check (recheck-2026-11-05-d)",
+      "result_summary": "Error: unexpected error",
+      "interpretation": "See investigation/notes/recheck-2026-11-05-d.md for the claim this call checked.",
+      "scorecard": "failed",
+      "entity_ids": [],
+      "step": "verify",
+      "case_id": "general"
+    },
+    {
+      "id": "n2611d83",
+      "timestamp": "2026-11-05T15:05:54Z",
+      "server": "sayari",
+      "tool": "get_entity_summary",
+      "params": {
+        "summary": "entity WLUn..., retry"
+      },
+      "question": "Re-check of a published claim",
+      "purpose": "Re-check (recheck-2026-11-05-d)",
+      "result_summary": "Error: unexpected error",
+      "interpretation": "See investigation/notes/recheck-2026-11-05-d.md for the claim this call checked.",
+      "scorecard": "failed",
+      "entity_ids": [],
+      "step": "verify",
+      "case_id": "general"
+    },
+    {
+      "id": "n2611d84",
+      "timestamp": "2026-11-05T15:05:55Z",
+      "server": "tavily",
+      "tool": "tavily_search",
+      "params": {
+        "summary": "China anode export control November 2026, from 2026-09-15, advanced, 6"
+      },
+      "question": "Re-check of a published claim",
+      "purpose": "Re-check (recheck-2026-11-05-d)",
+      "result_summary": "Pause on Oct 2025 controls runs to 10 Nov 2026; later status unclear",
+      "interpretation": "See investigation/notes/recheck-2026-11-05-d.md for the claim this call checked.",
+      "scorecard": "worked",
+      "entity_ids": [],
+      "step": "verify",
+      "case_id": "general"
+    },
+    {
+      "id": "n2611d85",
+      "timestamp": "2026-11-05T15:05:56Z",
+      "server": "sayari",
+      "tool": "get_entity_profile",
+      "params": {
+        "summary": "entity VyUeBf..., relationships_limit 6"
+      },
+      "question": "Re-check of a published claim",
+      "purpose": "Re-check (recheck-2026-11-05-d)",
+      "result_summary": "CATL Hong Kong 100%; holds GreenPower Energy Debrecen 100%",
+      "interpretation": "See investigation/notes/recheck-2026-11-05-d.md for the claim this call checked.",
+      "scorecard": "worked",
+      "entity_ids": [],
+      "step": "verify",
+      "case_id": "general"
+    },
+    {
+      "id": "n2611d86",
+      "timestamp": "2026-11-05T15:05:57Z",
+      "server": "sayari",
+      "tool": "find_beneficial_owners",
+      "params": {
+        "summary": "entity Tfn4TF12Z62wFwdTqxavFg, limit 5"
+      },
+      "question": "Re-check of a published claim",
+      "purpose": "Re-check (recheck-2026-11-05-d)",
+      "result_summary": "0 owners",
+      "interpretation": "See investigation/notes/recheck-2026-11-05-d.md for the claim this call checked.",
+      "scorecard": "worked",
+      "entity_ids": [],
+      "step": "verify",
+      "case_id": "general"
+    },
+    {
+      "id": "n2611d87",
+      "timestamp": "2026-11-05T15:05:58Z",
+      "server": "sayari",
+      "tool": "find_shortest_path",
+      "params": {
+        "summary": "Tfn4... to cuL17kycWigmNV3zpuabBA"
+      },
+      "question": "Re-check of a published claim",
+      "purpose": "Re-check (recheck-2026-11-05-d)",
+      "result_summary": "No path found",
+      "interpretation": "See investigation/notes/recheck-2026-11-05-d.md for the claim this call checked.",
+      "scorecard": "worked",
+      "entity_ids": [],
+      "step": "verify",
+      "case_id": "general"
+    },
+    {
+      "id": "n2611d88",
+      "timestamp": "2026-11-05T15:05:59Z",
+      "server": "tavily",
+      "tool": "tavily_search",
+      "params": {
+        "summary": "EU Battery Regulation due diligence date, from 2026-09-01, advanced, 5"
+      },
+      "question": "Re-check of a published claim",
+      "purpose": "Re-check (recheck-2026-11-05-d)",
+      "result_summary": "18 Aug 2027 still stands; passport 18 Feb 2027",
+      "interpretation": "See investigation/notes/recheck-2026-11-05-d.md for the claim this call checked.",
+      "scorecard": "worked",
+      "entity_ids": [],
+      "step": "verify",
+      "case_id": "general"
     }
   ]
 }

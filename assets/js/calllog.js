@@ -106,16 +106,19 @@
     const sy = calls.filter((c) => c.server === "sayari");
 
     const cases = d.cases.items;
-    document.getElementById("replay-nav").innerHTML = cases.map((k, i) => `<a href="#replay-${k.id}">${i + 1}. ${PT.esc(k.title)}</a>`).join("");
     out.innerHTML = cases.map((k, i) => {
       const inCase = sy.filter((c) => c.case_id === k.id);
+      const n = (x) => inCase.filter((c) => c.scorecard === x).length;
       const order = STEP_ORDER.concat([...new Set(inCase.map((c) => c.step))].filter((x) => !STEP_ORDER.includes(x)));
-      return `<h2 id="replay-${k.id}" style="margin-top:var(--s-7);scroll-margin-top:80px">Case ${i + 1}: ${PT.esc(k.title)} <span class="muted" style="font-size:var(--fs-1);font-family:var(--sans);font-weight:400">${inCase.length} Sayari calls</span></h2>` +
-        order.map((st) => {
+      return `<details class="rp-case" id="replay-${k.id}">
+        <summary><span class="rp-n">${i + 1}</span><span class="rp-t">${PT.esc(k.title)}</span>
+          <span class="rp-c">${inCase.length} queries · ${n("worked")} worked · ${n("partial")} partial · ${n("failed")} failed</span></summary>
+        <div class="rp-body">${order.map((st) => {
           const arr = inCase.filter((c) => c.step === st);
           if (!arr.length) return "";
-          return `<h3 style="margin-top:var(--s-5)">${PT.esc(STEP_LABEL[st] || st)}</h3><ol class="replay">${arr.map((c) => replayCard(c, d)).join("")}</ol>`;
-        }).join("");
+          return `<details class="rp-step"><summary>${PT.esc(STEP_LABEL[st] || st)} <span class="muted">${arr.length}</span></summary><ol class="replay">${arr.map((c) => replayCard(c, d)).join("")}</ol></details>`;
+        }).join("")}</div>
+      </details>`;
     }).join("");
 
     document.getElementById("scorecard").innerHTML = scorecardHTML(calls) + caseScoreHTML(d);
@@ -132,15 +135,25 @@
       keys: ["id", "tool", "server", "question", "purpose", "result_summary", "interpretation", "entity_names", "params_text"],
       threshold: 0.35, ignoreLocation: true,
     }) : null;
+    const logWrap = document.getElementById("log-wrap");
     document.getElementById("log-search").addEventListener("input", (e) => {
       const q = e.target.value.trim();
+      if (q) logWrap.open = true;
       if (!q) return render(calls);
       if (fuse) return render(fuse.search(q).map((r) => r.item));
       const ql = q.toLowerCase();
       render(docs.filter((c) => JSON.stringify(c).toLowerCase().includes(ql)));
     });
 
-    if (location.hash) { const el = document.getElementById(location.hash.slice(1)); if (el) el.scrollIntoView(); }
+    /* A link to any call opens the drop-downs around it. */
+    const reveal = () => {
+      const el = document.getElementById(decodeURIComponent(location.hash.slice(1)));
+      if (!el) return;
+      for (let p = el; p; p = p.parentElement) if (p.tagName === "DETAILS") p.open = true;
+      el.scrollIntoView();
+    };
+    window.addEventListener("hashchange", reveal);
+    if (location.hash) reveal();
   }
   document.addEventListener("DOMContentLoaded", init);
 })(window.PT);

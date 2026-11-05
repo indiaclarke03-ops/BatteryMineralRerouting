@@ -1,0 +1,688 @@
+{
+  "note": "Companies and links found by re-checks after a case was written. Merged by build_data.py.",
+  "entities": [
+    {
+      "id": "n3epSyTN-HbHMmnpJHNhkA",
+      "name": "HSBMA LLC (Hyundai and SK On)",
+      "country": "USA",
+      "role": "us_buyer",
+      "case": "case-1",
+      "summary": "Hyundai Motor Group and SK On battery venture at Kingston, Georgia, per its own website. Received battery-grade graphite in Jun 2026.",
+      "source_call_ids": [
+        "n2611b76",
+        "n2611b17"
+      ]
+    },
+    {
+      "id": "EAd4f9FKWeoImIL2ltX93A",
+      "name": "FNS, Inc. (freight forwarder)",
+      "country": "USA",
+      "role": "trader",
+      "case": "case-1",
+      "summary": "A US freight forwarder named as receiver, so the end buyer is not shown.",
+      "source_call_ids": [
+        "n2611b10"
+      ]
+    },
+    {
+      "id": "CIaftd6cYu0w_6K81qTGvg",
+      "name": "PT Indonesia BTR New Energy Mate (fragment)",
+      "country": "IDN",
+      "role": "transit_plant",
+      "case": "case-1",
+      "summary": "A further trade record for the plant, on the same Kendal street. 5 rows to NextStar Energy, Apr 2025.",
+      "source_call_ids": [
+        "n2611b34",
+        "n2611b46"
+      ]
+    },
+    {
+      "id": "Lv60RfghzhQ-9oSF_kW0wA",
+      "name": "PT INDONESIA BTR NEW ENERGY MATERIA (record 6)",
+      "country": "IDN",
+      "role": "transit_plant",
+      "case": "case-1",
+      "summary": "A trade record for the plant with 29 US rows.",
+      "source_call_ids": [
+        "n2611b14"
+      ]
+    },
+    {
+      "id": "zTmjvxb--FZPXZG8PERmOg",
+      "name": "Jiangxi Zichen Technology Co., Ltd.",
+      "country": "CHN",
+      "role": "producer",
+      "case": "case-5",
+      "summary": "The Putailai group's anode company, in China. 2,313 rows in Sayari.",
+      "source_call_ids": [
+        "n2611c13",
+        "n2611c48",
+        "n2611c49"
+      ]
+    },
+    {
+      "id": "kK2TOAWUJqpBl_jcmU2rsg",
+      "name": "Jiangxi Zichen (second trade record)",
+      "country": "CHN",
+      "role": "producer",
+      "case": "case-5",
+      "summary": "A second trade record, matched on name only.",
+      "source_call_ids": [
+        "n2611c50"
+      ]
+    },
+    {
+      "id": "uFjg3v6bVZDhlhSp0D5C5g",
+      "name": "Putailai America LLC",
+      "country": "USA",
+      "role": "buyer",
+      "case": "case-5",
+      "summary": "The group's US company. Registered 19 Dec 2024; Sayari shows it inactive.",
+      "source_call_ids": [
+        "n2611c61"
+      ]
+    },
+    {
+      "id": "RPYYIgKHs0f-kGKGBlE9jw",
+      "name": "BlueOval SK LLC",
+      "country": "USA",
+      "role": "us_buyer",
+      "case": "case-5",
+      "summary": "Ford and SK On battery venture.",
+      "source_call_ids": [
+        "n2611c50"
+      ]
+    },
+    {
+      "id": "cclu_C8fIOucVXcdONCwhA",
+      "name": "BlueOval SK (second record)",
+      "country": "USA",
+      "role": "us_buyer",
+      "case": "case-5",
+      "summary": "A second trade record for BlueOval SK.",
+      "source_call_ids": [
+        "n2611c50"
+      ]
+    },
+    {
+      "id": "Of8V4IKvPMrBhGKoO-Enqg",
+      "name": "HL-GA Battery Company",
+      "country": "USA",
+      "role": "us_buyer",
+      "case": "case-5",
+      "summary": "Received HS 3801.10 from Jiangxi Zichen in Feb 2025.",
+      "source_call_ids": [
+        "n2611c50"
+      ]
+    },
+    {
+      "id": "75mTlfJmZhOZmQY94FLJcQ",
+      "name": "OneD Material",
+      "country": "USA",
+      "role": "us_buyer",
+      "case": "case-5",
+      "summary": "Received graphite from Jiangxi Zichen, 2024 to 2025.",
+      "source_call_ids": [
+        "n2611c50"
+      ]
+    },
+    {
+      "id": "mP3j6N2XkD4HgpOIxjlDxg",
+      "name": "American Lithium Energy",
+      "country": "USA",
+      "role": "us_buyer",
+      "case": "case-5",
+      "summary": "Received graphite from Jiangxi Zichen in Aug 2024.",
+      "source_call_ids": [
+        "n2611c50"
+      ]
+    },
+    {
+      "id": "q4uVT7bM-GusYLonMicJ_Q",
+      "name": "Samsung SDI Co., Ltd.",
+      "country": "KOR",
+      "role": "buyer",
+      "case": "case-5",
+      "summary": "Consignee on 37 rows from Jiangxi Zichen into Malaysia.",
+      "source_call_ids": [
+        "n2611c13"
+      ]
+    },
+    {
+      "id": "stFLtUgGfc0__7Yr690bQg",
+      "name": "Green Planet Distribution Centre",
+      "country": "VNM",
+      "role": "buyer",
+      "case": "case-6",
+      "summary": "Received cells from EVE Malaysia in Vietnam.",
+      "source_call_ids": [
+        "n2611c73"
+      ]
+    },
+    {
+      "id": "osezq_4NIFh0ZY4PKJDi7A",
+      "name": "Greenworks Vietnam",
+      "country": "VNM",
+      "role": "buyer",
+      "case": "case-6",
+      "summary": "Received cells from EVE Malaysia.",
+      "source_call_ids": [
+        "n2611c73"
+      ]
+    },
+    {
+      "id": "TpqddARxaiwPfKk8RCIMjg",
+      "name": "Chervon Vietnam",
+      "country": "VNM",
+      "role": "buyer",
+      "case": "case-6",
+      "summary": "Received cells from EVE Malaysia, for garden and hand tools.",
+      "source_call_ids": [
+        "n2611c73"
+      ]
+    },
+    {
+      "id": "7ur0_9rzVaGinY-Sb6FIoQ",
+      "name": "Chervon Vietnam (second record)",
+      "country": "VNM",
+      "role": "buyer",
+      "case": "case-6",
+      "summary": "A second trade record for Chervon Vietnam.",
+      "source_call_ids": [
+        "n2611c73"
+      ]
+    },
+    {
+      "id": "q_03yiLI9VczHHNvFTJ1zQ",
+      "name": "Topband Smart Dong Nai",
+      "country": "VNM",
+      "role": "buyer",
+      "case": "case-6",
+      "summary": "Received cells from EVE Malaysia in Jul 2026.",
+      "source_call_ids": [
+        "n2611c73"
+      ]
+    },
+    {
+      "id": "4fqrWAcyrgtWw2RdV6qZsg",
+      "name": "General Motors",
+      "country": "USA",
+      "role": "us_buyer",
+      "case": "case-12",
+      "summary": "Sayari's General Motors record, which also carries LG Energy Solution Michigan and Ultium Cells names.",
+      "source_call_ids": [
+        "n2611d55"
+      ]
+    },
+    {
+      "id": "RosuicQyFavmKExu13ogvA",
+      "name": "POSCO Future M (US import record, Gwangyang)",
+      "country": "KOR",
+      "role": "transit_plant",
+      "case": "case-4",
+      "summary": "A US-import-only record at the Gwangyang address. 51 rows sent.",
+      "source_call_ids": [
+        "n2611d17"
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "id": "e042",
+      "source": "ekoH1fr8BGvHc7UqYCY_YA",
+      "target": "xWhz7CFJV3lxsgg8fHMGHA",
+      "relation": "ships_to",
+      "edge_type": "transactional",
+      "hs_codes": [],
+      "first_seen": "2026-01-21",
+      "last_seen": "2026-01-21",
+      "shipment_count": 1,
+      "confidence": "documented",
+      "confidence_reason": "One dated US import row names both parties; the row carries no HS code.",
+      "evidence": "1 row described as carbon anode materials, arriving 21 Jan 2026, recorded in US import data as loaded in Singapore.",
+      "source_call_ids": [
+        "n2611b43",
+        "n2611b55"
+      ],
+      "case_ids": [
+        "case-1"
+      ]
+    },
+    {
+      "id": "e043",
+      "source": "Lv60RfghzhQ-9oSF_kW0wA",
+      "target": "n3epSyTN-HbHMmnpJHNhkA",
+      "relation": "ships_to",
+      "edge_type": "transactional",
+      "hs_codes": [
+        "380110"
+      ],
+      "first_seen": "2026-06-13",
+      "last_seen": "2026-06-13",
+      "shipment_count": 1,
+      "confidence": "documented",
+      "confidence_reason": "One dated US import row names both parties and describes battery-grade spherical graphite.",
+      "evidence": "122 packages of artificial graphite and surface-treated spherical graphite, 97.8 t net, loaded in Hong Kong, arriving 13 Jun 2026.",
+      "source_call_ids": [
+        "n2611b07",
+        "n2611b14",
+        "n2611b17",
+        "n2611b76"
+      ],
+      "case_ids": [
+        "case-1"
+      ]
+    },
+    {
+      "id": "e044",
+      "source": "ekoH1fr8BGvHc7UqYCY_YA",
+      "target": "EAd4f9FKWeoImIL2ltX93A",
+      "relation": "ships_to",
+      "edge_type": "transactional",
+      "hs_codes": [
+        "380110"
+      ],
+      "first_seen": "2026-10-16",
+      "last_seen": "2026-10-16",
+      "shipment_count": 1,
+      "confidence": "inferred",
+      "confidence_reason": "The supplier field is blank; the link rests on the plant's name in the row's account text, on one row.",
+      "evidence": "372 packages of artificial graphite, 234.36 t, arriving Los Angeles 16 Oct 2026, account PT Indonesia BTR New Energy Material. FNS is a freight forwarder, so the end buyer is not named.",
+      "source_call_ids": [
+        "n2611b06",
+        "n2611b10",
+        "n2611b43"
+      ],
+      "case_ids": [
+        "case-1"
+      ]
+    },
+    {
+      "id": "e045",
+      "source": "ekoH1fr8BGvHc7UqYCY_YA",
+      "target": "4fqrWAcyrgtWw2RdV6qZsg",
+      "relation": "ships_to",
+      "edge_type": "transactional",
+      "hs_codes": [
+        "380110"
+      ],
+      "first_seen": "2026-09-19",
+      "last_seen": "2026-09-19",
+      "shipment_count": 1,
+      "confidence": "documented",
+      "confidence_reason": "A dated US import row names the shipper; the target record mixes GM and LG Energy Solution names, so the delivery address identifies the receiver.",
+      "evidence": "35.3 t of carbon anode materials, loaded at Pusan, arriving Los Angeles 19 Sep 2026, delivered to 1 LG Way, Holland, Michigan.",
+      "source_call_ids": [
+        "n2611b06"
+      ],
+      "case_ids": [
+        "case-1"
+      ]
+    },
+    {
+      "id": "e233",
+      "source": "hmnBuu6vz31_-lqNazNviw",
+      "target": "1CjF5vzVgFFxVomroaYyaA",
+      "relation": "possibly_same_as",
+      "edge_type": "inferred",
+      "confidence": "inferred",
+      "confidence_reason": "Same name stem and the same lots (1 and 2) in Tanger Tech, with no shared identifier, so this is our judgment.",
+      "evidence": "Both trade records give Lot 1 and 2, Tanger Tech, and the BTR Mediterranean Anode name.",
+      "source_call_ids": [
+        "n2611b05",
+        "n2611b27",
+        "s210"
+      ],
+      "case_ids": [
+        "case-2"
+      ]
+    },
+    {
+      "id": "e444",
+      "source": "RosuicQyFavmKExu13ogvA",
+      "target": "Fj3vtxDroFyjyPsLgsnm2A",
+      "relation": "possibly_same_as",
+      "edge_type": "inferred",
+      "confidence": "inferred",
+      "confidence_reason": "Same name and the same Gwangyang street address, but no shared identifier, so it is our judgment.",
+      "evidence": "US-import-only record for POSCO Future M at 45 Yulchon Sandan 8-ro, Gwangyang; 51 rows sent.",
+      "source_call_ids": [
+        "n2611d02",
+        "n2611d17"
+      ],
+      "case_ids": [
+        "case-4"
+      ]
+    },
+    {
+      "id": "e514",
+      "source": "5rQqO0uMqEvtMvK_oQGcYA",
+      "target": "zTmjvxb--FZPXZG8PERmOg",
+      "relation": "owns",
+      "edge_type": "contractual",
+      "confidence": "corroborated",
+      "confidence_reason": "Sayari shows Shanghai Putailai as a shareholder of Jiangxi Zichen, and press calls it the group subsidiary that runs the anode business. No percentage was returned.",
+      "evidence": "Sayari owner path from Jiangxi Zichen to Shanghai Putailai. Press on Putailai's 2026 results names it as the anode subsidiary.",
+      "source_call_ids": [
+        "n2611c48",
+        "n2611c62"
+      ],
+      "case_ids": [
+        "case-5"
+      ]
+    },
+    {
+      "id": "e515",
+      "source": "zTmjvxb--FZPXZG8PERmOg",
+      "target": "uFjg3v6bVZDhlhSp0D5C5g",
+      "relation": "ships_to",
+      "edge_type": "transactional",
+      "hs_codes": [],
+      "first_seen": "2025-06-12",
+      "last_seen": "2025-07-10",
+      "shipment_count": 2,
+      "confidence": "documented",
+      "confidence_reason": "Dated shipment rows in Sayari.",
+      "evidence": "2 rows described as graphite, China to the group's US company (Sayari shows it inactive).",
+      "source_call_ids": [
+        "n2611c50",
+        "n2611c61"
+      ],
+      "case_ids": [
+        "case-5"
+      ]
+    },
+    {
+      "id": "e516",
+      "source": "zTmjvxb--FZPXZG8PERmOg",
+      "target": "RPYYIgKHs0f-kGKGBlE9jw",
+      "relation": "ships_to",
+      "edge_type": "transactional",
+      "hs_codes": [],
+      "first_seen": "2024-05-25",
+      "last_seen": "2025-02-07",
+      "shipment_count": 2,
+      "confidence": "documented",
+      "confidence_reason": "Dated shipment rows in Sayari.",
+      "evidence": "2 rows described as graphite to BlueOval SK.",
+      "source_call_ids": [
+        "n2611c50"
+      ],
+      "case_ids": [
+        "case-5"
+      ]
+    },
+    {
+      "id": "e517",
+      "source": "kK2TOAWUJqpBl_jcmU2rsg",
+      "target": "cclu_C8fIOucVXcdONCwhA",
+      "relation": "ships_to",
+      "edge_type": "transactional",
+      "hs_codes": [],
+      "first_seen": "2025-02-13",
+      "last_seen": "2025-02-13",
+      "shipment_count": 1,
+      "confidence": "documented",
+      "confidence_reason": "Dated shipment row in Sayari. The shipper is a second Jiangxi Zichen record, matched on name only.",
+      "evidence": "1 row described as graphite to a second BlueOval SK record; the row lists Spain as departure.",
+      "source_call_ids": [
+        "n2611c50"
+      ],
+      "case_ids": [
+        "case-5"
+      ]
+    },
+    {
+      "id": "e518",
+      "source": "zTmjvxb--FZPXZG8PERmOg",
+      "target": "Of8V4IKvPMrBhGKoO-Enqg",
+      "relation": "ships_to",
+      "edge_type": "transactional",
+      "hs_codes": [
+        "380110"
+      ],
+      "first_seen": "2025-02-28",
+      "last_seen": "2025-02-28",
+      "shipment_count": 2,
+      "confidence": "documented",
+      "confidence_reason": "Dated shipment rows in Sayari.",
+      "evidence": "2 rows of HS 3801.10 to HL-GA Battery Company.",
+      "source_call_ids": [
+        "n2611c50"
+      ],
+      "case_ids": [
+        "case-5"
+      ]
+    },
+    {
+      "id": "e519",
+      "source": "zTmjvxb--FZPXZG8PERmOg",
+      "target": "75mTlfJmZhOZmQY94FLJcQ",
+      "relation": "ships_to",
+      "edge_type": "transactional",
+      "hs_codes": [],
+      "first_seen": "2024-04-22",
+      "last_seen": "2025-03-09",
+      "shipment_count": 2,
+      "confidence": "documented",
+      "confidence_reason": "Dated shipment rows in Sayari.",
+      "evidence": "2 rows described as graphite to OneD Material.",
+      "source_call_ids": [
+        "n2611c50"
+      ],
+      "case_ids": [
+        "case-5"
+      ]
+    },
+    {
+      "id": "e520",
+      "source": "zTmjvxb--FZPXZG8PERmOg",
+      "target": "mP3j6N2XkD4HgpOIxjlDxg",
+      "relation": "ships_to",
+      "edge_type": "transactional",
+      "hs_codes": [],
+      "first_seen": "2024-08-14",
+      "last_seen": "2024-08-14",
+      "shipment_count": 1,
+      "confidence": "documented",
+      "confidence_reason": "Dated shipment rows in Sayari.",
+      "evidence": "1 row described as graphite to American Lithium Energy.",
+      "source_call_ids": [
+        "n2611c50"
+      ],
+      "case_ids": [
+        "case-5"
+      ]
+    },
+    {
+      "id": "e521",
+      "source": "zTmjvxb--FZPXZG8PERmOg",
+      "target": "q4uVT7bM-GusYLonMicJ_Q",
+      "relation": "ships_to",
+      "edge_type": "transactional",
+      "hs_codes": [
+        "380110",
+        "380190"
+      ],
+      "first_seen": "2025-05-20",
+      "last_seen": "2026-02-07",
+      "shipment_count": 37,
+      "confidence": "documented",
+      "confidence_reason": "Dated shipment rows in Sayari.",
+      "evidence": "37 rows from China arriving in Malaysia, consignee Samsung SDI.",
+      "source_call_ids": [
+        "n2611c13",
+        "n2611c49"
+      ],
+      "case_ids": [
+        "case-5"
+      ]
+    },
+    {
+      "id": "e648",
+      "source": "_WCNtC_iMCzef8u8s0uKyQ",
+      "target": "stFLtUgGfc0__7Yr690bQg",
+      "relation": "ships_to",
+      "edge_type": "transactional",
+      "hs_codes": [
+        "850760"
+      ],
+      "first_seen": "2025-06-26",
+      "last_seen": "2026-02-23",
+      "shipment_count": 13,
+      "confidence": "documented",
+      "confidence_reason": "Dated shipment rows in Sayari.",
+      "evidence": "13 rows of HS 8507.60 from Malaysia to Green Planet Distribution Centre, Vietnam.",
+      "source_call_ids": [
+        "n2611c73"
+      ],
+      "case_ids": [
+        "case-6"
+      ]
+    },
+    {
+      "id": "e649",
+      "source": "_WCNtC_iMCzef8u8s0uKyQ",
+      "target": "osezq_4NIFh0ZY4PKJDi7A",
+      "relation": "ships_to",
+      "edge_type": "transactional",
+      "hs_codes": [
+        "850760"
+      ],
+      "first_seen": "2026-02-13",
+      "last_seen": "2026-08-14",
+      "shipment_count": 5,
+      "confidence": "documented",
+      "confidence_reason": "Dated shipment rows in Sayari.",
+      "evidence": "5 rows of HS 8507.60 to Greenworks Vietnam.",
+      "source_call_ids": [
+        "n2611c73"
+      ],
+      "case_ids": [
+        "case-6"
+      ]
+    },
+    {
+      "id": "e650",
+      "source": "_WCNtC_iMCzef8u8s0uKyQ",
+      "target": "TpqddARxaiwPfKk8RCIMjg",
+      "relation": "ships_to",
+      "edge_type": "transactional",
+      "hs_codes": [
+        "850760"
+      ],
+      "first_seen": "2026-03-25",
+      "last_seen": "2026-07-10",
+      "shipment_count": 3,
+      "confidence": "documented",
+      "confidence_reason": "Dated shipment rows in Sayari.",
+      "evidence": "3 rows of cells to Chervon Vietnam, for garden and hand tools.",
+      "source_call_ids": [
+        "n2611c73"
+      ],
+      "case_ids": [
+        "case-6"
+      ]
+    },
+    {
+      "id": "e651",
+      "source": "_WCNtC_iMCzef8u8s0uKyQ",
+      "target": "7ur0_9rzVaGinY-Sb6FIoQ",
+      "relation": "ships_to",
+      "edge_type": "transactional",
+      "hs_codes": [
+        "850760"
+      ],
+      "first_seen": "2026-02-14",
+      "last_seen": "2026-02-14",
+      "shipment_count": 1,
+      "confidence": "documented",
+      "confidence_reason": "Dated shipment rows in Sayari.",
+      "evidence": "1 row of HS 8507.60 to a second Chervon Vietnam record.",
+      "source_call_ids": [
+        "n2611c73"
+      ],
+      "case_ids": [
+        "case-6"
+      ]
+    },
+    {
+      "id": "e652",
+      "source": "_WCNtC_iMCzef8u8s0uKyQ",
+      "target": "q_03yiLI9VczHHNvFTJ1zQ",
+      "relation": "ships_to",
+      "edge_type": "transactional",
+      "hs_codes": [
+        "850760"
+      ],
+      "first_seen": "2026-07-01",
+      "last_seen": "2026-07-01",
+      "shipment_count": 2,
+      "confidence": "documented",
+      "confidence_reason": "Dated shipment rows in Sayari.",
+      "evidence": "2 rows of cells to Topband Smart Dong Nai, Vietnam.",
+      "source_call_ids": [
+        "n2611c73"
+      ],
+      "case_ids": [
+        "case-6"
+      ]
+    },
+    {
+      "id": "e10-32",
+      "source": "ySemfyJJesFbfxEgW2SgCg",
+      "target": "bZXSPJMXNdy2zYpIvDww_A",
+      "relation": "ships_to",
+      "edge_type": "transactional",
+      "hs_codes": [
+        "392390",
+        "850760",
+        "850750"
+      ],
+      "first_seen": "2025-11-06",
+      "last_seen": "2026-08-04",
+      "shipment_count": 39,
+      "confidence": "documented",
+      "confidence_reason": "Dated shipment rows in Sayari.",
+      "evidence": "39 rows from Linergy to Xiamen Ampace: packaging boxes, cell samples, process materials and test equipment. The last 5, EVA boxes, left on 30 Jun 2026, after the sale to TDK.",
+      "source_call_ids": [
+        "n2611c40"
+      ],
+      "case_ids": [
+        "case-10"
+      ]
+    },
+    {
+      "id": "e12-90",
+      "source": "Fj3vtxDroFyjyPsLgsnm2A",
+      "target": "4fqrWAcyrgtWw2RdV6qZsg",
+      "relation": "ships_to",
+      "edge_type": "transactional",
+      "hs_codes": [
+        "284190"
+      ],
+      "first_seen": "2026-08-09",
+      "last_seen": "2026-10-20",
+      "shipment_count": 18,
+      "confidence": "documented",
+      "confidence_reason": "Dated shipment rows returned by Sayari, with product text naming NCM on some rows.",
+      "evidence": "18 rows read of HS 2841.90, some naming lithium nickel cobalt manganese oxide, Pusan to Los Angeles. The two rows checked in full give receiver 1 LG Way, Holland, Michigan. Sayari's General Motors record also carries LG Energy Solution Michigan and Ultium Cells names.",
+      "source_call_ids": [
+        "n2611d09",
+        "n2611d55"
+      ],
+      "case_ids": [
+        "case-12"
+      ]
+    }
+  ],
+  "retired_ids": {
+    "2omCekb1pDRKjhFOAqCNSw": "ekoH1fr8BGvHc7UqYCY_YA",
+    "dH3rqoht5wahpKLPJih3gA": "ekoH1fr8BGvHc7UqYCY_YA",
+    "NvC-a4BgmoxO63ubVyUiUQ": "I7QWK7f0HxLx924w9i0iDg",
+    "TeFCWTgdDF-tAyfunxgqXw": "nPWKaWyZ8NyEfoNxnUqdZw",
+    "sbHG28fzGHNWsCxC7bZhtQ": "MiHLLkR_Di3szEG__bJGfg",
+    "rvgklT24qqqfH2rnlVlyBg": "OS78Ov4LxLbUR1aVaNZrMA",
+    "WLUn_1F-Zz5cShfohEF7BA": "Yg9iex7iQvTxSVdVf-QvwQ"
+  }
+}

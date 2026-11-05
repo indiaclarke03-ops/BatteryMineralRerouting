@@ -112,6 +112,12 @@ Work P0 top to bottom. Status values: `todo` / `doing` / `done`.
 | FB-25 | P0 | Rename the site Paper Trail \| Minerals, with "Paper Trail" in bold | done |
 | FB-26 | P0 | The Trace: bigger map, animated routes, case drop-downs, numbers under the description, remove "What the cases tell us" | done |
 | FB-27 | P0 | Explore: side panel, autosize on case click, moving arrows, no hover fade, highlight risks without removing the chain | done |
+| FB-28 | P0 | One column per supply-chain section on Explore | done |
+| FB-29 | P0 | Page guide on The Trace; direction explained on Check a Buyer | done |
+| FB-30 | P0 | Case Files as opening boxes; remove graph and declared vs. observed | done |
+| FB-31 | P0 | Remove supplier questions from Due Diligence | done |
+| FB-32 | P0 | Full re-check | done (5 Nov 2026) |
+| FB-33 | P0 | Condense Method into drop-downs | done |
 
 ## Parking lot
 - Zhongke Electric's Oman anode project as a forward-looking case (production targeted for 2027).

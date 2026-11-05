@@ -109,4 +109,17 @@ window.PT = window.PT || {};
     const a = d.entityById.get(e.source), b = d.entityById.get(e.target);
     return `${a ? a.name : e.source} ${PT.RELATION[e.relation] || e.relation} ${b ? b.name : e.target}`;
   };
+
+  /* Text list of edges: same data as the graph, for phones and screen readers. */
+  PT.edgeListHTML = function (d, edges) {
+    return `<ul class="edge-list">${edges.map((e) => `
+      <li class="${PT.ETYPE[e.edge_type].cls}" id="edge-${e.id}">
+        <div class="edge-head">${PT.etypeTag(e.edge_type)} ${PT.confBadge(e.confidence)} ${(e.hs_codes || []).map((h) => `<span class="hs">HS ${PT.esc(h)}</span>`).join(" ")}</div>
+        <div><strong>${PT.esc(PT.edgeSentence(e, d))}</strong></div>
+        ${e.first_seen ? `<div class="muted">${PT.fmtDate(e.first_seen)}${e.last_seen && e.last_seen !== e.first_seen ? ` – ${PT.fmtDate(e.last_seen)}` : ""}${e.shipment_count ? ` · ${e.shipment_count} shipment row${e.shipment_count > 1 ? "s" : ""}` : ""}</div>` : ""}
+        <div>${PT.esc(e.evidence)}</div>
+        ${PT.whyHTML(e)}
+        <div>How we know: ${PT.receipts(e.source_call_ids)}</div>
+      </li>`).join("")}</ul>`;
+  };
 })(window.PT);

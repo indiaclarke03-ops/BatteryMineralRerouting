@@ -28,7 +28,7 @@
 
     const panel = document.getElementById("ex-panel");
     const graph = PT.Graph(document.getElementById("graph"), d, {
-      caseId: kase || undefined, panel, fitAll: true, flow: true, chain: true, onClear: () => overview(),
+      caseId: kase || undefined, panel, onClear: () => overview(),
     });
     PT.graphChrome(document.querySelector("#graph").parentElement, graph, { toggles: true, toggleHost: document.getElementById("ex-view"), onRebuild: () => { apply(); overview(); } });
 

@@ -375,8 +375,8 @@ EDGES = [
          "Graph link from US import data; shipment rows seen under record 5 (e036).",
          ["s011", "s018"]),
     edge("e038", PLANT_KENDAL, GM, "ships_to", "transactional", "documented",
-         "Artificial graphite (HS 3801). 5 rows arriving 7 Apr 2025 and 1 row arriving 19 Sep 2026, recorded in US import data as loaded in Singapore.",
-         ["s011", "s018", "v001"], ["3801"], "2025-04-07", "2026-09-19", 6),
+         "Artificial graphite (HS 3801). 5 rows arriving 7 Apr 2025, recorded in US import data as loaded in Singapore. A later row arriving 19 Sep 2026 went to an LG Energy Solution address: see link e045.",
+         ["s011", "s018", "v001", "n2611b06"], ["3801"], "2025-04-07", "2025-04-07", 5),
     edge("e041", PLANT_KENDAL, ULT_W, "ships_to", "transactional", "documented",
          "Artificial graphite (22 rows HS 3801.10, 4 rows HS 3801.90). 26 rows arriving 30 Jul – 21 Nov 2025, recorded in US import data as loaded in Singapore. Found in the 18 Oct verification pass.",
          ["v001"], ["380110", "380190"], "2025-07-30", "2025-11-21", 26),
@@ -398,27 +398,27 @@ CASE1 = {
     "subtitle": "PT Indonesia BTR New Energy Material · Morowali and Kendal, Indonesia",
     "question": "Could Sayari detect Chinese graphite anode material reaching US battery plants through BTR's plant in Indonesia?",
     "overall_confidence": "corroborated",
-    "headline": "Yes for the trade, no for the ownership. Sayari shows dated HS 3801.10 shipments from the Indonesian plant to five US battery and auto makers, and Chinese artificial graphite flowing into the same plant. It does not show who owns the plant. That link comes only from open sources.",
+    "headline": "Yes for the trade, no for the ownership. Sayari shows dated HS 3801.10 shipments from the Indonesian plant to seven US battery and auto makers, and Chinese artificial graphite flowing into the same plant. It does not show who owns the plant. That link comes only from open sources.",
     "steps": [
         {"title": "The corridor", "kicker": "Step 1",
          "text": "Since January 2024, about 47,000 shipments of artificial graphite (HS 3801.10) have reached the US. Spain, China, India, Germany and Morocco lead. Indonesia isn't in the top ten, so a single plant's trail is easy to miss in aggregate data.",
          "edge_ids": [], "node_ids": [ULT_W, ULT_SH, SKBA, STARPLUS, GM, TESLA], "call_ids": ["s024"]},
         {"title": "The plant: five records, one site", "kicker": "Step 2 · Inferred",
-         "text": "Sayari holds five separate records for the Indonesian plant. Four share the same Kendal street address and a version of the same name, which makes them Inferred matches. The fifth was a sparse gazette record on 14 Oct; by 18 Oct Sayari had moved the plant's tax ID and LEI onto it, so it is now the main record.",
+         "text": "Sayari holds at least five separate records for the Indonesian plant, and the set keeps changing. On 5 Nov 2026 two earlier IDs no longer opened, and a new fragment had appeared. Four share the same Kendal street address and a version of the same name, which makes them Inferred matches. The fifth was a sparse gazette record on 14 Oct; by 18 Oct Sayari had moved the plant's tax ID and LEI onto it, so it is now the main record.",
          "edge_ids": ["e001", "e002", "e003", "e004"], "node_ids": [PLANT, PLANT_KENDAL, PLANT_JKT, PLANT_FRAG4, PLANT_FRAG5], "call_ids": ["s005", "s006", "s007", "s022", "s023"]},
         {"title": "The owner: not in the registry", "kicker": "Step 3 · Contractual",
          "text": "Sayari returns no shareholders for the plant, and its shortest path to BTR in China is a trade link. Sayari does show BTR owning a different Indonesian company (Liyuan), so the gap is specific to this plant. BTR's own exchange filings show it holds 60% through BTR (Hong Kong). The other 40% belongs to Stellar Investment, a Singapore holding company that one Indonesian press report (unverified) links to the Tsingshan nickel group. The ownership edge is shown with those filings, not Sayari's.",
          "edge_ids": ["e010", "e011", "e012"], "node_ids": [BTR, PLANT, LIYUAN_CZ, LIYUAN_ID], "call_ids": ["s009", "s019", "s020", "t012"]},
         {"title": "Same product in, same product out", "kicker": "Step 4 · Transactional",
-         "text": "Artificial graphite (HS 3801) arrives from BTR and from a trader registered in the BTR Building in Shenzhen. Artificial graphite (HS 3801.10, some 3801.90) leaves for Ultium Cells, SK Battery America, StarPlus Energy, GM and Tesla, Dec 2024 to Nov 2025, with one more GM row in Sep 2026. Many of the Ultium and GM rows were recorded as loaded in Singapore. Natural graphite also arrives from Mozambique, Madagascar and the UAE.",
+         "text": "Artificial graphite (HS 3801) arrives from BTR and from a trader registered in the BTR Building in Shenzhen. Artificial graphite (HS 3801.10, some 3801.90) leaves for Ultium Cells, SK Battery America, StarPlus Energy, GM, Tesla, HSBMA and Ford's Marshall plant, Dec 2024 to Oct 2026. Most rows were recorded as loaded in Singapore. One Sep 2026 row, loaded at Pusan, was delivered to LG Energy Solution's address in Holland, Michigan. Natural graphite also arrives from Mozambique, Madagascar and the UAE.",
          "edge_ids": ["e020", "e021", "e005", "e023", "e024", "e025"] + OUT_US_BATT, "node_ids": [], "call_ids": ["s013", "s014", "s017"]},
         {"title": "Where the trail goes dark", "kicker": "Step 5 · Gap",
-         "text": "Trade records can't show which input went into which export, so Chinese-origin content can't be measured. Supplier rollups by HS code returned 0, and two name filters were silently ignored. Rows shipped direct from Indonesia to battery makers stop after Aug 2025, but rows loaded in Singapore continue to Ultium Cells Warren until Nov 2025, and one reaches GM in Sep 2026. A first search missed the Singapore rows entirely, which shows how much the query shapes the answer.",
+         "text": "Trade records can't show which input went into which export, so Chinese-origin content can't be measured. Supplier rollups by HS code returned 0, and two name filters were silently ignored. Rows shipped direct from Indonesia to battery makers stop after Aug 2025. Rows loaded elsewhere continue: Singapore to Ultium Cells Warren until Nov 2025, to Tesla in Jan 2026 and to Ford's plant until Oct 2026; Chinese ports to Ford's plant from Jul 2026; Hong Kong to HSBMA in Jun 2026. The newest row, 234 t on 16 Oct 2026, was consigned to a freight forwarder, so the end buyer isn't named. A first search missed the Singapore rows entirely, which shows how much the query shapes the answer.",
          "edge_ids": ["e039", "e040"], "node_ids": [AMINCO, LARPEN], "call_ids": ["s010", "s015", "s016", "s021"]},
     ],
     "verdict": {
         "detected": [
-            {"text": "Dated HS 3801.10 shipments from the Indonesian plant to Ultium Cells (Warren and Spring Hill), SK Battery America, StarPlus Energy, GM and Tesla: about 55 rows across the plant's records, Dec 2024 – Nov 2025, plus one GM row in Sep 2026.", "call_ids": ["s017", "s011", "s018", "v001", "v007"]},
+            {"text": "Dated HS 3801.10 shipments from the Indonesian plant to Ultium Cells (Warren and Spring Hill), SK Battery America, StarPlus Energy, GM, Tesla, HSBMA and Ford's Marshall plant: about 100 rows across the plant's records, Dec 2024 – Oct 2026. One Sep 2026 row went to an LG Energy Solution address.", "call_ids": ["s017", "s011", "s018", "v001", "v007"]},
             {"text": "Artificial graphite (HS 3801) shipped into the plant from China by BTR and by a trader registered in the BTR Building, Dec 2023 – Jun 2026.", "call_ids": ["s013", "s014"]},
             {"text": "Five fragmented Sayari records for one plant, four of them tied by a shared street address.", "call_ids": ["s005", "s006", "s007", "s022", "s023"]},
         ],
@@ -465,6 +465,7 @@ CASE1 = {
         {"flag": "Forced-labor / UFLPA sub-tier flags", "signal": "inferred", "severity": "Medium", "result": "detected", "note": "Through 'possibly the same as' paths; context, not a finding."},
     ],
     "caveats": [
+        "Sayari's General Motors record now also carries LG Energy Solution Michigan, Ultium Cells and Compact Power names. We use the delivery address on each row to say who received it.",
         "Processing Chinese inputs in a third country is legal and common. Nothing here shows wrongdoing by any company named.",
         "The US buyers are named because they appear in customs records; this says nothing about their compliance.",
         "Entity-resolution links are our judgment and could be wrong.",
@@ -477,15 +478,15 @@ CASE1.update({
     "slug": "btr-indonesia",
     "question": "Can Sayari show Chinese graphite being processed in BTR's Indonesian plant and shipped on to US battery makers, and who owns the plant?",
     "answer_label": "Partly",
-    "answer": "The trade, yes: Chinese artificial graphite goes in, and graphite goes out to Ultium Cells, SK Battery America, StarPlus Energy, GM and Tesla. The ownership, no: Sayari has no registry record of BTR owning the plant, so that link rests on BTR's own filings: 60% BTR, with Stellar Investment holding 40% (one unverified press report links it to Tsingshan).",
+    "answer": "The trade, yes: Chinese artificial graphite goes in, and graphite goes out to Ultium Cells, SK Battery America, StarPlus Energy, GM, Tesla, HSBMA and Ford. The ownership, no: Sayari has no registry record of BTR owning the plant, so that link rests on BTR's own filings: 60% BTR, with Stellar Investment holding 40% (one unverified press report links it to Tsingshan).",
     "why_it_matters": "This is the pattern US tax-credit rules target: a Chinese company's plant in a third country supplying US battery makers. A buyer that only checks the country of origin sees 'Indonesia'. Only the ownership check shows 'BTR', and that is the part Sayari couldn't confirm.",
     "country": "IDN",
     "plant_status": "operating",
     "pattern": "rerouting-pattern",
-    "summary_for_non_experts": "BTR is China's biggest maker of battery anode material. In 2024 it opened a large anode plant in Indonesia. Sayari's trade records show Chinese graphite going into that plant and graphite coming out of it to five US battery and car makers. What the records don't show is who owns the plant, which is the question US tax-credit rules now turn on.",
+    "summary_for_non_experts": "BTR is China's biggest maker of battery anode material. In 2024 it opened a large anode plant in Indonesia. Sayari's trade records show Chinese graphite going into that plant and graphite coming out of it to seven US battery and car makers. What the records don't show is who owns the plant, which is the question US tax-credit rules now turn on.",
     "key_numbers": [
-        {"value": "~55", "label": "shipment rows from the plant's records to US buyers, Dec 2024 – Sep 2026", "call_ids": ["s017", "v001", "v007"]},
-        {"value": "5", "label": "US battery or car makers named in those records", "call_ids": ["s017"]},
+        {"value": "~100", "label": "shipment rows naming the plant into the US, Dec 2024 – Oct 2026 (102 on 5 Nov; a few name it only as the account)", "call_ids": ["s017", "v001", "v007", "n2611b32"]},
+        {"value": "5", "label": "US battery or car makers named in those records (GM, Ultium Cells, SK Battery America, StarPlus, Tesla, Ford, HSBMA)", "call_ids": ["s017", "n2611b43"]},
         {"value": "5", "label": "separate Sayari records for one plant", "call_ids": ["s005", "s006", "s007", "s022", "s023"]},
         {"value": "0", "label": "registry records of who owns it", "call_ids": ["s009"]},
     ],
@@ -544,9 +545,9 @@ GENERAL_CALLS = [
 
 OVERVIEW = {
     "facts": [
-        {"value": "90%+", "label": "of the world's battery anode material is made in China", "source": "IEA, via Electrive (Jun 2025)", "url": "https://www.electrive.com/2025/06/03/iea-report-dimensions-and-trends-of-the-global-battery-market", "call_ids": ["t015"]},
-        {"value": "~1/5", "label": "of an EV battery cell's weight is graphite (17–22%, by chemistry)", "source": "USITC working paper", "url": "https://www.usitc.gov/publications/332/working_papers/gvc_paper.pdf", "call_ids": ["t016"]},
-        {"value": "93.5%", "label": "anti-dumping margin Commerce found for BTR and other Chinese anode makers in Feb 2026, never imposed", "source": "ITA fact sheet", "url": "https://www.trade.gov/final-affirmative-determinations-antidumping-and-countervailing-duty-investigations-active-anode", "call_ids": ["t005", "t006"]},
+        {"value": "90%+", "label": "of the world's battery anode material is made in China", "source": "IEA, Energy Technology Perspectives 2026", "url": "https://iea.blob.core.windows.net/assets/8483779b-e472-435b-b173-2156f92b8a33/EnergyTechnologyPerspectives2026.pdf", "call_ids": ["t015"]},
+        {"value": "~1/5", "label": "of an EV battery cell's weight is graphite (14–22%, by chemistry)", "source": "USITC working paper", "url": "https://www.usitc.gov/publications/332/working_papers/gvc_paper.pdf", "call_ids": ["t016"]},
+        {"value": "93.5%", "label": "anti-dumping margin Commerce found for BTR and other Chinese anode makers in Feb 2026. No duty order followed, and US producers are appealing", "source": "ITA fact sheet", "url": "https://www.trade.gov/final-affirmative-determinations-antidumping-and-countervailing-duty-investigations-active-anode", "call_ids": ["t005", "t006"]},
         {"value": "~47,000", "label": "shipments of artificial graphite (HS 3801.10) into the US since Jan 2024", "source": "Sayari trade data", "url": "method.html#s024", "call_ids": ["s024"]},
     ],
 }
@@ -635,8 +636,6 @@ def main():
         c["case_id"] = "case-1"
 
     for e in ENTITIES:
-        if e["id"] == PLANT:  # retired by Sayari after 14 Oct; link to the record that now holds its identifiers
-            e["sayari_url"] = f"https://graph.sayari.com/resource/entity/{PLANT_JKT}"
         e["case_ids"] = ["case-1"]
         e["case_roles"] = {"case-1": e["role"]}
     for e in EDGES:
@@ -676,6 +675,26 @@ def main():
             e["case_ids"] = [cid]
             edges.append(e)
         cases.append(case)
+
+    # Links and companies found by re-checks after a case was written.
+    additions = json.loads((ROOT / "investigation" / "recheck_additions.json").read_text())
+    for e in additions["entities"]:
+        cid = e.pop("case")
+        e.setdefault("sayari_url", f"https://graph.sayari.com/resource/entity/{e['id']}")
+        e.setdefault("risk_flags", []); e.setdefault("identifiers", {}); e.setdefault("type", "company")
+        if e["id"] not in entities:
+            e["case_ids"] = [cid]; e["case_roles"] = {cid: e["role"]}
+            entities[e["id"]] = e
+        else:
+            entities[e["id"]]["case_ids"] = sorted(set(entities[e["id"]]["case_ids"]) | {cid})
+            entities[e["id"]].setdefault("case_roles", {})[cid] = e["role"]
+    for e in additions["edges"]:
+        e.setdefault("hs_codes", []); e.setdefault("first_seen", None); e.setdefault("last_seen", None); e.setdefault("shipment_count", None)
+        edges.append(e)
+    # Sayari retires IDs. Keep ours stable, and point the link at the record that holds them now.
+    for old, new in additions["retired_ids"].items():
+        if old in entities:
+            entities[old]["sayari_url"] = f"https://graph.sayari.com/resource/entity/{new}"
 
     cases.sort(key=lambda c: (CASE_ORDER.index(c["id"]) if c["id"] in CASE_ORDER else 50 + int(c["id"].split("-")[1])))
 

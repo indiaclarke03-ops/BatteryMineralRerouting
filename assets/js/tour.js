@@ -4,7 +4,7 @@
     { sel: "#facts", title: "1 · Why it matters", text: "China makes over 90% of the world's battery anode material, and US tax-credit rules now ask who owns each supplier. These four numbers set the scene." },
     { sel: "#map-section", title: "2 · Where the trail runs", text: "Each numbered dot is a plant we traced. Choose one to watch its route play across the map, step by step, with more about the case in the list beside it." },
     { sel: "#cases", title: "3 · One answer per plant", text: "Each case asks one question and gives a Yes / Partly / Not yet answer. Open a case to see every link and its source." },
-    { sel: null, title: "4 · Put it to work", text: "Use these pages for your own checks.", links: [["buyers.html", "Check a Buyer: who supplies GM, Ford, Tesla…"], ["diligence.html", "Due Diligence: ownership screen and supplier questions"], ["explore.html", "Explore: every link, with its evidence"], ["method.html", "Method: every Sayari query we ran"]] },
+    { sel: null, title: "4 · Put it to work", text: "Use these pages for your own checks.", links: [["buyers.html", "Check a Buyer: trace back from GM, Ford, Tesla…"], ["diligence.html", "Due Diligence: ownership screen and watch list"], ["explore.html", "Explore: start from a plant and trace both ways"], ["method.html", "Method: every Sayari query we ran"]] },
   ];
   let i = 0, box = null, focused = null;
 

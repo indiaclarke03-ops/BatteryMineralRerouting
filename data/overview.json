@@ -5,15 +5,15 @@
     {
       "value": "90%+",
       "label": "of the world's battery anode material is made in China",
-      "source": "IEA, via Electrive (Jun 2025)",
-      "url": "https://www.electrive.com/2025/06/03/iea-report-dimensions-and-trends-of-the-global-battery-market",
+      "source": "IEA, Energy Technology Perspectives 2026",
+      "url": "https://iea.blob.core.windows.net/assets/8483779b-e472-435b-b173-2156f92b8a33/EnergyTechnologyPerspectives2026.pdf",
       "call_ids": [
         "t015"
       ]
     },
     {
       "value": "~1/5",
-      "label": "of an EV battery cell's weight is graphite (17–22%, by chemistry)",
+      "label": "of an EV battery cell's weight is graphite (14–22%, by chemistry)",
       "source": "USITC working paper",
       "url": "https://www.usitc.gov/publications/332/working_papers/gvc_paper.pdf",
       "call_ids": [
@@ -22,7 +22,7 @@
     },
     {
       "value": "93.5%",
-      "label": "anti-dumping margin Commerce found for BTR and other Chinese anode makers in Feb 2026, never imposed",
+      "label": "anti-dumping margin Commerce found for BTR and other Chinese anode makers in Feb 2026. No duty order followed, and US producers are appealing",
       "source": "ITA fact sheet",
       "url": "https://www.trade.gov/final-affirmative-determinations-antidumping-and-countervailing-duty-investigations-active-anode",
       "call_ids": [

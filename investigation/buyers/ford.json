@@ -11,9 +11,11 @@
       "9DDAlIRlqlZq7pwJ5qUwSQ",
       "_Ao7QZ5Y0DfLVP9LADDkDw",
       "cclu_C8fIOucVXcdONCwhA",
-      "i0HhTJctxSbPxQvZqHx1Tg"
+      "i0HhTJctxSbPxQvZqHx1Tg",
+      "ALeXPymJqrTWgIhWeUyLlw",
+      "sv3GsrQVLmLz2cd353HzPQ"
     ],
-    "summary": "Ford imports finished lithium-ion batteries from SK On and LG Energy Solution (Korea) and from CATL (China). The BlueOval SK cell plants received 48 rows of Chinese artificial graphite in 2024-2025 through two Chinese freight forwarders, so the producer is not named. Ford and SK On split BlueOval SK in 2026: Ford now owns the Kentucky plants and SK On the Tennessee plant."
+    "summary": "Ford imports finished lithium-ion batteries from SK On and LG Energy Solution (Korea) and from CATL (China). Its Marshall, Michigan LFP plant received 13 rows of artificial graphite from BTR's Indonesian plant in 2026 (11 on one record, 2 on another). The BlueOval SK cell plants received 28 rows from BTR's Shenzhen sales arm in 2025, and 48 rows of Chinese artificial graphite in 2024-2025 through two Chinese freight forwarders, so the producer of those 48 is not named. Ford and SK On split BlueOval SK in 2026: Ford now owns the Kentucky plants and SK On the Tennessee plant."
   },
   "scan": {
     "hs": [
@@ -21,7 +23,7 @@
       "8507"
     ],
     "date_from": "2024-01-01",
-    "note": "Sayari trade data checked on 18 Oct 2026 for HS 3801 (graphite, including anode material) and HS 8507 (batteries and parts) entering the US under the names 'BlueOval SK' and 'Ford Motor Company'. The shipment date filter let older rows through, so we counted rows by year and kept only those from 2024 onward. Ford's own shipments between its units and its exports are left out. The scan cannot see graphite or cells bought inside the US, material that arrives inside imported cells or modules, or rows filed under names we did not search, such as Ford Energy Battery LLC or SK On Tennessee. Forwarders excluded: Pactra Tianjin Logistics (44 rows of artificial graphite, China to BlueOval SK, Sep 2024 to Nov 2025), Fan Cheng Intl Trans Service (4 rows, Feb 2025) and Sinotrans Eastern (1 row of cells to a Ford record, late 2024). The Pactra rows are the largest graphite flow into BlueOval SK, but no producer is named."
+    "note": "Sayari trade data checked on 18 Oct 2026 for HS 3801 (graphite, including anode material) and HS 8507 (batteries and parts) entering the US under the names 'BlueOval SK', 'Ford Motor Company' and 'BlueOval Battery Michigan'. The shipment date filter let older rows through, so we counted rows by year and kept only those from 2024 onward. Ford's own shipments between its units and its exports are left out. The scan cannot see graphite or cells bought inside the US, material that arrives inside imported cells or modules, or rows filed under names we did not search, such as Ford Energy Battery LLC. HS filters also miss rows with no HS code: most of BTR's rows to BlueOval SK have none. Forwarders excluded: Pactra Tianjin Logistics (44 rows of artificial graphite, China to BlueOval SK, Sep 2024 to Nov 2025), Fan Cheng Intl Trans Service (4 rows, Feb 2025) and Sinotrans Eastern (1 row of cells to a Ford record, late 2024). The Pactra rows are the largest graphite flow into BlueOval SK, but no producer is named. Marshall also received 40 rows of lithium iron phosphate (HS 283510), Mar to Oct 2026, with no supplier named."
   },
   "suppliers": [
     {
@@ -115,14 +117,14 @@
       "hs_codes": [
         "380190"
       ],
-      "rows": 1,
-      "first": "2025-08-26",
-      "last": "2025-08-26",
+      "rows": 28,
+      "first": "2025-01-04",
+      "last": "2025-11-13",
       "owner_top": "BTR New Material Group Co., Ltd. (name match only)",
       "owner_country": "CHN",
       "chinese_owned": "Yes (China-based)",
       "confidence": "documented",
-      "note": "One row of graphite-based material (HS 3801.90) to BlueOval SK from this Shenzhen-based BTR sales company; the link to the BTR parent is only a name match (Case 1).",
+      "note": "28 rows to BlueOval SK across two trade records, 27 graphite and 1 cathode. Most have no HS code. See Case 9.",
       "call_ids": [
         "b-ford-03",
         "b-ford-05",
@@ -147,6 +149,48 @@
       "call_ids": [
         "b-ford-03",
         "b-ford-05"
+      ]
+    },
+    {
+      "name": "PT Indonesia BTR New Energy Material",
+      "entity_id": "Lv60RfghzhQ-9oSF_kW0wA",
+      "country": "IDN",
+      "hs_codes": [
+        "380110"
+      ],
+      "rows": 13,
+      "first": "2026-05-31",
+      "last": "2026-10-07",
+      "owner_top": "BTR New Material Group Co., Ltd. (60%, per BTR exchange filings)",
+      "owner_country": "CHN",
+      "chinese_owned": "Yes",
+      "confidence": "documented",
+      "note": "Artificial graphite to Ford's Marshall plant under two buyer records. 7 of the 11 rows on the main record were loaded at Chinese ports. See Cases 1 and 9.",
+      "call_ids": [
+        "n2611b07",
+        "n2611b19",
+        "n2611b20",
+        "n2611b43"
+      ]
+    },
+    {
+      "name": "Everwin Precision (Vietnam) Technology",
+      "entity_id": "FP2CcwXDQOUSQ6VYffbPSw",
+      "country": "VNM",
+      "hs_codes": [
+        "850790"
+      ],
+      "rows": 9,
+      "first": "2026-06-28",
+      "last": "2026-09-02",
+      "owner_top": "Not checked",
+      "owner_country": "",
+      "chinese_owned": "Unknown",
+      "confidence": "lead",
+      "note": "Battery parts to Ford's Marshall plant. The rows are dated, but ownership was not checked, so the supplier's standing is a lead.",
+      "call_ids": [
+        "n2611b57",
+        "n2611b61"
       ]
     }
   ],

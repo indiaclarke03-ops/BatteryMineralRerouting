@@ -1,5 +1,15 @@
 # Changelog
 
+## Iteration 1.6 · 5 Nov 2026
+- Full re-check of all 12 cases, three buyer scans and every policy date (278 new logged calls). See the notes in `investigation/notes/recheck-2026-11-05-*.md`.
+- Corrections: Case 5 (Putailai's exports found), Case 12 (448 rows, not 87), Case 1 (about 100 rows, seven buyers, the Sep 2026 row went to LG), Case 9 (11 rows, about 1,160 t), plus updated counts in Cases 2, 3, 4, 6 and 7.
+- Explore: every section of the supply chain is now one column. Goods run left to right, and owners sit above the plant. Busy cases get a taller graph.
+- The Trace: a short description of every page.
+- Check a Buyer: now says plainly that it runs backwards from the US buyer, with a comparison to Explore.
+- Case Files: each case is a box that opens its full file. Removed the graph and the declared vs. observed table.
+- Due Diligence: removed the supplier questions.
+- Method: condensed into drop-downs, one per case.
+
 ## Iteration 1.5 · 3 Nov 2026
 - Renamed the site Paper Trail | Minerals, with "Paper Trail" in bold (logo, favicon, social card). The repo name and URL are unchanged.
 - New favicon showing PT | M, with PNG versions for Safari and home screens. Page files are now versioned, so browsers pick up changes.

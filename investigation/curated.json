@@ -1,7 +1,7 @@
 {
   "answer_short": {
-    "case-1": "Chinese graphite goes in, and graphite goes out to five US battery and car makers. Who owns the plant isn't in the registry.",
-    "case-2": "BTR's 100% ownership is on record. The first graphite arrived from BTR's own Indonesian plant in Aug 2026, and nothing has been exported yet.",
+    "case-1": "Chinese graphite goes in, and graphite goes out to seven US battery and car makers. Who owns the plant isn't in the registry.",
+    "case-2": "BTR's 100% ownership is on record. The first graphite left BTR's own Indonesian plant for Tangier in Aug 2026, and nothing has been exported yet.",
     "case-3": "The Oman plant isn't in the data yet. Zhongke graphite reaches the US today through Malaysian cell plants.",
     "case-4": "Korean-owned, with Chinese graphite inputs. It sells to the same US buyers as BTR Indonesia.",
     "case-5": "No Chinese-owned anode maker is shipping to the US from five corridors. Putailai's Malaysian plant is still being built.",
@@ -209,7 +209,7 @@
         "from": "indonesia",
         "to": "us_buyers",
         "type": "output",
-        "label": "Artificial graphite to Ultium, SK, StarPlus, GM and Tesla (about 55 rows)"
+        "label": "Artificial graphite to Ultium, SK, StarPlus, GM, Tesla, HSBMA and Ford (about 100 rows)"
       },
       {
         "case": "case-2",
@@ -349,7 +349,7 @@
         "from": "indonesia",
         "to": "marshall",
         "type": "input",
-        "label": "BTR Indonesia graphite to Ford Marshall (9 rows, May–Sep 2026; 6 loaded in China)"
+        "label": "BTR Indonesia graphite to Ford Marshall (11 rows, May–Oct 2026; 7 loaded in China)"
       },
       {
         "case": "case-9",
@@ -437,7 +437,7 @@
         {
           "stage": "Output",
           "title": "Out to US battery and car makers",
-          "text": "Artificial graphite ships to Ultium Cells, SK Battery America, StarPlus Energy, GM and Tesla.",
+          "text": "Artificial graphite ships to Ultium Cells, SK Battery America, StarPlus Energy, GM, Tesla, HSBMA and Ford's Marshall plant.",
           "legs": [
             {
               "from": "indonesia",
@@ -496,8 +496,8 @@
         },
         {
           "stage": "Inputs",
-          "title": "First graphite arrives",
-          "text": "The first graphite, 1,240 t, came from BTR's own Indonesian plant in Aug 2026.",
+          "title": "First graphite shipped",
+          "text": "BTR's own Indonesian plant shipped the first graphite, 1,240 t, in Aug 2026.",
           "legs": [
             {
               "from": "indonesia",
@@ -768,7 +768,6 @@
               "edge_ids": [
                 "e625",
                 "e626",
-                "e627",
                 "e628",
                 "e629",
                 "e630",
@@ -938,7 +937,7 @@
         {
           "stage": "Inputs",
           "title": "BTR Indonesia to Ford's Michigan plant",
-          "text": "BTR Indonesia graphite reached Ford's Marshall plant in 2026, about 960 t. Most of the rows were loaded in China.",
+          "text": "BTR Indonesia graphite reached Ford's Marshall plant in 2026, about 1,160 t. Seven of the 11 rows were loaded in China.",
           "legs": [
             {
               "from": "indonesia",
@@ -1067,7 +1066,7 @@
         {
           "stage": "Owner",
           "title": "Owner since June 2026",
-          "text": "Japan's TDK bought the plant through its Singapore company. In October, Sayari still showed the old Chinese owners.",
+          "text": "Japan's TDK bought the plant through its Singapore company. On 5 Nov 2026, Sayari still showed the old Chinese owners.",
           "legs": [
             {
               "from": "tokyo",
@@ -1231,10 +1230,6 @@
       "visibility": "Not in Sayari's registry data. BTR's own exchange filings state 60%; the 40% holder, Stellar Investment Pte. Ltd., is owned by Ever Rising Ltd and linked to Tsingshan by a single press report (unverified).",
       "inputs": "Chinese artificial graphite (HS 3801) from BTR and a trader in the BTR Building; natural graphite from Mozambique, Madagascar and the UAE.",
       "us_exposure": "Ultium Cells (Warren, Spring Hill), SK Battery America, StarPlus Energy, General Motors, Tesla",
-      "questions": [
-        "Ask the supplier for its shareholder register, filed with Indonesia's companies registry (AHU), and the identity of any minority shareholder.",
-        "Which graphite feedstock, and from which origin, went into the lots shipped to you? Ask for lot-level certificates."
-      ],
       "call_ids": [
         "s009",
         "s013",
@@ -1290,10 +1285,6 @@
       "visibility": "Visible in registry data. The BNUO-owned company is 100% BTR at every step. The anode company (BTR Mediterranean Anode) is owned through Rian International Holding (Singapore), whose shareholder is a Singapore record of BTR.",
       "inputs": "Construction goods from China, then 1,240 t of artificial graphite from BTR's Indonesian plant (19 Aug 2026).",
       "us_exposure": "None yet. Ford has been reported as an expected customer.",
-      "questions": [
-        "Which of BTR's two Moroccan companies will run the anode line, and who owns the second one's Singapore parent (Rian International Holding)?",
-        "Where will the Tangier plant source its graphite and coke, and will any be Chinese-origin?"
-      ],
       "call_ids": [
         "s205",
         "s207",
@@ -1319,7 +1310,7 @@
     "case-3": {
       "plant": "Zhongke Xingcheng Sohar New Material Technology",
       "location": "Sohar Freezone, Oman",
-      "status": "Under construction (ground broken 8 May 2026)",
+      "status": "Under construction (ground broken 8 May 2026; first building topped out 10 Sep 2026, company post)",
       "chinese_owned": "Yes",
       "owner_top": "Hunan Zhongke Electric (China)",
       "chain": [
@@ -1358,10 +1349,6 @@
       "visibility": "Registry visible inside China; the Hong Kong and Oman steps rest on the company's filing.",
       "inputs": "None yet. Zhongke's Chinese plants already supply Malaysian cell makers.",
       "us_exposure": "Indirect today, through cells made in Malaysia (see Case 6).",
-      "questions": [
-        "Once Sohar ships, does the shipper name the Oman project company or Zhongke Shinzoom (HK) Holdings?",
-        "Ask the supplier for its Omani commercial registration and shareholder certificate."
-      ],
       "call_ids": [
         "s301",
         "t301"
@@ -1402,10 +1389,6 @@
       "visibility": "Visible in registry data; no Chinese owner among 50 ownership paths.",
       "inputs": "Chinese natural and spherical graphite from Qingdao suppliers (to Dec 2023 in the data). Korea imports all its spherical graphite from China until POSCO's Saemangeum plant starts in late 2027.",
       "us_exposure": "General Motors, SK Battery America, Tesla, Panasonic Energy, XALT; Ultium Cells by contract",
-      "questions": [
-        "What share of the anode material you receive is made from Chinese-origin graphite, and who owns those graphite suppliers?",
-        "Which plant made your lots: Sejong (natural graphite) or Pohang (artificial graphite)?"
-      ],
       "call_ids": [
         "s401",
         "s402"
@@ -1447,11 +1430,7 @@
       "confidence": "corroborated",
       "visibility": "Visible in registry data; Shanghai-based directors Han Zhongwei and Liu Fang.",
       "inputs": "None yet.",
-      "us_exposure": "None yet.",
-      "questions": [
-        "When Zichen Malaysia starts shipping, who are its buyers, and are any of them cell makers supplying the US?",
-        "Will the plant's graphite precursors (needle coke, petroleum coke) come from China?"
-      ],
+      "us_exposure": "None yet from this plant. The group's Chinese anode company, Jiangxi Zichen, sent 10 rows to US buyers in 2024–25.",
       "call_ids": [
         "s501",
         "s529",
@@ -1495,10 +1474,6 @@
       "visibility": "Visible in registry data; the same directors (Liu Jincheng, Chan Tsun Ming) sit on both the Hong Kong and Malaysian boards.",
       "inputs": "Anode graphite from Zhongke Shinzoom, BTR, Shanshan and Qingdao Taidongrui; 91% of all inbound rows left from China.",
       "us_exposure": "EVE Energy North America, Briggs & Stratton, TTI, Milwaukee Tool, Stanley Black & Decker, Energizer and others",
-      "questions": [
-        "Ask the cell supplier for its shareholder register and the ultimate parent's position on the US Section 1260H list.",
-        "Does the cell maker certify the origin and supplier of the anode material in your cells?"
-      ],
       "call_ids": [
         "s601",
         "s602"
@@ -1525,7 +1500,7 @@
         {
           "name": "Gotion High-Tech Co., Ltd.",
           "country": "CHN",
-          "stake": "Volkswagen (China) 24.28%, falling to 18.98%",
+          "stake": "Volkswagen (China) 24.28%; would fall to 18.98% when a pending sale completes",
           "basis": "China registry"
         },
         {
@@ -1557,10 +1532,6 @@
       "visibility": "Visible from the Chinese side: registry data plus the parent's annual report, which names both US companies as wholly owned. No US record lists shareholders.",
       "inputs": "Lithium-ion cells and packs from Gotion's Hefei and Tongcheng plants; 2 rows of artificial graphite (Dec 2025).",
       "us_exposure": "Gotion's own US entities; storage customers such as Richardson Electronics (announced partner)",
-      "questions": [
-        "For US-assembled packs or storage systems, which cells are inside, and who made them?",
-        "Ask for the US entities' ownership certification under the prohibited-foreign-entity rules."
-      ],
       "call_ids": [
         "s701",
         "s702",
@@ -1577,7 +1548,7 @@
     "case-8": {
       "plant": "Syrah Technologies LLC (Vidalia)",
       "location": "Vidalia, Louisiana",
-      "status": "Operating (qualification volumes)",
+      "status": "Commercial ramp-up since Sep 2026; first sales targeted Dec 2026 quarter",
       "chinese_owned": "No",
       "owner_top": "Syrah Resources (Australia)",
       "chain": [
@@ -1603,11 +1574,7 @@
       "confidence": "corroborated",
       "visibility": "Partly visible in registry data; the percentages come from Syrah's own annual report.",
       "inputs": "Natural graphite from Syrah's Balama mine (Mozambique, 95% owned); some processing equipment and one small graphite lot from China.",
-      "us_exposure": "Tesla offtake agreement (under qualification)",
-      "questions": [
-        "Confirm that the graphite in your lots came from Balama and not from third-party flake bought by Syrah Global.",
-        "The same mine sells to Chinese-owned plants. Make sure your contract covers chain-of-custody from mine to anode."
-      ],
+      "us_exposure": "Tesla and Lucid offtake agreements (final qualification pending)",
       "call_ids": [
         "s801",
         "s802"
@@ -1623,7 +1590,7 @@
     "case-11": {
       "plant": "Contemporary Amperex Technology Hungary Kft.",
       "location": "Debrecen, Hungary",
-      "status": "Under construction (trial cell production from Sep 2026)",
+      "status": "Modules since autumn 2024; trial cell production since 22 Sep 2026; no series-production date announced",
       "chinese_owned": "Yes",
       "owner_top": "CATL (Ningde, China)",
       "registry": "Yes",
@@ -1651,10 +1618,6 @@
       "visibility": "Visible in Hungarian registry data (100% CATL Hong Kong) and in China's outbound-investment directory.",
       "inputs": "Only Chinese production equipment is visible (7 rows from Yantian, Aug–Dec 2025). Battery materials from inside the EU leave no customs record.",
       "us_exposure": "None visible. The plant supplies European carmakers.",
-      "questions": [
-        "Ask for the origin of cathode, anode and graphite inputs: the EU Battery Regulation will require this due diligence from Aug 2027.",
-        "Confirm the plant's ownership chain and percentages from the Hungarian company register (Opten / e-cegjegyzek)."
-      ],
       "open_questions": [
         {
           "q": "What share of CATL (Hong Kong) does CATL hold?",
@@ -1697,11 +1660,7 @@
       "confidence": "documented",
       "visibility": "Sayari still shows the old chain (Ampace HK → Xiamen Ampace → CATL 59.5%). The sale to TDK appears only in TDK's filings.",
       "inputs": "2,679 of 2,759 inbound rows from China: graphite (Zhongke Shinzoom, Shanshan), cathode powder (XTC, Pulead, B&M), electrolyte (Tinci, Capchem), foil.",
-      "us_exposure": "Eaton (after the sale), Milwaukee Tool, Stanley Black & Decker, Techtronic and Ampace's own US arm (before the sale)",
-      "questions": [
-        "For cells bought before mid-June 2026, the maker was CATL-group-owned. Check which of your lots fall in that period.",
-        "Ask Linergy (now TDK) whether its anode and cathode suppliers changed after the sale."
-      ],
+      "us_exposure": "Eaton (after the sale), Milwaukee Tool, Stanley Black & Decker, Techtronic and Ampace's Hong Kong company (before the sale)",
       "open_questions": [
         {
           "q": "Exact date the sale completed, and whether the Malaysian registry shows TDK's company as shareholder.",
@@ -1739,17 +1698,13 @@
       "visibility": "BTR's ownership of the Indonesian plant comes from its filings, and of the Moroccan anode company through Singapore records.",
       "inputs": "See Cases 1 and 2: Chinese artificial graphite and coke into BTR Indonesia; first graphite into Tangier from BTR Indonesia.",
       "us_exposure": "Ford (Marshall, Michigan LFP plant), BlueOval SK (Kentucky, Tennessee), SK Battery America",
-      "questions": [
-        "For graphite labelled as shipped by BTR Indonesia but loaded at Ningbo or Yantian, where was it made?",
-        "What volumes will BTR Mediterranean Anode deliver under the prepayment, and from which feedstock?"
-      ],
       "open_questions": [
         {
           "q": "Has Ford confirmed the BTR Morocco supply deal and the US$120m prepayment?",
           "doc": "Ford's 10-K or 10-Q commitments note, or a BTR Beijing Stock Exchange announcement on the contract."
         },
         {
-          "q": "Who makes the 45 graphite rows into BlueOval SK filed under Chinese freight forwarders?",
+          "q": "Who makes the 46 graphite rows into BlueOval SK filed under Chinese freight forwarders?",
           "doc": "Bills of lading with the shipper of record, or BlueOval SK's supplier list."
         }
       ],
@@ -1780,10 +1735,6 @@
       "visibility": "Sayari's Indonesian register lists two individual beneficial owners, but not the corporate shareholders. Percentages come from a co-owner's filing.",
       "inputs": "Nickel laterite ore from Indonesian mines (outside the scope of this case).",
       "us_exposure": "None direct. A possible second hop runs through Huayou precursor to POSCO Future M (to 2023), then POSCO cathode to StarPlus Energy, but no record joins the steps.",
-      "questions": [
-        "For cathode containing nickel, ask the cathode maker to trace nickel back to the HPAL plant and its owners.",
-        "Note that the plant is more than 25% Chinese-owned, which matters under the PFE single-owner test."
-      ],
       "open_questions": [
         {
           "q": "Huayou's shareholding in the plant, from Huayou's own filing.",
@@ -1797,57 +1748,13 @@
       "call_ids": []
     }
   },
-  "question_templates": {
-    "Chinese parent ownership of the transit plant": {
-      "detected": "Get the full shareholder chain to the ultimate owner, with percentages, and check each owner against the US prohibited-foreign-entity definitions.",
-      "suggested": "Ownership rests on indirect evidence. Ask the supplier for a registry extract that names its shareholders.",
-      "not_visible": "Ownership couldn't be confirmed. Ask for a registry extract and an ownership certification before relying on the supplier.",
-      "absent": "No Chinese owner found. Keep a dated record of the ownership check and repeat it each year."
-    },
-    "Same HS imported from China and exported to the US": {
-      "detected": "The plant imports Chinese graphite and exports graphite to the US. Ask for lot-level origin certificates for the material you buy.",
-      "suggested": "Inputs may include Chinese graphite. Ask what share of feedstock is Chinese-origin.",
-      "not_visible": "Input origin couldn't be tested. Ask the supplier to list its graphite feedstock sources.",
-      "absent": "No Chinese graphite inputs found in the data. Confirm with the supplier that this is still true."
-    },
-    "Recent incorporation vs. first export date": {
-      "detected": "The company was set up shortly before exporting. Ask about its operating history and its real production capacity.",
-      "suggested": "Check the incorporation date against first shipments.",
-      "not_visible": "No incorporation date was available. Request the certificate of incorporation.",
-      "absent": "Long operating history; no concern on this point."
-    },
-    "Volume spike after a policy date": {
-      "detected": "Volumes changed after a policy date. Ask why, and whether the routing or product changed.",
-      "suggested": "Watch volumes around policy dates.",
-      "not_visible": "Not tested. Compare monthly volumes before and after July 2025 and March 2026.",
-      "absent": "No spike seen in the data."
-    },
-    "Shared address or officer with a flagged entity": {
-      "detected": "The supplier shares an address or officer with a flagged company. Ask who the shared party is and what the relationship is.",
-      "suggested": "A possible shared officer or address. Confirm the relationship.",
-      "not_visible": "Not tested.",
-      "absent": "No shared address or officer with a flagged company found."
-    },
-    "Entity-resolution fragmentation": {
-      "detected": "The supplier appears under several names. Agree with it the exact legal entity, registration number and address that should appear on your documents.",
-      "suggested": "Possible duplicate records. Confirm the legal entity.",
-      "not_visible": "Not tested.",
-      "absent": "Single clean record."
-    },
-    "Forced-labor / UFLPA sub-tier flags": {
-      "detected": "Sub-tier forced-labor flags appear. Request a supply-chain map to the mine or precursor level and check it against the UFLPA Entity List.",
-      "suggested": "Possible sub-tier forced-labor exposure. Ask for a sub-tier supplier list.",
-      "not_visible": "Not tested.",
-      "absent": "No forced-labor flags found."
-    }
-  },
   "watch": [
     {
       "case": "case-2",
       "plant": "BTR Mediterranean (Tangier, Morocco)",
-      "status": "First graphite received (Aug 2026); no exports yet",
-      "last_checked": "2026-10-18",
-      "next_check": "2026-11-15",
+      "status": "First graphite shipped from Indonesia (Aug 2026); no exports yet",
+      "last_checked": "2026-11-05",
+      "next_check": "2026-12-01",
       "watch_for": [
         "First exports from Tangier, especially to US or Mexican battery plants",
         "More graphite from BTR Indonesia or China",
@@ -1859,8 +1766,8 @@
       "case": "case-3",
       "plant": "Zhongke Xingcheng Sohar (Oman)",
       "status": "Under construction",
-      "last_checked": "2026-10-18",
-      "next_check": "2026-11-15",
+      "last_checked": "2026-11-05",
+      "next_check": "2026-12-01",
       "watch_for": [
         "A Sayari record for the Oman project company",
         "Chinese inputs arriving at Sohar",
@@ -1872,14 +1779,14 @@
       "case": "case-5",
       "plant": "Zichen Malaysia (Kedah, Malaysia)",
       "status": "Under construction",
-      "last_checked": "2026-10-18",
+      "last_checked": "2026-11-05",
       "next_check": "2026-12-01",
       "watch_for": [
         "First imports of needle coke or graphite precursors",
         "First exports and their buyers",
         "Changes to directors or shareholders"
       ],
-      "how": "Check the Zichen Malaysia profile (WG1hrSwGRdoLMIt997Z5-w) for new trade; search shipments for \"ZICHEN MALAYSIA\"."
+      "how": "Check the Zichen Malaysia profile (WG1hrSwGRdoLMIt997Z5-w) for new trade; search shipments for \"ZICHEN MALAYSIA\". Also search shipments for the quoted name \"JIANGXI ZICHEN\" with arrival USA and MYS."
     }
   ],
   "buyer_groups": [
@@ -1975,8 +1882,7 @@
       "name": "Briggs & Stratton",
       "category": "products",
       "ids": [
-        "33X8P9vU58v1EcigvWeD-Q",
-        "TrQHururSYl_Fqbbewp1cA"
+        "33X8P9vU58v1EcigvWeD-Q"
       ]
     },
     {
@@ -2115,86 +2021,229 @@
   ],
   "checks": {
     "case-1": {
-      "date": "2026-10-18",
+      "date": "2026-11-05",
       "call_ids": [
-        "v001",
-        "v002",
-        "v003",
-        "v004",
-        "v005",
-        "v006",
-        "v007",
-        "v008",
-        "v009",
-        "v010",
-        "v011",
-        "v012",
-        "v041",
-        "v042",
-        "v043"
+        "n2611b01",
+        "n2611b02",
+        "n2611b03",
+        "n2611b04",
+        "n2611b06",
+        "n2611b07",
+        "n2611b08",
+        "n2611b09",
+        "n2611b10",
+        "n2611b14",
+        "n2611b15",
+        "n2611b16",
+        "n2611b18",
+        "n2611b19"
       ]
     },
     "case-2": {
-      "date": "2026-10-18",
+      "date": "2026-11-05",
       "call_ids": [
-        "v013",
-        "v014",
-        "v015",
-        "v016",
-        "v017"
+        "n2611b05",
+        "n2611b25",
+        "n2611b26",
+        "n2611b27",
+        "n2611b28",
+        "n2611b29",
+        "n2611b30",
+        "n2611b31",
+        "n2611b36",
+        "n2611b64",
+        "n2611b65",
+        "n2611b66"
       ]
     },
     "case-3": {
-      "date": "2026-10-18",
+      "date": "2026-11-05",
       "call_ids": [
-        "v018",
-        "v019",
-        "v020",
-        "v021"
+        "n2611c01",
+        "n2611c02",
+        "n2611c03",
+        "n2611c04",
+        "n2611c05",
+        "n2611c06",
+        "n2611c07",
+        "n2611c08",
+        "n2611c30",
+        "n2611c31",
+        "n2611c32",
+        "n2611c33",
+        "n2611c44",
+        "n2611c46"
       ]
     },
     "case-4": {
-      "date": "2026-10-18",
+      "date": "2026-11-05",
       "call_ids": [
-        "v022",
-        "v023",
-        "v024",
-        "v025",
-        "v026",
-        "v027"
+        "n2611d01",
+        "n2611d02",
+        "n2611d03",
+        "n2611d04",
+        "n2611d05",
+        "n2611d06",
+        "n2611d07",
+        "n2611d08",
+        "n2611d10",
+        "n2611d11",
+        "n2611d12",
+        "n2611d14",
+        "n2611d15",
+        "n2611d16"
       ]
     },
     "case-5": {
-      "date": "2026-10-18",
+      "date": "2026-11-05",
       "call_ids": [
-        "v028",
-        "v029"
+        "n2611c09",
+        "n2611c10",
+        "n2611c11",
+        "n2611c12",
+        "n2611c13",
+        "n2611c14",
+        "n2611c15",
+        "n2611c16",
+        "n2611c34",
+        "n2611c35",
+        "n2611c45",
+        "n2611c48",
+        "n2611c49",
+        "n2611c50"
       ]
     },
     "case-6": {
-      "date": "2026-10-18",
+      "date": "2026-11-05",
       "call_ids": [
-        "v030",
-        "v031",
-        "v032"
+        "n2611c17",
+        "n2611c18",
+        "n2611c19",
+        "n2611c20",
+        "n2611c21",
+        "n2611c22",
+        "n2611c36",
+        "n2611c37",
+        "n2611c38",
+        "n2611c39",
+        "n2611c47",
+        "n2611c51",
+        "n2611c52",
+        "n2611c63"
       ]
     },
     "case-7": {
-      "date": "2026-10-18",
+      "date": "2026-11-05",
       "call_ids": [
-        "v033",
-        "v034",
-        "v035"
+        "n2611d20",
+        "n2611d21",
+        "n2611d22",
+        "n2611d23",
+        "n2611d24",
+        "n2611d25",
+        "n2611d26",
+        "n2611d27",
+        "n2611d28",
+        "n2611d29",
+        "n2611d30",
+        "n2611d31",
+        "n2611d32",
+        "n2611d33"
       ]
     },
     "case-8": {
-      "date": "2026-10-18",
+      "date": "2026-11-05",
       "call_ids": [
-        "v036",
-        "v037",
-        "v038",
-        "v039",
-        "v040"
+        "n2611b24",
+        "n2611b37",
+        "n2611b38",
+        "n2611b39",
+        "n2611b40",
+        "n2611b41",
+        "n2611b42",
+        "n2611b44",
+        "n2611b45",
+        "n2611b60",
+        "n2611b67",
+        "n2611b68",
+        "n2611b69",
+        "n2611b73"
+      ]
+    },
+    "case-9": {
+      "date": "2026-11-05",
+      "call_ids": [
+        "n2611b07",
+        "n2611b11",
+        "n2611b13",
+        "n2611b14",
+        "n2611b19",
+        "n2611b20",
+        "n2611b30",
+        "n2611b43",
+        "n2611b47",
+        "n2611b48",
+        "n2611b49",
+        "n2611b50",
+        "n2611b51",
+        "n2611b56"
+      ]
+    },
+    "case-10": {
+      "date": "2026-11-05",
+      "call_ids": [
+        "n2611c24",
+        "n2611c25",
+        "n2611c26",
+        "n2611c27",
+        "n2611c28",
+        "n2611c29",
+        "n2611c40",
+        "n2611c41",
+        "n2611c42",
+        "n2611c43",
+        "n2611c66",
+        "n2611c67",
+        "n2611c68",
+        "n2611c69"
+      ]
+    },
+    "case-11": {
+      "date": "2026-11-05",
+      "call_ids": [
+        "n2611d36",
+        "n2611d37",
+        "n2611d38",
+        "n2611d39",
+        "n2611d40",
+        "n2611d41",
+        "n2611d42",
+        "n2611d43",
+        "n2611d44",
+        "n2611d45",
+        "n2611d58",
+        "n2611d59",
+        "n2611d80",
+        "n2611d85"
+      ]
+    },
+    "case-12": {
+      "date": "2026-11-05",
+      "call_ids": [
+        "n2611d09",
+        "n2611d13",
+        "n2611d16",
+        "n2611d46",
+        "n2611d47",
+        "n2611d48",
+        "n2611d49",
+        "n2611d50",
+        "n2611d51",
+        "n2611d52",
+        "n2611d53",
+        "n2611d54",
+        "n2611d55",
+        "n2611d56"
       ]
     }
   },

@@ -3,11 +3,11 @@
   const KEY_DATES = new Set(["2025-07-04", "2026-02-12", "2026-03-12"]);
 
   function timelineHTML(items) {
-    const rows = items.filter((t) => t.verified);
+    const rows = items.filter((t) => t.verified || t.single_source);
     return `<ol class="timeline" style="--n:${rows.length}">${rows.map((t) => `
       <li class="${KEY_DATES.has(t.date) ? "key" : ""}">
         <time datetime="${t.date}">${PT.fmtDate(t.date)}</time>
-        <strong>${PT.esc(t.measure.replace(/\s*\(.*?\)\s*/g, " ").trim())}</strong>
+        <strong>${PT.esc(t.measure.replace(/\s*\(.*?\)\s*/g, " ").trim())}</strong>${t.single_source ? `<span class="tl-single">Single source</span>` : ""}
         <p>${PT.esc(t.relevance)}</p>
         <a href="${PT.esc(t.source_url)}" rel="noopener">Source</a>
       </li>`).join("")}</ol>`;

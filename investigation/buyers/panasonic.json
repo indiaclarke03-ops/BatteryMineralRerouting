@@ -12,7 +12,7 @@
       "tJHABh2JwvOHgSPzs4_YxQ",
       "2u69S3eUKvGIRMirgsTDlg"
     ],
-    "summary": "Panasonic Energy's US records import cells and battery parts mainly from Panasonic's own Japanese unit, and anode graphite from POSCO Future M (Korea) and, once, from BTR (China). The largest graphite flow is 34 rows of coated spherical graphite whose shipper is not named; it left Chinese ports in 2025 and Singapore and Malaysian ports in 2026. Who makes that graphite, and who owns them, could not be established."
+    "summary": "Panasonic Energy's US records import cells and battery parts mainly from Panasonic's own Japanese unit, and anode graphite from POSCO Future M (Korea) and, once, from BTR (China). The largest graphite flow is 39 rows of coated spherical graphite whose shipper is not named, May 2025 to Oct 2026. US records list mostly Singapore as the last port, with some Chinese ports in 2025 and Malaysian ports in 2026. In 2026 the same product also reached Tesla with Taiwan as the last port. Who makes that graphite, and who owns them, could not be established."
   },
   "scan": {
     "hs": [
@@ -34,7 +34,7 @@
       ],
       "rows": 78,
       "first": "2026-05-06",
-      "last": "2026-09-16",
+      "last": "2026-10-15",
       "owner_top": "Panasonic Holdings (Sayari record 'PANASONIC CORPORATION')",
       "owner_country": "JPN",
       "chinese_owned": "No",
@@ -54,14 +54,14 @@
         "380110",
         "380190"
       ],
-      "rows": 34,
+      "rows": 39,
       "first": "2025-05-05",
-      "last": "2026-09-12",
+      "last": "2026-10-20",
       "owner_top": "Unknown",
       "owner_country": null,
       "chinese_owned": "Unknown",
       "confidence": "lead",
-      "note": "Coated spherical graphite, a battery-grade anode material, shipped to Panasonic procurement and energy records with the shipper's name withheld; 2025 lots left from Chinese ports and later lots from Singapore and Malaysia, a pattern that warrants due diligence on where the material is made.",
+      "note": "Coated spherical graphite, a battery-grade anode material, shipped to Panasonic procurement and energy records with the shipper's name withheld; US records list Singapore as the last port on most lots from May 2025, with Chinese ports on three 2025 lots, Malaysia in 2026 and Taiwan on rows to Tesla from Jul 2026. A last port doesn't show where the material was made, which warrants due diligence.",
       "call_ids": [
         "b-pan-03",
         "b-pan-04",
@@ -78,14 +78,14 @@
         "380110",
         "380190"
       ],
-      "rows": 16,
+      "rows": 18,
       "first": "2026-05-06",
-      "last": "2026-07-28",
+      "last": "2026-08-11",
       "owner_top": "POSCO Holdings Inc.",
       "owner_country": "KOR",
       "chinese_owned": "No",
       "confidence": "documented",
-      "note": "'Anode active material' shipped from Korea to Panasonic Energy Corporation (9 dated rows plus 7 undated); the site's POSCO case shows this plant also takes in graphite from Chinese suppliers.",
+      "note": "'Anode active material' shipped from Korea to Panasonic Energy Corporation (11 dated rows plus 7 undated); the site's POSCO case shows this plant also takes in graphite from Chinese suppliers.",
       "call_ids": [
         "b-pan-02",
         "b-pan-03",

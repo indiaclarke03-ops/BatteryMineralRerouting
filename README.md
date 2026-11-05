@@ -35,8 +35,8 @@ Built for GLOB1-GC 2620 *Beyond the Brand: Harnessing Emerging Tech in Ethical S
 | `index.html`: The Trace | Headline, key numbers, why it matters, an animated map of the twelve supply chains, short answers per case, policy timeline |
 | `explore.html`: Explore | The network for each case in four columns (owners, suppliers, plant, buyers); hover to focus, click for evidence; filters |
 | `buyers.html`: Check a Buyer | Pick a US buyer to see suppliers from the traced cases, plus wider HS 3801/8507 scans for Ford, Panasonic and LG Energy Solution, and a step-by-step guide to check any buyer |
-| `cases.html`: Case Files | All eight cases: question, answer, why it matters, key numbers, network, steps, verdict, passport card, red flags |
-| `diligence.html`: Due Diligence | Ownership screening for every plant, supplier questions generated from red flags, a watch list |
+| `cases.html`: Case Files | All twelve cases, each opening from its own box: question, answer, why it matters, key numbers, steps, verdict, red flags |
+| `diligence.html`: Due Diligence | Ownership screening for every plant and a watch list |
 | `method.html`: Method | Lessons, the 18 Oct re-check, Sayari scorecard, rubric, replay of every call, searchable log |
 | `about.html`: About this tool | Purpose, how to read it, confidence ratings, naming policy, sources, credits, limits, changelog |
 

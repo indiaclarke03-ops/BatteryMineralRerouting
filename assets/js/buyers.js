@@ -70,7 +70,7 @@
         <dt>What it shipped</dt><dd>${g.hs.size ? [...g.hs].map((h) => `<span class="hs">HS ${PT.esc(h)}</span>`).join(" ") : "<span class='muted'>Link only</span>"} ${g.rows ? `<strong>${g.rows}</strong> shipment row${g.rows > 1 ? "s" : ""}` : ""} · ${dates} ${PT.confBadge(best)}</dd>
         ${g.note ? `<dt>Its own inputs</dt><dd>${PT.esc(g.note)}</dd>` : ""}
       </dl>
-      <p class="sup-links"><a href="cases.html#${c.id}">Case ${idx}: ${PT.esc(c.title)} →</a> <a href="explore.html?case=${c.id}#${encodeURIComponent(g.src.id)}">See it in the network →</a> <span class="sup-receipts">Sources ${PT.receipts([...new Set(ids)].slice(0, 6))}</span></p>
+      <p class="sup-links"><a href="cases.html#${c.id}">Case ${idx}: ${PT.esc(c.title)} →</a> <a href="explore.html?case=${c.id}#${encodeURIComponent(g.src.id)}">See this plant in Explore →</a> <span class="sup-receipts">Sources ${PT.receipts([...new Set(ids)].slice(0, 6))}</span></p>
     </article>`;
   }
 
@@ -120,9 +120,9 @@
           <div><strong>${rows || "–"}</strong><span>shipment rows</span></div>
         </div>
       </div>
-      ${nCn ? `<p class="callout">${nCn} of this buyer's suppliers in our data ${nCn === 1 ? "is" : "are"} Chinese-owned or based in China. That isn't a finding of non-compliance: US tax-credit rules turn on cost shares and legal tests we don't assess. It shows where a buyer's due diligence should start. <a href="diligence.html">Due-diligence questions →</a></p>` : ""}
+      ${nCn ? `<p class="callout">${nCn} of this buyer's suppliers in our data ${nCn === 1 ? "is" : "are"} Chinese-owned or based in China. That isn't a finding of non-compliance: US tax-credit rules turn on cost shares and legal tests we don't assess. It shows where a buyer's due diligence should start. <a href="diligence.html">Due Diligence →</a></p>` : ""}
       ${fwEdges.length ? `<p class="muted" style="font-size:var(--fs-1)">Not shown: ${[...new Set(fwEdges.map((e) => d.entityById.get(e.source).name))].map(PT.esc).join(", ")}. These are freight forwarders named as shipper, so the real producer isn't recorded (${fwEdges.reduce((a, e) => a + (e.shipment_count || 0), 0)} rows).</p>` : ""}
-      ${sups.length ? `<h3 style="margin-top:var(--s-5)">Suppliers in our traced cases</h3><div class="sup-list">${sups.map((g) => supplierCard(d, g)).join("")}</div>` : `<p class="muted">None of our traced plants ships to this buyer.</p>`}
+      ${sups.length ? `<h3 style="margin-top:var(--s-5)">Tracing back: suppliers in our traced cases</h3><div class="sup-list">${sups.map((g) => supplierCard(d, g)).join("")}</div>` : `<p class="muted">None of our traced plants ships to this buyer.</p>`}
       ${profileHTML(d, prof)}`;
     history.replaceState(null, "", `?buyer=${key}`);
   }

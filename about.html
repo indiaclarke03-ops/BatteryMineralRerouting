@@ -5,15 +5,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Paper Trail | Minerals: About this tool</title>
   <meta name="description" content="Purpose, audience, how to read the site, data sources, open-source credits, limitations and changelog for Paper Trail | Minerals.">
-  <link rel="icon" href="assets/img/favicon.svg?v=20261103b" type="image/svg+xml">
-  <link rel="alternate icon" href="assets/img/favicon-32.png?v=20261103b" type="image/png" sizes="32x32">
-  <link rel="apple-touch-icon" href="assets/img/favicon-180.png?v=20261103b">
+  <link rel="icon" href="assets/img/favicon.svg?v=20261105b" type="image/svg+xml">
+  <link rel="alternate icon" href="assets/img/favicon-32.png?v=20261105b" type="image/png" sizes="32x32">
+  <link rel="apple-touch-icon" href="assets/img/favicon-180.png?v=20261105b">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Paper Trail | Minerals">
   <meta property="og:title" content="Paper Trail | Minerals: About this tool">
   <meta property="og:description" content="Purpose, audience, how to read the site, data sources, open-source credits, limitations and changelog for Paper Trail | Minerals.">
   <meta property="og:url" content="https://indiaclarke03-ops.github.io/BatteryMineralRerouting/about.html">
-  <meta property="og:image" content="https://indiaclarke03-ops.github.io/BatteryMineralRerouting/assets/img/social-card.png?v=20261103b">
+  <meta property="og:image" content="https://indiaclarke03-ops.github.io/BatteryMineralRerouting/assets/img/social-card.png?v=20261105b">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
   <meta name="twitter:card" content="summary_large_image">
@@ -21,9 +21,9 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600&family=Source+Serif+4:opsz,wght@8..60,600;8..60,700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/css/tokens.css?v=20261103b">
-  <link rel="stylesheet" href="assets/css/base.css?v=20261103b">
-  <link rel="stylesheet" href="assets/css/components.css?v=20261103b">
+  <link rel="stylesheet" href="assets/css/tokens.css?v=20261105b">
+  <link rel="stylesheet" href="assets/css/base.css?v=20261105b">
+  <link rel="stylesheet" href="assets/css/components.css?v=20261105b">
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
@@ -48,10 +48,9 @@
         <p>It contributes five things:</p>
         <ol>
           <li><strong>Traced supply chains, one case each</strong>, each answering one question with the evidence behind every link (<a href="cases.html">Case Files</a>, <a href="explore.html">Explore</a>).</li>
-          <li><strong>Practical checks for buyers</strong>: who supplies a given US company (<a href="buyers.html">Check a Buyer</a>), plus ownership screening, supplier questions and a watch list (<a href="diligence.html">Due Diligence</a>).</li>
+          <li><strong>Practical checks for buyers</strong>: who supplies a given US company (<a href="buyers.html">Check a Buyer</a>), plus ownership screening and a watch list (<a href="diligence.html">Due Diligence</a>).</li>
           <li><strong>A reusable screening playbook</strong>: a Sayari MCP call sequence and red-flag rubric that can be rerun on any battery supplier (<a href="https://github.com/indiaclarke03-ops/BatteryMineralRerouting/blob/main/investigation/playbook.md">playbook</a>).</li>
           <li><strong>An honest scorecard of the tool</strong>, showing where Sayari worked, partly worked or failed (<a href="method.html#scorecard-h">scorecard</a>).</li>
-          <li><strong>Declared vs. observed</strong>: a Passport vs. Paper Trail card that compares battery-passport fields with what trade data shows (<a href="cases.html">Case Files</a>).</li>
         </ol>
       </section>
 
@@ -138,7 +137,7 @@
           <li>Trade records can't show which input went into which export, so the Chinese-origin share of any shipment is unknown.</li>
           <li>Entity resolution can merge or split companies wrongly. Every "possibly the same as" link is labelled Inferred, with the reasoning shown.</li>
           <li>Whether any company counts as a prohibited foreign entity is a legal test that Treasury hasn't fully defined. We don't make that call.</li>
-          <li>Policy is moving fast. Dates are as of 14 Oct 2026. China's suspension of its Oct 2025 anode controls runs to 10 Nov 2026; a reported extension to Jan 2027 is unverified.</li>
+          <li>Policy is moving fast. Dates are as of 5 Nov 2026. China's suspension of its Oct 2025 anode controls legally ends on 10 Nov 2026. The wider truce runs to 10 Jan 2027, but China has published no notice moving the suspension. A separate pause on tighter graphite checks for the US ends on 27 Nov 2026.</li>
           <li><strong>AI use.</strong> The investigation and the site were built with Claude Code, which ran the Sayari and Tavily calls. India Clarke set the question and the method and reviews the findings.</li>
         </ul>
       </section>
@@ -152,6 +151,7 @@
       <section id="changelog" aria-labelledby="changelog-h">
         <h2 id="changelog-h">Changelog</h2>
         <ul>
+          <li><strong>Iteration 1.6, 5 Nov 2026.</strong> Full re-check of every case and policy date, with corrections. Clearer one-column supply-chain graphs, simpler Case Files and a shorter Method page.</li>
           <li><strong>Iteration 1.5, 3 Nov 2026.</strong> Renamed Paper Trail | Minerals. The Trace now plays each supply chain as an animated route on a larger map, with a drop-down for each case beside it. On Explore, details sit beside the graph, each case opens fully in view, arrows show direction, clicking traces a whole chain, and risk flags highlight companies without removing the rest of the chain.</li>
           <li><strong>Iteration 1.4, 18 Oct 2026.</strong> Four new cases: Ford and BTR, CATL/Ampace/Linergy (now TDK-owned), CATL Debrecen as an EU comparison, and Huayou nickel. Ownership percentages filled in from company filings, with the remaining unknowns and the documents that would settle them. Wider supplier scans for Ford, Panasonic and LG Energy Solution. "Last checked" dates and a monthly automated re-check. Executive summary, guided tour, link previews and an accessibility pass.</li>
           <li><strong>Iteration 1.3, 18 Oct 2026.</strong> Every headline claim re-checked against Sayari, with corrections: Case 1 now counts about 55 shipment rows (some loaded in Singapore); Case 2 adds BTR Morocco's first graphite, from BTR Indonesia (Aug 2026); Case 7's "Jamaica" rows are explained as a shipping hub. New pages: Check a Buyer and Due Diligence. New home page map and findings list. The Explore network is laid out in four columns (owners, suppliers, plant, buyers). Policy timeline updated.</li>
@@ -166,8 +166,8 @@
 
   <footer id="site-footer"></footer>
 
-  <script src="assets/js/data.js?v=20261103b"></script>
-  <script src="assets/js/ui.js?v=20261103b"></script>
+  <script src="assets/js/data.js?v=20261105b"></script>
+  <script src="assets/js/ui.js?v=20261105b"></script>
   <script>
     document.addEventListener("DOMContentLoaded", async () => {
       const el = document.getElementById("source-list");

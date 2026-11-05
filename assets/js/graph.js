@@ -100,13 +100,13 @@
   const STYLE = [
     { selector: "node", style: {
       shape: "round-rectangle", "background-color": "#EAF1FB", "border-width": 1.5, "border-color": "#9DB8E0",
-      label: "data(label)", "text-wrap": "wrap", "text-max-width": 160, "font-family": "IBM Plex Sans, system-ui, sans-serif",
+      label: "data(label)", "text-wrap": "wrap", "text-max-width": 200, "font-family": "IBM Plex Sans, system-ui, sans-serif",
       "font-size": 12.5, "line-height": 1.25, color: C.ink, "text-valign": "center", "text-halign": "center",
-      width: 178, height: "label", padding: "10px", "transition-property": "opacity, border-width", "transition-duration": 180,
+      width: 216, height: "label", padding: "9px", "transition-property": "opacity, border-width", "transition-duration": 180,
     } },
     { selector: "node.parent", style: { "background-color": "#F1EAFB", "border-color": C.ct, "font-weight": 600 } },
-    { selector: "node.person", style: { "background-color": "#FFFFFF", "border-color": C.ct, "border-style": "dashed", "font-size": 12, width: 158 } },
-    { selector: "node.transit_plant", style: { "background-color": C.teal, "border-color": C.teal, color: "#FFFFFF", "font-weight": 700, "font-size": 13.5, width: 200 } },
+    { selector: "node.person", style: { "background-color": "#FFFFFF", "border-color": C.ct, "border-style": "dashed", "font-size": 12, width: 200 } },
+    { selector: "node.transit_plant", style: { "background-color": C.teal, "border-color": C.teal, color: "#FFFFFF", "font-weight": 700, "font-size": 13.5, width: 216 } },
     { selector: "node.us_buyer", style: { "background-color": "#FFFFFF", "border-color": C.ink, "border-width": 2 } },
     { selector: "node.buyer", style: { "background-color": "#FFFFFF", "border-color": C.ink3 } },
     { selector: "node.contrast", style: { "background-color": "#F7F6F1", "border-color": C.rule, "border-style": "dashed", color: C.ink2 } },
@@ -123,7 +123,7 @@
     { selector: "edge.conf-lead", style: { opacity: 0.32 } },
     { selector: "edge.labelled", style: { label: "data(label)" } },
     { selector: "node.hover", style: { "underlay-color": C.teal, "underlay-opacity": 0.14, "underlay-padding": 6, "underlay-shape": "round-rectangle" } },
-    { selector: "edge.hover", style: { opacity: 1 } },
+    { selector: "edge.hover", style: { opacity: 1, "z-index": 9 } },
     { selector: ".sp-dim", style: { opacity: 0.62, "text-opacity": 0.8 } },
     { selector: "edge.sp-dim", style: { opacity: 0.3 } },
     { selector: "edge.sp-on", style: { opacity: 1 } },
@@ -186,98 +186,132 @@
 
 
 
-  /* Lane layout for a single case: Owners & people | Suppliers | The plant | Buyers.
-     Every case reads left to right in the same structure. */
-  const LANES = ["Owners and people", "Suppliers and inputs", "The plant", "Buyers and outputs"];
+  /* Lane layout. Goods run left to right, one company per row in a single column:
+     further upstream, suppliers, the plant, buyers, onward. Owners sit above the plant, so
+     ownership runs top to bottom and never crosses the goods lines. */
+  const LANE = { up: "Further upstream", sup: "Suppliers and inputs", own: "Owners and people", plant: "The plant", buy: "Buyers and outputs", on: "Onward" };
+  const LANE_ORDER = ["own", "up", "sup", "plant", "buy", "on"];
   function laneLayout(cy) {
     cy.remove(".lane");
     const nodes = cy.nodes();
-    if (!nodes.length) return;
+    if (!nodes.length) return null;
     let P = nodes.filter(".transit_plant");
     if (P.empty()) P = nodes.max((n) => n.degree()).ele.collection();
-    const col = new Map(); const depth = new Map(); const weight = new Map();
-    P.forEach((n) => col.set(n.id(), 2));
-    const isP = (id) => col.get(id) === 2 && P.getElementById(id).nonempty();
+    const lane = new Map(), depth = new Map(), weight = new Map();
+    P.forEach((n) => lane.set(n.id(), "plant"));
+    const isP = (id) => lane.get(id) === "plant";
     const OWNERSHIP = new Set(["owns", "shareholder_of", "subsidiary_of", "director_of", "officer_of"]);
     const tx = cy.edges(".tx"), inf = cy.edges(".inf");
     const ct = cy.edges(".ct").filter((e) => OWNERSHIP.has(e.data("rel")));
-    // Owners: walk up ownership/officer links from the plant
+    // Owners: walk up ownership and officer links from the plant
     let changed = true, level = 1;
     while (changed && level < 8) {
       changed = false;
       ct.forEach((e) => {
         const s = e.data("source"), t = e.data("target");
-        if (!col.has(s) && (isP(t) || col.get(t) === 0)) { col.set(s, 0); depth.set(s, (depth.get(t) || 0) + 1); changed = true; }
+        if (!lane.has(s) && (isP(t) || lane.get(t) === "own")) { lane.set(s, "own"); depth.set(s, (depth.get(t) || 0) + 1); changed = true; }
       });
       level++;
     }
-    // Buyers (after owners, so an owner that also buys stays with the owners): shipments leaving the plant
-    tx.forEach((e) => { if (isP(e.data("source")) && !col.has(e.data("target"))) { col.set(e.data("target"), 3); weight.set(e.data("target"), (weight.get(e.data("target")) || 0) + e.data("w")); } });
-    // Suppliers: shipments into the plant
-    tx.forEach((e) => { if (isP(e.data("target")) && !col.has(e.data("source"))) { col.set(e.data("source"), 1); weight.set(e.data("source"), (weight.get(e.data("source")) || 0) + e.data("w")); } });
-    // Known buyers always sit on the buyer side
-    nodes.forEach((n) => { if (!col.has(n.id()) && (n.hasClass("us_buyer") || n.hasClass("buyer"))) col.set(n.id(), 3); });
-    // Duplicate-record leads sit with the plant
-    inf.forEach((e) => { [[e.data("source"), e.data("target")], [e.data("target"), e.data("source")]].forEach(([a, b]) => { if (!col.has(a) && isP(b)) col.set(a, 2); }); });
-    // Everything else joins its nearest placed neighbour
+    const add = (id, w) => weight.set(id, (weight.get(id) || 0) + w);
+    // Buyers come after owners, so an owner that also buys stays with the owners
+    tx.forEach((e) => { const t = e.data("target"); if (isP(e.data("source")) && !lane.has(t)) { lane.set(t, "buy"); add(t, e.data("w")); } });
+    tx.forEach((e) => { const s = e.data("source"); if (isP(e.data("target")) && !lane.has(s)) { lane.set(s, "sup"); add(s, e.data("w")); } });
+    nodes.forEach((n) => { if (!lane.has(n.id()) && (n.hasClass("us_buyer") || n.hasClass("buyer"))) lane.set(n.id(), "buy"); });
+    // Probable duplicates of the plant sit with the plant
+    inf.forEach((e) => { [[e.data("source"), e.data("target")], [e.data("target"), e.data("source")]].forEach(([a, b]) => { if (!lane.has(a) && isP(b)) lane.set(a, "plant"); }); });
+    // Everything else follows the goods from its nearest placed neighbour
     for (let pass = 0; pass < 4; pass++) {
       nodes.forEach((n) => {
-        if (col.has(n.id())) return;
-        const nb = n.neighborhood("node").filter((m) => col.has(m.id()));
-        if (nb.nonempty()) {
-          const m = nb[0], c = col.get(m.id());
-          const shipped = n.edgesWith(m).filter(".tx");
-          const receives = shipped.filter((e) => e.data("source") === m.id()).nonempty(); // goods flow m -> n
-          const sends = shipped.filter((e) => e.data("target") === m.id()).nonempty();    // goods flow n -> m
-          // Follow the goods: downstream of anything goes right, upstream of the plant or a supplier goes left.
-          const target = receives ? 3 : sends && c >= 1 ? 1 : c === 2 ? 1 : c;
-          col.set(n.id(), target);
-          if (target === 0) depth.set(n.id(), (depth.get(m.id()) || 0));
-        }
+        if (lane.has(n.id())) return;
+        const nb = n.neighborhood("node").filter((m) => lane.has(m.id()));
+        if (nb.empty()) return;
+        const m = nb[0], c = lane.get(m.id());
+        const shipped = n.edgesWith(m).filter(".tx");
+        const receives = shipped.filter((e) => e.data("source") === m.id()).nonempty();
+        lane.set(n.id(), receives ? "buy" : c === "own" ? "own" : "sup");
       });
     }
-    nodes.forEach((n) => { if (!col.has(n.id())) col.set(n.id(), 1); });
-
-    // Each lane wraps into sub-columns, so a long list stays compact enough to see whole.
-    const GAP = 16, ROW = 12, COL_W = 212, LANE_GAP = 120;
-    const pos = {}, lanes = [], bands = [];
-    let top = Infinity, bottom = -Infinity, x = 0;
-    [0, 1, 2, 3].forEach((c) => {
-      let list = nodes.filter((n) => col.get(n.id()) === c);
-      if (!list.length) return;
-      list = list.sort((a, b) => c === 0 ? (depth.get(b.id()) || 0) - (depth.get(a.id()) || 0) || a.data("label").localeCompare(b.data("label"))
-        : c === 2 ? b.degree() - a.degree() : (weight.get(b.id()) || 0) - (weight.get(a.id()) || 0) || a.data("label").localeCompare(b.data("label")));
-      const per = Math.max(ROW, Math.ceil(Math.sqrt(list.length * 1.8)));
-      const chunks = Math.ceil(list.length / per);
-      const w = c === 2 ? COL_W + 24 : COL_W;
-      for (let k = 0; k < chunks; k++) {
-        const chunk = list.slice(k * per, (k + 1) * per);
-        const hs = chunk.map((n) => n.outerHeight());
-        const total = hs.reduce((a, h) => a + h + GAP, -GAP);
-        let y = -total / 2;
-        chunk.forEach((n, i) => { pos[n.id()] = { x: x + k * w + w / 2, y: y + hs[i] / 2 }; y += hs[i] + GAP; });
-        top = Math.min(top, -total / 2); bottom = Math.max(bottom, total / 2);
-      }
-      bands.push({ c, x0: x - 18, x1: x + chunks * w + 18 });
-      lanes.push({ title: LANES[c], ids: list.map((n) => n.id()) });
-      x += chunks * w + LANE_GAP;
+    nodes.forEach((n) => { if (!lane.has(n.id())) lane.set(n.id(), "sup"); });
+    // Second-tier flows get their own lane, so an arrow never runs up or down inside a column
+    const fromPlant = new Set(), toPlant = new Set();
+    tx.forEach((e) => { if (isP(e.data("source"))) fromPlant.add(e.data("target")); if (isP(e.data("target"))) toPlant.add(e.data("source")); });
+    tx.forEach((e) => {
+      const s = e.data("source"), t = e.data("target");
+      if (lane.get(s) === "buy" && lane.get(t) === "buy" && !fromPlant.has(t)) lane.set(t, "on");
+      if (lane.get(s) === "sup" && lane.get(t) === "sup" && !toPlant.has(s)) lane.set(s, "up");
     });
+
+    const list = (k) => nodes.filter((n) => lane.get(n.id()) === k);
+    const GAP = 12, W = 236, pos = {};
+    const stack = (arr, x, startY) => {
+      let y = startY;
+      arr.forEach((n) => { const h = n.outerHeight(); pos[n.id()] = { x, y: y + h / 2 }; y += h + GAP; });
+      return y - GAP;
+    };
+    const height = (arr) => arr.reduce((a, n) => a + n.outerHeight() + GAP, -GAP);
+    const byName = (a, b) => a.data("label").localeCompare(b.data("label"));
+    // Rows sit near the companies they connect to, which keeps lines from crossing
+    const pull = (n) => {
+      const ys = n.neighborhood("node").filter((m) => pos[m.id()]).map((m) => pos[m.id()].y);
+      return ys.length ? ys.reduce((a, b) => a + b, 0) / ys.length : 0;
+    };
+    const order = (arr) => arr.map((n) => [n, pull(n)]).sort((a, b) => a[1] - b[1] || (weight.get(b[0].id()) || 0) - (weight.get(a[0].id()) || 0) || byName(a[0], b[0])).map((x) => x[0]);
+
+    const cols = [["up"], ["sup"], ["own", "plant"], ["buy"], ["on"]].filter((c) => c.some((k) => list(k).length));
+    const LANE_GAP = cols.length > 3 ? 130 : 190;
+    const xOf = new Map();
+    cols.forEach((c, i) => c.forEach((k) => xOf.set(k, i * (W + LANE_GAP))));
+    // Plant first, centred; its owners stack above it with the ultimate owner on top
+    const plants = list("plant").sort((a, b) => b.degree() - a.degree()).toArray();
+    const owners = list("own").toArray().sort((a, b) => (depth.get(b.id()) || 0) - (depth.get(a.id()) || 0) || byName(a, b));
+    const plantTop = -height(plants) / 2;
+    stack(plants, xOf.get("plant"), plantTop);
+    const LABEL_GAP = 44;
+    if (owners.length) stack(owners, xOf.get("plant"), plantTop - LABEL_GAP - height(owners));
+    const side = ["sup", "buy", "up", "on"];
+    side.forEach((k) => { const a = order(list(k).toArray()); if (a.length) stack(a, xOf.get(k), -height(a) / 2); });
     nodes.positions((n) => pos[n.id()]);
-    bands.forEach((b) => { b.y0 = top - 62; b.y1 = bottom + 26; });
-    cy.add(bands.map((b) => ({ group: "nodes", data: { id: `lane-${b.c}`, label: LANES[b.c] }, classes: "lane", position: { x: (b.x0 + b.x1) / 2, y: top - 38 } })));
+
+    const yAll = Object.values(pos).map((q) => q.y);
+    const top = Math.min(...yAll) - 60, bottom = Math.max(...yAll) + 60;
+    const bands = cols.map((c, i) => ({ c: c.includes("plant") ? 2 : i ? 1 : 0, x0: i * (W + LANE_GAP) - W / 2 - 14, x1: i * (W + LANE_GAP) + W / 2 + 14, y0: top - 44, y1: bottom }));
+    const labels = [];
+    cols.forEach((c, i) => {
+      const x = i * (W + LANE_GAP);
+      if (c.includes("own") && owners.length) {
+        labels.push({ k: "own", x, y: top - 18 });
+        if (list("plant").length) labels.push({ k: "plant", x, y: plantTop - 20 });
+      } else labels.push({ k: c.includes("plant") ? "plant" : c[0], x, y: top - 18 });
+    });
+    cy.add(labels.map((l) => ({ group: "nodes", data: { id: `lane-${l.k}`, label: LANE[l.k] }, classes: "lane", position: { x: l.x, y: l.y } })));
     sCurves(cy);
-    return { lanes, bands };
+    const lanes = LANE_ORDER.map((k) => ({ title: LANE[k], ids: (k === "own" ? owners : order(list(k).toArray())).map((n) => n.id()) })).filter((l) => l.ids.length);
+    return { lanes, bands, height: bottom - top + 60, width: cols.length * (W + LANE_GAP) };
   }
 
-  /* S-shaped lines: leave and arrive horizontally, so a lane reads like a flow rather than a tangle. */
+  /* S-shaped lines leave and arrive level, so each one can be followed to its company.
+     Links inside a column bow out to the side rather than running behind the companies between them. */
   function sCurves(cy) {
+    const real = cy.nodes().not(".lane");
+    let flip = 1;
     cy.edges().forEach((e) => {
       const a = e.source().position(), b = e.target().position();
-      const dx = b.x - a.x, dy = b.y - a.y, len2 = dx * dx + dy * dy;
-      if (Math.abs(dx) < 60 || Math.abs(dy) < 6) return; // same lane, or level: a plain line reads best
-      const c = [{ x: a.x + dx / 2, y: a.y }, { x: a.x + dx / 2, y: b.y }];
+      const dx = b.x - a.x, dy = b.y - a.y, len2 = dx * dx + dy * dy, len = Math.sqrt(len2);
+      if (Math.abs(dx) < 60) {
+        const lo = Math.min(a.y, b.y), hi = Math.max(a.y, b.y);
+        const between = real.some((n) => { const q = n.position(); return Math.abs(q.x - a.x) < 60 && q.y > lo + 1 && q.y < hi - 1; });
+        if (!between) return;
+        flip = -flip;
+        e.style({ "curve-style": "unbundled-bezier", "control-point-weights": "0.5", "control-point-distances": String(flip * (270 + Math.min(70, len / 12))) });
+        return;
+      }
+      if (Math.abs(dy) < 6) return;
+      // A line that skips a column turns in the gap before its target, not behind the column it crosses.
+      const turn = Math.abs(dx) > 500 ? b.x - Math.sign(dx) * 190 : a.x + dx / 2;
+      const c = [{ x: turn, y: a.y }, { x: turn, y: b.y }];
       const w = c.map((q) => ((q.x - a.x) * dx + (q.y - a.y) * dy) / len2);
-      const dist = c.map((q) => ((q.y - a.y) * dx - (q.x - a.x) * dy) / Math.sqrt(len2));
+      const dist = c.map((q) => ((q.y - a.y) * dx - (q.x - a.x) * dy) / len);
       e.style({ "curve-style": "unbundled-bezier", "control-point-weights": w.map((v) => v.toFixed(3)).join(" "), "control-point-distances": dist.map((v) => v.toFixed(1)).join(" ") });
     });
   }
@@ -396,44 +430,40 @@
       container.innerHTML = `<p class="graph-fallback">The graph library didn't load. The list view shows the same links.</p>`;
       return null;
     }
-    if (typeof cytoscapeDagre !== "undefined" && !PT._dagreReg) { cytoscape.use(cytoscapeDagre); PT._dagreReg = true; }
     let merge = opts.merge !== false;
     let caseId = opts.caseId;
     let built = build(d, caseId, merge);
     const frame = container.parentElement;
     const cy = cytoscape({
       container, elements: built.els, style: STYLE,
-      wheelSensitivity: 0.2, minZoom: 0.05, maxZoom: 2.5, boxSelectionEnabled: false,
+      minZoom: 0.05, maxZoom: 2.5, boxSelectionEnabled: false,
+      userZoomingEnabled: false, // the page scrolls past the graph; the buttons do the zooming
       autoungrabify: true, // nodes can't be dragged; clicking only opens details
     });
     const under = bandLayer(cy, frame, container);
-    const flow = opts.flow ? flowLayer(cy, frame, container) : null;
+    const flow = flowLayer(cy, frame, container);
     let lanes = null;
-    const layout = () => {
-      lanes = null;
-      if (opts.lanes !== false) lanes = laneLayout(cy);
-      else cy.layout({ name: "dagre", rankDir: "LR", nodeSep: 24, rankSep: 120, edgeSep: 12, padding: 30, animate: false }).run();
-      if (flow) flow.dirty();
-    };
-    const MIN = opts.minZoom || 0.75, MAX_FIT = 1.1;
+    const baseHeight = container.clientHeight;
     const shown = () => cy.elements().not(".hidden");
-    /* See the whole network, but don't blow a small one up. */
-    function fitWhole() {
-      cy.resize();
-      cy.fit(shown(), 26);
-      if (cy.zoom() > MAX_FIT) { cy.zoom(MAX_FIT); cy.center(shown()); }
-    }
-    function fitReadable() {
-      if (opts.fitAll) { fitWhole(); return; }
-      cy.fit(shown(), 30);
-      if (cy.zoom() < MIN) {
-        const plant = cy.nodes(".transit_plant").sort((a, b) => b.degree() - a.degree())[0] || cy.nodes().max((n) => n.degree()).ele;
-        cy.zoom(MIN);
-        if (plant) cy.center(plant);
+    /* A busy case gets a taller graph, so each company keeps its own readable row. */
+    function sizeFrame() {
+      const READABLE = 0.72, MAX = 2600;
+      let h = baseHeight;
+      if (lanes) {
+        const z = Math.min(READABLE, (container.clientWidth - 40) / lanes.width);
+        h = Math.max(baseHeight, Math.min(MAX, lanes.height * z + 40));
       }
+      container.style.height = h + "px";
+      cy.resize(); flow.resize();
     }
+    function fitWhole() {
+      sizeFrame();
+      cy.fit(shown(), 20);
+      if (cy.zoom() > 1) { cy.zoom(1); cy.center(shown()); }
+    }
+    const layout = () => { lanes = laneLayout(cy); flow.dirty(); };
     layout();
-    fitReadable();
+    fitWhole();
     under.set(lanes && lanes.bands);
 
     // Hover: a tooltip and a soft emphasis. The rest of the graph stays as it is.
@@ -467,16 +497,10 @@
       tip.style.top = (p.y + 16) + "px";
     });
 
-    // Details: in the side panel when the page has one, otherwise in a drawer over the graph.
+    // Details open in the side panel beside the graph.
     const CLOSE = `<button type="button" class="drawer-close" aria-label="Close details">×</button>`;
-    const panel = opts.panel || document.createElement("aside");
-    if (!opts.panel) {
-      panel.className = "side-panel card drawer";
-      panel.setAttribute("aria-live", "polite");
-      panel.hidden = true;
-      frame.appendChild(panel);
-    }
-    const fill = (html) => { panel.innerHTML = CLOSE + html; panel.hidden = false; panel.scrollTop = 0; };
+    const panel = opts.panel;
+    const fill = (html) => { panel.innerHTML = CLOSE + html; panel.scrollTop = 0; };
 
     /* Light up everything upstream and downstream of a company or line. The rest stays visible, just quieter. */
     function chainOf(el) {
@@ -484,7 +508,6 @@
       return el.union(el.connectedNodes()).union(el.source().predecessors()).union(el.target().successors());
     }
     function lightChain(el) {
-      if (!opts.chain) return;
       cy.batch(() => {
         cy.elements().removeClass("faded hl");
         if (!el || el.empty()) return;
@@ -494,7 +517,6 @@
       });
     }
     const close = () => {
-      if (!opts.panel) panel.hidden = true;
       cy.elements().unselect();
       lightChain(null);
       if (opts.onClear) opts.onClear();
@@ -512,7 +534,7 @@
       const a = ev.target.closest("[data-edge]");
       if (a) { ev.preventDefault(); const el = elOfEdge(a.dataset.edge); if (el && el.nonempty()) { cy.elements().unselect(); el.select(); lightChain(el); openEdge(el.data("ids")[0], el.data("ids")); } else openEdge(a.dataset.edge); }
     });
-    document.addEventListener("keydown", (ev) => { if (ev.key === "Escape" && (opts.panel ? cy.$(":selected").nonempty() : !panel.hidden)) close(); });
+    document.addEventListener("keydown", (ev) => { if (ev.key === "Escape" && cy.$(":selected").nonempty()) close(); });
     cy.on("tap", "node", (ev) => { const n = ev.target; lightChain(n); openNode(n.id(), n.data("members")); if (opts.onSelect) opts.onSelect({ kind: "node", id: n.id() }); });
     cy.on("tap", "edge", (ev) => { const e = ev.target; lightChain(e); openEdge(e.data("ids")[0], e.data("ids")); if (opts.onSelect) opts.onSelect({ kind: "edge", id: e.data("ids")[0] }); });
     cy.on("tap", (ev) => { if (ev.target === cy) close(); });
@@ -528,16 +550,12 @@
       setCase(id) { caseId = id; cy.elements().unselect(); api.rebuild(); },
       setMerge(on) { merge = on; api.rebuild(); },
       rebuild() {
-        if (!opts.panel) panel.hidden = true;
         built = build(d, caseId, merge);
-        cy.elements().remove(); cy.add(built.els); layout(); fitReadable();
+        cy.elements().remove(); cy.add(built.els); layout(); fitWhole();
         under.set(lanes && lanes.bands);
       },
-      relayout() { layout(); under.set(lanes && lanes.bands); api.fit(); },
-      fit() { cy.animate({ fit: { eles: shown(), padding: 26 } }, { duration: 300 }); },
-      zoom(f) { cy.animate({ zoom: { level: cy.zoom() * f, renderedPosition: { x: container.clientWidth / 2, y: container.clientHeight / 2 } } }, { duration: 200 }); },
-      reset() { cy.elements().removeClass("faded hl"); fitReadable(); },
-      fitAll() { api.fit(); },
+      fit() { cy.animate({ fit: { eles: shown(), padding: 20 } }, { duration: 300 }); },
+      zoom(f) { cy.animate({ zoom: { level: cy.zoom() * f, renderedPosition: { x: container.clientWidth / 2, y: Math.min(container.clientHeight, window.innerHeight) / 2 } } }, { duration: 200 }); },
       clearFocus() { close(); },
       /* Company list for a side panel, grouped by lane. */
       lanes() {
@@ -563,17 +581,6 @@
         });
         return n;
       },
-      highlight(edgeIds = [], nodeIds = []) {
-        cy.elements().removeClass("hl faded");
-        if (!edgeIds.length && !nodeIds.length) { cy.fit(undefined, 30); return; }
-        let sel = cy.collection();
-        edgeIds.forEach((id) => { const e = elOfEdge(id); if (e.nonempty()) sel = sel.union(e).union(e.connectedNodes()); });
-        nodeIds.forEach((id) => { const n = elOfNode(id); if (n.nonempty()) sel = sel.union(n); });
-        if (sel.empty()) return;
-        cy.elements().addClass("faded");
-        sel.removeClass("faded").addClass("hl");
-        cy.animate({ fit: { eles: sel, padding: 60 } }, { duration: 450 });
-      },
       showLabels(on) { cy.edges().toggleClass("labelled", !!on); },
       filter(edgePred, nodePred) {
         const keepNodes = new Set(), keepEdges = new Set();
@@ -587,7 +594,7 @@
           cy.edges().forEach((e) => e.toggleClass("hidden", !keepEdges.has(e.id())));
           cy.nodes().not(".lane").forEach((n) => n.toggleClass("hidden", !keepNodes.has(n.id())));
         });
-        if (flow) flow.dirty();
+        flow.dirty();
       },
       showDetails(id) {
         api.select(id);
@@ -597,70 +604,48 @@
       select(id) {
         cy.elements().unselect();
         const el = d.edgeById.has(id) ? elOfEdge(id) : elOfNode(id);
-        if (el && el.nonempty()) {
-          el.select();
-          if (!opts.fitAll) cy.animate({ center: { eles: el }, zoom: Math.max(cy.zoom(), 0.9) }, { duration: 300 });
-        }
+        if (el && el.nonempty()) el.select();
       },
-      get motion() { return flow ? flow.on : null; },
-      setMotion(on) { if (flow) flow.set(on); },
+      get motion() { return flow.on; },
+      setMotion(on) { flow.set(on); },
     };
-    window.addEventListener("resize", () => { cy.resize(); if (flow) flow.resize(); });
+    window.addEventListener("resize", () => { cy.resize(); flow.resize(); });
     (PT._graphs = PT._graphs || []).push(api);
     return api;
   };
 
-  /* Controls + legend overlay, shared by Home, Explore and Case Files. */
-  PT.graphChrome = function (frame, api, opts = {}) {
+  /* Zoom, motion and view controls in the bar above the graph, and the key below it. */
+  PT.graphChrome = function (frame, api, opts) {
     if (!api) return;
+    const host = opts.toggleHost;
     const roles = ["parent", "officer", "trader", "transit_plant", "us_buyer"];
-    frame.insertAdjacentHTML("beforeend", `
+    host.insertAdjacentHTML("beforeend", `
+      <div class="graph-toggles">
+        <label><input type="checkbox" data-merge ${api.merged ? "checked" : ""}> Merge duplicate records</label>
+        <label><input type="checkbox" data-labels> Product codes on lines</label>
+      </div>
       <div class="graph-tools" role="toolbar" aria-label="Graph controls">
         <button type="button" data-z="1.25" title="Zoom in" aria-label="Zoom in">+</button>
         <button type="button" data-z="0.8" title="Zoom out" aria-label="Zoom out">−</button>
         <button type="button" data-fit title="Show the whole network" aria-label="Show the whole network">⤢</button>
-        ${api.motion === null ? "" : `<button type="button" data-motion></button>`}
+        <button type="button" data-motion></button>
       </div>`);
     frame.insertAdjacentHTML("afterend", `
       <div class="graph-key" aria-hidden="true">
         ${roles.map((r) => `<span class="lg-node lg-${r}">${PT.ROLE_STYLE[r].label}</span>`).join("")}
         <span class="lg-node lg-merged">Merged records</span>
-        <span class="etype tx"><span class="line"></span>Shipment</span>
-        <span class="etype ct"><span class="line"></span>Ownership</span>
+        <span class="etype tx"><span class="line"></span>Shipment: left to right, following the goods</span>
+        <span class="etype ct"><span class="line"></span>Ownership: top to bottom</span>
         <span class="etype inf"><span class="line"></span>Inferred</span>
-        <span class="muted">Thicker blue line = more shipments · ⚑ risk flag · click to trace a chain · drag to pan · ⤢ shows everything</span>
+        <span class="muted">Thicker blue line = more shipments · ⚑ risk flag · click to trace a chain · drag to pan</span>
       </div>`);
-    frame.querySelectorAll("[data-z]").forEach((b) => b.addEventListener("click", () => api.zoom(+b.dataset.z)));
-    frame.querySelector("[data-fit]").addEventListener("click", () => api.fitAll());
-    const mo = frame.querySelector("[data-motion]");
-    if (mo) {
-      const label = () => { const t = api.motion ? "Pause the moving arrows" : "Play the moving arrows"; mo.textContent = api.motion ? "❚❚" : "▶"; mo.title = t; mo.setAttribute("aria-label", t); };
-      label();
-      mo.addEventListener("click", () => { api.setMotion(!api.motion); label(); });
-    }
-    if (opts.toggles) {
-      const bar = document.createElement("div");
-      bar.className = "graph-toggles";
-      bar.innerHTML = `
-        <label><input type="checkbox" data-merge ${api.merged ? "checked" : ""}> Merge duplicate records of the same company</label>
-        <label><input type="checkbox" data-labels> Show product codes on lines</label>`;
-      if (opts.toggleHost) opts.toggleHost.appendChild(bar);
-      else frame.parentElement.insertBefore(bar, frame);
-      bar.querySelector("[data-merge]").addEventListener("change", (e) => { api.setMerge(e.target.checked); if (opts.onRebuild) opts.onRebuild(); });
-      bar.querySelector("[data-labels]").addEventListener("change", (e) => api.showLabels(e.target.checked));
-    }
-  };
-
-  /* Text list of edges: same data as the graph, for phones and screen readers. */
-  PT.edgeListHTML = function (d, edges) {
-    return `<ul class="edge-list">${edges.map((e) => `
-      <li class="${PT.ETYPE[e.edge_type].cls}" id="edge-${e.id}">
-        <div class="edge-head">${PT.etypeTag(e.edge_type)} ${PT.confBadge(e.confidence)} ${(e.hs_codes || []).map((h) => `<span class="hs">HS ${PT.esc(h)}</span>`).join(" ")}</div>
-        <div><strong>${PT.esc(PT.edgeSentence(e, d))}</strong></div>
-        ${e.first_seen ? `<div class="muted">${PT.fmtDate(e.first_seen)}${e.last_seen && e.last_seen !== e.first_seen ? ` – ${PT.fmtDate(e.last_seen)}` : ""}${e.shipment_count ? ` · ${e.shipment_count} shipment row${e.shipment_count > 1 ? "s" : ""}` : ""}</div>` : ""}
-        <div>${PT.esc(e.evidence)}</div>
-        ${PT.whyHTML(e)}
-        <div>How we know: ${PT.receipts(e.source_call_ids)}</div>
-      </li>`).join("")}</ul>`;
+    host.querySelectorAll("[data-z]").forEach((b) => b.addEventListener("click", () => api.zoom(+b.dataset.z)));
+    host.querySelector("[data-fit]").addEventListener("click", () => api.fit());
+    const mo = host.querySelector("[data-motion]");
+    const label = () => { const t = api.motion ? "Pause the moving arrows" : "Play the moving arrows"; mo.textContent = api.motion ? "❚❚" : "▶"; mo.title = t; mo.setAttribute("aria-label", t); };
+    label();
+    mo.addEventListener("click", () => { api.setMotion(!api.motion); label(); });
+    host.querySelector("[data-merge]").addEventListener("change", (e) => { api.setMerge(e.target.checked); if (opts.onRebuild) opts.onRebuild(); });
+    host.querySelector("[data-labels]").addEventListener("change", (e) => api.showLabels(e.target.checked));
   };
 })(window.PT);
