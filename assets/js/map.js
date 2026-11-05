@@ -110,6 +110,40 @@
     cap.className = "map-cap"; cap.hidden = true; cap.setAttribute("aria-live", "polite");
     el.appendChild(cap);
 
+    /* Expanded view: the map takes the whole window, because its width is what limits its size.
+       The case list stays one click away as a panel over the map. */
+    const wrapEl = el.parentElement;
+    const tools = document.createElement("div");
+    tools.className = "map-tools";
+    tools.innerHTML = `<button type="button" data-list hidden aria-expanded="false">Show case list</button>
+      <button type="button" data-expand><svg viewBox="0 0 12 12" width="12" height="12" aria-hidden="true"><path d="M1 4.5V1h3.5M7.5 1H11v3.5M11 7.5V11H7.5M4.5 11H1V7.5" fill="none" stroke="currentColor" stroke-width="1.6"/></svg><span>Expand map</span></button>`;
+    el.appendChild(tools);
+    const expandBtn = tools.querySelector("[data-expand]"), listBtn = tools.querySelector("[data-list]");
+    let inerted = [];
+    function setList(on) {
+      wrapEl.classList.toggle("list-open", on);
+      listBtn.textContent = on ? "Hide case list" : "Show case list";
+      listBtn.setAttribute("aria-expanded", String(on));
+      if (on && openCase) listEl.scrollTop = itemOf(openCase).offsetTop - listEl.offsetTop;
+    }
+    function setExpanded(on) {
+      wrapEl.classList.toggle("expanded", on);
+      document.documentElement.classList.toggle("map-open", on);
+      expandBtn.querySelector("span").textContent = on ? "Close" : "Expand map";
+      listBtn.hidden = !on;
+      setList(false);
+      inerted.forEach((n) => { n.inert = false; });
+      inerted = [];
+      if (on) { // keep keyboard focus inside the expanded map
+        for (let n = wrapEl; n !== document.body; n = n.parentElement) {
+          [...n.parentElement.children].forEach((x) => { if (x !== n && !x.inert && x.tagName !== "SCRIPT") { x.inert = true; inerted.push(x); } });
+        }
+      }
+    }
+    expandBtn.addEventListener("click", () => setExpanded(!wrapEl.classList.contains("expanded")));
+    listBtn.addEventListener("click", () => setList(!wrapEl.classList.contains("list-open")));
+    document.addEventListener("keydown", (ev) => { if (ev.key === "Escape" && wrapEl.classList.contains("expanded")) { setExpanded(false); expandBtn.focus(); } });
+
     /* Side list: one row per case, opening to its route steps and a drop-down with more about the case. */
     const STAGE = (s) => `<span class="ms-stage s-${PT.esc(s.toLowerCase())}">${PT.esc(s)}</span>`;
     const stepConf = (s) => (s.legs || [s]).map((x) => x.confidence).filter(Boolean)[0];

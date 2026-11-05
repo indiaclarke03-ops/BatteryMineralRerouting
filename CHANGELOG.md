@@ -4,12 +4,13 @@
 - Full re-check of all 12 cases, three buyer scans and every policy date (278 new logged calls). See the notes in `investigation/notes/recheck-2026-11-05-*.md`.
 - Case 5: the second director's name is withheld, because nothing ties that person to Putailai beyond a common name.
 - Corrections: Case 5 (Putailai's exports found), Case 12 (448 rows, not 87), Case 1 (about 100 rows, seven buyers, the Sep 2026 row went to LG), Case 9 (11 rows, about 1,160 t), plus updated counts in Cases 2, 3, 4, 6 and 7.
-- Explore: every case now uses the same five stages: tier 2 suppliers, tier 1 suppliers, processor, buyers and their customers. Each stage is one column, and owners sit above the plant. Busy cases get a taller graph.
+- Explore: every case now uses the same four buckets: owners and people, suppliers and inputs, the plant, buyers and outputs. A bucket can hold several columns. Every arrow runs in the clear space between rows and columns, so it never passes behind a company it does not connect to.
 - The Trace: a short description of every page, replacing the Check a Buyer, Explore and tour buttons. The guided tour is removed.
 - Check a Buyer: now says plainly that it runs backwards from the US buyer, with a comparison to Explore.
 - Case Files: each case is a box that opens its full file. Removed the graph and the declared vs. observed table.
 - Due Diligence: removed the supplier questions.
 - Method: condensed into drop-downs, one per case.
+- The Trace: an Expand map button gives the map the whole window, with the case list as a panel that opens over it.
 
 ## Iteration 1.5 · 3 Nov 2026
 - Renamed the site Paper Trail | Minerals, with "Paper Trail" in bold (logo, favicon, social card). The repo name and URL are unchanged.

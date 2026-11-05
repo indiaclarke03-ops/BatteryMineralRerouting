@@ -100,13 +100,13 @@
   const STYLE = [
     { selector: "node", style: {
       shape: "round-rectangle", "background-color": "#EAF1FB", "border-width": 1.5, "border-color": "#9DB8E0",
-      label: "data(label)", "text-wrap": "wrap", "text-max-width": 200, "font-family": "IBM Plex Sans, system-ui, sans-serif",
+      label: "data(label)", "text-wrap": "wrap", "text-max-width": 160, "font-family": "IBM Plex Sans, system-ui, sans-serif",
       "font-size": 12.5, "line-height": 1.25, color: C.ink, "text-valign": "center", "text-halign": "center",
-      width: 216, height: "label", padding: "9px", "transition-property": "opacity, border-width", "transition-duration": 180,
+      width: 178, height: "label", padding: "9px", "transition-property": "opacity, border-width", "transition-duration": 180,
     } },
     { selector: "node.parent", style: { "background-color": "#F1EAFB", "border-color": C.ct, "font-weight": 600 } },
-    { selector: "node.person", style: { "background-color": "#FFFFFF", "border-color": C.ct, "border-style": "dashed", "font-size": 12, width: 200 } },
-    { selector: "node.transit_plant", style: { "background-color": C.teal, "border-color": C.teal, color: "#FFFFFF", "font-weight": 700, "font-size": 13.5, width: 216 } },
+    { selector: "node.person", style: { "background-color": "#FFFFFF", "border-color": C.ct, "border-style": "dashed", "font-size": 12, width: 170 } },
+    { selector: "node.transit_plant", style: { "background-color": C.teal, "border-color": C.teal, color: "#FFFFFF", "font-weight": 700, "font-size": 13.5, width: 182 } },
     { selector: "node.us_buyer", style: { "background-color": "#FFFFFF", "border-color": C.ink, "border-width": 2 } },
     { selector: "node.buyer", style: { "background-color": "#FFFFFF", "border-color": C.ink3 } },
     { selector: "node.contrast", style: { "background-color": "#F7F6F1", "border-color": C.rule, "border-style": "dashed", color: C.ink2 } },
@@ -188,12 +188,11 @@
 
 
 
-  /* Lane layout. Every case has the same five stages, in the same order, one company per row:
-     tier 2 suppliers, tier 1 suppliers, the processor, buyers, their customers. Tiers count from the
-     plant. A stage with nothing in the records stays as a narrow, labelled column. Owners sit above
-     the plant, so ownership runs top to bottom and never crosses the goods lines. */
-  const LANE = { up: "Tier 2 suppliers", sup: "Tier 1 suppliers", own: "Owners", plant: "Processor (the plant)", buy: "Buyers", on: "Their customers" };
-  const LANE_ORDER = ["own", "up", "sup", "plant", "buy", "on"];
+  /* Lane layout. Every case has the same four buckets, left to right: owners and people, suppliers
+     and inputs, the plant, buyers and outputs. A bucket can hold several columns. Columns further
+     from the plant hold companies further from it, and long lists wrap into extra columns.
+     An empty bucket stays as a narrow, labelled column. */
+  const LANE = ["Owners and people", "Suppliers and inputs", "The plant", "Buyers and outputs"];
   function laneLayout(cy) {
     cy.remove(".lane");
     const nodes = cy.nodes();
@@ -245,102 +244,145 @@
       if (lane.get(s) === "sup" && lane.get(t) === "sup" && !toPlant.has(s)) lane.set(s, "up");
     });
 
-    const list = (k) => nodes.filter((n) => lane.get(n.id()) === k);
-    const GAP = 12, W = 236, pos = {};
-    const stack = (arr, x, startY) => {
-      let y = startY;
-      arr.forEach((n) => { const h = n.outerHeight(); pos[n.id()] = { x, y: y + h / 2 }; y += h + GAP; });
-      return y - GAP;
-    };
-    const height = (arr) => arr.reduce((a, n) => a + n.outerHeight() + GAP, -GAP);
+    // Columns, left to right. The busiest companies sit nearest the plant.
+    const list = (k) => nodes.filter((n) => lane.get(n.id()) === k).toArray();
     const byName = (a, b) => a.data("label").localeCompare(b.data("label"));
+    const byWeight = (a, b) => (weight.get(b.id()) || 0) - (weight.get(a.id()) || 0) || byName(a, b);
+    const wrapped = (arr) => {
+      const per = Math.max(12, Math.ceil(arr.length / 3)), out = [];
+      for (let i = 0; i < arr.length; i += per) out.push(arr.slice(i, i + per));
+      return out;
+    };
+    const ownerDepth = (n) => Math.min(3, depth.get(n.id()) || 1);
+    const owners = list("own");
+    const buckets = [
+      [3, 2, 1].flatMap((d) => wrapped(owners.filter((n) => ownerDepth(n) === d).sort(byName))),
+      [...wrapped(list("up").sort(byWeight)).reverse(), ...wrapped(list("sup").sort(byWeight)).reverse()],
+      [list("plant").sort((a, b) => b.degree() - a.degree())].filter((c) => c.length),
+      [...wrapped(list("buy").sort(byWeight)), ...wrapped(list("on").sort(byWeight))],
+    ];
+
+    const SUB_GAP = 44, LANE_GAP = 96, EMPTY_W = 100, CORRIDOR = 38;
+    const cols = [], bucketBox = [];
+    let cursor = 0;
+    buckets.forEach((columns, b) => {
+      const x0 = cursor;
+      if (!columns.length) cols.push({ b, x: cursor + EMPTY_W / 2, w: EMPTY_W, nodes: [] });
+      columns.forEach((nodesIn, i) => {
+        const w = Math.max(...nodesIn.map((n) => n.outerWidth()));
+        cols.push({ b, x: cursor + w / 2, w, nodes: nodesIn });
+        cursor += w + (i < columns.length - 1 ? SUB_GAP : 0);
+      });
+      if (!columns.length) cursor += EMPTY_W;
+      bucketBox[b] = { x0, x1: cursor };
+      cursor += LANE_GAP;
+    });
+
     // Rows sit near the companies they connect to, which keeps lines from crossing
+    const pos = {};
     const pull = (n) => {
-      const ys = n.neighborhood("node").filter((m) => pos[m.id()]).map((m) => pos[m.id()].y);
+      const ys = n.neighborhood("node").map((m) => pos[m.id()]).filter(Boolean).map((q) => q.y);
       return ys.length ? ys.reduce((a, b) => a + b, 0) / ys.length : 0;
     };
-    const order = (arr) => arr.map((n) => [n, pull(n)]).sort((a, b) => a[1] - b[1] || (weight.get(b[0].id()) || 0) - (weight.get(a[0].id()) || 0) || byName(a[0], b[0])).map((x) => x[0]);
-
-    const STAGES = [["up"], ["sup"], ["own", "plant"], ["buy"], ["on"]];
-    const LANE_GAP = 130, EMPTY_W = 110;
-    const filled = (c) => c.some((k) => list(k).length);
-    const xOf = new Map(), edges_x = [];
-    let cursor = 0;
-    STAGES.forEach((c) => {
-      const w = filled(c) ? W : EMPTY_W;
-      c.forEach((k) => xOf.set(k, cursor + w / 2));
-      edges_x.push({ c, x: cursor + w / 2, w, empty: !filled(c) });
-      cursor += w + (filled(c) ? LANE_GAP : 70);
+    const inBucket = (b) => cols.filter((c) => c.b === b && c.nodes.length);
+    [[2, 1], [1, -1], [3, 1], [0, -1]].forEach(([b, dir]) => {
+      const cs = inBucket(b);
+      if (!cs.length) return;
+      const pitch = Math.max(...cs.flatMap((c) => c.nodes.map((n) => n.outerHeight()))) + CORRIDOR;
+      (dir > 0 ? cs : [...cs].reverse()).forEach((c) => {
+        c.nodes = c.nodes.map((n) => [n, pull(n)]).sort((p, q) => p[1] - q[1] || byWeight(p[0], q[0])).map((x) => x[0]);
+        c.nodes.forEach((n, r) => { pos[n.id()] = { x: c.x, y: (r - (c.nodes.length - 1) / 2) * pitch }; });
+      });
     });
-    // Plant first, centred; its owners stack above it with the ultimate owner on top
-    const plants = list("plant").sort((a, b) => b.degree() - a.degree()).toArray();
-    const owners = list("own").toArray().sort((a, b) => (depth.get(b.id()) || 0) - (depth.get(a.id()) || 0) || byName(a, b));
-    const plantTop = -height(plants) / 2;
-    stack(plants, xOf.get("plant"), plantTop);
-    const LABEL_GAP = 44;
-    if (owners.length) stack(owners, xOf.get("plant"), plantTop - LABEL_GAP - height(owners));
-    const side = ["sup", "buy", "up", "on"];
-    side.forEach((k) => { const a = order(list(k).toArray()); if (a.length) stack(a, xOf.get(k), -height(a) / 2); });
     nodes.positions((n) => pos[n.id()]);
 
+    const colOf = new Map();
+    cols.forEach((c, i) => c.nodes.forEach((n) => colOf.set(n.id(), i)));
+    routeEdges(cy, cols, colOf, isP, CORRIDOR);
+
     const yAll = Object.values(pos).map((q) => q.y);
-    const top = Math.min(...yAll) - 60, bottom = Math.max(...yAll) + 60;
-    const bands = edges_x.map((e) => ({ c: e.c.includes("plant") ? 2 : 1, x0: e.x - e.w / 2 - 10, x1: e.x + e.w / 2 + 10, y0: top - 44, y1: bottom }));
-    const labels = [];
-    edges_x.forEach((e) => {
-      if (e.c.includes("plant")) {
-        labels.push({ k: "own", x: e.x, y: top - 18 });
-        labels.push({ k: "plant", x: e.x, y: plantTop - 20 });
-      } else {
-        labels.push({ k: e.c[0], x: e.x, y: top - 18, narrow: e.empty });
-        if (e.empty) labels.push({ k: e.c[0] + "-none", x: e.x, y: top + 42, none: true });
-      }
+    const top = Math.min(...yAll) - 80, bottom = Math.max(...yAll) + 80;
+    const bands = bucketBox.map((k, b) => ({ c: b === 2 ? 2 : 1, x0: k.x0 - 22, x1: k.x1 + 22, y0: top - 44, y1: bottom }));
+    const labels = bucketBox.flatMap((k, b) => {
+      const x = (k.x0 + k.x1) / 2, empty = !buckets[b].length;
+      const head = { id: `lane-${b}`, label: LANE[b], x, y: top - 18, cls: empty ? "lane narrow" : "lane" };
+      return empty ? [head, { id: `lane-${b}-none`, label: "None in\nthe records", x, y: top + 54, cls: "lane none" }] : [head];
     });
-    cy.add(labels.map((l) => ({ group: "nodes", data: { id: `lane-${l.k}`, label: l.none ? "None in\nthe records" : LANE[l.k] }, classes: l.none ? "lane none" : l.narrow ? "lane narrow" : "lane", position: { x: l.x, y: l.y } })));
-    sCurves(cy);
-    const lanes = LANE_ORDER.map((k) => ({ title: LANE[k], ids: (k === "own" ? owners : order(list(k).toArray())).map((n) => n.id()) })).filter((l) => l.ids.length);
-    return { lanes, bands, height: bottom - top + 60, width: cursor };
+    cy.add(labels.map((l) => ({ group: "nodes", data: { id: l.id, label: l.label }, classes: l.cls, position: { x: l.x, y: l.y } })));
+    const lanes = buckets.map((columns, b) => ({ title: LANE[b], ids: columns.flat().map((n) => n.id()) })).filter((l) => l.ids.length);
+    return { lanes, bands, height: bottom - top + 60, width: cursor - LANE_GAP };
   }
 
-  /* S-shaped lines leave and arrive level, so each one can be followed to its company.
-     Links inside a column bow out to the side rather than running behind the companies between them. */
-  function sCurves(cy) {
-    const real = cy.nodes().not(".lane");
-    let flip = 1;
+  /* Every line runs in the clear space between rows and columns, so it never passes behind a company
+     it doesn't connect to. Lines that share an end share a track, and other lines get their own. */
+  function routeEdges(cy, cols, colOf, isP, CORRIDOR) {
+    const offsets = (step) => {
+      const seen = new Map();
+      return (key, hub, max) => {
+        if (!seen.has(key)) seen.set(key, new Map());
+        const m = seen.get(key);
+        if (!m.has(hub)) { const i = m.size; m.set(hub, Math.min(max, Math.ceil(i / 2) * step) * (i % 2 ? 1 : -1)); }
+        return m.get(hub);
+      };
+    };
+    const gapTrack = offsets(9), rowTrack = offsets(7);
+    const gapX = (i, hub) => { // the gap to the right of column i
+      if (i < 0) return cols[0].x - cols[0].w / 2 - 12;
+      const l = cols[i].x + cols[i].w / 2, r = cols[i + 1].x - cols[i + 1].w / 2;
+      return (l + r) / 2 + gapTrack(`g${i}`, hub, (r - l) / 2 - 10);
+    };
+    const boxesIn = (i, j) => cols.slice(i, j + 1).flatMap((c) => c.nodes.map((n) => {
+      const y = n.position("y"), h = n.outerHeight() / 2;
+      return [y - h, y + h];
+    }));
+    const clearY = (i, j, y, toward, hub) => {
+      const boxes = boxesIn(i, j);
+      const free = (q) => boxes.every(([t, b]) => q < t - 8 || q > b + 8);
+      if (free(y)) return y;
+      const options = boxes.flatMap(([t, b]) => [t - CORRIDOR / 2, b + CORRIDOR / 2]).filter(free);
+      const cost = (q) => Math.abs(q - y) + Math.abs(q - toward) * 0.01;
+      const best = options.sort((p, q) => cost(p) - cost(q))[0];
+      return best + rowTrack(`r${i}:${Math.round(best)}`, hub, CORRIDOR / 2 - 13);
+    };
     cy.edges().forEach((e) => {
-      const a = e.source().position(), b = e.target().position();
-      const dx = b.x - a.x, dy = b.y - a.y, len2 = dx * dx + dy * dy, len = Math.sqrt(len2);
-      if (Math.abs(dx) < 60) {
-        const lo = Math.min(a.y, b.y), hi = Math.max(a.y, b.y);
-        const between = real.some((n) => { const q = n.position(); return Math.abs(q.x - a.x) < 60 && q.y > lo + 1 && q.y < hi - 1; });
-        if (!between) return;
-        flip = -flip;
-        e.style({ "curve-style": "unbundled-bezier", "control-point-weights": "0.5", "control-point-distances": String(flip * (270 + Math.min(70, len / 12))) });
-        return;
+      const a = e.source(), b = e.target();
+      const kind = e.hasClass("tx") ? "tx" : e.hasClass("inf") ? "inf" : "ct";
+      const hubNode = isP(a.id()) ? a : isP(b.id()) ? b : a.degree() >= b.degree() ? a : b;
+      const hub = `${hubNode.id()}|${kind}`;
+      const ca = colOf.get(a.id()), cb = colOf.get(b.id());
+      let pts = [];
+      if (ca === cb) { // same column: step out into the gap beside it
+        const x = gapX(ca - 1, hub);
+        pts = [{ x, y: a.position("y") }, { x, y: b.position("y") }];
+      } else {
+        const [L, R, cL, cR] = ca < cb ? [a, b, ca, cb] : [b, a, cb, ca];
+        let y = L.position("y"), i = cL + 1;
+        const end = R.position("y");
+        while (i < cR) { // cross each bucket in the way through a clear row
+          let j = i;
+          while (j + 1 < cR && cols[j + 1].b === cols[i].b) j++;
+          const next = clearY(i, j, y, end, hub);
+          if (Math.abs(next - y) > 0.5) { const x = gapX(i - 1, hub); pts.push({ x, y }, { x, y: next }); y = next; }
+          i = j + 1;
+        }
+        if (Math.abs(end - y) > 0.5) { const x = gapX(cR - 1, hub); pts.push({ x, y }, { x, y: end }); }
+        if (ca > cb) pts.reverse();
       }
-      if (Math.abs(dy) < 6) return;
-      // A line that skips a column turns in the gap before its target, not behind the column it crosses.
-      const turn = Math.abs(dx) > 500 ? b.x - Math.sign(dx) * 190 : a.x + dx / 2;
-      const c = [{ x: turn, y: a.y }, { x: turn, y: b.y }];
-      const w = c.map((q) => ((q.x - a.x) * dx + (q.y - a.y) * dy) / len2);
-      const dist = c.map((q) => ((q.y - a.y) * dx - (q.x - a.x) * dy) / len);
-      e.style({ "curve-style": "unbundled-bezier", "control-point-weights": w.map((v) => v.toFixed(3)).join(" "), "control-point-distances": dist.map((v) => v.toFixed(1)).join(" ") });
+      e.scratch("route", pts);
+      if (!pts.length) { e.style({ "curve-style": "straight" }); return; }
+      const p = a.position(), q = b.position();
+      const dx = q.x - p.x, dy = q.y - p.y, len2 = dx * dx + dy * dy, len = Math.sqrt(len2);
+      e.style({
+        "curve-style": "round-segments", "segment-radius": 12, "edge-distances": "node-position",
+        "segment-weights": pts.map((c) => (((c.x - p.x) * dx + (c.y - p.y) * dy) / len2).toFixed(4)).join(" "),
+        "segment-distances": pts.map((c) => (((c.y - p.y) * dx - (c.x - p.x) * dy) / len).toFixed(1)).join(" "),
+      });
     });
   }
 
   /* Points along a drawn edge, in graph coordinates. */
   function edgePoints(e) {
-    const s = e.sourceEndpoint(), t = e.targetEndpoint();
-    const cp = e.controlPoints() || [];
-    if (!cp.length) return [s, t];
-    const out = [];
-    const quad = (p0, p1, p2) => { for (let i = 0; i <= 14; i++) { const u = i / 14, v = 1 - u; out.push({ x: v * v * p0.x + 2 * v * u * p1.x + u * u * p2.x, y: v * v * p0.y + 2 * v * u * p1.y + u * u * p2.y }); } };
-    let from = s;
-    cp.forEach((c, i) => {
-      const next = cp[i + 1], to = next ? { x: (c.x + next.x) / 2, y: (c.y + next.y) / 2 } : t;
-      quad(from, c, to); from = to;
-    });
-    return out;
+    return [e.sourceEndpoint(), ...(e.scratch("route") || []), e.targetEndpoint()];
   }
 
   /* Small arrows travelling along the lines. Inferred and lead links stay still: nothing is known to move. */
@@ -647,9 +689,9 @@
         ${roles.map((r) => `<span class="lg-node lg-${r}">${PT.ROLE_STYLE[r].label}</span>`).join("")}
         <span class="lg-node lg-merged">Merged records</span>
         <span class="etype tx"><span class="line"></span>Shipment: left to right</span>
-        <span class="etype ct"><span class="line"></span>Ownership: top to bottom</span>
+        <span class="etype ct"><span class="line"></span>Ownership: left to right</span>
         <span class="etype inf"><span class="line"></span>Inferred</span>
-        <span class="muted">Tier 1 ships directly to the plant; tier 2 ships to tier 1 · thicker blue line = more shipments · ⚑ risk flag · click to trace a chain · drag to pan</span>
+        <span class="muted">Inside a bucket, companies further from the plant sit further out · thicker blue line = more shipments · ⚑ risk flag · click to trace a chain · drag to pan</span>
       </div>`);
     host.querySelectorAll("[data-z]").forEach((b) => b.addEventListener("click", () => api.zoom(+b.dataset.z)));
     host.querySelector("[data-fit]").addEventListener("click", () => api.fit());
