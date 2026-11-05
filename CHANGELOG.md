@@ -4,8 +4,8 @@
 - Full re-check of all 12 cases, three buyer scans and every policy date (278 new logged calls). See the notes in `investigation/notes/recheck-2026-11-05-*.md`.
 - Case 5: the second director's name is withheld, because nothing ties that person to Putailai beyond a common name.
 - Corrections: Case 5 (Putailai's exports found), Case 12 (448 rows, not 87), Case 1 (about 100 rows, seven buyers, the Sep 2026 row went to LG), Case 9 (11 rows, about 1,160 t), plus updated counts in Cases 2, 3, 4, 6 and 7.
-- Explore: every section of the supply chain is now one column. Goods run left to right, and owners sit above the plant. Busy cases get a taller graph.
-- The Trace: a short description of every page.
+- Explore: every case now uses the same five stages: tier 2 suppliers, tier 1 suppliers, processor, buyers and their customers. Each stage is one column, and owners sit above the plant. Busy cases get a taller graph.
+- The Trace: a short description of every page, replacing the Check a Buyer, Explore and tour buttons. The guided tour is removed.
 - Check a Buyer: now says plainly that it runs backwards from the US buyer, with a comparison to Explore.
 - Case Files: each case is a box that opens its full file. Removed the graph and the declared vs. observed table.
 - Due Diligence: removed the supplier questions.

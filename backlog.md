@@ -118,6 +118,8 @@ Work P0 top to bottom. Status values: `todo` / `doing` / `done`.
 | FB-31 | P0 | Remove supplier questions from Due Diligence | done |
 | FB-32 | P0 | Full re-check | done (5 Nov 2026) |
 | FB-33 | P0 | Condense Method into drop-downs | done |
+| FB-34 | P0 | Same traditional stage headings on every Explore graph | done |
+| FB-35 | P0 | Trace page: remove redundant buttons, more space, even page boxes | done |
 
 ## Parking lot
 - Zhongke Electric's Oman anode project as a forward-looking case (production targeted for 2027).

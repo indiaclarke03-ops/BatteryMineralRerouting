@@ -138,8 +138,10 @@
     { selector: ".hidden", style: { display: "none" } },
     { selector: "node.lane", style: {
       "background-opacity": 0, "border-width": 0, label: "data(label)", "font-family": "IBM Plex Mono, monospace",
-      "font-size": 14, "font-weight": 600, color: "#0F5E5C", "text-transform": "uppercase", "text-wrap": "none", width: 200, height: 24, events: "no",
+      "font-size": 14, "font-weight": 600, color: "#0F5E5C", "text-transform": "uppercase", "text-wrap": "none", width: 130, height: 24, events: "no",
     } },
+    { selector: "node.lane.narrow", style: { "text-wrap": "wrap", "text-max-width": 110 } },
+    { selector: "node.lane.none", style: { "font-size": 12, "font-weight": 400, color: C.ink3, "text-wrap": "wrap", "text-transform": "none", "font-family": "IBM Plex Sans, sans-serif" } },
   ];
 
   PT.nodePanel = function (d, e, members, caseId) {
@@ -186,10 +188,11 @@
 
 
 
-  /* Lane layout. Goods run left to right, one company per row in a single column:
-     further upstream, suppliers, the plant, buyers, onward. Owners sit above the plant, so
-     ownership runs top to bottom and never crosses the goods lines. */
-  const LANE = { up: "Further upstream", sup: "Suppliers and inputs", own: "Owners and people", plant: "The plant", buy: "Buyers and outputs", on: "Onward" };
+  /* Lane layout. Every case has the same five stages, in the same order, one company per row:
+     tier 2 suppliers, tier 1 suppliers, the processor, buyers, their customers. Tiers count from the
+     plant. A stage with nothing in the records stays as a narrow, labelled column. Owners sit above
+     the plant, so ownership runs top to bottom and never crosses the goods lines. */
+  const LANE = { up: "Tier 2 suppliers", sup: "Tier 1 suppliers", own: "Owners", plant: "Processor (the plant)", buy: "Buyers", on: "Their customers" };
   const LANE_ORDER = ["own", "up", "sup", "plant", "buy", "on"];
   function laneLayout(cy) {
     cy.remove(".lane");
@@ -258,10 +261,17 @@
     };
     const order = (arr) => arr.map((n) => [n, pull(n)]).sort((a, b) => a[1] - b[1] || (weight.get(b[0].id()) || 0) - (weight.get(a[0].id()) || 0) || byName(a[0], b[0])).map((x) => x[0]);
 
-    const cols = [["up"], ["sup"], ["own", "plant"], ["buy"], ["on"]].filter((c) => c.some((k) => list(k).length));
-    const LANE_GAP = cols.length > 3 ? 130 : 190;
-    const xOf = new Map();
-    cols.forEach((c, i) => c.forEach((k) => xOf.set(k, i * (W + LANE_GAP))));
+    const STAGES = [["up"], ["sup"], ["own", "plant"], ["buy"], ["on"]];
+    const LANE_GAP = 130, EMPTY_W = 110;
+    const filled = (c) => c.some((k) => list(k).length);
+    const xOf = new Map(), edges_x = [];
+    let cursor = 0;
+    STAGES.forEach((c) => {
+      const w = filled(c) ? W : EMPTY_W;
+      c.forEach((k) => xOf.set(k, cursor + w / 2));
+      edges_x.push({ c, x: cursor + w / 2, w, empty: !filled(c) });
+      cursor += w + (filled(c) ? LANE_GAP : 70);
+    });
     // Plant first, centred; its owners stack above it with the ultimate owner on top
     const plants = list("plant").sort((a, b) => b.degree() - a.degree()).toArray();
     const owners = list("own").toArray().sort((a, b) => (depth.get(b.id()) || 0) - (depth.get(a.id()) || 0) || byName(a, b));
@@ -275,19 +285,21 @@
 
     const yAll = Object.values(pos).map((q) => q.y);
     const top = Math.min(...yAll) - 60, bottom = Math.max(...yAll) + 60;
-    const bands = cols.map((c, i) => ({ c: c.includes("plant") ? 2 : i ? 1 : 0, x0: i * (W + LANE_GAP) - W / 2 - 14, x1: i * (W + LANE_GAP) + W / 2 + 14, y0: top - 44, y1: bottom }));
+    const bands = edges_x.map((e) => ({ c: e.c.includes("plant") ? 2 : 1, x0: e.x - e.w / 2 - 10, x1: e.x + e.w / 2 + 10, y0: top - 44, y1: bottom }));
     const labels = [];
-    cols.forEach((c, i) => {
-      const x = i * (W + LANE_GAP);
-      if (c.includes("own") && owners.length) {
-        labels.push({ k: "own", x, y: top - 18 });
-        if (list("plant").length) labels.push({ k: "plant", x, y: plantTop - 20 });
-      } else labels.push({ k: c.includes("plant") ? "plant" : c[0], x, y: top - 18 });
+    edges_x.forEach((e) => {
+      if (e.c.includes("plant")) {
+        labels.push({ k: "own", x: e.x, y: top - 18 });
+        labels.push({ k: "plant", x: e.x, y: plantTop - 20 });
+      } else {
+        labels.push({ k: e.c[0], x: e.x, y: top - 18, narrow: e.empty });
+        if (e.empty) labels.push({ k: e.c[0] + "-none", x: e.x, y: top + 42, none: true });
+      }
     });
-    cy.add(labels.map((l) => ({ group: "nodes", data: { id: `lane-${l.k}`, label: LANE[l.k] }, classes: "lane", position: { x: l.x, y: l.y } })));
+    cy.add(labels.map((l) => ({ group: "nodes", data: { id: `lane-${l.k}`, label: l.none ? "None in\nthe records" : LANE[l.k] }, classes: l.none ? "lane none" : l.narrow ? "lane narrow" : "lane", position: { x: l.x, y: l.y } })));
     sCurves(cy);
     const lanes = LANE_ORDER.map((k) => ({ title: LANE[k], ids: (k === "own" ? owners : order(list(k).toArray())).map((n) => n.id()) })).filter((l) => l.ids.length);
-    return { lanes, bands, height: bottom - top + 60, width: cols.length * (W + LANE_GAP) };
+    return { lanes, bands, height: bottom - top + 60, width: cursor };
   }
 
   /* S-shaped lines leave and arrive level, so each one can be followed to its company.
@@ -634,10 +646,10 @@
       <div class="graph-key" aria-hidden="true">
         ${roles.map((r) => `<span class="lg-node lg-${r}">${PT.ROLE_STYLE[r].label}</span>`).join("")}
         <span class="lg-node lg-merged">Merged records</span>
-        <span class="etype tx"><span class="line"></span>Shipment: left to right, following the goods</span>
+        <span class="etype tx"><span class="line"></span>Shipment: left to right</span>
         <span class="etype ct"><span class="line"></span>Ownership: top to bottom</span>
         <span class="etype inf"><span class="line"></span>Inferred</span>
-        <span class="muted">Thicker blue line = more shipments · ⚑ risk flag · click to trace a chain · drag to pan</span>
+        <span class="muted">Tier 1 ships directly to the plant; tier 2 ships to tier 1 · thicker blue line = more shipments · ⚑ risk flag · click to trace a chain · drag to pan</span>
       </div>`);
     host.querySelectorAll("[data-z]").forEach((b) => b.addEventListener("click", () => api.zoom(+b.dataset.z)));
     host.querySelector("[data-fit]").addEventListener("click", () => api.fit());
