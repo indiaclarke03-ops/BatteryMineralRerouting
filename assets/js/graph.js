@@ -138,10 +138,9 @@
     { selector: ".hidden", style: { display: "none" } },
     { selector: "node.lane", style: {
       "background-opacity": 0, "border-width": 0, label: "data(label)", "font-family": "IBM Plex Mono, monospace",
-      "font-size": 14, "font-weight": 600, color: "#0F5E5C", "text-transform": "uppercase", "text-wrap": "none", width: 130, height: 24, events: "no",
+      "font-size": 14, "font-weight": 600, color: "#0F5E5C", "text-wrap": "wrap", "text-max-width": "data(w)", width: "data(w)", height: 24, events: "no",
     } },
-    { selector: "node.lane.narrow", style: { "text-wrap": "wrap", "text-max-width": 110 } },
-    { selector: "node.lane.none", style: { "font-size": 12, "font-weight": 400, color: C.ink3, "text-wrap": "wrap", "text-transform": "none", "font-family": "IBM Plex Sans, sans-serif" } },
+        { selector: "node.lane.none", style: { "font-size": 12, "font-weight": 400, color: C.ink3, "text-wrap": "wrap", "text-transform": "none", "font-family": "IBM Plex Sans, sans-serif" } },
   ];
 
   PT.nodePanel = function (d, e, members, caseId) {
@@ -305,10 +304,12 @@
     const bands = bucketBox.map((k, b) => ({ c: b === 2 ? 2 : 1, x0: k.x0 - 22, x1: k.x1 + 22, y0: top - 44, y1: bottom }));
     const labels = bucketBox.flatMap((k, b) => {
       const x = (k.x0 + k.x1) / 2, empty = !buckets[b].length;
-      const head = { id: `lane-${b}`, label: LANE[b], x, y: top - 18, cls: empty ? "lane narrow" : "lane" };
-      return empty ? [head, { id: `lane-${b}-none`, label: "None in\nthe records", x, y: top + 54, cls: "lane none" }] : [head];
+      // Each title's box spans its whole bucket, so the title can never be wider than its box
+      const w = Math.max(96, k.x1 - k.x0);
+      const head = { id: `lane-${b}`, label: LANE[b].toUpperCase(), w, x, y: top - 18, cls: "lane" };
+      return empty ? [head, { id: `lane-${b}-none`, label: "None in\nthe records", w, x, y: top + 54, cls: "lane none" }] : [head];
     });
-    cy.add(labels.map((l) => ({ group: "nodes", data: { id: l.id, label: l.label }, classes: l.cls, position: { x: l.x, y: l.y } })));
+    cy.add(labels.map((l) => ({ group: "nodes", data: { id: l.id, label: l.label, w: l.w }, classes: l.cls, position: { x: l.x, y: l.y } })));
     const lanes = buckets.map((columns, b) => ({ title: LANE[b], ids: columns.flat().map((n) => n.id()) })).filter((l) => l.ids.length);
     return { lanes, bands, height: bottom - top + 60, width: cursor - LANE_GAP };
   }
@@ -517,6 +518,13 @@
     }
     const layout = () => { lanes = laneLayout(cy); flow.dirty(); };
     layout();
+    // If the site's fonts arrive after the graph is drawn, measure and lay out again in the real fonts
+    if (document.fonts && !(document.fonts.check("600 14px 'IBM Plex Mono'") && document.fonts.check("12.5px 'IBM Plex Sans'"))) {
+      Promise.all([document.fonts.load("600 14px 'IBM Plex Mono'"), document.fonts.load("12.5px 'IBM Plex Sans'"), document.fonts.load("600 12.5px 'IBM Plex Sans'")]).then(() => {
+        cy.nodes().forEach((n) => { const l = n.data("label"); n.data("label", l + " "); n.data("label", l); });
+        layout(); fitWhole(); under.set(lanes && lanes.bands);
+      }).catch(() => {});
+    }
     fitWhole();
     under.set(lanes && lanes.bands);
 

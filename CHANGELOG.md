@@ -1,5 +1,8 @@
 # Changelog
 
+## Fix · 8 Nov 2026
+- Explore: column titles no longer get cut off at the sides (issue #2). Each title now spans its whole bucket and is measured again once the fonts load.
+
 ## Iteration 1.6 · 5 Nov 2026
 - Full re-check of all 12 cases, three buyer scans and every policy date (278 new logged calls). See the notes in `investigation/notes/recheck-2026-11-05-*.md`.
 - Case 5: the second director's name is withheld, because nothing ties that person to Putailai beyond a common name.
