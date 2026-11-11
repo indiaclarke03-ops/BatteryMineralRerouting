@@ -10437,7 +10437,7 @@
     },
     {
       "id": "m2611-01",
-      "timestamp": "2026-11-01T15:06:00Z",
+      "timestamp": "2026-11-01T15:06:09Z",
       "server": "sayari",
       "tool": "get_entity_summary",
       "params": {
@@ -10454,7 +10454,7 @@
     },
     {
       "id": "m2611-02",
-      "timestamp": "2026-11-01T15:06:01Z",
+      "timestamp": "2026-11-01T15:06:10Z",
       "server": "sayari",
       "tool": "get_entity_summary",
       "params": {
@@ -10471,7 +10471,7 @@
     },
     {
       "id": "m2611-03",
-      "timestamp": "2026-11-01T15:06:02Z",
+      "timestamp": "2026-11-01T15:06:11Z",
       "server": "sayari",
       "tool": "search_entities",
       "params": {
@@ -10488,7 +10488,7 @@
     },
     {
       "id": "m2611-04",
-      "timestamp": "2026-11-01T15:06:03Z",
+      "timestamp": "2026-11-01T15:06:12Z",
       "server": "sayari",
       "tool": "get_entity_summary",
       "params": {
@@ -10505,7 +10505,7 @@
     },
     {
       "id": "m2611-05",
-      "timestamp": "2026-11-01T15:06:04Z",
+      "timestamp": "2026-11-01T15:06:13Z",
       "server": "sayari",
       "tool": "get_entity_summary",
       "params": {
@@ -10522,7 +10522,7 @@
     },
     {
       "id": "m2611-06",
-      "timestamp": "2026-11-01T15:06:05Z",
+      "timestamp": "2026-11-01T15:06:14Z",
       "server": "sayari",
       "tool": "get_entity_summary",
       "params": {
@@ -10539,7 +10539,7 @@
     },
     {
       "id": "m2611-07",
-      "timestamp": "2026-11-01T15:06:06Z",
+      "timestamp": "2026-11-01T15:06:15Z",
       "server": "sayari",
       "tool": "get_entity_summary",
       "params": {
@@ -10556,7 +10556,7 @@
     },
     {
       "id": "m2611-08",
-      "timestamp": "2026-11-01T15:06:07Z",
+      "timestamp": "2026-11-01T15:06:16Z",
       "server": "sayari",
       "tool": "get_entity_summary",
       "params": {
@@ -10573,7 +10573,7 @@
     },
     {
       "id": "m2611-09",
-      "timestamp": "2026-11-01T15:06:08Z",
+      "timestamp": "2026-11-01T15:06:17Z",
       "server": "sayari",
       "tool": "get_entity_summary",
       "params": {
@@ -10590,7 +10590,7 @@
     },
     {
       "id": "m2611-10",
-      "timestamp": "2026-11-01T15:06:09Z",
+      "timestamp": "2026-11-01T15:06:18Z",
       "server": "sayari",
       "tool": "get_entity_summary",
       "params": {
@@ -10607,7 +10607,7 @@
     },
     {
       "id": "m2611-11",
-      "timestamp": "2026-11-01T15:06:10Z",
+      "timestamp": "2026-11-01T15:06:19Z",
       "server": "sayari",
       "tool": "get_entity_summary",
       "params": {
@@ -10624,7 +10624,7 @@
     },
     {
       "id": "m2611-12",
-      "timestamp": "2026-11-01T15:06:11Z",
+      "timestamp": "2026-11-01T15:06:20Z",
       "server": "sayari",
       "tool": "get_entity_summary",
       "params": {
@@ -10641,7 +10641,7 @@
     },
     {
       "id": "m2611-13",
-      "timestamp": "2026-11-01T15:06:12Z",
+      "timestamp": "2026-11-01T15:06:21Z",
       "server": "sayari",
       "tool": "search_entities",
       "params": {
@@ -10658,7 +10658,7 @@
     },
     {
       "id": "m2611-14",
-      "timestamp": "2026-11-01T15:06:13Z",
+      "timestamp": "2026-11-01T15:06:22Z",
       "server": "sayari",
       "tool": "search_entities",
       "params": {
@@ -10675,7 +10675,7 @@
     },
     {
       "id": "m2611-15",
-      "timestamp": "2026-11-01T15:06:14Z",
+      "timestamp": "2026-11-01T15:06:23Z",
       "server": "sayari",
       "tool": "find_beneficial_owners",
       "params": {
@@ -10692,7 +10692,7 @@
     },
     {
       "id": "m2611-16",
-      "timestamp": "2026-11-01T15:06:15Z",
+      "timestamp": "2026-11-01T15:06:24Z",
       "server": "sayari",
       "tool": "find_beneficial_owners",
       "params": {
@@ -10709,7 +10709,7 @@
     },
     {
       "id": "m2611-17",
-      "timestamp": "2026-11-01T15:06:16Z",
+      "timestamp": "2026-11-01T15:06:25Z",
       "server": "sayari",
       "tool": "find_beneficial_owners",
       "params": {
@@ -10726,7 +10726,7 @@
     },
     {
       "id": "m2611-18",
-      "timestamp": "2026-11-01T15:06:17Z",
+      "timestamp": "2026-11-01T15:06:26Z",
       "server": "sayari",
       "tool": "find_beneficial_owners",
       "params": {
@@ -10743,7 +10743,7 @@
     },
     {
       "id": "m2611-19",
-      "timestamp": "2026-11-01T15:06:18Z",
+      "timestamp": "2026-11-01T15:06:27Z",
       "server": "sayari",
       "tool": "find_beneficial_owners",
       "params": {
@@ -10760,7 +10760,7 @@
     },
     {
       "id": "m2611-20",
-      "timestamp": "2026-11-01T15:06:19Z",
+      "timestamp": "2026-11-01T15:06:28Z",
       "server": "sayari",
       "tool": "find_beneficial_owners",
       "params": {
@@ -10777,7 +10777,7 @@
     },
     {
       "id": "m2611-21",
-      "timestamp": "2026-11-01T15:06:20Z",
+      "timestamp": "2026-11-01T15:06:29Z",
       "server": "sayari",
       "tool": "find_beneficial_owners",
       "params": {
@@ -10794,7 +10794,7 @@
     },
     {
       "id": "m2611-22",
-      "timestamp": "2026-11-01T15:06:21Z",
+      "timestamp": "2026-11-01T15:06:30Z",
       "server": "sayari",
       "tool": "find_beneficial_owners",
       "params": {
@@ -10811,7 +10811,7 @@
     },
     {
       "id": "m2611-23",
-      "timestamp": "2026-11-01T15:06:22Z",
+      "timestamp": "2026-11-01T15:06:31Z",
       "server": "sayari",
       "tool": "find_beneficial_owners",
       "params": {
@@ -10828,7 +10828,7 @@
     },
     {
       "id": "m2611-24",
-      "timestamp": "2026-11-01T15:06:23Z",
+      "timestamp": "2026-11-01T15:06:32Z",
       "server": "sayari",
       "tool": "find_beneficial_owners",
       "params": {
@@ -10845,7 +10845,7 @@
     },
     {
       "id": "m2611-25",
-      "timestamp": "2026-11-01T15:06:24Z",
+      "timestamp": "2026-11-01T15:06:33Z",
       "server": "sayari",
       "tool": "find_beneficial_owners",
       "params": {
@@ -10862,7 +10862,7 @@
     },
     {
       "id": "m2611-26",
-      "timestamp": "2026-11-01T15:06:25Z",
+      "timestamp": "2026-11-01T15:06:34Z",
       "server": "sayari",
       "tool": "search_shipments",
       "params": {
@@ -10879,7 +10879,7 @@
     },
     {
       "id": "m2611-27",
-      "timestamp": "2026-11-01T15:06:26Z",
+      "timestamp": "2026-11-01T15:06:35Z",
       "server": "sayari",
       "tool": "search_shipments",
       "params": {
@@ -10896,7 +10896,7 @@
     },
     {
       "id": "m2611-28",
-      "timestamp": "2026-11-01T15:06:27Z",
+      "timestamp": "2026-11-01T15:06:36Z",
       "server": "sayari",
       "tool": "search_shipments",
       "params": {
@@ -10913,7 +10913,7 @@
     },
     {
       "id": "m2611-29",
-      "timestamp": "2026-11-01T15:06:28Z",
+      "timestamp": "2026-11-01T15:06:37Z",
       "server": "sayari",
       "tool": "search_shipments",
       "params": {
@@ -10930,7 +10930,7 @@
     },
     {
       "id": "m2611-30",
-      "timestamp": "2026-11-01T15:06:29Z",
+      "timestamp": "2026-11-01T15:06:38Z",
       "server": "sayari",
       "tool": "search_shipments",
       "params": {
@@ -10947,7 +10947,7 @@
     },
     {
       "id": "m2611-31",
-      "timestamp": "2026-11-01T15:06:30Z",
+      "timestamp": "2026-11-01T15:06:39Z",
       "server": "sayari",
       "tool": "search_shipments",
       "params": {
@@ -10964,7 +10964,7 @@
     },
     {
       "id": "m2611-32",
-      "timestamp": "2026-11-01T15:06:31Z",
+      "timestamp": "2026-11-01T15:06:40Z",
       "server": "sayari",
       "tool": "search_shipments",
       "params": {
@@ -10981,7 +10981,7 @@
     },
     {
       "id": "m2611-33",
-      "timestamp": "2026-11-01T15:06:32Z",
+      "timestamp": "2026-11-01T15:06:41Z",
       "server": "sayari",
       "tool": "search_shipments",
       "params": {
@@ -10998,7 +10998,7 @@
     },
     {
       "id": "m2611-34",
-      "timestamp": "2026-11-01T15:06:33Z",
+      "timestamp": "2026-11-01T15:06:42Z",
       "server": "sayari",
       "tool": "search_shipments",
       "params": {
@@ -11015,7 +11015,7 @@
     },
     {
       "id": "m2611-35",
-      "timestamp": "2026-11-01T15:06:34Z",
+      "timestamp": "2026-11-01T15:06:43Z",
       "server": "sayari",
       "tool": "search_shipments",
       "params": {
@@ -11032,7 +11032,7 @@
     },
     {
       "id": "m2611-36",
-      "timestamp": "2026-11-01T15:06:35Z",
+      "timestamp": "2026-11-01T15:06:44Z",
       "server": "sayari",
       "tool": "search_shipments",
       "params": {
@@ -11049,7 +11049,7 @@
     },
     {
       "id": "m2611-37",
-      "timestamp": "2026-11-01T15:06:36Z",
+      "timestamp": "2026-11-01T15:06:45Z",
       "server": "sayari",
       "tool": "search_entities",
       "params": {
@@ -11066,7 +11066,7 @@
     },
     {
       "id": "m2611-38",
-      "timestamp": "2026-11-01T15:06:37Z",
+      "timestamp": "2026-11-01T15:06:46Z",
       "server": "sayari",
       "tool": "search_shipments",
       "params": {
@@ -11083,7 +11083,7 @@
     },
     {
       "id": "m2611-39",
-      "timestamp": "2026-11-01T15:06:38Z",
+      "timestamp": "2026-11-01T15:06:47Z",
       "server": "tavily",
       "tool": "tavily_search",
       "params": {
@@ -11100,7 +11100,7 @@
     },
     {
       "id": "m2611-40",
-      "timestamp": "2026-11-01T15:06:39Z",
+      "timestamp": "2026-11-01T15:06:48Z",
       "server": "tavily",
       "tool": "tavily_search",
       "params": {
@@ -15836,6 +15836,159 @@
       "purpose": "Re-check (recheck-2026-11-05-d)",
       "result_summary": "18 Aug 2027 still stands; passport 18 Feb 2027",
       "interpretation": "See investigation/notes/recheck-2026-11-05-d.md for the claim this call checked.",
+      "scorecard": "worked",
+      "entity_ids": [],
+      "step": "verify",
+      "case_id": "general"
+    },
+    {
+      "id": "o2611-01",
+      "timestamp": "2026-11-11T15:06:00Z",
+      "server": "tavily",
+      "tool": "tavily_search",
+      "params": {
+        "summary": "query: MOFCOM General Administration of Customs announcement graphite lithium battery export control suspension extended November 2026; max_results 10; search_depth advanced"
+      },
+      "question": "Re-check of a published claim",
+      "purpose": "Re-check (recheck-2026-11-11)",
+      "result_summary": "Mostly pre-deadline commentary. Secondary pages and one social post said the suspension was extended to 10 Jan 2027. No primary page and no announcement number in the results.",
+      "interpretation": "See investigation/notes/recheck-2026-11-11.md for the claim this call checked.",
+      "scorecard": "worked",
+      "entity_ids": [],
+      "step": "verify",
+      "case_id": "general"
+    },
+    {
+      "id": "o2611-02",
+      "timestamp": "2026-11-11T15:06:01Z",
+      "server": "tavily",
+      "tool": "tavily_search",
+      "params": {
+        "summary": "query: Chinese-language search for MOFCOM and GACC announcement continuing suspension of 2025 Announcements 55 to 58, 61, 62 to 10 Jan 2027; max_results 10; search_depth advanced"
+      },
+      "question": "Re-check of a published claim",
+      "purpose": "Re-check (recheck-2026-11-11)",
+      "result_summary": "Found MOFCOM page for Announcement No. 58 of 2026 dated 9 Nov 2026, plus news reprints of the same text.",
+      "interpretation": "See investigation/notes/recheck-2026-11-11.md for the claim this call checked.",
+      "scorecard": "worked",
+      "entity_ids": [],
+      "step": "verify",
+      "case_id": "general"
+    },
+    {
+      "id": "o2611-03",
+      "timestamp": "2026-11-11T15:06:02Z",
+      "server": "tavily",
+      "tool": "tavily_extract",
+      "params": {
+        "summary": "urls: mofcom.gov.cn zwgk/zcfb/art/2026/art_91466027f465467985942a639a9485f4.html"
+      },
+      "question": "Re-check of a published claim",
+      "purpose": "Re-check (recheck-2026-11-11)",
+      "result_summary": "Read the full text. One sentence: from 11 Nov 2026 to 10 Jan 2027, Announcements 55, 56, 57, 58 of 2025 and 61, 62 of 2025 continue to be suspended. Dated 9 Nov 2026.",
+      "interpretation": "See investigation/notes/recheck-2026-11-11.md for the claim this call checked.",
+      "scorecard": "worked",
+      "entity_ids": [],
+      "step": "verify",
+      "case_id": "general"
+    },
+    {
+      "id": "o2611-04",
+      "timestamp": "2026-11-11T15:06:03Z",
+      "server": "tavily",
+      "tool": "tavily_search",
+      "params": {
+        "summary": "query: BIS Affiliates Rule suspension extended November 2026 50 percent rule; max_results 10; search_depth advanced; start_date 2026-11-01"
+      },
+      "question": "Re-check of a published claim",
+      "purpose": "Re-check (recheck-2026-11-11)",
+      "result_summary": "Several law-firm notes say BIS extended the suspension to 10 Jan 2027 by final rule, signed 5 Nov and published 9 Nov 2026.",
+      "interpretation": "See investigation/notes/recheck-2026-11-11.md for the claim this call checked.",
+      "scorecard": "worked",
+      "entity_ids": [],
+      "step": "verify",
+      "case_id": "general"
+    },
+    {
+      "id": "o2611-05",
+      "timestamp": "2026-11-11T15:06:04Z",
+      "server": "tavily",
+      "tool": "tavily_search",
+      "params": {
+        "summary": "query: Extension of the Suspension of Expansion of End-User Controls for Affiliates of Certain Listed Entities; include_domains federalregister.gov and bis.gov; max_results 5"
+      },
+      "question": "Re-check of a published claim",
+      "purpose": "Re-check (recheck-2026-11-11)",
+      "result_summary": "Returned only the Nov 2025 one-year suspension rule, which set the original end date. The 2026 extension did not appear.",
+      "interpretation": "See investigation/notes/recheck-2026-11-11.md for the claim this call checked.",
+      "scorecard": "worked",
+      "entity_ids": [],
+      "step": "verify",
+      "case_id": "general"
+    },
+    {
+      "id": "o2611-06",
+      "timestamp": "2026-11-11T15:06:05Z",
+      "server": "tavily",
+      "tool": "tavily_extract",
+      "params": {
+        "summary": "urls: federalregister.gov document search, agency industry-and-security-bureau, publication date 11/09/2026"
+      },
+      "question": "Re-check of a published claim",
+      "purpose": "Re-check (recheck-2026-11-11)",
+      "result_summary": "Listing shows Extension of the Suspension of Expansion of End-User Controls for Affiliates of Certain Listed Entities, 9 Nov 2026, Doc. 2026-22793, extending the suspension through 10 Jan 2027.",
+      "interpretation": "See investigation/notes/recheck-2026-11-11.md for the claim this call checked.",
+      "scorecard": "worked",
+      "entity_ids": [],
+      "step": "verify",
+      "case_id": "general"
+    },
+    {
+      "id": "o2611-07",
+      "timestamp": "2026-11-11T15:06:06Z",
+      "server": "tavily",
+      "tool": "tavily_search",
+      "params": {
+        "summary": "query: Treasury IRS prohibited foreign entity safe harbor tables proposed regulations material assistance notice after Notice 2026-15; max_results 10; search_depth advanced; start_date 2026-10-01"
+      },
+      "question": "Re-check of a published claim",
+      "purpose": "Re-check (recheck-2026-11-11)",
+      "result_summary": "No new notice or proposed regulations. Secondary pages say Notice 2026-15 remains the operative guidance and that the Priority Guidance Plan of 29 Sep 2026 still lists PFE guidance as planned.",
+      "interpretation": "See investigation/notes/recheck-2026-11-11.md for the claim this call checked.",
+      "scorecard": "worked",
+      "entity_ids": [],
+      "step": "verify",
+      "case_id": "general"
+    },
+    {
+      "id": "o2611-08",
+      "timestamp": "2026-11-11T15:06:07Z",
+      "server": "tavily",
+      "tool": "tavily_search",
+      "params": {
+        "summary": "query: prohibited foreign entity material assistance guidance safe harbor tables; include_domains irs.gov, treasury.gov, federalregister.gov; max_results 10; start_date 2026-02-13"
+      },
+      "question": "Re-check of a published claim",
+      "purpose": "Re-check (recheck-2026-11-11)",
+      "result_summary": "Only Notice 2026-15 text (IRB 2026-11) and form instructions. Notice text confirms the statute requires safe-harbor tables by 31 Dec 2026. Nothing newer.",
+      "interpretation": "See investigation/notes/recheck-2026-11-11.md for the claim this call checked.",
+      "scorecard": "worked",
+      "entity_ids": [],
+      "step": "verify",
+      "case_id": "general"
+    },
+    {
+      "id": "o2611-09",
+      "timestamp": "2026-11-11T15:06:08Z",
+      "server": "tavily",
+      "tool": "tavily_extract",
+      "params": {
+        "summary": "urls: irs.gov pub irs-counsel 2025-2026-pgp-year-end-update-thru-9-30-26.pdf; query: 7701(a)(51) and (52) prohibited foreign entity"
+      },
+      "question": "Re-check of a published claim",
+      "purpose": "Re-check (recheck-2026-11-11)",
+      "result_summary": "Item 36 on section 7701(a)(51) and (52) lists only Notice 2026-15 as published (IRB 2026-11, 9 Mar 2026). No later guidance listed through 30 Sep 2026.",
+      "interpretation": "See investigation/notes/recheck-2026-11-11.md for the claim this call checked.",
       "scorecard": "worked",
       "entity_ids": [],
       "step": "verify",
