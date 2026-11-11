@@ -45,12 +45,14 @@
     "source_url": "https://www.cirs-group.com/en/chemicals/china-temporarily-suspends-export-controls-on-key-raw-materials-including-rare-earths-lithium-batteries-and-diamond",
     "source_name": "CIRS Group; Global Times; Pillsbury; chemradar",
     "verified": true,
-    "note": "Legal end date of the suspension is 10 Nov 2026. On 28 Sep 2026 MOFCOM said the wider US–China truce runs to 10 Jan 2027, but as of 5 Nov 2026 no new announcement has moved the legal end date. Re-check after 10 Nov 2026.",
+    "note": "Legal end date of the suspension was 10 Nov 2026. Outcome (checked 11 Nov 2026): it was not left to lapse. MOFCOM and GACC Announcement No. 58 of 2026, dated 9 Nov 2026, continues the suspension of Announcements 55-58 and 61-62 of 2025 from 11 Nov 2026 to 10 Jan 2027. It does not name Announcement No. 70 but covers the same six measures. See the 2026-11-09 entry.",
     "source_call_ids": [
       "t008",
       "t010",
       "v045",
-      "v046"
+      "v046",
+      "o2611-02",
+      "o2611-03"
     ]
   },
   {
@@ -175,16 +177,44 @@
     ]
   },
   {
+    "date": "2026-11-09",
+    "measure": "China continues the suspension of its Oct 2025 export controls to 10 Jan 2027 (MOFCOM/GACC Announcement No. 58 of 2026)",
+    "relevance": "The October 2025 controls on lithium batteries, artificial graphite anode material and related equipment (Announcement No. 58 of 2025, among others) stay suspended past the 10 Nov 2026 end date of Announcement No. 70. The 2023 graphite licensing (No. 39) is unaffected.",
+    "source_url": "https://www.mofcom.gov.cn/zwgk/zcfb/art/2026/art_91466027f465467985942a639a9485f4.html",
+    "source_name": "MOFCOM (primary)",
+    "verified": true,
+    "note": "Dated 9 Nov 2026; the suspension runs 11 Nov 2026 to 10 Jan 2027. One-sentence text covering Announcements 55, 56, 57, 58 and 61, 62 of 2025. Do not confuse with Announcement No. 58 of 2025 (the battery and graphite controls). Announcement No. 72 of 2025 (end 27 Nov 2026) was not addressed in this text.",
+    "source_call_ids": [
+      "o2611-02",
+      "o2611-03"
+    ]
+  },
+  {
+    "date": "2026-11-09",
+    "measure": "BIS extends suspension of the Affiliates Rule through 10 Jan 2027",
+    "relevance": "The rule extending US export restrictions to foreign firms owned 50% or more by listed parties stays suspended and did not return on 10 Nov 2026.",
+    "source_url": "https://www.federalregister.gov/documents/2026/11/09/2026-22793/extension-of-the-suspension-of-expansion-of-end-user-controls-for-affiliates-of-certain-listed",
+    "source_name": "Federal Register Doc. 2026-22793 (primary); Dechert; Baker McKenzie",
+    "verified": true,
+    "note": "Published 9 Nov 2026. Law-firm notes say the rule was released on 5 Nov 2026. The rule is suspended, not withdrawn; it could return after 10 Jan 2027 unless extended again.",
+    "source_call_ids": [
+      "o2611-04",
+      "o2611-06"
+    ]
+  },
+  {
     "date": "2026-11-10",
     "measure": "BIS Affiliates Rule due to return unless BIS extends its suspension",
     "relevance": "Scheduled, not yet an event. The rule would extend US export restrictions to foreign firms owned 50% or more by listed parties. It was the US side of the same deal as Announcement No. 70, whose suspension legally ends the same day.",
     "source_url": "https://www.dechert.com/knowledge/onpoint/2026/10/bis-affiliates-rule--november-10-reimposition-remains-scheduled-.html",
     "source_name": "Dechert (28 Oct 2026), citing the BIS final rule of 12 Nov 2025",
     "verified": true,
-    "note": "As of 28 Oct 2026 BIS had published no extension. An extension to 10 Jan 2027 is expected but unconfirmed. Re-check after 10 Nov 2026.",
+    "note": "Outcome (checked 11 Nov 2026): BIS extended the suspension; the rule did not return on this date. A final rule published 9 Nov 2026 (Federal Register Doc. 2026-22793) extends the suspension through 10 Jan 2027. The rule itself is not repealed or revised. See the 2026-11-09 entry.",
     "source_call_ids": [
       "n2611a17",
-      "n2611a18"
+      "n2611a18",
+      "o2611-04",
+      "o2611-06"
     ]
   }
 ]
